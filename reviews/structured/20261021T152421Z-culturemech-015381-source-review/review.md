@@ -1,0 +1,1925 @@
+# Source and formulation review: anaerobic_alkaline_lb_medium (CultureMech:015381)
+
+- Review: 20261021T152421Z-culturemech-015381-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T15:15:03Z
+- Finished UTC: 2026-10-21T15:24:21Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+JCM 1111 is correctly identified, but its carbonate and sulfide stock volumes are represented as direct g/L concentrations. Preserve the maintained owner’s two historical amount claims without treating unavailable raw API content as newly verified evidence. The high-metal classification is unsupported by the current unit/stage representation; the exact graph match remains unavailable.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 263; batch 027 item 3 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty-six task batches contain 260 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 263 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:015381 | data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml | generated | anaerobic_alkaline_lb_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:015381 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:015381 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch027/263/strict.tsv |
+| validate-terms | passed | True | CultureMech:015381 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:015381 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:015381 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadiveJ1111api | unavailable | True | CultureMech:015381 | mediadiveJ1111api: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| Exact source content access: mediadiveJ1111apiRetry | unavailable | True | CultureMech:015381 | mediadiveJ1111apiRetry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| Historical owner concentration evidence correspondence | unavailable | True | CultureMech:015381 | The exact original J1111 raw response was not recovered. Current API attempts return 503; derivative reports preserve provenance but do not authenticate raw literal correspondence anew. |
+| Asserted KG-Microbe ingredient-set correspondence | unavailable | True | CultureMech:015381 | The target projects to CHEBI:29377, CHEBI:76209 and CHEBI:9754; unmapped LB powder is excluded by the matcher. No graph snapshot was available in the documented owned paths to verify the corresponding J1111 graph set. Accession equality is insufficient. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:015381.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:015381.
+
+3 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 3/4 primary and 3/4 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 4: primary 75.00%; secondary 75.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:015381.
+
+14 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### JCM 1111 and the maintained owner
+
+identity: supported. Targets: CultureMech:015381.
+
+CultureMech:015381, the JCM 1111 name/link and sole maintained owner agree. Generated provenance and the later October 7 evidence additions remain distinct. No other LB formulation or supplier product is substituted.
+
+### Main amounts versus added stock solutions
+
+consistency: concern. Targets: CultureMech:015381.
+
+The primary lists LB broth powder 25 g, Tris base 3 g and water 800 mL, followed by 8% sodium carbonate solution 200 mL and 5% sodium sulfide nonahydrate solution 8 mL. The last two local 200 and 8 g/L concentrations are stock volumes mislabeled as masses. The earlier 24.8016 and 2.97619 g/L values are numerically compatible with a nominal 1.008 L basis recorded in historical owner evidence, but current raw provider support is unavailable. The listed 1008 mL liquid sum is not a measured final volume.
+
+### Preserved anaerobic instructions and disconnected stock doses
+
+completeness: concern. Targets: CultureMech:015381.
+
+The local procedure preserves pH 9.5 adjustment with NaOH, the N2–CO2 4:1 v/v atmosphere, cooling, and aseptic anaerobic addition of stocks autoclaved and stored under N2. Their quantities and strengths are detached from that procedure; the applicable JCM header cycle of 121°C for 15 min is also absent. Preserve the existing qualifiers while restoring the exact source stages.
+
+### Source names and canonical terms
+
+grounding: supported. Targets: CultureMech:015381.
+
+Tris, sodium carbonate and sodium sulfide nonahydrate agree with the explicitly named source forms and their canonical terms. The source percentage bases are unstated; chemical identity does not justify treating stock volume as mass or assuming w/v. LB broth powder remains an opaque named product without an invented composition or manufacturer.
+
+### Biological scope and the high-metal flag
+
+scope: concern. Targets: CultureMech:015381.
+
+COMPLEX/UNDEFINED and LIQUID are compatible with the named LB powder and no agar. No strain, growth, DOI, PMID, taxon or assembly claim is asserted. high_metal cannot be established from the current malformed stock concentrations: the analyzer lacks reliable molecular-weight/stoichiometric conversion and defaults unknown unit spellings to factor 1, while the label writer applies basename membership. Neither the current percentile nor a historical scientific threshold was recomputed.
+
+### Ingredient projection is distinct from formulation identity
+
+consistency: unknown. Targets: CultureMech:015381.
+
+The matcher compares projected CHEBI/FOODON ingredient sets, not concentrations or whole-recipe identity. The three mapped target terms exclude unmapped LB powder. Its graph traversal and normalization require the actual graph snapshot; equal J1111 identifiers alone do not establish the asserted set match. The bounded ignored-inclusive search found no required graph files. This is unavailable verification, not evidence of an incorrect KG match.
+
+### Two retained historical amount claims and stale generated correspondence
+
+evidence: unknown. Targets: CultureMech:015381.
+
+The owner’s two exact amount snippets and explanations, historical access/hash and dataset reference are retained. They describe a provider-declared volume, not an independent measured final volume. Current API failure prevents raw-byte revalidation, so neither owner amount is marked verified by this review. The generated target predates those additions; later regeneration must preserve appropriately qualified evidence after owner stock reconciliation.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:015381.
+
+11 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "LB powder main amount",
+    "field_path": "ingredients[0].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "24.8016",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "HTML table[0] row[0] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; LB broth powder &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;25.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6"
+      }
+    ],
+    "rationale": "The primary batch mass is explicit. The local g/L value retains an attributed historical 1008 mL provider basis whose original response is unavailable; existing owner attachment alone is insufficient for a newly verified decision.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "24.8016",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "24.8016",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Conditional on the historical nominal 1.008 L basis, 25 / 1.008 = 24.8015873 g/L, rounding to 24.8016. This checks arithmetic only; it does not authenticate the historical response or measured final volume."
+  },
+  {
+    "ingredient_or_context": "Tris main amount",
+    "field_path": "ingredients[1].concentration",
+    "decision": "unsupported",
+    "local": {
+      "value": "2.97619",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "HTML table[0] row[1] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Tris base &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;3.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6"
+      }
+    ],
+    "rationale": "The primary batch mass is explicit. The local g/L value retains an attributed historical 1008 mL provider basis whose original response is unavailable; existing owner attachment alone is insufficient for a newly verified decision.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2.97619",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "2.97619",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Conditional on the historical nominal 1.008 L basis, 3 / 1.008 = 2.976190476 g/L, rounding to 2.97619. This checks arithmetic only; it does not authenticate the historical response or measured final volume."
+  },
+  {
+    "ingredient_or_context": "Main water 800 mL",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": [
+      {
+        "step_number": 1,
+        "action": "AUTOCLAVE",
+        "description": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "HTML table[0] row[2] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;800.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml   &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6"
+      }
+    ],
+    "rationale": "Restore the explicit main-water amount at its stage. The existing preparation container is present but omits this quantity; water is not a final-volume declaration.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):"
+          }
+        ],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Carbonate stock 8%, dose 200 mL",
+    "field_path": "ingredients[2].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "200",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "HTML table[1] row[0] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 8% Na&lt;sub&gt;2&lt;/sub&gt;CO&lt;sub&gt;3&lt;/sub&gt; solution &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;200.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6"
+      }
+    ],
+    "rationale": "The local value is the volume of a separate named stock, not g/L. Restore its strength, dose and post-cooling stage; the percent basis is unstated.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "200",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Carbonate stock 8%, dose 200 mL percentage basis",
+    "field_path": "solutions",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "HTML table[1] row[0] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 8% Na&lt;sub&gt;2&lt;/sub&gt;CO&lt;sub&gt;3&lt;/sub&gt; solution &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;200.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6"
+      }
+    ],
+    "rationale": "The printed percentage strength and dose are known, but w/v, w/w or another percentage basis is not specified. No delivered mass or final concentration is asserted.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Sulfide nonahydrate stock 5%, dose 8 mL",
+    "field_path": "ingredients[3].concentration",
+    "decision": "correct",
+    "local": {
+      "value": "8",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "HTML table[1] row[1] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 5% Na&lt;sub&gt;2&lt;/sub&gt;S&amp;#183;9H&lt;sub&gt;2&lt;/sub&gt;O solution &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;8.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml        &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6"
+      }
+    ],
+    "rationale": "The local value is the volume of a separate named stock, not g/L. Restore its strength, dose and post-cooling stage; the percent basis is unstated.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "8",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "8",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Sulfide nonahydrate stock 5%, dose 8 mL percentage basis",
+    "field_path": "solutions",
+    "decision": "not_quantified",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "HTML table[1] row[1] (zero-based raw tables)",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 5% Na&lt;sub&gt;2&lt;/sub&gt;S&amp;#183;9H&lt;sub&gt;2&lt;/sub&gt;O solution &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;8.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml        &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6"
+      }
+    ],
+    "rationale": "The printed percentage strength and dose are known, but w/v, w/w or another percentage basis is not specified. No delivered mass or final concentration is asserted.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Main pH endpoint",
+    "field_path": "ph_value",
+    "decision": "evidence_only",
+    "local": 9.5,
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "Main preparation paragraph",
+        "exact_source_quote": "adjust pH to 9.5 with NaOH",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6",
+        "parsed_text_sha256": "c803a81929d52e5bc47b447b632149396e64cd1f60564d8b989571300f9320d4"
+      }
+    ],
+    "rationale": "The value is preserved, with no matching attached pH evidence.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 9.5,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 9.5,
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Unquantified NaOH titrant dose",
+    "field_path": "preparation_steps[0].description",
+    "decision": "not_quantified",
+    "local": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):",
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "Main preparation paragraph",
+        "exact_source_quote": "adjust pH to 9.5 with NaOH",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6",
+        "parsed_text_sha256": "c803a81929d52e5bc47b447b632149396e64cd1f60564d8b989571300f9320d4"
+      }
+    ],
+    "rationale": "The titrant and endpoint are named, but no fixed NaOH mass or volume is provided.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):",
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):",
+        "decision": "not_quantified"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Main gas ratio",
+    "field_path": "preparation_steps[0].description",
+    "decision": "evidence_only",
+    "local": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):",
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "Main N2–CO2 preparation paragraph",
+        "exact_source_quote": "(4:1, v/v) gas mixture.",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6",
+        "parsed_text_sha256": "c803a81929d52e5bc47b447b632149396e64cd1f60564d8b989571300f9320d4"
+      }
+    ],
+    "rationale": "The N2:CO2 4:1 v/v ratio is preserved; attach evidence without turning it into a different gas or final-volume basis.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Applicable collection sterilization cycle",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": [
+      {
+        "step_number": 1,
+        "action": "AUTOCLAVE",
+        "description": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1111",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111",
+        "source_locator": "JCM collection default header",
+        "exact_source_quote": "autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6",
+        "parsed_text_sha256": "c803a81929d52e5bc47b447b632149396e64cd1f60564d8b989571300f9320d4"
+      }
+    ],
+    "rationale": "The applicable source cycle is absent. Preserve the header qualification Unless otherwise stated and the separately sterilized stock handling.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):"
+          }
+        ],
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved and stored under N2):"
+          }
+        ],
+        "decision": "add"
+      }
+    ]
+  }
+]
+
+## Findings
+
+### f1: Two stock doses are represented as direct ingredient masses
+
+blocker / open / confirmed; issue key: alkaline-lb-stock-volume-as-mass.
+
+The source adds 200 mL of 8% carbonate stock and 8 mL of 5% sulfide stock after cooling. Both local layers instead store 200 and 8 g/L as direct ingredient concentrations. This alters the formulation; neither the unstated percentage bases nor a measured final denominator can be inferred.
+
+### f2: The preserved procedure lacks linked stock quantities and the applicable cycle
+
+major / open / confirmed; issue key: alkaline-lb-preparation-scope.
+
+Anaerobic preparation and separate stock autoclaving/storage are already present, but the following solutions are not represented as such. The applicable collection 121°C/15 min cycle is omitted. Broad P2 addresses this combined representation/completeness defect without claiming that sterilization is wholly absent.
+
+### f3: The high-metal classification lacks a supported unit and formulation basis
+
+major / open / confirmed; issue key: alkaline-lb-high-metal-unsubstantiated.
+
+Both layers assert high_metal while stock volumes are mislabeled g/L. The current analyzer uses approximate/default conversion factors without molecular-weight or metal-stoichiometry normalization, and the label writer assigns results by basename. These writers do not establish a valid molar threshold for this source-specific formulation or recreate the original classification run.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconstruct the exact JCM main/stock hierarchy in the maintained owner with source strengths, added volumes and stages. Preserve the two historical main-amount claims with their attribution, resolve historical support and volume limits, then regenerate the target.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the existing pH, gases, cooling and sterile-addition qualifiers; connect each named strength/dose to its stock and restore the applicable default cycle with its source qualification.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Reassess the flag after restoring stock doses, percentage bases and a justified volume basis; use an explicit chemically valid metal calculation and documented distribution provenance. Do not assert the flag is false or infer LB composition from its generic name.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch027/263/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch027/263/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml:1:id: CultureMech:015381<br>./data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml:1:id: CultureMech:015381<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch027/source-preflight-bound/263/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 6 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| supplemental-inspection | /private/tmp/culturemech-review-work-batch027/263/inspect-with-metal-writers.json; Native superset inspection; original targets/base/state and all original input hashes preserved | context_only | The supplementary native capture adds the two high-metal writers. Both complete writer files were read; no canonical diagnostic was repeated. |
+| bound-context | /private/tmp/culturemech-review-work-batch027/source-preflight-bound/263/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-3 | src/culturemech/match/kg_media_matcher.py; _load_kg_microbe_data lines 53–168; extract_recipe_ingredients lines 200–262; find_matches lines 264–310; find_exact_match lines 312–332 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111; Complete JCM 1111 main table, late stock table, main preparation and collection default cycle | supports | The primary gives main batch masses, 800 mL water and late stock strengths/doses. It does not state the percentage bases or a measured final volume. |
+| mediadiveJ1111api-attempt | https://mediadive.dsmz.de/rest/medium/J1111; Preserved exact public retrieval result | context_only | mediadiveJ1111api: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| mediadiveJ1111apiRetry-attempt | https://mediadive.dsmz.de/rest/medium/J1111; Preserved exact public retrieval result | context_only | mediadiveJ1111apiRetry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi9754 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:9754 resolves to tris. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:9754": [{"label": "Tris base", "match_type": "preferred_term", "identifier": "CHEBI:9754", "preferred_term": "Tris base", "ontology_id": "CHEBI:9754", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml; data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| metal-writer-0 | scripts/analyze_metal_concentrations.py; Complete file: concentration conversion/aggregation/classification and basename label application | context_only | Both current writers were read without execution. The analyzer treats unrecognized units with factor 1, approximates g/L without molecular weight, aggregates by basename and computes a distribution percentile; the label writer applies the resulting basename sets. This does not reconstruct the historical run. |
+| metal-writer-1 | scripts/add_metal_ree_labels.py; Complete file: concentration conversion/aggregation/classification and basename label application | context_only | Both current writers were read without execution. The analyzer treats unrecognized units with factor 1, approximates g/L without molecular weight, aggregates by basename and computes a distribution percentile; the label writer applies the resulting basename sets. This does not reconstruct the historical run. |
+| historical-report-0 | reports/ingredient_concentration_curation/20261007-medium-source-fetch-3000-3319.json; Exact J1111 fetch row and complete record-specific concentration report | context_only | The pinned local derivative context records the 2026-10-07 access, raw hash, 1008 mL provider basis and two evidence-only additions. It preserves historical attribution but cannot replace the unavailable original API response. |
+| historical-report-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/specialized/anaerobic_alkaline_lb_medium.yaml.md; Exact J1111 fetch row and complete record-specific concentration report | context_only | The pinned local derivative context records the 2026-10-07 access, raw hash, 1008 mL provider basis and two evidence-only additions. It preserves historical attribution but cannot replace the unavailable original API response. |
+| retained-owner-claims | data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml; ingredients[0:2].evidence; references[0]; complete October 7 curation event | context_only | Two attached claims retain the original 2026-10-07T15:19:28.607214+00:00 access and SHA256 16958c453d8d34c69c8bbc8d1a60eb01bb561260bae0d97bb68dc1a11f0b2482. All snippets, explanations and derivative reports were read. Current attempts returned 503; these claims were not independently revalidated against raw source bytes. The generated target predates and lacks them. |
+| graph-file-search | /private/tmp/culturemech-review-work-batch027/263/kg-graph-search.json; Exact nodes.tsv/edges.tsv and .gz filenames; current and older documented graph paths | context_only | No matching graph snapshot exists in this bounded ignored-inclusive owned worktree/scratch search. No claim is made about other checkouts or remote graphs. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch027/263/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch027/263/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- mediadiveJ1111api: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence.
+- mediadiveJ1111apiRetry: exact public request returned HTTP 503; original access time, response bytes and any separately recorded retry are retained. Error bytes do not establish formulation or historical absence.
+- The exact historical API response underlying two owner claims remains unavailable despite a completed review of current failed attempts and pinned local derivative reports. The required historical correspondence therefore remains partial.
+- The required graph-set comparison is unavailable in the bounded owned worktree/scratch scope. No graph-match error is inferred from source or concentration differences.
+- This scientific assessment preceded formal review validation and saving; their results are recorded separately.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T152421Z-culturemech-015381-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: anaerobic_alkaline_lb_medium (CultureMech:015381)'
+started_at: '2026-10-21T15:15:03Z'
+finished_at: '2026-10-21T15:24:21Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: JCM 1111 is correctly identified, but its carbonate and sulfide stock volumes
+  are represented as direct g/L concentrations. Preserve the maintained owner’s two
+  historical amount claims without treating unavailable raw API content as newly verified
+  evidence. The high-metal classification is unsupported by the current unit/stage
+  representation; the exact graph match remains unavailable.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/match-kg-microbe/SKILL.md
+    sha256: add85aafc1e18164de2a9717cc9d63e5e20f34a1d597568a0c6d8b039c574a99
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+    sha256: 47091d6976226e57b342b576d70fcdb16002925443d671a816195e4a712256d7
+    role: target
+  - path: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+    sha256: 3a72f9e08a705f32a49ab66a1206fc956c3b2cc1a998edf8940c76dd0e1da09c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/kg_microbe_matching.md
+    sha256: 1b01e76b7b7b2067490b1fcd290e906b18bbebecc82ac4c607b6864708ae46c1
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/specialized/anaerobic_alkaline_lb_medium.yaml.md
+    sha256: 1017d6092cb4dfe3a8e35bfe854f1f3d771ee268e87558f9fb85b79b06c75ee0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-medium-source-fetch-3000-3319.json
+    sha256: 37a7d40ccca0cd647f02d094703fe862bb01542ae382264687d29db04e4a6fd8
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/add_metal_ree_labels.py
+    sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+    role: context
+  - path: scripts/analyze_metal_concentrations.py
+    sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 263; batch 027 item 3 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-six task batches
+    contain 260 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 263 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015381
+targets:
+- target_id: CultureMech:015381
+  path: data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+  label: anaerobic_alkaline_lb_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch027/263/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch027/263/strict.tsv"
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:015381
+- check_id: mediadiveJ1111api-source-access
+  name: 'Exact source content access: mediadiveJ1111api'
+  required: true
+  status: unavailable
+  summary: 'mediadiveJ1111api: exact public request returned HTTP 503; original access
+    time, response bytes and any separately recorded retry are retained. Error bytes
+    do not establish formulation or historical absence.'
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - mediadiveJ1111api-attempt
+- check_id: mediadiveJ1111apiRetry-source-access
+  name: 'Exact source content access: mediadiveJ1111apiRetry'
+  required: true
+  status: unavailable
+  summary: 'mediadiveJ1111apiRetry: exact public request returned HTTP 503; original
+    access time, response bytes and any separately recorded retry are retained. Error
+    bytes do not establish formulation or historical absence.'
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - mediadiveJ1111apiRetry-attempt
+- check_id: historical-api-correspondence
+  name: Historical owner concentration evidence correspondence
+  required: true
+  status: unavailable
+  summary: The exact original J1111 raw response was not recovered. Current API attempts
+    return 503; derivative reports preserve provenance but do not authenticate raw
+    literal correspondence anew.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - retained-owner-claims
+  - historical-report-0
+  - historical-report-1
+  - mediadiveJ1111api-attempt
+  - mediadiveJ1111apiRetry-attempt
+- check_id: exact-kg-ingredient-projection
+  name: Asserted KG-Microbe ingredient-set correspondence
+  required: true
+  status: unavailable
+  summary: The target projects to CHEBI:29377, CHEBI:76209 and CHEBI:9754; unmapped
+    LB powder is excluded by the matcher. No graph snapshot was available in the documented
+    owned paths to verify the corresponding J1111 graph set. Accession equality is
+    insufficient.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - graph-file-search
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:22.839990Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch027/263/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:23.844224Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-027/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch027/263/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:24.995970Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T15:15:25.706838Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: supports
+  summary: './data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml:1:id:
+    CultureMech:015381
+
+    ./data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml:1:id: CultureMech:015381
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/source-preflight-bound/263/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: supports
+  summary: 6 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 495b10dfdf4c20ee7c624f5e9bcfcdcea40f66eedb919dc5d4cb990e7c073a7e
+- evidence_id: supplemental-inspection
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/263/inspect-with-metal-writers.json
+  locator: Native superset inspection; original targets/base/state and all original
+    input hashes preserved
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: The supplementary native capture adds the two high-metal writers. Both
+    complete writer files were read; no canonical diagnostic was repeated.
+  snapshot_sha256: 2af9355e668f84b07721d72a8dac7bc782daddc1373506025e7862131a56cb02
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/source-preflight-bound/263/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: e5c1bc98a0b614d85ab94eb8467c148631b8ed1e23f7018c7a37bac6dd1dc006
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-context-3
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: _load_kg_microbe_data lines 53–168; extract_recipe_ingredients lines 200–262;
+    find_matches lines 264–310; find_exact_match lines 312–332
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111
+  locator: Complete JCM 1111 main table, late stock table, main preparation and collection
+    default cycle
+  accessed_at: '2026-10-21T15:02:35.167594Z'
+  support: supports
+  summary: The primary gives main batch masses, 800 mL water and late stock strengths/doses.
+    It does not state the percentage bases or a measured final volume.
+  snapshot_sha256: 15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6
+- evidence_id: mediadiveJ1111api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1111
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:02:34.120938Z'
+  support: context_only
+  summary: 'mediadiveJ1111api: exact public request returned HTTP 503; original access
+    time, response bytes and any separately recorded retry are retained. Error bytes
+    do not establish formulation or historical absence.'
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadiveJ1111apiRetry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1111
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T15:03:40.357509Z'
+  support: context_only
+  summary: 'mediadiveJ1111apiRetry: exact public request returned HTTP 503; original
+    access time, response bytes and any separately recorded retry are retained. Error
+    bytes do not establish formulation or historical absence.'
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi9754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:13.713319Z'
+  support: supports
+  summary: CHEBI:9754 resolves to tris. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b9f921dfa34f343d4ef51ee217fc47702a8f03e2b9a8353effa10de89e9c6659
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:29377":
+    [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209":
+    [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209",
+    "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:9754": [{"label": "Tris base", "match_type":
+    "preferred_term", "identifier": "CHEBI:9754", "preferred_term": "Tris base", "ontology_id":
+    "CHEBI:9754", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ANAEROBIC_ALKALINE_LB_MEDIUM.yaml; data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: metal-writer-0
+  kind: record_content
+  reference: scripts/analyze_metal_concentrations.py
+  locator: 'Complete file: concentration conversion/aggregation/classification and
+    basename label application'
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Both current writers were read without execution. The analyzer treats unrecognized
+    units with factor 1, approximates g/L without molecular weight, aggregates by
+    basename and computes a distribution percentile; the label writer applies the
+    resulting basename sets. This does not reconstruct the historical run.
+  snapshot_sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+- evidence_id: metal-writer-1
+  kind: record_content
+  reference: scripts/add_metal_ree_labels.py
+  locator: 'Complete file: concentration conversion/aggregation/classification and
+    basename label application'
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Both current writers were read without execution. The analyzer treats unrecognized
+    units with factor 1, approximates g/L without molecular weight, aggregates by
+    basename and computes a distribution percentile; the label writer applies the
+    resulting basename sets. This does not reconstruct the historical run.
+  snapshot_sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+- evidence_id: historical-report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-medium-source-fetch-3000-3319.json
+  locator: Exact J1111 fetch row and complete record-specific concentration report
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: The pinned local derivative context records the 2026-10-07 access, raw
+    hash, 1008 mL provider basis and two evidence-only additions. It preserves historical
+    attribution but cannot replace the unavailable original API response.
+  snapshot_sha256: 37a7d40ccca0cd647f02d094703fe862bb01542ae382264687d29db04e4a6fd8
+- evidence_id: historical-report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-3000-3319/records/specialized/anaerobic_alkaline_lb_medium.yaml.md
+  locator: Exact J1111 fetch row and complete record-specific concentration report
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: The pinned local derivative context records the 2026-10-07 access, raw
+    hash, 1008 mL provider basis and two evidence-only additions. It preserves historical
+    attribution but cannot replace the unavailable original API response.
+  snapshot_sha256: 1017d6092cb4dfe3a8e35bfe854f1f3d771ee268e87558f9fb85b79b06c75ee0
+- evidence_id: retained-owner-claims
+  kind: record_content
+  reference: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+  locator: ingredients[0:2].evidence; references[0]; complete October 7 curation event
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Two attached claims retain the original 2026-10-07T15:19:28.607214+00:00
+    access and SHA256 16958c453d8d34c69c8bbc8d1a60eb01bb561260bae0d97bb68dc1a11f0b2482.
+    All snippets, explanations and derivative reports were read. Current attempts
+    returned 503; these claims were not independently revalidated against raw source
+    bytes. The generated target predates and lacks them.
+  snapshot_sha256: 3a72f9e08a705f32a49ab66a1206fc956c3b2cc1a998edf8940c76dd0e1da09c
+- evidence_id: graph-file-search
+  kind: search
+  reference: /private/tmp/culturemech-review-work-batch027/263/kg-graph-search.json
+  locator: Exact nodes.tsv/edges.tsv and .gz filenames; current and older documented
+    graph paths
+  accessed_at: '2026-10-21T15:23:11.535281Z'
+  support: context_only
+  summary: No matching graph snapshot exists in this bounded ignored-inclusive owned
+    worktree/scratch search. No claim is made about other checkouts or remote graphs.
+  snapshot_sha256: 6099671a17818126ac77cb00958ea8e5ca480a384a688feff6d14f590e4d4db8
+  search_scope: Ignored-inclusive filename search limited to owned ROOT027 and WORK027;
+    no assertion about other user checkouts, other owned caches or remote graph availability.
+    Exact argv and explicit documented-path checks are retained in the receipt.
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/263/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 9aa6a4d01501ab93626890c85fdeda2a77a0a35576d72add95e43c441b686297
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch027/263/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T15:24:19Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: f2a9db160e6d87dd20bbc2de5c7c55caddf09b305a6a29269dbc5a7f139251cb
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '3 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 3/4 primary
+    and 3/4 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi29377
+  - chebi76209
+  - chebi9754
+  details: 'Instance coverage on a 0–100 percent scale, denominator 4: primary 75.00%;
+    secondary 75.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 14 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: JCM 1111 and the maintained owner
+  outcome: supported
+  summary: CultureMech:015381, the JCM 1111 name/link and sole maintained owner agree.
+    Generated provenance and the later October 7 evidence additions remain distinct.
+    No other LB formulation or supplier product is substituted.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - id-search
+- assessment_id: formulation
+  area: consistency
+  topic: Main amounts versus added stock solutions
+  outcome: concern
+  summary: The primary lists LB broth powder 25 g, Tris base 3 g and water 800 mL,
+    followed by 8% sodium carbonate solution 200 mL and 5% sodium sulfide nonahydrate
+    solution 8 mL. The last two local 200 and 8 g/L concentrations are stock volumes
+    mislabeled as masses. The earlier 24.8016 and 2.97619 g/L values are numerically
+    compatible with a nominal 1.008 L basis recorded in historical owner evidence,
+    but current raw provider support is unavailable. The listed 1008 mL liquid sum
+    is not a measured final volume.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - retained-owner-claims
+- assessment_id: preparation
+  area: completeness
+  topic: Preserved anaerobic instructions and disconnected stock doses
+  outcome: concern
+  summary: The local procedure preserves pH 9.5 adjustment with NaOH, the N2–CO2 4:1
+    v/v atmosphere, cooling, and aseptic anaerobic addition of stocks autoclaved and
+    stored under N2. Their quantities and strengths are detached from that procedure;
+    the applicable JCM header cycle of 121°C for 15 min is also absent. Preserve the
+    existing qualifiers while restoring the exact source stages.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+- assessment_id: chemical-forms
+  area: grounding
+  topic: Source names and canonical terms
+  outcome: supported
+  summary: Tris, sodium carbonate and sodium sulfide nonahydrate agree with the explicitly
+    named source forms and their canonical terms. The source percentage bases are
+    unstated; chemical identity does not justify treating stock volume as mass or
+    assuming w/v. LB broth powder remains an opaque named product without an invented
+    composition or manufacturer.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - primary
+  - chebi9754
+  - chebi29377
+  - chebi76209
+- assessment_id: classification
+  area: scope
+  topic: Biological scope and the high-metal flag
+  outcome: concern
+  summary: 'COMPLEX/UNDEFINED and LIQUID are compatible with the named LB powder and
+    no agar. No strain, growth, DOI, PMID, taxon or assembly claim is asserted. high_metal
+    cannot be established from the current malformed stock concentrations: the analyzer
+    lacks reliable molecular-weight/stoichiometric conversion and defaults unknown
+    unit spellings to factor 1, while the label writer applies basename membership.
+    Neither the current percentile nor a historical scientific threshold was recomputed.'
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - metal-writer-0
+  - metal-writer-1
+  - supplemental-inspection
+- assessment_id: kg-match
+  area: consistency
+  topic: Ingredient projection is distinct from formulation identity
+  outcome: unknown
+  summary: The matcher compares projected CHEBI/FOODON ingredient sets, not concentrations
+    or whole-recipe identity. The three mapped target terms exclude unmapped LB powder.
+    Its graph traversal and normalization require the actual graph snapshot; equal
+    J1111 identifiers alone do not establish the asserted set match. The bounded ignored-inclusive
+    search found no required graph files. This is unavailable verification, not evidence
+    of an incorrect KG match.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - graph-file-search
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+- assessment_id: owner-evidence
+  area: evidence
+  topic: Two retained historical amount claims and stale generated correspondence
+  outcome: unknown
+  summary: The owner’s two exact amount snippets and explanations, historical access/hash
+    and dataset reference are retained. They describe a provider-declared volume,
+    not an independent measured final volume. Current API failure prevents raw-byte
+    revalidation, so neither owner amount is marked verified by this review. The generated
+    target predates those additions; later regeneration must preserve appropriately
+    qualified evidence after owner stock reconciliation.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - owner-0
+  - retained-owner-claims
+  - historical-report-0
+  - historical-report-1
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 11 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:015381
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"LB powder main amount\",\n  \
+    \  \"field_path\": \"ingredients[0].concentration\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local\": {\n      \"value\": \"24.8016\",\n      \"unit\": \"G_PER_L\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1111\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"HTML table[0] row[0] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> LB broth powder </TD><TD\
+    \ WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;25.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary batch mass is explicit. The\
+    \ local g/L value retains an attributed historical 1008 mL provider basis whose\
+    \ original response is unavailable; existing owner attachment alone is insufficient\
+    \ for a newly verified decision.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"24.8016\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"24.8016\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Conditional on the historical nominal 1.008 L basis, 25 / 1.008 = 24.8015873\
+    \ g/L, rounding to 24.8016. This checks arithmetic only; it does not authenticate\
+    \ the historical response or measured final volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Tris main amount\",\n    \"field_path\": \"ingredients[1].concentration\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local\": {\n      \"value\": \"2.97619\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm1111\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"HTML table[0] row[1] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Tris base </TD><TD WIDTH=15%\
+    \ ALIGN=RIGHT><font size=+1><tt>&nbsp;3.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\
+    \n      }\n    ],\n    \"rationale\": \"The primary batch mass is explicit. The\
+    \ local g/L value retains an attributed historical 1008 mL provider basis whose\
+    \ original response is unavailable; existing owner attachment alone is insufficient\
+    \ for a newly verified decision.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.97619\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.97619\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"Conditional on the historical nominal 1.008 L basis, 3 / 1.008 = 2.976190476\
+    \ g/L, rounding to 2.97619. This checks arithmetic only; it does not authenticate\
+    \ the historical response or measured final volume.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main water 800 mL\",\n    \"field_path\": \"preparation_steps\",\n    \"decision\"\
+    : \"add\",\n    \"local\": [\n      {\n        \"step_number\": 1,\n        \"\
+    action\": \"AUTOCLAVE\",\n        \"description\": \"Mix components thoroughly,\
+    \ adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture.\
+    \ After cooling, add aseptically and anaerobically the following solutions (autoclaved\
+    \ and stored under N2):\"\n      }\n    ],\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"jcm1111\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"HTML table[0] row[2] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Distilled water </TD><TD\
+    \ WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;800.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the explicit main-water amount\
+    \ at its stage. The existing preparation container is present but omits this quantity;\
+    \ water is not a final-volume declaration.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"preparation_steps\",\n       \
+    \ \"stored\": [\n          {\n            \"step_number\": 1,\n            \"\
+    action\": \"AUTOCLAVE\",\n            \"description\": \"Mix components thoroughly,\
+    \ adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture.\
+    \ After cooling, add aseptically and anaerobically the following solutions (autoclaved\
+    \ and stored under N2):\"\n          }\n        ],\n        \"decision\": \"add\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix components thoroughly, adjust pH to 9.5\
+    \ with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling,\
+    \ add aseptically and anaerobically the following solutions (autoclaved and stored\
+    \ under N2):\"\n          }\n        ],\n        \"decision\": \"add\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"ingredient_or_context\": \"Carbonate stock 8%, dose\
+    \ 200 mL\",\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\"\
+    : \"correct\",\n    \"local\": {\n      \"value\": \"200\",\n      \"unit\": \"\
+    G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1111\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[0] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> 8% Na<sub>2</sub>CO<sub>3</sub>\
+    \ solution </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;200.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\
+    \n      }\n    ],\n    \"rationale\": \"The local value is the volume of a separate\
+    \ named stock, not g/L. Restore its strength, dose and post-cooling stage; the\
+    \ percent basis is unstated.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"200\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Carbonate stock 8%, dose 200 mL percentage basis\",\n    \"field_path\": \"\
+    solutions\",\n    \"decision\": \"not_quantified\",\n    \"local\": null,\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1111\",\n   \
+    \     \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[0] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> 8% Na<sub>2</sub>CO<sub>3</sub>\
+    \ solution </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;200.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed percentage strength and dose\
+    \ are known, but w/v, w/w or another percentage basis is not specified. No delivered\
+    \ mass or final concentration is asserted.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"solutions\",\n        \"stored\"\
+    : null,\n        \"decision\": \"not_quantified\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Sulfide nonahydrate stock 5%, dose 8 mL\",\n    \"field_path\": \"ingredients[3].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"local\": {\n      \"value\": \"8\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"jcm1111\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[1] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> 5% Na<sub>2</sub>S&#183;9H<sub>2</sub>O\
+    \ solution </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;8.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml        </TD></TR>\",\n        \"snapshot_sha256\"\
+    : \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The local value is the volume of a separate\
+    \ named stock, not g/L. Restore its strength, dose and post-cooling stage; the\
+    \ percent basis is unstated.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Sulfide nonahydrate stock 5%, dose 8 mL percentage basis\",\n    \"field_path\"\
+    : \"solutions\",\n    \"decision\": \"not_quantified\",\n    \"local\": null,\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1111\",\n \
+    \       \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"HTML table[1] row[1] (zero-based raw tables)\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> 5% Na<sub>2</sub>S&#183;9H<sub>2</sub>O\
+    \ solution </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;8.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml        </TD></TR>\",\n        \"snapshot_sha256\"\
+    : \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The printed percentage strength and dose are\
+    \ known, but w/v, w/w or another percentage basis is not specified. No delivered\
+    \ mass or final concentration is asserted.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"solutions\",\n        \"stored\"\
+    : null,\n        \"decision\": \"not_quantified\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"not_quantified\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main pH endpoint\",\n    \"field_path\": \"ph_value\",\n    \"decision\":\
+    \ \"evidence_only\",\n    \"local\": 9.5,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm1111\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"Main preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 9.5 with NaOH\",\n        \"snapshot_sha256\": \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\
+    ,\n        \"parsed_text_sha256\": \"c803a81929d52e5bc47b447b632149396e64cd1f60564d8b989571300f9320d4\"\
+    \n      }\n    ],\n    \"rationale\": \"The value is preserved, with no matching\
+    \ attached pH evidence.\",\n    \"action_taken\": \"Review only; no recipe change.\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ph_value\",\n        \"stored\": 9.5,\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.5,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Unquantified NaOH titrant dose\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"local\": \"Mix components thoroughly,\
+    \ adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture.\
+    \ After cooling, add aseptically and anaerobically the following solutions (autoclaved\
+    \ and stored under N2):\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1111\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"Main preparation paragraph\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 9.5 with NaOH\",\n        \"snapshot_sha256\": \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\
+    ,\n        \"parsed_text_sha256\": \"c803a81929d52e5bc47b447b632149396e64cd1f60564d8b989571300f9320d4\"\
+    \n      }\n    ],\n    \"rationale\": \"The titrant and endpoint are named, but\
+    \ no fixed NaOH mass or volume is provided.\",\n    \"action_taken\": \"Review\
+    \ only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Mix components thoroughly, adjust pH to 9.5 with NaOH\
+    \ and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically\
+    \ and anaerobically the following solutions (autoclaved and stored under N2):\"\
+    ,\n        \"decision\": \"not_quantified\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\",\n  \
+    \      \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under\
+    \ a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically\
+    \ the following solutions (autoclaved and stored under N2):\",\n        \"decision\"\
+    : \"not_quantified\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main gas ratio\",\n    \"field_path\": \"preparation_steps[0].description\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local\": \"Mix components thoroughly,\
+    \ adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture.\
+    \ After cooling, add aseptically and anaerobically the following solutions (autoclaved\
+    \ and stored under N2):\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1111\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\"\
+    ,\n        \"source_locator\": \"Main N2–CO2 preparation paragraph\",\n      \
+    \  \"exact_source_quote\": \"(4:1, v/v) gas mixture.\",\n        \"snapshot_sha256\"\
+    : \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\",\n    \
+    \    \"parsed_text_sha256\": \"c803a81929d52e5bc47b447b632149396e64cd1f60564d8b989571300f9320d4\"\
+    \n      }\n    ],\n    \"rationale\": \"The N2:CO2 4:1 v/v ratio is preserved;\
+    \ attach evidence without turning it into a different gas or final-volume basis.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Mix components thoroughly, adjust pH to 9.5 with NaOH\
+    \ and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically\
+    \ and anaerobically the following solutions (autoclaved and stored under N2):\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\",\n  \
+    \      \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under\
+    \ a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically\
+    \ the following solutions (autoclaved and stored under N2):\",\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Applicable collection sterilization cycle\",\n    \"field_path\": \"preparation_steps\"\
+    ,\n    \"decision\": \"add\",\n    \"local\": [\n      {\n        \"step_number\"\
+    : 1,\n        \"action\": \"AUTOCLAVE\",\n        \"description\": \"Mix components\
+    \ thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1, v/v)\
+    \ gas mixture. After cooling, add aseptically and anaerobically the following\
+    \ solutions (autoclaved and stored under N2):\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1111\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111\",\n        \"source_locator\"\
+    : \"JCM collection default header\",\n        \"exact_source_quote\": \"autoclaving\
+    \ at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"15bf69adcd361381846f0c2343ba2e51c9a722db77393a0a414c4a59165dc3b6\"\
+    ,\n        \"parsed_text_sha256\": \"c803a81929d52e5bc47b447b632149396e64cd1f60564d8b989571300f9320d4\"\
+    \n      }\n    ],\n    \"rationale\": \"The applicable source cycle is absent.\
+    \ Preserve the header qualification Unless otherwise stated and the separately\
+    \ sterilized stock handling.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix components thoroughly, adjust pH to 9.5\
+    \ with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling,\
+    \ add aseptically and anaerobically the following solutions (autoclaved and stored\
+    \ under N2):\"\n          }\n        ],\n        \"decision\": \"add\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Mix components thoroughly, adjust pH to 9.5\
+    \ with NaOH and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling,\
+    \ add aseptically and anaerobically the following solutions (autoclaved and stored\
+    \ under N2):\"\n          }\n        ],\n        \"decision\": \"add\"\n     \
+    \ }\n    ]\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: alkaline-lb-stock-volume-as-mass
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Two stock doses are represented as direct ingredient masses
+  description: The source adds 200 mL of 8% carbonate stock and 8 mL of 5% sulfide
+    stock after cooling. Both local layers instead store 200 and 8 g/L as direct ingredient
+    concentrations. This alters the formulation; neither the unstated percentage bases
+    nor a measured final denominator can be inferred.
+  target_ids:
+  - CultureMech:015381
+  field_paths:
+  - ingredients[2].concentration
+  - ingredients[3].concentration
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: alkaline-lb-preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The preserved procedure lacks linked stock quantities and the applicable
+    cycle
+  description: Anaerobic preparation and separate stock autoclaving/storage are already
+    present, but the following solutions are not represented as such. The applicable
+    collection 121°C/15 min cycle is omitted. Broad P2 addresses this combined representation/completeness
+    defect without claiming that sterilization is wholly absent.
+  target_ids:
+  - CultureMech:015381
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: alkaline-lb-high-metal-unsubstantiated
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The high-metal classification lacks a supported unit and formulation basis
+  description: Both layers assert high_metal while stock volumes are mislabeled g/L.
+    The current analyzer uses approximate/default conversion factors without molecular-weight
+    or metal-stoichiometry normalization, and the label writer assigns results by
+    basename. These writers do not establish a valid molar threshold for this source-specific
+    formulation or recreate the original classification run.
+  target_ids:
+  - CultureMech:015381
+  field_paths:
+  - high_metal
+  evidence_ids:
+  - record
+  - owner-0
+  - metal-writer-0
+  - metal-writer-1
+  - supplemental-inspection
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct the exact JCM main/stock hierarchy in the maintained owner
+    with source strengths, added volumes and stages. Preserve the two historical main-amount
+    claims with their attribution, resolve historical support and volume limits, then
+    regenerate the target.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015381
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the existing pH, gases, cooling and sterile-addition qualifiers;
+    connect each named strength/dose to its stock and restore the applicable default
+    cycle with its source qualification.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:015381
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Reassess the flag after restoring stock doses, percentage bases and
+    a justified volume basis; use an explicit chemically valid metal calculation and
+    documented distribution provenance. Do not assert the flag is false or infer LB
+    composition from its generic name.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:015381
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/anaerobic_alkaline_lb_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- 'mediadiveJ1111api: exact public request returned HTTP 503; original access time,
+  response bytes and any separately recorded retry are retained. Error bytes do not
+  establish formulation or historical absence.'
+- 'mediadiveJ1111apiRetry: exact public request returned HTTP 503; original access
+  time, response bytes and any separately recorded retry are retained. Error bytes
+  do not establish formulation or historical absence.'
+- The exact historical API response underlying two owner claims remains unavailable
+  despite a completed review of current failed attempts and pinned local derivative
+  reports. The required historical correspondence therefore remains partial.
+- The required graph-set comparison is unavailable in the bounded owned worktree/scratch
+  scope. No graph-match error is inferred from source or concentration differences.
+- This scientific assessment preceded formal review validation and saving; their results
+  are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-027
+- generated-medium
+```
