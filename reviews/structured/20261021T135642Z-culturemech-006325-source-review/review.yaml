@@ -1,0 +1,1595 @@
+schema_version: 1.0.0
+review_id: 20261021T135642Z-culturemech-006325-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: allantoin_mineral_medium (CultureMech:006325)'
+started_at: '2026-10-21T13:52:36Z'
+finished_at: '2026-10-21T13:56:42Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The eight ingredient amounts and exact salt forms agree with the available
+  DSMZ 6 base formula on the provider’s nominal 1 L basis, but the merged record also
+  absorbs the explicitly named KOMODO 6_1306 modified branch as SOURCE_DUPLICATE without
+  independent formulation support. That branch’s detail source is unavailable. The
+  base water quantity and claim evidence are missing; preparation and pH are not supplied
+  by the primary and must not be invented.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+    sha256: 74c8a9ff3a60c40ecf079fa67a18d9b662f137d39b502fc4e87611ba859d7624
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+    sha256: 6884a1dee272b2d6a472dfb078a966ceb2f24328cc176700a9632f924b309a98
+    role: context
+  - path: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+    sha256: efcb69409d72120f93d43aa8977899516012dc7271e9b320db425a4f570cdf92
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+    sha256: b8c21733fa8017fa0bf6989b2e0714e4a8e2a6726fbee3a7bd501b83f8fd23d5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 232; batch 024 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty-three task batches
+    contain 230 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 233 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006325
+targets:
+- target_id: CultureMech:006325
+  path: data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+  label: allantoin_mineral_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch024/232/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-024/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch024/232/strict.tsv"
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:006325
+- check_id: komodoMediaList-source-access
+  name: 'Exact source content access: komodoMediaList'
+  required: false
+  status: unavailable
+  summary: Preserved komodoMediaList request returned HTTP403. This attempt supplies
+    no formulation content; the base DSMZ recipe and separate catalog identities remain
+    available.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - komodoMediaList-attempt
+- check_id: komodo6-source-access
+  name: 'Exact source content access: komodo6'
+  required: false
+  status: unavailable
+  summary: Preserved komodo6 request returned HTTP403. This attempt supplies no formulation
+    content; the base DSMZ recipe and separate catalog identities remain available.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - komodo6-attempt
+- check_id: komodo6_1306-source-access
+  name: 'Exact source content access: komodo6_1306'
+  required: false
+  status: unavailable
+  summary: Preserved komodo6_1306 request returned HTTP403. This attempt supplies
+    no formulation content; the base DSMZ recipe and separate catalog identities remain
+    available.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - komodo6_1306-attempt
+- check_id: komodoDetail6-source-access
+  name: 'Exact source content access: komodoDetail6'
+  required: false
+  status: unavailable
+  summary: Preserved komodoDetail6 request returned HTTP403. This attempt supplies
+    no formulation content; the base DSMZ recipe and separate catalog identities remain
+    available.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - komodoDetail6-attempt
+- check_id: komodoDetail6_1306-source-access
+  name: 'Exact source content access: komodoDetail6_1306'
+  required: true
+  status: unavailable
+  summary: Preserved komodoDetail6_1306 request returned HTTP403. Exact modified-branch
+    formulation is required to verify SOURCE_DUPLICATE and its copied amounts; this
+    missing source makes the review partial.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - komodoDetail6_1306-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:53:00.178340Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch024/232/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:53:01.624411Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-024/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch024/232/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:53:03.342790Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T13:53:04.327513Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml:1:id: CultureMech:006325
+
+    ./data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml:1:id:
+    CultureMech:006325
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch024/source-preflight-bound/232/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: supports
+  summary: 16 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 66d56f3a1d376bbd9789f026d0136d1961925082dfcccb6f2186e26af434b3f8
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch024/source-preflight-bound/232/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: 95f2ce4d056499e66fe02207a358ca5a6027276d7cdcd3db6c3eab9e291fe6a1
+- evidence_id: dsmz6
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf
+  locator: Complete exact base formula, all nine rows; primary PDF page image inspected
+  accessed_at: '2026-10-21T13:41:00.641820Z'
+  support: supports
+  summary: Eight ingredients and 1000 mL water agree. Primary has no pH or preparation
+    protocol; provider lists Autoclave equipment without a cycle.
+  snapshot_sha256: 3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e
+- evidence_id: mediadive6api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/6
+  locator: Complete exact base formula, all nine rows; primary PDF page image inspected
+  accessed_at: '2026-10-21T13:40:59.791634Z'
+  support: supports
+  summary: Eight ingredients and 1000 mL water agree. Primary has no pH or preparation
+    protocol; provider lists Autoclave equipment without a cycle.
+  snapshot_sha256: 79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b
+- evidence_id: komodo6-catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact byte-literal HTML table row for MediaInfo=6
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Source catalog identity, DSMZ cross-reference and encoded metadata only.
+    This does not authenticate the historical copied formulation or establish growth/atmosphere.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6'\
+    \ >6</a></TD>\n\t\t\t\t\t<TD>ALLANTOIN MINERAL MEDIUM</TD>\n\t\t\t\t\t<TD>null</TD>\n\
+    \t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodo6-1306-catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact byte-literal HTML table row for MediaInfo=6_1306
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Source catalog identity, DSMZ cross-reference and encoded metadata only.
+    This does not authenticate the historical copied formulation or establish growth/atmosphere.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6_1306'\
+    \ >6_1306</a></TD>\n\t\t\t\t\t<TD>MEDIUM 6 MODIFIED FOR DSM 1306</TD>\n\t\t\t\t\
+    \t<TD>null</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t\
+    <TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf</a></TD>\n\t\t\
+    \t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodoMediaList-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/Komodo?MediaList
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T13:40:59.461854Z'
+  support: context_only
+  summary: Preserved komodoMediaList request returned HTTP403. This attempt supplies
+    no formulation content; the base DSMZ recipe and separate catalog identities remain
+    available.
+  snapshot_sha256: 6fd54c15a816e47cf87c082f1738a09522dc88f8d69043b2a2ead24ccfe4b1d4
+- evidence_id: komodo6-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/Komodo?medium=6
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T13:40:59.462282Z'
+  support: context_only
+  summary: Preserved komodo6 request returned HTTP403. This attempt supplies no formulation
+    content; the base DSMZ recipe and separate catalog identities remain available.
+  snapshot_sha256: 7951ac920adc7cff128095948065866423606a71a3aeff44960a6df4e2638756
+- evidence_id: komodo6_1306-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/Komodo?medium=6_1306
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T13:40:59.709187Z'
+  support: context_only
+  summary: Preserved komodo6_1306 request returned HTTP403. This attempt supplies
+    no formulation content; the base DSMZ recipe and separate catalog identities remain
+    available.
+  snapshot_sha256: b9c31c6d31c8367ab8e78bffb2bb26662bfcd520ab269932fedba7bc8e9a850d
+- evidence_id: komodoDetail6-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T13:42:25.900981Z'
+  support: context_only
+  summary: Preserved komodoDetail6 request returned HTTP403. This attempt supplies
+    no formulation content; the base DSMZ recipe and separate catalog identities remain
+    available.
+  snapshot_sha256: 73ec423b99b80979fca62fdfe48d49c8b46abbd4aa62a74addcb5f53b9a6ee95
+- evidence_id: komodoDetail6_1306-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6_1306
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T13:42:26.057519Z'
+  support: context_only
+  summary: Preserved komodoDetail6_1306 request returned HTTP403. Exact modified-branch
+    formulation is required to verify SOURCE_DUPLICATE and its copied amounts; this
+    missing source makes the review partial.
+  snapshot_sha256: 025a4a14050dbeda94a0f4ecbe44350c503cf4e3dc9bd15b12472a0e3a4feada
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15676
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15676
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T13:41:01.903550Z'
+  support: supports
+  summary: CHEBI:15676 resolves to allantoin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 04696907d0c91afb906b8064bbef0066ad9fa9fc32e939252a020d653dc935d5
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15676": [{"label": "Allantoin", "match_type":
+    "preferred_term", "identifier": "CHEBI:15676", "preferred_term": "Allantoin",
+    "ontology_id": "CHEBI:15676", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836":
+    [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836",
+    "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch024/232/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: c5b0d0163f8114c8c370f93816d9f686b98f1328b3694f99b615787b5379fb9d
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch024/232/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: df21e9a594fdd40ec5fc00ad5416a5b096b5eda2aa969b4b3909b8a464184759
+- evidence_id: relationships
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml;
+    data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml; data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+  locator: Every explicit parent_media and variant_children path/id/name
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: 'All six asserted relationship objects resolve to the inspected owner files;
+    resolution verifies the endpoints, not their claimed SOURCE_DUPLICATE relationship.
+    [{"input": "target", "field": "parent_media", "path": "data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml",
+    "id": "CultureMech:001838", "sha256": "efcb69409d72120f93d43aa8977899516012dc7271e9b320db425a4f570cdf92"},
+    {"input": "target", "field": "variant_children[0]", "path": "data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml",
+    "id": "CultureMech:006081", "sha256": "b8c21733fa8017fa0bf6989b2e0714e4a8e2a6726fbee3a7bd501b83f8fd23d5"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml",
+    "id": "CultureMech:001838", "sha256": "efcb69409d72120f93d43aa8977899516012dc7271e9b320db425a4f570cdf92"},
+    {"input": "data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml",
+    "field": "variant_children[0]", "path": "data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml",
+    "id": "CultureMech:006081", "sha256": "b8c21733fa8017fa0bf6989b2e0714e4a8e2a6726fbee3a7bd501b83f8fd23d5"},
+    {"input": "data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml", "field":
+    "variant_children[0]", "path": "data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml",
+    "id": "CultureMech:006325", "sha256": "6884a1dee272b2d6a472dfb078a966ceb2f24328cc176700a9632f924b309a98"},
+    {"input": "data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml",
+    "field": "parent_media", "path": "data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml",
+    "id": "CultureMech:006325", "sha256": "6884a1dee272b2d6a472dfb078a966ceb2f24328cc176700a9632f924b309a98"}]'
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALLANTOIN_MINERAL_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml;
+    data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml; data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:19.560046"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:19.560046"}]}, {"input": "data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml",
+    "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:09.121902"}]}]'
+- evidence_id: resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: extract_dsmz_id and merge_composition
+  accessed_at: '2026-10-21T13:56:39Z'
+  support: context_only
+  summary: Current resolver extracts the DSMZ base accession and copies base ingredients/solutions.
+    This supports tracing the copying boundary; it does not independently prove the
+    historical modified recipe or replay its import.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '8 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 8/8 primary
+    and 8/8 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - owner-2
+  - chebi131527
+  - chebi15676
+  - chebi2509
+  - chebi31795
+  - chebi63036
+  - chebi75836
+  - chebi86158
+  - chebi86364
+  details: 'Instance coverage on a 0–100 percent scale, denominator 8: primary 100.00%;
+    secondary 100.00%. These are linkage metrics, not correctness scores. Missing
+    optional links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 10 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"K2HPO4\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive6api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/6\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 1,\\\
+    n                        \\\"compound\\\": \\\"K2HPO4\\\",\\n                \
+    \        \\\"compound_id\\\": 10,\\n                        \\\"amount\\\": 0.8,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.8,\\n                        \\\"mmol_l\\\": 4.59306,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n        \"\
+    source_locator\": \"Page1 base formulation row 1\",\n        \"exact_source_quote\"\
+    : \" K2HPO4                                                                  \
+    \   0.8         g\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The base recipe amount matches the provider’s\
+    \ nominal 1 L basis but no layer has attached claim evidence. The DSM1306 owner\
+    \ copied this amount from the base; its exact modified source is unavailable,\
+    \ so its quantity remains unsupported rather than verified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.8\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.8\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\",\n      \
+    \  \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.8\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    The primary lists batch amounts with 1000 mL water; the provider declares 1000\
+    \ mL and reports g_l. Solute addition does not independently establish measured\
+    \ final volume.\"\n  },\n  {\n    \"ingredient_or_context\": \"KH2PO4\",\n   \
+    \ \"field_path\": \"ingredients[1].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive6api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/6\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 2,\\\
+    n                        \\\"compound\\\": \\\"KH2PO4\\\",\\n                \
+    \        \\\"compound_id\\\": 11,\\n                        \\\"amount\\\": 0.2,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 0.2,\\n                        \\\"mmol_l\\\": 1.46967,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n        \"\
+    source_locator\": \"Page1 base formulation row 2\",\n        \"exact_source_quote\"\
+    : \" KH2PO4                                                                  \
+    \   0.2         g\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The base recipe amount matches the provider’s\
+    \ nominal 1 L basis but no layer has attached claim evidence. The DSM1306 owner\
+    \ copied this amount from the base; its exact modified source is unavailable,\
+    \ so its quantity remains unsupported rather than verified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\",\n      \
+    \  \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    The primary lists batch amounts with 1000 mL water; the provider declares 1000\
+    \ mL and reports g_l. Solute addition does not independently establish measured\
+    \ final volume.\"\n  },\n  {\n    \"ingredient_or_context\": \"MgSO4 x 7 H2O\"\
+    ,\n    \"field_path\": \"ingredients[2].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive6api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/6\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 8,\\n                        \\\"amount\\\
+    \": 0.5,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 0.5,\\n                        \\\"mmol_l\\\": 2.02859,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n      \
+    \  \"source_locator\": \"Page1 base formulation row 3\",\n        \"exact_source_quote\"\
+    : \" MgSO4 x 7 H2O                                                           \
+    \   0.5         g\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The base recipe amount matches the provider’s\
+    \ nominal 1 L basis but no layer has attached claim evidence. The DSM1306 owner\
+    \ copied this amount from the base; its exact modified source is unavailable,\
+    \ so its quantity remains unsupported rather than verified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n     \
+    \   \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\",\n      \
+    \  \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    The primary lists batch amounts with 1000 mL water; the provider declares 1000\
+    \ mL and reports g_l. Solute addition does not independently establish measured\
+    \ final volume.\"\n  },\n  {\n    \"ingredient_or_context\": \"CaCl2 x 2 H2O\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive6api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/6\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 7,\\n                        \\\"amount\\\
+    \": 0.05,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.05,\\n                        \\\"mmol_l\\\": 0.340101,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n      \
+    \  \"source_locator\": \"Page1 base formulation row 4\",\n        \"exact_source_quote\"\
+    : \" CaCl2 x 2 H2O                                                           \
+    \  0.05         g\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The base recipe amount matches the provider’s\
+    \ nominal 1 L basis but no layer has attached claim evidence. The DSM1306 owner\
+    \ copied this amount from the base; its exact modified source is unavailable,\
+    \ so its quantity remains unsupported rather than verified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n    \
+    \    \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\",\n      \
+    \  \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    The primary lists batch amounts with 1000 mL water; the provider declares 1000\
+    \ mL and reports g_l. Solute addition does not independently establish measured\
+    \ final volume.\"\n  },\n  {\n    \"ingredient_or_context\": \"FeSO4 x 7 H2O\"\
+    ,\n    \"field_path\": \"ingredients[4].concentration\",\n    \"decision\": \"\
+    evidence_only\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"mediadive6api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/6\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n         \
+    \               \\\"compound_id\\\": 12,\\n                        \\\"amount\\\
+    \": 0.01,\\n                        \\\"unit\\\": \\\"g\\\",\\n              \
+    \          \\\"g_l\\\": 0.01,\\n                        \\\"mmol_l\\\": 0.0359693,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n      \
+    \  \"source_locator\": \"Page1 base formulation row 5\",\n        \"exact_source_quote\"\
+    : \" FeSO4 x 7 H2O                                                           \
+    \  0.01         g\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The base recipe amount matches the provider’s\
+    \ nominal 1 L basis but no layer has attached claim evidence. The DSM1306 owner\
+    \ copied this amount from the base; its exact modified source is unavailable,\
+    \ so its quantity remains unsupported rather than verified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n    \
+    \    \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\",\n      \
+    \  \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    The primary lists batch amounts with 1000 mL water; the provider declares 1000\
+    \ mL and reports g_l. Solute addition does not independently establish measured\
+    \ final volume.\"\n  },\n  {\n    \"ingredient_or_context\": \"MnSO4 x H2O\",\n\
+    \    \"field_path\": \"ingredients[5].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive6api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/6\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"MnSO4 x H2O\\\",\\n           \
+    \             \\\"compound_id\\\": 14,\\n                        \\\"amount\\\"\
+    : 1,\\n                        \\\"unit\\\": \\\"mg\\\",\\n                  \
+    \      \\\"g_l\\\": 0.001,\\n                        \\\"mmol_l\\\": 0.0059166,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n      \
+    \  \"source_locator\": \"Page1 base formulation row 6\",\n        \"exact_source_quote\"\
+    : \" MnSO4 x H2O                                                             \
+    \   1.0      mg\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The base recipe amount matches the provider’s\
+    \ nominal 1 L basis but no layer has attached claim evidence. The DSM1306 owner\
+    \ copied this amount from the base; its exact modified source is unavailable,\
+    \ so its quantity remains unsupported rather than verified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.001\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\",\n \
+    \       \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\"\
+    : \"1 mg manganese sulfate monohydrate ÷ 1000 = 0.001 g; nominally 0.001 g/L on\
+    \ the provider-declared 1 L basis.\"\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Allantoin\",\n    \"field_path\": \"ingredients[6].concentration\",\n    \"\
+    decision\": \"evidence_only\",\n    \"local\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive6api\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/6\",\n        \"source_locator\": \"\
+    $.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 7,\\n                        \\\"compound\\\
+    \": \\\"Allantoin\\\",\\n                        \\\"compound_id\\\": 15,\\n \
+    \                       \\\"amount\\\": 20,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 20,\\n                 \
+    \       \\\"mmol_l\\\": 126.489,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n      \
+    \  \"source_locator\": \"Page1 base formulation row 7\",\n        \"exact_source_quote\"\
+    : \" Allantoin                                                               \
+    \  20.0         g\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The base recipe amount matches the provider’s\
+    \ nominal 1 L basis but no layer has attached claim evidence. The DSM1306 owner\
+    \ copied this amount from the base; its exact modified source is unavailable,\
+    \ so its quantity remains unsupported rather than verified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    The primary lists batch amounts with 1000 mL water; the provider declares 1000\
+    \ mL and reports g_l. Solute addition does not independently establish measured\
+    \ final volume.\"\n  },\n  {\n    \"ingredient_or_context\": \"Agar\",\n    \"\
+    field_path\": \"ingredients[7].concentration\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive6api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/6\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"Agar\\\",\\n                  \
+    \      \\\"compound_id\\\": 3,\\n                        \\\"amount\\\": 15,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 15,\\n                        \\\"optional\\\": 0\\n              \
+    \      }\",\n        \"snapshot_sha256\": \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n      \
+    \  \"source_locator\": \"Page1 base formulation row 8\",\n        \"exact_source_quote\"\
+    : \" Agar                                                                    \
+    \  15.0         g\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The base recipe amount matches the provider’s\
+    \ nominal 1 L basis but no layer has attached claim evidence. The DSM1306 owner\
+    \ copied this amount from the base; its exact modified source is unavailable,\
+    \ so its quantity remains unsupported rather than verified.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"15\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    The primary lists batch amounts with 1000 mL water; the provider declares 1000\
+    \ mL and reports g_l. Solute addition does not independently establish measured\
+    \ final volume.\"\n  },\n  {\n    \"ingredient_or_context\": \"Distilled water\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"add\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive6api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/6\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[8]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 9,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"79a53e46eb77d608f433877349dce1a37e9beff11fc6118ed3411a7a5b92817b\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz6\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf\",\n        \"\
+    source_locator\": \"Page1 base formulation row 9\",\n        \"exact_source_quote\"\
+    : \" Distilled water                                                        1000.0\
+    \        ml\",\n        \"snapshot_sha256\": \"3d2688d76a0d2ae273704ef091431043fa93c51726c34d8c550aa9ada417e81e\"\
+    ,\n        \"parsed_text_sha256\": \"2e203d26fd595250ab97e861e93fa1774cdd647467066ac886a5fe5f60d9589f\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact base source lists 1000 mL distilled\
+    \ water, absent from all local preparation containers. Add the batch solvent quantity\
+    \ without calling it measured final volume. Transfer into the unresolved modified\
+    \ branch is not supported.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"\
+    The primary lists batch amounts with 1000 mL water; the provider declares 1000\
+    \ mL and reports g_l. Solute addition does not independently establish measured\
+    \ final volume.\"\n  },\n  {\n    \"ingredient_or_context\": \"Unspecified DSM1306\
+    \ modification\",\n    \"field_path\": \"variant_modifications\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"komodoMediaListCanonical\",\n        \"source_url\"\
+    : \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"Exact byte-literal MediaInfo=6_1306 catalog row\"\
+    ,\n        \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"\
+    ><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=6_1306'\
+    \ >6_1306</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 6 MODIFIED FOR DSM 1306</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf</a></TD>\\n\\\
+    t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"rationale\": \"The catalog explicitly names a modification\
+    \ but does not state an ingredient change, amount, pH or condition. Identical\
+    \ copied fields and fingerprint cannot supply a missing source quantity or prove\
+    \ no change.\",\n    \"action_taken\": \"Review only; no recipe change.\",\n \
+    \   \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"variant_modifications\",\n        \"stored\": [\n          \"\
+    Same ingredient and concentration signature; KOMODO record copied from the matching\
+    \ DSMZ medium source.\"\n        ],\n        \"decision\": \"unsupported\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"variant_modifications\",\n        \"stored\": [\n\
+    \          \"Same ingredient and concentration signature; KOMODO record copied\
+    \ from the matching DSMZ medium source.\"\n        ],\n        \"decision\": \"\
+    unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml\"\
+    ,\n        \"field_path\": \"variant_modifications\",\n        \"stored\": null,\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml\",\n  \
+    \      \"field_path\": \"variant_modifications\",\n        \"stored\": [\n   \
+    \       \"Same ingredient and concentration signature; review as possible duplicate\
+    \ source record.\"\n        ],\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ]\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Base DSMZ6 versus explicitly modified KOMODO6_1306
+  outcome: concern
+  summary: All three owner paths and IDs resolve. The base KOMODO6 record identifies
+    DSMZ6 and copied its composition; the separate KOMODO6_1306 catalog entry explicitly
+    says MODIFIED FOR DSM1306. Its inclusion as a synonym and SOURCE_DUPLICATE in
+    the generated base record is unsupported by the available detail sources. No particular
+    modification or taxon is inferred from the accession.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - id-search
+  - dsmz6
+  - komodo6-catalog
+  - komodo6-1306-catalog
+  - relationships
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: Complete base formula and copied variant quantities
+  outcome: concern
+  summary: 'All 32 local concentration objects are covered. The eight base values
+    agree numerically with the exact source/provider: manganese monohydrate 1 mg corresponds
+    to 0.001 g on the nominal 1 L basis. Water 1000 mL is absent. The same values
+    in the modified branch are copied assertions, not independently verified quantities;
+    no source supports inventing its missing changes.'
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - dsmz6
+  - mediadive6api
+  - quantity-inventory
+  - quantity-local-fields
+- assessment_id: forms
+  area: grounding
+  topic: All eight ingredient identities and supplied hydrates
+  outcome: supported
+  summary: The two phosphate salts, magnesium sulfate heptahydrate, calcium chloride
+    dihydrate, iron sulfate heptahydrate, manganese sulfate monohydrate, nonspecific
+    allantoin and agar match the base source forms and inspected ontology definitions/formulas.
+    Allantoin is not assigned a stereoisomer. Label correspondence does not resolve
+    the separate modified-medium identity.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - dsmz6
+  - record
+  - chebi131527
+  - chebi63036
+  - chebi31795
+  - chebi86158
+  - chebi75836
+  - chebi86364
+  - chebi15676
+  - chebi2509
+- assessment_id: preparation
+  area: completeness
+  topic: Source-limited preparation and water
+  outcome: concern
+  summary: No layer has preparation_steps. The exact primary is a table only, including
+    1000 mL distilled water, without pH, sterilization method, temperature or duration.
+    Provider Autoclave equipment is a lead for method metadata, not a complete preparation
+    protocol. Add source-backed water context; retain the remaining protocol as unresolved
+    instead of inserting a generic autoclave cycle or pH.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - dsmz6
+  - mediadive6api
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Agar mineral formula and bounded biological assertions
+  outcome: supported
+  summary: SOLID_AGAR agrees with the required 15 g agar row. COMPLEX/UNDEFINED retains
+    provider complex_medium=yes and the chemically heterogeneous agar; it does not
+    imply an independently specified rich nutrient mixture. Aerobic:No is KOMODO catalog
+    metadata, not an inspected anaerobic preparation. DSM1306 identifies a source-named
+    variant only; no taxonomy, strain-specific growth, temperature, DOI/PMID or assembly
+    assertion is added.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - record
+  - dsmz6
+  - mediadive6api
+  - chebi2509
+  - komodo6-catalog
+  - komodo6-1306-catalog
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 29 timestamp instances inspected; 6 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+- assessment_id: generation
+  area: provenance
+  topic: Copied equality and inherited SOURCE_DUPLICATE assertions
+  outcome: concern
+  summary: The two KOMODO owners explicitly record copying DSMZ6 ingredients. The
+    merge and SOURCE_DUPLICATE notes rely on ingredient/concentration equality of
+    those copies. Current conservative formulation merging does not infer source equivalence
+    from a fingerprint. Existing relationship endpoints are valid, but the modified
+    identity requires source reconciliation before regeneration.
+  target_ids:
+  - CultureMech:006325
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - relationships
+  - resolver
+  - history-metadata
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+findings:
+- finding_id: f1
+  issue_key: culturemech.006325.modified-branch-equivalence
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Modified DSM1306 source is treated as an established duplicate
+  description: The explicitly named KOMODO6_1306 branch was filled with DSMZ6 base
+    amounts and merged as a synonym/SOURCE_DUPLICATE. A copied formula and ingredient
+    fingerprint cannot establish an unknown modification is absent. The exact detail
+    source returned403, so neither an alternative formula nor duplicate equivalence
+    is established.
+  target_ids:
+  - CultureMech:006325
+  field_paths:
+  - merged_from
+  - synonyms
+  - variant_children
+  - parent_media
+  - variant_relationship
+  - variant_modifications
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - dsmz6
+  - komodo6-1306-catalog
+  - relationships
+  - resolver
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.5
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.006325.amount-basis-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Base amounts and water lack local claim support
+  description: The eight base masses are numerically supported on the provider’s nominal
+    1 L basis, but no concentration evidence is attached and 1000 mL water is omitted.
+    The primary does not declare measured final volume.
+  target_ids:
+  - CultureMech:006325
+  field_paths:
+  - ingredients
+  - preparation_steps
+  - references
+  - evidence
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz6
+  - mediadive6api
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.006325.history-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Copied KOMODO histories retain invalid timing metadata
+  description: Target and both KOMODO owners retain .fZ import timestamps and timezone-naive
+    DSMZ-copy timestamps. These six problematic instances must not be read as verified
+    source access times.
+  target_ids:
+  - CultureMech:006325
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-2
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Keep the modified accession and uncertainty distinct; retrieve its
+    exact formulation or an authoritative variant specification before affirming duplicate
+    equivalence or changing amounts. Reconcile maintained parent/child assertions
+    and regenerate conservatively without inventing modifications.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006325
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Attach exact base source rows and nominal basis to supported amounts,
+    add the printed water quantity, and preserve missing pH/preparation detail explicitly.
+    Do not transfer base evidence to the unresolved modified branch.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006325
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve old events and append bounded timing clarification only if
+    independently supportable; do not invent a timestamp or silently rewrite history.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006325
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_6_ALLANTOIN_MINERAL_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/allantoin_mineral_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_6_modified_for_dsm_1306.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Preserved komodoMediaList request returned HTTP403. This attempt supplies no formulation
+  content; the base DSMZ recipe and separate catalog identities remain available.
+- Preserved komodo6 request returned HTTP403. This attempt supplies no formulation
+  content; the base DSMZ recipe and separate catalog identities remain available.
+- Preserved komodo6_1306 request returned HTTP403. This attempt supplies no formulation
+  content; the base DSMZ recipe and separate catalog identities remain available.
+- Preserved komodoDetail6 request returned HTTP403. This attempt supplies no formulation
+  content; the base DSMZ recipe and separate catalog identities remain available.
+- Preserved komodoDetail6_1306 request returned HTTP403. Exact modified-branch formulation
+  is required to verify SOURCE_DUPLICATE and its copied amounts; this missing source
+  makes the review partial.
+- Required exact KOMODO6_1306 formulation access is unavailable; this is an honest
+  partial scientific review of an identified target, not an assertion that the modified
+  recipe is wrong or absent.
+- The DSMZ6 primary supplies a table and 1000 mL water but no pH or preparation cycle.
+  Provider-declared volume is nominal; no measured final-volume or unspecified protocol
+  calculation is asserted.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-024
+- generated-medium
