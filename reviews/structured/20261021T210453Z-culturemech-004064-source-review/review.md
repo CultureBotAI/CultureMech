@@ -1,0 +1,3447 @@
+# Source and formulation review: bacillus_locisalis_medium (CultureMech:004064)
+
+- Review: 20261021T210453Z-culturemech-004064-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T20:59:33Z
+- Finished UTC: 2026-10-21T21:04:53Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated Bacillus locisalis target combines four contributors from DSM1182 and DSM1309 despite distinct preparation and agar requirements. Seven target rates are doubled relative to DSM1309 and its two maintained owners. DSM1182 has separate 500 mL A/B preparations and optional 20 g/L agar in A; DSM1309 has mandatory 20 g agar and mixing at 60°C. Eight DSM1309 owner amount claims are historically authenticated; the KOMODO1309 report separately withheld support because preparation groups were unresolved.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 378; batch 038 item 8 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-seven task batches contain 370 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 373 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:004064 | data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml | generated | bacillus_locisalis_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:004064 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:004064 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch038/378/strict.tsv |
+| validate-terms | passed | True | CultureMech:004064 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:004064 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:004064 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive1182api | unavailable | False | CultureMech:004064 | Current mediadive1182api access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| Exact source content access: mediadive1182apiRetry | unavailable | False | CultureMech:004064 | Current mediadive1182apiRetry access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| Exact source content access: mediadive1309api | unavailable | False | CultureMech:004064 | Current mediadive1309api access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| Exact source content access: mediadive1309apiRetry | unavailable | False | CultureMech:004064 | Current mediadive1309apiRetry access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| Exact source content access: komodo1182detail | unavailable | False | CultureMech:004064 | Current komodo1182detail access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| Exact source content access: komodo1309detail | unavailable | False | CultureMech:004064 | Current komodo1309detail access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:004064.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:004064.
+
+6 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 6/8 primary and 6/8 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 8: primary 75.00%; secondary 75.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:004064.
+
+36 timestamp instances inspected; 6 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Separate 1182 and 1309 formulations within one generated target
+
+identity: concern. Targets: CultureMech:004064.
+
+This target is Bacillus locisalis, CultureMech:004064, sourced to KOMODO1309. The maintained 1309 pair is distinct from the Aquisalimonas1182 pair. Both pairwise parent/child references resolve to the exact maintained paths/IDs, but four-way merging collapses different agar requirements, pH scope and mixing temperatures. Their shared solute set is not identity proof.
+
+### Mixed medium versus A/B rates
+
+consistency: concern. Targets: CultureMech:004064.
+
+All 40 local concentrations are individually mapped by ingredient identity rather than blindly sharing list indices. Seven target concentrations retain doubled DSM1182 stage values; both current 1309 owners already contain the primary-matching numbers. The target agar note is also wrong for required 1309 agar. Preserve source batch quantities and the separate preparation groups before regenerating.
+
+### Eight authenticated DSM claims, no KOMODO amount authentication
+
+evidence: supported. Targets: CultureMech:004064.
+
+All eight DSM1309 attached snippets are byte-literal in the recovered October 7 raw and cite its exact hash and timestamp. Verified decisions apply only to that DSM owner on the declared-provider basis. The KOMODO1309 historical report withheld eight claims due unrepresented preparation groups; its current amounts can be compared to sources without claiming previous verification or attaching imaginary evidence. Target and 1182 owners have no attached amount evidence.
+
+### Canonical chemical forms versus media classification
+
+grounding: supported. Targets: CultureMech:004064.
+
+The explicit MgSO4 heptahydrate matches both asserted ontology slots; source generic K2HPO4 does not require the trihydrate inferred for other media. Glucose, sodium carbonate/chloride and agar match at the stated generic level. Peptone and yeast extract are mixtures. Complex/undefined is supported. SOLID_AGAR is appropriate for required-agar DSM1309; DSM1182 must retain its optional liquid/solid branch. No species growth evidence or strain taxonomy is inferred from the medium names.
+
+### Two DSM1182-owner high_metal flags
+
+scope: concern. Targets: CultureMech:004064.
+
+Only the two 1182 owners carry high_metal=true. Both the analysis and application writer were read. Raw G_PER_L values fall through the analysis conversion lookup, which does not apply compound-specific molar masses or stage dilution; classification is corpus-relative and application uses basenames. Correct stage concentrations before recomputing or endorsing these flags. No numerical metal concentration, physiological tolerance or historical writer execution is established.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:004064.
+
+23 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "ingredient_or_context": "Peptone",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "5.0",
+    "source_unit": "g",
+    "source_stage": "DSM1309 complete recipe; provider-declared 1000 mL",
+    "primary_source_evidence_id": "source1309",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Whole DSM1309 formula row",
+        "exact_source_quote": "Peptone 5.0 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "mediadive1309historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1309",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The present number agrees with primary batch mass and historical declared basis, but no amount evidence is attached here. Its historical KOMODO report withheld these eight claims because preparation groups were unresolved; source agreement does not erase that decision."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared basis; no other layer inherits verification."
+      }
+    ],
+    "arithmetic_and_scope": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+  },
+  {
+    "quantity_id": "q2",
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[2].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "5.0",
+    "source_unit": "g",
+    "source_stage": "DSM1309 complete recipe; provider-declared 1000 mL",
+    "primary_source_evidence_id": "source1309",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Whole DSM1309 formula row",
+        "exact_source_quote": "Yeast extract 5.0 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "mediadive1309historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1309",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The present number agrees with primary batch mass and historical declared basis, but no amount evidence is attached here. Its historical KOMODO report withheld these eight claims because preparation groups were unresolved; source agreement does not erase that decision."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared basis; no other layer inherits verification."
+      }
+    ],
+    "arithmetic_and_scope": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+  },
+  {
+    "quantity_id": "q3",
+    "ingredient_or_context": "Glucose",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "10.0",
+    "source_unit": "g",
+    "source_stage": "DSM1309 complete recipe; provider-declared 1000 mL",
+    "primary_source_evidence_id": "source1309",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Whole DSM1309 formula row",
+        "exact_source_quote": "Glucose 10.0 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "mediadive1309historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1309",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 55.5062,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The present number agrees with primary batch mass and historical declared basis, but no amount evidence is attached here. Its historical KOMODO report withheld these eight claims because preparation groups were unresolved; source agreement does not erase that decision."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared basis; no other layer inherits verification."
+      }
+    ],
+    "arithmetic_and_scope": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+  },
+  {
+    "quantity_id": "q4",
+    "ingredient_or_context": "K2HPO4",
+    "field_path": "ingredients[3].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "1.0",
+    "source_unit": "g",
+    "source_stage": "DSM1309 complete recipe; provider-declared 1000 mL",
+    "primary_source_evidence_id": "source1309",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Whole DSM1309 formula row",
+        "exact_source_quote": "K2HPO4 1.0 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "mediadive1309historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1309",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 5.74132,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The present number agrees with primary batch mass and historical declared basis, but no amount evidence is attached here. Its historical KOMODO report withheld these eight claims because preparation groups were unresolved; source agreement does not erase that decision."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared basis; no other layer inherits verification."
+      }
+    ],
+    "arithmetic_and_scope": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+  },
+  {
+    "quantity_id": "q5",
+    "ingredient_or_context": "MgSO4 x 7 H2O",
+    "field_path": "ingredients[4].concentration",
+    "local": {
+      "value": "0.4",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "0.2",
+    "source_unit": "g",
+    "source_stage": "DSM1309 complete recipe; provider-declared 1000 mL",
+    "primary_source_evidence_id": "source1309",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Whole DSM1309 formula row",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.2 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "mediadive1309historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1309",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.811438,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The present number agrees with primary batch mass and historical declared basis, but no amount evidence is attached here. Its historical KOMODO report withheld these eight claims because preparation groups were unresolved; source agreement does not erase that decision."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared basis; no other layer inherits verification."
+      }
+    ],
+    "arithmetic_and_scope": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+  },
+  {
+    "quantity_id": "q6",
+    "ingredient_or_context": "Agar",
+    "field_path": "ingredients[5].concentration",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "20.0",
+    "source_unit": "g",
+    "source_stage": "DSM1309 complete recipe; provider-declared 1000 mL",
+    "primary_source_evidence_id": "source1309",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Whole DSM1309 formula row",
+        "exact_source_quote": "Agar 20.0 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "mediadive1309historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1309",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 20,\n                        \"unit\": \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 59.4654,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The present number agrees with primary batch mass and historical declared basis, but no amount evidence is attached here. Its historical KOMODO report withheld these eight claims because preparation groups were unresolved; source agreement does not erase that decision."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared basis; no other layer inherits verification."
+      }
+    ],
+    "arithmetic_and_scope": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+  },
+  {
+    "quantity_id": "q7",
+    "ingredient_or_context": "NaCl",
+    "field_path": "ingredients[7].concentration",
+    "local": {
+      "value": "160",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "80.0",
+    "source_unit": "g",
+    "source_stage": "DSM1309 complete recipe; provider-declared 1000 mL",
+    "primary_source_evidence_id": "source1309",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Whole DSM1309 formula row",
+        "exact_source_quote": "NaCl 80.0 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "mediadive1309historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1309",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 80,\n                        \"unit\": \"g\",\n                        \"g_l\": 80,\n                        \"mmol_l\": 1368.93,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "160",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "80",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The present number agrees with primary batch mass and historical declared basis, but no amount evidence is attached here. Its historical KOMODO report withheld these eight claims because preparation groups were unresolved; source agreement does not erase that decision."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "80",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared basis; no other layer inherits verification."
+      }
+    ],
+    "arithmetic_and_scope": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+  },
+  {
+    "quantity_id": "q8",
+    "ingredient_or_context": "Na2CO3",
+    "field_path": "ingredients[6].concentration",
+    "local": {
+      "value": "40",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "20.0",
+    "source_unit": "g",
+    "source_stage": "DSM1309 complete recipe; provider-declared 1000 mL",
+    "primary_source_evidence_id": "source1309",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Whole DSM1309 formula row",
+        "exact_source_quote": "Na2CO3 20.0 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "mediadive1309historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1309",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 20,\n                        \"unit\": \"g\",\n                        \"g_l\": 20,\n                        \"mmol_l\": 188.701,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "40",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only",
+        "rationale": "The present number agrees with primary batch mass and historical declared basis, but no amount evidence is attached here. Its historical KOMODO report withheld these eight claims because preparation groups were unresolved; source agreement does not erase that decision."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "rationale": "Exact attached historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared basis; no other layer inherits verification."
+      }
+    ],
+    "arithmetic_and_scope": "DSM1309 is the target accession. Restore its source batch masses and declared-provider basis, retaining separate salt preparation. No measured final volume is inferred."
+  },
+  {
+    "quantity_id": "q9",
+    "ingredient_or_context": "Peptone",
+    "field_path": "ingredients[1].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "5.0",
+    "source_unit": "g",
+    "source_stage": "DSM1182 Solution A",
+    "primary_source_evidence_id": "source1182",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 Solution A",
+        "exact_source_quote": "Peptone 5.0 g",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      }
+    ],
+    "arithmetic_and_scope": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+  },
+  {
+    "quantity_id": "q10",
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[2].concentration",
+    "local": {
+      "value": "10",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "5.0",
+    "source_unit": "g",
+    "source_stage": "DSM1182 Solution A",
+    "primary_source_evidence_id": "source1182",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 Solution A",
+        "exact_source_quote": "Yeast extract 5.0 g",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      }
+    ],
+    "arithmetic_and_scope": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+  },
+  {
+    "quantity_id": "q11",
+    "ingredient_or_context": "Glucose",
+    "field_path": "ingredients[0].concentration",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "10.0",
+    "source_unit": "g",
+    "source_stage": "DSM1182 Solution A",
+    "primary_source_evidence_id": "source1182",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 Solution A",
+        "exact_source_quote": "Glucose 10.0 g",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      }
+    ],
+    "arithmetic_and_scope": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+  },
+  {
+    "quantity_id": "q12",
+    "ingredient_or_context": "K2HPO4",
+    "field_path": "ingredients[3].concentration",
+    "local": {
+      "value": "2",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "1.0",
+    "source_unit": "g",
+    "source_stage": "DSM1182 Solution A",
+    "primary_source_evidence_id": "source1182",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 Solution A",
+        "exact_source_quote": "K2HPO4 1.0 g",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      }
+    ],
+    "arithmetic_and_scope": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+  },
+  {
+    "quantity_id": "q13",
+    "ingredient_or_context": "MgSO4 x 7 H2O",
+    "field_path": "ingredients[4].concentration",
+    "local": {
+      "value": "0.4",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "0.2",
+    "source_unit": "g",
+    "source_stage": "DSM1182 Solution A",
+    "primary_source_evidence_id": "source1182",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 Solution A",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.2 g",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      }
+    ],
+    "arithmetic_and_scope": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+  },
+  {
+    "quantity_id": "q14",
+    "ingredient_or_context": "Agar",
+    "field_path": "ingredients[5].concentration",
+    "local": {
+      "value": "20",
+      "unit": "G_PER_L"
+    },
+    "source_amount": 20,
+    "source_unit": "g/L of Solution A",
+    "source_stage": "DSM1182 Optional solidification of Solution A",
+    "primary_source_evidence_id": "source1182",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 Optional solidification of Solution A",
+        "exact_source_quote": "solidified by adding 20 g/l agar to solution A.",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Retain optional agar at 20 g/L in Solution A. This is not 20 g added to A or 20 g/L of the mixed medium. On a nominal 0.5 L A basis it would be 10 g, but the primary gives no measured post-dissolution A volume. Historical API quotations of 10 g in 500 mL are derivative-only, not recovered raw."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Retain optional agar at 20 g/L in Solution A. This is not 20 g added to A or 20 g/L of the mixed medium. On a nominal 0.5 L A basis it would be 10 g, but the primary gives no measured post-dissolution A volume. Historical API quotations of 10 g in 500 mL are derivative-only, not recovered raw."
+      }
+    ],
+    "arithmetic_and_scope": "Retain optional agar at 20 g/L in Solution A. This is not 20 g added to A or 20 g/L of the mixed medium. On a nominal 0.5 L A basis it would be 10 g, but the primary gives no measured post-dissolution A volume. Historical API quotations of 10 g in 500 mL are derivative-only, not recovered raw."
+  },
+  {
+    "quantity_id": "q15",
+    "ingredient_or_context": "NaCl",
+    "field_path": "ingredients[7].concentration",
+    "local": {
+      "value": "160",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "80.0",
+    "source_unit": "g",
+    "source_stage": "DSM1182 Solution B",
+    "primary_source_evidence_id": "source1182",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 Solution B",
+        "exact_source_quote": "NaCl 80.0 g",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "160",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "160",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      }
+    ],
+    "arithmetic_and_scope": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+  },
+  {
+    "quantity_id": "q16",
+    "ingredient_or_context": "Na2CO3",
+    "field_path": "ingredients[6].concentration",
+    "local": {
+      "value": "40",
+      "unit": "G_PER_L"
+    },
+    "source_amount": "20.0",
+    "source_unit": "g",
+    "source_stage": "DSM1182 Solution B",
+    "primary_source_evidence_id": "source1182",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 Solution B",
+        "exact_source_quote": "Na2CO3 20.0 g",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "40",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "40",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+      }
+    ],
+    "arithmetic_and_scope": "The current doubled g/L value is a nominal concentration within its 500 mL stock stage, not the mixed medium. Preserve the source mass and separate A/B water inputs. Combining 500+500 mL water does not prove measured final volume; do not transfer these stage rates to DSM1309."
+  },
+  {
+    "quantity_id": "q17",
+    "ingredient_or_context": "DSM1182 A water",
+    "field_path": "solutions",
+    "local": null,
+    "source_amount": 500,
+    "source_unit": "mL",
+    "source_stage": "Solution A",
+    "primary_source_evidence_id": "source1182",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "Exact source preparation/formula occurrence for Solution A",
+        "exact_source_quote": "Distilled water 500.0 ml",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+  },
+  {
+    "quantity_id": "q18",
+    "ingredient_or_context": "DSM1182 B water",
+    "field_path": "solutions",
+    "local": null,
+    "source_amount": 500,
+    "source_unit": "mL",
+    "source_stage": "Solution B",
+    "primary_source_evidence_id": "source1182",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "Exact source preparation/formula occurrence for Solution B",
+        "exact_source_quote": "Distilled water 500.0 ml",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+  },
+  {
+    "quantity_id": "q19",
+    "ingredient_or_context": "DSM1309 water",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": 1000,
+    "source_unit": "mL",
+    "source_stage": "Whole recipe",
+    "primary_source_evidence_id": "source1309",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Exact source preparation/formula occurrence for Whole recipe",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "The NaCl and Na2CO3 were dissolved and autoclaved separately and added to the organic components at 60°C before pouring the agar medium."
+          }
+        ],
+        "decision": "add",
+        "rationale": "The existing preparation preserves separate salt sterilization and combination at 60°C but does not state the 1000 mL water input. Add that source-qualified water amount while preserving the existing preparation text; the present container alone does not support the missing water claim."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+  },
+  {
+    "quantity_id": "q20",
+    "ingredient_or_context": "DSM1182 cooling",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": 50,
+    "source_unit": "degrees Celsius",
+    "source_stage": "Separate A/B before mixing",
+    "primary_source_evidence_id": "source1182",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "Exact source preparation/formula occurrence for Separate A/B before mixing",
+        "exact_source_quote": "cooled to 50°C",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Autoclave solutions A and B separately and mix when cool. The medium may be solidified by adding 20 g/l agar to solution A. Solutions A and B are then cooled to 50°C, mixed and plates poured immediately."
+          },
+          {
+            "step_number": 2,
+            "action": "MIX",
+            "description": "Final pH of the medium is 9.5."
+          }
+        ],
+        "decision": "evidence_only",
+        "rationale": "Existing value/container is preserved; the quoted source supports this particular stage. A present preparation list is not a missing local field."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+  },
+  {
+    "quantity_id": "q21",
+    "ingredient_or_context": "DSM1309 combination",
+    "field_path": "preparation_steps",
+    "local": null,
+    "source_amount": 60,
+    "source_unit": "degrees Celsius",
+    "source_stage": "Separate salts mixed with organic components",
+    "primary_source_evidence_id": "source1309",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "Exact source preparation/formula occurrence for Separate salts mixed with organic components",
+        "exact_source_quote": "components at 60°C",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "The NaCl and Na2CO3 were dissolved and autoclaved separately and added to the organic components at 60°C before pouring the agar medium."
+          }
+        ],
+        "decision": "evidence_only",
+        "rationale": "Existing value/container is preserved; the quoted source supports this particular stage. A present preparation list is not a missing local field."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+  },
+  {
+    "quantity_id": "q22",
+    "ingredient_or_context": "DSM1182 final pH",
+    "field_path": "ph_value",
+    "local": 9.5,
+    "source_amount": 9.5,
+    "source_unit": "pH",
+    "source_stage": "Mixed DSM1182 only",
+    "primary_source_evidence_id": "source1182",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "Exact source preparation/formula occurrence for Mixed DSM1182 only",
+        "exact_source_quote": "Final pH of the medium is 9.5.",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 9.5,
+        "decision": "evidence_only",
+        "rationale": "Existing value/container is preserved; the quoted source supports this particular stage. A present preparation list is not a missing local field."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 9.5,
+        "decision": "evidence_only",
+        "rationale": "Existing value/container is preserved; the quoted source supports this particular stage. A present preparation list is not a missing local field."
+      }
+    ],
+    "arithmetic_and_scope": "Preserve the source-specific stage and exact existing container. Add missing explicit water/mixing representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle."
+  },
+  {
+    "quantity_id": "q23",
+    "ingredient_or_context": "Target agar optionality",
+    "field_path": "ingredients[5].notes",
+    "local": " (for solid medium)",
+    "source_amount": 20,
+    "source_unit": "g required",
+    "source_stage": "DSM1309 target",
+    "primary_source_evidence_id": "source1309",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "dsmz1309",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf",
+        "source_locator": "DSM1309 required ingredient row",
+        "exact_source_quote": "Agar 20.0 g",
+        "snapshot_sha256": "203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714",
+        "parsed_text_sha256": "4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb"
+      },
+      {
+        "source_key": "dsmz1182",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf",
+        "source_locator": "DSM1182 optional stage",
+        "exact_source_quote": "solidified by adding 20 g/l agar to solution A.",
+        "snapshot_sha256": "37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c",
+        "parsed_text_sha256": "e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee"
+      }
+    ],
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].notes",
+        "stored": " (for solid medium)",
+        "decision": "correct",
+        "rationale": "The inherited for-solid-medium note comes from DSM1182 optional solidification; DSM1309 lists agar without an optional qualifier. Restore the exact formulation distinction."
+      }
+    ],
+    "arithmetic_and_scope": "The inherited for-solid-medium note comes from DSM1182 optional solidification; DSM1309 lists agar without an optional qualifier. Restore the exact formulation distinction."
+  }
+]
+
+## Findings
+
+### f1: Aquisalimonas1182 stages are merged into Bacillus locisalis1309
+
+major / open / confirmed; issue key: culturemech.004064.source-variant-merge.
+
+The generated target has seven doubled values and optional-agar wording from 1182 while claiming 1309 identity. The primary recipes differ in agar requirement, stage representation and 50°C versus 60°C combination. Current 1309 owners already have the correct batch values.
+
+### f2: Source-stage water and preparation are lost or mis-scoped
+
+major / open / confirmed; issue key: culturemech.004064.stage-preparation.
+
+The target and KOMODO owners omit preparation. DSM1182 owner retains A/B autoclaving, 50°C mixing and pH 9.5; DSM1309 retains separate salts and 60°C. Those are distinct supported scopes. Water and separate-stage amounts require structured representation.
+
+### f3: Existing owner metal flags require reassessment after stage repair
+
+minor / open / confirmed; issue key: culturemech.004064.high-metal-basis.
+
+Two1182 owners carry high_metal despite concentrations representing separate source stages. The two current writers implement approximate name/unit and corpus-threshold logic, not source-specific chemical validation.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconcile the separate maintained source formulations, preserve pairwise identity only where supported, and regenerate distinct or explicitly represented variants. Do not repeat an owner amount repair already present or edit generated YAML.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore exact source-stage water, optional versus required agar and retained preparation. Keep pH 9.5 only with 1182; do not infer cycle duration/temperature or final-volume measurement.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+After source-stage repair, independently verify the intended classification basis and regenerate its analysis/flags under separately authorized checks. Preserve current history and do not silently infer a scientific metal phenotype.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-2 | data/normalized_yaml/bacterial/aquisalimonas_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-3 | data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch038/378/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch038/378/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml:1:id: CultureMech:004064<br>./data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml:1:id: CultureMech:004064<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch038/source-preflight-bound/378/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 16 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| source1182 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf; Entire PDF; Solution A, Solution B, optional agar and mixing paragraph | supports | A and B each list 500 mL water. Agar is optional at 20 g/L in A, followed by mixing at 50°C and final pH 9.5. |
+| source1309 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf; Entire PDF; complete formula and separate-salt preparation | supports | The Bacillus locisalis formula lists mandatory agar 20 g and water 1000 mL. Salts are autoclaved separately and combined at 60°C; no final pH is printed. |
+| historical1309 | https://mediadive.dsmz.de/rest/medium/1309; Exact October 7 response extracted from base-pinned report $[53].source_raw; $.data.solutions[0] | supports | The complete raw digest and original timestamp match eight attached DSM owner claims. The provider volume is a declared 1000 mL basis, not measured final volume. |
+| catalog1182 | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw catalog row with corresponding column headers | supports | Confirms this individual KOMODO-to-DSM mapping only. Shared chemical names do not merge the two source recipes, and aerobic=false is attributed catalog metadata. |
+| catalog1309 | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact raw catalog row with corresponding column headers | supports | Confirms this individual KOMODO-to-DSM mapping only. Shared chemical names do not merge the two source recipes, and aerobic=false is attributed catalog metadata. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml; data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml; data/normalized_yaml/bacterial/aquisalimonas_medium.yaml; data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:14.416065"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:07.953552"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:14.416065"}]}, {"input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml", "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current merge canonical/formulation logic must preserve source variants. Metal analysis uses ingredient-name matching, approximate/fallback unit conversion and a corpus 90th-percentile threshold; its companion applies flags by basename from analysis YAML. Neither writer proves source molar concentrations, historical execution or scientific correctness of the existing high_metal flags. No writer was run. |
+| writer-1 | scripts/analyze_metal_concentrations.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current merge canonical/formulation logic must preserve source variants. Metal analysis uses ingredient-name matching, approximate/fallback unit conversion and a corpus 90th-percentile threshold; its companion applies flags by basename from analysis YAML. Neither writer proves source molar concentrations, historical execution or scientific correctness of the existing high_metal flags. No writer was run. |
+| writer-2 | scripts/add_metal_ree_labels.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current merge canonical/formulation logic must preserve source variants. Metal analysis uses ingredient-name matching, approximate/fallback unit conversion and a corpus 90th-percentile threshold; its companion applies flags by basename from analysis YAML. Neither writer proves source molar concentrations, historical execution or scientific correctness of the existing high_metal flags. No writer was run. |
+| history-report-0 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/aquisalimonas_medium.yaml.md; Complete historical report and exact per-layer decision rows | context_only | Historical DSM1309 evidence attachment and KOMODO1309 withheld decisions are separate. DSM1182 API quotations remain derivative-only; its primary batch/optional-agar stages are inspected directly. |
+| history-report-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/bacillus_locisalis_medium.yaml.md; Complete historical report and exact per-layer decision rows | context_only | Historical DSM1309 evidence attachment and KOMODO1309 withheld decisions are separate. DSM1182 API quotations remain derivative-only; its primary batch/optional-agar stages are inspected directly. |
+| history-report-2 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml.md; Complete historical report and exact per-layer decision rows | context_only | Historical DSM1309 evidence attachment and KOMODO1309 withheld decisions are separate. DSM1182 API quotations remain derivative-only; its primary batch/optional-agar stages are inspected directly. |
+| history-report-3 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml.md; Complete historical report and exact per-layer decision rows | context_only | Historical DSM1309 evidence attachment and KOMODO1309 withheld decisions are separate. DSM1182 API quotations remain derivative-only; its primary batch/optional-agar stages are inspected directly. |
+| mediadive1182api-attempt | https://mediadive.dsmz.de/rest/medium/1182; Preserved exact public retrieval result | context_only | Current mediadive1182api access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| mediadive1182apiRetry-attempt | https://mediadive.dsmz.de/rest/medium/1182; Preserved exact public retrieval result | context_only | Current mediadive1182apiRetry access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| mediadive1309api-attempt | https://mediadive.dsmz.de/rest/medium/1309; Preserved exact public retrieval result | context_only | Current mediadive1309api access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| mediadive1309apiRetry-attempt | https://mediadive.dsmz.de/rest/medium/1309; Preserved exact public retrieval result | context_only | Current mediadive1309apiRetry access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| komodo1182detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1182; Preserved exact public retrieval result | context_only | Current komodo1182detail access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| komodo1309detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1309; Preserved exact public retrieval result | context_only | Current komodo1309detail access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch038/378/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch038/378/grounding-inventory.json; Complete manually assessed local layers and deterministic exact-field serialization | context_only | Exact field paths, original values and historical objects retained; provenance is not primary authentication. |
+| history-inventory | /private/tmp/culturemech-review-work-batch038/378/history-inventory.json; Complete manually assessed local layers and deterministic exact-field serialization | context_only | Exact field paths, original values and historical objects retained; provenance is not primary authentication. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Current mediadive1182api access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims.
+- Current mediadive1182apiRetry access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims.
+- Current mediadive1309api access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims.
+- Current mediadive1309apiRetry access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims.
+- Current komodo1182detail access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims.
+- Current komodo1309detail access failed. Both exact primary formulations are available; 1309 historical raw was recovered separately, while 1182 historical quotes remain derivative-only. These current failures are not source-absence claims.
+- This scientific assessment preceded formal review validation and saving; their actual outcomes are recorded separately.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T210453Z-culturemech-004064-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bacillus_locisalis_medium (CultureMech:004064)'
+started_at: '2026-10-21T20:59:33Z'
+finished_at: '2026-10-21T21:04:53Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The generated Bacillus locisalis target combines four contributors from DSM1182
+  and DSM1309 despite distinct preparation and agar requirements. Seven target rates
+  are doubled relative to DSM1309 and its two maintained owners. DSM1182 has separate
+  500 mL A/B preparations and optional 20 g/L agar in A; DSM1309 has mandatory 20
+  g agar and mixing at 60°C. Eight DSM1309 owner amount claims are historically authenticated;
+  the KOMODO1309 report separately withheld support because preparation groups were
+  unresolved.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+    sha256: 25b3d0474896fa4a076cdf7b2bcb3419faf8a73334b86d128de1f04b0d224e8f
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+    sha256: a8d89b69aecc64d46d0b65bde27e0780d86b62e02d636516d176c1817a95f95e
+    role: context
+  - path: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+    sha256: 30eabd31a8ab109e6727fe45973a8a4ee23b884779d875640af123b5f6a82e8d
+    role: context
+  - path: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+    sha256: bb0b84d6f76ffca54a32ec29473359a43221b09438ca83faca6c2fc48394ddf2
+    role: context
+  - path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+    sha256: ce4f5db6429360b81fb3e9a48d8e4a36501ed82d0c7e6062d284ee91af4aa0a7
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+    sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/aquisalimonas_medium.yaml.md
+    sha256: 73dec47aa5a95000b3ea307366e983d5beb5082df3e8b67a9da3d75c96d1d938
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/bacillus_locisalis_medium.yaml.md
+    sha256: 6122c761890d885499a25dc22484f57947520f635173a14042d981f97615ee57
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/inspected-candidate-context.json
+    sha256: bef58d348ed78c4694bd9876429eea22eed599556ff8a9f9b79f4858745bd02e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/plan.json
+    sha256: 0fc7158ec48d1b0c75efa149070b46b677bb3389d969a1440267f43e21b3d3c8
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml.md
+    sha256: 5c377ef6a7b52599c67b3ae15f3be583d34749a88ec67b6ea736c1706a75cc9b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml.md
+    sha256: 424914c9ba6c65bcb50e3c866db793b725f005635cca5625d621aa798c84217f
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/add_metal_ree_labels.py
+    sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+    role: context
+  - path: scripts/analyze_metal_concentrations.py
+    sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 378; batch 038 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-seven task batches
+    contain 370 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 373 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004064
+targets:
+- target_id: CultureMech:004064
+  path: data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+  label: bacillus_locisalis_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch038/378/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch038/378/strict.tsv"
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:004064
+- check_id: mediadive1182api-source-access
+  name: 'Exact source content access: mediadive1182api'
+  required: false
+  status: unavailable
+  summary: Current mediadive1182api access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - mediadive1182api-attempt
+- check_id: mediadive1182apiRetry-source-access
+  name: 'Exact source content access: mediadive1182apiRetry'
+  required: false
+  status: unavailable
+  summary: Current mediadive1182apiRetry access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - mediadive1182apiRetry-attempt
+- check_id: mediadive1309api-source-access
+  name: 'Exact source content access: mediadive1309api'
+  required: false
+  status: unavailable
+  summary: Current mediadive1309api access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - mediadive1309api-attempt
+- check_id: mediadive1309apiRetry-source-access
+  name: 'Exact source content access: mediadive1309apiRetry'
+  required: false
+  status: unavailable
+  summary: Current mediadive1309apiRetry access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - mediadive1309apiRetry-attempt
+- check_id: komodo1182detail-source-access
+  name: 'Exact source content access: komodo1182detail'
+  required: false
+  status: unavailable
+  summary: Current komodo1182detail access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - komodo1182detail-attempt
+- check_id: komodo1309detail-source-access
+  name: 'Exact source content access: komodo1309detail'
+  required: false
+  status: unavailable
+  summary: Current komodo1309detail access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - komodo1309detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:35.713353Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch038/378/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:37.085323Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-038/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch038/378/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:38.571029Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T21:00:39.436550Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml:1:id: CultureMech:004064
+
+    ./data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml:1:id:
+    CultureMech:004064
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/source-preflight-bound/378/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: supports
+  summary: 16 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 3c9a6fae72c5da3847cfb85a3b742542b431c84ddf9a87540f6e7dc0f9e43fd3
+- evidence_id: source1182
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf
+  locator: Entire PDF; Solution A, Solution B, optional agar and mixing paragraph
+  accessed_at: '2026-10-21T20:15:12.021639Z'
+  support: supports
+  summary: A and B each list 500 mL water. Agar is optional at 20 g/L in A, followed
+    by mixing at 50°C and final pH 9.5.
+  quote: solidified by adding 20 g/l agar to solution A.
+  snapshot_sha256: 37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c
+- evidence_id: source1309
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf
+  locator: Entire PDF; complete formula and separate-salt preparation
+  accessed_at: '2026-10-21T20:15:12.784436Z'
+  support: supports
+  summary: The Bacillus locisalis formula lists mandatory agar 20 g and water 1000
+    mL. Salts are autoclaved separately and combined at 60°C; no final pH is printed.
+  quote: components at 60°C before pouring the agar medium.
+  snapshot_sha256: 203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714
+- evidence_id: historical1309
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1309
+  locator: Exact October 7 response extracted from base-pinned report $[53].source_raw;
+    $.data.solutions[0]
+  accessed_at: '2026-10-07T13:20:19.852451Z'
+  support: supports
+  summary: The complete raw digest and original timestamp match eight attached DSM
+    owner claims. The provider volume is a declared 1000 mL basis, not measured final
+    volume.
+  quote: '"volume": 1000'
+  snapshot_sha256: 97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270
+- evidence_id: catalog1182
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw catalog row with corresponding column headers
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Confirms this individual KOMODO-to-DSM mapping only. Shared chemical names
+    do not merge the two source recipes, and aerobic=false is attributed catalog metadata.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1182'\
+    \ >1182</a></TD>\n\t\t\t\t\t<TD>AQUISALIMONAS medium</TD>\n\t\t\t\t\t<TD> 9.5</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: catalog1309
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact raw catalog row with corresponding column headers
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Confirms this individual KOMODO-to-DSM mapping only. Shared chemical names
+    do not merge the two source recipes, and aerobic=false is attributed catalog metadata.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1309'\
+    \ >1309</a></TD>\n\t\t\t\t\t<TD>BACILLUS LOCISALIS medium</TD>\n\t\t\t\t\t<TD>null</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label":
+    "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term":
+    "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label":
+    "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term":
+    "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795":
+    [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BACILLUS_LOCISALIS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml;
+    data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml; data/normalized_yaml/bacterial/aquisalimonas_medium.yaml;
+    data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:14.416065"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:07.953552"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:14.416065"}]}, {"input": "data/normalized_yaml/bacterial/aquisalimonas_medium.yaml",
+    "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Current merge canonical/formulation logic must preserve source variants.
+    Metal analysis uses ingredient-name matching, approximate/fallback unit conversion
+    and a corpus 90th-percentile threshold; its companion applies flags by basename
+    from analysis YAML. Neither writer proves source molar concentrations, historical
+    execution or scientific correctness of the existing high_metal flags. No writer
+    was run.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/analyze_metal_concentrations.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Current merge canonical/formulation logic must preserve source variants.
+    Metal analysis uses ingredient-name matching, approximate/fallback unit conversion
+    and a corpus 90th-percentile threshold; its companion applies flags by basename
+    from analysis YAML. Neither writer proves source molar concentrations, historical
+    execution or scientific correctness of the existing high_metal flags. No writer
+    was run.
+  snapshot_sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/add_metal_ree_labels.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Current merge canonical/formulation logic must preserve source variants.
+    Metal analysis uses ingredient-name matching, approximate/fallback unit conversion
+    and a corpus 90th-percentile threshold; its companion applies flags by basename
+    from analysis YAML. Neither writer proves source molar concentrations, historical
+    execution or scientific correctness of the existing high_metal flags. No writer
+    was run.
+  snapshot_sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+- evidence_id: history-report-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/aquisalimonas_medium.yaml.md
+  locator: Complete historical report and exact per-layer decision rows
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Historical DSM1309 evidence attachment and KOMODO1309 withheld decisions
+    are separate. DSM1182 API quotations remain derivative-only; its primary batch/optional-agar
+    stages are inspected directly.
+  snapshot_sha256: 73dec47aa5a95000b3ea307366e983d5beb5082df3e8b67a9da3d75c96d1d938
+- evidence_id: history-report-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/bacillus_locisalis_medium.yaml.md
+  locator: Complete historical report and exact per-layer decision rows
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Historical DSM1309 evidence attachment and KOMODO1309 withheld decisions
+    are separate. DSM1182 API quotations remain derivative-only; its primary batch/optional-agar
+    stages are inspected directly.
+  snapshot_sha256: 6122c761890d885499a25dc22484f57947520f635173a14042d981f97615ee57
+- evidence_id: history-report-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml.md
+  locator: Complete historical report and exact per-layer decision rows
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Historical DSM1309 evidence attachment and KOMODO1309 withheld decisions
+    are separate. DSM1182 API quotations remain derivative-only; its primary batch/optional-agar
+    stages are inspected directly.
+  snapshot_sha256: 5c377ef6a7b52599c67b3ae15f3be583d34749a88ec67b6ea736c1706a75cc9b
+- evidence_id: history-report-3
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml.md
+  locator: Complete historical report and exact per-layer decision rows
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Historical DSM1309 evidence attachment and KOMODO1309 withheld decisions
+    are separate. DSM1182 API quotations remain derivative-only; its primary batch/optional-agar
+    stages are inspected directly.
+  snapshot_sha256: 424914c9ba6c65bcb50e3c866db793b725f005635cca5625d621aa798c84217f
+- evidence_id: mediadive1182api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1182
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:15:10.912668Z'
+  support: context_only
+  summary: Current mediadive1182api access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1182apiRetry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1182
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:23:16.779647Z'
+  support: context_only
+  summary: Current mediadive1182apiRetry access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1309api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1309
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:15:10.959479Z'
+  support: context_only
+  summary: Current mediadive1309api access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1309apiRetry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1309
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:23:17.394187Z'
+  support: context_only
+  summary: Current mediadive1309apiRetry access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo1182detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1182
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:15:10.651991Z'
+  support: context_only
+  summary: Current komodo1182detail access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  snapshot_sha256: 7501352874325f7e98b466ce5df4dc2c3ac3160043282f2a46144f71a8873743
+- evidence_id: komodo1309detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1309
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T20:15:10.652234Z'
+  support: context_only
+  summary: Current komodo1309detail access failed. Both exact primary formulations
+    are available; 1309 historical raw was recovered separately, while 1182 historical
+    quotes remain derivative-only. These current failures are not source-absence claims.
+  snapshot_sha256: ff9196bb1e13d77f363ff386a2751737ab715144701145d7a051fa7df25d9764
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/378/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 0faf07ed63e7b953052e9be64c860625937f269c987b8e8c1f59a5927e2916f2
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/378/grounding-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: 0433c1e241e6ef30ef1ed8071e05114a1865afcb1f2d3eb3ec1cc7070d7dbcdd
+- evidence_id: history-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch038/378/history-inventory.json
+  locator: Complete manually assessed local layers and deterministic exact-field serialization
+  accessed_at: '2026-10-21T21:04:51Z'
+  support: context_only
+  summary: Exact field paths, original values and historical objects retained; provenance
+    is not primary authentication.
+  snapshot_sha256: a2fec7d074190f43a24e8fc128036bd17abd529386bea7f57c8e9ad8671726c9
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '6 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 6/8 primary
+    and 6/8 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - chebi131527
+  - chebi17234
+  - chebi2509
+  - chebi26710
+  - chebi29377
+  - chebi31795
+  details: 'Instance coverage on a 0–100 percent scale, denominator 8: primary 75.00%;
+    secondary 75.00%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 36 timestamp instances inspected; 6 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: identity
+  area: identity
+  topic: Separate 1182 and 1309 formulations within one generated target
+  outcome: concern
+  summary: This target is Bacillus locisalis, CultureMech:004064, sourced to KOMODO1309.
+    The maintained 1309 pair is distinct from the Aquisalimonas1182 pair. Both pairwise
+    parent/child references resolve to the exact maintained paths/IDs, but four-way
+    merging collapses different agar requirements, pH scope and mixing temperatures.
+    Their shared solute set is not identity proof.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - source1182
+  - source1309
+  - catalog1182
+  - catalog1309
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: quantitative-stages
+  area: consistency
+  topic: Mixed medium versus A/B rates
+  outcome: concern
+  summary: All 40 local concentrations are individually mapped by ingredient identity
+    rather than blindly sharing list indices. Seven target concentrations retain doubled
+    DSM1182 stage values; both current 1309 owners already contain the primary-matching
+    numbers. The target agar note is also wrong for required 1309 agar. Preserve source
+    batch quantities and the separate preparation groups before regenerating.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - quantity-inventory
+  - source1182
+  - source1309
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: historical-evidence
+  area: evidence
+  topic: Eight authenticated DSM claims, no KOMODO amount authentication
+  outcome: supported
+  summary: All eight DSM1309 attached snippets are byte-literal in the recovered October
+    7 raw and cite its exact hash and timestamp. Verified decisions apply only to
+    that DSM owner on the declared-provider basis. The KOMODO1309 historical report
+    withheld eight claims due unrepresented preparation groups; its current amounts
+    can be compared to sources without claiming previous verification or attaching
+    imaginary evidence. Target and 1182 owners have no attached amount evidence.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - historical1309
+  - history-inventory
+  - history-report-0
+  - history-report-1
+  - history-report-2
+  - history-report-3
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: forms-and-classification
+  area: grounding
+  topic: Canonical chemical forms versus media classification
+  outcome: supported
+  summary: The explicit MgSO4 heptahydrate matches both asserted ontology slots; source
+    generic K2HPO4 does not require the trihydrate inferred for other media. Glucose,
+    sodium carbonate/chloride and agar match at the stated generic level. Peptone
+    and yeast extract are mixtures. Complex/undefined is supported. SOLID_AGAR is
+    appropriate for required-agar DSM1309; DSM1182 must retain its optional liquid/solid
+    branch. No species growth evidence or strain taxonomy is inferred from the medium
+    names.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - source1182
+  - source1309
+  - grounding-inventory
+- assessment_id: high-metal
+  area: scope
+  topic: Two DSM1182-owner high_metal flags
+  outcome: concern
+  summary: Only the two 1182 owners carry high_metal=true. Both the analysis and application
+    writer were read. Raw G_PER_L values fall through the analysis conversion lookup,
+    which does not apply compound-specific molar masses or stage dilution; classification
+    is corpus-relative and application uses basenames. Correct stage concentrations
+    before recomputing or endorsing these flags. No numerical metal concentration,
+    physiological tolerance or historical writer execution is established.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - writer-1
+  - writer-2
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 23 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:004064
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"ingredient_or_context\": \"\
+    Peptone\",\n    \"field_path\": \"ingredients[1].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"5.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1309 complete\
+    \ recipe; provider-declared 1000 mL\",\n    \"primary_source_evidence_id\": \"\
+    source1309\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Whole DSM1309 formula row\",\n        \"exact_source_quote\"\
+    : \"Peptone 5.0 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1309historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1309\",\n     \
+    \   \"source_locator\": \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 1,\\n                  \
+    \      \\\"compound\\\": \\\"Peptone\\\",\\n                        \\\"compound_id\\\
+    \": 1,\\n                        \\\"amount\\\": 5,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n      \
+    \                  \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[1].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"DSM1309\
+    \ is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The present\
+    \ number agrees with primary batch mass and historical declared basis, but no\
+    \ amount evidence is attached here. Its historical KOMODO report withheld these\
+    \ eight claims because preparation groups were unresolved; source agreement does\
+    \ not erase that decision.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Exact attached\
+    \ historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared\
+    \ basis; no other layer inherits verification.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"ingredient_or_context\": \"Yeast\
+    \ extract\",\n    \"field_path\": \"ingredients[2].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"5.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1309 complete\
+    \ recipe; provider-declared 1000 mL\",\n    \"primary_source_evidence_id\": \"\
+    source1309\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Whole DSM1309 formula row\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 5.0 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1309historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1309\",\n     \
+    \   \"source_locator\": \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 2,\\n                  \
+    \      \\\"compound\\\": \\\"Yeast extract\\\",\\n                        \\\"\
+    compound_id\\\": 16,\\n                        \\\"amount\\\": 5,\\n         \
+    \               \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 5,\\n                        \\\"optional\\\": 0\\n                    }\",\n\
+    \        \"snapshot_sha256\": \"97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[2].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"DSM1309\
+    \ is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The present\
+    \ number agrees with primary batch mass and historical declared basis, but no\
+    \ amount evidence is attached here. Its historical KOMODO report withheld these\
+    \ eight claims because preparation groups were unresolved; source agreement does\
+    \ not erase that decision.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Exact attached\
+    \ historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared\
+    \ basis; no other layer inherits verification.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"ingredient_or_context\": \"Glucose\"\
+    ,\n    \"field_path\": \"ingredients[0].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"10.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1309 complete\
+    \ recipe; provider-declared 1000 mL\",\n    \"primary_source_evidence_id\": \"\
+    source1309\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Whole DSM1309 formula row\",\n        \"exact_source_quote\"\
+    : \"Glucose 10.0 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1309historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1309\",\n     \
+    \   \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\
+    \": 5,\\n                        \\\"amount\\\": 10,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n    \
+    \                    \\\"mmol_l\\\": 55.5062,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[0].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"DSM1309\
+    \ is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The present\
+    \ number agrees with primary batch mass and historical declared basis, but no\
+    \ amount evidence is attached here. Its historical KOMODO report withheld these\
+    \ eight claims because preparation groups were unresolved; source agreement does\
+    \ not erase that decision.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Exact attached\
+    \ historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared\
+    \ basis; no other layer inherits verification.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"ingredient_or_context\": \"K2HPO4\"\
+    ,\n    \"field_path\": \"ingredients[3].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"1.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1309 complete\
+    \ recipe; provider-declared 1000 mL\",\n    \"primary_source_evidence_id\": \"\
+    source1309\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Whole DSM1309 formula row\",\n        \"exact_source_quote\"\
+    : \"K2HPO4 1.0 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1309historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1309\",\n     \
+    \   \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 4,\\n                  \
+    \      \\\"compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\
+    \": 10,\\n                        \\\"amount\\\": 1,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 1,\\n     \
+    \                   \\\"mmol_l\\\": 5.74132,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n\
+    \        },\n        \"decision\": \"correct\",\n        \"rationale\": \"DSM1309\
+    \ is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The present\
+    \ number agrees with primary batch mass and historical declared basis, but no\
+    \ amount evidence is attached here. Its historical KOMODO report withheld these\
+    \ eight claims because preparation groups were unresolved; source agreement does\
+    \ not erase that decision.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Exact attached\
+    \ historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared\
+    \ basis; no other layer inherits verification.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"ingredient_or_context\": \"MgSO4\
+    \ x 7 H2O\",\n    \"field_path\": \"ingredients[4].concentration\",\n    \"local\"\
+    : {\n      \"value\": \"0.4\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"0.2\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1309 complete\
+    \ recipe; provider-declared 1000 mL\",\n    \"primary_source_evidence_id\": \"\
+    source1309\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Whole DSM1309 formula row\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.2 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1309historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1309\",\n     \
+    \   \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 5,\\n                  \
+    \      \\\"compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"\
+    compound_id\\\": 8,\\n                        \\\"amount\\\": 0.2,\\n        \
+    \                \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\"\
+    : 0.2,\\n                        \\\"mmol_l\\\": 0.811438,\\n                \
+    \        \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270\"\n     \
+    \ }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"DSM1309 is the target\
+    \ accession. Restore its source batch masses and declared-provider basis, retaining\
+    \ separate salt preparation. No measured final volume is inferred.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The present\
+    \ number agrees with primary batch mass and historical declared basis, but no\
+    \ amount evidence is attached here. Its historical KOMODO report withheld these\
+    \ eight claims because preparation groups were unresolved; source agreement does\
+    \ not erase that decision.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Exact attached\
+    \ historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared\
+    \ basis; no other layer inherits verification.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"ingredient_or_context\": \"Agar\"\
+    ,\n    \"field_path\": \"ingredients[5].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"20.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1309 complete\
+    \ recipe; provider-declared 1000 mL\",\n    \"primary_source_evidence_id\": \"\
+    source1309\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\",\n       \
+    \ \"source_locator\": \"Whole DSM1309 formula row\",\n        \"exact_source_quote\"\
+    : \"Agar 20.0 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1309historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1309\",\n     \
+    \   \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 6,\\n                  \
+    \      \\\"compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\
+    \": 3,\\n                        \\\"amount\\\": 20,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 20,\\n    \
+    \                    \\\"mmol_l\\\": 59.4654,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[5].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The present\
+    \ number agrees with primary batch mass and historical declared basis, but no\
+    \ amount evidence is attached here. Its historical KOMODO report withheld these\
+    \ eight claims because preparation groups were unresolved; source agreement does\
+    \ not erase that decision.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Exact attached\
+    \ historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared\
+    \ basis; no other layer inherits verification.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"ingredient_or_context\": \"NaCl\"\
+    ,\n    \"field_path\": \"ingredients[7].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"160\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"80.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1309 complete\
+    \ recipe; provider-declared 1000 mL\",\n    \"primary_source_evidence_id\": \"\
+    source1309\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Whole DSM1309 formula row\",\n        \"exact_source_quote\"\
+    : \"NaCl 80.0 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1309historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1309\",\n     \
+    \   \"source_locator\": \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 7,\\n                  \
+    \      \\\"compound\\\": \\\"NaCl\\\",\\n                        \\\"compound_id\\\
+    \": 43,\\n                        \\\"amount\\\": 80,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 80,\\n   \
+    \                     \\\"mmol_l\\\": 1368.93,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[7].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"160\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"DSM1309\
+    \ is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"80\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The present\
+    \ number agrees with primary batch mass and historical declared basis, but no\
+    \ amount evidence is attached here. Its historical KOMODO report withheld these\
+    \ eight claims because preparation groups were unresolved; source agreement does\
+    \ not erase that decision.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"80\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Exact attached\
+    \ historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared\
+    \ basis; no other layer inherits verification.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"ingredient_or_context\": \"Na2CO3\"\
+    ,\n    \"field_path\": \"ingredients[6].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"40\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"20.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1309 complete\
+    \ recipe; provider-declared 1000 mL\",\n    \"primary_source_evidence_id\": \"\
+    source1309\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Whole DSM1309 formula row\",\n        \"exact_source_quote\"\
+    : \"Na2CO3 20.0 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1309historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1309\",\n     \
+    \   \"source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 8,\\n                  \
+    \      \\\"compound\\\": \\\"Na2CO3\\\",\\n                        \\\"compound_id\\\
+    \": 32,\\n                        \\\"amount\\\": 20,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 20,\\n   \
+    \                     \\\"mmol_l\\\": 188.701,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"97cd61c7850dce4588ef0658c9aca8db1d6cc745e25e8b029821a2e00e828270\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[6].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"correct\",\n        \"rationale\": \"DSM1309\
+    \ is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\",\n        \"rationale\": \"The present\
+    \ number agrees with primary batch mass and historical declared basis, but no\
+    \ amount evidence is attached here. Its historical KOMODO report withheld these\
+    \ eight claims because preparation groups were unresolved; source agreement does\
+    \ not erase that decision.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\",\n        \"rationale\": \"Exact attached\
+    \ historical raw/snippet/hash authenticates this DSM owner amount on the provider-declared\
+    \ basis; no other layer inherits verification.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"DSM1309 is the target accession. Restore its source batch masses and declared-provider\
+    \ basis, retaining separate salt preparation. No measured final volume is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"ingredient_or_context\": \"Peptone\"\
+    ,\n    \"field_path\": \"ingredients[1].concentration\",\n    \"local\": {\n \
+    \     \"value\": \"10\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"5.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1182 Solution\
+    \ A\",\n    \"primary_source_evidence_id\": \"source1182\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"DSM1182 Solution A\",\n        \"exact_source_quote\"\
+    : \"Peptone 5.0 g\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The current doubled g/L value is a nominal concentration within its 500 mL stock\
+    \ stage, not the mixed medium. Preserve the source mass and separate A/B water\
+    \ inputs. Combining 500+500 mL water does not prove measured final volume; do\
+    \ not transfer these stage rates to DSM1309.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q10\",\n    \"ingredient_or_context\": \"Yeast extract\",\n    \"field_path\"\
+    : \"ingredients[2].concentration\",\n    \"local\": {\n      \"value\": \"10\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": \"5.0\",\n    \"\
+    source_unit\": \"g\",\n    \"source_stage\": \"DSM1182 Solution A\",\n    \"primary_source_evidence_id\"\
+    : \"source1182\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"DSM1182 Solution A\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 5.0 g\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The current doubled g/L value is a nominal concentration within its 500 mL stock\
+    \ stage, not the mixed medium. Preserve the source mass and separate A/B water\
+    \ inputs. Combining 500+500 mL water does not prove measured final volume; do\
+    \ not transfer these stage rates to DSM1309.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q11\",\n    \"ingredient_or_context\": \"Glucose\",\n    \"field_path\": \"\
+    ingredients[0].concentration\",\n    \"local\": {\n      \"value\": \"20\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": \"10.0\",\n    \"\
+    source_unit\": \"g\",\n    \"source_stage\": \"DSM1182 Solution A\",\n    \"primary_source_evidence_id\"\
+    : \"source1182\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"DSM1182 Solution A\",\n        \"exact_source_quote\"\
+    : \"Glucose 10.0 g\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The current doubled g/L value is a nominal concentration within its 500 mL stock\
+    \ stage, not the mixed medium. Preserve the source mass and separate A/B water\
+    \ inputs. Combining 500+500 mL water does not prove measured final volume; do\
+    \ not transfer these stage rates to DSM1309.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q12\",\n    \"ingredient_or_context\": \"K2HPO4\",\n    \"field_path\": \"\
+    ingredients[3].concentration\",\n    \"local\": {\n      \"value\": \"2\",\n \
+    \     \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": \"1.0\",\n    \"source_unit\"\
+    : \"g\",\n    \"source_stage\": \"DSM1182 Solution A\",\n    \"primary_source_evidence_id\"\
+    : \"source1182\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"DSM1182 Solution A\",\n        \"exact_source_quote\"\
+    : \"K2HPO4 1.0 g\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The current doubled g/L value is a nominal concentration within its 500 mL stock\
+    \ stage, not the mixed medium. Preserve the source mass and separate A/B water\
+    \ inputs. Combining 500+500 mL water does not prove measured final volume; do\
+    \ not transfer these stage rates to DSM1309.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q13\",\n    \"ingredient_or_context\": \"MgSO4 x 7 H2O\",\n    \"field_path\"\
+    : \"ingredients[4].concentration\",\n    \"local\": {\n      \"value\": \"0.4\"\
+    ,\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": \"0.2\",\n    \"\
+    source_unit\": \"g\",\n    \"source_stage\": \"DSM1182 Solution A\",\n    \"primary_source_evidence_id\"\
+    : \"source1182\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"DSM1182 Solution A\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7 H2O 0.2 g\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The current doubled g/L value is a nominal concentration within its 500 mL stock\
+    \ stage, not the mixed medium. Preserve the source mass and separate A/B water\
+    \ inputs. Combining 500+500 mL water does not prove measured final volume; do\
+    \ not transfer these stage rates to DSM1309.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q14\",\n    \"ingredient_or_context\": \"Agar\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"local\": {\n      \"value\": \"20\",\n      \"unit\": \"G_PER_L\"\n \
+    \   },\n    \"source_amount\": 20,\n    \"source_unit\": \"g/L of Solution A\"\
+    ,\n    \"source_stage\": \"DSM1182 Optional solidification of Solution A\",\n\
+    \    \"primary_source_evidence_id\": \"source1182\",\n    \"decision\": \"correct\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1182\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"DSM1182 Optional solidification of Solution A\"\
+    ,\n        \"exact_source_quote\": \"solidified by adding 20 g/l agar to solution\
+    \ A.\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\",\n        \"rationale\": \"Retain optional agar\
+    \ at 20 g/L in Solution A. This is not 20 g added to A or 20 g/L of the mixed\
+    \ medium. On a nominal 0.5 L A basis it would be 10 g, but the primary gives no\
+    \ measured post-dissolution A volume. Historical API quotations of 10 g in 500\
+    \ mL are derivative-only, not recovered raw.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\",\n     \
+    \   \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\",\n        \"rationale\": \"Retain optional agar\
+    \ at 20 g/L in Solution A. This is not 20 g added to A or 20 g/L of the mixed\
+    \ medium. On a nominal 0.5 L A basis it would be 10 g, but the primary gives no\
+    \ measured post-dissolution A volume. Historical API quotations of 10 g in 500\
+    \ mL are derivative-only, not recovered raw.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Retain optional agar at 20 g/L in Solution A. This is not 20 g added to A\
+    \ or 20 g/L of the mixed medium. On a nominal 0.5 L A basis it would be 10 g,\
+    \ but the primary gives no measured post-dissolution A volume. Historical API\
+    \ quotations of 10 g in 500 mL are derivative-only, not recovered raw.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q15\",\n    \"ingredient_or_context\": \"NaCl\",\n\
+    \    \"field_path\": \"ingredients[7].concentration\",\n    \"local\": {\n   \
+    \   \"value\": \"160\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\"\
+    : \"80.0\",\n    \"source_unit\": \"g\",\n    \"source_stage\": \"DSM1182 Solution\
+    \ B\",\n    \"primary_source_evidence_id\": \"source1182\",\n    \"decision\"\
+    : \"correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"DSM1182 Solution B\",\n        \"exact_source_quote\"\
+    : \"NaCl 80.0 g\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"160\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"160\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The current doubled g/L value is a nominal concentration within its 500 mL stock\
+    \ stage, not the mixed medium. Preserve the source mass and separate A/B water\
+    \ inputs. Combining 500+500 mL water does not prove measured final volume; do\
+    \ not transfer these stage rates to DSM1309.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q16\",\n    \"ingredient_or_context\": \"Na2CO3\",\n    \"field_path\": \"\
+    ingredients[6].concentration\",\n    \"local\": {\n      \"value\": \"40\",\n\
+    \      \"unit\": \"G_PER_L\"\n    },\n    \"source_amount\": \"20.0\",\n    \"\
+    source_unit\": \"g\",\n    \"source_stage\": \"DSM1182 Solution B\",\n    \"primary_source_evidence_id\"\
+    : \"source1182\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"DSM1182 Solution B\",\n        \"exact_source_quote\"\
+    : \"Na2CO3 20.0 g\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The current doubled\
+    \ g/L value is a nominal concentration within its 500 mL stock stage, not the\
+    \ mixed medium. Preserve the source mass and separate A/B water inputs. Combining\
+    \ 500+500 mL water does not prove measured final volume; do not transfer these\
+    \ stage rates to DSM1309.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"\
+    The current doubled g/L value is a nominal concentration within its 500 mL stock\
+    \ stage, not the mixed medium. Preserve the source mass and separate A/B water\
+    \ inputs. Combining 500+500 mL water does not prove measured final volume; do\
+    \ not transfer these stage rates to DSM1309.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q17\",\n    \"ingredient_or_context\": \"DSM1182 A water\",\n    \"field_path\"\
+    : \"solutions\",\n    \"local\": null,\n    \"source_amount\": 500,\n    \"source_unit\"\
+    : \"mL\",\n    \"source_stage\": \"Solution A\",\n    \"primary_source_evidence_id\"\
+    : \"source1182\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"Exact source preparation/formula occurrence for\
+    \ Solution A\",\n        \"exact_source_quote\": \"Distilled water 500.0 ml\"\
+    ,\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"Preserve the source-specific stage and exact\
+    \ existing container. Add missing explicit water/mixing representation; retained\
+    \ DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no\
+    \ exact unprinted autoclave cycle.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\",\n\
+    \        \"rationale\": \"Preserve the source-specific stage and exact existing\
+    \ container. Add missing explicit water/mixing representation; retained DSM owner\
+    \ preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted\
+    \ autoclave cycle.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Preserve\
+    \ the source-specific stage and exact existing container. Add missing explicit\
+    \ water/mixing representation; retained DSM owner preparation is evidence_only.\
+    \ No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q18\",\n    \"ingredient_or_context\": \"DSM1182\
+    \ B water\",\n    \"field_path\": \"solutions\",\n    \"local\": null,\n    \"\
+    source_amount\": 500,\n    \"source_unit\": \"mL\",\n    \"source_stage\": \"\
+    Solution B\",\n    \"primary_source_evidence_id\": \"source1182\",\n    \"decision\"\
+    : \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1182\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"Exact source preparation/formula occurrence for\
+    \ Solution B\",\n        \"exact_source_quote\": \"Distilled water 500.0 ml\"\
+    ,\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"Preserve the source-specific stage and exact\
+    \ existing container. Add missing explicit water/mixing representation; retained\
+    \ DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no\
+    \ exact unprinted autoclave cycle.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\",\n\
+    \        \"rationale\": \"Preserve the source-specific stage and exact existing\
+    \ container. Add missing explicit water/mixing representation; retained DSM owner\
+    \ preparation is evidence_only. No pH 9.5 transfer to DSM1309 and no exact unprinted\
+    \ autoclave cycle.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Preserve\
+    \ the source-specific stage and exact existing container. Add missing explicit\
+    \ water/mixing representation; retained DSM owner preparation is evidence_only.\
+    \ No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q19\",\n    \"ingredient_or_context\": \"DSM1309\
+    \ water\",\n    \"field_path\": \"preparation_steps\",\n    \"local\": null,\n\
+    \    \"source_amount\": 1000,\n    \"source_unit\": \"mL\",\n    \"source_stage\"\
+    : \"Whole recipe\",\n    \"primary_source_evidence_id\": \"source1309\",\n   \
+    \ \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Exact source preparation/formula occurrence for\
+    \ Whole recipe\",\n        \"exact_source_quote\": \"Distilled water 1000.0 ml\"\
+    ,\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Preserve the\
+    \ source-specific stage and exact existing container. Add missing explicit water/mixing\
+    \ representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer\
+    \ to DSM1309 and no exact unprinted autoclave cycle.\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Preserve the source-specific\
+    \ stage and exact existing container. Add missing explicit water/mixing representation;\
+    \ retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309\
+    \ and no exact unprinted autoclave cycle.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\",\n       \
+    \ \"field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n\
+    \            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\",\n   \
+    \         \"description\": \"The NaCl and Na2CO3 were dissolved and autoclaved\
+    \ separately and added to the organic components at 60°C before pouring the agar\
+    \ medium.\"\n          }\n        ],\n        \"decision\": \"add\",\n       \
+    \ \"rationale\": \"The existing preparation preserves separate salt sterilization\
+    \ and combination at 60°C but does not state the 1000 mL water input. Add that\
+    \ source-qualified water amount while preserving the existing preparation text;\
+    \ the present container alone does not support the missing water claim.\"\n  \
+    \    }\n    ],\n    \"arithmetic_and_scope\": \"Preserve the source-specific stage\
+    \ and exact existing container. Add missing explicit water/mixing representation;\
+    \ retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309\
+    \ and no exact unprinted autoclave cycle.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q20\",\n    \"ingredient_or_context\": \"DSM1182 cooling\",\n    \"field_path\"\
+    : \"preparation_steps\",\n    \"local\": null,\n    \"source_amount\": 50,\n \
+    \   \"source_unit\": \"degrees Celsius\",\n    \"source_stage\": \"Separate A/B\
+    \ before mixing\",\n    \"primary_source_evidence_id\": \"source1182\",\n    \"\
+    decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1182\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\"\
+    ,\n        \"source_locator\": \"Exact source preparation/formula occurrence for\
+    \ Separate A/B before mixing\",\n        \"exact_source_quote\": \"cooled to 50°C\"\
+    ,\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n     \
+    \   \"decision\": \"add\",\n        \"rationale\": \"Preserve the source-specific\
+    \ stage and exact existing container. Add missing explicit water/mixing representation;\
+    \ retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309\
+    \ and no exact unprinted autoclave cycle.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": [\n          {\n            \"step_number\"\
+    : 1,\n            \"action\": \"AUTOCLAVE\",\n            \"description\": \"\
+    Autoclave solutions A and B separately and mix when cool. The medium may be solidified\
+    \ by adding 20 g/l agar to solution A. Solutions A and B are then cooled to 50°C,\
+    \ mixed and plates poured immediately.\"\n          },\n          {\n        \
+    \    \"step_number\": 2,\n            \"action\": \"MIX\",\n            \"description\"\
+    : \"Final pH of the medium is 9.5.\"\n          }\n        ],\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"Existing value/container is preserved;\
+    \ the quoted source supports this particular stage. A present preparation list\
+    \ is not a missing local field.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Preserve the source-specific stage and exact existing container. Add missing\
+    \ explicit water/mixing representation; retained DSM owner preparation is evidence_only.\
+    \ No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q21\",\n    \"ingredient_or_context\": \"DSM1309\
+    \ combination\",\n    \"field_path\": \"preparation_steps\",\n    \"local\": null,\n\
+    \    \"source_amount\": 60,\n    \"source_unit\": \"degrees Celsius\",\n    \"\
+    source_stage\": \"Separate salts mixed with organic components\",\n    \"primary_source_evidence_id\"\
+    : \"source1309\",\n    \"decision\": \"add\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"Exact source preparation/formula occurrence for\
+    \ Separate salts mixed with organic components\",\n        \"exact_source_quote\"\
+    : \"components at 60°C\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\",\n        \"rationale\": \"Preserve the\
+    \ source-specific stage and exact existing container. Add missing explicit water/mixing\
+    \ representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer\
+    \ to DSM1309 and no exact unprinted autoclave cycle.\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Preserve the source-specific\
+    \ stage and exact existing container. Add missing explicit water/mixing representation;\
+    \ retained DSM owner preparation is evidence_only. No pH 9.5 transfer to DSM1309\
+    \ and no exact unprinted autoclave cycle.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml\",\n       \
+    \ \"field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n\
+    \            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\",\n   \
+    \         \"description\": \"The NaCl and Na2CO3 were dissolved and autoclaved\
+    \ separately and added to the organic components at 60°C before pouring the agar\
+    \ medium.\"\n          }\n        ],\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"Existing value/container is preserved; the quoted\
+    \ source supports this particular stage. A present preparation list is not a missing\
+    \ local field.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"Preserve the\
+    \ source-specific stage and exact existing container. Add missing explicit water/mixing\
+    \ representation; retained DSM owner preparation is evidence_only. No pH 9.5 transfer\
+    \ to DSM1309 and no exact unprinted autoclave cycle.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q22\",\n    \"ingredient_or_context\": \"DSM1182 final pH\",\n    \"field_path\"\
+    : \"ph_value\",\n    \"local\": 9.5,\n    \"source_amount\": 9.5,\n    \"source_unit\"\
+    : \"pH\",\n    \"source_stage\": \"Mixed DSM1182 only\",\n    \"primary_source_evidence_id\"\
+    : \"source1182\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1182\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\",\n       \
+    \ \"source_locator\": \"Exact source preparation/formula occurrence for Mixed\
+    \ DSM1182 only\",\n        \"exact_source_quote\": \"Final pH of the medium is\
+    \ 9.5.\",\n        \"snapshot_sha256\": \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\"\
+    ,\n        \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml\",\n    \
+    \    \"field_path\": \"ph_value\",\n        \"stored\": 9.5,\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"Existing value/container is preserved;\
+    \ the quoted source supports this particular stage. A present preparation list\
+    \ is not a missing local field.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/aquisalimonas_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 9.5,\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"Existing value/container\
+    \ is preserved; the quoted source supports this particular stage. A present preparation\
+    \ list is not a missing local field.\"\n      }\n    ],\n    \"arithmetic_and_scope\"\
+    : \"Preserve the source-specific stage and exact existing container. Add missing\
+    \ explicit water/mixing representation; retained DSM owner preparation is evidence_only.\
+    \ No pH 9.5 transfer to DSM1309 and no exact unprinted autoclave cycle.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q23\",\n    \"ingredient_or_context\": \"Target agar\
+    \ optionality\",\n    \"field_path\": \"ingredients[5].notes\",\n    \"local\"\
+    : \" (for solid medium)\",\n    \"source_amount\": 20,\n    \"source_unit\": \"\
+    g required\",\n    \"source_stage\": \"DSM1309 target\",\n    \"primary_source_evidence_id\"\
+    : \"source1309\",\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz1309\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf\"\
+    ,\n        \"source_locator\": \"DSM1309 required ingredient row\",\n        \"\
+    exact_source_quote\": \"Agar 20.0 g\",\n        \"snapshot_sha256\": \"203691bc72e9ab1747603688c9570eefab0d361f580da3f6e98bb50a90546714\"\
+    ,\n        \"parsed_text_sha256\": \"4416fa91ce65ecddacecdb6105e2a576ac819d3d4ff370a74dff6faa5cc83afb\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1182\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1182.pdf\",\n   \
+    \     \"source_locator\": \"DSM1182 optional stage\",\n        \"exact_source_quote\"\
+    : \"solidified by adding 20 g/l agar to solution A.\",\n        \"snapshot_sha256\"\
+    : \"37f92531667ad49ce79362d89e392222682ed6be6835c6b064bdfae3766cdf4c\",\n    \
+    \    \"parsed_text_sha256\": \"e10ce2e15449b32722902dbe7d2ecd47d3c5d20001e44e0fba9e3a619b454cee\"\
+    \n      }\n    ],\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[5].notes\",\n        \"stored\"\
+    : \" (for solid medium)\",\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"The inherited for-solid-medium note comes from DSM1182 optional solidification;\
+    \ DSM1309 lists agar without an optional qualifier. Restore the exact formulation\
+    \ distinction.\"\n      }\n    ],\n    \"arithmetic_and_scope\": \"The inherited\
+    \ for-solid-medium note comes from DSM1182 optional solidification; DSM1309 lists\
+    \ agar without an optional qualifier. Restore the exact formulation distinction.\"\
+    \n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.004064.source-variant-merge
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Aquisalimonas1182 stages are merged into Bacillus locisalis1309
+  description: The generated target has seven doubled values and optional-agar wording
+    from 1182 while claiming 1309 identity. The primary recipes differ in agar requirement,
+    stage representation and 50°C versus 60°C combination. Current 1309 owners already
+    have the correct batch values.
+  target_ids:
+  - CultureMech:004064
+  field_paths:
+  - ingredients
+  - merged_from
+  - synonyms
+  - preparation_steps
+  evidence_ids:
+  - source1182
+  - source1309
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.004064.stage-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source-stage water and preparation are lost or mis-scoped
+  description: The target and KOMODO owners omit preparation. DSM1182 owner retains
+    A/B autoclaving, 50°C mixing and pH 9.5; DSM1309 retains separate salts and 60°C.
+    Those are distinct supported scopes. Water and separate-stage amounts require
+    structured representation.
+  target_ids:
+  - CultureMech:004064
+  field_paths:
+  - solutions
+  - preparation_steps
+  - ph_value
+  - ingredients[5].notes
+  evidence_ids:
+  - source1182
+  - source1309
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.004064.high-metal-basis
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Existing owner metal flags require reassessment after stage repair
+  description: Two1182 owners carry high_metal despite concentrations representing
+    separate source stages. The two current writers implement approximate name/unit
+    and corpus-threshold logic, not source-specific chemical validation.
+  target_ids:
+  - CultureMech:004064
+  field_paths:
+  - high_metal
+  evidence_ids:
+  - writer-1
+  - writer-2
+  - quantity-inventory
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconcile the separate maintained source formulations, preserve pairwise
+    identity only where supported, and regenerate distinct or explicitly represented
+    variants. Do not repeat an owner amount repair already present or edit generated
+    YAML.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004064
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore exact source-stage water, optional versus required agar and
+    retained preparation. Keep pH 9.5 only with 1182; do not infer cycle duration/temperature
+    or final-volume measurement.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004064
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: After source-stage repair, independently verify the intended classification
+    basis and regenerate its analysis/flags under separately authorized checks. Preserve
+    current history and do not silently infer a scientific metal phenotype.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004064
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1182_AQUISALIMONAS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1309_BACILLUS_LOCISALIS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/aquisalimonas_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bacillus_locisalis_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current mediadive1182api access failed. Both exact primary formulations are available;
+  1309 historical raw was recovered separately, while 1182 historical quotes remain
+  derivative-only. These current failures are not source-absence claims.
+- Current mediadive1182apiRetry access failed. Both exact primary formulations are
+  available; 1309 historical raw was recovered separately, while 1182 historical quotes
+  remain derivative-only. These current failures are not source-absence claims.
+- Current mediadive1309api access failed. Both exact primary formulations are available;
+  1309 historical raw was recovered separately, while 1182 historical quotes remain
+  derivative-only. These current failures are not source-absence claims.
+- Current mediadive1309apiRetry access failed. Both exact primary formulations are
+  available; 1309 historical raw was recovered separately, while 1182 historical quotes
+  remain derivative-only. These current failures are not source-absence claims.
+- Current komodo1182detail access failed. Both exact primary formulations are available;
+  1309 historical raw was recovered separately, while 1182 historical quotes remain
+  derivative-only. These current failures are not source-absence claims.
+- Current komodo1309detail access failed. Both exact primary formulations are available;
+  1309 historical raw was recovered separately, while 1182 historical quotes remain
+  derivative-only. These current failures are not source-absence claims.
+- This scientific assessment preceded formal review validation and saving; their actual
+  outcomes are recorded separately.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-038
+- generated-medium
+```
