@@ -1,0 +1,4855 @@
+# Source and formulation review: ACY (CultureMech:015483)
+
+- Review: 20261021T114741Z-culturemech-015483-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T11:43:23Z
+- Finished UTC: 2026-10-21T11:47:41Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The current public FEBA ACY block supports the recorded numerical formulation and vitamin expansion, but five fatty acids have volume-to-mass unit substitutions and several asserted chemical forms or molecular-weight annotations need correction or resolution. The description is not a validated weighted-mixture recipe. Historical CultureBotHT import bytes remain unavailable.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 185; batch 019 item 5 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding eighteen task batches contain 180 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 182 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:015483 | data/merge_yaml/merged/ACY.yaml | generated | ACY |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:015483 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:015483 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch019/185/strict.tsv |
+| validate-terms | passed | True | CultureMech:015483 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:015483 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:015483 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: culturebotht_public | unavailable | True | CultureMech:015483 | The exact March 2026 CultureBotHT ACY import payload was not publicly retrieved. The public repository endpoint returned 404; this does not prove historical absence. The current public FEBA formulation is separately accessible but postdates that import. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:015483.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete primary and secondary identifier metadata
+
+grounding: supported. Targets: CultureMech:015483.
+
+35 distinct asserted CHEBI keys resolve to nonobsolete terms; 0 canonical-label mismatches. Exact current secondary lookup misses []; legacy IDs are separately bounded. These are identifier/linkage results, not source-form correctness.
+
+{
+  "scale": "0\u2013100 percent; each denominator is that layer\u2019s direct+nested ingredient-node count, not a scientific score",
+  "counts": {
+    "target": {
+      "ingredient_nodes": 42,
+      "primary_assertions": 36,
+      "secondary_chebi_assertions": 0,
+      "legacy_assertions": 0,
+      "primary_percent": 85.71428571428571,
+      "secondary_chebi_percent": 0.0,
+      "verified_current_secondary_instances": 0,
+      "verified_current_secondary_percent": 0.0
+    },
+    "data/normalized_yaml/specialized/acy.yaml": {
+      "ingredient_nodes": 42,
+      "primary_assertions": 36,
+      "secondary_chebi_assertions": 0,
+      "legacy_assertions": 0,
+      "primary_percent": 85.71428571428571,
+      "secondary_chebi_percent": 0.0,
+      "verified_current_secondary_instances": 0,
+      "verified_current_secondary_percent": 0.0
+    }
+  }
+}
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:015483.
+
+52 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "name": "Peptic digest of animal tissue",
+    "field_path": "ingredients[0].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4723",
+        "exact_source_quote": "Peptic digest of animal tissue\t8\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "8",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[0].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Yeast Extract",
+    "field_path": "ingredients[1].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4724",
+        "exact_source_quote": "Yeast Extract\t5.375\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "5.375",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[1].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Sodium Chloride",
+    "field_path": "ingredients[2].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4725",
+        "exact_source_quote": "Sodium Chloride\t6\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "6",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[2].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Starch",
+    "field_path": "ingredients[3].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4726",
+        "exact_source_quote": "Starch\t0.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[3].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "D-Glucose",
+    "field_path": "ingredients[4].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4727",
+        "exact_source_quote": "D-Glucose\t2.375\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "2.375",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[4].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Sodium pyruvate",
+    "field_path": "ingredients[5].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4728",
+        "exact_source_quote": "Sodium pyruvate\t0.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[5].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "L-Arginine",
+    "field_path": "ingredients[6].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4729",
+        "exact_source_quote": "L-Arginine\t0.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[6].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "sodium succinate",
+    "field_path": "ingredients[7].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4730",
+        "exact_source_quote": "sodium succinate\t0.25\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.25",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[7].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Sodium bicarbonate",
+    "field_path": "ingredients[8].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4731",
+        "exact_source_quote": "Sodium bicarbonate\t0.2\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[8].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "L-Cysteine HCL",
+    "field_path": "ingredients[9].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4732",
+        "exact_source_quote": "L-Cysteine HCL\t1.275\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "1.275",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[9].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Ferric pyrophosphate",
+    "field_path": "ingredients[10].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4733",
+        "exact_source_quote": "Ferric pyrophosphate\t0.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[10].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Hemin",
+    "field_path": "ingredients[11].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4734",
+        "exact_source_quote": "Hemin\t0.005\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.005",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[11].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Menadione",
+    "field_path": "ingredients[12].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4735",
+        "exact_source_quote": "Menadione\t0.000375\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.000375",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[12].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "dithiothreitol",
+    "field_path": "ingredients[13].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4736",
+        "exact_source_quote": "dithiothreitol\t0.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[13].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Sodium thioglycolate",
+    "field_path": "ingredients[14].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4737",
+        "exact_source_quote": "Sodium thioglycolate\t0.25\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.25",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[14].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[14].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Casitone",
+    "field_path": "ingredients[15].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4738",
+        "exact_source_quote": "Casitone\t2.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "2.5",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[15].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[15].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Magnesium Sulfate Heptahydrate",
+    "field_path": "ingredients[16].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4739",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t11.275\tmg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "11.275",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[16].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[16].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Calcium chloride",
+    "field_path": "ingredients[17].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4740",
+        "exact_source_quote": "Calcium chloride\t22.5\tmg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "22.5",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[17].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[17].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Potassium phosphate dibasic",
+    "field_path": "ingredients[18].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4741",
+        "exact_source_quote": "Potassium phosphate dibasic\t0.1125\tmg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.1125",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[18].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[18].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Potassium phosphate monobasic",
+    "field_path": "ingredients[19].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4742",
+        "exact_source_quote": "Potassium phosphate monobasic\t0.1125\tmg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.1125",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[19].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[19].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "pyridoxine HCl",
+    "field_path": "ingredients[20].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 42",
+        "exact_source_quote": "pyridoxine HCl\t10\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.025",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "10 mg/L stock × 0.25 X / 100 X = 0.025 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[20].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[20].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "4-Aminobenzoic acid",
+    "field_path": "ingredients[21].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 43",
+        "exact_source_quote": "4-Aminobenzoic acid\t5\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.0125",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[21].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[21].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Lipoic acid",
+    "field_path": "ingredients[22].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 44",
+        "exact_source_quote": "Lipoic acid\t5\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.0125",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[22].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[22].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Nicotinic Acid",
+    "field_path": "ingredients[23].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 45",
+        "exact_source_quote": "Nicotinic Acid\t5\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.0125",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[23].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[23].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Riboflavin",
+    "field_path": "ingredients[24].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 46",
+        "exact_source_quote": "Riboflavin\t5\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.0125",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[24].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[24].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "thiamine HCl",
+    "field_path": "ingredients[25].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 47",
+        "exact_source_quote": "thiamine HCl\t5\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.0125",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[25].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[25].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "calcium pantothenate",
+    "field_path": "ingredients[26].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 48",
+        "exact_source_quote": "calcium pantothenate\t5\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.0125",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[26].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[26].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "biotin",
+    "field_path": "ingredients[27].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 49",
+        "exact_source_quote": "biotin\t2\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.005",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "2 mg/L stock × 0.25 X / 100 X = 0.005 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[27].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[27].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Folic Acid",
+    "field_path": "ingredients[28].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 50",
+        "exact_source_quote": "Folic Acid\t2\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.005",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "2 mg/L stock × 0.25 X / 100 X = 0.005 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[28].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[28].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Cyanocobalamin",
+    "field_path": "ingredients[29].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 51",
+        "exact_source_quote": "Cyanocobalamin\t0.1\tmg/L",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 41",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Expanded vitamin number agrees with the source stock/receiving-factor calculation; retain the original 100 X stock and 0.25 X receiving factor in evidence. No attached quantity evidence exists.",
+    "local": {
+      "value": "0.00025",
+      "unit": "MG_PER_L"
+    },
+    "arithmetic": "0.1 mg/L stock × 0.25 X / 100 X = 0.00025 mg/L receiving-medium contribution. This dimensional X-ratio does not establish an independently measured final batch volume or mandate a physical stock addition volume.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[29].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[29].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Acetic Acid",
+    "field_path": "ingredients[30].concentration",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4744",
+        "exact_source_quote": "Acetic Acid\t0.475\tml/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The source explicitly reports ml/L but both local layers retain the number as G_PER_L. Preserve the source volume unit; no density or purity supports a mass conversion.",
+    "local": {
+      "value": "0.475",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[30].concentration",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[30].concentration",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "name": "Propionic Acid",
+    "field_path": "ingredients[31].concentration",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4745",
+        "exact_source_quote": "Propionic Acid\t0.175\tml/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The source explicitly reports ml/L but both local layers retain the number as G_PER_L. Preserve the source volume unit; no density or purity supports a mass conversion.",
+    "local": {
+      "value": "0.175",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[31].concentration",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[31].concentration",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "name": "Isobutyric acid",
+    "field_path": "ingredients[32].concentration",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4746",
+        "exact_source_quote": "Isobutyric acid\t0.0225\tml/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The source explicitly reports ml/L but both local layers retain the number as G_PER_L. Preserve the source volume unit; no density or purity supports a mass conversion.",
+    "local": {
+      "value": "0.0225",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[32].concentration",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[32].concentration",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "name": "Valeric acid",
+    "field_path": "ingredients[33].concentration",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4747",
+        "exact_source_quote": "Valeric acid\t0.025\tml/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The source explicitly reports ml/L but both local layers retain the number as G_PER_L. Preserve the source volume unit; no density or purity supports a mass conversion.",
+    "local": {
+      "value": "0.025",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[33].concentration",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[33].concentration",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "name": "Isovaleric acid",
+    "field_path": "ingredients[34].concentration",
+    "decision": "correct",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4748",
+        "exact_source_quote": "Isovaleric acid\t0.025\tml/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The source explicitly reports ml/L but both local layers retain the number as G_PER_L. Preserve the source volume unit; no density or purity supports a mass conversion.",
+    "local": {
+      "value": "0.025",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[34].concentration",
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[34].concentration",
+        "decision": "correct"
+      }
+    ]
+  },
+  {
+    "name": "Proteose Peptone",
+    "field_path": "ingredients[35].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4749",
+        "exact_source_quote": "Proteose Peptone\t1.25\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "1.25",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[35].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[35].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Pancreatic digest of casein",
+    "field_path": "ingredients[36].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4750",
+        "exact_source_quote": "Pancreatic digest of casein\t2.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "2.5",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[36].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[36].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Beef Heart Infusion",
+    "field_path": "ingredients[37].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4751",
+        "exact_source_quote": "Beef Heart Infusion \t0.75\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.75",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[37].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[37].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Sodium carbonate",
+    "field_path": "ingredients[38].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4752",
+        "exact_source_quote": "Sodium carbonate\t0.15\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.15",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[38].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[38].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Iron(II) Sulfate",
+    "field_path": "ingredients[39].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4753",
+        "exact_source_quote": "Iron(II) Sulfate\t0.005\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.005",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[39].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[39].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Tris(hydroxymethyl)aminomethane",
+    "field_path": "ingredients[40].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4754",
+        "exact_source_quote": "Tris(hydroxymethyl)aminomethane\t0.2075\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.2075",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[40].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[40].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Tris hydrochloride",
+    "field_path": "ingredients[41].concentration",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4755",
+        "exact_source_quote": "Tris hydrochloride\t0.715\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4722",
+        "exact_source_quote": "Controlled vocabulary\tConcentration\tUnits",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "Numeric value and source unit match the explicit current ACY formulation, but no matching claim-level reference/snippet is attached. Chemical-form support is assessed independently; no generic name is treated as proof of a hydrate or stereoisomer.",
+    "local": {
+      "value": "0.715",
+      "unit": "G_PER_L"
+    },
+    "arithmetic": "No conversion: preserve the exact printed source amount/unit.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[41].concentration",
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/specialized/acy.yaml",
+        "field_path": "ingredients[41].concentration",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "name": "Wolfe's vitamin mix receiving factor",
+    "field_path": "source.Wolfe_vitamin_mix.receiving_factor",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4743",
+        "exact_source_quote": "Wolfe's vitamin mix\t0.25\tX",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "The source calls for 0.25 X of a stock labelled100 X. Preserve this receiving/stock relationship and its evidence without double-counting the ten expanded vitamin ingredients.",
+    "arithmetic": "Receiving/stock multiplier = 0.25/100 = 0.0025. A stock-strength ratio is not an observed batch volume."
+  },
+  {
+    "name": "Wolfe's vitamin stock strength",
+    "field_path": "source.Wolfe_vitamin_mix.stock_strength",
+    "decision": "add",
+    "source_snippets": [
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 40",
+        "exact_source_quote": "X\t100",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      },
+      {
+        "source_key": "feba_mixes",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes",
+        "source_locator": "Pinned TSV line 39",
+        "exact_source_quote": "Description\tStandard 100X vitamin solution (based on Wolfe's formulation)",
+        "snapshot_sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+      }
+    ],
+    "rationale": "Source stock strength is 100 X; it is a stock qualifier, not a final-medium concentration or the0.25 X receiving dose."
+  },
+  {
+    "name": "ABB description fraction",
+    "field_path": "description.ABB",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4720",
+        "exact_source_quote": "Description\t50% ABB, 25% Columbia, 25% YCFA",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The literal description contains 50% ABB. Its percentage basis is not stated; do not label it v/v or use it alone as proof of every final ingredient amount."
+  },
+  {
+    "name": "Columbia description fraction",
+    "field_path": "description.Columbia",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4720",
+        "exact_source_quote": "Description\t50% ABB, 25% Columbia, 25% YCFA",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The literal description contains 25% Columbia. Its percentage basis is not stated; do not label it v/v or use it alone as proof of every final ingredient amount."
+  },
+  {
+    "name": "YCFA description fraction",
+    "field_path": "description.YCFA",
+    "decision": "evidence_only",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4720",
+        "exact_source_quote": "Description\t50% ABB, 25% Columbia, 25% YCFA",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "The literal description contains 25% YCFA. Its percentage basis is not stated; do not label it v/v or use it alone as proof of every final ingredient amount."
+  },
+  {
+    "name": "Ferric pyrophosphate description comparison",
+    "field_path": "description.weighted_check.Ferric pyrophosphate",
+    "decision": "conflict",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4720",
+        "exact_source_quote": "Description\t50% ABB, 25% Columbia, 25% YCFA",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4733",
+        "exact_source_quote": "Ferric pyrophosphate\t0.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4713",
+        "exact_source_quote": "Ferric pyrophosphate\t0.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "This is a conditional weighted-formulation check assuming the percentage fractions apply linearly to the printed component concentrations; the source does not specify a percentage basis or measured final volume. It does not authorize replacing the explicit ACY row.",
+    "arithmetic": "0.5 × 0.5 = 0.25 g/L; explicit ACY 0.5 g/L."
+  },
+  {
+    "name": "Menadione description comparison",
+    "field_path": "description.weighted_check.Menadione",
+    "decision": "conflict",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4720",
+        "exact_source_quote": "Description\t50% ABB, 25% Columbia, 25% YCFA",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4735",
+        "exact_source_quote": "Menadione\t0.000375\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4715",
+        "exact_source_quote": "Menadione\t0.0005\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4607",
+        "exact_source_quote": "Menadione\t0.001\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "This is a conditional weighted-formulation check assuming the percentage fractions apply linearly to the printed component concentrations; the source does not specify a percentage basis or measured final volume. It does not authorize replacing the explicit ACY row.",
+    "arithmetic": "0.5 × 0.0005 + 0.25 × 0.001 = 0.00050 g/L; explicit ACY 0.000375 g/L."
+  },
+  {
+    "name": "Sodium bicarbonate description comparison",
+    "field_path": "description.weighted_check.Sodium bicarbonate",
+    "decision": "conflict",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4720",
+        "exact_source_quote": "Description\t50% ABB, 25% Columbia, 25% YCFA",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4731",
+        "exact_source_quote": "Sodium bicarbonate\t0.2\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4711",
+        "exact_source_quote": "Sodium bicarbonate\t0.4\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4769",
+        "exact_source_quote": "Sodium bicarbonate\t4\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "This is a conditional weighted-formulation check assuming the percentage fractions apply linearly to the printed component concentrations; the source does not specify a percentage basis or measured final volume. It does not authorize replacing the explicit ACY row.",
+    "arithmetic": "0.5 × 0.4 + 0.25 × 4 = 1.20 g/L; explicit ACY 0.2 g/L."
+  },
+  {
+    "name": "L-Cysteine HCL description comparison",
+    "field_path": "description.weighted_check.L-Cysteine HCL",
+    "decision": "conflict",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4720",
+        "exact_source_quote": "Description\t50% ABB, 25% Columbia, 25% YCFA",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4732",
+        "exact_source_quote": "L-Cysteine HCL\t1.275\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4712",
+        "exact_source_quote": "L-Cysteine HCL\t0.5\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4603",
+        "exact_source_quote": "L-Cysteine HCL\t0.1\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4770",
+        "exact_source_quote": "L-Cysteine\t1\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "This is a conditional weighted-formulation check assuming the percentage fractions apply linearly to the printed component concentrations; the source does not specify a percentage basis or measured final volume. It does not authorize replacing the explicit ACY row. YCFA separately lists free L-cysteine 1 g/L; do not add that mass to hydrochloride as the same supplied chemical form.",
+    "arithmetic": "0.5 × 0.5 + 0.25 × 0.1 = 0.275 g/L; explicit ACY 1.275 g/L."
+  },
+  {
+    "name": "Magnesium Sulfate Heptahydrate description comparison",
+    "field_path": "description.weighted_check.Magnesium Sulfate Heptahydrate",
+    "decision": "conflict",
+    "source_snippets": [
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4720",
+        "exact_source_quote": "Description\t50% ABB, 25% Columbia, 25% YCFA",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4739",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t11.275\tmg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4764",
+        "exact_source_quote": "Magnesium Sulfate Heptahydrate\t45\tmg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      },
+      {
+        "source_key": "feba_media",
+        "source_url": "https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media",
+        "source_locator": "Pinned TSV line 4602",
+        "exact_source_quote": "Magnesium sulfate\t0.1\tg/L",
+        "snapshot_sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+      }
+    ],
+    "rationale": "This is a conditional weighted-formulation check assuming the percentage fractions apply linearly to the printed component concentrations; the source does not specify a percentage basis or measured final volume. It does not authorize replacing the explicit ACY row. Columbia separately lists generic magnesium sulfate 0.1 g/L; its unspecified hydrate and different unit prevent silent combination with the heptahydrate.",
+    "arithmetic": "0.25 × 45 = 11.25 mg/L; explicit ACY 11.275 mg/L."
+  }
+]
+
+### Exact source identity and maintained owner
+
+identity: concern. Targets: CultureMech:015483.
+
+The generated 42-ingredient ACY record matches its maintained specialized/acy.yaml owner. Current public FEBA provides the exact ACY label and explicit formulation; the private-or-unavailable historical CultureBotHT payload is not authenticated by that later source. No accession variant is substituted.
+
+### Literal amounts, source units and vitamin calculation
+
+quantity: concern. Targets: CultureMech:015483.
+
+All 42 numerical values correspond to 32 direct ACY rows and ten vitamin calculations. Five fatty acids should retain ML_PER_L rather than G_PER_L. Both phosphate rows explicitly say 0.1125 mg/L; their unusual values are not silently changed. The ten vitamin amounts are stock concentration × 0.25/100, separate from stock strength and receiving factor. No local ingredient carries matching quantity evidence.
+
+### Salt, hydrate, stereochemistry and annotation specificity
+
+grounding: concern. Targets: CultureMech:015483.
+
+Tris hydrochloride and Tris base share neutral CHEBI:9754 despite different source rows. Calcium chloride has a dihydrate term but local anhydrous CAS/MW notes and a generic source label. Calcium pantothenate MW 238.27 conflicts with the asserted term’s complete formula mass 476.536. Generic source dithiothreitol, sodium succinate, iron(II)sulfate and calcium pantothenate do not independently establish L stereochemistry, anhydrous forms or the pantothenate structural stereochemistry. Lipoic-acid CAS 1077-28-7 differs from the captured term cross-reference 62-46-4; this is unresolved metadata correspondence, not proof that the generic source dose or an alternative ID is wrong.
+
+### Source-supported preparation and culture conditions
+
+completeness: unknown. Targets: CultureMech:015483.
+
+Neither this local record nor the exact FEBA ACY/Wolfe definition blocks supply a preparation protocol, pH, sterilization temperature/time, stock solvent volume, incubation condition or organism-specific growth result. These are bounded source gaps, not permission to invent standard procedures or infer anaerobic conditions from the ABB expansion.
+
+### Complexity, physical state and biological claims
+
+scope: supported. Targets: CultureMech:015483.
+
+COMPLEX/UNDEFINED is supported by the named peptic digests, yeast extract, casitone and heart infusion; the source describes component broths and nonminimal formulation. LIQUID is consistent with those broth definitions. The specialized category is an organizational filing, not a taxonomic or growth assertion. No target organisms, strains, DOI/PMID or growth/optimum claim is present to transfer from FEBA’s software purpose.
+
+### ACY description versus component formulations
+
+scope: concern. Targets: CultureMech:015483.
+
+The literal 50%/25%/25% description is retained, but its basis is unstated. Conditional linear weighting gives ferric pyrophosphate 0.25 versus explicit 0.5 g/L, menadione 0.0005 versus 0.000375 g/L, and bicarbonate 1.2 versus 0.2 g/L. Cysteine and magnesium comparisons also involve different supplied forms. The explicit ACY rows remain the current formulation evidence; neither table is silently corrected.
+
+### Current maintained-input and generator boundaries
+
+provenance: supported. Targets: CultureMech:015483.
+
+The 42 local ingredient nodes are identical between target and owner. Current CultureBotHT import code copies the supplied recipe and appends provenance/category defaults; it does not verify FEBA row units or chemical identity. Current formulation merge code rejects incompatible formulation payloads; an identity-set fingerprint alone cannot validate preparation or amounts. Future authorized corrections belong in specialized/acy.yaml and the actual input transform if still used, followed by regeneration.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:015483.
+
+13 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+## Findings
+
+### f1: Five fatty-acid volume doses are represented as mass concentrations
+
+major / open / confirmed; issue key: culturemech.015483.fatty-acid-volume-units.
+
+Acetic, propionic, isobutyric, valeric and isovaleric acid retain source values 0.475, 0.175, 0.0225, 0.025 and 0.025 but change ml/L to G_PER_L in both local layers. Density and source purity are not given, so equal numbers are not a justified mass conversion.
+
+### f2: Tris hydrochloride, calcium chloride and pantothenate metadata are inconsistent
+
+major / open / confirmed; issue key: culturemech.015483.supplied-form-conflicts.
+
+Source Tris hydrochloride 0.715 g/L is mapped to neutral tris, also used for the separate 0.2075 g/L base. Calcium chloride’s CHEBI:86158 denotes dihydrate with mass 147.014 and CAS 10035-04-8, conflicting with local CAS 10043-52-4/MW 110.98; the generic FEBA name cannot resolve the supplied hydrate. Pantothenate MW 238.27 is half the captured formula mass 476.536 for 2C9H16NO5.Ca. These annotations must not drive unsupported molar conversions.
+
+### f3: Generic source ingredients have unsupported specific forms
+
+major / open / confirmed; issue key: culturemech.015483.unsupported-form-specificity.
+
+Generic dithiothreitol is narrowed to L-1,4-dithiothreitol; generic sodium succinate and iron(II)sulfate to explicitly anhydrous terms. Calcium pantothenate’s generic label obscures a stereospecific structure in CHEBI:31345. Broad ontology synonyms do not independently establish these supplied forms.
+
+### f4: Current source quantities and mixture limits lack claim-level evidence
+
+minor / open / confirmed; issue key: culturemech.015483.source-claim-evidence.
+
+The sole source link is CultureBotHT and no ingredient has a source snippet. Current public FEBA supports the explicit formulation but postdates the historical import. Its source-internal mixture description differences and the vitamin stock calculation are not documented in the record.
+
+### f5: Yeast extract carries a malformed CAS annotation
+
+minor / open / confirmed; issue key: culturemech.015483.yeast-cas-annotation.
+
+Both layers label 232-387-9 as CAS, although its middle group has three digits rather than the two-digit CAS registry-number grouping. No inspected source identifies this as the asserted yeast-extract CAS. No replacement EC or CAS identity is established here.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Preserve the exact FEBA volume-dose values as ML_PER_L with literal source evidence; do not infer mass equivalents. Correct the maintained input and verify its generated correspondence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Ground the exact Tris hydrochloride salt after verifying an appropriate identifier; reconcile calcium chloride form and pantothenate mass annotations against exact supplied material. Preserve printed source mass doses while unresolved and do not invent replacement IDs.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Verify the exact source material before retaining stereochemical/hydration specificity; otherwise preserve the unresolved form and seek supported grounding without guessing alternative IDs.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach the pinned public FEBA references and exact per-claim excerpts, including stock-factor arithmetic and conditional description conflicts. Preserve the original import history and explicitly distinguish unavailable historical bytes from the later supporting source.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Verify the namespace and substance identity for the yeast-extract note, then correct or remove the misleading CAS label while preserving historical provenance; do not guess a replacement registry identifier.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACY.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/specialized/acy.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACY.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACY.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch019/185/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch019/185/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACY.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACY.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ACY.yaml:1:id: CultureMech:015483<br>./data/normalized_yaml/specialized/acy.yaml:1:id: CultureMech:015483<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch019/source-preflight-bound/185/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 41 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| source-context | /private/tmp/culturemech-review-work-batch019/source-preflight-bound/185/evidence-context-original.json; Frozen per-record preflight; exact source fields, owner/dependency inventories and source limitations | context_only | The preflight is diagnostic context. Its literal captures and current input bytes are independently read and assessed here; no provisional coverage or source conclusion is automatically promoted. |
+| feba_media | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media; Pinned metadata/media, ACY lines4719–4755; complete ABB4699–4717, Columbia4590–4607 and YCFA4757–4777 blocks | supports | The current public source gives 32 direct ACY ingredient rows plus 0.25 X Wolfe vitamin mix, with literal g/L, mg/L and ml/L units. The component descriptions and source-internal differences are retained. |
+| feba_mixes | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes; Pinned metadata/mixes, lines38–51 | supports | The named Wolfe vitamin stock is 100 X and lists ten vitamin concentrations in mg/L; receiving medium calls for 0.25 X. |
+| feba_commit | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/commit/803273865ea9e83fab770ec4f13670db80e1180b; Commit hash/date fields | supports | Public source version 803273865ea9e83fab770ec4f13670db80e1180b is dated 2026-09-10, after the record’s March 2026 import. It establishes this public snapshot, not historical import equivalence. |
+| feba_repository | https://api.bitbucket.org/2.0/repositories/berkeleylab/feba; full_name and is_private | supports | The captured Berkeley Lab FEBA repository metadata declares the source public. |
+| culturebotht_public-attempt | https://api.github.com/repos/CultureBotAI/CultureBotHT; Preserved exact public retrieval result | context_only | The exact March 2026 CultureBotHT ACY import payload was not publicly retrieved. The public repository endpoint returned 404; this does not prove historical absence. The current public FEBA formulation is separately accessible but postdates that import. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi132767 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132767; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:132767 resolves to ferric pyrophosphate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi15366 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15366; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:15366 resolves to acetic acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:15940 resolves to nicotinic acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:15956 resolves to biotin. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi16135 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16135; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:16135 resolves to isobutyric acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi16467 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16467; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:16467 resolves to L-arginine. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:16494 resolves to lipoic acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:17015 resolves to riboflavin. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi17418 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17418; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:17418 resolves to valeric acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi17439 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17439; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:17439 resolves to cyanocob(III)alamin. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:17634 resolves to D-glucose. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:26710 resolves to sodium chloride. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:27470 resolves to folic acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi28017 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:28017 resolves to starch. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi28484 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28484; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:28484 resolves to isovaleric acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi28869 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28869; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:28869 resolves to menadione. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:29377 resolves to sodium carbonate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi30768 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30768; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:30768 resolves to propionic acid. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:31345 resolves to Calcium pantothenate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi42106 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_42106; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:42106 resolves to L-1,4-dithiothreitol. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:49105 resolves to thiamine hydrochloride. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi50144 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:50144 resolves to sodium pyruvate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi50385 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50385; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:50385 resolves to hemin. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi63675 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63675; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:63675 resolves to sodium succinate (anhydrous). A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi75832 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75832; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:75832 resolves to iron(2+) sulfate (anhydrous). A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:86158 resolves to calcium chloride dihydrate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi86481 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86481; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:86481 resolves to sodium thioglycolate. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi91247 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91247; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:91247 resolves to L-cysteine hydrochloride. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| chebi9754 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754; Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure annotations | supports | CHEBI:9754 resolves to tris. A matching nonobsolete label is not evidence that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific concerns are assessed separately. |
+| mim-grounding | src/culturemech/data/mediaingredientmech/label_index.csv; Complete exact preferred_term/MAPPED lookup for every asserted current secondary key; adjacent source_commit/hash metadata | context_only | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "matches": {}, "missing_keys": [], "legacy_assertions": []} |
+| chemical-metadata | /private/tmp/culturemech-review-work-batch019/185/chemical-metadata-context.json; All asserted ingredient IDs/labels, formula/CAS/mass/structure fields and per-layer linkage denominators | context_only | All source-specific identity decisions are separated from canonical metadata correspondence. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch019/185/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content at line 48; merge_formulation_evidence at line 92 | context_only | Current scoped source/merge functions were read in their pinned files. This is implementation context, not a replay of historical import or proof that every old defect is produced by current code. |
+| writer-context-1 | scripts/import_from_culturebotht.py; infer_category at line 103; transform_medium at line 115 | context_only | Current scoped source/merge functions were read in their pinned files. This is implementation context, not a replay of historical import or proof that every old defect is produced by current code. |
+| history-metadata | data/merge_yaml/merged/ACY.yaml; data/normalized_yaml/specialized/acy.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/specialized/acy.yaml", "events": 6, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact March 2026 CultureBotHT ACY import payload was not publicly retrieved. The public repository endpoint returned 404; this does not prove historical absence. The current public FEBA formulation is separately accessible but postdates that import.
+- No density, percentage basis, hydrate, stereoisomer, measured final volume, pH or unreported preparation protocol was inferred. FEBA’s explicitly unusual phosphate and magnesium values are retained as printed.
+- Public FEBA source metadata is later than the recorded CultureBotHT import; required historical source access remains unavailable, so this is a partial review despite successful canonical checks.
+- No separate exhaustive source-product/CAS registry search was performed. Lipoic-acid CAS correspondence and generic supplied forms remain bounded uncertainties; no chemical identity was substituted.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T114741Z-culturemech-015483-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: ACY (CultureMech:015483)'
+started_at: '2026-10-21T11:43:23Z'
+finished_at: '2026-10-21T11:47:41Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The current public FEBA ACY block supports the recorded numerical formulation
+  and vitamin expansion, but five fatty acids have volume-to-mass unit substitutions
+  and several asserted chemical forms or molecular-weight annotations need correction
+  or resolution. The description is not a validated weighted-mixture recipe. Historical
+  CultureBotHT import bytes remain unavailable.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACY.yaml
+    sha256: f89fbb958f43d3c1124b3dcf41cf31147751c7ea4ec3bc42d73a57abe2c7113e
+    role: target
+  - path: data/normalized_yaml/specialized/acy.yaml
+    sha256: b1061320ee23e7648d0f462712c9e62a0678e4ad7e85f99fca2d727adef77e05
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 185; batch 019 item 5 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eighteen task batches
+    contain 180 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 182 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:015483
+targets:
+- target_id: CultureMech:015483
+  path: data/merge_yaml/merged/ACY.yaml
+  label: ACY
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACY.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACY.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch019/185/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch019/185/strict.tsv"
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACY.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACY.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:015483
+- check_id: culturebotht_public-source-access
+  name: 'Exact source content access: culturebotht_public'
+  required: true
+  status: unavailable
+  summary: The exact March 2026 CultureBotHT ACY import payload was not publicly retrieved.
+    The public repository endpoint returned 404; this does not prove historical absence.
+    The current public FEBA formulation is separately accessible but postdates that
+    import.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - culturebotht_public-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACY.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/specialized/acy.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACY.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:44:08.689592Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACY.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch019/185/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:44:10.645499Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch019/185/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACY.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:44:12.929286Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACY.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T11:44:14.855861Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACY.yaml:1:id: CultureMech:015483
+
+    ./data/normalized_yaml/specialized/acy.yaml:1:id: CultureMech:015483
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch019/source-preflight-bound/185/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: supports
+  summary: 41 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 80daec2be9004b943e227f4f084edc67da8a3cf7d17aeeeee85d77ea99ca3bf2
+- evidence_id: source-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch019/source-preflight-bound/185/evidence-context-original.json
+  locator: Frozen per-record preflight; exact source fields, owner/dependency inventories
+    and source limitations
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: The preflight is diagnostic context. Its literal captures and current input
+    bytes are independently read and assessed here; no provisional coverage or source
+    conclusion is automatically promoted.
+  snapshot_sha256: 1405bb9ee03afa43c6f6915f2c30325f06f76b58c9e0a5a31ea58a2a027e5a00
+- evidence_id: feba_media
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media
+  locator: Pinned metadata/media, ACY lines4719–4755; complete ABB4699–4717, Columbia4590–4607
+    and YCFA4757–4777 blocks
+  accessed_at: '2026-10-21T07:58:53.930003Z'
+  support: supports
+  summary: The current public source gives 32 direct ACY ingredient rows plus 0.25
+    X Wolfe vitamin mix, with literal g/L, mg/L and ml/L units. The component descriptions
+    and source-internal differences are retained.
+  snapshot_sha256: a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848
+- evidence_id: feba_mixes
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes
+  locator: Pinned metadata/mixes, lines38–51
+  accessed_at: '2026-10-21T07:58:53.930648Z'
+  support: supports
+  summary: The named Wolfe vitamin stock is 100 X and lists ten vitamin concentrations
+    in mg/L; receiving medium calls for 0.25 X.
+  snapshot_sha256: b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4
+- evidence_id: feba_commit
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/commit/803273865ea9e83fab770ec4f13670db80e1180b
+  locator: Commit hash/date fields
+  accessed_at: '2026-10-21T07:59:41.378955Z'
+  support: supports
+  summary: Public source version 803273865ea9e83fab770ec4f13670db80e1180b is dated
+    2026-09-10, after the record’s March 2026 import. It establishes this public snapshot,
+    not historical import equivalence.
+  snapshot_sha256: 0a4998d61b96db10c549512e2fe06718e04b687e6bbc6b2c1ea121c3c11a53ca
+- evidence_id: feba_repository
+  kind: database
+  reference: https://api.bitbucket.org/2.0/repositories/berkeleylab/feba
+  locator: full_name and is_private
+  accessed_at: '2026-10-21T07:59:41.398386Z'
+  support: supports
+  summary: The captured Berkeley Lab FEBA repository metadata declares the source
+    public.
+  snapshot_sha256: 372200e263f3778f94d97fb0a4d6d1abfbd1f3e70f47b277e24d51acf36eff62
+- evidence_id: culturebotht_public-attempt
+  kind: database
+  reference: https://api.github.com/repos/CultureBotAI/CultureBotHT
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T11:29:06.756125Z'
+  support: context_only
+  summary: The exact March 2026 CultureBotHT ACY import payload was not publicly retrieved.
+    The public repository endpoint returned 404; this does not prove historical absence.
+    The current public FEBA formulation is separately accessible but postdates that
+    import.
+  snapshot_sha256: 4f50e254a719a6b1b06b529bdaa08980e4acf0878aad0090cba7771f6ebdf0b9
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi132767
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132767
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T09:27:39.168264Z'
+  support: supports
+  summary: CHEBI:132767 resolves to ferric pyrophosphate. A matching nonobsolete label
+    is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 4264ab17d5b8af4f0619ab7fafb1e12fb178393bbba6d9f8150257dec67f9722
+- evidence_id: chebi15366
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15366
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T11:29:08.353669Z'
+  support: supports
+  summary: CHEBI:15366 resolves to acetic acid. A matching nonobsolete label is not
+    evidence that the source supplied this exact salt, hydrate, stereoisomer or material.
+    Source-specific concerns are assessed separately.
+  snapshot_sha256: b887e3ee7d15164ff6fa8efd11f052ea16965afb730d69ccf31744ffb64d2139
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. A matching nonobsolete label is
+    not evidence that the source supplied this exact salt, hydrate, stereoisomer or
+    material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. A matching nonobsolete label is not evidence
+    that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific
+    concerns are assessed separately.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16135
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16135
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T11:29:08.576156Z'
+  support: supports
+  summary: CHEBI:16135 resolves to isobutyric acid. A matching nonobsolete label is
+    not evidence that the source supplied this exact salt, hydrate, stereoisomer or
+    material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 9066add4e624c1d66e8ed2b31b6d8cd83aee6227fe29e0fe5a7bf1d36fedb4ab
+- evidence_id: chebi16467
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16467
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T09:27:39.404033Z'
+  support: supports
+  summary: CHEBI:16467 resolves to L-arginine. A matching nonobsolete label is not
+    evidence that the source supplied this exact salt, hydrate, stereoisomer or material.
+    Source-specific concerns are assessed separately.
+  snapshot_sha256: f119fe4b838d4a2f22f3ca2b773986a4176dc2faa472d514ee2244d1a0e268a0
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. A matching nonobsolete label is not
+    evidence that the source supplied this exact salt, hydrate, stereoisomer or material.
+    Source-specific concerns are assessed separately.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. A matching nonobsolete label is not
+    evidence that the source supplied this exact salt, hydrate, stereoisomer or material.
+    Source-specific concerns are assessed separately.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi17418
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17418
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T11:29:08.845270Z'
+  support: supports
+  summary: CHEBI:17418 resolves to valeric acid. A matching nonobsolete label is not
+    evidence that the source supplied this exact salt, hydrate, stereoisomer or material.
+    Source-specific concerns are assessed separately.
+  snapshot_sha256: 6546fe66aa87af53dc1299ff42f673250bf3224d190f83b9b21df72da4eb863b
+- evidence_id: chebi17439
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17439
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T07:16:23.574834Z'
+  support: supports
+  summary: CHEBI:17439 resolves to cyanocob(III)alamin. A matching nonobsolete label
+    is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 210a9fbc1db1c75e6053f4e23d098851ad5c63f087c736061f7664d9a393dbdd
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose. A matching nonobsolete label is not
+    evidence that the source supplied this exact salt, hydrate, stereoisomer or material.
+    Source-specific concerns are assessed separately.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. A matching nonobsolete label is
+    not evidence that the source supplied this exact salt, hydrate, stereoisomer or
+    material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. A matching nonobsolete label is not
+    evidence that the source supplied this exact salt, hydrate, stereoisomer or material.
+    Source-specific concerns are assessed separately.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi28017
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:42:42.748724Z'
+  support: supports
+  summary: CHEBI:28017 resolves to starch. A matching nonobsolete label is not evidence
+    that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific
+    concerns are assessed separately.
+  snapshot_sha256: 959b4330165a7ff12d2e464f4a7b44e148376624d04cf7764b6a8671c1c99204
+- evidence_id: chebi28484
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28484
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T11:29:08.988065Z'
+  support: supports
+  summary: CHEBI:28484 resolves to isovaleric acid. A matching nonobsolete label is
+    not evidence that the source supplied this exact salt, hydrate, stereoisomer or
+    material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 2b4dfb8baa01781ecd4134258216b42713d7a04212539eab80e08ba7f10e1a72
+- evidence_id: chebi28869
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28869
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T09:27:39.892502Z'
+  support: supports
+  summary: CHEBI:28869 resolves to menadione. A matching nonobsolete label is not
+    evidence that the source supplied this exact salt, hydrate, stereoisomer or material.
+    Source-specific concerns are assessed separately.
+  snapshot_sha256: 7d5bbd9644ae17adf1a4cf5660c04a06c2db3430709c2a0d2da9a026611d9444
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. A matching nonobsolete label
+    is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. A matching nonobsolete label
+    is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30768
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30768
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T11:29:09.188555Z'
+  support: supports
+  summary: CHEBI:30768 resolves to propionic acid. A matching nonobsolete label is
+    not evidence that the source supplied this exact salt, hydrate, stereoisomer or
+    material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 80537b4c820ccc6f118b47ad4c3cefcd2592c467d49b3097b4caf5bc6d993e59
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. A matching nonobsolete label
+    is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi42106
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_42106
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T09:27:40.422808Z'
+  support: supports
+  summary: CHEBI:42106 resolves to L-1,4-dithiothreitol. A matching nonobsolete label
+    is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 404368faec648f9d3e0c0d8bf5b3c57b86917a68b74cfeed0c9f6bc041717655
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi50144
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-20T07:22:07.440767Z'
+  support: supports
+  summary: CHEBI:50144 resolves to sodium pyruvate. A matching nonobsolete label is
+    not evidence that the source supplied this exact salt, hydrate, stereoisomer or
+    material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 457ed29adfdea68c420ea0c094d7d75593958fc70f908f6809348e4e12e7e15d
+- evidence_id: chebi50385
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50385
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T09:27:40.648821Z'
+  support: supports
+  summary: CHEBI:50385 resolves to hemin. A matching nonobsolete label is not evidence
+    that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific
+    concerns are assessed separately.
+  snapshot_sha256: b989203634707b89526a8664c8fa65cb4976c4cdd791427218cf01b37d17356e
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63675
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63675
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T09:27:41.075057Z'
+  support: supports
+  summary: CHEBI:63675 resolves to sodium succinate (anhydrous). A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 4c54df9f2d63f54dea26d64e4ec9fedeb486c2c2abe44b70c5c621512f1fdd3c
+- evidence_id: chebi75832
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75832
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T11:01:47.645147Z'
+  support: supports
+  summary: CHEBI:75832 resolves to iron(2+) sulfate (anhydrous). A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: b9119cb3893b1a8171f719ef3e8fe6e5775a4fd59575baec8cd6da953801d089
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86481
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86481
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T09:27:41.310467Z'
+  support: supports
+  summary: CHEBI:86481 resolves to sodium thioglycolate. A matching nonobsolete label
+    is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 444afd61f333b50a1be0a902c67c78c7b97483187e4fb554b6f7deeb009cd966
+- evidence_id: chebi91247
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91247
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T09:27:41.606984Z'
+  support: supports
+  summary: CHEBI:91247 resolves to L-cysteine hydrochloride. A matching nonobsolete
+    label is not evidence that the source supplied this exact salt, hydrate, stereoisomer
+    or material. Source-specific concerns are assessed separately.
+  snapshot_sha256: 8ff9a3639e1afba34c0d40072292486ff792c7b63a496d189a1cfeb2e6574890
+- evidence_id: chebi9754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754
+  locator: Exact OLS obo_id, label, obsolete flag, definition, supplied-form formula/CAS/mass/structure
+    annotations
+  accessed_at: '2026-10-21T08:43:13.713319Z'
+  support: supports
+  summary: CHEBI:9754 resolves to tris. A matching nonobsolete label is not evidence
+    that the source supplied this exact salt, hydrate, stereoisomer or material. Source-specific
+    concerns are assessed separately.
+  snapshot_sha256: b9f921dfa34f343d4ef51ee217fc47702a8f03e2b9a8353effa10de89e9c6659
+- evidence_id: mim-grounding
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete exact preferred_term/MAPPED lookup for every asserted current
+    secondary key; adjacent source_commit/hash metadata
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "matches":
+    {}, "missing_keys": [], "legacy_assertions": []}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: chemical-metadata
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch019/185/chemical-metadata-context.json
+  locator: All asserted ingredient IDs/labels, formula/CAS/mass/structure fields and
+    per-layer linkage denominators
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: All source-specific identity decisions are separated from canonical metadata
+    correspondence.
+  snapshot_sha256: 26e7973e2af25511e72657345d7045981846283d61e64622abaded2d809cc1ab
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch019/185/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 92a196367fd65f27e26a70a13bdd938445cdaea4527e0bec7a9174c007025cbe
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content at line 48; merge_formulation_evidence at line 92
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: Current scoped source/merge functions were read in their pinned files.
+    This is implementation context, not a replay of historical import or proof that
+    every old defect is produced by current code.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: scripts/import_from_culturebotht.py
+  locator: infer_category at line 103; transform_medium at line 115
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: Current scoped source/merge functions were read in their pinned files.
+    This is implementation context, not a replay of historical import or proof that
+    every old defect is produced by current code.
+  snapshot_sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACY.yaml; data/normalized_yaml/specialized/acy.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T11:47:39Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/specialized/acy.yaml",
+    "events": 6, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Complete primary and secondary identifier metadata
+  outcome: supported
+  summary: 35 distinct asserted CHEBI keys resolve to nonobsolete terms; 0 canonical-label
+    mismatches. Exact current secondary lookup misses []; legacy IDs are separately
+    bounded. These are identifier/linkage results, not source-form correctness.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - chemical-metadata
+  - mim-grounding
+  - chebi131527
+  - chebi132767
+  - chebi15366
+  - chebi15940
+  - chebi15956
+  - chebi16135
+  - chebi16467
+  - chebi16494
+  - chebi17015
+  - chebi17418
+  - chebi17439
+  - chebi17634
+  - chebi26710
+  - chebi27470
+  - chebi28017
+  - chebi28484
+  - chebi28869
+  - chebi29377
+  - chebi30753
+  - chebi30768
+  - chebi30961
+  - chebi31345
+  - chebi31795
+  - chebi32139
+  - chebi42106
+  - chebi49105
+  - chebi50144
+  - chebi50385
+  - chebi63036
+  - chebi63675
+  - chebi75832
+  - chebi86158
+  - chebi86481
+  - chebi91247
+  - chebi9754
+  details: "{\n  \"scale\": \"0\\u2013100 percent; each denominator is that layer\\\
+    u2019s direct+nested ingredient-node count, not a scientific score\",\n  \"counts\"\
+    : {\n    \"target\": {\n      \"ingredient_nodes\": 42,\n      \"primary_assertions\"\
+    : 36,\n      \"secondary_chebi_assertions\": 0,\n      \"legacy_assertions\":\
+    \ 0,\n      \"primary_percent\": 85.71428571428571,\n      \"secondary_chebi_percent\"\
+    : 0.0,\n      \"verified_current_secondary_instances\": 0,\n      \"verified_current_secondary_percent\"\
+    : 0.0\n    },\n    \"data/normalized_yaml/specialized/acy.yaml\": {\n      \"\
+    ingredient_nodes\": 42,\n      \"primary_assertions\": 36,\n      \"secondary_chebi_assertions\"\
+    : 0,\n      \"legacy_assertions\": 0,\n      \"primary_percent\": 85.71428571428571,\n\
+    \      \"secondary_chebi_percent\": 0.0,\n      \"verified_current_secondary_instances\"\
+    : 0,\n      \"verified_current_secondary_percent\": 0.0\n    }\n  }\n}"
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 52 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"name\": \"Peptic digest of animal tissue\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"source_snippets\": [\n      {\n        \"source_key\": \"feba_media\",\n\
+    \        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4723\",\n        \"exact_source_quote\"\
+    : \"Peptic digest of animal tissue\\t8\\tg/L\",\n        \"snapshot_sha256\":\
+    \ \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"8\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Yeast Extract\",\n    \"field_path\": \"ingredients[1].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4724\",\n        \"exact_source_quote\"\
+    : \"Yeast Extract\\t5.375\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"5.375\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Sodium Chloride\",\n    \"field_path\": \"ingredients[2].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4725\",\n        \"exact_source_quote\"\
+    : \"Sodium Chloride\\t6\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"6\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Starch\",\n    \"field_path\": \"ingredients[3].concentration\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4726\",\n        \"exact_source_quote\"\
+    : \"Starch\\t0.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"D-Glucose\",\n    \"field_path\": \"ingredients[4].concentration\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4727\",\n        \"exact_source_quote\"\
+    : \"D-Glucose\\t2.375\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"2.375\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Sodium pyruvate\",\n    \"field_path\": \"ingredients[5].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4728\",\n        \"exact_source_quote\"\
+    : \"Sodium pyruvate\\t0.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"L-Arginine\",\n    \"field_path\": \"ingredients[6].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4729\",\n        \"exact_source_quote\"\
+    : \"L-Arginine\\t0.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"sodium succinate\",\n    \"field_path\": \"ingredients[7].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4730\",\n        \"exact_source_quote\"\
+    : \"sodium succinate\\t0.25\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.25\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Sodium bicarbonate\",\n    \"field_path\": \"ingredients[8].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4731\",\n        \"exact_source_quote\"\
+    : \"Sodium bicarbonate\\t0.2\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.2\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"L-Cysteine HCL\",\n    \"field_path\": \"ingredients[9].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4732\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine HCL\\t1.275\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"1.275\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Ferric pyrophosphate\",\n    \"field_path\": \"ingredients[10].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4733\",\n        \"exact_source_quote\"\
+    : \"Ferric pyrophosphate\\t0.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Hemin\",\n    \"field_path\": \"ingredients[11].concentration\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4734\",\n        \"exact_source_quote\"\
+    : \"Hemin\\t0.005\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.005\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Menadione\",\n    \"field_path\": \"ingredients[12].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4735\",\n        \"exact_source_quote\"\
+    : \"Menadione\\t0.000375\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.000375\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No\
+    \ conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[12].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"dithiothreitol\",\n    \"field_path\": \"ingredients[13].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4736\",\n        \"exact_source_quote\"\
+    : \"dithiothreitol\\t0.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[13].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Sodium thioglycolate\",\n    \"field_path\": \"ingredients[14].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4737\",\n        \"exact_source_quote\"\
+    : \"Sodium thioglycolate\\t0.25\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.25\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[14].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[14].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Casitone\",\n    \"field_path\": \"ingredients[15].concentration\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4738\",\n        \"exact_source_quote\"\
+    : \"Casitone\\t2.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"2.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[15].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[15].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Magnesium Sulfate Heptahydrate\",\n    \"field_path\": \"ingredients[16].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4739\",\n        \"exact_source_quote\"\
+    : \"Magnesium Sulfate Heptahydrate\\t11.275\\tmg/L\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"11.275\",\n      \"unit\": \"MG_PER_L\"\n    },\n    \"arithmetic\": \"No\
+    \ conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[16].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[16].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Calcium chloride\",\n    \"field_path\": \"ingredients[17].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4740\",\n        \"exact_source_quote\"\
+    : \"Calcium chloride\\t22.5\\tmg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"22.5\",\n      \"unit\": \"MG_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[17].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[17].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Potassium phosphate dibasic\",\n    \"field_path\": \"ingredients[18].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4741\",\n        \"exact_source_quote\"\
+    : \"Potassium phosphate dibasic\\t0.1125\\tmg/L\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.1125\",\n      \"unit\": \"MG_PER_L\"\n    },\n    \"arithmetic\": \"No\
+    \ conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[18].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[18].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Potassium phosphate monobasic\",\n    \"field_path\": \"ingredients[19].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4742\",\n        \"exact_source_quote\"\
+    : \"Potassium phosphate monobasic\\t0.1125\\tmg/L\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.1125\",\n      \"unit\": \"MG_PER_L\"\n    },\n    \"arithmetic\": \"No\
+    \ conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[19].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[19].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"pyridoxine HCl\",\n    \"field_path\": \"ingredients[20].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 42\",\n        \"exact_source_quote\"\
+    : \"pyridoxine HCl\\t10\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.025\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"10 mg/L stock × 0.25 X / 100 X = 0.025 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[20].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[20].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"4-Aminobenzoic acid\",\n    \"field_path\": \"ingredients[21].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 43\",\n        \"exact_source_quote\"\
+    : \"4-Aminobenzoic acid\\t5\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.0125\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[21].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[21].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Lipoic acid\",\n    \"field_path\": \"ingredients[22].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 44\",\n        \"exact_source_quote\"\
+    : \"Lipoic acid\\t5\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.0125\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[22].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[22].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Nicotinic Acid\",\n    \"field_path\": \"ingredients[23].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 45\",\n        \"exact_source_quote\"\
+    : \"Nicotinic Acid\\t5\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.0125\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[23].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[23].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Riboflavin\",\n    \"field_path\": \"ingredients[24].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 46\",\n        \"exact_source_quote\"\
+    : \"Riboflavin\\t5\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.0125\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[24].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[24].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"thiamine HCl\",\n    \"field_path\": \"ingredients[25].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 47\",\n        \"exact_source_quote\"\
+    : \"thiamine HCl\\t5\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.0125\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[25].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[25].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"calcium pantothenate\",\n    \"field_path\": \"ingredients[26].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 48\",\n        \"exact_source_quote\"\
+    : \"calcium pantothenate\\t5\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.0125\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"5 mg/L stock × 0.25 X / 100 X = 0.0125 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[26].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[26].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"biotin\",\n    \"field_path\": \"ingredients[27].concentration\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 49\",\n        \"exact_source_quote\"\
+    : \"biotin\\t2\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.005\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"2 mg/L stock × 0.25 X / 100 X = 0.005 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[27].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[27].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Folic Acid\",\n    \"field_path\": \"ingredients[28].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 50\",\n        \"exact_source_quote\"\
+    : \"Folic Acid\\t2\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.005\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"2 mg/L stock × 0.25 X / 100 X = 0.005 mg/L receiving-medium\
+    \ contribution. This dimensional X-ratio does not establish an independently measured\
+    \ final batch volume or mandate a physical stock addition volume.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[28].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[28].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Cyanocobalamin\",\n    \"field_path\": \"ingredients[29].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 51\",\n        \"exact_source_quote\"\
+    : \"Cyanocobalamin\\t0.1\\tmg/L\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 41\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Expanded vitamin number agrees with the\
+    \ source stock/receiving-factor calculation; retain the original 100 X stock and\
+    \ 0.25 X receiving factor in evidence. No attached quantity evidence exists.\"\
+    ,\n    \"local\": {\n      \"value\": \"0.00025\",\n      \"unit\": \"MG_PER_L\"\
+    \n    },\n    \"arithmetic\": \"0.1 mg/L stock × 0.25 X / 100 X = 0.00025 mg/L\
+    \ receiving-medium contribution. This dimensional X-ratio does not establish an\
+    \ independently measured final batch volume or mandate a physical stock addition\
+    \ volume.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"decision\"\
+    : \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/specialized/acy.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"decision\"\
+    : \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"name\": \"Acetic Acid\"\
+    ,\n    \"field_path\": \"ingredients[30].concentration\",\n    \"decision\": \"\
+    correct\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"feba_media\"\
+    ,\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4744\",\n        \"exact_source_quote\"\
+    : \"Acetic Acid\\t0.475\\tml/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source explicitly reports ml/L but both\
+    \ local layers retain the number as G_PER_L. Preserve the source volume unit;\
+    \ no density or purity supports a mass conversion.\",\n    \"local\": {\n    \
+    \  \"value\": \"0.475\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\"\
+    : \"No conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[30].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[30].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"name\"\
+    : \"Propionic Acid\",\n    \"field_path\": \"ingredients[31].concentration\",\n\
+    \    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4745\",\n        \"exact_source_quote\"\
+    : \"Propionic Acid\\t0.175\\tml/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source explicitly reports ml/L but both\
+    \ local layers retain the number as G_PER_L. Preserve the source volume unit;\
+    \ no density or purity supports a mass conversion.\",\n    \"local\": {\n    \
+    \  \"value\": \"0.175\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\"\
+    : \"No conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[31].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[31].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"name\"\
+    : \"Isobutyric acid\",\n    \"field_path\": \"ingredients[32].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4746\",\n        \"exact_source_quote\"\
+    : \"Isobutyric acid\\t0.0225\\tml/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source explicitly reports ml/L but both\
+    \ local layers retain the number as G_PER_L. Preserve the source volume unit;\
+    \ no density or purity supports a mass conversion.\",\n    \"local\": {\n    \
+    \  \"value\": \"0.0225\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\"\
+    : \"No conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[32].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[32].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"name\"\
+    : \"Valeric acid\",\n    \"field_path\": \"ingredients[33].concentration\",\n\
+    \    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4747\",\n        \"exact_source_quote\"\
+    : \"Valeric acid\\t0.025\\tml/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source explicitly reports ml/L but both\
+    \ local layers retain the number as G_PER_L. Preserve the source volume unit;\
+    \ no density or purity supports a mass conversion.\",\n    \"local\": {\n    \
+    \  \"value\": \"0.025\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\"\
+    : \"No conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[33].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[33].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"name\"\
+    : \"Isovaleric acid\",\n    \"field_path\": \"ingredients[34].concentration\"\
+    ,\n    \"decision\": \"correct\",\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4748\",\n        \"exact_source_quote\"\
+    : \"Isovaleric acid\\t0.025\\tml/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The source explicitly reports ml/L but both\
+    \ local layers retain the number as G_PER_L. Preserve the source volume unit;\
+    \ no density or purity supports a mass conversion.\",\n    \"local\": {\n    \
+    \  \"value\": \"0.025\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\"\
+    : \"No conversion: preserve the exact printed source amount/unit.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[34].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[34].concentration\"\
+    ,\n        \"decision\": \"correct\"\n      }\n    ]\n  },\n  {\n    \"name\"\
+    : \"Proteose Peptone\",\n    \"field_path\": \"ingredients[35].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4749\",\n        \"exact_source_quote\"\
+    : \"Proteose Peptone\\t1.25\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"1.25\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[35].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[35].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Pancreatic digest of casein\",\n    \"field_path\": \"ingredients[36].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4750\",\n        \"exact_source_quote\"\
+    : \"Pancreatic digest of casein\\t2.5\\tg/L\",\n        \"snapshot_sha256\": \"\
+    a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n      },\n\
+    \      {\n        \"source_key\": \"feba_media\",\n        \"source_url\": \"\
+    https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"2.5\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[36].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[36].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Beef Heart Infusion\",\n    \"field_path\": \"ingredients[37].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4751\",\n        \"exact_source_quote\"\
+    : \"Beef Heart Infusion \\t0.75\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.75\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[37].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[37].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Sodium carbonate\",\n    \"field_path\": \"ingredients[38].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4752\",\n        \"exact_source_quote\"\
+    : \"Sodium carbonate\\t0.15\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.15\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[38].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[38].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Iron(II) Sulfate\",\n    \"field_path\": \"ingredients[39].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4753\",\n        \"exact_source_quote\"\
+    : \"Iron(II) Sulfate\\t0.005\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.005\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[39].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[39].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Tris(hydroxymethyl)aminomethane\",\n    \"field_path\": \"ingredients[40].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4754\",\n        \"exact_source_quote\"\
+    : \"Tris(hydroxymethyl)aminomethane\\t0.2075\\tg/L\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.2075\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[40].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[40].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Tris hydrochloride\",\n    \"field_path\": \"ingredients[41].concentration\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4755\",\n        \"exact_source_quote\"\
+    : \"Tris hydrochloride\\t0.715\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4722\",\n        \"exact_source_quote\"\
+    : \"Controlled vocabulary\\tConcentration\\tUnits\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Numeric value and source unit match the explicit\
+    \ current ACY formulation, but no matching claim-level reference/snippet is attached.\
+    \ Chemical-form support is assessed independently; no generic name is treated\
+    \ as proof of a hydrate or stereoisomer.\",\n    \"local\": {\n      \"value\"\
+    : \"0.715\",\n      \"unit\": \"G_PER_L\"\n    },\n    \"arithmetic\": \"No conversion:\
+    \ preserve the exact printed source amount/unit.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[41].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/specialized/acy.yaml\",\n        \"field_path\": \"ingredients[41].concentration\"\
+    ,\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"\
+    name\": \"Wolfe's vitamin mix receiving factor\",\n    \"field_path\": \"source.Wolfe_vitamin_mix.receiving_factor\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4743\",\n        \"exact_source_quote\"\
+    : \"Wolfe's vitamin mix\\t0.25\\tX\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"The source calls for 0.25 X of a stock\
+    \ labelled100 X. Preserve this receiving/stock relationship and its evidence without\
+    \ double-counting the ten expanded vitamin ingredients.\",\n    \"arithmetic\"\
+    : \"Receiving/stock multiplier = 0.25/100 = 0.0025. A stock-strength ratio is\
+    \ not an observed batch volume.\"\n  },\n  {\n    \"name\": \"Wolfe's vitamin\
+    \ stock strength\",\n    \"field_path\": \"source.Wolfe_vitamin_mix.stock_strength\"\
+    ,\n    \"decision\": \"add\",\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"feba_mixes\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 40\",\n        \"exact_source_quote\"\
+    : \"X\\t100\",\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      },\n      {\n        \"source_key\": \"feba_mixes\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/mixes\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 39\",\n        \"exact_source_quote\"\
+    : \"Description\\tStandard 100X vitamin solution (based on Wolfe's formulation)\"\
+    ,\n        \"snapshot_sha256\": \"b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4\"\
+    \n      }\n    ],\n    \"rationale\": \"Source stock strength is 100 X; it is\
+    \ a stock qualifier, not a final-medium concentration or the0.25 X receiving dose.\"\
+    \n  },\n  {\n    \"name\": \"ABB description fraction\",\n    \"field_path\":\
+    \ \"description.ABB\",\n    \"decision\": \"evidence_only\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4720\",\n        \"exact_source_quote\"\
+    : \"Description\\t50% ABB, 25% Columbia, 25% YCFA\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The literal description contains 50% ABB. Its\
+    \ percentage basis is not stated; do not label it v/v or use it alone as proof\
+    \ of every final ingredient amount.\"\n  },\n  {\n    \"name\": \"Columbia description\
+    \ fraction\",\n    \"field_path\": \"description.Columbia\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4720\",\n        \"exact_source_quote\"\
+    : \"Description\\t50% ABB, 25% Columbia, 25% YCFA\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The literal description contains 25% Columbia.\
+    \ Its percentage basis is not stated; do not label it v/v or use it alone as proof\
+    \ of every final ingredient amount.\"\n  },\n  {\n    \"name\": \"YCFA description\
+    \ fraction\",\n    \"field_path\": \"description.YCFA\",\n    \"decision\": \"\
+    evidence_only\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4720\",\n        \"exact_source_quote\"\
+    : \"Description\\t50% ABB, 25% Columbia, 25% YCFA\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The literal description contains 25% YCFA. Its\
+    \ percentage basis is not stated; do not label it v/v or use it alone as proof\
+    \ of every final ingredient amount.\"\n  },\n  {\n    \"name\": \"Ferric pyrophosphate\
+    \ description comparison\",\n    \"field_path\": \"description.weighted_check.Ferric\
+    \ pyrophosphate\",\n    \"decision\": \"conflict\",\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4720\",\n        \"exact_source_quote\"\
+    : \"Description\\t50% ABB, 25% Columbia, 25% YCFA\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4733\",\n        \"exact_source_quote\"\
+    : \"Ferric pyrophosphate\\t0.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4713\",\n        \"exact_source_quote\"\
+    : \"Ferric pyrophosphate\\t0.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      }\n    ],\n    \"rationale\": \"This is a conditional weighted-formulation\
+    \ check assuming the percentage fractions apply linearly to the printed component\
+    \ concentrations; the source does not specify a percentage basis or measured final\
+    \ volume. It does not authorize replacing the explicit ACY row.\",\n    \"arithmetic\"\
+    : \"0.5 × 0.5 = 0.25 g/L; explicit ACY 0.5 g/L.\"\n  },\n  {\n    \"name\": \"\
+    Menadione description comparison\",\n    \"field_path\": \"description.weighted_check.Menadione\"\
+    ,\n    \"decision\": \"conflict\",\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4720\",\n        \"exact_source_quote\"\
+    : \"Description\\t50% ABB, 25% Columbia, 25% YCFA\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4735\",\n        \"exact_source_quote\"\
+    : \"Menadione\\t0.000375\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4715\",\n        \"exact_source_quote\"\
+    : \"Menadione\\t0.0005\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4607\",\n        \"exact_source_quote\"\
+    : \"Menadione\\t0.001\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      }\n    ],\n    \"rationale\": \"This is a conditional weighted-formulation\
+    \ check assuming the percentage fractions apply linearly to the printed component\
+    \ concentrations; the source does not specify a percentage basis or measured final\
+    \ volume. It does not authorize replacing the explicit ACY row.\",\n    \"arithmetic\"\
+    : \"0.5 × 0.0005 + 0.25 × 0.001 = 0.00050 g/L; explicit ACY 0.000375 g/L.\"\n\
+    \  },\n  {\n    \"name\": \"Sodium bicarbonate description comparison\",\n   \
+    \ \"field_path\": \"description.weighted_check.Sodium bicarbonate\",\n    \"decision\"\
+    : \"conflict\",\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4720\",\n        \"exact_source_quote\"\
+    : \"Description\\t50% ABB, 25% Columbia, 25% YCFA\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4731\",\n        \"exact_source_quote\"\
+    : \"Sodium bicarbonate\\t0.2\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4711\",\n        \"exact_source_quote\"\
+    : \"Sodium bicarbonate\\t0.4\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4769\",\n        \"exact_source_quote\"\
+    : \"Sodium bicarbonate\\t4\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      }\n    ],\n    \"rationale\": \"This is a conditional weighted-formulation\
+    \ check assuming the percentage fractions apply linearly to the printed component\
+    \ concentrations; the source does not specify a percentage basis or measured final\
+    \ volume. It does not authorize replacing the explicit ACY row.\",\n    \"arithmetic\"\
+    : \"0.5 × 0.4 + 0.25 × 4 = 1.20 g/L; explicit ACY 0.2 g/L.\"\n  },\n  {\n    \"\
+    name\": \"L-Cysteine HCL description comparison\",\n    \"field_path\": \"description.weighted_check.L-Cysteine\
+    \ HCL\",\n    \"decision\": \"conflict\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"feba_media\",\n        \"source_url\": \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4720\",\n        \"exact_source_quote\"\
+    : \"Description\\t50% ABB, 25% Columbia, 25% YCFA\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4732\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine HCL\\t1.275\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4712\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine HCL\\t0.5\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4603\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine HCL\\t0.1\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4770\",\n        \"exact_source_quote\"\
+    : \"L-Cysteine\\t1\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      }\n    ],\n    \"rationale\": \"This is a conditional weighted-formulation\
+    \ check assuming the percentage fractions apply linearly to the printed component\
+    \ concentrations; the source does not specify a percentage basis or measured final\
+    \ volume. It does not authorize replacing the explicit ACY row. YCFA separately\
+    \ lists free L-cysteine 1 g/L; do not add that mass to hydrochloride as the same\
+    \ supplied chemical form.\",\n    \"arithmetic\": \"0.5 × 0.5 + 0.25 × 0.1 = 0.275\
+    \ g/L; explicit ACY 1.275 g/L.\"\n  },\n  {\n    \"name\": \"Magnesium Sulfate\
+    \ Heptahydrate description comparison\",\n    \"field_path\": \"description.weighted_check.Magnesium\
+    \ Sulfate Heptahydrate\",\n    \"decision\": \"conflict\",\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4720\",\n        \"exact_source_quote\"\
+    : \"Description\\t50% ABB, 25% Columbia, 25% YCFA\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4739\",\n        \"exact_source_quote\"\
+    : \"Magnesium Sulfate Heptahydrate\\t11.275\\tmg/L\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4764\",\n        \"exact_source_quote\"\
+    : \"Magnesium Sulfate Heptahydrate\\t45\\tmg/L\",\n        \"snapshot_sha256\"\
+    : \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\n     \
+    \ },\n      {\n        \"source_key\": \"feba_media\",\n        \"source_url\"\
+    : \"https://api.bitbucket.org/2.0/repositories/berkeleylab/feba/src/803273865ea9e83fab770ec4f13670db80e1180b/metadata/media\"\
+    ,\n        \"source_locator\": \"Pinned TSV line 4602\",\n        \"exact_source_quote\"\
+    : \"Magnesium sulfate\\t0.1\\tg/L\",\n        \"snapshot_sha256\": \"a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848\"\
+    \n      }\n    ],\n    \"rationale\": \"This is a conditional weighted-formulation\
+    \ check assuming the percentage fractions apply linearly to the printed component\
+    \ concentrations; the source does not specify a percentage basis or measured final\
+    \ volume. It does not authorize replacing the explicit ACY row. Columbia separately\
+    \ lists generic magnesium sulfate 0.1 g/L; its unspecified hydrate and different\
+    \ unit prevent silent combination with the heptahydrate.\",\n    \"arithmetic\"\
+    : \"0.25 × 45 = 11.25 mg/L; explicit ACY 11.275 mg/L.\"\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact source identity and maintained owner
+  outcome: concern
+  summary: The generated 42-ingredient ACY record matches its maintained specialized/acy.yaml
+    owner. Current public FEBA provides the exact ACY label and explicit formulation;
+    the private-or-unavailable historical CultureBotHT payload is not authenticated
+    by that later source. No accession variant is substituted.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - feba_commit
+  - culturebotht_public-attempt
+- assessment_id: formulation
+  area: quantity
+  topic: Literal amounts, source units and vitamin calculation
+  outcome: concern
+  summary: All 42 numerical values correspond to 32 direct ACY rows and ten vitamin
+    calculations. Five fatty acids should retain ML_PER_L rather than G_PER_L. Both
+    phosphate rows explicitly say 0.1125 mg/L; their unusual values are not silently
+    changed. The ten vitamin amounts are stock concentration × 0.25/100, separate
+    from stock strength and receiving factor. No local ingredient carries matching
+    quantity evidence.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - quantity-inventory
+- assessment_id: forms
+  area: grounding
+  topic: Salt, hydrate, stereochemistry and annotation specificity
+  outcome: concern
+  summary: Tris hydrochloride and Tris base share neutral CHEBI:9754 despite different
+    source rows. Calcium chloride has a dihydrate term but local anhydrous CAS/MW
+    notes and a generic source label. Calcium pantothenate MW 238.27 conflicts with
+    the asserted term’s complete formula mass 476.536. Generic source dithiothreitol,
+    sodium succinate, iron(II)sulfate and calcium pantothenate do not independently
+    establish L stereochemistry, anhydrous forms or the pantothenate structural stereochemistry.
+    Lipoic-acid CAS 1077-28-7 differs from the captured term cross-reference 62-46-4;
+    this is unresolved metadata correspondence, not proof that the generic source
+    dose or an alternative ID is wrong.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - chemical-metadata
+  - chebi9754
+  - chebi86158
+  - chebi31345
+  - chebi42106
+  - chebi63675
+  - chebi75832
+  - chebi16494
+- assessment_id: preparation
+  area: completeness
+  topic: Source-supported preparation and culture conditions
+  outcome: unknown
+  summary: Neither this local record nor the exact FEBA ACY/Wolfe definition blocks
+    supply a preparation protocol, pH, sterilization temperature/time, stock solvent
+    volume, incubation condition or organism-specific growth result. These are bounded
+    source gaps, not permission to invent standard procedures or infer anaerobic conditions
+    from the ABB expansion.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+- assessment_id: classification
+  area: scope
+  topic: Complexity, physical state and biological claims
+  outcome: supported
+  summary: COMPLEX/UNDEFINED is supported by the named peptic digests, yeast extract,
+    casitone and heart infusion; the source describes component broths and nonminimal
+    formulation. LIQUID is consistent with those broth definitions. The specialized
+    category is an organizational filing, not a taxonomic or growth assertion. No
+    target organisms, strains, DOI/PMID or growth/optimum claim is present to transfer
+    from FEBA’s software purpose.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+- assessment_id: variants
+  area: scope
+  topic: ACY description versus component formulations
+  outcome: concern
+  summary: The literal 50%/25%/25% description is retained, but its basis is unstated.
+    Conditional linear weighting gives ferric pyrophosphate 0.25 versus explicit 0.5
+    g/L, menadione 0.0005 versus 0.000375 g/L, and bicarbonate 1.2 versus 0.2 g/L.
+    Cysteine and magnesium comparisons also involve different supplied forms. The
+    explicit ACY rows remain the current formulation evidence; neither table is silently
+    corrected.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - feba_media
+  - quantity-inventory
+- assessment_id: generation
+  area: provenance
+  topic: Current maintained-input and generator boundaries
+  outcome: supported
+  summary: The 42 local ingredient nodes are identical between target and owner. Current
+    CultureBotHT import code copies the supplied recipe and appends provenance/category
+    defaults; it does not verify FEBA row units or chemical identity. Current formulation
+    merge code rejects incompatible formulation payloads; an identity-set fingerprint
+    alone cannot validate preparation or amounts. Future authorized corrections belong
+    in specialized/acy.yaml and the actual input transform if still used, followed
+    by regeneration.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-context-0
+  - writer-context-1
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:015483
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: culturemech.015483.fatty-acid-volume-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Five fatty-acid volume doses are represented as mass concentrations
+  description: Acetic, propionic, isobutyric, valeric and isovaleric acid retain source
+    values 0.475, 0.175, 0.0225, 0.025 and 0.025 but change ml/L to G_PER_L in both
+    local layers. Density and source purity are not given, so equal numbers are not
+    a justified mass conversion.
+  target_ids:
+  - CultureMech:015483
+  field_paths:
+  - ingredients[30].concentration
+  - ingredients[31].concentration
+  - ingredients[32].concentration
+  - ingredients[33].concentration
+  - ingredients[34].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.015483.supplied-form-conflicts
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Tris hydrochloride, calcium chloride and pantothenate metadata are inconsistent
+  description: Source Tris hydrochloride 0.715 g/L is mapped to neutral tris, also
+    used for the separate 0.2075 g/L base. Calcium chloride’s CHEBI:86158 denotes
+    dihydrate with mass 147.014 and CAS 10035-04-8, conflicting with local CAS 10043-52-4/MW
+    110.98; the generic FEBA name cannot resolve the supplied hydrate. Pantothenate
+    MW 238.27 is half the captured formula mass 476.536 for 2C9H16NO5.Ca. These annotations
+    must not drive unsupported molar conversions.
+  target_ids:
+  - CultureMech:015483
+  field_paths:
+  - ingredients[17].term
+  - ingredients[17].notes
+  - ingredients[26].notes
+  - ingredients[41].term
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - chebi9754
+  - chebi86158
+  - chebi31345
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.015483.unsupported-form-specificity
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic source ingredients have unsupported specific forms
+  description: Generic dithiothreitol is narrowed to L-1,4-dithiothreitol; generic
+    sodium succinate and iron(II)sulfate to explicitly anhydrous terms. Calcium pantothenate’s
+    generic label obscures a stereospecific structure in CHEBI:31345. Broad ontology
+    synonyms do not independently establish these supplied forms.
+  target_ids:
+  - CultureMech:015483
+  field_paths:
+  - ingredients[7].term
+  - ingredients[13].term
+  - ingredients[26].term
+  - ingredients[39].term
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - chebi42106
+  - chebi63675
+  - chebi31345
+  - chebi75832
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.015483.source-claim-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current source quantities and mixture limits lack claim-level evidence
+  description: The sole source link is CultureBotHT and no ingredient has a source
+    snippet. Current public FEBA supports the explicit formulation but postdates the
+    historical import. Its source-internal mixture description differences and the
+    vitamin stock calculation are not documented in the record.
+  target_ids:
+  - CultureMech:015483
+  field_paths:
+  - sources
+  - ingredients
+  - description
+  - references
+  - evidence
+  evidence_ids:
+  - record
+  - owner-0
+  - feba_media
+  - feba_mixes
+  - feba_commit
+  - culturebotht_public-attempt
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.015483.yeast-cas-annotation
+  category: nomenclature
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Yeast extract carries a malformed CAS annotation
+  description: Both layers label 232-387-9 as CAS, although its middle group has three
+    digits rather than the two-digit CAS registry-number grouping. No inspected source
+    identifies this as the asserted yeast-extract CAS. No replacement EC or CAS identity
+    is established here.
+  target_ids:
+  - CultureMech:015483
+  field_paths:
+  - ingredients[1].notes
+  evidence_ids:
+  - record
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve the exact FEBA volume-dose values as ML_PER_L with literal
+    source evidence; do not infer mass equivalents. Correct the maintained input and
+    verify its generated correspondence.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:015483
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Ground the exact Tris hydrochloride salt after verifying an appropriate
+    identifier; reconcile calcium chloride form and pantothenate mass annotations
+    against exact supplied material. Preserve printed source mass doses while unresolved
+    and do not invent replacement IDs.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:015483
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Verify the exact source material before retaining stereochemical/hydration
+    specificity; otherwise preserve the unresolved form and seek supported grounding
+    without guessing alternative IDs.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:015483
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach the pinned public FEBA references and exact per-claim excerpts,
+    including stock-factor arithmetic and conditional description conflicts. Preserve
+    the original import history and explicitly distinguish unavailable historical
+    bytes from the later supporting source.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:015483
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Verify the namespace and substance identity for the yeast-extract note,
+    then correct or remove the misleading CAS label while preserving historical provenance;
+    do not guess a replacement registry identifier.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:015483
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/specialized/acy.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact March 2026 CultureBotHT ACY import payload was not publicly retrieved.
+  The public repository endpoint returned 404; this does not prove historical absence.
+  The current public FEBA formulation is separately accessible but postdates that
+  import.
+- No density, percentage basis, hydrate, stereoisomer, measured final volume, pH or
+  unreported preparation protocol was inferred. FEBA’s explicitly unusual phosphate
+  and magnesium values are retained as printed.
+- Public FEBA source metadata is later than the recorded CultureBotHT import; required
+  historical source access remains unavailable, so this is a partial review despite
+  successful canonical checks.
+- No separate exhaustive source-product/CAS registry search was performed. Lipoic-acid
+  CAS correspondence and generic supplied forms remain bounded uncertainties; no chemical
+  identity was substituted.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-019
+- generated-medium
+```
