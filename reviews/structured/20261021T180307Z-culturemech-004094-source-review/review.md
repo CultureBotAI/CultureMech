@@ -1,0 +1,2174 @@
+# Source and formulation review: asaia_gyp_medium (CultureMech:004094)
+
+- Review: 20261021T180307Z-culturemech-004094-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T17:54:27Z
+- Finished UTC: 2026-10-21T18:03:07Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The current DSMZ 1330 primary and an exactly recovered historical MediaDive response support all six stored ingredient rates for the selected solid branch. Both normalized owners retain authenticated amount evidence that the generated target lacks. The record still needs source-scoped water and preparation context, propagation of later owner evidence, and append-only clarification of malformed history metadata. Optional agar is supported; catalog Aerobic: No is provenance metadata, not an independently demonstrated physiological requirement. Current optional endpoint failures do not prevent this completed scientific comparison.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 315; batch 032 item 5 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-one task batches contain 310 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 313 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:004094 | data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml | generated | asaia_gyp_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:004094 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:004094 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/315/strict.tsv |
+| validate-terms | passed | True | CultureMech:004094 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:004094 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:004094 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive1330api | unavailable | False | CultureMech:004094 | Optional current endpoint returned HTTP 503. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable. |
+| Exact source content access: mediadive1330api_retry | unavailable | False | CultureMech:004094 | Optional current endpoint returned HTTP 503. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable. |
+| Exact source content access: komodo1330detail | unavailable | False | CultureMech:004094 | Optional current endpoint returned HTTP 403. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:004094.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:004094.
+
+10 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "Glucose",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 55.5062,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      },
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 composition row 1",
+        "exact_source_quote": "Glucose 10.0 g",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "g_per_L": 10,
+      "basis": "historical provider-declared main solution volume 1000 mL",
+      "source_batch_amount_g": 10,
+      "condition": null,
+      "measured_final_volume": null
+    },
+    "rationale": "Both owners have exact attached source evidence, so their existing rates are verified on the stated provider basis. The generated target has no attached evidence and requires evidence_only. Current primary masses agree; input water alone is not a measured final-volume declaration. No replacement amount is proposed."
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Glycerol",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Glycerol\",\n                        \"compound_id\": 72,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"mmol_l\": 108.589,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      },
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 composition row 2",
+        "exact_source_quote": "Glycerol 10.0 g",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "g_per_L": 10,
+      "basis": "historical provider-declared main solution volume 1000 mL",
+      "source_batch_amount_g": 10,
+      "condition": null,
+      "measured_final_volume": null
+    },
+    "rationale": "Both owners have exact attached source evidence, so their existing rates are verified on the stated provider basis. The generated target has no attached evidence and requires evidence_only. Current primary masses agree; input water alone is not a measured final-volume declaration. No replacement amount is proposed."
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "Peptone",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Peptone\",\n                        \"compound_id\": 1,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      },
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 composition row 3",
+        "exact_source_quote": "Peptone 10.0 g",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "g_per_L": 10,
+      "basis": "historical provider-declared main solution volume 1000 mL",
+      "source_batch_amount_g": 10,
+      "condition": null,
+      "measured_final_volume": null
+    },
+    "rationale": "Both owners have exact attached source evidence, so their existing rates are verified on the stated provider basis. The generated target has no attached evidence and requires evidence_only. Current primary masses agree; input water alone is not a measured final-volume declaration. No replacement amount is proposed."
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "Yeast extract",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      },
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 composition row 4",
+        "exact_source_quote": "Yeast extract 5.0 g",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "g_per_L": 5,
+      "basis": "historical provider-declared main solution volume 1000 mL",
+      "source_batch_amount_g": 5,
+      "condition": null,
+      "measured_final_volume": null
+    },
+    "rationale": "Both owners have exact attached source evidence, so their existing rates are verified on the stated provider basis. The generated target has no attached evidence and requires evidence_only. Current primary masses agree; input water alone is not a measured final-volume declaration. No replacement amount is proposed."
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "CaCO3",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "7",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "7",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "7",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCO3\",\n                        \"compound_id\": 13,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 7,\n                        \"mmol_l\": 69.9371,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      },
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 composition row 5",
+        "exact_source_quote": "CaCO3 7.0 g",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "g_per_L": 7,
+      "basis": "historical provider-declared main solution volume 1000 mL",
+      "source_batch_amount_g": 7,
+      "condition": null,
+      "measured_final_volume": null
+    },
+    "rationale": "Both owners have exact attached source evidence, so their existing rates are verified on the stated provider basis. The generated target has no attached evidence and requires evidence_only. Current primary masses agree; input water alone is not a measured final-volume declaration. No replacement amount is proposed."
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Agar",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      },
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 optional-agar paragraph",
+        "exact_source_quote": "The medium may be solidified by adding 15 g/l agar.",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "g_per_L": 15,
+      "basis": "historical provider-declared main solution volume 1000 mL",
+      "source_batch_amount_g": 15,
+      "condition": "selected solid branch only",
+      "measured_final_volume": null
+    },
+    "rationale": "Both owners have exact attached source evidence, so their existing rates are verified on the stated provider basis. The generated target has no attached evidence and requires evidence_only. Current primary masses agree; input water alone is not a measured final-volume declaration. The primary explicitly makes agar optional; the selected SOLID_AGAR state and local conditional note are supported despite the provider optional flag being 0."
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Main input water",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "DISSOLVE",
+            "description": "The medium may be solidified by adding 15 g/l agar. Calcium carbonate in the medium serves as a buffer. The calcium carbonate will settle in agar plates before the agar has set, producing an opaque layer in the bottom. As the strain grows and acid is produced this will react with the calcium carbonate, causing it to dissolve and form zones of clearing immediately below the colonies. pH 6.8"
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      },
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 composition, water row",
+        "exact_source_quote": "Distilled water 1000.0 ml",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      }
+    ],
+    "proposed_source_representation": {
+      "input_water_mL": 1000,
+      "stage": "main recipe solvent",
+      "mass_g": null,
+      "measured_final_volume_L": null
+    },
+    "rationale": "Water is absent from the ingredient lists and from every local preparation description, including the DSMZ owner that retains other prose. Add the explicit input volume in the main preparation context; do not convert it to a mass or infer a measured final litre."
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Provider-declared main volume basis",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "ingredients[0].evidence",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "ingredients[0].evidence[0].explanation",
+        "stored": "Concentration evidence for ingredients[0].concentration (Glucose) in MediaDive medium 1330; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:20:35.260855+00:00; response SHA256=3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976. KOMODO accession 1330 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a. The mapping supports identity only, not ingredient quantities or variants.",
+        "decision": "verified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "ingredients[0].evidence[0].explanation",
+        "stored": "Concentration evidence for ingredients[0].concentration (Glucose) in MediaDive medium 1330; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:20:35.260855+00:00; response SHA256=3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976.",
+        "decision": "verified"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].volume",
+        "exact_source_quote": "\"volume\": 1000",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      }
+    ],
+    "proposed_source_representation": {
+      "provider_declared_volume_mL": 1000,
+      "independent_measured_final_volume": null
+    },
+    "rationale": "Both owner explanations already preserve the exact provider volume and explicitly disclaim an independent measured final volume. Transfer that qualified basis with the evidence into a regenerated target. This is not an additional water dose."
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Source medium pH",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 6.8,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 6.8,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 6.8,
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 final sentence",
+        "exact_source_quote": "pH 6.8",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      },
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.medium.min_pH",
+        "exact_source_quote": "\"min_pH\": 6.8",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      },
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.medium.max_pH",
+        "exact_source_quote": "\"max_pH\": 6.8",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      }
+    ],
+    "proposed_source_representation": {
+      "pH": 6.8,
+      "scope": "source medium formulation",
+      "growth_optimum_claim": false
+    },
+    "rationale": "All scalar values agree with the current primary and historical provider. Existing ingredient amount evidence does not itself authenticate the pH claim; add claim-level support without changing the value."
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Optional solid-branch preparation",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "The medium may be solidified by adding 15 g/l agar. Calcium carbonate in the medium serves as a buffer. The calcium carbonate will settle in agar plates before the agar has set, producing an opaque layer in the bottom. As the strain grows and acid is produced this will react with the calcium carbonate, causing it to dissolve and form zones of clearing immediately below the colonies. pH 6.8",
+        "decision": "evidence_only"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1330",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf",
+        "source_locator": "page 1 optional-agar paragraph",
+        "exact_source_quote": "The medium may be solidified by adding 15 g/l agar.",
+        "snapshot_sha256": "5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295",
+        "parsed_text_sha256": "675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579",
+        "accessed_at": "2026-10-21T17:36:59.398977Z"
+      },
+      {
+        "source_key": "mediadive1330historical",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1330",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976"
+      }
+    ],
+    "proposed_source_representation": {
+      "optional_agar_g_per_L": 15,
+      "selected_local_branch": "solid",
+      "additional_second_agar_dose": false
+    },
+    "rationale": "The DSMZ owner retains the preparation paragraph; only the target and KOMODO owner lack it. Preserve the conditional meaning of the existing agar quantity and do not add a second dose or force removal of the supported solid branch."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:004094.
+
+4 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 4/6 primary and 4/6 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 6: primary 66.67%; secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:004094.
+
+21 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Both exact source owners and reciprocal duplicate links
+
+identity: supported. Targets: CultureMech:004094.
+
+The target CultureMech:004094 is the KOMODO 1330 record; the second normalized contributor is DSMZ CultureMech:000787. Exact filenames, stable IDs, full merge provenance and reciprocal SOURCE_DUPLICATE paths resolve to these two owners. Their shared formulation and catalog mapping support accession identity, while their preparation and evidence differences remain visible. No broader equivalence is inferred from the name alone.
+
+### Authentic historical response versus current endpoint failures
+
+evidence: supported. Targets: CultureMech:004094.
+
+The exact recovered source_raw and original metadata authenticate all 12 later owner amount claims. The generated target lacks those claim-level objects. The separate KOMODO identity claim authenticates only the accession mapping. Current API 503 and detail 403 responses remain access limitations; the current primary, historical raw response and exact catalog resolve the scientific comparison required here.
+
+### Source forms and mixture identity boundaries
+
+grounding: supported. Targets: CultureMech:004094.
+
+Generic glucose, glycerol, calcium carbonate and agar agree with the asserted term scope. Neither the source nor the local glucose term requires a particular anomer. Peptone and yeast extract remain unspecified mixtures; lack of their optional links does not establish an incorrect chemical identity. Agar is a mixture/polymeric material and its provider mmol_l is not adopted as a chemically exact molarity. All current CHEBI-based secondary keys are checked separately from source form support. There are no legacy MIM assertions in these layers.
+
+### Input water, conditional agar and carbonate description
+
+completeness: concern. Targets: CultureMech:004094.
+
+All layers omit the explicit 1000 mL input-water row. The DSMZ owner retains the optional-agar paragraph and carbonate settling/acid-clearing description; the KOMODO owner and generated target omit that preparation. The printed pH and selected solid branch are supported. Neither accessible source specifies sterilization conditions, so this review supplies no temperature, duration or collection default. Carbonate-clearing prose is descriptive source context and does not establish universal strain growth.
+
+### Selected physical branch, mixture classification and oxygen metadata
+
+scope: supported. Targets: CultureMech:004094.
+
+The selected SOLID_AGAR branch is supported by the explicit optional agar statement and local conditional note. Peptone and yeast extract support COMPLEX/UNDEFINED. Aerobic: No in target/KOMODO notes is traceable to the catalog Is Aerobic=false cell; preserve it as catalog metadata and do not promote it to an independently measured anoxic requirement. No organism identity or experimentally demonstrated growth follows solely from ASAIA in the title or the source’s descriptive colony-clearing prose.
+
+### Maintained source differences and generated evidence propagation
+
+ownership: concern. Targets: CultureMech:004094.
+
+Both normalized owners contain later ingredient evidence, and the DSMZ owner additionally retains preparation. The generated target predates those later repairs and lacks their evidence/reference content. Correct the maintained owner omissions without replacing authenticated claims, then regenerate through an authorized reviewed path. Current writer behavior does not prove the cause of the historical omission.
+
+### Collection/provider references and bounded metadata
+
+provenance: supported. Targets: CultureMech:004094.
+
+The persistent primary URL, historical provider URL and exact catalog link identify the supplied evidence. The primary copyright line is not treated as a publication date or bibliographic authorship. Preserve the two owner reference arrays and original access times; the generated target needs corresponding provenance on regeneration. No uncited paper or organism claim is added.
+
+## Findings
+
+### f1: Main water and source preparation context are incomplete
+
+minor / open / confirmed; issue key: culturemech.004094.water-and-preparation-context.
+
+The 1000 mL input-water row is absent from every local layer. The target and KOMODO owner also lack preparation already retained by the DSMZ owner. Conditional agar and the selected solid branch agree; no ingredient rate correction is established.
+
+### f2: The generated target lacks authenticated later owner evidence
+
+minor / open / confirmed; issue key: culturemech.004094.later-owner-evidence-not-propagated.
+
+All 12 owner amount claims match recovered historical bytes and the KOMODO identity claim matches exact catalog bytes, but the target contains neither those attached amount claims nor their references. This is an evidence propagation gap, not a numerical disagreement.
+
+### f3: Historical timestamps include malformed or timezone-naive values
+
+minor / open / confirmed; issue key: culturemech.004094.history-timestamp-clarification.
+
+Four timestamp instances across the target and KOMODO owner are malformed or lack a timezone. These historical values do not negate the independently authenticated later source evidence, but cannot all be interpreted as precise UTC instants.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Add the main input-water volume to source-scoped preparation, preserve the existing optional agar branch without duplicating its dose, and carry the DSMZ preparation context into the KOMODO owner and regenerated target. Retain descriptive carbonate context without new growth claims; leave absent sterilization parameters explicitly unresolved.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Preserve the original authenticated owner claims and their access times. Regenerate the target so every unchanged amount retains claim-level source support, with the declared-volume and optional-agar qualifications intact. Add pH support separately; do not convert catalog oxygen metadata into physiological evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve old events unchanged and append a narrow provenance clarification or record an explicit timestamp exception. Use valid timezone-aware timestamps for any later authorized curation; do not invent missing historical offsets.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/asaia_gyp_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch032/315/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch032/315/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml:1:id: CultureMech:004094<br>./data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml:1:id: CultureMech:004094<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/315/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 12 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch032/source-preflight-bound/315/evidence-context-original.json; Complete frozen source context and full local objects | context_only | Frozen target/owner objects match freshly inspected records. Source interpretations are assessed against actual bound capture bytes; historical limitations remain separate. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf; Page 1 main composition and optional-agar paragraph | supports | The current primary supplies five main masses, 1000 mL input water, optional 15 g/L agar and pH 6.8. It does not explicitly state a measured final volume or a sterilization cycle. |
+| historical-provider | https://mediadive.dsmz.de/rest/medium/1330; $.data.medium and $.data.solutions[0] | supports | Authenticated historical response, originally accessed 2026-10-07T13:20:35.260855+00:00, declares a 1000 mL main solution and exact g_l values. Its original bytes and timestamp were recovered from preserved report fields; this is not a successful current HTTP retrieval. |
+| historical-extraction | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/inspected-candidate-context.json; $[54].source_raw and $[54].source_metadata | supports | Exact historical raw bytes hash to 3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976. Original access metadata is preserved; local extraction on 2026-10-21 does not replace the 2026-10-07 access time. |
+| attached-amount-evidence | data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml; data/normalized_yaml/bacterial/asaia_gyp_medium.yaml; ingredients[0:6].evidence[0] in each exact owner | supports | All 12 attached amount excerpts match the recovered raw response byte-for-byte and decode to the exact recipe objects. Each explanation records the same original response hash and explicitly limits the provider-declared volume basis. The generated target has no attached ingredient evidence. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch032/315/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17754 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17754; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17754 resolves to glycerol. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi3311 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:3311 resolves to calcium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17754": [{"label": "Glycerol", "match_type": "preferred_term", "identifier": "CHEBI:17754", "preferred_term": "Glycerol", "ontology_id": "CHEBI:17754", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3311": [{"label": "CaCO3", "match_type": "preferred_term", "identifier": "CHEBI:3311", "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml; data/normalized_yaml/bacterial/asaia_gyp_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:55.793677"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:55.793677"}]}, {"input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml", "events": 6, "timestamp_issues": []}] |
+| catalog-identity | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Literal MediaList row ID=1330 plus Is Aerobic column header | supports | The exact catalog row authenticates KOMODO 1330 to DSMZ 1330 and its pH/complexity/Is Aerobic fields. The attached owner identity excerpt matches the same raw catalog hash. The independently retained catalog capture time is separate from the earlier time claimed in the attached explanation. Catalog identity support does not establish ingredient amounts, all-variant equivalence or a physiological requirement. |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import, cleanup and formulation comparison are inspected context, not a replay of the historical merge. The current formulation comparator includes preparation; this does not establish which historical version generated the persisted merged file. Maintain exact normalized owners, preserve their later evidence and append history before separately authorized regeneration. |
+| writer-1 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import, cleanup and formulation comparison are inspected context, not a replay of the historical merge. The current formulation comparator includes preparation; this does not establish which historical version generated the persisted merged file. Maintain exact normalized owners, preserve their later evidence and append history before separately authorized regeneration. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current import, cleanup and formulation comparison are inspected context, not a replay of the historical merge. The current formulation comparator includes preparation; this does not establish which historical version generated the persisted merged file. Maintain exact normalized owners, preserve their later evidence and append history before separately authorized regeneration. |
+| mediadive1330api-attempt | https://mediadive.dsmz.de/rest/medium/1330; Preserved exact public retrieval result | context_only | Optional current endpoint returned HTTP 503. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable. |
+| mediadive1330api_retry-attempt | https://mediadive.dsmz.de/rest/medium/1330; Preserved exact public retrieval result | context_only | Optional current endpoint returned HTTP 503. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable. |
+| komodo1330detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1330; Preserved exact public retrieval result | context_only | Optional current endpoint returned HTTP 403. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Optional current endpoint returned HTTP 503. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable.
+- Optional current endpoint returned HTTP 503. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable.
+- Optional current endpoint returned HTTP 403. Exact current primary, authenticated historical response and catalog identity remain available; this access result does not make the required comparison unavailable.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T180307Z-culturemech-004094-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: asaia_gyp_medium (CultureMech:004094)'
+started_at: '2026-10-21T17:54:27Z'
+finished_at: '2026-10-21T18:03:07Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'The current DSMZ 1330 primary and an exactly recovered historical MediaDive
+  response support all six stored ingredient rates for the selected solid branch.
+  Both normalized owners retain authenticated amount evidence that the generated target
+  lacks. The record still needs source-scoped water and preparation context, propagation
+  of later owner evidence, and append-only clarification of malformed history metadata.
+  Optional agar is supported; catalog Aerobic: No is provenance metadata, not an independently
+  demonstrated physiological requirement. Current optional endpoint failures do not
+  prevent this completed scientific comparison.'
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+    sha256: a0cb1d9750f7b62bdba83b1eae23120980940977a88b161ec018a331660e1704
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+    sha256: 0826a077b7f8a2c1fe146f8022608007c9100b3fd870166885ef3da4c6febded
+    role: context
+  - path: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+    sha256: fe5de1180afb4879a0b188853ceb05e11baa59ae35cb648f9a2ed21afda290ff
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/asaia_gyp_medium.yaml.md
+    sha256: ee16dd6203b01bff75ee29115dcf4a36b7a227c73f2beb86b2c4babff81b0cd4
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/inspected-candidate-context.json
+    sha256: bef58d348ed78c4694bd9876429eea22eed599556ff8a9f9b79f4858745bd02e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml.md
+    sha256: f37762f950992459e6bbb608e72b3d6236ef576edfc708dc6ce68f08898121d9
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 315; batch 032 item 5 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-one task batches
+    contain 310 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 313 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004094
+targets:
+- target_id: CultureMech:004094
+  path: data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+  label: asaia_gyp_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch032/315/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/315/strict.tsv"
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:004094
+- check_id: mediadive1330api-source-access
+  name: 'Exact source content access: mediadive1330api'
+  required: false
+  status: unavailable
+  summary: Optional current endpoint returned HTTP 503. Exact current primary, authenticated
+    historical response and catalog identity remain available; this access result
+    does not make the required comparison unavailable.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - mediadive1330api-attempt
+- check_id: mediadive1330api_retry-source-access
+  name: 'Exact source content access: mediadive1330api_retry'
+  required: false
+  status: unavailable
+  summary: Optional current endpoint returned HTTP 503. Exact current primary, authenticated
+    historical response and catalog identity remain available; this access result
+    does not make the required comparison unavailable.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - mediadive1330api_retry-attempt
+- check_id: komodo1330detail-source-access
+  name: 'Exact source content access: komodo1330detail'
+  required: false
+  status: unavailable
+  summary: Optional current endpoint returned HTTP 403. Exact current primary, authenticated
+    historical response and catalog identity remain available; this access result
+    does not make the required comparison unavailable.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - komodo1330detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:11.444999Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch032/315/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:12.641690Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-032/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch032/315/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:13.924633Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T17:55:14.706862Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml:1:id: CultureMech:004094
+
+    ./data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml:1:id: CultureMech:004094
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/315/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: supports
+  summary: 12 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: bde35b9471e66bf722992956b0758e98688bddb0006e3968cd101e42e397db3d
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/source-preflight-bound/315/evidence-context-original.json
+  locator: Complete frozen source context and full local objects
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: Frozen target/owner objects match freshly inspected records. Source interpretations
+    are assessed against actual bound capture bytes; historical limitations remain
+    separate.
+  snapshot_sha256: e67fd53925febb609a8d1986b7c8e7eec5506c3f46c498cc673d3a9db530dfad
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf
+  locator: Page 1 main composition and optional-agar paragraph
+  accessed_at: '2026-10-21T17:36:59.398977Z'
+  support: supports
+  summary: The current primary supplies five main masses, 1000 mL input water, optional
+    15 g/L agar and pH 6.8. It does not explicitly state a measured final volume or
+    a sterilization cycle.
+  snapshot_sha256: 5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295
+- evidence_id: historical-provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1330
+  locator: $.data.medium and $.data.solutions[0]
+  accessed_at: '2026-10-07T13:20:35.260855Z'
+  support: supports
+  summary: Authenticated historical response, originally accessed 2026-10-07T13:20:35.260855+00:00,
+    declares a 1000 mL main solution and exact g_l values. Its original bytes and
+    timestamp were recovered from preserved report fields; this is not a successful
+    current HTTP retrieval.
+  snapshot_sha256: 3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976
+- evidence_id: historical-extraction
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/inspected-candidate-context.json
+  locator: $[54].source_raw and $[54].source_metadata
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: supports
+  summary: Exact historical raw bytes hash to 3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976.
+    Original access metadata is preserved; local extraction on 2026-10-21 does not
+    replace the 2026-10-07 access time.
+  snapshot_sha256: bef58d348ed78c4694bd9876429eea22eed599556ff8a9f9b79f4858745bd02e
+- evidence_id: attached-amount-evidence
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml; data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+  locator: ingredients[0:6].evidence[0] in each exact owner
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: supports
+  summary: All 12 attached amount excerpts match the recovered raw response byte-for-byte
+    and decode to the exact recipe objects. Each explanation records the same original
+    response hash and explicitly limits the provider-declared volume basis. The generated
+    target has no attached ingredient evidence.
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch032/315/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 508b58c01b1890a6340c632f7aee865dd942fbfb1a7ded18c1108269a6f58b8a
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi17754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17754
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:35.442871Z'
+  support: supports
+  summary: CHEBI:17754 resolves to glycerol. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 0231975176416cbaad3ad04c9efeedbe9bef0b826645e592a4a2f511e8d1db95
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi3311
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3311
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.903210Z'
+  support: supports
+  summary: CHEBI:3311 resolves to calcium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5413cec912ec253d62ba7a3f4ce7f0a9312ba8d1cb756713003f77a6e849d4b2
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:17234":
+    [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234",
+    "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17754": [{"label": "Glycerol", "match_type": "preferred_term",
+    "identifier": "CHEBI:17754", "preferred_term": "Glycerol", "ontology_id": "CHEBI:17754",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label":
+    "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term":
+    "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:3311": [{"label": "CaCO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:3311", "preferred_term": "CaCO3", "ontology_id": "CHEBI:3311",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml;
+    data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:18:55.793677"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:55.793677"}]}, {"input": "data/normalized_yaml/bacterial/asaia_gyp_medium.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: catalog-identity
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Literal MediaList row ID=1330 plus Is Aerobic column header
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The exact catalog row authenticates KOMODO 1330 to DSMZ 1330 and its pH/complexity/Is
+    Aerobic fields. The attached owner identity excerpt matches the same raw catalog
+    hash. The independently retained catalog capture time is separate from the earlier
+    time claimed in the attached explanation. Catalog identity support does not establish
+    ingredient amounts, all-variant equivalence or a physiological requirement.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1330'\
+    \ >1330</a></TD>\n\t\t\t\t\t<TD>ASAIA GYP medium</TD>\n\t\t\t\t\t<TD> 6.8</TD>\n\
+    \t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n\
+    <TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf</a></TD>\n\
+    \t\t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: Current import, cleanup and formulation comparison are inspected context,
+    not a replay of the historical merge. The current formulation comparator includes
+    preparation; this does not establish which historical version generated the persisted
+    merged file. Maintain exact normalized owners, preserve their later evidence and
+    append history before separately authorized regeneration.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: Current import, cleanup and formulation comparison are inspected context,
+    not a replay of the historical merge. The current formulation comparator includes
+    preparation; this does not establish which historical version generated the persisted
+    merged file. Maintain exact normalized owners, preserve their later evidence and
+    append history before separately authorized regeneration.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T18:03:04Z'
+  support: context_only
+  summary: Current import, cleanup and formulation comparison are inspected context,
+    not a replay of the historical merge. The current formulation comparator includes
+    preparation; this does not establish which historical version generated the persisted
+    merged file. Maintain exact normalized owners, preserve their later evidence and
+    append history before separately authorized regeneration.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: mediadive1330api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1330
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:36:58.567862Z'
+  support: context_only
+  summary: Optional current endpoint returned HTTP 503. Exact current primary, authenticated
+    historical response and catalog identity remain available; this access result
+    does not make the required comparison unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: mediadive1330api_retry-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1330
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:38:20.797887Z'
+  support: context_only
+  summary: Optional current endpoint returned HTTP 503. Exact current primary, authenticated
+    historical response and catalog identity remain available; this access result
+    does not make the required comparison unavailable.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo1330detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1330
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T17:36:58.567426Z'
+  support: context_only
+  summary: Optional current endpoint returned HTTP 403. Exact current primary, authenticated
+    historical response and catalog identity remain available; this access result
+    does not make the required comparison unavailable.
+  snapshot_sha256: 3b15fa1c74bb07e5e6a331d5fcaf1aa830583b8e2834764f8338514ef48376b3
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 10 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Glucose\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1330historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 10,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n         \
+    \               \\\"mmol_l\\\": 55.5062,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\",\n   \
+    \     \"source_locator\": \"page 1 composition row 1\",\n        \"exact_source_quote\"\
+    : \"Glucose 10.0 g\",\n        \"snapshot_sha256\": \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\"\
+    ,\n        \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"g_per_L\": 10,\n      \"basis\"\
+    : \"historical provider-declared main solution volume 1000 mL\",\n      \"source_batch_amount_g\"\
+    : 10,\n      \"condition\": null,\n      \"measured_final_volume\": null\n   \
+    \ },\n    \"rationale\": \"Both owners have exact attached source evidence, so\
+    \ their existing rates are verified on the stated provider basis. The generated\
+    \ target has no attached evidence and requires evidence_only. Current primary\
+    \ masses agree; input water alone is not a measured final-volume declaration.\
+    \ No replacement amount is proposed.\"\n  },\n  {\n    \"quantity_id\": \"q2\"\
+    ,\n    \"component_or_context\": \"Glycerol\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1330historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Glycerol\\\",\\n                        \\\"compound_id\\\"\
+    : 72,\\n                        \\\"amount\\\": 10,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n     \
+    \                   \\\"mmol_l\\\": 108.589,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\",\n   \
+    \     \"source_locator\": \"page 1 composition row 2\",\n        \"exact_source_quote\"\
+    : \"Glycerol 10.0 g\",\n        \"snapshot_sha256\": \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\"\
+    ,\n        \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"g_per_L\": 10,\n      \"basis\"\
+    : \"historical provider-declared main solution volume 1000 mL\",\n      \"source_batch_amount_g\"\
+    : 10,\n      \"condition\": null,\n      \"measured_final_volume\": null\n   \
+    \ },\n    \"rationale\": \"Both owners have exact attached source evidence, so\
+    \ their existing rates are verified on the stated provider basis. The generated\
+    \ target has no attached evidence and requires evidence_only. Current primary\
+    \ masses agree; input water alone is not a measured final-volume declaration.\
+    \ No replacement amount is proposed.\"\n  },\n  {\n    \"quantity_id\": \"q3\"\
+    ,\n    \"component_or_context\": \"Peptone\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1330historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Peptone\\\",\\n                        \\\"compound_id\\\":\
+    \ 1,\\n                        \\\"amount\\\": 10,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 10,\\n         \
+    \               \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\",\n   \
+    \     \"source_locator\": \"page 1 composition row 3\",\n        \"exact_source_quote\"\
+    : \"Peptone 10.0 g\",\n        \"snapshot_sha256\": \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\"\
+    ,\n        \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"g_per_L\": 10,\n      \"basis\"\
+    : \"historical provider-declared main solution volume 1000 mL\",\n      \"source_batch_amount_g\"\
+    : 10,\n      \"condition\": null,\n      \"measured_final_volume\": null\n   \
+    \ },\n    \"rationale\": \"Both owners have exact attached source evidence, so\
+    \ their existing rates are verified on the stated provider basis. The generated\
+    \ target has no attached evidence and requires evidence_only. Current primary\
+    \ masses agree; input water alone is not a measured final-volume declaration.\
+    \ No replacement amount is proposed.\"\n  },\n  {\n    \"quantity_id\": \"q4\"\
+    ,\n    \"component_or_context\": \"Yeast extract\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1330historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 5,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\",\n   \
+    \     \"source_locator\": \"page 1 composition row 4\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 5.0 g\",\n        \"snapshot_sha256\": \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\"\
+    ,\n        \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"g_per_L\": 5,\n      \"basis\"\
+    : \"historical provider-declared main solution volume 1000 mL\",\n      \"source_batch_amount_g\"\
+    : 5,\n      \"condition\": null,\n      \"measured_final_volume\": null\n    },\n\
+    \    \"rationale\": \"Both owners have exact attached source evidence, so their\
+    \ existing rates are verified on the stated provider basis. The generated target\
+    \ has no attached evidence and requires evidence_only. Current primary masses\
+    \ agree; input water alone is not a measured final-volume declaration. No replacement\
+    \ amount is proposed.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\"\
+    : \"CaCO3\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"7\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1330historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"CaCO3\\\",\\n                        \\\"compound_id\\\": 13,\\\
+    n                        \\\"amount\\\": 7,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 7,\\n                  \
+    \      \\\"mmol_l\\\": 69.9371,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\",\n   \
+    \     \"source_locator\": \"page 1 composition row 5\",\n        \"exact_source_quote\"\
+    : \"CaCO3 7.0 g\",\n        \"snapshot_sha256\": \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\"\
+    ,\n        \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"g_per_L\": 7,\n      \"basis\"\
+    : \"historical provider-declared main solution volume 1000 mL\",\n      \"source_batch_amount_g\"\
+    : 7,\n      \"condition\": null,\n      \"measured_final_volume\": null\n    },\n\
+    \    \"rationale\": \"Both owners have exact attached source evidence, so their\
+    \ existing rates are verified on the stated provider basis. The generated target\
+    \ has no attached evidence and requires evidence_only. Current primary masses\
+    \ agree; input water alone is not a measured final-volume declaration. No replacement\
+    \ amount is proposed.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"Agar\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"verified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1330historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\\
+    n                        \\\"condition\\\": \\\"for solid medium\\\",\\n     \
+    \                   \\\"amount\\\": 15,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                   \
+    \     \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\",\n   \
+    \     \"source_locator\": \"page 1 optional-agar paragraph\",\n        \"exact_source_quote\"\
+    : \"The medium may be solidified by adding 15 g/l agar.\",\n        \"snapshot_sha256\"\
+    : \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\",\n    \
+    \    \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"g_per_L\": 15,\n      \"basis\"\
+    : \"historical provider-declared main solution volume 1000 mL\",\n      \"source_batch_amount_g\"\
+    : 15,\n      \"condition\": \"selected solid branch only\",\n      \"measured_final_volume\"\
+    : null\n    },\n    \"rationale\": \"Both owners have exact attached source evidence,\
+    \ so their existing rates are verified on the stated provider basis. The generated\
+    \ target has no attached evidence and requires evidence_only. Current primary\
+    \ masses agree; input water alone is not a measured final-volume declaration.\
+    \ The primary explicitly makes agar optional; the selected SOLID_AGAR state and\
+    \ local conditional note are supported despite the provider optional flag being\
+    \ 0.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"Main input water\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"DISSOLVE\"\
+    ,\n            \"description\": \"The medium may be solidified by adding 15 g/l\
+    \ agar. Calcium carbonate in the medium serves as a buffer. The calcium carbonate\
+    \ will settle in agar plates before the agar has set, producing an opaque layer\
+    \ in the bottom. As the strain grows and acid is produced this will react with\
+    \ the calcium carbonate, causing it to dissolve and form zones of clearing immediately\
+    \ below the colonies. pH 6.8\"\n          }\n        ],\n        \"decision\"\
+    : \"add\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1330historical\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 1000,\\n                        \\\"unit\\\": \\\"ml\\\",\\n             \
+    \           \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\n     \
+    \ },\n      {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\":\
+    \ \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\",\n   \
+    \     \"source_locator\": \"page 1 composition, water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.0 ml\",\n        \"snapshot_sha256\": \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\"\
+    ,\n        \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      }\n    ],\n\
+    \    \"proposed_source_representation\": {\n      \"input_water_mL\": 1000,\n\
+    \      \"stage\": \"main recipe solvent\",\n      \"mass_g\": null,\n      \"\
+    measured_final_volume_L\": null\n    },\n    \"rationale\": \"Water is absent\
+    \ from the ingredient lists and from every local preparation description, including\
+    \ the DSMZ owner that retains other prose. Add the explicit input volume in the\
+    \ main preparation context; do not convert it to a mass or infer a measured final\
+    \ litre.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"Provider-declared main volume basis\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].evidence\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].evidence[0].explanation\",\n     \
+    \   \"stored\": \"Concentration evidence for ingredients[0].concentration (Glucose)\
+    \ in MediaDive medium 1330; locator=$.data.solutions[0].recipe[0]. Provider explicitly\
+    \ reports g_l=10; check: 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This\
+    \ supports the provider-declared main-recipe concentration, not an independently\
+    \ measured final volume, a stock composition, or a downstream assay dilution.\
+    \ Water alone does not establish final volume. Exact source ingredient labels/forms\
+    \ are matched; secondary ontology mappings are not validated by this evidence.\
+    \ Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:20:35.260855+00:00;\
+    \ response SHA256=3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976.\
+    \ KOMODO accession 1330 is mapped to the same DSMZ accession by https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList;\
+    \ mapping response SHA256=d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a.\
+    \ The mapping supports identity only, not ingredient quantities or variants.\"\
+    ,\n        \"decision\": \"verified\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].evidence[0].explanation\",\n        \"stored\": \"Concentration\
+    \ evidence for ingredients[0].concentration (Glucose) in MediaDive medium 1330;\
+    \ locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=10; check:\
+    \ 10 g * 1 g/g / (1000 ml / 1000 ml per L) = 10 g/L. This supports the provider-declared\
+    \ main-recipe concentration, not an independently measured final volume, a stock\
+    \ composition, or a downstream assay dilution. Water alone does not establish\
+    \ final volume. Exact source ingredient labels/forms are matched; secondary ontology\
+    \ mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume\
+    \ (ml): 1000. Retrieved 2026-10-07T13:20:35.260855+00:00; response SHA256=3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976.\"\
+    ,\n        \"decision\": \"verified\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"mediadive1330historical\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].volume\",\n        \"exact_source_quote\": \"\\\"volume\\\
+    \": 1000\",\n        \"snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"provider_declared_volume_mL\"\
+    : 1000,\n      \"independent_measured_final_volume\": null\n    },\n    \"rationale\"\
+    : \"Both owner explanations already preserve the exact provider volume and explicitly\
+    \ disclaim an independent measured final volume. Transfer that qualified basis\
+    \ with the evidence into a regenerated target. This is not an additional water\
+    \ dose.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"Source medium pH\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.8,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.8,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 6.8,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\"\
+    ,\n        \"source_locator\": \"page 1 final sentence\",\n        \"exact_source_quote\"\
+    : \"pH 6.8\",\n        \"snapshot_sha256\": \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\"\
+    ,\n        \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1330historical\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.medium.min_pH\",\n        \"exact_source_quote\": \"\\\"min_pH\\\"\
+    : 6.8\",\n        \"snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1330historical\",\n  \
+    \      \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1330\",\n     \
+    \   \"source_locator\": \"$.data.medium.max_pH\",\n        \"exact_source_quote\"\
+    : \"\\\"max_pH\\\": 6.8\",\n        \"snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"pH\": 6.8,\n\
+    \      \"scope\": \"source medium formulation\",\n      \"growth_optimum_claim\"\
+    : false\n    },\n    \"rationale\": \"All scalar values agree with the current\
+    \ primary and historical provider. Existing ingredient amount evidence does not\
+    \ itself authenticate the pH claim; add claim-level support without changing the\
+    \ value.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\"\
+    : \"Optional solid-branch preparation\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ASAIA_GYP_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asaia_gyp_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"The medium may be solidified by adding 15 g/l agar. Calcium carbonate in the\
+    \ medium serves as a buffer. The calcium carbonate will settle in agar plates\
+    \ before the agar has set, producing an opaque layer in the bottom. As the strain\
+    \ grows and acid is produced this will react with the calcium carbonate, causing\
+    \ it to dissolve and form zones of clearing immediately below the colonies. pH\
+    \ 6.8\",\n        \"decision\": \"evidence_only\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz1330\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1330.pdf\",\n       \
+    \ \"source_locator\": \"page 1 optional-agar paragraph\",\n        \"exact_source_quote\"\
+    : \"The medium may be solidified by adding 15 g/l agar.\",\n        \"snapshot_sha256\"\
+    : \"5d0ada77730a9cbf9df1fd64070ef711654ef985fba08059ab3fca260e9d6295\",\n    \
+    \    \"parsed_text_sha256\": \"675e5c7178753cc8a4692456bac0a34f9a9e93ed6faccbd7fe73e10b2e008579\"\
+    ,\n        \"accessed_at\": \"2026-10-21T17:36:59.398977Z\"\n      },\n      {\n\
+    \        \"source_key\": \"mediadive1330historical\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/1330\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\\
+    n                        \\\"condition\\\": \\\"for solid medium\\\",\\n     \
+    \                   \\\"amount\\\": 15,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 15,\\n                   \
+    \     \\\"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"3e9064723efaa62ff8d2ccf4cb87d38a1ff0a96b1cba9d4fb9295394f17ee976\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"optional_agar_g_per_L\"\
+    : 15,\n      \"selected_local_branch\": \"solid\",\n      \"additional_second_agar_dose\"\
+    : false\n    },\n    \"rationale\": \"The DSMZ owner retains the preparation paragraph;\
+    \ only the target and KOMODO owner lack it. Preserve the conditional meaning of\
+    \ the existing agar quantity and do not add a second dose or force removal of\
+    \ the supported solid branch.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '4 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 4/6 primary
+    and 4/6 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi17234
+  - chebi17754
+  - chebi2509
+  - chebi3311
+  details: 'Instance coverage on a 0–100 percent scale, denominator 6: primary 66.67%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 21 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: identity
+  area: identity
+  topic: Both exact source owners and reciprocal duplicate links
+  outcome: supported
+  summary: The target CultureMech:004094 is the KOMODO 1330 record; the second normalized
+    contributor is DSMZ CultureMech:000787. Exact filenames, stable IDs, full merge
+    provenance and reciprocal SOURCE_DUPLICATE paths resolve to these two owners.
+    Their shared formulation and catalog mapping support accession identity, while
+    their preparation and evidence differences remain visible. No broader equivalence
+    is inferred from the name alone.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - catalog-identity
+  - primary
+  - bound-context
+- assessment_id: historical-evidence
+  area: evidence
+  topic: Authentic historical response versus current endpoint failures
+  outcome: supported
+  summary: The exact recovered source_raw and original metadata authenticate all 12
+    later owner amount claims. The generated target lacks those claim-level objects.
+    The separate KOMODO identity claim authenticates only the accession mapping. Current
+    API 503 and detail 403 responses remain access limitations; the current primary,
+    historical raw response and exact catalog resolve the scientific comparison required
+    here.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - historical-provider
+  - historical-extraction
+  - attached-amount-evidence
+  - catalog-identity
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: forms
+  area: grounding
+  topic: Source forms and mixture identity boundaries
+  outcome: supported
+  summary: Generic glucose, glycerol, calcium carbonate and agar agree with the asserted
+    term scope. Neither the source nor the local glucose term requires a particular
+    anomer. Peptone and yeast extract remain unspecified mixtures; lack of their optional
+    links does not establish an incorrect chemical identity. Agar is a mixture/polymeric
+    material and its provider mmol_l is not adopted as a chemically exact molarity.
+    All current CHEBI-based secondary keys are checked separately from source form
+    support. There are no legacy MIM assertions in these layers.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - primary
+  - historical-provider
+  - chebi17234
+  - chebi17754
+  - chebi3311
+  - chebi2509
+  - mim
+- assessment_id: preparation
+  area: completeness
+  topic: Input water, conditional agar and carbonate description
+  outcome: concern
+  summary: All layers omit the explicit 1000 mL input-water row. The DSMZ owner retains
+    the optional-agar paragraph and carbonate settling/acid-clearing description;
+    the KOMODO owner and generated target omit that preparation. The printed pH and
+    selected solid branch are supported. Neither accessible source specifies sterilization
+    conditions, so this review supplies no temperature, duration or collection default.
+    Carbonate-clearing prose is descriptive source context and does not establish
+    universal strain growth.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - primary
+  - historical-provider
+  - quantity-inventory
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: classification
+  area: scope
+  topic: Selected physical branch, mixture classification and oxygen metadata
+  outcome: supported
+  summary: 'The selected SOLID_AGAR branch is supported by the explicit optional agar
+    statement and local conditional note. Peptone and yeast extract support COMPLEX/UNDEFINED.
+    Aerobic: No in target/KOMODO notes is traceable to the catalog Is Aerobic=false
+    cell; preserve it as catalog metadata and do not promote it to an independently
+    measured anoxic requirement. No organism identity or experimentally demonstrated
+    growth follows solely from ASAIA in the title or the source’s descriptive colony-clearing
+    prose.'
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - primary
+  - catalog-identity
+  - record
+  - owner-0
+  - owner-1
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained source differences and generated evidence propagation
+  outcome: concern
+  summary: Both normalized owners contain later ingredient evidence, and the DSMZ
+    owner additionally retains preparation. The generated target predates those later
+    repairs and lacks their evidence/reference content. Correct the maintained owner
+    omissions without replacing authenticated claims, then regenerate through an authorized
+    reviewed path. Current writer behavior does not prove the cause of the historical
+    omission.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - attached-amount-evidence
+  - writer-0
+  - writer-1
+  - writer-2
+- assessment_id: citations
+  area: provenance
+  topic: Collection/provider references and bounded metadata
+  outcome: supported
+  summary: The persistent primary URL, historical provider URL and exact catalog link
+    identify the supplied evidence. The primary copyright line is not treated as a
+    publication date or bibliographic authorship. Preserve the two owner reference
+    arrays and original access times; the generated target needs corresponding provenance
+    on regeneration. No uncited paper or organism claim is added.
+  target_ids:
+  - CultureMech:004094
+  evidence_ids:
+  - primary
+  - historical-provider
+  - catalog-identity
+  - record
+  - owner-0
+  - owner-1
+findings:
+- finding_id: f1
+  issue_key: culturemech.004094.water-and-preparation-context
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Main water and source preparation context are incomplete
+  description: The 1000 mL input-water row is absent from every local layer. The target
+    and KOMODO owner also lack preparation already retained by the DSMZ owner. Conditional
+    agar and the selected solid branch agree; no ingredient rate correction is established.
+  target_ids:
+  - CultureMech:004094
+  field_paths:
+  - preparation_steps
+  - ingredients[5].notes
+  - physical_state
+  evidence_ids:
+  - primary
+  - historical-provider
+  - quantity-inventory
+  - record
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.004094.later-owner-evidence-not-propagated
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The generated target lacks authenticated later owner evidence
+  description: All 12 owner amount claims match recovered historical bytes and the
+    KOMODO identity claim matches exact catalog bytes, but the target contains neither
+    those attached amount claims nor their references. This is an evidence propagation
+    gap, not a numerical disagreement.
+  target_ids:
+  - CultureMech:004094
+  field_paths:
+  - ingredients
+  - evidence
+  - references
+  evidence_ids:
+  - attached-amount-evidence
+  - historical-extraction
+  - catalog-identity
+  - record
+  - owner-0
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.004094.history-timestamp-clarification
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical timestamps include malformed or timezone-naive values
+  description: Four timestamp instances across the target and KOMODO owner are malformed
+    or lack a timezone. These historical values do not negate the independently authenticated
+    later source evidence, but cannot all be interpreted as precise UTC instants.
+  target_ids:
+  - CultureMech:004094
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  - record
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Add the main input-water volume to source-scoped preparation, preserve
+    the existing optional agar branch without duplicating its dose, and carry the
+    DSMZ preparation context into the KOMODO owner and regenerated target. Retain
+    descriptive carbonate context without new growth claims; leave absent sterilization
+    parameters explicitly unresolved.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004094
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve the original authenticated owner claims and their access times.
+    Regenerate the target so every unchanged amount retains claim-level source support,
+    with the declared-volume and optional-agar qualifications intact. Add pH support
+    separately; do not convert catalog oxygen metadata into physiological evidence.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004094
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve old events unchanged and append a narrow provenance clarification
+    or record an explicit timestamp exception. Use valid timezone-aware timestamps
+    for any later authorized curation; do not invent missing historical offsets.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004094
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1330_ASAIA_GYP_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asaia_gyp_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Optional current endpoint returned HTTP 503. Exact current primary, authenticated
+  historical response and catalog identity remain available; this access result does
+  not make the required comparison unavailable.
+- Optional current endpoint returned HTTP 503. Exact current primary, authenticated
+  historical response and catalog identity remain available; this access result does
+  not make the required comparison unavailable.
+- Optional current endpoint returned HTTP 403. Exact current primary, authenticated
+  historical response and catalog identity remain available; this access result does
+  not make the required comparison unavailable.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-032
+- generated-medium
+```
