@@ -1,0 +1,1917 @@
+# Source and formulation review: 1a_medium (CultureMech:008437)
+
+- Review: 20261021T070422Z-culturemech-008437-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T06:57:07Z
+- Finished UTC: 2026-10-21T07:04:22Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M1862 identifies NBRC1106, but the record links a different trace stock, flattens the source stock into the main medium, confuses mass and volume units, and loses source preparation context. Two asserted salt IDs omit the stated hydration. The maintained water deduplication change does not repair these source-boundary errors.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 64; batch 007 item 4 of 10, selected in Python lexicographic repository-relative path order from the current uncovered merged corpus. The prior six validated batch lists contain 60 distinct merged target paths. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c has 40 validated baseline bundles covering 2 current merged paths. The union with prior batches covers 62 of 6320 current merged paths before this batch. This target path occurs in neither set. Task ordinals continue the saved-review sequence, not global path ranks after upstream corpus or coverage changes. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008437 | data/merge_yaml/merged/1a_Medium.yaml | generated | 1a_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008437 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:008437 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch007/064/strict.tsv |
+| validate-terms | passed | True | CultureMech:008437 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:008437 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:008437 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:008437.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: concern. Targets: CultureMech:008437.
+
+13 primary CHEBI identities resolve with matching labels; 9 of 9 current secondary keys have live pinned-index rows. Unresolved keys: []. Canonical label resolution does not validate material form: source phosphate dihydrate and cobalt chloride hexahydrate conflict with the two anhydrous-form identifiers, assessed separately.
+
+15 direct ingredient instances; CHEBI-primary instance linkage 13/15 (86.67%), verified secondary coverage 9/15 (60.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### solutions[0] referenced CultureMech:014842.composition[0].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified within referenced stock only: provider-declared concentration in stock6140, not a receiving-medium concentration. This does not validate the medium association or its stock dose.
+
+### solutions[0] referenced CultureMech:014842.composition[1].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified within referenced stock only: provider-declared concentration in stock6140, not a receiving-medium concentration. This does not validate the medium association or its stock dose.
+
+### solutions[0] referenced CultureMech:014842.composition[2].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified within referenced stock only: provider-declared concentration in stock6140, not a receiving-medium concentration. This does not validate the medium association or its stock dose.
+
+### solutions[0] referenced CultureMech:014842.composition[3].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified within referenced stock only: provider-declared concentration in stock6140, not a receiving-medium concentration. This does not validate the medium association or its stock dose.
+
+### solutions[0] referenced CultureMech:014842.composition[4].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified within referenced stock only: provider-declared concentration in stock6140, not a receiving-medium concentration. This does not validate the medium association or its stock dose.
+
+### solutions[0] referenced CultureMech:014842.composition[5].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified within referenced stock only: provider-declared concentration in stock6140, not a receiving-medium concentration. This does not validate the medium association or its stock dose.
+
+### Source accession and stock association
+
+identity: concern. Targets: CultureMech:008437.
+
+Media identity is consistently TOGO M1862 / NBRC1106. Stock6140 resolves but its manganese chloride and cobalt nitrate ingredients differ from the source manganese sulfate and cobalt chloride; shared constituents also have different stock amounts. A valid reference can still denote the wrong formulation.
+
+### ingredients[1].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified at stated material and source batch basis: the direct salt mass agrees with the one-liter-water source formulation. Preserve source hydrate form and water/batch context; no independently measured final volume is asserted.
+
+### ingredients[2].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified at stated material and source batch basis: the direct salt mass agrees with the one-liter-water source formulation. Preserve source hydrate form and water/batch context; no independently measured final volume is asserted.
+
+### ingredients[4].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified at stated material and source batch basis: the direct salt mass agrees with the one-liter-water source formulation. Preserve source hydrate form and water/batch context; no independently measured final volume is asserted.
+
+### ingredients[5].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified at stated material and source batch basis: the direct salt mass agrees with the one-liter-water source formulation. Preserve source hydrate form and water/batch context; no independently measured final volume is asserted.
+
+### ingredients[6].concentration
+
+quantity: supported. Targets: CultureMech:008437.
+
+verified at stated material and source batch basis: the direct salt mass agrees with the one-liter-water source formulation. Preserve source hydrate form and water/batch context; no independently measured final volume is asserted.
+
+### ingredients[3].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: source milligrams are stored as grams with the same numeral, a 1000-fold mass-unit error at the same nominal batch basis. No final-volume inference is needed to establish the unit discrepancy.
+
+### ingredients[0].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: main-medium water and separately prepared stock water were combined into a parent mass concentration. The owner later collapsed the equal numerals but still uses G_PER_L and loses preparation scope; numerical deduplication is not source reconciliation.
+
+### ingredients[7].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+not_quantified as a fixed liquid dose: provider ingredient rows lack an amount, but the original preparation specifies a headspace gas relationship. VARIABLE does not preserve that context, and a liquid concentration should not be invented.
+
+### ingredients[8].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+not_quantified as a fixed liquid dose: provider ingredient rows lack an amount, but the original preparation specifies a headspace gas relationship. VARIABLE does not preserve that context, and a liquid concentration should not be invented.
+
+### ingredients[9].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: this numeral belongs to the separately prepared source trace stock, not an additional undiluted direct ingredient in the receiving medium. The parent also retains a stock reference, creating a double-counting risk.
+
+### ingredients[10].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: this numeral belongs to the separately prepared source trace stock, not an additional undiluted direct ingredient in the receiving medium. The parent also retains a stock reference, creating a double-counting risk.
+
+### ingredients[11].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: this numeral belongs to the separately prepared source trace stock, not an additional undiluted direct ingredient in the receiving medium. The parent also retains a stock reference, creating a double-counting risk.
+
+### ingredients[12].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: this numeral belongs to the separately prepared source trace stock, not an additional undiluted direct ingredient in the receiving medium. The parent also retains a stock reference, creating a double-counting risk.
+
+### ingredients[13].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: this numeral belongs to the separately prepared source trace stock, not an additional undiluted direct ingredient in the receiving medium. The parent also retains a stock reference, creating a double-counting risk.
+
+### ingredients[14].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: this numeral belongs to the separately prepared source trace stock, not an additional undiluted direct ingredient in the receiving medium. The parent also retains a stock reference, creating a double-counting risk.
+
+### solutions[0].concentration
+
+quantity: concern. Targets: CultureMech:008437.
+
+correct: the primary source gives a volume dose for its own local stock; the record asserts a mass concentration for a different stock. Stock preparation volume, addition dose and final-medium concentrations must remain separate.
+
+### Exact hydration and linkage denominators
+
+grounding: concern. Targets: CultureMech:008437.
+
+Thirteen of fifteen direct instances carry resolving CHEBI IDs (86.67%) and nine carry live secondary keys (60%), linkage metrics on a 0–100 scale. Two IDs encode forms without the source hydration, including the phosphate secondary key; valid labels do not make those assignments chemically exact.
+
+### Source conditions and stage boundaries
+
+completeness: concern. Targets: CultureMech:008437.
+
+Both providers contain pH and staged preparation/gas-headspace context absent from the target and owner. The gas entries alone do not preserve the source relationship or the distinction between preparation and headspace.
+
+### Composition class and biological claims
+
+scope: unknown. Targets: CultureMech:008437.
+
+LIQUID is consistent with the agar-free source formulation. The source lists salts and gas context rather than a peptone/extract ingredient; the imported COMPLEX/UNDEFINED classification needs reassessment after correcting stock composition. No organism-specific growth or incubation assertion is inferred.
+
+### Provenance and evidence placement
+
+evidence: concern. Targets: CultureMech:008437.
+
+Target/owner history timestamps parse with timezones. The later owner water edit is absent from the generated target but is not a complete source repair. Unknown solution naming and missing narrow evidence remain; reference validation checked zero excerpts.
+
+## Findings
+
+### f1: Trace-stock reference denotes a different formulation
+
+blocker / open / confirmed; issue key: CM008437-wrong-trace-stock.
+
+Stock6140 resolves uniquely but has different manganese/cobalt salts and different shared-solute amounts from NBRC1106. Generic-name matching reproduces the reference; exact source formulation identity is not checked by that resolver.
+
+### f2: Stock composition is asserted again as direct medium ingredients
+
+major / open / confirmed; issue key: CM008437-flattened-stock-scope.
+
+Six source-stock solutes appear at the parent with their stock numerals while a stock dose remains. Both source water rows lost their preparation boundaries. The current importer probe separates main rows but leaves local stock composition empty, so a simple rerun is insufficient.
+
+### f3: Iron salt milligrams are represented as grams
+
+major / open / confirmed; issue key: CM008437-iron-mass-unit.
+
+The source iron-salt mass uses milligrams; the target and owner retain the same numeral under G_PER_L, yielding a 1000-fold unit discrepancy at the same nominal basis.
+
+### f4: Water and stock-volume doses are encoded as mass
+
+major / open / confirmed; issue key: CM008437-water-and-dose-units.
+
+Both the water entry and stock addition use G_PER_L without density evidence. The owner water deduplication changes the numeral but retains incorrect unit and scope.
+
+### f5: Two IDs omit the source hydration
+
+major / open / confirmed; issue key: CM008437-hydrate-grounding.
+
+Phosphate dihydrate is linked to a term with formula HO4P.2Na, and cobalt chloride hexahydrate to a term with formula2Cl.Co. Canonical ID/label validation passes, but the source names and supplied forms are more specific.
+
+### f6: Source pH and staged preparation context are absent
+
+major / open / confirmed; issue key: CM008437-preparation-and-gas-context.
+
+The source provides pH and preparation/headspace context, but the record retains only unquantified gas rows. Neither target nor owner represents these source-scoped conditions.
+
+### f7: Placeholders and narrow evidence remain unresolved
+
+minor / open / confirmed; issue key: CM008437-placeholder-evidence-gap.
+
+The stock display name is Unknown solution and no claim-level evidence supports amounts, source stock boundaries, chemical forms or preparation.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Resolve the trace stock within the original medium context. Independently verify any replacement ID or represent the source-local composition faithfully; do not select a stock by its generic name.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore stock/receiving-medium hierarchy and scoped water entries. Address source-section matching before any authorized reimport and verify that no stock constituents are counted twice.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Correct the unit using the exact hydrated source material and retain the original batch amount as evidence; do not silently rescale unrelated stock amounts.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve original liquid volumes and their distinct batch/addition roles after hierarchy repair; no guessed density or measured final volume.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Verify exact hydrated-form ontology identities before replacing primary and corresponding secondary keys. Preserve supplied-form names and do not use anhydrous molecular weights.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a6
+
+Represent the inspected source context at the proper preparation/headspace scope after formulation repair. Preserve source approximation and do not infer a fixed liquid gas concentration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a7
+
+Use source-scoped naming and evidence after identity repair; also reassess imported composition classification against the corrected complete formula.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1a_Medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/1a_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1a_Medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1a_Medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch007/064/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch007/064/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1a_Medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1a_Medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/1a_Medium.yaml:1:id: CultureMech:008437<br>./data/normalized_yaml/bacterial/1a_medium.yaml:1:id: CultureMech:008437<br> |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi34683 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:34683 resolves to disodium hydrogenphosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi35696 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:35696 resolves to cobalt dichloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63005 resolves to sodium nitrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86356 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86356; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86356 resolves to manganese(II) sulfate dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi91243 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91243; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:91243 resolves to calcium chloride hexahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63005": [{"label": "NaNO3", "match_type": "preferred_term", "identifier": "CHEBI:63005", "preferred_term": "NaNO3", "ontology_id": "CHEBI:63005", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34683": [{"label": "Na2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:34683", "preferred_term": "Na2HPO4", "ontology_id": "CHEBI:34683", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| nbrc | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1106; Medium No.1106; Composition; starred trace-stock definition; preparation paragraphs | supports | Entire primary table, local trace-stock table, pH and preparation paragraphs inspected. Main-medium and stock water are separate preparation amounts; source gas context belongs to the headspace. |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1862; meta; components[0:2]; comments | supports | Complete metadata, both component sections, all ingredient units and annotations, source-local stock reference and preparation comments inspected. |
+| stock-api | https://mediadive.dsmz.de/rest/solution/6140; data.id; data.recipe; data.volume | supports | Exact stock6140 identity and six provider-declared stock concentrations inspected. Its six local embedded evidence JSON rows match. |
+| stock | data/normalized_yaml/bacterial/mediadive_6140_Trace_metal_solution.yaml; Entire SolutionRecipe, including composition, evidence and history | context_only | The unique local root ID CultureMech:014842 resolves asserted stock6140. Its six solute rows are a different stock from NBRC1106, despite the same generic name. The stale placeholder ingredients field does not replace its populated composition. |
+| dependency | Source-local stock, normalized stock, index and captured importer code; Exact ID lookup, six embedded/API row comparisons, in-memory resolver and extractor probes | supports | {"identity_comparison": {"result": "The asserted stock6140 is a chemically different formulation from the source-local NBRC1106 stock.", "specific_differences": ["Source stock specifies MnSO4\u00b72H2O, whereas6140 specifies MnCl2\u00b74H2O.", "Source stock specifies CoCl2\u00b76H2O, whereas6140 specifies Co(NO3)2\u00b76H2O.", "Shared boric-acid, zinc-sulfate, molybdate and copper-sulfate rows have different declared stock amounts.", "The source-local stock includes an explicit water addition; the6140 API exposes a declared1000ml stock volume with six solute recipe rows and no separate water row. No missing-water defect is inferred from that difference alone."], "candidate_replacement_id": "unresolved; no alternative MediaDive stock was invented or selected by name"}, "hierarchy_observation": "Six source-local stock solutes appear as direct target ingredients while a separate stock addition points to6140. The stock solvent has been combined with the primary solvent in the generated target. These are source-boundary and identity errors; no corrected final concentrations were calculated.", "maintained_owner_difference": {"field_path": "ingredients[0].concentration", "generated_value": {"value": "2.0", "unit": "G_PER_L"}, "maintained_owner_value": {"value": "1.0", "unit": "G_PER_L"}, "observation": "The maintained owner already differs from the generated target in its water numeral after an append-only duplicate-repair event. This does not establish a source-correct amount or repair stock hierarchy."}, "legacy_resolver": {"source": "scripts/migrate_solutions_from_ingredients.py", "method": "SolutionMigrator(...,dry_run=True)._resolve_solution with an in-memory descriptor; no migration or file-writing method called", "same_name_candidates_in_index_order": [{"id": "mediadive.solution:3533", "name": "Trace metal solution"}, {"id": "mediadive.solution:3719", "name": "Trace metal solution"}, {"id": "mediadive.solution:3995", "name": "Trace metal solution"}, {"id": "mediadive.solution:4003", "name": "Trace metal solution"}, {"id": "mediadive.solution:4104", "name": "Trace metal solution"}, {"id": "mediadive.solution:4148", "name": "Trace metal solution"}, {"id": "mediadive.solution:4715", "name": "Trace metal solution"}, {"id": "mediadive.solution:4724", "name": "Trace metal solution"}, {"id": "mediadive.solution:4903", "name": "Trace metal solution"}, {"id": "mediadive.solution:5047", "name": "Trace metal solution"}, {"id": "mediadive.solution:5178", "name": "Trace metal solution"}, {"id": "mediadive.solution:6124", "name": "Trace metal solution"}, {"id": "mediadive.solution:6140", "name": "Trace metal solution"}], "candidate_count": 13, "in_memory_resolution": {"preferred_term": "Trace metal solution*", "term": {"id": "mediadive.solution:6140", "label": "Trace metal solution"}, "notes": "See mediadive_6140_Trace_metal_solution.yaml for composition"}, "mechanism": "Removes trailing asterisk markers, lowercases the name, and resolves through an index that overwrites earlier duplicate names with later entries. The last of13 names is6140.", "historical_limit": "Current code/index reproduce the stored association; this does not prove the exact historical runtime bytes."}, "current_togo_extractor": {"source": "src/culturemech/import/togo_importer.py", "method": "TogoImporter.__new__(TogoImporter)._extract_primary_components over captured source JSON; constructor and output methods were not called", "direct_ingredient_count": 9, "direct_ingredient_names": ["Distilled water", "MgSO4\u00b77H2O", "KH2PO4", "FeSO4\u00b77H2O", "NaNO3", "Na2HPO4\u00b72H2O", "CaCl2\u00b76H2O", "Methane gas", "Air"], "solutions": [{"preferred_term": "Trace metal solution*", "composition": [], "concentration": {"value": "1", "unit": "ML_PER_L"}, "notes": "Defined in TOGO medium M1862."}], "stock_composition_resolved": false, "name_key_mismatch": {"reference": "Trace metal solution*", "section": "*Trace metal solution"}, "local_batch_volume_probe_result": null, "interpretation": "Current extraction separates main ingredients from the stock addition, but leaves stock composition empty. Exact section-name matching retains leading/trailing asterisks; even a direct batch-basis probe cannot equate the1ml addition with the1L stock preparation. A rerun is not a complete curation repair."}, "actual_checks": {"resolved_stock_records": 1, "root_id_unique_in_ignored_inclusive_normalized_search": true, "class_routing_exit_zero": true, "provider_identity_matches_local_stock": true, "composition_rows_with_exact_api_and_embedded_evidence_match": 6, "chebi_ids_verified_with_exact_labels_and_nonobsolete_status": 6, "current_source_capture_hashes_verified": true, "all_inspection_hashes_reverified": true, "full_stock_validator_suite_run": false, "required_check_unavailable": false, "external_fetches_by_this_agent": 2}, "limitations": ["This supporting context is not an independent complete scientific review of stock6140.", "No receiving-medium concentration, final-volume basis, stock replacement identifier or new culture protocol was inferred.", "The broader target grounding, source preparation, classification and evidence review remain with the parent."]} |
+| stock-CHEBI-33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact stock ontology ID/label and obsolete status | supports | CHEBI:33118 resolves to boric acid and is nonobsolete. This checks stock identity metadata, not the receiving-medium association. |
+| stock-CHEBI-86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact stock ontology ID/label and obsolete status | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is nonobsolete. This checks stock identity metadata, not the receiving-medium association. |
+| stock-CHEBI-32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact stock ontology ID/label and obsolete status | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate and is nonobsolete. This checks stock identity metadata, not the receiving-medium association. |
+| stock-CHEBI-75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact stock ontology ID/label and obsolete status | supports | CHEBI:75213 resolves to sodium molybdate dihydrate and is nonobsolete. This checks stock identity metadata, not the receiving-medium association. |
+| stock-CHEBI-31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact stock ontology ID/label and obsolete status | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is nonobsolete. This checks stock identity metadata, not the receiving-medium association. |
+| stock-CHEBI-86214 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214; Exact stock ontology ID/label and obsolete status | supports | CHEBI:86214 resolves to cobalt dinitrate hexahydrate and is nonobsolete. This checks stock identity metadata, not the receiving-medium association. |
+| hydrate-forms | Exact OLS responses already cited for CHEBI:34683 and CHEBI:35696; generalized_empirical_formula and supplied source hydrate names | refutes | {"CHEBI:34683": ["HO4P.2Na"], "CHEBI:35696": ["2Cl.Co"]}; neither formula includes the waters stated in the corresponding ingredient preferred terms and primary source. |
+| trace | Complete target, owner and TOGO source; Fifteen direct rows, annotations, iron unit arithmetic, two scoped water rows and histories | supports | {"rows": [{"field_path": "ingredients[0]", "section": "main", "source_amount": 1, "source_unit": "L", "local": {"value": "2.0", "unit": "G_PER_L"}}, {"field_path": "ingredients[1]", "section": "main", "source_amount": 0.1, "source_unit": "g", "local": {"value": "0.1", "unit": "G_PER_L"}}, {"field_path": "ingredients[2]", "section": "main", "source_amount": 0.22, "source_unit": "g", "local": {"value": "0.22", "unit": "G_PER_L"}}, {"field_path": "ingredients[3]", "section": "main", "source_amount": 2, "source_unit": "mg", "local": {"value": "2", "unit": "G_PER_L"}}, {"field_path": "ingredients[4]", "section": "main", "source_amount": 1, "source_unit": "g", "local": {"value": "1", "unit": "G_PER_L"}}, {"field_path": "ingredients[5]", "section": "main", "source_amount": 0.5, "source_unit": "g", "local": {"value": "0.5", "unit": "G_PER_L"}}, {"field_path": "ingredients[6]", "section": "main", "source_amount": 0.03, "source_unit": "g", "local": {"value": "0.03", "unit": "G_PER_L"}}, {"field_path": "ingredients[7]", "section": "main", "source_amount": null, "source_unit": null, "local": {"value": "variable", "unit": "VARIABLE"}}, {"field_path": "ingredients[8]", "section": "main", "source_amount": null, "source_unit": null, "local": {"value": "variable", "unit": "VARIABLE"}}, {"field_path": "ingredients[9]", "section": "stock", "source_amount": 0.06, "source_unit": "g", "local": {"value": "0.06", "unit": "G_PER_L"}}, {"field_path": "ingredients[10]", "section": "stock", "source_amount": 0.1, "source_unit": "g", "local": {"value": "0.1", "unit": "G_PER_L"}}, {"field_path": "ingredients[11]", "section": "stock", "source_amount": 0.08, "source_unit": "g", "local": {"value": "0.08", "unit": "G_PER_L"}}, {"field_path": "ingredients[12]", "section": "stock", "source_amount": 0.44, "source_unit": "g", "local": {"value": "0.44", "unit": "G_PER_L"}}, {"field_path": "ingredients[13]", "section": "stock", "source_amount": 0.2, "source_unit": "g", "local": {"value": "0.2", "unit": "G_PER_L"}}, {"field_path": "ingredients[14]", "section": "stock", "source_amount": 0.17, "source_unit": "g", "local": {"value": "0.17", "unit": "G_PER_L"}}], "iron_mass_unit_factor_at_same_nominal_basis": 1000, "history_timezone_counts": [14, 14]} |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The referenced stock received bounded identity, quantity and embedded-evidence checks, not a standalone complete scientific review.
+- No replacement stock ID, missing gas volume, density, measured final volume, final trace concentration or organism-specific growth claim is inferred.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T070422Z-culturemech-008437-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1a_medium (CultureMech:008437)'
+started_at: '2026-10-21T06:57:07Z'
+finished_at: '2026-10-21T07:04:22Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M1862 identifies NBRC1106, but the record links a different trace stock,
+  flattens the source stock into the main medium, confuses mass and volume units,
+  and loses source preparation context. Two asserted salt IDs omit the stated hydration.
+  The maintained water deduplication change does not repair these source-boundary
+  errors.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_recipe_catalog.tsv
+    sha256: 0be6a7574e35e4a19cd5f30338d47e1c2cdac0d00152528850a676476394d378
+    role: context
+  - path: data/merge_yaml/merged/1a_Medium.yaml
+    sha256: 7fc1788076810bd98fcba1940de8628e9ebb66ea41ee976c1a4ea56378390fd1
+    role: target
+  - path: data/normalized_yaml/bacterial/1a_medium.yaml
+    sha256: 88e631c1e2b29efbb8e2c3dcfcab4d8723944b45b36fc3eb1805fd694f1315a8
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6140_Trace_metal_solution.yaml
+    sha256: d3401831d182ab5ace0bcda5b7b91d8bdfe40b488f9996dff7869c1d50add452
+    role: context
+  - path: data/normalized_yaml/recipe_index.json
+    sha256: dd2b482ef24092540340b8f444a673e7ab92d1982b519b57bc7a9461222377b2
+    role: context
+  - path: data/normalized_yaml/solutions/mediadive_solution_index.json
+    sha256: 2e43ed2391d0113480837e0756120d71a8dad8a4490010054e67bfb90c66d381
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_kinds.py
+    sha256: 2d9e26cc1e58fddfa9cb215d2adb5ca67abba51639404039f3c6d4c09f436652
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 64; batch 007 item 4 of 10, selected in Python lexicographic
+    repository-relative path order from the current uncovered merged corpus. The prior
+    six validated batch lists contain 60 distinct merged target paths. Fresh origin/main
+    at 24a1d277eb7f0437af53af0d178a30f9bfa6374c has 40 validated baseline bundles
+    covering 2 current merged paths. The union with prior batches covers 62 of 6320
+    current merged paths before this batch. This target path occurs in neither set.
+    Task ordinals continue the saved-review sequence, not global path ranks after
+    upstream corpus or coverage changes. This bundle selects only the named record;
+    no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008437
+targets:
+- target_id: CultureMech:008437
+  path: data/merge_yaml/merged/1a_Medium.yaml
+  label: 1a_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1a_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1a_Medium.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch007/064/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch007/064/strict.tsv"
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1a_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1a_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008437
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1a_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T07:04:21Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1a_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T07:04:21Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1a_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:57:53.284900Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1a_Medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch007/064/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:57:57.503916Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch007/064/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1a_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:58:05.114323Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1a_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:58:09.049550Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T07:04:21Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1a_Medium.yaml:1:id: CultureMech:008437
+
+    ./data/normalized_yaml/bacterial/1a_medium.yaml:1:id: CultureMech:008437
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T04:00:00.223561Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:46.729078Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:46.747221Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:47.379921Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:47.642746Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:48.016999Z'
+  support: supports
+  summary: CHEBI:34683 resolves to disodium hydrogenphosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi35696
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:48.030715Z'
+  support: supports
+  summary: CHEBI:35696 resolves to cobalt dichloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:48.271252Z'
+  support: supports
+  summary: CHEBI:63005 resolves to sodium nitrate and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:49:18.575865Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:48.635511Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:48.664736Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86356
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86356
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:49.256266Z'
+  support: supports
+  summary: CHEBI:86356 resolves to manganese(II) sulfate dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 5ef4755081dc2abb62d2dbb045b0d4c8e45888a10f6509971b9f881d7c8efa8c
+- evidence_id: chebi91243
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91243
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:49.313088Z'
+  support: supports
+  summary: CHEBI:91243 resolves to calcium chloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: a9d45a172136054012cf3641c7d2bd5d36fc4f8391bf0e5ea27f953c064e560b
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T07:04:21Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795":
+    [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036":
+    [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:63005": [{"label": "NaNO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:63005", "preferred_term": "NaNO3", "ontology_id": "CHEBI:63005",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34683": [{"label":
+    "Na2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:34683", "preferred_term":
+    "Na2HPO4", "ontology_id": "CHEBI:34683", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O",
+    "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1106
+  locator: Medium No.1106; Composition; starred trace-stock definition; preparation
+    paragraphs
+  accessed_at: '2026-10-21T06:57:49.522828Z'
+  support: supports
+  summary: Entire primary table, local trace-stock table, pH and preparation paragraphs
+    inspected. Main-medium and stock water are separate preparation amounts; source
+    gas context belongs to the headspace.
+  quote: Trace metal solution* 1 ml Distilled water 1 L
+  snapshot_sha256: 5697fd84399c57a2622c4948c6fe3cf462ebc40953c2b30ea3a770fb8bf09768
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1862
+  locator: meta; components[0:2]; comments
+  accessed_at: '2026-10-21T06:57:45.543285Z'
+  support: supports
+  summary: Complete metadata, both component sections, all ingredient units and annotations,
+    source-local stock reference and preparation comments inspected.
+  snapshot_sha256: 274a3797b0aaf63faebdf34fa41e25476180153b0d0bc3c2e42317e6021fb961
+- evidence_id: stock-api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6140
+  locator: data.id; data.recipe; data.volume
+  accessed_at: '2026-10-21T06:57:45.530947Z'
+  support: supports
+  summary: Exact stock6140 identity and six provider-declared stock concentrations
+    inspected. Its six local embedded evidence JSON rows match.
+  snapshot_sha256: ce371830a1b781977914dcac73adb8962f9a39eb44bac129fdf9b0d089d5fc9c
+- evidence_id: stock
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6140_Trace_metal_solution.yaml
+  locator: Entire SolutionRecipe, including composition, evidence and history
+  accessed_at: '2026-10-21T07:04:21Z'
+  support: context_only
+  summary: The unique local root ID CultureMech:014842 resolves asserted stock6140.
+    Its six solute rows are a different stock from NBRC1106, despite the same generic
+    name. The stale placeholder ingredients field does not replace its populated composition.
+  snapshot_sha256: d3401831d182ab5ace0bcda5b7b91d8bdfe40b488f9996dff7869c1d50add452
+- evidence_id: dependency
+  kind: validation
+  reference: Source-local stock, normalized stock, index and captured importer code
+  locator: Exact ID lookup, six embedded/API row comparisons, in-memory resolver and
+    extractor probes
+  accessed_at: '2026-10-21T07:03:00.447315Z'
+  support: supports
+  summary: '{"identity_comparison": {"result": "The asserted stock6140 is a chemically
+    different formulation from the source-local NBRC1106 stock.", "specific_differences":
+    ["Source stock specifies MnSO4\u00b72H2O, whereas6140 specifies MnCl2\u00b74H2O.",
+    "Source stock specifies CoCl2\u00b76H2O, whereas6140 specifies Co(NO3)2\u00b76H2O.",
+    "Shared boric-acid, zinc-sulfate, molybdate and copper-sulfate rows have different
+    declared stock amounts.", "The source-local stock includes an explicit water addition;
+    the6140 API exposes a declared1000ml stock volume with six solute recipe rows
+    and no separate water row. No missing-water defect is inferred from that difference
+    alone."], "candidate_replacement_id": "unresolved; no alternative MediaDive stock
+    was invented or selected by name"}, "hierarchy_observation": "Six source-local
+    stock solutes appear as direct target ingredients while a separate stock addition
+    points to6140. The stock solvent has been combined with the primary solvent in
+    the generated target. These are source-boundary and identity errors; no corrected
+    final concentrations were calculated.", "maintained_owner_difference": {"field_path":
+    "ingredients[0].concentration", "generated_value": {"value": "2.0", "unit": "G_PER_L"},
+    "maintained_owner_value": {"value": "1.0", "unit": "G_PER_L"}, "observation":
+    "The maintained owner already differs from the generated target in its water numeral
+    after an append-only duplicate-repair event. This does not establish a source-correct
+    amount or repair stock hierarchy."}, "legacy_resolver": {"source": "scripts/migrate_solutions_from_ingredients.py",
+    "method": "SolutionMigrator(...,dry_run=True)._resolve_solution with an in-memory
+    descriptor; no migration or file-writing method called", "same_name_candidates_in_index_order":
+    [{"id": "mediadive.solution:3533", "name": "Trace metal solution"}, {"id": "mediadive.solution:3719",
+    "name": "Trace metal solution"}, {"id": "mediadive.solution:3995", "name": "Trace
+    metal solution"}, {"id": "mediadive.solution:4003", "name": "Trace metal solution"},
+    {"id": "mediadive.solution:4104", "name": "Trace metal solution"}, {"id": "mediadive.solution:4148",
+    "name": "Trace metal solution"}, {"id": "mediadive.solution:4715", "name": "Trace
+    metal solution"}, {"id": "mediadive.solution:4724", "name": "Trace metal solution"},
+    {"id": "mediadive.solution:4903", "name": "Trace metal solution"}, {"id": "mediadive.solution:5047",
+    "name": "Trace metal solution"}, {"id": "mediadive.solution:5178", "name": "Trace
+    metal solution"}, {"id": "mediadive.solution:6124", "name": "Trace metal solution"},
+    {"id": "mediadive.solution:6140", "name": "Trace metal solution"}], "candidate_count":
+    13, "in_memory_resolution": {"preferred_term": "Trace metal solution*", "term":
+    {"id": "mediadive.solution:6140", "label": "Trace metal solution"}, "notes": "See
+    mediadive_6140_Trace_metal_solution.yaml for composition"}, "mechanism": "Removes
+    trailing asterisk markers, lowercases the name, and resolves through an index
+    that overwrites earlier duplicate names with later entries. The last of13 names
+    is6140.", "historical_limit": "Current code/index reproduce the stored association;
+    this does not prove the exact historical runtime bytes."}, "current_togo_extractor":
+    {"source": "src/culturemech/import/togo_importer.py", "method": "TogoImporter.__new__(TogoImporter)._extract_primary_components
+    over captured source JSON; constructor and output methods were not called", "direct_ingredient_count":
+    9, "direct_ingredient_names": ["Distilled water", "MgSO4\u00b77H2O", "KH2PO4",
+    "FeSO4\u00b77H2O", "NaNO3", "Na2HPO4\u00b72H2O", "CaCl2\u00b76H2O", "Methane gas",
+    "Air"], "solutions": [{"preferred_term": "Trace metal solution*", "composition":
+    [], "concentration": {"value": "1", "unit": "ML_PER_L"}, "notes": "Defined in
+    TOGO medium M1862."}], "stock_composition_resolved": false, "name_key_mismatch":
+    {"reference": "Trace metal solution*", "section": "*Trace metal solution"}, "local_batch_volume_probe_result":
+    null, "interpretation": "Current extraction separates main ingredients from the
+    stock addition, but leaves stock composition empty. Exact section-name matching
+    retains leading/trailing asterisks; even a direct batch-basis probe cannot equate
+    the1ml addition with the1L stock preparation. A rerun is not a complete curation
+    repair."}, "actual_checks": {"resolved_stock_records": 1, "root_id_unique_in_ignored_inclusive_normalized_search":
+    true, "class_routing_exit_zero": true, "provider_identity_matches_local_stock":
+    true, "composition_rows_with_exact_api_and_embedded_evidence_match": 6, "chebi_ids_verified_with_exact_labels_and_nonobsolete_status":
+    6, "current_source_capture_hashes_verified": true, "all_inspection_hashes_reverified":
+    true, "full_stock_validator_suite_run": false, "required_check_unavailable": false,
+    "external_fetches_by_this_agent": 2}, "limitations": ["This supporting context
+    is not an independent complete scientific review of stock6140.", "No receiving-medium
+    concentration, final-volume basis, stock replacement identifier or new culture
+    protocol was inferred.", "The broader target grounding, source preparation, classification
+    and evidence review remain with the parent."]}'
+  search_scope: Ignored-inclusive exact root-ID lookup across normalized corpus; full
+    resolved stock read. No substitute stock selected by name.
+- evidence_id: stock-CHEBI-33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact stock ontology ID/label and obsolete status
+  accessed_at: '2026-10-21T06:57:47.642746Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid and is nonobsolete. This checks stock
+    identity metadata, not the receiving-medium association.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: stock-CHEBI-86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact stock ontology ID/label and obsolete status
+  accessed_at: '2026-10-21T07:01:53.483912Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is nonobsolete.
+    This checks stock identity metadata, not the receiving-medium association.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: stock-CHEBI-32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact stock ontology ID/label and obsolete status
+  accessed_at: '2026-10-21T06:57:47.379921Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate and is nonobsolete. This
+    checks stock identity metadata, not the receiving-medium association.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: stock-CHEBI-75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact stock ontology ID/label and obsolete status
+  accessed_at: '2026-10-21T06:57:48.635511Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate and is nonobsolete.
+    This checks stock identity metadata, not the receiving-medium association.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: stock-CHEBI-31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact stock ontology ID/label and obsolete status
+  accessed_at: '2026-10-21T06:57:46.729078Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is nonobsolete.
+    This checks stock identity metadata, not the receiving-medium association.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: stock-CHEBI-86214
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86214
+  locator: Exact stock ontology ID/label and obsolete status
+  accessed_at: '2026-10-21T07:01:53.486872Z'
+  support: supports
+  summary: CHEBI:86214 resolves to cobalt dinitrate hexahydrate and is nonobsolete.
+    This checks stock identity metadata, not the receiving-medium association.
+  snapshot_sha256: 90cf3337643bc22bd3940bfbdee70a144b13af549ea12534184385f036b4633c
+- evidence_id: hydrate-forms
+  kind: validation
+  reference: Exact OLS responses already cited for CHEBI:34683 and CHEBI:35696
+  locator: generalized_empirical_formula and supplied source hydrate names
+  accessed_at: '2026-10-21T07:04:21Z'
+  support: refutes
+  summary: '{"CHEBI:34683": ["HO4P.2Na"], "CHEBI:35696": ["2Cl.Co"]}; neither formula
+    includes the waters stated in the corresponding ingredient preferred terms and
+    primary source.'
+- evidence_id: trace
+  kind: validation
+  reference: Complete target, owner and TOGO source
+  locator: Fifteen direct rows, annotations, iron unit arithmetic, two scoped water
+    rows and histories
+  accessed_at: '2026-10-21T07:04:21Z'
+  support: supports
+  summary: '{"rows": [{"field_path": "ingredients[0]", "section": "main", "source_amount":
+    1, "source_unit": "L", "local": {"value": "2.0", "unit": "G_PER_L"}}, {"field_path":
+    "ingredients[1]", "section": "main", "source_amount": 0.1, "source_unit": "g",
+    "local": {"value": "0.1", "unit": "G_PER_L"}}, {"field_path": "ingredients[2]",
+    "section": "main", "source_amount": 0.22, "source_unit": "g", "local": {"value":
+    "0.22", "unit": "G_PER_L"}}, {"field_path": "ingredients[3]", "section": "main",
+    "source_amount": 2, "source_unit": "mg", "local": {"value": "2", "unit": "G_PER_L"}},
+    {"field_path": "ingredients[4]", "section": "main", "source_amount": 1, "source_unit":
+    "g", "local": {"value": "1", "unit": "G_PER_L"}}, {"field_path": "ingredients[5]",
+    "section": "main", "source_amount": 0.5, "source_unit": "g", "local": {"value":
+    "0.5", "unit": "G_PER_L"}}, {"field_path": "ingredients[6]", "section": "main",
+    "source_amount": 0.03, "source_unit": "g", "local": {"value": "0.03", "unit":
+    "G_PER_L"}}, {"field_path": "ingredients[7]", "section": "main", "source_amount":
+    null, "source_unit": null, "local": {"value": "variable", "unit": "VARIABLE"}},
+    {"field_path": "ingredients[8]", "section": "main", "source_amount": null, "source_unit":
+    null, "local": {"value": "variable", "unit": "VARIABLE"}}, {"field_path": "ingredients[9]",
+    "section": "stock", "source_amount": 0.06, "source_unit": "g", "local": {"value":
+    "0.06", "unit": "G_PER_L"}}, {"field_path": "ingredients[10]", "section": "stock",
+    "source_amount": 0.1, "source_unit": "g", "local": {"value": "0.1", "unit": "G_PER_L"}},
+    {"field_path": "ingredients[11]", "section": "stock", "source_amount": 0.08, "source_unit":
+    "g", "local": {"value": "0.08", "unit": "G_PER_L"}}, {"field_path": "ingredients[12]",
+    "section": "stock", "source_amount": 0.44, "source_unit": "g", "local": {"value":
+    "0.44", "unit": "G_PER_L"}}, {"field_path": "ingredients[13]", "section": "stock",
+    "source_amount": 0.2, "source_unit": "g", "local": {"value": "0.2", "unit": "G_PER_L"}},
+    {"field_path": "ingredients[14]", "section": "stock", "source_amount": 0.17, "source_unit":
+    "g", "local": {"value": "0.17", "unit": "G_PER_L"}}], "iron_mass_unit_factor_at_same_nominal_basis":
+    1000, "history_timezone_counts": [14, 14]}'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: concern
+  summary: '13 primary CHEBI identities resolve with matching labels; 9 of 9 current
+    secondary keys have live pinned-index rows. Unresolved keys: []. Canonical label
+    resolution does not validate material form: source phosphate dihydrate and cobalt
+    chloride hexahydrate conflict with the two anhydrous-form identifiers, assessed
+    separately.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi31440
+  - chebi31795
+  - chebi32312
+  - chebi33118
+  - chebi34683
+  - chebi35696
+  - chebi63005
+  - chebi63036
+  - chebi75213
+  - chebi75836
+  - chebi86356
+  - chebi91243
+  - hydrate-forms
+  - nbrc
+  - togo
+  details: 15 direct ingredient instances; CHEBI-primary instance linkage 13/15 (86.67%),
+    verified secondary coverage 9/15 (60.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: dependency-amount-0
+  area: quantity
+  topic: solutions[0] referenced CultureMech:014842.composition[0].concentration
+  outcome: supported
+  summary: 'verified within referenced stock only: provider-declared concentration
+    in stock6140, not a receiving-medium concentration. This does not validate the
+    medium association or its stock dose.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - stock
+  - stock-api
+  - dependency
+- assessment_id: dependency-amount-1
+  area: quantity
+  topic: solutions[0] referenced CultureMech:014842.composition[1].concentration
+  outcome: supported
+  summary: 'verified within referenced stock only: provider-declared concentration
+    in stock6140, not a receiving-medium concentration. This does not validate the
+    medium association or its stock dose.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - stock
+  - stock-api
+  - dependency
+- assessment_id: dependency-amount-2
+  area: quantity
+  topic: solutions[0] referenced CultureMech:014842.composition[2].concentration
+  outcome: supported
+  summary: 'verified within referenced stock only: provider-declared concentration
+    in stock6140, not a receiving-medium concentration. This does not validate the
+    medium association or its stock dose.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - stock
+  - stock-api
+  - dependency
+- assessment_id: dependency-amount-3
+  area: quantity
+  topic: solutions[0] referenced CultureMech:014842.composition[3].concentration
+  outcome: supported
+  summary: 'verified within referenced stock only: provider-declared concentration
+    in stock6140, not a receiving-medium concentration. This does not validate the
+    medium association or its stock dose.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - stock
+  - stock-api
+  - dependency
+- assessment_id: dependency-amount-4
+  area: quantity
+  topic: solutions[0] referenced CultureMech:014842.composition[4].concentration
+  outcome: supported
+  summary: 'verified within referenced stock only: provider-declared concentration
+    in stock6140, not a receiving-medium concentration. This does not validate the
+    medium association or its stock dose.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - stock
+  - stock-api
+  - dependency
+- assessment_id: dependency-amount-5
+  area: quantity
+  topic: solutions[0] referenced CultureMech:014842.composition[5].concentration
+  outcome: supported
+  summary: 'verified within referenced stock only: provider-declared concentration
+    in stock6140, not a receiving-medium concentration. This does not validate the
+    medium association or its stock dose.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - stock
+  - stock-api
+  - dependency
+- assessment_id: identity
+  area: identity
+  topic: Source accession and stock association
+  outcome: concern
+  summary: Media identity is consistently TOGO M1862 / NBRC1106. Stock6140 resolves
+    but its manganese chloride and cobalt nitrate ingredients differ from the source
+    manganese sulfate and cobalt chloride; shared constituents also have different
+    stock amounts. A valid reference can still denote the wrong formulation.
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - nbrc
+  - togo
+  - stock
+  - stock-api
+  - dependency
+- assessment_id: main-amount-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: supported
+  summary: 'verified at stated material and source batch basis: the direct salt mass
+    agrees with the one-liter-water source formulation. Preserve source hydrate form
+    and water/batch context; no independently measured final volume is asserted.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - trace
+- assessment_id: main-amount-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: supported
+  summary: 'verified at stated material and source batch basis: the direct salt mass
+    agrees with the one-liter-water source formulation. Preserve source hydrate form
+    and water/batch context; no independently measured final volume is asserted.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - trace
+- assessment_id: main-amount-4
+  area: quantity
+  topic: ingredients[4].concentration
+  outcome: supported
+  summary: 'verified at stated material and source batch basis: the direct salt mass
+    agrees with the one-liter-water source formulation. Preserve source hydrate form
+    and water/batch context; no independently measured final volume is asserted.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - trace
+- assessment_id: main-amount-5
+  area: quantity
+  topic: ingredients[5].concentration
+  outcome: supported
+  summary: 'verified at stated material and source batch basis: the direct salt mass
+    agrees with the one-liter-water source formulation. Preserve source hydrate form
+    and water/batch context; no independently measured final volume is asserted.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - trace
+- assessment_id: main-amount-6
+  area: quantity
+  topic: ingredients[6].concentration
+  outcome: supported
+  summary: 'verified at stated material and source batch basis: the direct salt mass
+    agrees with the one-liter-water source formulation. Preserve source hydrate form
+    and water/batch context; no independently measured final volume is asserted.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - trace
+- assessment_id: iron
+  area: quantity
+  topic: ingredients[3].concentration
+  outcome: concern
+  summary: 'correct: source milligrams are stored as grams with the same numeral,
+    a 1000-fold mass-unit error at the same nominal batch basis. No final-volume inference
+    is needed to establish the unit discrepancy.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - trace
+- assessment_id: water
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: concern
+  summary: 'correct: main-medium water and separately prepared stock water were combined
+    into a parent mass concentration. The owner later collapsed the equal numerals
+    but still uses G_PER_L and loses preparation scope; numerical deduplication is
+    not source reconciliation.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - dependency
+  - trace
+- assessment_id: gas-7
+  area: quantity
+  topic: ingredients[7].concentration
+  outcome: concern
+  summary: 'not_quantified as a fixed liquid dose: provider ingredient rows lack an
+    amount, but the original preparation specifies a headspace gas relationship. VARIABLE
+    does not preserve that context, and a liquid concentration should not be invented.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - trace
+- assessment_id: gas-8
+  area: quantity
+  topic: ingredients[8].concentration
+  outcome: concern
+  summary: 'not_quantified as a fixed liquid dose: provider ingredient rows lack an
+    amount, but the original preparation specifies a headspace gas relationship. VARIABLE
+    does not preserve that context, and a liquid concentration should not be invented.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - trace
+- assessment_id: stock-flattened-9
+  area: quantity
+  topic: ingredients[9].concentration
+  outcome: concern
+  summary: 'correct: this numeral belongs to the separately prepared source trace
+    stock, not an additional undiluted direct ingredient in the receiving medium.
+    The parent also retains a stock reference, creating a double-counting risk.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - dependency
+  - trace
+- assessment_id: stock-flattened-10
+  area: quantity
+  topic: ingredients[10].concentration
+  outcome: concern
+  summary: 'correct: this numeral belongs to the separately prepared source trace
+    stock, not an additional undiluted direct ingredient in the receiving medium.
+    The parent also retains a stock reference, creating a double-counting risk.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - dependency
+  - trace
+- assessment_id: stock-flattened-11
+  area: quantity
+  topic: ingredients[11].concentration
+  outcome: concern
+  summary: 'correct: this numeral belongs to the separately prepared source trace
+    stock, not an additional undiluted direct ingredient in the receiving medium.
+    The parent also retains a stock reference, creating a double-counting risk.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - dependency
+  - trace
+- assessment_id: stock-flattened-12
+  area: quantity
+  topic: ingredients[12].concentration
+  outcome: concern
+  summary: 'correct: this numeral belongs to the separately prepared source trace
+    stock, not an additional undiluted direct ingredient in the receiving medium.
+    The parent also retains a stock reference, creating a double-counting risk.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - dependency
+  - trace
+- assessment_id: stock-flattened-13
+  area: quantity
+  topic: ingredients[13].concentration
+  outcome: concern
+  summary: 'correct: this numeral belongs to the separately prepared source trace
+    stock, not an additional undiluted direct ingredient in the receiving medium.
+    The parent also retains a stock reference, creating a double-counting risk.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - dependency
+  - trace
+- assessment_id: stock-flattened-14
+  area: quantity
+  topic: ingredients[14].concentration
+  outcome: concern
+  summary: 'correct: this numeral belongs to the separately prepared source trace
+    stock, not an additional undiluted direct ingredient in the receiving medium.
+    The parent also retains a stock reference, creating a double-counting risk.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - dependency
+  - trace
+- assessment_id: stock-dose
+  area: quantity
+  topic: solutions[0].concentration
+  outcome: concern
+  summary: 'correct: the primary source gives a volume dose for its own local stock;
+    the record asserts a mass concentration for a different stock. Stock preparation
+    volume, addition dose and final-medium concentrations must remain separate.'
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - stock
+  - dependency
+- assessment_id: forms
+  area: grounding
+  topic: Exact hydration and linkage denominators
+  outcome: concern
+  summary: Thirteen of fifteen direct instances carry resolving CHEBI IDs (86.67%)
+    and nine carry live secondary keys (60%), linkage metrics on a 0–100 scale. Two
+    IDs encode forms without the source hydration, including the phosphate secondary
+    key; valid labels do not make those assignments chemically exact.
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - mim
+  - hydrate-forms
+  - chebi34683
+  - chebi35696
+  - nbrc
+  - togo
+- assessment_id: preparation
+  area: completeness
+  topic: Source conditions and stage boundaries
+  outcome: concern
+  summary: Both providers contain pH and staged preparation/gas-headspace context
+    absent from the target and owner. The gas entries alone do not preserve the source
+    relationship or the distinction between preparation and headspace.
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+- assessment_id: classification
+  area: scope
+  topic: Composition class and biological claims
+  outcome: unknown
+  summary: LIQUID is consistent with the agar-free source formulation. The source
+    lists salts and gas context rather than a peptone/extract ingredient; the imported
+    COMPLEX/UNDEFINED classification needs reassessment after correcting stock composition.
+    No organism-specific growth or incubation assertion is inferred.
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - dependency
+- assessment_id: audit
+  area: evidence
+  topic: Provenance and evidence placement
+  outcome: concern
+  summary: Target/owner history timestamps parse with timezones. The later owner water
+    edit is absent from the generated target but is not a complete source repair.
+    Unknown solution naming and missing narrow evidence remain; reference validation
+    checked zero excerpts.
+  target_ids:
+  - CultureMech:008437
+  evidence_ids:
+  - record
+  - owner-0
+  - trace
+  - dependency
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: CM008437-wrong-trace-stock
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Trace-stock reference denotes a different formulation
+  description: Stock6140 resolves uniquely but has different manganese/cobalt salts
+    and different shared-solute amounts from NBRC1106. Generic-name matching reproduces
+    the reference; exact source formulation identity is not checked by that resolver.
+  target_ids:
+  - CultureMech:008437
+  field_paths:
+  - solutions[0].term
+  - solutions[0].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - stock
+  - stock-api
+  - dependency
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1.5
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM008437-flattened-stock-scope
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock composition is asserted again as direct medium ingredients
+  description: Six source-stock solutes appear at the parent with their stock numerals
+    while a stock dose remains. Both source water rows lost their preparation boundaries.
+    The current importer probe separates main rows but leaves local stock composition
+    empty, so a simple rerun is insufficient.
+  target_ids:
+  - CultureMech:008437
+  field_paths:
+  - ingredients[0]
+  - ingredients[9:15]
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - dependency
+  - trace
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CM008437-iron-mass-unit
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Iron salt milligrams are represented as grams
+  description: The source iron-salt mass uses milligrams; the target and owner retain
+    the same numeral under G_PER_L, yielding a 1000-fold unit discrepancy at the same
+    nominal basis.
+  target_ids:
+  - CultureMech:008437
+  field_paths:
+  - ingredients[3].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - trace
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CM008437-water-and-dose-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water and stock-volume doses are encoded as mass
+  description: Both the water entry and stock addition use G_PER_L without density
+    evidence. The owner water deduplication changes the numeral but retains incorrect
+    unit and scope.
+  target_ids:
+  - CultureMech:008437
+  field_paths:
+  - ingredients[0].concentration
+  - solutions[0].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - dependency
+  - trace
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f5
+  issue_key: CM008437-hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Two IDs omit the source hydration
+  description: Phosphate dihydrate is linked to a term with formula HO4P.2Na, and
+    cobalt chloride hexahydrate to a term with formula2Cl.Co. Canonical ID/label validation
+    passes, but the source names and supplied forms are more specific.
+  target_ids:
+  - CultureMech:008437
+  field_paths:
+  - ingredients[5].term
+  - ingredients[5].mediaingredientmech_chebi_term
+  - ingredients[11].term
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - hydrate-forms
+  - chebi34683
+  - chebi35696
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f6
+  issue_key: CM008437-preparation-and-gas-context
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source pH and staged preparation context are absent
+  description: The source provides pH and preparation/headspace context, but the record
+    retains only unquantified gas rows. Neither target nor owner represents these
+    source-scoped conditions.
+  target_ids:
+  - CultureMech:008437
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - ingredients[7]
+  - ingredients[8]
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f7
+  issue_key: CM008437-placeholder-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Placeholders and narrow evidence remain unresolved
+  description: The stock display name is Unknown solution and no claim-level evidence
+    supports amounts, source stock boundaries, chemical forms or preparation.
+  target_ids:
+  - CultureMech:008437
+  field_paths:
+  - solutions[0].name
+  - ingredients[*].evidence
+  - evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.1
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Resolve the trace stock within the original medium context. Independently
+    verify any replacement ID or represent the source-local composition faithfully;
+    do not select a stock by its generic name.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008437
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore stock/receiving-medium hierarchy and scoped water entries.
+    Address source-section matching before any authorized reimport and verify that
+    no stock constituents are counted twice.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008437
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Correct the unit using the exact hydrated source material and retain
+    the original batch amount as evidence; do not silently rescale unrelated stock
+    amounts.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008437
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve original liquid volumes and their distinct batch/addition
+    roles after hierarchy repair; no guessed density or measured final volume.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008437
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Verify exact hydrated-form ontology identities before replacing primary
+    and corresponding secondary keys. Preserve supplied-form names and do not use
+    anhydrous molecular weights.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:008437
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Represent the inspected source context at the proper preparation/headspace
+    scope after formulation repair. Preserve source approximation and do not infer
+    a fixed liquid gas concentration.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:008437
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a7
+  description: Use source-scoped naming and evidence after identity repair; also reassess
+    imported composition classification against the corrected complete formula.
+  finding_ids:
+  - f7
+  target_ids:
+  - CultureMech:008437
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1a_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The referenced stock received bounded identity, quantity and embedded-evidence checks,
+  not a standalone complete scientific review.
+- No replacement stock ID, missing gas volume, density, measured final volume, final
+  trace concentration or organism-specific growth claim is inferred.
+tags:
+- unreviewed-records
+- batch-007
+- generated-medium
+```
