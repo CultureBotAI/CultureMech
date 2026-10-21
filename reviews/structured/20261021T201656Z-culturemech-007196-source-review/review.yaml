@@ -1,0 +1,1857 @@
+schema_version: 1.0.0
+review_id: 20261021T201656Z-culturemech-007196-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: asp2 (CultureMech:007196)'
+started_at: '2026-10-21T20:11:20Z'
+finished_at: '2026-10-21T20:16:56Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'The generated Asp2 record omits later owner repairs and a carefully scoped
+  paper citation. Its 24 millimolar amounts and generic preparation remain unsupported
+  by an authenticated formulation: exact MediaDB/SQL and full-paper access are unavailable,
+  while bibliography, abstract and taxon identity are independently verifiable.'
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Asp2.yaml
+    sha256: 89c510873b970eb730cc3836d2585cd0bdfae3697ddc98ee6f8a5073fb6b11c8
+    role: target
+  - path: data/normalized_yaml/bacterial/asp2.yaml
+    sha256: 78f4b7fd41deaa99aee0aca685d19c24133a5504823b56c795d338c6e36d6059
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/yaml_record_review/20260921T154635Z-Asp2.md
+    sha256: 4f51b3ff98785dafd5f510a5990ff1a06076d51ffe930c0e25bc92b08fda3935
+    role: context
+  - path: reviews/structured/20261013T163318Z-cyanobacterial-study-paper-citations/review.yaml
+    sha256: ffab03dca1ce3cacedc6a48929d302d4adab4e29b5b002aafa0b3f71ca9be7f3
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/add_metal_ree_labels.py
+    sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+    role: context
+  - path: scripts/analyze_metal_concentrations.py
+    sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadb_names.py
+    sha256: 56ad322b70927ac6dff2de12c63d7bfc640d72a6c2521b55293a788ac3cca4c5
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadb_raw_yaml.py
+    sha256: 2c8a64083ec095130cbf1cc87e2ba18a63a9437ca9772784d0932d12d42cab81
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadb_fetcher.py
+    sha256: 25e7d4bdb93551a01b7f54536de8884e7a5342453ffedc69bf45f91dbada1b11
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 366; batch 037 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-six task batches
+    contain 360 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 363 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007196
+targets:
+- target_id: CultureMech:007196
+  path: data/merge_yaml/merged/Asp2.yaml
+  label: asp2
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asp2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Asp2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Asp2.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch037/366/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-037/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch037/366/strict.tsv"
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Asp2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Asp2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007196
+- check_id: mediadb295text-source-access
+  name: 'Exact source content access: mediadb295text'
+  required: true
+  status: unavailable
+  summary: Required exact MediaDB 295 formulation is unavailable (HTTP 502). The retained
+    home/download/SQL attempts also failed. A bounded ignored-inclusive search across
+    138 owned temporary roots and selected raw/body/sql fields did not recover the
+    historical SQL payload; this is a scoped miss, not universal absence. Current
+    source 108 ownership cannot be reauthenticated from that payload.
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - mediadb295text-attempt
+- check_id: pmc205243-source-access
+  name: 'Exact source content access: pmc205243'
+  required: true
+  status: unavailable
+  summary: 'Required full-paper/formulation inspection remains unavailable: PMC HTTP
+    200 is a browser challenge, publisher HTTP 403, EuropePMC fullTextXML HTTP 500
+    and the OA request HTTP 404. PubMed/Crossref metadata and abstract are available
+    and separately authenticated, but cannot certify the 24 ingredients or preparation.'
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - pmc205243-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Asp2.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/asp2.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Asp2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:12:08.108907Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Asp2.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch037/366/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:12:09.302323Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-037/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch037/366/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Asp2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:12:10.776143Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Asp2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:12:11.646210Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: supports
+  summary: './data/merge_yaml/merged/Asp2.yaml:1:id: CultureMech:007196
+
+    ./data/normalized_yaml/bacterial/asp2.yaml:1:id: CultureMech:007196
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/source-preflight-bound/366/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: supports
+  summary: 36 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 45651f2277c200ac3d325a518b7a47b0d0fde8d655ec0f361060bfe1f3f5e6ba
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/source-preflight-bound/366/evidence-context-original.json
+  locator: Complete frozen source context and full local objects
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: Frozen target/owner objects match freshly inspected records. Source interpretations
+    are assessed against actual bound capture bytes; historical limitations remain
+    separate.
+  snapshot_sha256: 1e2d428747fa46ad34a35e7ef7d562977addc48380befa31790dc7a1c0f19906
+- evidence_id: pubmed
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=8132452&retmode=xml
+  locator: PubmedArticle/MedlineCitation/Article and PubmedData/ArticleIdList
+  accessed_at: '2026-10-21T19:52:48.686703Z'
+  support: supports
+  summary: PMID 8132452 identifies the 1994 paper and its abstract, not a 24-ingredient
+    Asp2 recipe or nitrate-free variant. Current raw bytes match the historical paper-108
+    citation hash.
+  snapshot_sha256: 4b5c5ebb92ad1493bf558080f1f3631602c5b2dc4d5dfc7716303e40a0b05aa2
+- evidence_id: crossref
+  kind: database
+  reference: https://api.crossref.org/works/10.1128/jb.176.6.1586-1597.1994
+  locator: message.DOI, title, author, published, volume, issue and page
+  accessed_at: '2026-10-21T19:52:48.686249Z'
+  support: supports
+  summary: Four named authors and 1994 volume 176 issue 6 pages 1586–1597 support
+    the maintained bibliography. Current raw bytes match the historical crossref-authors
+    hash. PubMed still contains an additional CollectiveName; that metadata discrepancy
+    remains explicit.
+  snapshot_sha256: 64985f8e08f3200bf0ef93940d695423a0f907aa2ed58e95e780a29dfb12d8ac
+- evidence_id: taxon
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=43989&retmode=xml
+  locator: TaxaSet/Taxon[TaxId=43989]/ScientificName, Rank, OtherNames
+  accessed_at: '2026-10-21T19:52:48.686816Z'
+  support: supports
+  summary: Crocosphaera subtropica ATCC 51142 is the current strain name; Cyanothece
+    sp. ATCC 51142 is an equivalent name. This validates contextual identity only,
+    not growth on the local recipe.
+  snapshot_sha256: c58fa2420b789c42d50bbafca7b3f4d54d0a20233e91ade5f43898231518a48a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/366/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 2db458d8b2378b2c2b87cc47d064f44093ab2ea92394d4445eb685269a99e2c8
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17821
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17821
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.079737Z'
+  support: supports
+  summary: CHEBI:17821 resolves to thymine. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fa842c97ef37eb7149260a49f37f93a747804bf52c8534ddc616c9c2e0bdbba4
+- evidence_id: chebi17836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T19:52:51.226095Z'
+  support: supports
+  summary: CHEBI:17836 resolves to 4-aminobenzoate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ba6a00ecc342e501e138020609f1cf4abcde1041ef1025a18aa5e67fa7000f41
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27374
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27374
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T19:52:51.382268Z'
+  support: supports
+  summary: CHEBI:27374 resolves to 1L-chiro-inositol. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 005bcc0fc33cc76f5792a875ecda904ca06e747d478e308835d3e13dfa357b35
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: CHEBI:32599 resolves to magnesium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: CHEBI:3312 resolves to calcium dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi35696
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T06:57:48.030715Z'
+  support: supports
+  summary: CHEBI:35696 resolves to cobalt dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi4735
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_4735
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:28.659368Z'
+  support: supports
+  summary: CHEBI:4735 resolves to ethylenediaminetetraacetic acid. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: ef8713e257a5e52aa813d8a43a26ed321ff04a475591ff238c00a47758f96717
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi49553
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49553
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T10:07:17.608864Z'
+  support: supports
+  summary: CHEBI:49553 resolves to copper(II) chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 55d84961ae8c483bc2364cb9c5f159267161b61a3c77c93632021c6f4ea1810d
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi60720
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_60720
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T19:52:51.851430Z'
+  support: supports
+  summary: CHEBI:60720 resolves to sodium silicate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: d3f08a19ae194694e0b7a88d88bf92f291e787a0463a63f11561e9a04153fc30
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T04:02:36.443517Z'
+  support: supports
+  summary: CHEBI:63005 resolves to sodium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi63041
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63041
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T15:28:31.703245Z'
+  support: supports
+  summary: CHEBI:63041 resolves to manganese(II) chloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 6da8c21967f94f8445d18bee979bd215a5c6e095b8988378c2ccb56a74283bf0
+- evidence_id: chebi9754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:13.713319Z'
+  support: supports
+  summary: CHEBI:9754 resolves to tris. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b9f921dfa34f343d4ef51ee217fc47702a8f03e2b9a8353effa10de89e9c6659
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:15956":
+    [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956",
+    "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type":
+    "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12",
+    "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}],
+    "CHEBI:17821": [{"label": "Thymine", "match_type": "preferred_term", "identifier":
+    "CHEBI:17821", "preferred_term": "Thymine", "ontology_id": "CHEBI:17821", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17836": [{"label": "4-Aminobenzoate",
+    "match_type": "preferred_term", "identifier": "CHEBI:17836", "preferred_term":
+    "4-Aminobenzoate", "ontology_id": "CHEBI:17836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31345": [{"label":
+    "Calcium pantothenate", "match_type": "preferred_term", "identifier": "CHEBI:31345",
+    "preferred_term": "Calcium pantothenate", "ontology_id": "CHEBI:31345", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32599":
+    [{"label": "Magnesium sulfate", "match_type": "preferred_term", "identifier":
+    "CHEBI:32599", "preferred_term": "Magnesium sulfate", "ontology_id": "CHEBI:32599",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label":
+    "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:4735": [{"label": "EDTA", "match_type": "preferred_term", "identifier":
+    "CHEBI:4735", "preferred_term": "EDTA", "ontology_id": "CHEBI:4735", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl",
+    "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:60720": [{"label": "Na-silicate", "match_type": "preferred_term", "identifier":
+    "CHEBI:60720", "preferred_term": "Na-silicate", "ontology_id": "CHEBI:60720",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63005": [{"label":
+    "NaNO3", "match_type": "preferred_term", "identifier": "CHEBI:63005", "preferred_term":
+    "NaNO3", "ontology_id": "CHEBI:63005", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Asp2.yaml; data/normalized_yaml/bacterial/asp2.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/asp2.yaml",
+    "events": 10, "timestamp_issues": []}]'
+- evidence_id: prior-citation-review
+  kind: record_content
+  reference: reviews/structured/20261013T163318Z-cyanobacterial-study-paper-citations/review.yaml
+  locator: paper-108, crossref-authors, formulation-108; full Asp2-related claim scope
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: The two bibliographic raw hashes are reauthenticated by current captures.
+    The original MediaDB SQL and inaccessible paper formulation remain unrecovered;
+    metadata authenticity does not authenticate amounts. The prior formulation-108
+    finding remains open.
+  snapshot_sha256: ffab03dca1ce3cacedc6a48929d302d4adab4e29b5b002aafa0b3f71ca9be7f3
+- evidence_id: derivative-review
+  kind: record_content
+  reference: reports/yaml_record_review/20260921T154635Z-Asp2.md
+  locator: Complete historical Asp2 review, including amount comparisons and MediaDB
+    source 108 assertions
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: The historical report describes matching 24 mM amounts, EDTA speciation
+    and a source-owner join, but no original tabular/SQL payload was recovered. Its
+    old owner-state description differs from the current repaired owner. Do not treat
+    it as current source content.
+  snapshot_sha256: 4f51b3ff98785dafd5f510a5990ff1a06076d51ffe930c0e25bc92b08fda3935
+- evidence_id: mediadb295text-attempt
+  kind: database
+  reference: https://mediadb.systemsbiology.net/defined_media/media_text/295/
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:54:22.475997Z'
+  support: context_only
+  summary: Required exact MediaDB 295 formulation is unavailable (HTTP 502). The retained
+    home/download/SQL attempts also failed. A bounded ignored-inclusive search across
+    138 owned temporary roots and selected raw/body/sql fields did not recover the
+    historical SQL payload; this is a scoped miss, not universal absence. Current
+    source 108 ownership cannot be reauthenticated from that payload.
+  snapshot_sha256: 76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273
+- evidence_id: pmc205243-attempt
+  kind: database
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC205243/
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:52:49.550854Z'
+  support: context_only
+  summary: 'Required full-paper/formulation inspection remains unavailable: PMC HTTP
+    200 is a browser challenge, publisher HTTP 403, EuropePMC fullTextXML HTTP 500
+    and the OA request HTTP 404. PubMed/Crossref metadata and abstract are available
+    and separately authenticated, but cannot certify the 24 ingredients or preparation.'
+  snapshot_sha256: 99f62fcae90f0351022b9d028fb1248500d09d58a291c9dced43952a8cfec6c5
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadb_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: Current code read without execution. MediaDB importer creates constant
+    generic preparation and maps mM directly; the guarded name repair requires the
+    exact SQL compound/medium join. Metal analysis sums heuristic compound-name amounts
+    and uses a corpus percentile; the label writer consumes its output. These current
+    functions do not authenticate historical source contents or assert a causal reconstruction.
+  snapshot_sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/repair_mediadb_names.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: Current code read without execution. MediaDB importer creates constant
+    generic preparation and maps mM directly; the guarded name repair requires the
+    exact SQL compound/medium join. Metal analysis sums heuristic compound-name amounts
+    and uses a corpus percentile; the label writer consumes its output. These current
+    functions do not authenticate historical source contents or assert a causal reconstruction.
+  snapshot_sha256: 56ad322b70927ac6dff2de12c63d7bfc640d72a6c2521b55293a788ac3cca4c5
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/analyze_metal_concentrations.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: Current code read without execution. MediaDB importer creates constant
+    generic preparation and maps mM directly; the guarded name repair requires the
+    exact SQL compound/medium join. Metal analysis sums heuristic compound-name amounts
+    and uses a corpus percentile; the label writer consumes its output. These current
+    functions do not authenticate historical source contents or assert a causal reconstruction.
+  snapshot_sha256: d9e414741123d14bf7350f57bd280eb2188bc9fc1a87917ce3d96a45c9d826cf
+- evidence_id: writer-3
+  kind: record_content
+  reference: scripts/add_metal_ree_labels.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:16:55Z'
+  support: context_only
+  summary: Current code read without execution. MediaDB importer creates constant
+    generic preparation and maps mM directly; the guarded name repair requires the
+    exact SQL compound/medium join. Metal analysis sums heuristic compound-name amounts
+    and uses a corpus percentile; the label writer consumes its output. These current
+    functions do not authenticate historical source contents or assert a causal reconstruction.
+  snapshot_sha256: f4d45eaf1e633af60de15629b7b85371ea6d509052b6161fad63f7b607853b10
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 26 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    Unverified imported main amount: Sodium chloride\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"308.0\",\n          \"unit\": \"MILLIMOLAR\"\n   \
+    \     },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"308.0\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"308.0\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q2\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Magnesium sulfate\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20.3\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"20.3\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"20.3\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q3\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Potassium chloride\",\n    \"decision\": \"unsupported\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8.05\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"8.05\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"8.05\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q4\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Calcium chloride anhydrous\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.901\",\n          \"unit\": \"MILLIMOLAR\"\n   \
+    \     },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.901\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.901\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q5\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Sodium nitrate\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.588\",\n          \"unit\": \"MILLIMOLAR\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.588\",\n          \"unit\"\
+    : \"MILLIMOLAR\"\n        },\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\"\
+    ,\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.588\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q6\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Potassium dibasic phosphate\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0287\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.0287\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.0287\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q7\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Tromethamine\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"8.25\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"8.25\",\n          \"unit\":\
+    \ \"MILLIMOLAR\"\n        },\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\"\
+    ,\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"8.25\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q8\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Vitamin B12\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.48e-06\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1.48e-06\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"1.48e-06\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q9\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: EDTA\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.131\",\n          \"unit\": \"MILLIMOLAR\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.131\",\n          \"unit\"\
+    : \"MILLIMOLAR\"\n        },\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\"\
+    ,\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.131\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q10\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Iron(III) chloride\",\n    \"decision\": \"unsupported\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.00493\",\n          \"unit\": \"MILLIMOLAR\"\n \
+    \       },\n        \"decision\": \"unsupported\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.00493\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.00493\",\n        \"unit\": \"MILLIMOLAR\"\n     \
+    \ },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q11\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Zinc Chloride\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[10].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.0011\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0011\",\n          \"unit\"\
+    : \"MILLIMOLAR\"\n        },\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\"\
+    ,\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.0011\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q12\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Manganese chloride\",\n    \"decision\": \"unsupported\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"9.54e-06\",\n          \"unit\": \"MILLIMOLAR\"\n\
+    \        },\n        \"decision\": \"unsupported\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"9.54e-06\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"9.54e-06\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q13\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Cobalt chloride\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.31e-05\",\n          \"unit\": \"MILLIMOLAR\"\n\
+    \        },\n        \"decision\": \"unsupported\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[12].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.31e-05\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"2.31e-05\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q14\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Cupric chloride\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"8.93e-06\",\n          \"unit\": \"MILLIMOLAR\"\n\
+    \        },\n        \"decision\": \"unsupported\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[13].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"8.93e-06\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"8.93e-06\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q15\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Boric acid\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[14].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"9.7e-05\",\n          \"unit\": \"MILLIMOLAR\"\n     \
+    \   },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"ingredients[14].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"9.7e-05\",\n          \"unit\"\
+    : \"MILLIMOLAR\"\n        },\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\"\
+    ,\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"9.7e-05\",\n        \"unit\": \"MILLIMOLAR\"\n     \
+    \ },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q16\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Thiamine HCl\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[15].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.00166\",\n          \"unit\": \"MILLIMOLAR\"\n     \
+    \   },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"ingredients[15].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.00166\",\n          \"unit\"\
+    : \"MILLIMOLAR\"\n        },\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\"\
+    ,\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.00166\",\n        \"unit\": \"MILLIMOLAR\"\n     \
+    \ },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q17\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Nicotinate\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[16].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.000812\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[16].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.000812\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.000812\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q18\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Calcium pantothenate\",\n    \"decision\": \"unsupported\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000456\",\n          \"unit\": \"MILLIMOLAR\"\n\
+    \        },\n        \"decision\": \"unsupported\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[17].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.000456\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.000456\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q19\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: 4-Aminobenzoate\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.29e-05\",\n          \"unit\": \"MILLIMOLAR\"\n\
+    \        },\n        \"decision\": \"unsupported\"\n      },\n      {\n      \
+    \  \"input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[18].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"7.29e-05\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"7.29e-05\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q20\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Biotin\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[19].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"4.09e-06\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[19].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"4.09e-06\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"4.09e-06\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q21\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: L-Inositol\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[20].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.0278\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"ingredients[20].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0278\",\n          \"unit\"\
+    : \"MILLIMOLAR\"\n        },\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\"\
+    ,\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.0278\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q22\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Folate\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[21].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"4.53e-06\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[21].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"4.53e-06\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"4.53e-06\",\n        \"unit\": \"MILLIMOLAR\"\n    \
+    \  },\n      \"source_amount\": null,\n      \"source_form\": null,\n      \"\
+    replacement\": null\n    },\n    \"rationale\": \"Both local layers agree numerically,\
+    \ but neither has claim-level amount evidence. The current exact MediaDB export\
+    \ is inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q23\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: Thymine\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n     \
+    \   \"field_path\": \"ingredients[22].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.0238\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"ingredients[22].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.0238\",\n          \"unit\"\
+    : \"MILLIMOLAR\"\n        },\n        \"decision\": \"unsupported\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\"\
+    ,\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"0.0238\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q24\",\n    \"component_or_context\": \"Unverified imported\
+    \ main amount: sodium silicate\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.23\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\"\
+    : \"ingredients[23].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1.23\",\n          \"unit\": \"MILLIMOLAR\"\n        },\n        \"decision\"\
+    : \"unsupported\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"mediadb295text\",\n        \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"retained_local_assertion\"\
+    : {\n        \"value\": \"1.23\",\n        \"unit\": \"MILLIMOLAR\"\n      },\n\
+    \      \"source_amount\": null,\n      \"source_form\": null,\n      \"replacement\"\
+    : null\n    },\n    \"rationale\": \"Both local layers agree numerically, but\
+    \ neither has claim-level amount evidence. The current exact MediaDB export is\
+    \ inaccessible and the historical SQL payload is unrecovered. The prior review\
+    \ describes a match but is derivative evidence, not a recovered source. Preserve\
+    \ the existing value pending authentication; unsupported does not mean proven\
+    \ false. No mass conversion or final-volume assumption is made.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q25\",\n    \"component_or_context\": \"Imported filtration\
+    \ pore size and generic preparation\",\n    \"decision\": \"unsupported\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Sterilize by filtration (0.22 μm) to preserve heat-sensitive components\"\
+    ,\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/asp2.yaml\",\n        \"field_path\": \"preparation_steps[2].description\"\
+    ,\n        \"stored\": \"Sterilize by filtration (0.22 μm) to preserve heat-sensitive\
+    \ components\",\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"mediadb295text\",\n \
+    \       \"source_url\": \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\"\
+    ,\n        \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"local_filter_um\"\
+    : 0.22,\n      \"authenticated_source_filter_um\": null,\n      \"replacement_protocol\"\
+    : null\n    },\n    \"rationale\": \"Current importer _create_preparation_steps\
+    \ returns this constant without reading protocol fields. The original formulation/full\
+    \ paper is unavailable and abstract metadata does not support a pore size. Do\
+    \ not substitute another generic cycle.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q26\",\n    \"component_or_context\": \"Water, pH and vessel quantities not established\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n        \"field_path\"\
+    : \"preparation_steps\",\n        \"stored\": [\n          {\n            \"step_number\"\
+    : 1,\n            \"action\": \"DISSOLVE\",\n            \"description\": \"Dissolve\
+    \ all ingredients in distilled water to specified concentrations\"\n         \
+    \ },\n          {\n            \"step_number\": 2,\n            \"action\": \"\
+    ADJUST_PH\",\n            \"description\": \"Adjust pH if specified in original\
+    \ formulation\"\n          },\n          {\n            \"step_number\": 3,\n\
+    \            \"action\": \"FILTER_STERILIZE\",\n            \"description\": \"\
+    Sterilize by filtration (0.22 μm) to preserve heat-sensitive components\"\n  \
+    \        }\n        ],\n        \"decision\": \"unsupported\"\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/asp2.yaml\",\n     \
+    \   \"field_path\": \"preparation_steps\",\n        \"stored\": [\n          {\n\
+    \            \"step_number\": 1,\n            \"action\": \"DISSOLVE\",\n    \
+    \        \"description\": \"Dissolve all ingredients in distilled water to specified\
+    \ concentrations\"\n          },\n          {\n            \"step_number\": 2,\n\
+    \            \"action\": \"ADJUST_PH\",\n            \"description\": \"Adjust\
+    \ pH if specified in original formulation\"\n          },\n          {\n     \
+    \       \"step_number\": 3,\n            \"action\": \"FILTER_STERILIZE\",\n \
+    \           \"description\": \"Sterilize by filtration (0.22 μm) to preserve heat-sensitive\
+    \ components\"\n          }\n        ],\n        \"decision\": \"unsupported\"\
+    \n      },\n      {\n        \"input\": \"data/merge_yaml/merged/Asp2.yaml\",\n\
+    \        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"not_quantified\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/asp2.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"not_quantified\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"mediadb295text\",\n        \"source_url\"\
+    : \"https://mediadb.systemsbiology.net/defined_media/media_text/295/\",\n    \
+    \    \"source_locator\": \"HTTP error body/title\",\n        \"exact_source_quote\"\
+    : \"502 Bad Gateway\",\n        \"snapshot_sha256\": \"76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273\"\
+    ,\n        \"accessed_at\": \"2026-10-21T19:54:22.475997Z\",\n        \"claim_scope\"\
+    : \"Failed formulation access only; this quote contains no ingredient amount.\"\
+    \n      }\n    ],\n    \"proposed_source_representation\": {\n      \"water_amount\"\
+    : null,\n      \"final_volume\": null,\n      \"pH\": null,\n      \"vessel\"\
+    : null,\n      \"incubation_temperature\": null\n    },\n    \"rationale\": \"\
+    Millimolar labels are retained as local assertions; no water quantity, stock dilution,\
+    \ numerical pH, vessel or incubation condition is recovered. Generic dissolution\
+    \ and conditional pH-adjustment prose are importer defaults, not source-specific\
+    \ instructions.\"\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '23 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 22/24
+    primary and 13/24 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15940
+  - chebi15956
+  - chebi176843
+  - chebi17821
+  - chebi17836
+  - chebi26710
+  - chebi27374
+  - chebi27470
+  - chebi31345
+  - chebi32588
+  - chebi32599
+  - chebi33118
+  - chebi3312
+  - chebi35696
+  - chebi4735
+  - chebi49105
+  - chebi49553
+  - chebi49976
+  - chebi60720
+  - chebi63005
+  - chebi63041
+  - chebi9754
+  details: 'Instance coverage on a 0–100 percent scale, denominator 24: primary 91.67%;
+    secondary 54.17%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 18 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact record and source-owner identity
+  outcome: concern
+  summary: CultureMech:007196 has one maintained bacterial Asp2 owner with MEDIADB:295.
+    Its historical source 108/PMID link is retained as qualified provenance. The paper
+    and strain identifiers resolve, but the unavailable original SQL join and complete
+    formulation prevent an independently completed source-to-recipe comparison. No
+    new organism, growth, nitrate-free variant or literature-equivalence assertion
+    is proposed.
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - pubmed
+  - crossref
+  - taxon
+  - prior-citation-review
+  - derivative-review
+- assessment_id: forms
+  area: grounding
+  topic: Supplied forms versus canonical metadata
+  outcome: concern
+  summary: All asserted labels resolve, but this does not authenticate original supplied
+    forms. The owner restores Iron(III) chloride and adds CHEBI:27374 for L-Inositol;
+    the term explicitly includes L-Inositol as a synonym, so no stereochemical mismatch
+    is established. The target still has the truncated iron name and no inositol term.
+    Generic calcium pantothenate does not by itself establish the D-specific CHEBI:31345
+    structure; EDTA speciation in the prior derivative report, folate/nicotinate acid-ion
+    scope, magnesium hydration and B12 vitamer identity remain source questions, not
+    proven replacement IDs. No mass conversion uses these uncertain forms.
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - record
+  - owner-0
+  - chebi27374
+  - chebi31345
+  - chebi4735
+  - chebi27470
+  - chebi15940
+  - chebi32599
+  - chebi176843
+  - derivative-review
+- assessment_id: preparation
+  area: completeness
+  topic: Protocol defaults and absent primary evidence
+  outcome: concern
+  summary: Both layers retain constant dissolution, conditional pH adjustment and
+    0.22 μm filtration prose. The current importer supplies those instructions without
+    source protocol input. No source-specific pH, water make-up, stock sequence, filter
+    size, cycle or incubation has been authenticated. Retain uncertainty rather than
+    inventing a complete protocol.
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Defined formulation and high-metal classification limits
+  outcome: concern
+  summary: 'DEFINED/DEFINED and LIQUID are consistent with the local list of specified
+    salts, vitamins and no gelling agent, but complete source composition is unavailable.
+    high_metal is not automatically false: the local 308 mM sodium, 20.3 mM magnesium
+    and 8.05 mM potassium salts give a substantial salt signal under the current heuristic,
+    which includes Na/Mg/K. The actual source amounts and corpus-percentile classification
+    are not experimentally verified here; no replacement Boolean, measured elemental
+    total or metal-tolerance phenotype is inferred. Generic applications are import
+    annotations, not measured growth.'
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-2
+  - writer-3
+  - quantity-inventory
+- assessment_id: generated-correspondence
+  area: ownership
+  topic: Maintained repairs and generated staleness
+  outcome: concern
+  summary: The generated target lacks the current owner’s repaired iron name, L-inositol
+    grounding and scoped 1994 bibliography, together with their later history. The
+    owner already distinguishes abstract context from formulation evidence. Preserve
+    those qualified statements and all historical events; a future authorized regeneration
+    should propagate the reviewed owner after remaining source gaps are addressed.
+  target_ids:
+  - CultureMech:007196
+  evidence_ids:
+  - record
+  - owner-0
+  - history-metadata
+  - pubmed
+  - crossref
+  - chebi27374
+findings:
+- finding_id: f1
+  issue_key: culturemech.007196.generated-owner-staleness
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated Asp2 omits maintained identity repairs and bibliography
+  description: The target retains a leading-quote Iron(III fragment at ingredient
+    9, omits the owner’s L-inositol term at ingredient 20 and has no structured paper
+    reference. The maintained owner already contains these repairs and a narrowly
+    qualified citation; the review does not claim its original SQL evidence is now
+    recovered.
+  target_ids:
+  - CultureMech:007196
+  field_paths:
+  - ingredients[9].preferred_term
+  - ingredients[20].term
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - chebi27374
+  - pubmed
+  - crossref
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asp2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cyanobacterial-study-citations-formulation-108
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Exact Asp2 formulation and supplied forms remain unauthenticated
+  description: Neither layer has claim-level evidence for its 24 mM values. Current
+    abstract/bibliography bytes authenticate citation identity only; the exact historical
+    SQL, current MediaDB table and full paper recipe are unavailable. Preserve the
+    prior open formulation finding, including source-form uncertainty, without treating
+    unchanged values as confirmed false.
+  target_ids:
+  - CultureMech:007196
+  field_paths:
+  - ingredients
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - quantity-inventory
+  - prior-citation-review
+  - derivative-review
+  - mediadb295text-attempt
+  - pmc205243-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asp2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+  previous_occurrences:
+  - repository: culturebotai/CultureMech
+    review_id: 20261013T163318Z-cyanobacterial-study-paper-citations
+    finding_id: formulation-108
+- finding_id: f3
+  issue_key: culturemech.007196.unsupported-preparation-defaults
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generic preparation is presented without source support
+  description: The retained three-step protocol, including a 0.22 μm filter, is the
+    importer’s unconditional template rather than an authenticated Asp2 preparation.
+    Existing source and citation metadata do not establish these operational details.
+  target_ids:
+  - CultureMech:007196
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asp2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Verify and propagate the maintained iron-name repair, supported L-inositol
+    synonym grounding and scoped bibliography through separately authorized regeneration.
+    Preserve the owner’s formulation and paper-access limits and append any later
+    clarification.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007196
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asp2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Recover exact MediaDB 295/source 108 or the actual publication recipe
+    and authenticate each amount, unit, supplied form and preparation stage. Attach
+    narrow evidence; preserve values and unresolved speciation until supported. Do
+    not add growth or nitrate-free variants from the abstract.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007196
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asp2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Remove or explicitly qualify unsupported defaults during authorized
+    curation. Replace only with exact source-specific preparation after its original
+    evidence is recovered; do not infer temperatures, durations, water quantities
+    or pH.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007196
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/asp2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Required exact MediaDB 295 formulation is unavailable (HTTP 502). The retained home/download/SQL
+  attempts also failed. A bounded ignored-inclusive search across 138 owned temporary
+  roots and selected raw/body/sql fields did not recover the historical SQL payload;
+  this is a scoped miss, not universal absence. Current source 108 ownership cannot
+  be reauthenticated from that payload.
+- 'Required full-paper/formulation inspection remains unavailable: PMC HTTP 200 is
+  a browser challenge, publisher HTTP 403, EuropePMC fullTextXML HTTP 500 and the
+  OA request HTTP 404. PubMed/Crossref metadata and abstract are available and separately
+  authenticated, but cannot certify the 24 ingredients or preparation.'
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-037
+- generated-medium

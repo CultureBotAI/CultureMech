@@ -1,0 +1,6615 @@
+# Source and formulation review: archaeoglobus_mcr_medium (CultureMech:007814)
+
+- Review: 20261021T201748Z-culturemech-007814-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T20:11:16Z
+- Finished UTC: 2026-10-21T20:17:48Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The TOGO child specifies HHB medium plus 2.8 g/L sodium sulfate. Its maintained owner has a valid 1 L parent link, while the generated target retains a 1 G_PER_L placeholder. The parent and its named trace, Se/W and vitamin stocks require separate stage-aware quantities and chemical-form review. The exact child primary and the asserted KG-Microbe match remain unverified.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 362; batch 037 item 2 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirty-six task batches contain 360 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 363 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007814 | data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml | generated | archaeoglobus_mcr_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007814 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007814 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-037/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch037/362/strict.tsv |
+| validate-terms | passed | True | CultureMech:007814 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007814 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007814 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: jcm1195 | unavailable | True | CultureMech:007814 | The exact JCM 1195 request returned HTTP 200 with Nothing found, not a usable primary formulation. The child sulfate instruction is supported by the exact TOGO M1280 payload only; JCM 1194 independently supports its named parent. |
+| Exact source content access: jcm120 | unavailable | False | CultureMech:007814 | JCM 120 returned Nothing found; it does not authenticate the asserted mediadive.medium:J120 crosslink. |
+| Exact source content access: mediadiveJ120 | unavailable | False | CultureMech:007814 | The exact MediaDive J120 retrieval did not supply a usable formulation or graph membership proof. |
+| Asserted KG-Microbe J120 ingredient-set correspondence | unavailable | True | CultureMech:007814 | Actual graph membership and ingredient-set correspondence are unavailable; no match rerun, equivalence inference or false-match conclusion. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007814.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:007814.
+
+80 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "name": "Na2SO4 child supplement",
+    "stage": "Child supplement to HHB",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2.8",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "2.8",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": 2.8,
+      "unit": "G_PER_L",
+      "basis": "Explicit secondary child instruction"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1280original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1280",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Na2SO4\",\n          \"volume\": 2.8,\n          \"unit\": \"g/L\"",
+        "snapshot_sha256": "c578a1f05495fe28f57ce4997a322cb53479768f48d2054a62d7aa693b95107e"
+      }
+    ],
+    "interpretation": "Both values agree with the exact provider; neither layer attaches claim-level amount evidence. The child primary is unavailable."
+  },
+  {
+    "decision_id": "q2",
+    "name": "HHB parent dose",
+    "stage": "Child parent-medium reference",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "value": 1,
+      "unit": "L",
+      "parent_id": "CultureMech:007812"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1280original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1280",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "c578a1f05495fe28f57ce4997a322cb53479768f48d2054a62d7aa693b95107e"
+      }
+    ],
+    "interpretation": "The generated target miscasts the parent liquid volume as mass concentration and lacks the maintained owner’s resolved parent identity."
+  },
+  {
+    "decision_id": "q3",
+    "name": "HHB parent dose and relationship",
+    "stage": "Maintained child owner",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "solutions[0].culturemech_term",
+        "stored": {
+          "id": "CultureMech:007812",
+          "label": "Methanothermococcus HHB Medium"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "parent_media",
+        "stored": {
+          "path": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+          "relationship": "SUPPLEMENTED_VARIANT",
+          "id": "CultureMech:007812",
+          "name": "methanothermococcus_hhb_medium",
+          "notes": "TOGO M1280 uses TOGO M1279 Methanothermococcus HHB Medium and supplements it with 2.8 g/L Na2SO4."
+        }
+      }
+    ],
+    "desired": {
+      "value": 1,
+      "unit": "L",
+      "parent_id": "CultureMech:007812"
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1280original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1280",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "c578a1f05495fe28f57ce4997a322cb53479768f48d2054a62d7aa693b95107e"
+      }
+    ],
+    "interpretation": "The maintained 1 L dose and reciprocal parent path resolve. Empty inline composition is not itself a defect when the explicit parent relationship is retained; source-backed parent curation is still necessary."
+  },
+  {
+    "decision_id": "q4",
+    "name": "Distilled water",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Distilled water",
+        "1.0",
+        "L"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 12: Distilled water &#124; 1.0 &#124; L",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L   &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q5",
+    "name": "MgSO4・7H2O",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "3.4",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "MgSO 4 ·7H 2 O",
+        "3.4",
+        "g"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 4: MgSO 4 ·7H 2 O &#124; 3.4 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; MgSO&lt;sub&gt;4&lt;/sub&gt;&amp;#183;7H&lt;sub&gt;2&lt;/sub&gt;O &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;3.4&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"MgSO4・7H2O\",\n          \"volume\": 3.4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q6",
+    "name": "NaCl",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "NaCl",
+        "20.0",
+        "g"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 6: NaCl &#124; 20.0 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; NaCl &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;20.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"NaCl\",\n          \"volume\": 20,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q7",
+    "name": "CaCl2・2H2O",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.14",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "CaCl 2 ·2H 2 O",
+        "0.14",
+        "g"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 5: CaCl 2 ·2H 2 O &#124; 0.14 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; CaCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.14&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.14,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q8",
+    "name": "NH4Cl",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "NH 4 Cl",
+        "0.5",
+        "g"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 0: NH 4 Cl &#124; 0.5 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; NH&lt;sub&gt;4&lt;/sub&gt;Cl &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.5&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"NH4Cl\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q9",
+    "name": "K2HPO4",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.14",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "K 2 HPO 4",
+        "0.14",
+        "g"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 1: K 2 HPO 4 &#124; 0.14 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; K&lt;sub&gt;2&lt;/sub&gt;HPO&lt;sub&gt;4&lt;/sub&gt; &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.14&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 0.14,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q10",
+    "name": "Resazurin",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Resazurin",
+        "1.0",
+        "mg"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 11: Resazurin &#124; 1.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Resazurin &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q11",
+    "name": "MgCl2・6H2O",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "4.18",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "MgCl 2 ·6H 2 O",
+        "4.18",
+        "g"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 3: MgCl 2 ·6H 2 O &#124; 4.18 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; MgCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;4.18&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 4.18,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q12",
+    "name": "KCl",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.33",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "KCl",
+        "0.33",
+        "g"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 2: KCl &#124; 0.33 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; KCl &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.33&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[8]",
+        "exact_source_quote": "\"component_name\": \"KCl\",\n          \"volume\": 0.33,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q13",
+    "name": "Fe(NH4)2(SO4)2・6H2O",
+    "stage": "HHB main recipe before post-cooling additions",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Fe(NH 4 ) 2 (SO 4 ) 2 ·6H 2 O",
+        "2.0",
+        "mg"
+      ],
+      "basis": "Listed HHB batch with 1 L water; not measured final volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 7: Fe(NH 4 ) 2 (SO 4 ) 2 ·6H 2 O &#124; 2.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Fe(NH&lt;sub&gt;4&lt;/sub&gt;)&lt;sub&gt;2&lt;/sub&gt;(SO&lt;sub&gt;4&lt;/sub&gt;)&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"Fe(NH4)2(SO4)2・6H2O\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Preserve the printed gram, milligram or water volume at this stage. The parent flat G_PER_L representation cannot silently turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium sulfate are milligrams, and water is a liquid volume."
+  },
+  {
+    "decision_id": "q14",
+    "name": "Carbon dioxide gas",
+    "stage": "HHB gas ingredient entry",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "desired": {
+      "individual_liquid_mass_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[13]",
+        "exact_source_quote": "\"component_name\": \"Carbon dioxide gas\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Variable gas entries supply no dissolved mass concentration. Explicit atmosphere ratios and pressure are assessed separately."
+  },
+  {
+    "decision_id": "q15",
+    "name": "Hydrogen gas",
+    "stage": "HHB gas ingredient entry",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        }
+      }
+    ],
+    "desired": {
+      "individual_liquid_mass_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[14]",
+        "exact_source_quote": "\"component_name\": \"Hydrogen gas\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Variable gas entries supply no dissolved mass concentration. Explicit atmosphere ratios and pressure are assessed separately."
+  },
+  {
+    "decision_id": "q16",
+    "name": "Trace vitamins (see Medium [M190])",
+    "stage": "HHB named stock dose; post-cooling per-liter basis only for bicarbonate and sulfide",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Trace vitamins (see Medium No. 197 )",
+        "10.0",
+        "ml"
+      ],
+      "basis": "Main recipe dose"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 8: Trace vitamins (see Medium No. 197 ) &#124; 10.0 &#124; ml",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Trace vitamins (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=197\"&gt;197&lt;/a&gt;) &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[10]",
+        "exact_source_quote": "\"component_name\": \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Liquid milliliter doses are stored as G_PER_L in the parent. Do not sum stock preparation volumes into the receiving medium or infer a measured final volume."
+  },
+  {
+    "decision_id": "q17",
+    "name": "Trace mineral solution (see Medium [M888])",
+    "stage": "HHB named stock dose; post-cooling per-liter basis only for bicarbonate and sulfide",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Trace mineral solution (see Medium No. 852 )",
+        "10.0",
+        "ml"
+      ],
+      "basis": "Main recipe dose"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 9: Trace mineral solution (see Medium No. 852 ) &#124; 10.0 &#124; ml",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Trace mineral solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=852\"&gt;852&lt;/a&gt;) &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[11]",
+        "exact_source_quote": "\"component_name\": \"Trace mineral solution (see Medium [M888])\",\n          \"volume\": 10,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Liquid milliliter doses are stored as G_PER_L in the parent. Do not sum stock preparation volumes into the receiving medium or infer a measured final volume."
+  },
+  {
+    "decision_id": "q18",
+    "name": "Se/W solution (see Medium [M888])",
+    "stage": "HHB named stock dose; post-cooling per-liter basis only for bicarbonate and sulfide",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Se/W solution (Medium No. 852 )",
+        "1.0",
+        "ml"
+      ],
+      "basis": "Main recipe dose"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 10: Se/W solution (Medium No. 852 ) &#124; 1.0 &#124; ml",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Se/W solution (Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=852\"&gt;852&lt;/a&gt;) &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[0].items[12]",
+        "exact_source_quote": "\"component_name\": \"Se/W solution (see Medium [M888])\",\n          \"volume\": 1,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Liquid milliliter doses are stored as G_PER_L in the parent. Do not sum stock preparation volumes into the receiving medium or infer a measured final volume."
+  },
+  {
+    "decision_id": "q19",
+    "name": "8% NaHCO3 solution*",
+    "stage": "HHB named stock dose; post-cooling per-liter basis only for bicarbonate and sulfide",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[3].concentration",
+        "stored": {
+          "value": "12",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "8% NaHCO 3 solution*",
+        "12.0",
+        "ml"
+      ],
+      "basis": "Explicit addition per liter after cooling"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 13: 8% NaHCO 3 solution* &#124; 12.0 &#124; ml",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 8% NaHCO&lt;sub&gt;3&lt;/sub&gt; solution* &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;12.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"8% NaHCO3 solution*\",\n          \"volume\": 12,\n          \"unit\": \"ml\",\n          \"conc_value\": 8,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Liquid milliliter doses are stored as G_PER_L in the parent. Do not sum stock preparation volumes into the receiving medium or infer a measured final volume."
+  },
+  {
+    "decision_id": "q20",
+    "name": "5% Na2S・9H2O solution",
+    "stage": "HHB named stock dose; post-cooling per-liter basis only for bicarbonate and sulfide",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[4].concentration",
+        "stored": {
+          "value": "10",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "5% Na 2 S·9H 2 O solution",
+        "10.0",
+        "ml"
+      ],
+      "basis": "Explicit addition per liter after cooling"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 14: 5% Na 2 S·9H 2 O solution &#124; 10.0 &#124; ml",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 5% Na&lt;sub&gt;2&lt;/sub&gt;S&amp;#183;9H&lt;sub&gt;2&lt;/sub&gt;O solution &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml   &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      },
+      {
+        "source_key": "togoM1279original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"5% Na2S・9H2O solution\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"conc_value\": 5,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385"
+      }
+    ],
+    "interpretation": "Liquid milliliter doses are stored as G_PER_L in the parent. Do not sum stock preparation volumes into the receiving medium or infer a measured final volume."
+  },
+  {
+    "decision_id": "q21",
+    "name": "NaHCO3 stock strength",
+    "stage": "Post-cooling HHB stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[3].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "value": 8,
+      "unit": "PERCENT",
+      "percentage_basis": "not specified"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 13: 8% NaHCO 3 solution* &#124; 12.0 &#124; ml",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 8% NaHCO&lt;sub&gt;3&lt;/sub&gt; solution* &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;12.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      }
+    ],
+    "interpretation": "The source prints a percent without w/v, v/v or w/w. Preserve the explicit strength without adopting an unstated percentage basis."
+  },
+  {
+    "decision_id": "q22",
+    "name": "Na2S·9H2O stock strength",
+    "stage": "Post-cooling HHB stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[4].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "value": 5,
+      "unit": "PERCENT",
+      "percentage_basis": "not specified"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Exact HTML table row 14: 5% Na 2 S·9H 2 O solution &#124; 10.0 &#124; ml",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; 5% Na&lt;sub&gt;2&lt;/sub&gt;S&amp;#183;9H&lt;sub&gt;2&lt;/sub&gt;O solution &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml   &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631"
+      }
+    ],
+    "interpretation": "The source prints a percent without w/v, v/v or w/w. Preserve the explicit strength without adopting an unstated percentage basis."
+  },
+  {
+    "decision_id": "q23",
+    "name": "Distilled water",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.0",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Distilled water",
+        "1.0",
+        "L"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 25: Distilled water &#124; 1.0 &#124; L",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q24",
+    "name": "Distilled water",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Distilled water",
+        "1.0",
+        "L"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 25: Distilled water &#124; 1.0 &#124; L",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q25",
+    "name": "Na2MoO4・2H2O",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Na 2 MoO 4 ·2H 2 O",
+        "0.024",
+        "g"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 22: Na 2 MoO 4 ·2H 2 O &#124; 0.024 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;MoO&lt;sub&gt;4&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.024&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 0.024,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q26",
+    "name": "Na2MoO4・2H2O",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Na 2 MoO 4 ·2H 2 O",
+        "0.024",
+        "g"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 22: Na 2 MoO 4 ·2H 2 O &#124; 0.024 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;MoO&lt;sub&gt;4&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.024&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2MoO4・2H2O\",\n          \"volume\": 0.024,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q27",
+    "name": "H3BO3",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "6.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "H 3 BO 3",
+        "6.2",
+        "mg"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 21: H 3 BO 3 &#124; 6.2 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; H&lt;sub&gt;3&lt;/sub&gt;BO&lt;sub&gt;3&lt;/sub&gt;                                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;6.2&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"H3BO3\",\n          \"volume\": 6.2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q28",
+    "name": "H3BO3",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "H 3 BO 3",
+        "6.2",
+        "mg"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 21: H 3 BO 3 &#124; 6.2 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; H&lt;sub&gt;3&lt;/sub&gt;BO&lt;sub&gt;3&lt;/sub&gt;                                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;6.2&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"H3BO3\",\n          \"volume\": 6.2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q29",
+    "name": "MnCl2・4H2O",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.198",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "MnCl 2 ·4H 2 O",
+        "0.198",
+        "g"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 17: MnCl 2 ·4H 2 O &#124; 0.198 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; MnCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;4H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.198&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 0.198,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q30",
+    "name": "MnCl2・4H2O",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "MnCl 2 ·4H 2 O",
+        "0.198",
+        "g"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 17: MnCl 2 ·4H 2 O &#124; 0.198 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; MnCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;4H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.198&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"MnCl2・4H2O\",\n          \"volume\": 0.198,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q31",
+    "name": "CoCl2・6H2O",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.13",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "CoCl 2 ·6H 2 O",
+        "0.13",
+        "g"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 18: CoCl 2 ·6H 2 O &#124; 0.13 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; CoCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.13&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"CoCl2・6H2O\",\n          \"volume\": 0.13,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q32",
+    "name": "CoCl2・6H2O",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "CoCl 2 ·6H 2 O",
+        "0.13",
+        "g"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 18: CoCl 2 ·6H 2 O &#124; 0.13 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; CoCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.13&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"CoCl2・6H2O\",\n          \"volume\": 0.13,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q33",
+    "name": "NiCl2・6H2O",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.013",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "NiCl 2 ·6H 2 O",
+        "0.013",
+        "g"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 23: NiCl 2 ·6H 2 O &#124; 0.013 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; NiCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.013&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"NiCl2・6H2O\",\n          \"volume\": 0.013,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q34",
+    "name": "NiCl2・6H2O",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "NiCl 2 ·6H 2 O",
+        "0.013",
+        "g"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 23: NiCl 2 ·6H 2 O &#124; 0.013 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; NiCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.013&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"NiCl2・6H2O\",\n          \"volume\": 0.013,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q35",
+    "name": "CuCl2・2H2O",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "1.7",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "CuCl 2 ·2H 2 O",
+        "1.7",
+        "mg"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 20: CuCl 2 ·2H 2 O &#124; 1.7 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; CuCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.7&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 1.7,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q36",
+    "name": "CuCl2・2H2O",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "CuCl 2 ·2H 2 O",
+        "1.7",
+        "mg"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 20: CuCl 2 ·2H 2 O &#124; 1.7 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; CuCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.7&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"CuCl2・2H2O\",\n          \"volume\": 1.7,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q37",
+    "name": "ZnCl2",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.136",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "ZnCl 2",
+        "0.136",
+        "g"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 19: ZnCl 2 &#124; 0.136 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; ZnCl&lt;sub&gt;2&lt;/sub&gt;                                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.136&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"ZnCl2\",\n          \"volume\": 0.136,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q38",
+    "name": "ZnCl2",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "ZnCl 2",
+        "0.136",
+        "g"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 19: ZnCl 2 &#124; 0.136 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; ZnCl&lt;sub&gt;2&lt;/sub&gt;                                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.136&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"ZnCl2\",\n          \"volume\": 0.136,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q39",
+    "name": "AlCl3",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.013",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "AlCl 3",
+        "0.013",
+        "g"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 24: AlCl 3 &#124; 0.013 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; AlCl&lt;sub&gt;3&lt;/sub&gt;                                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.013&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"AlCl3\",\n          \"volume\": 0.013,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q40",
+    "name": "AlCl3",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "AlCl 3",
+        "0.013",
+        "g"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 24: AlCl 3 &#124; 0.013 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; AlCl&lt;sub&gt;3&lt;/sub&gt;                                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.013&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"AlCl3\",\n          \"volume\": 0.013,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q41",
+    "name": "FeCl2・4H2O",
+    "stage": "JCM 852 trace mineral stock batch",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "1.99",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "FeCl 2 ·4H 2 O",
+        "1.99",
+        "g"
+      ],
+      "scope": "Separate trace stock with 1 L water"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 16: FeCl 2 ·4H 2 O &#124; 1.99 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; FeCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;4H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.99&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"FeCl2・4H2O\",\n          \"volume\": 1.99,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "The flattened parent field loses stock membership; its G_PER_L value must not be transferred as final medium concentration. The shared water field also represents unrelated parent waters and must not be apportioned by an invented sum."
+  },
+  {
+    "decision_id": "q42",
+    "name": "FeCl2・4H2O",
+    "stage": "Resolved HHB trace stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "FeCl 2 ·4H 2 O",
+        "1.99",
+        "g"
+      ],
+      "scope": "Stock recipe only; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 16: FeCl 2 ·4H 2 O &#124; 1.99 &#124; g",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; FeCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;4H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.99&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"FeCl2・4H2O\",\n          \"volume\": 1.99,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Retain the exact named stock recipe through a verified reference or scoped composition; this does not require duplicating it into the child’s top-level ingredients."
+  },
+  {
+    "decision_id": "q43",
+    "name": "Distilled water",
+    "stage": "Flattened parent stock entry",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1.0",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Distilled water",
+        "1.0",
+        "L"
+      ],
+      "scope": "Separate Se/W stock with 1 L water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 28: Distilled water &#124; 1.0 &#124; L",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Selenium and tungsten are milligrams in the stock batch. This distinct water amount is not a second liter of the receiving medium."
+  },
+  {
+    "decision_id": "q44",
+    "name": "Distilled water",
+    "stage": "Resolved HHB Se/W stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[2].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Distilled water",
+        "1.0",
+        "L"
+      ],
+      "scope": "Separate Se/W stock with 1 L water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 28: Distilled water &#124; 1.0 &#124; L",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Selenium and tungsten are milligrams in the stock batch. This distinct water amount is not a second liter of the receiving medium."
+  },
+  {
+    "decision_id": "q45",
+    "name": "Na2SeO3・5H2O",
+    "stage": "Flattened parent stock entry",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "1.7",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Na 2 SeO 3 ·5H 2 O",
+        "1.7",
+        "mg"
+      ],
+      "scope": "Separate Se/W stock with 1 L water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 26: Na 2 SeO 3 ·5H 2 O &#124; 1.7 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;SeO&lt;sub&gt;3&lt;/sub&gt;&amp;#183;5H&lt;sub&gt;2&lt;/sub&gt;O                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.7&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2SeO3・5H2O\",\n          \"volume\": 1.7,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Selenium and tungsten are milligrams in the stock batch. This distinct water amount is not a second liter of the receiving medium."
+  },
+  {
+    "decision_id": "q46",
+    "name": "Na2SeO3・5H2O",
+    "stage": "Resolved HHB Se/W stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[2].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Na 2 SeO 3 ·5H 2 O",
+        "1.7",
+        "mg"
+      ],
+      "scope": "Separate Se/W stock with 1 L water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 26: Na 2 SeO 3 ·5H 2 O &#124; 1.7 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;SeO&lt;sub&gt;3&lt;/sub&gt;&amp;#183;5H&lt;sub&gt;2&lt;/sub&gt;O                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.7&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2SeO3・5H2O\",\n          \"volume\": 1.7,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Selenium and tungsten are milligrams in the stock batch. This distinct water amount is not a second liter of the receiving medium."
+  },
+  {
+    "decision_id": "q47",
+    "name": "Na2WO4・2H2O",
+    "stage": "Flattened parent stock entry",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "3.3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Na 2 WO 4 ·2H 2 O",
+        "3.3",
+        "mg"
+      ],
+      "scope": "Separate Se/W stock with 1 L water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 27: Na 2 WO 4 ·2H 2 O &#124; 3.3 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;WO&lt;sub&gt;4&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;3.3&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[2].items[2]",
+        "exact_source_quote": "\"component_name\": \"Na2WO4・2H2O\",\n          \"volume\": 3.3,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Selenium and tungsten are milligrams in the stock batch. This distinct water amount is not a second liter of the receiving medium."
+  },
+  {
+    "decision_id": "q48",
+    "name": "Na2WO4・2H2O",
+    "stage": "Resolved HHB Se/W stock",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[2].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Na 2 WO 4 ·2H 2 O",
+        "3.3",
+        "mg"
+      ],
+      "scope": "Separate Se/W stock with 1 L water; receiving dose 1 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm852",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852",
+        "source_locator": "Exact HTML table row 27: Na 2 WO 4 ·2H 2 O &#124; 3.3 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;WO&lt;sub&gt;4&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;3.3&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458"
+      },
+      {
+        "source_key": "togoM888original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888",
+        "source_locator": "$.components[2].items[2]",
+        "exact_source_quote": "\"component_name\": \"Na2WO4・2H2O\",\n          \"volume\": 3.3,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40"
+      }
+    ],
+    "interpretation": "Selenium and tungsten are milligrams in the stock batch. This distinct water amount is not a second liter of the receiving medium."
+  },
+  {
+    "decision_id": "q49",
+    "name": "Distilled water",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[0].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "L"
+        }
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Distilled water",
+        "1.0",
+        "L"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 25: Distilled water &#124; 1.0 &#124; L",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q50",
+    "name": "Distilled water",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Distilled water",
+        "1.0",
+        "L"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 25: Distilled water &#124; 1.0 &#124; L",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q51",
+    "name": "Biotin",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[1].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Biotin",
+        "2.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 15: Biotin &#124; 2.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Biotin                                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q52",
+    "name": "Biotin",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Biotin",
+        "2.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 15: Biotin &#124; 2.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Biotin                                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q53",
+    "name": "p--Aminobenzoic acid",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[2].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "p -Aminobenzoic acid",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 23: p -Aminobenzoic acid &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; &lt;I&gt;p&lt;/I&gt;-Aminobenzoic acid                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q54",
+    "name": "p--Aminobenzoic acid",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "p -Aminobenzoic acid",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 23: p -Aminobenzoic acid &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; &lt;I&gt;p&lt;/I&gt;-Aminobenzoic acid                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q55",
+    "name": "Thiamine・HCl",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[3].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Thiamine·HCl",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 18: Thiamine·HCl &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Thiamine&amp;#183;HCl                                      &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q56",
+    "name": "Thiamine・HCl",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Thiamine·HCl",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 18: Thiamine·HCl &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Thiamine&amp;#183;HCl                                      &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q57",
+    "name": "Calcium pantothenate",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[4].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Calcium pantothenate",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 21: Calcium pantothenate &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Calcium pantothenate                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q58",
+    "name": "Calcium pantothenate",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Calcium pantothenate",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 21: Calcium pantothenate &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Calcium pantothenate                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q59",
+    "name": "Pyridoxine・HCl",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[5].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Pyridoxine·HCl",
+        "10.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 17: Pyridoxine·HCl &#124; 10.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Pyridoxine&amp;#183;HCl                                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q60",
+    "name": "Pyridoxine・HCl",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Pyridoxine·HCl",
+        "10.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 17: Pyridoxine·HCl &#124; 10.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Pyridoxine&amp;#183;HCl                                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q61",
+    "name": "Folic acid",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[6].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Folic acid",
+        "2.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 16: Folic acid &#124; 2.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Folic acid                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q62",
+    "name": "Folic acid",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Folic acid",
+        "2.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 16: Folic acid &#124; 2.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Folic acid                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q63",
+    "name": "Vitamin B12",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[7].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Vitamin B 1 2",
+        "0.1",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 22: Vitamin B 1 2 &#124; 0.1 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Vitamin B&lt;sub&gt;1&lt;/sub&gt;&lt;sub&gt;2&lt;/sub&gt;                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q64",
+    "name": "Vitamin B12",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Vitamin B 1 2",
+        "0.1",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 22: Vitamin B 1 2 &#124; 0.1 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Vitamin B&lt;sub&gt;1&lt;/sub&gt;&lt;sub&gt;2&lt;/sub&gt;                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q65",
+    "name": "Riboflavin",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[8].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Riboflavin",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 19: Riboflavin &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Riboflavin                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q66",
+    "name": "Riboflavin",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Riboflavin",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 19: Riboflavin &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Riboflavin                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q67",
+    "name": "Nicotinic acid",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[9].notes",
+        "stored": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Nicotinic acid",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 20: Nicotinic acid &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Nicotinic acid                                          &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q68",
+    "name": "Nicotinic acid",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Nicotinic acid",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 20: Nicotinic acid &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Nicotinic acid                                          &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q69",
+    "name": "Lipoic acid",
+    "stage": "Existing M190 trace-vitamin stock",
+    "decision": "verified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1].composition[10].notes",
+        "stored": "Role: Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Lipoic acid",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Existing stock amount only"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 24: Lipoic acid &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Lipoic acid                                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[10]",
+        "exact_source_quote": "\"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Existing stock notes or water volume have attached exact source-hash and literal evidence. This status does not authenticate the child, receiving dose or unspecified calcium-pantothenate stereochemistry."
+  },
+  {
+    "decision_id": "q70",
+    "name": "Lipoic acid",
+    "stage": "HHB resolved vitamin-stock composition",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": []
+      }
+    ],
+    "desired": {
+      "source_table": [
+        "Lipoic acid",
+        "5.0",
+        "mg"
+      ],
+      "scope": "Ten vitamin species plus 1 L stock water; receiving dose 10 mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Exact HTML table row 24: Lipoic acid &#124; 5.0 &#124; mg",
+        "exact_source_quote": "&lt;TR&gt;&lt;TD WIDTH=75%&gt; Lipoic acid                                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532"
+      },
+      {
+        "source_key": "togoM190original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+        "source_locator": "$.components[1].items[10]",
+        "exact_source_quote": "\"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528"
+      }
+    ],
+    "interpretation": "Keep this stock separate from the parent basal recipe and mineral stock. A stock reference may carry the recipe without flattening it into the child."
+  },
+  {
+    "decision_id": "q71",
+    "name": "Autoclave temperature",
+    "stage": "Base sterilization",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 121,
+      "unit": "DEG_C"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Base sterilization sentence",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "This is the named HHB parent procedure. Apply the displayed default only to JCM 1194; no default is inferred from the empty JCM 1195 response. Bottle dimensions are examples, and pressure has no absolute/gauge qualifier."
+  },
+  {
+    "decision_id": "q72",
+    "name": "Autoclave duration",
+    "stage": "Base sterilization",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 15,
+      "unit": "MIN"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Base sterilization sentence",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "This is the named HHB parent procedure. Apply the displayed default only to JCM 1194; no default is inferred from the empty JCM 1195 response. Bottle dimensions are examples, and pressure has no absolute/gauge qualifier."
+  },
+  {
+    "decision_id": "q73",
+    "name": "H2:CO2 gas ratio",
+    "stage": "Boiling/cooling and dispensing",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "ratio": "4:1",
+      "basis": "v/v"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Boiling/cooling and dispensing sentence",
+        "exact_source_quote": "Bring to a boil and cool down under a H 2 -CO 2 (4:1, v/v) gas stream.",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "This is the named HHB parent procedure. Apply the displayed default only to JCM 1194; no default is inferred from the empty JCM 1195 response. Bottle dimensions are examples, and pressure has no absolute/gauge qualifier."
+  },
+  {
+    "decision_id": "q74",
+    "name": "Medium fill",
+    "stage": "Example bottle setup",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 20,
+      "unit": "ML",
+      "conditional": "example"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Example bottle setup sentence",
+        "exact_source_quote": "20 ml medium in 120 ml serum bottles",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "This is the named HHB parent procedure. Apply the displayed default only to JCM 1194; no default is inferred from the empty JCM 1195 response. Bottle dimensions are examples, and pressure has no absolute/gauge qualifier."
+  },
+  {
+    "decision_id": "q75",
+    "name": "Vessel volume",
+    "stage": "Example bottle setup",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 120,
+      "unit": "ML",
+      "conditional": "example"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Example bottle setup sentence",
+        "exact_source_quote": "20 ml medium in 120 ml serum bottles",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "This is the named HHB parent procedure. Apply the displayed default only to JCM 1194; no default is inferred from the empty JCM 1195 response. Bottle dimensions are examples, and pressure has no absolute/gauge qualifier."
+  },
+  {
+    "decision_id": "q76",
+    "name": "Post-inoculation pressure",
+    "stage": "Bottle gas phase",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "value": 200,
+      "unit": "KPA",
+      "pressure_reference": "not specified"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Bottle gas phase sentence",
+        "exact_source_quote": "Pressurize the inoculated bottles to 200 kPa H 2 -CO 2 (80:20, v/v).",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "This is the named HHB parent procedure. Apply the displayed default only to JCM 1194; no default is inferred from the empty JCM 1195 response. Bottle dimensions are examples, and pressure has no absolute/gauge qualifier."
+  },
+  {
+    "decision_id": "q77",
+    "name": "Post-inoculation gas ratio",
+    "stage": "Bottle gas phase",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "ratio": "80:20",
+      "basis": "v/v",
+      "species": [
+        "H2",
+        "CO2"
+      ]
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Bottle gas phase sentence",
+        "exact_source_quote": "Pressurize the inoculated bottles to 200 kPa H 2 -CO 2 (80:20, v/v).",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "This is the named HHB parent procedure. Apply the displayed default only to JCM 1194; no default is inferred from the empty JCM 1195 response. Bottle dimensions are examples, and pressure has no absolute/gauge qualifier."
+  },
+  {
+    "decision_id": "q78",
+    "name": "Boiling temperature and measured final volume",
+    "stage": "HHB staged assembly",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "boiling_temperature": null,
+      "measured_final_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Preparation before dispensing",
+        "exact_source_quote": "Mix components thoroughly.  Bring to a boil and cool down under a H 2 -CO 2 (4:1, v/v) gas stream.",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      },
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Post-cooling addition basis",
+        "exact_source_quote": "After cooling, aseptically and anaerobically add per liter the following solutions",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "Do not infer a numerical boiling temperature or measured final volume from the 1 L water entry and multiple stock additions."
+  },
+  {
+    "decision_id": "q79",
+    "name": "Vitamin stock N2 handling",
+    "stage": "Named JCM 197 vitamin stock only",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+        "field_path": "solutions[1]",
+        "stored": {
+          "preferred_term": "Trace vitamins (see below)",
+          "concentration": {
+            "value": "0.01",
+            "unit": "L"
+          },
+          "composition": [
+            {
+              "preferred_term": "Distilled water",
+              "concentration": {
+                "value": "1",
+                "unit": "L"
+              },
+              "notes": "Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]\n\nSource water batch input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse notes describe the superseded flattened record.",
+              "term": {
+                "id": "CHEBI:15377",
+                "label": "water"
+              },
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:15377",
+                "label": "water"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\"",
+                  "explanation": "solutions[1].composition[0].concentration: Source water batch input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse notes describe the superseded flattened record. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[0]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Biotin",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:15956",
+                "label": "biotin"
+              },
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:15956",
+                "label": "biotin"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001025\"",
+                  "explanation": "solutions[1].composition[1].concentration: Source batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[1]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "p--Aminobenzoic acid",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:30753",
+                "label": "4-aminobenzoic acid"
+              },
+              "term": {
+                "id": "CHEBI:30753",
+                "label": "4-aminobenzoic acid"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001026\"",
+                  "explanation": "solutions[1].composition[2].concentration: Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[2]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Thiamine・HCl",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:49105",
+                "label": "thiamine hydrochloride"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001027\"",
+                  "explanation": "solutions[1].composition[3].concentration: Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[3]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Calcium pantothenate",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:31345",
+                "label": "Calcium pantothenate"
+              },
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:31345",
+                "label": "Calcium pantothenate"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001028\"",
+                  "explanation": "solutions[1].composition[4].concentration: Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[4]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Pyridoxine・HCl",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:30961",
+                "label": "pyridoxine hydrochloride"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001029\"",
+                  "explanation": "solutions[1].composition[5].concentration: Source batch input: 10 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[5]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Folic acid",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:27470",
+                "label": "folic acid"
+              },
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:27470",
+                "label": "folic acid"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001033\"",
+                  "explanation": "solutions[1].composition[6].concentration: Source batch input: 2 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[6]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Vitamin B12",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:176843",
+                "label": "vitamin B12"
+              },
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:176843",
+                "label": "vitamin B12"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001034\"",
+                  "explanation": "solutions[1].composition[7].concentration: Source batch input: 0.1 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[7]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Riboflavin",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:17015",
+                "label": "riboflavin"
+              },
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:17015",
+                "label": "riboflavin"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001037\"",
+                  "explanation": "solutions[1].composition[8].concentration: Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[8]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Nicotinic acid",
+              "notes": "Role: Vitamin; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:15940",
+                "label": "nicotinic acid"
+              },
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:15940",
+                "label": "nicotinic acid"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001038\"",
+                  "explanation": "solutions[1].composition[9].concentration: Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[9]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            },
+            {
+              "preferred_term": "Lipoic acid",
+              "notes": "Role: Growth factor; Properties: Organic compound, Defined component, Simple component\n\nSource batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.",
+              "term": {
+                "id": "CHEBI:16494",
+                "label": "lipoic acid"
+              },
+              "mediaingredientmech_chebi_term": {
+                "id": "CHEBI:16494",
+                "label": "lipoic acid"
+              },
+              "evidence": [
+                {
+                  "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+                  "supports": "SUPPORT",
+                  "snippet": "{\n          \"component_name\": \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001699\"",
+                  "explanation": "solutions[1].composition[10].concentration: Source batch input: 5 mg. Final preparation volume is not independently established; the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration. No final-medium volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[10]; accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528."
+                }
+              ]
+            }
+          ],
+          "notes": "Source stock addition: 10 ml = 0.01 L per receiving batch, not grams per liter or a dose per final liter."
+        }
+      }
+    ],
+    "desired": {
+      "gas": "N2",
+      "purity_percent": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm197",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+        "source_locator": "Vitamin filter-sterilization sentence",
+        "exact_source_quote": "Trace vitamins while gassing       with N 2",
+        "snapshot_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+        "parsed_text_sha256": "818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f"
+      }
+    ],
+    "interpretation": "The vitamin preparation specifies nitrogen handling without a numerical purity. Parent basal N2/CO2 ratios, reducers and pH 6.8 are excluded."
+  },
+  {
+    "decision_id": "q80",
+    "name": "pH and growth temperature",
+    "stage": "Child and HHB parent",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "ph",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "ph",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml",
+        "field_path": "ph",
+        "stored": null
+      },
+      {
+        "input": "data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml",
+        "field_path": "temperature",
+        "stored": null
+      }
+    ],
+    "desired": {
+      "pH": null,
+      "growth_temperature": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm1194",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194",
+        "source_locator": "Last preparation sentence; complete source lacks pH and growth-temperature statements",
+        "exact_source_quote": "Pressurize the inoculated bottles to 200 kPa H 2 -CO 2 (80:20, v/v).",
+        "snapshot_sha256": "fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631",
+        "parsed_text_sha256": "05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7"
+      }
+    ],
+    "interpretation": "No pH or growth temperature is supplied by this exact base source. The name Archaeoglobus is not organism-growth evidence."
+  }
+]
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: supported. Targets: CultureMech:007814.
+
+1 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 1/1 primary and 1/1 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 1: primary 100.00%; secondary 100.00%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:007814.
+
+22 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Child, parent and dependency boundaries
+
+identity: supported. Targets: CultureMech:007814.
+
+TOGO M1280 explicitly adds 2.8 g/L Na2SO4 to M1279/JCM 1194. The maintained parent and reciprocal relationship resolve. Only JCM 852 minerals/Se-W and JCM 197 vitamins transfer; unrelated parent formulations and legacy IDs are excluded.
+
+### Required unavailable source and graph claims
+
+provenance: concern. Targets: CultureMech:007814.
+
+The exact child primary is unusable and the asserted J120 graph match cannot be verified. The secondary child instruction and usable parent primaries remain separately supported. Matcher exactness ignores concentrations; neither different recipes nor unavailable graph data proves the stored match false.
+
+### Transferred supplied forms
+
+grounding: concern. Targets: CultureMech:007814.
+
+M888 cobalt chloride and nickel chloride use anhydrous CHEBI structures despite explicit hexahydrates in both primary and provider stocks. The M190 calcium-pantothenate term specifies D configuration while the transferred sources do not state stereochemistry. This is a specificity limit, not proof of a racemate. Other scoped source forms were compared with the captured ontology structures.
+
+### Parent procedure and stock handling
+
+completeness: concern. Targets: CultureMech:007814.
+
+The exact parent supplies boiling/cooling under H2/CO2, example vessel sizes, displayed 121°C/15 min sterilization, separately treated bicarbonate and sulfide stocks, and 200 kPa gas pressurization. Neither the child nor parent currently represents this procedure fully. Preserve source percent and pressure ambiguities and do not infer a final volume.
+
+### Classification and biological claims
+
+scope: concern. Targets: CultureMech:007814.
+
+No strain-specific growth or growth temperature is asserted or established by the medium name. The listed salts and named vitamin stocks do not themselves establish the imported COMPLEX/UNDEFINED classification. Retain archaeal provenance as source context and review classification separately from experimentally supported growth.
+
+## Findings
+
+### f1: Generated parent dose is stored as mass concentration
+
+major / open / confirmed; issue key: culturemech.007814.stale-parent-dose.
+
+The generated target retains HHB 1 G_PER_L and an unresolved placeholder, whereas the maintained child has a source-supported 1 L parent dose and valid stable relationship. Preserve that maintained relation instead of treating its intentionally empty inline composition as proof of missing parent identity.
+
+### f2: Referenced parent quantities lose unit and stock-stage meaning
+
+major / open / confirmed; issue key: culturemech.007814.parent-stock-quantities.
+
+The named HHB parent stores water, milligram entries and liquid stock doses as G_PER_L. Its M888 minerals and Se/W recipe are flat parent ingredients; these must not become final-medium quantities or unrelated parent content. Existing M190 vitamin stock evidence authenticates that stock layer only.
+
+### f3: Transferred mineral hydrates and vitamin specificity need correction
+
+major / open / confirmed; issue key: culturemech.007814.supplied-stock-forms.
+
+Cobalt and nickel chloride hexahydrates in the transferred trace stock are assigned anhydrous structures. Calcium pantothenate has an unsupported D-specific grounding relative to the unqualified source; no alternative stereochemistry is inferred.
+
+### f4: Required parent preparation is not represented
+
+major / open / confirmed; issue key: culturemech.007814.missing-parent-procedure.
+
+The parent’s gas, sterilization, post-cooling additions and bottle pressure are absent from the usable record procedure. The source supplies no final-volume measurement, percentage basis or absolute/gauge pressure qualifier.
+
+### f5: Child primary and asserted graph correspondence remain unavailable
+
+major / open / confirmed; issue key: culturemech.007814.unverified-source-graph.
+
+JCM 1195 returns Nothing found, and neither a usable J120 graph snapshot nor matching evidence is available. This is an evidence gap, not a demonstrated false match; the matcher compares ingredient sets independently of concentrations.
+
+### f6: Complexity classification lacks formulation-specific evidence
+
+minor / open / confirmed; issue key: culturemech.007814.classification-evidence.
+
+The imported COMPLEX and UNDEFINED labels are not established by the salt/vitamin formulation or name. Biological growth and classification require their own source scope.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Attach source evidence to the maintained parent dose and child supplement, retain the resolved parent identity, then regenerate and inspect the target.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Curate the named parent and exact transferred stocks with original amounts, units and stages; preserve receiving doses and source percent ambiguities.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Correct the confirmed hydrate correspondences in their maintained stock owner and retain a documented source-specificity limit for calcium pantothenate.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Represent the scoped parent procedure, separate stock treatment, example bottle dimensions and exact pressure/gas wording without numerical assumptions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Recover an exact usable child primary and the historical/current graph evidence for J120, or explicitly qualify the unsupported annotation without fabricating correspondence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a6
+
+Review the classification against the resolved formulation and preserve collection provenance separately from strain growth evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch037/362/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-037/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch037/362/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml:1:id: CultureMech:007814<br>./data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml:1:id: CultureMech:007814<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch037/source-preflight-bound/362/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 65 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| hhb | data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml; Complete named HHB parent; all fields and history read. | context_only | Complete named HHB parent; all fields and history read. |
+| trace-parent | data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml; Only ingredients 13–23 plus the separately scoped stock-water entries transfer from JCM 852; basal medium, parent receiving doses and its vitamin stock are excluded. | context_only | Only ingredients 13–23 plus the separately scoped stock-water entries transfer from JCM 852; basal medium, parent receiving doses and its vitamin stock are excluded. |
+| vitamin-parent | data/normalized_yaml/bacterial/togo_medium_m190.yaml; Only solutions[1], the ten-vitamin stock and its water, transfer. The receiving dose is supplied independently by JCM 1194; other parent ingredients and stocks are excluded. | context_only | Only solutions[1], the ten-vitamin stock and its water, transfer. The receiving dose is supplied independently by JCM 1194; other parent ingredients and stocks are excluded. |
+| child | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1280; $.comments[1] | supports | Exact secondary child instruction; primary JCM 1195 returns no usable formulation. |
+| base | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194; Base recipe, explicit post-cooling additions and bottle preparation | supports | The main table, stock doses and subsequent per-liter additions are distinct stages. |
+| trace | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852; Trace mineral solution subsection | supports | Only this named mineral stock and the separately named Se/W stock transfer. |
+| vitamins | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; Trace vitamins subsection | supports | Ten vitamin species and 1 L stock water; other parent media content is excluded. |
+| jcm1195-attempt | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1195; Preserved exact public retrieval result | context_only | The exact JCM 1195 request returned HTTP 200 with Nothing found, not a usable primary formulation. The child sulfate instruction is supported by the exact TOGO M1280 payload only; JCM 1194 independently supports its named parent. |
+| jcm120-attempt | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=120; Preserved exact public retrieval result | context_only | JCM 120 returned Nothing found; it does not authenticate the asserted mediadive.medium:J120 crosslink. |
+| mediadiveJ120-attempt | https://mediadive.dsmz.de/rest/medium/J120; Preserved exact public retrieval result | context_only | The exact MediaDive J120 retrieval did not supply a usable formulation or graph membership proof. |
+| kg-search | /private/tmp/culturemech-review-work-batch037/362/kg-graph-search.json; Ignored-inclusive fresh checkout filename search | context_only | No usable mediadive nodes.tsv/edges.tsv graph pair was located in the owned checkout. Current matcher contract compares ingredient identifier sets and explicitly ignores concentrations. Recipe differences alone therefore do not refute this annotation. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch037/362/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32149 resolves to sodium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:32149": [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149", "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| parent-grounding | /private/tmp/culturemech-review-work-batch037/362/grounding-inventory.json; Every asserted primary/secondary identifier in the transferred parent sections | context_only | Canonical labels and mapped secondary rows resolve for the in-scope parent entries. Cobalt and nickel chlorides are grounded to anhydrous structures despite explicit hexahydrates; calcium pantothenate source stereochemistry is unspecified. |
+| stock-history | /private/tmp/culturemech-review-work-batch037/362/history-inventory.json; Eleven exact M190 stock claim hashes and snippets | supports | Existing vitamin-stock evidence is authenticated against current captured identical raw bytes, with its original timestamps retained. No parent-only or child claim inherits that verification. |
+| history-metadata | data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml; data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 11, "timestamp_issues": []}, {"input": "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml", "events": 11, "timestamp_issues": []}] |
+| writer-0 | scripts/repair_archaeoglobus_mcr_score20.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair, import and matcher behavior is implementation context only. It does not prove which historical execution produced a field or authenticate missing source bytes. |
+| writer-1 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair, import and matcher behavior is implementation context only. It does not prove which historical execution produced a field or authenticate missing source bytes. |
+| writer-2 | src/culturemech/match/kg_media_matcher.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair, import and matcher behavior is implementation context only. It does not prove which historical execution produced a field or authenticate missing source bytes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact JCM 1195 request returned HTTP 200 with Nothing found, not a usable primary formulation. The child sulfate instruction is supported by the exact TOGO M1280 payload only; JCM 1194 independently supports its named parent.
+- JCM 120 returned Nothing found; it does not authenticate the asserted mediadive.medium:J120 crosslink.
+- The exact MediaDive J120 retrieval did not supply a usable formulation or graph membership proof.
+- No dissolved-gas concentration, measured final volume, percentage basis, pressure reference or child-primary sterilization default was inferred.
+- The only authenticated transferred historical amounts are the eleven existing M190 vitamin-stock claims; the generated target and maintained child have no such attached amount evidence.
+- M888 legacy MediaIngredientMech:000926 and alpha-maltose metadata are excluded parent content and are not required child correspondences.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T201748Z-culturemech-007814-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: archaeoglobus_mcr_medium (CultureMech:007814)'
+started_at: '2026-10-21T20:11:16Z'
+finished_at: '2026-10-21T20:17:48Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The TOGO child specifies HHB medium plus 2.8 g/L sodium sulfate. Its maintained
+  owner has a valid 1 L parent link, while the generated target retains a 1 G_PER_L
+  placeholder. The parent and its named trace, Se/W and vitamin stocks require separate
+  stage-aware quantities and chemical-form review. The exact child primary and the
+  asserted KG-Microbe match remain unverified.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+    sha256: 50749cffcf543998bbf5497cf852355142a6c82ef6217d32622ed63a297fcbeb
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml
+    sha256: 5427f789685c26bd9f3ab6525ea77ee7550da8d4c7fe12b5301db045b14c3b81
+    role: context
+  - path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    sha256: d978c25044bef30b901d772b5ad3eb348eb702e4a672fcf7bdf7b79024426a97
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml
+    sha256: 83797c5e5e65f540a8c3dab45cb653fabb8f7c2b4b298d1b7b8507794c8b576c
+    role: context
+  - path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/kg_microbe_matching.md
+    sha256: 1b01e76b7b7b2067490b1fcd290e906b18bbebecc82ac4c607b6864708ae46c1
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_archaeoglobus_mcr_score20.py
+    sha256: b7d487b75f4b8e28d7ecd61f597e2232e08b5b3e3805fc0b0acb49417760d3ab
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 362; batch 037 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirty-six task batches
+    contain 360 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 363 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007814
+targets:
+- target_id: CultureMech:007814
+  path: data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+  label: archaeoglobus_mcr_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch037/362/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-037/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch037/362/strict.tsv"
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007814
+- check_id: jcm1195-source-access
+  name: 'Exact source content access: jcm1195'
+  required: true
+  status: unavailable
+  summary: The exact JCM 1195 request returned HTTP 200 with Nothing found, not a
+    usable primary formulation. The child sulfate instruction is supported by the
+    exact TOGO M1280 payload only; JCM 1194 independently supports its named parent.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - jcm1195-attempt
+- check_id: jcm120-source-access
+  name: 'Exact source content access: jcm120'
+  required: false
+  status: unavailable
+  summary: JCM 120 returned Nothing found; it does not authenticate the asserted mediadive.medium:J120
+    crosslink.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - jcm120-attempt
+- check_id: mediadiveJ120-source-access
+  name: 'Exact source content access: mediadiveJ120'
+  required: false
+  status: unavailable
+  summary: The exact MediaDive J120 retrieval did not supply a usable formulation
+    or graph membership proof.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - mediadiveJ120-attempt
+- check_id: kg-match-evidence
+  name: Asserted KG-Microbe J120 ingredient-set correspondence
+  required: true
+  status: unavailable
+  summary: Actual graph membership and ingredient-set correspondence are unavailable;
+    no match rerun, equivalence inference or false-match conclusion.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - kg-search
+  - jcm120-attempt
+  - mediadiveJ120-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:11:47.364901Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch037/362/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:11:48.461274Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-037/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch037/362/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:11:49.740906Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T20:11:50.522321Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: supports
+  summary: './data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml:1:id:
+    CultureMech:007814
+
+    ./data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml:1:id: CultureMech:007814
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/source-preflight-bound/362/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: supports
+  summary: 65 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 0b18f8a240099ddd4079eb266595ceba3f68361858d5bd01f57b8313b677f126
+- evidence_id: hhb
+  kind: record_content
+  reference: data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml
+  locator: Complete named HHB parent; all fields and history read.
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Complete named HHB parent; all fields and history read.
+  snapshot_sha256: 5427f789685c26bd9f3ab6525ea77ee7550da8d4c7fe12b5301db045b14c3b81
+- evidence_id: trace-parent
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml
+  locator: Only ingredients 13–23 plus the separately scoped stock-water entries transfer
+    from JCM 852; basal medium, parent receiving doses and its vitamin stock are excluded.
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Only ingredients 13–23 plus the separately scoped stock-water entries transfer
+    from JCM 852; basal medium, parent receiving doses and its vitamin stock are excluded.
+  snapshot_sha256: 83797c5e5e65f540a8c3dab45cb653fabb8f7c2b4b298d1b7b8507794c8b576c
+- evidence_id: vitamin-parent
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+  locator: Only solutions[1], the ten-vitamin stock and its water, transfer. The receiving
+    dose is supplied independently by JCM 1194; other parent ingredients and stocks
+    are excluded.
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Only solutions[1], the ten-vitamin stock and its water, transfer. The receiving
+    dose is supplied independently by JCM 1194; other parent ingredients and stocks
+    are excluded.
+  snapshot_sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+- evidence_id: child
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1280
+  locator: $.comments[1]
+  accessed_at: '2026-10-21T19:52:53.387022Z'
+  support: supports
+  summary: Exact secondary child instruction; primary JCM 1195 returns no usable formulation.
+  quote: Use Medium No. [1194] supplemented with 2.8 g/L Na2SO4.
+  snapshot_sha256: c578a1f05495fe28f57ce4997a322cb53479768f48d2054a62d7aa693b95107e
+- evidence_id: base
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194
+  locator: Base recipe, explicit post-cooling additions and bottle preparation
+  accessed_at: '2026-10-21T19:52:56.277225Z'
+  support: supports
+  summary: The main table, stock doses and subsequent per-liter additions are distinct
+    stages.
+  quote: After cooling, aseptically and anaerobically add per liter the following
+    solutions
+  snapshot_sha256: fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631
+- evidence_id: trace
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852
+  locator: Trace mineral solution subsection
+  accessed_at: '2026-10-21T19:52:57.176311Z'
+  support: supports
+  summary: Only this named mineral stock and the separately named Se/W stock transfer.
+  quote: 'Trace mineral solution:'
+  snapshot_sha256: 6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458
+- evidence_id: vitamins
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  locator: Trace vitamins subsection
+  accessed_at: '2026-10-20T06:58:05.867253Z'
+  support: supports
+  summary: Ten vitamin species and 1 L stock water; other parent media content is
+    excluded.
+  quote: 'Trace vitamins:'
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: jcm1195-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1195
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:52:56.767243Z'
+  support: context_only
+  summary: The exact JCM 1195 request returned HTTP 200 with Nothing found, not a
+    usable primary formulation. The child sulfate instruction is supported by the
+    exact TOGO M1280 payload only; JCM 1194 independently supports its named parent.
+  snapshot_sha256: 45b64d9b9fb7ac18a847fff17f0f5601d0ceff241f5ed29b60e607669c95dba6
+- evidence_id: jcm120-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=120
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:52:56.831502Z'
+  support: context_only
+  summary: JCM 120 returned Nothing found; it does not authenticate the asserted mediadive.medium:J120
+    crosslink.
+  snapshot_sha256: d78c6bf4d1eb5d5f3bb5182c809b6d7ee9a120a519644da465a10ba652619f61
+- evidence_id: mediadiveJ120-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J120
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T19:52:51.148906Z'
+  support: context_only
+  summary: The exact MediaDive J120 retrieval did not supply a usable formulation
+    or graph membership proof.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: kg-search
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/362/kg-graph-search.json
+  locator: Ignored-inclusive fresh checkout filename search
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: No usable mediadive nodes.tsv/edges.tsv graph pair was located in the owned
+    checkout. Current matcher contract compares ingredient identifier sets and explicitly
+    ignores concentrations. Recipe differences alone therefore do not refute this
+    annotation.
+  snapshot_sha256: adbd973b91ecbdd571c057075a57e3a7116f3e253f6fc390fc45826af59fb30a
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/362/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 525fc811e2956dceb503c43d3c76dca9d04427e7f4de9fe77acb1d67342b818e
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:32149":
+    [{"label": "Na2SO4", "match_type": "preferred_term", "identifier": "CHEBI:32149",
+    "preferred_term": "Na2SO4", "ontology_id": "CHEBI:32149", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: parent-grounding
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/362/grounding-inventory.json
+  locator: Every asserted primary/secondary identifier in the transferred parent sections
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Canonical labels and mapped secondary rows resolve for the in-scope parent
+    entries. Cobalt and nickel chlorides are grounded to anhydrous structures despite
+    explicit hexahydrates; calcium pantothenate source stereochemistry is unspecified.
+  snapshot_sha256: 1cb65d8afb788ac06032f1d6ca7159561762a4622e9bc23d53e1f936be942dce
+- evidence_id: stock-history
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch037/362/history-inventory.json
+  locator: Eleven exact M190 stock claim hashes and snippets
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: supports
+  summary: Existing vitamin-stock evidence is authenticated against current captured
+    identical raw bytes, with its original timestamps retained. No parent-only or
+    child claim inherits that verification.
+  snapshot_sha256: fa8faa2bff50e1daebaadc93b8921d7e6bac893fa4aa37346383a6ca2e56e2b4
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml; data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 11, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml", "events":
+    11, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_archaeoglobus_mcr_score20.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Current repair, import and matcher behavior is implementation context only.
+    It does not prove which historical execution produced a field or authenticate
+    missing source bytes.
+  snapshot_sha256: b7d487b75f4b8e28d7ecd61f597e2232e08b5b3e3805fc0b0acb49417760d3ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Current repair, import and matcher behavior is implementation context only.
+    It does not prove which historical execution produced a field or authenticate
+    missing source bytes.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T20:17:47Z'
+  support: context_only
+  summary: Current repair, import and matcher behavior is implementation context only.
+    It does not prove which historical execution produced a field or authenticate
+    missing source bytes.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 80 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"Na2SO4 child supplement\"\
+    ,\n    \"stage\": \"Child supplement to HHB\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.8\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 2.8,\n      \"unit\": \"\
+    G_PER_L\",\n      \"basis\": \"Explicit secondary child instruction\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1280original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1280\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SO4\\\",\\n          \\\"volume\\\": 2.8,\\\
+    n          \\\"unit\\\": \\\"g/L\\\"\",\n        \"snapshot_sha256\": \"c578a1f05495fe28f57ce4997a322cb53479768f48d2054a62d7aa693b95107e\"\
+    \n      }\n    ],\n    \"interpretation\": \"Both values agree with the exact\
+    \ provider; neither layer attaches claim-level amount evidence. The child primary\
+    \ is unavailable.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"name\": \"\
+    HHB parent dose\",\n    \"stage\": \"Child parent-medium reference\",\n    \"\
+    decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\",\n        \"field_path\"\
+    : \"solutions[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n    ],\n    \"\
+    desired\": {\n      \"value\": 1,\n      \"unit\": \"L\",\n      \"parent_id\"\
+    : \"CultureMech:007812\"\n    },\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"togoM1280original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1280\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n  \
+    \      \"snapshot_sha256\": \"c578a1f05495fe28f57ce4997a322cb53479768f48d2054a62d7aa693b95107e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The generated target miscasts the\
+    \ parent liquid volume as mass concentration and lacks the maintained owner’s\
+    \ resolved parent identity.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"\
+    name\": \"HHB parent dose and relationship\",\n    \"stage\": \"Maintained child\
+    \ owner\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"L\"\n        }\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].culturemech_term\",\n        \"stored\"\
+    : {\n          \"id\": \"CultureMech:007812\",\n          \"label\": \"Methanothermococcus\
+    \ HHB Medium\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"parent_media\",\n        \"stored\": {\n        \
+    \  \"path\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n          \"relationship\": \"SUPPLEMENTED_VARIANT\",\n          \"id\": \"\
+    CultureMech:007812\",\n          \"name\": \"methanothermococcus_hhb_medium\"\
+    ,\n          \"notes\": \"TOGO M1280 uses TOGO M1279 Methanothermococcus HHB Medium\
+    \ and supplements it with 2.8 g/L Na2SO4.\"\n        }\n      }\n    ],\n    \"\
+    desired\": {\n      \"value\": 1,\n      \"unit\": \"L\",\n      \"parent_id\"\
+    : \"CultureMech:007812\"\n    },\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"togoM1280original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1280\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"METHANOTHERMOCOCCUS HHB MEDIUM (see Medium [M1279])\\\
+    \",\\n          \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n  \
+    \      \"snapshot_sha256\": \"c578a1f05495fe28f57ce4997a322cb53479768f48d2054a62d7aa693b95107e\"\
+    \n      }\n    ],\n    \"interpretation\": \"The maintained 1 L dose and reciprocal\
+    \ parent path resolve. Empty inline composition is not itself a defect when the\
+    \ explicit parent relationship is retained; source-backed parent curation is still\
+    \ necessary.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"name\": \"Distilled\
+    \ water\",\n    \"stage\": \"HHB main recipe before post-cooling additions\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Distilled\
+    \ water\",\n        \"1.0\",\n        \"L\"\n      ],\n      \"basis\": \"Listed\
+    \ HHB batch with 1 L water; not measured final volume\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 12: Distilled water | 1.0 | L\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> L   </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q5\",\n    \"name\": \"MgSO4・7H2O\",\n    \"\
+    stage\": \"HHB main recipe before post-cooling additions\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.4\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"MgSO\
+    \ 4 ·7H 2 O\",\n        \"3.4\",\n        \"g\"\n      ],\n      \"basis\": \"\
+    Listed HHB batch with 1 L water; not measured final volume\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 4: MgSO 4 ·7H 2 O | 3.4 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> MgSO<sub>4</sub>&#183;7H<sub>2</sub>O </TD><TD WIDTH=15%\
+    \ ALIGN=RIGHT><font size=+1><tt>&nbsp;3.4&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 3.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q6\",\n    \"name\": \"NaCl\",\n    \"stage\"\
+    : \"HHB main recipe before post-cooling additions\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"NaCl\"\
+    ,\n        \"20.0\",\n        \"g\"\n      ],\n      \"basis\": \"Listed HHB batch\
+    \ with 1 L water; not measured final volume\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 6: NaCl | 20.0 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> NaCl </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;20.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaCl\\\",\\n          \\\"volume\\\": 20,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q7\",\n    \"name\": \"CaCl2・2H2O\",\n    \"\
+    stage\": \"HHB main recipe before post-cooling additions\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.14\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"\
+    CaCl 2 ·2H 2 O\",\n        \"0.14\",\n        \"g\"\n      ],\n      \"basis\"\
+    : \"Listed HHB batch with 1 L water; not measured final volume\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1194\",\n    \
+    \    \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 5: CaCl 2 ·2H 2 O | 0.14\
+    \ | g\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> CaCl<sub>2</sub>&#183;2H<sub>2</sub>O\
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.14&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 0.14,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q8\",\n    \"name\": \"NH4Cl\",\n    \"stage\"\
+    : \"HHB main recipe before post-cooling additions\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"NH\
+    \ 4 Cl\",\n        \"0.5\",\n        \"g\"\n      ],\n      \"basis\": \"Listed\
+    \ HHB batch with 1 L water; not measured final volume\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 0: NH 4 Cl | 0.5 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> NH<sub>4</sub>Cl </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.5&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NH4Cl\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q9\",\n    \"name\": \"K2HPO4\",\n    \"stage\"\
+    : \"HHB main recipe before post-cooling additions\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.14\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"\
+    K 2 HPO 4\",\n        \"0.14\",\n        \"g\"\n      ],\n      \"basis\": \"\
+    Listed HHB batch with 1 L water; not measured final volume\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 1: K 2 HPO 4 | 0.14 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> K<sub>2</sub>HPO<sub>4</sub> </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;0.14&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10% ALIGN=RIGHT>\
+    \ g  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 0.14,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q10\",\n    \"name\": \"Resazurin\",\n    \"\
+    stage\": \"HHB main recipe before post-cooling additions\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Resazurin\"\
+    ,\n        \"1.0\",\n        \"mg\"\n      ],\n      \"basis\": \"Listed HHB batch\
+    \ with 1 L water; not measured final volume\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 11: Resazurin | 1.0 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Resazurin </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q11\",\n    \"name\": \"MgCl2・6H2O\",\n    \"\
+    stage\": \"HHB main recipe before post-cooling additions\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"\
+    MgCl 2 ·6H 2 O\",\n        \"4.18\",\n        \"g\"\n      ],\n      \"basis\"\
+    : \"Listed HHB batch with 1 L water; not measured final volume\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1194\",\n    \
+    \    \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 3: MgCl 2 ·6H 2 O | 4.18\
+    \ | g\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> MgCl<sub>2</sub>&#183;6H<sub>2</sub>O\
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;4.18&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 4.18,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q12\",\n    \"name\": \"KCl\",\n    \"stage\"\
+    : \"HHB main recipe before post-cooling additions\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.33\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"\
+    KCl\",\n        \"0.33\",\n        \"g\"\n      ],\n      \"basis\": \"Listed\
+    \ HHB batch with 1 L water; not measured final volume\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 2: KCl | 0.33 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> KCl </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.33&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KCl\\\",\\n          \\\"volume\\\": 0.33,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Preserve the printed gram, milligram\
+    \ or water volume at this stage. The parent flat G_PER_L representation cannot\
+    \ silently turn batch amounts into final-medium concentrations; resazurin and\
+    \ ferrous ammonium sulfate are milligrams, and water is a liquid volume.\"\n \
+    \ },\n  {\n    \"decision_id\": \"q13\",\n    \"name\": \"Fe(NH4)2(SO4)2・6H2O\"\
+    ,\n    \"stage\": \"HHB main recipe before post-cooling additions\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Fe(NH\
+    \ 4 ) 2 (SO 4 ) 2 ·6H 2 O\",\n        \"2.0\",\n        \"mg\"\n      ],\n   \
+    \   \"basis\": \"Listed HHB batch with 1 L water; not measured final volume\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1194\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 7: Fe(NH 4 ) 2 (SO 4 ) 2\
+    \ ·6H 2 O | 2.0 | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%>\
+    \ Fe(NH<sub>4</sub>)<sub>2</sub>(SO<sub>4</sub>)<sub>2</sub>&#183;6H<sub>2</sub>O\
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Fe(NH4)2(SO4)2・6H2O\\\",\\n          \\\"volume\\\
+    \": 2,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Preserve the printed gram, milligram or water\
+    \ volume at this stage. The parent flat G_PER_L representation cannot silently\
+    \ turn batch amounts into final-medium concentrations; resazurin and ferrous ammonium\
+    \ sulfate are milligrams, and water is a liquid volume.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q14\",\n    \"name\": \"Carbon dioxide gas\",\n    \"stage\": \"HHB gas ingredient\
+    \ entry\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"desired\": {\n      \"individual_liquid_mass_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1279original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[13]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Carbon dioxide gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"Variable gas entries supply no dissolved\
+    \ mass concentration. Explicit atmosphere ratios and pressure are assessed separately.\"\
+    \n  },\n  {\n    \"decision_id\": \"q15\",\n    \"name\": \"Hydrogen gas\",\n\
+    \    \"stage\": \"HHB gas ingredient entry\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      }\n      }\n    ],\n    \"desired\": {\n      \"individual_liquid_mass_concentration\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1279original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[14]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Hydrogen gas\\\"\",\n        \"snapshot_sha256\"\
+    : \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"Variable gas entries supply no dissolved\
+    \ mass concentration. Explicit atmosphere ratios and pressure are assessed separately.\"\
+    \n  },\n  {\n    \"decision_id\": \"q16\",\n    \"name\": \"Trace vitamins (see\
+    \ Medium [M190])\",\n    \"stage\": \"HHB named stock dose; post-cooling per-liter\
+    \ basis only for bicarbonate and sulfide\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Trace\
+    \ vitamins (see Medium No. 197 )\",\n        \"10.0\",\n        \"ml\"\n     \
+    \ ],\n      \"basis\": \"Main recipe dose\"\n    },\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 8: Trace vitamins (see Medium No. 197 ) | 10.0 | ml\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Trace vitamins (see Medium\
+    \ No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=197\\\">197</a>) </TD><TD WIDTH=15%\
+    \ ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace vitamins (see Medium [M190])\\\",\\n   \
+    \       \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Liquid milliliter doses are stored\
+    \ as G_PER_L in the parent. Do not sum stock preparation volumes into the receiving\
+    \ medium or infer a measured final volume.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q17\",\n    \"name\": \"Trace mineral solution (see Medium [M888])\",\n  \
+    \  \"stage\": \"HHB named stock dose; post-cooling per-liter basis only for bicarbonate\
+    \ and sulfide\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Trace\
+    \ mineral solution (see Medium No. 852 )\",\n        \"10.0\",\n        \"ml\"\
+    \n      ],\n      \"basis\": \"Main recipe dose\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 9: Trace mineral solution (see Medium No. 852 ) | 10.0\
+    \ | ml\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Trace mineral\
+    \ solution (see Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=852\\\">852</a>)\
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[11]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Trace mineral solution (see Medium [M888])\\\"\
+    ,\\n          \\\"volume\\\": 10,\\n          \\\"unit\\\": \\\"ml\\\"\",\n  \
+    \      \"snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Liquid milliliter doses are stored\
+    \ as G_PER_L in the parent. Do not sum stock preparation volumes into the receiving\
+    \ medium or infer a measured final volume.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q18\",\n    \"name\": \"Se/W solution (see Medium [M888])\",\n    \"stage\"\
+    : \"HHB named stock dose; post-cooling per-liter basis only for bicarbonate and\
+    \ sulfide\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Se/W\
+    \ solution (Medium No. 852 )\",\n        \"1.0\",\n        \"ml\"\n      ],\n\
+    \      \"basis\": \"Main recipe dose\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 10: Se/W solution (Medium\
+    \ No. 852 ) | 1.0 | ml\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%>\
+    \ Se/W solution (Medium No. <a href=\\\"/cgi-bin/jcm/jcm_grmd?GRMD=852\\\">852</a>)\
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[0].items[12]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Se/W solution (see Medium [M888])\\\",\\n    \
+    \      \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"\
+    snapshot_sha256\": \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\
+    \n      }\n    ],\n    \"interpretation\": \"Liquid milliliter doses are stored\
+    \ as G_PER_L in the parent. Do not sum stock preparation volumes into the receiving\
+    \ medium or infer a measured final volume.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q19\",\n    \"name\": \"8% NaHCO3 solution*\",\n    \"stage\": \"HHB named\
+    \ stock dose; post-cooling per-liter basis only for bicarbonate and sulfide\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"12\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"8%\
+    \ NaHCO 3 solution*\",\n        \"12.0\",\n        \"ml\"\n      ],\n      \"\
+    basis\": \"Explicit addition per liter after cooling\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 13: 8% NaHCO 3 solution* | 12.0 | ml\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> 8% NaHCO<sub>3</sub> solution* </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;12.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"8% NaHCO3 solution*\\\",\\n          \\\"volume\\\
+    \": 12,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\":\
+    \ 8,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"Liquid milliliter doses are stored as G_PER_L\
+    \ in the parent. Do not sum stock preparation volumes into the receiving medium\
+    \ or infer a measured final volume.\"\n  },\n  {\n    \"decision_id\": \"q20\"\
+    ,\n    \"name\": \"5% Na2S・9H2O solution\",\n    \"stage\": \"HHB named stock\
+    \ dose; post-cooling per-liter basis only for bicarbonate and sulfide\",\n   \
+    \ \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"5%\
+    \ Na 2 S·9H 2 O solution\",\n        \"10.0\",\n        \"ml\"\n      ],\n   \
+    \   \"basis\": \"Explicit addition per liter after cooling\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Exact HTML table row 14: 5% Na 2 S·9H 2 O solution | 10.0 | ml\",\n      \
+    \  \"exact_source_quote\": \"<TR><TD WIDTH=75%> 5% Na<sub>2</sub>S&#183;9H<sub>2</sub>O\
+    \ solution </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1279original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1279\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"5% Na2S・9H2O solution\\\",\\n          \\\"volume\\\
+    \": 10,\\n          \\\"unit\\\": \\\"ml\\\",\\n          \\\"conc_value\\\":\
+    \ 5,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"ebad620970c90f773f8c20f3659dca411d69f242f6b5a3949fefa4bcb0f45385\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"Liquid milliliter doses are stored as G_PER_L\
+    \ in the parent. Do not sum stock preparation volumes into the receiving medium\
+    \ or infer a measured final volume.\"\n  },\n  {\n    \"decision_id\": \"q21\"\
+    ,\n    \"name\": \"NaHCO3 stock strength\",\n    \"stage\": \"Post-cooling HHB\
+    \ stock\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[3].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"value\": 8,\n      \"unit\"\
+    : \"PERCENT\",\n      \"percentage_basis\": \"not specified\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1194\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n \
+    \       \"source_locator\": \"Exact HTML table row 13: 8% NaHCO 3 solution* |\
+    \ 12.0 | ml\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> 8% NaHCO<sub>3</sub>\
+    \ solution* </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;12.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source prints a percent without\
+    \ w/v, v/v or w/w. Preserve the explicit strength without adopting an unstated\
+    \ percentage basis.\"\n  },\n  {\n    \"decision_id\": \"q22\",\n    \"name\"\
+    : \"Na2S·9H2O stock strength\",\n    \"stage\": \"Post-cooling HHB stock\",\n\
+    \    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[4].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"value\": 5,\n      \"unit\"\
+    : \"PERCENT\",\n      \"percentage_basis\": \"not specified\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm1194\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n \
+    \       \"source_locator\": \"Exact HTML table row 14: 5% Na 2 S·9H 2 O solution\
+    \ | 10.0 | ml\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> 5% Na<sub>2</sub>S&#183;9H<sub>2</sub>O\
+    \ solution </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> ml   </TD></TR>\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    \n      }\n    ],\n    \"interpretation\": \"The source prints a percent without\
+    \ w/v, v/v or w/w. Preserve the explicit strength without adopting an unstated\
+    \ percentage basis.\"\n  },\n  {\n    \"decision_id\": \"q23\",\n    \"name\"\
+    : \"Distilled water\",\n    \"stage\": \"JCM 852 trace mineral stock batch\",\n\
+    \    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Distilled\
+    \ water\",\n        \"1.0\",\n        \"L\"\n      ],\n      \"scope\": \"Separate\
+    \ trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 25: Distilled water | 1.0\
+    \ | L\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Distilled water\
+    \                                         </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> L  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q24\",\n    \"name\": \"Distilled water\",\n    \"stage\": \"Resolved HHB\
+    \ trace stock composition\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Distilled water\",\n        \"1.0\",\n        \"L\"\n      ],\n      \"scope\"\
+    : \"Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 25: Distilled water | 1.0 | L\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water                                       \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> L  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q25\",\n    \"name\": \"Na2MoO4・2H2O\",\n    \"stage\": \"JCM 852 trace mineral\
+    \ stock batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Na 2 MoO 4 ·2H 2 O\",\n        \"0.024\",\n        \"g\"\n      ],\n     \
+    \ \"scope\": \"Separate trace stock with 1 L water\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 22: Na 2 MoO 4 ·2H 2 O | 0.024 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Na<sub>2</sub>MoO<sub>4</sub>&#183;2H<sub>2</sub>O    \
+    \                         </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.024&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.024,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"The flattened parent field loses stock\
+    \ membership; its G_PER_L value must not be transferred as final medium concentration.\
+    \ The shared water field also represents unrelated parent waters and must not\
+    \ be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\": \"q26\"\
+    ,\n    \"name\": \"Na2MoO4・2H2O\",\n    \"stage\": \"Resolved HHB trace stock\
+    \ composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Na 2 MoO 4 ·2H 2 O\",\n        \"0.024\",\n        \"g\"\n      ],\n     \
+    \ \"scope\": \"Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 22: Na 2 MoO 4 ·2H 2 O | 0.024 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Na<sub>2</sub>MoO<sub>4</sub>&#183;2H<sub>2</sub>O    \
+    \                         </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.024&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2MoO4・2H2O\\\",\\n          \\\"volume\\\":\
+    \ 0.024,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\n     \
+    \ }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe through\
+    \ a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q27\",\n    \"name\": \"H3BO3\",\n    \"stage\": \"JCM 852 trace mineral stock\
+    \ batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"H 3\
+    \ BO 3\",\n        \"6.2\",\n        \"mg\"\n      ],\n      \"scope\": \"Separate\
+    \ trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 21: H 3 BO 3 | 6.2 | mg\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> H<sub>3</sub>BO<sub>3</sub>\
+    \                                             </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;6.2&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 6.2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q28\",\n    \"name\": \"H3BO3\",\n    \"stage\": \"Resolved HHB trace stock\
+    \ composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"H 3 BO 3\",\n        \"6.2\",\n        \"mg\"\n      ],\n      \"scope\":\
+    \ \"Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 21: H 3 BO 3 | 6.2 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> H<sub>3</sub>BO<sub>3</sub>                           \
+    \                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;6.2&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"H3BO3\\\",\\n          \\\"volume\\\": 6.2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q29\",\n    \"name\": \"MnCl2・4H2O\",\n    \"stage\": \"JCM 852 trace mineral\
+    \ stock batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.198\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"MnCl 2 ·4H 2 O\",\n        \"0.198\",\n        \"g\"\n      ],\n      \"scope\"\
+    : \"Separate trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 17: MnCl 2 ·4H 2 O | 0.198\
+    \ | g\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> MnCl<sub>2</sub>&#183;4H<sub>2</sub>O\
+    \                                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.198&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2・4H2O\\\",\\n          \\\"volume\\\": 0.198,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q30\",\n    \"name\": \"MnCl2・4H2O\",\n    \"stage\": \"Resolved HHB trace\
+    \ stock composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"MnCl 2 ·4H 2 O\",\n        \"0.198\",\n        \"g\"\n      ],\n      \"scope\"\
+    : \"Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 17: MnCl 2 ·4H 2 O | 0.198 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> MnCl<sub>2</sub>&#183;4H<sub>2</sub>O                 \
+    \                 </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.198&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MnCl2・4H2O\\\",\\n          \\\"volume\\\": 0.198,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q31\",\n    \"name\": \"CoCl2・6H2O\",\n    \"stage\": \"JCM 852 trace mineral\
+    \ stock batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.13\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"\
+    CoCl 2 ·6H 2 O\",\n        \"0.13\",\n        \"g\"\n      ],\n      \"scope\"\
+    : \"Separate trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 18: CoCl 2 ·6H 2 O | 0.13\
+    \ | g\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> CoCl<sub>2</sub>&#183;6H<sub>2</sub>O\
+    \                                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.13&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2・6H2O\\\",\\n          \\\"volume\\\": 0.13,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q32\",\n    \"name\": \"CoCl2・6H2O\",\n    \"stage\": \"Resolved HHB trace\
+    \ stock composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"CoCl 2 ·6H 2 O\",\n        \"0.13\",\n        \"g\"\n      ],\n      \"scope\"\
+    : \"Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 18: CoCl 2 ·6H 2 O | 0.13 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> CoCl<sub>2</sub>&#183;6H<sub>2</sub>O                 \
+    \                 </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.13&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CoCl2・6H2O\\\",\\n          \\\"volume\\\": 0.13,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q33\",\n    \"name\": \"NiCl2・6H2O\",\n    \"stage\": \"JCM 852 trace mineral\
+    \ stock batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.013\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"NiCl 2 ·6H 2 O\",\n        \"0.013\",\n        \"g\"\n      ],\n      \"scope\"\
+    : \"Separate trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 23: NiCl 2 ·6H 2 O | 0.013\
+    \ | g\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> NiCl<sub>2</sub>&#183;6H<sub>2</sub>O\
+    \                                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.013&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiCl2・6H2O\\\",\\n          \\\"volume\\\": 0.013,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q34\",\n    \"name\": \"NiCl2・6H2O\",\n    \"stage\": \"Resolved HHB trace\
+    \ stock composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"NiCl 2 ·6H 2 O\",\n        \"0.013\",\n        \"g\"\n      ],\n      \"scope\"\
+    : \"Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 23: NiCl 2 ·6H 2 O | 0.013 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> NiCl<sub>2</sub>&#183;6H<sub>2</sub>O                 \
+    \                 </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.013&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NiCl2・6H2O\\\",\\n          \\\"volume\\\": 0.013,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q35\",\n    \"name\": \"CuCl2・2H2O\",\n    \"stage\": \"JCM 852 trace mineral\
+    \ stock batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.7\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"CuCl\
+    \ 2 ·2H 2 O\",\n        \"1.7\",\n        \"mg\"\n      ],\n      \"scope\": \"\
+    Separate trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 20: CuCl 2 ·2H 2 O | 1.7\
+    \ | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> CuCl<sub>2</sub>&#183;2H<sub>2</sub>O\
+    \                                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.7&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2・2H2O\\\",\\n          \\\"volume\\\": 1.7,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q36\",\n    \"name\": \"CuCl2・2H2O\",\n    \"stage\": \"Resolved HHB trace\
+    \ stock composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"CuCl 2 ·2H 2 O\",\n        \"1.7\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 20: CuCl 2 ·2H 2 O | 1.7 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> CuCl<sub>2</sub>&#183;2H<sub>2</sub>O                 \
+    \                 </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.7&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CuCl2・2H2O\\\",\\n          \\\"volume\\\": 1.7,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q37\",\n    \"name\": \"ZnCl2\",\n    \"stage\": \"JCM 852 trace mineral stock\
+    \ batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.136\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"ZnCl 2\",\n        \"0.136\",\n        \"g\"\n      ],\n      \"scope\": \"\
+    Separate trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 19: ZnCl 2 | 0.136 | g\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> ZnCl<sub>2</sub>     \
+    \                                           </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;0.136&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10% ALIGN=RIGHT>\
+    \ g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnCl2\\\",\\n          \\\"volume\\\": 0.136,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q38\",\n    \"name\": \"ZnCl2\",\n    \"stage\": \"Resolved HHB trace stock\
+    \ composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"ZnCl 2\",\n        \"0.136\",\n        \"g\"\n      ],\n      \"scope\": \"\
+    Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 19: ZnCl 2 | 0.136 | g\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> ZnCl<sub>2</sub>     \
+    \                                           </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;0.136&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10% ALIGN=RIGHT>\
+    \ g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"ZnCl2\\\",\\n          \\\"volume\\\": 0.136,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q39\",\n    \"name\": \"AlCl3\",\n    \"stage\": \"JCM 852 trace mineral stock\
+    \ batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.013\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"AlCl 3\",\n        \"0.013\",\n        \"g\"\n      ],\n      \"scope\": \"\
+    Separate trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 24: AlCl 3 | 0.013 | g\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> AlCl<sub>3</sub>     \
+    \                                           </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;0.013&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10% ALIGN=RIGHT>\
+    \ g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"AlCl3\\\",\\n          \\\"volume\\\": 0.013,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q40\",\n    \"name\": \"AlCl3\",\n    \"stage\": \"Resolved HHB trace stock\
+    \ composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"AlCl 3\",\n        \"0.013\",\n        \"g\"\n      ],\n      \"scope\": \"\
+    Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 24: AlCl 3 | 0.013 | g\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> AlCl<sub>3</sub>     \
+    \                                           </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;0.013&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10% ALIGN=RIGHT>\
+    \ g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"AlCl3\\\",\\n          \\\"volume\\\": 0.013,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q41\",\n    \"name\": \"FeCl2・4H2O\",\n    \"stage\": \"JCM 852 trace mineral\
+    \ stock batch\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.99\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"\
+    FeCl 2 ·4H 2 O\",\n        \"1.99\",\n        \"g\"\n      ],\n      \"scope\"\
+    : \"Separate trace stock with 1 L water\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 16: FeCl 2 ·4H 2 O | 1.99\
+    \ | g\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> FeCl<sub>2</sub>&#183;4H<sub>2</sub>O\
+    \                                  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.99&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeCl2・4H2O\\\",\\n          \\\"volume\\\": 1.99,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"The flattened parent field loses\
+    \ stock membership; its G_PER_L value must not be transferred as final medium\
+    \ concentration. The shared water field also represents unrelated parent waters\
+    \ and must not be apportioned by an invented sum.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q42\",\n    \"name\": \"FeCl2・4H2O\",\n    \"stage\": \"Resolved HHB trace\
+    \ stock composition\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"FeCl 2 ·4H 2 O\",\n        \"1.99\",\n        \"g\"\n      ],\n      \"scope\"\
+    : \"Stock recipe only; receiving dose 10 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 16: FeCl 2 ·4H 2 O | 1.99 | g\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> FeCl<sub>2</sub>&#183;4H<sub>2</sub>O                 \
+    \                 </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.99&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> g  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeCl2・4H2O\\\",\\n          \\\"volume\\\": 1.99,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact named stock recipe\
+    \ through a verified reference or scoped composition; this does not require duplicating\
+    \ it into the child’s top-level ingredients.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q43\",\n    \"name\": \"Distilled water\",\n    \"stage\": \"Flattened parent\
+    \ stock entry\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.0\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Distilled\
+    \ water\",\n        \"1.0\",\n        \"L\"\n      ],\n      \"scope\": \"Separate\
+    \ Se/W stock with 1 L water; receiving dose 1 mL\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm852\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n        \"source_locator\"\
+    : \"Exact HTML table row 28: Distilled water | 1.0 | L\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Distilled water                                       \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> L  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Selenium and tungsten are milligrams\
+    \ in the stock batch. This distinct water amount is not a second liter of the\
+    \ receiving medium.\"\n  },\n  {\n    \"decision_id\": \"q44\",\n    \"name\"\
+    : \"Distilled water\",\n    \"stage\": \"Resolved HHB Se/W stock\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Distilled water\",\n        \"1.0\",\n        \"L\"\n      ],\n      \"scope\"\
+    : \"Separate Se/W stock with 1 L water; receiving dose 1 mL\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm852\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n  \
+    \      \"source_locator\": \"Exact HTML table row 28: Distilled water | 1.0 |\
+    \ L\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Distilled water \
+    \                                        </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> L  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Selenium and tungsten are milligrams\
+    \ in the stock batch. This distinct water amount is not a second liter of the\
+    \ receiving medium.\"\n  },\n  {\n    \"decision_id\": \"q45\",\n    \"name\"\
+    : \"Na2SeO3・5H2O\",\n    \"stage\": \"Flattened parent stock entry\",\n    \"\
+    decision\": \"correct\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[22].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.7\",\n          \"unit\": \"G_PER_L\"\n        }\n \
+    \     }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Na 2\
+    \ SeO 3 ·5H 2 O\",\n        \"1.7\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Separate Se/W stock with 1 L water; receiving dose 1 mL\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm852\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n  \
+    \      \"source_locator\": \"Exact HTML table row 26: Na 2 SeO 3 ·5H 2 O | 1.7\
+    \ | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Na<sub>2</sub>SeO<sub>3</sub>&#183;5H<sub>2</sub>O\
+    \                             </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.7&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SeO3・5H2O\\\",\\n          \\\"volume\\\":\
+    \ 1.7,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Selenium and tungsten are milligrams in the\
+    \ stock batch. This distinct water amount is not a second liter of the receiving\
+    \ medium.\"\n  },\n  {\n    \"decision_id\": \"q46\",\n    \"name\": \"Na2SeO3・5H2O\"\
+    ,\n    \"stage\": \"Resolved HHB Se/W stock\",\n    \"decision\": \"add\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Na 2 SeO 3 ·5H 2 O\",\n        \"1.7\",\n        \"mg\"\n      ],\n      \"\
+    scope\": \"Separate Se/W stock with 1 L water; receiving dose 1 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm852\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 26: Na 2 SeO 3 ·5H 2 O |\
+    \ 1.7 | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Na<sub>2</sub>SeO<sub>3</sub>&#183;5H<sub>2</sub>O\
+    \                             </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.7&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2SeO3・5H2O\\\",\\n          \\\"volume\\\":\
+    \ 1.7,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Selenium and tungsten are milligrams in the\
+    \ stock batch. This distinct water amount is not a second liter of the receiving\
+    \ medium.\"\n  },\n  {\n    \"decision_id\": \"q47\",\n    \"name\": \"Na2WO4・2H2O\"\
+    ,\n    \"stage\": \"Flattened parent stock entry\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M888_Spirochaeta_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Na\
+    \ 2 WO 4 ·2H 2 O\",\n        \"3.3\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Separate Se/W stock with 1 L water; receiving dose 1 mL\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm852\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\",\n  \
+    \      \"source_locator\": \"Exact HTML table row 27: Na 2 WO 4 ·2H 2 O | 3.3\
+    \ | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Na<sub>2</sub>WO<sub>4</sub>&#183;2H<sub>2</sub>O\
+    \                              </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;3.3&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2WO4・2H2O\\\",\\n          \\\"volume\\\": 3.3,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Selenium and tungsten are milligrams\
+    \ in the stock batch. This distinct water amount is not a second liter of the\
+    \ receiving medium.\"\n  },\n  {\n    \"decision_id\": \"q48\",\n    \"name\"\
+    : \"Na2WO4・2H2O\",\n    \"stage\": \"Resolved HHB Se/W stock\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Na 2 WO 4 ·2H 2 O\",\n        \"3.3\",\n        \"mg\"\n      ],\n      \"\
+    scope\": \"Separate Se/W stock with 1 L water; receiving dose 1 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm852\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=852\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 27: Na 2 WO 4 ·2H 2 O |\
+    \ 3.3 | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Na<sub>2</sub>WO<sub>4</sub>&#183;2H<sub>2</sub>O\
+    \                              </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;3.3&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"6f4b6434c0e66a7ece7e600856c047f38df0f47f24350eee0d9cf7617304c458\"\
+    \n      },\n      {\n        \"source_key\": \"togoM888original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M888\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2WO4・2H2O\\\",\\n          \\\"volume\\\": 3.3,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"ab5124f3aee9d4933cd0954f9df2264a868d70cf323a4c2407e6dcd070b5bc40\"\
+    \n      }\n    ],\n    \"interpretation\": \"Selenium and tungsten are milligrams\
+    \ in the stock batch. This distinct water amount is not a second liter of the\
+    \ receiving medium.\"\n  },\n  {\n    \"decision_id\": \"q49\",\n    \"name\"\
+    : \"Distilled water\",\n    \"stage\": \"Existing M190 trace-vitamin stock\",\n\
+    \    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"\
+    field_path\": \"solutions[1].composition[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"L\"\n        }\n     \
+    \ }\n    ],\n    \"desired\": {\n      \"source_table\": [\n        \"Distilled\
+    \ water\",\n        \"1.0\",\n        \"L\"\n      ],\n      \"scope\": \"Existing\
+    \ stock amount only\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm197\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 25: Distilled water | 1.0\
+    \ | L\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Distilled water\
+    \                                         </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> L  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing stock notes or water volume\
+    \ have attached exact source-hash and literal evidence. This status does not authenticate\
+    \ the child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q50\",\n    \"name\": \"Distilled water\"\
+    ,\n    \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Distilled water\",\n        \"1.0\",\n        \"L\"\n      ],\n      \"scope\"\
+    : \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 25: Distilled water | 1.0\
+    \ | L\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Distilled water\
+    \                                         </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> L  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Keep this stock separate from the\
+    \ parent basal recipe and mineral stock. A stock reference may carry the recipe\
+    \ without flattening it into the child.\"\n  },\n  {\n    \"decision_id\": \"\
+    q51\",\n    \"name\": \"Biotin\",\n    \"stage\": \"Existing M190 trace-vitamin\
+    \ stock\",\n    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n\
+    \        \"field_path\": \"solutions[1].composition[1].notes\",\n        \"stored\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 2 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"desired\": {\n      \"source_table\"\
+    : [\n        \"Biotin\",\n        \"2.0\",\n        \"mg\"\n      ],\n      \"\
+    scope\": \"Existing stock amount only\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 15: Biotin | 2.0 | mg\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Biotin               \
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Biotin\\\",\\n          \\\"volume\\\": 2,\\n\
+    \          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing stock notes or water volume\
+    \ have attached exact source-hash and literal evidence. This status does not authenticate\
+    \ the child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q52\",\n    \"name\": \"Biotin\",\n    \"\
+    stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\": \"add\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Biotin\",\n        \"2.0\",\n        \"mg\"\n      ],\n      \"scope\": \"\
+    Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n   \
+    \ \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n     \
+    \   \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 15: Biotin | 2.0 | mg\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Biotin               \
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Biotin\\\",\\n          \\\"volume\\\": 2,\\n\
+    \          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Keep this stock separate from the\
+    \ parent basal recipe and mineral stock. A stock reference may carry the recipe\
+    \ without flattening it into the child.\"\n  },\n  {\n    \"decision_id\": \"\
+    q53\",\n    \"name\": \"p--Aminobenzoic acid\",\n    \"stage\": \"Existing M190\
+    \ trace-vitamin stock\",\n    \"decision\": \"verified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[2].notes\",\n        \"\
+    stored\": \"Role: Vitamin; Properties: Organic compound, Defined component, Simple\
+    \ component\\n\\nSource batch input: 5 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\"\n      }\n    ],\n    \"desired\": {\n  \
+    \    \"source_table\": [\n        \"p -Aminobenzoic acid\",\n        \"5.0\",\n\
+    \        \"mg\"\n      ],\n      \"scope\": \"Existing stock amount only\"\n \
+    \   },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 23: p -Aminobenzoic acid\
+    \ | 5.0 | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> <I>p</I>-Aminobenzoic\
+    \ acid                             </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"p--Aminobenzoic acid\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Existing stock notes or water volume have attached\
+    \ exact source-hash and literal evidence. This status does not authenticate the\
+    \ child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q54\",\n    \"name\": \"p--Aminobenzoic acid\"\
+    ,\n    \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"p -Aminobenzoic acid\",\n        \"5.0\",\n        \"mg\"\n      ],\n    \
+    \  \"scope\": \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 23: p -Aminobenzoic acid\
+    \ | 5.0 | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> <I>p</I>-Aminobenzoic\
+    \ acid                             </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"p--Aminobenzoic acid\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Keep this stock separate from the parent basal\
+    \ recipe and mineral stock. A stock reference may carry the recipe without flattening\
+    \ it into the child.\"\n  },\n  {\n    \"decision_id\": \"q55\",\n    \"name\"\
+    : \"Thiamine・HCl\",\n    \"stage\": \"Existing M190 trace-vitamin stock\",\n \
+    \   \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"\
+    field_path\": \"solutions[1].composition[3].notes\",\n        \"stored\": \"Role:\
+    \ Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"desired\": {\n      \"source_table\"\
+    : [\n        \"Thiamine·HCl\",\n        \"5.0\",\n        \"mg\"\n      ],\n \
+    \     \"scope\": \"Existing stock amount only\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"Exact HTML table row 18: Thiamine·HCl | 5.0 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Thiamine&#183;HCl                                     \
+    \ </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Thiamine・HCl\\\",\\n          \\\"volume\\\":\
+    \ 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Existing stock notes or water volume have attached\
+    \ exact source-hash and literal evidence. This status does not authenticate the\
+    \ child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q56\",\n    \"name\": \"Thiamine・HCl\",\n\
+    \    \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Thiamine·HCl\",\n        \"5.0\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 18: Thiamine·HCl | 5.0 |\
+    \ mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Thiamine&#183;HCl\
+    \                                      </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Thiamine・HCl\\\",\\n          \\\"volume\\\":\
+    \ 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Keep this stock separate from the parent basal\
+    \ recipe and mineral stock. A stock reference may carry the recipe without flattening\
+    \ it into the child.\"\n  },\n  {\n    \"decision_id\": \"q57\",\n    \"name\"\
+    : \"Calcium pantothenate\",\n    \"stage\": \"Existing M190 trace-vitamin stock\"\
+    ,\n    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n     \
+    \   \"field_path\": \"solutions[1].composition[4].notes\",\n        \"stored\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"desired\": {\n      \"source_table\"\
+    : [\n        \"Calcium pantothenate\",\n        \"5.0\",\n        \"mg\"\n   \
+    \   ],\n      \"scope\": \"Existing stock amount only\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"Exact HTML table row 21: Calcium pantothenate | 5.0 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Calcium pantothenate                                  \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Calcium pantothenate\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Existing stock notes or water volume have attached\
+    \ exact source-hash and literal evidence. This status does not authenticate the\
+    \ child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q58\",\n    \"name\": \"Calcium pantothenate\"\
+    ,\n    \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Calcium pantothenate\",\n        \"5.0\",\n        \"mg\"\n      ],\n    \
+    \  \"scope\": \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 21: Calcium pantothenate\
+    \ | 5.0 | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Calcium\
+    \ pantothenate                                    </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Calcium pantothenate\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Keep this stock separate from the parent basal\
+    \ recipe and mineral stock. A stock reference may carry the recipe without flattening\
+    \ it into the child.\"\n  },\n  {\n    \"decision_id\": \"q59\",\n    \"name\"\
+    : \"Pyridoxine・HCl\",\n    \"stage\": \"Existing M190 trace-vitamin stock\",\n\
+    \    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"\
+    field_path\": \"solutions[1].composition[5].notes\",\n        \"stored\": \"Role:\
+    \ Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 10 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"desired\": {\n      \"source_table\"\
+    : [\n        \"Pyridoxine·HCl\",\n        \"10.0\",\n        \"mg\"\n      ],\n\
+    \      \"scope\": \"Existing stock amount only\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"Exact HTML table row 17: Pyridoxine·HCl | 10.0 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Pyridoxine&#183;HCl                                   </TD><TD\
+    \ WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Pyridoxine・HCl\\\",\\n          \\\"volume\\\"\
+    : 10,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Existing stock notes or water volume have attached\
+    \ exact source-hash and literal evidence. This status does not authenticate the\
+    \ child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q60\",\n    \"name\": \"Pyridoxine・HCl\",\n\
+    \    \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Pyridoxine·HCl\",\n        \"10.0\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 17: Pyridoxine·HCl | 10.0\
+    \ | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Pyridoxine&#183;HCl\
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Pyridoxine・HCl\\\",\\n          \\\"volume\\\"\
+    : 10,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Keep this stock separate from the parent basal\
+    \ recipe and mineral stock. A stock reference may carry the recipe without flattening\
+    \ it into the child.\"\n  },\n  {\n    \"decision_id\": \"q61\",\n    \"name\"\
+    : \"Folic acid\",\n    \"stage\": \"Existing M190 trace-vitamin stock\",\n   \
+    \ \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[6].notes\",\n        \"stored\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 2 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"desired\": {\n      \"source_table\"\
+    : [\n        \"Folic acid\",\n        \"2.0\",\n        \"mg\"\n      ],\n   \
+    \   \"scope\": \"Existing stock amount only\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"Exact HTML table row 16: Folic acid | 2.0 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Folic acid                                            \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Folic acid\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing stock notes or water volume\
+    \ have attached exact source-hash and literal evidence. This status does not authenticate\
+    \ the child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q62\",\n    \"name\": \"Folic acid\",\n  \
+    \  \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Folic acid\",\n        \"2.0\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 16: Folic acid | 2.0 | mg\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Folic acid           \
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Folic acid\\\",\\n          \\\"volume\\\": 2,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Keep this stock separate from the\
+    \ parent basal recipe and mineral stock. A stock reference may carry the recipe\
+    \ without flattening it into the child.\"\n  },\n  {\n    \"decision_id\": \"\
+    q63\",\n    \"name\": \"Vitamin B12\",\n    \"stage\": \"Existing M190 trace-vitamin\
+    \ stock\",\n    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n\
+    \        \"field_path\": \"solutions[1].composition[7].notes\",\n        \"stored\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 0.1 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\"\n      }\n    ],\n    \"desired\": {\n  \
+    \    \"source_table\": [\n        \"Vitamin B 1 2\",\n        \"0.1\",\n     \
+    \   \"mg\"\n      ],\n      \"scope\": \"Existing stock amount only\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 22: Vitamin B 1 2 | 0.1\
+    \ | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Vitamin B<sub>1</sub><sub>2</sub>\
+    \                                       </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin B12\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing stock notes or water volume\
+    \ have attached exact source-hash and literal evidence. This status does not authenticate\
+    \ the child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q64\",\n    \"name\": \"Vitamin B12\",\n \
+    \   \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\":\
+    \ \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Vitamin B 1 2\",\n        \"0.1\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 22: Vitamin B 1 2 | 0.1\
+    \ | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Vitamin B<sub>1</sub><sub>2</sub>\
+    \                                       </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Vitamin B12\\\",\\n          \\\"volume\\\": 0.1,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Keep this stock separate from the\
+    \ parent basal recipe and mineral stock. A stock reference may carry the recipe\
+    \ without flattening it into the child.\"\n  },\n  {\n    \"decision_id\": \"\
+    q65\",\n    \"name\": \"Riboflavin\",\n    \"stage\": \"Existing M190 trace-vitamin\
+    \ stock\",\n    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n\
+    \        \"field_path\": \"solutions[1].composition[8].notes\",\n        \"stored\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"desired\": {\n      \"source_table\"\
+    : [\n        \"Riboflavin\",\n        \"5.0\",\n        \"mg\"\n      ],\n   \
+    \   \"scope\": \"Existing stock amount only\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"Exact HTML table row 19: Riboflavin | 5.0 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Riboflavin                                            \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Riboflavin\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing stock notes or water volume\
+    \ have attached exact source-hash and literal evidence. This status does not authenticate\
+    \ the child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q66\",\n    \"name\": \"Riboflavin\",\n  \
+    \  \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\": \"\
+    add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Riboflavin\",\n        \"5.0\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 19: Riboflavin | 5.0 | mg\"\
+    ,\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Riboflavin           \
+    \                                   </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Riboflavin\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Keep this stock separate from the\
+    \ parent basal recipe and mineral stock. A stock reference may carry the recipe\
+    \ without flattening it into the child.\"\n  },\n  {\n    \"decision_id\": \"\
+    q67\",\n    \"name\": \"Nicotinic acid\",\n    \"stage\": \"Existing M190 trace-vitamin\
+    \ stock\",\n    \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n\
+    \        \"field_path\": \"solutions[1].composition[9].notes\",\n        \"stored\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"desired\": {\n      \"source_table\"\
+    : [\n        \"Nicotinic acid\",\n        \"5.0\",\n        \"mg\"\n      ],\n\
+    \      \"scope\": \"Existing stock amount only\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"Exact HTML table row 20: Nicotinic acid | 5.0 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Nicotinic acid                                        \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nicotinic acid\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Existing stock notes or water volume have attached\
+    \ exact source-hash and literal evidence. This status does not authenticate the\
+    \ child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q68\",\n    \"name\": \"Nicotinic acid\",\n\
+    \    \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Nicotinic acid\",\n        \"5.0\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 20: Nicotinic acid | 5.0\
+    \ | mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Nicotinic acid\
+    \                                          </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Nicotinic acid\\\",\\n          \\\"volume\\\"\
+    : 5,\\n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"\
+    61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\n      }\n\
+    \    ],\n    \"interpretation\": \"Keep this stock separate from the parent basal\
+    \ recipe and mineral stock. A stock reference may carry the recipe without flattening\
+    \ it into the child.\"\n  },\n  {\n    \"decision_id\": \"q69\",\n    \"name\"\
+    : \"Lipoic acid\",\n    \"stage\": \"Existing M190 trace-vitamin stock\",\n  \
+    \  \"decision\": \"verified\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n        \"field_path\"\
+    : \"solutions[1].composition[10].notes\",\n        \"stored\": \"Role: Growth\
+    \ factor; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\"\n      }\n    ],\n    \"desired\": {\n      \"source_table\"\
+    : [\n        \"Lipoic acid\",\n        \"5.0\",\n        \"mg\"\n      ],\n  \
+    \    \"scope\": \"Existing stock amount only\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"Exact HTML table row 24: Lipoic acid | 5.0 | mg\",\n        \"exact_source_quote\"\
+    : \"<TR><TD WIDTH=75%> Lipoic acid                                           \
+    \  </TD><TD WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD\
+    \ WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Lipoic acid\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Existing stock notes or water volume\
+    \ have attached exact source-hash and literal evidence. This status does not authenticate\
+    \ the child, receiving dose or unspecified calcium-pantothenate stereochemistry.\"\
+    \n  },\n  {\n    \"decision_id\": \"q70\",\n    \"name\": \"Lipoic acid\",\n \
+    \   \"stage\": \"HHB resolved vitamin-stock composition\",\n    \"decision\":\
+    \ \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ []\n      }\n    ],\n    \"desired\": {\n      \"source_table\": [\n       \
+    \ \"Lipoic acid\",\n        \"5.0\",\n        \"mg\"\n      ],\n      \"scope\"\
+    : \"Ten vitamin species plus 1 L stock water; receiving dose 10 mL\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm197\",\n  \
+    \      \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\"\
+    ,\n        \"source_locator\": \"Exact HTML table row 24: Lipoic acid | 5.0 |\
+    \ mg\",\n        \"exact_source_quote\": \"<TR><TD WIDTH=75%> Lipoic acid    \
+    \                                         </TD><TD WIDTH=15% ALIGN=RIGHT><font\
+    \ size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD WIDTH=10%\
+    \ ALIGN=RIGHT> mg  </TD></TR>\",\n        \"snapshot_sha256\": \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\"\
+    \n      },\n      {\n        \"source_key\": \"togoM190original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n        \"source_locator\": \"$.components[1].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Lipoic acid\\\",\\n          \\\"volume\\\": 5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528\"\
+    \n      }\n    ],\n    \"interpretation\": \"Keep this stock separate from the\
+    \ parent basal recipe and mineral stock. A stock reference may carry the recipe\
+    \ without flattening it into the child.\"\n  },\n  {\n    \"decision_id\": \"\
+    q71\",\n    \"name\": \"Autoclave temperature\",\n    \"stage\": \"Base sterilization\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 121,\n      \"unit\": \"\
+    DEG_C\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"jcm1194\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Base sterilization sentence\",\n        \"exact_source_quote\"\
+    : \"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\"\
+    ,\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    ,\n        \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the named HHB parent procedure.\
+    \ Apply the displayed default only to JCM 1194; no default is inferred from the\
+    \ empty JCM 1195 response. Bottle dimensions are examples, and pressure has no\
+    \ absolute/gauge qualifier.\"\n  },\n  {\n    \"decision_id\": \"q72\",\n    \"\
+    name\": \"Autoclave duration\",\n    \"stage\": \"Base sterilization\",\n    \"\
+    decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 15,\n      \"unit\": \"\
+    MIN\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm1194\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Base sterilization sentence\",\n        \"exact_source_quote\"\
+    : \"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\"\
+    ,\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    ,\n        \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the named HHB parent procedure.\
+    \ Apply the displayed default only to JCM 1194; no default is inferred from the\
+    \ empty JCM 1195 response. Bottle dimensions are examples, and pressure has no\
+    \ absolute/gauge qualifier.\"\n  },\n  {\n    \"decision_id\": \"q73\",\n    \"\
+    name\": \"H2:CO2 gas ratio\",\n    \"stage\": \"Boiling/cooling and dispensing\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"ratio\": \"4:1\",\n      \"basis\"\
+    : \"v/v\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm1194\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Boiling/cooling and dispensing sentence\",\n\
+    \        \"exact_source_quote\": \"Bring to a boil and cool down under a H 2 -CO\
+    \ 2 (4:1, v/v) gas stream.\",\n        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    ,\n        \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the named HHB parent procedure.\
+    \ Apply the displayed default only to JCM 1194; no default is inferred from the\
+    \ empty JCM 1195 response. Bottle dimensions are examples, and pressure has no\
+    \ absolute/gauge qualifier.\"\n  },\n  {\n    \"decision_id\": \"q74\",\n    \"\
+    name\": \"Medium fill\",\n    \"stage\": \"Example bottle setup\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 20,\n      \"unit\": \"\
+    ML\",\n      \"conditional\": \"example\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Example bottle setup sentence\",\n        \"\
+    exact_source_quote\": \"20 ml medium in 120 ml serum bottles\",\n        \"snapshot_sha256\"\
+    : \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\",\n    \
+    \    \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the named HHB parent procedure.\
+    \ Apply the displayed default only to JCM 1194; no default is inferred from the\
+    \ empty JCM 1195 response. Bottle dimensions are examples, and pressure has no\
+    \ absolute/gauge qualifier.\"\n  },\n  {\n    \"decision_id\": \"q75\",\n    \"\
+    name\": \"Vessel volume\",\n    \"stage\": \"Example bottle setup\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 120,\n      \"unit\": \"\
+    ML\",\n      \"conditional\": \"example\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Example bottle setup sentence\",\n        \"\
+    exact_source_quote\": \"20 ml medium in 120 ml serum bottles\",\n        \"snapshot_sha256\"\
+    : \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\",\n    \
+    \    \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the named HHB parent procedure.\
+    \ Apply the displayed default only to JCM 1194; no default is inferred from the\
+    \ empty JCM 1195 response. Bottle dimensions are examples, and pressure has no\
+    \ absolute/gauge qualifier.\"\n  },\n  {\n    \"decision_id\": \"q76\",\n    \"\
+    name\": \"Post-inoculation pressure\",\n    \"stage\": \"Bottle gas phase\",\n\
+    \    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"value\": 200,\n      \"unit\": \"\
+    KPA\",\n      \"pressure_reference\": \"not specified\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Bottle gas phase sentence\",\n        \"exact_source_quote\": \"Pressurize\
+    \ the inoculated bottles to 200 kPa H 2 -CO 2 (80:20, v/v).\",\n        \"snapshot_sha256\"\
+    : \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\",\n    \
+    \    \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the named HHB parent procedure.\
+    \ Apply the displayed default only to JCM 1194; no default is inferred from the\
+    \ empty JCM 1195 response. Bottle dimensions are examples, and pressure has no\
+    \ absolute/gauge qualifier.\"\n  },\n  {\n    \"decision_id\": \"q77\",\n    \"\
+    name\": \"Post-inoculation gas ratio\",\n    \"stage\": \"Bottle gas phase\",\n\
+    \    \"decision\": \"add\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"ratio\": \"80:20\",\n      \"basis\"\
+    : \"v/v\",\n      \"species\": [\n        \"H2\",\n        \"CO2\"\n      ]\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm1194\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Bottle gas phase sentence\",\n        \"exact_source_quote\"\
+    : \"Pressurize the inoculated bottles to 200 kPa H 2 -CO 2 (80:20, v/v).\",\n\
+    \        \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    ,\n        \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"This is the named HHB parent procedure.\
+    \ Apply the displayed default only to JCM 1194; no default is inferred from the\
+    \ empty JCM 1195 response. Bottle dimensions are examples, and pressure has no\
+    \ absolute/gauge qualifier.\"\n  },\n  {\n    \"decision_id\": \"q78\",\n    \"\
+    name\": \"Boiling temperature and measured final volume\",\n    \"stage\": \"\
+    HHB staged assembly\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"desired\": {\n      \"boiling_temperature\": null,\n \
+    \     \"measured_final_volume\": null\n    },\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"jcm1194\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Preparation before dispensing\",\n        \"\
+    exact_source_quote\": \"Mix components thoroughly.  Bring to a boil and cool down\
+    \ under a H 2 -CO 2 (4:1, v/v) gas stream.\",\n        \"snapshot_sha256\": \"\
+    fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\",\n        \"\
+    parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1194\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\",\n        \"source_locator\"\
+    : \"Post-cooling addition basis\",\n        \"exact_source_quote\": \"After cooling,\
+    \ aseptically and anaerobically add per liter the following solutions\",\n   \
+    \     \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    ,\n        \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"Do not infer a numerical boiling\
+    \ temperature or measured final volume from the 1 L water entry and multiple stock\
+    \ additions.\"\n  },\n  {\n    \"decision_id\": \"q79\",\n    \"name\": \"Vitamin\
+    \ stock N2 handling\",\n    \"stage\": \"Named JCM 197 vitamin stock only\",\n\
+    \    \"decision\": \"not_quantified\",\n    \"local_fields\": [\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/togo_medium_m190.yaml\",\n \
+    \       \"field_path\": \"solutions[1]\",\n        \"stored\": {\n          \"\
+    preferred_term\": \"Trace vitamins (see below)\",\n          \"concentration\"\
+    : {\n            \"value\": \"0.01\",\n            \"unit\": \"L\"\n         \
+    \ },\n          \"composition\": [\n            {\n              \"preferred_term\"\
+    : \"Distilled water\",\n              \"concentration\": {\n                \"\
+    value\": \"1\",\n                \"unit\": \"L\"\n              },\n         \
+    \     \"notes\": \"Role: Solvating media; Properties: Inorganic compound, Defined\
+    \ component, Simple component [Merged 3 duplicates: 981.0, 1.0, 1.0]\\n\\nSource\
+    \ water batch input: 1 L = 1 L. This is not a measured final volume. Prior duplicate-collapse\
+    \ notes describe the superseded flattened record.\",\n              \"term\":\
+    \ {\n                \"id\": \"CHEBI:15377\",\n                \"label\": \"water\"\
+    \n              },\n              \"mediaingredientmech_chebi_term\": {\n    \
+    \            \"id\": \"CHEBI:15377\",\n                \"label\": \"water\"\n\
+    \              },\n              \"evidence\": [\n                {\n        \
+    \          \"reference\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n                  \"supports\": \"SUPPORT\",\n                  \"snippet\"\
+    : \"{\\n          \\\"component_name\\\": \\\"Distilled water\\\",\\n        \
+    \  \\\"volume\\\": 1,\\n          \\\"unit\\\": \\\"L\\\",\\n          \\\"gmo\\\
+    \": \\\"http://purl.jp/bio/10/gmo/GMO_001001\\\"\",\n                  \"explanation\"\
+    : \"solutions[1].composition[0].concentration: Source water batch input: 1 L =\
+    \ 1 L. This is not a measured final volume. Prior duplicate-collapse notes describe\
+    \ the superseded flattened record. No final-medium volume, percentage basis, density\
+    \ or chemical grounding is inferred. Locator=components[1].items[0]; accessed=2026-10-08T13:22:46.432534+00:00;\
+    \ capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            },\n            {\n        \
+    \      \"preferred_term\": \"Biotin\",\n              \"notes\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 2 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"term\": {\n                \"id\": \"CHEBI:15956\"\
+    ,\n                \"label\": \"biotin\"\n              },\n              \"mediaingredientmech_chebi_term\"\
+    : {\n                \"id\": \"CHEBI:15956\",\n                \"label\": \"biotin\"\
+    \n              },\n              \"evidence\": [\n                {\n       \
+    \           \"reference\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n                  \"supports\": \"SUPPORT\",\n                  \"snippet\"\
+    : \"{\\n          \\\"component_name\\\": \\\"Biotin\\\",\\n          \\\"volume\\\
+    \": 2,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\"gmo\\\": \\\"http://purl.jp/bio/10/gmo/GMO_001025\\\
+    \"\",\n                  \"explanation\": \"solutions[1].composition[1].concentration:\
+    \ Source batch input: 2 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration. No final-medium volume, percentage basis, density or chemical\
+    \ grounding is inferred. Locator=components[1].items[1]; accessed=2026-10-08T13:22:46.432534+00:00;\
+    \ capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            },\n            {\n        \
+    \      \"preferred_term\": \"p--Aminobenzoic acid\",\n              \"notes\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"mediaingredientmech_chebi_term\": {\n   \
+    \             \"id\": \"CHEBI:30753\",\n                \"label\": \"4-aminobenzoic\
+    \ acid\"\n              },\n              \"term\": {\n                \"id\"\
+    : \"CHEBI:30753\",\n                \"label\": \"4-aminobenzoic acid\"\n     \
+    \         },\n              \"evidence\": [\n                {\n             \
+    \     \"reference\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n                  \"supports\": \"SUPPORT\",\n                  \"snippet\"\
+    : \"{\\n          \\\"component_name\\\": \\\"p--Aminobenzoic acid\\\",\\n   \
+    \       \\\"volume\\\": 5,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\
+    \"gmo\\\": \\\"http://purl.jp/bio/10/gmo/GMO_001026\\\"\",\n                 \
+    \ \"explanation\": \"solutions[1].composition[2].concentration: Source batch input:\
+    \ 5 mg. Final preparation volume is not independently established; the unsupported\
+    \ g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.\
+    \ No final-medium volume, percentage basis, density or chemical grounding is inferred.\
+    \ Locator=components[1].items[2]; accessed=2026-10-08T13:22:46.432534+00:00; capture\
+    \ SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\n\
+    \                }\n              ]\n            },\n            {\n         \
+    \     \"preferred_term\": \"Thiamine・HCl\",\n              \"notes\": \"Role:\
+    \ Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"term\": {\n                \"id\": \"CHEBI:49105\"\
+    ,\n                \"label\": \"thiamine hydrochloride\"\n              },\n \
+    \             \"evidence\": [\n                {\n                  \"reference\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \                 \"supports\": \"SUPPORT\",\n                  \"snippet\": \"\
+    {\\n          \\\"component_name\\\": \\\"Thiamine・HCl\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\"gmo\\\": \\\"http://purl.jp/bio/10/gmo/GMO_001027\\\
+    \"\",\n                  \"explanation\": \"solutions[1].composition[3].concentration:\
+    \ Source batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration. No final-medium volume, percentage basis, density or chemical\
+    \ grounding is inferred. Locator=components[1].items[3]; accessed=2026-10-08T13:22:46.432534+00:00;\
+    \ capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            },\n            {\n        \
+    \      \"preferred_term\": \"Calcium pantothenate\",\n              \"notes\"\
+    : \"Role: Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"term\": {\n                \"id\": \"CHEBI:31345\"\
+    ,\n                \"label\": \"Calcium pantothenate\"\n              },\n   \
+    \           \"mediaingredientmech_chebi_term\": {\n                \"id\": \"\
+    CHEBI:31345\",\n                \"label\": \"Calcium pantothenate\"\n        \
+    \      },\n              \"evidence\": [\n                {\n                \
+    \  \"reference\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n                  \"supports\": \"SUPPORT\",\n                  \"snippet\"\
+    : \"{\\n          \\\"component_name\\\": \\\"Calcium pantothenate\\\",\\n   \
+    \       \\\"volume\\\": 5,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\
+    \"gmo\\\": \\\"http://purl.jp/bio/10/gmo/GMO_001028\\\"\",\n                 \
+    \ \"explanation\": \"solutions[1].composition[4].concentration: Source batch input:\
+    \ 5 mg. Final preparation volume is not independently established; the unsupported\
+    \ g/L assertion is withdrawn, not replaced by an assumed one-liter concentration.\
+    \ No final-medium volume, percentage basis, density or chemical grounding is inferred.\
+    \ Locator=components[1].items[4]; accessed=2026-10-08T13:22:46.432534+00:00; capture\
+    \ SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\n\
+    \                }\n              ]\n            },\n            {\n         \
+    \     \"preferred_term\": \"Pyridoxine・HCl\",\n              \"notes\": \"Role:\
+    \ Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 10 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"term\": {\n                \"id\": \"CHEBI:30961\"\
+    ,\n                \"label\": \"pyridoxine hydrochloride\"\n              },\n\
+    \              \"evidence\": [\n                {\n                  \"reference\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n \
+    \                 \"supports\": \"SUPPORT\",\n                  \"snippet\": \"\
+    {\\n          \\\"component_name\\\": \\\"Pyridoxine・HCl\\\",\\n          \\\"\
+    volume\\\": 10,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\"gmo\\\"\
+    : \\\"http://purl.jp/bio/10/gmo/GMO_001029\\\"\",\n                  \"explanation\"\
+    : \"solutions[1].composition[5].concentration: Source batch input: 10 mg. Final\
+    \ preparation volume is not independently established; the unsupported g/L assertion\
+    \ is withdrawn, not replaced by an assumed one-liter concentration. No final-medium\
+    \ volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[5];\
+    \ accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            },\n            {\n        \
+    \      \"preferred_term\": \"Folic acid\",\n              \"notes\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 2 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"term\": {\n                \"id\": \"CHEBI:27470\"\
+    ,\n                \"label\": \"folic acid\"\n              },\n             \
+    \ \"mediaingredientmech_chebi_term\": {\n                \"id\": \"CHEBI:27470\"\
+    ,\n                \"label\": \"folic acid\"\n              },\n             \
+    \ \"evidence\": [\n                {\n                  \"reference\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n                  \"supports\": \"SUPPORT\",\n                  \"snippet\"\
+    : \"{\\n          \\\"component_name\\\": \\\"Folic acid\\\",\\n          \\\"\
+    volume\\\": 2,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\"gmo\\\":\
+    \ \\\"http://purl.jp/bio/10/gmo/GMO_001033\\\"\",\n                  \"explanation\"\
+    : \"solutions[1].composition[6].concentration: Source batch input: 2 mg. Final\
+    \ preparation volume is not independently established; the unsupported g/L assertion\
+    \ is withdrawn, not replaced by an assumed one-liter concentration. No final-medium\
+    \ volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[6];\
+    \ accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            },\n            {\n        \
+    \      \"preferred_term\": \"Vitamin B12\",\n              \"notes\": \"Role:\
+    \ Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 0.1 mg. Final preparation volume is not independently\
+    \ established; the unsupported g/L assertion is withdrawn, not replaced by an\
+    \ assumed one-liter concentration.\",\n              \"term\": {\n           \
+    \     \"id\": \"CHEBI:176843\",\n                \"label\": \"vitamin B12\"\n\
+    \              },\n              \"mediaingredientmech_chebi_term\": {\n     \
+    \           \"id\": \"CHEBI:176843\",\n                \"label\": \"vitamin B12\"\
+    \n              },\n              \"evidence\": [\n                {\n       \
+    \           \"reference\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n                  \"supports\": \"SUPPORT\",\n                  \"snippet\"\
+    : \"{\\n          \\\"component_name\\\": \\\"Vitamin B12\\\",\\n          \\\"\
+    volume\\\": 0.1,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\"gmo\\\"\
+    : \\\"http://purl.jp/bio/10/gmo/GMO_001034\\\"\",\n                  \"explanation\"\
+    : \"solutions[1].composition[7].concentration: Source batch input: 0.1 mg. Final\
+    \ preparation volume is not independently established; the unsupported g/L assertion\
+    \ is withdrawn, not replaced by an assumed one-liter concentration. No final-medium\
+    \ volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[7];\
+    \ accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            },\n            {\n        \
+    \      \"preferred_term\": \"Riboflavin\",\n              \"notes\": \"Role: Vitamin;\
+    \ Properties: Organic compound, Defined component, Simple component\\n\\nSource\
+    \ batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"term\": {\n                \"id\": \"CHEBI:17015\"\
+    ,\n                \"label\": \"riboflavin\"\n              },\n             \
+    \ \"mediaingredientmech_chebi_term\": {\n                \"id\": \"CHEBI:17015\"\
+    ,\n                \"label\": \"riboflavin\"\n              },\n             \
+    \ \"evidence\": [\n                {\n                  \"reference\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n                  \"supports\": \"SUPPORT\",\n                  \"snippet\"\
+    : \"{\\n          \\\"component_name\\\": \\\"Riboflavin\\\",\\n          \\\"\
+    volume\\\": 5,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\"gmo\\\":\
+    \ \\\"http://purl.jp/bio/10/gmo/GMO_001037\\\"\",\n                  \"explanation\"\
+    : \"solutions[1].composition[8].concentration: Source batch input: 5 mg. Final\
+    \ preparation volume is not independently established; the unsupported g/L assertion\
+    \ is withdrawn, not replaced by an assumed one-liter concentration. No final-medium\
+    \ volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[8];\
+    \ accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            },\n            {\n        \
+    \      \"preferred_term\": \"Nicotinic acid\",\n              \"notes\": \"Role:\
+    \ Vitamin; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"term\": {\n                \"id\": \"CHEBI:15940\"\
+    ,\n                \"label\": \"nicotinic acid\"\n              },\n         \
+    \     \"mediaingredientmech_chebi_term\": {\n                \"id\": \"CHEBI:15940\"\
+    ,\n                \"label\": \"nicotinic acid\"\n              },\n         \
+    \     \"evidence\": [\n                {\n                  \"reference\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\",\n     \
+    \             \"supports\": \"SUPPORT\",\n                  \"snippet\": \"{\\\
+    n          \\\"component_name\\\": \\\"Nicotinic acid\\\",\\n          \\\"volume\\\
+    \": 5,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\"gmo\\\": \\\"http://purl.jp/bio/10/gmo/GMO_001038\\\
+    \"\",\n                  \"explanation\": \"solutions[1].composition[9].concentration:\
+    \ Source batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration. No final-medium volume, percentage basis, density or chemical\
+    \ grounding is inferred. Locator=components[1].items[9]; accessed=2026-10-08T13:22:46.432534+00:00;\
+    \ capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            },\n            {\n        \
+    \      \"preferred_term\": \"Lipoic acid\",\n              \"notes\": \"Role:\
+    \ Growth factor; Properties: Organic compound, Defined component, Simple component\\\
+    n\\nSource batch input: 5 mg. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n              \"term\": {\n                \"id\": \"CHEBI:16494\"\
+    ,\n                \"label\": \"lipoic acid\"\n              },\n            \
+    \  \"mediaingredientmech_chebi_term\": {\n                \"id\": \"CHEBI:16494\"\
+    ,\n                \"label\": \"lipoic acid\"\n              },\n            \
+    \  \"evidence\": [\n                {\n                  \"reference\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190\"\
+    ,\n                  \"supports\": \"SUPPORT\",\n                  \"snippet\"\
+    : \"{\\n          \\\"component_name\\\": \\\"Lipoic acid\\\",\\n          \\\"\
+    volume\\\": 5,\\n          \\\"unit\\\": \\\"mg\\\",\\n          \\\"gmo\\\":\
+    \ \\\"http://purl.jp/bio/10/gmo/GMO_001699\\\"\",\n                  \"explanation\"\
+    : \"solutions[1].composition[10].concentration: Source batch input: 5 mg. Final\
+    \ preparation volume is not independently established; the unsupported g/L assertion\
+    \ is withdrawn, not replaced by an assumed one-liter concentration. No final-medium\
+    \ volume, percentage basis, density or chemical grounding is inferred. Locator=components[1].items[10];\
+    \ accessed=2026-10-08T13:22:46.432534+00:00; capture SHA256=61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528.\"\
+    \n                }\n              ]\n            }\n          ],\n          \"\
+    notes\": \"Source stock addition: 10 ml = 0.01 L per receiving batch, not grams\
+    \ per liter or a dose per final liter.\"\n        }\n      }\n    ],\n    \"desired\"\
+    : {\n      \"gas\": \"N2\",\n      \"purity_percent\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm197\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197\",\n        \"source_locator\"\
+    : \"Vitamin filter-sterilization sentence\",\n        \"exact_source_quote\":\
+    \ \"Trace vitamins while gassing       with N 2\",\n        \"snapshot_sha256\"\
+    : \"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532\",\n    \
+    \    \"parsed_text_sha256\": \"818dbda42619dd184a66e2ca66e5772f7db327384df79441e793f75c32ed531f\"\
+    \n      }\n    ],\n    \"interpretation\": \"The vitamin preparation specifies\
+    \ nitrogen handling without a numerical purity. Parent basal N2/CO2 ratios, reducers\
+    \ and pH 6.8 are excluded.\"\n  },\n  {\n    \"decision_id\": \"q80\",\n    \"\
+    name\": \"pH and growth temperature\",\n    \"stage\": \"Child and HHB parent\"\
+    ,\n    \"decision\": \"not_quantified\",\n    \"local_fields\": [\n      {\n \
+    \       \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\",\n\
+    \        \"field_path\": \"ph\",\n        \"stored\": null\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph\",\n        \"stored\": null\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/archaea/TOGO_M1279_Methanothermococcus_HHB_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph\",\n        \"stored\": null\n      },\n     \
+    \ {\n        \"input\": \"data/merge_yaml/merged/Archaeoglobus_MCR_Medium.yaml\"\
+    ,\n        \"field_path\": \"temperature\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"desired\": {\n      \"pH\": null,\n      \"growth_temperature\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm1194\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1194\"\
+    ,\n        \"source_locator\": \"Last preparation sentence; complete source lacks\
+    \ pH and growth-temperature statements\",\n        \"exact_source_quote\": \"\
+    Pressurize the inoculated bottles to 200 kPa H 2 -CO 2 (80:20, v/v).\",\n    \
+    \    \"snapshot_sha256\": \"fd37c2e3120a44df6fd3d4cae493943458bd83bae891612521090c2bd9091631\"\
+    ,\n        \"parsed_text_sha256\": \"05edc9c4d0a5f0c3df625d667e04eb58f6a8d03b223ce675bbd65abbc0bfcbd7\"\
+    \n      }\n    ],\n    \"interpretation\": \"No pH or growth temperature is supplied\
+    \ by this exact base source. The name Archaeoglobus is not organism-growth evidence.\"\
+    \n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: supported
+  summary: '1 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 1/1 primary
+    and 1/1 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Source forms are assessed separately.'
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi32149
+  details: 'Instance coverage on a 0–100 percent scale, denominator 1: primary 100.00%;
+    secondary 100.00%. These are linkage metrics, not correctness scores. Missing
+    optional links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 22 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Child, parent and dependency boundaries
+  outcome: supported
+  summary: TOGO M1280 explicitly adds 2.8 g/L Na2SO4 to M1279/JCM 1194. The maintained
+    parent and reciprocal relationship resolve. Only JCM 852 minerals/Se-W and JCM
+    197 vitamins transfer; unrelated parent formulations and legacy IDs are excluded.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - record
+  - owner-0
+  - child
+  - hhb
+  - trace
+  - vitamins
+- assessment_id: source-scope
+  area: provenance
+  topic: Required unavailable source and graph claims
+  outcome: concern
+  summary: The exact child primary is unusable and the asserted J120 graph match cannot
+    be verified. The secondary child instruction and usable parent primaries remain
+    separately supported. Matcher exactness ignores concentrations; neither different
+    recipes nor unavailable graph data proves the stored match false.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - child
+  - jcm1195-attempt
+  - kg-search
+  - jcm120-attempt
+  - mediadiveJ120-attempt
+- assessment_id: forms
+  area: grounding
+  topic: Transferred supplied forms
+  outcome: concern
+  summary: M888 cobalt chloride and nickel chloride use anhydrous CHEBI structures
+    despite explicit hexahydrates in both primary and provider stocks. The M190 calcium-pantothenate
+    term specifies D configuration while the transferred sources do not state stereochemistry.
+    This is a specificity limit, not proof of a racemate. Other scoped source forms
+    were compared with the captured ontology structures.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - parent-grounding
+  - trace
+  - vitamins
+- assessment_id: preparation
+  area: completeness
+  topic: Parent procedure and stock handling
+  outcome: concern
+  summary: The exact parent supplies boiling/cooling under H2/CO2, example vessel
+    sizes, displayed 121°C/15 min sterilization, separately treated bicarbonate and
+    sulfide stocks, and 200 kPa gas pressurization. Neither the child nor parent currently
+    represents this procedure fully. Preserve source percent and pressure ambiguities
+    and do not infer a final volume.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - base
+  - quantity-inventory
+- assessment_id: growth
+  area: scope
+  topic: Classification and biological claims
+  outcome: concern
+  summary: No strain-specific growth or growth temperature is asserted or established
+    by the medium name. The listed salts and named vitamin stocks do not themselves
+    establish the imported COMPLEX/UNDEFINED classification. Retain archaeal provenance
+    as source context and review classification separately from experimentally supported
+    growth.
+  target_ids:
+  - CultureMech:007814
+  evidence_ids:
+  - record
+  - owner-0
+  - child
+  - base
+findings:
+- finding_id: f1
+  issue_key: culturemech.007814.stale-parent-dose
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated parent dose is stored as mass concentration
+  description: The generated target retains HHB 1 G_PER_L and an unresolved placeholder,
+    whereas the maintained child has a source-supported 1 L parent dose and valid
+    stable relationship. Preserve that maintained relation instead of treating its
+    intentionally empty inline composition as proof of missing parent identity.
+  target_ids:
+  - CultureMech:007814
+  field_paths:
+  - solutions[0]
+  - parent_media
+  evidence_ids:
+  - record
+  - owner-0
+  - child
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.007814.parent-stock-quantities
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Referenced parent quantities lose unit and stock-stage meaning
+  description: The named HHB parent stores water, milligram entries and liquid stock
+    doses as G_PER_L. Its M888 minerals and Se/W recipe are flat parent ingredients;
+    these must not become final-medium quantities or unrelated parent content. Existing
+    M190 vitamin stock evidence authenticates that stock layer only.
+  target_ids:
+  - CultureMech:007814
+  field_paths:
+  - solutions[0]
+  - ingredients[0]
+  evidence_ids:
+  - hhb
+  - trace-parent
+  - vitamin-parent
+  - base
+  - trace
+  - vitamins
+  - quantity-inventory
+  - stock-history
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.007814.supplied-stock-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Transferred mineral hydrates and vitamin specificity need correction
+  description: Cobalt and nickel chloride hexahydrates in the transferred trace stock
+    are assigned anhydrous structures. Calcium pantothenate has an unsupported D-specific
+    grounding relative to the unqualified source; no alternative stereochemistry is
+    inferred.
+  target_ids:
+  - CultureMech:007814
+  field_paths:
+  - solutions[0]
+  evidence_ids:
+  - parent-grounding
+  - trace
+  - vitamins
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.007814.missing-parent-procedure
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Required parent preparation is not represented
+  description: The parent’s gas, sterilization, post-cooling additions and bottle
+    pressure are absent from the usable record procedure. The source supplies no final-volume
+    measurement, percentage basis or absolute/gauge pressure qualifier.
+  target_ids:
+  - CultureMech:007814
+  field_paths:
+  - preparation_steps
+  - solutions[0]
+  evidence_ids:
+  - base
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.007814.unverified-source-graph
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Child primary and asserted graph correspondence remain unavailable
+  description: JCM 1195 returns Nothing found, and neither a usable J120 graph snapshot
+    nor matching evidence is available. This is an evidence gap, not a demonstrated
+    false match; the matcher compares ingredient sets independently of concentrations.
+  target_ids:
+  - CultureMech:007814
+  field_paths:
+  - references
+  - kg_microbe_match
+  evidence_ids:
+  - jcm1195-attempt
+  - kg-search
+  - jcm120-attempt
+  - mediadiveJ120-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f6
+  issue_key: culturemech.007814.classification-evidence
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Complexity classification lacks formulation-specific evidence
+  description: The imported COMPLEX and UNDEFINED labels are not established by the
+    salt/vitamin formulation or name. Biological growth and classification require
+    their own source scope.
+  target_ids:
+  - CultureMech:007814
+  field_paths:
+  - medium_type
+  - composition_type
+  - category
+  evidence_ids:
+  - record
+  - owner-0
+  - base
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Attach source evidence to the maintained parent dose and child supplement,
+    retain the resolved parent identity, then regenerate and inspect the target.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Curate the named parent and exact transferred stocks with original
+    amounts, units and stages; preserve receiving doses and source percent ambiguities.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Correct the confirmed hydrate correspondences in their maintained stock
+    owner and retain a documented source-specificity limit for calcium pantothenate.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Represent the scoped parent procedure, separate stock treatment, example
+    bottle dimensions and exact pressure/gas wording without numerical assumptions.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Recover an exact usable child primary and the historical/current graph
+    evidence for J120, or explicitly qualify the unsupported annotation without fabricating
+    correspondence.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:007814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Review the classification against the resolved formulation and preserve
+    collection provenance separately from strain growth evidence.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:007814
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M1280_Archaeoglobus_MCR_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact JCM 1195 request returned HTTP 200 with Nothing found, not a usable primary
+  formulation. The child sulfate instruction is supported by the exact TOGO M1280
+  payload only; JCM 1194 independently supports its named parent.
+- JCM 120 returned Nothing found; it does not authenticate the asserted mediadive.medium:J120
+  crosslink.
+- The exact MediaDive J120 retrieval did not supply a usable formulation or graph
+  membership proof.
+- No dissolved-gas concentration, measured final volume, percentage basis, pressure
+  reference or child-primary sterilization default was inferred.
+- The only authenticated transferred historical amounts are the eleven existing M190
+  vitamin-stock claims; the generated target and maintained child have no such attached
+  amount evidence.
+- M888 legacy MediaIngredientMech:000926 and alpha-maltose metadata are excluded parent
+  content and are not required child correspondences.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-037
+- generated-medium
+```
