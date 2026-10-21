@@ -210,10 +210,10 @@ solutions:
       unit: G_PER_L
     term:
       id: CHEBI:4735
-      label: EDTA
+      label: ethylenediaminetetraacetic acid
     mediaingredientmech_chebi_term:
       id: CHEBI:4735
-      label: EDTA
+      label: ethylenediaminetetraacetic acid
     notes: UTEX lists 50 g EDTA acid form per liter.
     physicochemical_roles:
     - CHELATOR
@@ -506,10 +506,10 @@ solutions:
       unit: G_PER_L
     term:
       id: CHEBI:86214
-      label: cobalt(II) nitrate hexahydrate
+      label: cobalt dinitrate hexahydrate
     mediaingredientmech_chebi_term:
       id: CHEBI:86214
-      label: cobalt(II) nitrate hexahydrate
+      label: cobalt dinitrate hexahydrate
     notes: UTEX lists 0.49 g Co(NO3)2 x 6 H2O per liter.
     nutritional_roles:
     - NITROGEN_SOURCE
@@ -1108,9 +1108,11 @@ curation_history:
 - timestamp: '2026-10-21T03:04:48.230072+00:00'
   curator: stage5-remediation-v1.0
   action: CURATED
-  notes: 'Resolved Stage 4 finding CM-C1S4-003 on CultureMech:000034 (Issue #635).'
-  changes: Updated medium_type and composition_type to DEFINED, added standard BBM
-    ph_value 6.6, and clarified MnCl2 x 4 H2O stoichiometry note (#635).
+  notes: 'Resolved Stage 4 finding CM-C1S4-003 on CultureMech:000034 (Issues #635,
+    #645).'
+  changes: 'Normalized MnCl2 x 4 H2O to CHEBI:86368 (manganese(II) chloride tetrahydrate),
+    EDTA to CHEBI:4735 (ethylenediaminetetraacetic acid), and Co(NO3)2 x 6 H2O to
+    CHEBI:86214 (cobalt dinitrate hexahydrate) (#635, #645).'
 references:
 - reference: UTEX:bold-basal-medium
 - reference: https://utex.org/products/bold-basal-medium

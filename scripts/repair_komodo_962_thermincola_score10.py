@@ -67,6 +67,7 @@ SIGNATURE = (
 class Child:
     path: Path
     record_id: str
+    record_name: str
     source_term: str
     source_label: str
     relationship: str
@@ -77,6 +78,7 @@ CHILDREN = (
     Child(
         Path("bacterial/KOMODO_962_THERMOVENABULUM_medium.yaml"),
         "CultureMech:006919",
+        "thermovenabulum_medium_dsmz_962",
         "komodo.medium:962",
         "KOMODO Medium 962",
         SOURCE_DUPLICATE_RELATIONSHIP,
@@ -85,6 +87,7 @@ CHILDREN = (
     Child(
         Path("bacterial/for_dsm_14005.yaml"),
         "CultureMech:006918",
+        "for_dsm_14005",
         "komodo.medium:962.1",
         "KOMODO Medium 962.1",
         STRAIN_RELATIONSHIP,
@@ -186,7 +189,7 @@ def _child_entry(child: Child) -> dict[str, str]:
         "path": f"data/normalized_yaml/{child.path}",
         "relationship": child.relationship,
         "id": child.record_id,
-        "name": child.path.stem,
+        "name": child.record_name,
         "notes": child.notes,
     }
 

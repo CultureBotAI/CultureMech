@@ -28,21 +28,13 @@ composition:
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
-    snippet: |-
-      {
-                      "recipe_order": 3,
-                      "compound": "Yeast extract",
-                      "compound_id": 16,
-                      "solution": null,
-                      "solution_id": null,
-                      "condition": null,
-                      "attribute": null,
-                      "amount": 10,
-                      "unit": "g",
-                      "g_l": 10,
-                      "mmol_l": null,
-                      "optional": 0
-                  }
+    snippet: "{\n                \"recipe_order\": 3,\n                \"compound\"\
+      : \"Yeast extract\",\n                \"compound_id\": 16,\n               \
+      \ \"solution\": null,\n                \"solution_id\": null,\n            \
+      \    \"condition\": null,\n                \"attribute\": null,\n          \
+      \      \"amount\": 10,\n                \"unit\": \"g\",\n                \"\
+      g_l\": 10,\n                \"mmol_l\": null,\n                \"optional\"\
+      : 0\n            }"
     explanation: 'Concentration evidence for composition[2].concentration (Yeast extract)
       in MediaDive solution 177; locator=$.data.recipe[2] (compound_id=16). Provider
       explicitly reports g_l=10. Arithmetic check: 10 g * 1 g/g / (1000 ml / 1000
@@ -56,8 +48,8 @@ composition:
     value: '8'
     unit: G_PER_L
   term:
-    id: mediadive.compound:43
-    label: NaCl
+    id: CHEBI:26710
+    label: sodium chloride
   chebi_term:
     id: CHEBI:26710
     label: sodium chloride
@@ -65,25 +57,16 @@ composition:
     match_type: exact_match
   mediaingredientmech_chebi_term:
     id: CHEBI:26710
-    label: Sodium chloride
+    label: sodium chloride
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
-    snippet: |-
-      {
-                      "recipe_order": 4,
-                      "compound": "NaCl",
-                      "compound_id": 43,
-                      "solution": null,
-                      "solution_id": null,
-                      "condition": null,
-                      "attribute": null,
-                      "amount": 8,
-                      "unit": "g",
-                      "g_l": 8,
-                      "mmol_l": 136.893,
-                      "optional": 0
-                  }
+    snippet: "{\n                \"recipe_order\": 4,\n                \"compound\"\
+      : \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\"\
+      : null,\n                \"solution_id\": null,\n                \"condition\"\
+      : null,\n                \"attribute\": null,\n                \"amount\": 8,\n\
+      \                \"unit\": \"g\",\n                \"g_l\": 8,\n           \
+      \     \"mmol_l\": 136.893,\n                \"optional\": 0\n            }"
     explanation: 'Concentration evidence for composition[3].concentration (NaCl) in
       MediaDive solution 177; locator=$.data.recipe[3] (compound_id=43). Provider
       explicitly reports g_l=8. Arithmetic check: 8 g * 1 g/g / (1000 ml / 1000 ml
@@ -97,8 +80,8 @@ composition:
     value: '0.0005'
     unit: G_PER_L
   term:
-    id: mediadive.compound:1852
-    label: Sodium resazurin
+    id: CHEBI:8806
+    label: resazurin
   chebi_term:
     id: CHEBI:8806
     label: Resazurin
@@ -106,14 +89,14 @@ composition:
     match_type: corpus_consensus
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
-    label: Resazurin
+    label: resazurin
 - preferred_term: L-Cysteine HCl x H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   term:
-    id: mediadive.compound:770
-    label: L-Cysteine HCl x H2O
+    id: CHEBI:91248
+    label: L-cysteine hydrochloride hydrate
   chebi_term:
     id: CHEBI:91248
     label: L-cysteine hydrochloride hydrate
@@ -121,25 +104,17 @@ composition:
     match_type: corpus_consensus
   mediaingredientmech_chebi_term:
     id: CHEBI:91248
-    label: L-Cysteine HCl x H2O
+    label: L-cysteine hydrochloride hydrate
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
-    snippet: |-
-      {
-                      "recipe_order": 7,
-                      "compound": "L-Cysteine HCl x H2O",
-                      "compound_id": 770,
-                      "solution": null,
-                      "solution_id": null,
-                      "condition": null,
-                      "attribute": null,
-                      "amount": 0.5,
-                      "unit": "g",
-                      "g_l": 0.5,
-                      "mmol_l": 2.8468,
-                      "optional": 0
-                  }
+    snippet: "{\n                \"recipe_order\": 7,\n                \"compound\"\
+      : \"L-Cysteine HCl x H2O\",\n                \"compound_id\": 770,\n       \
+      \         \"solution\": null,\n                \"solution_id\": null,\n    \
+      \            \"condition\": null,\n                \"attribute\": null,\n  \
+      \              \"amount\": 0.5,\n                \"unit\": \"g\",\n        \
+      \        \"g_l\": 0.5,\n                \"mmol_l\": 2.8468,\n              \
+      \  \"optional\": 0\n            }"
     explanation: 'Concentration evidence for composition[5].concentration (L-Cysteine
       HCl x H2O) in MediaDive solution 177; locator=$.data.recipe[6] (compound_id=770).
       Provider explicitly reports g_l=0.5. Arithmetic check: 0.5 g * 1 g/g / (1000
@@ -163,25 +138,17 @@ composition:
     match_type: manual_curated
   mediaingredientmech_chebi_term:
     id: CHEBI:17234
-    label: D-Glucose
+    label: glucose
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
-    snippet: |-
-      {
-                      "recipe_order": 8,
-                      "compound": "D-Glucose",
-                      "compound_id": 211,
-                      "solution": null,
-                      "solution_id": null,
-                      "condition": null,
-                      "attribute": null,
-                      "amount": 1,
-                      "unit": "g",
-                      "g_l": 1,
-                      "mmol_l": 5.55062,
-                      "optional": 0
-                  }
+    snippet: "{\n                \"recipe_order\": 8,\n                \"compound\"\
+      : \"D-Glucose\",\n                \"compound_id\": 211,\n                \"\
+      solution\": null,\n                \"solution_id\": null,\n                \"\
+      condition\": null,\n                \"attribute\": null,\n                \"\
+      amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 1,\n\
+      \                \"mmol_l\": 5.55062,\n                \"optional\": 0\n   \
+      \         }"
     explanation: 'Concentration evidence for composition[6].concentration (D-Glucose)
       in MediaDive solution 177; locator=$.data.recipe[7] (compound_id=211). Provider
       explicitly reports g_l=1. Arithmetic check: 1 g * 1 g/g / (1000 ml / 1000 ml
@@ -195,8 +162,8 @@ composition:
     value: '2.5'
     unit: G_PER_L
   term:
-    id: mediadive.compound:65
-    label: Na2S2O3 x 5 H2O
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
   chebi_term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
@@ -204,25 +171,17 @@ composition:
     match_type: corpus_consensus
   mediaingredientmech_chebi_term:
     id: CHEBI:32150
-    label: Na2S2O3 x 5 H2O
+    label: sodium thiosulfate pentahydrate
   evidence:
   - reference: https://mediadive.dsmz.de/rest/solution/177
     supports: SUPPORT
-    snippet: |-
-      {
-                      "recipe_order": 9,
-                      "compound": "Na2S2O3 x 5 H2O",
-                      "compound_id": 65,
-                      "solution": null,
-                      "solution_id": null,
-                      "condition": null,
-                      "attribute": null,
-                      "amount": 2.5,
-                      "unit": "g",
-                      "g_l": 2.5,
-                      "mmol_l": 10.0731,
-                      "optional": 0
-                  }
+    snippet: "{\n                \"recipe_order\": 9,\n                \"compound\"\
+      : \"Na2S2O3 x 5 H2O\",\n                \"compound_id\": 65,\n             \
+      \   \"solution\": null,\n                \"solution_id\": null,\n          \
+      \      \"condition\": null,\n                \"attribute\": null,\n        \
+      \        \"amount\": 2.5,\n                \"unit\": \"g\",\n              \
+      \  \"g_l\": 2.5,\n                \"mmol_l\": 10.0731,\n                \"optional\"\
+      : 0\n            }"
     explanation: 'Concentration evidence for composition[7].concentration (Na2S2O3
       x 5 H2O) in MediaDive solution 177; locator=$.data.recipe[8] (compound_id=65).
       Provider explicitly reports g_l=2.5. Arithmetic check: 2.5 g * 1 g/g / (1000
@@ -237,8 +196,8 @@ composition:
     value: '0.96'
     unit: L
   term:
-    id: mediadive.compound:4
-    label: Distilled water
+    id: CHEBI:15377
+    label: water
   chebi_term:
     id: CHEBI:15377
     label: water
@@ -246,7 +205,7 @@ composition:
     match_type: corpus_consensus
   mediaingredientmech_chebi_term:
     id: CHEBI:15377
-    label: Water
+    label: water
 preparation_notes: Dissolve ingredients (except cysteine, glucose and thiosulfate),
   boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
   Add cysteine and adjust pH to 7.0. Thereafter, dispense under100% N2 gas atmosphere
@@ -309,11 +268,13 @@ curation_history:
 - timestamp: '2026-10-21T03:04:48.433119+00:00'
   curator: stage5-remediation-v1.0
   action: CURATED
-  notes: 'Resolved Stage 4 finding CM-C1S4-009 on CultureMech:011215 (Issue #635).'
-  changes: Removed stale placeholder ingredients and incomplete_composition flag,
-    normalized preferred_term to main_sol_104a, converted 960 mL Distilled water unit
-    to 0.96 L, and populated mediaingredientmech_chebi_term on all 6 CHEBI-mapped
-    constituents (#635).
+  notes: 'Resolved Stage 4 finding CM-C1S4-008 on CultureMech:011215 (Issues #634,
+    #635, #645).'
+  changes: 'Converted Distilled water concentration from 960.0 G_PER_L to 0.96 L (960
+    mL/L equivalent) and updated composition[3..8].term and mediaingredientmech_chebi_term
+    to canonical ChEBI IDs/labels (6/9 defined chemical constituents mapped to ChEBI/MIM;
+    3 complex peptone/yeast extract constituents carry mediadive.compound IDs) (#634,
+    #635, #645).'
 category: bacterial
 references:
 - reference: https://mediadive.dsmz.de/rest/solution/177

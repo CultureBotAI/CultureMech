@@ -75,10 +75,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:8806
-    label: Resazurin
+    label: resazurin
   mediaingredientmech_chebi_term:
     id: CHEBI:8806
-    label: Resazurin
+    label: resazurin
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -309,10 +309,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:176843
@@ -400,7 +400,9 @@ curation_history:
 - timestamp: '2026-10-21T03:02:37.109354+00:00'
   curator: stage5-remediation-v1.0
   action: CURATED
-  notes: 'Resolved Stage 4 findings CM-C1S4-001 and CM-C1S4-002 (Issue #634).'
-  changes: Disambiguated name to thermovenabulum_medium_dsmz_962a; scaled 1:100 Wolin
-    trace element and vitamin stocks (ingredients[10..33]) and corrected CaCl2 x 2
-    H2O sum to 0.327409 G_PER_L; added MediaIngredientMech links (#634).
+  notes: 'Resolved Stage 4 findings CM-C1S4-009 and CM-C1S4-010 on CultureMech:002143
+    (Issues #634, #635, #645).'
+  changes: 'Applied 1/1000 trace-element and vitamin stock dilution factors, consolidated
+    CaCl2 x 2 H2O (0.327409 G_PER_L in DSMZ 962/962a; 0.0988142 G_PER_L in DSMZ 1255),
+    normalized canonical OBO ChEBI labels across all mapped ingredients, and synchronized
+    parent/child variant topology (#634, #635, #645).'

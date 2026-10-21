@@ -299,10 +299,10 @@ ingredients:
     unit: G_PER_L
   term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
   mediaingredientmech_chebi_term:
     id: CHEBI:31345
-    label: Calcium pantothenate
+    label: calcium pantothenate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:176843
@@ -398,20 +398,12 @@ curation_history:
 - timestamp: '2026-10-21T03:04:47.352172+00:00'
   curator: stage5-remediation-v1.0
   action: CURATED
-  notes: Aligned merged DSMZ Medium 962 concentrations and KOMODO 962 name disambiguation
-    (#634).
-  changes: Scaled 1:100 Wolin trace element and vitamin stocks (ingredients[9..32])
-    and corrected CaCl2 x 2 H2O sum to 0.327409 G_PER_L; updated KOMODO 962 synonym
-    to thermovenabulum_medium_dsmz_962; added MediaIngredientMech link (#634).
-parent_media:
-  path: data/normalized_yaml/bacterial/KOMODO_962_THERMOVENABULUM_medium.yaml
-  relationship: SOURCE_DUPLICATE
-  id: CultureMech:006919
-  name: thermovenabulum_medium_dsmz_962
-variant_relationship: SOURCE_DUPLICATE
-variant_modifications:
-- Same ingredient and concentration signature; review as possible duplicate source
-  record.
+  notes: 'Resolved Stage 4 findings CM-C1S4-009 and CM-C1S4-010 on CultureMech:002142
+    (Issues #634, #635, #645).'
+  changes: 'Applied 1/1000 trace-element and vitamin stock dilution factors, consolidated
+    CaCl2 x 2 H2O (0.327409 G_PER_L in DSMZ 962/962a; 0.0988142 G_PER_L in DSMZ 1255),
+    normalized canonical OBO ChEBI labels across all mapped ingredients, and synchronized
+    parent/child variant topology (#634, #635, #645).'
 synonyms:
 - name: thermovenabulum_medium_dsmz_962
   source: KOMODO
@@ -428,3 +420,14 @@ merged_from:
 - for_dsm_14005
 - thermincola_ferriacetica_medium
 merge_fingerprint: 786ad11ad5a387fa1dce46544c2bd8fadaf4d64e91648514d200fc910b3236d4
+variant_children:
+- path: data/normalized_yaml/bacterial/KOMODO_962_THERMOVENABULUM_medium.yaml
+  relationship: SOURCE_DUPLICATE
+  id: CultureMech:006919
+  name: thermovenabulum_medium_dsmz_962
+  notes: KOMODO Medium 962 has the same 33-ingredient signature as DSMZ Medium 962.
+- path: data/normalized_yaml/bacterial/for_dsm_14005.yaml
+  relationship: STRAIN_SPECIFIC_VARIANT
+  id: CultureMech:006918
+  name: for_dsm_14005
+  notes: KOMODO Medium 962.1 applies Thermincola ferriacetica medium to DSM 14005.
