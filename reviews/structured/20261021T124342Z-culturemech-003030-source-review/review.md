@@ -1,0 +1,2335 @@
+# Source and formulation review: alicyclobacillus_ferrooxydans_medium (CultureMech:003030)
+
+- Review: 20261021T124342Z-culturemech-003030-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T12:39:19Z
+- Finished UTC: 2026-10-21T12:43:42Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact JCM685 medium and chemical forms resolve, but its six-component solution A and concentrated iron solution B are flattened into one ingredient list. The20g iron entry is a100mL stock amount, not20g/L medium. Existing preparation retains most conditional directions but lacks narrow evidence, explicit source stages and the source water/default sterilization context.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 202; batch 021 item 2 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty task batches contain 200 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 203 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003030 | data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml | generated | alicyclobacillus_ferrooxydans_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003030 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003030 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/202/strict.tsv |
+| validate-terms | passed | True | CultureMech:003030 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003030 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003030 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003030.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: supported. Targets: CultureMech:003030.
+
+6 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 6/7 primary and 6/7 secondary instances; all asserted secondary keys have exact pinned MIM rows. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 7: primary 85.71%; secondary 85.71%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:003030.
+
+15 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact source and maintained ownership
+
+identity: supported. Targets: CultureMech:003030.
+
+CultureMech:003030 is the single-owner JCM685 medium, corroborated by MediaDiveJ685. Source-specific A/B identities4587/4588 resolve; no synonym or strain-specific recipe is substituted.
+
+### Classification, pH and conditional physical state
+
+scope: supported. Targets: CultureMech:003030.
+
+COMPLEX/SEMI_DEFINED is consistent with yeast extract plus defined salts; LIQUID describes the base while preparation explicitly retains a conditional gellan-solid branch. Target pH2.5 is source-supported for solution A and must carry that stage; it is not asserted here as a measured assembled endpoint. No strain-specific growth or optimum follows from the title.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:003030.
+
+20 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "claim": "MgSO4 x 7 H2O",
+    "decision": "correct",
+    "stage": "Solution A before adding solution B",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "source_mass_g": "0.5",
+      "provider_A_volume_ml": 1000,
+      "source_basis": "A batch; not assembled medium"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution A exact ingredient row",
+        "exact_source_quote": "MgSO 4 ·7H 2 O 0.5 g",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "mediadiveJ685api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J685",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.02859,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea"
+      }
+    ],
+    "explanation": "Each number matches its source A mass and provider A g/L but is flattened into the medium. Restore A membership and evidence; the later70mL B addition prevents treating A stock values as independently established final-medium concentrations."
+  },
+  {
+    "decision_id": "q2",
+    "claim": "(NH4)2SO4",
+    "decision": "correct",
+    "stage": "Solution A before adding solution B",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "source_mass_g": "0.4",
+      "provider_A_volume_ml": 1000,
+      "source_basis": "A batch; not assembled medium"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution A exact ingredient row",
+        "exact_source_quote": "(NH 4 ) 2 SO 4 0.4 g",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "mediadiveJ685api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J685",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\": 3.02709,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea"
+      }
+    ],
+    "explanation": "Each number matches its source A mass and provider A g/L but is flattened into the medium. Restore A membership and evidence; the later70mL B addition prevents treating A stock values as independently established final-medium concentrations."
+  },
+  {
+    "decision_id": "q3",
+    "claim": "K2HPO4",
+    "decision": "correct",
+    "stage": "Solution A before adding solution B",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "source_mass_g": "0.2",
+      "provider_A_volume_ml": 1000,
+      "source_basis": "A batch; not assembled medium"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution A exact ingredient row",
+        "exact_source_quote": "K 2 HPO 4 0.2 g",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "mediadiveJ685api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J685",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.14826,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea"
+      }
+    ],
+    "explanation": "Each number matches its source A mass and provider A g/L but is flattened into the medium. Restore A membership and evidence; the later70mL B addition prevents treating A stock values as independently established final-medium concentrations."
+  },
+  {
+    "decision_id": "q4",
+    "claim": "K2S4O6",
+    "decision": "correct",
+    "stage": "Solution A before adding solution B",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "source_mass_g": "0.15",
+      "provider_A_volume_ml": 1000,
+      "source_basis": "A batch; not assembled medium"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution A exact ingredient row",
+        "exact_source_quote": "K 2 S 4 O 6 0.15 g",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "mediadiveJ685api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J685",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"K2S4O6\",\n                        \"compound_id\": 386,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.15,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea"
+      }
+    ],
+    "explanation": "Each number matches its source A mass and provider A g/L but is flattened into the medium. Restore A membership and evidence; the later70mL B addition prevents treating A stock values as independently established final-medium concentrations."
+  },
+  {
+    "decision_id": "q5",
+    "claim": "KCl",
+    "decision": "correct",
+    "stage": "Solution A before adding solution B",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "source_mass_g": "0.1",
+      "provider_A_volume_ml": 1000,
+      "source_basis": "A batch; not assembled medium"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution A exact ingredient row",
+        "exact_source_quote": "KCl 0.1 g",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "mediadiveJ685api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J685",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 1.34138,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea"
+      }
+    ],
+    "explanation": "Each number matches its source A mass and provider A g/L but is flattened into the medium. Restore A membership and evidence; the later70mL B addition prevents treating A stock values as independently established final-medium concentrations."
+  },
+  {
+    "decision_id": "q6",
+    "claim": "Yeast extract",
+    "decision": "correct",
+    "stage": "Solution A before adding solution B",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "source_mass_g": "0.2",
+      "provider_A_volume_ml": 1000,
+      "source_basis": "A batch; not assembled medium"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution A exact ingredient row",
+        "exact_source_quote": "Yeast extract 0.2 g",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "mediadiveJ685api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J685",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea"
+      }
+    ],
+    "explanation": "Each number matches its source A mass and provider A g/L but is flattened into the medium. Restore A membership and evidence; the later70mL B addition prevents treating A stock values as independently established final-medium concentrations."
+  },
+  {
+    "decision_id": "q7",
+    "claim": "Iron(II) sulfate heptahydrate",
+    "decision": "correct",
+    "stage": "Solution B stock before any addition to A",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "20",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "source_mass_g": 20,
+      "stock_final_volume_ml": 100,
+      "derived_stock_g_L": 200,
+      "arithmetic": "20g /0.100L =200g/L stock"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution B exact row",
+        "exact_source_quote": "FeSO 4 ·7H 2 O 20.0 g",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution B make-up sentence",
+        "exact_source_quote": "Dissolve in final 100 ml of 0.2 N H 2 SO 4 and filter-sterilize.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "mediadiveJ685api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J685",
+        "source_locator": "$.data.solutions[2].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 20,\n                        \"unit\": \"g\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea"
+      }
+    ],
+    "explanation": "Stored20G_PER_L confuses the stock batch mass with medium concentration. The primary explicitly supplies the100mL stock final volume; API4588 has no volume/g_l value, so primary text supplies this stock arithmetic. No final-medium concentration is inferred."
+  },
+  {
+    "decision_id": "q8",
+    "claim": "Solution A water",
+    "decision": "add",
+    "stage": "Solution A listed solvent input",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Adjust pH to 2.5 with H2SO4 and autoclave."
+          },
+          {
+            "step_number": 2,
+            "action": "FILTER_STERILIZE",
+            "description": "Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize."
+          },
+          {
+            "step_number": 3,
+            "action": "AUTOCLAVE",
+            "description": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+          }
+        ]
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "AUTOCLAVE",
+            "description": "Adjust pH to 2.5 with H2SO4 and autoclave."
+          },
+          {
+            "step_number": 2,
+            "action": "FILTER_STERILIZE",
+            "description": "Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize."
+          },
+          {
+            "step_number": 3,
+            "action": "AUTOCLAVE",
+            "description": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+          }
+        ]
+      }
+    ],
+    "source_amount": {
+      "value": 1.0,
+      "unit": "L",
+      "basis": "distilled-water input"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution A water row",
+        "exact_source_quote": "Distilled water 1.0 L",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      },
+      {
+        "source_key": "mediadiveJ685api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J685",
+        "source_locator": "$.data.solutions[1].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea"
+      }
+    ],
+    "explanation": "The receiving1.0L A amount appears in step3, but the source solvent row is absent. Preserve water input separately from provider A volume and the later assembled volume."
+  },
+  {
+    "decision_id": "q9",
+    "claim": "Solution A pH",
+    "decision": "evidence_only",
+    "stage": "Solution A before autoclaving",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 2.5
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 2.5
+      }
+    ],
+    "source_amount": {
+      "value": 2.5,
+      "stage": "A"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "Adjust pH to 2.5 with H 2 SO 4 and autoclave.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q10",
+    "claim": "Solution B final stock volume",
+    "decision": "evidence_only",
+    "stage": "B stock make-up",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize."
+      }
+    ],
+    "source_amount": {
+      "value": 100,
+      "unit": "mL",
+      "basis": "final B stock volume"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "Dissolve in final 100 ml of 0.2 N H 2 SO 4 and filter-sterilize.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q11",
+    "claim": "Solution B sulfuric-acid strength",
+    "decision": "evidence_only",
+    "stage": "B stock solvent",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize."
+      }
+    ],
+    "source_amount": {
+      "value": 0.2,
+      "unit": "N"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "Dissolve in final 100 ml of 0.2 N H 2 SO 4 and filter-sterilize.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q12",
+    "claim": "Base B addition to A",
+    "decision": "evidence_only",
+    "stage": "Base assembled medium",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      }
+    ],
+    "source_amount": {
+      "B_mL": 70,
+      "A_L": 1.0
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "add 70 ml Solution B to 1.0 L Solution A.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q13",
+    "claim": "Solid-branch A strength",
+    "decision": "evidence_only",
+    "stage": "Conditional solid preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      }
+    ],
+    "source_amount": {
+      "relative_strength": 2,
+      "reference": "Solution A"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "For solid medium, prepare double-strength Solution A and autoclave.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q14",
+    "claim": "Solid-branch gellan strength",
+    "decision": "evidence_only",
+    "stage": "Separate gellan stock in conditional solid preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      }
+    ],
+    "source_amount": {
+      "value": 1.4,
+      "unit": "%",
+      "percentage_basis": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "an equal amount of 1.4% Gerlite (gellan gum) solution",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q15",
+    "claim": "Solid-branch mixing ratio",
+    "decision": "evidence_only",
+    "stage": "Double-strength A and separate gellan stock",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      }
+    ],
+    "source_amount": {
+      "relative_amount": "equal to double-strength A",
+      "source_does_not_state_mass_or_volume_basis": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "an equal amount of 1.4% Gerlite (gellan gum) solution",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q16",
+    "claim": "Solid-branch mixing temperature",
+    "decision": "evidence_only",
+    "stage": "A/gellan mixing after separate autoclaving",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      }
+    ],
+    "source_amount": {
+      "value": 70,
+      "unit": "degree Celsius"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "keep the two solutions at 70C and mix thoroughly.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q17",
+    "claim": "Solid-branch B addition",
+    "decision": "evidence_only",
+    "stage": "After A/gellan combination, solid branch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution B (70 ml/L) and pour into petri dishes."
+      }
+    ],
+    "source_amount": {
+      "value": 70,
+      "unit": "mL/L",
+      "scope": "solid branch receiving dose"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 exact preparation sentence",
+        "exact_source_quote": "Then, add filter-sterilized Solution B (70 ml/L)",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The quantity and direction already appear in local preparation or pH metadata but have no attached exact source evidence. Retain the conditional stage and original unit; do not infer percentage basis, density, measured final volume or final pH."
+  },
+  {
+    "decision_id": "q18",
+    "claim": "Sulfuric acid titration dose",
+    "decision": "not_quantified",
+    "stage": "Solution A pH adjustment",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust pH to 2.5 with H2SO4 and autoclave."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Adjust pH to 2.5 with H2SO4 and autoclave."
+      }
+    ],
+    "source_amount": {
+      "dose": null,
+      "target_pH": 2.5
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 Solution A adjustment",
+        "exact_source_quote": "Adjust pH to 2.5 with H 2 SO 4 and autoclave.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The primary gives no fixed titrant amount or concentration for A. Do not transfer0.2N from the separate B solvent."
+  },
+  {
+    "decision_id": "q19",
+    "claim": "JCM default sterilization degree Celsius",
+    "decision": "add",
+    "stage": "Only autoclaved portions; filter-sterilized B is explicitly excepted",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "value": 121,
+      "unit": "degree Celsius"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 page default preceding recipe",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The source default temperature/time is absent locally. Preserve it only where the recipe calls for autoclaving; do not autoclave B or infer pressure."
+  },
+  {
+    "decision_id": "q20",
+    "claim": "JCM default sterilization min",
+    "decision": "add",
+    "stage": "Only autoclaved portions; filter-sterilized B is explicitly excepted",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+        "field_path": "sterilization",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "value": 15,
+      "unit": "min"
+    },
+    "source_snippets": [
+      {
+        "source_key": "jcm685",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685",
+        "source_locator": "JCM685 page default preceding recipe",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d",
+        "parsed_text_sha256": "d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5"
+      }
+    ],
+    "explanation": "The source default temperature/time is absent locally. Preserve it only where the recipe calls for autoclaving; do not autoclave B or infer pressure."
+  }
+]
+
+### Claim evidence and preparation completeness
+
+evidence: concern. Targets: CultureMech:003030.
+
+All seven concentrations lack attached amount evidence. Existing three preparation descriptions preserve much of the source, including B make-up, filter sterilization and solid branch. Their source-level pH, strengths, receiving doses and temperature require narrow evidence; source water and applicable page-default time/temperature are missing.
+
+## Findings
+
+### f1: Solution A and concentrated iron stock are flattened
+
+major / open / confirmed; issue key: JCM685-solution-stage-collapse.
+
+The six A values are shown as medium G_PER_L and B20g is shown as20G_PER_L, although the primary defines B in final100mL acid and adds70mL to1LA. The source-derived200g/L is a B-stock concentration only. Existing prose does not repair the structured false denominator.
+
+### f2: Quantities and existing preparation lack narrow source evidence
+
+major / open / confirmed; issue key: JCM685-evidence-preparation-context.
+
+The owner and target have no claim-level excerpts for ingredient quantities or existing pH/preparation assertions. They omit the A water row and applicable JCM121°C15min default. Preserve already-correct conditional text rather than treating it as wholly absent.
+
+### f3: One AUTOCLAVE step bundles later filtration and mixing
+
+minor / open / confirmed; issue key: JCM685-mixed-action-summary.
+
+Preparation step3 is typed AUTOCLAVE but also describes70°C mixing and adding filter-sterilized B. The descriptive text is substantially correct; the single action label cannot distinguish the conditional stages.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore separate A and B stock membership, original masses/units, explicit B100mL stock basis and base/solid receiving doses in the owner. Attach exact source evidence; do not assert a final-medium concentration from nominal liquid addition sums.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Attach narrow literal evidence to each existing source-supported claim and add the omitted water/default context with explicit A/B and liquid/solid scope. Keep unknown acid dose and percentage basis unresolved.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Split or clearly qualify the maintained conditional preparation stages while preserving exact source wording and amounts. Do not remove the existing correct solid-branch details.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch021/202/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/202/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml:1:id: CultureMech:003030<br>./data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml:1:id: CultureMech:003030<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/202/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 11 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/202/evidence-context-original.json; Complete frozen source context compared with fresh native input hashes | context_only | Every contextual input hash matches the fresh inspection at the same base. Preflight remains provisional provenance; this review supplies its own single-target judgment. |
+| jcm685 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685; Whole exact main source or explicitly named A/B stock endpoint | supports | JCM685 identities, all seven ingredient amounts, separate A/B stages and conditional solid preparation were compared without inferring final measured volume. |
+| mediadiveJ685api | https://mediadive.dsmz.de/rest/medium/J685; Whole exact main source or explicitly named A/B stock endpoint | supports | JCM685 identities, all seven ingredient amounts, separate A/B stages and conditional solid preparation were compared without inferring final measured volume. |
+| solution4587 | https://mediadive.dsmz.de/rest/solution/4587; Whole exact main source or explicitly named A/B stock endpoint | supports | JCM685 identities, all seven ingredient amounts, separate A/B stages and conditional solid preparation were compared without inferring final measured volume. |
+| solution4588 | https://mediadive.dsmz.de/rest/solution/4588; Whole exact main source or explicitly named A/B stock endpoint | supports | JCM685 identities, all seven ingredient amounts, separate A/B stages and conditional solid preparation were compared without inferring final measured volume. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86466 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86466; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86466 resolves to potassium tetrathionate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86466": [{"label": "K2S4O6", "match_type": "preferred_term", "identifier": "CHEBI:86466", "preferred_term": "K2S4O6", "ontology_id": "CHEBI:86466", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml", "events": 7, "timestamp_issues": []}] |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch021/202/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer recognizes primary versus stock rows and explicit stock additions; current merge checks formulation compatibility. Code was not executed or treated as proof of historical flattening. Fix maintained source stages before separately authorized regeneration. |
+| writer-1 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current importer recognizes primary versus stock rows and explicit stock additions; current merge checks formulation compatibility. Code was not executed or treated as proof of historical flattening. Fix maintained source stages before separately authorized regeneration. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T124342Z-culturemech-003030-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alicyclobacillus_ferrooxydans_medium (CultureMech:003030)'
+started_at: '2026-10-21T12:39:19Z'
+finished_at: '2026-10-21T12:43:42Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact JCM685 medium and chemical forms resolve, but its six-component
+  solution A and concentrated iron solution B are flattened into one ingredient list.
+  The20g iron entry is a100mL stock amount, not20g/L medium. Existing preparation
+  retains most conditional directions but lacks narrow evidence, explicit source stages
+  and the source water/default sterilization context.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    sha256: 5cc4ae5e288545c0203bdec4616347bf423c3eb8d150eb39e9b167fe6e2cd302
+    role: target
+  - path: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    sha256: 249e1bd4423856a5c4d47f06c4cd0220c24c58b09d98e3b3d506450e3e95eafc
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4587_Solution_A.yaml
+    sha256: 21f265e8eff2bee16c1cb7072c0105d97ac621de310831d48ebfff00f55be2af
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4588_Solution_B.yaml
+    sha256: 875fe46daf13835cc0c31d3db8d4073f4a5dd85b834158949e5dc20a9309f108
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 202; batch 021 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty task batches contain
+    200 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 203 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003030
+targets:
+- target_id: CultureMech:003030
+  path: data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  label: alicyclobacillus_ferrooxydans_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch021/202/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/202/strict.tsv"
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003030
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:39:55.384627Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch021/202/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:00.194410Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/202/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:03.995363Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:05.536857Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml:1:id:
+    CultureMech:003030
+
+    ./data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml:1:id:
+    CultureMech:003030
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/202/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: supports
+  summary: 11 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 8dc8876f2d1a9b91c1d3381fcda25e233201df3e03c577b499b189586f105ee8
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/202/evidence-context-original.json
+  locator: Complete frozen source context compared with fresh native input hashes
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: context_only
+  summary: Every contextual input hash matches the fresh inspection at the same base.
+    Preflight remains provisional provenance; this review supplies its own single-target
+    judgment.
+  snapshot_sha256: 8a8b7928645234d47cbd80f5f6a9b23839f9b4aad72ad3f5e0f7f89bf2e8562c
+- evidence_id: jcm685
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685
+  locator: Whole exact main source or explicitly named A/B stock endpoint
+  accessed_at: '2026-10-21T12:23:19.473548Z'
+  support: supports
+  summary: JCM685 identities, all seven ingredient amounts, separate A/B stages and
+    conditional solid preparation were compared without inferring final measured volume.
+  snapshot_sha256: a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d
+- evidence_id: mediadiveJ685api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J685
+  locator: Whole exact main source or explicitly named A/B stock endpoint
+  accessed_at: '2026-10-21T12:23:17.822391Z'
+  support: supports
+  summary: JCM685 identities, all seven ingredient amounts, separate A/B stages and
+    conditional solid preparation were compared without inferring final measured volume.
+  snapshot_sha256: 56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea
+- evidence_id: solution4587
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/4587
+  locator: Whole exact main source or explicitly named A/B stock endpoint
+  accessed_at: '2026-10-21T12:24:56.839554Z'
+  support: supports
+  summary: JCM685 identities, all seven ingredient amounts, separate A/B stages and
+    conditional solid preparation were compared without inferring final measured volume.
+  snapshot_sha256: 78ee0a1d5efc27f498253ba0f4a7c122682b2c32e33bc1f68266bd2f2b884e03
+- evidence_id: solution4588
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/4588
+  locator: Whole exact main source or explicitly named A/B stock endpoint
+  accessed_at: '2026-10-21T12:24:56.841278Z'
+  support: supports
+  summary: JCM685 identities, all seven ingredient amounts, separate A/B stages and
+    conditional solid preparation were compared without inferring final measured volume.
+  snapshot_sha256: 87663a7f792432238c4d787a7c31f412d5af864fcfc294220ce8545adc8ccb31
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi86466
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86466
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T10:35:29.714424Z'
+  support: supports
+  summary: CHEBI:86466 resolves to potassium tetrathionate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 8615f5a4f3b7210ec429cec78659e70bc7472cbd8573475ac23c212408617f01
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946":
+    [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946",
+    "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term":
+    "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86466": [{"label": "K2S4O6", "match_type": "preferred_term",
+    "identifier": "CHEBI:86466", "preferred_term": "K2S4O6", "ontology_id": "CHEBI:86466",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/202/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 69f022b7d0a5f2f2a5f3bbb0e0debf2e046f128179deca740ccd1a0b6c128c55
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: context_only
+  summary: Current importer recognizes primary versus stock rows and explicit stock
+    additions; current merge checks formulation compatibility. Code was not executed
+    or treated as proof of historical flattening. Fix maintained source stages before
+    separately authorized regeneration.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:43:41Z'
+  support: context_only
+  summary: Current importer recognizes primary versus stock rows and explicit stock
+    additions; current merge checks formulation compatibility. Code was not executed
+    or treated as proof of historical flattening. Fix maintained source stages before
+    separately authorized regeneration.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: supported
+  summary: '6 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 6/7 primary and 6/7 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Source forms
+    are assessed separately.'
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi31795
+  - chebi32588
+  - chebi62946
+  - chebi75836
+  - chebi86466
+  details: 'Instance coverage on a 0–100 percent scale, denominator 7: primary 85.71%;
+    secondary 85.71%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 15 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact source and maintained ownership
+  outcome: supported
+  summary: CultureMech:003030 is the single-owner JCM685 medium, corroborated by MediaDiveJ685.
+    Source-specific A/B identities4587/4588 resolve; no synonym or strain-specific
+    recipe is substituted.
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - record
+  - jcm685
+  - mediadiveJ685api
+  - solution4587
+  - solution4588
+  - owner-0
+- assessment_id: scope
+  area: scope
+  topic: Classification, pH and conditional physical state
+  outcome: supported
+  summary: COMPLEX/SEMI_DEFINED is consistent with yeast extract plus defined salts;
+    LIQUID describes the base while preparation explicitly retains a conditional gellan-solid
+    branch. Target pH2.5 is source-supported for solution A and must carry that stage;
+    it is not asserted here as a measured assembled endpoint. No strain-specific growth
+    or optimum follows from the title.
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - record
+  - jcm685
+  - mediadiveJ685api
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 20 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"claim\": \"MgSO4 x 7 H2O\"\
+    ,\n    \"decision\": \"correct\",\n    \"stage\": \"Solution A before adding solution\
+    \ B\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"source_mass_g\": \"0.5\",\n\
+    \      \"provider_A_volume_ml\": 1000,\n      \"source_basis\": \"A batch; not\
+    \ assembled medium\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 Solution A exact ingredient row\",\n \
+    \       \"exact_source_quote\": \"MgSO 4 ·7H 2 O 0.5 g\",\n        \"snapshot_sha256\"\
+    : \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\",\n    \
+    \    \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ685api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J685\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.5,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n  \
+    \                      \\\"mmol_l\\\": 2.02859,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea\"\
+    \n      }\n    ],\n    \"explanation\": \"Each number matches its source A mass\
+    \ and provider A g/L but is flattened into the medium. Restore A membership and\
+    \ evidence; the later70mL B addition prevents treating A stock values as independently\
+    \ established final-medium concentrations.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q2\",\n    \"claim\": \"(NH4)2SO4\",\n    \"decision\": \"correct\",\n   \
+    \ \"stage\": \"Solution A before adding solution B\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"source_mass_g\": \"0.4\",\n\
+    \      \"provider_A_volume_ml\": 1000,\n      \"source_basis\": \"A batch; not\
+    \ assembled medium\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 Solution A exact ingredient row\",\n \
+    \       \"exact_source_quote\": \"(NH 4 ) 2 SO 4 0.4 g\",\n        \"snapshot_sha256\"\
+    : \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\",\n    \
+    \    \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ685api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J685\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 0.4,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.4,\\n   \
+    \                     \\\"mmol_l\\\": 3.02709,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea\"\
+    \n      }\n    ],\n    \"explanation\": \"Each number matches its source A mass\
+    \ and provider A g/L but is flattened into the medium. Restore A membership and\
+    \ evidence; the later70mL B addition prevents treating A stock values as independently\
+    \ established final-medium concentrations.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q3\",\n    \"claim\": \"K2HPO4\",\n    \"decision\": \"correct\",\n    \"\
+    stage\": \"Solution A before adding solution B\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"source_mass_g\": \"0.2\",\n\
+    \      \"provider_A_volume_ml\": 1000,\n      \"source_basis\": \"A batch; not\
+    \ assembled medium\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 Solution A exact ingredient row\",\n \
+    \       \"exact_source_quote\": \"K 2 HPO 4 0.2 g\",\n        \"snapshot_sha256\"\
+    : \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\",\n    \
+    \    \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ685api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J685\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"K2HPO4\\\",\\n                        \\\"compound_id\\\": 10,\\\
+    n                        \\\"amount\\\": 0.2,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n                \
+    \        \\\"mmol_l\\\": 1.14826,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea\"\
+    \n      }\n    ],\n    \"explanation\": \"Each number matches its source A mass\
+    \ and provider A g/L but is flattened into the medium. Restore A membership and\
+    \ evidence; the later70mL B addition prevents treating A stock values as independently\
+    \ established final-medium concentrations.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q4\",\n    \"claim\": \"K2S4O6\",\n    \"decision\": \"correct\",\n    \"\
+    stage\": \"Solution A before adding solution B\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"source_mass_g\": \"0.15\"\
+    ,\n      \"provider_A_volume_ml\": 1000,\n      \"source_basis\": \"A batch; not\
+    \ assembled medium\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 Solution A exact ingredient row\",\n \
+    \       \"exact_source_quote\": \"K 2 S 4 O 6 0.15 g\",\n        \"snapshot_sha256\"\
+    : \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\",\n    \
+    \    \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ685api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J685\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"K2S4O6\\\",\\n                        \\\"compound_id\\\": 386,\\\
+    n                        \\\"amount\\\": 0.15,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.15,\\n         \
+    \               \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea\"\n     \
+    \ }\n    ],\n    \"explanation\": \"Each number matches its source A mass and\
+    \ provider A g/L but is flattened into the medium. Restore A membership and evidence;\
+    \ the later70mL B addition prevents treating A stock values as independently established\
+    \ final-medium concentrations.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n  \
+    \  \"claim\": \"KCl\",\n    \"decision\": \"correct\",\n    \"stage\": \"Solution\
+    \ A before adding solution B\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"source_mass_g\": \"0.1\",\n\
+    \      \"provider_A_volume_ml\": 1000,\n      \"source_basis\": \"A batch; not\
+    \ assembled medium\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 Solution A exact ingredient row\",\n \
+    \       \"exact_source_quote\": \"KCl 0.1 g\",\n        \"snapshot_sha256\": \"\
+    a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\",\n        \"\
+    parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ685api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J685\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\\
+    n                        \\\"amount\\\": 0.1,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n                \
+    \        \\\"mmol_l\\\": 1.34138,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea\"\
+    \n      }\n    ],\n    \"explanation\": \"Each number matches its source A mass\
+    \ and provider A g/L but is flattened into the medium. Restore A membership and\
+    \ evidence; the later70mL B addition prevents treating A stock values as independently\
+    \ established final-medium concentrations.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q6\",\n    \"claim\": \"Yeast extract\",\n    \"decision\": \"correct\",\n\
+    \    \"stage\": \"Solution A before adding solution B\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"source_mass_g\": \"0.2\",\n\
+    \      \"provider_A_volume_ml\": 1000,\n      \"source_basis\": \"A batch; not\
+    \ assembled medium\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 Solution A exact ingredient row\",\n \
+    \       \"exact_source_quote\": \"Yeast extract 0.2 g\",\n        \"snapshot_sha256\"\
+    : \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\",\n    \
+    \    \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ685api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J685\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea\"\
+    \n      }\n    ],\n    \"explanation\": \"Each number matches its source A mass\
+    \ and provider A g/L but is flattened into the medium. Restore A membership and\
+    \ evidence; the later70mL B addition prevents treating A stock values as independently\
+    \ established final-medium concentrations.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q7\",\n    \"claim\": \"Iron(II) sulfate heptahydrate\",\n    \"decision\"\
+    : \"correct\",\n    \"stage\": \"Solution B stock before any addition to A\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"20\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"source_mass_g\": 20,\n   \
+    \   \"stock_final_volume_ml\": 100,\n      \"derived_stock_g_L\": 200,\n     \
+    \ \"arithmetic\": \"20g /0.100L =200g/L stock\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm685\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\",\n        \"source_locator\"\
+    : \"JCM685 Solution B exact row\",\n        \"exact_source_quote\": \"FeSO 4 ·7H\
+    \ 2 O 20.0 g\",\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"jcm685\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\",\n        \"source_locator\"\
+    : \"JCM685 Solution B make-up sentence\",\n        \"exact_source_quote\": \"\
+    Dissolve in final 100 ml of 0.2 N H 2 SO 4 and filter-sterilize.\",\n        \"\
+    snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ685api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J685\",\n        \"source_locator\"\
+    : \"$.data.solutions[2].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"FeSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 12,\\n                        \\\"amount\\\": 20,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"optional\\\": 0\\n\
+    \                    }\",\n        \"snapshot_sha256\": \"56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea\"\
+    \n      }\n    ],\n    \"explanation\": \"Stored20G_PER_L confuses the stock batch\
+    \ mass with medium concentration. The primary explicitly supplies the100mL stock\
+    \ final volume; API4588 has no volume/g_l value, so primary text supplies this\
+    \ stock arithmetic. No final-medium concentration is inferred.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q8\",\n    \"claim\": \"Solution A water\",\n    \"decision\"\
+    : \"add\",\n    \"stage\": \"Solution A listed solvent input\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Adjust pH to 2.5 with H2SO4 and autoclave.\"\
+    \n          },\n          {\n            \"step_number\": 2,\n            \"action\"\
+    : \"FILTER_STERILIZE\",\n            \"description\": \"Dissolve in final 100\
+    \ ml of 0.2 N H2SO4 and filter-sterilize.\"\n          },\n          {\n     \
+    \       \"step_number\": 3,\n            \"action\": \"AUTOCLAVE\",\n        \
+    \    \"description\": \"To complete the medium, add 70 ml Solution B to 1.0 L\
+    \ Solution A. For solid medium, prepare double-strength Solution A and autoclave.\
+    \ Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution.\
+    \ After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add\
+    \ filter-sterilized Solution B (70 ml/L) and pour into petri dishes.\"\n     \
+    \     }\n        ]\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"AUTOCLAVE\"\
+    ,\n            \"description\": \"Adjust pH to 2.5 with H2SO4 and autoclave.\"\
+    \n          },\n          {\n            \"step_number\": 2,\n            \"action\"\
+    : \"FILTER_STERILIZE\",\n            \"description\": \"Dissolve in final 100\
+    \ ml of 0.2 N H2SO4 and filter-sterilize.\"\n          },\n          {\n     \
+    \       \"step_number\": 3,\n            \"action\": \"AUTOCLAVE\",\n        \
+    \    \"description\": \"To complete the medium, add 70 ml Solution B to 1.0 L\
+    \ Solution A. For solid medium, prepare double-strength Solution A and autoclave.\
+    \ Separately autoclave an equal amount of 1.4% Gerlite (gellan gum) solution.\
+    \ After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add\
+    \ filter-sterilized Solution B (70 ml/L) and pour into petri dishes.\"\n     \
+    \     }\n        ]\n      }\n    ],\n    \"source_amount\": {\n      \"value\"\
+    : 1.0,\n      \"unit\": \"L\",\n      \"basis\": \"distilled-water input\"\n \
+    \   },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm685\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 Solution A water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1.0 L\",\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ685api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J685\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"56a9da1c54992bcaa2e9d0bcd9c9aeec50d1b5167db176bf5070daba3a93faea\"\
+    \n      }\n    ],\n    \"explanation\": \"The receiving1.0L A amount appears in\
+    \ step3, but the source solvent row is absent. Preserve water input separately\
+    \ from provider A volume and the later assembled volume.\"\n  },\n  {\n    \"\
+    decision_id\": \"q9\",\n    \"claim\": \"Solution A pH\",\n    \"decision\": \"\
+    evidence_only\",\n    \"stage\": \"Solution A before autoclaving\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 2.5\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 2.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"value\": 2.5,\n      \"stage\": \"A\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm685\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 exact preparation sentence\",\n      \
+    \  \"exact_source_quote\": \"Adjust pH to 2.5 with H 2 SO 4 and autoclave.\",\n\
+    \        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q10\",\n    \"claim\": \"Solution B final stock volume\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"stage\": \"B stock make-up\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize.\"\n      }\n\
+    \    ],\n    \"source_amount\": {\n      \"value\": 100,\n      \"unit\": \"mL\"\
+    ,\n      \"basis\": \"final B stock volume\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm685\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\",\n        \"source_locator\"\
+    : \"JCM685 exact preparation sentence\",\n        \"exact_source_quote\": \"Dissolve\
+    \ in final 100 ml of 0.2 N H 2 SO 4 and filter-sterilize.\",\n        \"snapshot_sha256\"\
+    : \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\",\n    \
+    \    \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q11\",\n    \"claim\": \"Solution B sulfuric-acid strength\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"stage\": \"B stock solvent\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize.\"\n      }\n\
+    \    ],\n    \"source_amount\": {\n      \"value\": 0.2,\n      \"unit\": \"N\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm685\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 exact preparation sentence\",\n      \
+    \  \"exact_source_quote\": \"Dissolve in final 100 ml of 0.2 N H 2 SO 4 and filter-sterilize.\"\
+    ,\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q12\",\n    \"claim\": \"Base B addition to A\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"stage\": \"Base assembled medium\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"B_mL\": 70,\n      \"A_L\": 1.0\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm685\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\",\n        \"source_locator\"\
+    : \"JCM685 exact preparation sentence\",\n        \"exact_source_quote\": \"add\
+    \ 70 ml Solution B to 1.0 L Solution A.\",\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q13\",\n    \"claim\": \"Solid-branch A strength\",\n    \"decision\": \"\
+    evidence_only\",\n    \"stage\": \"Conditional solid preparation\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"relative_strength\": 2,\n      \"reference\": \"Solution A\"\n  \
+    \  },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm685\"\
+    ,\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 exact preparation sentence\",\n      \
+    \  \"exact_source_quote\": \"For solid medium, prepare double-strength Solution\
+    \ A and autoclave.\",\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q14\",\n    \"claim\": \"Solid-branch gellan strength\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"stage\": \"Separate gellan stock in conditional solid\
+    \ preparation\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"value\": 1.4,\n      \"unit\": \"%\",\n      \"percentage_basis\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 exact preparation sentence\",\n      \
+    \  \"exact_source_quote\": \"an equal amount of 1.4% Gerlite (gellan gum) solution\"\
+    ,\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q15\",\n    \"claim\": \"Solid-branch mixing ratio\",\n    \"decision\": \"\
+    evidence_only\",\n    \"stage\": \"Double-strength A and separate gellan stock\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"relative_amount\": \"equal to double-strength A\",\n      \"source_does_not_state_mass_or_volume_basis\"\
+    : true\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 exact preparation sentence\",\n      \
+    \  \"exact_source_quote\": \"an equal amount of 1.4% Gerlite (gellan gum) solution\"\
+    ,\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q16\",\n    \"claim\": \"Solid-branch mixing temperature\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"stage\": \"A/gellan mixing after separate autoclaving\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"value\": 70,\n      \"unit\": \"degree Celsius\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"jcm685\",\n        \"\
+    source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\",\n  \
+    \      \"source_locator\": \"JCM685 exact preparation sentence\",\n        \"\
+    exact_source_quote\": \"keep the two solutions at 70C and mix thoroughly.\",\n\
+    \        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q17\",\n    \"claim\": \"Solid-branch B addition\",\n    \"decision\": \"\
+    evidence_only\",\n    \"stage\": \"After A/gellan combination, solid branch\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid\
+    \ medium, prepare double-strength Solution A and autoclave. Separately autoclave\
+    \ an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep\
+    \ the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution\
+    \ B (70 ml/L) and pour into petri dishes.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"value\": 70,\n      \"unit\": \"mL/L\",\n      \"scope\": \"solid\
+    \ branch receiving dose\"\n    },\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 exact preparation sentence\",\n      \
+    \  \"exact_source_quote\": \"Then, add filter-sterilized Solution B (70 ml/L)\"\
+    ,\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The quantity and direction already appear\
+    \ in local preparation or pH metadata but have no attached exact source evidence.\
+    \ Retain the conditional stage and original unit; do not infer percentage basis,\
+    \ density, measured final volume or final pH.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q18\",\n    \"claim\": \"Sulfuric acid titration dose\",\n    \"decision\"\
+    : \"not_quantified\",\n    \"stage\": \"Solution A pH adjustment\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 2.5 with H2SO4 and autoclave.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Adjust pH to 2.5 with H2SO4 and autoclave.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"dose\": null,\n      \"target_pH\": 2.5\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"jcm685\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\",\n        \"source_locator\"\
+    : \"JCM685 Solution A adjustment\",\n        \"exact_source_quote\": \"Adjust\
+    \ pH to 2.5 with H 2 SO 4 and autoclave.\",\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The primary gives no fixed titrant amount\
+    \ or concentration for A. Do not transfer0.2N from the separate B solvent.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q19\",\n    \"claim\": \"JCM default sterilization\
+    \ degree Celsius\",\n    \"decision\": \"add\",\n    \"stage\": \"Only autoclaved\
+    \ portions; filter-sterilized B is explicitly excepted\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  }\n    ],\n    \"source_amount\": {\n      \"value\": 121,\n      \"unit\"\
+    : \"degree Celsius\"\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 page default preceding recipe\",\n   \
+    \     \"exact_source_quote\": \"Unless otherwise stated, sterilize media by autoclaving\
+    \ at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The source default temperature/time\
+    \ is absent locally. Preserve it only where the recipe calls for autoclaving;\
+    \ do not autoclave B or infer pressure.\"\n  },\n  {\n    \"decision_id\": \"\
+    q20\",\n    \"claim\": \"JCM default sterilization min\",\n    \"decision\": \"\
+    add\",\n    \"stage\": \"Only autoclaved portions; filter-sterilized B is explicitly\
+    \ excepted\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"sterilization\",\n        \"stored\": null\n    \
+    \  }\n    ],\n    \"source_amount\": {\n      \"value\": 15,\n      \"unit\":\
+    \ \"min\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"jcm685\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685\"\
+    ,\n        \"source_locator\": \"JCM685 page default preceding recipe\",\n   \
+    \     \"exact_source_quote\": \"Unless otherwise stated, sterilize media by autoclaving\
+    \ at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"a29f7b0ad51ec84bf797d5f4299c7d18b16352b507145c9529c907304cf9360d\"\
+    ,\n        \"parsed_text_sha256\": \"d30c02d19bb49f0834605b687f0858f9f215efa80a5e9c4e7bfad9404f614dc5\"\
+    \n      }\n    ],\n    \"explanation\": \"The source default temperature/time\
+    \ is absent locally. Preserve it only where the recipe calls for autoclaving;\
+    \ do not autoclave B or infer pressure.\"\n  }\n]"
+- assessment_id: evidence
+  area: evidence
+  topic: Claim evidence and preparation completeness
+  outcome: concern
+  summary: All seven concentrations lack attached amount evidence. Existing three
+    preparation descriptions preserve much of the source, including B make-up, filter
+    sterilization and solid branch. Their source-level pH, strengths, receiving doses
+    and temperature require narrow evidence; source water and applicable page-default
+    time/temperature are missing.
+  target_ids:
+  - CultureMech:003030
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - jcm685
+  - mediadiveJ685api
+findings:
+- finding_id: f1
+  issue_key: JCM685-solution-stage-collapse
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Solution A and concentrated iron stock are flattened
+  description: The six A values are shown as medium G_PER_L and B20g is shown as20G_PER_L,
+    although the primary defines B in final100mL acid and adds70mL to1LA. The source-derived200g/L
+    is a B-stock concentration only. Existing prose does not repair the structured
+    false denominator.
+  target_ids:
+  - CultureMech:003030
+  field_paths:
+  - ingredients[*].concentration
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - quantity-inventory
+  - jcm685
+  - mediadiveJ685api
+  - solution4587
+  - solution4588
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: JCM685-evidence-preparation-context
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Quantities and existing preparation lack narrow source evidence
+  description: The owner and target have no claim-level excerpts for ingredient quantities
+    or existing pH/preparation assertions. They omit the A water row and applicable
+    JCM121°C15min default. Preserve already-correct conditional text rather than treating
+    it as wholly absent.
+  target_ids:
+  - CultureMech:003030
+  field_paths:
+  - ingredients[*].evidence
+  - preparation_steps
+  - sterilization
+  - ph_value
+  evidence_ids:
+  - quantity-inventory
+  - record
+  - jcm685
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: JCM685-mixed-action-summary
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: One AUTOCLAVE step bundles later filtration and mixing
+  description: Preparation step3 is typed AUTOCLAVE but also describes70°C mixing
+    and adding filter-sterilized B. The descriptive text is substantially correct;
+    the single action label cannot distinguish the conditional stages.
+  target_ids:
+  - CultureMech:003030
+  field_paths:
+  - preparation_steps[2].action
+  - preparation_steps[2].description
+  evidence_ids:
+  - record
+  - jcm685
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore separate A and B stock membership, original masses/units, explicit
+    B100mL stock basis and base/solid receiving doses in the owner. Attach exact source
+    evidence; do not assert a final-medium concentration from nominal liquid addition
+    sums.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003030
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Attach narrow literal evidence to each existing source-supported claim
+    and add the omitted water/default context with explicit A/B and liquid/solid scope.
+    Keep unknown acid dose and percentage basis unresolved.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003030
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Split or clearly qualify the maintained conditional preparation stages
+    while preserving exact source wording and amounts. Do not remove the existing
+    correct solid-branch details.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003030
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J685_ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-021
+- generated-medium
+```

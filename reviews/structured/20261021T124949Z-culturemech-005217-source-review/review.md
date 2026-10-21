@@ -1,0 +1,9905 @@
+# Source and formulation review: alicyclobacillus_medium (CultureMech:005217)
+
+- Review: 20261021T124949Z-culturemech-005217-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T12:39:22Z
+- Finished UTC: 2026-10-21T12:49:49Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated record conflates 22 contributors, including a source-defined yeast-extract variant and owners with different pH metadata. Base DSMZ 402 separates A, the 1 mL SL-6 addition and optional agar stock C; the record instead flattens agar/trace-stock strengths. Full historical variant formulation review remains partial because exact KOMODO details are inaccessible.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 203; batch 021 item 3 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty task batches contain 200 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 203 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:005217 | data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml | generated | alicyclobacillus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:005217 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:005217 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/203/strict.tsv |
+| validate-terms | passed | True | CultureMech:005217 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:005217 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:005217 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: komodo402 | unavailable | False | CultureMech:005217 | Exact KOMODO detail komodo402 returned HTTP 403; its response and actual access time are preserved. Current base formulation and accession mapping resolve independently, so this base-detail limit is optional. |
+| Exact source content access: komodo402_dot_1 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_dot_1 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_11983 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_11983 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_14558 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_14558 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_14745 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_14745 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_14955 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_14955 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_16176 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_16176 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_17614 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_17614 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_18237 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_18237 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_2498 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_2498 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_3922 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_3922 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_3923 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_3923 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_3924 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_3924 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_446 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_446 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_448 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_448 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_449 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_449 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_451 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_451 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_452 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_452 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_453 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_453 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_454 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_454 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| Exact source content access: komodo402_455 | unavailable | True | CultureMech:005217 | Exact KOMODO detail komodo402_455 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:005217.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: concern. Targets: CultureMech:005217.
+
+13 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 13/14 primary and 13/14 secondary instances; all asserted secondary keys have exact pinned MIM rows. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 14: primary 92.86%; secondary 92.86%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:005217.
+
+170 timestamp instances inspected; 44 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### All contributors and canonical reference paths
+
+ownership: supported. Targets: CultureMech:005217.
+
+The complete merged_from list resolves all 22 unique owners with exact stable IDs and canonical paths; all owner fields were read and compared. The MERGED_RECIPES.source string is truncated after the 3923 contributor, so it alone is incomplete. Full merged_from and the earlier complete source list establish ownership without treating the fingerprint as scientific identity.
+
+### Base versus source and strain-specific variants
+
+identity: concern. Targets: CultureMech:005217.
+
+The base DSMZ 402 identity resolves. Its final paragraph requires 5 g/L yeast extract instead of 2 g/L for A. cycloheptanicus, contradicting that contributor’s copied base amount. Nineteen further DSM-labeled variants have exact catalog identities but inaccessible detailed recipes. Their pH 4.0/4.5/5.5/3–4/unspecified states must remain source-specific; these metadata differences do not independently establish additional ingredient modifications. SOURCE_DUPLICATE and synonym collapse are not justified by copied ingredient signatures.
+
+### Physical state, mixture classification and organism scope
+
+scope: concern. Targets: CultureMech:005217.
+
+COMPLEX/UNDEFINED is consistent with yeast extract. The primary explicitly defines both liquid and solid branches; SOLID_AGAR alone cannot describe every merged contributor and condition. Catalog Is Aerobic=false is metadata only. Species/DSM labels are source variant designators here, not independently curated taxonomy, growth or optimum assertions.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:005217.
+
+58 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "claim": "CaCl2 x 2 H2O in supported base/explicit branch",
+    "decision": "correct",
+    "stage": "Solution A; liquid and solid branches retain different water inputs",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "mass_g": 0.25,
+      "provider_A_g_l": 0.25,
+      "provider_A_volume_ml": 1000,
+      "basis": "source A batch; not all variant or stock strengths"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 Solution A exact row",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.25 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.25,\n                        \"mmol_l\": 1.70051,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "Restore explicit A membership and original mass/branch basis with evidence. Provider A 1000 mL normalization does not establish the solid A 500 mL stage or every variant formulation. Existing quantities have no attached evidence."
+  },
+  {
+    "decision_id": "q2",
+    "claim": "CaCl2 x 2 H2O in unresolved DSM-labeled variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.25",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_source_amount_g": 0.25,
+      "variant_amount": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 base Solution A only; does not establish unresolved variants",
+        "exact_source_quote": "CaCl2 x 2 H2O 0.25 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "All nineteen owners contain the same copied base value, but their detailed recipes returned 403. Preserve the existing values as unresolved and do not apply the base formula to those variants without source-specific evidence."
+  },
+  {
+    "decision_id": "q3",
+    "claim": "MgSO4 x 7 H2O in supported base/explicit branch",
+    "decision": "correct",
+    "stage": "Solution A; liquid and solid branches retain different water inputs",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "mass_g": 0.5,
+      "provider_A_g_l": 0.5,
+      "provider_A_volume_ml": 1000,
+      "basis": "source A batch; not all variant or stock strengths"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 Solution A exact row",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.50 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[1].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.02859,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "Restore explicit A membership and original mass/branch basis with evidence. Provider A 1000 mL normalization does not establish the solid A 500 mL stage or every variant formulation. Existing quantities have no attached evidence."
+  },
+  {
+    "decision_id": "q4",
+    "claim": "MgSO4 x 7 H2O in unresolved DSM-labeled variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_source_amount_g": 0.5,
+      "variant_amount": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 base Solution A only; does not establish unresolved variants",
+        "exact_source_quote": "MgSO4 x 7 H2O 0.50 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "All nineteen owners contain the same copied base value, but their detailed recipes returned 403. Preserve the existing values as unresolved and do not apply the base formula to those variants without source-specific evidence."
+  },
+  {
+    "decision_id": "q5",
+    "claim": "(NH4)2SO4 in supported base/explicit branch",
+    "decision": "correct",
+    "stage": "Solution A; liquid and solid branches retain different water inputs",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "mass_g": 0.2,
+      "provider_A_g_l": 0.2,
+      "provider_A_volume_ml": 1000,
+      "basis": "source A batch; not all variant or stock strengths"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 Solution A exact row",
+        "exact_source_quote": "(NH4)2 SO4 0.20 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[1].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.51355,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "Restore explicit A membership and original mass/branch basis with evidence. Provider A 1000 mL normalization does not establish the solid A 500 mL stage or every variant formulation. Existing quantities have no attached evidence."
+  },
+  {
+    "decision_id": "q6",
+    "claim": "(NH4)2SO4 in unresolved DSM-labeled variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_source_amount_g": 0.2,
+      "variant_amount": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 base Solution A only; does not establish unresolved variants",
+        "exact_source_quote": "(NH4)2 SO4 0.20 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "All nineteen owners contain the same copied base value, but their detailed recipes returned 403. Preserve the existing values as unresolved and do not apply the base formula to those variants without source-specific evidence."
+  },
+  {
+    "decision_id": "q7",
+    "claim": "Yeast extract in supported base/explicit branch",
+    "decision": "correct",
+    "stage": "Solution A; liquid and solid branches retain different water inputs",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "mass_g": 2,
+      "provider_A_g_l": 2,
+      "provider_A_volume_ml": 1000,
+      "basis": "source A batch; not all variant or stock strengths"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 Solution A exact row",
+        "exact_source_quote": "Yeast extract 2.00 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[1].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "Restore explicit A membership and original mass/branch basis with evidence. Provider A 1000 mL normalization does not establish the solid A 500 mL stage or every variant formulation. Existing quantities have no attached evidence."
+  },
+  {
+    "decision_id": "q8",
+    "claim": "Yeast extract in unresolved DSM-labeled variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_source_amount_g": 2,
+      "variant_amount": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 base Solution A only; does not establish unresolved variants",
+        "exact_source_quote": "Yeast extract 2.00 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "All nineteen owners contain the same copied base value, but their detailed recipes returned 403. Preserve the existing values as unresolved and do not apply the base formula to those variants without source-specific evidence."
+  },
+  {
+    "decision_id": "q9",
+    "claim": "Glucose in supported base/explicit branch",
+    "decision": "correct",
+    "stage": "Solution A; liquid and solid branches retain different water inputs",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "mass_g": 5,
+      "provider_A_g_l": 5,
+      "provider_A_volume_ml": 1000,
+      "basis": "source A batch; not all variant or stock strengths"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 Solution A exact row",
+        "exact_source_quote": "Glucose 5.00 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[1].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "Restore explicit A membership and original mass/branch basis with evidence. Provider A 1000 mL normalization does not establish the solid A 500 mL stage or every variant formulation. Existing quantities have no attached evidence."
+  },
+  {
+    "decision_id": "q10",
+    "claim": "Glucose in unresolved DSM-labeled variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_source_amount_g": 5,
+      "variant_amount": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 base Solution A only; does not establish unresolved variants",
+        "exact_source_quote": "Glucose 5.00 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "All nineteen owners contain the same copied base value, but their detailed recipes returned 403. Preserve the existing values as unresolved and do not apply the base formula to those variants without source-specific evidence."
+  },
+  {
+    "decision_id": "q11",
+    "claim": "KH2PO4 in supported base/explicit branch",
+    "decision": "correct",
+    "stage": "Solution A; liquid and solid branches retain different water inputs",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "mass_g": 3,
+      "provider_A_g_l": 3,
+      "provider_A_volume_ml": 1000,
+      "basis": "source A batch; not all variant or stock strengths"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 Solution A exact row",
+        "exact_source_quote": "KH2PO4 3.00 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[1].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 22.045,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "Restore explicit A membership and original mass/branch basis with evidence. Provider A 1000 mL normalization does not establish the solid A 500 mL stage or every variant formulation. Existing quantities have no attached evidence."
+  },
+  {
+    "decision_id": "q12",
+    "claim": "KH2PO4 in unresolved DSM-labeled variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_source_amount_g": 3,
+      "variant_amount": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 base Solution A only; does not establish unresolved variants",
+        "exact_source_quote": "KH2PO4 3.00 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "All nineteen owners contain the same copied base value, but their detailed recipes returned 403. Preserve the existing values as unresolved and do not apply the base formula to those variants without source-specific evidence."
+  },
+  {
+    "decision_id": "q13",
+    "claim": "A. cycloheptanicus yeast extract",
+    "decision": "correct",
+    "stage": "Explicit named branch only",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "value": 5,
+      "unit": "g/L",
+      "replaces_base_g_L": 2
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 final sentence",
+        "exact_source_quote": "For strains of A. cycloheptanicus add 5 g/l of yeast \nextract instead of 2 g/l.",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "The primary explicitly supplies this variant concentration; its owner instead stores 2 G_PER_L and calls the relationship SOURCE_DUPLICATE. Do not overwrite the base 2 g/L branch or extend this amount to other DSM-labeled variants."
+  },
+  {
+    "decision_id": "q14",
+    "claim": "Agar in source C",
+    "decision": "correct",
+    "stage": "Optional solid branch: solution C only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "source_mass_g": 15,
+      "C_water_ml": 500,
+      "provider_C_stock_g_L": 30
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 Solution C agar row",
+        "exact_source_quote": "Agar 15.00 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      },
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 Solution C water row",
+        "exact_source_quote": "Distilled water 500.00 ml",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[3].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 30,\n                        \"mmol_l\": 89.1981,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "The stored 30 G_PER_L is provider C-stock strength, not receiving-medium agar concentration. Keep 15 g in the separate 500 mL C preparation and its optional solid branch; do not claim 30 g per main recipe."
+  },
+  {
+    "decision_id": "q15",
+    "claim": "Agar in unresolved variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "30",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_C_stock_g_L": 30,
+      "variant_amount_and_state": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 Solution C base context only",
+        "exact_source_quote": "Agar 15.00 g",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "The copied stock-strength value does not independently establish any inaccessible variant’s agar dose or physical state."
+  },
+  {
+    "decision_id": "q16",
+    "claim": "ZnSO4 x 7 H2O in SL-6",
+    "decision": "correct",
+    "stage": "SL-6 stock composition, separate from its 1 mL addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "stock_mass_g": 0.1,
+      "stock_water_ml": 1000,
+      "provider_stock_g_L": 0.1,
+      "receiving_SL6_mL": 1
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 page1 Trace element solution SL-6 exact row",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[4].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "This is a stock concentration flattened into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values as final-medium values."
+  },
+  {
+    "decision_id": "q17",
+    "claim": "ZnSO4 x 7 H2O in unresolved variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_SL6_stock_amount_g": 0.1,
+      "variant_stock_and_dose": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 SL-6 stock context only",
+        "exact_source_quote": "ZnSO4 x 7 H2O 0.10 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      }
+    ],
+    "explanation": "The source establishes the base stock, not every historical variant’s use or dose. Preserve uncertainty instead of applying guessed dilution corrections."
+  },
+  {
+    "decision_id": "q18",
+    "claim": "MnCl2 x 4 H2O in SL-6",
+    "decision": "correct",
+    "stage": "SL-6 stock composition, separate from its 1 mL addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "stock_mass_g": 0.03,
+      "stock_water_ml": 1000,
+      "provider_stock_g_L": 0.03,
+      "receiving_SL6_mL": 1
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 page1 Trace element solution SL-6 exact row",
+        "exact_source_quote": "MnCl2 x 4 H2O 0.03 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[4].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.151588,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "This is a stock concentration flattened into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values as final-medium values."
+  },
+  {
+    "decision_id": "q19",
+    "claim": "MnCl2 x 4 H2O in unresolved variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_SL6_stock_amount_g": 0.03,
+      "variant_stock_and_dose": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 SL-6 stock context only",
+        "exact_source_quote": "MnCl2 x 4 H2O 0.03 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      }
+    ],
+    "explanation": "The source establishes the base stock, not every historical variant’s use or dose. Preserve uncertainty instead of applying guessed dilution corrections."
+  },
+  {
+    "decision_id": "q20",
+    "claim": "H3BO3 in SL-6",
+    "decision": "correct",
+    "stage": "SL-6 stock composition, separate from its 1 mL addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "stock_mass_g": 0.3,
+      "stock_water_ml": 1000,
+      "provider_stock_g_L": 0.3,
+      "receiving_SL6_mL": 1
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 page1 Trace element solution SL-6 exact row",
+        "exact_source_quote": "H3BO3 0.30 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[4].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 4.85123,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "This is a stock concentration flattened into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values as final-medium values."
+  },
+  {
+    "decision_id": "q21",
+    "claim": "H3BO3 in unresolved variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "0.3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_SL6_stock_amount_g": 0.3,
+      "variant_stock_and_dose": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 SL-6 stock context only",
+        "exact_source_quote": "H3BO3 0.30 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      }
+    ],
+    "explanation": "The source establishes the base stock, not every historical variant’s use or dose. Preserve uncertainty instead of applying guessed dilution corrections."
+  },
+  {
+    "decision_id": "q22",
+    "claim": "CoCl2 x 6 H2O in SL-6",
+    "decision": "correct",
+    "stage": "SL-6 stock composition, separate from its 1 mL addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "stock_mass_g": 0.2,
+      "stock_water_ml": 1000,
+      "provider_stock_g_L": 0.2,
+      "receiving_SL6_mL": 1
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 page1 Trace element solution SL-6 exact row",
+        "exact_source_quote": "CoCl2 x 6 H2O 0.20 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[4].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.54037,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "This is a stock concentration flattened into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values as final-medium values."
+  },
+  {
+    "decision_id": "q23",
+    "claim": "CoCl2 x 6 H2O in unresolved variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_SL6_stock_amount_g": 0.2,
+      "variant_stock_and_dose": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 SL-6 stock context only",
+        "exact_source_quote": "CoCl2 x 6 H2O 0.20 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      }
+    ],
+    "explanation": "The source establishes the base stock, not every historical variant’s use or dose. Preserve uncertainty instead of applying guessed dilution corrections."
+  },
+  {
+    "decision_id": "q24",
+    "claim": "CuCl2 x 2 H2O in SL-6",
+    "decision": "correct",
+    "stage": "SL-6 stock composition, separate from its 1 mL addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "stock_mass_g": 0.01,
+      "stock_water_ml": 1000,
+      "provider_stock_g_L": 0.01,
+      "receiving_SL6_mL": 1
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 page1 Trace element solution SL-6 exact row",
+        "exact_source_quote": "CuCl2 x 2 H2O 0.01 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[4].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0586569,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "This is a stock concentration flattened into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values as final-medium values."
+  },
+  {
+    "decision_id": "q25",
+    "claim": "CuCl2 x 2 H2O in unresolved variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_SL6_stock_amount_g": 0.01,
+      "variant_stock_and_dose": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 SL-6 stock context only",
+        "exact_source_quote": "CuCl2 x 2 H2O 0.01 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      }
+    ],
+    "explanation": "The source establishes the base stock, not every historical variant’s use or dose. Preserve uncertainty instead of applying guessed dilution corrections."
+  },
+  {
+    "decision_id": "q26",
+    "claim": "NiCl2 x 6 H2O in SL-6",
+    "decision": "correct",
+    "stage": "SL-6 stock composition, separate from its 1 mL addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "stock_mass_g": 0.02,
+      "stock_water_ml": 1000,
+      "provider_stock_g_L": 0.02,
+      "receiving_SL6_mL": 1
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 page1 Trace element solution SL-6 exact row",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.02 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[4].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.154322,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "This is a stock concentration flattened into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values as final-medium values."
+  },
+  {
+    "decision_id": "q27",
+    "claim": "NiCl2 x 6 H2O in unresolved variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_SL6_stock_amount_g": 0.02,
+      "variant_stock_and_dose": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 SL-6 stock context only",
+        "exact_source_quote": "NiCl2 x 6 H2O 0.02 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      }
+    ],
+    "explanation": "The source establishes the base stock, not every historical variant’s use or dose. Preserve uncertainty instead of applying guessed dilution corrections."
+  },
+  {
+    "decision_id": "q28",
+    "claim": "Na2MoO4 x 2 H2O in SL-6",
+    "decision": "correct",
+    "stage": "SL-6 stock composition, separate from its 1 mL addition",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "stock_mass_g": 0.03,
+      "stock_water_ml": 1000,
+      "provider_stock_g_L": 0.03,
+      "receiving_SL6_mL": 1
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 page1 Trace element solution SL-6 exact row",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 0.03 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      },
+      {
+        "source_key": "mediadive402api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/402",
+        "source_locator": "$.data.solutions[4].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.123993,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b"
+      }
+    ],
+    "explanation": "This is a stock concentration flattened into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values as final-medium values."
+  },
+  {
+    "decision_id": "q29",
+    "claim": "Na2MoO4 x 2 H2O in unresolved variants",
+    "decision": "unsupported",
+    "stage": "Nineteen historical modified formulations",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_amount": {
+      "base_SL6_stock_amount_g": 0.03,
+      "variant_stock_and_dose": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "DSMZ 27 SL-6 stock context only",
+        "exact_source_quote": "Na2MoO4 x 2 H2O 0.03 g",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      }
+    ],
+    "explanation": "The source establishes the base stock, not every historical variant’s use or dose. Preserve uncertainty instead of applying guessed dilution corrections."
+  },
+  {
+    "decision_id": "q30",
+    "claim": "Liquid A water",
+    "decision": "evidence_only",
+    "stage": "Base DSM owner preparation",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Sterilize separately. For liquid medium combine solution A (with 1000.0 ml distilled water) and solution B. For solid medium combine solution A (with 500 ml distilled water), solution B and solution C. For strains of A. cycloheptanicus add 5 g/l of yeast extract instead of 2 g/l."
+      }
+    ],
+    "source_amount": {
+      "value": 1000,
+      "unit": "mL",
+      "branch": "liquid"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 Solution A mutually exclusive water rows",
+        "exact_source_quote": "Distilled water (for liquid medium) 1000.00 ml",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "This water quantity is already present in the DSM owner preparation text but has no attached excerpt; its mutually exclusive branch must be retained."
+  },
+  {
+    "decision_id": "q31",
+    "claim": "Liquid A water",
+    "decision": "add",
+    "stage": "Base generated/KOMODO and explicit named branch preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "value": 1000,
+      "unit": "mL",
+      "branch": "liquid"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 Solution A mutually exclusive water rows",
+        "exact_source_quote": "Distilled water (for liquid medium) 1000.00 ml",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "Add the missing source water context with branch membership. Do not sum the two alternative water rows or assert a measured final volume."
+  },
+  {
+    "decision_id": "q32",
+    "claim": "Solid A water",
+    "decision": "evidence_only",
+    "stage": "Base DSM owner preparation",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Sterilize separately. For liquid medium combine solution A (with 1000.0 ml distilled water) and solution B. For solid medium combine solution A (with 500 ml distilled water), solution B and solution C. For strains of A. cycloheptanicus add 5 g/l of yeast extract instead of 2 g/l."
+      }
+    ],
+    "source_amount": {
+      "value": 500,
+      "unit": "mL",
+      "branch": "solid"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 Solution A mutually exclusive water rows",
+        "exact_source_quote": "Distilled water (for solid medium) 500.00 ml",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "This water quantity is already present in the DSM owner preparation text but has no attached excerpt; its mutually exclusive branch must be retained."
+  },
+  {
+    "decision_id": "q33",
+    "claim": "Solid A water",
+    "decision": "add",
+    "stage": "Base generated/KOMODO and explicit named branch preparation",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "preparation_steps",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "value": 500,
+      "unit": "mL",
+      "branch": "solid"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 Solution A mutually exclusive water rows",
+        "exact_source_quote": "Distilled water (for solid medium) 500.00 ml",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "Add the missing source water context with branch membership. Do not sum the two alternative water rows or assert a measured final volume."
+  },
+  {
+    "decision_id": "q34",
+    "claim": "SL-6 receiving dose",
+    "decision": "add",
+    "stage": "Source solution B added to each base branch",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "value": 1,
+      "unit": "mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "dsmz402 exact named B/C/SL-6 subsection",
+        "exact_source_quote": "Trace element sol. SL-6 (see medium 27) 1.00 ml",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "The structured stock/dose claim is absent in these layers. Preserve its source-specific scope; no unrelated parent recipe, sterilization time, pressure or growth condition transfers."
+  },
+  {
+    "decision_id": "q35",
+    "claim": "C water",
+    "decision": "add",
+    "stage": "Optional agar stock C only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "value": 500,
+      "unit": "mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "dsmz402 exact named B/C/SL-6 subsection",
+        "exact_source_quote": "Distilled water 500.00 ml",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "The structured stock/dose claim is absent in these layers. Preserve its source-specific scope; no unrelated parent recipe, sterilization time, pressure or growth condition transfers."
+  },
+  {
+    "decision_id": "q36",
+    "claim": "SL-6 stock water",
+    "decision": "add",
+    "stage": "SL-6 stock preparation only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "solutions",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "value": 1000,
+      "unit": "mL"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz27",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf",
+        "source_locator": "dsmz27 exact named B/C/SL-6 subsection",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9",
+        "parsed_text_sha256": "b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af"
+      }
+    ],
+    "explanation": "The structured stock/dose claim is absent in these layers. Preserve its source-specific scope; no unrelated parent recipe, sterilization time, pressure or growth condition transfers."
+  },
+  {
+    "decision_id": "q37",
+    "claim": "Base A pH",
+    "decision": "evidence_only",
+    "stage": "Source solution A adjustment",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 4.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 4.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Adjust pH to 4.0"
+      }
+    ],
+    "source_amount": {
+      "value": 4.0,
+      "stage": "A"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz402",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf",
+        "source_locator": "DSMZ 402 page1 following Solution A",
+        "exact_source_quote": "Adjust pH to 4.0",
+        "snapshot_sha256": "2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232",
+        "parsed_text_sha256": "30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592"
+      }
+    ],
+    "explanation": "The base target/KOMODO scalar and DSM preparation retain this source value without narrow evidence. Do not replace distinct variant pH metadata with the base scalar."
+  },
+  {
+    "decision_id": "q38",
+    "claim": "Catalog pH metadata for 402",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 4.0
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.0",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402' &gt;402&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;ALICYCLOBACILLUS medium&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.0&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q39",
+    "claim": "Catalog pH metadata for 402.1",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+        "field_path": "ph_value",
+        "stored": 4.5
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.5",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402.1",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402.1' &gt;402.1&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; For strains of A. cycloheptanicus&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q40",
+    "claim": "Catalog pH metadata for 402_11983",
+    "decision": "not_quantified",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+        "field_path": "ph_value",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "null",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_11983",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_11983' &gt;402_11983&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 11983&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q41",
+    "claim": "Catalog pH metadata for 402_14558",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+        "field_path": "ph_value",
+        "stored": 4.0
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.0",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_14558",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14558' &gt;402_14558&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 14558&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.0&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q42",
+    "claim": "Catalog pH metadata for 402_14745",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+        "field_path": "ph_value",
+        "stored": 4.5
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.5",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_14745",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14745' &gt;402_14745&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 14745&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q43",
+    "claim": "Catalog pH metadata for 402_14955",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+        "field_path": "ph_value",
+        "stored": 4.5
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.5",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_14955",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14955' &gt;402_14955&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 14955&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q44",
+    "claim": "Catalog pH metadata for 402_16176",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+        "field_path": "ph_value",
+        "stored": 4.0
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.0",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_16176",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_16176' &gt;402_16176&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 16176&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.0&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q45",
+    "claim": "Catalog pH metadata for 402_17614",
+    "decision": "not_quantified",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+        "field_path": "ph_value",
+        "stored": null
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "null",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_17614",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_17614' &gt;402_17614&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 17614&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q46",
+    "claim": "Catalog pH metadata for 402_18237",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+        "field_path": "ph_value",
+        "stored": 5.5
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "5.5",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_18237",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_18237' &gt;402_18237&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 18237&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 5.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q47",
+    "claim": "Catalog pH metadata for 402_2498",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+        "field_path": "ph_value",
+        "stored": 4.5
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.5",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_2498",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_2498' &gt;402_2498&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 2498&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q48",
+    "claim": "Catalog pH metadata for 402_3922",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+        "field_path": "ph_value",
+        "stored": 4.5
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.5",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_3922",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3922' &gt;402_3922&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 3922&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q49",
+    "claim": "Catalog pH metadata for 402_3923",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+        "field_path": "ph_value",
+        "stored": 4.5
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.5",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_3923",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3923' &gt;402_3923&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 3923&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q50",
+    "claim": "Catalog pH metadata for 402_3924",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+        "field_path": "ph_value",
+        "stored": 4.5
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "4.5",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_3924",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3924' &gt;402_3924&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 3924&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q51",
+    "claim": "Catalog pH metadata for 402_446",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "3 - 4",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_446",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_446' &gt;402_446&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 446&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q52",
+    "claim": "Catalog pH metadata for 402_448",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "3 - 4",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_448",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_448' &gt;402_448&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 448&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q53",
+    "claim": "Catalog pH metadata for 402_449",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "3 - 4",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_449",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_449' &gt;402_449&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 449&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q54",
+    "claim": "Catalog pH metadata for 402_451",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "3 - 4",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_451",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_451' &gt;402_451&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 451&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q55",
+    "claim": "Catalog pH metadata for 402_452",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "3 - 4",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_452",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_452' &gt;402_452&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 452&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q56",
+    "claim": "Catalog pH metadata for 402_453",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "3 - 4",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_453",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_453' &gt;402_453&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 453&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q57",
+    "claim": "Catalog pH metadata for 402_454",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "3 - 4",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_454",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_454' &gt;402_454&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 454&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  },
+  {
+    "decision_id": "q58",
+    "claim": "Catalog pH metadata for 402_455",
+    "decision": "evidence_only",
+    "stage": "Exact source accession metadata; not general growth optimum",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 3.0,
+          "max": 4.0
+        }
+      }
+    ],
+    "source_amount": {
+      "catalog_PH_Info": "3 - 4",
+      "no_new_value_if_null": true
+    },
+    "source_snippets": [
+      {
+        "source_key": "komodoMediaList",
+        "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+        "source_locator": "table first cell exactly 402_455",
+        "exact_source_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_455' &gt;402_455&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 455&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;",
+        "snapshot_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a"
+      }
+    ],
+    "explanation": "The exact catalog row supports only this accession’s pH metadata. Absence is not zero and range 3–4 is not a single selected value. Catalog pH differences do not by themselves identify unobserved ingredient modifications; detailed variant formulas remain unavailable."
+  }
+]
+
+### Retained DSM preparation versus generated loss
+
+completeness: concern. Targets: CultureMech:005217.
+
+The DSM owner retains separate sterilization, liquid/solid combination and yeast-variant instructions. The target and 21 KOMODO owners omit that preparation. The primary supplies no sterilization time/temperature or pH reagent; DSMZ 27 parent procedure must not fill those gaps.
+
+## Findings
+
+### f1: Distinct source variants are conflated as duplicates
+
+blocker / open / confirmed; issue key: DSM402-variant-collapse.
+
+The target merges 22 contributors and asserts 20 SOURCE_DUPLICATE children. At least the named A. cycloheptanicus branch has a primary-supported 5 g/L rather than 2 g/L yeast concentration. Catalog-specific pH values/ranges and unknowns were also replaced by one scalar 4.0. The 19 remaining modified recipes cannot be declared equivalent from copied signatures while their detailed sources are unavailable.
+
+### f2: Agar and SL-6 stock strengths appear as medium concentrations
+
+major / open / confirmed; issue key: DSM402-stock-strength-flattening.
+
+The record and every owner share 14 flat amounts. Agar 30 g/L is the concentration of 15 g in 500 mL stock C; seven trace values are SL-6 stock concentrations used via a separate 1 mL addition. Base A values also lack branch/stock membership and narrow evidence. Current source data do not supply all historical variant quantities.
+
+### f3: Explicit nickel hexahydrate is grounded to anhydrous nickel chloride
+
+major / open / confirmed; issue key: DSM402-nickel-hydrate-grounding.
+
+Every layer labels NiCl2 x 6H2O but uses CHEBI34887 nickel dichloride, whose formula has no hydrate water. DSMZ 27 SL-6 explicitly specifies the hexahydrate. Both primary and secondary keying inherit this source-form mismatch despite canonical labels.
+
+### f4: Generated and KOMODO layers lose branch preparation
+
+major / open / confirmed; issue key: DSM402-preparation-loss.
+
+The DSM owner preserves the separate sterilization and liquid/solid/yeast-variant instructions. The target omits them, leaving a fixed solid label with flat stock strengths. Source water inputs, SL-6 dose and conditional C are required to interpret the recipe.
+
+### f5: The merge-event source string is truncated
+
+minor / open / confirmed; issue key: DSM402-truncated-merge-provenance.
+
+MERGED_RECIPES.source stops within the 3923 contributor despite a 22-owner count. Complete merged_from and the earlier recipe-merger source list recover all owners, so current ownership was resolved, but consumers relying only on the event source would miss contributors.
+
+### f6: Historical timestamps contain malformed or naive values
+
+minor / open / confirmed; issue key: DSM402-history-timezones.
+
+44 inspected timestamp instances are malformed or omit timezone information. These are retained historical metadata issues, not evidence about when a scientific recipe was verified.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Keep base and source-specific variants distinguishable. Correct the known yeast branch only from its exact source; preserve unresolved variant recipes and pH metadata without asserting equivalent ingredients. Re-evaluate owner relationships and regenerate only after source-specific review.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore A/B/C and SL-6 boundaries and original mass/volume units for the source-supported branches. Attach literal source amounts and bases, keep unknown variant amounts unresolved, and never use stock g/L directly as main-medium g/L.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Resolve the exact hexahydrate ontology identity and corresponding secondary mapping before changing maintained terms; retain the source stock mass and avoid silent anhydrous-equivalent conversion.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve source preparation and conditional physical state from the maintained inputs with claim-level evidence; do not invent a sterilization cycle, pH reagent or DSMZ 27 parent procedure.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve old history unchanged and append an authorized clarification or repair the future source-event serialization so all exact contributor identities remain recoverable without truncation.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a6
+
+Preserve existing events and append any later clarification with actual timezone-qualified timestamps; do not infer missing historical times.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-2 | data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-3 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-4 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-5 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-6 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-7 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-8 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-9 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-10 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-11 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-12 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-13 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-14 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-15 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-16 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-17 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-18 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-19 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-20 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-21 | data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch021/203/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/203/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml:1:id: CultureMech:005217<br>./data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml:1:id: CultureMech:005217<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/203/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 43 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/203/evidence-context-original.json; Complete frozen source context compared with fresh native input hashes | context_only | Every contextual input hash matches the fresh inspection at the same base. Preflight remains provisional provenance; this review supplies its own single-target judgment. |
+| dsmz402 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf; DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding stock endpoint | supports | Base formulation and source-specific stock stages compared. DSMZ 27 contributes only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and sterilization protocol do not transfer. |
+| dsmz27 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf; DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding stock endpoint | supports | Base formulation and source-specific stock stages compared. DSMZ 27 contributes only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and sterilization protocol do not transfer. |
+| mediadive402api | https://mediadive.dsmz.de/rest/medium/402; DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding stock endpoint | supports | Base formulation and source-specific stock stages compared. DSMZ 27 contributes only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and sterilization protocol do not transfer. |
+| solution815 | https://mediadive.dsmz.de/rest/solution/815; DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding stock endpoint | supports | Base formulation and source-specific stock stages compared. DSMZ 27 contributes only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and sterilization protocol do not transfer. |
+| solution816 | https://mediadive.dsmz.de/rest/solution/816; DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding stock endpoint | supports | Base formulation and source-specific stock stages compared. DSMZ 27 contributes only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and sterilization protocol do not transfer. |
+| solution817 | https://mediadive.dsmz.de/rest/solution/817; DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding stock endpoint | supports | Base formulation and source-specific stock stages compared. DSMZ 27 contributes only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and sterilization protocol do not transfer. |
+| solution25 | https://mediadive.dsmz.de/rest/solution/25; DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding stock endpoint | supports | Base formulation and source-specific stock stages compared. DSMZ 27 contributes only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and sterilization protocol do not transfer. |
+| komodo-catalog | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Exact 21 accession rows with complete header; row HTML checked literally | supports | All 21 KOMODO identities and declared pH/source flags resolve. These are catalog metadata, not complete historical variant formulations or physiological oxygen evidence. |
+| catalog-row-inventory | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/203/evidence-context-original.json; exact_komodo_mappings; each full HTML row checked against bound catalog | context_only | [{"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402", "ALICYCLOBACILLUS medium", "4.0", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402\"&gt;402&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;ALICYCLOBACILLUS medium&lt;/td&gt;\n&lt;td&gt; 4.0&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402' &gt;402&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;ALICYCLOBACILLUS medium&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.0&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402.1", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402.1", "For strains of A. cycloheptanicus", "4.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402.1\"&gt;402.1&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt; For strains of A. cycloheptanicus&lt;/td&gt;\n&lt;td&gt; 4.5&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402.1' &gt;402.1&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; For strains of A. cycloheptanicus&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_11983", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_11983", "MEDIUM 402 MODIFIED FOR DSM 11983", "null", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_11983\"&gt;402_11983&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 11983&lt;/td&gt;\n&lt;td&gt;null&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_11983' &gt;402_11983&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 11983&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_14558", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_14558", "MEDIUM 402 MODIFIED FOR DSM 14558", "4.0", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14558\"&gt;402_14558&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 14558&lt;/td&gt;\n&lt;td&gt; 4.0&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14558' &gt;402_14558&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 14558&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.0&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_14745", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_14745", "MEDIUM 402 MODIFIED FOR DSM 14745", "4.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14745\"&gt;402_14745&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 14745&lt;/td&gt;\n&lt;td&gt; 4.5&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14745' &gt;402_14745&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 14745&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_14955", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_14955", "MEDIUM 402 MODIFIED FOR DSM 14955", "4.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14955\"&gt;402_14955&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 14955&lt;/td&gt;\n&lt;td&gt; 4.5&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14955' &gt;402_14955&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 14955&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_16176", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_16176", "MEDIUM 402 MODIFIED FOR DSM 16176", "4.0", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_16176\"&gt;402_16176&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 16176&lt;/td&gt;\n&lt;td&gt; 4.0&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_16176' &gt;402_16176&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 16176&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.0&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_17614", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_17614", "MEDIUM 402 MODIFIED FOR DSM 17614", "null", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_17614\"&gt;402_17614&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 17614&lt;/td&gt;\n&lt;td&gt;null&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_17614' &gt;402_17614&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 17614&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;null&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_18237", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_18237", "MEDIUM 402 MODIFIED FOR DSM 18237", "5.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_18237\"&gt;402_18237&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 18237&lt;/td&gt;\n&lt;td&gt; 5.5&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_18237' &gt;402_18237&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 18237&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 5.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_2498", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_2498", "MEDIUM 402 MODIFIED FOR DSM 2498", "4.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_2498\"&gt;402_2498&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 2498&lt;/td&gt;\n&lt;td&gt; 4.5&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_2498' &gt;402_2498&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 2498&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_3922", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_3922", "MEDIUM 402 MODIFIED FOR DSM 3922", "4.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3922\"&gt;402_3922&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 3922&lt;/td&gt;\n&lt;td&gt; 4.5&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3922' &gt;402_3922&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 3922&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_3923", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_3923", "MEDIUM 402 MODIFIED FOR DSM 3923", "4.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3923\"&gt;402_3923&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 3923&lt;/td&gt;\n&lt;td&gt; 4.5&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3923' &gt;402_3923&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 3923&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_3924", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_3924", "MEDIUM 402 MODIFIED FOR DSM 3924", "4.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3924\"&gt;402_3924&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 3924&lt;/td&gt;\n&lt;td&gt; 4.5&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3924' &gt;402_3924&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 3924&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 4.5&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_446", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_446", "MEDIUM 402 MODIFIED FOR DSM 446", "3 - 4", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_446\"&gt;402_446&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 446&lt;/td&gt;\n&lt;td&gt; 3 - 4&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_446' &gt;402_446&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 446&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_448", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_448", "MEDIUM 402 MODIFIED FOR DSM 448", "3 - 4", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_448\"&gt;402_448&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 448&lt;/td&gt;\n&lt;td&gt; 3 - 4&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_448' &gt;402_448&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 448&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_449", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_449", "MEDIUM 402 MODIFIED FOR DSM 449", "3 - 4", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_449\"&gt;402_449&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 449&lt;/td&gt;\n&lt;td&gt; 3 - 4&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_449' &gt;402_449&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 449&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_451", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_451", "MEDIUM 402 MODIFIED FOR DSM 451", "3 - 4", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_451\"&gt;402_451&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 451&lt;/td&gt;\n&lt;td&gt; 3 - 4&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_451' &gt;402_451&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 451&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_452", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_452", "MEDIUM 402 MODIFIED FOR DSM 452", "3 - 4", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_452\"&gt;402_452&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 452&lt;/td&gt;\n&lt;td&gt; 3 - 4&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_452' &gt;402_452&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 452&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_453", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_453", "MEDIUM 402 MODIFIED FOR DSM 453", "3 - 4", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_453\"&gt;402_453&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 453&lt;/td&gt;\n&lt;td&gt; 3 - 4&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_453' &gt;402_453&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 453&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_454", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_454", "MEDIUM 402 MODIFIED FOR DSM 454", "3 - 4", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_454\"&gt;402_454&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 454&lt;/td&gt;\n&lt;td&gt; 3 - 4&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_454' &gt;402_454&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 454&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}, {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "locator": "table first cell exactly 402_455", "header_cells": ["ID", "Name", "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402_455", "MEDIUM 402 MODIFIED FOR DSM 455", "3 - 4", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html": "&lt;tr&gt;\n&lt;td width=\"50\"&gt;&lt;a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_455\"&gt;402_455&lt;/a&gt;&lt;/td&gt;\n&lt;td&gt;MEDIUM 402 MODIFIED FOR DSM 455&lt;/td&gt;\n&lt;td&gt; 3 - 4&lt;/td&gt;\n&lt;td&gt;true&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;false&lt;/td&gt;\n&lt;td&gt;&lt;a href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"&gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/td&gt;\n&lt;/tr&gt;", "identity_only": true, "limit": "Exact catalogue pH/source flags are retained as metadata; they do not establish physiological oxygen requirements or historical recipe equivalence.", "literal_raw_row": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_455' &gt;402_455&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;MEDIUM 402 MODIFIED FOR DSM 455&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 3 - 4&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;"}] |
+| komodo402-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402 returned HTTP 403; its response and actual access time are preserved. Current base formulation and accession mapping resolve independently, so this base-detail limit is optional. |
+| komodo402_dot_1-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402.1; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_dot_1 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_11983-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_11983; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_11983 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_14558-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14558; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_14558 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_14745-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14745; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_14745 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_14955-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14955; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_14955 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_16176-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_16176; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_16176 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_17614-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_17614; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_17614 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_18237-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_18237; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_18237 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_2498-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_2498; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_2498 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_3922-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3922; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_3922 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_3923-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3923; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_3923 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_3924-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3924; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_3924 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_446-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_446; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_446 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_448-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_448; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_448 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_449-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_449; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_449 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_451-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_451; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_451 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_452-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_452; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_452 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_453-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_453; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_453 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_454-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_454; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_454 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| komodo402_455-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_455; Preserved exact public retrieval result | context_only | Exact KOMODO detail komodo402_455 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17234 resolves to glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate", "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term": "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318": [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318", "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml; data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml; data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.512897"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.512897"}]}, {"input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml", "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:06.224978"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:08.629306"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:10.836299"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:12.815051"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:59.594248"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:02.606410"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:10.663711"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:15.450696"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:19.079922"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:00.369690"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:54.458693"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:05.959826"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:10.532300"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:19.369847"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:18.092483"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:11.029573"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:10.245647"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:08.728101"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:17.398463"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml", "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:18.552973"}]}] |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch021/203/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code is context only, not historical execution proof. Current formulation compatibility and source-specific stock handling must be preserved; a copied ingredient fingerprint cannot justify lumping source-specific variants. |
+| writer-1 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code is context only, not historical execution proof. Current formulation compatibility and source-specific stock handling must be preserved; a copied ingredient fingerprint cannot justify lumping source-specific variants. |
+| writer-2 | src/culturemech/enrich/dsmz_resolver.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current code is context only, not historical execution proof. Current formulation compatibility and source-specific stock handling must be preserved; a copied ingredient fingerprint cannot justify lumping source-specific variants. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Exact KOMODO detail komodo402 returned HTTP 403; its response and actual access time are preserved. Current base formulation and accession mapping resolve independently, so this base-detail limit is optional.
+- Exact KOMODO detail komodo402_dot_1 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_11983 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_14558 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_14745 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_14955 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_16176 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_17614 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_18237 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_2498 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_3922 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_3923 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_3924 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_446 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_448 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_449 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_451 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_452 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_453 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_454 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Exact KOMODO detail komodo402_455 returned HTTP 403; its response and actual access time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete historical variant formulation; this is a required limit for the 22-contributor scope.
+- Partial completion is specifically due to inaccessible required historical variant details across the 22-owner formulation scope. Base DSMZ 402, its explicit yeast branch and SL-6 are independently available. Source catalog pH and oxygen fields are metadata, not growth, phenotype or historical ingredient-equivalence proof.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T124949Z-culturemech-005217-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alicyclobacillus_medium (CultureMech:005217)'
+started_at: '2026-10-21T12:39:22Z'
+finished_at: '2026-10-21T12:49:49Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The generated record conflates 22 contributors, including a source-defined
+  yeast-extract variant and owners with different pH metadata. Base DSMZ 402 separates
+  A, the 1 mL SL-6 addition and optional agar stock C; the record instead flattens
+  agar/trace-stock strengths. Full historical variant formulation review remains partial
+  because exact KOMODO details are inaccessible.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+    sha256: 508a36becff12197d3c40e7b6a2395d8f4eb85c0444807f941383d34f67e2b17
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    sha256: 104e7866d3a404ace977784db47ce96e4d7e3126327425ad655dd955a1998953
+    role: context
+  - path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    sha256: dbae0f8288e0398c44597f759179efa63140a942c479e7d8e4fe6d0681ed470b
+    role: context
+  - path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    sha256: 524728cbf663aa012cb9b0e79882dfe9553dcbd42bef0e1405dc12d00c92b156
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_25_Trace_element_solution_SL-6.yaml
+    sha256: bcf1021fe1ddfe3465a791093ff7f36ad1dbf687017dd085638e82026174c9ce
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_815_Solution_A.yaml
+    sha256: d1f71779aba14dfa215acba336af0a0e64ca3e6ecdbbf5fa416b2ed29a5c616f
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_817_Solution_C.yaml
+    sha256: 4a9be37dd8691e464bd4f65db6f5d0f707815e3e55bfa84144e0955398362aef
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    sha256: d62a36b6e7313e9c621cac2425aa7b2d433c9a9752eb07f09523bf2a1f95336e
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    sha256: fb1328cee014f982ec066556e887b97d90f9dbe9e3036e64d634893b804b607e
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    sha256: 9a3b75a11271b370c5b4335e5dd74c5090d5e38f9defdbf3f37ed400d90b7916
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    sha256: 7a10098e7fce46f418e9df0df2551ab05f7a923e28f9becd6fbee39a2834a9b4
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    sha256: 6a6ff3e1d5a47d021d8bc618c1d802e7d7291e0e6078b508e610283b952294a7
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    sha256: 4bf4def9f1d711f2dfba9b70bcd6d5018d2d526e44ab8b566c8a81eb4a673fca
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    sha256: 255a54f7c5bbfe886fde8a4593c1f694c8bd3d2fd3caf9cf45d98a28a220c9bf
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    sha256: b747929142c9c7fa6b502d0fc02072a91f13253adcf1b82634185b516184ad16
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    sha256: 75ba07124f8b4e49efec90f18249e1c1ed046e6ed2d072490b4d22d5f049da5c
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    sha256: f291c000682a6b08b281b15cdc0034780a15d8b5dce4ab7ae92cfbc45eaf86a1
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    sha256: bfc3dbe066aee30b7c3504af464ccd299f632b71a8bcaafc69e2a762a5df8ab2
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    sha256: 8fd48028e32ea3a8799475b46e5c20fa8eb3c8e13942ee68fbbad06f6b90332d
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    sha256: e252f471f260b4a7a66a6ca4ea54fcdb125a0049e7922aeac05fa720da2d58d2
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    sha256: 4be3241d7b937d24c2d42559dbd039ac2ff5ec8797b095dd876ea4ed2a37ef2b
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    sha256: f143c52b829ce9208882b133e99ea84174af3d49f19d01df6cace05112701f6c
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    sha256: 84c3f0fafa024e05bf37d8be0c3e979951b0332883608a419a903ca29f373936
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    sha256: 250125872ead6e03d100dfdc45b018f485b751fa770e9613288b8bab442b241f
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    sha256: f0c93c3b52990387c8ebfa0d0c29e09fffcaa79a606d1b3b3d5e97fe84799ddf
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    sha256: fda22d29a2ceae5cab374a286f3de1137b635f8462de68a2fcc43475edbb8312
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 203; batch 021 item 3 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty task batches contain
+    200 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 203 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005217
+targets:
+- target_id: CultureMech:005217
+  path: data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+  label: alicyclobacillus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch021/203/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/203/strict.tsv"
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:005217
+- check_id: komodo402-source-access
+  name: 'Exact source content access: komodo402'
+  required: false
+  status: unavailable
+  summary: Exact KOMODO detail komodo402 returned HTTP 403; its response and actual
+    access time are preserved. Current base formulation and accession mapping resolve
+    independently, so this base-detail limit is optional.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402-attempt
+- check_id: komodo402_dot_1-source-access
+  name: 'Exact source content access: komodo402_dot_1'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_dot_1 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_dot_1-attempt
+- check_id: komodo402_11983-source-access
+  name: 'Exact source content access: komodo402_11983'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_11983 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_11983-attempt
+- check_id: komodo402_14558-source-access
+  name: 'Exact source content access: komodo402_14558'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_14558 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_14558-attempt
+- check_id: komodo402_14745-source-access
+  name: 'Exact source content access: komodo402_14745'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_14745 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_14745-attempt
+- check_id: komodo402_14955-source-access
+  name: 'Exact source content access: komodo402_14955'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_14955 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_14955-attempt
+- check_id: komodo402_16176-source-access
+  name: 'Exact source content access: komodo402_16176'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_16176 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_16176-attempt
+- check_id: komodo402_17614-source-access
+  name: 'Exact source content access: komodo402_17614'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_17614 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_17614-attempt
+- check_id: komodo402_18237-source-access
+  name: 'Exact source content access: komodo402_18237'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_18237 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_18237-attempt
+- check_id: komodo402_2498-source-access
+  name: 'Exact source content access: komodo402_2498'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_2498 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_2498-attempt
+- check_id: komodo402_3922-source-access
+  name: 'Exact source content access: komodo402_3922'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_3922 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_3922-attempt
+- check_id: komodo402_3923-source-access
+  name: 'Exact source content access: komodo402_3923'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_3923 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_3923-attempt
+- check_id: komodo402_3924-source-access
+  name: 'Exact source content access: komodo402_3924'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_3924 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_3924-attempt
+- check_id: komodo402_446-source-access
+  name: 'Exact source content access: komodo402_446'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_446 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_446-attempt
+- check_id: komodo402_448-source-access
+  name: 'Exact source content access: komodo402_448'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_448 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_448-attempt
+- check_id: komodo402_449-source-access
+  name: 'Exact source content access: komodo402_449'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_449 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_449-attempt
+- check_id: komodo402_451-source-access
+  name: 'Exact source content access: komodo402_451'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_451 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_451-attempt
+- check_id: komodo402_452-source-access
+  name: 'Exact source content access: komodo402_452'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_452 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_452-attempt
+- check_id: komodo402_453-source-access
+  name: 'Exact source content access: komodo402_453'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_453 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_453-attempt
+- check_id: komodo402_454-source-access
+  name: 'Exact source content access: komodo402_454'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_454 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_454-attempt
+- check_id: komodo402_455-source-access
+  name: 'Exact source content access: komodo402_455'
+  required: true
+  status: unavailable
+  summary: Exact KOMODO detail komodo402_455 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - komodo402_455-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-4
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-5
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-6
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-7
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-8
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-9
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-10
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-11
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-12
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-13
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-14
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-15
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-16
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-17
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-18
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-19
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-20
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-21
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:06.925081Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch021/203/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:09.022588Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/203/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:13.734295Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:15.341753Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml:1:id: CultureMech:005217
+
+    ./data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml:1:id:
+    CultureMech:005217
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/203/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: supports
+  summary: 43 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 75fcc68b235c0dd6ffd30fdd4002d90902b442d3cfa8efb08618b09016d99490
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/203/evidence-context-original.json
+  locator: Complete frozen source context compared with fresh native input hashes
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Every contextual input hash matches the fresh inspection at the same base.
+    Preflight remains provisional provenance; this review supplies its own single-target
+    judgment.
+  snapshot_sha256: db67dda4199d34cc3151144b0494a373760e3b05a38d1bbb32a989629c64f3bf
+- evidence_id: dsmz402
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf
+  locator: DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding
+    stock endpoint
+  accessed_at: '2026-10-21T12:23:18.404688Z'
+  support: supports
+  summary: Base formulation and source-specific stock stages compared. DSMZ 27 contributes
+    only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and
+    sterilization protocol do not transfer.
+  snapshot_sha256: 2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232
+- evidence_id: dsmz27
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf
+  locator: DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding
+    stock endpoint
+  accessed_at: '2026-10-21T12:24:57.446428Z'
+  support: supports
+  summary: Base formulation and source-specific stock stages compared. DSMZ 27 contributes
+    only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and
+    sterilization protocol do not transfer.
+  snapshot_sha256: e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9
+- evidence_id: mediadive402api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/402
+  locator: DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding
+    stock endpoint
+  accessed_at: '2026-10-21T12:23:16.908650Z'
+  support: supports
+  summary: Base formulation and source-specific stock stages compared. DSMZ 27 contributes
+    only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and
+    sterilization protocol do not transfer.
+  snapshot_sha256: 7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b
+- evidence_id: solution815
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/815
+  locator: DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding
+    stock endpoint
+  accessed_at: '2026-10-21T12:24:57.430793Z'
+  support: supports
+  summary: Base formulation and source-specific stock stages compared. DSMZ 27 contributes
+    only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and
+    sterilization protocol do not transfer.
+  snapshot_sha256: d6b75ccecce2fc6d046448a05f10a47d7b236e3f79368bafcb68add431902634
+- evidence_id: solution816
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/816
+  locator: DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding
+    stock endpoint
+  accessed_at: '2026-10-21T12:24:57.441232Z'
+  support: supports
+  summary: Base formulation and source-specific stock stages compared. DSMZ 27 contributes
+    only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and
+    sterilization protocol do not transfer.
+  snapshot_sha256: 0bb1e908305dc888f951ba94714dd567bf3b045ad1886f2cf79d22e09854663e
+- evidence_id: solution817
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/817
+  locator: DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding
+    stock endpoint
+  accessed_at: '2026-10-21T12:24:57.441420Z'
+  support: supports
+  summary: Base formulation and source-specific stock stages compared. DSMZ 27 contributes
+    only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and
+    sterilization protocol do not transfer.
+  snapshot_sha256: 4d01a0fb30fdc43e6e166c25e31c36e21a905290b116954eb56a7961fb5982ff
+- evidence_id: solution25
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/25
+  locator: DSMZ 402 complete recipe or DSMZ 27 SL-6 subsection / exact corresponding
+    stock endpoint
+  accessed_at: '2026-10-21T11:55:47.053559Z'
+  support: supports
+  summary: Base formulation and source-specific stock stages compared. DSMZ 27 contributes
+    only the explicitly named SL-6 recipe; its parent medium, gas conditions, pH and
+    sterilization protocol do not transfer.
+  snapshot_sha256: eaab23d6c5742d3f51b713dcfd5f1c9717eabcc01e8b035fa6f1a478148c0f4c
+- evidence_id: komodo-catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact 21 accession rows with complete header; row HTML checked literally
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: All 21 KOMODO identities and declared pH/source flags resolve. These are
+    catalog metadata, not complete historical variant formulations or physiological
+    oxygen evidence.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: catalog-row-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/203/evidence-context-original.json
+  locator: exact_komodo_mappings; each full HTML row checked against bound catalog
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: '[{"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402", "header_cells": ["ID", "Name", "PH
+    Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402",
+    "ALICYCLOBACILLUS medium", "4.0", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"],
+    "row_html": "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402\">402</a></td>\n<td>ALICYCLOBACILLUS
+    medium</td>\n<td> 4.0</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402''
+    >402</a></TD>\n\t\t\t\t\t<TD>ALICYCLOBACILLUS medium</TD>\n\t\t\t\t\t<TD> 4.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402.1", "header_cells": ["ID", "Name", "PH
+    Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells": ["402.1",
+    "For strains of A. cycloheptanicus", "4.5", "true", "false", "false", "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"],
+    "row_html": "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402.1\">402.1</a></td>\n<td>
+    For strains of A. cycloheptanicus</td>\n<td> 4.5</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402.1''
+    >402.1</a></TD>\n\t\t\t\t\t<TD> For strains of A. cycloheptanicus</TD>\n\t\t\t\t\t<TD>
+    4.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_11983", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_11983", "MEDIUM 402 MODIFIED FOR DSM 11983", "null", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_11983\">402_11983</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 11983</td>\n<td>null</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_11983''
+    >402_11983</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 11983</TD>\n\t\t\t\t\t<TD>null</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_14558", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_14558", "MEDIUM 402 MODIFIED FOR DSM 14558", "4.0", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14558\">402_14558</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 14558</td>\n<td> 4.0</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14558''
+    >402_14558</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 14558</TD>\n\t\t\t\t\t<TD>
+    4.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_14745", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_14745", "MEDIUM 402 MODIFIED FOR DSM 14745", "4.5", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14745\">402_14745</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 14745</td>\n<td> 4.5</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14745''
+    >402_14745</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 14745</TD>\n\t\t\t\t\t<TD>
+    4.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_14955", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_14955", "MEDIUM 402 MODIFIED FOR DSM 14955", "4.5", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14955\">402_14955</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 14955</td>\n<td> 4.5</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14955''
+    >402_14955</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 14955</TD>\n\t\t\t\t\t<TD>
+    4.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_16176", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_16176", "MEDIUM 402 MODIFIED FOR DSM 16176", "4.0", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_16176\">402_16176</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 16176</td>\n<td> 4.0</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_16176''
+    >402_16176</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 16176</TD>\n\t\t\t\t\t<TD>
+    4.0</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_17614", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_17614", "MEDIUM 402 MODIFIED FOR DSM 17614", "null", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_17614\">402_17614</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 17614</td>\n<td>null</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_17614''
+    >402_17614</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 17614</TD>\n\t\t\t\t\t<TD>null</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_18237", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_18237", "MEDIUM 402 MODIFIED FOR DSM 18237", "5.5", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_18237\">402_18237</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 18237</td>\n<td> 5.5</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_18237''
+    >402_18237</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 18237</TD>\n\t\t\t\t\t<TD>
+    5.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_2498", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_2498", "MEDIUM 402 MODIFIED FOR DSM 2498", "4.5", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_2498\">402_2498</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 2498</td>\n<td> 4.5</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_2498''
+    >402_2498</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 2498</TD>\n\t\t\t\t\t<TD>
+    4.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_3922", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_3922", "MEDIUM 402 MODIFIED FOR DSM 3922", "4.5", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3922\">402_3922</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 3922</td>\n<td> 4.5</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3922''
+    >402_3922</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 3922</TD>\n\t\t\t\t\t<TD>
+    4.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_3923", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_3923", "MEDIUM 402 MODIFIED FOR DSM 3923", "4.5", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3923\">402_3923</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 3923</td>\n<td> 4.5</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3923''
+    >402_3923</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 3923</TD>\n\t\t\t\t\t<TD>
+    4.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_3924", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_3924", "MEDIUM 402 MODIFIED FOR DSM 3924", "4.5", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3924\">402_3924</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 3924</td>\n<td> 4.5</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3924''
+    >402_3924</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 3924</TD>\n\t\t\t\t\t<TD>
+    4.5</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_446", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_446", "MEDIUM 402 MODIFIED FOR DSM 446", "3 - 4", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_446\">402_446</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 446</td>\n<td> 3 - 4</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_446''
+    >402_446</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 446</TD>\n\t\t\t\t\t<TD>
+    3 - 4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_448", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_448", "MEDIUM 402 MODIFIED FOR DSM 448", "3 - 4", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_448\">402_448</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 448</td>\n<td> 3 - 4</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_448''
+    >402_448</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 448</TD>\n\t\t\t\t\t<TD>
+    3 - 4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_449", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_449", "MEDIUM 402 MODIFIED FOR DSM 449", "3 - 4", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_449\">402_449</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 449</td>\n<td> 3 - 4</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_449''
+    >402_449</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 449</TD>\n\t\t\t\t\t<TD>
+    3 - 4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_451", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_451", "MEDIUM 402 MODIFIED FOR DSM 451", "3 - 4", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_451\">402_451</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 451</td>\n<td> 3 - 4</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_451''
+    >402_451</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 451</TD>\n\t\t\t\t\t<TD>
+    3 - 4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_452", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_452", "MEDIUM 402 MODIFIED FOR DSM 452", "3 - 4", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_452\">402_452</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 452</td>\n<td> 3 - 4</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_452''
+    >402_452</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 452</TD>\n\t\t\t\t\t<TD>
+    3 - 4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_453", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_453", "MEDIUM 402 MODIFIED FOR DSM 453", "3 - 4", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_453\">402_453</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 453</td>\n<td> 3 - 4</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_453''
+    >402_453</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 453</TD>\n\t\t\t\t\t<TD>
+    3 - 4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_454", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_454", "MEDIUM 402 MODIFIED FOR DSM 454", "3 - 4", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_454\">402_454</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 454</td>\n<td> 3 - 4</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_454''
+    >402_454</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 454</TD>\n\t\t\t\t\t<TD>
+    3 - 4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"},
+    {"source_key": "komodoMediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "locator": "table first cell exactly 402_455", "header_cells": ["ID", "Name",
+    "PH Info", "Is Complex", "Is Aerobic", "Is SubMedium", "Instructions"], "cells":
+    ["402_455", "MEDIUM 402 MODIFIED FOR DSM 455", "3 - 4", "true", "false", "false",
+    "http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf"], "row_html":
+    "<tr>\n<td width=\"50\"><a href=\"/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_455\">402_455</a></td>\n<td>MEDIUM
+    402 MODIFIED FOR DSM 455</td>\n<td> 3 - 4</td>\n<td>true</td>\n<td>false</td>\n<td>false</td>\n<td><a
+    href=\"http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\">http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></td>\n</tr>",
+    "identity_only": true, "limit": "Exact catalogue pH/source flags are retained
+    as metadata; they do not establish physiological oxygen requirements or historical
+    recipe equivalence.", "literal_raw_row": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a
+    href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_455''
+    >402_455</a></TD>\n\t\t\t\t\t<TD>MEDIUM 402 MODIFIED FOR DSM 455</TD>\n\t\t\t\t\t<TD>
+    3 - 4</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\n\t\t\t\t</TR>"}]'
+  snapshot_sha256: db67dda4199d34cc3151144b0494a373760e3b05a38d1bbb32a989629c64f3bf
+- evidence_id: komodo402-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.241366Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402 returned HTTP 403; its response and actual
+    access time are preserved. Current base formulation and accession mapping resolve
+    independently, so this base-detail limit is optional.
+  snapshot_sha256: 5be1279296aace5386dc6507224eb3a9c203340cd6804b658496cde96d1bf18b
+- evidence_id: komodo402_dot_1-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402.1
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.241452Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_dot_1 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 124ab488af9a7415bda23bcb436432d32dfaa24b87619a62dab39fe1eb9b406d
+- evidence_id: komodo402_11983-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_11983
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.241546Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_11983 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 7e9480e22edeea9caaf833b1a50f8775289c387ad338548db1cc89b3f1c2ecda
+- evidence_id: komodo402_14558-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14558
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.490370Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_14558 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 641b056fb767b6d9f16525d2a4ead43c04a0da2ed6ea0ee4e12bdefa501195a0
+- evidence_id: komodo402_14745-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14745
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.497075Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_14745 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: e266664b10113fe4206621eec9ce90e61608ccbee5f81104162a66d644bfb5fe
+- evidence_id: komodo402_14955-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14955
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.516188Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_14955 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 74f86379fa98b65a8c7f567e3593a1644adde178e4204c47b350e2bd6d7b8c94
+- evidence_id: komodo402_16176-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_16176
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.541506Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_16176 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 910253c8d8a177e2737a3a0d6f8ceb9aae046648e8774a5ab67e6fc69ada9f79
+- evidence_id: komodo402_17614-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_17614
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.552946Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_17614 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 77e39e6fbc654c350f9821d33ee627339989da057c66e95ba9e48f2bfd5fc2b2
+- evidence_id: komodo402_18237-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_18237
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.570225Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_18237 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 975f21c5611f8c247afc68f459f3a17f1a5bd001efd0ae10f1b51c20f1fde39f
+- evidence_id: komodo402_2498-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_2498
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.594973Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_2498 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 98200ffc787e4fce0875f048aebc99bfa4d8d7d09f6f92bb07b8f4d0ba4c5e5f
+- evidence_id: komodo402_3922-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3922
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.603558Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_3922 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 8c0783f513b97c101e2e441c2f8753d14ab5015ba574386631dc3a9e021ac063
+- evidence_id: komodo402_3923-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3923
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.653758Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_3923 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 6e6f2d314c0659330355d62bda8f9bfb7658aab587f93ae579b5706c9439c661
+- evidence_id: komodo402_3924-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3924
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.659701Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_3924 returned HTTP 403; its response and
+    actual access time are preserved. Current DSMZ 402 and catalog identity do not
+    resolve the complete historical variant formulation; this is a required limit
+    for the 22-contributor scope.
+  snapshot_sha256: 801d793a1a4c8ec31c4b9481b6d0ff1a78268d324540fee1e4011a7a9dbb58c9
+- evidence_id: komodo402_446-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_446
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.683063Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_446 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  snapshot_sha256: 03fadf7b0e7df1c5ed39649d635a35b0490a85ef891995bdd8476b102853b7d7
+- evidence_id: komodo402_448-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_448
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.714455Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_448 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  snapshot_sha256: ac79030b462900750078f48a9ca2417e8f996502da87298308ee14e4ee139984
+- evidence_id: komodo402_449-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_449
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.727395Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_449 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  snapshot_sha256: b311d9179617acf12ed781f03144ade748c9a207ef3f1351531a707ee950b054
+- evidence_id: komodo402_451-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_451
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.738313Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_451 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  snapshot_sha256: c2b414c34b48dea022095448c9efc7f8602c409557103b4deda2a39e81f1a441
+- evidence_id: komodo402_452-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_452
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.786945Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_452 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  snapshot_sha256: d5f3e00c6435e91e713ea9a9ce49076299854e098cbfc32decb2a8d35eb54201
+- evidence_id: komodo402_453-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_453
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.792461Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_453 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  snapshot_sha256: 2d203c70d33bc6ab7fb38ade5af010d0190e5c653a8c2fe3189f19b7a01e5d2a
+- evidence_id: komodo402_454-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_454
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.826490Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_454 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  snapshot_sha256: 7b94f85f19342c2b8890bef7eeb090c5a07127bc2e2a47ab9d1c3581d2d9aa44
+- evidence_id: komodo402_455-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_455
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:16.869692Z'
+  support: context_only
+  summary: Exact KOMODO detail komodo402_455 returned HTTP 403; its response and actual
+    access time are preserved. Current DSMZ 402 and catalog identity do not resolve
+    the complete historical variant formulation; this is a required limit for the
+    22-contributor scope.
+  snapshot_sha256: 113896ea9d3ab0f528ca363f6031bd5fb86baaaf4513056d7515ce69d937a4c9
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.738243Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:17234":
+    [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234",
+    "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term",
+    "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label":
+    "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label":
+    "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312",
+    "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id":
+    "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887":
+    [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:53503": [{"label": "Cobalt chloride hexahydrate",
+    "match_type": "preferred_term", "identifier": "CHEBI:53503", "preferred_term":
+    "Cobalt chloride hexahydrate", "ontology_id": "CHEBI:53503", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4",
+    "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86318":
+    [{"label": "CuCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86318",
+    "preferred_term": "CuCl2 x 2 H2O", "ontology_id": "CHEBI:86318", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86368": [{"label": "MnCl2 x 4 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term":
+    "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml;
+    data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml; data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml; data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml;
+    data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:15.512897"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:15.512897"}]}, {"input": "data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml",
+    "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:06.224978"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:08.629306"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:10.836299"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:12.815051"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:59.594248"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:02.606410"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:10.663711"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:15.450696"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:19.079922"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:00.369690"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:54.458693"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:05.959826"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:10.532300"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:19.369847"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:18.092483"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:11.029573"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:10.245647"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:08.728101"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:17.398463"}]}, {"input": "data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:18.552973"}]}]'
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/203/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: d0f81649afe6a93c01ee05778796a102063c20298429a8ced9cacf9653bc4502
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Current code is context only, not historical execution proof. Current formulation
+    compatibility and source-specific stock handling must be preserved; a copied ingredient
+    fingerprint cannot justify lumping source-specific variants.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Current code is context only, not historical execution proof. Current formulation
+    compatibility and source-specific stock handling must be preserved; a copied ingredient
+    fingerprint cannot justify lumping source-specific variants.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:49:38Z'
+  support: context_only
+  summary: Current code is context only, not historical execution proof. Current formulation
+    compatibility and source-specific stock handling must be preserved; a copied ingredient
+    fingerprint cannot justify lumping source-specific variants.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: concern
+  summary: '13 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 13/14 primary and 13/14 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Exact supplied-form
+    mismatch is addressed separately; valid IDs and labels do not establish correct
+    source grounding.'
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - owner-5
+  - owner-6
+  - owner-7
+  - owner-8
+  - owner-9
+  - owner-10
+  - owner-11
+  - owner-12
+  - owner-13
+  - owner-14
+  - owner-15
+  - owner-16
+  - owner-17
+  - owner-18
+  - owner-19
+  - owner-20
+  - owner-21
+  - chebi17234
+  - chebi2509
+  - chebi31795
+  - chebi32312
+  - chebi33118
+  - chebi34887
+  - chebi53503
+  - chebi62946
+  - chebi63036
+  - chebi75213
+  - chebi86158
+  - chebi86318
+  - chebi86368
+  details: 'Instance coverage on a 0–100 percent scale, denominator 14: primary 92.86%;
+    secondary 92.86%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 170 timestamp instances inspected; 44 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - owner-5
+  - owner-6
+  - owner-7
+  - owner-8
+  - owner-9
+  - owner-10
+  - owner-11
+  - owner-12
+  - owner-13
+  - owner-14
+  - owner-15
+  - owner-16
+  - owner-17
+  - owner-18
+  - owner-19
+  - owner-20
+  - owner-21
+- assessment_id: ownership
+  area: ownership
+  topic: All contributors and canonical reference paths
+  outcome: supported
+  summary: The complete merged_from list resolves all 22 unique owners with exact
+    stable IDs and canonical paths; all owner fields were read and compared. The MERGED_RECIPES.source
+    string is truncated after the 3923 contributor, so it alone is incomplete. Full
+    merged_from and the earlier complete source list establish ownership without treating
+    the fingerprint as scientific identity.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - record
+  - bound-context
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - owner-4
+  - owner-5
+  - owner-6
+  - owner-7
+  - owner-8
+  - owner-9
+  - owner-10
+  - owner-11
+  - owner-12
+  - owner-13
+  - owner-14
+  - owner-15
+  - owner-16
+  - owner-17
+  - owner-18
+  - owner-19
+  - owner-20
+  - owner-21
+- assessment_id: identity
+  area: identity
+  topic: Base versus source and strain-specific variants
+  outcome: concern
+  summary: The base DSMZ 402 identity resolves. Its final paragraph requires 5 g/L
+    yeast extract instead of 2 g/L for A. cycloheptanicus, contradicting that contributor’s
+    copied base amount. Nineteen further DSM-labeled variants have exact catalog identities
+    but inaccessible detailed recipes. Their pH 4.0/4.5/5.5/3–4/unspecified states
+    must remain source-specific; these metadata differences do not independently establish
+    additional ingredient modifications. SOURCE_DUPLICATE and synonym collapse are
+    not justified by copied ingredient signatures.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - record
+  - dsmz402
+  - komodo-catalog
+  - catalog-row-inventory
+- assessment_id: scope
+  area: scope
+  topic: Physical state, mixture classification and organism scope
+  outcome: concern
+  summary: COMPLEX/UNDEFINED is consistent with yeast extract. The primary explicitly
+    defines both liquid and solid branches; SOLID_AGAR alone cannot describe every
+    merged contributor and condition. Catalog Is Aerobic=false is metadata only. Species/DSM
+    labels are source variant designators here, not independently curated taxonomy,
+    growth or optimum assertions.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - record
+  - dsmz402
+  - catalog-row-inventory
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 58 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"claim\": \"CaCl2 x 2 H2O in\
+    \ supported base/explicit branch\",\n    \"decision\": \"correct\",\n    \"stage\"\
+    : \"Solution A; liquid and solid branches retain different water inputs\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"mass_g\": 0.25,\n    \
+    \  \"provider_A_g_l\": 0.25,\n      \"provider_A_volume_ml\": 1000,\n      \"\
+    basis\": \"source A batch; not all variant or stock strengths\"\n    },\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsmz402\",\n        \"\
+    source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 page1 Solution A exact row\",\n    \
+    \    \"exact_source_quote\": \"CaCl2 x 2 H2O 0.25 g\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"CaCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 7,\\n                        \\\"amount\\\": 0.25,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.25,\\n\
+    \                        \\\"mmol_l\\\": 1.70051,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\n      }\n\
+    \    ],\n    \"explanation\": \"Restore explicit A membership and original mass/branch\
+    \ basis with evidence. Provider A 1000 mL normalization does not establish the\
+    \ solid A 500 mL stage or every variant formulation. Existing quantities have\
+    \ no attached evidence.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"claim\"\
+    : \"CaCl2 x 2 H2O in unresolved DSM-labeled variants\",\n    \"decision\": \"\
+    unsupported\",\n    \"stage\": \"Nineteen historical modified formulations\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.25\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"base_source_amount_g\"\
+    : 0.25,\n      \"variant_amount\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 base Solution A only; does not establish\
+    \ unresolved variants\",\n        \"exact_source_quote\": \"CaCl2 x 2 H2O 0.25\
+    \ g\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"All nineteen owners contain the same\
+    \ copied base value, but their detailed recipes returned 403. Preserve the existing\
+    \ values as unresolved and do not apply the base formula to those variants without\
+    \ source-specific evidence.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"\
+    claim\": \"MgSO4 x 7 H2O in supported base/explicit branch\",\n    \"decision\"\
+    : \"correct\",\n    \"stage\": \"Solution A; liquid and solid branches retain\
+    \ different water inputs\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"mass_g\": 0.5,\n      \"provider_A_g_l\"\
+    : 0.5,\n      \"provider_A_volume_ml\": 1000,\n      \"basis\": \"source A batch;\
+    \ not all variant or stock strengths\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 page1 Solution A exact row\",\n    \
+    \    \"exact_source_quote\": \"MgSO4 x 7 H2O 0.50 g\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 8,\\n                        \\\"amount\\\": 0.5,\\n                     \
+    \   \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n  \
+    \                      \\\"mmol_l\\\": 2.02859,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore explicit A membership and original\
+    \ mass/branch basis with evidence. Provider A 1000 mL normalization does not establish\
+    \ the solid A 500 mL stage or every variant formulation. Existing quantities have\
+    \ no attached evidence.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"claim\"\
+    : \"MgSO4 x 7 H2O in unresolved DSM-labeled variants\",\n    \"decision\": \"\
+    unsupported\",\n    \"stage\": \"Nineteen historical modified formulations\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_source_amount_g\": 0.5,\n\
+    \      \"variant_amount\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 base Solution A only; does not establish\
+    \ unresolved variants\",\n        \"exact_source_quote\": \"MgSO4 x 7 H2O 0.50\
+    \ g\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"All nineteen owners contain the same\
+    \ copied base value, but their detailed recipes returned 403. Preserve the existing\
+    \ values as unresolved and do not apply the base formula to those variants without\
+    \ source-specific evidence.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"\
+    claim\": \"(NH4)2SO4 in supported base/explicit branch\",\n    \"decision\": \"\
+    correct\",\n    \"stage\": \"Solution A; liquid and solid branches retain different\
+    \ water inputs\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"mass_g\": 0.2,\n      \"provider_A_g_l\"\
+    : 0.2,\n      \"provider_A_volume_ml\": 1000,\n      \"basis\": \"source A batch;\
+    \ not all variant or stock strengths\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 page1 Solution A exact row\",\n    \
+    \    \"exact_source_quote\": \"(NH4)2 SO4 0.20 g\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"(NH4)2SO4\\\",\\n                        \\\"compound_id\\\"\
+    : 27,\\n                        \\\"amount\\\": 0.2,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n   \
+    \                     \\\"mmol_l\\\": 1.51355,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore explicit A membership and original\
+    \ mass/branch basis with evidence. Provider A 1000 mL normalization does not establish\
+    \ the solid A 500 mL stage or every variant formulation. Existing quantities have\
+    \ no attached evidence.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n    \"claim\"\
+    : \"(NH4)2SO4 in unresolved DSM-labeled variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_source_amount_g\": 0.2,\n\
+    \      \"variant_amount\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 base Solution A only; does not establish\
+    \ unresolved variants\",\n        \"exact_source_quote\": \"(NH4)2 SO4 0.20 g\"\
+    ,\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"All nineteen owners contain the same\
+    \ copied base value, but their detailed recipes returned 403. Preserve the existing\
+    \ values as unresolved and do not apply the base formula to those variants without\
+    \ source-specific evidence.\"\n  },\n  {\n    \"decision_id\": \"q7\",\n    \"\
+    claim\": \"Yeast extract in supported base/explicit branch\",\n    \"decision\"\
+    : \"correct\",\n    \"stage\": \"Solution A; liquid and solid branches retain\
+    \ different water inputs\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"mass_g\": 2,\n      \"provider_A_g_l\"\
+    : 2,\n      \"provider_A_volume_ml\": 1000,\n      \"basis\": \"source A batch;\
+    \ not all variant or stock strengths\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 page1 Solution A exact row\",\n    \
+    \    \"exact_source_quote\": \"Yeast extract 2.00 g\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 2,\\n                      \
+    \  \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 2,\\n     \
+    \                   \\\"optional\\\": 0\\n                    }\",\n        \"\
+    snapshot_sha256\": \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore explicit A membership and original\
+    \ mass/branch basis with evidence. Provider A 1000 mL normalization does not establish\
+    \ the solid A 500 mL stage or every variant formulation. Existing quantities have\
+    \ no attached evidence.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n    \"claim\"\
+    : \"Yeast extract in unresolved DSM-labeled variants\",\n    \"decision\": \"\
+    unsupported\",\n    \"stage\": \"Nineteen historical modified formulations\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_source_amount_g\": 2,\n\
+    \      \"variant_amount\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 base Solution A only; does not establish\
+    \ unresolved variants\",\n        \"exact_source_quote\": \"Yeast extract 2.00\
+    \ g\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"All nineteen owners contain the same\
+    \ copied base value, but their detailed recipes returned 403. Preserve the existing\
+    \ values as unresolved and do not apply the base formula to those variants without\
+    \ source-specific evidence.\"\n  },\n  {\n    \"decision_id\": \"q9\",\n    \"\
+    claim\": \"Glucose in supported base/explicit branch\",\n    \"decision\": \"\
+    correct\",\n    \"stage\": \"Solution A; liquid and solid branches retain different\
+    \ water inputs\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"mass_g\": 5,\n      \"provider_A_g_l\"\
+    : 5,\n      \"provider_A_volume_ml\": 1000,\n      \"basis\": \"source A batch;\
+    \ not all variant or stock strengths\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 page1 Solution A exact row\",\n    \
+    \    \"exact_source_quote\": \"Glucose 5.00 g\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"Glucose\\\",\\n                        \\\"compound_id\\\":\
+    \ 5,\\n                        \\\"amount\\\": 5,\\n                        \\\
+    \"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n          \
+    \              \\\"mmol_l\\\": 27.7531,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore explicit A membership and original\
+    \ mass/branch basis with evidence. Provider A 1000 mL normalization does not establish\
+    \ the solid A 500 mL stage or every variant formulation. Existing quantities have\
+    \ no attached evidence.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n    \"claim\"\
+    : \"Glucose in unresolved DSM-labeled variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_source_amount_g\": 5,\n\
+    \      \"variant_amount\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 base Solution A only; does not establish\
+    \ unresolved variants\",\n        \"exact_source_quote\": \"Glucose 5.00 g\",\n\
+    \        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"All nineteen owners contain the same\
+    \ copied base value, but their detailed recipes returned 403. Preserve the existing\
+    \ values as unresolved and do not apply the base formula to those variants without\
+    \ source-specific evidence.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"\
+    claim\": \"KH2PO4 in supported base/explicit branch\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"Solution A; liquid and solid branches retain different water\
+    \ inputs\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"mass_g\": 3,\n      \"provider_A_g_l\"\
+    : 3,\n      \"provider_A_volume_ml\": 1000,\n      \"basis\": \"source A batch;\
+    \ not all variant or stock strengths\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 page1 Solution A exact row\",\n    \
+    \    \"exact_source_quote\": \"KH2PO4 3.00 g\",\n        \"snapshot_sha256\":\
+    \ \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 3,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n                  \
+    \      \\\"mmol_l\\\": 22.045,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\
+    \n      }\n    ],\n    \"explanation\": \"Restore explicit A membership and original\
+    \ mass/branch basis with evidence. Provider A 1000 mL normalization does not establish\
+    \ the solid A 500 mL stage or every variant formulation. Existing quantities have\
+    \ no attached evidence.\"\n  },\n  {\n    \"decision_id\": \"q12\",\n    \"claim\"\
+    : \"KH2PO4 in unresolved DSM-labeled variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_source_amount_g\": 3,\n\
+    \      \"variant_amount\": null\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 base Solution A only; does not establish\
+    \ unresolved variants\",\n        \"exact_source_quote\": \"KH2PO4 3.00 g\",\n\
+    \        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"All nineteen owners contain the same\
+    \ copied base value, but their detailed recipes returned 403. Preserve the existing\
+    \ values as unresolved and do not apply the base formula to those variants without\
+    \ source-specific evidence.\"\n  },\n  {\n    \"decision_id\": \"q13\",\n    \"\
+    claim\": \"A. cycloheptanicus yeast extract\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"Explicit named branch only\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"value\": 5,\n      \"unit\"\
+    : \"g/L\",\n      \"replaces_base_g_L\": 2\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 page1 final sentence\",\n        \"\
+    exact_source_quote\": \"For strains of A. cycloheptanicus add 5 g/l of yeast \\\
+    nextract instead of 2 g/l.\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"The primary explicitly supplies this\
+    \ variant concentration; its owner instead stores 2 G_PER_L and calls the relationship\
+    \ SOURCE_DUPLICATE. Do not overwrite the base 2 g/L branch or extend this amount\
+    \ to other DSM-labeled variants.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n\
+    \    \"claim\": \"Agar in source C\",\n    \"decision\": \"correct\",\n    \"\
+    stage\": \"Optional solid branch: solution C only\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"source_mass_g\": 15,\n   \
+    \   \"C_water_ml\": 500,\n      \"provider_C_stock_g_L\": 30\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\",\n        \"\
+    source_locator\": \"DSMZ 402 page1 Solution C agar row\",\n        \"exact_source_quote\"\
+    : \"Agar 15.00 g\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz402\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\",\n    \
+    \    \"source_locator\": \"DSMZ 402 page1 Solution C water row\",\n        \"\
+    exact_source_quote\": \"Distilled water 500.00 ml\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[3].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\\
+    n                        \\\"amount\\\": 15,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 30,\\n                 \
+    \       \\\"mmol_l\\\": 89.1981,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\
+    \n      }\n    ],\n    \"explanation\": \"The stored 30 G_PER_L is provider C-stock\
+    \ strength, not receiving-medium agar concentration. Keep 15 g in the separate\
+    \ 500 mL C preparation and its optional solid branch; do not claim 30 g per main\
+    \ recipe.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n    \"claim\": \"Agar in\
+    \ unresolved variants\",\n    \"decision\": \"unsupported\",\n    \"stage\": \"\
+    Nineteen historical modified formulations\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"30\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_C_stock_g_L\": 30,\n\
+    \      \"variant_amount_and_state\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 Solution C base context only\",\n  \
+    \      \"exact_source_quote\": \"Agar 15.00 g\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"The copied stock-strength value does\
+    \ not independently establish any inaccessible variant’s agar dose or physical\
+    \ state.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n    \"claim\": \"ZnSO4 x\
+    \ 7 H2O in SL-6\",\n    \"decision\": \"correct\",\n    \"stage\": \"SL-6 stock\
+    \ composition, separate from its 1 mL addition\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"stock_mass_g\": 0.1,\n   \
+    \   \"stock_water_ml\": 1000,\n      \"provider_stock_g_L\": 0.1,\n      \"receiving_SL6_mL\"\
+    : 1\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz27\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 27 page1 Trace element solution SL-6 exact\
+    \ row\",\n        \"exact_source_quote\": \"ZnSO4 x 7 H2O 0.10 g\",\n        \"\
+    snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[4].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"ZnSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 35,\\n                        \\\"amount\\\": 0.1,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.1,\\n \
+    \                       \\\"mmol_l\\\": 0.347752,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\n      }\n\
+    \    ],\n    \"explanation\": \"This is a stock concentration flattened into the\
+    \ medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do\
+    \ not import the unrelated DSMZ 27 parent medium or treat these g/L values as\
+    \ final-medium values.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"claim\"\
+    : \"ZnSO4 x 7 H2O in unresolved variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_SL6_stock_amount_g\"\
+    : 0.1,\n      \"variant_stock_and_dose\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz27\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\",\n        \"\
+    source_locator\": \"DSMZ 27 SL-6 stock context only\",\n        \"exact_source_quote\"\
+    : \"ZnSO4 x 7 H2O 0.10 g\",\n        \"snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      }\n    ],\n    \"explanation\": \"The source establishes the base stock,\
+    \ not every historical variant’s use or dose. Preserve uncertainty instead of\
+    \ applying guessed dilution corrections.\"\n  },\n  {\n    \"decision_id\": \"\
+    q18\",\n    \"claim\": \"MnCl2 x 4 H2O in SL-6\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"SL-6 stock composition, separate from its 1 mL addition\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"stock_mass_g\": 0.03,\n\
+    \      \"stock_water_ml\": 1000,\n      \"provider_stock_g_L\": 0.03,\n      \"\
+    receiving_SL6_mL\": 1\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz27\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 27 page1 Trace element solution SL-6 exact\
+    \ row\",\n        \"exact_source_quote\": \"MnCl2 x 4 H2O 0.03 g\",\n        \"\
+    snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[4].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"MnCl2 x 4 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 36,\\n                        \\\"amount\\\": 0.03,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\\
+    n                        \\\"mmol_l\\\": 0.151588,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\n      }\n\
+    \    ],\n    \"explanation\": \"This is a stock concentration flattened into the\
+    \ medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do\
+    \ not import the unrelated DSMZ 27 parent medium or treat these g/L values as\
+    \ final-medium values.\"\n  },\n  {\n    \"decision_id\": \"q19\",\n    \"claim\"\
+    : \"MnCl2 x 4 H2O in unresolved variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"base_SL6_stock_amount_g\"\
+    : 0.03,\n      \"variant_stock_and_dose\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz27\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\",\n        \"\
+    source_locator\": \"DSMZ 27 SL-6 stock context only\",\n        \"exact_source_quote\"\
+    : \"MnCl2 x 4 H2O 0.03 g\",\n        \"snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      }\n    ],\n    \"explanation\": \"The source establishes the base stock,\
+    \ not every historical variant’s use or dose. Preserve uncertainty instead of\
+    \ applying guessed dilution corrections.\"\n  },\n  {\n    \"decision_id\": \"\
+    q20\",\n    \"claim\": \"H3BO3 in SL-6\",\n    \"decision\": \"correct\",\n  \
+    \  \"stage\": \"SL-6 stock composition, separate from its 1 mL addition\",\n \
+    \   \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"stock_mass_g\": 0.3,\n   \
+    \   \"stock_water_ml\": 1000,\n      \"provider_stock_g_L\": 0.3,\n      \"receiving_SL6_mL\"\
+    : 1\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz27\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 27 page1 Trace element solution SL-6 exact\
+    \ row\",\n        \"exact_source_quote\": \"H3BO3 0.30 g\",\n        \"snapshot_sha256\"\
+    : \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\",\n    \
+    \    \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[4].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"H3BO3\\\",\\n                        \\\"compound_id\\\": 37,\\\
+    n                        \\\"amount\\\": 0.3,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.3,\\n                \
+    \        \\\"mmol_l\\\": 4.85123,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\
+    \n      }\n    ],\n    \"explanation\": \"This is a stock concentration flattened\
+    \ into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving\
+    \ dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values\
+    \ as final-medium values.\"\n  },\n  {\n    \"decision_id\": \"q21\",\n    \"\
+    claim\": \"H3BO3 in unresolved variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_SL6_stock_amount_g\"\
+    : 0.3,\n      \"variant_stock_and_dose\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz27\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\",\n        \"\
+    source_locator\": \"DSMZ 27 SL-6 stock context only\",\n        \"exact_source_quote\"\
+    : \"H3BO3 0.30 g\",\n        \"snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      }\n    ],\n    \"explanation\": \"The source establishes the base stock,\
+    \ not every historical variant’s use or dose. Preserve uncertainty instead of\
+    \ applying guessed dilution corrections.\"\n  },\n  {\n    \"decision_id\": \"\
+    q22\",\n    \"claim\": \"CoCl2 x 6 H2O in SL-6\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"SL-6 stock composition, separate from its 1 mL addition\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"stock_mass_g\": 0.2,\n   \
+    \   \"stock_water_ml\": 1000,\n      \"provider_stock_g_L\": 0.2,\n      \"receiving_SL6_mL\"\
+    : 1\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz27\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 27 page1 Trace element solution SL-6 exact\
+    \ row\",\n        \"exact_source_quote\": \"CoCl2 x 6 H2O 0.20 g\",\n        \"\
+    snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[4].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"CoCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 38,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"mmol_l\\\": 1.54037,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\
+    \n      }\n    ],\n    \"explanation\": \"This is a stock concentration flattened\
+    \ into the medium. Restore the exact SL-6 stock and separate its 1 mL receiving\
+    \ dose. Do not import the unrelated DSMZ 27 parent medium or treat these g/L values\
+    \ as final-medium values.\"\n  },\n  {\n    \"decision_id\": \"q23\",\n    \"\
+    claim\": \"CoCl2 x 6 H2O in unresolved variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"base_SL6_stock_amount_g\"\
+    : 0.2,\n      \"variant_stock_and_dose\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz27\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\",\n        \"\
+    source_locator\": \"DSMZ 27 SL-6 stock context only\",\n        \"exact_source_quote\"\
+    : \"CoCl2 x 6 H2O 0.20 g\",\n        \"snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      }\n    ],\n    \"explanation\": \"The source establishes the base stock,\
+    \ not every historical variant’s use or dose. Preserve uncertainty instead of\
+    \ applying guessed dilution corrections.\"\n  },\n  {\n    \"decision_id\": \"\
+    q24\",\n    \"claim\": \"CuCl2 x 2 H2O in SL-6\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"SL-6 stock composition, separate from its 1 mL addition\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"stock_mass_g\": 0.01,\n\
+    \      \"stock_water_ml\": 1000,\n      \"provider_stock_g_L\": 0.01,\n      \"\
+    receiving_SL6_mL\": 1\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz27\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 27 page1 Trace element solution SL-6 exact\
+    \ row\",\n        \"exact_source_quote\": \"CuCl2 x 2 H2O 0.01 g\",\n        \"\
+    snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[4].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"CuCl2 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 39,\\n                        \\\"amount\\\": 0.01,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.01,\\\
+    n                        \\\"mmol_l\\\": 0.0586569,\\n                       \
+    \ \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\n     \
+    \ }\n    ],\n    \"explanation\": \"This is a stock concentration flattened into\
+    \ the medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose.\
+    \ Do not import the unrelated DSMZ 27 parent medium or treat these g/L values\
+    \ as final-medium values.\"\n  },\n  {\n    \"decision_id\": \"q25\",\n    \"\
+    claim\": \"CuCl2 x 2 H2O in unresolved variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"base_SL6_stock_amount_g\"\
+    : 0.01,\n      \"variant_stock_and_dose\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz27\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\",\n        \"\
+    source_locator\": \"DSMZ 27 SL-6 stock context only\",\n        \"exact_source_quote\"\
+    : \"CuCl2 x 2 H2O 0.01 g\",\n        \"snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      }\n    ],\n    \"explanation\": \"The source establishes the base stock,\
+    \ not every historical variant’s use or dose. Preserve uncertainty instead of\
+    \ applying guessed dilution corrections.\"\n  },\n  {\n    \"decision_id\": \"\
+    q26\",\n    \"claim\": \"NiCl2 x 6 H2O in SL-6\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"SL-6 stock composition, separate from its 1 mL addition\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"stock_mass_g\": 0.02,\n\
+    \      \"stock_water_ml\": 1000,\n      \"provider_stock_g_L\": 0.02,\n      \"\
+    receiving_SL6_mL\": 1\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz27\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 27 page1 Trace element solution SL-6 exact\
+    \ row\",\n        \"exact_source_quote\": \"NiCl2 x 6 H2O 0.02 g\",\n        \"\
+    snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[4].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"NiCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 40,\\n                        \\\"amount\\\": 0.02,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.02,\\\
+    n                        \\\"mmol_l\\\": 0.154322,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\n      }\n\
+    \    ],\n    \"explanation\": \"This is a stock concentration flattened into the\
+    \ medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do\
+    \ not import the unrelated DSMZ 27 parent medium or treat these g/L values as\
+    \ final-medium values.\"\n  },\n  {\n    \"decision_id\": \"q27\",\n    \"claim\"\
+    : \"NiCl2 x 6 H2O in unresolved variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"base_SL6_stock_amount_g\"\
+    : 0.02,\n      \"variant_stock_and_dose\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz27\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\",\n        \"\
+    source_locator\": \"DSMZ 27 SL-6 stock context only\",\n        \"exact_source_quote\"\
+    : \"NiCl2 x 6 H2O 0.02 g\",\n        \"snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      }\n    ],\n    \"explanation\": \"The source establishes the base stock,\
+    \ not every historical variant’s use or dose. Preserve uncertainty instead of\
+    \ applying guessed dilution corrections.\"\n  },\n  {\n    \"decision_id\": \"\
+    q28\",\n    \"claim\": \"Na2MoO4 x 2 H2O in SL-6\",\n    \"decision\": \"correct\"\
+    ,\n    \"stage\": \"SL-6 stock composition, separate from its 1 mL addition\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"stock_mass_g\": 0.03,\n\
+    \      \"stock_water_ml\": 1000,\n      \"provider_stock_g_L\": 0.03,\n      \"\
+    receiving_SL6_mL\": 1\n    },\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz27\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 27 page1 Trace element solution SL-6 exact\
+    \ row\",\n        \"exact_source_quote\": \"Na2MoO4 x 2 H2O 0.03 g\",\n      \
+    \  \"snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive402api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/402\",\n        \"source_locator\"\
+    : \"$.data.solutions[4].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Na2MoO4 x 2 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 9,\\n                        \\\"amount\\\": 0.03,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.03,\\n\
+    \                        \\\"mmol_l\\\": 0.123993,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    7c660227dd8c23abb1d0d9d49b98233bdac5dfa76d88bb02a0c540e8214a7a6b\"\n      }\n\
+    \    ],\n    \"explanation\": \"This is a stock concentration flattened into the\
+    \ medium. Restore the exact SL-6 stock and separate its 1 mL receiving dose. Do\
+    \ not import the unrelated DSMZ 27 parent medium or treat these g/L values as\
+    \ final-medium values.\"\n  },\n  {\n    \"decision_id\": \"q29\",\n    \"claim\"\
+    : \"Na2MoO4 x 2 H2O in unresolved variants\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"stage\": \"Nineteen historical modified formulations\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_amount\": {\n      \"base_SL6_stock_amount_g\"\
+    : 0.03,\n      \"variant_stock_and_dose\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz27\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\",\n        \"\
+    source_locator\": \"DSMZ 27 SL-6 stock context only\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4 x 2 H2O 0.03 g\",\n        \"snapshot_sha256\": \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\"\
+    ,\n        \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      }\n    ],\n    \"explanation\": \"The source establishes the base stock,\
+    \ not every historical variant’s use or dose. Preserve uncertainty instead of\
+    \ applying guessed dilution corrections.\"\n  },\n  {\n    \"decision_id\": \"\
+    q30\",\n    \"claim\": \"Liquid A water\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"stage\": \"Base DSM owner preparation\",\n    \"local_fields\": [\n \
+    \     {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Sterilize separately. For liquid medium combine solution A (with 1000.0 ml\
+    \ distilled water) and solution B. For solid medium combine solution A (with 500\
+    \ ml distilled water), solution B and solution C. For strains of A. cycloheptanicus\
+    \ add 5 g/l of yeast extract instead of 2 g/l.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"value\": 1000,\n      \"unit\": \"mL\",\n      \"branch\": \"liquid\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz402\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 Solution A mutually exclusive water\
+    \ rows\",\n        \"exact_source_quote\": \"Distilled water (for liquid medium)\
+    \ 1000.00 ml\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"This water quantity is already present\
+    \ in the DSM owner preparation text but has no attached excerpt; its mutually\
+    \ exclusive branch must be retained.\"\n  },\n  {\n    \"decision_id\": \"q31\"\
+    ,\n    \"claim\": \"Liquid A water\",\n    \"decision\": \"add\",\n    \"stage\"\
+    : \"Base generated/KOMODO and explicit named branch preparation\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"value\": 1000,\n      \"unit\"\
+    : \"mL\",\n      \"branch\": \"liquid\"\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 Solution A mutually exclusive water\
+    \ rows\",\n        \"exact_source_quote\": \"Distilled water (for liquid medium)\
+    \ 1000.00 ml\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"Add the missing source water context\
+    \ with branch membership. Do not sum the two alternative water rows or assert\
+    \ a measured final volume.\"\n  },\n  {\n    \"decision_id\": \"q32\",\n    \"\
+    claim\": \"Solid A water\",\n    \"decision\": \"evidence_only\",\n    \"stage\"\
+    : \"Base DSM owner preparation\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\",\n  \
+    \      \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Sterilize separately. For liquid medium combine solution A (with 1000.0 ml\
+    \ distilled water) and solution B. For solid medium combine solution A (with 500\
+    \ ml distilled water), solution B and solution C. For strains of A. cycloheptanicus\
+    \ add 5 g/l of yeast extract instead of 2 g/l.\"\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"value\": 500,\n      \"unit\": \"mL\",\n      \"branch\": \"solid\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz402\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 Solution A mutually exclusive water\
+    \ rows\",\n        \"exact_source_quote\": \"Distilled water (for solid medium)\
+    \ 500.00 ml\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"This water quantity is already present\
+    \ in the DSM owner preparation text but has no attached excerpt; its mutually\
+    \ exclusive branch must be retained.\"\n  },\n  {\n    \"decision_id\": \"q33\"\
+    ,\n    \"claim\": \"Solid A water\",\n    \"decision\": \"add\",\n    \"stage\"\
+    : \"Base generated/KOMODO and explicit named branch preparation\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null\n\
+    \      }\n    ],\n    \"source_amount\": {\n      \"value\": 500,\n      \"unit\"\
+    : \"mL\",\n      \"branch\": \"solid\"\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 Solution A mutually exclusive water\
+    \ rows\",\n        \"exact_source_quote\": \"Distilled water (for solid medium)\
+    \ 500.00 ml\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"Add the missing source water context\
+    \ with branch membership. Do not sum the two alternative water rows or assert\
+    \ a measured final volume.\"\n  },\n  {\n    \"decision_id\": \"q34\",\n    \"\
+    claim\": \"SL-6 receiving dose\",\n    \"decision\": \"add\",\n    \"stage\":\
+    \ \"Source solution B added to each base branch\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_amount\": {\n      \"value\": 1,\n      \"unit\": \"mL\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz402\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"dsmz402 exact named B/C/SL-6 subsection\",\n\
+    \        \"exact_source_quote\": \"Trace element sol. SL-6 (see medium 27) 1.00\
+    \ ml\",\n        \"snapshot_sha256\": \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\"\
+    ,\n        \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"The structured stock/dose claim is absent\
+    \ in these layers. Preserve its source-specific scope; no unrelated parent recipe,\
+    \ sterilization time, pressure or growth condition transfers.\"\n  },\n  {\n \
+    \   \"decision_id\": \"q35\",\n    \"claim\": \"C water\",\n    \"decision\":\
+    \ \"add\",\n    \"stage\": \"Optional agar stock C only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_amount\": {\n      \"value\": 500,\n      \"unit\": \"mL\"\
+    \n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz402\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"dsmz402 exact named B/C/SL-6 subsection\",\n\
+    \        \"exact_source_quote\": \"Distilled water 500.00 ml\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"The structured stock/dose claim is absent\
+    \ in these layers. Preserve its source-specific scope; no unrelated parent recipe,\
+    \ sterilization time, pressure or growth condition transfers.\"\n  },\n  {\n \
+    \   \"decision_id\": \"q36\",\n    \"claim\": \"SL-6 stock water\",\n    \"decision\"\
+    : \"add\",\n    \"stage\": \"SL-6 stock preparation only\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_amount\": {\n      \"value\": 1000,\n      \"unit\": \"\
+    mL\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsmz27\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium27.pdf\"\
+    ,\n        \"source_locator\": \"dsmz27 exact named B/C/SL-6 subsection\",\n \
+    \       \"exact_source_quote\": \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\"\
+    : \"e9c7d7ca3bfea7e2300e746a51320e5b47b4f6aa2237abe840b01471af25d9a9\",\n    \
+    \    \"parsed_text_sha256\": \"b415a9395e1d5939bf5a0c1a234a3aa35c252767c9e228110d2f1adaa41728af\"\
+    \n      }\n    ],\n    \"explanation\": \"The structured stock/dose claim is absent\
+    \ in these layers. Preserve its source-specific scope; no unrelated parent recipe,\
+    \ sterilization time, pressure or growth condition transfers.\"\n  },\n  {\n \
+    \   \"decision_id\": \"q37\",\n    \"claim\": \"Base A pH\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"stage\": \"Source solution A adjustment\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALICYCLOBACILLUS_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.0\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.0\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Adjust pH to 4.0\"\n      }\n    ],\n    \"source_amount\": {\n      \"value\"\
+    : 4.0,\n      \"stage\": \"A\"\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz402\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 402 page1 following Solution A\",\n    \
+    \    \"exact_source_quote\": \"Adjust pH to 4.0\",\n        \"snapshot_sha256\"\
+    : \"2f57214a1e116627e574f50bc63ff02a7bccea605175f444fcc5488085d80232\",\n    \
+    \    \"parsed_text_sha256\": \"30510d0f48710f4c942b56d1af51c2b4b96b26ace71357497bb9c2417dabb592\"\
+    \n      }\n    ],\n    \"explanation\": \"The base target/KOMODO scalar and DSM\
+    \ preparation retain this source value without narrow evidence. Do not replace\
+    \ distinct variant pH metadata with the base scalar.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q38\",\n    \"claim\": \"Catalog pH metadata for 402\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"stage\": \"Exact source accession metadata; not general\
+    \ growth optimum\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.0\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.0\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402\",\n        \"exact_source_quote\"\
+    : \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402'\
+    \ >402</a></TD>\\n\\t\\t\\t\\t\\t<TD>ALICYCLOBACILLUS medium</TD>\\n\\t\\t\\t\\\
+    t\\t<TD> 4.0</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q39\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402.1\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact source\
+    \ accession metadata; not general growth optimum\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.5\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402.1\",\n        \"\
+    exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402.1'\
+    \ >402.1</a></TD>\\n\\t\\t\\t\\t\\t<TD> For strains of A. cycloheptanicus</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.5</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q40\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_11983\",\n    \"decision\": \"not_quantified\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"null\",\n    \
+    \  \"no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_11983\",\n     \
+    \   \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_11983'\
+    \ >402_11983</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 11983</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q41\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_14558\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.0\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.0\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_14558\",\n     \
+    \   \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14558'\
+    \ >402_14558</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 14558</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.0</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q42\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_14745\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.5\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_14745\",\n     \
+    \   \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14745'\
+    \ >402_14745</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 14745</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.5</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q43\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_14955\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.5\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_14955\",\n     \
+    \   \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_14955'\
+    \ >402_14955</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 14955</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.5</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q44\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_16176\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.0\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.0\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_16176\",\n     \
+    \   \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_16176'\
+    \ >402_16176</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 16176</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.0</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q45\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_17614\",\n    \"decision\": \"not_quantified\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"null\",\n    \
+    \  \"no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_17614\",\n     \
+    \   \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_17614'\
+    \ >402_17614</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 17614</TD>\\\
+    n\\t\\t\\t\\t\\t<TD>null</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q46\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_18237\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 5.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"5.5\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_18237\",\n     \
+    \   \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_18237'\
+    \ >402_18237</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 18237</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 5.5</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q47\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_2498\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.5\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_2498\",\n      \
+    \  \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_2498'\
+    \ >402_2498</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 2498</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.5</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q48\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_3922\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.5\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_3922\",\n      \
+    \  \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3922'\
+    \ >402_3922</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 3922</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.5</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q49\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_3923\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.5\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_3923\",\n      \
+    \  \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3923'\
+    \ >402_3923</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 3923</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.5</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q50\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_3924\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 4.5\n      }\n \
+    \   ],\n    \"source_amount\": {\n      \"catalog_PH_Info\": \"4.5\",\n      \"\
+    no_new_value_if_null\": true\n    },\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"komodoMediaList\",\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_3924\",\n      \
+    \  \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_3924'\
+    \ >402_3924</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 3924</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 4.5</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q51\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_446\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.0,\n          \"max\": 4.0\n        }\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"catalog_PH_Info\": \"3 - 4\",\n      \"no_new_value_if_null\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_446\",\n       \
+    \ \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_446'\
+    \ >402_446</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 446</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 3 - 4</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q52\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_448\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.0,\n          \"max\": 4.0\n        }\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"catalog_PH_Info\": \"3 - 4\",\n      \"no_new_value_if_null\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_448\",\n       \
+    \ \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_448'\
+    \ >402_448</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 448</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 3 - 4</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q53\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_449\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.0,\n          \"max\": 4.0\n        }\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"catalog_PH_Info\": \"3 - 4\",\n      \"no_new_value_if_null\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_449\",\n       \
+    \ \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_449'\
+    \ >402_449</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 449</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 3 - 4</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q54\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_451\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.0,\n          \"max\": 4.0\n        }\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"catalog_PH_Info\": \"3 - 4\",\n      \"no_new_value_if_null\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_451\",\n       \
+    \ \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_451'\
+    \ >402_451</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 451</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 3 - 4</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q55\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_452\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.0,\n          \"max\": 4.0\n        }\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"catalog_PH_Info\": \"3 - 4\",\n      \"no_new_value_if_null\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_452\",\n       \
+    \ \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_452'\
+    \ >402_452</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 452</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 3 - 4</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q56\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_453\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.0,\n          \"max\": 4.0\n        }\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"catalog_PH_Info\": \"3 - 4\",\n      \"no_new_value_if_null\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_453\",\n       \
+    \ \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_453'\
+    \ >402_453</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 453</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 3 - 4</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q57\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_454\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.0,\n          \"max\": 4.0\n        }\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"catalog_PH_Info\": \"3 - 4\",\n      \"no_new_value_if_null\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_454\",\n       \
+    \ \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_454'\
+    \ >402_454</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 454</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 3 - 4</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q58\",\n    \"claim\": \"Catalog pH metadata\
+    \ for 402_455\",\n    \"decision\": \"evidence_only\",\n    \"stage\": \"Exact\
+    \ source accession metadata; not general growth optimum\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 3.0,\n          \"max\": 4.0\n        }\n      }\n    ],\n    \"source_amount\"\
+    : {\n      \"catalog_PH_Info\": \"3 - 4\",\n      \"no_new_value_if_null\": true\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"komodoMediaList\"\
+    ,\n        \"source_url\": \"https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList\"\
+    ,\n        \"source_locator\": \"table first cell exactly 402_455\",\n       \
+    \ \"exact_source_quote\": \"<TR>\\n\\t\\t\\t\\t\\t<TD width=\\\"50\\\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=402_455'\
+    \ >402_455</a></TD>\\n\\t\\t\\t\\t\\t<TD>MEDIUM 402 MODIFIED FOR DSM 455</TD>\\\
+    n\\t\\t\\t\\t\\t<TD> 3 - 4</TD>\\n\\t\\t\\t\\t\\t<TD>true</TD>\\n\\t\\t\\t\\t\\\
+    t<TD>false</TD>\\n\\t\\t\\t\\t\\t<TD>false</TD>\\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf</a></TD>\\\
+    n\\t\\t\\t\\t</TR>\",\n        \"snapshot_sha256\": \"d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a\"\
+    \n      }\n    ],\n    \"explanation\": \"The exact catalog row supports only\
+    \ this accession’s pH metadata. Absence is not zero and range 3–4 is not a single\
+    \ selected value. Catalog pH differences do not by themselves identify unobserved\
+    \ ingredient modifications; detailed variant formulas remain unavailable.\"\n\
+    \  }\n]"
+- assessment_id: preparation
+  area: completeness
+  topic: Retained DSM preparation versus generated loss
+  outcome: concern
+  summary: The DSM owner retains separate sterilization, liquid/solid combination
+    and yeast-variant instructions. The target and 21 KOMODO owners omit that preparation.
+    The primary supplies no sterilization time/temperature or pH reagent; DSMZ 27
+    parent procedure must not fill those gaps.
+  target_ids:
+  - CultureMech:005217
+  evidence_ids:
+  - record
+  - dsmz402
+  - dsmz27
+  - quantity-inventory
+  - owner-1
+findings:
+- finding_id: f1
+  issue_key: DSM402-variant-collapse
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Distinct source variants are conflated as duplicates
+  description: The target merges 22 contributors and asserts 20 SOURCE_DUPLICATE children.
+    At least the named A. cycloheptanicus branch has a primary-supported 5 g/L rather
+    than 2 g/L yeast concentration. Catalog-specific pH values/ranges and unknowns
+    were also replaced by one scalar 4.0. The 19 remaining modified recipes cannot
+    be declared equivalent from copied signatures while their detailed sources are
+    unavailable.
+  target_ids:
+  - CultureMech:005217
+  field_paths:
+  - merged_from
+  - variant_children
+  - synonyms
+  - ph_value
+  - ingredients[3]
+  evidence_ids:
+  - record
+  - dsmz402
+  - catalog-row-inventory
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: DSM402-stock-strength-flattening
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Agar and SL-6 stock strengths appear as medium concentrations
+  description: The record and every owner share 14 flat amounts. Agar 30 g/L is the
+    concentration of 15 g in 500 mL stock C; seven trace values are SL-6 stock concentrations
+    used via a separate 1 mL addition. Base A values also lack branch/stock membership
+    and narrow evidence. Current source data do not supply all historical variant
+    quantities.
+  target_ids:
+  - CultureMech:005217
+  field_paths:
+  - ingredients[*].concentration
+  - solutions
+  evidence_ids:
+  - quantity-inventory
+  - dsmz402
+  - dsmz27
+  - mediadive402api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: DSM402-nickel-hydrate-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Explicit nickel hexahydrate is grounded to anhydrous nickel chloride
+  description: Every layer labels NiCl2 x 6H2O but uses CHEBI34887 nickel dichloride,
+    whose formula has no hydrate water. DSMZ 27 SL-6 explicitly specifies the hexahydrate.
+    Both primary and secondary keying inherit this source-form mismatch despite canonical
+    labels.
+  target_ids:
+  - CultureMech:005217
+  field_paths:
+  - ingredients[12].term
+  - ingredients[12].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - dsmz27
+  - chebi34887
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: DSM402-preparation-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated and KOMODO layers lose branch preparation
+  description: The DSM owner preserves the separate sterilization and liquid/solid/yeast-variant
+    instructions. The target omits them, leaving a fixed solid label with flat stock
+    strengths. Source water inputs, SL-6 dose and conditional C are required to interpret
+    the recipe.
+  target_ids:
+  - CultureMech:005217
+  field_paths:
+  - preparation_steps
+  - physical_state
+  - solutions
+  evidence_ids:
+  - record
+  - dsmz402
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: DSM402-truncated-merge-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The merge-event source string is truncated
+  description: MERGED_RECIPES.source stops within the 3923 contributor despite a 22-owner
+    count. Complete merged_from and the earlier recipe-merger source list recover
+    all owners, so current ownership was resolved, but consumers relying only on the
+    event source would miss contributors.
+  target_ids:
+  - CultureMech:005217
+  field_paths:
+  - curation_history[8].source
+  evidence_ids:
+  - record
+  - bound-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f6
+  issue_key: DSM402-history-timezones
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Historical timestamps contain malformed or naive values
+  description: 44 inspected timestamp instances are malformed or omit timezone information.
+    These are retained historical metadata issues, not evidence about when a scientific
+    recipe was verified.
+  target_ids:
+  - CultureMech:005217
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Keep base and source-specific variants distinguishable. Correct the
+    known yeast branch only from its exact source; preserve unresolved variant recipes
+    and pH metadata without asserting equivalent ingredients. Re-evaluate owner relationships
+    and regenerate only after source-specific review.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005217
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore A/B/C and SL-6 boundaries and original mass/volume units for
+    the source-supported branches. Attach literal source amounts and bases, keep unknown
+    variant amounts unresolved, and never use stock g/L directly as main-medium g/L.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005217
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Resolve the exact hexahydrate ontology identity and corresponding secondary
+    mapping before changing maintained terms; retain the source stock mass and avoid
+    silent anhydrous-equivalent conversion.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005217
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve source preparation and conditional physical state from the
+    maintained inputs with claim-level evidence; do not invent a sterilization cycle,
+    pH reagent or DSMZ 27 parent procedure.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005217
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve old history unchanged and append an authorized clarification
+    or repair the future source-event serialization so all exact contributor identities
+    remain recoverable without truncation.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:005217
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Preserve existing events and append any later clarification with actual
+    timezone-qualified timestamps; do not infer missing historical times.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:005217
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_402_ALICYCLOBACILLUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alicyclobacillus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_strains_of_a_cycloheptanicus.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_11983.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14558.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14745.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_14955.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_16176.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_17614.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_18237.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_2498.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3922.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3923.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_3924.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_446.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_448.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_449.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_451.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_452.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_453.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_454.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_402_modified_for_dsm_455.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact KOMODO detail komodo402 returned HTTP 403; its response and actual access
+  time are preserved. Current base formulation and accession mapping resolve independently,
+  so this base-detail limit is optional.
+- Exact KOMODO detail komodo402_dot_1 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_11983 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_14558 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_14745 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_14955 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_16176 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_17614 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_18237 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_2498 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_3922 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_3923 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_3924 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_446 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_448 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_449 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_451 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_452 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_453 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_454 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Exact KOMODO detail komodo402_455 returned HTTP 403; its response and actual access
+  time are preserved. Current DSMZ 402 and catalog identity do not resolve the complete
+  historical variant formulation; this is a required limit for the 22-contributor
+  scope.
+- Partial completion is specifically due to inaccessible required historical variant
+  details across the 22-owner formulation scope. Base DSMZ 402, its explicit yeast
+  branch and SL-6 are independently available. Source catalog pH and oxygen fields
+  are metadata, not growth, phenotype or historical ingredient-equivalence proof.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-021
+- generated-medium
+```

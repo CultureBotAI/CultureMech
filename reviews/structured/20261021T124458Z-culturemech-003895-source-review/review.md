@@ -1,0 +1,2769 @@
+# Source and formulation review: alkaliflexus_medium (CultureMech:003895)
+
+- Review: 20261021T124458Z-culturemech-003895-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T12:39:24Z
+- Finished UTC: 2026-10-21T12:44:58Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSMZ 1175 formulation and all eight listed masses are supported; eight DSMZ-owner amount claims match their attached source evidence. The generated target and KOMODO owner omit the anaerobic preparation and staged stock additions while retaining an aerobic catalog flag. Source water, stock-percent scope, later owner evidence and inherited history need explicit preservation; no unsupported stock-dose or percent-basis conversion is proposed.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 206; batch 021 item 6 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty task batches contain 200 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 203 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003895 | data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml | generated | alkaliflexus_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003895 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003895 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/206/strict.tsv |
+| validate-terms | passed | True | CultureMech:003895 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003895 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003895 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: komodo1175detail | unavailable | False | CultureMech:003895 | The exact KOMODO detail attempt returned HTTP 403; the identity catalog, complete primary and exact MediaDive formulation remain available. The failure establishes no historical absence and does not block this bounded formulation assessment. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003895.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: supported. Targets: CultureMech:003895.
+
+7 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 7/8 primary and 7/8 secondary instances; all asserted secondary keys have exact pinned MIM rows. Source forms are assessed separately.
+
+Instance coverage on a 0–100 percent scale, denominator 8: primary 87.50%; secondary 87.50%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:003895.
+
+18 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "ingredient_or_context": "NH4Cl",
+    "field_path": "ingredients[0].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 1",
+        "exact_source_quote": "NH4Cl  0.20 g",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 3.73902,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "The amount/unit and provider nominal basis match. Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation stages remain separate: carbonate/bicarbonate are added after cooling; sulfide, sugar and yeast extract come from later sterile anaerobic stocks.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "attached_evidence_path": "ingredients[0].evidence[0]"
+      }
+    ],
+    "arithmetic": "0.2 g / (1000 mL / 1000 mL per L) = 0.2 g/L on the declared provider basis. No measured final volume or stock dosing volume is inferred.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "MgCl2 x 6 H2O",
+    "field_path": "ingredients[1].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.05",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 2",
+        "exact_source_quote": "MgCl2 x 6 H2O 0.05 g",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[1]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.245938,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "The amount/unit and provider nominal basis match. Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation stages remain separate: carbonate/bicarbonate are added after cooling; sulfide, sugar and yeast extract come from later sterile anaerobic stocks.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "attached_evidence_path": "ingredients[1].evidence[0]"
+      }
+    ],
+    "arithmetic": "0.05 g / (1000 mL / 1000 mL per L) = 0.05 g/L on the declared provider basis. No measured final volume or stock dosing volume is inferred.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "KH2PO4",
+    "field_path": "ingredients[2].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 3",
+        "exact_source_quote": "KH2PO4 0.20 g",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[2]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.46967,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "The amount/unit and provider nominal basis match. Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation stages remain separate: carbonate/bicarbonate are added after cooling; sulfide, sugar and yeast extract come from later sterile anaerobic stocks.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "attached_evidence_path": "ingredients[2].evidence[0]"
+      }
+    ],
+    "arithmetic": "0.2 g / (1000 mL / 1000 mL per L) = 0.2 g/L on the declared provider basis. No measured final volume or stock dosing volume is inferred.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "Na2CO3",
+    "field_path": "ingredients[3].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "7.4",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 4",
+        "exact_source_quote": "Na2CO3 7.40 g",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[3]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 7.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 7.4,\n                        \"mmol_l\": 69.8192,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "The amount/unit and provider nominal basis match. Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation stages remain separate: carbonate/bicarbonate are added after cooling; sulfide, sugar and yeast extract come from later sterile anaerobic stocks.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "7.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "7.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "7.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "attached_evidence_path": "ingredients[3].evidence[0]"
+      }
+    ],
+    "arithmetic": "7.4 g / (1000 mL / 1000 mL per L) = 7.4 g/L on the declared provider basis. No measured final volume or stock dosing volume is inferred.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "NaHCO3",
+    "field_path": "ingredients[4].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "18.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 5",
+        "exact_source_quote": "NaHCO3 18.50 g",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[4]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\": 18.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 18.5,\n                        \"mmol_l\": 220.22,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "The amount/unit and provider nominal basis match. Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation stages remain separate: carbonate/bicarbonate are added after cooling; sulfide, sugar and yeast extract come from later sterile anaerobic stocks.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "18.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "18.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "18.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "attached_evidence_path": "ingredients[4].evidence[0]"
+      }
+    ],
+    "arithmetic": "18.5 g / (1000 mL / 1000 mL per L) = 18.5 g/L on the declared provider basis. No measured final volume or stock dosing volume is inferred.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "Na2S x 9 H2O",
+    "field_path": "ingredients[5].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.5",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 6",
+        "exact_source_quote": "Na2S x 9 H2O 0.50 g",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[5]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.08175,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "The amount/unit and provider nominal basis match. Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation stages remain separate: carbonate/bicarbonate are added after cooling; sulfide, sugar and yeast extract come from later sterile anaerobic stocks.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "attached_evidence_path": "ingredients[5].evidence[0]"
+      }
+    ],
+    "arithmetic": "0.5 g / (1000 mL / 1000 mL per L) = 0.5 g/L on the declared provider basis. No measured final volume or stock dosing volume is inferred.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "Yeast extract",
+    "field_path": "ingredients[6].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "0.2",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 7",
+        "exact_source_quote": "Yeast extract 0.20 g",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[6]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "The amount/unit and provider nominal basis match. Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation stages remain separate: carbonate/bicarbonate are added after cooling; sulfide, sugar and yeast extract come from later sterile anaerobic stocks.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "attached_evidence_path": "ingredients[6].evidence[0]"
+      }
+    ],
+    "arithmetic": "0.2 g / (1000 mL / 1000 mL per L) = 0.2 g/L on the declared provider basis. No measured final volume or stock dosing volume is inferred.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "Cellobiose",
+    "field_path": "ingredients[7].concentration",
+    "decision": "evidence_only",
+    "local": {
+      "value": "3",
+      "unit": "G_PER_L"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 8",
+        "exact_source_quote": "Cellulobiose 3.00 g",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[7]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Cellobiose\",\n                        \"compound_id\": 214,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 8.76424,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "The amount/unit and provider nominal basis match. Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation stages remain separate: carbonate/bicarbonate are added after cooling; sulfide, sugar and yeast extract come from later sterile anaerobic stocks.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "verified",
+        "attached_evidence_path": "ingredients[7].evidence[0]"
+      }
+    ],
+    "arithmetic": "3 g / (1000 mL / 1000 mL per L) = 3 g/L on the declared provider basis. No measured final volume or stock dosing volume is inferred.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "Listed distilled water",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1 table row 9",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      },
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].recipe[8]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "All layers omit the source 1000 mL water quantity. Add source batch-preparation context without replacing it with water mass or a final-volume claim.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "pH 10.0"
+          },
+          {
+            "step_number": 2,
+            "action": "AUTOCLAVE",
+            "description": "Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract)."
+          }
+        ],
+        "decision": "add"
+      }
+    ],
+    "arithmetic": "1000 mL = 1 L of listed water, not proof of measured final medium volume.",
+    "primary_source_evidence_id": "dsmz1175"
+  },
+  {
+    "ingredient_or_context": "Provider nominal main volume",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].volume",
+        "exact_source_quote": "\"volume\": 1000",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9"
+      }
+    ],
+    "rationale": "Retain the explicitly attributed provider basis, distinct from the primary water row and any subsequent stock additions.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": [
+          {
+            "step_number": 1,
+            "action": "MIX",
+            "description": "pH 10.0"
+          },
+          {
+            "step_number": 2,
+            "action": "AUTOCLAVE",
+            "description": "Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract)."
+          }
+        ],
+        "decision": "add"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Main pH",
+    "field_path": "ph_value",
+    "decision": "evidence_only",
+    "local": 10.0,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1, below the table",
+        "exact_source_quote": "pH 10.0",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      }
+    ],
+    "rationale": "All layers preserve the source pH value but lack attached pH evidence. This is a recipe condition, not an experimentally determined organism optimum.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 10.0,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 10.0,
+        "decision": "evidence_only"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 10.0,
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Post-carbonate pH",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].steps[1].step",
+        "exact_source_quote": "the pH should be about 10.0",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9",
+        "parsed_text_sha256": "666d3dfab33fe2d5060f8f7d9bfe02b29b0a88bbcb2a6b49eb97e099cbdd4552"
+      }
+    ],
+    "rationale": "Preserve the approximate pH at the cooled post-carbonate stage. The DSMZ owner retains that stage text without attached evidence; the other layers omit it.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Sodium sulfide nonahydrate stock strength",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1, final parenthesis",
+        "exact_source_quote": "10% Na2S x 9 H2O",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      }
+    ],
+    "rationale": "Retain the literal stock percentage in preparation context. The source does not qualify it as w/v, v/v or w/w. The DSMZ owner already has this text without attached evidence; do not invent a qualified concentration unit or final-medium percentage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Sodium sulfide nonahydrate stock dosing volume",
+    "field_path": "solutions",
+    "decision": "unsupported",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].steps[1].step",
+        "exact_source_quote": "appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9",
+        "parsed_text_sha256": "666d3dfab33fe2d5060f8f7d9bfe02b29b0a88bbcb2a6b49eb97e099cbdd4552"
+      }
+    ],
+    "rationale": "The source gives no numerical dosing volume and the stock-percent basis is unstated. The supported main-recipe mass does not license an unqualified volume calculation. Retain the amount as unresolved until the missing basis is independently supported.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Not calculated: percent basis and explicit dosing volume are unavailable; no assumption of w/v or a measured final litre."
+  },
+  {
+    "ingredient_or_context": "Source sugar stock strength",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1, final parenthesis",
+        "exact_source_quote": "5% cellulobiose",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      }
+    ],
+    "rationale": "Retain the literal stock percentage in preparation context. The source does not qualify it as w/v, v/v or w/w. The DSMZ owner already has this text without attached evidence; do not invent a qualified concentration unit or final-medium percentage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Source sugar stock dosing volume",
+    "field_path": "solutions",
+    "decision": "unsupported",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].steps[1].step",
+        "exact_source_quote": "appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9",
+        "parsed_text_sha256": "666d3dfab33fe2d5060f8f7d9bfe02b29b0a88bbcb2a6b49eb97e099cbdd4552"
+      }
+    ],
+    "rationale": "The source gives no numerical dosing volume and the stock-percent basis is unstated. The supported main-recipe mass does not license an unqualified volume calculation. Retain the amount as unresolved until the missing basis is independently supported.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Not calculated: percent basis and explicit dosing volume are unavailable; no assumption of w/v or a measured final litre."
+  },
+  {
+    "ingredient_or_context": "Yeast-extract stock strength",
+    "field_path": "preparation_steps",
+    "decision": "add",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "dsmz1175",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf",
+        "source_locator": "DSMZ 1175 page 1, final parenthesis",
+        "exact_source_quote": "10% yeast extract",
+        "snapshot_sha256": "49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6",
+        "parsed_text_sha256": "35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072"
+      }
+    ],
+    "rationale": "Retain the literal stock percentage in preparation context. The source does not qualify it as w/v, v/v or w/w. The DSMZ owner already has this text without attached evidence; do not invent a qualified concentration unit or final-medium percentage.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).",
+        "decision": "evidence_only"
+      }
+    ]
+  },
+  {
+    "ingredient_or_context": "Yeast-extract stock dosing volume",
+    "field_path": "solutions",
+    "decision": "unsupported",
+    "local": null,
+    "source_snippets": [
+      {
+        "source_key": "mediadive1175api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1175",
+        "source_locator": "$.data.solutions[0].steps[1].step",
+        "exact_source_quote": "appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic stock solutions",
+        "snapshot_sha256": "4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9",
+        "parsed_text_sha256": "666d3dfab33fe2d5060f8f7d9bfe02b29b0a88bbcb2a6b49eb97e099cbdd4552"
+      }
+    ],
+    "rationale": "The source gives no numerical dosing volume and the stock-percent basis is unstated. The supported main-recipe mass does not license an unqualified volume calculation. Retain the amount as unresolved until the missing basis is independently supported.",
+    "action_taken": "Review only; no recipe change.",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "unsupported"
+      }
+    ],
+    "arithmetic": "Not calculated: percent basis and explicit dosing volume are unavailable; no assumption of w/v or a measured final litre."
+  }
+]
+
+### Exact source accessions and maintained contributors
+
+identity: supported. Targets: CultureMech:003895.
+
+KOMODO 1175 explicitly maps to DSMZ 1175; primary and provider identify ALKALIFLEXUS medium. Both maintained contributors have the same eight ingredient objects apart from evidence, and their reciprocal SOURCE_DUPLICATE paths/IDs resolve. The primary spelling Cellulobiose is retained in the evidence; the exact provider standardizes it to Cellobiose, matching CHEBI:17057. No separate sugar, strain or biological variant is inferred from the spelling difference.
+
+### Eight source masses and later stock stages
+
+consistency: supported. Targets: CultureMech:003895.
+
+All eight amounts agree: 0.2, 0.05, 0.2, 7.4, 18.5, 0.5, 0.2 and 3 g on the provider nominal 1000 mL basis. Eight DSMZ-owner amounts have exact matching evidence; target and KOMODO owner amounts are evidence_only. Primary listed water, nominal provider volume, main/post-carbonate pH and all three stock strengths/dose limitations are separately inventoried. Unqualified percentages are not converted to stock doses or added to main concentrations.
+
+### Exact hydrate and ingredient identities
+
+grounding: supported. Targets: CultureMech:003895.
+
+Source magnesium chloride hexahydrate and sodium sulfide nonahydrate match their asserted CHEBI forms and captured molecular formulas. Ammonium chloride, the two different carbonate salts and monopotassium phosphate retain the source stoichiometry. Cellobiose is supported by the exact provider. All seven asserted primary and seven secondary links resolve on an eight-ingredient denominator (87.5% each); yeast extract remains an ungrounded complex mixture rather than an invented molecule.
+
+### Anaerobic sequence and stock-strength limits
+
+completeness: concern. Targets: CultureMech:003895.
+
+Only the DSMZ owner retains the full source sequence: initially exclude carbonate/bicarbonate, sulfide, sugar and yeast; boil and cool under nitrogen; add carbonate/bicarbonate; dispense/seal under nitrogen and autoclave; add the remaining components from sterile anaerobic stocks after cooling. Target and KOMODO owner omit all preparation. No autoclave temperature/duration, nitrogen purity/fraction or fixed stock dosing volumes are supplied. These source limits do not justify losing the available sequence.
+
+### Mixed formulation and bounded oxygen metadata
+
+scope: concern. Targets: CultureMech:003895.
+
+COMPLEX/SEMI_DEFINED and LIQUID are consistent with defined salts/sugar plus yeast extract and no agar. The exact KOMODO catalog says aerobic=true; the exact primary requires nitrogen and sterile anaerobic stocks. These differently scoped source assertions must both remain attributed rather than interpreting the catalog flag as permission for aerobic preparation or as organism physiology. No target organism, taxon/strain accession, assembly, DOI/PMID or paper-based growth claim is asserted.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:003895.
+
+23 timestamp instances inspected; 4 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Generated omissions and historical scope
+
+provenance: concern. Targets: CultureMech:003895.
+
+The later DSMZ-owner evidence/reference is absent from the August-generated target, and the source-specific preparation survives only in the DSMZ owner. Current source/import/resolver/merge excerpts are rechecked input context; they are not proof of a replayed historical import. The source-duplicate relationship describes matching accession/signature while meaningful preparation, evidence and metadata differences remain.
+
+## Findings
+
+### f1: The target omits nitrogen preparation and separate stock additions
+
+major / open / confirmed; issue key: culturemech.003895.preparation-loss.
+
+Target and KOMODO owner lack the complete primary preparation retained by the DSMZ owner, including nitrogen cooling/dispensing/sealing, delayed carbonate addition and post-autoclave anaerobic stocks. Their Aerobic: Yes note is an exact catalog flag with different scope; used as a preparation instruction it would conflict with the primary. The available 10%/5%/10% strengths must remain unqualified until their basis is verified.
+
+### f2: The source water quantity is absent
+
+minor / open / confirmed; issue key: culturemech.003895.source-water.
+
+All three local layers omit the primary 1000 mL distilled-water row. The DSMZ owner already has a preparation_steps container, but its text does not include this water amount. Provider nominal volume supports its g_l fields and must remain distinguished from listed water and measured final volume.
+
+### f3: Eight verified DSMZ-owner claims are absent from the generated target
+
+minor / open / confirmed; issue key: culturemech.003895.generated-evidence-loss.
+
+The DSMZ owner retains eight literal source amount snippets with the exact current response hash and scoped nominal-volume explanations, plus its reference. Target and KOMODO owner have none. Supported values therefore have different evidence status in different layers.
+
+### f4: Inherited history has four malformed or timezone-naive timestamps
+
+minor / open / confirmed; issue key: culturemech.003895.history-timezones.
+
+Target and KOMODO owner each retain malformed 2026-01-27T01:15:01.fZ and timezone-naive 2026-02-03 resolver timestamps. The current source and exact historical snippet/hash correspondence are separately established; these dates do not authenticate historical timing.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the exact preparation sequence and source-scoped stock-strength text in maintained records before regeneration. Attribute the catalog oxygen flag separately from recipe conditions. Preserve supported main masses, do not infer stock doses, percent bases, nitrogen purity or a missing sterilization cycle.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the exact water volume as batch-preparation context, without replacing existing owner steps or asserting final make-up volume not stated by the primary.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve all eight existing owner claim attachments and their limits during authorized regeneration; add narrow source evidence to the other maintained layer where warranted. Do not claim a quantity attachment validates ontology or measured final volume.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Preserve prior events and append a dated authorized clarification only when supported; do not silently invent a timezone or rewrite historical timestamps.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/alkaliflexus_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch021/206/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/206/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml:1:id: CultureMech:003895<br>./data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml:1:id: CultureMech:003895<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/206/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 11 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| bound-context | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/206/evidence-context-original.json; Complete frozen source context rebound to every fresh native input | context_only | All context input hashes match the fresh native inspection. The preflight remains historical preparation; this assessment uses the current bound record catalog and native input hashes. |
+| dsmz1175 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf; Entire official page 1, table, pH and complete preparation paragraph; image independently inspected | supports | Eight solutes and 1000 mL listed water; pH 10.0; boiling/cooling and dispensing under nitrogen, sealed-tube autoclaving, then sterile anaerobic stocks. Literal stock strengths are 10%, 5% and 10%, without an explicit percent basis or numerical receiving volumes. |
+| mediadive1175 | https://mediadive.dsmz.de/rest/medium/1175; Entire $.data.medium and main solution 2347, nine recipe rows, volume and both steps | supports | Provider nominal volume 1000 mL and all eight g_l values agree with the stored concentrations. It spells the source sugar Cellobiose while retaining cellulobiose in the source-derived preparation paragraph. No distinct stock objects or fixed dosing volumes are supplied. |
+| komodo-list | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; Headers and exact row 1175 | supports | Exact catalog mapping to DSMZ 1175; pH 10.0, complex=true and aerobic=true are catalog metadata. The aerobic flag does not override explicit nitrogen/anaerobic recipe preparation or establish organism physiology. |
+| komodo1175detail-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1175; Preserved exact public retrieval result | context_only | The exact KOMODO detail attempt returned HTTP 403; the identity catalog, complete primary and exact MediaDive formulation remain available. The failure establishes no historical absence and does not block this bounded formulation assessment. |
+| chebi17057 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17057; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17057 resolves to cellobiose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:17057": [{"label": "Cellobiose", "match_type": "preferred_term", "identifier": "CHEBI:17057", "preferred_term": "Cellobiose", "ontology_id": "CHEBI:17057", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| attached-evidence-recheck | /private/tmp/culturemech-review-work-batch021/206/attached-evidence-recheck.json; Every existing ingredient evidence object, full reference/snippet/explanation and source locator | supports | 8 attached amount claims match the exact captured source rows and nominal provider basis. Verification applies only in the documented owner layers. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch021/206/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| quantity-local-fields | /private/tmp/culturemech-review-work-batch021/206/quantity-local-field-audit.json; All quantity layer paths and exact stored values against full inspected YAML | context_only | Every local concentration is covered; every layer locator resolves to its exact stored value or explicitly absent intended container. Source locators remain in source_snippets. |
+| writer-context-0 | src/culturemech/merge/formulation.py; formulation_content lines 48–70; merge_formulation_evidence lines 92–128 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-1 | src/culturemech/import/mediadive_importer.py; _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570; _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps lines 653–721 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-2 | scripts/cleanup_media_quality.py; normalize_name lines 76–82; _merge_ingredient_group lines 148–216 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| writer-context-3 | src/culturemech/enrich/dsmz_resolver.py; _build_dsmz_index lines 43–76; merge_composition lines 112–166; _add_enrichment_metadata lines 195–212 | context_only | Exact current source/import/resolver/merge excerpts were read and rechecked against native input hashes. Current behavior is implementation context, not a replay of historical imports. |
+| history-metadata | data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml; data/normalized_yaml/bacterial/alkaliflexus_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:01.831581"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml", "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:01.831581"}]}, {"input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml", "events": 7, "timestamp_issues": []}] |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The exact KOMODO detail attempt returned HTTP 403; the identity catalog, complete primary and exact MediaDive formulation remain available. The failure establishes no historical absence and does not block this bounded formulation assessment.
+- The primary gives unqualified 10%, 5% and 10% stock strengths but no exact dosing volumes, nitrogen fraction/purity or autoclave temperature/duration. These bounded unknowns are fully assessed; no numerical conversion is performed.
+- Current bytes match eight historical attached excerpts and response hashes, but historical access dates are not independently authenticated. Exact source preparation does not establish species-wide growth or an oxygen phenotype.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T124458Z-culturemech-003895-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaliflexus_medium (CultureMech:003895)'
+started_at: '2026-10-21T12:39:24Z'
+finished_at: '2026-10-21T12:44:58Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSMZ 1175 formulation and all eight listed masses are supported;
+  eight DSMZ-owner amount claims match their attached source evidence. The generated
+  target and KOMODO owner omit the anaerobic preparation and staged stock additions
+  while retaining an aerobic catalog flag. Source water, stock-percent scope, later
+  owner evidence and inherited history need explicit preservation; no unsupported
+  stock-dose or percent-basis conversion is proposed.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+    sha256: 86ae2cf73beb51a750e07cbf2a5ff61903dc93f681b35a980535f5aa72864fee
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    sha256: 11166d801990d029f470856f6978e15e6a36762af9b13da29a2788c67041d829
+    role: context
+  - path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    sha256: 23c621b9b2d0f6c1055dbb73393c5dcbec5e283aa1e11fcac774494fb1b7b239
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadive_stock_concentration_evidence.py
+    sha256: 54d862deea48e76f83f424b79cbef57567ba41b539bbea29229d15c2fabd1158
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 206; batch 021 item 6 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty task batches contain
+    200 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 203 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003895
+targets:
+- target_id: CultureMech:003895
+  path: data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+  label: alkaliflexus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch021/206/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/206/strict.tsv"
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003895
+- check_id: komodo1175detail-source-access
+  name: 'Exact source content access: komodo1175detail'
+  required: false
+  status: unavailable
+  summary: The exact KOMODO detail attempt returned HTTP 403; the identity catalog,
+    complete primary and exact MediaDive formulation remain available. The failure
+    establishes no historical absence and does not block this bounded formulation
+    assessment.
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - komodo1175detail-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:28.473612Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch021/206/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:30.058690Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/206/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:31.963022Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:33.293287Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml:1:id: CultureMech:003895
+
+    ./data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml:1:id: CultureMech:003895
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/206/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: supports
+  summary: 11 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: cae1723b2d02b6d0ed1793428f512a43b34986a7c791b5c352939044836b9191
+- evidence_id: bound-context
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/206/evidence-context-original.json
+  locator: Complete frozen source context rebound to every fresh native input
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: All context input hashes match the fresh native inspection. The preflight
+    remains historical preparation; this assessment uses the current bound record
+    catalog and native input hashes.
+  snapshot_sha256: dd8140dfb891a55070b5d807324f76b6cc742a6c6a42d9dc29d2881759a4c10a
+- evidence_id: dsmz1175
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf
+  locator: Entire official page 1, table, pH and complete preparation paragraph; image
+    independently inspected
+  accessed_at: '2026-10-21T12:23:43.367014Z'
+  support: supports
+  summary: Eight solutes and 1000 mL listed water; pH 10.0; boiling/cooling and dispensing
+    under nitrogen, sealed-tube autoclaving, then sterile anaerobic stocks. Literal
+    stock strengths are 10%, 5% and 10%, without an explicit percent basis or numerical
+    receiving volumes.
+  snapshot_sha256: 49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6
+- evidence_id: mediadive1175
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1175
+  locator: Entire $.data.medium and main solution 2347, nine recipe rows, volume and
+    both steps
+  accessed_at: '2026-10-21T12:23:42.042981Z'
+  support: supports
+  summary: Provider nominal volume 1000 mL and all eight g_l values agree with the
+    stored concentrations. It spells the source sugar Cellobiose while retaining cellulobiose
+    in the source-derived preparation paragraph. No distinct stock objects or fixed
+    dosing volumes are supplied.
+  snapshot_sha256: 4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9
+- evidence_id: komodo-list
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Headers and exact row 1175
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Exact catalog mapping to DSMZ 1175; pH 10.0, complex=true and aerobic=true
+    are catalog metadata. The aerobic flag does not override explicit nitrogen/anaerobic
+    recipe preparation or establish organism physiology.
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: komodo1175detail-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1175
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T12:23:42.042424Z'
+  support: context_only
+  summary: The exact KOMODO detail attempt returned HTTP 403; the identity catalog,
+    complete primary and exact MediaDive formulation remain available. The failure
+    establishes no historical absence and does not block this bounded formulation
+    assessment.
+  snapshot_sha256: cdb1a90d59c9302a15547c123e6fbf540063486ae9df8a4f340db765b26cb99d
+- evidence_id: chebi17057
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17057
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T09:27:39.796651Z'
+  support: supports
+  summary: CHEBI:17057 resolves to cellobiose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 3548f79d3274a33683125152944998cffa00bd4fce774c8d872db9003222ed06
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:17057":
+    [{"label": "Cellobiose", "match_type": "preferred_term", "identifier": "CHEBI:17057",
+    "preferred_term": "Cellobiose", "ontology_id": "CHEBI:17057", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type":
+    "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium
+    carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type":
+    "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id":
+    "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139":
+    [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139",
+    "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label":
+    "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term":
+    "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2
+    x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: attached-evidence-recheck
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/206/attached-evidence-recheck.json
+  locator: Every existing ingredient evidence object, full reference/snippet/explanation
+    and source locator
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: supports
+  summary: 8 attached amount claims match the exact captured source rows and nominal
+    provider basis. Verification applies only in the documented owner layers.
+  snapshot_sha256: fdeafae494e1b3865db0351e0bbea1c91561f4f4d3ad3eef11b442bd18861fba
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/206/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: fca1aa425a1377710ae3aaa710c04712119153633267c66af12cbff8c48cb90f
+- evidence_id: quantity-local-fields
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/206/quantity-local-field-audit.json
+  locator: All quantity layer paths and exact stored values against full inspected
+    YAML
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Every local concentration is covered; every layer locator resolves to its
+    exact stored value or explicitly absent intended container. Source locators remain
+    in source_snippets.
+  snapshot_sha256: 3d38756ac9e5e2944667a43622214408ae82a56aed6f78e1358651e1bf368ff1
+- evidence_id: writer-context-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content lines 48–70; merge_formulation_evidence lines 92–128
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-context-1
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 455–537; _is_api_stock_addition lines 563–570;
+    _parse_api_solutions lines 593–621; _normalize_unit lines 623–651; _parse_preparation_steps
+    lines 653–721
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-context-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: normalize_name lines 76–82; _merge_ingredient_group lines 148–216
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-context-3
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: _build_dsmz_index lines 43–76; merge_composition lines 112–166; _add_enrichment_metadata
+    lines 195–212
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: Exact current source/import/resolver/merge excerpts were read and rechecked
+    against native input hashes. Current behavior is implementation context, not a
+    replay of historical imports.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALIFLEXUS_MEDIUM.yaml; data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml;
+    data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T12:44:56Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:01.831581"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml",
+    "events": 7, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:01.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:01.831581"}]}, {"input": "data/normalized_yaml/bacterial/alkaliflexus_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: supported
+  summary: '7 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 7/8 primary and 7/8 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Source forms
+    are assessed separately.'
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - chebi17057
+  - chebi29377
+  - chebi31206
+  - chebi32139
+  - chebi63036
+  - chebi76209
+  - chebi86345
+  details: 'Instance coverage on a 0–100 percent scale, denominator 8: primary 87.50%;
+    secondary 87.50%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 18 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"ingredient_or_context\": \"NH4Cl\",\n    \"field_path\"\
+    : \"ingredients[0].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.2\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 1\",\n        \"exact_source_quote\"\
+    : \"NH4Cl  0.20 g\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\": 42,\\\
+    n                        \\\"amount\\\": 0.2,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n                \
+    \        \\\"mmol_l\\\": 3.73902,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount/unit and provider nominal basis\
+    \ match. Only the DSMZ-owner layer has matching attached evidence and is verified.\
+    \ Preparation stages remain separate: carbonate/bicarbonate are added after cooling;\
+    \ sulfide, sugar and yeast extract come from later sterile anaerobic stocks.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\",\n        \"attached_evidence_path\": \"ingredients[0].evidence[0]\"\
+    \n      }\n    ],\n    \"arithmetic\": \"0.2 g / (1000 mL / 1000 mL per L) = 0.2\
+    \ g/L on the declared provider basis. No measured final volume or stock dosing\
+    \ volume is inferred.\",\n    \"primary_source_evidence_id\": \"dsmz1175\"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"MgCl2 x 6 H2O\",\n    \"field_path\"\
+    : \"ingredients[1].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.05\",\n      \"unit\": \"G_PER_L\"\n   \
+    \ },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 2\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O 0.05 g\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"MgCl2 x 6 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 79,\\n                        \\\"amount\\\": 0.05,\\n                   \
+    \     \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.05,\\\
+    n                        \\\"mmol_l\\\": 0.245938,\\n                        \\\
+    \"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"\
+    4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\n      }\n\
+    \    ],\n    \"rationale\": \"The amount/unit and provider nominal basis match.\
+    \ Only the DSMZ-owner layer has matching attached evidence and is verified. Preparation\
+    \ stages remain separate: carbonate/bicarbonate are added after cooling; sulfide,\
+    \ sugar and yeast extract come from later sterile anaerobic stocks.\",\n    \"\
+    action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\":\
+    \ [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\",\n        \"attached_evidence_path\": \"ingredients[1].evidence[0]\"\
+    \n      }\n    ],\n    \"arithmetic\": \"0.05 g / (1000 mL / 1000 mL per L) =\
+    \ 0.05 g/L on the declared provider basis. No measured final volume or stock dosing\
+    \ volume is inferred.\",\n    \"primary_source_evidence_id\": \"dsmz1175\"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"KH2PO4\",\n    \"field_path\": \"\
+    ingredients[2].concentration\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local\": {\n      \"value\": \"0.2\",\n      \"unit\": \"G_PER_L\"\n    },\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 3\",\n        \"exact_source_quote\"\
+    : \"KH2PO4 0.20 g\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"KH2PO4\\\",\\n                        \\\"compound_id\\\": 11,\\\
+    n                        \\\"amount\\\": 0.2,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n                \
+    \        \\\"mmol_l\\\": 1.46967,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount/unit and provider nominal basis\
+    \ match. Only the DSMZ-owner layer has matching attached evidence and is verified.\
+    \ Preparation stages remain separate: carbonate/bicarbonate are added after cooling;\
+    \ sulfide, sugar and yeast extract come from later sterile anaerobic stocks.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\",\n        \"attached_evidence_path\": \"ingredients[2].evidence[0]\"\
+    \n      }\n    ],\n    \"arithmetic\": \"0.2 g / (1000 mL / 1000 mL per L) = 0.2\
+    \ g/L on the declared provider basis. No measured final volume or stock dosing\
+    \ volume is inferred.\",\n    \"primary_source_evidence_id\": \"dsmz1175\"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"Na2CO3\",\n    \"field_path\": \"\
+    ingredients[3].concentration\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local\": {\n      \"value\": \"7.4\",\n      \"unit\": \"G_PER_L\"\n    },\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 4\",\n        \"exact_source_quote\"\
+    : \"Na2CO3 7.40 g\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[3]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 4,\\n                        \\\"\
+    compound\\\": \\\"Na2CO3\\\",\\n                        \\\"compound_id\\\": 32,\\\
+    n                        \\\"amount\\\": 7.4,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 7.4,\\n                \
+    \        \\\"mmol_l\\\": 69.8192,\\n                        \\\"optional\\\":\
+    \ 0\\n                    }\",\n        \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount/unit and provider nominal basis\
+    \ match. Only the DSMZ-owner layer has matching attached evidence and is verified.\
+    \ Preparation stages remain separate: carbonate/bicarbonate are added after cooling;\
+    \ sulfide, sugar and yeast extract come from later sterile anaerobic stocks.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"7.4\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"7.4\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\",\n        \"attached_evidence_path\": \"ingredients[3].evidence[0]\"\
+    \n      }\n    ],\n    \"arithmetic\": \"7.4 g / (1000 mL / 1000 mL per L) = 7.4\
+    \ g/L on the declared provider basis. No measured final volume or stock dosing\
+    \ volume is inferred.\",\n    \"primary_source_evidence_id\": \"dsmz1175\"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"NaHCO3\",\n    \"field_path\": \"\
+    ingredients[4].concentration\",\n    \"decision\": \"evidence_only\",\n    \"\
+    local\": {\n      \"value\": \"18.5\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 5\",\n        \"exact_source_quote\"\
+    : \"NaHCO3 18.50 g\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[4]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 5,\\n                        \\\"\
+    compound\\\": \\\"NaHCO3\\\",\\n                        \\\"compound_id\\\": 55,\\\
+    n                        \\\"amount\\\": 18.5,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 18.5,\\n         \
+    \               \\\"mmol_l\\\": 220.22,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount/unit and provider nominal basis\
+    \ match. Only the DSMZ-owner layer has matching attached evidence and is verified.\
+    \ Preparation stages remain separate: carbonate/bicarbonate are added after cooling;\
+    \ sulfide, sugar and yeast extract come from later sterile anaerobic stocks.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"18.5\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"18.5\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"18.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\",\n        \"attached_evidence_path\": \"ingredients[4].evidence[0]\"\
+    \n      }\n    ],\n    \"arithmetic\": \"18.5 g / (1000 mL / 1000 mL per L) =\
+    \ 18.5 g/L on the declared provider basis. No measured final volume or stock dosing\
+    \ volume is inferred.\",\n    \"primary_source_evidence_id\": \"dsmz1175\"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"Na2S x 9 H2O\",\n    \"field_path\"\
+    : \"ingredients[5].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.5\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 6\",\n        \"exact_source_quote\"\
+    : \"Na2S x 9 H2O 0.50 g\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[5]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 6,\\n                        \\\"\
+    compound\\\": \\\"Na2S x 9 H2O\\\",\\n                        \\\"compound_id\\\
+    \": 54,\\n                        \\\"amount\\\": 0.5,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.5,\\n \
+    \                       \\\"mmol_l\\\": 2.08175,\\n                        \\\"\
+    optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount/unit and provider nominal basis\
+    \ match. Only the DSMZ-owner layer has matching attached evidence and is verified.\
+    \ Preparation stages remain separate: carbonate/bicarbonate are added after cooling;\
+    \ sulfide, sugar and yeast extract come from later sterile anaerobic stocks.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\",\n        \"attached_evidence_path\": \"ingredients[5].evidence[0]\"\
+    \n      }\n    ],\n    \"arithmetic\": \"0.5 g / (1000 mL / 1000 mL per L) = 0.5\
+    \ g/L on the declared provider basis. No measured final volume or stock dosing\
+    \ volume is inferred.\",\n    \"primary_source_evidence_id\": \"dsmz1175\"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"Yeast extract\",\n    \"field_path\"\
+    : \"ingredients[6].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"0.2\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 7\",\n        \"exact_source_quote\"\
+    : \"Yeast extract 0.20 g\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[6]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 7,\\n                        \\\"\
+    compound\\\": \\\"Yeast extract\\\",\\n                        \\\"compound_id\\\
+    \": 16,\\n                        \\\"amount\\\": 0.2,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 0.2,\\n \
+    \                       \\\"optional\\\": 0\\n                    }\",\n     \
+    \   \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount/unit and provider nominal basis\
+    \ match. Only the DSMZ-owner layer has matching attached evidence and is verified.\
+    \ Preparation stages remain separate: carbonate/bicarbonate are added after cooling;\
+    \ sulfide, sugar and yeast extract come from later sterile anaerobic stocks.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"verified\",\n        \"attached_evidence_path\": \"ingredients[6].evidence[0]\"\
+    \n      }\n    ],\n    \"arithmetic\": \"0.2 g / (1000 mL / 1000 mL per L) = 0.2\
+    \ g/L on the declared provider basis. No measured final volume or stock dosing\
+    \ volume is inferred.\",\n    \"primary_source_evidence_id\": \"dsmz1175\"\n \
+    \ },\n  {\n    \"ingredient_or_context\": \"Cellobiose\",\n    \"field_path\"\
+    : \"ingredients[7].concentration\",\n    \"decision\": \"evidence_only\",\n  \
+    \  \"local\": {\n      \"value\": \"3\",\n      \"unit\": \"G_PER_L\"\n    },\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\",\n\
+    \        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 8\",\n        \"exact_source_quote\"\
+    : \"Cellulobiose 3.00 g\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[7]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 8,\\n                        \\\"\
+    compound\\\": \\\"Cellobiose\\\",\\n                        \\\"compound_id\\\"\
+    : 214,\\n                        \\\"amount\\\": 3,\\n                       \
+    \ \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n      \
+    \                  \\\"mmol_l\\\": 8.76424,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n        \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"The amount/unit and provider nominal basis\
+    \ match. Only the DSMZ-owner layer has matching attached evidence and is verified.\
+    \ Preparation stages remain separate: carbonate/bicarbonate are added after cooling;\
+    \ sulfide, sugar and yeast extract come from later sterile anaerobic stocks.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"3\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"evidence_only\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"evidence_only\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[7].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\": \"\
+    verified\",\n        \"attached_evidence_path\": \"ingredients[7].evidence[0]\"\
+    \n      }\n    ],\n    \"arithmetic\": \"3 g / (1000 mL / 1000 mL per L) = 3 g/L\
+    \ on the declared provider basis. No measured final volume or stock dosing volume\
+    \ is inferred.\",\n    \"primary_source_evidence_id\": \"dsmz1175\"\n  },\n  {\n\
+    \    \"ingredient_or_context\": \"Listed distilled water\",\n    \"field_path\"\
+    : \"preparation_steps\",\n    \"decision\": \"add\",\n    \"local\": null,\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1175\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1 table row 9\",\n        \"exact_source_quote\"\
+    : \"Distilled water 1000.00 ml\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      },\n      {\n        \"source_key\": \"mediadive1175api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[8]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 9,\\n                        \\\"\
+    compound\\\": \\\"Distilled water\\\",\\n                        \\\"compound_id\\\
+    \": 4,\\n                        \\\"amount\\\": 1000,\\n                    \
+    \    \\\"unit\\\": \\\"ml\\\",\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n        \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"All layers omit the source 1000 mL water\
+    \ quantity. Add source batch-preparation context without replacing it with water\
+    \ mass or a final-volume claim.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"MIX\",\n\
+    \            \"description\": \"pH 10.0\"\n          },\n          {\n       \
+    \     \"step_number\": 2,\n            \"action\": \"AUTOCLAVE\",\n          \
+    \  \"description\": \"Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O,\
+    \ cellulobiose or yeast extract. Boil the medium in a water bath and cool under\
+    \ a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH\
+    \ should be about 10.0) and dispense the medium into Hungate tubes or serum bottles\
+    \ under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave.\
+    \ To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose\
+    \ and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O,\
+    \ 5% cellulobiose, 10% yeast extract).\"\n          }\n        ],\n        \"\
+    decision\": \"add\"\n      }\n    ],\n    \"arithmetic\": \"1000 mL = 1 L of listed\
+    \ water, not proof of measured final medium volume.\",\n    \"primary_source_evidence_id\"\
+    : \"dsmz1175\"\n  },\n  {\n    \"ingredient_or_context\": \"Provider nominal main\
+    \ volume\",\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"\
+    add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1175api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].volume\",\n        \"exact_source_quote\"\
+    : \"\\\"volume\\\": 1000\",\n        \"snapshot_sha256\": \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the explicitly attributed provider\
+    \ basis, distinct from the primary water row and any subsequent stock additions.\"\
+    ,\n    \"action_taken\": \"Review only; no recipe change.\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": [\n   \
+    \       {\n            \"step_number\": 1,\n            \"action\": \"MIX\",\n\
+    \            \"description\": \"pH 10.0\"\n          },\n          {\n       \
+    \     \"step_number\": 2,\n            \"action\": \"AUTOCLAVE\",\n          \
+    \  \"description\": \"Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O,\
+    \ cellulobiose or yeast extract. Boil the medium in a water bath and cool under\
+    \ a stream of nitrogen. Add the Na2CO3 and NaHCO3 to the cooled medium (the pH\
+    \ should be about 10.0) and dispense the medium into Hungate tubes or serum bottles\
+    \ under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave.\
+    \ To the cooled medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose\
+    \ and yeast extract from sterile, anaerobic stock solutions (10% Na2S x 9 H2O,\
+    \ 5% cellulobiose, 10% yeast extract).\"\n          }\n        ],\n        \"\
+    decision\": \"add\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Main pH\",\n    \"field_path\": \"ph_value\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"local\": 10.0,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1175\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1, below the table\",\n      \
+    \  \"exact_source_quote\": \"pH 10.0\",\n        \"snapshot_sha256\": \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\"\
+    ,\n        \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      }\n    ],\n    \"rationale\": \"All layers preserve the source pH value\
+    \ but lack attached pH evidence. This is a recipe condition, not an experimentally\
+    \ determined organism optimum.\",\n    \"action_taken\": \"Review only; no recipe\
+    \ change.\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 10.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 10.0,\n        \"\
+    decision\": \"evidence_only\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 10.0,\n        \"\
+    decision\": \"evidence_only\"\n      }\n    ]\n  },\n  {\n    \"ingredient_or_context\"\
+    : \"Post-carbonate pH\",\n    \"field_path\": \"preparation_steps\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"mediadive1175api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[1].step\",\n      \
+    \  \"exact_source_quote\": \"the pH should be about 10.0\",\n        \"snapshot_sha256\"\
+    : \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\",\n    \
+    \    \"parsed_text_sha256\": \"666d3dfab33fe2d5060f8f7d9bfe02b29b0a88bbcb2a6b49eb97e099cbdd4552\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the approximate pH at the cooled\
+    \ post-carbonate stage. The DSMZ owner retains that stage text without attached\
+    \ evidence; the other layers omit it.\",\n    \"action_taken\": \"Review only;\
+    \ no recipe change.\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"preparation_steps\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\",\n \
+    \       \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n  \
+    \      \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast\
+    \ extract. Boil the medium in a water bath and cool under a stream of nitrogen.\
+    \ Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0)\
+    \ and dispense the medium into Hungate tubes or serum bottles under a stream of\
+    \ nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium\
+    \ at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from\
+    \ sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast\
+    \ extract).\",\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Sodium sulfide nonahydrate stock strength\"\
+    ,\n    \"field_path\": \"preparation_steps\",\n    \"decision\": \"add\",\n  \
+    \  \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1175\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1, final parenthesis\",\n    \
+    \    \"exact_source_quote\": \"10% Na2S x 9 H2O\",\n        \"snapshot_sha256\"\
+    : \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\",\n    \
+    \    \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal stock percentage in\
+    \ preparation context. The source does not qualify it as w/v, v/v or w/w. The\
+    \ DSMZ owner already has this text without attached evidence; do not invent a\
+    \ qualified concentration unit or final-medium percentage.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast\
+    \ extract. Boil the medium in a water bath and cool under a stream of nitrogen.\
+    \ Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0)\
+    \ and dispense the medium into Hungate tubes or serum bottles under a stream of\
+    \ nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium\
+    \ at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from\
+    \ sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast\
+    \ extract).\",\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Sodium sulfide nonahydrate stock dosing\
+    \ volume\",\n    \"field_path\": \"solutions\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"mediadive1175api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[1].step\",\n      \
+    \  \"exact_source_quote\": \"appropriate amounts of Na2S x 9 H2O, cellulobiose\
+    \ and yeast extract from sterile, anaerobic stock solutions\",\n        \"snapshot_sha256\"\
+    : \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\",\n    \
+    \    \"parsed_text_sha256\": \"666d3dfab33fe2d5060f8f7d9bfe02b29b0a88bbcb2a6b49eb97e099cbdd4552\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives no numerical dosing volume\
+    \ and the stock-percent basis is unstated. The supported main-recipe mass does\
+    \ not license an unqualified volume calculation. Retain the amount as unresolved\
+    \ until the missing basis is independently supported.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"Not calculated:\
+    \ percent basis and explicit dosing volume are unavailable; no assumption of w/v\
+    \ or a measured final litre.\"\n  },\n  {\n    \"ingredient_or_context\": \"Source\
+    \ sugar stock strength\",\n    \"field_path\": \"preparation_steps\",\n    \"\
+    decision\": \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"dsmz1175\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1, final parenthesis\",\n    \
+    \    \"exact_source_quote\": \"5% cellulobiose\",\n        \"snapshot_sha256\"\
+    : \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\",\n    \
+    \    \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal stock percentage in\
+    \ preparation context. The source does not qualify it as w/v, v/v or w/w. The\
+    \ DSMZ owner already has this text without attached evidence; do not invent a\
+    \ qualified concentration unit or final-medium percentage.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast\
+    \ extract. Boil the medium in a water bath and cool under a stream of nitrogen.\
+    \ Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0)\
+    \ and dispense the medium into Hungate tubes or serum bottles under a stream of\
+    \ nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium\
+    \ at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from\
+    \ sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast\
+    \ extract).\",\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Source sugar stock dosing volume\",\n \
+    \   \"field_path\": \"solutions\",\n    \"decision\": \"unsupported\",\n    \"\
+    local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive1175api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[1].step\",\n      \
+    \  \"exact_source_quote\": \"appropriate amounts of Na2S x 9 H2O, cellulobiose\
+    \ and yeast extract from sterile, anaerobic stock solutions\",\n        \"snapshot_sha256\"\
+    : \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\",\n    \
+    \    \"parsed_text_sha256\": \"666d3dfab33fe2d5060f8f7d9bfe02b29b0a88bbcb2a6b49eb97e099cbdd4552\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives no numerical dosing volume\
+    \ and the stock-percent basis is unstated. The supported main-recipe mass does\
+    \ not license an unqualified volume calculation. Retain the amount as unresolved\
+    \ until the missing basis is independently supported.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"Not calculated:\
+    \ percent basis and explicit dosing volume are unavailable; no assumption of w/v\
+    \ or a measured final litre.\"\n  },\n  {\n    \"ingredient_or_context\": \"Yeast-extract\
+    \ stock strength\",\n    \"field_path\": \"preparation_steps\",\n    \"decision\"\
+    : \"add\",\n    \"local\": null,\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"dsmz1175\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf\"\
+    ,\n        \"source_locator\": \"DSMZ 1175 page 1, final parenthesis\",\n    \
+    \    \"exact_source_quote\": \"10% yeast extract\",\n        \"snapshot_sha256\"\
+    : \"49db980a713369b4bf9f81ce6246f48ec4eb0186a05d30b951b235324b938ec6\",\n    \
+    \    \"parsed_text_sha256\": \"35a13a54718ae0f0f98fb15e19357a34ca7f9d2bab2e6a332f3cfe1d13e6a072\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the literal stock percentage in\
+    \ preparation context. The source does not qualify it as w/v, v/v or w/w. The\
+    \ DSMZ owner already has this text without attached evidence; do not invent a\
+    \ qualified concentration unit or final-medium percentage.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast\
+    \ extract. Boil the medium in a water bath and cool under a stream of nitrogen.\
+    \ Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0)\
+    \ and dispense the medium into Hungate tubes or serum bottles under a stream of\
+    \ nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled medium\
+    \ at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from\
+    \ sterile, anaerobic stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast\
+    \ extract).\",\n        \"decision\": \"evidence_only\"\n      }\n    ]\n  },\n\
+    \  {\n    \"ingredient_or_context\": \"Yeast-extract stock dosing volume\",\n\
+    \    \"field_path\": \"solutions\",\n    \"decision\": \"unsupported\",\n    \"\
+    local\": null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    mediadive1175api\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1175\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[1].step\",\n      \
+    \  \"exact_source_quote\": \"appropriate amounts of Na2S x 9 H2O, cellulobiose\
+    \ and yeast extract from sterile, anaerobic stock solutions\",\n        \"snapshot_sha256\"\
+    : \"4fd1a08d1ce0385a034e7f2bc74f3ef9f298db0fbef486ac39ca68c78ce7a4b9\",\n    \
+    \    \"parsed_text_sha256\": \"666d3dfab33fe2d5060f8f7d9bfe02b29b0a88bbcb2a6b49eb97e099cbdd4552\"\
+    \n      }\n    ],\n    \"rationale\": \"The source gives no numerical dosing volume\
+    \ and the stock-percent basis is unstated. The supported main-recipe mass does\
+    \ not license an unqualified volume calculation. Retain the amount as unresolved\
+    \ until the missing basis is independently supported.\",\n    \"action_taken\"\
+    : \"Review only; no recipe change.\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"solutions\",\n     \
+    \   \"stored\": null,\n        \"decision\": \"unsupported\"\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/alkaliflexus_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"unsupported\"\n      }\n    ],\n    \"arithmetic\": \"Not calculated:\
+    \ percent basis and explicit dosing volume are unavailable; no assumption of w/v\
+    \ or a measured final litre.\"\n  }\n]"
+- assessment_id: identity
+  area: identity
+  topic: Exact source accessions and maintained contributors
+  outcome: supported
+  summary: KOMODO 1175 explicitly maps to DSMZ 1175; primary and provider identify
+    ALKALIFLEXUS medium. Both maintained contributors have the same eight ingredient
+    objects apart from evidence, and their reciprocal SOURCE_DUPLICATE paths/IDs resolve.
+    The primary spelling Cellulobiose is retained in the evidence; the exact provider
+    standardizes it to Cellobiose, matching CHEBI:17057. No separate sugar, strain
+    or biological variant is inferred from the spelling difference.
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1175
+  - mediadive1175
+  - komodo-list
+  - chebi17057
+- assessment_id: source-stage-consistency
+  area: consistency
+  topic: Eight source masses and later stock stages
+  outcome: supported
+  summary: 'All eight amounts agree: 0.2, 0.05, 0.2, 7.4, 18.5, 0.5, 0.2 and 3 g on
+    the provider nominal 1000 mL basis. Eight DSMZ-owner amounts have exact matching
+    evidence; target and KOMODO owner amounts are evidence_only. Primary listed water,
+    nominal provider volume, main/post-carbonate pH and all three stock strengths/dose
+    limitations are separately inventoried. Unqualified percentages are not converted
+    to stock doses or added to main concentrations.'
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - quantity-inventory
+  - quantity-local-fields
+  - attached-evidence-recheck
+  - dsmz1175
+  - mediadive1175
+- assessment_id: forms
+  area: grounding
+  topic: Exact hydrate and ingredient identities
+  outcome: supported
+  summary: Source magnesium chloride hexahydrate and sodium sulfide nonahydrate match
+    their asserted CHEBI forms and captured molecular formulas. Ammonium chloride,
+    the two different carbonate salts and monopotassium phosphate retain the source
+    stoichiometry. Cellobiose is supported by the exact provider. All seven asserted
+    primary and seven secondary links resolve on an eight-ingredient denominator (87.5%
+    each); yeast extract remains an ungrounded complex mixture rather than an invented
+    molecule.
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1175
+  - mediadive1175
+  - chebi86345
+  - chebi76209
+  - chebi17057
+  - mim
+- assessment_id: preparation
+  area: completeness
+  topic: Anaerobic sequence and stock-strength limits
+  outcome: concern
+  summary: 'Only the DSMZ owner retains the full source sequence: initially exclude
+    carbonate/bicarbonate, sulfide, sugar and yeast; boil and cool under nitrogen;
+    add carbonate/bicarbonate; dispense/seal under nitrogen and autoclave; add the
+    remaining components from sterile anaerobic stocks after cooling. Target and KOMODO
+    owner omit all preparation. No autoclave temperature/duration, nitrogen purity/fraction
+    or fixed stock dosing volumes are supplied. These source limits do not justify
+    losing the available sequence.'
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1175
+  - mediadive1175
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Mixed formulation and bounded oxygen metadata
+  outcome: concern
+  summary: COMPLEX/SEMI_DEFINED and LIQUID are consistent with defined salts/sugar
+    plus yeast extract and no agar. The exact KOMODO catalog says aerobic=true; the
+    exact primary requires nitrogen and sterile anaerobic stocks. These differently
+    scoped source assertions must both remain attributed rather than interpreting
+    the catalog flag as permission for aerobic preparation or as organism physiology.
+    No target organism, taxon/strain accession, assembly, DOI/PMID or paper-based
+    growth claim is asserted.
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1175
+  - komodo-list
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 23 timestamp instances inspected; 4 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+- assessment_id: generation
+  area: provenance
+  topic: Generated omissions and historical scope
+  outcome: concern
+  summary: The later DSMZ-owner evidence/reference is absent from the August-generated
+    target, and the source-specific preparation survives only in the DSMZ owner. Current
+    source/import/resolver/merge excerpts are rechecked input context; they are not
+    proof of a replayed historical import. The source-duplicate relationship describes
+    matching accession/signature while meaningful preparation, evidence and metadata
+    differences remain.
+  target_ids:
+  - CultureMech:003895
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - attached-evidence-recheck
+  - history-metadata
+  - writer-context-0
+  - writer-context-1
+  - writer-context-2
+  - writer-context-3
+findings:
+- finding_id: f1
+  issue_key: culturemech.003895.preparation-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The target omits nitrogen preparation and separate stock additions
+  description: 'Target and KOMODO owner lack the complete primary preparation retained
+    by the DSMZ owner, including nitrogen cooling/dispensing/sealing, delayed carbonate
+    addition and post-autoclave anaerobic stocks. Their Aerobic: Yes note is an exact
+    catalog flag with different scope; used as a preparation instruction it would
+    conflict with the primary. The available 10%/5%/10% strengths must remain unqualified
+    until their basis is verified.'
+  target_ids:
+  - CultureMech:003895
+  field_paths:
+  - preparation_steps
+  - solutions
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1175
+  - mediadive1175
+  - komodo-list
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3
+  normalization_reason: P3.5 is normalized to major because the omitted source-specific
+    atmosphere and addition order determine the preparation represented by this recipe.
+    This is more than an unspecified generic autoclave cycle; no organism oxygen phenotype
+    is inferred.
+- finding_id: f2
+  issue_key: culturemech.003895.source-water
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The source water quantity is absent
+  description: All three local layers omit the primary 1000 mL distilled-water row.
+    The DSMZ owner already has a preparation_steps container, but its text does not
+    include this water amount. Provider nominal volume supports its g_l fields and
+    must remain distinguished from listed water and measured final volume.
+  target_ids:
+  - CultureMech:003895
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - dsmz1175
+  - mediadive1175
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.003895.generated-evidence-loss
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Eight verified DSMZ-owner claims are absent from the generated target
+  description: The DSMZ owner retains eight literal source amount snippets with the
+    exact current response hash and scoped nominal-volume explanations, plus its reference.
+    Target and KOMODO owner have none. Supported values therefore have different evidence
+    status in different layers.
+  target_ids:
+  - CultureMech:003895
+  field_paths:
+  - ingredients
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - attached-evidence-recheck
+  - mediadive1175
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.003895.history-timezones
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Inherited history has four malformed or timezone-naive timestamps
+  description: Target and KOMODO owner each retain malformed 2026-01-27T01:15:01.fZ
+    and timezone-naive 2026-02-03 resolver timestamps. The current source and exact
+    historical snippet/hash correspondence are separately established; these dates
+    do not authenticate historical timing.
+  target_ids:
+  - CultureMech:003895
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - history-metadata
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.4
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the exact preparation sequence and source-scoped stock-strength
+    text in maintained records before regeneration. Attribute the catalog oxygen flag
+    separately from recipe conditions. Preserve supported main masses, do not infer
+    stock doses, percent bases, nitrogen purity or a missing sterilization cycle.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003895
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the exact water volume as batch-preparation context, without
+    replacing existing owner steps or asserting final make-up volume not stated by
+    the primary.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003895
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve all eight existing owner claim attachments and their limits
+    during authorized regeneration; add narrow source evidence to the other maintained
+    layer where warranted. Do not claim a quantity attachment validates ontology or
+    measured final volume.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003895
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Preserve prior events and append a dated authorized clarification only
+    when supported; do not silently invent a timezone or rewrite historical timestamps.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003895
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1175_ALKALIFLEXUS_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/alkaliflexus_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The exact KOMODO detail attempt returned HTTP 403; the identity catalog, complete
+  primary and exact MediaDive formulation remain available. The failure establishes
+  no historical absence and does not block this bounded formulation assessment.
+- The primary gives unqualified 10%, 5% and 10% stock strengths but no exact dosing
+  volumes, nitrogen fraction/purity or autoclave temperature/duration. These bounded
+  unknowns are fully assessed; no numerical conversion is performed.
+- Current bytes match eight historical attached excerpts and response hashes, but
+  historical access dates are not independently authenticated. Exact source preparation
+  does not establish species-wide growth or an oxygen phenotype.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-021
+- generated-medium
+```

@@ -1,0 +1,2890 @@
+# Source and formulation review: alkaline_cellulose_agar (CultureMech:007544)
+
+- Review: 20261021T124404Z-culturemech-007544-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T12:39:26Z
+- Finished UTC: 2026-10-21T12:44:04Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact JCM 110 and TOGO M102 formulation contains cellulose powder MN 300. Both local layers instead contain eight unrelated MacConkey constituents, alongside the original agar and peptone. Generic A/B links resolve to different stocks, volume units and stage-specific adjustments are lost. The available primary and provider evidence supports a completed review requiring owner curation.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 208; batch 021 item 8 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twenty task batches contain 200 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 203 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 033ef56966c19f8948d84a579b3f280e3e94e9e3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007544 | data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml | generated | alkaline_cellulose_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007544 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007544 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/208/strict.tsv |
+| validate-terms | passed | True | CultureMech:007544 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007544 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007544 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007544.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:007544.
+
+29 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "component_or_context": "MgSO4・7H2O source mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "0.4 g in Solution A; retain the original stage and nominal 900 mL or 100 mL basis separately.",
+    "rationale": "The numeric mass is transcribed, but the current direct g/L field loses its source stage and denominator. Any whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not a measured final volume. Do not sum the separate original peptone/agar with the unsupported MacConkey rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[1]",
+        "exact_source_quote": "\"component_name\": \"MgSO4・7H2O\",\n          \"volume\": 0.4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q2",
+    "component_or_context": "Yeast extract source mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "0.5 g in Solution A; retain the original stage and nominal 900 mL or 100 mL basis separately.",
+    "rationale": "The numeric mass is transcribed, but the current direct g/L field loses its source stage and denominator. Any whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not a measured final volume. Do not sum the separate original peptone/agar with the unsupported MacConkey rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[2]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q3",
+    "component_or_context": "K2HPO4 source mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "1 g in Solution A; retain the original stage and nominal 900 mL or 100 mL basis separately.",
+    "rationale": "The numeric mass is transcribed, but the current direct g/L field loses its source stage and denominator. Any whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not a measured final volume. Do not sum the separate original peptone/agar with the unsupported MacConkey rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[3]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q4",
+    "component_or_context": "CaCl2 source mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.4",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "0.4 g in Solution A; retain the original stage and nominal 900 mL or 100 mL basis separately.",
+    "rationale": "The numeric mass is transcribed, but the current direct g/L field loses its source stage and denominator. Any whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not a measured final volume. Do not sum the separate original peptone/agar with the unsupported MacConkey rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[4]",
+        "exact_source_quote": "\"component_name\": \"CaCl2\",\n          \"volume\": 0.4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q5",
+    "component_or_context": "NH4NO3 source mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "2 g in Solution A; retain the original stage and nominal 900 mL or 100 mL basis separately.",
+    "rationale": "The numeric mass is transcribed, but the current direct g/L field loses its source stage and denominator. Any whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not a measured final volume. Do not sum the separate original peptone/agar with the unsupported MacConkey rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[5]",
+        "exact_source_quote": "\"component_name\": \"NH4NO3\",\n          \"volume\": 2,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q6",
+    "component_or_context": "Agar source mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "15 g in Solution A; retain the original stage and nominal 900 mL or 100 mL basis separately.",
+    "rationale": "The numeric mass is transcribed, but the current direct g/L field loses its source stage and denominator. Any whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not a measured final volume. Do not sum the separate original peptone/agar with the unsupported MacConkey rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[7]",
+        "exact_source_quote": "\"component_name\": \"Agar\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q7",
+    "component_or_context": "Peptone source mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "1 g in Solution A; retain the original stage and nominal 900 mL or 100 mL basis separately.",
+    "rationale": "The numeric mass is transcribed, but the current direct g/L field loses its source stage and denominator. Any whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not a measured final volume. Do not sum the separate original peptone/agar with the unsupported MacConkey rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[8]",
+        "exact_source_quote": "\"component_name\": \"Peptone\",\n          \"volume\": 1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q8",
+    "component_or_context": "Na2CO3 source mass",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "6 g in Solution B; retain the original stage and nominal 900 mL or 100 mL basis separately.",
+    "rationale": "The numeric mass is transcribed, but the current direct g/L field loses its source stage and denominator. Any whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not a measured final volume. Do not sum the separate original peptone/agar with the unsupported MacConkey rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"Na2CO3\",\n          \"volume\": 6,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q9",
+    "component_or_context": "Solution A water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "900 mL water in this source stage.",
+    "rationale": "The current 1000 G_PER_L combines two water rows and changes volume to mass concentration. Preserve 900 mL and 100 mL separately; no density or measured final-volume assumption.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q10",
+    "component_or_context": "Solution B water",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "1000.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "100 mL water in this source stage.",
+    "rationale": "The current 1000 G_PER_L combines two water rows and changes volume to mass concentration. Preserve 900 mL and 100 mL separately; no density or measured final-volume assumption.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 100,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q11",
+    "component_or_context": "Solution A receiving volume",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "900",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "900",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "900 mL of the exact JCM 110 solution in the assembly.",
+    "rationale": "The stored G_PER_L unit is wrong for the source mL dose. Recover the exact stock identity and source volume rather than importing the unrelated 5342/5343 recipes.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Solution A\",\n          \"volume\": 900,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q12",
+    "component_or_context": "Solution B receiving volume",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct"
+      }
+    ],
+    "proposed_source_representation": "100 mL of the exact JCM 110 solution in the assembly.",
+    "rationale": "The stored G_PER_L unit is wrong for the source mL dose. Recover the exact stock identity and source volume rather than importing the unrelated 5342/5343 recipes.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Solution B\",\n          \"volume\": 100,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q13",
+    "component_or_context": "Cellulose powder MN 300 (Macherey-Nagel)",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "15 g cellulose powder MN 300 in Solution A with 900 mL listed water.",
+    "rationale": "The cellulose product is absent in both layers. Preserve the named grade and supplier; no alternate commercial agar is a source-supported substitute.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      },
+      {
+        "source_key": "mediadiveJ110api",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/J110",
+        "source_locator": "$.data.solutions[1].recipe[0]",
+        "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Cellulose\",\n                        \"compound_id\": 400,\n                        \"attribute\": \"Macherey-Nagel Co., powder, MN 300\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 16.6667,\n                        \"optional\": 0\n                    }",
+        "snapshot_sha256": "de808ef3d0f0993d65e04a2d00322ffc17ac3d6977f9583f67e226e67c015e30"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q14",
+    "component_or_context": "Unsupported commercial row: Peptone",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "17.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "17.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": "Remove this unsupported MacConkey-derived constituent from the JCM 110 owner after source reconciliation.",
+    "rationale": "The complete primary/provider composition calls for cellulose MN 300 instead. This snippet is the positive source identity, not a claim that the source contains the stored commercial amount. All eight current amounts are assessed individually; retain the separate original agar 15 g and peptone 1 g rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q15",
+    "component_or_context": "Unsupported commercial row: Proteose peptone",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "3.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "3.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": "Remove this unsupported MacConkey-derived constituent from the JCM 110 owner after source reconciliation.",
+    "rationale": "The complete primary/provider composition calls for cellulose MN 300 instead. This snippet is the positive source identity, not a claim that the source contains the stored commercial amount. All eight current amounts are assessed individually; retain the separate original agar 15 g and peptone 1 g rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q16",
+    "component_or_context": "Unsupported commercial row: Lactose monohydrate",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "10.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": "Remove this unsupported MacConkey-derived constituent from the JCM 110 owner after source reconciliation.",
+    "rationale": "The complete primary/provider composition calls for cellulose MN 300 instead. This snippet is the positive source identity, not a claim that the source contains the stored commercial amount. All eight current amounts are assessed individually; retain the separate original agar 15 g and peptone 1 g rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q17",
+    "component_or_context": "Unsupported commercial row: Bile salts",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": "Remove this unsupported MacConkey-derived constituent from the JCM 110 owner after source reconciliation.",
+    "rationale": "The complete primary/provider composition calls for cellulose MN 300 instead. This snippet is the positive source identity, not a claim that the source contains the stored commercial amount. All eight current amounts are assessed individually; retain the separate original agar 15 g and peptone 1 g rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q18",
+    "component_or_context": "Unsupported commercial row: Sodium chloride",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "5.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": "Remove this unsupported MacConkey-derived constituent from the JCM 110 owner after source reconciliation.",
+    "rationale": "The complete primary/provider composition calls for cellulose MN 300 instead. This snippet is the positive source identity, not a claim that the source contains the stored commercial amount. All eight current amounts are assessed individually; retain the separate original agar 15 g and peptone 1 g rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q19",
+    "component_or_context": "Unsupported commercial row: Neutral red",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": "Remove this unsupported MacConkey-derived constituent from the JCM 110 owner after source reconciliation.",
+    "rationale": "The complete primary/provider composition calls for cellulose MN 300 instead. This snippet is the positive source identity, not a claim that the source contains the stored commercial amount. All eight current amounts are assessed individually; retain the separate original agar 15 g and peptone 1 g rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q20",
+    "component_or_context": "Unsupported commercial row: Crystal violet",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": "Remove this unsupported MacConkey-derived constituent from the JCM 110 owner after source reconciliation.",
+    "rationale": "The complete primary/provider composition calls for cellulose MN 300 instead. This snippet is the positive source identity, not a claim that the source contains the stored commercial amount. All eight current amounts are assessed individually; retain the separate original agar 15 g and peptone 1 g rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q21",
+    "component_or_context": "Unsupported commercial row: Agar",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "13.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "13.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported"
+      }
+    ],
+    "proposed_source_representation": "Remove this unsupported MacConkey-derived constituent from the JCM 110 owner after source reconciliation.",
+    "rationale": "The complete primary/provider composition calls for cellulose MN 300 instead. This snippet is the positive source identity, not a claim that the source contains the stored commercial amount. All eight current amounts are assessed individually; retain the separate original agar 15 g and peptone 1 g rows.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[6]",
+        "exact_source_quote": "\"component_name\": \"Cellulose powder MN 300 (Macherey--Nagel Co.)\",\n          \"volume\": 15,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q22",
+    "component_or_context": "Hydrochloric acid adjustment dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "proposed_source_representation": "Adjustment amount remains unquantified; preserve its named stage and reagent strength.",
+    "rationale": "VARIABLE is compatible with no fixed dose. It must not be replaced by the stock strength or interpreted as a fixed main-medium concentration.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[1].items[9]",
+        "exact_source_quote": "\"component_name\": \"HCl\",\n          \"conc_value\": 1,\n          \"conc_unit\": \"N\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      },
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.comments: Solution A adjustment",
+        "exact_source_quote": "Adjust pH to 7.0 with 1 N HCl.",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q23",
+    "component_or_context": "Bicarbonate adjustment dose",
+    "decision": "not_quantified",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "solutions[2].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified"
+      }
+    ],
+    "proposed_source_representation": "Adjustment amount remains unquantified; preserve its named stage and reagent strength.",
+    "rationale": "VARIABLE is compatible with no fixed dose. It must not be replaced by the stock strength or interpreted as a fixed main-medium concentration.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.components[2].items[2]",
+        "exact_source_quote": "\"component_name\": \"NaHCO3 solution\",\n          \"conc_value\": 6,\n          \"conc_unit\": \"%\"",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      },
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.comments: Solution B adjustment",
+        "exact_source_quote": "Adjust pH to 9.4 with 6% NaHCO3 solution.",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q24",
+    "component_or_context": "HCl stock strength",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "1 N HCl used for Solution A adjustment; normality is not a receiving dose.",
+    "rationale": "The current layers omit the preparation text. Add exact stage and evidence, without converting the unqualified percentage or transferring a stock pH to the assembled medium.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.comments: exact stage-specific adjustment",
+        "exact_source_quote": "Adjust pH to 7.0 with 1 N HCl.",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q25",
+    "component_or_context": "Bicarbonate stock strength",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "6% NaHCO3 adjustment solution; percent basis is unspecified, so no PERCENT_W_V or mass conversion is established.",
+    "rationale": "The current layers omit the preparation text. Add exact stage and evidence, without converting the unqualified percentage or transferring a stock pH to the assembled medium.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.comments: exact stage-specific adjustment",
+        "exact_source_quote": "Adjust pH to 9.4 with 6% NaHCO3 solution.",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q26",
+    "component_or_context": "Solution A pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "Solution A pH 7.0 before assembly.",
+    "rationale": "The current layers omit the preparation text. Add exact stage and evidence, without converting the unqualified percentage or transferring a stock pH to the assembled medium.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.comments: exact stage-specific adjustment",
+        "exact_source_quote": "Adjust pH to 7.0 with 1 N HCl.",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q27",
+    "component_or_context": "Solution B pH",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "Solution B pH 9.4 before assembly; not an independently supported final-mixture pH.",
+    "rationale": "The current layers omit the preparation text. Add exact stage and evidence, without converting the unqualified percentage or transferring a stock pH to the assembled medium.",
+    "source_snippets": [
+      {
+        "source_key": "togoM102",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102",
+        "source_locator": "$.comments: exact stage-specific adjustment",
+        "exact_source_quote": "Adjust pH to 9.4 with 6% NaHCO3 solution.",
+        "snapshot_sha256": "d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q28",
+    "component_or_context": "Autoclave temperature",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "121°C as the explicit JCM default, with post-sterilization assembly.",
+    "rationale": "No competing cycle is specified in this medium. Preserve the source default and the separate A/B assembly; do not import 5343 preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm110",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=110",
+        "source_locator": "Page header default applying to medium 110",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "a76883af9cc0ee5610d398339263c0ef8cda5736d5f9ad94ffc0fcdec63859a4",
+        "parsed_text_sha256": "ae23fa99239a815a8faa6d0c0e1c8db68caae379e2197ba91d0153bc1a5c34f1"
+      }
+    ]
+  },
+  {
+    "quantity_id": "q29",
+    "component_or_context": "Autoclave duration",
+    "decision": "add",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add"
+      }
+    ],
+    "proposed_source_representation": "15 minutes as the explicit JCM default, with post-sterilization assembly.",
+    "rationale": "No competing cycle is specified in this medium. Preserve the source default and the separate A/B assembly; do not import 5343 preparation.",
+    "source_snippets": [
+      {
+        "source_key": "jcm110",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=110",
+        "source_locator": "Page header default applying to medium 110",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "a76883af9cc0ee5610d398339263c0ef8cda5736d5f9ad94ffc0fcdec63859a4",
+        "parsed_text_sha256": "ae23fa99239a815a8faa6d0c0e1c8db68caae379e2197ba91d0153bc1a5c34f1"
+      }
+    ]
+  }
+]
+
+### Asserted ontology and pinned secondary identifier metadata
+
+grounding: concern. Targets: CultureMech:007544.
+
+15 distinct asserted primary/secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 16/18 primary and 7/18 secondary instances; all asserted secondary keys have exact pinned MIM rows. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 18: primary 88.89%; secondary 38.89%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Exact accession, stable identity and maintained ownership
+
+identity: supported. Targets: CultureMech:007544.
+
+CM007544 has one exact normalized TOGO M102 owner; the target merge event and stable ID agree. M102 explicitly identifies JCM110. A/B endpoint labels alone do not establish stock identity, and the commercial notes describe an unrelated product.
+
+### Claim-level evidence and provider/primary scope
+
+evidence: concern. Targets: CultureMech:007544.
+
+Import URLs and history are provenance, not attached ingredient evidence. Every listed local concentration is covered in the inventory with literal source text, exact locators, original units and scope. Source availability and scientific correctness are assessed separately.
+
+### Preparation stages and missing source conditions
+
+completeness: concern. Targets: CultureMech:007544.
+
+Neither layer has preparation steps. Recover A pH 7.0 using 1 N HCl, B pH 9.4 using 6% bicarbonate of unspecified percent basis, the JCM default cycle and post-sterilization 900/100 mL assembly. Adjustment doses remain unquantified. A final-mixture pH is not independently specified by these stage instructions.
+
+### Composition and physical-state classification
+
+scope: supported. Targets: CultureMech:007544.
+
+The actual source contains yeast extract and peptone plus agar; COMPLEX/UNDEFINED and SOLID_AGAR are consistent with the source. MacConkey selectivity, lactose-fermentation and indicator claims attached to the erroneous expansion are outside this formulation and must not survive as growth or use evidence.
+
+### Supplied forms and limits of chemical specificity
+
+grounding: concern. Targets: CultureMech:007544.
+
+The source explicitly gives magnesium sulfate heptahydrate, consistent with CHEBI31795, and writes CaCl2 and K2HPO4 without added hydration. The HCl molecular identifier does not encode the aqueous 1 N adjustment solution. Ontology-valid MacConkey constituent IDs cannot validate their membership in this recipe; lactose monohydrate wording inside the unsupported branch is not a basis for a replacement chemical ID.
+
+### Growth, taxonomy and graph claim scope
+
+scope: not_applicable. Targets: CultureMech:007544.
+
+No experimental growth assertion or target-organism evidence is present. The medium title, generic application and provider context do not establish a strain phenotype, current taxonomy identifier or graph membership. No unrelated organism evidence is transferred.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:007544.
+
+29 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Current writers and authoritative correction path
+
+provenance: concern. Targets: CultureMech:007544.
+
+Current TOGO code separates primary and local solution sections, retains comments, maps ml to ML_PER_L and can normalize local batches from liquid/water anchors; those anchors are not measured final volumes. Its bare percent mapping does not independently establish a w/v source basis. Current cleanup no longer sums disagreeing duplicates. The solution migrator resolves generic solution names from a global name index; name equality alone is insufficient source identity. Defaults supply variable values and Unknown solution names without scientific evidence. These current functions do not prove which historical execution produced the stored values. Correct the maintained owner with exact evidence, preserve old events and append clarification, then regenerate through the normal path.
+
+## Findings
+
+### f1: Cellulose MN 300 is missing and an unrelated commercial formula is present
+
+blocker / open / confirmed; issue key: commercial-substitution.
+
+Both owner and target replace the source cellulose product with eight MacConkey-derived rows at ingredients[6] through ingredients[13]. The original agar 15 g and peptone 1 g remain at indices 14 and 15, so duplicate-looking rows cannot be safely summed or collapsed. The commercial supplier/catalog notes and selective/differential claims do not belong to JCM110.
+
+### f2: Generic A/B links point to different stocks and lose source volume units
+
+blocker / open / confirmed; issue key: stock-identity-and-basis.
+
+The asserted mediadive.solution:5342 and :5343 are different 500 mL stocks. JCM110 corresponds to provider A3746/B3747. Both current layers store the 900/100 mL assembly doses as G_PER_L, collapse the staged water to 1000 G_PER_L and flatten the constituent masses without their stage basis.
+
+### f3: Stock strengths, separate pH stages and sterilization context are absent
+
+major / open / confirmed; issue key: missing-stage-preparation.
+
+VARIABLE adjustment entries omit the supported 1 N acid and 6% bicarbonate strengths and their different pH endpoints. Neither layer retains the source cycle or sterile assembly instruction. A global final pH9.4 would overstate the source.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the exact cellulose MN 300 source ingredient in the normalized owner; remove the eight unsupported commercial constituents and their supplier/catalog/function annotations from this recipe, retaining the original peptone and agar. Append a source-scoped correction event and regenerate the target.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Rebuild source-scoped A/B descriptors and composition in the owner using exact identity evidence, source water volumes and assembly doses. Remove the nonmatching endpoint links and Unknown solution placeholders; preserve unquantified adjustment stocks without inferring density or measured final volume.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add exact source-scoped preparation evidence and stages; retain the unspecified percentage basis and unquantified doses. Preserve original history and append clarification; do not import the unrelated 5343 procedure.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch021/208/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch021/208/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml:1:id: CultureMech:007544<br>./data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml:1:id: CultureMech:007544<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch021/source-preflight-bound/208/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 25 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=110; Exact medium 110: Solution A, Solution B, adjustment and assembly text | supports | The primary specifies cellulose powder MN 300 (Macherey-Nagel), two separately prepared solutions and distinct adjustment stages; it does not specify MacConkey agar. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102; meta; components[0..2]; comments[0..2] | supports | TOGO M102 explicitly identifies JCM_M110 and retains the cellulose product, original ingredient masses, water volumes, same-medium A/B references and adjustment strengths. |
+| mediadive | https://mediadive.dsmz.de/rest/medium/J110; data.medium; solutions 3745, 3746 and 3747 | supports | MediaDive preserves A (3746, declared 900 mL) and B (3747, declared 100 mL). Its global pH 9.4 does not supersede the primary stage-specific B adjustment. |
+| wrong-a | https://mediadive.dsmz.de/rest/solution/5342; Exact endpoint identity, complete recipe and 500 mL make-up instruction | supports | The asserted endpoint is a different 500 mL stock with a nonmatching formulation. It is used only to disprove source correspondence; no component or preparation is transferred. Reused capture annotations naming JCM142 are historical scope labels, not evidence for this record. |
+| wrong-b | https://mediadive.dsmz.de/rest/solution/5343; Exact endpoint identity, complete recipe and 500 mL make-up instruction | supports | The asserted endpoint is a different 500 mL stock with a nonmatching formulation. It is used only to disprove source correspondence; no component or preparation is transferred. Reused capture annotations naming JCM142 are historical scope labels, not evidence for this record. |
+| commercial-reference | https://microbenotes.com/macconkey-agar/; Page title and Composition of MacConkey Agar table only | context_only | The record-cited third-party page describes MacConkey agar and its eight constituent amounts. This explains the apparent external composition match, but does not authenticate a manufacturer catalog, establish interchangeability with cellulose MN 300, or support transferring its selective/differential claims. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch021/208/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15377 resolves to water. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17716 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17716; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17716 resolves to lactose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17883 resolves to hydrogen chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi22868 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_22868; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:22868 resolves to bile salt. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:29377 resolves to sodium carbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi3312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:3312 resolves to calcium dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi41688 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_41688; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:41688 resolves to crystal violet. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63038 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63038; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63038 resolves to ammonium nitrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86370 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86370; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86370 resolves to neutral red. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| micro0000178 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000178; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | MICRO:0000178 resolves to peptone. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| micro0000180 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | MICRO:0000180 resolves to proteose peptone. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17883": [{"label": "HCl", "match_type": "preferred_term", "identifier": "CHEBI:17883", "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63038": [{"label": "(NH4)NO3", "match_type": "preferred_term", "identifier": "CHEBI:63038", "preferred_term": "(NH4)NO3", "ontology_id": "CHEBI:63038", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml; data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 15, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml", "events": 14, "timestamp_issues": []}] |
+| writer-0 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO code separates primary and local solution sections, retains comments, maps ml to ML_PER_L and can normalize local batches from liquid/water anchors; those anchors are not measured final volumes. Its bare percent mapping does not independently establish a w/v source basis. Current cleanup no longer sums disagreeing duplicates. The solution migrator resolves generic solution names from a global name index; name equality alone is insufficient source identity. Defaults supply variable values and Unknown solution names without scientific evidence. These current functions do not prove which historical execution produced the stored values. Correct the maintained owner with exact evidence, preserve old events and append clarification, then regenerate through the normal path. |
+| writer-1 | scripts/migrate_solutions_from_ingredients.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO code separates primary and local solution sections, retains comments, maps ml to ML_PER_L and can normalize local batches from liquid/water anchors; those anchors are not measured final volumes. Its bare percent mapping does not independently establish a w/v source basis. Current cleanup no longer sums disagreeing duplicates. The solution migrator resolves generic solution names from a global name index; name equality alone is insufficient source identity. Defaults supply variable values and Unknown solution names without scientific evidence. These current functions do not prove which historical execution produced the stored values. Correct the maintained owner with exact evidence, preserve old events and append clarification, then regenerate through the normal path. |
+| writer-2 | scripts/cleanup_media_quality.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO code separates primary and local solution sections, retains comments, maps ml to ML_PER_L and can normalize local batches from liquid/water anchors; those anchors are not measured final volumes. Its bare percent mapping does not independently establish a w/v source basis. Current cleanup no longer sums disagreeing duplicates. The solution migrator resolves generic solution names from a global name index; name equality alone is insufficient source identity. Defaults supply variable values and Unknown solution names without scientific evidence. These current functions do not prove which historical execution produced the stored values. Correct the maintained owner with exact evidence, preserve old events and append clarification, then regenerate through the normal path. |
+| writer-3 | src/culturemech/validation/schema_defaulter.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO code separates primary and local solution sections, retains comments, maps ml to ML_PER_L and can normalize local batches from liquid/water anchors; those anchors are not measured final volumes. Its bare percent mapping does not independently establish a w/v source basis. Current cleanup no longer sums disagreeing duplicates. The solution migrator resolves generic solution names from a global name index; name equality alone is insufficient source identity. Defaults supply variable values and Unknown solution names without scientific evidence. These current functions do not prove which historical execution produced the stored values. Correct the maintained owner with exact evidence, preserve old events and append clarification, then regenerate through the normal path. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The fresh inspection inputs and exact per-record bound catalog are authoritative. Captures retain original retrieval timestamps and hashes; preflight observations do not replace the current source comparisons. No recipe or saved review has been edited.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T124404Z-culturemech-007544-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: alkaline_cellulose_agar (CultureMech:007544)'
+started_at: '2026-10-21T12:39:26Z'
+finished_at: '2026-10-21T12:44:04Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact JCM 110 and TOGO M102 formulation contains cellulose powder MN
+  300. Both local layers instead contain eight unrelated MacConkey constituents, alongside
+  the original agar and peptone. Generic A/B links resolve to different stocks, volume
+  units and stage-specific adjustments are lost. The available primary and provider
+  evidence supports a completed review requiring owner curation.
+source:
+  git_revision: 033ef56966c19f8948d84a579b3f280e3e94e9e3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+    sha256: b3e61ba19df7baa753778dba8b1e548fff61ecc89f4e444ff2a930e00508076e
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+    sha256: f3c671d9334be397ff79fe641eba4f317b2a8975561eca2f45fb29926d3ab812
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5342_Solution_A.yaml
+    sha256: fbc65564968b86b312f7795ff5c4527f199c51d04dc2764452d46bb5ba339566
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5343_Solution_B.yaml
+    sha256: 84a4c07adfb1f11f32159a52f5e575738eb641428074b0958a68b8d5ba265ba5
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 208; batch 021 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twenty task batches contain
+    200 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 033ef56966c19f8948d84a579b3f280e3e94e9e3
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 203 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007544
+targets:
+- target_id: CultureMech:007544
+  path: data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+  label: alkaline_cellulose_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch021/208/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/208/strict.tsv"
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007544
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:41.466126Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch021/208/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:43.492107Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-021/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch021/208/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:46.119934Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T12:40:47.606497Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml:1:id: CultureMech:007544
+
+    ./data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml:1:id:
+    CultureMech:007544
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/source-preflight-bound/208/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: supports
+  summary: 25 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: dee8a72de82571c08d8eae5e7cd1e5b7b91265aae26a66005d3f71be74563883
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=110
+  locator: 'Exact medium 110: Solution A, Solution B, adjustment and assembly text'
+  accessed_at: '2026-10-21T12:23:44.266474Z'
+  support: supports
+  summary: The primary specifies cellulose powder MN 300 (Macherey-Nagel), two separately
+    prepared solutions and distinct adjustment stages; it does not specify MacConkey
+    agar.
+  snapshot_sha256: a76883af9cc0ee5610d398339263c0ef8cda5736d5f9ad94ffc0fcdec63859a4
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102
+  locator: meta; components[0..2]; comments[0..2]
+  accessed_at: '2026-10-21T12:23:42.681265Z'
+  support: supports
+  summary: TOGO M102 explicitly identifies JCM_M110 and retains the cellulose product,
+    original ingredient masses, water volumes, same-medium A/B references and adjustment
+    strengths.
+  snapshot_sha256: d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8
+- evidence_id: mediadive
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J110
+  locator: data.medium; solutions 3745, 3746 and 3747
+  accessed_at: '2026-10-21T12:23:42.042934Z'
+  support: supports
+  summary: MediaDive preserves A (3746, declared 900 mL) and B (3747, declared 100
+    mL). Its global pH 9.4 does not supersede the primary stage-specific B adjustment.
+  snapshot_sha256: de808ef3d0f0993d65e04a2d00322ffc17ac3d6977f9583f67e226e67c015e30
+- evidence_id: wrong-a
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5342
+  locator: Exact endpoint identity, complete recipe and 500 mL make-up instruction
+  accessed_at: '2026-10-21T07:31:13.269119Z'
+  support: supports
+  summary: The asserted endpoint is a different 500 mL stock with a nonmatching formulation.
+    It is used only to disprove source correspondence; no component or preparation
+    is transferred. Reused capture annotations naming JCM142 are historical scope
+    labels, not evidence for this record.
+  snapshot_sha256: 4bf262e02d0a83f9d1a24a52d2a14383aa8c6f27384e446d7da6274a05319240
+- evidence_id: wrong-b
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5343
+  locator: Exact endpoint identity, complete recipe and 500 mL make-up instruction
+  accessed_at: '2026-10-21T07:31:13.547266Z'
+  support: supports
+  summary: The asserted endpoint is a different 500 mL stock with a nonmatching formulation.
+    It is used only to disprove source correspondence; no component or preparation
+    is transferred. Reused capture annotations naming JCM142 are historical scope
+    labels, not evidence for this record.
+  snapshot_sha256: 28c315b1d9cf9a5c19f4d79c639298f5818c06ea87462c84336f66297d20f4c0
+- evidence_id: commercial-reference
+  kind: database
+  reference: https://microbenotes.com/macconkey-agar/
+  locator: Page title and Composition of MacConkey Agar table only
+  accessed_at: '2026-10-19T23:33:02Z'
+  support: context_only
+  summary: The record-cited third-party page describes MacConkey agar and its eight
+    constituent amounts. This explains the apparent external composition match, but
+    does not authenticate a manufacturer catalog, establish interchangeability with
+    cellulose MN 300, or support transferring its selective/differential claims.
+  quote: Composition of MacConkey Agar
+  snapshot_sha256: ef9e3f3645106e9a046058531731d03bc7232b274d300b6a4b0bd760d6f99f59
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch021/208/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 02ad4b35f9f4a83de602eb511c86cdd74a0e5206e33aec003182c1bd91a2cbf6
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi17716
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17716
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:31.332563Z'
+  support: supports
+  summary: CHEBI:17716 resolves to lactose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 3e293d9d42aecc2c8ab1da5d034e405dae1995e1e445a43445bebe79b0583505
+- evidence_id: chebi17883
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:37:25.439020Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi22868
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_22868
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T12:23:43.378025Z'
+  support: supports
+  summary: CHEBI:22868 resolves to bile salt. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: c29ef412b5a180b33c582ea3cb8d064bebed8667abfb2ac9a18eb82819ac8858
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: CHEBI:3312 resolves to calcium dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi41688
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_41688
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T12:23:43.392609Z'
+  support: supports
+  summary: CHEBI:41688 resolves to crystal violet. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: a965d9373ad58e01c3c3188134a3917c61372104893599f87bdb9d26308b96f8
+- evidence_id: chebi63038
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63038
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T12:23:44.217684Z'
+  support: supports
+  summary: CHEBI:63038 resolves to ammonium nitrate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3e84a6e44c936aaa0dd03b53fbb9592dccb6de0f8331244a80e4f2292296b2c4
+- evidence_id: chebi86370
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86370
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T12:23:44.248984Z'
+  support: supports
+  summary: CHEBI:86370 resolves to neutral red. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 196e9e4b112e5f5005c4efc479ae5ad96f108d8b0cbad26abe99fdd6eafb6f39
+- evidence_id: micro0000178
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000178
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:00:49.423450Z'
+  support: supports
+  summary: MICRO:0000178 resolves to peptone. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: ef45aa186438f91d015280171fde8ccb25740a50cc6f2c6e848de6aad3339b31
+- evidence_id: micro0000180
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:24.290496Z'
+  support: supports
+  summary: MICRO:0000180 resolves to proteose peptone. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: b3a39a531c5ab5508a297228d13ba81c99899b041d5292a9d668eded939bfe73
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131527":
+    [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527",
+    "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water", "match_type":
+    "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water",
+    "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:17883": [{"label": "HCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:17883", "preferred_term": "HCl", "ontology_id": "CHEBI:17883", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:2509": [{"label": "Agar", "match_type":
+    "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id":
+    "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377":
+    [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312":
+    [{"label": "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312",
+    "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:63038": [{"label": "(NH4)NO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:63038", "preferred_term": "(NH4)NO3", "ontology_id": "CHEBI:63038",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml; data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 15, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml", "events":
+    14, "timestamp_issues": []}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: context_only
+  summary: Current TOGO code separates primary and local solution sections, retains
+    comments, maps ml to ML_PER_L and can normalize local batches from liquid/water
+    anchors; those anchors are not measured final volumes. Its bare percent mapping
+    does not independently establish a w/v source basis. Current cleanup no longer
+    sums disagreeing duplicates. The solution migrator resolves generic solution names
+    from a global name index; name equality alone is insufficient source identity.
+    Defaults supply variable values and Unknown solution names without scientific
+    evidence. These current functions do not prove which historical execution produced
+    the stored values. Correct the maintained owner with exact evidence, preserve
+    old events and append clarification, then regenerate through the normal path.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: context_only
+  summary: Current TOGO code separates primary and local solution sections, retains
+    comments, maps ml to ML_PER_L and can normalize local batches from liquid/water
+    anchors; those anchors are not measured final volumes. Its bare percent mapping
+    does not independently establish a w/v source basis. Current cleanup no longer
+    sums disagreeing duplicates. The solution migrator resolves generic solution names
+    from a global name index; name equality alone is insufficient source identity.
+    Defaults supply variable values and Unknown solution names without scientific
+    evidence. These current functions do not prove which historical execution produced
+    the stored values. Correct the maintained owner with exact evidence, preserve
+    old events and append clarification, then regenerate through the normal path.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: context_only
+  summary: Current TOGO code separates primary and local solution sections, retains
+    comments, maps ml to ML_PER_L and can normalize local batches from liquid/water
+    anchors; those anchors are not measured final volumes. Its bare percent mapping
+    does not independently establish a w/v source basis. Current cleanup no longer
+    sums disagreeing duplicates. The solution migrator resolves generic solution names
+    from a global name index; name equality alone is insufficient source identity.
+    Defaults supply variable values and Unknown solution names without scientific
+    evidence. These current functions do not prove which historical execution produced
+    the stored values. Correct the maintained owner with exact evidence, preserve
+    old events and append clarification, then regenerate through the normal path.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T12:44:03Z'
+  support: context_only
+  summary: Current TOGO code separates primary and local solution sections, retains
+    comments, maps ml to ML_PER_L and can normalize local batches from liquid/water
+    anchors; those anchors are not measured final volumes. Its bare percent mapping
+    does not independently establish a w/v source basis. Current cleanup no longer
+    sums disagreeing duplicates. The solution migrator resolves generic solution names
+    from a global name index; name equality alone is insufficient source identity.
+    Defaults supply variable values and Unknown solution names without scientific
+    evidence. These current functions do not prove which historical execution produced
+    the stored values. Correct the maintained owner with exact evidence, preserve
+    old events and append clarification, then regenerate through the normal path.
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 29 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"component_or_context\": \"\
+    MgSO4・7H2O source mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"0.4 g in Solution A; retain the original stage and nominal 900 mL or 100 mL\
+    \ basis separately.\",\n    \"rationale\": \"The numeric mass is transcribed,\
+    \ but the current direct g/L field loses its source stage and denominator. Any\
+    \ whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not\
+    \ a measured final volume. Do not sum the separate original peptone/agar with\
+    \ the unsupported MacConkey rows.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgSO4・7H2O\\\",\\n          \\\"volume\\\": 0.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"component_or_context\"\
+    : \"Yeast extract source mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"0.5 g in Solution A; retain the original stage and nominal 900 mL or 100 mL\
+    \ basis separately.\",\n    \"rationale\": \"The numeric mass is transcribed,\
+    \ but the current direct g/L field loses its source stage and denominator. Any\
+    \ whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not\
+    \ a measured final volume. Do not sum the separate original peptone/agar with\
+    \ the unsupported MacConkey rows.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"\
+    d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"component_or_context\"\
+    : \"K2HPO4 source mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1 g in Solution A; retain the original stage and nominal 900 mL or 100 mL\
+    \ basis separately.\",\n    \"rationale\": \"The numeric mass is transcribed,\
+    \ but the current direct g/L field loses its source stage and denominator. Any\
+    \ whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not\
+    \ a measured final volume. Do not sum the separate original peptone/agar with\
+    \ the unsupported MacConkey rows.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 1,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"component_or_context\"\
+    : \"CaCl2 source mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"0.4 g in Solution A; retain the original stage and nominal 900 mL or 100 mL\
+    \ basis separately.\",\n    \"rationale\": \"The numeric mass is transcribed,\
+    \ but the current direct g/L field loses its source stage and denominator. Any\
+    \ whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not\
+    \ a measured final volume. Do not sum the separate original peptone/agar with\
+    \ the unsupported MacConkey rows.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2\\\",\\n          \\\"volume\\\": 0.4,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"component_or_context\"\
+    : \"NH4NO3 source mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"2 g in Solution A; retain the original stage and nominal 900 mL or 100 mL\
+    \ basis separately.\",\n    \"rationale\": \"The numeric mass is transcribed,\
+    \ but the current direct g/L field loses its source stage and denominator. Any\
+    \ whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not\
+    \ a measured final volume. Do not sum the separate original peptone/agar with\
+    \ the unsupported MacConkey rows.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NH4NO3\\\",\\n          \\\"volume\\\": 2,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"component_or_context\"\
+    : \"Agar source mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"15 g in Solution A; retain the original stage and nominal 900 mL or 100 mL\
+    \ basis separately.\",\n    \"rationale\": \"The numeric mass is transcribed,\
+    \ but the current direct g/L field loses its source stage and denominator. Any\
+    \ whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not\
+    \ a measured final volume. Do not sum the separate original peptone/agar with\
+    \ the unsupported MacConkey rows.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Agar\\\",\\n          \\\"volume\\\": 15,\\n \
+    \         \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"component_or_context\"\
+    : \"Peptone source mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1 g in Solution A; retain the original stage and nominal 900 mL or 100 mL\
+    \ basis separately.\",\n    \"rationale\": \"The numeric mass is transcribed,\
+    \ but the current direct g/L field loses its source stage and denominator. Any\
+    \ whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not\
+    \ a measured final volume. Do not sum the separate original peptone/agar with\
+    \ the unsupported MacConkey rows.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Peptone\\\",\\n          \\\"volume\\\": 1,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"component_or_context\"\
+    : \"Na2CO3 source mass\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"6 g in Solution B; retain the original stage and nominal 900 mL or 100 mL\
+    \ basis separately.\",\n    \"rationale\": \"The numeric mass is transcribed,\
+    \ but the current direct g/L field loses its source stage and denominator. Any\
+    \ whole-mixture g/L equality is conditional on a nominal 1000 mL mixture, not\
+    \ a measured final volume. Do not sum the separate original peptone/agar with\
+    \ the unsupported MacConkey rows.\",\n    \"source_snippets\": [\n      {\n  \
+    \      \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3\\\",\\n          \\\"volume\\\": 6,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"component_or_context\"\
+    : \"Solution A water\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"900 mL water in this source stage.\",\n    \"rationale\": \"The current 1000\
+    \ G_PER_L combines two water rows and changes volume to mass concentration. Preserve\
+    \ 900 mL and 100 mL separately; no density or measured final-volume assumption.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM102\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 900,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"component_or_context\"\
+    : \"Solution B water\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000.0\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   },\n        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"100 mL water in this source stage.\",\n    \"rationale\": \"The current 1000\
+    \ G_PER_L combines two water rows and changes volume to mass concentration. Preserve\
+    \ 900 mL and 100 mL separately; no density or measured final-volume assumption.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM102\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 100,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\n      }\n\
+    \    ]\n  },\n  {\n    \"quantity_id\": \"q11\",\n    \"component_or_context\"\
+    : \"Solution A receiving volume\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"900\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"900\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"900 mL of the exact JCM 110 solution in the assembly.\",\n    \"rationale\"\
+    : \"The stored G_PER_L unit is wrong for the source mL dose. Recover the exact\
+    \ stock identity and source volume rather than importing the unrelated 5342/5343\
+    \ recipes.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Solution A\\\",\\n          \\\"volume\\\": 900,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"component_or_context\"\
+    : \"Solution B receiving volume\",\n    \"decision\": \"correct\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"100 mL of the exact JCM 110 solution in the assembly.\",\n    \"rationale\"\
+    : \"The stored G_PER_L unit is wrong for the source mL dose. Recover the exact\
+    \ stock identity and source volume rather than importing the unrelated 5342/5343\
+    \ recipes.\",\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Solution B\\\",\\n          \\\"volume\\\": 100,\\\
+    n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"component_or_context\"\
+    : \"Cellulose powder MN 300 (Macherey-Nagel)\",\n    \"decision\": \"add\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : null,\n        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"15 g cellulose powder MN 300 in Solution A with 900 mL listed water.\",\n\
+    \    \"rationale\": \"The cellulose product is absent in both layers. Preserve\
+    \ the named grade and supplier; no alternate commercial agar is a source-supported\
+    \ substitute.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      },\n      {\n        \"source_key\": \"mediadiveJ110api\",\n        \"\
+    source_url\": \"https://mediadive.dsmz.de/rest/medium/J110\",\n        \"source_locator\"\
+    : \"$.data.solutions[1].recipe[0]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 1,\\n                        \\\"\
+    compound\\\": \\\"Cellulose\\\",\\n                        \\\"compound_id\\\"\
+    : 400,\\n                        \\\"attribute\\\": \\\"Macherey-Nagel Co., powder,\
+    \ MN 300\\\",\\n                        \\\"amount\\\": 15,\\n               \
+    \         \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 16.6667,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"de808ef3d0f0993d65e04a2d00322ffc17ac3d6977f9583f67e226e67c015e30\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"component_or_context\"\
+    : \"Unsupported commercial row: Peptone\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"17.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"17.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Remove this unsupported MacConkey-derived constituent from the JCM 110 owner\
+    \ after source reconciliation.\",\n    \"rationale\": \"The complete primary/provider\
+    \ composition calls for cellulose MN 300 instead. This snippet is the positive\
+    \ source identity, not a claim that the source contains the stored commercial\
+    \ amount. All eight current amounts are assessed individually; retain the separate\
+    \ original agar 15 g and peptone 1 g rows.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"component_or_context\"\
+    : \"Unsupported commercial row: Proteose peptone\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Remove this unsupported MacConkey-derived constituent from the JCM 110 owner\
+    \ after source reconciliation.\",\n    \"rationale\": \"The complete primary/provider\
+    \ composition calls for cellulose MN 300 instead. This snippet is the positive\
+    \ source identity, not a claim that the source contains the stored commercial\
+    \ amount. All eight current amounts are assessed individually; retain the separate\
+    \ original agar 15 g and peptone 1 g rows.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"component_or_context\"\
+    : \"Unsupported commercial row: Lactose monohydrate\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Remove this unsupported MacConkey-derived constituent from the JCM 110 owner\
+    \ after source reconciliation.\",\n    \"rationale\": \"The complete primary/provider\
+    \ composition calls for cellulose MN 300 instead. This snippet is the positive\
+    \ source identity, not a claim that the source contains the stored commercial\
+    \ amount. All eight current amounts are assessed individually; retain the separate\
+    \ original agar 15 g and peptone 1 g rows.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"component_or_context\"\
+    : \"Unsupported commercial row: Bile salts\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Remove this unsupported MacConkey-derived constituent from the JCM 110 owner\
+    \ after source reconciliation.\",\n    \"rationale\": \"The complete primary/provider\
+    \ composition calls for cellulose MN 300 instead. This snippet is the positive\
+    \ source identity, not a claim that the source contains the stored commercial\
+    \ amount. All eight current amounts are assessed individually; retain the separate\
+    \ original agar 15 g and peptone 1 g rows.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"component_or_context\"\
+    : \"Unsupported commercial row: Sodium chloride\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Remove this unsupported MacConkey-derived constituent from the JCM 110 owner\
+    \ after source reconciliation.\",\n    \"rationale\": \"The complete primary/provider\
+    \ composition calls for cellulose MN 300 instead. This snippet is the positive\
+    \ source identity, not a claim that the source contains the stored commercial\
+    \ amount. All eight current amounts are assessed individually; retain the separate\
+    \ original agar 15 g and peptone 1 g rows.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q19\",\n    \"component_or_context\"\
+    : \"Unsupported commercial row: Neutral red\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Remove this unsupported MacConkey-derived constituent from the JCM 110 owner\
+    \ after source reconciliation.\",\n    \"rationale\": \"The complete primary/provider\
+    \ composition calls for cellulose MN 300 instead. This snippet is the positive\
+    \ source identity, not a claim that the source contains the stored commercial\
+    \ amount. All eight current amounts are assessed individually; retain the separate\
+    \ original agar 15 g and peptone 1 g rows.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q20\",\n    \"component_or_context\"\
+    : \"Unsupported commercial row: Crystal violet\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Remove this unsupported MacConkey-derived constituent from the JCM 110 owner\
+    \ after source reconciliation.\",\n    \"rationale\": \"The complete primary/provider\
+    \ composition calls for cellulose MN 300 instead. This snippet is the positive\
+    \ source identity, not a claim that the source contains the stored commercial\
+    \ amount. All eight current amounts are assessed individually; retain the separate\
+    \ original agar 15 g and peptone 1 g rows.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"component_or_context\"\
+    : \"Unsupported commercial row: Agar\",\n    \"decision\": \"unsupported\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"13.5\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\",\n\
+    \        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"13.5\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Remove this unsupported MacConkey-derived constituent from the JCM 110 owner\
+    \ after source reconciliation.\",\n    \"rationale\": \"The complete primary/provider\
+    \ composition calls for cellulose MN 300 instead. This snippet is the positive\
+    \ source identity, not a claim that the source contains the stored commercial\
+    \ amount. All eight current amounts are assessed individually; retain the separate\
+    \ original agar 15 g and peptone 1 g rows.\",\n    \"source_snippets\": [\n  \
+    \    {\n        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Cellulose powder MN 300 (Macherey--Nagel Co.)\\\
+    \",\\n          \\\"volume\\\": 15,\\n          \\\"unit\\\": \\\"g\\\"\",\n \
+    \       \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"component_or_context\"\
+    : \"Hydrochloric acid adjustment dose\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Adjustment amount remains unquantified; preserve its named stage and reagent\
+    \ strength.\",\n    \"rationale\": \"VARIABLE is compatible with no fixed dose.\
+    \ It must not be replaced by the stock strength or interpreted as a fixed main-medium\
+    \ concentration.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[1].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"HCl\\\",\\n          \\\"conc_value\\\": 1,\\\
+    n          \\\"conc_unit\\\": \\\"N\\\"\",\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      },\n      {\n        \"source_key\": \"togoM102\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\",\n \
+    \       \"source_locator\": \"$.comments: Solution A adjustment\",\n        \"\
+    exact_source_quote\": \"Adjust pH to 7.0 with 1 N HCl.\",\n        \"snapshot_sha256\"\
+    : \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\n     \
+    \ }\n    ]\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"component_or_context\"\
+    : \"Bicarbonate adjustment dose\",\n    \"decision\": \"not_quantified\",\n  \
+    \  \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      },\n      {\n     \
+    \   \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Adjustment amount remains unquantified; preserve its named stage and reagent\
+    \ strength.\",\n    \"rationale\": \"VARIABLE is compatible with no fixed dose.\
+    \ It must not be replaced by the stock strength or interpreted as a fixed main-medium\
+    \ concentration.\",\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"NaHCO3 solution\\\",\\n          \\\"conc_value\\\
+    \": 6,\\n          \\\"conc_unit\\\": \\\"%\\\"\",\n        \"snapshot_sha256\"\
+    : \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\n     \
+    \ },\n      {\n        \"source_key\": \"togoM102\",\n        \"source_url\":\
+    \ \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\",\n \
+    \       \"source_locator\": \"$.comments: Solution B adjustment\",\n        \"\
+    exact_source_quote\": \"Adjust pH to 9.4 with 6% NaHCO3 solution.\",\n       \
+    \ \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"component_or_context\"\
+    : \"HCl stock strength\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"1 N HCl used for Solution A adjustment; normality is not a receiving dose.\"\
+    ,\n    \"rationale\": \"The current layers omit the preparation text. Add exact\
+    \ stage and evidence, without converting the unqualified percentage or transferring\
+    \ a stock pH to the assembled medium.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.comments: exact stage-specific adjustment\"\
+    ,\n        \"exact_source_quote\": \"Adjust pH to 7.0 with 1 N HCl.\",\n     \
+    \   \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"component_or_context\"\
+    : \"Bicarbonate stock strength\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"6% NaHCO3 adjustment solution; percent basis is unspecified, so no PERCENT_W_V\
+    \ or mass conversion is established.\",\n    \"rationale\": \"The current layers\
+    \ omit the preparation text. Add exact stage and evidence, without converting\
+    \ the unqualified percentage or transferring a stock pH to the assembled medium.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM102\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.comments: exact stage-specific adjustment\"\
+    ,\n        \"exact_source_quote\": \"Adjust pH to 9.4 with 6% NaHCO3 solution.\"\
+    ,\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"component_or_context\"\
+    : \"Solution A pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Solution A pH 7.0 before assembly.\",\n    \"rationale\": \"The current layers\
+    \ omit the preparation text. Add exact stage and evidence, without converting\
+    \ the unqualified percentage or transferring a stock pH to the assembled medium.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM102\",\n\
+    \        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.comments: exact stage-specific adjustment\"\
+    ,\n        \"exact_source_quote\": \"Adjust pH to 7.0 with 1 N HCl.\",\n     \
+    \   \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"component_or_context\"\
+    : \"Solution B pH\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"Solution B pH 9.4 before assembly; not an independently supported final-mixture\
+    \ pH.\",\n    \"rationale\": \"The current layers omit the preparation text. Add\
+    \ exact stage and evidence, without converting the unqualified percentage or transferring\
+    \ a stock pH to the assembled medium.\",\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"togoM102\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M102\"\
+    ,\n        \"source_locator\": \"$.comments: exact stage-specific adjustment\"\
+    ,\n        \"exact_source_quote\": \"Adjust pH to 9.4 with 6% NaHCO3 solution.\"\
+    ,\n        \"snapshot_sha256\": \"d7cb4e4cfeffc2ba6bbd76efa68fdaef90e2599ddf3f98fc8bca51e21208fbd8\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"component_or_context\"\
+    : \"Autoclave temperature\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"121°C as the explicit JCM default, with post-sterilization assembly.\",\n\
+    \    \"rationale\": \"No competing cycle is specified in this medium. Preserve\
+    \ the source default and the separate A/B assembly; do not import 5343 preparation.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm110\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=110\"\
+    ,\n        \"source_locator\": \"Page header default applying to medium 110\"\
+    ,\n        \"exact_source_quote\": \"Unless otherwise stated, sterilize media\
+    \ by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"a76883af9cc0ee5610d398339263c0ef8cda5736d5f9ad94ffc0fcdec63859a4\"\
+    ,\n        \"parsed_text_sha256\": \"ae23fa99239a815a8faa6d0c0e1c8db68caae379e2197ba91d0153bc1a5c34f1\"\
+    \n      }\n    ]\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"component_or_context\"\
+    : \"Autoclave duration\",\n    \"decision\": \"add\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/ALKALINE_CELLULOSE_AGAR.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\"\n      }\n    ],\n    \"proposed_source_representation\"\
+    : \"15 minutes as the explicit JCM default, with post-sterilization assembly.\"\
+    ,\n    \"rationale\": \"No competing cycle is specified in this medium. Preserve\
+    \ the source default and the separate A/B assembly; do not import 5343 preparation.\"\
+    ,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"jcm110\",\n\
+    \        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=110\"\
+    ,\n        \"source_locator\": \"Page header default applying to medium 110\"\
+    ,\n        \"exact_source_quote\": \"Unless otherwise stated, sterilize media\
+    \ by autoclaving at 121°C for 15 min.\",\n        \"snapshot_sha256\": \"a76883af9cc0ee5610d398339263c0ef8cda5736d5f9ad94ffc0fcdec63859a4\"\
+    ,\n        \"parsed_text_sha256\": \"ae23fa99239a815a8faa6d0c0e1c8db68caae379e2197ba91d0153bc1a5c34f1\"\
+    \n      }\n    ]\n  }\n]"
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and pinned secondary identifier metadata
+  outcome: concern
+  summary: '15 distinct asserted primary/secondary IDs resolve to matching nonobsolete
+    labels in all inspected layers. Target linkage: 16/18 primary and 7/18 secondary
+    instances; all asserted secondary keys have exact pinned MIM rows. Exact supplied-form
+    mismatch is addressed separately; valid IDs and labels do not establish correct
+    source grounding.'
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi131527
+  - chebi15377
+  - chebi17716
+  - chebi17883
+  - chebi22868
+  - chebi2509
+  - chebi26710
+  - chebi29377
+  - chebi31795
+  - chebi3312
+  - chebi41688
+  - chebi63038
+  - chebi86370
+  - micro0000178
+  - micro0000180
+  details: 'Instance coverage on a 0–100 percent scale, denominator 18: primary 88.89%;
+    secondary 38.89%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: identity
+  area: identity
+  topic: Exact accession, stable identity and maintained ownership
+  outcome: supported
+  summary: CM007544 has one exact normalized TOGO M102 owner; the target merge event
+    and stable ID agree. M102 explicitly identifies JCM110. A/B endpoint labels alone
+    do not establish stock identity, and the commercial notes describe an unrelated
+    product.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - id-search
+  - owner-0
+  - primary
+  - provider
+  - mediadive
+- assessment_id: source-evidence
+  area: evidence
+  topic: Claim-level evidence and provider/primary scope
+  outcome: concern
+  summary: Import URLs and history are provenance, not attached ingredient evidence.
+    Every listed local concentration is covered in the inventory with literal source
+    text, exact locators, original units and scope. Source availability and scientific
+    correctness are assessed separately.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - primary
+  - provider
+  - mediadive
+- assessment_id: preparation
+  area: completeness
+  topic: Preparation stages and missing source conditions
+  outcome: concern
+  summary: Neither layer has preparation steps. Recover A pH 7.0 using 1 N HCl, B
+    pH 9.4 using 6% bicarbonate of unspecified percent basis, the JCM default cycle
+    and post-sterilization 900/100 mL assembly. Adjustment doses remain unquantified.
+    A final-mixture pH is not independently specified by these stage instructions.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - quantity-inventory
+  - primary
+  - provider
+  - mediadive
+- assessment_id: classification
+  area: scope
+  topic: Composition and physical-state classification
+  outcome: supported
+  summary: The actual source contains yeast extract and peptone plus agar; COMPLEX/UNDEFINED
+    and SOLID_AGAR are consistent with the source. MacConkey selectivity, lactose-fermentation
+    and indicator claims attached to the erroneous expansion are outside this formulation
+    and must not survive as growth or use evidence.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - mediadive
+- assessment_id: forms
+  area: grounding
+  topic: Supplied forms and limits of chemical specificity
+  outcome: concern
+  summary: The source explicitly gives magnesium sulfate heptahydrate, consistent
+    with CHEBI31795, and writes CaCl2 and K2HPO4 without added hydration. The HCl
+    molecular identifier does not encode the aqueous 1 N adjustment solution. Ontology-valid
+    MacConkey constituent IDs cannot validate their membership in this recipe; lactose
+    monohydrate wording inside the unsupported branch is not a basis for a replacement
+    chemical ID.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - mediadive
+- assessment_id: growth
+  area: scope
+  topic: Growth, taxonomy and graph claim scope
+  outcome: not_applicable
+  summary: No experimental growth assertion or target-organism evidence is present.
+    The medium title, generic application and provider context do not establish a
+    strain phenotype, current taxonomy identifier or graph membership. No unrelated
+    organism evidence is transferred.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - mediadive
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 29 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: writer
+  area: provenance
+  topic: Current writers and authoritative correction path
+  outcome: concern
+  summary: Current TOGO code separates primary and local solution sections, retains
+    comments, maps ml to ML_PER_L and can normalize local batches from liquid/water
+    anchors; those anchors are not measured final volumes. Its bare percent mapping
+    does not independently establish a w/v source basis. Current cleanup no longer
+    sums disagreeing duplicates. The solution migrator resolves generic solution names
+    from a global name index; name equality alone is insufficient source identity.
+    Defaults supply variable values and Unknown solution names without scientific
+    evidence. These current functions do not prove which historical execution produced
+    the stored values. Correct the maintained owner with exact evidence, preserve
+    old events and append clarification, then regenerate through the normal path.
+  target_ids:
+  - CultureMech:007544
+  evidence_ids:
+  - record
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+findings:
+- finding_id: f1
+  issue_key: commercial-substitution
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Cellulose MN 300 is missing and an unrelated commercial formula is present
+  description: Both owner and target replace the source cellulose product with eight
+    MacConkey-derived rows at ingredients[6] through ingredients[13]. The original
+    agar 15 g and peptone 1 g remain at indices 14 and 15, so duplicate-looking rows
+    cannot be safely summed or collapsed. The commercial supplier/catalog notes and
+    selective/differential claims do not belong to JCM110.
+  target_ids:
+  - CultureMech:007544
+  field_paths:
+  - ingredients
+  - notes
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - commercial-reference
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: stock-identity-and-basis
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Generic A/B links point to different stocks and lose source volume units
+  description: The asserted mediadive.solution:5342 and :5343 are different 500 mL
+    stocks. JCM110 corresponds to provider A3746/B3747. Both current layers store
+    the 900/100 mL assembly doses as G_PER_L, collapse the staged water to 1000 G_PER_L
+    and flatten the constituent masses without their stage basis.
+  target_ids:
+  - CultureMech:007544
+  field_paths:
+  - solutions[0]
+  - solutions[1]
+  - ingredients[0]
+  - ingredients
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - mediadive
+  - wrong-a
+  - wrong-b
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: missing-stage-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock strengths, separate pH stages and sterilization context are absent
+  description: VARIABLE adjustment entries omit the supported 1 N acid and 6% bicarbonate
+    strengths and their different pH endpoints. Neither layer retains the source cycle
+    or sterile assembly instruction. A global final pH9.4 would overstate the source.
+  target_ids:
+  - CultureMech:007544
+  field_paths:
+  - preparation_steps
+  - ingredients[16]
+  - solutions[2]
+  evidence_ids:
+  - record
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3.5
+  normalization_reason: P3.5 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the exact cellulose MN 300 source ingredient in the normalized
+    owner; remove the eight unsupported commercial constituents and their supplier/catalog/function
+    annotations from this recipe, retaining the original peptone and agar. Append
+    a source-scoped correction event and regenerate the target.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007544
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Rebuild source-scoped A/B descriptors and composition in the owner
+    using exact identity evidence, source water volumes and assembly doses. Remove
+    the nonmatching endpoint links and Unknown solution placeholders; preserve unquantified
+    adjustment stocks without inferring density or measured final volume.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007544
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add exact source-scoped preparation evidence and stages; retain the
+    unspecified percentage basis and unquantified doses. Preserve original history
+    and append clarification; do not import the unrelated 5343 procedure.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007544
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M102_Alkaline_Cellulose_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The fresh inspection inputs and exact per-record bound catalog are authoritative.
+  Captures retain original retrieval timestamps and hashes; preflight observations
+  do not replace the current source comparisons. No recipe or saved review has been
+  edited.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-021
+- generated-medium
+```
