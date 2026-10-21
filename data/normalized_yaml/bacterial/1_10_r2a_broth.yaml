@@ -11,9 +11,9 @@ media_term:
     id: mediadive.medium:J805
     label: 1/10 R2A BROTH
 notes: 1:10 diluted R2A broth (0.32 g dehydrated R2A broth powder dissolved in 1.0
-  L distilled water, adjusted to pH 7.2, and autoclaved at 121 °C for 15 min). Solvent
-  carrier (1.0 L distilled water) is documented in preparation_steps rather than as
-  a solute ingredient. Cross-linked to canonical full-strength R2A Broth (CultureMech:003183).
+  L distilled water, adjusted to pH 7.2, and autoclaved at 121 °C for 15 min). Retain
+  1.0 L distilled water batch volume in ingredients[1] for JCM J805 provenance compatibility.
+  Cross-linked to canonical full-strength R2A Broth (CultureMech:003183).
 ingredients:
 - preferred_term: R2A broth (DAIGO) (Nihon Pharm. Co.)
   concentration:
@@ -35,6 +35,25 @@ ingredients:
     explanation: 'ingredients[0].concentration: PDF page 1, broth row and heading
       "Final volume: 1000 ml". 0.32 g / 1 L = 0.32 g/L. This record identifies the
       JCM 805 formulation; no amount changed.'
+- preferred_term: Distilled water
+  concentration:
+    value: '1.0'
+    unit: L
+  source: JCM Medium 805
+  notes: JCM Medium 805 lists 1.0 L distilled water (batch preparation solvent volume).
+  term:
+    id: CHEBI:15377
+    label: water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  evidence:
+  - reference: https://www.bacmedia.dsmz.de/pdf/J805
+    supports: SUPPORT
+    snippet: Distilled water 1000.00 ml
+    explanation: 'ingredients[1].concentration: PDF page 1, water row. 1000.00 ml
+      / 1000 = 1.0 L preparation water; retain volume unit. This record identifies
+      the JCM 805 formulation; no amount changed.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -80,9 +99,9 @@ curation_history:
   action: CURATED
   notes: 'Resolved Stage 4 findings CM-C1S4-001 and CM-C1S4-002 on CultureMech:003150
     (Issues #634, #645).'
-  changes: 'Normalized name to 1_10_r2a_broth, removed Distilled water solvent carrier
-    from ingredients[] (1.0 L documented in preparation_steps), linked R2A broth (DAIGO)
-    to CultureMech:003183 with 1:10 constituent breakdown note, and added pH/sterilization
+  changes: 'Normalized name to 1_10_r2a_broth, retained 1.0 L Distilled water batch
+    volume in ingredients[1] for JCM J805 provenance compatibility, linked R2A broth
+    (DAIGO) to CultureMech:003183 with 1:10 constituent breakdown note, and added pH/sterilization
     fields (#634, #645).'
 preparation_steps:
 - step_number: 1

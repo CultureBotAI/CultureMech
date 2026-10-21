@@ -35,20 +35,25 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component; JCM Medium 1219 specifies mass per 970 mL distilled water plus
-    24.81 mL stock solutions (~994.81 mL total batch volume)'
+    34.81 mL stock/methanol additions (1004.81 mL total liquid additions)'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
+  evidence:
+  - reference: DSMZ:J1219
+    supports: SUPPORT
+    explanation: MediaDive/JCM medium J1219 lists CaCl2 x 2 H2O at 0.070 g in the
+      main solution (per 970 mL water + 34.81 mL stocks).
 - preferred_term: KH2PO4
   concentration:
     value: '0.27'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound; JCM Medium 1219 specifies mass per 970 mL distilled water plus 24.81
-    mL stock solutions (~994.81 mL total batch volume)'
+    compound; JCM Medium 1219 specifies mass per 970 mL distilled water plus 34.81
+    mL stock/methanol additions (1004.81 mL total liquid additions)'
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
@@ -56,31 +61,34 @@ ingredients:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
   evidence:
-  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219
+  - reference: DSMZ:J1219
     supports: SUPPORT
-    snippet: KH2PO4 1.0 g
-    explanation: 'ingredients[2].concentration: JCM Medium 1219 (DSMZ J1219) main
-      recipe table specifies 1.0 g KH2PO4 per liter batch.'
+    explanation: MediaDive/JCM medium J1219 lists KH2PO4 at 0.270 g in the main solution.
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component; JCM Medium 1219 specifies mass per 970 mL distilled water plus
-    24.81 mL stock solutions (~994.81 mL total batch volume)'
+    34.81 mL stock/methanol additions (1004.81 mL total liquid additions)'
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
   mediaingredientmech_chebi_term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
+  evidence:
+  - reference: DSMZ:J1219
+    supports: SUPPORT
+    explanation: MediaDive/JCM medium J1219 lists MgCl2 x 6 H2O at 0.200 g in the
+      main solution (per 970 mL water + 34.81 mL stocks).
 - preferred_term: NaNO3
   concentration:
     value: '0.42'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
     Defined component; JCM Medium 1219 specifies mass per 970 mL distilled water plus
-    24.81 mL stock solutions (~994.81 mL total batch volume)'
+    34.81 mL stock/methanol additions (1004.81 mL total liquid additions)'
   term:
     id: CHEBI:63005
     label: sodium nitrate
@@ -88,18 +96,16 @@ ingredients:
     id: CHEBI:63005
     label: sodium nitrate
   evidence:
-  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219
+  - reference: DSMZ:J1219
     supports: SUPPORT
-    snippet: NaNO3 1.0 g
-    explanation: 'ingredients[4].concentration: JCM Medium 1219 (DSMZ J1219) main
-      recipe table specifies 1.0 g NaNO3 per liter batch.'
+    explanation: MediaDive/JCM medium J1219 lists NaNO3 at 0.420 g in the main solution.
 - preferred_term: Na2SO4
   concentration:
     value: '0.014'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component; JCM Medium 1219 specifies mass per 970 mL distilled water plus
-    24.81 mL stock solutions (~994.81 mL total batch volume)'
+    34.81 mL stock/methanol additions (1004.81 mL total liquid additions)'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -107,18 +113,16 @@ ingredients:
     id: CHEBI:32149
     label: sodium sulfate
   evidence:
-  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219
+  - reference: DSMZ:J1219
     supports: SUPPORT
-    snippet: Na2SO4 0.1 g
-    explanation: 'ingredients[5].concentration: JCM Medium 1219 (DSMZ J1219) main
-      recipe table specifies 0.1 g Na2SO4 per liter batch.'
+    explanation: MediaDive/JCM medium J1219 lists Na2SO4 at 0.014 g in the main solution.
 - preferred_term: HEPES
   concentration:
     value: '4.77'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component;
-    JCM Medium 1219 specifies mass per 970 mL distilled water plus 24.81 mL stock
-    solutions (~994.81 mL total batch volume)'
+    JCM Medium 1219 specifies mass per 970 mL distilled water plus 34.81 mL stock/methanol
+    additions (1004.81 mL total liquid additions)'
   term:
     id: CHEBI:46756
     label: HEPES
@@ -126,11 +130,9 @@ ingredients:
     id: CHEBI:46756
     label: HEPES
   evidence:
-  - reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219
+  - reference: DSMZ:J1219
     supports: SUPPORT
-    snippet: HEPES 2.38 g
-    explanation: 'ingredients[6].concentration: JCM Medium 1219 (DSMZ J1219) main
-      recipe table specifies 2.38 g HEPES buffer per liter batch.'
+    explanation: MediaDive/JCM medium J1219 lists HEPES at 4.770 g in the main solution.
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -183,11 +185,12 @@ media_term:
   term:
     id: TOGO:M1308
     label: Methylotroph Medium
-notes: 'Original source: JCM - JCM_M1219 (DSMZ J1219 Methylotroph Medium). Chemically
-  defined methylotroph medium (970 mL distilled water + 20 mL Mineral Solution + 1
-  mL FeSO4·7H2O stock + 3.8 mL Vitamin Solution + 0.01 mL Vitamin B12 stock + 5 mL
-  filter-sterilized methanol per liter = 994.81 mL total batch volume before methanol
-  addition, 999.81 mL including 5 mL methanol).'
+notes: 'Source: https://togomedium.org/medium/M1308; Original source: JCM - JCM_M1219
+  (DSMZ J1219 Methylotroph Medium); Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219.
+  Chemically defined methylotroph medium (970 mL distilled water + 10 mL Trace element
+  solution + 10 mL Se/W solution + 10 mL Trace vitamins + 2 mL 10 mM CuCl2 solution
+  + 2 mL 10 mM CeCl3 solution + 0.81 mL filter-sterilized methanol per batch = 1004.81
+  mL total liquid additions).'
 applications:
 - Microbial cultivation
 preparation_steps:

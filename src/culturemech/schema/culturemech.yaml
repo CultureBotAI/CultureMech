@@ -77,7 +77,6 @@ imports:
 
 classes:
   MediaRecipe:
-    tree_root: true
     class_uri: culturemech:MediaRecipe
     description: >-
       A complete growth medium formulation for culturing microorganisms.

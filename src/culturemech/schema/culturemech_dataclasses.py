@@ -61,7 +61,7 @@ from rdflib import (
 from linkml_runtime.linkml_model.types import Boolean, Date, Float, Integer, String, Uri, Uriorcurie
 from linkml_runtime.utils.metamodelcore import Bool, URI, URIorCURIE, XSDDate
 
-metamodel_version = "1.11.0"
+metamodel_version = "1.12.0"
 version = None
 
 # Namespaces
@@ -461,6 +461,12 @@ class SolutionRecipe(YAMLRoot):
     sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
     notes: Optional[str] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
+    categories: Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]] = empty_list()
+    synonyms: Optional[Union[Union[dict, "RecipeSynonym"], list[Union[dict, "RecipeSynonym"]]]] = empty_list()
+    merged_from: Optional[Union[str, list[str]]] = empty_list()
+    merge_fingerprint: Optional[str] = None
+    chemical_fingerprint: Optional[str] = None
+    variant_fingerprint: Optional[str] = None
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.id):
@@ -528,6 +534,25 @@ class SolutionRecipe(YAMLRoot):
             self.notes = str(self.notes)
 
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        if not isinstance(self.categories, list):
+            self.categories = [self.categories] if self.categories is not None else []
+        self.categories = [v if isinstance(v, CategoryEnum) else CategoryEnum(v) for v in self.categories]
+
+        self._normalize_inlined_as_list(slot_name="synonyms", slot_type=RecipeSynonym, key_name="name", keyed=False)
+
+        if not isinstance(self.merged_from, list):
+            self.merged_from = [self.merged_from] if self.merged_from is not None else []
+        self.merged_from = [v if isinstance(v, str) else str(v) for v in self.merged_from]
+
+        if self.merge_fingerprint is not None and not isinstance(self.merge_fingerprint, str):
+            self.merge_fingerprint = str(self.merge_fingerprint)
+
+        if self.chemical_fingerprint is not None and not isinstance(self.chemical_fingerprint, str):
+            self.chemical_fingerprint = str(self.chemical_fingerprint)
+
+        if self.variant_fingerprint is not None and not isinstance(self.variant_fingerprint, str):
+            self.variant_fingerprint = str(self.variant_fingerprint)
 
         super().__post_init__(**kwargs)
 
@@ -4263,6 +4288,24 @@ slots.solutionRecipe__notes = Slot(uri=CULTUREMECH.notes, name="solutionRecipe__
 
 slots.solutionRecipe__evidence = Slot(uri=CULTUREMECH.evidence, name="solutionRecipe__evidence", curie=CULTUREMECH.curie('evidence'),
                    model_uri=CULTUREMECH.solutionRecipe__evidence, domain=None, range=Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]])
+
+slots.solutionRecipe__categories = Slot(uri=CULTUREMECH.categories, name="solutionRecipe__categories", curie=CULTUREMECH.curie('categories'),
+                   model_uri=CULTUREMECH.solutionRecipe__categories, domain=None, range=Optional[Union[Union[str, "CategoryEnum"], list[Union[str, "CategoryEnum"]]]])
+
+slots.solutionRecipe__synonyms = Slot(uri=CULTUREMECH.synonyms, name="solutionRecipe__synonyms", curie=CULTUREMECH.curie('synonyms'),
+                   model_uri=CULTUREMECH.solutionRecipe__synonyms, domain=None, range=Optional[Union[Union[dict, RecipeSynonym], list[Union[dict, RecipeSynonym]]]])
+
+slots.solutionRecipe__merged_from = Slot(uri=CULTUREMECH.merged_from, name="solutionRecipe__merged_from", curie=CULTUREMECH.curie('merged_from'),
+                   model_uri=CULTUREMECH.solutionRecipe__merged_from, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.solutionRecipe__merge_fingerprint = Slot(uri=CULTUREMECH.merge_fingerprint, name="solutionRecipe__merge_fingerprint", curie=CULTUREMECH.curie('merge_fingerprint'),
+                   model_uri=CULTUREMECH.solutionRecipe__merge_fingerprint, domain=None, range=Optional[str])
+
+slots.solutionRecipe__chemical_fingerprint = Slot(uri=CULTUREMECH.chemical_fingerprint, name="solutionRecipe__chemical_fingerprint", curie=CULTUREMECH.curie('chemical_fingerprint'),
+                   model_uri=CULTUREMECH.solutionRecipe__chemical_fingerprint, domain=None, range=Optional[str])
+
+slots.solutionRecipe__variant_fingerprint = Slot(uri=CULTUREMECH.variant_fingerprint, name="solutionRecipe__variant_fingerprint", curie=CULTUREMECH.curie('variant_fingerprint'),
+                   model_uri=CULTUREMECH.solutionRecipe__variant_fingerprint, domain=None, range=Optional[str])
 
 slots.recipeSynonym__name = Slot(uri=CULTUREMECH.name, name="recipeSynonym__name", curie=CULTUREMECH.curie('name'),
                    model_uri=CULTUREMECH.recipeSynonym__name, domain=None, range=str)
