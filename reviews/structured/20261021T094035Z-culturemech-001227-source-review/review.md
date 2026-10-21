@@ -1,0 +1,1985 @@
+# Source and formulation review: a2_medium (CultureMech:001227)
+
+- Review: 20261021T094035Z-culturemech-001227-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T09:35:23Z
+- Finished UTC: 2026-10-21T09:40:35Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ 1755 identifies A2 unambiguously, but the generated target and maintained owner flatten the trace-stock formulation into direct medium concentrations and sum calcium across preparation stages. The 2 mL stock dose is absent. The source pH range and direct ingredients are recoverable; the copper spelling conflicts between the primary PDF and provider. All four documented diagnostics pass, while the legacy KNO3 link and current HEPES secondary key remain unverified by the pinned snapshot.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 131; batch 014 item 1 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding thirteen task batches contain 130 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 132 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001227 | data/merge_yaml/merged/A2_MEDIUM.yaml | generated | a2_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001227 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001227 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch014/131/strict.tsv |
+| validate-terms | passed | True | CultureMech:001227 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001227 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001227 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Scoped timestamp syntax and timezone inspection | passed | False | CultureMech:001227 | 19 timestamps inspected, 0 invalid or timezone-naive; old provenance remains unchanged. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001227.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Stable medium identity and source accession
+
+identity: supported. Targets: CultureMech:001227.
+
+The target ID, owner, merge source basename, DSMZ PDF title and MediaDive medium1755 all identify A2. The stock5831 is a subordinate preparation, not a second medium or evidence of growth in A2.
+
+### Primary labels/forms and pinned secondary correspondence
+
+grounding: concern. Targets: CultureMech:001227.
+
+Layer-specific counts are {"target": {"ingredient_instances": 13, "primary_CHEBI_instances": 12, "secondary_current_asserted_instances": 11, "secondary_current_verified_instances": 10, "legacy_secondary_instances": 1, "primary_CHEBI_percent": 92.31, "secondary_verified_percent": 76.92}, "owner": {"ingredient_instances": 13, "primary_CHEBI_instances": 12, "secondary_current_asserted_instances": 11, "secondary_current_verified_instances": 10, "legacy_secondary_instances": 1, "primary_CHEBI_percent": 92.31, "secondary_verified_percent": 76.92}}. Percentages are 0–100 linkage coverage over direct ingredient instances, not scientific accuracy. The 2 legacy link instances across both layers are unverified by the current CHEBI-keyed snapshot; absence here does not prove historical invalidity. Current secondary keys without a live preferred-term row are [{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[6].mediaingredientmech_chebi_term", "asserted": {"id": "CHEBI:46756", "label": "HEPES"}}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[6].mediaingredientmech_chebi_term", "asserted": {"id": "CHEBI:46756", "label": "HEPES"}}]. No secondary linked-set percentage is invented for an empty set.
+
+{"label_drift": [], "legacy": [{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170", "label": "KNO3"}, "current_index_rows": []}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170", "label": "KNO3"}, "current_index_rows": []}], "missing_current_secondary": [{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[6].mediaingredientmech_chebi_term", "asserted": {"id": "CHEBI:46756", "label": "HEPES"}}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[6].mediaingredientmech_chebi_term", "asserted": {"id": "CHEBI:46756", "label": "HEPES"}}]}
+
+### Exact hydrated salts, HEPES and copper conflict
+
+grounding: concern. Targets: CultureMech:001227.
+
+All 12 asserted primary CHEBI labels resolve. Explicit dihydrate, tetrahydrate, hexahydrate and heptahydrate labels/structures match the named salts except that the PDF copper spelling CuSO2x5H2O differs from provider CuSO4 x 5 H2O. Source sodium acetate has no hydrate annotation; its anhydrous ontology representation does not authorize a hydrate mass substitution. HEPES resolves only to a sparse label response, and yeast extract remains an undefined mixture.
+
+### Preparation sequence and pH
+
+consistency: concern. Targets: CultureMech:001227.
+
+The recorded ADJUST_PH step and range 7.0–7.5 match the exact sources. Preparation lacks the separately prepared stock and its dose, so the source process cannot be followed faithfully. Neither inspected formulation specifies a sterilization cycle, atmosphere, storage, shelf life or incubation condition; no generic procedure is added.
+
+### Medium type and bounded use
+
+scope: supported. Targets: CultureMech:001227.
+
+COMPLEX and SEMI_DEFINED are compatible with yeast extract plus explicitly specified chemicals; LIQUID agrees with this non-gelled formulation. Bacterial filing and generic microbial-cultivation use do not assert any strain-specific growth.
+
+### Generated and maintained correspondence
+
+ownership: concern. Targets: CultureMech:001227.
+
+The 13 ingredient quantities, missing stock representation and pH step are shared by target and normalized owner. A direct generated edit would be lost. Verify the normalized recipe and source-specific transform first, then regenerate and check freshness.
+
+### Append-only history and timestamp interpretation
+
+provenance: supported. Targets: CultureMech:001227.
+
+19 exact timestamp instances were examined; 0 lack valid syntax or explicit timezone. No local timestamp was assumed UTC or rewritten. Process and confidence annotations are not independent scientific evidence.
+
+[]
+
+### Every stored ingredient/stock quantity and source-stage dependency
+
+quantity: concern. Targets: CultureMech:001227.
+
+All 13 stored ingredient amounts, seven constituent stock amounts, the missing 2 mL stock dose and both solvent/final-volume contexts are accounted for. Direct masses retain nominal source basis; stock quantities cannot be used as undiluted final-medium values. The copper source conflict and HEPES provider conversion remain explicit.
+
+[{"field_path": "ingredients[0].concentration", "name": "Sodium acetate", "current": {"value": "0.24", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "dsmz1755", "source_quote": "Sodium acetate  0.240  g", "source_locator": "page 1, main recipe row 1", "preparation_stage": "main medium direct addition", "decision_rationale": "Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred.", "evidence_id": "quantity-1"}, {"field_path": "ingredients[1].concentration", "name": "Yeast extract", "current": {"value": "0.15", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "dsmz1755", "source_quote": "Yeast extract  0.150  g", "source_locator": "page 1, main recipe row 2", "preparation_stage": "main medium direct addition", "decision_rationale": "Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred.", "evidence_id": "quantity-2"}, {"field_path": "ingredients[2].concentration", "name": "MgSO4 x 7 H2O", "current": {"value": "0.8", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "dsmz1755", "source_quote": "MgSO4 x 7H2O  0.800  g", "source_locator": "page 1, main recipe row 3", "preparation_stage": "main medium direct addition", "decision_rationale": "Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred.", "evidence_id": "quantity-3"}, {"field_path": "ingredients[3].concentration", "name": "CaCl2 x 2 H2O", "current": {"value": "3.73", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote": "CaCl2 x 2 H2O  0.030  g", "source_locator": "page 1, main recipe row 4", "preparation_stage": "main medium direct addition", "decision_rationale": "Literal source batch mass. Stored 3.73 g/L incorrectly adds the separate stock 3.7 g to direct 0.030 g.", "evidence_id": "quantity-4"}, {"field_path": "ingredients[4].concentration", "name": "K2HPO4", "current": {"value": "0.005", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "dsmz1755", "source_quote": "K2HPO4  0.005  g", "source_locator": "page 1, main recipe row 5", "preparation_stage": "main medium direct addition", "decision_rationale": "Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred.", "evidence_id": "quantity-5"}, {"field_path": "ingredients[5].concentration", "name": "KNO3", "current": {"value": "0.01", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "dsmz1755", "source_quote": "KNO3        0.010  g", "source_locator": "page 1, main recipe row 6", "preparation_stage": "main medium direct addition", "decision_rationale": "Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred.", "evidence_id": "quantity-6"}, {"field_path": "ingredients[6].concentration", "name": "HEPES", "current": {"value": "4.766", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "dsmz1755", "source_quote": "HEPES      20 mM", "source_locator": "page 1, main HEPES row", "preparation_stage": "main medium", "decision_rationale": "Source explicitly specifies 20 mM. Provider main recipe[6] reports g_l=4.766; keep its declared conversion attribution rather than asserting an independently verified molecular weight.", "evidence_id": "quantity-7"}, {"field_path": "ingredients[7].concentration", "name": "FeCl3 x 6 H2O", "current": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote": "FeCL3x6H2O          1.000  g", "source_locator": "page 1, Trace mineral salts solution row 1", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row.", "evidence_id": "quantity-8", "arithmetic_separate_from_quote": "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L = 0.002 g/L. For calcium, adding the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[8].concentration", "name": "H3BO3", "current": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote": "H3BO3           2.500  g", "source_locator": "page 1, Trace mineral salts solution row 2", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row.", "evidence_id": "quantity-9", "arithmetic_separate_from_quote": "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L = 0.005 g/L. For calcium, adding the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[9].concentration", "name": "MnCl2 x 4 H2O", "current": {"value": "0.87", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote": "MnCl2x4H2O          0.870  g", "source_locator": "page 1, Trace mineral salts solution row 3", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row.", "evidence_id": "quantity-10", "arithmetic_separate_from_quote": "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L = 0.00174 g/L. For calcium, adding the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[3].concentration", "name": "CaCl2 x 2 H2O", "current": {"value": "3.73", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote": "CaCl2x2H2O          3.700   g", "source_locator": "page 1, Trace mineral salts solution row 4", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row.", "evidence_id": "quantity-11", "arithmetic_separate_from_quote": "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L = 0.0074 g/L. For calcium, adding the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[10].concentration", "name": "CuSO4 x 5 H2O", "current": {"value": "0.005", "unit": "G_PER_L"}, "decision": "conflict", "source_key": "dsmz1755", "source_quote": "CuSO2x5H2O          0.005  g", "source_locator": "page 1, Trace mineral salts solution row 5", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs to the stock; the main medium receives only 2 mL. Primary copper formula differs from provider CuSO4 x 5 H2O; preserve the source conflict.", "evidence_id": "quantity-12", "arithmetic_separate_from_quote": "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L = 0.00001 g/L. For calcium, adding the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[11].concentration", "name": "ZnSO4 x 7 H2O", "current": {"value": "0.44", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote": "ZnSO4x7H2O          0.440  g", "source_locator": "page 1, Trace mineral salts solution row 6", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row.", "evidence_id": "quantity-13", "arithmetic_separate_from_quote": "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L = 0.00088 g/L. For calcium, adding the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[12].concentration", "name": "Na2 MoO4 x 2 H2O", "current": {"value": "0.29", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote": "Na2MoO4x2H2O         0.290   g", "source_locator": "page 1, Trace mineral salts solution row 7", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row.", "evidence_id": "quantity-14", "arithmetic_separate_from_quote": "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L = 0.00058 g/L. For calcium, adding the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path": "solutions (missing trace-stock dose)", "name": "Trace mineral salts solution", "current": null, "decision": "add", "source_key": "dsmz1755", "source_quote": "Trace mineral salts solution           2.000  ml", "source_locator": "page 1, main trace-stock addition row", "preparation_stage": "main medium stock addition", "decision_rationale": "Restore the explicit 2.000 mL dose separately from the seven stock components; provider main recipe[7] independently identifies solution5831 and 2 ml.", "evidence_id": "quantity-15"}, {"field_path": "main solvent basis (not encoded)", "name": "Distilled water", "current": null, "decision": "add", "source_key": "dsmz1755", "source_quote": "a.dest   1000.000  ml", "source_locator": "page 1, main water row", "preparation_stage": "main solvent", "decision_rationale": "Preserve 1000 mL water as source solvent context; do not infer a mass concentration or measured final volume.", "evidence_id": "quantity-16"}, {"field_path": "trace stock solvent basis (not encoded)", "name": "Distilled water", "current": null, "decision": "add", "source_key": "dsmz1755", "source_quote": "ad distilled water               1000.000    ml", "source_locator": "page 1, final stock row", "preparation_stage": "trace-stock final volume", "decision_rationale": "The source explicitly makes the stock up to 1000 mL; this supports stock mass-per-liter strengths independently of the receiving volume.", "evidence_id": "quantity-17"}]
+
+### Claim-level evidence and reference diagnostic coverage
+
+evidence: concern. Targets: CultureMech:001227.
+
+Source citations/notes identify provenance but do not place exact quantity evidence on the local ingredient or stock claims. The reference validator actually checked zero evidence references; its passing result does not authenticate source amounts. This review provides literal snippets and locators for all assessed quantities. Follow-up should attach narrow amount evidence and source metadata without inventing new schema slots.
+
+### Bounded biological claims and absent optional entities
+
+scope: not_applicable. Targets: CultureMech:001227.
+
+Neither reviewed layer asserts organism/strain identifiers, assemblies, DOI/PMID citations, growth outcomes, variants, parent-media relationships or KG-Microbe matches. Catalogue use and generic applications do not establish strain-specific growth or optimal conditions. No organisms or variants are added merely to fill optional slots.
+
+## Findings
+
+### f1: Trace-stock concentrations are represented as direct medium additions
+
+major / open / confirmed; issue key: cm001227-trace-stock-stage-collapse.
+
+Seven trace-stock chemicals have lost their shared stock boundary and the 2 mL dose. Calcium is 3.73 g/L because 0.030 g direct calcium was summed with 3.700 g from the one-liter stock; the remaining stock rows also retain undiluted stock strengths. This changes the formula materially even though schema/term/reference checks pass. The quantity inventory distinguishes literal source masses, stock final volume and conditional provider-basis arithmetic.
+
+### f2: Copper identity has an unrecorded primary/provider conflict
+
+minor / open / confirmed; issue key: cm001227-copper-source-spelling-conflict.
+
+The PDF visibly prints CuSO2x5H2O while the provider and local CHEBI mapping identify copper sulfate pentahydrate. The intended primary formula cannot be proven by silently replacing its printed oxygen count. This is a bounded source-provenance conflict, not proof that the current sulfate identifier is wrong.
+
+### f3: Two secondary links lack current snapshot support
+
+minor / open / confirmed; issue key: cm001227-unverified-secondary-links.
+
+The primary potassium nitrate CHEBI:63043 resolves correctly, but MediaIngredientMech:000170 has no exact identifier row in the inspected current pinned snapshot. This establishes a current provenance/verification gap, not historical nonexistence or a wrong primary chemical identity. Ten of eleven asserted current secondary CHEBI keys have exact live preferred-term rows; the exception is HEPES CHEBI:46756. The primary HEPES ontology term resolves, which does not establish its membership as a current MIM ingredient key.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore the source trace-stock composition and 2 mL addition under maintained ownership; retain direct calcium separately, preserve the main-volume limitation and add claim-level quantity evidence before regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Preserve both literal source versions and seek an authoritative clarification before claiming independent primary confirmation of the copper form; do not invent a replacement ID.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Verify the historical nitrate mapping and HEPES secondary membership if retained, or propose current secondary keys only after exact pinned-index correspondence is established. Preserve the correct primary nitrate identity and all source amount qualifiers.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/A2_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/a2_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/A2_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/A2_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch014/131/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch014/131/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/A2_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/A2_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| source-catalog | /private/tmp/culturemech-review-work-batch014/source-preflight-bound/131/source-catalog.json; Complete bound per-record catalog, raw/text/metadata hashes and actual original capture times | context_only | [{"key": "dsmz1755", "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf", "status": 200, "accessed_at": "2026-10-21T09:27:38.305609Z", "sha256": "fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0", "metadata_sha256": "e76e3242b82f2354d495ac8b7861cccbae415d10c7b5faac04ec31cfd25bcd78", "content_limit": null, "reused_capture_from": null}, {"key": "mediadive1755api", "url": "https://mediadive.dsmz.de/rest/medium/1755", "status": 200, "accessed_at": "2026-10-21T09:27:37.341319Z", "sha256": "5cfdf8bcbdb0f3d10d82428a7a5a591f46a934320cf811b23c5978e440f03242", "metadata_sha256": "616721959127f49371dc815b2ae641af66b7b01d4b0ca9a31464d122286dc427", "content_limit": null, "reused_capture_from": null}, {"key": "chebi131527", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527", "status": 200, "accessed_at": "2026-10-20T07:22:08.349487Z", "sha256": "349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3", "metadata_sha256": "c80c70259f95fa059773c6ede393189f5d81590b7271d2a258f94081edb70d1d", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/128/chebi131527.json"}, {"key": "chebi31440", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440", "status": 200, "accessed_at": "2026-10-21T08:17:28.489501Z", "sha256": "e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9", "metadata_sha256": "5e389d7dc1c1076dcc34091d30c80697221a51e38d94ce90114810f6e297493c", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi31440.json"}, {"key": "chebi31795", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795", "status": 200, "accessed_at": "2026-10-21T08:42:45.232212Z", "sha256": "45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb", "metadata_sha256": "b977e2deeb97e72eb1a69271515ef0d915f9cff4e705516d31bc68e97e45b067", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi31795.json"}, {"key": "chebi32312", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312", "status": 200, "accessed_at": "2026-10-21T08:17:28.879505Z", "sha256": "eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9", "metadata_sha256": "815eff41b2a0f1b443e9071a99ba61d988de181180f3684341b397ac391404e6", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch011/101/chebi32312.json"}, {"key": "chebi32954", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954", "status": 200, "accessed_at": "2026-10-21T08:00:48.206583Z", "sha256": "573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b", "metadata_sha256": "3cf8e4073bb2f1c20dea1f26c1fb20b8474ad3b80e7ff4346b8ac765debdce2b", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/129/chebi32954.json"}, {"key": "chebi33118", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118", "status": 200, "accessed_at": "2026-10-21T08:17:29.364390Z", "sha256": "f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87", "metadata_sha256": "44d8e20ae8d159fbea9eda22dbeece849c70dfb5e58e6264951a9c627b80e734", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi33118.json"}, {"key": "chebi46756", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46756", "status": 200, "accessed_at": "2026-10-21T09:27:40.629039Z", "sha256": "4270cc705078ff2f1787f98b7dbcf05c96b1eccd333801a00cff01b855298a69", "metadata_sha256": "29282c67af619028d22f9110c5d889eeafaf8e31e89dd0b4a36ef164c6c54fb6", "content_limit": null, "reused_capture_from": null}, {"key": "chebi63043", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043", "status": 200, "accessed_at": "2026-10-21T09:27:40.679699Z", "sha256": "c324450e6330a169c708c32a7908b6df0276f4dc76da413e473b563928f61c13", "metadata_sha256": "dbc621a037481d071f2273dc092d2699bf954f765dadb428058a70a37728ab28", "content_limit": null, "reused_capture_from": null}, {"key": "chebi75213", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213", "status": 200, "accessed_at": "2026-10-21T08:17:29.756647Z", "sha256": "b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083", "metadata_sha256": "f902215c05d2c2148e936f069f116990af3a4038fbe78278aa273a42ecc31cbd", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi75213.json"}, {"key": "chebi86158", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158", "status": 200, "accessed_at": "2026-10-21T08:17:30.011607Z", "sha256": "b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61", "metadata_sha256": "72653f1f8145e6950861af46ef1dc18370bc54d3fe96c9720fa62864ea4fc322", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi86158.json"}, {"key": "chebi86254", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254", "status": 200, "accessed_at": "2026-10-21T08:17:30.289392Z", "sha256": "89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683", "metadata_sha256": "64ea7b72ce41a8a38294779fd76a8052c6d150ea4a6491d42a1b44f84ba7c2eb", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi86254.json"}, {"key": "chebi86368", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368", "status": 200, "accessed_at": "2026-10-21T08:17:30.657545Z", "sha256": "286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f", "metadata_sha256": "5064d57753b5a1b71ed5c1850a86f931c48ca19fd93a1f6a2246dd2a875d9ff2", "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi86368.json"}] |
+| dsmz1755 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, complete main and trace-stock sections | supports | Exact one-page DSMZ 1755 A2 recipe, main additions, separate trace stock, pH and literal copper anomaly. Entire PDF was inspected visually as well as by extracted text. |
+| mediadive1755api | https://mediadive.dsmz.de/rest/medium/1755; $.data.medium; $.data.solutions[0:2] | supports | Exact medium1755 provider payload: main3617 and trace5831, separate volume declarations, stock dose, all ingredient amounts and pH. |
+| quantity-1 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main recipe row 1 | supports | Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred. |
+| quantity-2 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main recipe row 2 | supports | Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred. |
+| quantity-3 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main recipe row 3 | supports | Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred. |
+| quantity-4 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main recipe row 4 | context_only | Literal source batch mass. Stored 3.73 g/L incorrectly adds the separate stock 3.7 g to direct 0.030 g. |
+| quantity-5 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main recipe row 5 | supports | Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred. |
+| quantity-6 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main recipe row 6 | supports | Literal source batch mass. The stored number matches the source mass on its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured final-volume claim is inferred. |
+| quantity-7 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main HEPES row | supports | Source explicitly specifies 20 mM. Provider main recipe[6] reports g_l=4.766; keep its declared conversion attribution rather than asserting an independently verified molecular weight. |
+| quantity-8 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, Trace mineral salts solution row 1 | context_only | The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row. |
+| quantity-9 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, Trace mineral salts solution row 2 | context_only | The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row. |
+| quantity-10 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, Trace mineral salts solution row 3 | context_only | The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row. |
+| quantity-11 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, Trace mineral salts solution row 4 | context_only | The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row. |
+| quantity-12 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, Trace mineral salts solution row 5 | context_only | The listed amount belongs to the stock; the main medium receives only 2 mL. Primary copper formula differs from provider CuSO4 x 5 H2O; preserve the source conflict. |
+| quantity-13 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, Trace mineral salts solution row 6 | context_only | The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row. |
+| quantity-14 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, Trace mineral salts solution row 7 | context_only | The listed amount belongs to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock concentration into a direct medium row. |
+| quantity-15 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main trace-stock addition row | supports | Restore the explicit 2.000 mL dose separately from the seven stock components; provider main recipe[7] independently identifies solution5831 and 2 ml. |
+| quantity-16 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, main water row | supports | Preserve 1000 mL water as source solvent context; do not infer a mass concentration or measured final volume. |
+| quantity-17 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf; page 1, final stock row | supports | The source explicitly makes the stock up to 1000 mL; this supports stock mass-per-liter strengths independently of the receiving volume. |
+| chebi32954 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954; $._embedded.terms[0] | supports | CHEBI:32954 resolves to sodium acetate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; $._embedded.terms[0] | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; $._embedded.terms[0] | supports | CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; $._embedded.terms[0] | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi63043 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043; $._embedded.terms[0] | supports | CHEBI:63043 resolves to potassium nitrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi46756 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46756; $._embedded.terms[0] | supports | CHEBI:46756 resolves to HEPES and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi86254 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254; $._embedded.terms[0] | supports | CHEBI:86254 resolves to iron trichloride hexahydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; $._embedded.terms[0] | supports | CHEBI:33118 resolves to boric acid and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; $._embedded.terms[0] | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; $._embedded.terms[0] | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; $._embedded.terms[0] | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; $._embedded.terms[0] | supports | CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete. Available definitions, formulae, structures and synonyms were inspected; recipe amounts and supplied forms are assessed separately. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned snapshot; exact MAPPED/preferred_term rows for asserted CHEBI keys and exact legacy-key lookup | context_only | {"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count": 9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id", "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"}, "counts": {"target": {"ingredient_instances": 13, "primary_CHEBI_instances": 12, "secondary_current_asserted_instances": 11, "secondary_current_verified_instances": 10, "legacy_secondary_instances": 1, "primary_CHEBI_percent": 92.31, "secondary_verified_percent": 76.92}, "owner": {"ingredient_instances": 13, "primary_CHEBI_instances": 12, "secondary_current_asserted_instances": 11, "secondary_current_verified_instances": 10, "legacy_secondary_instances": 1, "primary_CHEBI_percent": 92.31, "secondary_verified_percent": 76.92}}, "instances": [{"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[0]", "name": "Sodium acetate", "primary": {"id": "CHEBI:32954", "label": "sodium acetate"}, "canonical_label": "sodium acetate", "label_equal": true, "definition": [], "annotations": {"charge": [0.0], "database_cross_reference": ["beilstein:3595639", "cas:127-09-3", "gmelin:20502", "wikipedia.en:Sodium_Acetate"], "generalized_empirical_formula": ["C2H3O2.Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32954"], "inchi_key_string": ["VMHLLURERBWHNL-UHFFFAOYSA-M"], "inchi_string": ["InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"], "mass": ["82.034"], "monoisotopic_mass": ["82.00307"], "smiles_string": ["CC(=O)[O-].[Na+]"]}, "synonyms": ["Natriumazetat", "acetic acid, sodium salt", "anhydrous sodium acetate", "sodium acetate anhydrous", "sodium acetate", "sodium acetate"], "secondary": {"asserted": {"id": "CHEBI:32954", "label": "sodium acetate"}, "exact_current_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[1]", "name": "Yeast extract"}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[2]", "name": "MgSO4 x 7 H2O", "primary": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "canonical_label": "magnesium sulfate heptahydrate", "label_equal": true, "definition": ["A hydrate that is the heptahydrate form of magnesium sulfate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505", "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222", "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"], "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]}, "synonyms": ["Magnesium sulfate heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric acid magnesium salt heptahydrate"], "secondary": {"asserted": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "exact_current_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[3]", "name": "CaCl2 x 2 H2O", "primary": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "canonical_label": "calcium chloride dihydrate", "label_equal": true, "definition": ["A hydrate that is the dihydrate form of calcium chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10035-04-8", "drugbank:DBSALT000772", "kegg.drug:D02256", "metacyc.compound:CPD0-2507", "reaxys:11343730"], "generalized_empirical_formula": ["Ca.2Cl.2H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86158"], "inchi_key_string": ["LLSDKQJKOVVTOJ-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Ca.2ClH.2H2O/h;2*1H;2*1H2/q+2;;;;/p-2"], "mass": ["147.014"], "monoisotopic_mass": ["145.92143"], "smiles_string": ["O.O.[Ca+2].[Cl-].[Cl-]"]}, "synonyms": ["CaCl2.2H2O", "Calcium chloride hydrate", "Calcium chloride", "calcium chloride--water (1/2)", "calcium chloride--water (1/2)", "calcium dichloride dihydrate"], "secondary": {"asserted": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "exact_current_rows": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[4]", "name": "K2HPO4", "primary": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "canonical_label": "dipotassium hydrogen phosphate", "label_equal": true, "definition": ["A potassium salt that is the dipotassium salt of phosphoric acid."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197", "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"], "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string": ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"], "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]}, "synonyms": ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate", "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate", "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "secondary": {"asserted": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "exact_current_rows": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[5]", "name": "KNO3", "primary": {"id": "CHEBI:63043", "label": "potassium nitrate"}, "canonical_label": "potassium nitrate", "label_equal": true, "definition": ["The inorganic nitrate salt of potassium."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7757-79-1", "kegg.drug:D02051", "pubmed:20062955", "pubmed:21566718", "pubmed:21770249", "pubmed:21905227", "reaxys:16014598", "wikipedia.en:Potassium_nitrate"], "generalized_empirical_formula": ["K.NO3"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:63043"], "inchi_key_string": ["FGIUAXJPYTZDNR-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/K.NO3/c;2-1(3)4/q+1;-1"], "mass": ["101.102"], "monoisotopic_mass": ["100.95152"], "smiles_string": ["O=[N+]([O-])[O-].[K+]"]}, "synonyms": ["Kaliumnitrat", "Niter", "Nitrate of potash", "Nitre", "Nitric acid, potassium salt", "Salt peter", "Saltpeter", "potassium nitrate", "potassium nitrate", "saltpetre"], "legacy_secondary": {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170", "label": "KNO3"}, "current_index_rows": []}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[6]", "name": "HEPES", "primary": {"id": "CHEBI:46756", "label": "HEPES"}, "canonical_label": "HEPES", "label_equal": true, "definition": [], "annotations": {"has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:46756"]}, "synonyms": [], "secondary": {"asserted": {"id": "CHEBI:46756", "label": "HEPES"}, "exact_current_rows": []}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[7]", "name": "FeCl3 x 6 H2O", "primary": {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "canonical_label": "iron trichloride hexahydrate", "label_equal": true, "definition": ["A hydrate that is the hexahydrate form of iron trichloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10025-77-1", "reaxys:11334004", "wikipedia.en:Iron(III)_chloride"], "generalized_empirical_formula": ["Cl3Fe.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86254"], "inchi_key_string": ["NQXWGWZJXJUMQB-UHFFFAOYSA-K"], "inchi_string": ["InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3"], "mass": ["270.294"], "monoisotopic_mass": ["268.90488"], "smiles_string": ["O.O.O.O.O.O.[Cl][Fe]([Cl])[Cl]"]}, "synonyms": ["FeCl3.6H2O", "Ferric chloride hexahydrate", "Ferric trichloride hexahydrate", "Iron (III) chloride hexahydrate", "Iron(3+) chloride hexahydrate", "trichloroiron--water (1/6)", "trichloroiron--water (1/6)"], "secondary": {"asserted": {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "exact_current_rows": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[8]", "name": "H3BO3", "primary": {"id": "CHEBI:33118", "label": "boric acid"}, "canonical_label": "boric acid", "label_equal": true, "definition": [], "annotations": {"charge": [0.0], "database_cross_reference": ["bpdb:2136", "cas:10043-35-3", "cas:11113-50-1", "drugcentral:3035", "gmelin:1585", "kegg.compound:C12486", "kegg.drug:D01089", "molbase:1644", "pdb-ccd:BO3", "ppdb:2136"], "generalized_empirical_formula": ["H3BO3"], "has_alternative_id": ["CHEBI:22911", "CHEBI:31299", "CHEBI:41248"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:33118"], "inchi_key_string": ["KGBXLFKZBHKPEV-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/BH3O3/c2-1(3)4/h2-4H"], "mass": ["61.833"], "monoisotopic_mass": ["62.01752"], "smiles_string": ["[H]OB(O[H])O[H]"]}, "synonyms": ["B(OH)3", "BORIC ACID", "Boric acid", "H3BO3", "[B(OH)3]", "boric acid", "boron trihydroxide", "orthoboric acid", "trihydroxidoboron", "trihydroxidoboron"], "secondary": {"asserted": {"id": "CHEBI:33118", "label": "boric acid"}, "exact_current_rows": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[9]", "name": "MnCl2 x 4 H2O", "primary": {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "canonical_label": "manganese(II) chloride tetrahydrate", "label_equal": true, "definition": ["A hydrate that is the tetrahydrate form of manganese(II) chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:13446-34-9", "kegg.drug:D04852", "reaxys:24949298", "wikipedia.en:Manganese(II)_chloride"], "generalized_empirical_formula": ["Cl2Mn.4H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86368"], "inchi_key_string": ["CNFDGXZLMLFIJV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2"], "mass": ["197.904"], "monoisotopic_mass": ["196.91801"], "smiles_string": ["O.O.O.O.[Cl][Mn][Cl]"]}, "synonyms": ["Lumenhance", "Manganese chloride tetrahydrate", "Manganese chloride", "Manganese dichloride tetrahydrate", "Manganous chloride tetrahydrate", "dichloromanganese--water (1/4)", "dichloromanganese--water (1/4)", "manganese(2+) chloride tetrahydrate", "manganese(2+) chloride--water (1/4)", "manganese(2+) chloride--water (1/4)"], "secondary": {"asserted": {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "exact_current_rows": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[10]", "name": "CuSO4 x 5 H2O", "primary": {"id": "CHEBI:31440", "label": "copper(II) sulfate pentahydrate"}, "canonical_label": "copper(II) sulfate pentahydrate", "label_equal": true, "definition": ["The pentahydrate of copper(2+) sulfate. A bright blue crystalline solid."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7758-99-8", "kegg.drug:D03613", "pubmed:11407502", "pubmed:12209195", "pubmed:12484481", "pubmed:15040745", "pubmed:15607472", "pubmed:15824790", "pubmed:19346702", "pubmed:2002460", "pubmed:20132934", "pubmed:2913309", "pubmed:3351847", "pubmed:7615984", "pubmed:8878264", "pubmed:9521458", "pubmed:9776063", "reaxys:16499970", "wikipedia.en:Copper(II)_sulfate"], "generalized_empirical_formula": ["Cu.5H2O.O4S"], "has_alternative_id": ["CHEBI:121741", "CHEBI:370227"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31440"], "inchi_key_string": ["JZCCFEFSEZPSOG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Cu.H2O4S.5H2O/c;1-5(2,3)4;;;;;/h;(H2,1,2,3,4);5*1H2/q+2;;;;;;/p-2"], "mass": ["249.684"], "monoisotopic_mass": ["248.93415"], "smiles_string": ["O=S(=O)([O-])[O-].[Cu+2].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H]"]}, "synonyms": ["CuSO4.5H2O", "Cupric sulfate", "copper sulphate(5.H2O)", "copper(2+) sulfate (1:1) pentahydrate", "copper(2+) sulfate pentahydrate", "copper(2+) sulfate pentahydrate", "copper(2+) sulfate--water (1/5)", "copper(2+) sulfate--water (1/5)", "copper(II) sulfate, pentahydrate", "cupric sulfate pentahydrate"], "secondary": {"asserted": {"id": "CHEBI:31440", "label": "copper(II) sulfate pentahydrate"}, "exact_current_rows": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[11]", "name": "ZnSO4 x 7 H2O", "primary": {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "canonical_label": "zinc sulfate heptahydrate", "label_equal": true, "definition": ["A hydrate that is the heptahydrate form of zinc sulfate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7446-20-0", "gmelin:47216", "kegg.drug:D01081", "wikipedia.en:Zinc_Sulfate"], "generalized_empirical_formula": ["7H2O.O4S.Zn"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32312"], "inchi_key_string": ["RZLVQBNCHSJZPX-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/H2O4S.7H2O.Zn/c1-5(2,3)4;;;;;;;;/h(H2,1,2,3,4);7*1H2;/q;;;;;;;;+2/p-2"], "mass": ["287.558"], "monoisotopic_mass": ["285.95482"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Zn+2]"]}, "synonyms": ["Zinc sulfate", "ZnSO4.7H2O", "zinc sulfate (1:1) heptahydrate", "zinc sulfate heptahydrate (1:1:7)", "zinc(2+) sulfate heptahydrate", "zinc(2+) sulfate heptahydrate", "zinc(2+) sulfate--water (1/7)", "zinc(2+) sulfate--water (1/7)"], "secondary": {"asserted": {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "exact_current_rows": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[12]", "name": "Na2 MoO4 x 2 H2O", "primary": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "canonical_label": "sodium molybdate dihydrate", "label_equal": true, "definition": ["A hydrate that is the dihydrate form of sodium molybdate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10102-40-6", "pubmed:20645132", "pubmed:20813395", "pubmed:22663766", "pubmed:3382795", "reaxys:19032996", "wikipedia.en:Sodium_molybdate"], "generalized_empirical_formula": ["2H2O.MoO4.2Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75213"], "inchi_key_string": ["FDEIWTXVNPKYDL-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"], "mass": ["241.946"], "monoisotopic_mass": ["243.88573"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]}, "synonyms": ["Disodium molybdate dihydrate", "Molybdic acid, disodium salt, dihydrate", "Na2MoO4.2H2O", "Sodium molybdate(VI) dihydrate", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium orthomolybdate dihydrate"], "secondary": {"asserted": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "exact_current_rows": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[0]", "name": "Sodium acetate", "primary": {"id": "CHEBI:32954", "label": "sodium acetate"}, "canonical_label": "sodium acetate", "label_equal": true, "definition": [], "annotations": {"charge": [0.0], "database_cross_reference": ["beilstein:3595639", "cas:127-09-3", "gmelin:20502", "wikipedia.en:Sodium_Acetate"], "generalized_empirical_formula": ["C2H3O2.Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32954"], "inchi_key_string": ["VMHLLURERBWHNL-UHFFFAOYSA-M"], "inchi_string": ["InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"], "mass": ["82.034"], "monoisotopic_mass": ["82.00307"], "smiles_string": ["CC(=O)[O-].[Na+]"]}, "synonyms": ["Natriumazetat", "acetic acid, sodium salt", "anhydrous sodium acetate", "sodium acetate anhydrous", "sodium acetate", "sodium acetate"], "secondary": {"asserted": {"id": "CHEBI:32954", "label": "sodium acetate"}, "exact_current_rows": [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954", "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[1]", "name": "Yeast extract"}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[2]", "name": "MgSO4 x 7 H2O", "primary": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "canonical_label": "magnesium sulfate heptahydrate", "label_equal": true, "definition": ["A hydrate that is the heptahydrate form of magnesium sulfate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505", "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222", "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"], "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]}, "synonyms": ["Magnesium sulfate heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric acid magnesium salt heptahydrate"], "secondary": {"asserted": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"}, "exact_current_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[3]", "name": "CaCl2 x 2 H2O", "primary": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "canonical_label": "calcium chloride dihydrate", "label_equal": true, "definition": ["A hydrate that is the dihydrate form of calcium chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10035-04-8", "drugbank:DBSALT000772", "kegg.drug:D02256", "metacyc.compound:CPD0-2507", "reaxys:11343730"], "generalized_empirical_formula": ["Ca.2Cl.2H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86158"], "inchi_key_string": ["LLSDKQJKOVVTOJ-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Ca.2ClH.2H2O/h;2*1H;2*1H2/q+2;;;;/p-2"], "mass": ["147.014"], "monoisotopic_mass": ["145.92143"], "smiles_string": ["O.O.[Ca+2].[Cl-].[Cl-]"]}, "synonyms": ["CaCl2.2H2O", "Calcium chloride hydrate", "Calcium chloride", "calcium chloride--water (1/2)", "calcium chloride--water (1/2)", "calcium dichloride dihydrate"], "secondary": {"asserted": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "exact_current_rows": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[4]", "name": "K2HPO4", "primary": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "canonical_label": "dipotassium hydrogen phosphate", "label_equal": true, "definition": ["A potassium salt that is the dipotassium salt of phosphoric acid."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197", "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"], "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string": ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"], "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]}, "synonyms": ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate", "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate", "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "secondary": {"asserted": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "exact_current_rows": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[5]", "name": "KNO3", "primary": {"id": "CHEBI:63043", "label": "potassium nitrate"}, "canonical_label": "potassium nitrate", "label_equal": true, "definition": ["The inorganic nitrate salt of potassium."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7757-79-1", "kegg.drug:D02051", "pubmed:20062955", "pubmed:21566718", "pubmed:21770249", "pubmed:21905227", "reaxys:16014598", "wikipedia.en:Potassium_nitrate"], "generalized_empirical_formula": ["K.NO3"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:63043"], "inchi_key_string": ["FGIUAXJPYTZDNR-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/K.NO3/c;2-1(3)4/q+1;-1"], "mass": ["101.102"], "monoisotopic_mass": ["100.95152"], "smiles_string": ["O=[N+]([O-])[O-].[K+]"]}, "synonyms": ["Kaliumnitrat", "Niter", "Nitrate of potash", "Nitre", "Nitric acid, potassium salt", "Salt peter", "Saltpeter", "potassium nitrate", "potassium nitrate", "saltpetre"], "legacy_secondary": {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170", "label": "KNO3"}, "current_index_rows": []}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[6]", "name": "HEPES", "primary": {"id": "CHEBI:46756", "label": "HEPES"}, "canonical_label": "HEPES", "label_equal": true, "definition": [], "annotations": {"has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:46756"]}, "synonyms": [], "secondary": {"asserted": {"id": "CHEBI:46756", "label": "HEPES"}, "exact_current_rows": []}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[7]", "name": "FeCl3 x 6 H2O", "primary": {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "canonical_label": "iron trichloride hexahydrate", "label_equal": true, "definition": ["A hydrate that is the hexahydrate form of iron trichloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10025-77-1", "reaxys:11334004", "wikipedia.en:Iron(III)_chloride"], "generalized_empirical_formula": ["Cl3Fe.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86254"], "inchi_key_string": ["NQXWGWZJXJUMQB-UHFFFAOYSA-K"], "inchi_string": ["InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3"], "mass": ["270.294"], "monoisotopic_mass": ["268.90488"], "smiles_string": ["O.O.O.O.O.O.[Cl][Fe]([Cl])[Cl]"]}, "synonyms": ["FeCl3.6H2O", "Ferric chloride hexahydrate", "Ferric trichloride hexahydrate", "Iron (III) chloride hexahydrate", "Iron(3+) chloride hexahydrate", "trichloroiron--water (1/6)", "trichloroiron--water (1/6)"], "secondary": {"asserted": {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "exact_current_rows": [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254", "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[8]", "name": "H3BO3", "primary": {"id": "CHEBI:33118", "label": "boric acid"}, "canonical_label": "boric acid", "label_equal": true, "definition": [], "annotations": {"charge": [0.0], "database_cross_reference": ["bpdb:2136", "cas:10043-35-3", "cas:11113-50-1", "drugcentral:3035", "gmelin:1585", "kegg.compound:C12486", "kegg.drug:D01089", "molbase:1644", "pdb-ccd:BO3", "ppdb:2136"], "generalized_empirical_formula": ["H3BO3"], "has_alternative_id": ["CHEBI:22911", "CHEBI:31299", "CHEBI:41248"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:33118"], "inchi_key_string": ["KGBXLFKZBHKPEV-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/BH3O3/c2-1(3)4/h2-4H"], "mass": ["61.833"], "monoisotopic_mass": ["62.01752"], "smiles_string": ["[H]OB(O[H])O[H]"]}, "synonyms": ["B(OH)3", "BORIC ACID", "Boric acid", "H3BO3", "[B(OH)3]", "boric acid", "boron trihydroxide", "orthoboric acid", "trihydroxidoboron", "trihydroxidoboron"], "secondary": {"asserted": {"id": "CHEBI:33118", "label": "boric acid"}, "exact_current_rows": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[9]", "name": "MnCl2 x 4 H2O", "primary": {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "canonical_label": "manganese(II) chloride tetrahydrate", "label_equal": true, "definition": ["A hydrate that is the tetrahydrate form of manganese(II) chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:13446-34-9", "kegg.drug:D04852", "reaxys:24949298", "wikipedia.en:Manganese(II)_chloride"], "generalized_empirical_formula": ["Cl2Mn.4H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86368"], "inchi_key_string": ["CNFDGXZLMLFIJV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2"], "mass": ["197.904"], "monoisotopic_mass": ["196.91801"], "smiles_string": ["O.O.O.O.[Cl][Mn][Cl]"]}, "synonyms": ["Lumenhance", "Manganese chloride tetrahydrate", "Manganese chloride", "Manganese dichloride tetrahydrate", "Manganous chloride tetrahydrate", "dichloromanganese--water (1/4)", "dichloromanganese--water (1/4)", "manganese(2+) chloride tetrahydrate", "manganese(2+) chloride--water (1/4)", "manganese(2+) chloride--water (1/4)"], "secondary": {"asserted": {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate"}, "exact_current_rows": [{"label": "MnCl2 x 4 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O", "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[10]", "name": "CuSO4 x 5 H2O", "primary": {"id": "CHEBI:31440", "label": "copper(II) sulfate pentahydrate"}, "canonical_label": "copper(II) sulfate pentahydrate", "label_equal": true, "definition": ["The pentahydrate of copper(2+) sulfate. A bright blue crystalline solid."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7758-99-8", "kegg.drug:D03613", "pubmed:11407502", "pubmed:12209195", "pubmed:12484481", "pubmed:15040745", "pubmed:15607472", "pubmed:15824790", "pubmed:19346702", "pubmed:2002460", "pubmed:20132934", "pubmed:2913309", "pubmed:3351847", "pubmed:7615984", "pubmed:8878264", "pubmed:9521458", "pubmed:9776063", "reaxys:16499970", "wikipedia.en:Copper(II)_sulfate"], "generalized_empirical_formula": ["Cu.5H2O.O4S"], "has_alternative_id": ["CHEBI:121741", "CHEBI:370227"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31440"], "inchi_key_string": ["JZCCFEFSEZPSOG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Cu.H2O4S.5H2O/c;1-5(2,3)4;;;;;/h;(H2,1,2,3,4);5*1H2/q+2;;;;;;/p-2"], "mass": ["249.684"], "monoisotopic_mass": ["248.93415"], "smiles_string": ["O=S(=O)([O-])[O-].[Cu+2].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H]"]}, "synonyms": ["CuSO4.5H2O", "Cupric sulfate", "copper sulphate(5.H2O)", "copper(2+) sulfate (1:1) pentahydrate", "copper(2+) sulfate pentahydrate", "copper(2+) sulfate pentahydrate", "copper(2+) sulfate--water (1/5)", "copper(2+) sulfate--water (1/5)", "copper(II) sulfate, pentahydrate", "cupric sulfate pentahydrate"], "secondary": {"asserted": {"id": "CHEBI:31440", "label": "copper(II) sulfate pentahydrate"}, "exact_current_rows": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[11]", "name": "ZnSO4 x 7 H2O", "primary": {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "canonical_label": "zinc sulfate heptahydrate", "label_equal": true, "definition": ["A hydrate that is the heptahydrate form of zinc sulfate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7446-20-0", "gmelin:47216", "kegg.drug:D01081", "wikipedia.en:Zinc_Sulfate"], "generalized_empirical_formula": ["7H2O.O4S.Zn"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32312"], "inchi_key_string": ["RZLVQBNCHSJZPX-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/H2O4S.7H2O.Zn/c1-5(2,3)4;;;;;;;;/h(H2,1,2,3,4);7*1H2;/q;;;;;;;;+2/p-2"], "mass": ["287.558"], "monoisotopic_mass": ["285.95482"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Zn+2]"]}, "synonyms": ["Zinc sulfate", "ZnSO4.7H2O", "zinc sulfate (1:1) heptahydrate", "zinc sulfate heptahydrate (1:1:7)", "zinc(2+) sulfate heptahydrate", "zinc(2+) sulfate heptahydrate", "zinc(2+) sulfate--water (1/7)", "zinc(2+) sulfate--water (1/7)"], "secondary": {"asserted": {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate"}, "exact_current_rows": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[12]", "name": "Na2 MoO4 x 2 H2O", "primary": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "canonical_label": "sodium molybdate dihydrate", "label_equal": true, "definition": ["A hydrate that is the dihydrate form of sodium molybdate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10102-40-6", "pubmed:20645132", "pubmed:20813395", "pubmed:22663766", "pubmed:3382795", "reaxys:19032996", "wikipedia.en:Sodium_molybdate"], "generalized_empirical_formula": ["2H2O.MoO4.2Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75213"], "inchi_key_string": ["FDEIWTXVNPKYDL-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"], "mass": ["241.946"], "monoisotopic_mass": ["243.88573"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]}, "synonyms": ["Disodium molybdate dihydrate", "Molybdic acid, disodium salt, dihydrate", "Na2MoO4.2H2O", "Sodium molybdate(VI) dihydrate", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium orthomolybdate dihydrate"], "secondary": {"asserted": {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate"}, "exact_current_rows": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}], "legacy": [{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170", "label": "KNO3"}, "current_index_rows": []}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170", "label": "KNO3"}, "current_index_rows": []}]} |
+| importer | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _parse_api_solutions; _normalize_unit | context_only | Current code distinguishes main ingredients from solution_id stock additions, skips water and prefers provider g_l. This is current contextual code, not a historical replay proving how the January record arose. |
+| cleanup | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current cleanup collapses equal duplicates or flags unequal values rather than summing them. Historical owner notes explicitly record the earlier 0.03+3.7 sum; current code does not validate that old result. |
+| legacy-migration | scripts/migrate_legacy_mim_to_chebi.py; module contract; migrate_ingredient | context_only | Current migration uses a current CHEBI key when verifiable and leaves unresolved legacy links untouched. The historical migration event does not authenticate the retained KNO3 legacy identifier. |
+| history | data/merge_yaml/merged/A2_MEDIUM.yaml; All target/owner history and ingredient curation timestamps | supports | [{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-26T17:53:15.434056Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-03-13T03:09:14.557885Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-03-13T06:19:02.412977Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[3].timestamp", "value": "2026-03-17T06:30:22.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:14.237835+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-05-20T06:01:06.861758+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[6].timestamp", "value": "2026-06-05T07:40:46.435712+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[7].timestamp", "value": "2026-06-10T07:37:34.451248+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[8].timestamp", "value": "2026-06-10T07:46:52.293126+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[9].timestamp", "value": "2026-08-06T03:05:21.118412+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[0].timestamp", "value": "2026-01-26T17:53:15.434056Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[1].timestamp", "value": "2026-03-13T03:09:14.557885Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[2].timestamp", "value": "2026-03-13T06:19:02.412977Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[3].timestamp", "value": "2026-03-17T06:30:22.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:14.237835+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[5].timestamp", "value": "2026-05-20T06:01:06.861758+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[6].timestamp", "value": "2026-06-05T07:40:46.435712+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[7].timestamp", "value": "2026-06-10T07:37:34.451248+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path": "curation_history[8].timestamp", "value": "2026-06-10T07:46:52.293126+00:00", "valid_ISO_datetime": true, "timezone_aware": true}] |
+| merge | src/culturemech/merge/merger.py; RecipeMerger and merge record construction | context_only | The target is a generated merge with the exact normalized owner declared in the inspection. Merge fingerprints are ingredient-identity sets, not concentration or source-recipe equivalence. Fix maintained inputs and regenerate only with separate authorization. |
+| exporter | src/culturemech/export/kgx_export.py; medium_to_ingredient_edge; medium_to_solution_edge; _resolved_ingredient_id; _quantity | context_only | Current export consumes structured ingredient, solution, type and stored-quantity claims and resolves ingredients through the pinned MIM index before fallback. It does not independently recover omitted source stages or prove final-volume basis. No export was run and no resulting edge count is asserted. |
+
+## Limits And Additional Notes
+
+- The primary lists 1000 mL water plus 2 mL stock; the provider separately declares a 1000 mL main volume. The provider basis is not an independently measured final volume. Conditional dilution examples below are not replacements asserted into the record.
+- The primary visibly prints CuSO2x5H2O whereas MediaDive names copper sulfate pentahydrate. This review preserves the conflict without correcting the primary or inventing an alternative chemical identifier.
+- HEPES is explicitly 20 mM in both sources; 4.766 g/L is provider-declared. The captured HEPES ontology response lacks molecular-weight/formula metadata, so no independent mass conversion is claimed.
+- The current MIM snapshot does not verify the legacy MediaIngredientMech:000170 identifier. Its historical validity is unresolved; no sibling repository or historical source snapshot was assumed.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T094035Z-culturemech-001227-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: a2_medium (CultureMech:001227)'
+started_at: '2026-10-21T09:35:23Z'
+finished_at: '2026-10-21T09:40:35Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 1755 identifies A2 unambiguously, but the generated target and maintained
+  owner flatten the trace-stock formulation into direct medium concentrations and
+  sum calcium across preparation stages. The 2 mL stock dose is absent. The source
+  pH range and direct ingredients are recoverable; the copper spelling conflicts between
+  the primary PDF and provider. All four documented diagnostics pass, while the legacy
+  KNO3 link and current HEPES secondary key remain unverified by the pinned snapshot.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/A2_MEDIUM.yaml
+    sha256: 607fc18897c16e6159920e15c2cb7f47e212605333aa5f2ac7692a581e9a6bc9
+    role: target
+  - path: data/normalized_yaml/bacterial/a2_medium.yaml
+    sha256: 81d59ce41b27f0d9fd62d06b80d2f71acbf8f937ca172b9d8227daea18adcb35
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 131; batch 014 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding thirteen task batches
+    contain 130 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 132 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001227
+targets:
+- target_id: CultureMech:001227
+  path: data/merge_yaml/merged/A2_MEDIUM.yaml
+  label: a2_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/a2_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/A2_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/A2_MEDIUM.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch014/131/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch014/131/strict.tsv"
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/A2_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/A2_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001227
+- check_id: scoped-history
+  name: Scoped timestamp syntax and timezone inspection
+  required: false
+  status: passed
+  summary: 19 timestamps inspected, 0 invalid or timezone-naive; old provenance remains
+    unchanged.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/A2_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/a2_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/A2_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:14.634131Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/A2_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch014/131/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:16.769585Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-014/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch014/131/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/A2_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:19.635698Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/A2_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:36:21.092027Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: source-catalog
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch014/source-preflight-bound/131/source-catalog.json
+  locator: Complete bound per-record catalog, raw/text/metadata hashes and actual
+    original capture times
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: '[{"key": "dsmz1755", "url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf",
+    "status": 200, "accessed_at": "2026-10-21T09:27:38.305609Z", "sha256": "fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0",
+    "metadata_sha256": "e76e3242b82f2354d495ac8b7861cccbae415d10c7b5faac04ec31cfd25bcd78",
+    "content_limit": null, "reused_capture_from": null}, {"key": "mediadive1755api",
+    "url": "https://mediadive.dsmz.de/rest/medium/1755", "status": 200, "accessed_at":
+    "2026-10-21T09:27:37.341319Z", "sha256": "5cfdf8bcbdb0f3d10d82428a7a5a591f46a934320cf811b23c5978e440f03242",
+    "metadata_sha256": "616721959127f49371dc815b2ae641af66b7b01d4b0ca9a31464d122286dc427",
+    "content_limit": null, "reused_capture_from": null}, {"key": "chebi131527", "url":
+    "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527",
+    "status": 200, "accessed_at": "2026-10-20T07:22:08.349487Z", "sha256": "349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3",
+    "metadata_sha256": "c80c70259f95fa059773c6ede393189f5d81590b7271d2a258f94081edb70d1d",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/128/chebi131527.json"},
+    {"key": "chebi31440", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440",
+    "status": 200, "accessed_at": "2026-10-21T08:17:28.489501Z", "sha256": "e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9",
+    "metadata_sha256": "5e389d7dc1c1076dcc34091d30c80697221a51e38d94ce90114810f6e297493c",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi31440.json"},
+    {"key": "chebi31795", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795",
+    "status": 200, "accessed_at": "2026-10-21T08:42:45.232212Z", "sha256": "45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb",
+    "metadata_sha256": "b977e2deeb97e72eb1a69271515ef0d915f9cff4e705516d31bc68e97e45b067",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi31795.json"},
+    {"key": "chebi32312", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312",
+    "status": 200, "accessed_at": "2026-10-21T08:17:28.879505Z", "sha256": "eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9",
+    "metadata_sha256": "815eff41b2a0f1b443e9071a99ba61d988de181180f3684341b397ac391404e6",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch011/101/chebi32312.json"},
+    {"key": "chebi32954", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954",
+    "status": 200, "accessed_at": "2026-10-21T08:00:48.206583Z", "sha256": "573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b",
+    "metadata_sha256": "3cf8e4073bb2f1c20dea1f26c1fb20b8474ad3b80e7ff4346b8ac765debdce2b",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/129/chebi32954.json"},
+    {"key": "chebi33118", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118",
+    "status": 200, "accessed_at": "2026-10-21T08:17:29.364390Z", "sha256": "f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87",
+    "metadata_sha256": "44d8e20ae8d159fbea9eda22dbeece849c70dfb5e58e6264951a9c627b80e734",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi33118.json"},
+    {"key": "chebi46756", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46756",
+    "status": 200, "accessed_at": "2026-10-21T09:27:40.629039Z", "sha256": "4270cc705078ff2f1787f98b7dbcf05c96b1eccd333801a00cff01b855298a69",
+    "metadata_sha256": "29282c67af619028d22f9110c5d889eeafaf8e31e89dd0b4a36ef164c6c54fb6",
+    "content_limit": null, "reused_capture_from": null}, {"key": "chebi63043", "url":
+    "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043",
+    "status": 200, "accessed_at": "2026-10-21T09:27:40.679699Z", "sha256": "c324450e6330a169c708c32a7908b6df0276f4dc76da413e473b563928f61c13",
+    "metadata_sha256": "dbc621a037481d071f2273dc092d2699bf954f765dadb428058a70a37728ab28",
+    "content_limit": null, "reused_capture_from": null}, {"key": "chebi75213", "url":
+    "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213",
+    "status": 200, "accessed_at": "2026-10-21T08:17:29.756647Z", "sha256": "b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083",
+    "metadata_sha256": "f902215c05d2c2148e936f069f116990af3a4038fbe78278aa273a42ecc31cbd",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi75213.json"},
+    {"key": "chebi86158", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158",
+    "status": 200, "accessed_at": "2026-10-21T08:17:30.011607Z", "sha256": "b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61",
+    "metadata_sha256": "72653f1f8145e6950861af46ef1dc18370bc54d3fe96c9720fa62864ea4fc322",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch013-tail/130/chebi86158.json"},
+    {"key": "chebi86254", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254",
+    "status": 200, "accessed_at": "2026-10-21T08:17:30.289392Z", "sha256": "89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683",
+    "metadata_sha256": "64ea7b72ce41a8a38294779fd76a8052c6d150ea4a6491d42a1b44f84ba7c2eb",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi86254.json"},
+    {"key": "chebi86368", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368",
+    "status": 200, "accessed_at": "2026-10-21T08:17:30.657545Z", "sha256": "286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f",
+    "metadata_sha256": "5064d57753b5a1b71ed5c1850a86f931c48ca19fd93a1f6a2246dd2a875d9ff2",
+    "content_limit": null, "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi86368.json"}]'
+  snapshot_sha256: a6d2fc359bf316ad672520599e6d18462ac34d4ec7b47bbe6b0b472976a5a161
+- evidence_id: dsmz1755
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, complete main and trace-stock sections
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Exact one-page DSMZ 1755 A2 recipe, main additions, separate trace stock,
+    pH and literal copper anomaly. Entire PDF was inspected visually as well as by
+    extracted text.
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: mediadive1755api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1755
+  locator: $.data.medium; $.data.solutions[0:2]
+  accessed_at: '2026-10-21T09:27:37.341319Z'
+  support: supports
+  summary: 'Exact medium1755 provider payload: main3617 and trace5831, separate volume
+    declarations, stock dose, all ingredient amounts and pH.'
+  snapshot_sha256: 5cfdf8bcbdb0f3d10d82428a7a5a591f46a934320cf811b23c5978e440f03242
+- evidence_id: quantity-1
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main recipe row 1
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Literal source batch mass. The stored number matches the source mass on
+    its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence.
+    No measured final-volume claim is inferred.
+  quote: Sodium acetate  0.240  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-2
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main recipe row 2
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Literal source batch mass. The stored number matches the source mass on
+    its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence.
+    No measured final-volume claim is inferred.
+  quote: Yeast extract  0.150  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-3
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main recipe row 3
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Literal source batch mass. The stored number matches the source mass on
+    its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence.
+    No measured final-volume claim is inferred.
+  quote: MgSO4 x 7H2O  0.800  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-4
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main recipe row 4
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: context_only
+  summary: Literal source batch mass. Stored 3.73 g/L incorrectly adds the separate
+    stock 3.7 g to direct 0.030 g.
+  quote: CaCl2 x 2 H2O  0.030  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-5
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main recipe row 5
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Literal source batch mass. The stored number matches the source mass on
+    its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence.
+    No measured final-volume claim is inferred.
+  quote: K2HPO4  0.005  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-6
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main recipe row 6
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Literal source batch mass. The stored number matches the source mass on
+    its nominal recipe basis and the provider g_l field; it lacks narrow amount evidence.
+    No measured final-volume claim is inferred.
+  quote: KNO3        0.010  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-7
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main HEPES row
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Source explicitly specifies 20 mM. Provider main recipe[6] reports g_l=4.766;
+    keep its declared conversion attribution rather than asserting an independently
+    verified molecular weight.
+  quote: HEPES      20 mM
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-8
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, Trace mineral salts solution row 1
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: context_only
+  summary: The listed amount belongs to the stock; the main medium receives only 2
+    mL. Do not copy the undiluted stock concentration into a direct medium row.
+  quote: FeCL3x6H2O          1.000  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-9
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, Trace mineral salts solution row 2
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: context_only
+  summary: The listed amount belongs to the stock; the main medium receives only 2
+    mL. Do not copy the undiluted stock concentration into a direct medium row.
+  quote: H3BO3           2.500  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-10
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, Trace mineral salts solution row 3
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: context_only
+  summary: The listed amount belongs to the stock; the main medium receives only 2
+    mL. Do not copy the undiluted stock concentration into a direct medium row.
+  quote: MnCl2x4H2O          0.870  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-11
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, Trace mineral salts solution row 4
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: context_only
+  summary: The listed amount belongs to the stock; the main medium receives only 2
+    mL. Do not copy the undiluted stock concentration into a direct medium row.
+  quote: CaCl2x2H2O          3.700   g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-12
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, Trace mineral salts solution row 5
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: context_only
+  summary: The listed amount belongs to the stock; the main medium receives only 2
+    mL. Primary copper formula differs from provider CuSO4 x 5 H2O; preserve the source
+    conflict.
+  quote: CuSO2x5H2O          0.005  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-13
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, Trace mineral salts solution row 6
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: context_only
+  summary: The listed amount belongs to the stock; the main medium receives only 2
+    mL. Do not copy the undiluted stock concentration into a direct medium row.
+  quote: ZnSO4x7H2O          0.440  g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-14
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, Trace mineral salts solution row 7
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: context_only
+  summary: The listed amount belongs to the stock; the main medium receives only 2
+    mL. Do not copy the undiluted stock concentration into a direct medium row.
+  quote: Na2MoO4x2H2O         0.290   g
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-15
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main trace-stock addition row
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Restore the explicit 2.000 mL dose separately from the seven stock components;
+    provider main recipe[7] independently identifies solution5831 and 2 ml.
+  quote: Trace mineral salts solution           2.000  ml
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-16
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, main water row
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: Preserve 1000 mL water as source solvent context; do not infer a mass concentration
+    or measured final volume.
+  quote: a.dest   1000.000  ml
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: quantity-17
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1755.pdf
+  locator: page 1, final stock row
+  accessed_at: '2026-10-21T09:27:38.305609Z'
+  support: supports
+  summary: The source explicitly makes the stock up to 1000 mL; this supports stock
+    mass-per-liter strengths independently of the receiving volume.
+  quote: ad distilled water               1000.000    ml
+  snapshot_sha256: fcca7cdb6404a6487d98656aad19d547050342ffb6f32e31e24a4e9a17da6bd0
+- evidence_id: chebi32954
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:00:48.206583Z'
+  support: supports
+  summary: CHEBI:32954 resolves to sodium acetate and is not obsolete. Available definitions,
+    formulae, structures and synonyms were inspected; recipe amounts and supplied
+    forms are assessed separately.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi63043
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63043
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T09:27:40.679699Z'
+  support: supports
+  summary: CHEBI:63043 resolves to potassium nitrate and is not obsolete. Available
+    definitions, formulae, structures and synonyms were inspected; recipe amounts
+    and supplied forms are assessed separately.
+  snapshot_sha256: c324450e6330a169c708c32a7908b6df0276f4dc76da413e473b563928f61c13
+- evidence_id: chebi46756
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46756
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T09:27:40.629039Z'
+  support: supports
+  summary: CHEBI:46756 resolves to HEPES and is not obsolete. Available definitions,
+    formulae, structures and synonyms were inspected; recipe amounts and supplied
+    forms are assessed separately.
+  snapshot_sha256: 4270cc705078ff2f1787f98b7dbcf05c96b1eccd333801a00cff01b855298a69
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:30.289392Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid and is not obsolete. Available definitions,
+    formulae, structures and synonyms were inspected; recipe amounts and supplied
+    forms are assessed separately.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is not
+    obsolete. Available definitions, formulae, structures and synonyms were inspected;
+    recipe amounts and supplied forms are assessed separately.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: $._embedded.terms[0]
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete.
+    Available definitions, formulae, structures and synonyms were inspected; recipe
+    amounts and supplied forms are assessed separately.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned snapshot; exact MAPPED/preferred_term rows for asserted CHEBI
+    keys and exact legacy-key lookup
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: '{"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count":
+    9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id",
+    "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"},
+    "counts": {"target": {"ingredient_instances": 13, "primary_CHEBI_instances": 12,
+    "secondary_current_asserted_instances": 11, "secondary_current_verified_instances":
+    10, "legacy_secondary_instances": 1, "primary_CHEBI_percent": 92.31, "secondary_verified_percent":
+    76.92}, "owner": {"ingredient_instances": 13, "primary_CHEBI_instances": 12, "secondary_current_asserted_instances":
+    11, "secondary_current_verified_instances": 10, "legacy_secondary_instances":
+    1, "primary_CHEBI_percent": 92.31, "secondary_verified_percent": 76.92}}, "instances":
+    [{"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field":
+    "ingredients[0]", "name": "Sodium acetate", "primary": {"id": "CHEBI:32954", "label":
+    "sodium acetate"}, "canonical_label": "sodium acetate", "label_equal": true, "definition":
+    [], "annotations": {"charge": [0.0], "database_cross_reference": ["beilstein:3595639",
+    "cas:127-09-3", "gmelin:20502", "wikipedia.en:Sodium_Acetate"], "generalized_empirical_formula":
+    ["C2H3O2.Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32954"],
+    "inchi_key_string": ["VMHLLURERBWHNL-UHFFFAOYSA-M"], "inchi_string": ["InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"],
+    "mass": ["82.034"], "monoisotopic_mass": ["82.00307"], "smiles_string": ["CC(=O)[O-].[Na+]"]},
+    "synonyms": ["Natriumazetat", "acetic acid, sodium salt", "anhydrous sodium acetate",
+    "sodium acetate anhydrous", "sodium acetate", "sodium acetate"], "secondary":
+    {"asserted": {"id": "CHEBI:32954", "label": "sodium acetate"}, "exact_current_rows":
+    [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954",
+    "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[1]", "name": "Yeast extract"}, {"layer": "target", "path":
+    "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[2]", "name": "MgSO4
+    x 7 H2O", "primary": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"},
+    "canonical_label": "magnesium sulfate heptahydrate", "label_equal": true, "definition":
+    ["A hydrate that is the heptahydrate form of magnesium sulfate."], "annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:10034-99-8", "drugbank:DBSALT001240",
+    "foodb.food:FDB015432", "kegg.compound:C12505", "kegg.drug:D01108", "metacyc.compound:CPD0-2387",
+    "pubmed:12078740", "pubmed:21595222", "pubmed:26281883", "pubmed:28970193", "pubmed:30510660",
+    "pubmed:5492983", "wikipedia.en:Epsomite"], "generalized_empirical_formula": ["7H2O.Mg.O4S"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31795"], "inchi_key_string":
+    ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]},
+    "synonyms": ["Magnesium sulfate heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom
+    salt", "epsomite", "magnesium sulfate (1:1) heptahydrate", "magnesium sulfate
+    heptahydrate", "magnesium sulfate--water (1/7)", "magnesium sulfate--water (1/7)",
+    "magnesium sulphate heptahydrate", "sulfuric acid magnesium salt heptahydrate"],
+    "secondary": {"asserted": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"},
+    "exact_current_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[3]", "name": "CaCl2 x 2 H2O", "primary": {"id": "CHEBI:86158",
+    "label": "calcium chloride dihydrate"}, "canonical_label": "calcium chloride dihydrate",
+    "label_equal": true, "definition": ["A hydrate that is the dihydrate form of calcium
+    chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10035-04-8",
+    "drugbank:DBSALT000772", "kegg.drug:D02256", "metacyc.compound:CPD0-2507", "reaxys:11343730"],
+    "generalized_empirical_formula": ["Ca.2Cl.2H2O"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:86158"], "inchi_key_string": ["LLSDKQJKOVVTOJ-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Ca.2ClH.2H2O/h;2*1H;2*1H2/q+2;;;;/p-2"], "mass": ["147.014"], "monoisotopic_mass":
+    ["145.92143"], "smiles_string": ["O.O.[Ca+2].[Cl-].[Cl-]"]}, "synonyms": ["CaCl2.2H2O",
+    "Calcium chloride hydrate", "Calcium chloride", "calcium chloride--water (1/2)",
+    "calcium chloride--water (1/2)", "calcium dichloride dihydrate"], "secondary":
+    {"asserted": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "exact_current_rows":
+    [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[4]", "name": "K2HPO4", "primary": {"id": "CHEBI:131527",
+    "label": "dipotassium hydrogen phosphate"}, "canonical_label": "dipotassium hydrogen
+    phosphate", "label_equal": true, "definition": ["A potassium salt that is the
+    dipotassium salt of phosphoric acid."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:7758-11-4", "kegg.compound:C13197", "kegg.drug:D02403", "metacyc.compound:CPD0-2433",
+    "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"], "generalized_empirical_formula":
+    ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:131527"], "inchi_key_string": ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"], "mass": ["174.174"],
+    "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]},
+    "synonyms": ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate",
+    "Dipotassium monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium
+    orthophosphate", "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4",
+    "Phosphoric acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium
+    monohydrogen phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)",
+    "Potassium phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium
+    hydrogen phosphate", "dipotassium hydrogenphosphate", "potassium dibasic phosphate
+    trihydrate"], "secondary": {"asserted": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "exact_current_rows": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer":
+    "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[5]",
+    "name": "KNO3", "primary": {"id": "CHEBI:63043", "label": "potassium nitrate"},
+    "canonical_label": "potassium nitrate", "label_equal": true, "definition": ["The
+    inorganic nitrate salt of potassium."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:7757-79-1", "kegg.drug:D02051", "pubmed:20062955", "pubmed:21566718", "pubmed:21770249",
+    "pubmed:21905227", "reaxys:16014598", "wikipedia.en:Potassium_nitrate"], "generalized_empirical_formula":
+    ["K.NO3"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:63043"], "inchi_key_string":
+    ["FGIUAXJPYTZDNR-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/K.NO3/c;2-1(3)4/q+1;-1"],
+    "mass": ["101.102"], "monoisotopic_mass": ["100.95152"], "smiles_string": ["O=[N+]([O-])[O-].[K+]"]},
+    "synonyms": ["Kaliumnitrat", "Niter", "Nitrate of potash", "Nitre", "Nitric acid,
+    potassium salt", "Salt peter", "Saltpeter", "potassium nitrate", "potassium nitrate",
+    "saltpetre"], "legacy_secondary": {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170",
+    "label": "KNO3"}, "current_index_rows": []}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[6]", "name": "HEPES", "primary": {"id": "CHEBI:46756", "label":
+    "HEPES"}, "canonical_label": "HEPES", "label_equal": true, "definition": [], "annotations":
+    {"has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:46756"]}, "synonyms":
+    [], "secondary": {"asserted": {"id": "CHEBI:46756", "label": "HEPES"}, "exact_current_rows":
+    []}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field":
+    "ingredients[7]", "name": "FeCl3 x 6 H2O", "primary": {"id": "CHEBI:86254", "label":
+    "iron trichloride hexahydrate"}, "canonical_label": "iron trichloride hexahydrate",
+    "label_equal": true, "definition": ["A hydrate that is the hexahydrate form of
+    iron trichloride."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10025-77-1", "reaxys:11334004", "wikipedia.en:Iron(III)_chloride"], "generalized_empirical_formula":
+    ["Cl3Fe.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86254"],
+    "inchi_key_string": ["NQXWGWZJXJUMQB-UHFFFAOYSA-K"], "inchi_string": ["InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3"],
+    "mass": ["270.294"], "monoisotopic_mass": ["268.90488"], "smiles_string": ["O.O.O.O.O.O.[Cl][Fe]([Cl])[Cl]"]},
+    "synonyms": ["FeCl3.6H2O", "Ferric chloride hexahydrate", "Ferric trichloride
+    hexahydrate", "Iron (III) chloride hexahydrate", "Iron(3+) chloride hexahydrate",
+    "trichloroiron--water (1/6)", "trichloroiron--water (1/6)"], "secondary": {"asserted":
+    {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "exact_current_rows":
+    [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254",
+    "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[8]", "name": "H3BO3", "primary": {"id": "CHEBI:33118", "label":
+    "boric acid"}, "canonical_label": "boric acid", "label_equal": true, "definition":
+    [], "annotations": {"charge": [0.0], "database_cross_reference": ["bpdb:2136",
+    "cas:10043-35-3", "cas:11113-50-1", "drugcentral:3035", "gmelin:1585", "kegg.compound:C12486",
+    "kegg.drug:D01089", "molbase:1644", "pdb-ccd:BO3", "ppdb:2136"], "generalized_empirical_formula":
+    ["H3BO3"], "has_alternative_id": ["CHEBI:22911", "CHEBI:31299", "CHEBI:41248"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:33118"], "inchi_key_string":
+    ["KGBXLFKZBHKPEV-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/BH3O3/c2-1(3)4/h2-4H"],
+    "mass": ["61.833"], "monoisotopic_mass": ["62.01752"], "smiles_string": ["[H]OB(O[H])O[H]"]},
+    "synonyms": ["B(OH)3", "BORIC ACID", "Boric acid", "H3BO3", "[B(OH)3]", "boric
+    acid", "boron trihydroxide", "orthoboric acid", "trihydroxidoboron", "trihydroxidoboron"],
+    "secondary": {"asserted": {"id": "CHEBI:33118", "label": "boric acid"}, "exact_current_rows":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}, {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[9]", "name": "MnCl2 x 4 H2O", "primary": {"id": "CHEBI:86368",
+    "label": "manganese(II) chloride tetrahydrate"}, "canonical_label": "manganese(II)
+    chloride tetrahydrate", "label_equal": true, "definition": ["A hydrate that is
+    the tetrahydrate form of manganese(II) chloride."], "annotations": {"charge":
+    [0.0], "database_cross_reference": ["cas:13446-34-9", "kegg.drug:D04852", "reaxys:24949298",
+    "wikipedia.en:Manganese(II)_chloride"], "generalized_empirical_formula": ["Cl2Mn.4H2O"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86368"], "inchi_key_string":
+    ["CNFDGXZLMLFIJV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2"],
+    "mass": ["197.904"], "monoisotopic_mass": ["196.91801"], "smiles_string": ["O.O.O.O.[Cl][Mn][Cl]"]},
+    "synonyms": ["Lumenhance", "Manganese chloride tetrahydrate", "Manganese chloride",
+    "Manganese dichloride tetrahydrate", "Manganous chloride tetrahydrate", "dichloromanganese--water
+    (1/4)", "dichloromanganese--water (1/4)", "manganese(2+) chloride tetrahydrate",
+    "manganese(2+) chloride--water (1/4)", "manganese(2+) chloride--water (1/4)"],
+    "secondary": {"asserted": {"id": "CHEBI:86368", "label": "manganese(II) chloride
+    tetrahydrate"}, "exact_current_rows": [{"label": "MnCl2 x 4 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O",
+    "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}},
+    {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field":
+    "ingredients[10]", "name": "CuSO4 x 5 H2O", "primary": {"id": "CHEBI:31440", "label":
+    "copper(II) sulfate pentahydrate"}, "canonical_label": "copper(II) sulfate pentahydrate",
+    "label_equal": true, "definition": ["The pentahydrate of copper(2+) sulfate. A
+    bright blue crystalline solid."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:7758-99-8", "kegg.drug:D03613", "pubmed:11407502", "pubmed:12209195", "pubmed:12484481",
+    "pubmed:15040745", "pubmed:15607472", "pubmed:15824790", "pubmed:19346702", "pubmed:2002460",
+    "pubmed:20132934", "pubmed:2913309", "pubmed:3351847", "pubmed:7615984", "pubmed:8878264",
+    "pubmed:9521458", "pubmed:9776063", "reaxys:16499970", "wikipedia.en:Copper(II)_sulfate"],
+    "generalized_empirical_formula": ["Cu.5H2O.O4S"], "has_alternative_id": ["CHEBI:121741",
+    "CHEBI:370227"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31440"],
+    "inchi_key_string": ["JZCCFEFSEZPSOG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Cu.H2O4S.5H2O/c;1-5(2,3)4;;;;;/h;(H2,1,2,3,4);5*1H2/q+2;;;;;;/p-2"],
+    "mass": ["249.684"], "monoisotopic_mass": ["248.93415"], "smiles_string": ["O=S(=O)([O-])[O-].[Cu+2].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H]"]},
+    "synonyms": ["CuSO4.5H2O", "Cupric sulfate", "copper sulphate(5.H2O)", "copper(2+)
+    sulfate (1:1) pentahydrate", "copper(2+) sulfate pentahydrate", "copper(2+) sulfate
+    pentahydrate", "copper(2+) sulfate--water (1/5)", "copper(2+) sulfate--water (1/5)",
+    "copper(II) sulfate, pentahydrate", "cupric sulfate pentahydrate"], "secondary":
+    {"asserted": {"id": "CHEBI:31440", "label": "copper(II) sulfate pentahydrate"},
+    "exact_current_rows": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer":
+    "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[11]",
+    "name": "ZnSO4 x 7 H2O", "primary": {"id": "CHEBI:32312", "label": "zinc sulfate
+    heptahydrate"}, "canonical_label": "zinc sulfate heptahydrate", "label_equal":
+    true, "definition": ["A hydrate that is the heptahydrate form of zinc sulfate."],
+    "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7446-20-0",
+    "gmelin:47216", "kegg.drug:D01081", "wikipedia.en:Zinc_Sulfate"], "generalized_empirical_formula":
+    ["7H2O.O4S.Zn"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32312"],
+    "inchi_key_string": ["RZLVQBNCHSJZPX-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/H2O4S.7H2O.Zn/c1-5(2,3)4;;;;;;;;/h(H2,1,2,3,4);7*1H2;/q;;;;;;;;+2/p-2"],
+    "mass": ["287.558"], "monoisotopic_mass": ["285.95482"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Zn+2]"]},
+    "synonyms": ["Zinc sulfate", "ZnSO4.7H2O", "zinc sulfate (1:1) heptahydrate",
+    "zinc sulfate heptahydrate (1:1:7)", "zinc(2+) sulfate heptahydrate", "zinc(2+)
+    sulfate heptahydrate", "zinc(2+) sulfate--water (1/7)", "zinc(2+) sulfate--water
+    (1/7)"], "secondary": {"asserted": {"id": "CHEBI:32312", "label": "zinc sulfate
+    heptahydrate"}, "exact_current_rows": [{"label": "ZnSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O",
+    "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}]}},
+    {"layer": "target", "path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field":
+    "ingredients[12]", "name": "Na2 MoO4 x 2 H2O", "primary": {"id": "CHEBI:75213",
+    "label": "sodium molybdate dihydrate"}, "canonical_label": "sodium molybdate dihydrate",
+    "label_equal": true, "definition": ["A hydrate that is the dihydrate form of sodium
+    molybdate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10102-40-6",
+    "pubmed:20645132", "pubmed:20813395", "pubmed:22663766", "pubmed:3382795", "reaxys:19032996",
+    "wikipedia.en:Sodium_molybdate"], "generalized_empirical_formula": ["2H2O.MoO4.2Na"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75213"], "inchi_key_string":
+    ["FDEIWTXVNPKYDL-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"],
+    "mass": ["241.946"], "monoisotopic_mass": ["243.88573"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]},
+    "synonyms": ["Disodium molybdate dihydrate", "Molybdic acid, disodium salt, dihydrate",
+    "Na2MoO4.2H2O", "Sodium molybdate(VI) dihydrate", "sodium dioxido(dioxo)molybdenum--water
+    (1/2)", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium orthomolybdate
+    dihydrate"], "secondary": {"asserted": {"id": "CHEBI:75213", "label": "sodium
+    molybdate dihydrate"}, "exact_current_rows": [{"label": "Na2MoO4 x 2 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2
+    H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}]}},
+    {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field":
+    "ingredients[0]", "name": "Sodium acetate", "primary": {"id": "CHEBI:32954", "label":
+    "sodium acetate"}, "canonical_label": "sodium acetate", "label_equal": true, "definition":
+    [], "annotations": {"charge": [0.0], "database_cross_reference": ["beilstein:3595639",
+    "cas:127-09-3", "gmelin:20502", "wikipedia.en:Sodium_Acetate"], "generalized_empirical_formula":
+    ["C2H3O2.Na"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32954"],
+    "inchi_key_string": ["VMHLLURERBWHNL-UHFFFAOYSA-M"], "inchi_string": ["InChI=1S/C2H4O2.Na/c1-2(3)4;/h1H3,(H,3,4);/q;+1/p-1"],
+    "mass": ["82.034"], "monoisotopic_mass": ["82.00307"], "smiles_string": ["CC(=O)[O-].[Na+]"]},
+    "synonyms": ["Natriumazetat", "acetic acid, sodium salt", "anhydrous sodium acetate",
+    "sodium acetate anhydrous", "sodium acetate", "sodium acetate"], "secondary":
+    {"asserted": {"id": "CHEBI:32954", "label": "sodium acetate"}, "exact_current_rows":
+    [{"label": "Na-acetate", "match_type": "preferred_term", "identifier": "CHEBI:32954",
+    "preferred_term": "Na-acetate", "ontology_id": "CHEBI:32954", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[1]", "name": "Yeast extract"}, {"layer": "owner", "path":
+    "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[2]", "name":
+    "MgSO4 x 7 H2O", "primary": {"id": "CHEBI:31795", "label": "magnesium sulfate
+    heptahydrate"}, "canonical_label": "magnesium sulfate heptahydrate", "label_equal":
+    true, "definition": ["A hydrate that is the heptahydrate form of magnesium sulfate."],
+    "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10034-99-8",
+    "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505", "kegg.drug:D01108",
+    "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222", "pubmed:26281883",
+    "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"],
+    "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]},
+    "synonyms": ["Magnesium sulfate heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom
+    salt", "epsomite", "magnesium sulfate (1:1) heptahydrate", "magnesium sulfate
+    heptahydrate", "magnesium sulfate--water (1/7)", "magnesium sulfate--water (1/7)",
+    "magnesium sulphate heptahydrate", "sulfuric acid magnesium salt heptahydrate"],
+    "secondary": {"asserted": {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate"},
+    "exact_current_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[3]", "name": "CaCl2 x 2 H2O", "primary": {"id": "CHEBI:86158",
+    "label": "calcium chloride dihydrate"}, "canonical_label": "calcium chloride dihydrate",
+    "label_equal": true, "definition": ["A hydrate that is the dihydrate form of calcium
+    chloride."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10035-04-8",
+    "drugbank:DBSALT000772", "kegg.drug:D02256", "metacyc.compound:CPD0-2507", "reaxys:11343730"],
+    "generalized_empirical_formula": ["Ca.2Cl.2H2O"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:86158"], "inchi_key_string": ["LLSDKQJKOVVTOJ-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Ca.2ClH.2H2O/h;2*1H;2*1H2/q+2;;;;/p-2"], "mass": ["147.014"], "monoisotopic_mass":
+    ["145.92143"], "smiles_string": ["O.O.[Ca+2].[Cl-].[Cl-]"]}, "synonyms": ["CaCl2.2H2O",
+    "Calcium chloride hydrate", "Calcium chloride", "calcium chloride--water (1/2)",
+    "calcium chloride--water (1/2)", "calcium dichloride dihydrate"], "secondary":
+    {"asserted": {"id": "CHEBI:86158", "label": "calcium chloride dihydrate"}, "exact_current_rows":
+    [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[4]", "name": "K2HPO4", "primary": {"id": "CHEBI:131527",
+    "label": "dipotassium hydrogen phosphate"}, "canonical_label": "dipotassium hydrogen
+    phosphate", "label_equal": true, "definition": ["A potassium salt that is the
+    dipotassium salt of phosphoric acid."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:7758-11-4", "kegg.compound:C13197", "kegg.drug:D02403", "metacyc.compound:CPD0-2433",
+    "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"], "generalized_empirical_formula":
+    ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:131527"], "inchi_key_string": ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"], "mass": ["174.174"],
+    "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]},
+    "synonyms": ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate",
+    "Dipotassium monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium
+    orthophosphate", "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4",
+    "Phosphoric acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium
+    monohydrogen phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)",
+    "Potassium phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium
+    hydrogen phosphate", "dipotassium hydrogenphosphate", "potassium dibasic phosphate
+    trihydrate"], "secondary": {"asserted": {"id": "CHEBI:131527", "label": "dipotassium
+    hydrogen phosphate"}, "exact_current_rows": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer":
+    "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[5]",
+    "name": "KNO3", "primary": {"id": "CHEBI:63043", "label": "potassium nitrate"},
+    "canonical_label": "potassium nitrate", "label_equal": true, "definition": ["The
+    inorganic nitrate salt of potassium."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:7757-79-1", "kegg.drug:D02051", "pubmed:20062955", "pubmed:21566718", "pubmed:21770249",
+    "pubmed:21905227", "reaxys:16014598", "wikipedia.en:Potassium_nitrate"], "generalized_empirical_formula":
+    ["K.NO3"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:63043"], "inchi_key_string":
+    ["FGIUAXJPYTZDNR-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/K.NO3/c;2-1(3)4/q+1;-1"],
+    "mass": ["101.102"], "monoisotopic_mass": ["100.95152"], "smiles_string": ["O=[N+]([O-])[O-].[K+]"]},
+    "synonyms": ["Kaliumnitrat", "Niter", "Nitrate of potash", "Nitre", "Nitric acid,
+    potassium salt", "Salt peter", "Saltpeter", "potassium nitrate", "potassium nitrate",
+    "saltpetre"], "legacy_secondary": {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170",
+    "label": "KNO3"}, "current_index_rows": []}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[6]", "name": "HEPES", "primary": {"id": "CHEBI:46756", "label":
+    "HEPES"}, "canonical_label": "HEPES", "label_equal": true, "definition": [], "annotations":
+    {"has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:46756"]}, "synonyms":
+    [], "secondary": {"asserted": {"id": "CHEBI:46756", "label": "HEPES"}, "exact_current_rows":
+    []}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[7]", "name": "FeCl3 x 6 H2O", "primary": {"id": "CHEBI:86254",
+    "label": "iron trichloride hexahydrate"}, "canonical_label": "iron trichloride
+    hexahydrate", "label_equal": true, "definition": ["A hydrate that is the hexahydrate
+    form of iron trichloride."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10025-77-1", "reaxys:11334004", "wikipedia.en:Iron(III)_chloride"], "generalized_empirical_formula":
+    ["Cl3Fe.6H2O"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86254"],
+    "inchi_key_string": ["NQXWGWZJXJUMQB-UHFFFAOYSA-K"], "inchi_string": ["InChI=1S/3ClH.Fe.6H2O/h3*1H;;6*1H2/q;;;+3;;;;;;/p-3"],
+    "mass": ["270.294"], "monoisotopic_mass": ["268.90488"], "smiles_string": ["O.O.O.O.O.O.[Cl][Fe]([Cl])[Cl]"]},
+    "synonyms": ["FeCl3.6H2O", "Ferric chloride hexahydrate", "Ferric trichloride
+    hexahydrate", "Iron (III) chloride hexahydrate", "Iron(3+) chloride hexahydrate",
+    "trichloroiron--water (1/6)", "trichloroiron--water (1/6)"], "secondary": {"asserted":
+    {"id": "CHEBI:86254", "label": "iron trichloride hexahydrate"}, "exact_current_rows":
+    [{"label": "FeCl3 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86254",
+    "preferred_term": "FeCl3 x 6 H2O", "ontology_id": "CHEBI:86254", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[8]", "name": "H3BO3", "primary": {"id": "CHEBI:33118", "label":
+    "boric acid"}, "canonical_label": "boric acid", "label_equal": true, "definition":
+    [], "annotations": {"charge": [0.0], "database_cross_reference": ["bpdb:2136",
+    "cas:10043-35-3", "cas:11113-50-1", "drugcentral:3035", "gmelin:1585", "kegg.compound:C12486",
+    "kegg.drug:D01089", "molbase:1644", "pdb-ccd:BO3", "ppdb:2136"], "generalized_empirical_formula":
+    ["H3BO3"], "has_alternative_id": ["CHEBI:22911", "CHEBI:31299", "CHEBI:41248"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:33118"], "inchi_key_string":
+    ["KGBXLFKZBHKPEV-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/BH3O3/c2-1(3)4/h2-4H"],
+    "mass": ["61.833"], "monoisotopic_mass": ["62.01752"], "smiles_string": ["[H]OB(O[H])O[H]"]},
+    "synonyms": ["B(OH)3", "BORIC ACID", "Boric acid", "H3BO3", "[B(OH)3]", "boric
+    acid", "boron trihydroxide", "orthoboric acid", "trihydroxidoboron", "trihydroxidoboron"],
+    "secondary": {"asserted": {"id": "CHEBI:33118", "label": "boric acid"}, "exact_current_rows":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[9]", "name": "MnCl2 x 4 H2O", "primary": {"id": "CHEBI:86368",
+    "label": "manganese(II) chloride tetrahydrate"}, "canonical_label": "manganese(II)
+    chloride tetrahydrate", "label_equal": true, "definition": ["A hydrate that is
+    the tetrahydrate form of manganese(II) chloride."], "annotations": {"charge":
+    [0.0], "database_cross_reference": ["cas:13446-34-9", "kegg.drug:D04852", "reaxys:24949298",
+    "wikipedia.en:Manganese(II)_chloride"], "generalized_empirical_formula": ["Cl2Mn.4H2O"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:86368"], "inchi_key_string":
+    ["CNFDGXZLMLFIJV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2ClH.Mn.4H2O/h2*1H;;4*1H2/q;;+2;;;;/p-2"],
+    "mass": ["197.904"], "monoisotopic_mass": ["196.91801"], "smiles_string": ["O.O.O.O.[Cl][Mn][Cl]"]},
+    "synonyms": ["Lumenhance", "Manganese chloride tetrahydrate", "Manganese chloride",
+    "Manganese dichloride tetrahydrate", "Manganous chloride tetrahydrate", "dichloromanganese--water
+    (1/4)", "dichloromanganese--water (1/4)", "manganese(2+) chloride tetrahydrate",
+    "manganese(2+) chloride--water (1/4)", "manganese(2+) chloride--water (1/4)"],
+    "secondary": {"asserted": {"id": "CHEBI:86368", "label": "manganese(II) chloride
+    tetrahydrate"}, "exact_current_rows": [{"label": "MnCl2 x 4 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:86368", "preferred_term": "MnCl2 x 4 H2O",
+    "ontology_id": "CHEBI:86368", "mapping_status": "MAPPED", "ambiguity": "unique"}]}},
+    {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field":
+    "ingredients[10]", "name": "CuSO4 x 5 H2O", "primary": {"id": "CHEBI:31440", "label":
+    "copper(II) sulfate pentahydrate"}, "canonical_label": "copper(II) sulfate pentahydrate",
+    "label_equal": true, "definition": ["The pentahydrate of copper(2+) sulfate. A
+    bright blue crystalline solid."], "annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:7758-99-8", "kegg.drug:D03613", "pubmed:11407502", "pubmed:12209195", "pubmed:12484481",
+    "pubmed:15040745", "pubmed:15607472", "pubmed:15824790", "pubmed:19346702", "pubmed:2002460",
+    "pubmed:20132934", "pubmed:2913309", "pubmed:3351847", "pubmed:7615984", "pubmed:8878264",
+    "pubmed:9521458", "pubmed:9776063", "reaxys:16499970", "wikipedia.en:Copper(II)_sulfate"],
+    "generalized_empirical_formula": ["Cu.5H2O.O4S"], "has_alternative_id": ["CHEBI:121741",
+    "CHEBI:370227"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31440"],
+    "inchi_key_string": ["JZCCFEFSEZPSOG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Cu.H2O4S.5H2O/c;1-5(2,3)4;;;;;/h;(H2,1,2,3,4);5*1H2/q+2;;;;;;/p-2"],
+    "mass": ["249.684"], "monoisotopic_mass": ["248.93415"], "smiles_string": ["O=S(=O)([O-])[O-].[Cu+2].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H]"]},
+    "synonyms": ["CuSO4.5H2O", "Cupric sulfate", "copper sulphate(5.H2O)", "copper(2+)
+    sulfate (1:1) pentahydrate", "copper(2+) sulfate pentahydrate", "copper(2+) sulfate
+    pentahydrate", "copper(2+) sulfate--water (1/5)", "copper(2+) sulfate--water (1/5)",
+    "copper(II) sulfate, pentahydrate", "cupric sulfate pentahydrate"], "secondary":
+    {"asserted": {"id": "CHEBI:31440", "label": "copper(II) sulfate pentahydrate"},
+    "exact_current_rows": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}, {"layer":
+    "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[11]",
+    "name": "ZnSO4 x 7 H2O", "primary": {"id": "CHEBI:32312", "label": "zinc sulfate
+    heptahydrate"}, "canonical_label": "zinc sulfate heptahydrate", "label_equal":
+    true, "definition": ["A hydrate that is the heptahydrate form of zinc sulfate."],
+    "annotations": {"charge": [0.0], "database_cross_reference": ["cas:7446-20-0",
+    "gmelin:47216", "kegg.drug:D01081", "wikipedia.en:Zinc_Sulfate"], "generalized_empirical_formula":
+    ["7H2O.O4S.Zn"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32312"],
+    "inchi_key_string": ["RZLVQBNCHSJZPX-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/H2O4S.7H2O.Zn/c1-5(2,3)4;;;;;;;;/h(H2,1,2,3,4);7*1H2;/q;;;;;;;;+2/p-2"],
+    "mass": ["287.558"], "monoisotopic_mass": ["285.95482"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Zn+2]"]},
+    "synonyms": ["Zinc sulfate", "ZnSO4.7H2O", "zinc sulfate (1:1) heptahydrate",
+    "zinc sulfate heptahydrate (1:1:7)", "zinc(2+) sulfate heptahydrate", "zinc(2+)
+    sulfate heptahydrate", "zinc(2+) sulfate--water (1/7)", "zinc(2+) sulfate--water
+    (1/7)"], "secondary": {"asserted": {"id": "CHEBI:32312", "label": "zinc sulfate
+    heptahydrate"}, "exact_current_rows": [{"label": "ZnSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O",
+    "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}]}},
+    {"layer": "owner", "path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field":
+    "ingredients[12]", "name": "Na2 MoO4 x 2 H2O", "primary": {"id": "CHEBI:75213",
+    "label": "sodium molybdate dihydrate"}, "canonical_label": "sodium molybdate dihydrate",
+    "label_equal": true, "definition": ["A hydrate that is the dihydrate form of sodium
+    molybdate."], "annotations": {"charge": [0.0], "database_cross_reference": ["cas:10102-40-6",
+    "pubmed:20645132", "pubmed:20813395", "pubmed:22663766", "pubmed:3382795", "reaxys:19032996",
+    "wikipedia.en:Sodium_molybdate"], "generalized_empirical_formula": ["2H2O.MoO4.2Na"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75213"], "inchi_key_string":
+    ["FDEIWTXVNPKYDL-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"],
+    "mass": ["241.946"], "monoisotopic_mass": ["243.88573"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]},
+    "synonyms": ["Disodium molybdate dihydrate", "Molybdic acid, disodium salt, dihydrate",
+    "Na2MoO4.2H2O", "Sodium molybdate(VI) dihydrate", "sodium dioxido(dioxo)molybdenum--water
+    (1/2)", "sodium dioxido(dioxo)molybdenum--water (1/2)", "sodium orthomolybdate
+    dihydrate"], "secondary": {"asserted": {"id": "CHEBI:75213", "label": "sodium
+    molybdate dihydrate"}, "exact_current_rows": [{"label": "Na2MoO4 x 2 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2
+    H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}],
+    "legacy": [{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[5].mediaingredientmech_term",
+    "asserted": {"id": "MediaIngredientMech:000170", "label": "KNO3"}, "current_index_rows":
+    []}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field": "ingredients[5].mediaingredientmech_term",
+    "asserted": {"id": "MediaIngredientMech:000170", "label": "KNO3"}, "current_index_rows":
+    []}]}'
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _parse_api_solutions; _normalize_unit
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: Current code distinguishes main ingredients from solution_id stock additions,
+    skips water and prefers provider g_l. This is current contextual code, not a historical
+    replay proving how the January record arose.
+- evidence_id: cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: Current cleanup collapses equal duplicates or flags unequal values rather
+    than summing them. Historical owner notes explicitly record the earlier 0.03+3.7
+    sum; current code does not validate that old result.
+- evidence_id: legacy-migration
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: module contract; migrate_ingredient
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: Current migration uses a current CHEBI key when verifiable and leaves unresolved
+    legacy links untouched. The historical migration event does not authenticate the
+    retained KNO3 legacy identifier.
+- evidence_id: history
+  kind: record_content
+  reference: data/merge_yaml/merged/A2_MEDIUM.yaml
+  locator: All target/owner history and ingredient curation timestamps
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: supports
+  summary: '[{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[0].timestamp",
+    "value": "2026-01-26T17:53:15.434056Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[1].timestamp",
+    "value": "2026-03-13T03:09:14.557885Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[2].timestamp",
+    "value": "2026-03-13T06:19:02.412977Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[3].timestamp",
+    "value": "2026-03-17T06:30:22.000000Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[4].timestamp",
+    "value": "2026-03-17T19:45:14.237835+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[5].timestamp",
+    "value": "2026-05-20T06:01:06.861758+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[6].timestamp",
+    "value": "2026-06-05T07:40:46.435712+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[7].timestamp",
+    "value": "2026-06-10T07:37:34.451248+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[8].timestamp",
+    "value": "2026-06-10T07:46:52.293126+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/A2_MEDIUM.yaml", "field_path": "curation_history[9].timestamp",
+    "value": "2026-08-06T03:05:21.118412+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml", "field_path":
+    "curation_history[0].timestamp", "value": "2026-01-26T17:53:15.434056Z", "valid_ISO_datetime":
+    true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field_path": "curation_history[1].timestamp", "value": "2026-03-13T03:09:14.557885Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field_path": "curation_history[2].timestamp", "value": "2026-03-13T06:19:02.412977Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field_path": "curation_history[3].timestamp", "value": "2026-03-17T06:30:22.000000Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field_path": "curation_history[4].timestamp", "value": "2026-03-17T19:45:14.237835+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field_path": "curation_history[5].timestamp", "value": "2026-05-20T06:01:06.861758+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field_path": "curation_history[6].timestamp", "value": "2026-06-05T07:40:46.435712+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field_path": "curation_history[7].timestamp", "value": "2026-06-10T07:37:34.451248+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field_path": "curation_history[8].timestamp", "value": "2026-06-10T07:46:52.293126+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}]'
+- evidence_id: merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger and merge record construction
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: The target is a generated merge with the exact normalized owner declared
+    in the inspection. Merge fingerprints are ingredient-identity sets, not concentration
+    or source-recipe equivalence. Fix maintained inputs and regenerate only with separate
+    authorization.
+- evidence_id: exporter
+  kind: record_content
+  reference: src/culturemech/export/kgx_export.py
+  locator: medium_to_ingredient_edge; medium_to_solution_edge; _resolved_ingredient_id;
+    _quantity
+  accessed_at: '2026-10-21T09:40:35Z'
+  support: context_only
+  summary: Current export consumes structured ingredient, solution, type and stored-quantity
+    claims and resolves ingredients through the pinned MIM index before fallback.
+    It does not independently recover omitted source stages or prove final-volume
+    basis. No export was run and no resulting edge count is asserted.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Stable medium identity and source accession
+  outcome: supported
+  summary: The target ID, owner, merge source basename, DSMZ PDF title and MediaDive
+    medium1755 all identify A2. The stock5831 is a subordinate preparation, not a
+    second medium or evidence of growth in A2.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1755
+  - mediadive1755api
+- assessment_id: grounding
+  area: grounding
+  topic: Primary labels/forms and pinned secondary correspondence
+  outcome: concern
+  summary: 'Layer-specific counts are {"target": {"ingredient_instances": 13, "primary_CHEBI_instances":
+    12, "secondary_current_asserted_instances": 11, "secondary_current_verified_instances":
+    10, "legacy_secondary_instances": 1, "primary_CHEBI_percent": 92.31, "secondary_verified_percent":
+    76.92}, "owner": {"ingredient_instances": 13, "primary_CHEBI_instances": 12, "secondary_current_asserted_instances":
+    11, "secondary_current_verified_instances": 10, "legacy_secondary_instances":
+    1, "primary_CHEBI_percent": 92.31, "secondary_verified_percent": 76.92}}. Percentages
+    are 0–100 linkage coverage over direct ingredient instances, not scientific accuracy.
+    The 2 legacy link instances across both layers are unverified by the current CHEBI-keyed
+    snapshot; absence here does not prove historical invalidity. Current secondary
+    keys without a live preferred-term row are [{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[6].mediaingredientmech_chebi_term", "asserted": {"id": "CHEBI:46756",
+    "label": "HEPES"}}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[6].mediaingredientmech_chebi_term", "asserted": {"id": "CHEBI:46756",
+    "label": "HEPES"}}]. No secondary linked-set percentage is invented for an empty
+    set.'
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi32954
+  - chebi31795
+  - chebi86158
+  - chebi131527
+  - chebi63043
+  - chebi46756
+  - chebi86254
+  - chebi33118
+  - chebi86368
+  - chebi31440
+  - chebi32312
+  - chebi75213
+  details: '{"label_drift": [], "legacy": [{"path": "data/merge_yaml/merged/A2_MEDIUM.yaml",
+    "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170",
+    "label": "KNO3"}, "current_index_rows": []}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[5].mediaingredientmech_term", "asserted": {"id": "MediaIngredientMech:000170",
+    "label": "KNO3"}, "current_index_rows": []}], "missing_current_secondary": [{"path":
+    "data/merge_yaml/merged/A2_MEDIUM.yaml", "field": "ingredients[6].mediaingredientmech_chebi_term",
+    "asserted": {"id": "CHEBI:46756", "label": "HEPES"}}, {"path": "data/normalized_yaml/bacterial/a2_medium.yaml",
+    "field": "ingredients[6].mediaingredientmech_chebi_term", "asserted": {"id": "CHEBI:46756",
+    "label": "HEPES"}}]}'
+- assessment_id: forms
+  area: grounding
+  topic: Exact hydrated salts, HEPES and copper conflict
+  outcome: concern
+  summary: All 12 asserted primary CHEBI labels resolve. Explicit dihydrate, tetrahydrate,
+    hexahydrate and heptahydrate labels/structures match the named salts except that
+    the PDF copper spelling CuSO2x5H2O differs from provider CuSO4 x 5 H2O. Source
+    sodium acetate has no hydrate annotation; its anhydrous ontology representation
+    does not authorize a hydrate mass substitution. HEPES resolves only to a sparse
+    label response, and yeast extract remains an undefined mixture.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - dsmz1755
+  - mediadive1755api
+  - chebi32954
+  - chebi31795
+  - chebi86158
+  - chebi131527
+  - chebi63043
+  - chebi46756
+  - chebi86254
+  - chebi33118
+  - chebi86368
+  - chebi31440
+  - chebi32312
+  - chebi75213
+- assessment_id: preparation
+  area: consistency
+  topic: Preparation sequence and pH
+  outcome: concern
+  summary: The recorded ADJUST_PH step and range 7.0–7.5 match the exact sources.
+    Preparation lacks the separately prepared stock and its dose, so the source process
+    cannot be followed faithfully. Neither inspected formulation specifies a sterilization
+    cycle, atmosphere, storage, shelf life or incubation condition; no generic procedure
+    is added.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1755
+  - mediadive1755api
+- assessment_id: classification
+  area: scope
+  topic: Medium type and bounded use
+  outcome: supported
+  summary: COMPLEX and SEMI_DEFINED are compatible with yeast extract plus explicitly
+    specified chemicals; LIQUID agrees with this non-gelled formulation. Bacterial
+    filing and generic microbial-cultivation use do not assert any strain-specific
+    growth.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1755
+  - mediadive1755api
+- assessment_id: ownership
+  area: ownership
+  topic: Generated and maintained correspondence
+  outcome: concern
+  summary: The 13 ingredient quantities, missing stock representation and pH step
+    are shared by target and normalized owner. A direct generated edit would be lost.
+    Verify the normalized recipe and source-specific transform first, then regenerate
+    and check freshness.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+  - importer
+  - cleanup
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp interpretation
+  outcome: supported
+  summary: 19 exact timestamp instances were examined; 0 lack valid syntax or explicit
+    timezone. No local timestamp was assumed UTC or rewritten. Process and confidence
+    annotations are not independent scientific evidence.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+  - history
+  details: '[]'
+- assessment_id: quantities
+  area: quantity
+  topic: Every stored ingredient/stock quantity and source-stage dependency
+  outcome: concern
+  summary: All 13 stored ingredient amounts, seven constituent stock amounts, the
+    missing 2 mL stock dose and both solvent/final-volume contexts are accounted for.
+    Direct masses retain nominal source basis; stock quantities cannot be used as
+    undiluted final-medium values. The copper source conflict and HEPES provider conversion
+    remain explicit.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+  - quantity-1
+  - quantity-2
+  - quantity-3
+  - quantity-4
+  - quantity-5
+  - quantity-6
+  - quantity-7
+  - quantity-8
+  - quantity-9
+  - quantity-10
+  - quantity-11
+  - quantity-12
+  - quantity-13
+  - quantity-14
+  - quantity-15
+  - quantity-16
+  - quantity-17
+  details: '[{"field_path": "ingredients[0].concentration", "name": "Sodium acetate",
+    "current": {"value": "0.24", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "source_key": "dsmz1755", "source_quote": "Sodium acetate  0.240  g", "source_locator":
+    "page 1, main recipe row 1", "preparation_stage": "main medium direct addition",
+    "decision_rationale": "Literal source batch mass. The stored number matches the
+    source mass on its nominal recipe basis and the provider g_l field; it lacks narrow
+    amount evidence. No measured final-volume claim is inferred.", "evidence_id":
+    "quantity-1"}, {"field_path": "ingredients[1].concentration", "name": "Yeast extract",
+    "current": {"value": "0.15", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "source_key": "dsmz1755", "source_quote": "Yeast extract  0.150  g", "source_locator":
+    "page 1, main recipe row 2", "preparation_stage": "main medium direct addition",
+    "decision_rationale": "Literal source batch mass. The stored number matches the
+    source mass on its nominal recipe basis and the provider g_l field; it lacks narrow
+    amount evidence. No measured final-volume claim is inferred.", "evidence_id":
+    "quantity-2"}, {"field_path": "ingredients[2].concentration", "name": "MgSO4 x
+    7 H2O", "current": {"value": "0.8", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "source_key": "dsmz1755", "source_quote": "MgSO4 x 7H2O  0.800  g", "source_locator":
+    "page 1, main recipe row 3", "preparation_stage": "main medium direct addition",
+    "decision_rationale": "Literal source batch mass. The stored number matches the
+    source mass on its nominal recipe basis and the provider g_l field; it lacks narrow
+    amount evidence. No measured final-volume claim is inferred.", "evidence_id":
+    "quantity-3"}, {"field_path": "ingredients[3].concentration", "name": "CaCl2 x
+    2 H2O", "current": {"value": "3.73", "unit": "G_PER_L"}, "decision": "correct",
+    "source_key": "dsmz1755", "source_quote": "CaCl2 x 2 H2O  0.030  g", "source_locator":
+    "page 1, main recipe row 4", "preparation_stage": "main medium direct addition",
+    "decision_rationale": "Literal source batch mass. Stored 3.73 g/L incorrectly
+    adds the separate stock 3.7 g to direct 0.030 g.", "evidence_id": "quantity-4"},
+    {"field_path": "ingredients[4].concentration", "name": "K2HPO4", "current": {"value":
+    "0.005", "unit": "G_PER_L"}, "decision": "evidence_only", "source_key": "dsmz1755",
+    "source_quote": "K2HPO4  0.005  g", "source_locator": "page 1, main recipe row
+    5", "preparation_stage": "main medium direct addition", "decision_rationale":
+    "Literal source batch mass. The stored number matches the source mass on its nominal
+    recipe basis and the provider g_l field; it lacks narrow amount evidence. No measured
+    final-volume claim is inferred.", "evidence_id": "quantity-5"}, {"field_path":
+    "ingredients[5].concentration", "name": "KNO3", "current": {"value": "0.01", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "source_key": "dsmz1755", "source_quote":
+    "KNO3        0.010  g", "source_locator": "page 1, main recipe row 6", "preparation_stage":
+    "main medium direct addition", "decision_rationale": "Literal source batch mass.
+    The stored number matches the source mass on its nominal recipe basis and the
+    provider g_l field; it lacks narrow amount evidence. No measured final-volume
+    claim is inferred.", "evidence_id": "quantity-6"}, {"field_path": "ingredients[6].concentration",
+    "name": "HEPES", "current": {"value": "4.766", "unit": "G_PER_L"}, "decision":
+    "evidence_only", "source_key": "dsmz1755", "source_quote": "HEPES      20 mM",
+    "source_locator": "page 1, main HEPES row", "preparation_stage": "main medium",
+    "decision_rationale": "Source explicitly specifies 20 mM. Provider main recipe[6]
+    reports g_l=4.766; keep its declared conversion attribution rather than asserting
+    an independently verified molecular weight.", "evidence_id": "quantity-7"}, {"field_path":
+    "ingredients[7].concentration", "name": "FeCl3 x 6 H2O", "current": {"value":
+    "1", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote":
+    "FeCL3x6H2O          1.000  g", "source_locator": "page 1, Trace mineral salts
+    solution row 1", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale":
+    "The listed amount belongs to the stock; the main medium receives only 2 mL. Do
+    not copy the undiluted stock concentration into a direct medium row.", "evidence_id":
+    "quantity-8", "arithmetic_separate_from_quote": "On the provider-declared 1 L
+    receiving basis only, stock g/L × 0.002 L / 1 L = 0.002 g/L. For calcium, adding
+    the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same
+    conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[8].concentration",
+    "name": "H3BO3", "current": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct",
+    "source_key": "dsmz1755", "source_quote": "H3BO3           2.500  g", "source_locator":
+    "page 1, Trace mineral salts solution row 2", "preparation_stage": "trace stock,
+    made up to 1000 mL", "decision_rationale": "The listed amount belongs to the stock;
+    the main medium receives only 2 mL. Do not copy the undiluted stock concentration
+    into a direct medium row.", "evidence_id": "quantity-9", "arithmetic_separate_from_quote":
+    "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L
+    = 0.005 g/L. For calcium, adding the separate 0.030 g/L direct contribution would
+    give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path":
+    "ingredients[9].concentration", "name": "MnCl2 x 4 H2O", "current": {"value":
+    "0.87", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote":
+    "MnCl2x4H2O          0.870  g", "source_locator": "page 1, Trace mineral salts
+    solution row 3", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale":
+    "The listed amount belongs to the stock; the main medium receives only 2 mL. Do
+    not copy the undiluted stock concentration into a direct medium row.", "evidence_id":
+    "quantity-10", "arithmetic_separate_from_quote": "On the provider-declared 1 L
+    receiving basis only, stock g/L × 0.002 L / 1 L = 0.00174 g/L. For calcium, adding
+    the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same
+    conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[3].concentration",
+    "name": "CaCl2 x 2 H2O", "current": {"value": "3.73", "unit": "G_PER_L"}, "decision":
+    "correct", "source_key": "dsmz1755", "source_quote": "CaCl2x2H2O          3.700   g",
+    "source_locator": "page 1, Trace mineral salts solution row 4", "preparation_stage":
+    "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs
+    to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock
+    concentration into a direct medium row.", "evidence_id": "quantity-11", "arithmetic_separate_from_quote":
+    "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L
+    = 0.0074 g/L. For calcium, adding the separate 0.030 g/L direct contribution would
+    give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path":
+    "ingredients[10].concentration", "name": "CuSO4 x 5 H2O", "current": {"value":
+    "0.005", "unit": "G_PER_L"}, "decision": "conflict", "source_key": "dsmz1755",
+    "source_quote": "CuSO2x5H2O          0.005  g", "source_locator": "page 1, Trace
+    mineral salts solution row 5", "preparation_stage": "trace stock, made up to 1000
+    mL", "decision_rationale": "The listed amount belongs to the stock; the main medium
+    receives only 2 mL. Primary copper formula differs from provider CuSO4 x 5 H2O;
+    preserve the source conflict.", "evidence_id": "quantity-12", "arithmetic_separate_from_quote":
+    "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L
+    = 0.00001 g/L. For calcium, adding the separate 0.030 g/L direct contribution
+    would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path":
+    "ingredients[11].concentration", "name": "ZnSO4 x 7 H2O", "current": {"value":
+    "0.44", "unit": "G_PER_L"}, "decision": "correct", "source_key": "dsmz1755", "source_quote":
+    "ZnSO4x7H2O          0.440  g", "source_locator": "page 1, Trace mineral salts
+    solution row 6", "preparation_stage": "trace stock, made up to 1000 mL", "decision_rationale":
+    "The listed amount belongs to the stock; the main medium receives only 2 mL. Do
+    not copy the undiluted stock concentration into a direct medium row.", "evidence_id":
+    "quantity-13", "arithmetic_separate_from_quote": "On the provider-declared 1 L
+    receiving basis only, stock g/L × 0.002 L / 1 L = 0.00088 g/L. For calcium, adding
+    the separate 0.030 g/L direct contribution would give 0.0374 g/L on that same
+    conditional basis, never 3.73 g/L."}, {"field_path": "ingredients[12].concentration",
+    "name": "Na2 MoO4 x 2 H2O", "current": {"value": "0.29", "unit": "G_PER_L"}, "decision":
+    "correct", "source_key": "dsmz1755", "source_quote": "Na2MoO4x2H2O         0.290   g",
+    "source_locator": "page 1, Trace mineral salts solution row 7", "preparation_stage":
+    "trace stock, made up to 1000 mL", "decision_rationale": "The listed amount belongs
+    to the stock; the main medium receives only 2 mL. Do not copy the undiluted stock
+    concentration into a direct medium row.", "evidence_id": "quantity-14", "arithmetic_separate_from_quote":
+    "On the provider-declared 1 L receiving basis only, stock g/L × 0.002 L / 1 L
+    = 0.00058 g/L. For calcium, adding the separate 0.030 g/L direct contribution
+    would give 0.0374 g/L on that same conditional basis, never 3.73 g/L."}, {"field_path":
+    "solutions (missing trace-stock dose)", "name": "Trace mineral salts solution",
+    "current": null, "decision": "add", "source_key": "dsmz1755", "source_quote":
+    "Trace mineral salts solution           2.000  ml", "source_locator": "page 1,
+    main trace-stock addition row", "preparation_stage": "main medium stock addition",
+    "decision_rationale": "Restore the explicit 2.000 mL dose separately from the
+    seven stock components; provider main recipe[7] independently identifies solution5831
+    and 2 ml.", "evidence_id": "quantity-15"}, {"field_path": "main solvent basis
+    (not encoded)", "name": "Distilled water", "current": null, "decision": "add",
+    "source_key": "dsmz1755", "source_quote": "a.dest   1000.000  ml", "source_locator":
+    "page 1, main water row", "preparation_stage": "main solvent", "decision_rationale":
+    "Preserve 1000 mL water as source solvent context; do not infer a mass concentration
+    or measured final volume.", "evidence_id": "quantity-16"}, {"field_path": "trace
+    stock solvent basis (not encoded)", "name": "Distilled water", "current": null,
+    "decision": "add", "source_key": "dsmz1755", "source_quote": "ad distilled water               1000.000    ml",
+    "source_locator": "page 1, final stock row", "preparation_stage": "trace-stock
+    final volume", "decision_rationale": "The source explicitly makes the stock up
+    to 1000 mL; this supports stock mass-per-liter strengths independently of the
+    receiving volume.", "evidence_id": "quantity-17"}]'
+- assessment_id: evidence
+  area: evidence
+  topic: Claim-level evidence and reference diagnostic coverage
+  outcome: concern
+  summary: Source citations/notes identify provenance but do not place exact quantity
+    evidence on the local ingredient or stock claims. The reference validator actually
+    checked zero evidence references; its passing result does not authenticate source
+    amounts. This review provides literal snippets and locators for all assessed quantities.
+    Follow-up should attach narrow amount evidence and source metadata without inventing
+    new schema slots.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+  - validate-references
+  - source-catalog
+- assessment_id: organisms
+  area: scope
+  topic: Bounded biological claims and absent optional entities
+  outcome: not_applicable
+  summary: Neither reviewed layer asserts organism/strain identifiers, assemblies,
+    DOI/PMID citations, growth outcomes, variants, parent-media relationships or KG-Microbe
+    matches. Catalogue use and generic applications do not establish strain-specific
+    growth or optimal conditions. No organisms or variants are added merely to fill
+    optional slots.
+  target_ids:
+  - CultureMech:001227
+  evidence_ids:
+  - record
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: cm001227-trace-stock-stage-collapse
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Trace-stock concentrations are represented as direct medium additions
+  description: Seven trace-stock chemicals have lost their shared stock boundary and
+    the 2 mL dose. Calcium is 3.73 g/L because 0.030 g direct calcium was summed with
+    3.700 g from the one-liter stock; the remaining stock rows also retain undiluted
+    stock strengths. This changes the formula materially even though schema/term/reference
+    checks pass. The quantity inventory distinguishes literal source masses, stock
+    final volume and conditional provider-basis arithmetic.
+  target_ids:
+  - CultureMech:001227
+  field_paths:
+  - ingredients[3].concentration
+  - ingredients[7:13].concentration
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz1755
+  - mediadive1755api
+  - cleanup
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/a2_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm001227-copper-source-spelling-conflict
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Copper identity has an unrecorded primary/provider conflict
+  description: The PDF visibly prints CuSO2x5H2O while the provider and local CHEBI
+    mapping identify copper sulfate pentahydrate. The intended primary formula cannot
+    be proven by silently replacing its printed oxygen count. This is a bounded source-provenance
+    conflict, not proof that the current sulfate identifier is wrong.
+  target_ids:
+  - CultureMech:001227
+  field_paths:
+  - ingredients[10].preferred_term
+  - ingredients[10].term
+  - ingredients[10].evidence
+  evidence_ids:
+  - dsmz1755
+  - mediadive1755api
+  - chebi31440
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/a2_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm001227-unverified-secondary-links
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Two secondary links lack current snapshot support
+  description: The primary potassium nitrate CHEBI:63043 resolves correctly, but MediaIngredientMech:000170
+    has no exact identifier row in the inspected current pinned snapshot. This establishes
+    a current provenance/verification gap, not historical nonexistence or a wrong
+    primary chemical identity. Ten of eleven asserted current secondary CHEBI keys
+    have exact live preferred-term rows; the exception is HEPES CHEBI:46756. The primary
+    HEPES ontology term resolves, which does not establish its membership as a current
+    MIM ingredient key.
+  target_ids:
+  - CultureMech:001227
+  field_paths:
+  - ingredients[5].mediaingredientmech_term
+  - ingredients[6].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi63043
+  - chebi46756
+  - legacy-migration
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/a2_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.2
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore the source trace-stock composition and 2 mL addition under
+    maintained ownership; retain direct calcium separately, preserve the main-volume
+    limitation and add claim-level quantity evidence before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001227
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/a2_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve both literal source versions and seek an authoritative clarification
+    before claiming independent primary confirmation of the copper form; do not invent
+    a replacement ID.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001227
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/a2_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Verify the historical nitrate mapping and HEPES secondary membership
+    if retained, or propose current secondary keys only after exact pinned-index correspondence
+    is established. Preserve the correct primary nitrate identity and all source amount
+    qualifiers.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001227
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/a2_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The primary lists 1000 mL water plus 2 mL stock; the provider separately declares
+  a 1000 mL main volume. The provider basis is not an independently measured final
+  volume. Conditional dilution examples below are not replacements asserted into the
+  record.
+- The primary visibly prints CuSO2x5H2O whereas MediaDive names copper sulfate pentahydrate.
+  This review preserves the conflict without correcting the primary or inventing an
+  alternative chemical identifier.
+- HEPES is explicitly 20 mM in both sources; 4.766 g/L is provider-declared. The captured
+  HEPES ontology response lacks molecular-weight/formula metadata, so no independent
+  mass conversion is claimed.
+- The current MIM snapshot does not verify the legacy MediaIngredientMech:000170 identifier.
+  Its historical validity is unresolved; no sibling repository or historical source
+  snapshot was assumed.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-014
+- generated-medium
+```
