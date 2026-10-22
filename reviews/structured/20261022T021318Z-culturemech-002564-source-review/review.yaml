@@ -1,0 +1,1527 @@
+schema_version: 1.0.0
+review_id: 20261022T021318Z-culturemech-002564-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bsk_medium (CultureMech:002564)'
+started_at: '2026-10-22T02:02:41Z'
+finished_at: '2026-10-22T02:13:18Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The generated J201 BSK record retains a false LB decomposition and stale
+  final-volume rates. Its maintained owner already restores albumin, batch masses,
+  water and staged liquid additions with authenticated historical provider evidence.
+  Current JCM and API retrievals do not provide the formula; legacy secondary mapping
+  and source-specific completeness therefore remain explicitly limited.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BSK_MEDIUM.yaml
+    sha256: 4cde84707801ebbf162193495193a5c0ded4ee99bdd201d4012e0fbed01a2a96
+    role: target
+  - path: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+    sha256: 2cd9eed86778f0f19df0825dd7f04eb694b5ec6e9e3ec8055b4590cfa5780df2
+    role: context
+  - path: data/normalized_yaml/bacterial/bsk_medium.yaml
+    sha256: f8122a8f29ae15227cd3130a9e57d5d01a1369b662b6e67ee8c30c1fb0e71ae2
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/JCM_J201_BSK_MEDIUM.yaml.md
+    sha256: f423eee589c25c86d603b9a577ebdc52ee9dc6c00dcf4d3a7b15597034075d6e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-jcm-albumin-inputs/context.json
+    sha256: 1d17c31b8c9f8b24725bfd290a9a096ff9db44c0ff6c3f12a142785929a761cb
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BSK_MEDIUM.md
+    sha256: 4c3cb3b95ebbaa578162360ff16b4df3cfc8329286b770756f66bb38e53a2b7c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.md
+    sha256: 625a7cb965f39555df35d63b0a0ec5016ff9c6fc319879f3d084bd9fa17677c6
+    role: context
+  - path: reports/yaml_record_review/20260922T005239Z-BSK_MEDIUM.md
+    sha256: 494f6449d2ca48b75ffe5546a4e805446f07082b9c08c6af1c2a591b8d92d75c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/curate_organism_culture_type.py
+    sha256: 8686de3d3736eaaf3702e2009a299a53819a5ba321966ab2ea01104538ca6a65
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_albumin_counterparts.py
+    sha256: 26fd67dc1773e34b183cfa447b24cf948f52b3e5d229d6532d6d0fee10216a7a
+    role: context
+  - path: scripts/repair_bsk_formulations.py
+    sha256: a0df723b84ed8dfa33b06023b540af8d67af79d33b375f643741d81f7f4cef2c
+    role: context
+  - path: scripts/repair_jcm_albumin_inputs.py
+    sha256: fc166a31e8009a31f2f510cfb4ec59a3d5435f9fbfd0fb75417f99e25b7199f4
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_methanogen_stock_boundaries.py
+    sha256: 8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba
+    role: context
+  - path: scripts/repair_togo_bsk_structure.py
+    sha256: 7be012bb48826f20ede3a560aac5e8369b928bf1315bbed5fd45687ffb74aa9c
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 449; batch 045 item 9 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-four task batches
+    contain 440 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 443 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002564
+targets:
+- target_id: CultureMech:002564
+  path: data/merge_yaml/merged/BSK_MEDIUM.yaml
+  label: bsk_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BSK_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BSK_MEDIUM.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch045/449/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch045/449/strict.tsv"
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BSK_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BSK_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002564
+- check_id: apiJ201-source-access
+  name: 'Exact source content access: apiJ201'
+  required: true
+  status: unavailable
+  summary: The current J201 API returned503. The recovered historical provider response
+    supports source-scoped observations; it does not establish current availability
+    or independent original-page corroboration.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - apiJ201-attempt
+- check_id: jcm201-source-access
+  name: 'Exact source content access: jcm201'
+  required: true
+  status: unavailable
+  summary: The current original JCM201 page returned Nothing found; the separate historical
+    JCM attempt also lacked a recipe. Do not transfer a different BSK formulation
+    to fill this access gap.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - jcm201-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BSK_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BSK_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:23.356331Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BSK_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch045/449/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:26.403067Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch045/449/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BSK_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:32.088185Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BSK_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:35.947122Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BSK_MEDIUM.yaml:1:id: CultureMech:002564
+
+    ./data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml:1:id: CultureMech:002564
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/source-preflight-bound/449/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: supports
+  summary: 21 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 534af1baed9c065e20d12e9dd80cf0490e600412d9cdced5d2a4abe890482f02
+- evidence_id: historical
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J201
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-08T20:53:35.844420Z'
+  support: supports
+  summary: Exact historical MediaDive J201 response, accessed2026-10-08T20:53:35.844420+00:00,
+    recovered from its pinned parent. All11 selected-owner claims authenticate against
+    the cited raw SHA811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536.
+  snapshot_sha256: 811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536
+- evidence_id: apiJ201-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J201
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T01:49:43.612368Z'
+  support: context_only
+  summary: The current J201 API returned503. The recovered historical provider response
+    supports source-scoped observations; it does not establish current availability
+    or independent original-page corroboration.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: jcm201-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T01:49:43.254674Z'
+  support: context_only
+  summary: The current original JCM201 page returned Nothing found; the separate historical
+    JCM attempt also lacked a recipe. Do not transfer a different BSK formulation
+    to fill this access gap.
+  snapshot_sha256: eec7768c3a12a00e699e649042b66d9ac12aa5304413b4825674c442d4d574a9
+- evidence_id: original-attempt
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-08T20:55:14.823536Z'
+  support: supports
+  summary: Preserved original JCM attempt and access time corroborate a historical
+    access limit, not a recipe.
+  snapshot_sha256: eec7768c3a12a00e699e649042b66d9ac12aa5304413b4825674c442d4d574a9
+- evidence_id: micro0000182
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000182
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T07:37:21.973857Z'
+  support: supports
+  summary: MICRO:0000182 resolves to tryptone. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: 01875997c482a49e4d41eb35c6c697e190afd236a8527625e94b6f96df3872b0
+- evidence_id: foodon03315426
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315426
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:00:49.388263Z'
+  support: supports
+  summary: FOODON:03315426 resolves to yeast extract. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: cf2b158469d7dedbe7c31242b5901230a29b5765e04bb37c92f0b1ddd6ea9c44
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi46756
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46756
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T09:27:40.629039Z'
+  support: supports
+  summary: CHEBI:46756 resolves to HEPES. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: 4270cc705078ff2f1787f98b7dbcf05c96b1eccd333801a00cff01b855298a69
+- evidence_id: chebi53258
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53258
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:54.823692Z'
+  support: supports
+  summary: CHEBI:53258 resolves to sodium citrate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2a35c6dc3532c2276c6b19aef0992260e14b1fc36423fa3eb812bb94f63c4371
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:31.535358Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi50144
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50144
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T07:22:07.440767Z'
+  support: supports
+  summary: CHEBI:50144 resolves to sodium pyruvate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 457ed29adfdea68c420ea0c094d7d75593958fc70f908f6809348e4e12e7e15d
+- evidence_id: chebi506227
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_506227
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T14:35:47.516402Z'
+  support: supports
+  summary: CHEBI:506227 resolves to N-acetyl-D-glucosamine. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2139326e53cedeba664bbd8bfdb8be4d935416048fdd24215f5111a1287b806b
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/449/grounding-inventory.json
+  locator: All asserted selected-layer IDs/labels and exact current preferred MIM
+    rows, including negative slots
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: All asserted primary ontology labels match captured metadata. CHEBI:46756
+    HEPES is valid, but the current pinned preferred MIM index has no matching row
+    for its asserted secondary slot. MediaIngredientMech:000994 is absent from the
+    bounded current catalog/tree and exact index; historical correspondence remains
+    unresolved. The primary N-acetyl-D-glucosamine CHEBI:506227 is not invalidated
+    by that secondary gap. Excluded namesake legacy000426 and its33 evidence objects
+    are not selected-layer defects. Valid LB ingredient IDs do not establish their
+    inclusion.
+  snapshot_sha256: fb22ff33481e1f5220a3fb9da1e3ee18c87ea935977251b540b8a590b937f0ea
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BSK_MEDIUM.yaml; data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml",
+    "events": 6, "timestamp_issues": []}]'
+- evidence_id: history-evidence
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/449/history-evidence-inventory.json
+  locator: Entire selected-layer histories/evidence; exact historical parents and
+    original captured timestamps
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: All selected histories,11 attached owner claims and20 structured repair
+    changes were fully compared with the pinned historical parent/current bytes. Old
+    fields match before_text, new fields match the maintained owner, and all selected
+    excerpts match the recovered J201 raw with original access time. The33 claims
+    on the excluded DSM namesake are not transferred. Current API503 and JCM Nothing
+    found remain access limits. Current repair code and generated staleness do not
+    prove that the current guarded merger caused the historical LB error.
+  snapshot_sha256: 0dcb83ab37d6f0f713951fa6df0814f30d13968e9e231afce7b9754c154128b4
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_jcm_albumin_inputs.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: The exact J201 repair already restores albumin, batch notes, liquid stocks,
+    source evidence and FILTER. Separate J220 logic is outside the selected formulation.
+    Preserve the completed owner repair and inspect regeneration behavior.
+  snapshot_sha256: fc166a31e8009a31f2f510cfb4ec59a3d5435f9fbfd0fb75417f99e25b7199f4
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: The exact J201 repair already restores albumin, batch notes, liquid stocks,
+    source evidence and FILTER. Separate J220 logic is outside the selected formulation.
+    Preserve the completed owner repair and inspect regeneration behavior.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: The exact J201 repair already restores albumin, batch notes, liquid stocks,
+    source evidence and FILTER. Separate J220 logic is outside the selected formulation.
+    Preserve the completed owner repair and inspect regeneration behavior.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/449/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T02:13:17Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: aa57eeb9b220b83156ea622e2c43ca27e2715a30cb60fbfd3bb0a73102bcfab6
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Identifier metadata, exact supplied forms and current secondary bindings
+  outcome: concern
+  summary: '25 asserted slots and 9 distinct captured ontology IDs checked; 0 literal
+    canonical-label differences. 8/10 asserted current CHEBI secondary slots have
+    preferred mapped rows; 2 selected legacy slots remain separately assessed. Target
+    direct-ingredient linkage: 9/11 primary and 5/11 current secondary on a 0–100
+    percent linkage scale (81.82% and 45.45%), not a correctness score. All asserted
+    primary ontology labels match captured metadata. CHEBI:46756 HEPES is valid, but
+    the current pinned preferred MIM index has no matching row for its asserted secondary
+    slot. MediaIngredientMech:000994 is absent from the bounded current catalog/tree
+    and exact index; historical correspondence remains unresolved. The primary N-acetyl-D-glucosamine
+    CHEBI:506227 is not invalidated by that secondary gap. Excluded namesake legacy000426
+    and its33 evidence objects are not selected-layer defects. Valid LB ingredient
+    IDs do not establish their inclusion.'
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - record
+  - grounding-inventory
+  - micro0000182
+  - foodon03315426
+  - chebi26710
+  - chebi46756
+  - chebi53258
+  - chebi17234
+  - chebi50144
+  - chebi506227
+  - chebi32139
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 12 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Claim linkage and historical/current source scope
+  outcome: concern
+  summary: All selected histories,11 attached owner claims and20 structured repair
+    changes were fully compared with the pinned historical parent/current bytes. Old
+    fields match before_text, new fields match the maintained owner, and all selected
+    excerpts match the recovered J201 raw with original access time. The33 claims
+    on the excluded DSM namesake are not transferred. Current API503 and JCM Nothing
+    found remain access limits. Current repair code and generated staleness do not
+    prove that the current guarded merger caused the historical LB error.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - record
+  - history-evidence
+  - bound-source-integrity
+- assessment_id: identity
+  area: identity
+  topic: Exact J201 ownership and albumin identity
+  outcome: concern
+  summary: Only JCM_J201_BSK_MEDIUM is the maintained owner. The generated LB commercial
+    claim contradicts the historical albumin row; the maintained owner already withdraws
+    it. No equivalence with M2410 or the excluded DSM BSK namesake is assumed.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - record
+  - owner-0
+  - historical
+- assessment_id: preparation
+  area: completeness
+  topic: Existing prose and repaired stock structure
+  outcome: concern
+  summary: The generated preparation and pH are present. Its FILTER_STERILIZE action
+    adds schema-specific filter detail unsupported by the source; the maintained FILTER
+    repair avoids that assumption. Source stock strengths, final volume and percentage
+    bases remain limited.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - record
+  - owner-0
+  - historical
+- assessment_id: classification
+  area: scope
+  topic: Complex liquid medium and bounded historical support
+  outcome: supported
+  summary: Complex/undefined liquid classification is consistent with the provider.
+    No source-specific organism growth is asserted. Historical recipe authentication
+    is distinct from current original-page access, and partial completion retains
+    those limits.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - record
+  - historical
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 19 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002564
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"CMRL1066 liquid\
+    \ input100ml\",\n    \"decision\": \"correct\",\n    \"layer_decisions\": [\n\
+    \      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"100\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"The target100 G_PER_L is a unit/stage error. Preserve the100 ml preparation\
+    \ input and product qualifier; this source provides no numeric stock strength\
+    \ or composition.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"L\"\n        },\n  \
+    \      \"decision\": \"verified\",\n        \"rationale\": \"The maintained0.1\
+    \ L dose equals100 ml and has attached matching historical evidence. No10X strength\
+    \ is imported from M2410.\"\n      }\n    ],\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"historicalJ201\",\n        \"source_url\": \"\
+    https://mediadive.dsmz.de/rest/medium/J201\",\n        \"source_locator\": \"\
+    $.data.solutions[0].recipe[0]\",\n        \"exact_source_quote\": \"{\\n     \
+    \                   \\\"recipe_order\\\": 1,\\n                        \\\"compound\\\
+    \": \\\"CMRL 1066\\\",\\n                        \\\"compound_id\\\": 1680,\\\
+    n                        \\\"attribute\\\": \\\"Gibco 330-1540\\\",\\n       \
+    \                 \\\"amount\\\": 100,\\n                        \\\"unit\\\"\
+    : \\\"ml\\\",\\n                        \\\"optional\\\": 0\\n               \
+    \     }\",\n        \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"The target100 G_PER_L is a unit/stage\
+    \ error. Preserve the100 ml preparation input and product qualifier; this source\
+    \ provides no numeric stock strength or composition.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q2\",\n    \"topic\": \"Neopeptone batch mass\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"unsupported\",\n        \"rationale\": \"The historical\
+    \ provider lists a batch amount and a derived g_l value using its declared1000\
+    \ ml solution volume. Later200 ml gelatin and unspecified serum addition prevent\
+    \ treating that declaration as an independently verified final volume. Preserve\
+    \ the literal amount and withhold the final-medium rate.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].notes\",\n        \"stored\": \"Source\
+    \ batch input: 5 g. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration. Source qualifier: BD-Difco.\",\n        \"decision\": \"verified\"\
+    ,\n        \"rationale\": \"The maintained note already preserves the exact batch\
+    \ amount and explicitly withdraws unsupported final-volume normalization with\
+    \ attached source evidence.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"historicalJ201\",\n        \"source_url\":\
+    \ \"https://mediadive.dsmz.de/rest/medium/J201\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[1]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 2,\\n                        \\\"\
+    compound\\\": \\\"Neopeptone\\\",\\n                        \\\"compound_id\\\"\
+    : 263,\\n                        \\\"attribute\\\": \\\"BD-Difco\\\",\\n     \
+    \                   \\\"amount\\\": 5,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n                    \
+    \    \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The historical provider lists a batch amount\
+    \ and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"topic\"\
+    : \"HEPES batch mass\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"6\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The historical provider lists a batch amount and a derived g_l value using\
+    \ its declared1000 ml solution volume. Later200 ml gelatin and unspecified serum\
+    \ addition prevent treating that declaration as an independently verified final\
+    \ volume. Preserve the literal amount and withhold the final-medium rate.\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].notes\",\n        \"stored\": \"Source\
+    \ batch input: 6 g. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"The maintained note already preserves the exact batch amount and explicitly\
+    \ withdraws unsupported final-volume normalization with attached source evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[3]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 4,\\\
+    n                        \\\"compound\\\": \\\"HEPES\\\",\\n                 \
+    \       \\\"compound_id\\\": 371,\\n                        \\\"amount\\\": 6,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 6,\\n                        \\\"mmol_l\\\": 25.1773,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The historical provider lists a batch amount\
+    \ and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"topic\"\
+    : \"Trisodium citrate batch mass\",\n    \"decision\": \"unsupported\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.7\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The historical provider lists a batch\
+    \ amount and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].notes\",\n        \"stored\": \"Source\
+    \ batch input: 0.7 g. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"The maintained note already preserves the exact batch amount and explicitly\
+    \ withdraws unsupported final-volume normalization with attached source evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[4]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 5,\\\
+    n                        \\\"compound\\\": \\\"Trisodium citrate\\\",\\n     \
+    \                   \\\"compound_id\\\": 1047,\\n                        \\\"\
+    amount\\\": 0.7,\\n                        \\\"unit\\\": \\\"g\\\",\\n       \
+    \                 \\\"g_l\\\": 0.7,\\n                        \\\"mmol_l\\\":\
+    \ 2.71244,\\n                        \\\"optional\\\": 0\\n                  \
+    \  }\",\n        \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"The historical provider lists a batch\
+    \ amount and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"topic\"\
+    : \"Glucose batch mass\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The historical provider lists a batch amount and a derived g_l value using\
+    \ its declared1000 ml solution volume. Later200 ml gelatin and unspecified serum\
+    \ addition prevent treating that declaration as an independently verified final\
+    \ volume. Preserve the literal amount and withhold the final-medium rate.\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].notes\",\n        \"stored\": \"Source\
+    \ batch input: 5 g. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"The maintained note already preserves the exact batch amount and explicitly\
+    \ withdraws unsupported final-volume normalization with attached source evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[5]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 6,\\\
+    n                        \\\"compound\\\": \\\"Glucose\\\",\\n               \
+    \         \\\"compound_id\\\": 5,\\n                        \\\"amount\\\": 5,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 5,\\n                        \\\"mmol_l\\\": 27.7531,\\n          \
+    \              \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The historical provider lists a batch amount\
+    \ and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"topic\"\
+    : \"Sodium pyruvate batch mass\",\n    \"decision\": \"unsupported\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.8\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The historical provider lists a batch\
+    \ amount and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].notes\",\n        \"stored\": \"Source\
+    \ batch input: 0.8 g. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"The maintained note already preserves the exact batch amount and explicitly\
+    \ withdraws unsupported final-volume normalization with attached source evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[6]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 7,\\\
+    n                        \\\"compound\\\": \\\"Sodium pyruvate\\\",\\n       \
+    \                 \\\"compound_id\\\": 438,\\n                        \\\"amount\\\
+    \": 0.8,\\n                        \\\"unit\\\": \\\"g\\\",\\n               \
+    \         \\\"g_l\\\": 0.8,\\n                        \\\"mmol_l\\\": 7.27008,\\\
+    n                        \\\"optional\\\": 0\\n                    }\",\n    \
+    \    \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"The historical provider lists a batch\
+    \ amount and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"topic\"\
+    : \"N-Acetyl-D-glucosamine batch mass\",\n    \"decision\": \"unsupported\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"0.4\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"unsupported\",\n        \"rationale\": \"The historical\
+    \ provider lists a batch amount and a derived g_l value using its declared1000\
+    \ ml solution volume. Later200 ml gelatin and unspecified serum addition prevent\
+    \ treating that declaration as an independently verified final volume. Preserve\
+    \ the literal amount and withhold the final-medium rate.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"Source\
+    \ batch input: 0.4 g. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"The maintained note already preserves the exact batch amount and explicitly\
+    \ withdraws unsupported final-volume normalization with attached source evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[7]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 8,\\\
+    n                        \\\"compound\\\": \\\"N-Acetyl-D-glucosamine\\\",\\n\
+    \                        \\\"compound_id\\\": 1669,\\n                       \
+    \ \\\"amount\\\": 0.4,\\n                        \\\"unit\\\": \\\"g\\\",\\n \
+    \                       \\\"g_l\\\": 0.4,\\n                        \\\"mmol_l\\\
+    \": 1.80824,\\n                        \\\"optional\\\": 0\\n                \
+    \    }\",\n        \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"The historical provider lists a batch\
+    \ amount and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"topic\"\
+    : \"NaHCO3 batch mass\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The historical provider lists a batch amount and a derived g_l value using\
+    \ its declared1000 ml solution volume. Later200 ml gelatin and unspecified serum\
+    \ addition prevent treating that declaration as an independently verified final\
+    \ volume. Preserve the literal amount and withhold the final-medium rate.\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].notes\",\n        \"stored\": \"Source\
+    \ batch input: 2.2 g. Final preparation volume is not independently established;\
+    \ the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter\
+    \ concentration.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"The maintained note already preserves the exact batch amount and explicitly\
+    \ withdraws unsupported final-volume normalization with attached source evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[8]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 9,\\\
+    n                        \\\"compound\\\": \\\"NaHCO3\\\",\\n                \
+    \        \\\"compound_id\\\": 55,\\n                        \\\"amount\\\": 2.2,\\\
+    n                        \\\"unit\\\": \\\"g\\\",\\n                        \\\
+    \"g_l\\\": 2.2,\\n                        \\\"mmol_l\\\": 26.1883,\\n        \
+    \                \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The historical provider lists a batch amount\
+    \ and a derived g_l value using its declared1000 ml solution volume. Later200\
+    \ ml gelatin and unspecified serum addition prevent treating that declaration\
+    \ as an independently verified final volume. Preserve the literal amount and withhold\
+    \ the final-medium rate.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"topic\"\
+    : \"Albumin FractionV50g\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients\"\
+    ,\n        \"stored\": [\n          {\n            \"preferred_term\": \"CMRL\
+    \ 1066\",\n            \"concentration\": {\n              \"value\": \"100\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            }\n          },\n        \
+    \  {\n            \"preferred_term\": \"Neopeptone\",\n            \"concentration\"\
+    : {\n              \"value\": \"5\",\n              \"unit\": \"G_PER_L\"\n  \
+    \          }\n          },\n          {\n            \"preferred_term\": \"Tryptone\"\
+    ,\n            \"term\": {\n              \"id\": \"MICRO:0000182\",\n       \
+    \       \"label\": \"tryptone\"\n            },\n            \"concentration\"\
+    : {\n              \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n\
+    \            },\n            \"supplier_catalog\": {\n              \"supplier_name\"\
+    : \"Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Pancreatic digest of casein providing\
+    \ amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani,\
+    \ Miller formulation) commercial product\",\n            \"synonyms\": [\n   \
+    \           {\n                \"synonym_text\": \"pancreatic digest of casein\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              },\n           \
+    \   {\n                \"synonym_text\": \"casein peptone\",\n               \
+    \ \"synonym_type\": \"EXACT\"\n              }\n            ]\n          },\n\
+    \          {\n            \"preferred_term\": \"Yeast extract\",\n           \
+    \ \"term\": {\n              \"id\": \"FOODON:03315426\",\n              \"label\"\
+    : \"yeast extract\"\n            },\n            \"concentration\": {\n      \
+    \        \"value\": \"5.0\",\n              \"unit\": \"G_PER_L\"\n          \
+    \  },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Autodigest of Saccharomyces cerevisiae\
+    \ providing vitamins, amino acids, and trace elements; Constituent of LB Medium\
+    \ (Luria-Bertani, Miller formulation) commercial product\"\n          },\n   \
+    \       {\n            \"preferred_term\": \"Sodium chloride\",\n            \"\
+    term\": {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"\
+    sodium chloride\"\n            },\n            \"concentration\": {\n        \
+    \      \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium (Miller\
+    \ formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial\
+    \ product\",\n            \"synonyms\": [\n              {\n                \"\
+    synonym_text\": \"NaCl\",\n                \"synonym_type\": \"EXACT\"\n     \
+    \         },\n              {\n                \"synonym_text\": \"table salt\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              }\n            ]\n\
+    \          },\n          {\n            \"preferred_term\": \"HEPES\",\n     \
+    \       \"term\": {\n              \"id\": \"CHEBI:46756\",\n              \"\
+    label\": \"HEPES\"\n            },\n            \"concentration\": {\n       \
+    \       \"value\": \"6\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:46756\"\
+    ,\n              \"label\": \"HEPES\"\n            }\n          },\n         \
+    \ {\n            \"preferred_term\": \"Trisodium citrate\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:53258\",\n              \"label\": \"sodium\
+    \ citrate\"\n            },\n            \"concentration\": {\n              \"\
+    value\": \"0.7\",\n              \"unit\": \"G_PER_L\"\n            },\n     \
+    \       \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:53258\"\
+    ,\n              \"label\": \"sodium citrate\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"Glucose\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:17234\",\n              \"label\": \"glucose\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:17234\",\n              \"label\": \"glucose\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    Sodium pyruvate\",\n            \"term\": {\n              \"id\": \"CHEBI:50144\"\
+    ,\n              \"label\": \"sodium pyruvate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.8\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:50144\",\n              \"label\": \"sodium\
+    \ pyruvate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"N-Acetyl-D-glucosamine\",\n            \"term\": {\n              \"id\":\
+    \ \"CHEBI:506227\",\n              \"label\": \"N-acetyl-D-glucosamine\"\n   \
+    \         },\n            \"concentration\": {\n              \"value\": \"0.4\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_term\"\
+    : {\n              \"id\": \"MediaIngredientMech:000994\",\n              \"label\"\
+    : \"N-Acetyl-D-glucosamine\"\n            }\n          },\n          {\n     \
+    \       \"preferred_term\": \"NaHCO3\",\n            \"term\": {\n           \
+    \   \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium hydrogencarbonate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    2.2\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"The source albumin material is missing from\
+    \ the generated formulation and cannot be replaced by an LB product.\"\n     \
+    \ },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].notes\",\n        \"stored\": \"Source\
+    \ batch input: 50 g. Final preparation volume is not independently established;\
+    \ the source batch amount is retained without asserting a final concentration.\\\
+    n\\nSource material qualifier: Fraction V.\",\n        \"decision\": \"verified\"\
+    ,\n        \"rationale\": \"The maintained owner already restores50 g albumin\
+    \ FractionV as a batch amount, with exact authenticated evidence.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"historicalJ201\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\"\
+    : \"{\\n                        \\\"recipe_order\\\": 3,\\n                  \
+    \      \\\"compound\\\": \\\"Bovine albumin\\\",\\n                        \\\"\
+    compound_id\\\": 1681,\\n                        \\\"condition\\\": \\\" Fraction\
+    \ V\\\",\\n                        \\\"amount\\\": 50,\\n                    \
+    \    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 50,\\n  \
+    \                      \\\"optional\\\": 0\\n                    }\",\n      \
+    \  \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"The source albumin material is missing\
+    \ from the generated formulation and cannot be replaced by an LB product.\"\n\
+    \  },\n  {\n    \"quantity_id\": \"q10\",\n    \"topic\": \"False LB Tryptone\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10.0\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The positive source specifies albumin FractionV, not LB. The generated\
+    \ tryptone10, yeast5 and sodium chloride10 g/L expansion is unsupported; the maintained\
+    \ owner already removed it.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"historicalJ201\",\n        \"source_url\":\
+    \ \"https://mediadive.dsmz.de/rest/medium/J201\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Bovine albumin\\\",\\n                        \\\"compound_id\\\
+    \": 1681,\\n                        \\\"condition\\\": \\\" Fraction V\\\",\\\
+    n                        \\\"amount\\\": 50,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 50,\\n                 \
+    \       \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The positive source specifies albumin FractionV,\
+    \ not LB. The generated tryptone10, yeast5 and sodium chloride10 g/L expansion\
+    \ is unsupported; the maintained owner already removed it.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q11\",\n    \"topic\": \"False LB Yeast extract\",\n    \"decision\"\
+    : \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[3].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    The positive source specifies albumin FractionV, not LB. The generated tryptone10,\
+    \ yeast5 and sodium chloride10 g/L expansion is unsupported; the maintained owner\
+    \ already removed it.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[2]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 3,\\\
+    n                        \\\"compound\\\": \\\"Bovine albumin\\\",\\n        \
+    \                \\\"compound_id\\\": 1681,\\n                        \\\"condition\\\
+    \": \\\" Fraction V\\\",\\n                        \\\"amount\\\": 50,\\n    \
+    \                    \\\"unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\
+    \": 50,\\n                        \\\"optional\\\": 0\\n                    }\"\
+    ,\n        \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"The positive source specifies albumin\
+    \ FractionV, not LB. The generated tryptone10, yeast5 and sodium chloride10 g/L\
+    \ expansion is unsupported; the maintained owner already removed it.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q12\",\n    \"topic\": \"False LB Sodium chloride\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10.0\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The positive source specifies albumin FractionV, not LB. The generated\
+    \ tryptone10, yeast5 and sodium chloride10 g/L expansion is unsupported; the maintained\
+    \ owner already removed it.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"historicalJ201\",\n        \"source_url\":\
+    \ \"https://mediadive.dsmz.de/rest/medium/J201\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].recipe[2]\",\n        \"exact_source_quote\": \"{\\n \
+    \                       \\\"recipe_order\\\": 3,\\n                        \\\"\
+    compound\\\": \\\"Bovine albumin\\\",\\n                        \\\"compound_id\\\
+    \": 1681,\\n                        \\\"condition\\\": \\\" Fraction V\\\",\\\
+    n                        \\\"amount\\\": 50,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 50,\\n                 \
+    \       \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The positive source specifies albumin FractionV,\
+    \ not LB. The generated tryptone10, yeast5 and sodium chloride10 g/L expansion\
+    \ is unsupported; the maintained owner already removed it.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q13\",\n    \"topic\": \"Source water900ml\",\n    \"decision\"\
+    : \"add\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients\",\n        \"stored\": [\n         \
+    \ {\n            \"preferred_term\": \"CMRL 1066\",\n            \"concentration\"\
+    : {\n              \"value\": \"100\",\n              \"unit\": \"G_PER_L\"\n\
+    \            }\n          },\n          {\n            \"preferred_term\": \"\
+    Neopeptone\",\n            \"concentration\": {\n              \"value\": \"5\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            }\n          },\n        \
+    \  {\n            \"preferred_term\": \"Tryptone\",\n            \"term\": {\n\
+    \              \"id\": \"MICRO:0000182\",\n              \"label\": \"tryptone\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    10.0\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"supplier_catalog\"\
+    : {\n              \"supplier_name\": \"Multiple suppliers (Difco, Sigma, etc.)\
+    \ LB Medium (Luria-Bertani, Miller formulation)\",\n              \"catalog_number\"\
+    : \"Multiple (L3522 Sigma, 244520 BD)\",\n              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Pancreatic digest of casein providing\
+    \ amino acids, peptides, and nitrogen; Constituent of LB Medium (Luria-Bertani,\
+    \ Miller formulation) commercial product\",\n            \"synonyms\": [\n   \
+    \           {\n                \"synonym_text\": \"pancreatic digest of casein\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              },\n           \
+    \   {\n                \"synonym_text\": \"casein peptone\",\n               \
+    \ \"synonym_type\": \"EXACT\"\n              }\n            ]\n          },\n\
+    \          {\n            \"preferred_term\": \"Yeast extract\",\n           \
+    \ \"term\": {\n              \"id\": \"FOODON:03315426\",\n              \"label\"\
+    : \"yeast extract\"\n            },\n            \"concentration\": {\n      \
+    \        \"value\": \"5.0\",\n              \"unit\": \"G_PER_L\"\n          \
+    \  },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Autodigest of Saccharomyces cerevisiae\
+    \ providing vitamins, amino acids, and trace elements; Constituent of LB Medium\
+    \ (Luria-Bertani, Miller formulation) commercial product\"\n          },\n   \
+    \       {\n            \"preferred_term\": \"Sodium chloride\",\n            \"\
+    term\": {\n              \"id\": \"CHEBI:26710\",\n              \"label\": \"\
+    sodium chloride\"\n            },\n            \"concentration\": {\n        \
+    \      \"value\": \"10.0\",\n              \"unit\": \"G_PER_L\"\n           \
+    \ },\n            \"supplier_catalog\": {\n              \"supplier_name\": \"\
+    Multiple suppliers (Difco, Sigma, etc.) LB Medium (Luria-Bertani, Miller formulation)\"\
+    ,\n              \"catalog_number\": \"Multiple (L3522 Sigma, 244520 BD)\",\n\
+    \              \"product_url\": \"https://www.laboratorynotes.com/preparation-of-luria-bertani-lb-miller-broth/\"\
+    \n            },\n            \"notes\": \"Maintains osmotic equilibrium (Miller\
+    \ formulation); Constituent of LB Medium (Luria-Bertani, Miller formulation) commercial\
+    \ product\",\n            \"synonyms\": [\n              {\n                \"\
+    synonym_text\": \"NaCl\",\n                \"synonym_type\": \"EXACT\"\n     \
+    \         },\n              {\n                \"synonym_text\": \"table salt\"\
+    ,\n                \"synonym_type\": \"EXACT\"\n              }\n            ]\n\
+    \          },\n          {\n            \"preferred_term\": \"HEPES\",\n     \
+    \       \"term\": {\n              \"id\": \"CHEBI:46756\",\n              \"\
+    label\": \"HEPES\"\n            },\n            \"concentration\": {\n       \
+    \       \"value\": \"6\",\n              \"unit\": \"G_PER_L\"\n            },\n\
+    \            \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:46756\"\
+    ,\n              \"label\": \"HEPES\"\n            }\n          },\n         \
+    \ {\n            \"preferred_term\": \"Trisodium citrate\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:53258\",\n              \"label\": \"sodium\
+    \ citrate\"\n            },\n            \"concentration\": {\n              \"\
+    value\": \"0.7\",\n              \"unit\": \"G_PER_L\"\n            },\n     \
+    \       \"mediaingredientmech_chebi_term\": {\n              \"id\": \"CHEBI:53258\"\
+    ,\n              \"label\": \"sodium citrate\"\n            }\n          },\n\
+    \          {\n            \"preferred_term\": \"Glucose\",\n            \"term\"\
+    : {\n              \"id\": \"CHEBI:17234\",\n              \"label\": \"glucose\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    5\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:17234\",\n              \"label\": \"glucose\"\
+    \n            }\n          },\n          {\n            \"preferred_term\": \"\
+    Sodium pyruvate\",\n            \"term\": {\n              \"id\": \"CHEBI:50144\"\
+    ,\n              \"label\": \"sodium pyruvate\"\n            },\n            \"\
+    concentration\": {\n              \"value\": \"0.8\",\n              \"unit\"\
+    : \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:50144\",\n              \"label\": \"sodium\
+    \ pyruvate\"\n            }\n          },\n          {\n            \"preferred_term\"\
+    : \"N-Acetyl-D-glucosamine\",\n            \"term\": {\n              \"id\":\
+    \ \"CHEBI:506227\",\n              \"label\": \"N-acetyl-D-glucosamine\"\n   \
+    \         },\n            \"concentration\": {\n              \"value\": \"0.4\"\
+    ,\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_term\"\
+    : {\n              \"id\": \"MediaIngredientMech:000994\",\n              \"label\"\
+    : \"N-Acetyl-D-glucosamine\"\n            }\n          },\n          {\n     \
+    \       \"preferred_term\": \"NaHCO3\",\n            \"term\": {\n           \
+    \   \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium hydrogencarbonate\"\
+    \n            },\n            \"concentration\": {\n              \"value\": \"\
+    2.2\",\n              \"unit\": \"G_PER_L\"\n            },\n            \"mediaingredientmech_chebi_term\"\
+    : {\n              \"id\": \"CHEBI:32139\",\n              \"label\": \"sodium\
+    \ hydrogencarbonate\"\n            }\n          }\n        ],\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"Restore the missing source water input without\
+    \ calling it measured final volume.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.9\",\n          \"unit\": \"L\"\n        },\n        \"decision\": \"verified\"\
+    ,\n        \"rationale\": \"The maintained0.9 L equals900 ml and carries exact\
+    \ source evidence.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].recipe[9]\",\n        \"\
+    exact_source_quote\": \"{\\n                        \\\"recipe_order\\\": 10,\\\
+    n                        \\\"compound\\\": \\\"Distilled water\\\",\\n       \
+    \                 \\\"compound_id\\\": 4,\\n                        \\\"amount\\\
+    \": 900,\\n                        \\\"unit\\\": \\\"ml\\\",\\n              \
+    \          \\\"optional\\\": 0\\n                    }\",\n        \"snapshot_sha256\"\
+    : \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Restore the missing source water input without\
+    \ calling it measured final volume.\"\n  },\n  {\n    \"quantity_id\": \"q14\"\
+    ,\n    \"topic\": \"Gelatin solution200ml\",\n    \"decision\": \"add\",\n   \
+    \ \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"The existing target preparation mentions200\
+    \ ml, but its stock/dose structure is absent. Retain the late addition before\
+    \ filtration rather than normalize all ingredients to1 L.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.2\",\n          \"unit\": \"L\"\n        },\n  \
+    \      \"decision\": \"verified\",\n        \"rationale\": \"The maintained0.2\
+    \ L stock dose equals200 ml and preserves the receiving-batch scope with evidence.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"historicalJ201\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\"\
+    ,\n        \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n      \
+    \  \"exact_source_quote\": \"Mix all ingredients in a beaker with a stir bar.\
+    \ Adjust pH to 7.6. Add 200 ml of 7% gelatin. Filter-sterilize entire medium.\
+    \ Add sterile rabbit serum to final concentration of 6%.\",\n        \"snapshot_sha256\"\
+    : \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The existing target preparation mentions200\
+    \ ml, but its stock/dose structure is absent. Retain the late addition before\
+    \ filtration rather than normalize all ingredients to1 L.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q15\",\n    \"topic\": \"Gelatin7%,basis unspecified\",\n   \
+    \ \"decision\": \"add\",\n    \"layer_decisions\": [\n      {\n        \"input\"\
+    : \"target\",\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Preserve the source7%\
+    \ label with an unknown fraction basis. No stock mass, solvent volume or14 g calculation\
+    \ is justified.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition[0].notes\",\n        \"\
+    stored\": \"Source label: 7% gelatin. Percentage basis is unspecified; no numeric\
+    \ stock strength or stock-batch mass is asserted.\",\n        \"decision\": \"\
+    verified\",\n        \"rationale\": \"The maintained note already preserves7%\
+    \ and explicitly withholds an assumed percentage basis.\"\n      }\n    ],\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"historicalJ201\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n        \"\
+    exact_source_quote\": \"Mix all ingredients in a beaker with a stir bar. Adjust\
+    \ pH to 7.6. Add 200 ml of 7% gelatin. Filter-sterilize entire medium. Add sterile\
+    \ rabbit serum to final concentration of 6%.\",\n        \"snapshot_sha256\":\
+    \ \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"Preserve the source7% label with an unknown\
+    \ fraction basis. No stock mass, solvent volume or14 g calculation is justified.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"topic\": \"Sterile rabbit serum\
+    \ final6%\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\": [\n\
+    \      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Mix all ingredients in a beaker with a stir bar. Adjust\
+    \ pH to 7.6. Add 200 ml of 7% gelatin. Filter-sterilize entire medium. Add sterile\
+    \ rabbit serum to final concentration of 6%.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"The target prose already contains final6%, but lacks\
+    \ attached concentration evidence and stock structure. Percentage basis and fixed\
+    \ dose remain unspecified.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"solutions[2].notes\",\n        \"stored\": \"Source\
+    \ specifies sterile rabbit serum at final 6%, but the percentage basis and corresponding\
+    \ fixed addition volume are unspecified. Retain the literal label without asserting\
+    \ a numeric percentage, stock strength or dose. Serum is added after filtration\
+    \ of the medium.\",\n        \"decision\": \"verified\",\n        \"rationale\"\
+    : \"The maintained late-serum note and evidence preserve the literal final6% after\
+    \ filtration without inventing its basis or addition volume.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"historicalJ201\"\
+    ,\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\",\n \
+    \       \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n        \"\
+    exact_source_quote\": \"Mix all ingredients in a beaker with a stir bar. Adjust\
+    \ pH to 7.6. Add 200 ml of 7% gelatin. Filter-sterilize entire medium. Add sterile\
+    \ rabbit serum to final concentration of 6%.\",\n        \"snapshot_sha256\":\
+    \ \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\n     \
+    \ }\n    ],\n    \"rationale\": \"The target prose already contains final6%, but\
+    \ lacks attached concentration evidence and stock structure. Percentage basis\
+    \ and fixed dose remain unspecified.\"\n  },\n  {\n    \"quantity_id\": \"q17\"\
+    ,\n    \"topic\": \"pH7.6\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ph_value\"\
+    ,\n        \"stored\": 7.6,\n        \"decision\": \"evidence_only\",\n      \
+    \  \"rationale\": \"Both scalar values match the source. Target evidence linkage\
+    \ is absent; the maintained root preparation claim supports the adjustment.\"\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.6,\n        \"\
+    decision\": \"verified\",\n        \"rationale\": \"The maintained pH and preparation\
+    \ are supported by its authenticated root evidence.\"\n      }\n    ],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"historicalJ201\",\n \
+    \       \"source_url\": \"https://mediadive.dsmz.de/rest/medium/J201\",\n    \
+    \    \"source_locator\": \"$.data.solutions[0].steps[0].step\",\n        \"exact_source_quote\"\
+    : \"Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6. Add 200\
+    \ ml of 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum to\
+    \ final concentration of 6%.\",\n        \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"Both scalar values match the source. Target\
+    \ evidence linkage is absent; the maintained root preparation claim supports the\
+    \ adjustment.\"\n  },\n  {\n    \"quantity_id\": \"q18\",\n    \"topic\": \"Existing\
+    \ preparation quantities200ml,7%,6% and pH7.6\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6. Add 200\
+    \ ml of 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum to\
+    \ final concentration of 6%.\",\n        \"decision\": \"evidence_only\",\n  \
+    \      \"rationale\": \"The generated preparation is present and retains these\
+    \ literal quantities; do not report it missing. Preserve the stage order and unknown\
+    \ percentage bases.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6. Add 200\
+    \ ml of 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum to\
+    \ final concentration of 6%.\",\n        \"decision\": \"verified\",\n       \
+    \ \"rationale\": \"The maintained preparation description is unchanged and supported\
+    \ by the exact historical source claim.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historicalJ201\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J201\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].steps[0].step\",\n        \"exact_source_quote\": \"Mix\
+    \ all ingredients in a beaker with a stir bar. Adjust pH to 7.6. Add 200 ml of\
+    \ 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum to final\
+    \ concentration of 6%.\",\n        \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"The generated preparation is present and\
+    \ retains these literal quantities; do not report it missing. Preserve the stage\
+    \ order and unknown percentage bases.\"\n  },\n  {\n    \"quantity_id\": \"q19\"\
+    ,\n    \"topic\": \"Declared provider volume1000ml versus final volume\",\n  \
+    \  \"decision\": \"unsupported\",\n    \"layer_decisions\": [],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"historicalJ201\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J201\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].volume\",\n        \"exact_source_quote\": \"\\\"volume\\\
+    \": 1000\",\n        \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      },\n      {\n        \"source_key\": \"historicalJ201\",\n        \"source_url\"\
+    : \"https://mediadive.dsmz.de/rest/medium/J201\",\n        \"source_locator\"\
+    : \"$.data.solutions[0].steps[0].step\",\n        \"exact_source_quote\": \"Mix\
+    \ all ingredients in a beaker with a stir bar. Adjust pH to 7.6. Add 200 ml of\
+    \ 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum to final\
+    \ concentration of 6%.\",\n        \"snapshot_sha256\": \"811e9b983578398b73608c24795f132db2b7eea5b60d261dc85dc15f9c8d1536\"\
+    \n      }\n    ],\n    \"rationale\": \"The provider normalization denominator\
+    \ is not independent final-volume measurement after gelatin and serum additions.\
+    \ No correction to a guessed1.2 L or another final volume is proposed.\"\n  }\n\
+    ]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.002564.false-lb-expansion
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Remove the stale LB identity from generated J201 BSK
+  description: The target still contains LB tryptone, yeast extract and sodium chloride
+    expansion with unrelated catalog provenance instead of the source albumin FractionV.
+    The maintained owner is already repaired.
+  target_ids:
+  - CultureMech:002564
+  field_paths:
+  - ingredients[2]
+  - ingredients[3]
+  - ingredients[4]
+  - notes
+  evidence_ids:
+  - historical
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1.1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.002564.stale-amounts-stocks
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Carry forward batch masses and staged liquid inputs
+  description: The target retains unsupported G_PER_L rates and CMRL mass units while
+    the maintained owner preserves batch amounts, water, gelatin and serum stocks.
+    The final denominator remains unestablished despite provider-derived g_l fields.
+  target_ids:
+  - CultureMech:002564
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[0].action
+  evidence_ids:
+  - historical
+  - owner-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.002564.secondary-link-provenance
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Resolve the bounded secondary mapping gaps
+  description: The selected HEPES secondary key lacks a current preferred MIM row;
+    legacy000994 correspondence is not established by the current catalog/tree. Primary
+    IDs remain valid and do not automatically authenticate those secondary assertions.
+  target_ids:
+  - CultureMech:002564
+  field_paths:
+  - ingredients[5].mediaingredientmech_chebi_term
+  - ingredients[9].mediaingredientmech_term
+  evidence_ids:
+  - grounding-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is normalized to minor because exact secondary-link provenance
+    is missing while primary chemical identity and batch amounts remain independently
+    supported; the wrong formulation is separately blocking.
+actions:
+- action_id: a1
+  description: Preserve the maintained repair and regenerate the exact J201 target
+    with albumin and source-specific provenance; retain superseded history without
+    treating it as current formulation.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002564
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Propagate the completed repair, preserve source amounts and stage order,
+    and retain FILTER without adding an unprovided pore size. Do not infer final volume
+    or percentage basis.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002564
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Recover a compatible historical mapping or document the unresolved
+    secondary slots; do not invent a replacement identity or transfer excluded-record
+    legacy issues.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002564
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/JCM_J201_BSK_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The current J201 API returned503. The recovered historical provider response supports
+  source-scoped observations; it does not establish current availability or independent
+  original-page corroboration.
+- The current original JCM201 page returned Nothing found; the separate historical
+  JCM attempt also lacked a recipe. Do not transfer a different BSK formulation to
+  fill this access gap.
+- Current JCM201 and API retrievals did not provide the formulation. Exact historical
+  provider raw is recovered, but original-page recipe corroboration remains unavailable.
+- No CMRL stock strength, filter pore size, gelatin/serum fraction basis or measured
+  final volume is inferred. Selected legacy000994 historical correspondence remains
+  unresolved.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-045
+- generated-medium

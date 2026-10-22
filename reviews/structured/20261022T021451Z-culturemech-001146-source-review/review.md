@@ -1,0 +1,3822 @@
+# Source and formulation review: bsm_medium (CultureMech:001146)
+
+- Review: 20261022T021451Z-culturemech-001146-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-22T02:02:42Z
+- Finished UTC: 2026-10-22T02:14:51Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The DSM1663 source separates basal inputs, a trace stock, a vitamin stock and late additions. Both local layers flatten those stages, omit receiving doses and infer unsupported final rates. The preparation already states final 100 µM sulfide. Nickel hydrate and legacy secondary correspondence require separate grounding review; no missing historical raw is treated as authenticated.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 450; batch 045 item 10 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty-four task batches contain 440 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 443 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001146 | data/merge_yaml/merged/BSM_medium.yaml | generated | bsm_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001146 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001146 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch045/450/strict.tsv |
+| validate-terms | passed | True | CultureMech:001146 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001146 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001146 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: api1663 | unavailable | False | CultureMech:001146 | The current exact MediaDive1663 API returned503. Current DSM primary remains available; the cited historical API raw was not recovered in the explicitly bounded report-parent search. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001146.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Identifier metadata, exact supplied forms and current secondary bindings
+
+grounding: concern. Targets: CultureMech:001146.
+
+108 asserted slots and 28 distinct captured ontology IDs checked; 0 literal canonical-label differences. 52/52 asserted current CHEBI secondary slots have preferred mapped rows; 2 selected legacy slots remain separately assessed. Target direct-ingredient linkage: 28/29 primary and 26/29 current secondary on a 0–100 percent linkage scale (96.55% and 89.66%), not a correctness score. Nickel chloride hexahydrate in the source is not the anhydrous CHEBI:34887 assertion. CHEBI:131527 has canonical dipotassium hydrogen phosphate metadata with synonym/form tension; retain exact source K2HPO4 without inventing a wrong-isomer conclusion. Generic sodium lactate does not erase the source DL qualifier. Canonical Calcium pantothenate capitalization already matches. Selected legacy MediaIngredientMech:000171 lacks current catalog/tree/index correspondence; historical identity remains unresolved independently of valid primary sodium nitrate CHEBI:63005.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:001146.
+
+15 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Claim linkage and historical/current source scope
+
+evidence: concern. Targets: CultureMech:001146.
+
+All target/owner histories and evidence fields were read; neither selected layer has attached concentration claims. The old 1663 report is derivative context and its cited API raw remains unrecovered within the recorded bounded parent search. Current primary and scoped DSM141 vitamin source support the stated stages independently. Parent ingredients outside the ten Wolin vitamins, including mineral/gas/strain claims, are not transferred. Import/enrichment provenance does not prove that current guarded merge code caused flattening.
+
+### Exact DSM1663 source and scoped vitamin dependency
+
+identity: supported. Targets: CultureMech:001146.
+
+The selected maintained BSM owner and target identify DSM1663. DSM141 is a vitamin-only dependency; its complete medium, declared final volume, mineral stock and strain variants are excluded.
+
+### Stock stages and explicit final sulfide requirement
+
+completeness: concern. Targets: CultureMech:001146.
+
+Preparation prose retains boiling, nitrogen, pH, trace makeup and final 100 µM sulfide, but structured quantities lose stock identities/doses and water inputs. Preserve explicit sulfide separately from unavailable stock dose/strength; no autoclave cycle or source final volume is guessed.
+
+### Semi-defined liquid medium and growth limits
+
+scope: supported. Targets: CultureMech:001146.
+
+Yeast extract supports semi-defined/complex liquid classification. No selected strain growth evidence is present, and preparation conditions do not establish an organism-specific optimum.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001146.
+
+40 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "topic": "NaCl basal batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.62",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "3.62",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 3",
+        "exact_source_quote": "NaCl                                                               3.62        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+  },
+  {
+    "quantity_id": "q2",
+    "topic": "K2HPO4 basal batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.26",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.26",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 4",
+        "exact_source_quote": "K2HPO4                                                             0.26        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+  },
+  {
+    "quantity_id": "q3",
+    "topic": "(NH4)Cl basal batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.08",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.08",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 5",
+        "exact_source_quote": "(NH4)Cl                                                            0.08        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+  },
+  {
+    "quantity_id": "q4",
+    "topic": "NaNO3 basal batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.85",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.85",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 6",
+        "exact_source_quote": "NaNO3                                                              0.85        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+  },
+  {
+    "quantity_id": "q5",
+    "topic": "Na2SO4 basal batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 7",
+        "exact_source_quote": "Na2SO4                                                             0.05        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+  },
+  {
+    "quantity_id": "q6",
+    "topic": "Na-DL-lactate basal batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1.12",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "1.12",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 10",
+        "exact_source_quote": "Na-DL-lactate                                                      1.12        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+  },
+  {
+    "quantity_id": "q7",
+    "topic": "Yeast extract basal batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 11",
+        "exact_source_quote": "Yeast extract                                                      0.20        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The literal mass is a basal batch input. The listed liquid additions nominally sum to 1000 ml before an unquantified sulfide addition, but the source does not establish a measured final-medium volume. Preserve the source mass and withhold an independently asserted G_PER_L rate."
+  },
+  {
+    "quantity_id": "q8",
+    "topic": "Bicarbonate: 52.50 ml of 8% stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "4.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source specifies a liquid dose and 8% label without a stated percentage basis. The local 4.2 G_PER_L assumes both w/v and final-volume normalization. Retain the 52.50 ml dose and qualified strength; do not infer stock mass or density."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "4.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source specifies a liquid dose and 8% label without a stated percentage basis. The local 4.2 G_PER_L assumes both w/v and final-volume normalization. Retain the 52.50 ml dose and qualified strength; do not infer stock mass or density."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 14",
+        "exact_source_quote": "NaHCO3 (8%)                                                        52.50      ml",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The source specifies a liquid dose and 8% label without a stated percentage basis. The local 4.2 G_PER_L assumes both w/v and final-volume normalization. Retain the 52.50 ml dose and qualified strength; do not infer stock mass or density."
+  },
+  {
+    "quantity_id": "q9",
+    "topic": "HCl (25%; 7.7 M) trace stock",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source explicitly gives 10 ml HCl 25% and 7.7 M. It does not support the local 2.5 G_PER_L conversion. Preserve both stated strength labels and the 10 ml input; no percentage-basis or density conversion is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "2.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The source explicitly gives 10 ml HCl 25% and 7.7 M. It does not support the local 2.5 G_PER_L conversion. Preserve both stated strength labels and the 10 ml input; no percentage-basis or density conversion is inferred."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 26",
+        "exact_source_quote": "HCl (25%; 7.7 M)                                                 10.00       ml",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The source explicitly gives 10 ml HCl 25% and 7.7 M. It does not support the local 2.5 G_PER_L conversion. Preserve both stated strength labels and the 10 ml input; no percentage-basis or density conversion is inferred."
+  },
+  {
+    "quantity_id": "q10",
+    "topic": "FeCl2 x 4 H2O trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 27",
+        "exact_source_quote": "FeCl2 x 4 H2O                                                     1.50        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q11",
+    "topic": "MgCl2 x 6 H2O trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 28",
+        "exact_source_quote": "MgCl2 x 6 H2O                                                     3.00        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q12",
+    "topic": "CaCl2 x 2 H2O trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 29",
+        "exact_source_quote": "CaCl2 x 2 H2O                                                     0.10        g",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q13",
+    "topic": "ZnCl2 trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.07",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 30",
+        "exact_source_quote": "ZnCl2                                                            70.00       mg",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q14",
+    "topic": "MnCl2 x 4 H2O trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 31",
+        "exact_source_quote": "MnCl2 x 4 H2O                                                   100.00       mg",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q15",
+    "topic": "H3BO3 trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.006",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 32",
+        "exact_source_quote": "H3BO3                                                             6.00       mg",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q16",
+    "topic": "CoCl2 x 6 H2O trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.19",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 33",
+        "exact_source_quote": "CoCl2 x 6 H2O                                                   190.00       mg",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q17",
+    "topic": "CuCl2 x 2 H2O trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 34",
+        "exact_source_quote": "CuCl2 x 2 H2O                                                     2.00       mg",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q18",
+    "topic": "NiCl2 x 6 H2O trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.024",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 35",
+        "exact_source_quote": "NiCl2 x 6 H2O                                                    24.00       mg",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q19",
+    "topic": "Na2MoO4 x 2 H2O trace stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.036",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 36",
+        "exact_source_quote": "Na2MoO4 x 2 H2O                                                  36.00       mg",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "This printed amount belongs to the trace stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic does not make it a direct final-medium concentration."
+  },
+  {
+    "quantity_id": "q20",
+    "topic": "Biotin vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 74",
+        "exact_source_quote": "Biotin 2.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q21",
+    "topic": "Folic acid vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.002",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 75",
+        "exact_source_quote": "Folic acid 2.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q22",
+    "topic": "Pyridoxine hydrochloride vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 76",
+        "exact_source_quote": "Pyridoxine hydrochloride 10.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q23",
+    "topic": "Thiamine HCl vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 77",
+        "exact_source_quote": "Thiamine HCl 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q24",
+    "topic": "Riboflavin vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 78",
+        "exact_source_quote": "Riboflavin 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q25",
+    "topic": "Nicotinic acid vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 81",
+        "exact_source_quote": "Nicotinic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q26",
+    "topic": "Calcium D-(+)-pantothenate vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 82",
+        "exact_source_quote": "Calcium D-(+)-pantothenate 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q27",
+    "topic": "Vitamin B12 vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.0001",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 83",
+        "exact_source_quote": "Vitamin B12 0.10 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q28",
+    "topic": "p-Aminobenzoic acid vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 84",
+        "exact_source_quote": "p-Aminobenzoic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q29",
+    "topic": "(DL)-alpha-Lipoic acid vitamin-stock amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.005",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Extracted text line 85",
+        "exact_source_quote": "(DL)-alpha-Lipoic acid 5.00 mg",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This amount belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration is outside this transfer."
+  },
+  {
+    "quantity_id": "q30",
+    "topic": "Trace stock receiving dose 1 ml",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 8",
+        "exact_source_quote": "Trace element solution (see below)                                 1.00       ml",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+  },
+  {
+    "quantity_id": "q31",
+    "topic": "Vitamin stock receiving dose 10 ml",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 9",
+        "exact_source_quote": "Vitamin solution (see medium 141)                                 10.00       ml",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+  },
+  {
+    "quantity_id": "q32",
+    "topic": "Bicarbonate stock receiving dose 52.50 ml",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "solutions",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 14",
+        "exact_source_quote": "NaHCO3 (8%)                                                        52.50      ml",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "Represent this source-specific stock dose at its named stage. No inferred final-medium concentration or unprovided stock composition is added."
+  },
+  {
+    "quantity_id": "q33",
+    "topic": "Basal water 936.50 ml",
+    "decision": "add",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 12",
+        "exact_source_quote": "Distilled water                                                  936.50       ml",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The basal liquid input is missing from structured ingredients. It is neither a mass rate nor measured final volume."
+  },
+  {
+    "quantity_id": "q34",
+    "topic": "Trace-stock water 990 ml and final makeup 1000 ml",
+    "decision": "add",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 37",
+        "exact_source_quote": "Distilled water                                                 990.00       ml",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      },
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "Keep the initial 990 ml water and explicit final 1000 ml stock makeup distinct. Only this trace stock has this makeup instruction."
+  },
+  {
+    "quantity_id": "q35",
+    "topic": "Vitamin-stock water 1000 ml",
+    "decision": "add",
+    "layer_decisions": [],
+    "source_snippets": [
+      {
+        "source_key": "dsm141VitaminContext",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf",
+        "source_locator": "Wolin vitamin solution, final water row on printed page3",
+        "exact_source_quote": "Distilled water 1000.00 ml",
+        "snapshot_sha256": "8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8",
+        "parsed_text_sha256": "734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5"
+      }
+    ],
+    "rationale": "This water belongs only to the transferred vitamin stock. Do not borrow the DSM141 main or mineral-stock denominator."
+  },
+  {
+    "quantity_id": "q36",
+    "topic": "Trace-stock makeup already retained in prose",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.0 ml.",
+        "decision": "evidence_only",
+        "rationale": "The instruction is already present but must be assigned to the trace stock. No attached concentration evidence currently links it to that stage."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.0 ml.",
+        "decision": "evidence_only",
+        "rationale": "The instruction is already present but must be assigned to the trace stock. No attached concentration evidence currently links it to that stage."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "Extracted text line 40",
+        "exact_source_quote": "Finally make up to 1000.0 ml.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The instruction is already present but must be assigned to the trace stock. No attached concentration evidence currently links it to that stage."
+  },
+  {
+    "quantity_id": "q37",
+    "topic": "Explicit final sodium sulfide 100 µM",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except vitamins and trace elements) in distilled water; boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense in culture vessels and autoclave. After sterilization add NaHCO3, vitamins, and trace elements from sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final concentration of 100 µM prior inoculation.",
+        "decision": "evidence_only",
+        "rationale": "Both prose fields already contain the explicit final 100 µM requirement. It is directly stated, unlike the inferred basal/stock rates. Attach precise evidence and represent the final requirement separately from an unknown stock strength or addition volume; no hydrate or mass conversion is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except vitamins and trace elements) in distilled water; boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense in culture vessels and autoclave. After sterilization add NaHCO3, vitamins, and trace elements from sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final concentration of 100 µM prior inoculation.",
+        "decision": "evidence_only",
+        "rationale": "Both prose fields already contain the explicit final 100 µM requirement. It is directly stated, unlike the inferred basal/stock rates. Attach precise evidence and represent the final requirement separately from an unknown stock strength or addition volume; no hydrate or mass conversion is inferred."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "DSM1663 primary preparation paragraph",
+        "exact_source_quote": "sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final concentration of\n100 µM prior inoculation.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "Both prose fields already contain the explicit final 100 µM requirement. It is directly stated, unlike the inferred basal/stock rates. Attach precise evidence and represent the final requirement separately from an unknown stock strength or addition volume; no hydrate or mass conversion is inferred."
+  },
+  {
+    "quantity_id": "q38",
+    "topic": "Complete-medium pH 8.2",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": 8.2,
+        "decision": "evidence_only",
+        "rationale": "The scalar matches the explicit source adjustment. Link this fact without borrowing DSM141 pH or treating it as strain-specific growth evidence."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 8.2,
+        "decision": "evidence_only",
+        "rationale": "The scalar matches the explicit source adjustment. Link this fact without borrowing DSM141 pH or treating it as strain-specific growth evidence."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "DSM1663 primary preparation paragraph",
+        "exact_source_quote": "Adjust pH to 8.2 and add\nsodium sulfide (Na2S) from a sterile anoxic solution to achieve a final concentration of\n100 µM prior inoculation.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The scalar matches the explicit source adjustment. Link this fact without borrowing DSM141 pH or treating it as strain-specific growth evidence."
+  },
+  {
+    "quantity_id": "q39",
+    "topic": "Boil 1–2 minutes, cool to room temperature",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except vitamins and trace elements) in distilled water; boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense in culture vessels and autoclave. After sterilization add NaHCO3, vitamins, and trace elements from sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final concentration of 100 µM prior inoculation.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains these preparation conditions. Room temperature has no fixed numerical value here, and the autoclave cycle is not stated."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except vitamins and trace elements) in distilled water; boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense in culture vessels and autoclave. After sterilization add NaHCO3, vitamins, and trace elements from sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final concentration of 100 µM prior inoculation.",
+        "decision": "evidence_only",
+        "rationale": "The existing prose retains these preparation conditions. Room temperature has no fixed numerical value here, and the autoclave cycle is not stated."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "DSM1663 primary preparation paragraph",
+        "exact_source_quote": "boil for 1- 2\nminutes and cool down to room temperature under 100% N2 gas, dispense in culture\nvessels and autoclave.",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "The existing prose retains these preparation conditions. Room temperature has no fixed numerical value here, and the autoclave cycle is not stated."
+  },
+  {
+    "quantity_id": "q40",
+    "topic": "100% nitrogen during cooling and stock preparation",
+    "decision": "evidence_only",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except vitamins and trace elements) in distilled water; boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense in culture vessels and autoclave. After sterilization add NaHCO3, vitamins, and trace elements from sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final concentration of 100 µM prior inoculation.",
+        "decision": "evidence_only",
+        "rationale": "Retain the separate cooling/dispensing and sterile anoxic stock stages. No pressure, flow rate, gas-fraction basis beyond the literal source or organism-growth condition is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except vitamins and trace elements) in distilled water; boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense in culture vessels and autoclave. After sterilization add NaHCO3, vitamins, and trace elements from sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final concentration of 100 µM prior inoculation.",
+        "decision": "evidence_only",
+        "rationale": "Retain the separate cooling/dispensing and sterile anoxic stock stages. No pressure, flow rate, gas-fraction basis beyond the literal source or organism-growth condition is inferred."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsm1663",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf",
+        "source_locator": "DSM1663 primary preparation paragraph",
+        "exact_source_quote": "minutes and cool down to room temperature under 100% N2 gas, dispense in culture\nvessels and autoclave. After sterilization add NaHCO3, vitamins, and trace elements\nfrom sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2",
+        "snapshot_sha256": "1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65",
+        "parsed_text_sha256": "968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21"
+      }
+    ],
+    "rationale": "Retain the separate cooling/dispensing and sterile anoxic stock stages. No pressure, flow rate, gas-fraction basis beyond the literal source or organism-growth condition is inferred."
+  }
+]
+
+## Findings
+
+### f1: Separate basal amounts, stock compositions and receiving doses
+
+major / open / confirmed; issue key: culturemech.001146.stock-stage-and-denominators.
+
+Both layers flatten trace and vitamin stocks, omit liquid doses/water and assert final-medium rates not independently supported by the source. HCl 25% and bicarbonate8% conversions additionally assume unspecified bases.
+
+### f2: Reconcile nickel hexahydrate with the asserted identifier
+
+major / open / confirmed; issue key: culturemech.001146.nickel-hydrate.
+
+The literal source and ingredient label specify nickel chloride hexahydrate, while primary and current-secondary CHEBI:34887 represent nickel dichloride without that hydrate. Identifier validity does not resolve the supplied-form mismatch.
+
+### f3: Add scoped evidence and resolve the legacy secondary trail
+
+minor / open / confirmed; issue key: culturemech.001146.claim-and-legacy-linkage.
+
+Both layers lack attached amount evidence. Legacy000171 correspondence is unresolved in the pinned current index/catalog/tree even though primary sodium nitrate metadata are valid.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore stock structure, literal amounts, explicit trace makeup and receiving doses. Preserve stated final 100 µM sulfide and withhold other final rates until their denominators/bases are established.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Verify exact hydrate correspondence before changing both primary and secondary links; preserve the source mass and stock stage.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Attach concise stage-specific primary evidence and recover compatible legacy provenance or retain its unresolved status; do not treat unavailable old raw or current mapping absence as proof of a wrong primary chemical.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BSM_medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/bsm_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BSM_medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BSM_medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch045/450/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch045/450/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BSM_medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BSM_medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BSM_medium.yaml:1:id: CultureMech:001146<br>./data/normalized_yaml/bacterial/bsm_medium.yaml:1:id: CultureMech:001146<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch045/source-preflight-bound/450/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 33 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf; Exact source identity, formulation and scoped preparation | supports | Complete DSM1663 primary: basal amounts, trace stock with explicit 1000 ml makeup, late bicarbonate/vitamin/trace additions, pH 8.2 and final 100 µM sulfide. Listed liquid inputs do not establish measured final volume. |
+| vitamins | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf; Exact source identity, formulation and scoped preparation | supports | Only the Wolin vitamin stock is transferred from DSM141. Its main medium, mineral stock, strain variants, gas mixtures, pressure, pH and declared 1013 ml final volume are excluded from DSM1663. |
+| api1663-attempt | https://mediadive.dsmz.de/rest/medium/1663; Preserved exact public retrieval result | context_only | The current exact MediaDive1663 API returned503. Current DSM primary remains available; the cited historical API raw was not recovered in the explicitly bounded report-parent search. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact source identity, formulation and scoped preparation | supports | CHEBI:26710 resolves to sodium chloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact source identity, formulation and scoped preparation | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact source identity, formulation and scoped preparation | supports | CHEBI:31206 resolves to ammonium chloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; Exact source identity, formulation and scoped preparation | supports | CHEBI:63005 resolves to sodium nitrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; Exact source identity, formulation and scoped preparation | supports | CHEBI:32149 resolves to sodium sulfate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi75228 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228; Exact source identity, formulation and scoped preparation | supports | CHEBI:75228 resolves to sodium lactate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact source identity, formulation and scoped preparation | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; Exact source identity, formulation and scoped preparation | supports | CHEBI:17883 resolves to hydrogen chloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; Exact source identity, formulation and scoped preparation | supports | CHEBI:86249 resolves to iron dichloride tetrahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact source identity, formulation and scoped preparation | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact source identity, formulation and scoped preparation | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; Exact source identity, formulation and scoped preparation | supports | CHEBI:49976 resolves to zinc dichloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; Exact source identity, formulation and scoped preparation | supports | CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact source identity, formulation and scoped preparation | supports | CHEBI:33118 resolves to boric acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; Exact source identity, formulation and scoped preparation | supports | CHEBI:53503 resolves to cobalt chloride hexahydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; Exact source identity, formulation and scoped preparation | supports | CHEBI:86318 resolves to copper(II) chloride dihydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact source identity, formulation and scoped preparation | supports | CHEBI:34887 resolves to nickel dichloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact source identity, formulation and scoped preparation | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact source identity, formulation and scoped preparation | supports | CHEBI:15956 resolves to biotin. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact source identity, formulation and scoped preparation | supports | CHEBI:27470 resolves to folic acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact source identity, formulation and scoped preparation | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact source identity, formulation and scoped preparation | supports | CHEBI:49105 resolves to thiamine hydrochloride. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact source identity, formulation and scoped preparation | supports | CHEBI:17015 resolves to riboflavin. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact source identity, formulation and scoped preparation | supports | CHEBI:15940 resolves to nicotinic acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact source identity, formulation and scoped preparation | supports | CHEBI:31345 resolves to Calcium pantothenate. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact source identity, formulation and scoped preparation | supports | CHEBI:176843 resolves to vitamin B12. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact source identity, formulation and scoped preparation | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact source identity, formulation and scoped preparation | supports | CHEBI:16494 resolves to lipoic acid. Captured canonical label/obsolete metadata checked; full scientific object retained. Exact supplied forms are assessed separately. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch045/450/grounding-inventory.json; All asserted selected-layer IDs/labels and exact current preferred MIM rows, including negative slots | context_only | Nickel chloride hexahydrate in the source is not the anhydrous CHEBI:34887 assertion. CHEBI:131527 has canonical dipotassium hydrogen phosphate metadata with synonym/form tension; retain exact source K2HPO4 without inventing a wrong-isomer conclusion. Generic sodium lactate does not erase the source DL qualifier. Canonical Calcium pantothenate capitalization already matches. Selected legacy MediaIngredientMech:000171 lacks current catalog/tree/index correspondence; historical identity remains unresolved independently of valid primary sodium nitrate CHEBI:63005. |
+| history-metadata | data/merge_yaml/merged/BSM_medium.yaml; data/normalized_yaml/bacterial/bsm_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/bsm_medium.yaml", "events": 7, "timestamp_issues": []}] |
+| history-evidence | /private/tmp/culturemech-review-work-batch045/450/history-evidence-inventory.json; Entire selected-layer histories/evidence; exact historical parents and original captured timestamps | context_only | All target/owner histories and evidence fields were read; neither selected layer has attached concentration claims. The old 1663 report is derivative context and its cited API raw remains unrecovered within the recorded bounded parent search. Current primary and scoped DSM141 vitamin source support the stated stages independently. Parent ingredients outside the ten Wolin vitamins, including mineral/gas/strain claims, are not transferred. Import/enrichment provenance does not prove that current guarded merge code caused flattening. |
+| writer-0 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current target and selected maintained owner share the flattened scientific fields. Correct the maintained source first and verify regeneration separately; current guarded merger causality is not asserted. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current target and selected maintained owner share the flattened scientific fields. Correct the maintained source first and verify regeneration separately; current guarded merger causality is not asserted. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch045/450/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The current exact MediaDive1663 API returned503. Current DSM primary remains available; the cited historical API raw was not recovered in the explicitly bounded report-parent search.
+- Historical API 1663 raw and selected legacy 000171 correspondence remain unresolved within the documented bounded searches. Current source support does not retroactively authenticate that raw.
+- No measured final medium volume, percentage basis, density, sodium sulfide hydrate or unprovided autoclave cycle is inferred. DSM141 is used only for its Wolin vitamin stock.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261022T021451Z-culturemech-001146-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bsm_medium (CultureMech:001146)'
+started_at: '2026-10-22T02:02:42Z'
+finished_at: '2026-10-22T02:14:51Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The DSM1663 source separates basal inputs, a trace stock, a vitamin stock
+  and late additions. Both local layers flatten those stages, omit receiving doses
+  and infer unsupported final rates. The preparation already states final 100 µM sulfide.
+  Nickel hydrate and legacy secondary correspondence require separate grounding review;
+  no missing historical raw is treated as authenticated.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BSM_medium.yaml
+    sha256: 89be58e805b5b92d5edf0e4a3f7e3352c1b04e411e7a62eeaa3a2cb18ebe8a36
+    role: target
+  - path: data/normalized_yaml/archaea/methanogenium_medium_h2_co2.yaml
+    sha256: 7d9f3fc0fab5ea985fdca11a2a39449646302a6c01d8479b1c208e708d608e6b
+    role: context
+  - path: data/normalized_yaml/bacterial/bsm_medium.yaml
+    sha256: 3c355e5d148af9021153ac461b014177671dc048779f5f9f79095e93a9253104
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/bsm_medium.yaml.md
+    sha256: 0228dd744ece07e893f1c0cb7c3077eeb5bc7c285c34a6e07f00bc5b3203ddbd
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BSM_medium.md
+    sha256: b4b4084cc34a13edc259f3e4efff4fc8db46ef5eb911cfe4e6e5629b91621dd4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/bsm_medium.md
+    sha256: 457d3a3ee7294d8c13848acec8d0545b95214a23f6be0f9ebc494d11abc3cd7f
+    role: context
+  - path: reports/yaml_record_review/20260922T010436Z-BSM_medium.md
+    sha256: b2bf3cf4548e96b6185f9770a1034e2cf4aa6c65fa58fdccb5714b405c6a1c2d
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/curate_organism_culture_type.py
+    sha256: 8686de3d3736eaaf3702e2009a299a53819a5ba321966ab2ea01104538ca6a65
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_albumin_counterparts.py
+    sha256: 26fd67dc1773e34b183cfa447b24cf948f52b3e5d229d6532d6d0fee10216a7a
+    role: context
+  - path: scripts/repair_bsk_formulations.py
+    sha256: a0df723b84ed8dfa33b06023b540af8d67af79d33b375f643741d81f7f4cef2c
+    role: context
+  - path: scripts/repair_jcm_albumin_inputs.py
+    sha256: fc166a31e8009a31f2f510cfb4ec59a3d5435f9fbfd0fb75417f99e25b7199f4
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_methanogen_stock_boundaries.py
+    sha256: 8d4d32c7dc3cb2586242a188f958087482df3aff553d1dbc468c422eddb037ba
+    role: context
+  - path: scripts/repair_togo_bsk_structure.py
+    sha256: 7be012bb48826f20ede3a560aac5e8369b928bf1315bbed5fd45687ffb74aa9c
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 450; batch 045 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-four task batches
+    contain 440 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 443 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001146
+targets:
+- target_id: CultureMech:001146
+  path: data/merge_yaml/merged/BSM_medium.yaml
+  label: bsm_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bsm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BSM_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BSM_medium.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch045/450/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch045/450/strict.tsv"
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BSM_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BSM_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001146
+- check_id: api1663-source-access
+  name: 'Exact source content access: api1663'
+  required: false
+  status: unavailable
+  summary: The current exact MediaDive1663 API returned503. Current DSM primary remains
+    available; the cited historical API raw was not recovered in the explicitly bounded
+    report-parent search.
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - api1663-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BSM_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bsm_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BSM_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:39.102260Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BSM_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch045/450/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:42.082350Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-045/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch045/450/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BSM_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:47.231354Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BSM_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T02:05:49.990836Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BSM_medium.yaml:1:id: CultureMech:001146
+
+    ./data/normalized_yaml/bacterial/bsm_medium.yaml:1:id: CultureMech:001146
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/source-preflight-bound/450/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: supports
+  summary: 33 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: d57d4e158e626ca8a1534ac834743a4da1f0c24cef825fa9a8fd266d372cd0ff
+- evidence_id: primary
+  kind: database
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T01:49:41.503416Z'
+  support: supports
+  summary: 'Complete DSM1663 primary: basal amounts, trace stock with explicit 1000
+    ml makeup, late bicarbonate/vitamin/trace additions, pH 8.2 and final 100 µM sulfide.
+    Listed liquid inputs do not establish measured final volume.'
+  snapshot_sha256: 1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65
+- evidence_id: vitamins
+  kind: database
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T10:13:12.306566Z'
+  support: supports
+  summary: Only the Wolin vitamin stock is transferred from DSM141. Its main medium,
+    mineral stock, strain variants, gas mixtures, pressure, pH and declared 1013 ml
+    final volume are excluded from DSM1663.
+  snapshot_sha256: 8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8
+- evidence_id: api1663-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1663
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T01:49:42.085716Z'
+  support: context_only
+  summary: The current exact MediaDive1663 API returned503. Current DSM primary remains
+    available; the cited historical API raw was not recovered in the explicitly bounded
+    report-parent search.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:00:46.687620Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T04:02:36.443517Z'
+  support: supports
+  summary: CHEBI:63005 resolves to sodium nitrate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi32149
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T07:18:34.792120Z'
+  support: supports
+  summary: CHEBI:32149 resolves to sodium sulfate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi75228
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T14:35:48.010081Z'
+  support: supports
+  summary: CHEBI:75228 resolves to sodium lactate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 725fbc04444c481cec25519a6f632470427a7020613af93e84e05b5f23d66ccf
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi17883
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T07:37:25.439020Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi86249
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T09:49:55.693358Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:43:09.378884Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:30.657545Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi86318
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:43:12.592415Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Captured canonical
+    label/obsolete metadata checked; full scientific object retained. Exact supplied
+    forms are assessed separately.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Captured canonical label/obsolete metadata
+    checked; full scientific object retained. Exact supplied forms are assessed separately.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Captured canonical label/obsolete
+    metadata checked; full scientific object retained. Exact supplied forms are assessed
+    separately.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/450/grounding-inventory.json
+  locator: All asserted selected-layer IDs/labels and exact current preferred MIM
+    rows, including negative slots
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: context_only
+  summary: Nickel chloride hexahydrate in the source is not the anhydrous CHEBI:34887
+    assertion. CHEBI:131527 has canonical dipotassium hydrogen phosphate metadata
+    with synonym/form tension; retain exact source K2HPO4 without inventing a wrong-isomer
+    conclusion. Generic sodium lactate does not erase the source DL qualifier. Canonical
+    Calcium pantothenate capitalization already matches. Selected legacy MediaIngredientMech:000171
+    lacks current catalog/tree/index correspondence; historical identity remains unresolved
+    independently of valid primary sodium nitrate CHEBI:63005.
+  snapshot_sha256: 83ef80ddbcd31bd1658914d1833bc83a13e95183d71d2d71cf6fb3f11e037877
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BSM_medium.yaml; data/normalized_yaml/bacterial/bsm_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 8, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/bsm_medium.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: history-evidence
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/450/history-evidence-inventory.json
+  locator: Entire selected-layer histories/evidence; exact historical parents and
+    original captured timestamps
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: context_only
+  summary: All target/owner histories and evidence fields were read; neither selected
+    layer has attached concentration claims. The old 1663 report is derivative context
+    and its cited API raw remains unrecovered within the recorded bounded parent search.
+    Current primary and scoped DSM141 vitamin source support the stated stages independently.
+    Parent ingredients outside the ten Wolin vitamins, including mineral/gas/strain
+    claims, are not transferred. Import/enrichment provenance does not prove that
+    current guarded merge code caused flattening.
+  snapshot_sha256: d0f0dea54508b9b537b1dfed869486337870766e10a004a3b3cc52b07111c0d9
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: context_only
+  summary: Current target and selected maintained owner share the flattened scientific
+    fields. Correct the maintained source first and verify regeneration separately;
+    current guarded merger causality is not asserted.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: context_only
+  summary: Current target and selected maintained owner share the flattened scientific
+    fields. Correct the maintained source first and verify regeneration separately;
+    current guarded merger causality is not asserted.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch045/450/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T02:14:22Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 5def4d2f36a6d5da301b1963d10d98562c9500d613a9a779f02ed6a8afb096f1
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Identifier metadata, exact supplied forms and current secondary bindings
+  outcome: concern
+  summary: '108 asserted slots and 28 distinct captured ontology IDs checked; 0 literal
+    canonical-label differences. 52/52 asserted current CHEBI secondary slots have
+    preferred mapped rows; 2 selected legacy slots remain separately assessed. Target
+    direct-ingredient linkage: 28/29 primary and 26/29 current secondary on a 0–100
+    percent linkage scale (96.55% and 89.66%), not a correctness score. Nickel chloride
+    hexahydrate in the source is not the anhydrous CHEBI:34887 assertion. CHEBI:131527
+    has canonical dipotassium hydrogen phosphate metadata with synonym/form tension;
+    retain exact source K2HPO4 without inventing a wrong-isomer conclusion. Generic
+    sodium lactate does not erase the source DL qualifier. Canonical Calcium pantothenate
+    capitalization already matches. Selected legacy MediaIngredientMech:000171 lacks
+    current catalog/tree/index correspondence; historical identity remains unresolved
+    independently of valid primary sodium nitrate CHEBI:63005.'
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - record
+  - grounding-inventory
+  - chebi26710
+  - chebi131527
+  - chebi31206
+  - chebi63005
+  - chebi32149
+  - chebi75228
+  - chebi32139
+  - chebi17883
+  - chebi86249
+  - chebi86345
+  - chebi86158
+  - chebi49976
+  - chebi86368
+  - chebi33118
+  - chebi53503
+  - chebi86318
+  - chebi34887
+  - chebi75213
+  - chebi15956
+  - chebi27470
+  - chebi30961
+  - chebi49105
+  - chebi17015
+  - chebi15940
+  - chebi31345
+  - chebi176843
+  - chebi30753
+  - chebi16494
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 15 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Claim linkage and historical/current source scope
+  outcome: concern
+  summary: All target/owner histories and evidence fields were read; neither selected
+    layer has attached concentration claims. The old 1663 report is derivative context
+    and its cited API raw remains unrecovered within the recorded bounded parent search.
+    Current primary and scoped DSM141 vitamin source support the stated stages independently.
+    Parent ingredients outside the ten Wolin vitamins, including mineral/gas/strain
+    claims, are not transferred. Import/enrichment provenance does not prove that
+    current guarded merge code caused flattening.
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - record
+  - history-evidence
+  - bound-source-integrity
+- assessment_id: identity
+  area: identity
+  topic: Exact DSM1663 source and scoped vitamin dependency
+  outcome: supported
+  summary: The selected maintained BSM owner and target identify DSM1663. DSM141 is
+    a vitamin-only dependency; its complete medium, declared final volume, mineral
+    stock and strain variants are excluded.
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - vitamins
+- assessment_id: preparation
+  area: completeness
+  topic: Stock stages and explicit final sulfide requirement
+  outcome: concern
+  summary: Preparation prose retains boiling, nitrogen, pH, trace makeup and final
+    100 µM sulfide, but structured quantities lose stock identities/doses and water
+    inputs. Preserve explicit sulfide separately from unavailable stock dose/strength;
+    no autoclave cycle or source final volume is guessed.
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - record
+  - primary
+  - vitamins
+- assessment_id: classification
+  area: scope
+  topic: Semi-defined liquid medium and growth limits
+  outcome: supported
+  summary: Yeast extract supports semi-defined/complex liquid classification. No selected
+    strain growth evidence is present, and preparation conditions do not establish
+    an organism-specific optimum.
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 40 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001146
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"NaCl basal batch\
+    \ amount\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\": [\n\
+    \      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"3.62\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The literal mass is a basal batch input. The listed liquid additions\
+    \ nominally sum to 1000 ml before an unquantified sulfide addition, but the source\
+    \ does not establish a measured final-medium volume. Preserve the source mass\
+    \ and withhold an independently asserted G_PER_L rate.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"3.62\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ mass is a basal batch input. The listed liquid additions nominally sum to 1000\
+    \ ml before an unquantified sulfide addition, but the source does not establish\
+    \ a measured final-medium volume. Preserve the source mass and withhold an independently\
+    \ asserted G_PER_L rate.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"NaCl                                                               3.62  \
+    \      g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass is a basal batch input.\
+    \ The listed liquid additions nominally sum to 1000 ml before an unquantified\
+    \ sulfide addition, but the source does not establish a measured final-medium\
+    \ volume. Preserve the source mass and withhold an independently asserted G_PER_L\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q2\",\n    \"topic\": \"K2HPO4 basal\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.26\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The literal mass is a basal batch input. The listed liquid additions\
+    \ nominally sum to 1000 ml before an unquantified sulfide addition, but the source\
+    \ does not establish a measured final-medium volume. Preserve the source mass\
+    \ and withhold an independently asserted G_PER_L rate.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.26\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ mass is a basal batch input. The listed liquid additions nominally sum to 1000\
+    \ ml before an unquantified sulfide addition, but the source does not establish\
+    \ a measured final-medium volume. Preserve the source mass and withhold an independently\
+    \ asserted G_PER_L rate.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 4\",\n        \"exact_source_quote\"\
+    : \"K2HPO4                                                             0.26  \
+    \      g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass is a basal batch input.\
+    \ The listed liquid additions nominally sum to 1000 ml before an unquantified\
+    \ sulfide addition, but the source does not establish a measured final-medium\
+    \ volume. Preserve the source mass and withhold an independently asserted G_PER_L\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"topic\": \"(NH4)Cl basal\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.08\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The literal mass is a basal batch input. The listed liquid additions\
+    \ nominally sum to 1000 ml before an unquantified sulfide addition, but the source\
+    \ does not establish a measured final-medium volume. Preserve the source mass\
+    \ and withhold an independently asserted G_PER_L rate.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.08\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ mass is a basal batch input. The listed liquid additions nominally sum to 1000\
+    \ ml before an unquantified sulfide addition, but the source does not establish\
+    \ a measured final-medium volume. Preserve the source mass and withhold an independently\
+    \ asserted G_PER_L rate.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"(NH4)Cl                                                            0.08  \
+    \      g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass is a basal batch input.\
+    \ The listed liquid additions nominally sum to 1000 ml before an unquantified\
+    \ sulfide addition, but the source does not establish a measured final-medium\
+    \ volume. Preserve the source mass and withhold an independently asserted G_PER_L\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n    \"topic\": \"NaNO3 basal\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.85\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The literal mass is a basal batch input. The listed liquid additions\
+    \ nominally sum to 1000 ml before an unquantified sulfide addition, but the source\
+    \ does not establish a measured final-medium volume. Preserve the source mass\
+    \ and withhold an independently asserted G_PER_L rate.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.85\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ mass is a basal batch input. The listed liquid additions nominally sum to 1000\
+    \ ml before an unquantified sulfide addition, but the source does not establish\
+    \ a measured final-medium volume. Preserve the source mass and withhold an independently\
+    \ asserted G_PER_L rate.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 6\",\n        \"exact_source_quote\"\
+    : \"NaNO3                                                              0.85  \
+    \      g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass is a basal batch input.\
+    \ The listed liquid additions nominally sum to 1000 ml before an unquantified\
+    \ sulfide addition, but the source does not establish a measured final-medium\
+    \ volume. Preserve the source mass and withhold an independently asserted G_PER_L\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n    \"topic\": \"Na2SO4 basal\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.05\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The literal mass is a basal batch input. The listed liquid additions\
+    \ nominally sum to 1000 ml before an unquantified sulfide addition, but the source\
+    \ does not establish a measured final-medium volume. Preserve the source mass\
+    \ and withhold an independently asserted G_PER_L rate.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ mass is a basal batch input. The listed liquid additions nominally sum to 1000\
+    \ ml before an unquantified sulfide addition, but the source does not establish\
+    \ a measured final-medium volume. Preserve the source mass and withhold an independently\
+    \ asserted G_PER_L rate.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 7\",\n        \"exact_source_quote\"\
+    : \"Na2SO4                                                             0.05  \
+    \      g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass is a basal batch input.\
+    \ The listed liquid additions nominally sum to 1000 ml before an unquantified\
+    \ sulfide addition, but the source does not establish a measured final-medium\
+    \ volume. Preserve the source mass and withhold an independently asserted G_PER_L\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"topic\": \"Na-DL-lactate\
+    \ basal batch amount\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"1.12\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"The literal mass is a basal batch input. The listed liquid additions\
+    \ nominally sum to 1000 ml before an unquantified sulfide addition, but the source\
+    \ does not establish a measured final-medium volume. Preserve the source mass\
+    \ and withhold an independently asserted G_PER_L rate.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.12\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ mass is a basal batch input. The listed liquid additions nominally sum to 1000\
+    \ ml before an unquantified sulfide addition, but the source does not establish\
+    \ a measured final-medium volume. Preserve the source mass and withhold an independently\
+    \ asserted G_PER_L rate.\"\n      }\n    ],\n    \"source_snippets\": [\n    \
+    \  {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"Na-DL-lactate                                                      1.12  \
+    \      g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass is a basal batch input.\
+    \ The listed liquid additions nominally sum to 1000 ml before an unquantified\
+    \ sulfide addition, but the source does not establish a measured final-medium\
+    \ volume. Preserve the source mass and withhold an independently asserted G_PER_L\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n    \"topic\": \"Yeast extract\
+    \ basal batch amount\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The literal mass is a basal batch input. The listed liquid additions nominally\
+    \ sum to 1000 ml before an unquantified sulfide addition, but the source does\
+    \ not establish a measured final-medium volume. Preserve the source mass and withhold\
+    \ an independently asserted G_PER_L rate.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The literal mass is a basal batch\
+    \ input. The listed liquid additions nominally sum to 1000 ml before an unquantified\
+    \ sulfide addition, but the source does not establish a measured final-medium\
+    \ volume. Preserve the source mass and withhold an independently asserted G_PER_L\
+    \ rate.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 11\",\n        \"exact_source_quote\"\
+    : \"Yeast extract                                                      0.20  \
+    \      g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal mass is a basal batch input.\
+    \ The listed liquid additions nominally sum to 1000 ml before an unquantified\
+    \ sulfide addition, but the source does not establish a measured final-medium\
+    \ volume. Preserve the source mass and withhold an independently asserted G_PER_L\
+    \ rate.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n    \"topic\": \"Bicarbonate:\
+    \ 52.50 ml of 8% stock\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"4.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The source specifies a liquid dose and 8% label without a stated percentage\
+    \ basis. The local 4.2 G_PER_L assumes both w/v and final-volume normalization.\
+    \ Retain the 52.50 ml dose and qualified strength; do not infer stock mass or\
+    \ density.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.2\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The source specifies\
+    \ a liquid dose and 8% label without a stated percentage basis. The local 4.2\
+    \ G_PER_L assumes both w/v and final-volume normalization. Retain the 52.50 ml\
+    \ dose and qualified strength; do not infer stock mass or density.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1663\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 14\",\n        \"exact_source_quote\"\
+    : \"NaHCO3 (8%)                                                        52.50 \
+    \     ml\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The source specifies a liquid dose and\
+    \ 8% label without a stated percentage basis. The local 4.2 G_PER_L assumes both\
+    \ w/v and final-volume normalization. Retain the 52.50 ml dose and qualified strength;\
+    \ do not infer stock mass or density.\"\n  },\n  {\n    \"quantity_id\": \"q9\"\
+    ,\n    \"topic\": \"HCl (25%; 7.7 M) trace stock\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The source explicitly\
+    \ gives 10 ml HCl 25% and 7.7 M. It does not support the local 2.5 G_PER_L conversion.\
+    \ Preserve both stated strength labels and the 10 ml input; no percentage-basis\
+    \ or density conversion is inferred.\"\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"The source explicitly gives 10 ml\
+    \ HCl 25% and 7.7 M. It does not support the local 2.5 G_PER_L conversion. Preserve\
+    \ both stated strength labels and the 10 ml input; no percentage-basis or density\
+    \ conversion is inferred.\"\n      }\n    ],\n    \"source_snippets\": [\n   \
+    \   {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 26\",\n        \"exact_source_quote\"\
+    : \"HCl (25%; 7.7 M)                                                 10.00   \
+    \    ml\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The source explicitly gives 10 ml HCl\
+    \ 25% and 7.7 M. It does not support the local 2.5 G_PER_L conversion. Preserve\
+    \ both stated strength labels and the 10 ml input; no percentage-basis or density\
+    \ conversion is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q10\",\n    \"\
+    topic\": \"FeCl2 x 4 H2O trace stock\",\n    \"decision\": \"correct\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n    \
+    \    \"field_path\": \"ingredients[9].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1663\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 27\",\n        \"exact_source_quote\"\
+    : \"FeCl2 x 4 H2O                                                     1.50   \
+    \     g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q11\",\n    \"topic\": \"MgCl2 x 6 H2O trace stock\",\n    \"decision\": \"\
+    correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1663\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 28\",\n        \"exact_source_quote\"\
+    : \"MgCl2 x 6 H2O                                                     3.00   \
+    \     g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q12\",\n    \"topic\": \"CaCl2 x 2 H2O trace stock\",\n    \"decision\": \"\
+    correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1663\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 29\",\n        \"exact_source_quote\"\
+    : \"CaCl2 x 2 H2O                                                     0.10   \
+    \     g\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q13\",\n    \"topic\": \"ZnCl2 trace stock\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[12].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.07\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 30\",\n        \"exact_source_quote\"\
+    : \"ZnCl2                                                            70.00   \
+    \    mg\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q14\",\n    \"topic\": \"MnCl2 x 4 H2O trace stock\",\n    \"decision\": \"\
+    correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1663\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 31\",\n        \"exact_source_quote\"\
+    : \"MnCl2 x 4 H2O                                                   100.00   \
+    \    mg\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q15\",\n    \"topic\": \"H3BO3 trace stock\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[14].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This printed amount\
+    \ belongs to the trace stock, which explicitly makes up to 1000 ml and is added\
+    \ at 1 ml per receiving batch. Restore that stock stage and dose. The stock mass-per-litre\
+    \ arithmetic does not make it a direct final-medium concentration.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.006\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 32\",\n        \"exact_source_quote\"\
+    : \"H3BO3                                                             6.00   \
+    \    mg\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q16\",\n    \"topic\": \"CoCl2 x 6 H2O trace stock\",\n    \"decision\": \"\
+    correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.19\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 33\",\n        \"exact_source_quote\"\
+    : \"CoCl2 x 6 H2O                                                   190.00   \
+    \    mg\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q17\",\n    \"topic\": \"CuCl2 x 2 H2O trace stock\",\n    \"decision\": \"\
+    correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 34\",\n        \"exact_source_quote\"\
+    : \"CuCl2 x 2 H2O                                                     2.00   \
+    \    mg\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q18\",\n    \"topic\": \"NiCl2 x 6 H2O trace stock\",\n    \"decision\": \"\
+    correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.024\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 35\",\n        \"exact_source_quote\"\
+    : \"NiCl2 x 6 H2O                                                    24.00   \
+    \    mg\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q19\",\n    \"topic\": \"Na2MoO4 x 2 H2O trace stock\",\n    \"decision\"\
+    : \"correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.036\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This printed\
+    \ amount belongs to the trace stock, which explicitly makes up to 1000 ml and\
+    \ is added at 1 ml per receiving batch. Restore that stock stage and dose. The\
+    \ stock mass-per-litre arithmetic does not make it a direct final-medium concentration.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 36\",\n        \"exact_source_quote\"\
+    : \"Na2MoO4 x 2 H2O                                                  36.00   \
+    \    mg\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed amount belongs to the trace\
+    \ stock, which explicitly makes up to 1000 ml and is added at 1 ml per receiving\
+    \ batch. Restore that stock stage and dose. The stock mass-per-litre arithmetic\
+    \ does not make it a direct final-medium concentration.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q20\",\n    \"topic\": \"Biotin vitamin-stock amount\",\n    \"decision\"\
+    : \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[19].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    This amount belongs to the scoped Wolin vitamin stock, not the receiving medium.\
+    \ Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose.\
+    \ The stock water is not an explicit final-volume makeup instruction, and the\
+    \ DSM141 main-medium 1013 ml declaration is outside this transfer.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 74\",\n        \"exact_source_quote\"\
+    : \"Biotin 2.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q21\",\n    \"\
+    topic\": \"Folic acid vitamin-stock amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[20].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.002\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[20].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.002\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This amount belongs to the scoped\
+    \ Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount,\
+    \ 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 75\",\n        \"exact_source_quote\"\
+    : \"Folic acid 2.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"\
+    topic\": \"Pyridoxine hydrochloride vitamin-stock amount\",\n    \"decision\"\
+    : \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[21].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    This amount belongs to the scoped Wolin vitamin stock, not the receiving medium.\
+    \ Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose.\
+    \ The stock water is not an explicit final-volume makeup instruction, and the\
+    \ DSM141 main-medium 1013 ml declaration is outside this transfer.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 76\",\n        \"exact_source_quote\"\
+    : \"Pyridoxine hydrochloride 10.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q23\",\n    \"\
+    topic\": \"Thiamine HCl vitamin-stock amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[22].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[22].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This amount belongs to the scoped\
+    \ Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount,\
+    \ 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 77\",\n        \"exact_source_quote\"\
+    : \"Thiamine HCl 5.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q24\",\n    \"\
+    topic\": \"Riboflavin vitamin-stock amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[23].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[23].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This amount belongs to the scoped\
+    \ Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount,\
+    \ 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 78\",\n        \"exact_source_quote\"\
+    : \"Riboflavin 5.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"\
+    topic\": \"Nicotinic acid vitamin-stock amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[24].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[24].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This amount belongs to the scoped\
+    \ Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount,\
+    \ 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 81\",\n        \"exact_source_quote\"\
+    : \"Nicotinic acid 5.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"\
+    topic\": \"Calcium D-(+)-pantothenate vitamin-stock amount\",\n    \"decision\"\
+    : \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[25].concentration\",\n      \
+    \  \"stored\": {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    This amount belongs to the scoped Wolin vitamin stock, not the receiving medium.\
+    \ Preserve its literal mg amount, 1000 ml water input and 10 ml receiving dose.\
+    \ The stock water is not an explicit final-volume makeup instruction, and the\
+    \ DSM141 main-medium 1013 ml declaration is outside this transfer.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 82\",\n        \"exact_source_quote\"\
+    : \"Calcium D-(+)-pantothenate 5.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"\
+    topic\": \"Vitamin B12 vitamin-stock amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[26].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.0001\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[26].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.0001\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This amount belongs to the scoped\
+    \ Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount,\
+    \ 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 83\",\n        \"exact_source_quote\"\
+    : \"Vitamin B12 0.10 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"\
+    topic\": \"p-Aminobenzoic acid vitamin-stock amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[27].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[27].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This amount belongs to the scoped\
+    \ Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount,\
+    \ 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 84\",\n        \"exact_source_quote\"\
+    : \"p-Aminobenzoic acid 5.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"\
+    topic\": \"(DL)-alpha-Lipoic acid vitamin-stock amount\",\n    \"decision\": \"\
+    unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.005\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"This amount\
+    \ belongs to the scoped Wolin vitamin stock, not the receiving medium. Preserve\
+    \ its literal mg amount, 1000 ml water input and 10 ml receiving dose. The stock\
+    \ water is not an explicit final-volume makeup instruction, and the DSM141 main-medium\
+    \ 1013 ml declaration is outside this transfer.\"\n      },\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ingredients[28].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.005\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This amount belongs to the scoped\
+    \ Wolin vitamin stock, not the receiving medium. Preserve its literal mg amount,\
+    \ 1000 ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsm141VitaminContext\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 85\",\n        \"exact_source_quote\"\
+    : \"(DL)-alpha-Lipoic acid 5.00 mg\",\n        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This amount belongs to the scoped Wolin\
+    \ vitamin stock, not the receiving medium. Preserve its literal mg amount, 1000\
+    \ ml water input and 10 ml receiving dose. The stock water is not an explicit\
+    \ final-volume makeup instruction, and the DSM141 main-medium 1013 ml declaration\
+    \ is outside this transfer.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"\
+    topic\": \"Trace stock receiving dose 1 ml\",\n    \"decision\": \"add\",\n  \
+    \  \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"Represent this source-specific stock dose\
+    \ at its named stage. No inferred final-medium concentration or unprovided stock\
+    \ composition is added.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Represent this source-specific\
+    \ stock dose at its named stage. No inferred final-medium concentration or unprovided\
+    \ stock composition is added.\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 8\",\n        \"exact_source_quote\"\
+    : \"Trace element solution (see below)                                 1.00  \
+    \     ml\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"Represent this source-specific stock dose\
+    \ at its named stage. No inferred final-medium concentration or unprovided stock\
+    \ composition is added.\"\n  },\n  {\n    \"quantity_id\": \"q31\",\n    \"topic\"\
+    : \"Vitamin stock receiving dose 10 ml\",\n    \"decision\": \"add\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"solutions\",\n        \"stored\": null,\n        \"decision\": \"add\",\n\
+    \        \"rationale\": \"Represent this source-specific stock dose at its named\
+    \ stage. No inferred final-medium concentration or unprovided stock composition\
+    \ is added.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Represent this source-specific\
+    \ stock dose at its named stage. No inferred final-medium concentration or unprovided\
+    \ stock composition is added.\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 9\",\n        \"exact_source_quote\"\
+    : \"Vitamin solution (see medium 141)                                 10.00  \
+    \     ml\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"Represent this source-specific stock dose\
+    \ at its named stage. No inferred final-medium concentration or unprovided stock\
+    \ composition is added.\"\n  },\n  {\n    \"quantity_id\": \"q32\",\n    \"topic\"\
+    : \"Bicarbonate stock receiving dose 52.50 ml\",\n    \"decision\": \"add\",\n\
+    \    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n       \
+    \ \"field_path\": \"solutions\",\n        \"stored\": null,\n        \"decision\"\
+    : \"add\",\n        \"rationale\": \"Represent this source-specific stock dose\
+    \ at its named stage. No inferred final-medium concentration or unprovided stock\
+    \ composition is added.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"solutions\",\n        \"stored\": null,\n       \
+    \ \"decision\": \"add\",\n        \"rationale\": \"Represent this source-specific\
+    \ stock dose at its named stage. No inferred final-medium concentration or unprovided\
+    \ stock composition is added.\"\n      }\n    ],\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 14\",\n        \"exact_source_quote\"\
+    : \"NaHCO3 (8%)                                                        52.50 \
+    \     ml\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"Represent this source-specific stock dose\
+    \ at its named stage. No inferred final-medium concentration or unprovided stock\
+    \ composition is added.\"\n  },\n  {\n    \"quantity_id\": \"q33\",\n    \"topic\"\
+    : \"Basal water 936.50 ml\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1663\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 12\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                                  936.50  \
+    \     ml\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The basal liquid input is missing from\
+    \ structured ingredients. It is neither a mass rate nor measured final volume.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q34\",\n    \"topic\": \"Trace-stock water\
+    \ 990 ml and final makeup 1000 ml\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm1663\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 37\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                                 990.00   \
+    \    ml\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      },\n      {\n        \"source_key\": \"dsm1663\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\",\n   \
+    \     \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"Keep the initial 990 ml water and explicit\
+    \ final 1000 ml stock makeup distinct. Only this trace stock has this makeup instruction.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q35\",\n    \"topic\": \"Vitamin-stock water\
+    \ 1000 ml\",\n    \"decision\": \"add\",\n    \"layer_decisions\": [],\n    \"\
+    source_snippets\": [\n      {\n        \"source_key\": \"dsm141VitaminContext\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium141.pdf\"\
+    ,\n        \"source_locator\": \"Wolin vitamin solution, final water row on printed\
+    \ page3\",\n        \"exact_source_quote\": \"Distilled water 1000.00 ml\",\n\
+    \        \"snapshot_sha256\": \"8d5190815050377b0f25907bf14c294bc3301fe968697b37c66eb9db5a287ac8\"\
+    ,\n        \"parsed_text_sha256\": \"734e01731efdb11616ac424a3b12c8fa2f0f6a7d90424a38f8cb979d63fc44c5\"\
+    \n      }\n    ],\n    \"rationale\": \"This water belongs only to the transferred\
+    \ vitamin stock. Do not borrow the DSM141 main or mineral-stock denominator.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q36\",\n    \"topic\": \"Trace-stock makeup\
+    \ already retained in prose\",\n    \"decision\": \"evidence_only\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps[1].description\"\
+    ,\n        \"stored\": \"First dissolve FeCl2 in the HCl, then dilute in water,\
+    \ add and dissolve the other salts. Finally make up to 1000.0 ml.\",\n       \
+    \ \"decision\": \"evidence_only\",\n        \"rationale\": \"The instruction is\
+    \ already present but must be assigned to the trace stock. No attached concentration\
+    \ evidence currently links it to that stage.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[1].description\",\n        \"stored\": \"First dissolve\
+    \ FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\
+    \ make up to 1000.0 ml.\",\n        \"decision\": \"evidence_only\",\n       \
+    \ \"rationale\": \"The instruction is already present but must be assigned to\
+    \ the trace stock. No attached concentration evidence currently links it to that\
+    \ stage.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 40\",\n        \"exact_source_quote\"\
+    : \"Finally make up to 1000.0 ml.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The instruction is already present but\
+    \ must be assigned to the trace stock. No attached concentration evidence currently\
+    \ links it to that stage.\"\n  },\n  {\n    \"quantity_id\": \"q37\",\n    \"\
+    topic\": \"Explicit final sodium sulfide 100 µM\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except vitamins and trace elements) in distilled water;\
+    \ boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense\
+    \ in culture vessels and autoclave. After sterilization add NaHCO3, vitamins,\
+    \ and trace elements from sterile anoxic stock solutions prepared under 100% N2.\
+    \ Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution\
+    \ to achieve a final concentration of 100 µM prior inoculation.\",\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"Both prose fields already\
+    \ contain the explicit final 100 µM requirement. It is directly stated, unlike\
+    \ the inferred basal/stock rates. Attach precise evidence and represent the final\
+    \ requirement separately from an unknown stock strength or addition volume; no\
+    \ hydrate or mass conversion is inferred.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve ingredients\
+    \ (except vitamins and trace elements) in distilled water; boil for 1- 2 minutes\
+    \ and cool down to room temperature under 100% N2 gas, dispense in culture vessels\
+    \ and autoclave. After sterilization add NaHCO3, vitamins, and trace elements\
+    \ from sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2\
+    \ and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final\
+    \ concentration of 100 µM prior inoculation.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"Both prose fields already contain the explicit final\
+    \ 100 µM requirement. It is directly stated, unlike the inferred basal/stock rates.\
+    \ Attach precise evidence and represent the final requirement separately from\
+    \ an unknown stock strength or addition volume; no hydrate or mass conversion\
+    \ is inferred.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"DSM1663 primary preparation paragraph\",\n  \
+    \      \"exact_source_quote\": \"sodium sulfide (Na2S) from a sterile anoxic solution\
+    \ to achieve a final concentration of\\n100 µM prior inoculation.\",\n       \
+    \ \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"Both prose fields already contain the\
+    \ explicit final 100 µM requirement. It is directly stated, unlike the inferred\
+    \ basal/stock rates. Attach precise evidence and represent the final requirement\
+    \ separately from an unknown stock strength or addition volume; no hydrate or\
+    \ mass conversion is inferred.\"\n  },\n  {\n    \"quantity_id\": \"q38\",\n \
+    \   \"topic\": \"Complete-medium pH 8.2\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ph_value\",\n        \"stored\": 8.2,\n        \"decision\"\
+    : \"evidence_only\",\n        \"rationale\": \"The scalar matches the explicit\
+    \ source adjustment. Link this fact without borrowing DSM141 pH or treating it\
+    \ as strain-specific growth evidence.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"ph_value\",\n        \"stored\": 8.2,\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"The scalar matches the explicit source adjustment.\
+    \ Link this fact without borrowing DSM141 pH or treating it as strain-specific\
+    \ growth evidence.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"DSM1663 primary preparation paragraph\",\n  \
+    \      \"exact_source_quote\": \"Adjust pH to 8.2 and add\\nsodium sulfide (Na2S)\
+    \ from a sterile anoxic solution to achieve a final concentration of\\n100 µM\
+    \ prior inoculation.\",\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The scalar matches the explicit source\
+    \ adjustment. Link this fact without borrowing DSM141 pH or treating it as strain-specific\
+    \ growth evidence.\"\n  },\n  {\n    \"quantity_id\": \"q39\",\n    \"topic\"\
+    : \"Boil 1–2 minutes, cool to room temperature\",\n    \"decision\": \"evidence_only\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except vitamins and trace elements) in distilled water;\
+    \ boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense\
+    \ in culture vessels and autoclave. After sterilization add NaHCO3, vitamins,\
+    \ and trace elements from sterile anoxic stock solutions prepared under 100% N2.\
+    \ Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution\
+    \ to achieve a final concentration of 100 µM prior inoculation.\",\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"The existing prose retains\
+    \ these preparation conditions. Room temperature has no fixed numerical value\
+    \ here, and the autoclave cycle is not stated.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve ingredients\
+    \ (except vitamins and trace elements) in distilled water; boil for 1- 2 minutes\
+    \ and cool down to room temperature under 100% N2 gas, dispense in culture vessels\
+    \ and autoclave. After sterilization add NaHCO3, vitamins, and trace elements\
+    \ from sterile anoxic stock solutions prepared under 100% N2. Adjust pH to 8.2\
+    \ and add sodium sulfide (Na2S) from a sterile anoxic solution to achieve a final\
+    \ concentration of 100 µM prior inoculation.\",\n        \"decision\": \"evidence_only\"\
+    ,\n        \"rationale\": \"The existing prose retains these preparation conditions.\
+    \ Room temperature has no fixed numerical value here, and the autoclave cycle\
+    \ is not stated.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"DSM1663 primary preparation paragraph\",\n  \
+    \      \"exact_source_quote\": \"boil for 1- 2\\nminutes and cool down to room\
+    \ temperature under 100% N2 gas, dispense in culture\\nvessels and autoclave.\"\
+    ,\n        \"snapshot_sha256\": \"1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\"\
+    ,\n        \"parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"The existing prose retains these preparation\
+    \ conditions. Room temperature has no fixed numerical value here, and the autoclave\
+    \ cycle is not stated.\"\n  },\n  {\n    \"quantity_id\": \"q40\",\n    \"topic\"\
+    : \"100% nitrogen during cooling and stock preparation\",\n    \"decision\": \"\
+    evidence_only\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except vitamins and trace elements) in distilled water;\
+    \ boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense\
+    \ in culture vessels and autoclave. After sterilization add NaHCO3, vitamins,\
+    \ and trace elements from sterile anoxic stock solutions prepared under 100% N2.\
+    \ Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution\
+    \ to achieve a final concentration of 100 µM prior inoculation.\",\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"Retain the separate cooling/dispensing\
+    \ and sterile anoxic stock stages. No pressure, flow rate, gas-fraction basis\
+    \ beyond the literal source or organism-growth condition is inferred.\"\n    \
+    \  },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bsm_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except vitamins and trace elements) in distilled water;\
+    \ boil for 1- 2 minutes and cool down to room temperature under 100% N2 gas, dispense\
+    \ in culture vessels and autoclave. After sterilization add NaHCO3, vitamins,\
+    \ and trace elements from sterile anoxic stock solutions prepared under 100% N2.\
+    \ Adjust pH to 8.2 and add sodium sulfide (Na2S) from a sterile anoxic solution\
+    \ to achieve a final concentration of 100 µM prior inoculation.\",\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"Retain the separate cooling/dispensing\
+    \ and sterile anoxic stock stages. No pressure, flow rate, gas-fraction basis\
+    \ beyond the literal source or organism-growth condition is inferred.\"\n    \
+    \  }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm1663\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1663.pdf\"\
+    ,\n        \"source_locator\": \"DSM1663 primary preparation paragraph\",\n  \
+    \      \"exact_source_quote\": \"minutes and cool down to room temperature under\
+    \ 100% N2 gas, dispense in culture\\nvessels and autoclave. After sterilization\
+    \ add NaHCO3, vitamins, and trace elements\\nfrom sterile anoxic stock solutions\
+    \ prepared under 100% N2. Adjust pH to 8.2\",\n        \"snapshot_sha256\": \"\
+    1a1363b806d51cf6d71a46e739488d5c69e48d31fb2741f2b2baf0fbf533ed65\",\n        \"\
+    parsed_text_sha256\": \"968a97eb4e2e6c0dbb5251e9285f296df8542f6ee5cbdec0e2b7ccfd0c66fe21\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the separate cooling/dispensing\
+    \ and sterile anoxic stock stages. No pressure, flow rate, gas-fraction basis\
+    \ beyond the literal source or organism-growth condition is inferred.\"\n  }\n\
+    ]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.001146.stock-stage-and-denominators
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate basal amounts, stock compositions and receiving doses
+  description: Both layers flatten trace and vitamin stocks, omit liquid doses/water
+    and assert final-medium rates not independently supported by the source. HCl 25%
+    and bicarbonate8% conversions additionally assume unspecified bases.
+  target_ids:
+  - CultureMech:001146
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - primary
+  - vitamins
+  - record
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bsm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.001146.nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Reconcile nickel hexahydrate with the asserted identifier
+  description: The literal source and ingredient label specify nickel chloride hexahydrate,
+    while primary and current-secondary CHEBI:34887 represent nickel dichloride without
+    that hydrate. Identifier validity does not resolve the supplied-form mismatch.
+  target_ids:
+  - CultureMech:001146
+  field_paths:
+  - ingredients[17].term
+  - ingredients[17].mediaingredientmech_chebi_term
+  evidence_ids:
+  - primary
+  - grounding-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bsm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.1
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.001146.claim-and-legacy-linkage
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Add scoped evidence and resolve the legacy secondary trail
+  description: Both layers lack attached amount evidence. Legacy000171 correspondence
+    is unresolved in the pinned current index/catalog/tree even though primary sodium
+    nitrate metadata are valid.
+  target_ids:
+  - CultureMech:001146
+  field_paths:
+  - ingredients
+  - references
+  evidence_ids:
+  - history-evidence
+  - grounding-inventory
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bsm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is normalized to minor because concrete claim-linkage
+    and secondary-provenance gaps impede traceability of supported source facts; stock
+    and hydrate errors are separately major.
+actions:
+- action_id: a1
+  description: Restore stock structure, literal amounts, explicit trace makeup and
+    receiving doses. Preserve stated final 100 µM sulfide and withhold other final
+    rates until their denominators/bases are established.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001146
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bsm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Verify exact hydrate correspondence before changing both primary and
+    secondary links; preserve the source mass and stock stage.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001146
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bsm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Attach concise stage-specific primary evidence and recover compatible
+    legacy provenance or retain its unresolved status; do not treat unavailable old
+    raw or current mapping absence as proof of a wrong primary chemical.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001146
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bsm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The current exact MediaDive1663 API returned503. Current DSM primary remains available;
+  the cited historical API raw was not recovered in the explicitly bounded report-parent
+  search.
+- Historical API 1663 raw and selected legacy 000171 correspondence remain unresolved
+  within the documented bounded searches. Current source support does not retroactively
+  authenticate that raw.
+- No measured final medium volume, percentage basis, density, sodium sulfide hydrate
+  or unprovided autoclave cycle is inferred. DSM141 is used only for its Wolin vitamin
+  stock.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-045
+- generated-medium
+```
