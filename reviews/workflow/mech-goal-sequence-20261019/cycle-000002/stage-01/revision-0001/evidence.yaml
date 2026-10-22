@@ -1,0 +1,31 @@
+schema_version: 1.0.0
+repository_key: culturemech
+github_repository: CultureBotAI/CultureMech
+run_id: mech-goal-sequence-20261019
+cycle: 2
+stage: 1
+revision: 1
+outcome: completed
+summary: >
+  Pinned the Stage 1 bounded discovery frontier across JCM GRMD 1..1600, audited all
+  candidate records against existing CultureMech coverage (fixing false-negative
+  detection of TOGO-mirrored JCM media in scripts/import_jcm_grmd.py), and added all 5
+  admissible new growth-media recipes (CultureMech:015916 through CultureMech:015920,
+  incorporating 10 embedded stock-solution recipes) with full ChEBI/MediaIngredientMech
+  grounding, merged records, and refreshed ID/lifecycle catalogs. Re-ran the bounded
+  frontier search (--scan-max 1600) and verified 0 remaining admissible new records.
+source_revision: 98c2c080ee1b68ab3961fbba0bd50cef81d458ef
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/evidence.yaml
+  sha256: 6fc6b255760e4dd166cce59f2cba06d44f429c49d6b43167fcc7030e9f2bdac2
+artifacts:
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-01/revision-0001/discovery_ledger.md
+    sha256: e4cb0d484e905ae8759f565dc81accf624d71f6ea8f22960b46806a1bb3be96f
+    kind: supporting
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-01/revision-0001/validation.md
+    sha256: cf67c18b924f8b748f8e3e145a78c6a1f670f5045fbc11716074023b64ac2637
+    kind: validation
+findings: []
+groups: []
+carry_forward_ids: []
+infra_tasks: []

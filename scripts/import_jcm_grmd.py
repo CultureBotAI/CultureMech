@@ -71,8 +71,9 @@ NORMALIZED_DIR = REPO_ROOT / "data" / "normalized_yaml"
 GRMD_URL = "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD={}"
 EMPTY_PAGE_MAX_BYTES = 1000  # real media pages are multi-KB; empty slots ~843 B
 SKIP_GRMDS = {
-    # GRMD 1483 starts with a Solution A stock table; the current first-table
-    # parser would publish that stock as the full ammonia-oxidizer medium.
+    # GRMD 1483 starts with a Solution A stock table; keep in SKIP_GRMDS so the
+    # single-table parser never overwrites the manually curated multi-solution
+    # record (JCM_J1483_AMMONIA_OXIDIZING_BACTERIA_MEDIUM.yaml).
     1483,
 }
 
@@ -117,7 +118,8 @@ def fetch(grmd: int, *, retries: int = 3) -> str | None:
     for attempt in range(retries):
         try:
             req = urllib.request.Request(GRMD_URL.format(grmd), headers={"User-Agent": "curl/8"})
-            return urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
+            raw_bytes: bytes = urllib.request.urlopen(req, timeout=30).read()
+            return raw_bytes.decode("utf-8", "ignore")
         except Exception as e:  # noqa: BLE001 - network is best-effort
             last = e
             time.sleep(1.5 * (attempt + 1))
@@ -367,6 +369,7 @@ def ingested_grmd_numbers() -> set[int]:
         re.compile(
             r"Source:\s*JCM[^|\n]*\|\s*Link:\s*https://www\.jcm\.riken\.jp/cgi-bin/jcm/jcm_grmd\?GRMD=(\d+)"
         ),
+        re.compile(r"source:\s*TOGO M\d+\s*/\s*JCM Medium (\d+)\b"),
     )
 
     for recipe_path in NORMALIZED_DIR.glob("*/*.yaml"):
@@ -395,7 +398,7 @@ def next_id_start() -> int:
         capture_output=True,
         text=True,
     ).stdout
-    nums = [int(re.search(r"(\d+)", line).group(1)) for line in out.splitlines()]
+    nums = [int(m.group(1)) for line in out.splitlines() if (m := re.search(r"(\d+)", line))]
     return (max(nums) + 1) if nums else 1
 
 
@@ -415,7 +418,7 @@ def detect_missing(scan_max: int, delay: float = 0.0) -> dict[int, str]:
     for i, n in enumerate(missing_candidates):
         page = fetch(n)
         name = parse_name(page) if page else None
-        if name and _snake(name) not in existing_names:
+        if page and name and _snake(name) not in existing_names:
             real[n] = page
         if delay and i < len(missing_candidates) - 1:
             time.sleep(delay)
@@ -436,8 +439,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "--scan-max",
         type=int,
-        default=1500,
-        help="Upper GRMD bound for --detect-missing (default 1500).",
+        default=1600,
+        help="Upper GRMD bound for --detect-missing (default 1600).",
     )
     ap.add_argument("--out-dir", type=Path, default=NORMALIZED_DIR / "bacterial")
     ap.add_argument(

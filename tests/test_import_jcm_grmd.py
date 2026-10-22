@@ -3,13 +3,17 @@ from __future__ import annotations
 import importlib.util
 import sys
 from pathlib import Path
+from types import ModuleType
+
+import pytest
 
 REPO = Path(__file__).resolve().parent.parent
 SCRIPT = REPO / "scripts" / "import_jcm_grmd.py"
 
 
-def load_script():
+def load_script() -> ModuleType:
     spec = importlib.util.spec_from_file_location("import_jcm_grmd", SCRIPT)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
     assert spec.loader is not None
@@ -19,7 +23,7 @@ def load_script():
 
 def test_ingested_grmd_numbers_finds_source_records_without_auxiliary_refs(
     tmp_path: Path,
-    monkeypatch,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     module = load_script()
     normalized = tmp_path / "data" / "normalized_yaml"
@@ -28,11 +32,11 @@ def test_ingested_grmd_numbers_finds_source_records_without_auxiliary_refs(
     monkeypatch.setattr(module, "NORMALIZED_DIR", normalized)
 
     (bacterial / "direct.yaml").write_text(
-        "media_term:\n" "  term:\n" "    id: jcm.grmd:1333\n",
+        "media_term:\n  term:\n    id: jcm.grmd:1333\n",
         encoding="utf-8",
     )
     (bacterial / "mediadive.yaml").write_text(
-        "media_term:\n" "  term:\n" "    id: mediadive.medium:J20\n",
+        "media_term:\n  term:\n    id: mediadive.medium:J20\n",
         encoding="utf-8",
     )
     (bacterial / "togo.yaml").write_text(
@@ -42,7 +46,11 @@ def test_ingested_grmd_numbers_finds_source_records_without_auxiliary_refs(
         encoding="utf-8",
     )
     (bacterial / "jcm_note.yaml").write_text(
-        "notes: 'Source: JCM | Link: " "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1467'\n",
+        "notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1467'\n",
+        encoding="utf-8",
+    )
+    (bacterial / "togo_source.yaml").write_text(
+        "ingredients:\n- preferred_term: Peptone\n  source: TOGO M3010 / JCM Medium 1338\n",
         encoding="utf-8",
     )
     (bacterial / "auxiliary_only.yaml").write_text(
@@ -54,12 +62,12 @@ def test_ingested_grmd_numbers_finds_source_records_without_auxiliary_refs(
         encoding="utf-8",
     )
 
-    assert module.ingested_grmd_numbers() == {20, 159, 1333, 1467, 1481}
+    assert module.ingested_grmd_numbers() == {20, 159, 1333, 1338, 1467, 1481}
 
 
 def test_detect_missing_skips_exact_name_duplicates(
     tmp_path: Path,
-    monkeypatch,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     module = load_script()
     normalized = tmp_path / "data" / "normalized_yaml"
@@ -68,7 +76,7 @@ def test_detect_missing_skips_exact_name_duplicates(
     monkeypatch.setattr(module, "NORMALIZED_DIR", normalized)
 
     (bacterial / "marine_broth_2216.yaml").write_text(
-        "id: CultureMech:015554\n" "name: marine broth 2216\n",
+        "id: CultureMech:015554\nname: marine broth 2216\n",
         encoding="utf-8",
     )
 
@@ -85,7 +93,7 @@ def test_detect_missing_skips_exact_name_duplicates(
 
 def test_detect_missing_skips_known_unsafe_multitable_pages(
     tmp_path: Path,
-    monkeypatch,
+    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     module = load_script()
     normalized = tmp_path / "data" / "normalized_yaml"

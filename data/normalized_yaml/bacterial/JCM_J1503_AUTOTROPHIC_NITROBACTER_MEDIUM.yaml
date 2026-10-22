@@ -1,0 +1,248 @@
+id: CultureMech:015920
+name: autotrophic_nitrobacter_medium_jcm_1503
+original_name: AUTOTROPHIC NITROBACTER MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.3
+media_term:
+  preferred_term: JCM Medium J1503
+  term:
+    id: jcm.grmd:1503
+    label: AUTOTROPHIC NITROBACTER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1503
+  | Autotrophic Nitrobacter medium buffered with MES at pH 6.3 (compare DSMZ Medium
+  756c at pH 7.4-8.0), containing Stock solution (100 ml/L) and Trace element solution
+  (1 ml/L).'
+ingredients:
+- preferred_term: NaNO2
+  term:
+    id: CHEBI:78870
+    label: sodium nitrite
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000387
+    label: NaNO2
+  mediaingredientmech_chebi_term:
+    id: CHEBI:78870
+    label: sodium nitrite
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000469
+    label: MES
+  mediaingredientmech_chebi_term:
+    id: CHEBI:39010
+    label: MES
+- preferred_term: Distilled water
+  term:
+    id: CHEBI:15377
+    label: water
+  concentration:
+    value: '900.0'
+    unit: ML_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+solutions:
+- preferred_term: Stock solution
+  concentration:
+    value: '100.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: NaCl
+    term:
+      id: CHEBI:26710
+      label: sodium chloride
+    concentration:
+      value: '5.0'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:001035
+      label: NaCl
+    mediaingredientmech_chebi_term:
+      id: CHEBI:26710
+      label: sodium chloride
+  - preferred_term: KH2PO4
+    term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+    concentration:
+      value: '1.5'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000630
+      label: KH2PO4
+    mediaingredientmech_chebi_term:
+      id: CHEBI:63036
+      label: potassium dihydrogen phosphate
+  - preferred_term: MgSO4·7H2O
+    term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000893
+      label: MgSO4·7H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31795
+      label: magnesium sulfate heptahydrate
+  - preferred_term: CaCl2·2H2O
+    term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+    concentration:
+      value: '0.07'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000484
+      label: CaCl2·2H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86158
+      label: calcium chloride dihydrate
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: 10x basal salts stock solution; 100.0 ml added per liter before autoclaving.
+- preferred_term: Trace element solution
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: MnSO4·xH2O
+    term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+    concentration:
+      value: '33.8'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000156
+      label: MnSO4·xH2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86360
+      label: manganese(II) sulfate
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '49.4'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000117
+      label: H3BO3
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: ZnSO4·7H2O
+    term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+    concentration:
+      value: '43.1'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000229
+      label: ZnSO4·7H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:32312
+      label: zinc sulfate heptahydrate
+  - preferred_term: (NH4)6Mo7O24
+    term:
+      id: CHEBI:91249
+      label: ammonium molybdate
+    concentration:
+      value: '37.1'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000161
+      label: (NH4)6Mo7O24
+    mediaingredientmech_chebi_term:
+      id: CHEBI:91249
+      label: ammonium molybdate
+  - preferred_term: FeSO4·7H2O
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    concentration:
+      value: '97.3'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000445
+      label: FeSO4·7H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: CuSO4·5H2O
+    term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+    concentration:
+      value: '25.0'
+      unit: MG_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000285
+      label: CuSO4·5H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31440
+      label: copper(II) sulfate pentahydrate
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: 1.0 L trace element stock solution; 1.0 ml added per liter before autoclaving.
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Mix 0.2 g NaNO2, 2.0 g MES, 100 ml Stock solution, and 1.0 ml Trace
+    element solution in 900 ml distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.3.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1503. Structured MES-buffered pH 6.3 autotrophic
+    Nitrobacter recipe and its 2 stock solutions with CHEBI/MediaIngredientMech grounding.
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015920'

@@ -1,0 +1,320 @@
+id: CultureMech:015918
+name: ammonia_oxidizing_bacteria_medium
+original_name: AMMONIA OXIDIZING BACTERIA MEDIUM
+category: bacterial
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.8
+media_term:
+  preferred_term: JCM Medium J1483
+  term:
+    id: jcm.grmd:1483
+    label: AMMONIA OXIDIZING BACTERIA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1483
+  | Multi-table JCM recipe: Solution A (800 ml) and Solution B (200 ml) are autoclaved
+  separately and combined with Solution C (0.5 ml), Solution D (1.0 ml), and 0.05%
+  (w/v) Phenol red solution (2.5 ml) to yield ~1004 ml final medium.'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000482
+    label: (NH4)2SO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+  notes: From Solution A
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:001035
+    label: NaCl
+  mediaingredientmech_chebi_term:
+    id: CHEBI:26710
+    label: sodium chloride
+  notes: From Solution A
+- preferred_term: MgSO4·7H2O
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000893
+    label: MgSO4·7H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+  notes: From Solution A
+- preferred_term: CaCl2·2H2O
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000484
+    label: CaCl2·2H2O
+  mediaingredientmech_chebi_term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+  notes: From Solution A
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000630
+    label: KH2PO4
+  mediaingredientmech_chebi_term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+  notes: From Solution B (200 ml autoclaved separately)
+- preferred_term: Distilled water
+  term:
+    id: CHEBI:15377
+    label: water
+  concentration:
+    value: '1000.0'
+    unit: ML_PER_L
+  mediaingredientmech_term:
+    id: MediaIngredientMech:000710
+    label: Distilled water
+  mediaingredientmech_chebi_term:
+    id: CHEBI:15377
+    label: water
+  notes: 800 ml in Solution A + 200 ml in Solution B
+solutions:
+- preferred_term: Solution C (Fe-EDTA solution)
+  concentration:
+    value: '0.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: EDTA·2Na
+    concentration:
+      value: '0.14'
+      unit: G_PER_L
+  - preferred_term: FeSO4·7H2O
+    term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000445
+      label: FeSO4·7H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75836
+      label: iron(2+) sulfate heptahydrate
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '100.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  - preferred_term: Conc. H2SO4
+    concentration:
+      value: '1.0'
+      unit: VARIABLE
+    notes: 1 drop per 100 ml stock
+  notes: Filter-sterilized 100 ml stock solution; 0.5 ml added per liter after combining
+    Solutions A and B.
+- preferred_term: Solution D (Trace element solution)
+  concentration:
+    value: '1.0'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: H3BO3
+    term:
+      id: CHEBI:33118
+      label: boric acid
+    concentration:
+      value: '0.06'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000117
+      label: H3BO3
+    mediaingredientmech_chebi_term:
+      id: CHEBI:33118
+      label: boric acid
+  - preferred_term: CuCl2·2H2O
+    term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+    concentration:
+      value: '0.04'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000205
+      label: CuCl2·2H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86318
+      label: copper(II) chloride dihydrate
+  - preferred_term: MnCl2·4H2O
+    term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+    concentration:
+      value: '0.04'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000127
+      label: MnCl2·4H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:86368
+      label: manganese(II) chloride tetrahydrate
+  - preferred_term: Na2MoO4·2H2O
+    term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+    concentration:
+      value: '0.06'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000615
+      label: Na2MoO4·2H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:75213
+      label: sodium molybdate dihydrate
+  - preferred_term: ZnCl2
+    term:
+      id: CHEBI:49976
+      label: zinc dichloride
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000141
+      label: ZnCl2
+    mediaingredientmech_chebi_term:
+      id: CHEBI:49976
+      label: zinc dichloride
+  - preferred_term: CoCl2·6H2O
+    term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+    concentration:
+      value: '0.04'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000126
+      label: CoCl2·6H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53503
+      label: cobalt chloride hexahydrate
+  - preferred_term: NiCl2·6H2O
+    term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+    concentration:
+      value: '0.02'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000202
+      label: NiCl2·6H2O
+    mediaingredientmech_chebi_term:
+      id: CHEBI:53542
+      label: nickel chloride hexahydrate
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: Filter-sterilized 1.0 L trace element stock solution; 1.0 ml added per liter.
+- preferred_term: 0.05% (w/v) Phenol red solution
+  concentration:
+    value: '2.5'
+    unit: ML_PER_L
+  composition:
+  - preferred_term: Phenol red
+    term:
+      id: CHEBI:31991
+      label: phenol red
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:001075
+      label: Phenol red
+    mediaingredientmech_chebi_term:
+      id: CHEBI:31991
+      label: phenol red
+  - preferred_term: Distilled water
+    term:
+      id: CHEBI:15377
+      label: water
+    concentration:
+      value: '1000.0'
+      unit: ML_PER_L
+    mediaingredientmech_term:
+      id: MediaIngredientMech:000710
+      label: Distilled water
+    mediaingredientmech_chebi_term:
+      id: CHEBI:15377
+      label: water
+  notes: Filter-sterilized 0.05% (w/v) phenol red stock (pH 7.0); 2.5 ml added per
+    liter.
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Prepare Solution A ((NH4)2SO4 2.0 g, NaCl 0.5 g, MgSO4·7H2O 0.05 g,
+    CaCl2·2H2O 0.02 g in 800 ml distilled water) and Solution B (KH2PO4 0.5 g in 200
+    ml distilled water) and autoclave separately.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Prepare Solution C (Fe-EDTA solution), Solution D (trace element solution),
+    and 0.05% (w/v) phenol red solution (adjusted to pH 7.0 with NaOH) and sterilize
+    each by filtration.
+- step_number: 3
+  action: MIX
+  description: After cooling, combine Solution A and Solution B and aseptically add
+    0.5 ml Solution C, 1.0 ml Solution D, and 2.5 ml 0.05% phenol red solution.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.8 with filter-sterilized 10% (w/v) NaHCO3 solution.
+    During cultivation, re-adjust pH to ~7.8 with sterile 10% NaHCO3 solution whenever
+    the medium turns yellow-orange due to nitrite production.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: jcm-grmd-import
+  action: Scraped from JCM GRMD database
+  notes: Direct import from JCM GRMD=1483. Manually curated multi-table JCM recipe
+    (Solutions A, B, C, D and Phenol red indicator stock) that import_jcm_grmd.py
+    skipped in SKIP_GRMDS.
+- timestamp: '2026-10-22T02:55:00Z'
+  curator: culturemech-id-assigner-v1.0
+  action: Assigned CultureMech ID
+  notes: 'Assigned stable identifier: CultureMech:015918'
