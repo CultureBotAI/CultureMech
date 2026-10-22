@@ -65,7 +65,7 @@ To inform Cycle 2 intake without mutating the frozen Cycle 1 `INFRA_TASKS.md` sc
         ↓
 3. Normalized Corpus & Stock Solution Extraction (data/normalized_yaml/)
         ↓
-4. Chemical Grounding & MIM Label Index (data/mim_label_index.tsv, scripts/audit_*)
+4. Chemical Grounding & MIM Label Index (src/culturemech/data/mediaingredientmech/label_index.csv, scripts/audit_*)
         ↓
 5. Recipe Merge & Deduplication (data/merge_yaml/merged/)
         ↓
@@ -96,7 +96,7 @@ To inform Cycle 2 intake without mutating the frozen Cycle 1 `INFRA_TASKS.md` sc
 
 ## 4. Domain Applicability Verification (`Stage 2` and `Stage 3`)
 
-Per `.claude/skills/culturemech-evolve-workflow/SKILL.md`, Stage 6 verifies that repository-specific stage applicability flags in `workflow/mech-workflow.yaml` remain accurate:
-- **Stage 2 (`causal_graphs`)**: `applicable: false` — CultureMech curates growth media and stock solution recipes (`MediaRecipe`, `SolutionRecipe`) and does not contain causal graph models.
-- **Stage 3 (`protein_examples`)**: `applicable: false` — CultureMech does not curate protein mechanism examples.
-- **Stages 1, 4, 5, 6**: `applicable: true` — All four applicable stages in `mech-goal-sequence-20261019` Cycle 1 are active and verified.
+Per `.claude/skills/culturemech-evolve-workflow/SKILL.md`, Stage 6 verifies that repository-specific stage `applicability` settings in `workflow/mech-workflow.yaml` remain accurate:
+- **Stage 2 (`causal_graphs`)**: `applicability: blocked` (`applicability_reason` documented) — CultureMech curates growth media and stock solution recipes (`MediaRecipe`, `SolutionRecipe`) and does not contain causal graph models.
+- **Stage 3 (`protein_examples`)**: `applicability: blocked` (`applicability_reason` documented) — CultureMech does not curate protein mechanism examples.
+- **Stages 1, 4, 5, 6**: `applicability: enabled` — All four enabled stages in `mech-goal-sequence-20261019` Cycle 1 are active and verified.

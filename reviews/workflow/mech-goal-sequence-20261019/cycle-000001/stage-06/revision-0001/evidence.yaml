@@ -28,10 +28,10 @@ artifacts:
     sha256: 6af52c250457b5e35392e4151c0521fc9839136ede49625db74344f64eae89c7
     kind: infra_snapshot
   - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
-    sha256: 97aac707efa258de6cd12816e9f901839692dd0633bd242bdfdff0309ad318b4
+    sha256: b37a90cb8b53698d823a35f4332a5acf95fbeaeba4c004f1c6b517ce88492cee
     kind: implementation_plan
   - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
-    sha256: be5a64e70e0f63b9835486cd7674e9a6575f09cf747e6a77c97d715b5a0c56e7
+    sha256: c8affaf6b4370563503e842597aea0069957ff305d0186fd16f0ff598afd02f4
     kind: validation
 findings: []
 groups: []
