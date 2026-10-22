@@ -41,3 +41,44 @@ entries:
     pr_number: 632
     status: merged
     verified_at: '2026-10-21T02:24:29.091184+00:00'
+- cycle: 1
+  goal_evidence:
+    path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/evidence.yaml
+    sha256: 4df846ec65c3aaafc78a9cb379afa743aca8a5a42df197290a7b03da0738c41e
+  receipt_sha256: ecbd579e6da9d86c9a025fbd56a8c0ec8e1a30e025ca272292f8aaf7bd57f972
+  stage: 5
+  verification:
+    checks:
+    - bucket: pass
+      name: Fast tests
+      state: SUCCESS
+    - bucket: pass
+      name: Full corpus and integration suite
+      state: SUCCESS
+    - bucket: pass
+      name: consistency
+      state: SUCCESS
+    - bucket: pass
+      name: plausibility
+      state: SUCCESS
+    - bucket: pass
+      name: label-drift-report / label-correspondence
+      state: SUCCESS
+    - bucket: pass
+      name: Changed Python quality + wheel smoke
+      state: SUCCESS
+    - bucket: pass
+      name: validate
+      state: SUCCESS
+    - bucket: pass
+      name: history
+      state: SUCCESS
+    - bucket: pass
+      name: vendored-sync
+      state: SUCCESS
+    head_sha: cb07347bfee7480cd9001c93803474e1a81f7283
+    merge_commit_sha: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    merged_at: '2026-10-21T20:04:58Z'
+    pr_number: 654
+    status: merged
+    verified_at: '2026-10-21T20:08:55.813422+00:00'
