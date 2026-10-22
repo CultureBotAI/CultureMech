@@ -1,0 +1,2206 @@
+# Source and formulation review: bha_medium (CultureMech:001018)
+
+- Review: 20261021T235243Z-culturemech-001018-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T23:44:38Z
+- Finished UTC: 2026-10-21T23:52:43Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Current DSMZ 1540 supports the named batch ingredients, the conditional agar branch and pH range at its measurement temperature. Tris HCl is grounded to the free base and pH-measurement prose is typed as HEAT. Eight owner API evidence objects remain derivative-only because their cited original response was not recovered.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 412; batch 042 item 2 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty-one task batches contain 410 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 413 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001018 | data/merge_yaml/merged/BHA_MEDIUM.yaml | generated | bha_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001018 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001018 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-042/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch042/412/strict.tsv |
+| validate-terms | passed | True | CultureMech:001018 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001018 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001018 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: mediadive1540 | unavailable | True | CultureMech:001018 | Current API 1540 returned 503; cited historical raw SHA c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3 was not recovered in the bounded owned-cache/report search. Eight existing owner objects have decoded local plan/report matches only. Current PDF evidence is independent and does not authenticate those historical API bytes. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001018.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:001018.
+
+7 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 7/9 primary and 6/9 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 9: primary 77.78%; secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:001018.
+
+18 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Exact source and selected solid branch
+
+identity: supported. Targets: CultureMech:001018.
+
+Target and maintained owner share CultureMech:001018 and DSMZ/MediaDive 1540. Current primary title is BHA MEDIUM. Optional agar 15 g/L supports the selected SOLID_AGAR branch; it does not make every source version obligatorily solid. Standalone solution 3192 is comparison context, not a referenced dependency; solution 1540 is a different accession.
+
+### Batch masses, water and historical provider rates
+
+quantity: concern. Targets: CultureMech:001018.
+
+The first eight local g/L numerals match printed batch mass numerals beside 1000 ml distilled water. That agreement supports nominal batch composition only; it does not independently establish measured final volume or reauthenticate historical API g_l/mmol_l/volume fields. Agar 15 g/L is explicit in the primary. Do not rescale or silently add a final-volume claim.
+
+### pH measurement condition misclassified as heating
+
+representation: concern. Targets: CultureMech:001018.
+
+Local pH 7.6–8.0 matches 7.8 ± 0.2. The associated 25 °C qualifies measurement, not incubation, heating or sterilization. The local HEAT action is not supported by that sentence. No heating duration, autoclave cycle or organism-specific growth condition is supplied in the inspected primary.
+
+### Eight owner-only historical amount claims
+
+evidence: unknown. Targets: CultureMech:001018.
+
+Eight owner ingredient evidence objects retain a specific original response hash and time, with exact decoded matches in local curation artifacts. The raw response remains unrecovered; current PDF agreement cannot promote these claims to raw-authenticated evidence. Generated ingredients omit these later objects; preserve the distinction and append any future source clarification.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:001018.
+
+21 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "subject": "Bacto peptone",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 table row 1",
+        "exact_source_quote": "Bacto peptone                                                 5.00        g",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Exact primary batch mass numeral matches local g/L numeral. Nominal batch mass correspondence is supported, but the stored g/L basis remains unsupported because listed water is not an explicit final-volume declaration. Historical provider rate remains separately unrecovered."
+  },
+  {
+    "decision_id": "q2",
+    "subject": "Bacto yeast extract",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 table row 2",
+        "exact_source_quote": "Bacto yeast extract                                           5.00        g",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Exact primary batch mass numeral matches local g/L numeral. Nominal batch mass correspondence is supported, but the stored g/L basis remains unsupported because listed water is not an explicit final-volume declaration. No inherited yeast-extract API evidence object is present."
+  },
+  {
+    "decision_id": "q3",
+    "subject": "Tris HCl",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 table row 3",
+        "exact_source_quote": "Tris HCl                                                      6.00        g",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Exact primary batch mass numeral matches local g/L numeral. Nominal batch mass correspondence is supported, but the stored g/L basis remains unsupported because listed water is not an explicit final-volume declaration. Historical provider rate remains separately unrecovered. Tris HCl supplied form is not free-base tris."
+  },
+  {
+    "decision_id": "q4",
+    "subject": "NaCl",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "11.7",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "11.7",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 table row 4",
+        "exact_source_quote": "NaCl                                                         11.70        g",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Exact primary batch mass numeral matches local g/L numeral. Nominal batch mass correspondence is supported, but the stored g/L basis remains unsupported because listed water is not an explicit final-volume declaration. Historical provider rate remains separately unrecovered."
+  },
+  {
+    "decision_id": "q5",
+    "subject": "MgSO4 x 7H2O",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "7.84",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "7.84",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 table row 5",
+        "exact_source_quote": "MgSO4 x 7H2O                                                  7.84        g",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Exact primary batch mass numeral matches local g/L numeral. Nominal batch mass correspondence is supported, but the stored g/L basis remains unsupported because listed water is not an explicit final-volume declaration. Historical provider rate remains separately unrecovered."
+  },
+  {
+    "decision_id": "q6",
+    "subject": "KCl",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.74",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.74",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 table row 6",
+        "exact_source_quote": "KCl                                                           0.74        g",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Exact primary batch mass numeral matches local g/L numeral. Nominal batch mass correspondence is supported, but the stored g/L basis remains unsupported because listed water is not an explicit final-volume declaration. Historical provider rate remains separately unrecovered."
+  },
+  {
+    "decision_id": "q7",
+    "subject": "NH4Cl",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "3",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 table row 7",
+        "exact_source_quote": "NH4Cl                                                         3.00        g",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Exact primary batch mass numeral matches local g/L numeral. Nominal batch mass correspondence is supported, but the stored g/L basis remains unsupported because listed water is not an explicit final-volume declaration. Historical provider rate remains separately unrecovered."
+  },
+  {
+    "decision_id": "q8",
+    "subject": "CaCl2",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "0.15",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 table row 8",
+        "exact_source_quote": "CaCl2                                                         0.15        g",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Exact primary batch mass numeral matches local g/L numeral. Nominal batch mass correspondence is supported, but the stored g/L basis remains unsupported because listed water is not an explicit final-volume declaration. Historical provider rate remains separately unrecovered."
+  },
+  {
+    "decision_id": "q9",
+    "subject": "Optional agar branch",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "15",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": " (for solid medium)"
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[8].notes",
+        "stored": " (for solid medium)"
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 final paragraph",
+        "exact_source_quote": "Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding 15.0g/l\nagar.",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Primary explicitly states 15.0 g/L agar if solidified. The amount in the selected solid branch is supported, but matching primary claim evidence is not attached to either local amount; the owner historical API evidence remains unauthenticated. No mandatory agar requirement is inferred for the liquid base."
+  },
+  {
+    "decision_id": "q10",
+    "subject": "Source water component",
+    "decision": "add",
+    "local_fields": [],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 distilled-water row",
+        "exact_source_quote": "Distilled water                                            1000.00       ml",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Primary lists 1000 ml distilled water; retain as source batch water context. No omitted local water concentration is fabricated, and this is not a measured final-volume assertion."
+  },
+  {
+    "decision_id": "q11",
+    "subject": "Final pH range at measurement temperature",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 7.6,
+          "max": 8.0
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 7.6,
+          "max": 8.0
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 final paragraph",
+        "exact_source_quote": "Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding 15.0g/l\nagar.",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "7.8 ± 0.2 gives 7.6–8.0 by arithmetic. The printed 25 °C qualification must remain attached to this pH measurement. Current primary support is available, but this local pH claim lacks attached matching source evidence."
+  },
+  {
+    "decision_id": "q12",
+    "subject": "Typed preparation action",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0]",
+        "stored": {
+          "step_number": 1,
+          "action": "HEAT",
+          "description": "Final pH should be 7.8 ± 0.2 at 25°C. The medium may be solidified by adding 15.0g/l agar."
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "preparation_steps[0]",
+        "stored": {
+          "step_number": 1,
+          "action": "HEAT",
+          "description": "Final pH should be 7.8 ± 0.2 at 25°C. The medium may be solidified by adding 15.0g/l agar."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 final paragraph",
+        "exact_source_quote": "Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding 15.0g/l\nagar.",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "The literal paragraph supports pH specification and optional agar, not the existing HEAT action. Preserve both quantities and stage distinctions; no heat cycle is added."
+  },
+  {
+    "decision_id": "q13",
+    "subject": "Generic temperature field",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BHA_MEDIUM.yaml",
+        "field_path": "temperature",
+        "stored": null
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "temperature",
+        "stored": null
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "dsmz1540",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf",
+        "source_locator": "Page1 final paragraph",
+        "exact_source_quote": "Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding 15.0g/l\nagar.",
+        "snapshot_sha256": "3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc",
+        "parsed_text_sha256": "7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0"
+      }
+    ],
+    "rationale": "Do not populate a generic incubation temperature from 25 °C, which qualifies pH measurement."
+  },
+  {
+    "decision_id": "q14",
+    "subject": "Historical owner API claim $.ingredients[0].evidence[0]",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[0].evidence[0]",
+        "stored": {
+          "reference": "https://mediadive.dsmz.de/rest/medium/1540",
+          "supports": "SUPPORT",
+          "snippet": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Bacto peptone\",\n                        \"compound_id\": 19,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }",
+          "explanation": "Concentration evidence for ingredients[0].concentration (Bacto peptone) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[0]. Provider explicitly reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1540",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1540",
+        "source_locator": "Preserved access attempt; formulation content unavailable",
+        "accessed_at": "2026-10-21T23:23:50.959653+00:00",
+        "http_status": 503,
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "content_limit": "Unavailable exact public access retained with original time; no formula, identity absence or historical invalidity inferred.",
+        "source_amount_authenticated": false,
+        "limitation": "Original cited API response not recovered; this row retains exact local historical claim only."
+      }
+    ],
+    "rationale": "Full local object retains amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time. Decoded plan agreement is not raw authentication; no current provider equivalence is asserted."
+  },
+  {
+    "decision_id": "q15",
+    "subject": "Historical owner API claim $.ingredients[2].evidence[0]",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[2].evidence[0]",
+        "stored": {
+          "reference": "https://mediadive.dsmz.de/rest/medium/1540",
+          "supports": "SUPPORT",
+          "snippet": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Tris HCl\",\n                        \"compound_id\": 594,\n                        \"amount\": 6,\n                        \"unit\": \"g\",\n                        \"g_l\": 6,\n                        \"optional\": 0\n                    }",
+          "explanation": "Concentration evidence for ingredients[2].concentration (Tris HCl) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports g_l=6; check: 6 g * 1 g/g / (1000 ml / 1000 ml per L) = 6 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1540",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1540",
+        "source_locator": "Preserved access attempt; formulation content unavailable",
+        "accessed_at": "2026-10-21T23:23:50.959653+00:00",
+        "http_status": 503,
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "content_limit": "Unavailable exact public access retained with original time; no formula, identity absence or historical invalidity inferred.",
+        "source_amount_authenticated": false,
+        "limitation": "Original cited API response not recovered; this row retains exact local historical claim only."
+      }
+    ],
+    "rationale": "Full local object retains amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time. Decoded plan agreement is not raw authentication; no current provider equivalence is asserted."
+  },
+  {
+    "decision_id": "q16",
+    "subject": "Historical owner API claim $.ingredients[3].evidence[0]",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[3].evidence[0]",
+        "stored": {
+          "reference": "https://mediadive.dsmz.de/rest/medium/1540",
+          "supports": "SUPPORT",
+          "snippet": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 11.7,\n                        \"unit\": \"g\",\n                        \"g_l\": 11.7,\n                        \"mmol_l\": 200.205,\n                        \"optional\": 0\n                    }",
+          "explanation": "Concentration evidence for ingredients[3].concentration (NaCl) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[3]. Provider explicitly reports g_l=11.7; check: 11.7 g * 1 g/g / (1000 ml / 1000 ml per L) = 11.7 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1540",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1540",
+        "source_locator": "Preserved access attempt; formulation content unavailable",
+        "accessed_at": "2026-10-21T23:23:50.959653+00:00",
+        "http_status": 503,
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "content_limit": "Unavailable exact public access retained with original time; no formula, identity absence or historical invalidity inferred.",
+        "source_amount_authenticated": false,
+        "limitation": "Original cited API response not recovered; this row retains exact local historical claim only."
+      }
+    ],
+    "rationale": "Full local object retains amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time. Decoded plan agreement is not raw authentication; no current provider equivalence is asserted."
+  },
+  {
+    "decision_id": "q17",
+    "subject": "Historical owner API claim $.ingredients[4].evidence[0]",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[4].evidence[0]",
+        "stored": {
+          "reference": "https://mediadive.dsmz.de/rest/medium/1540",
+          "supports": "SUPPORT",
+          "snippet": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 7.84,\n                        \"unit\": \"g\",\n                        \"g_l\": 7.84,\n                        \"mmol_l\": 31.8084,\n                        \"optional\": 0\n                    }",
+          "explanation": "Concentration evidence for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[4]. Provider explicitly reports g_l=7.84; check: 7.84 g * 1 g/g / (1000 ml / 1000 ml per L) = 7.84 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1540",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1540",
+        "source_locator": "Preserved access attempt; formulation content unavailable",
+        "accessed_at": "2026-10-21T23:23:50.959653+00:00",
+        "http_status": 503,
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "content_limit": "Unavailable exact public access retained with original time; no formula, identity absence or historical invalidity inferred.",
+        "source_amount_authenticated": false,
+        "limitation": "Original cited API response not recovered; this row retains exact local historical claim only."
+      }
+    ],
+    "rationale": "Full local object retains amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time. Decoded plan agreement is not raw authentication; no current provider equivalence is asserted."
+  },
+  {
+    "decision_id": "q18",
+    "subject": "Historical owner API claim $.ingredients[5].evidence[0]",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[5].evidence[0]",
+        "stored": {
+          "reference": "https://mediadive.dsmz.de/rest/medium/1540",
+          "supports": "SUPPORT",
+          "snippet": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.74,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.74,\n                        \"mmol_l\": 9.92622,\n                        \"optional\": 0\n                    }",
+          "explanation": "Concentration evidence for ingredients[5].concentration (KCl) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[5]. Provider explicitly reports g_l=0.74; check: 0.74 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.74 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1540",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1540",
+        "source_locator": "Preserved access attempt; formulation content unavailable",
+        "accessed_at": "2026-10-21T23:23:50.959653+00:00",
+        "http_status": 503,
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "content_limit": "Unavailable exact public access retained with original time; no formula, identity absence or historical invalidity inferred.",
+        "source_amount_authenticated": false,
+        "limitation": "Original cited API response not recovered; this row retains exact local historical claim only."
+      }
+    ],
+    "rationale": "Full local object retains amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time. Decoded plan agreement is not raw authentication; no current provider equivalence is asserted."
+  },
+  {
+    "decision_id": "q19",
+    "subject": "Historical owner API claim $.ingredients[6].evidence[0]",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[6].evidence[0]",
+        "stored": {
+          "reference": "https://mediadive.dsmz.de/rest/medium/1540",
+          "supports": "SUPPORT",
+          "snippet": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 56.0853,\n                        \"optional\": 0\n                    }",
+          "explanation": "Concentration evidence for ingredients[6].concentration (NH4Cl) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[6]. Provider explicitly reports g_l=3; check: 3 g * 1 g/g / (1000 ml / 1000 ml per L) = 3 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1540",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1540",
+        "source_locator": "Preserved access attempt; formulation content unavailable",
+        "accessed_at": "2026-10-21T23:23:50.959653+00:00",
+        "http_status": 503,
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "content_limit": "Unavailable exact public access retained with original time; no formula, identity absence or historical invalidity inferred.",
+        "source_amount_authenticated": false,
+        "limitation": "Original cited API response not recovered; this row retains exact local historical claim only."
+      }
+    ],
+    "rationale": "Full local object retains amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time. Decoded plan agreement is not raw authentication; no current provider equivalence is asserted."
+  },
+  {
+    "decision_id": "q20",
+    "subject": "Historical owner API claim $.ingredients[7].evidence[0]",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[7].evidence[0]",
+        "stored": {
+          "reference": "https://mediadive.dsmz.de/rest/medium/1540",
+          "supports": "SUPPORT",
+          "snippet": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"CaCl2\",\n                        \"compound_id\": 81,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.15,\n                        \"mmol_l\": 1.35159,\n                        \"optional\": 0\n                    }",
+          "explanation": "Concentration evidence for ingredients[7].concentration (CaCl2) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[7]. Provider explicitly reports g_l=0.15; check: 0.15 g * 1 g/g / (1000 ml / 1000 ml per L) = 0.15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1540",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1540",
+        "source_locator": "Preserved access attempt; formulation content unavailable",
+        "accessed_at": "2026-10-21T23:23:50.959653+00:00",
+        "http_status": 503,
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "content_limit": "Unavailable exact public access retained with original time; no formula, identity absence or historical invalidity inferred.",
+        "source_amount_authenticated": false,
+        "limitation": "Original cited API response not recovered; this row retains exact local historical claim only."
+      }
+    ],
+    "rationale": "Full local object retains amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time. Decoded plan agreement is not raw authentication; no current provider equivalence is asserted."
+  },
+  {
+    "decision_id": "q21",
+    "subject": "Historical owner API claim $.ingredients[8].evidence[0]",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+        "field_path": "ingredients[8].evidence[0]",
+        "stored": {
+          "reference": "https://mediadive.dsmz.de/rest/medium/1540",
+          "supports": "SUPPORT",
+          "snippet": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"condition\": \"for solid medium\",\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }",
+          "explanation": "Concentration evidence for ingredients[8].concentration (Agar) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[9]. Provider explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) = 15 g/L. This supports the provider-declared main-recipe concentration, not an independently measured final volume, a stock composition, or a downstream assay dilution. Water alone does not establish final volume. Exact source ingredient labels/forms are matched; secondary ontology mappings are not validated by this evidence. Source condition 'for solid medium' matches local physical_state=SOLID_AGAR. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3."
+        }
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "mediadive1540",
+        "source_url": "https://mediadive.dsmz.de/rest/medium/1540",
+        "source_locator": "Preserved access attempt; formulation content unavailable",
+        "accessed_at": "2026-10-21T23:23:50.959653+00:00",
+        "http_status": 503,
+        "snapshot_sha256": "7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286",
+        "content_limit": "Unavailable exact public access retained with original time; no formula, identity absence or historical invalidity inferred.",
+        "source_amount_authenticated": false,
+        "limitation": "Original cited API response not recovered; this row retains exact local historical claim only."
+      }
+    ],
+    "rationale": "Full local object retains amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time. Decoded plan agreement is not raw authentication; no current provider equivalence is asserted."
+  }
+]
+
+## Findings
+
+### f1: Tris HCl is grounded to free-base tris
+
+major / open / confirmed; issue key: culturemech.001018.tris-supplied-form.
+
+Both target and owner name Tris HCl 6 g/L; primary names Tris HCl 6 g. CHEBI:9754 canonical tris/formula C4H11NO3 represents the free base. Correct canonical label metadata does not fix this supplied-form mismatch.
+
+### f2: pH measurement sentence is typed as HEAT
+
+major / open / confirmed; issue key: culturemech.001018.ph-temperature-as-heat.
+
+Both layers store HEAT for prose specifying final pH at 25 °C and optional agar. Primary does not prescribe heating. Current keyword classifier provides a bounded implementation risk, not proof of historical causation.
+
+### f3: Batch-water context and historical rate support remain incomplete
+
+major / open / confirmed; issue key: culturemech.001018.batch-basis-and-evidence.
+
+Local ingredients omit the primary water row and express all first-eight masses as g/L. Their numerals agree with the nominal batch, but final volume is not explicitly measured in the primary. Eight owner historical API rate objects have unrecovered cited raw bytes; yeast extract lacks such an object. Preserve nominal mass agreement and selected agar branch without treating derivative/provider claims as authenticated final-volume evidence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Resolve the exact salt identity from primary/source evidence before changing the normalized grounding; do not invent a replacement identifier.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Represent measurement context and optional agar without an unsupported heating operation; review current classifier under separately authorized implementation work.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Retain source water/batch context and attach current primary claim-level support; recover or explicitly qualify old API rate evidence before confirming its denominator. Preserve existing history and later owner/generated differences.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BHA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/bha_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BHA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BHA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch042/412/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-042/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch042/412/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BHA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BHA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/BHA_MEDIUM.yaml:1:id: CultureMech:001018<br>./data/normalized_yaml/bacterial/bha_medium.yaml:1:id: CultureMech:001018<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch042/source-preflight-bound/412/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 9 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch042/412/grounding-inventory.json; Complete exact-field sidecar | context_only | All 26 asserted primary/current-secondary slots and exact ontology/MIM correspondences; valid labels do not establish the supplied Tris salt form. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:2509 resolves to agar. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32588 resolves to potassium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi3312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:3312 resolves to calcium dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi9754 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:9754 resolves to tris. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type": "preferred_term", "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id": "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| primary-table | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf; Page1 complete table and final paragraph | supports | Eight mass rows and distilled water 1000 ml are printed. Water is a listed component, not an explicit measured-final-volume statement. Optional agar is separately 15 g/L; pH 7.8 ± 0.2 is qualified at 25 °C. |
+| primary-tris | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf; Page1 Tris HCl row | supports | The supplied material is Tris HCl, distinct from the asserted free-base tris identifier. |
+| primary-ph-agar | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf; Page1 final paragraph, literal PDF-extracted glyph preserved | supports | The 25 °C value is the pH measurement condition; solidification is optional. Neither clause prescribes a heating action. |
+| mediadive1540-attempt | https://mediadive.dsmz.de/rest/medium/1540; Preserved exact public retrieval result | context_only | Current API 1540 returned 503; cited historical raw SHA c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3 was not recovered in the bounded owned-cache/report search. Eight existing owner objects have decoded local plan/report matches only. Current PDF evidence is independent and does not authenticate those historical API bytes. |
+| historical-inventory | /private/tmp/culturemech-review-work-batch042/412/historical-evidence-inventory.json; Complete exact-field sidecar | context_only | All eight existing ingredient evidence objects, their exact locators/hash/time claims and decoded plan/report matches are retained. No ninth yeast-extract evidence object is invented. |
+| history-metadata | data/merge_yaml/merged/BHA_MEDIUM.yaml; data/normalized_yaml/bacterial/bha_medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/bha_medium.yaml", "events": 9, "timestamp_issues": []}] |
+| history-full | /private/tmp/culturemech-review-work-batch042/412/history-inventory.json; Complete exact-field sidecar | context_only | Full 18 target/owner history events; the later owner evidence-curation event is not present in the older generated view. |
+| writer-0 | src/culturemech/import/mediadive_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Full _parse_preparation_steps and _classify_preparation_action functions read. Current keyword ordering can classify a sentence containing °c as HEAT when earlier keywords do not match. This is current implementation context, not proof of the historical execution that wrote this record. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch042/412/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Current API 1540 returned 503; cited historical raw SHA c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3 was not recovered in the bounded owned-cache/report search. Eight existing owner objects have decoded local plan/report matches only. Current PDF evidence is independent and does not authenticate those historical API bytes.
+- Primary 25 °C is not an incubation or sterilization instruction. No operational protocol is supplied beyond the narrowly compared published statements.
+- Current raw API failure is separate from exact-source PDF availability; partial completion concerns historical evidence authentication, not inability to compare the current primary.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T235243Z-culturemech-001018-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bha_medium (CultureMech:001018)'
+started_at: '2026-10-21T23:44:38Z'
+finished_at: '2026-10-21T23:52:43Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Current DSMZ 1540 supports the named batch ingredients, the conditional agar
+  branch and pH range at its measurement temperature. Tris HCl is grounded to the
+  free base and pH-measurement prose is typed as HEAT. Eight owner API evidence objects
+  remain derivative-only because their cited original response was not recovered.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BHA_MEDIUM.yaml
+    sha256: c7c811e0223752f9aae227a0450b5bd553c2fb6a736bf4f9c9424611062a8f0a
+    role: target
+  - path: data/normalized_yaml/bacterial/bha_medium.yaml
+    sha256: c8cfd2066797ea9f65907a669957214b15de9f1d7666d5223a2182cb44d84dcf
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/plan.json
+    sha256: 087b43514367d268b48e568b66203c146b81601303e5c8e3508f3c91e0fcbf26
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1500-2000/records/bacterial/bha_medium.yaml.md
+    sha256: 360452ab5e59608b5c9e02f5200d68acf46c8cae1b81391d09aae838cfc361f6
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-medium-source-fetch-1500-2000.json
+    sha256: b6856e96be7c57a5ae4f670acf8869af50abbd0b8b52aa087ebe850b48fc7472
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 412; batch 042 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-one task batches
+    contain 410 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 413 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001018
+targets:
+- target_id: CultureMech:001018
+  path: data/merge_yaml/merged/BHA_MEDIUM.yaml
+  label: bha_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bha_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BHA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BHA_MEDIUM.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch042/412/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-042/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch042/412/strict.tsv"
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BHA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BHA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001018
+- check_id: mediadive1540-source-access
+  name: 'Exact source content access: mediadive1540'
+  required: true
+  status: unavailable
+  summary: Current API 1540 returned 503; cited historical raw SHA c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3
+    was not recovered in the bounded owned-cache/report search. Eight existing owner
+    objects have decoded local plan/report matches only. Current PDF evidence is independent
+    and does not authenticate those historical API bytes.
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - mediadive1540-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BHA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bha_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BHA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:44:58.280984Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BHA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch042/412/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:44:59.308208Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-042/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch042/412/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BHA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:45:00.447372Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BHA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:45:01.154946Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BHA_MEDIUM.yaml:1:id: CultureMech:001018
+
+    ./data/normalized_yaml/bacterial/bha_medium.yaml:1:id: CultureMech:001018
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/source-preflight-bound/412/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: supports
+  summary: 9 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 98abf0074496e8add8a7f65bd2bc02ba2760e97ed815c44beaa9119773531eec
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/412/grounding-inventory.json
+  locator: Complete exact-field sidecar
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: context_only
+  summary: All 26 asserted primary/current-secondary slots and exact ontology/MIM
+    correspondences; valid labels do not establish the supplied Tris salt form.
+  snapshot_sha256: 01cc5a170a738f6245782fc121488d87b389e6a766f5d161de670958d0f1ee60
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: CHEBI:3312 resolves to calcium dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi9754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_9754
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:13.713319Z'
+  support: supports
+  summary: CHEBI:9754 resolves to tris. Identifier existence and label metadata do
+    not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b9f921dfa34f343d4ef51ee217fc47702a8f03e2b9a8353effa10de89e9c6659
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label":
+    "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term":
+    "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:3312": [{"label": "CaCl2", "match_type":
+    "preferred_term", "identifier": "CHEBI:3312", "preferred_term": "CaCl2", "ontology_id":
+    "CHEBI:3312", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: primary-table
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf
+  locator: Page1 complete table and final paragraph
+  accessed_at: '2026-10-21T23:23:50.851440Z'
+  support: supports
+  summary: Eight mass rows and distilled water 1000 ml are printed. Water is a listed
+    component, not an explicit measured-final-volume statement. Optional agar is separately
+    15 g/L; pH 7.8 ± 0.2 is qualified at 25 °C.
+  quote: Distilled water                                            1000.00       ml
+  snapshot_sha256: 3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc
+- evidence_id: primary-tris
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf
+  locator: Page1 Tris HCl row
+  accessed_at: '2026-10-21T23:23:50.851440Z'
+  support: supports
+  summary: The supplied material is Tris HCl, distinct from the asserted free-base
+    tris identifier.
+  quote: Tris HCl                                                      6.00        g
+  snapshot_sha256: 3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc
+- evidence_id: primary-ph-agar
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf
+  locator: Page1 final paragraph, literal PDF-extracted glyph preserved
+  accessed_at: '2026-10-21T23:23:50.851440Z'
+  support: supports
+  summary: The 25 °C value is the pH measurement condition; solidification is optional.
+    Neither clause prescribes a heating action.
+  quote: 'Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding
+    15.0g/l
+
+    agar.'
+  snapshot_sha256: 3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc
+- evidence_id: mediadive1540-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1540
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T23:23:50.959653Z'
+  support: context_only
+  summary: Current API 1540 returned 503; cited historical raw SHA c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3
+    was not recovered in the bounded owned-cache/report search. Eight existing owner
+    objects have decoded local plan/report matches only. Current PDF evidence is independent
+    and does not authenticate those historical API bytes.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: historical-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/412/historical-evidence-inventory.json
+  locator: Complete exact-field sidecar
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: context_only
+  summary: All eight existing ingredient evidence objects, their exact locators/hash/time
+    claims and decoded plan/report matches are retained. No ninth yeast-extract evidence
+    object is invented.
+  snapshot_sha256: c89f6c4f5b2913c427f51d99075df7997d00d7626be150e5a863ac2fc755bda3
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BHA_MEDIUM.yaml; data/normalized_yaml/bacterial/bha_medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/bha_medium.yaml",
+    "events": 9, "timestamp_issues": []}]'
+- evidence_id: history-full
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/412/history-inventory.json
+  locator: Complete exact-field sidecar
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: context_only
+  summary: Full 18 target/owner history events; the later owner evidence-curation
+    event is not present in the older generated view.
+  snapshot_sha256: 21a0168af7550b85e68b31dc35833479632baf162c65ea0034146feea398d07b
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: context_only
+  summary: Full _parse_preparation_steps and _classify_preparation_action functions
+    read. Current keyword ordering can classify a sentence containing °c as HEAT when
+    earlier keywords do not match. This is current implementation context, not proof
+    of the historical execution that wrote this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/412/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T23:52:42Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: d935e111c732363f5e3fe4581565bca89c7bc05f86dc3fe8bb75372c6663bd09
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '7 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 7/9 primary
+    and 6/9 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - chebi2509
+  - chebi26710
+  - chebi31206
+  - chebi31795
+  - chebi32588
+  - chebi3312
+  - chebi9754
+  details: 'Instance coverage on a 0–100 percent scale, denominator 9: primary 77.78%;
+    secondary 66.67%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 18 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Exact source and selected solid branch
+  outcome: supported
+  summary: Target and maintained owner share CultureMech:001018 and DSMZ/MediaDive
+    1540. Current primary title is BHA MEDIUM. Optional agar 15 g/L supports the selected
+    SOLID_AGAR branch; it does not make every source version obligatorily solid. Standalone
+    solution 3192 is comparison context, not a referenced dependency; solution 1540
+    is a different accession.
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-table
+  - primary-ph-agar
+- assessment_id: source-basis
+  area: quantity
+  topic: Batch masses, water and historical provider rates
+  outcome: concern
+  summary: The first eight local g/L numerals match printed batch mass numerals beside
+    1000 ml distilled water. That agreement supports nominal batch composition only;
+    it does not independently establish measured final volume or reauthenticate historical
+    API g_l/mmol_l/volume fields. Agar 15 g/L is explicit in the primary. Do not rescale
+    or silently add a final-volume claim.
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - primary-table
+  - primary-ph-agar
+  - historical-inventory
+  - mediadive1540-attempt
+- assessment_id: preparation
+  area: representation
+  topic: pH measurement condition misclassified as heating
+  outcome: concern
+  summary: Local pH 7.6–8.0 matches 7.8 ± 0.2. The associated 25 °C qualifies measurement,
+    not incubation, heating or sterilization. The local HEAT action is not supported
+    by that sentence. No heating duration, autoclave cycle or organism-specific growth
+    condition is supplied in the inspected primary.
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-ph-agar
+  - writer-0
+- assessment_id: history-evidence
+  area: evidence
+  topic: Eight owner-only historical amount claims
+  outcome: unknown
+  summary: Eight owner ingredient evidence objects retain a specific original response
+    hash and time, with exact decoded matches in local curation artifacts. The raw
+    response remains unrecovered; current PDF agreement cannot promote these claims
+    to raw-authenticated evidence. Generated ingredients omit these later objects;
+    preserve the distinction and append any future source clarification.
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - record
+  - owner-0
+  - historical-inventory
+  - history-full
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 21 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:001018
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"subject\": \"Bacto peptone\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1540\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 table row 1\",\n        \"exact_source_quote\"\
+    : \"Bacto peptone                                                 5.00       \
+    \ g\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact primary batch mass numeral matches\
+    \ local g/L numeral. Nominal batch mass correspondence is supported, but the stored\
+    \ g/L basis remains unsupported because listed water is not an explicit final-volume\
+    \ declaration. Historical provider rate remains separately unrecovered.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q2\",\n    \"subject\": \"Bacto yeast extract\",\n\
+    \    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1540\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 table row 2\",\n        \"exact_source_quote\"\
+    : \"Bacto yeast extract                                           5.00       \
+    \ g\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact primary batch mass numeral matches\
+    \ local g/L numeral. Nominal batch mass correspondence is supported, but the stored\
+    \ g/L basis remains unsupported because listed water is not an explicit final-volume\
+    \ declaration. No inherited yeast-extract API evidence object is present.\"\n\
+    \  },\n  {\n    \"decision_id\": \"q3\",\n    \"subject\": \"Tris HCl\",\n   \
+    \ \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n        \"\
+    input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\",\n        \"field_path\":\
+    \ \"ingredients[2].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"6\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        }\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1540\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 table row 3\",\n        \"exact_source_quote\"\
+    : \"Tris HCl                                                      6.00       \
+    \ g\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact primary batch mass numeral matches\
+    \ local g/L numeral. Nominal batch mass correspondence is supported, but the stored\
+    \ g/L basis remains unsupported because listed water is not an explicit final-volume\
+    \ declaration. Historical provider rate remains separately unrecovered. Tris HCl\
+    \ supplied form is not free-base tris.\"\n  },\n  {\n    \"decision_id\": \"q4\"\
+    ,\n    \"subject\": \"NaCl\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"11.7\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"11.7\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1540\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 table row 4\",\n        \"exact_source_quote\"\
+    : \"NaCl                                                         11.70       \
+    \ g\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact primary batch mass numeral matches\
+    \ local g/L numeral. Nominal batch mass correspondence is supported, but the stored\
+    \ g/L basis remains unsupported because listed water is not an explicit final-volume\
+    \ declaration. Historical provider rate remains separately unrecovered.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q5\",\n    \"subject\": \"MgSO4 x 7H2O\",\n    \"\
+    decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\"\
+    : \"data/merge_yaml/merged/BHA_MEDIUM.yaml\",\n        \"field_path\": \"ingredients[4].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"7.84\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.84\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1540\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 table row 5\",\n        \"exact_source_quote\"\
+    : \"MgSO4 x 7H2O                                                  7.84       \
+    \ g\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact primary batch mass numeral matches\
+    \ local g/L numeral. Nominal batch mass correspondence is supported, but the stored\
+    \ g/L basis remains unsupported because listed water is not an explicit final-volume\
+    \ declaration. Historical provider rate remains separately unrecovered.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q6\",\n    \"subject\": \"KCl\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.74\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.74\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1540\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 table row 6\",\n        \"exact_source_quote\"\
+    : \"KCl                                                           0.74       \
+    \ g\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact primary batch mass numeral matches\
+    \ local g/L numeral. Nominal batch mass correspondence is supported, but the stored\
+    \ g/L basis remains unsupported because listed water is not an explicit final-volume\
+    \ declaration. Historical provider rate remains separately unrecovered.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q7\",\n    \"subject\": \"NH4Cl\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1540\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 table row 7\",\n        \"exact_source_quote\"\
+    : \"NH4Cl                                                         3.00       \
+    \ g\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact primary batch mass numeral matches\
+    \ local g/L numeral. Nominal batch mass correspondence is supported, but the stored\
+    \ g/L basis remains unsupported because listed water is not an explicit final-volume\
+    \ declaration. Historical provider rate remains separately unrecovered.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q8\",\n    \"subject\": \"CaCl2\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.15\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz1540\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 table row 8\",\n        \"exact_source_quote\"\
+    : \"CaCl2                                                         0.15       \
+    \ g\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact primary batch mass numeral matches\
+    \ local g/L numeral. Nominal batch mass correspondence is supported, but the stored\
+    \ g/L basis remains unsupported because listed water is not an explicit final-volume\
+    \ declaration. Historical provider rate remains separately unrecovered.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q9\",\n    \"subject\": \"Optional agar branch\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\",\n       \
+    \ \"field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n \
+    \         \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        }\n   \
+    \   },\n      {\n        \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \" (for\
+    \ solid medium)\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].notes\",\n        \"stored\": \" (for\
+    \ solid medium)\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"dsmz1540\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 final paragraph\",\n        \"exact_source_quote\"\
+    : \"Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding\
+    \ 15.0g/l\\nagar.\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Primary explicitly states 15.0 g/L agar\
+    \ if solidified. The amount in the selected solid branch is supported, but matching\
+    \ primary claim evidence is not attached to either local amount; the owner historical\
+    \ API evidence remains unauthenticated. No mandatory agar requirement is inferred\
+    \ for the liquid base.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n    \"subject\"\
+    : \"Source water component\",\n    \"decision\": \"add\",\n    \"local_fields\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1540\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 distilled-water row\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                            1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Primary lists 1000 ml distilled water;\
+    \ retain as source batch water context. No omitted local water concentration is\
+    \ fabricated, and this is not a measured final-volume assertion.\"\n  },\n  {\n\
+    \    \"decision_id\": \"q11\",\n    \"subject\": \"Final pH range at measurement\
+    \ temperature\",\n    \"decision\": \"evidence_only\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\",\n\
+    \        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"min\"\
+    : 7.6,\n          \"max\": 8.0\n        }\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/bha_medium.yaml\",\n        \"field_path\"\
+    : \"ph_range\",\n        \"stored\": {\n          \"min\": 7.6,\n          \"\
+    max\": 8.0\n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz1540\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 final paragraph\",\n        \"exact_source_quote\"\
+    : \"Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding\
+    \ 15.0g/l\\nagar.\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"7.8 ± 0.2 gives 7.6–8.0 by arithmetic.\
+    \ The printed 25 °C qualification must remain attached to this pH measurement.\
+    \ Current primary support is available, but this local pH claim lacks attached\
+    \ matching source evidence.\"\n  },\n  {\n    \"decision_id\": \"q12\",\n    \"\
+    subject\": \"Typed preparation action\",\n    \"decision\": \"correct\",\n   \
+    \ \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0]\",\n        \"stored\": {\n\
+    \          \"step_number\": 1,\n          \"action\": \"HEAT\",\n          \"\
+    description\": \"Final pH should be 7.8 ± 0.2 at 25°C. The medium may be solidified\
+    \ by adding 15.0g/l agar.\"\n        }\n      },\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/bha_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0]\",\n        \"stored\": {\n          \"step_number\"\
+    : 1,\n          \"action\": \"HEAT\",\n          \"description\": \"Final pH should\
+    \ be 7.8 ± 0.2 at 25°C. The medium may be solidified by adding 15.0g/l agar.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz1540\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 final paragraph\",\n        \"exact_source_quote\"\
+    : \"Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding\
+    \ 15.0g/l\\nagar.\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal paragraph supports pH specification\
+    \ and optional agar, not the existing HEAT action. Preserve both quantities and\
+    \ stage distinctions; no heat cycle is added.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q13\",\n    \"subject\": \"Generic temperature field\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BHA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"temperature\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"temperature\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1540\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1540.pdf\"\
+    ,\n        \"source_locator\": \"Page1 final paragraph\",\n        \"exact_source_quote\"\
+    : \"Final pH should be 7.8 ± 0.2 at 25C. The medium may be solidified by adding\
+    \ 15.0g/l\\nagar.\",\n        \"snapshot_sha256\": \"3cf289507d30223799ea78f58c0a326da27422722b22cccf6b04ccef51f8c7bc\"\
+    ,\n        \"parsed_text_sha256\": \"7630fcfd22471f7d5f318cb04fab4d869eeabd67c1c266703af82731b640e1d0\"\
+    \n      }\n    ],\n    \"rationale\": \"Do not populate a generic incubation temperature\
+    \ from 25 °C, which qualifies pH measurement.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q14\",\n    \"subject\": \"Historical owner API claim $.ingredients[0].evidence[0]\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\",\n        \"\
+    field_path\": \"ingredients[0].evidence[0]\",\n        \"stored\": {\n       \
+    \   \"reference\": \"https://mediadive.dsmz.de/rest/medium/1540\",\n         \
+    \ \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n                  \
+    \      \\\"recipe_order\\\": 1,\\n                        \\\"compound\\\": \\\
+    \"Bacto peptone\\\",\\n                        \\\"compound_id\\\": 19,\\n   \
+    \                     \\\"amount\\\": 5,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 5,\\n                    \
+    \    \\\"optional\\\": 0\\n                    }\",\n          \"explanation\"\
+    : \"Concentration evidence for ingredients[0].concentration (Bacto peptone) in\
+    \ MediaDive medium 1540; locator=$.data.solutions[0].recipe[0]. Provider explicitly\
+    \ reports g_l=5; check: 5 g * 1 g/g / (1000 ml / 1000 ml per L) = 5 g/L. This\
+    \ supports the provider-declared main-recipe concentration, not an independently\
+    \ measured final volume, a stock composition, or a downstream assay dilution.\
+    \ Water alone does not establish final volume. Exact source ingredient labels/forms\
+    \ are matched; secondary ontology mappings are not validated by this evidence.\
+    \ Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00;\
+    \ response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1540\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1540\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.959653+00:00\"\
+    ,\n        \"http_status\": 503,\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"content_limit\": \"Unavailable exact public access retained with\
+    \ original time; no formula, identity absence or historical invalidity inferred.\"\
+    ,\n        \"source_amount_authenticated\": false,\n        \"limitation\": \"\
+    Original cited API response not recovered; this row retains exact local historical\
+    \ claim only.\"\n      }\n    ],\n    \"rationale\": \"Full local object retains\
+    \ amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time.\
+    \ Decoded plan agreement is not raw authentication; no current provider equivalence\
+    \ is asserted.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n    \"subject\": \"\
+    Historical owner API claim $.ingredients[2].evidence[0]\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1540\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 3,\\n                        \\\"compound\\\
+    \": \\\"Tris HCl\\\",\\n                        \\\"compound_id\\\": 594,\\n \
+    \                       \\\"amount\\\": 6,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 6,\\n                  \
+    \      \\\"optional\\\": 0\\n                    }\",\n          \"explanation\"\
+    : \"Concentration evidence for ingredients[2].concentration (Tris HCl) in MediaDive\
+    \ medium 1540; locator=$.data.solutions[0].recipe[2]. Provider explicitly reports\
+    \ g_l=6; check: 6 g * 1 g/g / (1000 ml / 1000 ml per L) = 6 g/L. This supports\
+    \ the provider-declared main-recipe concentration, not an independently measured\
+    \ final volume, a stock composition, or a downstream assay dilution. Water alone\
+    \ does not establish final volume. Exact source ingredient labels/forms are matched;\
+    \ secondary ontology mappings are not validated by this evidence. Additional exact\
+    \ value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00;\
+    \ response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1540\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1540\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.959653+00:00\"\
+    ,\n        \"http_status\": 503,\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"content_limit\": \"Unavailable exact public access retained with\
+    \ original time; no formula, identity absence or historical invalidity inferred.\"\
+    ,\n        \"source_amount_authenticated\": false,\n        \"limitation\": \"\
+    Original cited API response not recovered; this row retains exact local historical\
+    \ claim only.\"\n      }\n    ],\n    \"rationale\": \"Full local object retains\
+    \ amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time.\
+    \ Decoded plan agreement is not raw authentication; no current provider equivalence\
+    \ is asserted.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n    \"subject\": \"\
+    Historical owner API claim $.ingredients[3].evidence[0]\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1540\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 4,\\n                        \\\"compound\\\
+    \": \\\"NaCl\\\",\\n                        \\\"compound_id\\\": 43,\\n      \
+    \                  \\\"amount\\\": 11.7,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 11.7,\\n                 \
+    \       \\\"mmol_l\\\": 200.205,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n          \"explanation\": \"Concentration evidence\
+    \ for ingredients[3].concentration (NaCl) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[3].\
+    \ Provider explicitly reports g_l=11.7; check: 11.7 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 11.7 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1540\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1540\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.959653+00:00\"\
+    ,\n        \"http_status\": 503,\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"content_limit\": \"Unavailable exact public access retained with\
+    \ original time; no formula, identity absence or historical invalidity inferred.\"\
+    ,\n        \"source_amount_authenticated\": false,\n        \"limitation\": \"\
+    Original cited API response not recovered; this row retains exact local historical\
+    \ claim only.\"\n      }\n    ],\n    \"rationale\": \"Full local object retains\
+    \ amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time.\
+    \ Decoded plan agreement is not raw authentication; no current provider equivalence\
+    \ is asserted.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"subject\": \"\
+    Historical owner API claim $.ingredients[4].evidence[0]\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1540\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 5,\\n                        \\\"compound\\\
+    \": \\\"MgSO4 x 7 H2O\\\",\\n                        \\\"compound_id\\\": 8,\\\
+    n                        \\\"amount\\\": 7.84,\\n                        \\\"\
+    unit\\\": \\\"g\\\",\\n                        \\\"g_l\\\": 7.84,\\n         \
+    \               \\\"mmol_l\\\": 31.8084,\\n                        \\\"optional\\\
+    \": 0\\n                    }\",\n          \"explanation\": \"Concentration evidence\
+    \ for ingredients[4].concentration (MgSO4 x 7 H2O) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[4].\
+    \ Provider explicitly reports g_l=7.84; check: 7.84 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 7.84 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1540\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1540\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.959653+00:00\"\
+    ,\n        \"http_status\": 503,\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"content_limit\": \"Unavailable exact public access retained with\
+    \ original time; no formula, identity absence or historical invalidity inferred.\"\
+    ,\n        \"source_amount_authenticated\": false,\n        \"limitation\": \"\
+    Original cited API response not recovered; this row retains exact local historical\
+    \ claim only.\"\n      }\n    ],\n    \"rationale\": \"Full local object retains\
+    \ amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time.\
+    \ Decoded plan agreement is not raw authentication; no current provider equivalence\
+    \ is asserted.\"\n  },\n  {\n    \"decision_id\": \"q18\",\n    \"subject\": \"\
+    Historical owner API claim $.ingredients[5].evidence[0]\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1540\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 6,\\n                        \\\"compound\\\
+    \": \\\"KCl\\\",\\n                        \\\"compound_id\\\": 61,\\n       \
+    \                 \\\"amount\\\": 0.74,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 0.74,\\n                 \
+    \       \\\"mmol_l\\\": 9.92622,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n          \"explanation\": \"Concentration evidence\
+    \ for ingredients[5].concentration (KCl) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[5].\
+    \ Provider explicitly reports g_l=0.74; check: 0.74 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.74 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1540\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1540\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.959653+00:00\"\
+    ,\n        \"http_status\": 503,\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"content_limit\": \"Unavailable exact public access retained with\
+    \ original time; no formula, identity absence or historical invalidity inferred.\"\
+    ,\n        \"source_amount_authenticated\": false,\n        \"limitation\": \"\
+    Original cited API response not recovered; this row retains exact local historical\
+    \ claim only.\"\n      }\n    ],\n    \"rationale\": \"Full local object retains\
+    \ amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time.\
+    \ Decoded plan agreement is not raw authentication; no current provider equivalence\
+    \ is asserted.\"\n  },\n  {\n    \"decision_id\": \"q19\",\n    \"subject\": \"\
+    Historical owner API claim $.ingredients[6].evidence[0]\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1540\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 7,\\n                        \\\"compound\\\
+    \": \\\"NH4Cl\\\",\\n                        \\\"compound_id\\\": 42,\\n     \
+    \                   \\\"amount\\\": 3,\\n                        \\\"unit\\\"\
+    : \\\"g\\\",\\n                        \\\"g_l\\\": 3,\\n                    \
+    \    \\\"mmol_l\\\": 56.0853,\\n                        \\\"optional\\\": 0\\\
+    n                    }\",\n          \"explanation\": \"Concentration evidence\
+    \ for ingredients[6].concentration (NH4Cl) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[6].\
+    \ Provider explicitly reports g_l=3; check: 3 g * 1 g/g / (1000 ml / 1000 ml per\
+    \ L) = 3 g/L. This supports the provider-declared main-recipe concentration, not\
+    \ an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1540\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1540\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.959653+00:00\"\
+    ,\n        \"http_status\": 503,\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"content_limit\": \"Unavailable exact public access retained with\
+    \ original time; no formula, identity absence or historical invalidity inferred.\"\
+    ,\n        \"source_amount_authenticated\": false,\n        \"limitation\": \"\
+    Original cited API response not recovered; this row retains exact local historical\
+    \ claim only.\"\n      }\n    ],\n    \"rationale\": \"Full local object retains\
+    \ amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time.\
+    \ Decoded plan agreement is not raw authentication; no current provider equivalence\
+    \ is asserted.\"\n  },\n  {\n    \"decision_id\": \"q20\",\n    \"subject\": \"\
+    Historical owner API claim $.ingredients[7].evidence[0]\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1540\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 8,\\n                        \\\"compound\\\
+    \": \\\"CaCl2\\\",\\n                        \\\"compound_id\\\": 81,\\n     \
+    \                   \\\"amount\\\": 0.15,\\n                        \\\"unit\\\
+    \": \\\"g\\\",\\n                        \\\"g_l\\\": 0.15,\\n               \
+    \         \\\"mmol_l\\\": 1.35159,\\n                        \\\"optional\\\"\
+    : 0\\n                    }\",\n          \"explanation\": \"Concentration evidence\
+    \ for ingredients[7].concentration (CaCl2) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[7].\
+    \ Provider explicitly reports g_l=0.15; check: 0.15 g * 1 g/g / (1000 ml / 1000\
+    \ ml per L) = 0.15 g/L. This supports the provider-declared main-recipe concentration,\
+    \ not an independently measured final volume, a stock composition, or a downstream\
+    \ assay dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved\
+    \ 2026-10-07T13:43:22.656633+00:00; response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1540\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1540\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.959653+00:00\"\
+    ,\n        \"http_status\": 503,\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"content_limit\": \"Unavailable exact public access retained with\
+    \ original time; no formula, identity absence or historical invalidity inferred.\"\
+    ,\n        \"source_amount_authenticated\": false,\n        \"limitation\": \"\
+    Original cited API response not recovered; this row retains exact local historical\
+    \ claim only.\"\n      }\n    ],\n    \"rationale\": \"Full local object retains\
+    \ amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time.\
+    \ Decoded plan agreement is not raw authentication; no current provider equivalence\
+    \ is asserted.\"\n  },\n  {\n    \"decision_id\": \"q21\",\n    \"subject\": \"\
+    Historical owner API claim $.ingredients[8].evidence[0]\",\n    \"decision\":\
+    \ \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bha_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].evidence[0]\",\n        \"stored\"\
+    : {\n          \"reference\": \"https://mediadive.dsmz.de/rest/medium/1540\",\n\
+    \          \"supports\": \"SUPPORT\",\n          \"snippet\": \"{\\n         \
+    \               \\\"recipe_order\\\": 10,\\n                        \\\"compound\\\
+    \": \\\"Agar\\\",\\n                        \\\"compound_id\\\": 3,\\n       \
+    \                 \\\"condition\\\": \\\"for solid medium\\\",\\n            \
+    \            \\\"amount\\\": 15,\\n                        \\\"unit\\\": \\\"\
+    g\\\",\\n                        \\\"g_l\\\": 15,\\n                        \\\
+    \"mmol_l\\\": 44.5991,\\n                        \\\"optional\\\": 0\\n      \
+    \              }\",\n          \"explanation\": \"Concentration evidence for ingredients[8].concentration\
+    \ (Agar) in MediaDive medium 1540; locator=$.data.solutions[0].recipe[9]. Provider\
+    \ explicitly reports g_l=15; check: 15 g * 1 g/g / (1000 ml / 1000 ml per L) =\
+    \ 15 g/L. This supports the provider-declared main-recipe concentration, not an\
+    \ independently measured final volume, a stock composition, or a downstream assay\
+    \ dilution. Water alone does not establish final volume. Exact source ingredient\
+    \ labels/forms are matched; secondary ontology mappings are not validated by this\
+    \ evidence. Source condition 'for solid medium' matches local physical_state=SOLID_AGAR.\
+    \ Additional exact value at $.data.solutions[0].volume (ml): 1000. Retrieved 2026-10-07T13:43:22.656633+00:00;\
+    \ response SHA256=c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3.\"\
+    \n        }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"mediadive1540\",\n        \"source_url\": \"https://mediadive.dsmz.de/rest/medium/1540\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.959653+00:00\"\
+    ,\n        \"http_status\": 503,\n        \"snapshot_sha256\": \"7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286\"\
+    ,\n        \"content_limit\": \"Unavailable exact public access retained with\
+    \ original time; no formula, identity absence or historical invalidity inferred.\"\
+    ,\n        \"source_amount_authenticated\": false,\n        \"limitation\": \"\
+    Original cited API response not recovered; this row retains exact local historical\
+    \ claim only.\"\n      }\n    ],\n    \"rationale\": \"Full local object retains\
+    \ amount, g_l, any mmol_l and claimed 1000 ml denominator with original hash/time.\
+    \ Decoded plan agreement is not raw authentication; no current provider equivalence\
+    \ is asserted.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.001018.tris-supplied-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Tris HCl is grounded to free-base tris
+  description: Both target and owner name Tris HCl 6 g/L; primary names Tris HCl 6
+    g. CHEBI:9754 canonical tris/formula C4H11NO3 represents the free base. Correct
+    canonical label metadata does not fix this supplied-form mismatch.
+  target_ids:
+  - CultureMech:001018
+  field_paths:
+  - ingredients[2].term
+  evidence_ids:
+  - primary-tris
+  - chebi9754
+  - grounding-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bha_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2 wrong supplied-form grounding
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.001018.ph-temperature-as-heat
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: pH measurement sentence is typed as HEAT
+  description: Both layers store HEAT for prose specifying final pH at 25 °C and optional
+    agar. Primary does not prescribe heating. Current keyword classifier provides
+    a bounded implementation risk, not proof of historical causation.
+  target_ids:
+  - CultureMech:001018
+  field_paths:
+  - preparation_steps[0].action
+  evidence_ids:
+  - record
+  - owner-0
+  - primary-ph-agar
+  - writer-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bha_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: current preparation parser and action classifier
+  rule_id: P2 preparation action semantics
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.001018.batch-basis-and-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Batch-water context and historical rate support remain incomplete
+  description: Local ingredients omit the primary water row and express all first-eight
+    masses as g/L. Their numerals agree with the nominal batch, but final volume is
+    not explicitly measured in the primary. Eight owner historical API rate objects
+    have unrecovered cited raw bytes; yeast extract lacks such an object. Preserve
+    nominal mass agreement and selected agar branch without treating derivative/provider
+    claims as authenticated final-volume evidence.
+  target_ids:
+  - CultureMech:001018
+  field_paths:
+  - ingredients
+  - references
+  evidence_ids:
+  - primary-table
+  - primary-ph-agar
+  - historical-inventory
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bha_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2 source-stage and evidence correspondence
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Resolve the exact salt identity from primary/source evidence before
+    changing the normalized grounding; do not invent a replacement identifier.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001018
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bha_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Represent measurement context and optional agar without an unsupported
+    heating operation; review current classifier under separately authorized implementation
+    work.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001018
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bha_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: current preparation parser and action classifier
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Retain source water/batch context and attach current primary claim-level
+    support; recover or explicitly qualify old API rate evidence before confirming
+    its denominator. Preserve existing history and later owner/generated differences.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001018
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bha_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current API 1540 returned 503; cited historical raw SHA c710f9aa7c1557c531dffaf80c4fce337ca1e187b4822382824abfe6b59136e3
+  was not recovered in the bounded owned-cache/report search. Eight existing owner
+  objects have decoded local plan/report matches only. Current PDF evidence is independent
+  and does not authenticate those historical API bytes.
+- Primary 25 °C is not an incubation or sterilization instruction. No operational
+  protocol is supplied beyond the narrowly compared published statements.
+- Current raw API failure is separate from exact-source PDF availability; partial
+  completion concerns historical evidence authentication, not inability to compare
+  the current primary.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-042
+- generated-medium
+```

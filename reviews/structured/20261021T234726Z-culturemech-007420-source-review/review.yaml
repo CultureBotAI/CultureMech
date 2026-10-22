@@ -1,0 +1,1337 @@
+schema_version: 1.0.0
+review_id: 20261021T234726Z-culturemech-007420-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bgdm (CultureMech:007420)'
+started_at: '2026-10-21T23:44:37Z'
+finished_at: '2026-10-21T23:47:26Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: BGDM retains twelve local millimolar claims, but the exact MediaDB formulation
+  and historical paper content remain unavailable. Current bibliography and species
+  synonym support identity only. The broad prior formulation issue remains open; the
+  generated record also omits later owner grounding and qualified citation context.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BGDM.yaml
+    sha256: 0a846d3e44b6a829ba3fe464683eb7c4d5d7732da6ba61dc1ba8cd900c36b920
+    role: target
+  - path: data/normalized_yaml/bacterial/bgdm.yaml
+    sha256: 296a5f942332e93893b06ff0e7af6abdbeb8c5c0c2d83a1b94bd1524db11671c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reviews/structured/20261013T205106Z-older-study-paper-citations/review.yaml
+    sha256: d7a814e8d92368c003a681a414d5c08491058c92063061ec66aa5b6481bee2cc
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_mediadb_ingredient_exceptions.py
+    sha256: b27949707826eff4b229a612875452098d7cb5f6b3c62c81d0997958a1886f59
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadb_raw_yaml.py
+    sha256: 2c8a64083ec095130cbf1cc87e2ba18a63a9437ca9772784d0932d12d42cab81
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadb_fetcher.py
+    sha256: 25e7d4bdb93551a01b7f54536de8884e7a5342453ffedc69bf45f91dbada1b11
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 411; batch 042 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-one task batches
+    contain 410 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 413 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007420
+targets:
+- target_id: CultureMech:007420
+  path: data/merge_yaml/merged/BGDM.yaml
+  label: bgdm
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bgdm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BGDM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BGDM.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch042/411/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-042/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch042/411/strict.tsv"
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BGDM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BGDM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007420
+- check_id: mediadbEntry-source-access
+  name: 'Exact source content access: mediadbEntry'
+  required: true
+  status: unavailable
+  summary: Exact MediaDB medium 72/source 20 formulation and original SQL join were
+    not recovered; public access returned HTTP 502. All twelve local amounts remain
+    unsupported by an inspected original formulation.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - mediadbEntry-attempt
+- check_id: paperSeddon1988-source-access
+  name: 'Exact source content access: paperSeddon1988'
+  required: true
+  status: unavailable
+  summary: The DOI returned HTTP 200 client-challenge HTML, not usable paper content.
+    Current access does not reverify historical abstract excerpts or the eight-unnamed-strains
+    statement.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - paperSeddon1988-attempt
+- check_id: seddon1988ObservedPDF-source-access
+  name: 'Exact source content access: seddon1988ObservedPDF'
+  required: false
+  status: unavailable
+  summary: The exact observed publisher PDF URL returned the same client challenge.
+    No usable full paper or additional quantity evidence was obtained.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - seddon1988ObservedPDF-attempt
+- check_id: legacy-correspondence
+  name: Historical legacy ingredient correspondence
+  required: true
+  status: unavailable
+  summary: No authenticated historical mapping for MediaIngredientMech:000223 is available;
+    current exact index absence is separately established.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - grounding-inventory
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BGDM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/bgdm.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BGDM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:44:53.983984Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BGDM.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch042/411/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:44:55.041118Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-042/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch042/411/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BGDM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:44:56.716716Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BGDM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T23:44:57.597979Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BGDM.yaml:1:id: CultureMech:007420
+
+    ./data/normalized_yaml/bacterial/bgdm.yaml:1:id: CultureMech:007420
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/source-preflight-bound/411/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: supports
+  summary: 20 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 0ffc6cfe116c40d539e9af8f981ddff17a252e4059ef89e2843709f790b1964f
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/411/grounding-inventory.json
+  locator: Complete pinned local/context inventory
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: All primary, current CHEBI secondary and legacy ingredient slots are retained,
+    with exact bound ontology responses and current index rows. Identifier existence
+    is not supplied-form verification.
+  snapshot_sha256: 6684df84e40924b2477aefbb7937cdcab8608a9df61a855c3074b04a4efcb0c0
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: 'CHEBI:131527: dipotassium hydrogen phosphate. Chemical correspondence
+    to the unavailable original formulation remains separate.'
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi16015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16015
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T08:42:30.847456Z'
+  support: supports
+  summary: 'CHEBI:16015: L-glutamic acid. Chemical correspondence to the unavailable
+    original formulation remains separate.'
+  snapshot_sha256: d4c039ee9f11823d174df5fa637b67506440f658c3492afcdf8032f0316f77d3
+- evidence_id: chebi16977
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16977
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T15:28:31.350568Z'
+  support: supports
+  summary: 'CHEBI:16977: L-alanine. Chemical correspondence to the unavailable original
+    formulation remains separate.'
+  snapshot_sha256: 26270a6494e38ac1668a42786239c2ad5e2de319005e9ce7b6b21cfe0818f62f
+- evidence_id: chebi17295
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17295
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T23:23:51.493648Z'
+  support: supports
+  summary: 'CHEBI:17295: L-phenylalanine. Chemical correspondence to the unavailable
+    original formulation remains separate.'
+  snapshot_sha256: bd8c336021ba86896d58e890e2106545b39b403cd8d60e7d1af644aae27af3f2
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: 'CHEBI:26710: sodium chloride. Chemical correspondence to the unavailable
+    original formulation remains separate.'
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi28869
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28869
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T09:27:39.892502Z'
+  support: supports
+  summary: 'CHEBI:28869: menadione. Chemical correspondence to the unavailable original
+    formulation remains separate.'
+  snapshot_sha256: 7d5bbd9644ae17adf1a4cf5660c04a06c2db3430709c2a0d2da9a026611d9444
+- evidence_id: chebi29995
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29995
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T23:23:51.613698Z'
+  support: supports
+  summary: 'CHEBI:29995: aspartate(2-). Chemical correspondence to the unavailable
+    original formulation remains separate.'
+  snapshot_sha256: e4677596d4880d04a917a342447148e2c7bab5c0d57f675aeb5fd6053dc803e8
+- evidence_id: chebi32599
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32599
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T08:42:45.640268Z'
+  support: supports
+  summary: 'CHEBI:32599: magnesium sulfate. Chemical correspondence to the unavailable
+    original formulation remains separate.'
+  snapshot_sha256: 5da4e37c63d52d06c19a75da5c03a8ba42e81db8b537a053285d895de8f2b9ff
+- evidence_id: chebi3312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_3312
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T07:16:24.822837Z'
+  support: supports
+  summary: 'CHEBI:3312: calcium dichloride. Chemical correspondence to the unavailable
+    original formulation remains separate.'
+  snapshot_sha256: 34ed49d95375c80dcb07576c67d04fa77337bfecf406accb283e8c32253b754b
+- evidence_id: chebi50385
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50385
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T09:27:40.648821Z'
+  support: supports
+  summary: 'CHEBI:50385: hemin. Chemical correspondence to the unavailable original
+    formulation remains separate.'
+  snapshot_sha256: b989203634707b89526a8664c8fa65cb4976c4cdd791427218cf01b37d17356e
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: 'CHEBI:63036: potassium dihydrogen phosphate. Chemical correspondence to
+    the unavailable original formulation remains separate.'
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi91247
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91247
+  locator: Exact OLS identifier, canonical label, obsolete flag, descriptions, synonyms
+    and annotation
+  accessed_at: '2026-10-21T09:27:41.606984Z'
+  support: supports
+  summary: 'CHEBI:91247: L-cysteine hydrochloride. Chemical correspondence to the
+    unavailable original formulation remains separate.'
+  snapshot_sha256: 8ff9a3639e1afba34c0d40072292486ff792c7b63a496d189a1cfeb2e6574890
+- evidence_id: bibliography
+  kind: database
+  reference: https://api.crossref.org/works/10.1007%2Fbf01573470
+  locator: '$.message: DOI, authors, title, year, journal, volume, issue, pages'
+  accessed_at: '2026-10-21T23:23:50.581966Z'
+  support: supports
+  summary: Current deposited metadata agrees with the owner Seddon et al. 1988 citation.
+    The deposited title spacing is retained; neither original typography nor formulation
+    is inferred.
+  snapshot_sha256: 64e307a3b6dd976e2c6690e041ca35a10895ac82909ff9569708848e72296f89
+- evidence_id: taxon
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=837&retmode=xml
+  locator: ./Taxon/TaxId, ScientificName, Rank, OtherNames
+  accessed_at: '2026-10-21T23:23:50.582160Z'
+  support: supports
+  summary: Current taxon 837 is Porphyromonas gingivalis at species rank with Bacteroides
+    gingivalis as a synonym. This supplies no strain-level or growth/formulation evidence.
+  snapshot_sha256: c318b8bb3113580b342f9685091c1bd098b07b330adc52dccf92b0f831eae792
+- evidence_id: mediadbEntry-attempt
+  kind: database
+  reference: https://mediadb.systemsbiology.net/
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T23:23:50.581550Z'
+  support: context_only
+  summary: Exact MediaDB medium 72/source 20 formulation and original SQL join were
+    not recovered; public access returned HTTP 502. All twelve local amounts remain
+    unsupported by an inspected original formulation.
+  snapshot_sha256: 76440d13ed742192bf6577638dbc565059fb80edab73982971686169bf58c273
+- evidence_id: paperSeddon1988-attempt
+  kind: database
+  reference: https://doi.org/10.1007/bf01573470
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T23:23:50.581808Z'
+  support: context_only
+  summary: The DOI returned HTTP 200 client-challenge HTML, not usable paper content.
+    Current access does not reverify historical abstract excerpts or the eight-unnamed-strains
+    statement.
+  snapshot_sha256: 32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea
+- evidence_id: seddon1988ObservedPDF-attempt
+  kind: database
+  reference: http://link.springer.com/content/pdf/10.1007/BF01573470.pdf
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-21T23:27:03.797274Z'
+  support: context_only
+  summary: The exact observed publisher PDF URL returned the same client challenge.
+    No usable full paper or additional quantity evidence was obtained.
+  snapshot_sha256: 32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea
+- evidence_id: prior-formulation
+  kind: record_content
+  reference: reviews/structured/20261013T205106Z-older-study-paper-citations/review.yaml
+  locator: findings[formulation-20], targets[CultureMech:007420], linked resolve-formulation-20
+    action
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: The prior partial review leaves exact chemical forms, amounts, preparation
+    and strain/assay attribution unresolved. Its abstract statements are historical
+    observations, not newly authenticated source text.
+  snapshot_sha256: d7a814e8d92368c003a681a414d5c08491058c92063061ec66aa5b6481bee2cc
+- evidence_id: historical-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/411/historical-evidence-inventory.json
+  locator: Complete pinned local/context inventory
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Complete bounded archive-search receipts and scoped historical citation-review
+    projection; claimed old snapshot hashes remain derivative claims, not recovered
+    originals.
+  snapshot_sha256: a9e394766b11bc58bef81f56fa7824cef6feff53644491d8b8011c1da2833472
+- evidence_id: archive-search
+  kind: search
+  reference: /private/tmp/culturemech-review-source-preflight-batch042/preparation-lineage/batch042-bgdm-bounded-archive-search.json
+  locator: Exact four named publisher/taxonomy archive basenames; identifier-string
+    follow-up
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Ignored-inclusive searches of 154 owned review/source/work roots found
+    references and an older structured review, but not the four named raw/Markdown
+    archive files. Sparse worktrees and excluded Git objects limit this result; it
+    is not universal byte absence.
+  snapshot_sha256: 45749ecfcf00cce0bece8f836d2246c7fe91cad889ec1e774ff9dd147302bb6a
+  search_scope: Owned /private/tmp CultureMech review worktrees, review work directories
+    and source caches only; rg --files --no-ignore --hidden excluding .git. Original
+    user checkout, unrelated temporary directories and Git object storage were excluded.
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadb_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Current importer maps explicit units and emits generic preparation including
+    0.22 µm filtration. This explains a present implementation risk, not historical
+    execution or paper support. Current repair and grounding code must be evaluated
+    against exact owner identity before a future change.
+  snapshot_sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/convert/mediadb_raw_yaml.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Current importer maps explicit units and emits generic preparation including
+    0.22 µm filtration. This explains a present implementation risk, not historical
+    execution or paper support. Current repair and grounding code must be evaluated
+    against exact owner identity before a future change.
+  snapshot_sha256: 2c8a64083ec095130cbf1cc87e2ba18a63a9437ca9772784d0932d12d42cab81
+- evidence_id: writer-2
+  kind: record_content
+  reference: scripts/repair_mediadb_ingredient_exceptions.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Current importer maps explicit units and emits generic preparation including
+    0.22 µm filtration. This explains a present implementation risk, not historical
+    execution or paper support. Current repair and grounding code must be evaluated
+    against exact owner identity before a future change.
+  snapshot_sha256: b27949707826eff4b229a612875452098d7cb5f6b3c62c81d0997958a1886f59
+- evidence_id: writer-3
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Current importer maps explicit units and emits generic preparation including
+    0.22 µm filtration. This explains a present implementation risk, not historical
+    execution or paper support. Current repair and grounding code must be evaluated
+    against exact owner identity before a future change.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BGDM.yaml; data/normalized_yaml/bacterial/bgdm.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 6, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/bgdm.yaml",
+    "events": 7, "timestamp_issues": []}]'
+- evidence_id: history-full
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/411/history-inventory.json
+  locator: Complete pinned local/context inventory
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Complete original target and owner history arrays; later owner grounding
+    and paper-citation events are absent from the older generated view.
+  snapshot_sha256: b516de3e0745851020d3c99fac0aae0962d61f57ceebd1bda358c775ceb15084
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch042/411/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T23:47:25Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 65e615131a3805fb6385df38499013f8f11df26665a9da369aeceb77d3db2805
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 13 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: identity
+  area: identity
+  topic: Stable owner and source identity
+  outcome: supported
+  summary: The target and sole maintained owner share CultureMech:007420 and MediaDB:72.
+    Current Crossref bibliography and taxonomy synonym support the cited publication/species
+    identities only; exact study-to-local-formulation attribution remains unresolved.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - record
+  - owner-0
+  - bibliography
+  - taxon
+  - prior-formulation
+- assessment_id: forms
+  area: grounding
+  topic: Complete metadata versus supplied-form support
+  outcome: concern
+  summary: All captured asserted ontology labels match their current canonical labels.
+    The generated target has 11 of 12 primary ingredient terms; the maintained owner
+    has 12 of 12, including CHEBI:29995 aspartate(2-). Each layer has four CHEBI-based
+    secondary slots and one legacy Cysteine-HCl link. Generic Alanine/Phenylalanine
+    labels do not authenticate source L stereochemistry; glutamate versus acid, aspartate
+    charge and salt/hydrate forms cannot be resolved without the original formulation.
+    CHEBI:131527 formula HO4P.2K lacks hydrate water despite its trihydrate synonym;
+    retain that internal tension without inventing a source mismatch.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - record
+  - owner-0
+  - grounding-inventory
+  - chebi131527
+  - chebi29995
+- assessment_id: legacy
+  area: grounding
+  topic: Legacy Cysteine-HCl identifier
+  outcome: unknown
+  summary: MediaIngredientMech:000223 has no exact row in the pinned current 9,077-row
+    index. This is a completed current negative lookup, not proof the historical identifier
+    was invalid. Historical correspondence remains unavailable; the separate CHEBI:91247
+    label is valid but does not reconstruct the legacy mapping.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - grounding-inventory
+  - chebi91247
+- assessment_id: preparation
+  area: completeness
+  topic: Generic import instructions versus source protocol
+  outcome: concern
+  summary: Dissolve/adjust-pH/filter instructions are stored in both layers. No usable
+    original source authenticates the 0.22 µm filter instruction, a pH value, water/final
+    volume, temperature or incubation conditions. The current importer returns the
+    same generic text, without proving the historical writer execution.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - record
+  - owner-0
+  - writer-0
+  - mediadbEntry-attempt
+  - paperSeddon1988-attempt
+- assessment_id: classification
+  area: completeness
+  topic: Record annotations and supported biological scope
+  outcome: unknown
+  summary: Both layers are classified as defined, liquid bacterial media with generic
+    applications. These annotations are locally consistent with the named source,
+    but current bibliography/taxonomy alone does not validate formulation completeness
+    or growth. No target-organism assertion or operational condition is added; KEGG
+    note strings are retained as local cross-references, not independently resolved
+    biochemical evidence.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - record
+  - owner-0
+  - bibliography
+  - taxon
+- assessment_id: citation-scope
+  area: evidence
+  topic: Historical citation and derivative limits
+  outcome: concern
+  summary: The owner preserves qualified paper notes and the earlier unresolved formulation
+    finding; the generated record lacks that citation. Current challenge responses
+    do not independently reverify the historical eight-unnamed-strains claim. Supplemented
+    media remain separate from the defined base; current taxonomic synonymy does not
+    certify strain identity or local recipe amounts.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - record
+  - owner-0
+  - prior-formulation
+  - historical-inventory
+  - archive-search
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 17 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007420
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"subject\": \"L-Glutamate\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n        \"field_path\"\
+    : \"ingredients[0].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.6797\",\n          \"unit\": \"MILLIMOLAR\"\n        }\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\",\n      \
+    \  \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.6797\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q2\",\n    \"subject\": \"\
+    Alanine\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n    \
+    \  {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n        \"field_path\"\
+    : \"ingredients[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"1.1224\",\n          \"unit\": \"MILLIMOLAR\"\n        }\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\",\n      \
+    \  \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.1224\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q3\",\n    \"subject\": \"\
+    Phenylalanine\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n        \"\
+    field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.6054\",\n          \"unit\": \"MILLIMOLAR\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.6054\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q4\",\n    \"subject\": \"\
+    Menadione\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n        \"field_path\"\
+    : \"ingredients[3].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.002904\",\n          \"unit\": \"MILLIMOLAR\"\n        }\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\",\n    \
+    \    \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.002904\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q5\",\n    \"subject\": \"\
+    Calcium chloride anhydrous\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n     \
+    \   \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.9011\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.9011\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q6\",\n    \"subject\": \"\
+    Potassium dibasic phosphate\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n     \
+    \   \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.1481\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.1481\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q7\",\n    \"subject\": \"\
+    Aspartate\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n  \
+    \    {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.7513\",\n          \"unit\": \"MILLIMOLAR\"\n        }\n      },\n     \
+    \ {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\",\n      \
+    \  \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.7513\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q8\",\n    \"subject\": \"\
+    Sodium chloride\",\n    \"decision\": \"unsupported\",\n    \"local_fields\":\
+    \ [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n     \
+    \   \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.7112\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.7112\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q9\",\n    \"subject\": \"\
+    Cysteine-HCl\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n\
+    \      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n        \"\
+    field_path\": \"ingredients[8].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.4758\",\n          \"unit\": \"MILLIMOLAR\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.4758\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n    \"subject\": \"\
+    Potassium dihydrogen phosphate\",\n    \"decision\": \"unsupported\",\n    \"\
+    local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.3483\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.3483\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q11\",\n    \"subject\": \"\
+    Magnesium sulfate\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n     \
+    \   \"field_path\": \"ingredients[10].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2.8401\",\n          \"unit\": \"MILLIMOLAR\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.8401\",\n          \"unit\": \"MILLIMOLAR\"\n  \
+    \      }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q12\",\n    \"subject\": \"\
+    Hemin\",\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n        \"field_path\"\
+    : \"ingredients[11].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.007669\",\n          \"unit\": \"MILLIMOLAR\"\n        }\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\",\n    \
+    \    \"field_path\": \"ingredients[11].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"0.007669\",\n          \"unit\": \"MILLIMOLAR\"\n    \
+    \    }\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Both layers retain this exact millimolar\
+    \ value. No inspected original formulation authenticates the amount, supplied\
+    \ chemical form or preparation basis; no mass conversion or replacement amount\
+    \ is proposed.\"\n  },\n  {\n    \"decision_id\": \"q13\",\n    \"subject\": \"\
+    Stored preparation step 1\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n     \
+    \   \"field_path\": \"preparation_steps[0]\",\n        \"stored\": {\n       \
+    \   \"step_number\": 1,\n          \"action\": \"DISSOLVE\",\n          \"description\"\
+    : \"Dissolve all ingredients in distilled water to specified concentrations\"\n\
+    \        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0]\",\n        \"stored\": {\n\
+    \          \"step_number\": 1,\n          \"action\": \"DISSOLVE\",\n        \
+    \  \"description\": \"Dissolve all ingredients in distilled water to specified\
+    \ concentrations\"\n        }\n      }\n    ],\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"paperSeddon1988\",\n        \"source_url\"\
+    : \"https://doi.org/10.1007/bf01573470\",\n        \"source_locator\": \"Preserved\
+    \ access attempt; formulation content unavailable\",\n        \"accessed_at\"\
+    : \"2026-10-21T23:23:50.581808+00:00\",\n        \"http_status\": 200,\n     \
+    \   \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact generic local instruction is retained;\
+    \ original water/final-volume or pH procedure is unavailable. No new quantitative\
+    \ procedure is inferred.\"\n  },\n  {\n    \"decision_id\": \"q14\",\n    \"subject\"\
+    : \"Stored preparation step 2\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n     \
+    \   \"field_path\": \"preparation_steps[1]\",\n        \"stored\": {\n       \
+    \   \"step_number\": 2,\n          \"action\": \"ADJUST_PH\",\n          \"description\"\
+    : \"Adjust pH if specified in original formulation\"\n        }\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\",\n   \
+    \     \"field_path\": \"preparation_steps[1]\",\n        \"stored\": {\n     \
+    \     \"step_number\": 2,\n          \"action\": \"ADJUST_PH\",\n          \"\
+    description\": \"Adjust pH if specified in original formulation\"\n        }\n\
+    \      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"paperSeddon1988\",\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\"\
+    ,\n        \"source_locator\": \"Preserved access attempt; formulation content\
+    \ unavailable\",\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\"\
+    ,\n        \"http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact generic local instruction is retained;\
+    \ original water/final-volume or pH procedure is unavailable. No new quantitative\
+    \ procedure is inferred.\"\n  },\n  {\n    \"decision_id\": \"q15\",\n    \"subject\"\
+    : \"Stored preparation step 3\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n     \
+    \   \"field_path\": \"preparation_steps[2]\",\n        \"stored\": {\n       \
+    \   \"step_number\": 3,\n          \"action\": \"FILTER_STERILIZE\",\n       \
+    \   \"description\": \"Sterilize by filtration (0.22 μm) to preserve heat-sensitive\
+    \ components\"\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2]\",\n        \"stored\": {\n\
+    \          \"step_number\": 3,\n          \"action\": \"FILTER_STERILIZE\",\n\
+    \          \"description\": \"Sterilize by filtration (0.22 μm) to preserve heat-sensitive\
+    \ components\"\n        }\n      }\n    ],\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"paperSeddon1988\",\n        \"source_url\": \"\
+    https://doi.org/10.1007/bf01573470\",\n        \"source_locator\": \"Preserved\
+    \ access attempt; formulation content unavailable\",\n        \"accessed_at\"\
+    : \"2026-10-21T23:23:50.581808+00:00\",\n        \"http_status\": 200,\n     \
+    \   \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"Exact local instruction is recorded, including\
+    \ its action and text. Current importer correspondence is implementation context\
+    \ only. In particular the stored 0.22 µm filtration specification is not primary-source\
+    \ authenticated.\"\n  },\n  {\n    \"decision_id\": \"q16\",\n    \"subject\"\
+    : \"Unspecified ph\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\",\n     \
+    \   \"field_path\": \"ph\",\n        \"stored\": null\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\",\n        \"field_path\"\
+    : \"ph\",\n        \"stored\": null\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"paperSeddon1988\",\n        \"source_url\"\
+    : \"https://doi.org/10.1007/bf01573470\",\n        \"source_locator\": \"Preserved\
+    \ access attempt; formulation content unavailable\",\n        \"accessed_at\"\
+    : \"2026-10-21T23:23:50.581808+00:00\",\n        \"http_status\": 200,\n     \
+    \   \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"No local scalar or authenticated source\
+    \ value is available; leave unspecified rather than infer a condition from organism\
+    \ identity or bibliography.\"\n  },\n  {\n    \"decision_id\": \"q17\",\n    \"\
+    subject\": \"Unspecified temperature\",\n    \"decision\": \"not_quantified\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BGDM.yaml\"\
+    ,\n        \"field_path\": \"temperature\",\n        \"stored\": null\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/bgdm.yaml\",\n \
+    \       \"field_path\": \"temperature\",\n        \"stored\": null\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"paperSeddon1988\"\
+    ,\n        \"source_url\": \"https://doi.org/10.1007/bf01573470\",\n        \"\
+    source_locator\": \"Preserved access attempt; formulation content unavailable\"\
+    ,\n        \"accessed_at\": \"2026-10-21T23:23:50.581808+00:00\",\n        \"\
+    http_status\": 200,\n        \"snapshot_sha256\": \"32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea\"\
+    ,\n        \"content_limit\": \"HTTP 200 HTML client challenge, not usable article\
+    \ or formula. Original failed-content bytes retained.\",\n        \"source_amount_authenticated\"\
+    : false,\n        \"limitation\": \"Original formulation unavailable; exact local\
+    \ amount retained as an unsupported claim, without a fabricated source quote.\"\
+    \n      }\n    ],\n    \"rationale\": \"No local scalar or authenticated source\
+    \ value is available; leave unspecified rather than infer a condition from organism\
+    \ identity or bibliography.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: older-study-citations-formulation-20
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: 'Exact local-formulation assignment remains unresolved: source 20'
+  description: 'Continue the entire earlier open issue: exact chemical forms, twelve
+    amounts, preparation statements and assay/strain attribution remain unresolved.
+    The owner historical abstract description, including eight unnamed strains, is
+    preserved as a prior observation and is not reverified by current challenge pages.
+    Supplemented formulations cannot certify the defined base. Deposited title spacing
+    is bibliographic metadata, not evidence of original typography.'
+  target_ids:
+  - CultureMech:007420
+  field_paths:
+  - ingredients
+  - references
+  - preparation_steps
+  evidence_ids:
+  - prior-formulation
+  - historical-inventory
+  - archive-search
+  - quantity-inventory
+  - paperSeddon1988-attempt
+  - mediadbEntry-attempt
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bgdm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2 source/evidence completeness
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+  previous_occurrences:
+  - repository: culturebotai/CultureMech
+    review_id: 20261013T205106Z-older-study-paper-citations
+    finding_id: formulation-20
+- finding_id: f2
+  issue_key: culturemech.007420.generated-owner-drift
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated view omits later owner grounding and qualified citation
+  description: The owner has an aspartate(2-) term and a scoped Seddon citation with
+    explicit unresolved-formulation notes. The generated target has neither. This
+    is observed layer drift, not proof the current guarded merger caused it or that
+    the owner formulation is authenticated.
+  target_ids:
+  - CultureMech:007420
+  field_paths:
+  - ingredients[6].term
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - grounding-inventory
+  - history-full
+  - prior-formulation
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bgdm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2 generated-input correspondence
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.007420.legacy-link-unresolved
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Legacy ingredient correspondence remains unresolved
+  description: Both layers assert MediaIngredientMech:000223. Exact current index
+    lookup returns no row, while historical mapping evidence is unavailable. Do not
+    label the old identifier historically invalid or silently substitute an inferred
+    mapping.
+  target_ids:
+  - CultureMech:007420
+  field_paths:
+  - ingredients[8].mediaingredientmech_term
+  evidence_ids:
+  - grounding-inventory
+  - chebi91247
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bgdm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.1 current linkage / historical correspondence unresolved
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Preserve the broad open lineage and resolve original source/formulation
+    correspondence before formula approval; keep historical statements qualified and
+    avoid new growth or operational claims.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007420
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bgdm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Authenticate exact original source and historical archive bytes, or retain their
+    explicit unavailability.
+  - Account for every chemical form, local amount, preparation statement and study/strain
+    assignment without transferring supplemented variants.
+  - Retain the earlier issue key and affected target; do not close or narrow unresolved
+    prior scope.
+- action_id: a2
+  description: Inspect maintained-owner inclusion and generation chronology; preserve
+    qualified citation and grounding metadata in any separately authorized regeneration
+    after source verification.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007420
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bgdm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Reconcile the exact historical legacy assertion with an authenticated
+    mapping or document unresolved linkage; any later replacement must use independently
+    verified ingredient identity.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007420
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/bgdm.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Exact MediaDB medium 72/source 20 formulation and original SQL join were not recovered;
+  public access returned HTTP 502. All twelve local amounts remain unsupported by
+  an inspected original formulation.
+- The DOI returned HTTP 200 client-challenge HTML, not usable paper content. Current
+  access does not reverify historical abstract excerpts or the eight-unnamed-strains
+  statement.
+- The exact observed publisher PDF URL returned the same client challenge. No usable
+  full paper or additional quantity evidence was obtained.
+- Current ontology and bibliographic metadata do not establish the original medium
+  formulation, strain-specific growth or experimental performance.
+- No historical raw source was reconstructed from agreement between owner notes and
+  the older structured review.
+- The current catalog lookup cannot establish historical validity of the legacy identifier.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-042
+- generated-medium
