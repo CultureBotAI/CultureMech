@@ -3,6 +3,7 @@ name: bap_medium_for_frankia_jcm_1492
 original_name: BAP+ MEDIUM FOR FRANKIA
 category: bacterial
 medium_type: COMPLEX
+composition_type: UNDEFINED
 physical_state: LIQUID
 ph_value: 6.7
 media_term:

@@ -1,7 +1,7 @@
 {
   "generated": "2026-10-10T07:56:17.845607+00:00",
   "category": "bacterial",
-  "count": 14329,
+  "count": 14333,
   "recipes": {
     "CultureMech:002439": {
       "name": "0_01_lb_seawater_medium",
@@ -2693,6 +2693,19 @@
         "bacterial"
       ]
     },
+    "CultureMech:015917": {
+      "name": "modified_ureaplasma_medium",
+      "filename": "JCM_J1476_MODIFIED_UREAPLASMA_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015917",
+      "source_id": "jcm.grmd:1476",
+      "source": "unknown",
+      "solution_count": 3,
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
+    },
     "CultureMech:015876": {
       "name": "gibbons_modified_medium",
       "filename": "JCM_J1477_GIBBONS_MODIFIED_MEDIUM.yaml",
@@ -2715,6 +2728,32 @@
         "bacterial"
       ]
     },
+    "CultureMech:015918": {
+      "name": "ammonia_oxidizing_bacteria_medium",
+      "filename": "JCM_J1483_AMMONIA_OXIDIZING_BACTERIA_MEDIUM.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015918",
+      "source_id": "jcm.grmd:1483",
+      "source": "unknown",
+      "solution_count": 3,
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
+    },
+    "CultureMech:015919": {
+      "name": "bap_medium_for_frankia_jcm_1492",
+      "filename": "JCM_J1492_BAP_MEDIUM_FOR_FRANKIA.yaml",
+      "ingredient_count": 6,
+      "id": "CultureMech:015919",
+      "source_id": "jcm.grmd:1492",
+      "source": "unknown",
+      "solution_count": 4,
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
+    },
     "CultureMech:002506": {
       "name": "oatmeal_agar",
       "filename": "JCM_J148_OATMEAL_AGAR.yaml",
@@ -2736,6 +2775,19 @@
       "categories": [
         "bacterial"
       ]
+    },
+    "CultureMech:015920": {
+      "name": "autotrophic_nitrobacter_medium_jcm_1503",
+      "filename": "JCM_J1503_AUTOTROPHIC_NITROBACTER_MEDIUM.yaml",
+      "ingredient_count": 3,
+      "id": "CultureMech:015920",
+      "source_id": "jcm.grmd:1503",
+      "source": "unknown",
+      "solution_count": 2,
+      "categories": [
+        "bacterial"
+      ],
+      "has_hierarchy_enrichment": true
     },
     "CultureMech:002509": {
       "name": "corn_meal_agar",

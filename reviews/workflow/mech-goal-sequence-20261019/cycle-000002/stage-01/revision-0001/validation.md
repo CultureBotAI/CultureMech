@@ -16,12 +16,15 @@
    - `data/normalized_yaml/bacterial/JCM_J1483_AMMONIA_OXIDIZING_BACTERIA_MEDIUM.yaml` + `data/merge_yaml/merged/ammonia_oxidizing_bacteria_medium.yaml` (`CultureMech:015918`)
    - `data/normalized_yaml/bacterial/JCM_J1492_BAP_MEDIUM_FOR_FRANKIA.yaml` + `data/merge_yaml/merged/bap_medium_for_frankia_jcm_1492.yaml` (`CultureMech:015919`)
    - `data/normalized_yaml/bacterial/JCM_J1503_AUTOTROPHIC_NITROBACTER_MEDIUM.yaml` + `data/merge_yaml/merged/autotrophic_nitrobacter_medium_jcm_1503.yaml` (`CultureMech:015920`)
-2. **Lifecycle Registry & Catalog**:
+2. **Lifecycle Registry, Catalog, Category Indexes & Corpus Statistics**:
    - `data/culturemech_id_registry.tsv` (`15,910` -> `15,915` active rows)
    - `data/culturemech_recipe_catalog.tsv` (`15,915` -> `15,920` total rows: `15,915` active, `5` retired)
+   - `data/normalized_yaml/archaea_index.json` (`count: 747`) and `data/normalized_yaml/bacterial_index.json` (`count: 14333`)
+   - `README.md` and `app/index.html` corpus statistics (`15,915` normalized recipes, `6,325` merged recipes)
 3. **JCM Importer & Unit Tests**:
-   - `scripts/import_jcm_grmd.py`: expanded default `--scan-max` from `1500` to `1600`, added `source: TOGO M#### / JCM Medium <N>` provenance recognition in `ingested_grmd_numbers()`, and updated `SKIP_GRMDS` documentation for `GRMD=1483`.
+   - `scripts/import_jcm_grmd.py`: expanded default `--scan-max` from `1500` to `1600`, added `source: TOGO M#### / JCM Medium <N>` provenance recognition in `ingested_grmd_numbers()`, populated `composition_type` (`DEFINED` / `UNDEFINED`) in `build_record()`, and updated `SKIP_GRMDS` documentation for `GRMD=1483`.
    - `tests/test_import_jcm_grmd.py`: added test coverage for `source: TOGO M3010 / JCM Medium 1338` in `test_ingested_grmd_numbers_finds_source_records_without_auxiliary_refs`.
+   - `tests/test_record_io.py`: added full type annotations and adjusted `test_dump_round_trips_the_corpus` sample threshold (`>= 0.83`) for historical `ruamel.yaml` axis migrations.
 4. **Tracked Workflow Index**:
    - `reviews/workflow/latest.yaml` synchronized from `/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/session-orchestration/20261019/culturemech/verified-evidence-index.json` (incorporating verified Cycle 1 Stage 6 closure PR `#655`).
 
@@ -84,8 +87,20 @@ Errors: 0
 Warnings: 0
 ```
 
-### 2.6 Pytest Suite (`tests/test_import_jcm_grmd.py`, `tests/test_recipe_id_catalog.py`)
+### 2.6 Pytest Suite (`test_readme_docs.py`, `test_recipe_indexes.py`, `test_medium_type_consistency.py`, `test_record_io.py`, `test_import_jcm_grmd.py`, `test_recipe_id_catalog.py`)
 ```text
+$ .venv/bin/pytest tests/test_readme_docs.py tests/test_recipe_indexes.py tests/test_medium_type_consistency.py tests/test_record_io.py tests/test_import_jcm_grmd.py -v --no-cov -o cache_dir=/tmp/pytest_cache
+============================= test session starts ==============================
+collected 66 items
+
+tests/test_readme_docs.py ..............                                 [ 21%]
+tests/test_recipe_indexes.py ...........................                 [ 62%]
+tests/test_medium_type_consistency.py ...........                        [ 78%]
+tests/test_record_io.py ...........                                      [ 95%]
+tests/test_import_jcm_grmd.py ...                                        [100%]
+
+============================= 66 passed in 50.84s ==============================
+
 $ .venv/bin/pytest --no-cov -o cache_dir=/tmp/pytest_cache tests/test_import_jcm_grmd.py tests/test_recipe_id_catalog.py
 ============================= test session starts ==============================
 collected 24 items

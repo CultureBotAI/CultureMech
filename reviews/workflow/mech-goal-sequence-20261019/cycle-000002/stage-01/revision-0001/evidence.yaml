@@ -23,7 +23,7 @@ artifacts:
     sha256: e4cb0d484e905ae8759f565dc81accf624d71f6ea8f22960b46806a1bb3be96f
     kind: supporting
   - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-01/revision-0001/validation.md
-    sha256: cf67c18b924f8b748f8e3e145a78c6a1f670f5045fbc11716074023b64ac2637
+    sha256: c569f4b47b7d180b73fdcaef15f2296d4b0e89154b30e42a28d218709ccf1c7d
     kind: validation
 findings: []
 groups: []

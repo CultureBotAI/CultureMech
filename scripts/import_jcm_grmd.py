@@ -307,6 +307,7 @@ def build_record(grmd: int, page_html: str, cm_id: str) -> dict | None:
         "original_name": name,
         "category": "bacterial",
         "medium_type": medium_type,
+        "composition_type": "UNDEFINED" if medium_type == "COMPLEX" else "DEFINED",
         "physical_state": physical,
     }
     if ph is not None:

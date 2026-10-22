@@ -3,6 +3,7 @@ name: autotrophic_nitrobacter_medium_jcm_1503
 original_name: AUTOTROPHIC NITROBACTER MEDIUM
 category: bacterial
 medium_type: DEFINED
+composition_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.3
 media_term:
