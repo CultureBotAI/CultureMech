@@ -1,0 +1,2137 @@
+schema_version: 1.0.0
+review_id: 20261022T012513Z-culturemech-005245-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: blood_agar_i (CultureMech:005245)'
+started_at: '2026-10-22T01:04:14Z'
+finished_at: '2026-10-22T01:25:13Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSM420 specifies an Oxoid blood agar plate with sterile horse blood, while
+  the generated record mixes that plate with alternative rehydration media and an
+  unestablished commercial BHI expansion. Three maintained owners have already repaired
+  doubled agar; the generated value remains stale. The DSM4690 variant and exact proprietary
+  base remain unresolved.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+    sha256: efcacd6e388c1a93aaa9df027140737014b40f2d33c297925707f0125b535c49
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    sha256: 67cb697357ff489e84f289931510f74bcaae36f9aa7ba2ebd02f55f7df656c68
+    role: context
+  - path: data/normalized_yaml/bacterial/bhi_medium.yaml
+    sha256: d146d67ef61790aa0f3b38bb179656782ecddb891d2e0528ab42d4ccab93b33e
+    role: context
+  - path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    sha256: bb23b907a0f641208bf86f99f377f7866cf079263e9edf933123bf084d3b61c7
+    role: context
+  - path: data/normalized_yaml/bacterial/caso_agar_merck_105458.yaml
+    sha256: 0ba7e31982fb89c2aea1c6da35f01d304dbeec61c3115c20a8ad13665e4b7b1d
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    sha256: cf98aeb6d87c80251af031ad05c88a1cdf2782c30a0e3ae75e58bfa0c1200b13
+    role: context
+  - path: data/normalized_yaml/bacterial/nutrient_agar.yaml
+    sha256: 0bf78efe34d289f56275a1beaba73092f73b02495d30886928e7a2376b0f7144
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/plan.json
+    sha256: 5a48b07490ce656e22f5742a30b6c1bdae479f575388bea6551bad9ccdd051c0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml.md
+    sha256: e6025848ccb34c22a44e3d6b77276ec1ff8f5b74b15d2ff00de00acb2a49a013
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/medium_420_modified_for_dsm_4690.yaml.md
+    sha256: 3a8f63e3bcfef74c1e6612c0139e7481e2b44ea7c77b62acb289ec776c8ce22b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+    sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/blood_agar_i.yaml.md
+    sha256: 599c0b6e683e7dfa41ad380bab8e1aa48da21fbaf66492dc78cea94ab437b019
+    role: context
+  - path: reports/yaml_record_review/20260921T222842Z-BLOOD_AGAR_I.md
+    sha256: 27b453b7363d7c26396e9b8aa0ae5478f684a6eaa0db0452480fdf46111801e6
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 431; batch 044 item 1 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-three task batches
+    contain 430 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 433 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005245
+targets:
+- target_id: CultureMech:005245
+  path: data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+  label: blood_agar_i
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BLOOD_AGAR_I.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch044/431/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-044/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch044/431/strict.tsv"
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:005245
+- check_id: mediadive420api-source-access
+  name: 'Exact source content access: mediadive420api'
+  required: true
+  status: unavailable
+  summary: Current exact DSM420 API capture returned503; historical report snippets
+    are derivatives, not recovered original API bytes.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - mediadive420api-attempt
+- check_id: komodoDetail420-source-access
+  name: 'Exact source content access: komodoDetail420'
+  required: true
+  status: unavailable
+  summary: KOMODO420 detailed page returned403; exact base product representation
+    remains unavailable.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - komodoDetail420-attempt
+- check_id: komodoDetail420_4690-source-access
+  name: 'Exact source content access: komodoDetail420_4690'
+  required: true
+  status: unavailable
+  summary: KOMODO420_4690 detailed page returned403; exact DSM4690 variant formulation
+    remains unavailable.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - komodoDetail420_4690-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/blood_agar_i.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:07:34.962098Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BLOOD_AGAR_I.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch044/431/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:07:36.546883Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-044/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch044/431/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:07:40.111480Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BLOOD_AGAR_I.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:07:41.395705Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: supports
+  summary: './data/merge_yaml/merged/BLOOD_AGAR_I.yaml:1:id: CultureMech:005245
+
+    ./data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml:1:id: CultureMech:005245
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/source-preflight-bound/431/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: supports
+  summary: 19 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 3396496855adf4bdd7a3fae2931154a5a1f3f7c004c0ff273283ec65105091db
+- evidence_id: main
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T00:53:52.317673Z'
+  support: supports
+  summary: DSM420 main Oxoid plate and separately scoped rehydration alternatives;
+    no proprietary base dose or complete composition is printed.
+  quote: 40 ml/l of
+  snapshot_sha256: 2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4
+- evidence_id: rehydration1
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T12:53:02.059294Z'
+  support: supports
+  summary: Medium1 is an alternative liquid rehydration medium here; its optional
+    agar, pH and Bacillus supplement do not belong automatically to the blood agar
+    plate.
+  snapshot_sha256: 95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f
+- evidence_id: rehydration220
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T00:53:54.971324Z'
+  support: supports
+  summary: Medium220 is an alternative liquid rehydration medium here; its basal quantities
+    and strain-specific modifications are not plate additions.
+  snapshot_sha256: 7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8
+- evidence_id: rehydration215
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium215.pdf
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T00:04:48.178932Z'
+  support: supports
+  summary: Medium215 uses Difco BHI37g and water1000ml for rehydration; this does
+    not equate Difco BHI with Oxoid blood agar No2.
+  snapshot_sha256: 2e9549379b1decf70b72e2d27ca9604f6f8e169ba11675daefc8953a43de1ba5
+- evidence_id: secondary-bhi
+  kind: database
+  reference: https://microbenotes.com/brain-heart-infusion-bhi-agar/
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:28.042848Z'
+  support: supports
+  summary: Secondary BHI discussion is not an exact specification of Oxoid blood agar
+    No2 or proof of the local BD237500 product identity. Its table prints infusion
+    powders, not the asserted200/250g tissue equivalents.
+  quote: HM infusion powder 12.500 BHI powder 5.000
+  snapshot_sha256: b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01
+- evidence_id: catalog
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: Exact catalog420 and420_4690 rows identify distinct accessions; shared
+    basal attribution does not settle variant4690 formulation.
+  quote: BLOOD AGAR I
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: mediadive420api-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/420
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:53:52.317805Z'
+  support: context_only
+  summary: Current exact DSM420 API capture returned503; historical report snippets
+    are derivatives, not recovered original API bytes.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodoDetail420-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=420
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:54:35.179818Z'
+  support: context_only
+  summary: KOMODO420 detailed page returned403; exact base product representation
+    remains unavailable.
+  snapshot_sha256: d4c5baeade9203445e7ca63ebd7fb917c3e3e92cca499225838eda84c8076bc0
+- evidence_id: komodoDetail420_4690-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=420_4690
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:54:35.250077Z'
+  support: context_only
+  summary: KOMODO420_4690 detailed page returned403; exact DSM4690 variant formulation
+    remains unavailable.
+  snapshot_sha256: b41173c4e2165b3c97e14cea294cfab0bcf32eb817b970f7015e1f9944bd6d14
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. Full captured scientific properties, annotations
+    and synonyms inspected; identifier validity is separate from exact supplied-form
+    support.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: uberon0000955
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000955
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:43:25.122940Z'
+  support: supports
+  summary: UBERON:0000955 resolves to brain. Full captured scientific properties,
+    annotations and synonyms inspected; identifier validity is separate from exact
+    supplied-form support.
+  snapshot_sha256: ce200fe58b82652d0f04310c92d23633919fa6ad6aee2a17c6b25c2e490a8877
+- evidence_id: uberon0000948
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUBERON_0000948
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:43:24.915343Z'
+  support: supports
+  summary: UBERON:0000948 resolves to heart. Full captured scientific properties,
+    annotations and synonyms inspected; identifier validity is separate from exact
+    supplied-form support.
+  snapshot_sha256: c658bbcacd89befa47e3bd4859f176db247b3ce67483b6590c91d0865d41aed4
+- evidence_id: micro0000180
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000180
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:43:24.290496Z'
+  support: supports
+  summary: MICRO:0000180 resolves to proteose peptone. Full captured scientific properties,
+    annotations and synonyms inspected; identifier validity is separate from exact
+    supplied-form support.
+  snapshot_sha256: b3a39a531c5ab5508a297228d13ba81c99899b041d5292a9d668eded939bfe73
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose. Full captured scientific properties,
+    annotations and synonyms inspected; identifier validity is separate from exact
+    supplied-form support.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Full captured scientific properties,
+    annotations and synonyms inspected; identifier validity is separate from exact
+    supplied-form support.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:46.851695Z'
+  support: supports
+  summary: CHEBI:34683 resolves to disodium hydrogenphosphate. Full captured scientific
+    properties, annotations and synonyms inspected; identifier validity is separate
+    from exact supplied-form support.
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/431/grounding-inventory.json
+  locator: Every asserted primary/secondary slot; exact captured OLS objects and pinned
+    current MIM rows
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Complete local slot correspondence, canonical labels and supplied-form
+    distinctions. No invented IDs for unresolved complex products.
+  snapshot_sha256: ee2009ffdd70b0e99c325daa735c51ab6d6bcb56a016ca18eb280ab846b9c7fc
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BLOOD_AGAR_I.yaml; data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml;
+    data/normalized_yaml/bacterial/blood_agar_i.yaml; data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": [{"index": 0, "issue":
+    "malformed timestamp", "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue":
+    "timezone absent", "value": "2026-02-03T11:19:01.872115"}]}, {"input": "data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:01.872115"}]}, {"input": "data/normalized_yaml/bacterial/blood_agar_i.yaml",
+    "events": 7, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml",
+    "events": 8, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:02.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:54.162043"}]}]'
+- evidence_id: history-evidence
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/431/history-evidence-inventory.json
+  locator: Full current history/evidence arrays and exact relevant historical report
+    joins
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: All target and three maintained-owner history/evidence arrays were read.
+    None attaches concentration evidence to the plate fields. Historical DSM420/KOMODO420/4690
+    plan rows are derivative conflict/withholding decisions, not raw authentication;
+    the three nutrient-medium1 attached claims belong only to the dependency and do
+    not transfer. Current403/503 failures are retained. All three owners explicitly
+    credit the September duplicate repair; the August target predates it. Malformed
+    .fZ and timezone-naive historical events are retained rather than silently repaired.
+  snapshot_sha256: c0210b55c630692f5f49466c933b2240b4cc6402d9f6f6b59982a90c20c6506e
+- evidence_id: writer-0
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Read current exact duplicate-repair and formulation-compatible merge functions.
+    Repair changes identical15+15 to15 without source lookup; current merger rejects
+    incompatible formulations. Existing artifact/history does not prove current code
+    caused the older flattening.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Read current exact duplicate-repair and formulation-compatible merge functions.
+    Repair changes identical15+15 to15 without source lookup; current merger rejects
+    incompatible formulations. Existing artifact/history does not prove current code
+    caused the older flattening.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Read current exact duplicate-repair and formulation-compatible merge functions.
+    Repair changes identical15+15 to15 without source lookup; current merger rejects
+    incompatible formulations. Existing artifact/history does not prove current code
+    caused the older flattening.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/431/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T01:25:12Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 55a5e09fb51afd49b7178c9ec82c0e2ab7b4f4c450bedec560c56219fdac618e
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Current identifiers, canonical labels and exact source forms
+  outcome: supported
+  summary: 40 asserted primary/secondary slots and 7 distinct captured IDs checked;
+    0 literal label differences. All 8 current secondary assertions join exact preferred-term
+    MIM rows; no selected legacy ID slots. Target direct ingredient linkage is 8/14
+    primary (57.14%) and 2/14 secondary (14.29%) on a 0–100 linkage scale, not an
+    accuracy score. All selected labels match captured canonical labels. Generic UBERON
+    brain/heart do not establish calf/beef species, infusion processing or product
+    equivalence. Valid peptone, glucose, salt, phosphate and agar IDs do not validate
+    their inclusion in this plate; missing complex-product links remain explicit.
+    No density, hydrate or proprietary composition inferred.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - record
+  - grounding-inventory
+  - chebi2509
+  - uberon0000955
+  - uberon0000948
+  - micro0000180
+  - chebi17634
+  - chebi26710
+  - chebi34683
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 32 timestamp instances inspected; 6 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Attached evidence, historical derivatives and source versions
+  outcome: concern
+  summary: All target and three maintained-owner history/evidence arrays were read.
+    None attaches concentration evidence to the plate fields. Historical DSM420/KOMODO420/4690
+    plan rows are derivative conflict/withholding decisions, not raw authentication;
+    the three nutrient-medium1 attached claims belong only to the dependency and do
+    not transfer. Current403/503 failures are retained. All three owners explicitly
+    credit the September duplicate repair; the August target predates it. Malformed
+    .fZ and timezone-naive historical events are retained rather than silently repaired.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - record
+  - history-evidence
+  - bound-source-integrity
+- assessment_id: identity
+  area: identity
+  topic: Plate, rehydration alternatives and named variant
+  outcome: concern
+  summary: DSM420 Oxoid plate identity is resolved; medium1/220/215 are rehydration
+    choices, not ingredients. The local4690 contributor has a distinct accession and
+    unavailable detailed formulation; current equality of copied local fields does
+    not authenticate scientific equivalence.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - main
+  - rehydration1
+  - rehydration220
+  - rehydration215
+  - catalog
+- assessment_id: conditions
+  area: completeness
+  topic: Preparation, pH and growth scope
+  outcome: concern
+  summary: The plate needs50C cooling and sterile horse blood40ml/l. pH7.0, Bacillus
+    MnSO4 and pH7.3 are parent rehydration contexts. No main incubation, strain-specific
+    growth evidence or final-volume measurement is supplied. Helicobacter/Campylobacter
+    mentions concern rehydration only; no growth claim is inferred.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - main
+  - rehydration1
+  - rehydration220
+  - secondary-bhi
+- assessment_id: classification
+  area: scope
+  topic: Current classification and ownership
+  outcome: supported
+  summary: Complex/undefined solid blood agar is appropriate. The generic microbial-cultivation
+    application is not observed growth. Exact three maintained contributors and generated
+    ownership are established; no recipe or current source was changed.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - record
+  - main
+  - bound-source-integrity
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 30 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:005245
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"Blood agar No 2\
+    \ — each target/owner concentration\",\n    \"decision\": \"unsupported\",\n \
+    \   \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"1000\",\n          \"unit\": \"G_PER_L\"\n        },\n    \
+    \    \"decision\": \"unsupported\",\n        \"rationale\": \"The main primary\
+    \ does not establish this amount or ingredient as part of Oxoid blood agar No2.\
+    \ Retain the observed value as unresolved rather than supplying a proprietary\
+    \ formulation.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The main\
+    \ primary does not establish this amount or ingredient as part of Oxoid blood\
+    \ agar No2. Retain the observed value as unresolved rather than supplying a proprietary\
+    \ formulation.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The main\
+    \ primary does not establish this amount or ingredient as part of Oxoid blood\
+    \ agar No2. Retain the observed value as unresolved rather than supplying a proprietary\
+    \ formulation.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1000\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. The main primary does not establish this amount\
+    \ or ingredient as part of Oxoid blood agar No2. Retain the observed value as\
+    \ unresolved rather than supplying a proprietary formulation.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz420\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"The main primary does not establish this\
+    \ amount or ingredient as part of Oxoid blood agar No2. Retain the observed value\
+    \ as unresolved rather than supplying a proprietary formulation.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q2\",\n    \"topic\": \"Horse blood — each target/owner\
+    \ concentration\",\n    \"decision\": \"correct\",\n    \"layer_decisions\": [\n\
+    \      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"40\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"The exact basal DSM420 instruction gives40ml/l sterile horse blood, not40g/L.\
+    \ Correct the dimensional claim with source linkage, without assuming blood density.\
+    \ This recommendation is conditional for the unresolved DSM4690 variant.\"\n \
+    \     },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The exact basal\
+    \ DSM420 instruction gives40ml/l sterile horse blood, not40g/L. Correct the dimensional\
+    \ claim with source linkage, without assuming blood density. This recommendation\
+    \ is conditional for the unresolved DSM4690 variant.\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\",\n    \
+    \    \"field_path\": \"ingredients[1].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\n        },\n \
+    \       \"decision\": \"correct\",\n        \"rationale\": \"The exact basal DSM420\
+    \ instruction gives40ml/l sterile horse blood, not40g/L. Correct the dimensional\
+    \ claim with source linkage, without assuming blood density. This recommendation\
+    \ is conditional for the unresolved DSM4690 variant.\"\n      },\n      {\n  \
+    \      \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"40\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. The exact basal DSM420 instruction gives40ml/l\
+    \ sterile horse blood, not40g/L. Correct the dimensional claim with source linkage,\
+    \ without assuming blood density. This recommendation is conditional for the unresolved\
+    \ DSM4690 variant.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n \
+    \       \"source_key\": \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"The exact basal DSM420 instruction gives40ml/l\
+    \ sterile horse blood, not40g/L. Correct the dimensional claim with source linkage,\
+    \ without assuming blood density. This recommendation is conditional for the unresolved\
+    \ DSM4690 variant.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n    \"topic\":\
+    \ \"Peptone — each target/owner concentration\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[2].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"unsupported\",\n        \"rationale\": \"The printed batch\
+    \ amount belongs to medium1, used only as an alternative liquid rehydration medium.\
+    \ It does not support this direct blood-agar ingredient or its final-medium G_PER_L\
+    \ claim. Do not propagate it to the unresolved4690 variant.\"\n      },\n    \
+    \  {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch amount belongs to medium1, used only as an alternative liquid rehydration\
+    \ medium. It does not support this direct blood-agar ingredient or its final-medium\
+    \ G_PER_L claim. Do not propagate it to the unresolved4690 variant.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch amount belongs to medium1, used only as an alternative liquid rehydration\
+    \ medium. It does not support this direct blood-agar ingredient or its final-medium\
+    \ G_PER_L claim. Do not propagate it to the unresolved4690 variant.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. The printed batch amount belongs to medium1,\
+    \ used only as an alternative liquid rehydration medium. It does not support this\
+    \ direct blood-agar ingredient or its final-medium G_PER_L claim. Do not propagate\
+    \ it to the unresolved4690 variant.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n        \"\
+    source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\":\
+    \ \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\",\n      \
+    \  \"source_locator\": \"Extracted text line 6\",\n        \"exact_source_quote\"\
+    : \" Peptone 5.0 g \",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed batch amount belongs to medium1,\
+    \ used only as an alternative liquid rehydration medium. It does not support this\
+    \ direct blood-agar ingredient or its final-medium G_PER_L claim. Do not propagate\
+    \ it to the unresolved4690 variant.\"\n  },\n  {\n    \"quantity_id\": \"q4\"\
+    ,\n    \"topic\": \"Meat extract — each target/owner concentration\",\n    \"\
+    decision\": \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"ingredients[3].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"3\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The printed batch amount belongs to medium1, used only as an alternative liquid\
+    \ rehydration medium. It does not support this direct blood-agar ingredient or\
+    \ its final-medium G_PER_L claim. Do not propagate it to the unresolved4690 variant.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch amount belongs to medium1, used only as an alternative liquid rehydration\
+    \ medium. It does not support this direct blood-agar ingredient or its final-medium\
+    \ G_PER_L claim. Do not propagate it to the unresolved4690 variant.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The printed\
+    \ batch amount belongs to medium1, used only as an alternative liquid rehydration\
+    \ medium. It does not support this direct blood-agar ingredient or its final-medium\
+    \ G_PER_L claim. Do not propagate it to the unresolved4690 variant.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. The printed batch amount belongs to medium1,\
+    \ used only as an alternative liquid rehydration medium. It does not support this\
+    \ direct blood-agar ingredient or its final-medium G_PER_L claim. Do not propagate\
+    \ it to the unresolved4690 variant.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n        \"\
+    source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\":\
+    \ \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\",\n      \
+    \  \"source_locator\": \"Extracted text line 7\",\n        \"exact_source_quote\"\
+    : \" Meat extract 3.0 g \",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      }\n    ],\n    \"rationale\": \"The printed batch amount belongs to medium1,\
+    \ used only as an alternative liquid rehydration medium. It does not support this\
+    \ direct blood-agar ingredient or its final-medium G_PER_L claim. Do not propagate\
+    \ it to the unresolved4690 variant.\"\n  },\n  {\n    \"quantity_id\": \"q5\"\
+    ,\n    \"topic\": \"Agar — each target/owner concentration\",\n    \"decision\"\
+    : \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[4].concentration\",\n       \
+    \ \"stored\": {\n          \"value\": \"30.0\",\n          \"unit\": \"G_PER_L\"\
+    \n        },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    Target30g/L is stale relative to all three maintained15g/L values and their identical-duplicate\
+    \ repair histories. Neither value authenticates the Oxoid plate: the15g amounts\
+    \ occur in alternative rehydration recipes. Preserve repair credit while reassessing\
+    \ stage before retaining any direct agar dose.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\",\n  \
+    \      \"field_path\": \"ingredients[4].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"15.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"Target30g/L\
+    \ is stale relative to all three maintained15g/L values and their identical-duplicate\
+    \ repair histories. Neither value authenticates the Oxoid plate: the15g amounts\
+    \ occur in alternative rehydration recipes. Preserve repair credit while reassessing\
+    \ stage before retaining any direct agar dose.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\",\n        \"field_path\"\
+    : \"ingredients[4].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"15.0\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"Target30g/L is stale relative to\
+    \ all three maintained15g/L values and their identical-duplicate repair histories.\
+    \ Neither value authenticates the Oxoid plate: the15g amounts occur in alternative\
+    \ rehydration recipes. Preserve repair credit while reassessing stage before retaining\
+    \ any direct agar dose.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. Target30g/L is stale relative to all three\
+    \ maintained15g/L values and their identical-duplicate repair histories. Neither\
+    \ value authenticates the Oxoid plate: the15g amounts occur in alternative rehydration\
+    \ recipes. Preserve repair credit while reassessing stage before retaining any\
+    \ direct agar dose.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\",\n      \
+    \  \"source_locator\": \"Extracted text line 8\",\n        \"exact_source_quote\"\
+    : \" Agar, if necessary 15.0 g \",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz220Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 7\",\n        \"exact_source_quote\"\
+    : \"Agar                                                          15.0       g\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      }\n    ],\n    \"rationale\": \"Target30g/L is stale relative to all three\
+    \ maintained15g/L values and their identical-duplicate repair histories. Neither\
+    \ value authenticates the Oxoid plate: the15g amounts occur in alternative rehydration\
+    \ recipes. Preserve repair credit while reassessing stage before retaining any\
+    \ direct agar dose.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n    \"topic\"\
+    : \"Calf brains — each target/owner concentration\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n      \
+    \  },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"VARIABLE\
+    \ does not establish a source-supported tissue dose. The secondary table describes\
+    \ infusion powders; neither it nor DSM420 authenticates the asserted calf-brain/beef-heart\
+    \ tissue equivalents or a BD237500-to-Oxoid product equivalence.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"VARIABLE\
+    \ does not establish a source-supported tissue dose. The secondary table describes\
+    \ infusion powders; neither it nor DSM420 authenticates the asserted calf-brain/beef-heart\
+    \ tissue equivalents or a BD237500-to-Oxoid product equivalence.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"VARIABLE\
+    \ does not establish a source-supported tissue dose. The secondary table describes\
+    \ infusion powders; neither it nor DSM420 authenticates the asserted calf-brain/beef-heart\
+    \ tissue equivalents or a BD237500-to-Oxoid product equivalence.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ exact4690 formulation is unavailable. Basal DSM420 or a rehydration recipe cannot\
+    \ independently verify this variant-layer amount. VARIABLE does not establish\
+    \ a source-supported tissue dose. The secondary table describes infusion powders;\
+    \ neither it nor DSM420 authenticates the asserted calf-brain/beef-heart tissue\
+    \ equivalents or a BD237500-to-Oxoid product equivalence.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz420\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary composition table\",\n        \"exact_source_quote\"\
+    : \"HM infusion powder 12.500 BHI powder 5.000\",\n        \"snapshot_sha256\"\
+    : \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\",\n    \
+    \    \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"VARIABLE does not establish a source-supported\
+    \ tissue dose. The secondary table describes infusion powders; neither it nor\
+    \ DSM420 authenticates the asserted calf-brain/beef-heart tissue equivalents or\
+    \ a BD237500-to-Oxoid product equivalence.\"\n  },\n  {\n    \"quantity_id\":\
+    \ \"q7\",\n    \"topic\": \"Beef heart — each target/owner concentration\",\n\
+    \    \"decision\": \"unsupported\",\n    \"layer_decisions\": [\n      {\n   \
+    \     \"input\": \"target\",\n        \"field_path\": \"ingredients[6].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"variable\",\n          \"unit\"\
+    : \"VARIABLE\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"VARIABLE does not establish a source-supported tissue dose. The\
+    \ secondary table describes infusion powders; neither it nor DSM420 authenticates\
+    \ the asserted calf-brain/beef-heart tissue equivalents or a BD237500-to-Oxoid\
+    \ product equivalence.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"VARIABLE\
+    \ does not establish a source-supported tissue dose. The secondary table describes\
+    \ infusion powders; neither it nor DSM420 authenticates the asserted calf-brain/beef-heart\
+    \ tissue equivalents or a BD237500-to-Oxoid product equivalence.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"VARIABLE\
+    \ does not establish a source-supported tissue dose. The secondary table describes\
+    \ infusion powders; neither it nor DSM420 authenticates the asserted calf-brain/beef-heart\
+    \ tissue equivalents or a BD237500-to-Oxoid product equivalence.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The\
+    \ exact4690 formulation is unavailable. Basal DSM420 or a rehydration recipe cannot\
+    \ independently verify this variant-layer amount. VARIABLE does not establish\
+    \ a source-supported tissue dose. The secondary table describes infusion powders;\
+    \ neither it nor DSM420 authenticates the asserted calf-brain/beef-heart tissue\
+    \ equivalents or a BD237500-to-Oxoid product equivalence.\"\n      }\n    ],\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz420\",\n \
+    \       \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary composition table\",\n        \"exact_source_quote\"\
+    : \"HM infusion powder 12.500 BHI powder 5.000\",\n        \"snapshot_sha256\"\
+    : \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\",\n    \
+    \    \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"VARIABLE does not establish a source-supported\
+    \ tissue dose. The secondary table describes infusion powders; neither it nor\
+    \ DSM420 authenticates the asserted calf-brain/beef-heart tissue equivalents or\
+    \ a BD237500-to-Oxoid product equivalence.\"\n  },\n  {\n    \"quantity_id\":\
+    \ \"q8\",\n    \"topic\": \"Proteose peptone — each target/owner concentration\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[7].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"10.0\",\n          \"unit\":\
+    \ \"G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"\
+    rationale\": \"This number occurs in a secondary BHI formulation, not the specified\
+    \ Oxoid blood agar No2. DSM215 is a separate rehydration choice and only specifies\
+    \ Difco BHI37g. Retain product/medium scope; do not expand the plate from this\
+    \ secondary table or infer the4690 variant.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\",\n        \"\
+    field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n        },\n    \
+    \    \"decision\": \"unsupported\",\n        \"rationale\": \"This number occurs\
+    \ in a secondary BHI formulation, not the specified Oxoid blood agar No2. DSM215\
+    \ is a separate rehydration choice and only specifies Difco BHI37g. Retain product/medium\
+    \ scope; do not expand the plate from this secondary table or infer the4690 variant.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"This number\
+    \ occurs in a secondary BHI formulation, not the specified Oxoid blood agar No2.\
+    \ DSM215 is a separate rehydration choice and only specifies Difco BHI37g. Retain\
+    \ product/medium scope; do not expand the plate from this secondary table or infer\
+    \ the4690 variant.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"10.0\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ },\n        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. This number occurs in a secondary BHI formulation,\
+    \ not the specified Oxoid blood agar No2. DSM215 is a separate rehydration choice\
+    \ and only specifies Difco BHI37g. Retain product/medium scope; do not expand\
+    \ the plate from this secondary table or infer the4690 variant.\"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz420\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary BHI composition table\",\n        \"\
+    exact_source_quote\": \"Proteose peptone 10.000\",\n        \"snapshot_sha256\"\
+    : \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\",\n    \
+    \    \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"This number occurs in a secondary BHI\
+    \ formulation, not the specified Oxoid blood agar No2. DSM215 is a separate rehydration\
+    \ choice and only specifies Difco BHI37g. Retain product/medium scope; do not\
+    \ expand the plate from this secondary table or infer the4690 variant.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q9\",\n    \"topic\": \"Dextrose — each target/owner\
+    \ concentration\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2.0\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"This number occurs in a secondary BHI formulation, not the specified Oxoid\
+    \ blood agar No2. DSM215 is a separate rehydration choice and only specifies Difco\
+    \ BHI37g. Retain product/medium scope; do not expand the plate from this secondary\
+    \ table or infer the4690 variant.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\",\n        \"field_path\"\
+    : \"ingredients[8].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.0\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This number occurs in a secondary\
+    \ BHI formulation, not the specified Oxoid blood agar No2. DSM215 is a separate\
+    \ rehydration choice and only specifies Difco BHI37g. Retain product/medium scope;\
+    \ do not expand the plate from this secondary table or infer the4690 variant.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This number\
+    \ occurs in a secondary BHI formulation, not the specified Oxoid blood agar No2.\
+    \ DSM215 is a separate rehydration choice and only specifies Difco BHI37g. Retain\
+    \ product/medium scope; do not expand the plate from this secondary table or infer\
+    \ the4690 variant.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. This number occurs in a secondary BHI formulation,\
+    \ not the specified Oxoid blood agar No2. DSM215 is a separate rehydration choice\
+    \ and only specifies Difco BHI37g. Retain product/medium scope; do not expand\
+    \ the plate from this secondary table or infer the4690 variant.\"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz420\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary BHI composition table\",\n        \"\
+    exact_source_quote\": \"Dextrose (Glucose) 2.000\",\n        \"snapshot_sha256\"\
+    : \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\",\n    \
+    \    \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"This number occurs in a secondary BHI\
+    \ formulation, not the specified Oxoid blood agar No2. DSM215 is a separate rehydration\
+    \ choice and only specifies Difco BHI37g. Retain product/medium scope; do not\
+    \ expand the plate from this secondary table or infer the4690 variant.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q10\",\n    \"topic\": \"Sodium chloride — each target/owner\
+    \ concentration\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"5.0\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"This number occurs in a secondary BHI formulation, not the specified Oxoid\
+    \ blood agar No2. DSM215 is a separate rehydration choice and only specifies Difco\
+    \ BHI37g. Retain product/medium scope; do not expand the plate from this secondary\
+    \ table or infer the4690 variant.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This number occurs in a secondary\
+    \ BHI formulation, not the specified Oxoid blood agar No2. DSM215 is a separate\
+    \ rehydration choice and only specifies Difco BHI37g. Retain product/medium scope;\
+    \ do not expand the plate from this secondary table or infer the4690 variant.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This number\
+    \ occurs in a secondary BHI formulation, not the specified Oxoid blood agar No2.\
+    \ DSM215 is a separate rehydration choice and only specifies Difco BHI37g. Retain\
+    \ product/medium scope; do not expand the plate from this secondary table or infer\
+    \ the4690 variant.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. This number occurs in a secondary BHI formulation,\
+    \ not the specified Oxoid blood agar No2. DSM215 is a separate rehydration choice\
+    \ and only specifies Difco BHI37g. Retain product/medium scope; do not expand\
+    \ the plate from this secondary table or infer the4690 variant.\"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz420\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary BHI composition table\",\n        \"\
+    exact_source_quote\": \"Sodium chloride 5.000\",\n        \"snapshot_sha256\"\
+    : \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\",\n    \
+    \    \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"This number occurs in a secondary BHI\
+    \ formulation, not the specified Oxoid blood agar No2. DSM215 is a separate rehydration\
+    \ choice and only specifies Difco BHI37g. Retain product/medium scope; do not\
+    \ expand the plate from this secondary table or infer the4690 variant.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q11\",\n    \"topic\": \"Disodium phosphate — each\
+    \ target/owner concentration\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"2.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"This number occurs in a secondary BHI formulation, not the specified Oxoid\
+    \ blood agar No2. DSM215 is a separate rehydration choice and only specifies Difco\
+    \ BHI37g. Retain product/medium scope; do not expand the plate from this secondary\
+    \ table or infer the4690 variant.\"\n      },\n      {\n        \"input\": \"\
+    data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\",\n        \"field_path\"\
+    : \"ingredients[10].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"unsupported\",\n        \"rationale\": \"This number occurs in a secondary\
+    \ BHI formulation, not the specified Oxoid blood agar No2. DSM215 is a separate\
+    \ rehydration choice and only specifies Difco BHI37g. Retain product/medium scope;\
+    \ do not expand the plate from this secondary table or infer the4690 variant.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This number\
+    \ occurs in a secondary BHI formulation, not the specified Oxoid blood agar No2.\
+    \ DSM215 is a separate rehydration choice and only specifies Difco BHI37g. Retain\
+    \ product/medium scope; do not expand the plate from this secondary table or infer\
+    \ the4690 variant.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. This number occurs in a secondary BHI formulation,\
+    \ not the specified Oxoid blood agar No2. DSM215 is a separate rehydration choice\
+    \ and only specifies Difco BHI37g. Retain product/medium scope; do not expand\
+    \ the plate from this secondary table or infer the4690 variant.\"\n      }\n \
+    \   ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz420\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary BHI composition table\",\n        \"\
+    exact_source_quote\": \"Disodium phosphate 2.500\",\n        \"snapshot_sha256\"\
+    : \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\",\n    \
+    \    \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"This number occurs in a secondary BHI\
+    \ formulation, not the specified Oxoid blood agar No2. DSM215 is a separate rehydration\
+    \ choice and only specifies Difco BHI37g. Retain product/medium scope; do not\
+    \ expand the plate from this secondary table or infer the4690 variant.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q12\",\n    \"topic\": \"Casein peptone — each target/owner\
+    \ concentration\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"15\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"This printed batch amount belongs to CASO medium220, a separate liquid rehydration\
+    \ alternative. It is not a supported direct Oxoid plate addition; do not add the\
+    \ two differently sourced NaCl rows together.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\",\n  \
+    \      \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This printed\
+    \ batch amount belongs to CASO medium220, a separate liquid rehydration alternative.\
+    \ It is not a supported direct Oxoid plate addition; do not add the two differently\
+    \ sourced NaCl rows together.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This printed\
+    \ batch amount belongs to CASO medium220, a separate liquid rehydration alternative.\
+    \ It is not a supported direct Oxoid plate addition; do not add the two differently\
+    \ sourced NaCl rows together.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"15\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. This printed batch amount belongs to CASO\
+    \ medium220, a separate liquid rehydration alternative. It is not a supported\
+    \ direct Oxoid plate addition; do not add the two differently sourced NaCl rows\
+    \ together.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz220Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 4\",\n        \"exact_source_quote\"\
+    : \"Peptone from casein                                           15.0       g\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed batch amount belongs to CASO\
+    \ medium220, a separate liquid rehydration alternative. It is not a supported\
+    \ direct Oxoid plate addition; do not add the two differently sourced NaCl rows\
+    \ together.\"\n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"topic\": \"Soy\
+    \ peptone — each target/owner concentration\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[12].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"unsupported\",\n        \"rationale\": \"This printed batch\
+    \ amount belongs to CASO medium220, a separate liquid rehydration alternative.\
+    \ It is not a supported direct Oxoid plate addition; do not add the two differently\
+    \ sourced NaCl rows together.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This printed\
+    \ batch amount belongs to CASO medium220, a separate liquid rehydration alternative.\
+    \ It is not a supported direct Oxoid plate addition; do not add the two differently\
+    \ sourced NaCl rows together.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This printed\
+    \ batch amount belongs to CASO medium220, a separate liquid rehydration alternative.\
+    \ It is not a supported direct Oxoid plate addition; do not add the two differently\
+    \ sourced NaCl rows together.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. This printed batch amount belongs to CASO\
+    \ medium220, a separate liquid rehydration alternative. It is not a supported\
+    \ direct Oxoid plate addition; do not add the two differently sourced NaCl rows\
+    \ together.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz220Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Peptone from soymeal                                           5.0       g\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed batch amount belongs to CASO\
+    \ medium220, a separate liquid rehydration alternative. It is not a supported\
+    \ direct Oxoid plate addition; do not add the two differently sourced NaCl rows\
+    \ together.\"\n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"topic\": \"NaCl\
+    \ — each target/owner concentration\",\n    \"decision\": \"unsupported\",\n \
+    \   \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"\
+    field_path\": \"ingredients[13].concentration\",\n        \"stored\": {\n    \
+    \      \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n      \
+    \  \"decision\": \"unsupported\",\n        \"rationale\": \"This printed batch\
+    \ amount belongs to CASO medium220, a separate liquid rehydration alternative.\
+    \ It is not a supported direct Oxoid plate addition; do not add the two differently\
+    \ sourced NaCl rows together.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This printed\
+    \ batch amount belongs to CASO medium220, a separate liquid rehydration alternative.\
+    \ It is not a supported direct Oxoid plate addition; do not add the two differently\
+    \ sourced NaCl rows together.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"This printed\
+    \ batch amount belongs to CASO medium220, a separate liquid rehydration alternative.\
+    \ It is not a supported direct Oxoid plate addition; do not add the two differently\
+    \ sourced NaCl rows together.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The exact4690\
+    \ formulation is unavailable. Basal DSM420 or a rehydration recipe cannot independently\
+    \ verify this variant-layer amount. This printed batch amount belongs to CASO\
+    \ medium220, a separate liquid rehydration alternative. It is not a supported\
+    \ direct Oxoid plate addition; do not add the two differently sourced NaCl rows\
+    \ together.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz220Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 6\",\n        \"exact_source_quote\"\
+    : \"NaCl                                                           5.0       g\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      }\n    ],\n    \"rationale\": \"This printed batch amount belongs to CASO\
+    \ medium220, a separate liquid rehydration alternative. It is not a supported\
+    \ direct Oxoid plate addition; do not add the two differently sourced NaCl rows\
+    \ together.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"topic\": \"BHI-local\
+    \ numeric note 200 g/L\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[5].notes\"\
+    ,\n        \"stored\": \"infusion from 200 g/L; Tissue infusion - source material\
+    \ is calf brain tissue; Constituent of Brain Heart Infusion commercial product\"\
+    ,\n        \"decision\": \"unsupported\",\n        \"rationale\": \"These are\
+    \ full literal local note fields. Tissue equivalents are not authenticated by\
+    \ the captured table; its pH belongs to a separate BHI formulation and25C is measurement\
+    \ context, not plate incubation. Do not transfer any of these claims to DSM420\
+    \ or4690.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].notes\",\n        \"stored\": \"infusion\
+    \ from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n        \"decision\": \"unsupported\"\
+    ,\n        \"rationale\": \"These are full literal local note fields. Tissue equivalents\
+    \ are not authenticated by the captured table; its pH belongs to a separate BHI\
+    \ formulation and25C is measurement context, not plate incubation. Do not transfer\
+    \ any of these claims to DSM420 or4690.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/blood_agar_i.yaml\",\n        \"field_path\"\
+    : \"ingredients[5].notes\",\n        \"stored\": \"infusion from 200 g/L; Tissue\
+    \ infusion - source material is calf brain tissue; Constituent of Brain Heart\
+    \ Infusion commercial product\",\n        \"decision\": \"unsupported\",\n   \
+    \     \"rationale\": \"These are full literal local note fields. Tissue equivalents\
+    \ are not authenticated by the captured table; its pH belongs to a separate BHI\
+    \ formulation and25C is measurement context, not plate incubation. Do not transfer\
+    \ any of these claims to DSM420 or4690.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\",\n\
+    \        \"field_path\": \"ingredients[5].notes\",\n        \"stored\": \"infusion\
+    \ from 200 g/L; Tissue infusion - source material is calf brain tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n        \"decision\": \"unsupported\"\
+    ,\n        \"rationale\": \"These are full literal local note fields. Tissue equivalents\
+    \ are not authenticated by the captured table; its pH belongs to a separate BHI\
+    \ formulation and25C is measurement context, not plate incubation. Do not transfer\
+    \ any of these claims to DSM420 or4690.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n        \"\
+    source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\":\
+    \ \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary BHI table pH\",\n        \"exact_source_quote\"\
+    : \"Final pH (at 25°C): 7.4±0.2\",\n        \"snapshot_sha256\": \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\"\
+    ,\n        \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"These are full literal local note fields.\
+    \ Tissue equivalents are not authenticated by the captured table; its pH belongs\
+    \ to a separate BHI formulation and25C is measurement context, not plate incubation.\
+    \ Do not transfer any of these claims to DSM420 or4690.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q16\",\n    \"topic\": \"BHI-local numeric note 250 g/L\",\n    \"decision\"\
+    : \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[6].notes\",\n        \"stored\"\
+    : \"infusion from 250 g/L; Tissue infusion - source material is beef/ox heart\
+    \ tissue; Constituent of Brain Heart Infusion commercial product\",\n        \"\
+    decision\": \"unsupported\",\n        \"rationale\": \"These are full literal\
+    \ local note fields. Tissue equivalents are not authenticated by the captured\
+    \ table; its pH belongs to a separate BHI formulation and25C is measurement context,\
+    \ not plate incubation. Do not transfer any of these claims to DSM420 or4690.\"\
+    \n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"infusion\
+    \ from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n        \"decision\": \"unsupported\"\
+    ,\n        \"rationale\": \"These are full literal local note fields. Tissue equivalents\
+    \ are not authenticated by the captured table; its pH belongs to a separate BHI\
+    \ formulation and25C is measurement context, not plate incubation. Do not transfer\
+    \ any of these claims to DSM420 or4690.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/blood_agar_i.yaml\",\n        \"field_path\"\
+    : \"ingredients[6].notes\",\n        \"stored\": \"infusion from 250 g/L; Tissue\
+    \ infusion - source material is beef/ox heart tissue; Constituent of Brain Heart\
+    \ Infusion commercial product\",\n        \"decision\": \"unsupported\",\n   \
+    \     \"rationale\": \"These are full literal local note fields. Tissue equivalents\
+    \ are not authenticated by the captured table; its pH belongs to a separate BHI\
+    \ formulation and25C is measurement context, not plate incubation. Do not transfer\
+    \ any of these claims to DSM420 or4690.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\",\n\
+    \        \"field_path\": \"ingredients[6].notes\",\n        \"stored\": \"infusion\
+    \ from 250 g/L; Tissue infusion - source material is beef/ox heart tissue; Constituent\
+    \ of Brain Heart Infusion commercial product\",\n        \"decision\": \"unsupported\"\
+    ,\n        \"rationale\": \"These are full literal local note fields. Tissue equivalents\
+    \ are not authenticated by the captured table; its pH belongs to a separate BHI\
+    \ formulation and25C is measurement context, not plate incubation. Do not transfer\
+    \ any of these claims to DSM420 or4690.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n        \"\
+    source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\":\
+    \ \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary BHI table pH\",\n        \"exact_source_quote\"\
+    : \"Final pH (at 25°C): 7.4±0.2\",\n        \"snapshot_sha256\": \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\"\
+    ,\n        \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"These are full literal local note fields.\
+    \ Tissue equivalents are not authenticated by the captured table; its pH belongs\
+    \ to a separate BHI formulation and25C is measurement context, not plate incubation.\
+    \ Do not transfer any of these claims to DSM420 or4690.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q17\",\n    \"topic\": \"BHI-local numeric note 7.4 ± 0.2\",\n    \"decision\"\
+    : \"unsupported\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"\
+    target\",\n        \"field_path\": \"ingredients[10].notes\",\n        \"stored\"\
+    : \"pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial\
+    \ product\",\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    These are full literal local note fields. Tissue equivalents are not authenticated\
+    \ by the captured table; its pH belongs to a separate BHI formulation and25C is\
+    \ measurement context, not plate incubation. Do not transfer any of these claims\
+    \ to DSM420 or4690.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].notes\",\n        \"stored\": \"\
+    pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial\
+    \ product\",\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    These are full literal local note fields. Tissue equivalents are not authenticated\
+    \ by the captured table; its pH belongs to a separate BHI formulation and25C is\
+    \ measurement context, not plate incubation. Do not transfer any of these claims\
+    \ to DSM420 or4690.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].notes\",\n        \"stored\": \"\
+    pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial\
+    \ product\",\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    These are full literal local note fields. Tissue equivalents are not authenticated\
+    \ by the captured table; its pH belongs to a separate BHI formulation and25C is\
+    \ measurement context, not plate incubation. Do not transfer any of these claims\
+    \ to DSM420 or4690.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].notes\",\n        \"stored\": \"\
+    pH buffer (final pH 7.4 ± 0.2); Constituent of Brain Heart Infusion commercial\
+    \ product\",\n        \"decision\": \"unsupported\",\n        \"rationale\": \"\
+    These are full literal local note fields. Tissue equivalents are not authenticated\
+    \ by the captured table; its pH belongs to a separate BHI formulation and25C is\
+    \ measurement context, not plate incubation. Do not transfer any of these claims\
+    \ to DSM420 or4690.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"bhiMicrobeNotesContext\",\n   \
+    \     \"source_url\": \"https://microbenotes.com/brain-heart-infusion-bhi-agar/\"\
+    ,\n        \"source_locator\": \"Secondary BHI table pH\",\n        \"exact_source_quote\"\
+    : \"Final pH (at 25°C): 7.4±0.2\",\n        \"snapshot_sha256\": \"b3cc10040924962852a01d9d3341fa2d14616b8c845f83d5d187d03c08db0a01\"\
+    ,\n        \"parsed_text_sha256\": \"051d1ff8fb532e65c6625950fa89778cf51ade5fd9ca069882e67dcf9e960c59\"\
+    \n      }\n    ],\n    \"rationale\": \"These are full literal local note fields.\
+    \ Tissue equivalents are not authenticated by the captured table; its pH belongs\
+    \ to a separate BHI formulation and25C is measurement context, not plate incubation.\
+    \ Do not transfer any of these claims to DSM420 or4690.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q18\",\n    \"topic\": \"Existing DSM preparation step 1\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"layer_decisions\": [\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/blood_agar_i.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Sterilize blood\
+    \ agar No 2 (Oxoid). After autoclaving cool to 50°C, then add 40 ml/l of sterile\
+    \ horse blood.\",\n        \"decision\": \"evidence_only\",\n        \"rationale\"\
+    : \"The DSM owner retains the supported plate preparation or separate rehydration\
+    \ instruction. Preserve the stage distinction when restoring generated preparation.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"The DSM owner retains the supported plate\
+    \ preparation or separate rehydration instruction. Preserve the stage distinction\
+    \ when restoring generated preparation.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q19\",\n    \"topic\": \"Existing DSM preparation step 2\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"layer_decisions\": [\n      {\n        \"input\":\
+    \ \"data/normalized_yaml/bacterial/blood_agar_i.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[1].description\",\n        \"stored\": \"Rehydrate pellets\
+    \ of freeze-dried ampoules in liquid medium 220 or 1. For rehydration of Helicobacter\
+    \ and Campylobacter spp., use medium 215 (brain heart infusion).\",\n        \"\
+    decision\": \"evidence_only\",\n        \"rationale\": \"The DSM owner retains\
+    \ the supported plate preparation or separate rehydration instruction. Preserve\
+    \ the stage distinction when restoring generated preparation.\"\n      }\n   \
+    \ ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz420\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"The DSM owner retains the supported plate\
+    \ preparation or separate rehydration instruction. Preserve the stage distinction\
+    \ when restoring generated preparation.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q20\",\n    \"topic\": \"Existing DSM preparation step 3\",\n    \"decision\"\
+    : \"correct\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Adjust pH to 7.0.\",\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"This retained step belongs to rehydration medium1 or220, not the main Oxoid\
+    \ plate. Preserve the literal pH/MnSO4 value only with its parent-medium and Bacillus-specific\
+    \ scope.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\",\n      \
+    \  \"source_locator\": \"Extracted text line 11\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4 x H2O\
+    \ is \",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz220Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid Cm131).\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      }\n    ],\n    \"rationale\": \"This retained step belongs to rehydration\
+    \ medium1 or220, not the main Oxoid plate. Preserve the literal pH/MnSO4 value\
+    \ only with its parent-medium and Bacillus-specific scope.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q21\",\n    \"topic\": \"Existing DSM preparation step 4\",\n\
+    \    \"decision\": \"correct\",\n    \"layer_decisions\": [\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\",\n        \"\
+    field_path\": \"preparation_steps[3].description\",\n        \"stored\": \"For\
+    \ Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.\"\
+    ,\n        \"decision\": \"correct\",\n        \"rationale\": \"This retained\
+    \ step belongs to rehydration medium1 or220, not the main Oxoid plate. Preserve\
+    \ the literal pH/MnSO4 value only with its parent-medium and Bacillus-specific\
+    \ scope.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\",\n      \
+    \  \"source_locator\": \"Extracted text line 11\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4 x H2O\
+    \ is \",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz220Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid Cm131).\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      }\n    ],\n    \"rationale\": \"This retained step belongs to rehydration\
+    \ medium1 or220, not the main Oxoid plate. Preserve the literal pH/MnSO4 value\
+    \ only with its parent-medium and Bacillus-specific scope.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q22\",\n    \"topic\": \"Existing DSM preparation step 5\",\n\
+    \    \"decision\": \"correct\",\n    \"layer_decisions\": [\n      {\n       \
+    \ \"input\": \"data/normalized_yaml/bacterial/blood_agar_i.yaml\",\n        \"\
+    field_path\": \"preparation_steps[4].description\",\n        \"stored\": \"Adjust\
+    \ pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid CM 131).\",\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This retained step\
+    \ belongs to rehydration medium1 or220, not the main Oxoid plate. Preserve the\
+    \ literal pH/MnSO4 value only with its parent-medium and Bacillus-specific scope.\"\
+    \n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz1Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\",\n      \
+    \  \"source_locator\": \"Extracted text line 11\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4 x H2O\
+    \ is \",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz220Context\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid Cm131).\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      }\n    ],\n    \"rationale\": \"This retained step belongs to rehydration\
+    \ medium1 or220, not the main Oxoid plate. Preserve the literal pH/MnSO4 value\
+    \ only with its parent-medium and Bacillus-specific scope.\"\n  },\n  {\n    \"\
+    quantity_id\": \"q23\",\n    \"topic\": \"Restore source plate sequence and50C\
+    \ cooling\",\n    \"decision\": \"add\",\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"Restore sterilization of the exact Oxoid base, cooling to50C and aseptic sterile\
+    \ blood addition. No autoclave temperature/time or incubation conditions are supplied\
+    \ by this main source.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n\
+    \        \"source_key\": \"dsmz420\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50C, then add\
+    \ 40 ml/l of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore sterilization of the exact Oxoid\
+    \ base, cooling to50C and aseptic sterile blood addition. No autoclave temperature/time\
+    \ or incubation conditions are supplied by this main source.\"\n  },\n  {\n  \
+    \  \"quantity_id\": \"q24\",\n    \"topic\": \"Medium1 water1000ml — excluded\
+    \ parent scope\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsmz1Context\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 9\",\n        \"exact_source_quote\"\
+    : \" Distilled water 1000.0 ml \",\n        \"snapshot_sha256\": \"95916f2ec73cf9a2d87acccb06e39eb6eb38f282b63cea53b6f5ad6441adaf7f\"\
+    ,\n        \"parsed_text_sha256\": \"573b50da392f3306818da9daa8ba282eee94fcb83902e64e5cdb7e7c047ba47e\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit source-only parent quantity;\
+    \ retain it in the corresponding rehydration recipe or named strain variant. It\
+    \ is not a dose into the blood agar plate, and no final plate concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q25\",\n    \"topic\": \"Medium220\
+    \ water1000ml — excluded parent scope\",\n    \"decision\": \"unsupported\",\n\
+    \    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz220Context\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 8\",\n        \"exact_source_quote\"\
+    : \"Distilled water                                             1000.0      ml\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit source-only parent quantity;\
+    \ retain it in the corresponding rehydration recipe or named strain variant. It\
+    \ is not a dose into the blood agar plate, and no final plate concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q26\",\n    \"topic\": \"Medium215\
+    \ BHI37g — excluded parent scope\",\n    \"decision\": \"unsupported\",\n    \"\
+    layer_decisions\": [],\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsmz215Context\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium215.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 4\",\n        \"exact_source_quote\"\
+    : \"Brain Heart Infusion (Difco)               37.0    g\",\n        \"snapshot_sha256\"\
+    : \"2e9549379b1decf70b72e2d27ca9604f6f8e169ba11675daefc8953a43de1ba5\",\n    \
+    \    \"parsed_text_sha256\": \"85075a982033409b763f9deb01882672c8e99b878b0603f1486928a7591529b9\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit source-only parent quantity;\
+    \ retain it in the corresponding rehydration recipe or named strain variant. It\
+    \ is not a dose into the blood agar plate, and no final plate concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q27\",\n    \"topic\": \"Medium215\
+    \ water1000ml — excluded parent scope\",\n    \"decision\": \"unsupported\",\n\
+    \    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz215Context\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium215.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Distilled water                          1000.0   ml\",\n        \"snapshot_sha256\"\
+    : \"2e9549379b1decf70b72e2d27ca9604f6f8e169ba11675daefc8953a43de1ba5\",\n    \
+    \    \"parsed_text_sha256\": \"85075a982033409b763f9deb01882672c8e99b878b0603f1486928a7591529b9\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit source-only parent quantity;\
+    \ retain it in the corresponding rehydration recipe or named strain variant. It\
+    \ is not a dose into the blood agar plate, and no final plate concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q28\",\n    \"topic\": \"DSM21449/21450\
+    \ NaCl10g/L — excluded parent scope\",\n    \"decision\": \"unsupported\",\n \
+    \   \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz220Context\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 13\",\n        \"exact_source_quote\"\
+    : \" NaCl                                                          10.0    g/L\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit source-only parent quantity;\
+    \ retain it in the corresponding rehydration recipe or named strain variant. It\
+    \ is not a dose into the blood agar plate, and no final plate concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q29\",\n    \"topic\": \"DSM21449/21450\
+    \ MnSO4 10mg/L — excluded parent scope\",\n    \"decision\": \"unsupported\",\n\
+    \    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsmz220Context\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 14\",\n        \"exact_source_quote\"\
+    : \" MnSO4                                                         10.0   mg/L\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit source-only parent quantity;\
+    \ retain it in the corresponding rehydration recipe or named strain variant. It\
+    \ is not a dose into the blood agar plate, and no final plate concentration is\
+    \ calculated.\"\n  },\n  {\n    \"quantity_id\": \"q30\",\n    \"topic\": \"DSM5746\
+    \ methanol10ml/L — excluded parent scope\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [],\n    \"source_snippets\": [\n      {\n       \
+    \ \"source_key\": \"dsmz220Context\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf\"\
+    ,\n        \"source_locator\": \"Extracted text line 17\",\n        \"exact_source_quote\"\
+    : \" Methanol                                                      10.0   ml/L\"\
+    ,\n        \"snapshot_sha256\": \"7ad4784ef10067569e736bf92c134dbaa39c6128106efe804ed595a1c42c40b8\"\
+    ,\n        \"parsed_text_sha256\": \"311b355854b9882d5ccf2bcfdf2e673b76d35eb245fb5fdebcd38a92f6da2547\"\
+    \n      },\n      {\n        \"source_key\": \"dsmz420\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf\",\n    \
+    \    \"source_locator\": \"Extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1. For\
+    \ rehydration of\",\n        \"snapshot_sha256\": \"2e40dec83df47562d0af80598a6d80e56e9cac9ac2584163c313247f6bccdeb4\"\
+    ,\n        \"parsed_text_sha256\": \"b1548fa3a3603561d7fc39d8c3898109f14d9e7eaebd73cdd49533749d308421\"\
+    \n      }\n    ],\n    \"rationale\": \"Explicit source-only parent quantity;\
+    \ retain it in the corresponding rehydration recipe or named strain variant. It\
+    \ is not a dose into the blood agar plate, and no final plate concentration is\
+    \ calculated.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.005245.plate-rehydration-product-scope
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Separate the Oxoid plate from rehydration recipes and unsupported BHI expansion
+  description: The combined ingredient list makes the record denote a synthetic formulation.
+    DSM420 names Oxoid blood agar No2 and horse blood, while1/220/215 are alternative
+    rehydration media. The local Difco/BD237500 expansion lacks verified product equivalence,
+    and variant4690 remains unresolved.
+  target_ids:
+  - CultureMech:005245
+  field_paths:
+  - ingredients
+  - notes
+  - merged_from
+  - synonyms
+  evidence_ids:
+  - main
+  - rehydration1
+  - rehydration220
+  - rehydration215
+  - secondary-bhi
+  - catalog
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.5
+  native_severity: P2
+  normalization_reason: P2.5 is elevated to blocker because ingredient-set/variant
+    conflation changes the biological formulation denoted by the record, rather than
+    merely duplicating metadata.
+- finding_id: f2
+  issue_key: culturemech.005245.blood-unit-and-stale-agar
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Correct blood dimensions and preserve current duplicate-repair credit
+  description: The plate source gives horse blood40ml/l; all local layers store40G_PER_L.
+    Target agar30 remains stale after all owners repaired15+15 to15. The repaired
+    value still needs source-stage review and is not independently authenticated as
+    Oxoid-base agar.
+  target_ids:
+  - CultureMech:005245
+  field_paths:
+  - ingredients[1].concentration
+  - ingredients[4].concentration
+  evidence_ids:
+  - main
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - writer-0
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.005245.preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore the plate sequence without inheriting parent pH or supplements
+  description: The generated record loses the supported preparation. The DSM owner
+    preserves the plate and rehydration text but also carries parent-medium pH7.0,
+    Bacillus manganese and pH7.3 as unscoped plate steps.
+  target_ids:
+  - CultureMech:005245
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - main
+  - rehydration1
+  - rehydration220
+  - owner-1
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3.4 is elevated to major because missing and mis-scoped steps
+    would materially alter formulation and culture preparation.
+- finding_id: f4
+  issue_key: culturemech.005245.claim-provenance-history
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Attach scoped formulation evidence and preserve imperfect history
+  description: No plate concentration has attached evidence; report-derived values
+    and malformed or timezone-naive history cannot serve as source authentication.
+    Current source and repair histories must remain distinguishable.
+  target_ids:
+  - CultureMech:005245
+  field_paths:
+  - ingredients
+  - references
+  - curation_history
+  evidence_ids:
+  - history-evidence
+  - history-metadata
+  - bound-source-integrity
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is elevated to minor because specific unsupported product/stage
+    transfers cannot be audited from existing claim linkage; supported source numbers
+    and unavailable historical responses remain separately scoped.
+actions:
+- action_id: a1
+  description: Reconstruct the exact maintained plate formulation, preserve separate
+    rehydration links, and defer or separately resolve4690 before declaring it a source
+    duplicate. Do not substitute a generic BHI formula.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Use the source liquid unit without density conversion; retain owner
+    repair history and regenerate only after plate/source-stage corrections and exact
+    variant resolution.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Represent plate sterilization/cooling/blood addition and separate rehydration
+    guidance; keep parent-specific pH/supplements outside the plate. Do not invent
+    an autoclave cycle or growth conditions.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach exact primary claim-level evidence where verified; retain unavailable
+    source limits and append any authorized history clarification without rewriting
+    earlier events.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005245
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_420_BLOOD_AGAR_I.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blood_agar_i.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_420_modified_for_dsm_4690.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Current exact DSM420 API capture returned503; historical report snippets are derivatives,
+  not recovered original API bytes.
+- KOMODO420 detailed page returned403; exact base product representation remains unavailable.
+- KOMODO420_4690 detailed page returned403; exact DSM4690 variant formulation remains
+  unavailable.
+- Exact proprietary Oxoid blood agar No2 composition and DSM4690 modification were
+  not authenticated; generic BHI sources are not replacements.
+- No measured final plate volume, blood density, main autoclave cycle or organism-growth
+  experiment was established.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-044
+- generated-medium

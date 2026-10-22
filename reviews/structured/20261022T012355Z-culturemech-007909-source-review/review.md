@@ -1,0 +1,2837 @@
+# Source and formulation review: bm7co_medium (CultureMech:007909)
+
+- Review: 20261022T012355Z-culturemech-007909-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-22T01:04:20Z
+- Finished UTC: 2026-10-22T01:23:55Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+BM7CO is JCM 1274 / TOGO M1370. Both local layers combine main-medium and mineral-stock quantities, convert liquid doses and resazurin milligrams into inappropriate mass rates, and omit source preparation. The source distinguishes a 900 ml water input, a 0.2 ml mineral-stock dose and a late 100 ml dose of 10% (w/v) chitin; it does not establish measured final medium or stock volume.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 434; batch 044 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty-three task batches contain 430 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 433 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007909 | data/merge_yaml/merged/BM7CO_MEDIUM.yaml | generated | bm7co_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007909 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007909 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-044/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch044/434/strict.tsv |
+| validate-terms | passed | True | CultureMech:007909 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007909 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007909 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007909.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Current identifiers, canonical labels and exact source forms
+
+grounding: supported. Targets: CultureMech:007909.
+
+34 asserted primary/secondary slots and 11 distinct captured IDs checked; 0 literal label differences. All 12 current secondary assertions join exact preferred-term MIM rows; no selected legacy ID slots. Target direct ingredient linkage is 11/12 primary (91.67%) and 6/12 secondary (50.00%) on a 0–100 linkage scale, not an accuracy score. All asserted IDs resolve with exact canonical labels. Source CaCl2 dihydrate, MgCl2 hexahydrate and FeSO4 heptahydrate agree with their supplied forms. CHEBI:91248 is a broader hydrochloride hydrate label, so keep the source monohydrate wording rather than inferring a different form. CHEBI:131527 has an anhydrous formula/canonical dipotassium hydrogen phosphate identity alongside a trihydrate synonym; the source K2HPO4 does not establish the trihydrate and the synonym alone must not drive a hydrate replacement. Generic sodium carbonate and resazurin source names do not establish additional hydration or salt details. No invented identifier is assigned to the opaque yeast extract or colloidal stock.
+
+### Append-only history and timestamp shape
+
+provenance: supported. Targets: CultureMech:007909.
+
+25 timestamp instances inspected; 0 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Attached evidence, historical derivatives and source versions
+
+evidence: concern. Targets: CultureMech:007909.
+
+Full current target/owner history, references and evidence arrays inspected. No local concentration evidence is attached. Notes explicitly record numerical duplicate merges for water and calcium; older import, solution migration, cleanup and default events remain provenance, not proof of a reproduced historical code path. Relevant historical review/report material is a derivative observation rather than an authenticated earlier raw source response. Current JCM/TOGO source support is scoped to its actual capture time.
+
+### JCM 1274 / TOGO M1370 and source stages
+
+identity: supported. Targets: CultureMech:007909.
+
+The exact source accessions and title agree. The medium contains a main batch, a mineral stock and a late colloidal-chitin stock, with separately stated carbon-source alternatives. No other BM7-family recipe is substituted.
+
+### Source preparation and growth scope
+
+completeness: concern. Targets: CultureMech:007909.
+
+Source pH 7.0, anaerobic preparation, the example 9 ml vessel aliquot, separate sterilization and late stock addition are absent locally. The page default is 121 C for 15 min; no growth temperature or observed strain-growth claim follows.
+
+### Liquid complex medium and high-metal flag
+
+scope: concern. Targets: CultureMech:007909.
+
+The liquid, complex and undefined classification is consistent with the recipe, but high_metal is not independently justified by this review. Stock-batch salt masses cannot establish high final-medium metal concentrations. Reassess that flag only after correct stage and dose representation.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:007909.
+
+22 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "quantity_id": "q1",
+    "topic": "Water: separate 900 ml main input and 1 L mineral-stock input",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "901.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The stored 901 G_PER_L conflates different preparation stages and different liquid units. Restore the main 900 ml water input and a separate stock recipe using 1 L water. Neither input is a measured final volume; do not replace the total with another flattened sum."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "901.0",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The stored 901 G_PER_L conflates different preparation stages and different liquid units. Restore the main 900 ml water input and a separate stock recipe using 1 L water. Neither input is a measured final volume; do not replace the total with another flattened sum."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 900,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, water row",
+        "exact_source_quote": "Distilled water\n900.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Mineral solution, water row",
+        "exact_source_quote": "Distilled water\n1.0\nL",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      }
+    ],
+    "rationale": "The stored 901 G_PER_L conflates different preparation stages and different liquid units. Restore the main 900 ml water input and a separate stock recipe using 1 L water. Neither input is a measured final volume; do not replace the total with another flattened sum."
+  },
+  {
+    "quantity_id": "q2",
+    "topic": "Yeast extract 6 g — main batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "6",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[1]",
+        "exact_source_quote": "\"component_name\": \"Yeast extract\",\n          \"volume\": 6,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, water row",
+        "exact_source_quote": "Distilled water\n900.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+  },
+  {
+    "quantity_id": "q3",
+    "topic": "KH2PO4 1.5 g — main batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[3]",
+        "exact_source_quote": "\"component_name\": \"KH2PO4\",\n          \"volume\": 1.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, water row",
+        "exact_source_quote": "Distilled water\n900.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+  },
+  {
+    "quantity_id": "q4",
+    "topic": "K2HPO4 2.9 g — main batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2.9",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "2.9",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[4]",
+        "exact_source_quote": "\"component_name\": \"K2HPO4\",\n          \"volume\": 2.9,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, water row",
+        "exact_source_quote": "Distilled water\n900.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+  },
+  {
+    "quantity_id": "q5",
+    "topic": "Na2CO3 4 g — main batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "4",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[6]",
+        "exact_source_quote": "\"component_name\": \"Na2CO3\",\n          \"volume\": 4,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, water row",
+        "exact_source_quote": "Distilled water\n900.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+  },
+  {
+    "quantity_id": "q6",
+    "topic": "Urea 2.1 g — main batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "2.1",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[7]",
+        "exact_source_quote": "\"component_name\": \"Urea\",\n          \"volume\": 2.1,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, water row",
+        "exact_source_quote": "Distilled water\n900.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+  },
+  {
+    "quantity_id": "q7",
+    "topic": "L-cysteine hydrochloride monohydrate 0.5 g — main batch amount",
+    "decision": "unsupported",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "unsupported",
+        "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[8]",
+        "exact_source_quote": "\"component_name\": \"L-Cysteine・HCl・H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, water row",
+        "exact_source_quote": "Distilled water\n900.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "The literal main-batch mass is supported, but the stored G_PER_L denominator is not explicitly established as measured final volume. Keep the mass and supplied form in the main stage. The late 100 ml addition per 900 ml medium must not be silently converted into a measured 1 L final-volume assertion."
+  },
+  {
+    "quantity_id": "q8",
+    "topic": "Calcium chloride dihydrate: 0.01 g main plus 37.5 g in mineral stock",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "37.51",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The stored 37.51 G_PER_L is the numerical sum of the main and stock-batch masses. Keep 0.01 g in the main batch and 37.5 g in the separate stock recipe dosed at 0.2 ml. Stock water is a 1 L input, not a proven measured final stock volume; do not invent an exact final-medium calcium total."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "37.51",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The stored 37.51 G_PER_L is the numerical sum of the main and stock-batch masses. Keep 0.01 g in the main batch and 37.5 g in the separate stock recipe dosed at 0.2 ml. Stock water is a 1 L input, not a proven measured final stock volume; do not invent an exact final-medium calcium total."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[2]",
+        "exact_source_quote": "\"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 0.01,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 37.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"Mineral solution (see below)\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Mineral solution, water row",
+        "exact_source_quote": "Distilled water\n1.0\nL",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      }
+    ],
+    "rationale": "The stored 37.51 G_PER_L is the numerical sum of the main and stock-batch masses. Keep 0.01 g in the main batch and 37.5 g in the separate stock recipe dosed at 0.2 ml. Stock water is a 1 L input, not a proven measured final stock volume; do not invent an exact final-medium calcium total."
+  },
+  {
+    "quantity_id": "q9",
+    "topic": "Resazurin: 0.5 mg in the main batch",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source mass unit is mg, whereas the local entry is 0.5 G_PER_L. Restore the literal 0.5 mg batch amount and its source scope. The unit error is definite; a corrected final G_PER_L number still requires an established final-volume basis."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source mass unit is mg, whereas the local entry is 0.5 G_PER_L. Restore the literal 0.5 mg batch amount and its source scope. The unit error is definite; a corrected final G_PER_L number still requires an established final-volume basis."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[5]",
+        "exact_source_quote": "\"component_name\": \"Resazurin\",\n          \"volume\": 0.5,\n          \"unit\": \"mg\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, resazurin row",
+        "exact_source_quote": "Resazurin\n0.5\nmg",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      }
+    ],
+    "rationale": "The source mass unit is mg, whereas the local entry is 0.5 G_PER_L. Restore the literal 0.5 mg batch amount and its source scope. The unit error is definite; a corrected final G_PER_L number still requires an established final-volume basis."
+  },
+  {
+    "quantity_id": "q10",
+    "topic": "Nitrogen atmosphere: no numerical dose",
+    "decision": "not_quantified",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified",
+        "rationale": "N2 replaces the gas phase and is used for separate chitin autoclaving. No gas quantity or mixing ratio is stated. VARIABLE must not be interpreted as a measured nutrient concentration; retain the atmosphere instruction without inventing a dose."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "variable",
+          "unit": "VARIABLE"
+        },
+        "decision": "not_quantified",
+        "rationale": "N2 replaces the gas phase and is used for separate chitin autoclaving. No gas quantity or mixing ratio is stated. VARIABLE must not be interpreted as a measured nutrient concentration; retain the atmosphere instruction without inventing a dose."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[10]",
+        "exact_source_quote": "\"component_name\": \"N2\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "N2 replaces the gas phase and is used for separate chitin autoclaving. No gas quantity or mixing ratio is stated. VARIABLE must not be interpreted as a measured nutrient concentration; retain the atmosphere instruction without inventing a dose."
+  },
+  {
+    "quantity_id": "q11",
+    "topic": "MgCl2 hexahydrate 25 g — mineral stock only",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This mass belongs to the separate mineral stock, not to the undiluted main medium. Restore the stock composition, preserve the 0.2 ml dose, and qualify the stock water input. No exact final-medium concentration follows without a justified stock final-volume and medium final-volume basis."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "25",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This mass belongs to the separate mineral stock, not to the undiluted main medium. Restore the stock composition, preserve the 0.2 ml dose, and qualify the stock water input. No exact final-medium concentration follows without a justified stock final-volume and medium final-volume basis."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[2].items[2]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 25,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"Mineral solution (see below)\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Mineral solution, water row",
+        "exact_source_quote": "Distilled water\n1.0\nL",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      }
+    ],
+    "rationale": "This mass belongs to the separate mineral stock, not to the undiluted main medium. Restore the stock composition, preserve the 0.2 ml dose, and qualify the stock water input. No exact final-medium concentration follows without a justified stock final-volume and medium final-volume basis."
+  },
+  {
+    "quantity_id": "q12",
+    "topic": "FeSO4 heptahydrate 0.312 g — mineral stock only",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.312",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This mass belongs to the separate mineral stock, not to the undiluted main medium. Restore the stock composition, preserve the 0.2 ml dose, and qualify the stock water input. No exact final-medium concentration follows without a justified stock final-volume and medium final-volume basis."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.312",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "This mass belongs to the separate mineral stock, not to the undiluted main medium. Restore the stock composition, preserve the 0.2 ml dose, and qualify the stock water input. No exact final-medium concentration follows without a justified stock final-volume and medium final-volume basis."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[2].items[3]",
+        "exact_source_quote": "\"component_name\": \"FeSO4・7H2O\",\n          \"volume\": 0.312,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"Mineral solution (see below)\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Mineral solution, water row",
+        "exact_source_quote": "Distilled water\n1.0\nL",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      }
+    ],
+    "rationale": "This mass belongs to the separate mineral stock, not to the undiluted main medium. Restore the stock composition, preserve the 0.2 ml dose, and qualify the stock water input. No exact final-medium concentration follows without a justified stock final-volume and medium final-volume basis."
+  },
+  {
+    "quantity_id": "q13",
+    "topic": "Mineral-stock addition: 0.2 ml",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore the liquid dose of 0.2 ml in the main batch; G_PER_L is not its source unit. Preserve the named stock and its separate recipe, without treating the stock preparation volume as the dose."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "solutions[0].concentration",
+        "stored": {
+          "value": "0.2",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "Restore the liquid dose of 0.2 ml in the main batch; G_PER_L is not its source unit. Preserve the named stock and its separate recipe, without treating the stock preparation volume as the dose."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[0].items[9]",
+        "exact_source_quote": "\"component_name\": \"Mineral solution (see below)\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Main formulation, stock dose",
+        "exact_source_quote": "Mineral solution (see below)\n0.2\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      }
+    ],
+    "rationale": "Restore the liquid dose of 0.2 ml in the main batch; G_PER_L is not its source unit. Preserve the named stock and its separate recipe, without treating the stock preparation volume as the dose."
+  },
+  {
+    "quantity_id": "q14",
+    "topic": "Late colloidal-chitin addition: 100 ml per 900 ml medium",
+    "decision": "correct",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source addition is 100 ml of a stock, not 100 g/L of final medium. A 10% (w/v) stock corresponds to 100 g/L stock strength and a 100 ml aliquot contains 10 g nominal chitin; that arithmetic does not establish the final-medium concentration. Keep stock strength and dose as separate assertions."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "solutions[1].concentration",
+        "stored": {
+          "value": "100",
+          "unit": "G_PER_L"
+        },
+        "decision": "correct",
+        "rationale": "The source addition is 100 ml of a stock, not 100 g/L of final medium. A 10% (w/v) stock corresponds to 100 g/L stock strength and a 100 ml aliquot contains 10 g nominal chitin; that arithmetic does not establish the final-medium concentration. Keep stock strength and dose as separate assertions."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"10% (w/v) Colloidal chitin solution\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"(w/v)\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Late addition table",
+        "exact_source_quote": "10% (w/v) Colloidal chitin solution\n100.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "The source addition is 100 ml of a stock, not 100 g/L of final medium. A 10% (w/v) stock corresponds to 100 g/L stock strength and a 100 ml aliquot contains 10 g nominal chitin; that arithmetic does not establish the final-medium concentration. Keep stock strength and dose as separate assertions."
+  },
+  {
+    "quantity_id": "q15",
+    "topic": "Mineral-stock recipe and water input are missing from the stock wrapper",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Restore the exact separate stock batch: 37.5 g CaCl2 dihydrate, 25 g MgCl2 hexahydrate, 0.312 g FeSO4 heptahydrate and 1 L water. Preserve ingredient hydrates. Do not normalize stock concentrations using a guessed measured final volume or flatten the stock into the main ingredient list."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "solutions[0].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Restore the exact separate stock batch: 37.5 g CaCl2 dihydrate, 25 g MgCl2 hexahydrate, 0.312 g FeSO4 heptahydrate and 1 L water. Preserve ingredient hydrates. Do not normalize stock concentrations using a guessed measured final volume or flatten the stock into the main ingredient list."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[2].items[0]",
+        "exact_source_quote": "\"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[2].items[1]",
+        "exact_source_quote": "\"component_name\": \"CaCl2・2H2O\",\n          \"volume\": 37.5,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[2].items[2]",
+        "exact_source_quote": "\"component_name\": \"MgCl2・6H2O\",\n          \"volume\": 25,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[2].items[3]",
+        "exact_source_quote": "\"component_name\": \"FeSO4・7H2O\",\n          \"volume\": 0.312,\n          \"unit\": \"g\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "Restore the exact separate stock batch: 37.5 g CaCl2 dihydrate, 25 g MgCl2 hexahydrate, 0.312 g FeSO4 heptahydrate and 1 L water. Preserve ingredient hydrates. Do not normalize stock concentrations using a guessed measured final volume or flatten the stock into the main ingredient list."
+  },
+  {
+    "quantity_id": "q16",
+    "topic": "Chitin stock strength: 10% (w/v)",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "solutions[1].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Record the explicit 10% (w/v) strength separately from the 100 ml addition. Its preparation method and full stock-making protocol are not supplied; no molecular identity, density or inferred colloid formulation is invented."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "solutions[1].composition",
+        "stored": [],
+        "decision": "add",
+        "rationale": "Record the explicit 10% (w/v) strength separately from the 100 ml addition. Its preparation method and full stock-making protocol are not supplied; no molecular identity, density or inferred colloid formulation is invented."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.components[1].items[0]",
+        "exact_source_quote": "\"component_name\": \"10% (w/v) Colloidal chitin solution\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"conc_value\": 10,\n          \"conc_unit\": \"(w/v)\"",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      },
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Late addition, distinct strength and dose",
+        "exact_source_quote": "10% (w/v) Colloidal chitin solution\n100.0\nml",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      }
+    ],
+    "rationale": "Record the explicit 10% (w/v) strength separately from the 100 ml addition. Its preparation method and full stock-making protocol are not supplied; no molecular identity, density or inferred colloid formulation is invented."
+  },
+  {
+    "quantity_id": "q17",
+    "topic": "Main pH adjustment to 7.0",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The source states adjustment to pH 7.0 before dispensing and sterilization. Add the scalar preparation target, not an incubation optimum or a measurement after chitin addition."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "ph_value",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The source states adjustment to pH 7.0 before dispensing and sterilization. Add the scalar preparation target, not an incubation optimum or a measurement after chitin addition."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "The source states adjustment to pH 7.0 before dispensing and sterilization. Add the scalar preparation target, not an incubation optimum or a measurement after chitin addition."
+  },
+  {
+    "quantity_id": "q18",
+    "topic": "Balch tube example: 9.0 ml",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the vessel-example qualifier: 9.0 ml in Balch tubes is an example aliquot, not a mandatory scale for every culture. Retain the source batch formulation independently."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Preserve the vessel-example qualifier: 9.0 ml in Balch tubes is an example aliquot, not a mandatory scale for every culture. Retain the source batch formulation independently."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "Preserve the vessel-example qualifier: 9.0 ml in Balch tubes is an example aliquot, not a mandatory scale for every culture. Retain the source batch formulation independently."
+  },
+  {
+    "quantity_id": "q19",
+    "topic": "Default sterilization: 121 C for 15 min",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The collection page supplies a default autoclave cycle of 121 C for 15 min, and this recipe calls for autoclaving without a different cycle. Attribute the cycle to that page default, not to organism growth or an independently measured recipe-specific experiment."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "The collection page supplies a default autoclave cycle of 121 C for 15 min, and this recipe calls for autoclaving without a different cycle. Attribute the cycle to that page default, not to organism growth or an independently measured recipe-specific experiment."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "jcm1274",
+        "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274",
+        "source_locator": "Extracted text line 4",
+        "exact_source_quote": "Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.",
+        "snapshot_sha256": "890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af",
+        "parsed_text_sha256": "0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab"
+      }
+    ],
+    "rationale": "The collection page supplies a default autoclave cycle of 121 C for 15 min, and this recipe calls for autoclaving without a different cycle. Attribute the cycle to that page default, not to organism growth or an independently measured recipe-specific experiment."
+  },
+  {
+    "quantity_id": "q20",
+    "topic": "Anaerobic staged preparation and separately autoclaved chitin",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain gas replacement with N2, butyl-rubber sealing, autoclaving, cooling and aseptic/anaerobic addition. The chitin solution is separately autoclaved under N2. Do not collapse these stages into a single sterilization of the completed mixture."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain gas replacement with N2, butyl-rubber sealing, autoclaving, cooling and aseptic/anaerobic addition. The chitin solution is separately autoclaved under N2. Do not collapse these stages into a single sterilization of the completed mixture."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[0].comment",
+        "exact_source_quote": "Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "Retain gas replacement with N2, butyl-rubber sealing, autoclaving, cooling and aseptic/anaerobic addition. The chitin solution is separately autoclaved under N2. Do not collapse these stages into a single sterilization of the completed mixture."
+  },
+  {
+    "quantity_id": "q21",
+    "topic": "Alternative 10% (w/v) chitin stock",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain this as an alternative to colloidal chitin, not a simultaneous additional ingredient. The source gives the alternative strength; no extra final-medium concentration or preparation protocol is inferred."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain this as an alternative to colloidal chitin, not a simultaneous additional ingredient. The source gives the alternative strength; no extra final-medium concentration or preparation protocol is inferred."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[2].comment",
+        "exact_source_quote": "Colloidal chitin solution can be replaced by 10% (w/v) chitin or 0.2 M cellobiose solution.",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "Retain this as an alternative to colloidal chitin, not a simultaneous additional ingredient. The source gives the alternative strength; no extra final-medium concentration or preparation protocol is inferred."
+  },
+  {
+    "quantity_id": "q22",
+    "topic": "Alternative 0.2 M cellobiose stock",
+    "decision": "add",
+    "layer_decisions": [
+      {
+        "input": "target",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain the explicit 0.2 M alternative solution as a separate recipe variant. Do not treat 0.2 M as the final-medium cellobiose concentration or add it together with both chitin alternatives."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml",
+        "field_path": "preparation_steps",
+        "stored": null,
+        "decision": "add",
+        "rationale": "Retain the explicit 0.2 M alternative solution as a separate recipe variant. Do not treat 0.2 M as the final-medium cellobiose concentration or add it together with both chitin alternatives."
+      }
+    ],
+    "source_snippets": [
+      {
+        "source_key": "togoM1370original",
+        "source_url": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370",
+        "source_locator": "$.comments[2].comment",
+        "exact_source_quote": "Colloidal chitin solution can be replaced by 10% (w/v) chitin or 0.2 M cellobiose solution.",
+        "snapshot_sha256": "d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3"
+      }
+    ],
+    "rationale": "Retain the explicit 0.2 M alternative solution as a separate recipe variant. Do not treat 0.2 M as the final-medium cellobiose concentration or add it together with both chitin alternatives."
+  }
+]
+
+## Findings
+
+### f1: Separate the mineral-stock recipe from the main batch
+
+major / open / confirmed; issue key: culturemech.007909.stock-main-flattening.
+
+Both layers store the stock’s magnesium and iron masses as main ingredients and add stock calcium to main calcium. Water also sums 900 ml and 1 L numerically as 901 G_PER_L; the stock wrappers are empty.
+
+### f2: Restore resazurin milligrams and liquid stock doses
+
+major / open / confirmed; issue key: culturemech.007909.source-units-and-doses.
+
+Resazurin is 0.5 mg per source batch, mineral stock is dosed at 0.2 ml and chitin stock at 100 ml. Their local G_PER_L fields conflate mass, dose, strength and final-medium rates.
+
+### f3: Restore scoped preparation and carbon-source alternatives
+
+minor / open / confirmed; issue key: culturemech.007909.preparation-and-variants.
+
+Local layers omit source pH adjustment, vessel example, anaerobic steps, separately sterilized late addition and mutually alternative chitin/cellobiose solutions.
+
+### f4: Attach exact stage-specific source evidence
+
+minor / open / confirmed; issue key: culturemech.007909.claim-linkage.
+
+No quantity claim has attached source evidence, and stock/main provenance is necessary to distinguish identical compound names with different preparation roles. Current sources do not authenticate the original historical import response.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore source stages and the 0.2 ml stock dose, keep exact hydrated forms and batch amounts, remove unsupported flattened totals and reassess any flag based on them. Do not infer measured final volumes.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain literal source units and separate stock strength from dose. Preserve other supported main-batch masses while marking their final G_PER_L basis unresolved until justified.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Add the exact source sequence and qualifiers; keep alternate carbon solutions separate and do not turn preparation temperatures, stock strengths or example volumes into growth assertions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach exact current source snippets to the corresponding main, stock, dose and preparation claims, preserving capture timestamps and historical limitations.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BM7CO_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BM7CO_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BM7CO_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch044/434/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-044/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch044/434/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BM7CO_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BM7CO_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml:1:id: CultureMech:007909<br>./data/merge_yaml/merged/BM7CO_MEDIUM.yaml:1:id: CultureMech:007909<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch044/source-preflight-bound/434/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 16 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| primary | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274; Full source identity, formulation and scoped preparation | supports | Complete JCM 1274 main recipe, mineral stock, preparation, default sterilization and separate chitin/cellobiose alternatives inspected. |
+| provider | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370; Full source identity, formulation and scoped preparation | supports | Exact M1370/JCM_M1274 identity and all three component sections agree with the source-stage structure; exact original units and comments are retained. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Full source identity, formulation and scoped preparation | supports | CHEBI:15377 resolves to water. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Full source identity, formulation and scoped preparation | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Full source identity, formulation and scoped preparation | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Full source identity, formulation and scoped preparation | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Full source identity, formulation and scoped preparation | supports | CHEBI:8806 resolves to Resazurin. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Full source identity, formulation and scoped preparation | supports | CHEBI:29377 resolves to sodium carbonate. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi16199 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16199; Full source identity, formulation and scoped preparation | supports | CHEBI:16199 resolves to urea. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Full source identity, formulation and scoped preparation | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; Full source identity, formulation and scoped preparation | supports | CHEBI:17997 resolves to dinitrogen. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Full source identity, formulation and scoped preparation | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Full source identity, formulation and scoped preparation | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Full captured scientific properties, annotations and synonyms inspected; identifier validity is separate from exact supplied-form support. |
+| grounding-inventory | /private/tmp/culturemech-review-work-batch044/434/grounding-inventory.json; Every asserted primary/secondary slot; exact captured OLS objects and pinned current MIM rows | context_only | Complete local slot correspondence, canonical labels and supplied-form distinctions. No invented IDs for unresolved complex products. |
+| history-metadata | data/merge_yaml/merged/BM7CO_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 13, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml", "events": 12, "timestamp_issues": []}] |
+| history-evidence | /private/tmp/culturemech-review-work-batch044/434/history-evidence-inventory.json; Full current history/evidence arrays and exact relevant historical report joins | context_only | Full current target/owner history, references and evidence arrays inspected. No local concentration evidence is attached. Notes explicitly record numerical duplicate merges for water and calcium; older import, solution migration, cleanup and default events remain provenance, not proof of a reproduced historical code path. Relevant historical review/report material is a derivative observation rather than an authenticated earlier raw source response. Current JCM/TOGO source support is scoped to its actual capture time. |
+| writer-0 | src/culturemech/import/togo_importer.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO primary-section, stock-reference, guarded local-composition, gas and preparation functions were inspected. They now distinguish named stock sections from main solution paragraphs; the exact-formulation merger also has current guards. These current implementations are not asserted to have caused the older flattened local data. Curating the owner and validating a future regeneration remain separate actions. |
+| writer-1 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO primary-section, stock-reference, guarded local-composition, gas and preparation functions were inspected. They now distinguish named stock sections from main solution paragraphs; the exact-formulation merger also has current guards. These current implementations are not asserted to have caused the older flattened local data. Curating the owner and validating a future regeneration remain separate actions. |
+| writer-2 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current TOGO primary-section, stock-reference, guarded local-composition, gas and preparation functions were inspected. They now distinguish named stock sections from main solution paragraphs; the exact-formulation merger also has current guards. These current implementations are not asserted to have caused the older flattened local data. Curating the owner and validating a future regeneration remain separate actions. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch044/434/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Measured final medium and mineral-stock volumes are not established. Batch masses, water inputs, stock strengths and aliquot doses remain distinct; exact final-medium dilution calculations are withheld.
+- The full colloidal-chitin preparation method is not supplied. Carbon-source alternatives are source variants, and no organism-specific growth experiment is established.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261022T012355Z-culturemech-007909-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: bm7co_medium (CultureMech:007909)'
+started_at: '2026-10-22T01:04:20Z'
+finished_at: '2026-10-22T01:23:55Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: BM7CO is JCM 1274 / TOGO M1370. Both local layers combine main-medium and
+  mineral-stock quantities, convert liquid doses and resazurin milligrams into inappropriate
+  mass rates, and omit source preparation. The source distinguishes a 900 ml water
+  input, a 0.2 ml mineral-stock dose and a late 100 ml dose of 10% (w/v) chitin; it
+  does not establish measured final medium or stock volume.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+    sha256: 81203d6753d7093f197c47a12ff8daae3b7bd7ebda587db32731da1bbff5f7ec
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    sha256: e8482ed48b9f5aacff976c10512e003b0cd5d3f7608824e2bc46dc4555ceb03e
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/yaml_record_review/20260921T223814Z-BM7CO_MEDIUM.md
+    sha256: dd154ac544ea6bbbd50c53b81ff638696120e6132a5a643eb500523cbc9b5622
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 434; batch 044 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-three task batches
+    contain 430 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 433 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007909
+targets:
+- target_id: CultureMech:007909
+  path: data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+  label: bm7co_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BM7CO_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch044/434/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-044/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch044/434/strict.tsv"
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007909
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:07:52.562087Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BM7CO_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch044/434/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:07:54.090809Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-044/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch044/434/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:07:55.781900Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BM7CO_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T01:07:56.919668Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml:1:id: CultureMech:007909
+
+    ./data/merge_yaml/merged/BM7CO_MEDIUM.yaml:1:id: CultureMech:007909
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/source-preflight-bound/434/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: supports
+  summary: 16 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 108974441b207e50bd5f6a58191a539f6aeb5aa85bc20b52841aa22197775c7c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T00:53:54.617487Z'
+  support: supports
+  summary: Complete JCM 1274 main recipe, mineral stock, preparation, default sterilization
+    and separate chitin/cellobiose alternatives inspected.
+  snapshot_sha256: 890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af
+- evidence_id: provider
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-22T00:53:54.309770Z'
+  support: supports
+  summary: Exact M1370/JCM_M1274 identity and all three component sections agree with
+    the source-stage structure; exact original units and comments are retained.
+  snapshot_sha256: d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water. Full captured scientific properties, annotations
+    and synonyms inspected; identifier validity is separate from exact supplied-form
+    support.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Full captured scientific
+    properties, annotations and synonyms inspected; identifier validity is separate
+    from exact supplied-form support.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Full captured scientific
+    properties, annotations and synonyms inspected; identifier validity is separate
+    from exact supplied-form support.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Full captured
+    scientific properties, annotations and synonyms inspected; identifier validity
+    is separate from exact supplied-form support.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Full captured scientific properties,
+    annotations and synonyms inspected; identifier validity is separate from exact
+    supplied-form support.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate. Full captured scientific properties,
+    annotations and synonyms inspected; identifier validity is separate from exact
+    supplied-form support.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi16199
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16199
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T09:27:39.323287Z'
+  support: supports
+  summary: CHEBI:16199 resolves to urea. Full captured scientific properties, annotations
+    and synonyms inspected; identifier validity is separate from exact supplied-form
+    support.
+  snapshot_sha256: 5298ca6b7d402b8a6e2091f03adf139a2d777c9614d760976b3953bc88bd862e
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Full captured
+    scientific properties, annotations and synonyms inspected; identifier validity
+    is separate from exact supplied-form support.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: chebi17997
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:27.385647Z'
+  support: supports
+  summary: CHEBI:17997 resolves to dinitrogen. Full captured scientific properties,
+    annotations and synonyms inspected; identifier validity is separate from exact
+    supplied-form support.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate. Full captured
+    scientific properties, annotations and synonyms inspected; identifier validity
+    is separate from exact supplied-form support.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Full source identity, formulation and scoped preparation
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Full captured scientific
+    properties, annotations and synonyms inspected; identifier validity is separate
+    from exact supplied-form support.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: grounding-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/434/grounding-inventory.json
+  locator: Every asserted primary/secondary slot; exact captured OLS objects and pinned
+    current MIM rows
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: Complete local slot correspondence, canonical labels and supplied-form
+    distinctions. No invented IDs for unresolved complex products.
+  snapshot_sha256: ffa0c4fdfd105dbec8cddfb2683d351cda5d4d6ee676ed445ec8f8e7743d48c0
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BM7CO_MEDIUM.yaml; data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 13, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml", "events": 12, "timestamp_issues":
+    []}]'
+- evidence_id: history-evidence
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/434/history-evidence-inventory.json
+  locator: Full current history/evidence arrays and exact relevant historical report
+    joins
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: Full current target/owner history, references and evidence arrays inspected.
+    No local concentration evidence is attached. Notes explicitly record numerical
+    duplicate merges for water and calcium; older import, solution migration, cleanup
+    and default events remain provenance, not proof of a reproduced historical code
+    path. Relevant historical review/report material is a derivative observation rather
+    than an authenticated earlier raw source response. Current JCM/TOGO source support
+    is scoped to its actual capture time.
+  snapshot_sha256: 232aa4a1ee59fdd0254c75b280851d2f613c211830355db95cee01bb75f455da
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: Current TOGO primary-section, stock-reference, guarded local-composition,
+    gas and preparation functions were inspected. They now distinguish named stock
+    sections from main solution paragraphs; the exact-formulation merger also has
+    current guards. These current implementations are not asserted to have caused
+    the older flattened local data. Curating the owner and validating a future regeneration
+    remain separate actions.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: Current TOGO primary-section, stock-reference, guarded local-composition,
+    gas and preparation functions were inspected. They now distinguish named stock
+    sections from main solution paragraphs; the exact-formulation merger also has
+    current guards. These current implementations are not asserted to have caused
+    the older flattened local data. Curating the owner and validating a future regeneration
+    remain separate actions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: Current TOGO primary-section, stock-reference, guarded local-composition,
+    gas and preparation functions were inspected. They now distinguish named stock
+    sections from main solution paragraphs; the exact-formulation merger also has
+    current guards. These current implementations are not asserted to have caused
+    the older flattened local data. Curating the owner and validating a future regeneration
+    remain separate actions.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch044/434/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T01:23:54Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 542a21d0815a2b06e93289afe7e502ca3f5953df2d868d1795f3e3b92168714c
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: Current identifiers, canonical labels and exact source forms
+  outcome: supported
+  summary: 34 asserted primary/secondary slots and 11 distinct captured IDs checked;
+    0 literal label differences. All 12 current secondary assertions join exact preferred-term
+    MIM rows; no selected legacy ID slots. Target direct ingredient linkage is 11/12
+    primary (91.67%) and 6/12 secondary (50.00%) on a 0–100 linkage scale, not an
+    accuracy score. All asserted IDs resolve with exact canonical labels. Source CaCl2
+    dihydrate, MgCl2 hexahydrate and FeSO4 heptahydrate agree with their supplied
+    forms. CHEBI:91248 is a broader hydrochloride hydrate label, so keep the source
+    monohydrate wording rather than inferring a different form. CHEBI:131527 has an
+    anhydrous formula/canonical dipotassium hydrogen phosphate identity alongside
+    a trihydrate synonym; the source K2HPO4 does not establish the trihydrate and
+    the synonym alone must not drive a hydrate replacement. Generic sodium carbonate
+    and resazurin source names do not establish additional hydration or salt details.
+    No invented identifier is assigned to the opaque yeast extract or colloidal stock.
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - record
+  - grounding-inventory
+  - chebi15377
+  - chebi86158
+  - chebi63036
+  - chebi131527
+  - chebi8806
+  - chebi29377
+  - chebi16199
+  - chebi91248
+  - chebi17997
+  - chebi86345
+  - chebi75836
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 25 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Attached evidence, historical derivatives and source versions
+  outcome: concern
+  summary: Full current target/owner history, references and evidence arrays inspected.
+    No local concentration evidence is attached. Notes explicitly record numerical
+    duplicate merges for water and calcium; older import, solution migration, cleanup
+    and default events remain provenance, not proof of a reproduced historical code
+    path. Relevant historical review/report material is a derivative observation rather
+    than an authenticated earlier raw source response. Current JCM/TOGO source support
+    is scoped to its actual capture time.
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - record
+  - history-evidence
+  - bound-source-integrity
+- assessment_id: identity
+  area: identity
+  topic: JCM 1274 / TOGO M1370 and source stages
+  outcome: supported
+  summary: The exact source accessions and title agree. The medium contains a main
+    batch, a mineral stock and a late colloidal-chitin stock, with separately stated
+    carbon-source alternatives. No other BM7-family recipe is substituted.
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - primary
+  - provider
+  - record
+- assessment_id: conditions
+  area: completeness
+  topic: Source preparation and growth scope
+  outcome: concern
+  summary: Source pH 7.0, anaerobic preparation, the example 9 ml vessel aliquot,
+    separate sterilization and late stock addition are absent locally. The page default
+    is 121 C for 15 min; no growth temperature or observed strain-growth claim follows.
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+- assessment_id: classification
+  area: scope
+  topic: Liquid complex medium and high-metal flag
+  outcome: concern
+  summary: The liquid, complex and undefined classification is consistent with the
+    recipe, but high_metal is not independently justified by this review. Stock-batch
+    salt masses cannot establish high final-medium metal concentrations. Reassess
+    that flag only after correct stage and dose representation.
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - primary
+  - provider
+  - record
+  - quantity-inventory
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 22 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:007909
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"quantity_id\": \"q1\",\n    \"topic\": \"Water: separate\
+    \ 900 ml main input and 1 L mineral-stock input\",\n    \"decision\": \"correct\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[0].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"901.0\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The stored 901 G_PER_L\
+    \ conflates different preparation stages and different liquid units. Restore the\
+    \ main 900 ml water input and a separate stock recipe using 1 L water. Neither\
+    \ input is a measured final volume; do not replace the total with another flattened\
+    \ sum.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"901.0\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"The stored\
+    \ 901 G_PER_L conflates different preparation stages and different liquid units.\
+    \ Restore the main 900 ml water input and a separate stock recipe using 1 L water.\
+    \ Neither input is a measured final volume; do not replace the total with another\
+    \ flattened sum.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n   \
+    \     \"source_key\": \"togoM1370original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 900,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\": \"\
+    d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\n      },\n\
+    \      {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n\
+    \        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n900.0\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Mineral solution, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n1.0\\nL\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored 901 G_PER_L conflates different\
+    \ preparation stages and different liquid units. Restore the main 900 ml water\
+    \ input and a separate stock recipe using 1 L water. Neither input is a measured\
+    \ final volume; do not replace the total with another flattened sum.\"\n  },\n\
+    \  {\n    \"quantity_id\": \"q2\",\n    \"topic\": \"Yeast extract 6 g — main\
+    \ batch amount\",\n    \"decision\": \"unsupported\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[1].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"6\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The literal main-batch mass is supported, but the stored G_PER_L denominator\
+    \ is not explicitly established as measured final volume. Keep the mass and supplied\
+    \ form in the main stage. The late 100 ml addition per 900 ml medium must not\
+    \ be silently converted into a measured 1 L final-volume assertion.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"6\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ main-batch mass is supported, but the stored G_PER_L denominator is not explicitly\
+    \ established as measured final volume. Keep the mass and supplied form in the\
+    \ main stage. The late 100 ml addition per 900 ml medium must not be silently\
+    \ converted into a measured 1 L final-volume assertion.\"\n      }\n    ],\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1370original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Yeast extract\\\",\\n          \\\"volume\\\"\
+    : 6,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n900.0\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal main-batch mass is supported,\
+    \ but the stored G_PER_L denominator is not explicitly established as measured\
+    \ final volume. Keep the mass and supplied form in the main stage. The late 100\
+    \ ml addition per 900 ml medium must not be silently converted into a measured\
+    \ 1 L final-volume assertion.\"\n  },\n  {\n    \"quantity_id\": \"q3\",\n   \
+    \ \"topic\": \"KH2PO4 1.5 g — main batch amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[3].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ main-batch mass is supported, but the stored G_PER_L denominator is not explicitly\
+    \ established as measured final volume. Keep the mass and supplied form in the\
+    \ main stage. The late 100 ml addition per 900 ml medium must not be silently\
+    \ converted into a measured 1 L final-volume assertion.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ main-batch mass is supported, but the stored G_PER_L denominator is not explicitly\
+    \ established as measured final volume. Keep the mass and supplied form in the\
+    \ main stage. The late 100 ml addition per 900 ml medium must not be silently\
+    \ converted into a measured 1 L final-volume assertion.\"\n      }\n    ],\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1370original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"KH2PO4\\\",\\n          \\\"volume\\\": 1.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n900.0\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal main-batch mass is supported,\
+    \ but the stored G_PER_L denominator is not explicitly established as measured\
+    \ final volume. Keep the mass and supplied form in the main stage. The late 100\
+    \ ml addition per 900 ml medium must not be silently converted into a measured\
+    \ 1 L final-volume assertion.\"\n  },\n  {\n    \"quantity_id\": \"q4\",\n   \
+    \ \"topic\": \"K2HPO4 2.9 g — main batch amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[4].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2.9\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ main-batch mass is supported, but the stored G_PER_L denominator is not explicitly\
+    \ established as measured final volume. Keep the mass and supplied form in the\
+    \ main stage. The late 100 ml addition per 900 ml medium must not be silently\
+    \ converted into a measured 1 L final-volume assertion.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.9\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ main-batch mass is supported, but the stored G_PER_L denominator is not explicitly\
+    \ established as measured final volume. Keep the mass and supplied form in the\
+    \ main stage. The late 100 ml addition per 900 ml medium must not be silently\
+    \ converted into a measured 1 L final-volume assertion.\"\n      }\n    ],\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1370original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[4]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"K2HPO4\\\",\\n          \\\"volume\\\": 2.9,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n900.0\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal main-batch mass is supported,\
+    \ but the stored G_PER_L denominator is not explicitly established as measured\
+    \ final volume. Keep the mass and supplied form in the main stage. The late 100\
+    \ ml addition per 900 ml medium must not be silently converted into a measured\
+    \ 1 L final-volume assertion.\"\n  },\n  {\n    \"quantity_id\": \"q5\",\n   \
+    \ \"topic\": \"Na2CO3 4 g — main batch amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n  \
+    \      \"decision\": \"unsupported\",\n        \"rationale\": \"The literal main-batch\
+    \ mass is supported, but the stored G_PER_L denominator is not explicitly established\
+    \ as measured final volume. Keep the mass and supplied form in the main stage.\
+    \ The late 100 ml addition per 900 ml medium must not be silently converted into\
+    \ a measured 1 L final-volume assertion.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\",\n        \"\
+    field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"4\",\n          \"unit\": \"G_PER_L\"\n        },\n       \
+    \ \"decision\": \"unsupported\",\n        \"rationale\": \"The literal main-batch\
+    \ mass is supported, but the stored G_PER_L denominator is not explicitly established\
+    \ as measured final volume. Keep the mass and supplied form in the main stage.\
+    \ The late 100 ml addition per 900 ml medium must not be silently converted into\
+    \ a measured 1 L final-volume assertion.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n\
+    \        \"source_locator\": \"$.components[0].items[6]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Na2CO3\\\",\\n          \\\"volume\\\": 4,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n900.0\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal main-batch mass is supported,\
+    \ but the stored G_PER_L denominator is not explicitly established as measured\
+    \ final volume. Keep the mass and supplied form in the main stage. The late 100\
+    \ ml addition per 900 ml medium must not be silently converted into a measured\
+    \ 1 L final-volume assertion.\"\n  },\n  {\n    \"quantity_id\": \"q6\",\n   \
+    \ \"topic\": \"Urea 2.1 g — main batch amount\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\",\n     \
+    \   \"field_path\": \"ingredients[7].concentration\",\n        \"stored\": {\n\
+    \          \"value\": \"2.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ main-batch mass is supported, but the stored G_PER_L denominator is not explicitly\
+    \ established as measured final volume. Keep the mass and supplied form in the\
+    \ main stage. The late 100 ml addition per 900 ml medium must not be silently\
+    \ converted into a measured 1 L final-volume assertion.\"\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"2.1\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ main-batch mass is supported, but the stored G_PER_L denominator is not explicitly\
+    \ established as measured final volume. Keep the mass and supplied form in the\
+    \ main stage. The late 100 ml addition per 900 ml medium must not be silently\
+    \ converted into a measured 1 L final-volume assertion.\"\n      }\n    ],\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1370original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[7]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Urea\\\",\\n          \\\"volume\\\": 2.1,\\n\
+    \          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n900.0\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal main-batch mass is supported,\
+    \ but the stored G_PER_L denominator is not explicitly established as measured\
+    \ final volume. Keep the mass and supplied form in the main stage. The late 100\
+    \ ml addition per 900 ml medium must not be silently converted into a measured\
+    \ 1 L final-volume assertion.\"\n  },\n  {\n    \"quantity_id\": \"q7\",\n   \
+    \ \"topic\": \"L-cysteine hydrochloride monohydrate 0.5 g — main batch amount\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"layer_decisions\": [\n      {\n \
+    \       \"input\": \"target\",\n        \"field_path\": \"ingredients[8].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.5\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"unsupported\",\n        \"rationale\"\
+    : \"The literal main-batch mass is supported, but the stored G_PER_L denominator\
+    \ is not explicitly established as measured final volume. Keep the mass and supplied\
+    \ form in the main stage. The late 100 ml addition per 900 ml medium must not\
+    \ be silently converted into a measured 1 L final-volume assertion.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"unsupported\",\n        \"rationale\": \"The literal\
+    \ main-batch mass is supported, but the stored G_PER_L denominator is not explicitly\
+    \ established as measured final volume. Keep the mass and supplied form in the\
+    \ main stage. The late 100 ml addition per 900 ml medium must not be silently\
+    \ converted into a measured 1 L final-volume assertion.\"\n      }\n    ],\n \
+    \   \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1370original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[8]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"L-Cysteine・HCl・H2O\\\",\\n          \\\"volume\\\
+    \": 0.5,\\n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\":\
+    \ \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n900.0\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"The literal main-batch mass is supported,\
+    \ but the stored G_PER_L denominator is not explicitly established as measured\
+    \ final volume. Keep the mass and supplied form in the main stage. The late 100\
+    \ ml addition per 900 ml medium must not be silently converted into a measured\
+    \ 1 L final-volume assertion.\"\n  },\n  {\n    \"quantity_id\": \"q8\",\n   \
+    \ \"topic\": \"Calcium chloride dihydrate: 0.01 g main plus 37.5 g in mineral\
+    \ stock\",\n    \"decision\": \"correct\",\n    \"layer_decisions\": [\n     \
+    \ {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[2].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"37.51\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"The stored 37.51 G_PER_L is the numerical sum of the main and stock-batch\
+    \ masses. Keep 0.01 g in the main batch and 37.5 g in the separate stock recipe\
+    \ dosed at 0.2 ml. Stock water is a 1 L input, not a proven measured final stock\
+    \ volume; do not invent an exact final-medium calcium total.\"\n      },\n   \
+    \   {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"37.51\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"The stored\
+    \ 37.51 G_PER_L is the numerical sum of the main and stock-batch masses. Keep\
+    \ 0.01 g in the main batch and 37.5 g in the separate stock recipe dosed at 0.2\
+    \ ml. Stock water is a 1 L input, not a proven measured final stock volume; do\
+    \ not invent an exact final-medium calcium total.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n\
+    \        \"source_locator\": \"$.components[0].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 0.01,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 37.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Mineral solution (see below)\\\",\\n         \
+    \ \\\"volume\\\": 0.2,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Mineral solution, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n1.0\\nL\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      }\n    ],\n    \"rationale\": \"The stored 37.51 G_PER_L is the numerical\
+    \ sum of the main and stock-batch masses. Keep 0.01 g in the main batch and 37.5\
+    \ g in the separate stock recipe dosed at 0.2 ml. Stock water is a 1 L input,\
+    \ not a proven measured final stock volume; do not invent an exact final-medium\
+    \ calcium total.\"\n  },\n  {\n    \"quantity_id\": \"q9\",\n    \"topic\": \"\
+    Resazurin: 0.5 mg in the main batch\",\n    \"decision\": \"correct\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"ingredients[5].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"rationale\": \"The source mass unit is mg, whereas the\
+    \ local entry is 0.5 G_PER_L. Restore the literal 0.5 mg batch amount and its\
+    \ source scope. The unit error is definite; a corrected final G_PER_L number still\
+    \ requires an established final-volume basis.\"\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\",\n  \
+    \      \"field_path\": \"ingredients[5].concentration\",\n        \"stored\":\
+    \ {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The source mass\
+    \ unit is mg, whereas the local entry is 0.5 G_PER_L. Restore the literal 0.5\
+    \ mg batch amount and its source scope. The unit error is definite; a corrected\
+    \ final G_PER_L number still requires an established final-volume basis.\"\n \
+    \     }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\":\
+    \ \"togoM1370original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[5]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Resazurin\\\",\\n          \\\"volume\\\": 0.5,\\\
+    n          \\\"unit\\\": \\\"mg\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, resazurin row\",\n        \"exact_source_quote\": \"Resazurin\\\
+    n0.5\\nmg\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      }\n    ],\n    \"rationale\": \"The source mass unit is mg, whereas the\
+    \ local entry is 0.5 G_PER_L. Restore the literal 0.5 mg batch amount and its\
+    \ source scope. The unit error is definite; a corrected final G_PER_L number still\
+    \ requires an established final-volume basis.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q10\",\n    \"topic\": \"Nitrogen atmosphere: no numerical dose\",\n    \"\
+    decision\": \"not_quantified\",\n    \"layer_decisions\": [\n      {\n       \
+    \ \"input\": \"target\",\n        \"field_path\": \"ingredients[9].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"variable\",\n          \"unit\"\
+    : \"VARIABLE\"\n        },\n        \"decision\": \"not_quantified\",\n      \
+    \  \"rationale\": \"N2 replaces the gas phase and is used for separate chitin\
+    \ autoclaving. No gas quantity or mixing ratio is stated. VARIABLE must not be\
+    \ interpreted as a measured nutrient concentration; retain the atmosphere instruction\
+    \ without inventing a dose.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"variable\",\n          \"unit\": \"VARIABLE\"\n  \
+    \      },\n        \"decision\": \"not_quantified\",\n        \"rationale\": \"\
+    N2 replaces the gas phase and is used for separate chitin autoclaving. No gas\
+    \ quantity or mixing ratio is stated. VARIABLE must not be interpreted as a measured\
+    \ nutrient concentration; retain the atmosphere instruction without inventing\
+    \ a dose.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"togoM1370original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[10]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"N2\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"N2 replaces the gas phase and is used\
+    \ for separate chitin autoclaving. No gas quantity or mixing ratio is stated.\
+    \ VARIABLE must not be interpreted as a measured nutrient concentration; retain\
+    \ the atmosphere instruction without inventing a dose.\"\n  },\n  {\n    \"quantity_id\"\
+    : \"q11\",\n    \"topic\": \"MgCl2 hexahydrate 25 g — mineral stock only\",\n\
+    \    \"decision\": \"correct\",\n    \"layer_decisions\": [\n      {\n       \
+    \ \"input\": \"target\",\n        \"field_path\": \"ingredients[10].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"25\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"This mass belongs to the separate mineral stock, not to the undiluted main\
+    \ medium. Restore the stock composition, preserve the 0.2 ml dose, and qualify\
+    \ the stock water input. No exact final-medium concentration follows without a\
+    \ justified stock final-volume and medium final-volume basis.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"25\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"This mass belongs\
+    \ to the separate mineral stock, not to the undiluted main medium. Restore the\
+    \ stock composition, preserve the 0.2 ml dose, and qualify the stock water input.\
+    \ No exact final-medium concentration follows without a justified stock final-volume\
+    \ and medium final-volume basis.\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n\
+    \        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 25,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Mineral solution (see below)\\\",\\n         \
+    \ \\\"volume\\\": 0.2,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Mineral solution, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n1.0\\nL\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      }\n    ],\n    \"rationale\": \"This mass belongs to the separate mineral\
+    \ stock, not to the undiluted main medium. Restore the stock composition, preserve\
+    \ the 0.2 ml dose, and qualify the stock water input. No exact final-medium concentration\
+    \ follows without a justified stock final-volume and medium final-volume basis.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q12\",\n    \"topic\": \"FeSO4 heptahydrate\
+    \ 0.312 g — mineral stock only\",\n    \"decision\": \"correct\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ingredients[11].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.312\",\n          \"unit\"\
+    : \"G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"This mass belongs to the separate mineral stock, not to the undiluted main\
+    \ medium. Restore the stock composition, preserve the 0.2 ml dose, and qualify\
+    \ the stock water input. No exact final-medium concentration follows without a\
+    \ justified stock final-volume and medium final-volume basis.\"\n      },\n  \
+    \    {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.312\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  },\n        \"decision\": \"correct\",\n        \"rationale\": \"This mass\
+    \ belongs to the separate mineral stock, not to the undiluted main medium. Restore\
+    \ the stock composition, preserve the 0.2 ml dose, and qualify the stock water\
+    \ input. No exact final-medium concentration follows without a justified stock\
+    \ final-volume and medium final-volume basis.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n\
+    \        \"source_locator\": \"$.components[2].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeSO4・7H2O\\\",\\n          \\\"volume\\\": 0.312,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Mineral solution (see below)\\\",\\n         \
+    \ \\\"volume\\\": 0.2,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Mineral solution, water row\",\n        \"exact_source_quote\": \"Distilled\
+    \ water\\n1.0\\nL\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      }\n    ],\n    \"rationale\": \"This mass belongs to the separate mineral\
+    \ stock, not to the undiluted main medium. Restore the stock composition, preserve\
+    \ the 0.2 ml dose, and qualify the stock water input. No exact final-medium concentration\
+    \ follows without a justified stock final-volume and medium final-volume basis.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q13\",\n    \"topic\": \"Mineral-stock addition:\
+    \ 0.2 ml\",\n    \"decision\": \"correct\",\n    \"layer_decisions\": [\n    \
+    \  {\n        \"input\": \"target\",\n        \"field_path\": \"solutions[0].concentration\"\
+    ,\n        \"stored\": {\n          \"value\": \"0.2\",\n          \"unit\": \"\
+    G_PER_L\"\n        },\n        \"decision\": \"correct\",\n        \"rationale\"\
+    : \"Restore the liquid dose of 0.2 ml in the main batch; G_PER_L is not its source\
+    \ unit. Preserve the named stock and its separate recipe, without treating the\
+    \ stock preparation volume as the dose.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\",\n        \"\
+    field_path\": \"solutions[0].concentration\",\n        \"stored\": {\n       \
+    \   \"value\": \"0.2\",\n          \"unit\": \"G_PER_L\"\n        },\n       \
+    \ \"decision\": \"correct\",\n        \"rationale\": \"Restore the liquid dose\
+    \ of 0.2 ml in the main batch; G_PER_L is not its source unit. Preserve the named\
+    \ stock and its separate recipe, without treating the stock preparation volume\
+    \ as the dose.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n     \
+    \   \"source_key\": \"togoM1370original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[0].items[9]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Mineral solution (see below)\\\",\\n         \
+    \ \\\"volume\\\": 0.2,\\n          \\\"unit\\\": \\\"ml\\\"\",\n        \"snapshot_sha256\"\
+    : \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\n     \
+    \ },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\": \"\
+    https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Main formulation, stock dose\",\n        \"exact_source_quote\": \"Mineral\
+    \ solution (see below)\\n0.2\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the liquid dose of 0.2 ml in the\
+    \ main batch; G_PER_L is not its source unit. Preserve the named stock and its\
+    \ separate recipe, without treating the stock preparation volume as the dose.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q14\",\n    \"topic\": \"Late colloidal-chitin\
+    \ addition: 100 ml per 900 ml medium\",\n    \"decision\": \"correct\",\n    \"\
+    layer_decisions\": [\n      {\n        \"input\": \"target\",\n        \"field_path\"\
+    : \"solutions[1].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n        \"decision\"\
+    : \"correct\",\n        \"rationale\": \"The source addition is 100 ml of a stock,\
+    \ not 100 g/L of final medium. A 10% (w/v) stock corresponds to 100 g/L stock\
+    \ strength and a 100 ml aliquot contains 10 g nominal chitin; that arithmetic\
+    \ does not establish the final-medium concentration. Keep stock strength and dose\
+    \ as separate assertions.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"100\",\n          \"unit\": \"G_PER_L\"\n        },\n\
+    \        \"decision\": \"correct\",\n        \"rationale\": \"The source addition\
+    \ is 100 ml of a stock, not 100 g/L of final medium. A 10% (w/v) stock corresponds\
+    \ to 100 g/L stock strength and a 100 ml aliquot contains 10 g nominal chitin;\
+    \ that arithmetic does not establish the final-medium concentration. Keep stock\
+    \ strength and dose as separate assertions.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% (w/v) Colloidal chitin solution\\\",\\n  \
+    \        \\\"volume\\\": 100,\\n          \\\"unit\\\": \\\"ml\\\",\\n       \
+    \   \\\"conc_value\\\": 10,\\n          \\\"conc_unit\\\": \\\"(w/v)\\\"\",\n\
+    \        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Late addition table\",\n        \"exact_source_quote\": \"10% (w/v) Colloidal\
+    \ chitin solution\\n100.0\\nml\",\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"The source addition is 100 ml of a stock,\
+    \ not 100 g/L of final medium. A 10% (w/v) stock corresponds to 100 g/L stock\
+    \ strength and a 100 ml aliquot contains 10 g nominal chitin; that arithmetic\
+    \ does not establish the final-medium concentration. Keep stock strength and dose\
+    \ as separate assertions.\"\n  },\n  {\n    \"quantity_id\": \"q15\",\n    \"\
+    topic\": \"Mineral-stock recipe and water input are missing from the stock wrapper\"\
+    ,\n    \"decision\": \"add\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"solutions[0].composition\",\n\
+    \        \"stored\": [],\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"Restore the exact separate stock batch: 37.5 g CaCl2 dihydrate, 25 g MgCl2\
+    \ hexahydrate, 0.312 g FeSO4 heptahydrate and 1 L water. Preserve ingredient hydrates.\
+    \ Do not normalize stock concentrations using a guessed measured final volume\
+    \ or flatten the stock into the main ingredient list.\"\n      },\n      {\n \
+    \       \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[0].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\",\n        \"rationale\": \"Restore the exact\
+    \ separate stock batch: 37.5 g CaCl2 dihydrate, 25 g MgCl2 hexahydrate, 0.312\
+    \ g FeSO4 heptahydrate and 1 L water. Preserve ingredient hydrates. Do not normalize\
+    \ stock concentrations using a guessed measured final volume or flatten the stock\
+    \ into the main ingredient list.\"\n      }\n    ],\n    \"source_snippets\":\
+    \ [\n      {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n\
+    \        \"source_locator\": \"$.components[2].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"Distilled water\\\",\\n          \\\"volume\\\"\
+    : 1,\\n          \\\"unit\\\": \\\"L\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[2].items[1]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"CaCl2・2H2O\\\",\\n          \\\"volume\\\": 37.5,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[2].items[2]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"MgCl2・6H2O\\\",\\n          \\\"volume\\\": 25,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"togoM1370original\",\n        \"\
+    source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.components[2].items[3]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"FeSO4・7H2O\\\",\\n          \\\"volume\\\": 0.312,\\\
+    n          \\\"unit\\\": \\\"g\\\"\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"Restore the exact separate stock batch:\
+    \ 37.5 g CaCl2 dihydrate, 25 g MgCl2 hexahydrate, 0.312 g FeSO4 heptahydrate and\
+    \ 1 L water. Preserve ingredient hydrates. Do not normalize stock concentrations\
+    \ using a guessed measured final volume or flatten the stock into the main ingredient\
+    \ list.\"\n  },\n  {\n    \"quantity_id\": \"q16\",\n    \"topic\": \"Chitin stock\
+    \ strength: 10% (w/v)\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"solutions[1].composition\"\
+    ,\n        \"stored\": [],\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"Record the explicit 10% (w/v) strength separately from the 100 ml addition.\
+    \ Its preparation method and full stock-making protocol are not supplied; no molecular\
+    \ identity, density or inferred colloid formulation is invented.\"\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"solutions[1].composition\",\n        \"stored\":\
+    \ [],\n        \"decision\": \"add\",\n        \"rationale\": \"Record the explicit\
+    \ 10% (w/v) strength separately from the 100 ml addition. Its preparation method\
+    \ and full stock-making protocol are not supplied; no molecular identity, density\
+    \ or inferred colloid formulation is invented.\"\n      }\n    ],\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\"\
+    : \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n\
+    \        \"source_locator\": \"$.components[1].items[0]\",\n        \"exact_source_quote\"\
+    : \"\\\"component_name\\\": \\\"10% (w/v) Colloidal chitin solution\\\",\\n  \
+    \        \\\"volume\\\": 100,\\n          \\\"unit\\\": \\\"ml\\\",\\n       \
+    \   \\\"conc_value\\\": 10,\\n          \\\"conc_unit\\\": \\\"(w/v)\\\"\",\n\
+    \        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      },\n      {\n        \"source_key\": \"jcm1274\",\n        \"source_url\"\
+    : \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\",\n        \"source_locator\"\
+    : \"Late addition, distinct strength and dose\",\n        \"exact_source_quote\"\
+    : \"10% (w/v) Colloidal chitin solution\\n100.0\\nml\",\n        \"snapshot_sha256\"\
+    : \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\",\n    \
+    \    \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      }\n    ],\n    \"rationale\": \"Record the explicit 10% (w/v) strength\
+    \ separately from the 100 ml addition. Its preparation method and full stock-making\
+    \ protocol are not supplied; no molecular identity, density or inferred colloid\
+    \ formulation is invented.\"\n  },\n  {\n    \"quantity_id\": \"q17\",\n    \"\
+    topic\": \"Main pH adjustment to 7.0\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"ph_value\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"The source states adjustment to pH 7.0 before dispensing and sterilization.\
+    \ Add the scalar preparation target, not an incubation optimum or a measurement\
+    \ after chitin addition.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": null,\n        \"\
+    decision\": \"add\",\n        \"rationale\": \"The source states adjustment to\
+    \ pH 7.0 before dispensing and sterilization. Add the scalar preparation target,\
+    \ not an incubation optimum or a measurement after chitin addition.\"\n      }\n\
+    \    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1370original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"The source states adjustment to pH 7.0\
+    \ before dispensing and sterilization. Add the scalar preparation target, not\
+    \ an incubation optimum or a measurement after chitin addition.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q18\",\n    \"topic\": \"Balch tube example: 9.0 ml\"\
+    ,\n    \"decision\": \"add\",\n    \"layer_decisions\": [\n      {\n        \"\
+    input\": \"target\",\n        \"field_path\": \"preparation_steps\",\n       \
+    \ \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\": \"\
+    Preserve the vessel-example qualifier: 9.0 ml in Balch tubes is an example aliquot,\
+    \ not a mandatory scale for every culture. Retain the source batch formulation\
+    \ independently.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Preserve the vessel-example\
+    \ qualifier: 9.0 ml in Balch tubes is an example aliquot, not a mandatory scale\
+    \ for every culture. Retain the source batch formulation independently.\"\n  \
+    \    }\n    ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    togoM1370original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"Preserve the vessel-example qualifier:\
+    \ 9.0 ml in Balch tubes is an example aliquot, not a mandatory scale for every\
+    \ culture. Retain the source batch formulation independently.\"\n  },\n  {\n \
+    \   \"quantity_id\": \"q19\",\n    \"topic\": \"Default sterilization: 121 C for\
+    \ 15 min\",\n    \"decision\": \"add\",\n    \"layer_decisions\": [\n      {\n\
+    \        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"The collection page supplies a default autoclave cycle of 121 C for 15 min,\
+    \ and this recipe calls for autoclaving without a different cycle. Attribute the\
+    \ cycle to that page default, not to organism growth or an independently measured\
+    \ recipe-specific experiment.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"The collection page\
+    \ supplies a default autoclave cycle of 121 C for 15 min, and this recipe calls\
+    \ for autoclaving without a different cycle. Attribute the cycle to that page\
+    \ default, not to organism growth or an independently measured recipe-specific\
+    \ experiment.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n      \
+    \  \"source_key\": \"jcm1274\",\n        \"source_url\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1274\"\
+    ,\n        \"source_locator\": \"Extracted text line 4\",\n        \"exact_source_quote\"\
+    : \"Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.\"\
+    ,\n        \"snapshot_sha256\": \"890859c652a327686dadbf46a9d671bc52c57eec5cba52cb19ed08a7672384af\"\
+    ,\n        \"parsed_text_sha256\": \"0836f1079e9006a4d36526c6100b66fe43c22de2b566d77c9491c313d996f0ab\"\
+    \n      }\n    ],\n    \"rationale\": \"The collection page supplies a default\
+    \ autoclave cycle of 121 C for 15 min, and this recipe calls for autoclaving without\
+    \ a different cycle. Attribute the cycle to that page default, not to organism\
+    \ growth or an independently measured recipe-specific experiment.\"\n  },\n  {\n\
+    \    \"quantity_id\": \"q20\",\n    \"topic\": \"Anaerobic staged preparation\
+    \ and separately autoclaved chitin\",\n    \"decision\": \"add\",\n    \"layer_decisions\"\
+    : [\n      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"Retain gas replacement with N2, butyl-rubber sealing, autoclaving, cooling\
+    \ and aseptic/anaerobic addition. The chitin solution is separately autoclaved\
+    \ under N2. Do not collapse these stages into a single sterilization of the completed\
+    \ mixture.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain gas replacement\
+    \ with N2, butyl-rubber sealing, autoclaving, cooling and aseptic/anaerobic addition.\
+    \ The chitin solution is separately autoclaved under N2. Do not collapse these\
+    \ stages into a single sterilization of the completed mixture.\"\n      }\n  \
+    \  ],\n    \"source_snippets\": [\n      {\n        \"source_key\": \"togoM1370original\"\
+    ,\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[0].comment\",\n        \"exact_source_quote\"\
+    : \"Mix components and adjust pH to 7.0. Distribute the medium in culture vessels\
+    \ (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal with butyl\
+    \ rubber stoppers, and autoclave. After cooling, aseptically and anaerobically\
+    \ add per 900 ml the following solution (autoclaved under a N2 atmosphere):\"\
+    ,\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain gas replacement with N2, butyl-rubber\
+    \ sealing, autoclaving, cooling and aseptic/anaerobic addition. The chitin solution\
+    \ is separately autoclaved under N2. Do not collapse these stages into a single\
+    \ sterilization of the completed mixture.\"\n  },\n  {\n    \"quantity_id\": \"\
+    q21\",\n    \"topic\": \"Alternative 10% (w/v) chitin stock\",\n    \"decision\"\
+    : \"add\",\n    \"layer_decisions\": [\n      {\n        \"input\": \"target\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain this as an alternative\
+    \ to colloidal chitin, not a simultaneous additional ingredient. The source gives\
+    \ the alternative strength; no extra final-medium concentration or preparation\
+    \ protocol is inferred.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain this as an alternative\
+    \ to colloidal chitin, not a simultaneous additional ingredient. The source gives\
+    \ the alternative strength; no extra final-medium concentration or preparation\
+    \ protocol is inferred.\"\n      }\n    ],\n    \"source_snippets\": [\n     \
+    \ {\n        \"source_key\": \"togoM1370original\",\n        \"source_url\": \"\
+    https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\",\n    \
+    \    \"source_locator\": \"$.comments[2].comment\",\n        \"exact_source_quote\"\
+    : \"Colloidal chitin solution can be replaced by 10% (w/v) chitin or 0.2 M cellobiose\
+    \ solution.\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain this as an alternative to colloidal\
+    \ chitin, not a simultaneous additional ingredient. The source gives the alternative\
+    \ strength; no extra final-medium concentration or preparation protocol is inferred.\"\
+    \n  },\n  {\n    \"quantity_id\": \"q22\",\n    \"topic\": \"Alternative 0.2 M\
+    \ cellobiose stock\",\n    \"decision\": \"add\",\n    \"layer_decisions\": [\n\
+    \      {\n        \"input\": \"target\",\n        \"field_path\": \"preparation_steps\"\
+    ,\n        \"stored\": null,\n        \"decision\": \"add\",\n        \"rationale\"\
+    : \"Retain the explicit 0.2 M alternative solution as a separate recipe variant.\
+    \ Do not treat 0.2 M as the final-medium cellobiose concentration or add it together\
+    \ with both chitin alternatives.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps\",\n        \"stored\": null,\n\
+    \        \"decision\": \"add\",\n        \"rationale\": \"Retain the explicit\
+    \ 0.2 M alternative solution as a separate recipe variant. Do not treat 0.2 M\
+    \ as the final-medium cellobiose concentration or add it together with both chitin\
+    \ alternatives.\"\n      }\n    ],\n    \"source_snippets\": [\n      {\n    \
+    \    \"source_key\": \"togoM1370original\",\n        \"source_url\": \"https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1370\"\
+    ,\n        \"source_locator\": \"$.comments[2].comment\",\n        \"exact_source_quote\"\
+    : \"Colloidal chitin solution can be replaced by 10% (w/v) chitin or 0.2 M cellobiose\
+    \ solution.\",\n        \"snapshot_sha256\": \"d88419da845dffe6fb30f92b71c0fec0c9c9d7245e294fb026662c624d0062d3\"\
+    \n      }\n    ],\n    \"rationale\": \"Retain the explicit 0.2 M alternative\
+    \ solution as a separate recipe variant. Do not treat 0.2 M as the final-medium\
+    \ cellobiose concentration or add it together with both chitin alternatives.\"\
+    \n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.007909.stock-main-flattening
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate the mineral-stock recipe from the main batch
+  description: Both layers store the stock’s magnesium and iron masses as main ingredients
+    and add stock calcium to main calcium. Water also sums 900 ml and 1 L numerically
+    as 901 G_PER_L; the stock wrappers are empty.
+  target_ids:
+  - CultureMech:007909
+  field_paths:
+  - ingredients[0]
+  - ingredients[2]
+  - ingredients[10]
+  - ingredients[11]
+  - solutions[0]
+  - high_metal
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech.007909.source-units-and-doses
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore resazurin milligrams and liquid stock doses
+  description: Resazurin is 0.5 mg per source batch, mineral stock is dosed at 0.2
+    ml and chitin stock at 100 ml. Their local G_PER_L fields conflate mass, dose,
+    strength and final-medium rates.
+  target_ids:
+  - CultureMech:007909
+  field_paths:
+  - ingredients[5].concentration
+  - solutions[0].concentration
+  - solutions[1].concentration
+  - ingredients
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.007909.preparation-and-variants
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Restore scoped preparation and carbon-source alternatives
+  description: Local layers omit source pH adjustment, vessel example, anaerobic steps,
+    separately sterilized late addition and mutually alternative chitin/cellobiose
+    solutions.
+  target_ids:
+  - CultureMech:007909
+  field_paths:
+  - ph_value
+  - preparation_steps
+  evidence_ids:
+  - primary
+  - provider
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.007909.claim-linkage
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Attach exact stage-specific source evidence
+  description: No quantity claim has attached source evidence, and stock/main provenance
+    is necessary to distinguish identical compound names with different preparation
+    roles. Current sources do not authenticate the original historical import response.
+  target_ids:
+  - CultureMech:007909
+  field_paths:
+  - ingredients
+  - solutions
+  - references
+  - curation_history
+  evidence_ids:
+  - history-evidence
+  - bound-source-integrity
+  - primary
+  - provider
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is elevated to minor because the missing claim linkage
+    obscures concrete stock/main and dose/strength distinctions despite available
+    literal source amounts; historical raw availability is a separate limitation.
+actions:
+- action_id: a1
+  description: Restore source stages and the 0.2 ml stock dose, keep exact hydrated
+    forms and batch amounts, remove unsupported flattened totals and reassess any
+    flag based on them. Do not infer measured final volumes.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007909
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain literal source units and separate stock strength from dose.
+    Preserve other supported main-batch masses while marking their final G_PER_L basis
+    unresolved until justified.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007909
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Add the exact source sequence and qualifiers; keep alternate carbon
+    solutions separate and do not turn preparation temperatures, stock strengths or
+    example volumes into growth assertions.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007909
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach exact current source snippets to the corresponding main, stock,
+    dose and preparation claims, preserving capture timestamps and historical limitations.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007909
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1370_BM7CO_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Measured final medium and mineral-stock volumes are not established. Batch masses,
+  water inputs, stock strengths and aliquot doses remain distinct; exact final-medium
+  dilution calculations are withheld.
+- The full colloidal-chitin preparation method is not supplied. Carbon-source alternatives
+  are source variants, and no organism-specific growth experiment is established.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-044
+- generated-medium
+```
