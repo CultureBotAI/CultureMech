@@ -1,0 +1,11000 @@
+# Source and formulation review: blautia_medium (CultureMech:002083)
+
+- Review: 20261022T003735Z-culturemech-002083-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-22T00:25:10Z
+- Finished UTC: 2026-10-22T00:37:35Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The generated Blautia recipe conflates a base and two strain-specific formulations, while current September owner repairs already distinguish their topology. All five local layers still flatten mineral and vitamin stock-preparation amounts as rates and add full-strength stock salts to base salts. Missing stock doses/rumen fluid/water, uncertain final-volume normalization, nickel-hydrate and resazurin-salt mappings require curation. The DSM primary supports separate preparation stages; the rumen121°C cycle is stock-only.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 430; batch 043 item 10 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding forty-two task batches contain 420 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00 contains 41 validated baseline bundles covering 3 current merged paths. Unioning all prior lists with this baseline covers 423 of 6320 current merged paths, including 3 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a639c4b597e95b6061f2d1c7baa04de84ba2f00.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002083 | data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml | generated | blautia_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002083 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:002083 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch043/430/strict.tsv |
+| validate-terms | passed | True | CultureMech:002083 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:002083 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:002083 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact source content access: api915 | unavailable | False | CultureMech:002083 | The current REST915 capture returned HTTP503 once; it does not negate the available DSM primary. |
+| Exact source content access: komodo915.1 | unavailable | True | CultureMech:002083 | KOMODO915.1 returned HTTP200 with a java.lang.NullPointerException rather than a recipe. Its exact current provider formulation is unavailable; DSM915 separately supplies the strain-specific formate instruction. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:002083.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Base, strain variants and maintained repair
+
+identity: concern. Targets: CultureMech:002083.
+
+Four exact maintained contributors are represented. September13 repair correctly rerooted the base and marked DSM14465/14466 and DSM14469 wrappers as STRAIN_SPECIFIC_VARIANT. The August target still treats these as synonyms/duplicates and points to the DSM14469 child as parent. Identical copied35-ingredient lists do not establish biological or formulation equivalence.
+
+### Asserted ontology and current CHEBI-based secondary metadata
+
+grounding: concern. Targets: CultureMech:002083.
+
+34 distinct asserted primary and current CHEBI-based secondary IDs resolve to matching nonobsolete labels in all inspected layers. Target linkage: 34/35 primary and 32/35 secondary instances; all asserted current mediaingredientmech_chebi_term keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are outside this helper lookup and require a separate historical-correspondence assessment. Exact supplied-form mismatch is addressed separately; valid IDs and labels do not establish correct source grounding.
+
+Instance coverage on a 0–100 percent scale, denominator 35: primary 97.14%; secondary 91.43%. These are linkage metrics, not correctness scores. Missing optional links do not establish wrong identity.
+
+### All source forms versus asserted chemistry
+
+grounding: concern. Targets: CultureMech:002083.
+
+NiCl2·6H2O is mapped to anhydrous nickel dichloride CHEBI:34887; sodium resazurin is mapped to free-acid CHEBI:8806. These are supplied-form mismatches. Calcium D-(+)-pantothenate is compatible with CHEBI:31345 because its synonyms and stereochemical structure retain D identity despite the short label. CHEBI:16494 is a stereounspecified parent compatible with source DL-lipoic acid; no wrong-enantiomer finding. Other explicitly named salts/hydrates, D-glucose, L-cysteine hydrochloride hydrate, vitamins and acid/base identities match the inspected scientific properties at source precision. Generic biotin and vitaminB12 do not justify more specific supplied forms or new molarity calculations. Complex yeast/rumen materials are not pure compounds.
+
+### Append-only history and timestamp shape
+
+provenance: concern. Targets: CultureMech:002083.
+
+52 timestamp instances inspected; 6 malformed or timezone-naive instances. Historical import, repair and enrichment statements are provenance, not source confirmation. Preserve old events; append any later authorized clarification rather than silently rewriting historical records.
+
+### Retained primary preparation versus missing stock representation
+
+completeness: concern. Targets: CultureMech:002083.
+
+The target and DSM owner retain all three primary preparation paragraphs, including explicit rumen-only cycle and separate mineral pH. The three KOMODO owners lack preparation arrays. The main medium is explicitly rendered anoxic; no empirical growth rate, incubation temperature or automatic strain-growth claim follows. Scoped preparation should accompany corrected stocks and variants; do not erase already-present text.
+
+### Current repairs and historical reports
+
+provenance: supported. Targets: CultureMech:002083.
+
+No attached concentration evidence occurs in these five ingredient arrays. Nine exact identity-matched historical report bodies remain derivative context in the bound package; no report alone authenticates original raw bytes. September source/variant repair is visible and credited, whereas current formula quantities still require correction.
+
+### Complete source-stage quantity decision inventory
+
+quantity: concern. Targets: CultureMech:002083.
+
+58 source-scoped decisions, including every local concentration and explicit source-only quantities. Verified applies only to the named local layer with attached matching evidence.
+
+[
+  {
+    "decision_id": "q1",
+    "name": "K2HPO4",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[0].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "0.30",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 3",
+        "exact_source_quote": "   K2HPO4                                                    0.30        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 0.30 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present."
+  },
+  {
+    "decision_id": "q2",
+    "name": "KH2PO4",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[1].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "0.30",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 4",
+        "exact_source_quote": "   KH2PO4                                                    0.30        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 0.30 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present."
+  },
+  {
+    "decision_id": "q3",
+    "name": "(NH4)2SO4",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[2].concentration",
+        "stored": {
+          "value": "0.299401",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "0.30",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 5",
+        "exact_source_quote": "   (NH4)2SO4                                                 0.30        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 0.30 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present."
+  },
+  {
+    "decision_id": "q4",
+    "name": "NH4Cl",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.998004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.998004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.998004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.998004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[3].concentration",
+        "stored": {
+          "value": "0.998004",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "1.00",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 6",
+        "exact_source_quote": "   NH4Cl                                                     1.00        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 1.00 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present."
+  },
+  {
+    "decision_id": "q5",
+    "name": "NaCl",
+    "stage": "Separate main and mineral-stock stages",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1.6087820000000002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1.6087820000000002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1.6087820000000002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1.6087820000000002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[4].concentration",
+        "stored": {
+          "value": "1.6087820000000002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "main_batch_mass_g": "0.61",
+      "stock_mass_g_per_preparation": "1.00",
+      "stock_water_ml": "1000",
+      "stock_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 7",
+        "exact_source_quote": "   NaCl                                                      0.61        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 39",
+        "exact_source_quote": "   NaCl                                                      1.00        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local value sums a normalized base amount and the full printed stock-preparation mass. The primary adds only 10 ml of the mineral stock and lists 1000 ml water for its preparation, without declaring final stock volume. If that final volume were independently established as 1000 ml, the dose would contribute 0.010 g NaCl, 0.030 g MgSO4·7H2O and 0.001 g CaCl2·2H2O per printed receiving batch. These are conditional calculations, not source-established delivered masses. Separate main and stock stages and retain both final-volume uncertainties."
+  },
+  {
+    "decision_id": "q6",
+    "name": "MgSO4 x 7 H2O",
+    "stage": "Separate main and mineral-stock stages",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3.11976",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3.11976",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3.11976",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3.11976",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[5].concentration",
+        "stored": {
+          "value": "3.11976",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "main_batch_mass_g": "0.12",
+      "stock_mass_g_per_preparation": "3.00",
+      "stock_water_ml": "1000",
+      "stock_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 8",
+        "exact_source_quote": "   MgSO4 x 7 H2O                                             0.12        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 37",
+        "exact_source_quote": "   MgSO4 x 7 H2O                                             3.00        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local value sums a normalized base amount and the full printed stock-preparation mass. The primary adds only 10 ml of the mineral stock and lists 1000 ml water for its preparation, without declaring final stock volume. If that final volume were independently established as 1000 ml, the dose would contribute 0.010 g NaCl, 0.030 g MgSO4·7H2O and 0.001 g CaCl2·2H2O per printed receiving batch. These are conditional calculations, not source-established delivered masses. Separate main and stock stages and retain both final-volume uncertainties."
+  },
+  {
+    "decision_id": "q7",
+    "name": "CaCl2 x 2 H2O",
+    "stage": "Separate main and mineral-stock stages",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1798403",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1798403",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1798403",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1798403",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[6].concentration",
+        "stored": {
+          "value": "0.1798403",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "main_batch_mass_g": "0.08",
+      "stock_mass_g_per_preparation": "0.10",
+      "stock_water_ml": "1000",
+      "stock_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 9",
+        "exact_source_quote": "   CaCl2 x 2 H2O                                             0.08        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 42",
+        "exact_source_quote": "   CaCl2 x 2 H2O                                             0.10        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local value sums a normalized base amount and the full printed stock-preparation mass. The primary adds only 10 ml of the mineral stock and lists 1000 ml water for its preparation, without declaring final stock volume. If that final volume were independently established as 1000 ml, the dose would contribute 0.010 g NaCl, 0.030 g MgSO4·7H2O and 0.001 g CaCl2·2H2O per printed receiving batch. These are conditional calculations, not source-established delivered masses. Separate main and stock stages and retain both final-volume uncertainties."
+  },
+  {
+    "decision_id": "q8",
+    "name": "Yeast extract",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.99601",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.99601",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.99601",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.99601",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[7].concentration",
+        "stored": {
+          "value": "1.99601",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "2.00",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 12",
+        "exact_source_quote": "   Yeast extract                                             2.00        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 2.00 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present. DSM14469 explicitly omits yeast extract; this shared row is also wrong for that maintained variant and needs variant-specific correction."
+  },
+  {
+    "decision_id": "q9",
+    "name": "Sodium resazurin",
+    "stage": "Resazurin stock addition",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[8].concentration",
+        "stored": {
+          "value": "0.000499002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "stock_strength": "0.1% w/v",
+      "dose_ml": "0.50",
+      "delivered_mass_g": "0.0005",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 13",
+        "exact_source_quote": "   Sodium resazurin (0.1% w/v)                               0.50       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Explicit0.1% w/v means0.1 g/100 ml;0.50 ml delivers0.0005 g. The existing0.000499002 g/L cannot be verified without final-volume evidence. Preserve the sodium salt identity separately from the incompatible free-acid mapping."
+  },
+  {
+    "decision_id": "q10",
+    "name": "NaHCO3",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "7.48503",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "7.48503",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "7.48503",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "7.48503",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[9].concentration",
+        "stored": {
+          "value": "7.48503",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "7.50",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 14",
+        "exact_source_quote": "   NaHCO3                                                    7.50        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 7.50 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present."
+  },
+  {
+    "decision_id": "q11",
+    "name": "D-Glucose",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "4.99002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "4.99002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "4.99002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "4.99002",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[10].concentration",
+        "stored": {
+          "value": "4.99002",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "5.00",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 15",
+        "exact_source_quote": "   D-Glucose                                                 5.00        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 5.00 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present."
+  },
+  {
+    "decision_id": "q12",
+    "name": "L-Cysteine HCl x H2O",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[11].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "0.45",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 17",
+        "exact_source_quote": "   L-Cysteine HCl x H2O                                      0.45        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 0.45 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present."
+  },
+  {
+    "decision_id": "q13",
+    "name": "Na2S x 9 H2O",
+    "stage": "Main base batch, all five local layers",
+    "decision": "unsupported",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[12].concentration",
+        "stored": {
+          "value": "0.449102",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "source_batch_mass_g": "0.45",
+      "final_concentration": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 18",
+        "exact_source_quote": "   Na2S x 9 H2O                                              0.45        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The primary gives 0.45 g for its stated base batch; the stored normalized rate suggests a1.002 L divisor but the primary declares no final measured volume, and later sterile-stock doses are unspecified. Preserve source batch mass and do not silently replace the stored rate with a guessed g/L value. No attached quantity evidence is present."
+  },
+  {
+    "decision_id": "q14",
+    "name": "Nitrilotriacetic acid",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[13].concentration",
+        "stored": {
+          "value": "1.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "1.50",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 36",
+        "exact_source_quote": "   Nitrilotriacetic acid                                     1.50        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q15",
+    "name": "MnSO4 x H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[14].concentration",
+        "stored": {
+          "value": "0.5",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.50",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 38",
+        "exact_source_quote": "   MnSO4 x H2O                                               0.50        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q16",
+    "name": "FeSO4 x 7 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[15].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.10",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 40",
+        "exact_source_quote": "   FeSO4 x 7 H2O                                             0.10        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q17",
+    "name": "CoSO4 x 7 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[16].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.18",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 41",
+        "exact_source_quote": "   CoSO4 x 7 H2O                                             0.18        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q18",
+    "name": "ZnSO4 x 7 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[17].concentration",
+        "stored": {
+          "value": "0.18",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.18",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 43",
+        "exact_source_quote": "   ZnSO4 x 7 H2O                                             0.18        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q19",
+    "name": "CuSO4 x 5 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[18].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.01",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 44",
+        "exact_source_quote": "   CuSO4 x 5 H2O                                             0.01        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q20",
+    "name": "AlK(SO4)2 x 12 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[19].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.02",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 45",
+        "exact_source_quote": "   AlK(SO4)2 x 12 H2O                                        0.02        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q21",
+    "name": "H3BO3",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[20].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.01",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 46",
+        "exact_source_quote": "   H3BO3                                                     0.01        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q22",
+    "name": "Na2MoO4 x 2 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[21].concentration",
+        "stored": {
+          "value": "0.01",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.01",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 55",
+        "exact_source_quote": "   Na2MoO4 x 2 H2O                                           0.01        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q23",
+    "name": "NiCl2 x 6 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[22].concentration",
+        "stored": {
+          "value": "0.03",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.03",
+      "printed_unit": "g",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 56",
+        "exact_source_quote": "   NiCl2 x 6 H2O                                             0.03        g",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q24",
+    "name": "Na2SeO3 x 5 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[23].concentration",
+        "stored": {
+          "value": "0.0003",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.30",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 57",
+        "exact_source_quote": "   Na2SeO3 x 5 H2O                                           0.30       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q25",
+    "name": "Na2WO4 x 2 H2O",
+    "stage": "mineral stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[24].concentration",
+        "stored": {
+          "value": "0.0004",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "0.40",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "10",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 58",
+        "exact_source_quote": "   Na2WO4 x 2 H2O                                            0.40       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q26",
+    "name": "Biotin",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[25].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "20.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 76",
+        "exact_source_quote": "   Biotin                                                   20.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q27",
+    "name": "Folic acid",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[26].concentration",
+        "stored": {
+          "value": "0.02",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "20.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 77",
+        "exact_source_quote": "   Folic acid                                               20.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q28",
+    "name": "Pyridoxine hydrochloride",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[27].concentration",
+        "stored": {
+          "value": "0.1",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "100.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 78",
+        "exact_source_quote": "   Pyridoxine hydrochloride                                100.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q29",
+    "name": "Thiamine HCl",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[28].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "50.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 79",
+        "exact_source_quote": "   Thiamine HCl                                             50.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q30",
+    "name": "Riboflavin",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[29].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "50.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 80",
+        "exact_source_quote": "   Riboflavin                                               50.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q31",
+    "name": "Nicotinic acid",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[30].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "50.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 81",
+        "exact_source_quote": "   Nicotinic acid                                           50.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q32",
+    "name": "Calcium D-(+)-pantothenate",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[31].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "50.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 82",
+        "exact_source_quote": "   Calcium D-(+)-pantothenate                               50.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q33",
+    "name": "Vitamin B12",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[32].concentration",
+        "stored": {
+          "value": "0.001",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "1.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 83",
+        "exact_source_quote": "   Vitamin B12                                               1.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q34",
+    "name": "p-Aminobenzoic acid",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[33].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "50.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 84",
+        "exact_source_quote": "   p-Aminobenzoic acid                                      50.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q35",
+    "name": "(DL)-alpha-Lipoic acid",
+    "stage": "10x vitamin stock flattened in every layer",
+    "decision": "correct",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ingredients[34].concentration",
+        "stored": {
+          "value": "0.05",
+          "unit": "G_PER_L"
+        }
+      }
+    ],
+    "desired": {
+      "printed_batch_amount": "50.00",
+      "printed_unit": "mg",
+      "final_volume": null,
+      "listed_stock_water_ml": "1000",
+      "receiving_batch_dose_ml": "2",
+      "final_stock_volume": null
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 85",
+        "exact_source_quote": "   (DL)-alpha-Lipoic acid                                   50.00       mg",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "The local numerical numerator corresponds to the printed stock-preparation mass, including mg-to-g conversion, but neither a final stock litre nor a main-medium rate is established. Restore the named stock and its printed receiving dose. Listed 1000 ml water is an input, not final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are conditional on independently established 1000 ml final stock volumes; no such declaration is present. Final-medium g/L also remains unresolved."
+  },
+  {
+    "decision_id": "q36",
+    "name": "Modified Wolin's mineral solution",
+    "stage": "Main addition",
+    "decision": "add",
+    "local_fields": [],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 10",
+        "exact_source_quote": "   Modified Wolin's mineral solution                        10.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "10 ml mineral stock is not represented as a stock dose in any local layer. Preserve the literal preparation amount rather than infer a final volume."
+  },
+  {
+    "decision_id": "q37",
+    "name": "Clarified rumen fluid",
+    "stage": "Main addition",
+    "decision": "add",
+    "local_fields": [],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 11",
+        "exact_source_quote": "   Clarified rumen fluid                                   100.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "100 ml clarified rumen fluid is omitted from all ingredient lists even though its preparation text is retained in the DSM owner and target. Preserve the literal preparation amount rather than infer a final volume."
+  },
+  {
+    "decision_id": "q38",
+    "name": "Wolin's vitamin solution (10x)",
+    "stage": "Main addition",
+    "decision": "add",
+    "local_fields": [],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 16",
+        "exact_source_quote": "   Wolin's vitamin solution (10x)                            2.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "2 ml of the10x vitamin stock is omitted as a stock dose; its solutes are instead flattened. Preserve the literal preparation amount rather than infer a final volume."
+  },
+  {
+    "decision_id": "q39",
+    "name": "Distilled water",
+    "stage": "Main water",
+    "decision": "add",
+    "local_fields": [],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 19",
+        "exact_source_quote": "   Distilled water                                         890.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "890 ml main water is missing from ingredient lists; no mass-density conversion is justified. Preserve the literal preparation amount rather than infer a final volume."
+  },
+  {
+    "decision_id": "q40",
+    "name": "Distilled water",
+    "stage": "Mineral stock water",
+    "decision": "add",
+    "local_fields": [],
+    "desired": {
+      "value": "1000",
+      "unit": "ML"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 59",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "This litre prepares the stock and is not an extra litre of main-medium water."
+  },
+  {
+    "decision_id": "q41",
+    "name": "Distilled water",
+    "stage": "Vitamin stock water",
+    "decision": "add",
+    "local_fields": [],
+    "desired": {
+      "value": "1000",
+      "unit": "ML"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "DSM915 extracted text line 86",
+        "exact_source_quote": "   Distilled water                                        1000.00       ml",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "This litre prepares the stock and is not an extra litre of main-medium water."
+  },
+  {
+    "decision_id": "q42",
+    "name": "Main CO2 and sparging",
+    "stage": "main",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page1 base preparation",
+        "exact_source_quote": "100% CO2 gas for 30 - 45 min",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q43",
+    "name": "Main initial pH",
+    "stage": "main",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.8,
+          "max": 7.0
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.8,
+          "max": 7.0
+        }
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ph_range",
+        "stored": {
+          "min": 6.8,
+          "max": 7.0
+        }
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page1 base preparation",
+        "exact_source_quote": "adjust pH to 6.8 - 7.0",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q44",
+    "name": "Main dispensing atmosphere",
+    "stage": "main",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page1 base preparation",
+        "exact_source_quote": "under 100% CO2 gas atmosphere",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q45",
+    "name": "Sterile stock gas",
+    "stage": "post-autoclave additions",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page1 base preparation",
+        "exact_source_quote": "under 100% N2 gas",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q46",
+    "name": "Final main pH",
+    "stage": "main",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0
+      },
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[0].description",
+        "stored": "Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+        "field_path": "ph_value",
+        "stored": 7.0
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page1 base preparation",
+        "exact_source_quote": "The final pH of the medium should be 7.0.",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q47",
+    "name": "Mineral initial pH",
+    "stage": "mineral stock",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page2 mineral preparation",
+        "exact_source_quote": "adjust pH to 6.5 with KOH",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q48",
+    "name": "Mineral final pH",
+    "stage": "mineral stock",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[1].description",
+        "stored": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page2 mineral preparation",
+        "exact_source_quote": "Adjust\nfinal to pH 7.0 with KOH.",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q49",
+    "name": "Rumen autoclave cycle",
+    "stage": "rumen stock only",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page2 clarified rumen fluid",
+        "exact_source_quote": "autoclaved at 121°C for 15 min",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q50",
+    "name": "Rumen centrifugation",
+    "stage": "rumen stock only",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page2 clarified rumen fluid",
+        "exact_source_quote": "27,000 g\nfor 20 min",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q51",
+    "name": "Rumen gas and sparging",
+    "stage": "rumen stock only",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page2 clarified rumen fluid",
+        "exact_source_quote": "100% N2 gas for 15 min",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q52",
+    "name": "Rumen vial filling",
+    "stage": "rumen stock only",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page2 clarified rumen fluid",
+        "exact_source_quote": "30% of volume",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q53",
+    "name": "Rumen storage",
+    "stage": "rumen stock only",
+    "decision": "evidence_only",
+    "local_fields": [
+      {
+        "input": "data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      },
+      {
+        "input": "data/normalized_yaml/bacterial/blautia_medium.yaml",
+        "field_path": "preparation_steps[2].description",
+        "stored": "Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of volume and then stored frozen at -20°C."
+      }
+    ],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page2 clarified rumen fluid",
+        "exact_source_quote": "stored frozen at -20°C.",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "Retain the exact stage and literal numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen sparging,30% vial fill and−20°C storage belong solely to rumen preparation, not main-medium sterilization/incubation.100% gases describe source atmosphere, not inferred growth-rate evidence."
+  },
+  {
+    "decision_id": "q54",
+    "name": "KOH titration and later sterile-stock doses",
+    "stage": "Preparation gaps",
+    "decision": "not_quantified",
+    "local_fields": [],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Mineral titration",
+        "exact_source_quote": "with KOH",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      },
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Main additions",
+        "exact_source_quote": "from sterile anoxic stock solutions",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "KOH quantities and glucose/cysteine/sulfide stock strengths and delivered volumes are not given. Main autoclave cycle is not specified. Adding printed volumes890+100+10+2+0.5 gives1002.5 ml before unspecified later stock volumes, not a measured final batch volume or authority for1.002 L normalization."
+  },
+  {
+    "decision_id": "q55",
+    "name": "DSM14465/14466",
+    "stage": "Explicit source strain variant",
+    "decision": "correct",
+    "local_fields": [],
+    "desired": {
+      "variant_instruction": "0.50 g/L sodium formate; retain base"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page1 strain-specific paragraphs",
+        "exact_source_quote": "For DSM 14465, DSM 14466: Supplement medium with 0.50 g/l sodium formate.",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "These are explicit per-litre variant rates. The current named wrappers still copy the base35-ingredient list and fail to encode these changes. Apply only to the corresponding maintained variant; no automatic organism growth assertion or modification of the base."
+  },
+  {
+    "decision_id": "q56",
+    "name": "DSM14469",
+    "stage": "Explicit source strain variant",
+    "decision": "correct",
+    "local_fields": [],
+    "desired": {
+      "variant_instruction": "Omit yeast extract; add2.00 g/L Trypticase,2.50 g/L sodium acetate and2.50 g/L sodium formate"
+    },
+    "source_snippets": [
+      {
+        "source_key": "dsm915",
+        "source_url": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf",
+        "source_locator": "Page1 strain-specific paragraphs",
+        "exact_source_quote": "For DSM 14469: Omit yeast extract from the medium and add 2.00 g/l Trypticase peptone\n(BD BBL), 2.50 g/l sodium acetate and 2.50 g/l sodium formate.",
+        "snapshot_sha256": "1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b",
+        "parsed_text_sha256": "a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310"
+      }
+    ],
+    "interpretation": "These are explicit per-litre variant rates. The current named wrappers still copy the base35-ingredient list and fail to encode these changes. Apply only to the corresponding maintained variant; no automatic organism growth assertion or modification of the base."
+  },
+  {
+    "decision_id": "q57",
+    "name": "komodo915 provider quantities",
+    "stage": "Current provider comparison only",
+    "decision": "conflict",
+    "local_fields": [],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "komodo915",
+        "source_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915",
+        "source_locator": "Complete HTML ingredient and model tables with headers",
+        "snapshot_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+        "decoded_table_rows": [
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 0,
+            "cells": [
+              "Name",
+              "Semi unique name",
+              "Unique Name",
+              "Gram Amount",
+              "Mol Amount"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 1,
+            "cells": [
+              "NaHCO3",
+              "sodium bicarbonate",
+              "SEED-cpd00242#cpd00971#cpd09249#",
+              "7.28",
+              "0.09"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 2,
+            "cells": [
+              "D-Ca-pantothenate",
+              "D-Ca-pantothenate",
+              "SEED-cpd00063#cpd00644##",
+              "9.71E-5",
+              "3.76E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 3,
+            "cells": [
+              "Lipoic acid",
+              "Lipoic acid",
+              "SEED-cpd00541###",
+              "9.71E-5",
+              "4.74E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 4,
+            "cells": [
+              "Na2S x 9 H2O",
+              "Sodium sulfide hydrate",
+              "SEED-cpd00239#cpd00971##",
+              "0.44",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 5,
+            "cells": [
+              "Cysteine-HCl x H2O",
+              "Cysteine-HCl",
+              "SEED-cpd00084#cpd00099##",
+              "0.44",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 6,
+            "cells": [
+              "Nicotinic acid",
+              "Niacin",
+              "SEED-cpd00218###",
+              "9.71E-5",
+              "7.96E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 7,
+            "cells": [
+              "Riboflavin",
+              "Riboflavin",
+              "SEED-cpd00220###",
+              "9.71E-5",
+              "2.58E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 8,
+            "cells": [
+              "K2HPO4",
+              "di Potassium hydrogen phosphate",
+              "SEED-cpd00009#cpd00205##",
+              "0.29",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 9,
+            "cells": [
+              "KH2PO4",
+              "Potassium dihydrogen phosphate",
+              "SEED-cpd00009#cpd00205##",
+              "0.29",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 10,
+            "cells": [
+              "CoSO4 x 7 H2O",
+              "CoSO4",
+              "SEED-cpd00048#cpd00149##",
+              "1.75E-3",
+              "6.20E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 11,
+            "cells": [
+              "Glucose",
+              "D-Glucose",
+              "SEED-cpd00027###",
+              "4.85",
+              "0.03"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 12,
+            "cells": [
+              "Vitamin B12",
+              "Coenzyme B12",
+              "SEED-cpd00166###",
+              "1.94E-6",
+              "1.23E-9"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 13,
+            "cells": [
+              "MgSO4 x 7 H2O",
+              "Magnesium sulfate",
+              "SEED-cpd00048#cpd00254##",
+              "0.15",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 14,
+            "cells": [
+              "Folic acid",
+              "Folic acid",
+              "SEED-cpd00393###",
+              "3.88E-5",
+              "8.85E-8"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 15,
+            "cells": [
+              "Thiamine-HCl x 2 H2O",
+              "Thiamine-HCl",
+              "SEED-cpd00099#cpd00305##",
+              "9.71E-5",
+              "2.89E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 16,
+            "cells": [
+              "Yeast extract",
+              "Yeast extract",
+              "rich-peptone#",
+              "1.94",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 17,
+            "cells": [
+              "Pyridoxine HCl",
+              "Pyridoxine HCl",
+              "SEED-cpd00099#cpd00263##",
+              "1.94E-4",
+              "9.52E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 18,
+            "cells": [
+              "Na2MoO4 x 2 H2O",
+              "Na2MoO4",
+              "SEED-cpd00971#cpd11145##",
+              "9.71E-5",
+              "4.01E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 19,
+            "cells": [
+              "Resazurin",
+              "Resazurin",
+              "SEED-cpd08053###",
+              "4.85E-4",
+              "2.12E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 20,
+            "cells": [
+              "MnSO4 x H2O",
+              "MnSO4",
+              "SEED-cpd00030#cpd00048##",
+              "4.85E-3",
+              "2.87E-5"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 21,
+            "cells": [
+              "p-Aminobenzoic acid",
+              "p Aminobenzoic acid (PABA)",
+              "SEED-cpd00443###",
+              "9.71E-5",
+              "7.14E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 22,
+            "cells": [
+              "(NH4)2SO4",
+              "Ammonium sulfate",
+              "SEED-cpd00013#cpd00048##",
+              "0.29",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 23,
+            "cells": [
+              "CuSO4 x 5 H2O",
+              "CuSO4",
+              "SEED-cpd00048#cpd00058##",
+              "9.71E-5",
+              "3.89E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 24,
+            "cells": [
+              "Nitrilotriacetic acid",
+              "Nitrilotriacetic acid",
+              "SEED-cpd10393###",
+              "0.01",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 25,
+            "cells": [
+              "H2O",
+              "H2O",
+              "SEED-cpd00001###",
+              "null",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 26,
+            "cells": [
+              "N2",
+              "N2",
+              "SEED-cpd00528###",
+              "null",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 27,
+            "cells": [
+              "KOH",
+              "KOH",
+              "SEED-cpd00001#cpd00205##",
+              "null",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 28,
+            "cells": [
+              "Na2SeO3 x 5 H2O",
+              "Sodium selenite",
+              "SEED-cpd00971#cpd03387##",
+              "2.91E-6",
+              "1.10E-8"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 29,
+            "cells": [
+              "ZnSO4 x 7 H2O",
+              "ZnSO4",
+              "SEED-cpd00034#cpd00048##",
+              "1.75E-3",
+              "6.07E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 30,
+            "cells": [
+              "Distilled water",
+              "H2O",
+              "SEED-cpd00001###",
+              "null",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 31,
+            "cells": [
+              "Biotin",
+              "Biotin",
+              "SEED-cpd00104###",
+              "3.88E-5",
+              "1.60E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 32,
+            "cells": [
+              "FeSO4 x 7 H2O",
+              "Iron sulfate",
+              "SEED-cpd00048#cpd10515##",
+              "9.71E-4",
+              "3.48E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 33,
+            "cells": [
+              "NH4Cl",
+              "Ammonium chloride",
+              "SEED-cpd00013#cpd00099##",
+              "0.97",
+              "0.02"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 34,
+            "cells": [
+              "CaCl2 x 2 H2O",
+              "Calcium chloride ",
+              "SEED-cpd00063#cpd00099##",
+              "0.08",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 35,
+            "cells": [
+              "NiCl2 x 6 H2O",
+              "NiCl2",
+              "SEED-cpd00099#cpd00244##",
+              "2.91E-4",
+              "1.22E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 36,
+            "cells": [
+              "clarified rumen fluid",
+              "clarified rumen fluid",
+              "rich-rumen#",
+              "97.09",
+              "0.10"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 37,
+            "cells": [
+              "H3BO3",
+              "Boric acid",
+              "SEED-cpd09225###",
+              "9.71E-5",
+              "1.57E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 38,
+            "cells": [
+              "NaCl",
+              "NaCl",
+              "SEED-cpd00099#cpd00971##",
+              "0.60",
+              "0.01"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 2,
+            "row_index": 39,
+            "cells": [
+              "KAl(SO4)2 x 12 H2O",
+              "potassium alum",
+              "alum#",
+              "1.94E-4",
+              "4.08E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 0,
+            "cells": [
+              "Seed ID",
+              "Name",
+              "Mol Concentration"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 1,
+            "cells": [
+              "cpd00239",
+              "H2S",
+              "0.0017953285550996309"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 2,
+            "cells": [
+              "cpd00218",
+              "Niacin",
+              "7.957981855801369E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 3,
+            "cells": [
+              "cpd00048",
+              "Sulfate",
+              "0.002840840899725043"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 4,
+            "cells": [
+              "cpd00443",
+              "ABEE",
+              "7.138777841233581E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 5,
+            "cells": [
+              "cpd00644",
+              "PAN",
+              "3.763076691502973E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 6,
+            "cells": [
+              "cpd00149",
+              "Co2+",
+              "6.195968145839321E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 7,
+            "cells": [
+              "cpd00027",
+              "D-Glucose",
+              "0.026968716289104636"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 8,
+            "cells": [
+              "cpd00104",
+              "BIOT",
+              "1.5981461504654603E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 9,
+            "cells": [
+              "cpd00242",
+              "H2CO3",
+              "0.08668515950069348"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 10,
+            "cells": [
+              "cpd00220",
+              "RIBF",
+              "2.58211113406321E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 11,
+            "cells": [
+              "cpd00263",
+              "Pyridoxol",
+              "9.518370454978109E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 12,
+            "cells": [
+              "cpd00541",
+              "Lipoate",
+              "4.7359696897939854E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 13,
+            "cells": [
+              "cpd00244",
+              "Ni2+",
+              "1.224304900892518E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 14,
+            "cells": [
+              "cpd00166",
+              "Calomide",
+              "1.2297324717007819E-9"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 15,
+            "cells": [
+              "cpd00001",
+              "H2O",
+              "0.9029126213592233"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 16,
+            "cells": [
+              "cpd00084",
+              "L-Cysteine",
+              "0.002508717794335315"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 17,
+            "cells": [
+              "cpd00063",
+              "Ca2+",
+              "5.379072488791922E-4"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 18,
+            "cells": [
+              "cpd10515",
+              "Fe2+",
+              "3.4792108453960475E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 19,
+            "cells": [
+              "cpd09225",
+              "Boric acid",
+              "1.5659254619480114E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 20,
+            "cells": [
+              "cpd09249",
+              "Sodium bicarbonate",
+              "0.0"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 21,
+            "cells": [
+              "cpd11145",
+              "Sodium molybdate",
+              "4.006907909235522E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 22,
+            "cells": [
+              "cpd00528",
+              "N2",
+              "0.0"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 23,
+            "cells": [
+              "cpd00305",
+              "THI",
+              "2.886927702669542E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 24,
+            "cells": [
+              "cpd10393",
+              "Triglycollamic acid",
+              "7.746333402189631E-5"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 25,
+            "cells": [
+              "cpd00205",
+              "K+",
+              "0.005505337945913774"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 26,
+            "cells": [
+              "cpd00009",
+              "Phosphate",
+              "0.0038314176245210726"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 27,
+            "cells": [
+              "cpd00971",
+              "Na+",
+              "0.10065494590511956"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 28,
+            "cells": [
+              "cpd00058",
+              "Cu2+",
+              "3.8873825281592273E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 29,
+            "cells": [
+              "cpd00099",
+              "Cl-",
+              "0.03228414813745613"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 30,
+            "cells": [
+              "cpd00013",
+              "NH3",
+              "0.022731435993938284"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 31,
+            "cells": [
+              "cpd00254",
+              "Mg",
+              "5.89480137466768E-4"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 32,
+            "cells": [
+              "cpd03387",
+              "Selenite",
+              "1.0960005114669052E-8"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 33,
+            "cells": [
+              "cpd00034",
+              "Zn2+",
+              "6.0669078824300665E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 34,
+            "cells": [
+              "cpd00393",
+              "FOL",
+              "8.846230400070772E-8"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 35,
+            "cells": [
+              "cpd00030",
+              "Mn2+",
+              "2.869860438686867E-5"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915",
+            "source_sha256": "92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564",
+            "table_index": 3,
+            "row_index": 36,
+            "cells": [
+              "cpd08053",
+              "Resazurin",
+              "2.1198117607156487E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          }
+        ]
+      }
+    ],
+    "interpretation": "All current printed gram/mol/model amounts are preserved. They do not validate the local1.002 divisor or replace the DSM stock recipes; provider-based normalization and form labels remain independently scoped."
+  },
+  {
+    "decision_id": "q58",
+    "name": "komodo915.2 provider quantities",
+    "stage": "Current provider comparison only",
+    "decision": "conflict",
+    "local_fields": [],
+    "desired": null,
+    "source_snippets": [
+      {
+        "source_key": "komodo915.2",
+        "source_url": "https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915.2",
+        "source_locator": "Complete HTML ingredient and model tables with headers",
+        "snapshot_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+        "decoded_table_rows": [
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 0,
+            "cells": [
+              "Name",
+              "Semi unique name",
+              "Unique Name",
+              "Gram Amount",
+              "Mol Amount"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 1,
+            "cells": [
+              "NaHCO3",
+              "sodium bicarbonate",
+              "SEED-cpd00242#cpd00971#cpd09249#",
+              "7.28",
+              "0.09"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 2,
+            "cells": [
+              "D-Ca-pantothenate",
+              "D-Ca-pantothenate",
+              "SEED-cpd00063#cpd00644##",
+              "9.71E-5",
+              "3.76E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 3,
+            "cells": [
+              "Lipoic acid",
+              "Lipoic acid",
+              "SEED-cpd00541###",
+              "9.71E-5",
+              "4.74E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 4,
+            "cells": [
+              "Na2S x 9 H2O",
+              "Sodium sulfide hydrate",
+              "SEED-cpd00239#cpd00971##",
+              "0.44",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 5,
+            "cells": [
+              "Cysteine-HCl x H2O",
+              "Cysteine-HCl",
+              "SEED-cpd00084#cpd00099##",
+              "0.44",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 6,
+            "cells": [
+              "Nicotinic acid",
+              "Niacin",
+              "SEED-cpd00218###",
+              "9.71E-5",
+              "7.96E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 7,
+            "cells": [
+              "Riboflavin",
+              "Riboflavin",
+              "SEED-cpd00220###",
+              "9.71E-5",
+              "2.58E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 8,
+            "cells": [
+              "K2HPO4",
+              "di Potassium hydrogen phosphate",
+              "SEED-cpd00009#cpd00205##",
+              "0.29",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 9,
+            "cells": [
+              "KH2PO4",
+              "Potassium dihydrogen phosphate",
+              "SEED-cpd00009#cpd00205##",
+              "0.29",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 10,
+            "cells": [
+              "CoSO4 x 7 H2O",
+              "CoSO4",
+              "SEED-cpd00048#cpd00149##",
+              "1.75E-3",
+              "6.20E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 11,
+            "cells": [
+              "Glucose",
+              "D-Glucose",
+              "SEED-cpd00027###",
+              "4.85",
+              "0.03"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 12,
+            "cells": [
+              "Vitamin B12",
+              "Coenzyme B12",
+              "SEED-cpd00166###",
+              "1.94E-6",
+              "1.23E-9"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 13,
+            "cells": [
+              "MgSO4 x 7 H2O",
+              "Magnesium sulfate",
+              "SEED-cpd00048#cpd00254##",
+              "0.15",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 14,
+            "cells": [
+              "Folic acid",
+              "Folic acid",
+              "SEED-cpd00393###",
+              "3.88E-5",
+              "8.85E-8"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 15,
+            "cells": [
+              "Thiamine-HCl x 2 H2O",
+              "Thiamine-HCl",
+              "SEED-cpd00099#cpd00305##",
+              "9.71E-5",
+              "2.89E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 16,
+            "cells": [
+              "sodium acetate",
+              "Sodium acetate",
+              "SEED-cpd00029#cpd00971##",
+              "2.43",
+              "0.03"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 17,
+            "cells": [
+              "Pyridoxine HCl",
+              "Pyridoxine HCl",
+              "SEED-cpd00099#cpd00263##",
+              "1.94E-4",
+              "9.52E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 18,
+            "cells": [
+              "Na2MoO4 x 2 H2O",
+              "Na2MoO4",
+              "SEED-cpd00971#cpd11145##",
+              "9.71E-5",
+              "4.01E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 19,
+            "cells": [
+              "Resazurin",
+              "Resazurin",
+              "SEED-cpd08053###",
+              "4.85E-4",
+              "2.12E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 20,
+            "cells": [
+              "MnSO4 x H2O",
+              "MnSO4",
+              "SEED-cpd00030#cpd00048##",
+              "4.85E-3",
+              "2.87E-5"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 21,
+            "cells": [
+              "p-Aminobenzoic acid",
+              "p Aminobenzoic acid (PABA)",
+              "SEED-cpd00443###",
+              "9.71E-5",
+              "7.14E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 22,
+            "cells": [
+              "(NH4)2SO4",
+              "Ammonium sulfate",
+              "SEED-cpd00013#cpd00048##",
+              "0.29",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 23,
+            "cells": [
+              "trypticase (BBL)",
+              "Trypticase",
+              "rich-peptone#",
+              "1.94",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 24,
+            "cells": [
+              "CuSO4 x 5 H2O",
+              "CuSO4",
+              "SEED-cpd00048#cpd00058##",
+              "9.71E-5",
+              "3.89E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 25,
+            "cells": [
+              "Nitrilotriacetic acid",
+              "Nitrilotriacetic acid",
+              "SEED-cpd10393###",
+              "0.01",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 26,
+            "cells": [
+              "H2O",
+              "H2O",
+              "SEED-cpd00001###",
+              "null",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 27,
+            "cells": [
+              "N2",
+              "N2",
+              "SEED-cpd00528###",
+              "null",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 28,
+            "cells": [
+              "KOH",
+              "KOH",
+              "SEED-cpd00001#cpd00205##",
+              "null",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 29,
+            "cells": [
+              "Na2SeO3 x 5 H2O",
+              "Sodium selenite",
+              "SEED-cpd00971#cpd03387##",
+              "2.91E-6",
+              "1.10E-8"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 30,
+            "cells": [
+              "ZnSO4 x 7 H2O",
+              "ZnSO4",
+              "SEED-cpd00034#cpd00048##",
+              "1.75E-3",
+              "6.07E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 31,
+            "cells": [
+              "Distilled water",
+              "H2O",
+              "SEED-cpd00001###",
+              "null",
+              "null"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 32,
+            "cells": [
+              "Biotin",
+              "Biotin",
+              "SEED-cpd00104###",
+              "3.88E-5",
+              "1.60E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 33,
+            "cells": [
+              "FeSO4 x 7 H2O",
+              "Iron sulfate",
+              "SEED-cpd00048#cpd10515##",
+              "9.71E-4",
+              "3.48E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 34,
+            "cells": [
+              "NH4Cl",
+              "Ammonium chloride",
+              "SEED-cpd00013#cpd00099##",
+              "0.97",
+              "0.02"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 35,
+            "cells": [
+              "CaCl2 x 2 H2O",
+              "Calcium chloride ",
+              "SEED-cpd00063#cpd00099##",
+              "0.08",
+              "0.00"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 36,
+            "cells": [
+              "NiCl2 x 6 H2O",
+              "NiCl2",
+              "SEED-cpd00099#cpd00244##",
+              "2.91E-4",
+              "1.22E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 37,
+            "cells": [
+              "clarified rumen fluid",
+              "clarified rumen fluid",
+              "rich-rumen#",
+              "97.09",
+              "0.10"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 38,
+            "cells": [
+              "H3BO3",
+              "Boric acid",
+              "SEED-cpd09225###",
+              "9.71E-5",
+              "1.57E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 39,
+            "cells": [
+              "NaCl",
+              "NaCl",
+              "SEED-cpd00099#cpd00971##",
+              "0.60",
+              "0.01"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 40,
+            "cells": [
+              "KAl(SO4)2 x 12 H2O",
+              "potassium alum",
+              "alum#",
+              "1.94E-4",
+              "4.08E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 2,
+            "row_index": 41,
+            "cells": [
+              "sodium formate",
+              "sodium formate",
+              "SEED-cpd00047#cpd00971##",
+              "2.43",
+              "0.04"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 0,
+            "cells": [
+              "Seed ID",
+              "Name",
+              "Mol Concentration"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 1,
+            "cells": [
+              "cpd00239",
+              "H2S",
+              "0.0017953285550996309"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 2,
+            "cells": [
+              "cpd00218",
+              "Niacin",
+              "7.957981855801369E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 3,
+            "cells": [
+              "cpd00048",
+              "Sulfate",
+              "0.002840840899725043"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 4,
+            "cells": [
+              "cpd00443",
+              "ABEE",
+              "7.138777841233581E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 5,
+            "cells": [
+              "cpd00047",
+              "Formate",
+              "0.0356938892061679"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 6,
+            "cells": [
+              "cpd00644",
+              "PAN",
+              "3.763076691502973E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 7,
+            "cells": [
+              "cpd00149",
+              "Co2+",
+              "6.195968145839321E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 8,
+            "cells": [
+              "cpd00027",
+              "D-Glucose",
+              "0.026968716289104636"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 9,
+            "cells": [
+              "cpd00104",
+              "BIOT",
+              "1.5981461504654603E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 10,
+            "cells": [
+              "cpd00242",
+              "H2CO3",
+              "0.08668515950069348"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 11,
+            "cells": [
+              "cpd00220",
+              "RIBF",
+              "2.58211113406321E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 12,
+            "cells": [
+              "cpd00263",
+              "Pyridoxol",
+              "9.518370454978109E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 13,
+            "cells": [
+              "cpd00541",
+              "Lipoate",
+              "4.7359696897939854E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 14,
+            "cells": [
+              "cpd00244",
+              "Ni2+",
+              "1.224304900892518E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 15,
+            "cells": [
+              "cpd00166",
+              "Calomide",
+              "1.2297324717007819E-9"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 16,
+            "cells": [
+              "cpd00001",
+              "H2O",
+              "0.9029126213592233"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 17,
+            "cells": [
+              "cpd00084",
+              "L-Cysteine",
+              "0.002508717794335315"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 18,
+            "cells": [
+              "cpd00063",
+              "Ca2+",
+              "5.379072488791922E-4"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 19,
+            "cells": [
+              "cpd10515",
+              "Fe2+",
+              "3.4792108453960475E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 20,
+            "cells": [
+              "cpd09225",
+              "Boric acid",
+              "1.5659254619480114E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 21,
+            "cells": [
+              "cpd09249",
+              "Sodium bicarbonate",
+              "0.0"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 22,
+            "cells": [
+              "cpd11145",
+              "Sodium molybdate",
+              "4.006907909235522E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 23,
+            "cells": [
+              "cpd00528",
+              "N2",
+              "0.0"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 24,
+            "cells": [
+              "cpd00305",
+              "THI",
+              "2.886927702669542E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 25,
+            "cells": [
+              "cpd10393",
+              "Triglycollamic acid",
+              "7.746333402189631E-5"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 26,
+            "cells": [
+              "cpd00205",
+              "K+",
+              "0.005505337945913774"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 27,
+            "cells": [
+              "cpd00029",
+              "Acetate",
+              "0.029599810561212407"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 28,
+            "cells": [
+              "cpd00009",
+              "Phosphate",
+              "0.0038314176245210726"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 29,
+            "cells": [
+              "cpd00971",
+              "Na+",
+              "0.16594864567249987"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 30,
+            "cells": [
+              "cpd00058",
+              "Cu2+",
+              "3.8873825281592273E-7"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 31,
+            "cells": [
+              "cpd00099",
+              "Cl-",
+              "0.03228414813745613"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 32,
+            "cells": [
+              "cpd00013",
+              "NH3",
+              "0.022731435993938284"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 33,
+            "cells": [
+              "cpd00254",
+              "Mg",
+              "5.89480137466768E-4"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 34,
+            "cells": [
+              "cpd03387",
+              "Selenite",
+              "1.0960005114669052E-8"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 35,
+            "cells": [
+              "cpd00034",
+              "Zn2+",
+              "6.0669078824300665E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 36,
+            "cells": [
+              "cpd00393",
+              "FOL",
+              "8.846230400070772E-8"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 37,
+            "cells": [
+              "cpd00030",
+              "Mn2+",
+              "2.869860438686867E-5"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          },
+          {
+            "source_key": "komodo915.2",
+            "source_sha256": "653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf",
+            "table_index": 3,
+            "row_index": 38,
+            "cells": [
+              "cpd08053",
+              "Resazurin",
+              "2.1198117607156487E-6"
+            ],
+            "representation": "Exact decoded DOM cell text; not claimed as a literal HTML substring.",
+            "scope": "Optional detail link resolved from the actual catalogue href. Preserve any failure; do not infer historical equivalence.",
+            "usable": true
+          }
+        ]
+      }
+    ],
+    "interpretation": "All current printed gram/mol/model amounts are preserved. They do not validate the local1.002 divisor or replace the DSM stock recipes; provider-based normalization and form labels remain independently scoped."
+  }
+]
+
+## Findings
+
+### f1: The generated record conflates base and distinct DSM variants
+
+blocker / open / confirmed; issue key: culturemech.002083.variant-conflation.
+
+The target presents DSM14465/14466 and DSM14469 wrappers as synonyms/duplicates and points to a variant as parent. Primary source gives different formate/additive instructions, and current owners already classify those wrappers as STRAIN_SPECIFIC_VARIANT. Their copied ingredient equality is not source equivalence.
+
+### f2: Stock-preparation amounts and three stock/base sums appear as main rates
+
+major / open / confirmed; issue key: culturemech.002083.stock-flattening-and-sums.
+
+All layers flatten mineral and vitamin stock-preparation amounts as main concentrations. NaCl, MgSO4 and CaCl2 also sum full stock-preparation masses with normalized base amounts despite the separate 10 ml mineral dose. Stock and receiving final volumes are undeclared; exact delivered-mass fractions remain conditional. No stock-dose representation exists.
+
+### f3: Rumen fluid, solvent and dose basis are absent from ingredients
+
+major / open / confirmed; issue key: culturemech.002083.missing-fluid-volume-basis.
+
+The source specifies100 ml rumen fluid,890 ml main water,0.50 ml resazurin stock and stock additions. Those volumes and the two stock litres are not faithfully represented by the35-solute lists. Source main masses do not establish the stored1.002-normalized g/L rates after unspecified additions.
+
+### f4: Nickel hydrate and sodium resazurin have incompatible terms
+
+major / open / confirmed; issue key: culturemech.002083.nickel-and-resazurin-form.
+
+The source nickel hexahydrate is linked to anhydrous nickel dichloride in both slots; sodium resazurin is linked to the acid. Correct labels do not resolve these form differences.
+
+### f5: Scoped primary quantities lack attached evidence
+
+minor / open / confirmed; issue key: culturemech.002083.quantity-evidence.
+
+No matching claim-level quantity evidence is attached to the35 concentrations in any layer; source stock/variant stages need explicit quotations and locators.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Retain the repaired maintained topology, encode each exact strain-specific formula, and regenerate distinct base/variant projections using source-aware identity. Do not merge those formulations merely because stale ingredient arrays match.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Restore complete mineral/vitamin stocks and exact10/2 ml doses; split the three base/stock salts before deriving any final concentration. Retain explicit source masses and unresolved final volume.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Represent each solvent/complex-fluid/stock addition at its proper stage and authenticate the final-volume basis before numerical normalization.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Resolve exact supplied-form ontology identifiers and update maintained slots without inventing replacements or changing source masses; preserve compatible D-calcium pantothenate and DL-lipoic descriptions.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+After stage/variant correction, attach short exact primary rows and preparation snippets to each maintained claim.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/blautia_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-2 | data/normalized_yaml/bacterial/for_dsm_14469.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-3 | data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch043/430/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch043/430/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/normalized_yaml/bacterial/blautia_medium.yaml:1:id: CultureMech:002083<br>./data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml:1:id: CultureMech:002083<br> |
+| bound-source-integrity | /private/tmp/culturemech-review-work-batch043/source-preflight-bound/430/source-catalog.json; Full per-record bound catalog; raw/text/metadata hashes independently rechecked | supports | 42 exact bound source captures checked. Captured timestamps remain actual original access times; no new retrieval or cross-record substitution. |
+| dsm-main | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf; Both complete pages: base, DSM variants, mineral, rumen and vitamin subsections | supports | Primary quantities and all preparation stages were read. Source-specific variants and stock composition remain distinct; no measured final volume is declared. |
+| api915-attempt | https://mediadive.dsmz.de/rest/medium/915; Preserved exact public retrieval result | context_only | The current REST915 capture returned HTTP503 once; it does not negate the available DSM primary. |
+| komodo915.1-attempt | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915.1; Preserved exact public retrieval result | context_only | KOMODO915.1 returned HTTP200 with a java.lang.NullPointerException rather than a recipe. Its exact current provider formulation is unavailable; DSM915 separately supplies the strain-specific formate instruction. |
+| komodo915 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915; Exact ID, name and complete ingredient/model tables | supports | Current provider rates and model expansions are comparison context, not an authority to overwrite DSM printed stock stages or final-volume uncertainty. |
+| komodo915.2 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915.2; Exact ID, name and complete ingredient/model tables | supports | Current provider rates and model expansions are comparison context, not an authority to overwrite DSM printed stock stages or final-volume uncertainty. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15940 resolves to nicotinic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:15956 resolves to biotin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:17634 resolves to D-glucose. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:26710 resolves to sodium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:27470 resolves to folic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31206 resolves to ammonium chloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:33118 resolves to boric acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:34887 resolves to nickel dichloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; Exact OLS obo_id, canonical label, obsolete flag; source forms assessed separately | supports | CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence and label metadata do not establish source-specific hydrate, stereochemistry or product identity. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash | supports | {"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17634": [{"label": "D-Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17634", "preferred_term": "D-Glucose", "ontology_id": "CHEBI:17634", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label": "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term": "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term", "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id": "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}} |
+| history-metadata | data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml; data/normalized_yaml/bacterial/blautia_medium.yaml; data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml; data/normalized_yaml/bacterial/for_dsm_14469.yaml; data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml; Complete curation_history arrays; timestamp shape and source/generated chronology | context_only | [{"input": "target", "events": 10, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/blautia_medium.yaml", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml", "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:55.113199"}]}, {"input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml", "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:19:00.744441"}]}, {"input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml", "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp", "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value": "2026-02-03T11:18:56.742457"}]}] |
+| writer-0 | src/culturemech/merge/fingerprint.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair/resolver/nesting/merge code is context, not proof of historical execution. Credit the September owner topology repair; its retained same-signature claim does not verify complete source formula. Generated August topology remains stale. No present guarded merger is universally blamed. |
+| writer-1 | src/culturemech/merge/formulation.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair/resolver/nesting/merge code is context, not proof of historical execution. Credit the September owner topology repair; its retained same-signature claim does not verify complete source formula. Generated August topology remains stale. No present guarded merger is universally blamed. |
+| writer-2 | src/culturemech/merge/matcher.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair/resolver/nesting/merge code is context, not proof of historical execution. Credit the September owner topology repair; its retained same-signature claim does not verify complete source formula. Generated August topology remains stale. No present guarded merger is universally blamed. |
+| writer-3 | src/culturemech/merge/merge_recipes.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair/resolver/nesting/merge code is context, not proof of historical execution. Credit the September owner topology repair; its retained same-signature claim does not verify complete source formula. Generated August topology remains stale. No present guarded merger is universally blamed. |
+| writer-4 | src/culturemech/merge/merger.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair/resolver/nesting/merge code is context, not proof of historical execution. Credit the September owner topology repair; its retained same-signature claim does not verify complete source formula. Generated August topology remains stale. No present guarded merger is universally blamed. |
+| writer-5 | scripts/apply_cocktail_nesting.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair/resolver/nesting/merge code is context, not proof of historical execution. Credit the September owner topology repair; its retained same-signature claim does not verify complete source formula. Generated August topology remains stale. No present guarded merger is universally blamed. |
+| writer-6 | scripts/repair_komodo_915_blautia_score10.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair/resolver/nesting/merge code is context, not proof of historical execution. Credit the September owner topology repair; its retained same-signature claim does not verify complete source formula. Generated August topology remains stale. No present guarded merger is universally blamed. |
+| writer-7 | src/culturemech/enrich/dsmz_resolver.py; Current relevant import/merge/repair functions read; hash pinned in inspection inputs | context_only | Current repair/resolver/nesting/merge code is context, not proof of historical execution. Credit the September owner topology repair; its retained same-signature claim does not verify complete source formula. Generated August topology remains stale. No present guarded merger is universally blamed. |
+| quantity-inventory | /private/tmp/culturemech-review-work-batch043/430/quantity-inventory.json; Every listed ingredient/stock-addition concentration and explicitly scoped source-only additions | context_only | Native decisions retain literal quotes, stable URLs, exact locators, original units/stages and limitations. Arithmetic is outside quotes. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- The current REST915 capture returned HTTP503 once; it does not negate the available DSM primary.
+- KOMODO915.1 returned HTTP200 with a java.lang.NullPointerException rather than a recipe. Its exact current provider formulation is unavailable; DSM915 separately supplies the strain-specific formate instruction.
+- The reference validator reported Reference checks: 0; issues: 0. Its successful exit did not validate source support; exact bound collection/provider comparisons supply that assessment.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261022T003735Z-culturemech-002083-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: blautia_medium (CultureMech:002083)'
+started_at: '2026-10-22T00:25:10Z'
+finished_at: '2026-10-22T00:37:35Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The generated Blautia recipe conflates a base and two strain-specific formulations,
+  while current September owner repairs already distinguish their topology. All five
+  local layers still flatten mineral and vitamin stock-preparation amounts as rates
+  and add full-strength stock salts to base salts. Missing stock doses/rumen fluid/water,
+  uncertain final-volume normalization, nickel-hydrate and resazurin-salt mappings
+  require curation. The DSM primary supports separate preparation stages; the rumen121°C
+  cycle is stock-only.
+source:
+  git_revision: 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+    sha256: 80d7fd219e511f262b23ac7d454249ddd3d6b116041c97a0826ba2928025ae16
+    role: target
+  - path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    sha256: fc57879be4f45837daa8ed6ae1d7dbd31fec6e4f429368c735e23073f8e3d3a8
+    role: context
+  - path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    sha256: b9e483738cb281ce7c264624c32e06d6f77b33de16bcd92f5e7930d57283ceca
+    role: context
+  - path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    sha256: 3406a936bf150646881b8cf64e722972882b55c46742edb55fbeb465e97500f7
+    role: context
+  - path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    sha256: c24e7e1a33f42e9de8b78572680bb5b4cbb7a9112ffe08f08ddec60f5a2a95d9
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 60a2ad5d759b91ea153f23d8b3ae4bc7ead87f38accac1219fe4806fd5272ab0
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_14465_and_dsm_14466.yaml.md
+    sha256: 84797cacd49acaff8602dfdfb10398017e43e8db890432789fa15a6e9e604f34
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/for_dsm_14469.yaml.md
+    sha256: 118e768cd2f7e0c8a007ccda0bdcc249dc98a07bf2fcf58f633ba9c191b5d787
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/medium_for_carbon_dioxide_reducers.yaml.md
+    sha256: b0a31d8ca1f6715378a6661f9687c65b1dcf7e0c3abded9af33b3e9174536e90
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/blautia_medium.yaml.md
+    sha256: 7e53f84e61d51db151730b79157ceb16d948f157182739c38c9741413a950412
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/BLAUTIA_MEDIUM.md
+    sha256: 2c04a41499d08c962e225a253b16339e1cac25aa21a909a5a9bcd4557e29a29e
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/blautia_medium.md
+    sha256: b9a6f633d435933d69c3f147831e3529409190caf01dfb4b232c030ef51f4d1e
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.md
+    sha256: d5a1461f21b473943f0395e670b517312f8b65340f3142ca62f2e007ea46f965
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/for_dsm_14469.md
+    sha256: 3589d6db44d69252afae9ed1c14783153c646f958299ae2024363cae6bb1771f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.md
+    sha256: c11265814dff2ec8e945e52126c0deeec73581ba07e08f1d44c58b1a76869cdc
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_komodo_915_blautia_score10.py
+    sha256: 7de4aa9d057d17e2bc98c64eaa5ed8f7308bbc6eb523e00fea4201f8288f3dcc
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 430; batch 043 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding forty-two task batches
+    contain 420 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 6a639c4b597e95b6061f2d1c7baa04de84ba2f00
+    contains 41 validated baseline bundles covering 3 current merged paths. Unioning
+    all prior lists with this baseline covers 423 of 6320 current merged paths, including
+    3 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002083
+targets:
+- target_id: CultureMech:002083
+  path: data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+  label: blautia_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch043/430/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch043/430/strict.tsv"
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002083
+- check_id: api915-source-access
+  name: 'Exact source content access: api915'
+  required: false
+  status: unavailable
+  summary: The current REST915 capture returned HTTP503 once; it does not negate the
+    available DSM primary.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - api915-attempt
+- check_id: komodo915.1-source-access
+  name: 'Exact source content access: komodo915.1'
+  required: true
+  status: unavailable
+  summary: KOMODO915.1 returned HTTP200 with a java.lang.NullPointerException rather
+    than a recipe. Its exact current provider formulation is unavailable; DSM915 separately
+    supplies the strain-specific formate instruction.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - komodo915.1-attempt
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/blautia_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:26:06.080381Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch043/430/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:26:07.075968Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-043/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch043/430/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:26:08.174981Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-22T00:26:08.960848Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: supports
+  summary: './data/normalized_yaml/bacterial/blautia_medium.yaml:1:id: CultureMech:002083
+
+    ./data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml:1:id: CultureMech:002083
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/source-preflight-bound/430/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: supports
+  summary: 42 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: beb3a85b0bcf8e227de9d1ef8bc25fcc6f9308842281605d66f183d973b3ad7b
+- evidence_id: dsm-main
+  kind: database
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf
+  locator: 'Both complete pages: base, DSM variants, mineral, rumen and vitamin subsections'
+  accessed_at: '2026-10-22T00:07:26.862608Z'
+  support: supports
+  summary: Primary quantities and all preparation stages were read. Source-specific
+    variants and stock composition remain distinct; no measured final volume is declared.
+  snapshot_sha256: 1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b
+- evidence_id: api915-attempt
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/915
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:07:26.864005Z'
+  support: context_only
+  summary: The current REST915 capture returned HTTP503 once; it does not negate the
+    available DSM primary.
+  snapshot_sha256: 7ca12d7be5347706cce83581186621c0382542be93c82f5911ae9b541150f286
+- evidence_id: komodo915.1-attempt
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915.1
+  locator: Preserved exact public retrieval result
+  accessed_at: '2026-10-22T00:07:27.382440Z'
+  support: context_only
+  summary: KOMODO915.1 returned HTTP200 with a java.lang.NullPointerException rather
+    than a recipe. Its exact current provider formulation is unavailable; DSM915 separately
+    supplies the strain-specific formate instruction.
+  snapshot_sha256: 89215b348f737064a3bf344cd67768a8fda87c815ec4ac1bfc423d5e712329ca
+- evidence_id: komodo915
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915
+  locator: Exact ID, name and complete ingredient/model tables
+  accessed_at: '2026-10-22T00:07:27.371161Z'
+  support: supports
+  summary: Current provider rates and model expansions are comparison context, not
+    an authority to overwrite DSM printed stock stages or final-volume uncertainty.
+  snapshot_sha256: 92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564
+- evidence_id: komodo915.2
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915.2
+  locator: Exact ID, name and complete ingredient/model tables
+  accessed_at: '2026-10-22T00:07:27.664409Z'
+  support: supports
+  summary: Current provider rates and model expansions are comparison context, not
+    an authority to overwrite DSM printed stock stages or final-volume uncertainty.
+  snapshot_sha256: 653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: CHEBI:16494 resolves to lipoic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: CHEBI:17015 resolves to riboflavin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi17634
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:33.425023Z'
+  support: supports
+  summary: CHEBI:17634 resolves to D-glucose. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: CHEBI:27470 resolves to folic acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: CHEBI:31206 resolves to ammonium chloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: CHEBI:31440 resolves to copper(II) sulfate pentahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32139
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:16:24.226823Z'
+  support: supports
+  summary: CHEBI:32139 resolves to sodium hydrogencarbonate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: CHEBI:32312 resolves to zinc sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: CHEBI:44557 resolves to nitrilotriacetic acid. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Identifier existence and
+    label metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. Identifier existence and label
+    metadata do not establish source-specific hydrate, stereochemistry or product
+    identity.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to iron(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: CHEBI:86364 resolves to manganese(II) sulfate monohydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate. Identifier
+    existence and label metadata do not establish source-specific hydrate, stereochemistry
+    or product identity.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin. Identifier existence and label metadata
+    do not establish source-specific hydrate, stereochemistry or product identity.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: chebi91248
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: Exact OLS obo_id, canonical label, obsolete flag; source forms assessed
+    separately
+  accessed_at: '2026-10-21T08:42:32.136441Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate. Identifier existence
+    and label metadata do not establish source-specific hydrate, stereochemistry or
+    product identity.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Pinned exact-key preferred-term rows; adjacent metadata source_commit/hash
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: supports
+  summary: '{"source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "snapshot_sha256":
+    "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "rows": {"CHEBI:131361":
+    [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361",
+    "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:131527": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940":
+    [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940",
+    "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type":
+    "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id":
+    "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494":
+    [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label":
+    "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term":
+    "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:17634": [{"label": "D-Glucose", "match_type": "preferred_term",
+    "identifier": "CHEBI:17634", "preferred_term": "D-Glucose", "ontology_id": "CHEBI:17634",
+    "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:176843": [{"label":
+    "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term":
+    "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity":
+    "resolved:owned"}], "CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label":
+    "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term":
+    "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id":
+    "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961":
+    [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier":
+    "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label":
+    "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term":
+    "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795":
+    [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32139": [{"label":
+    "NaHCO3", "match_type": "preferred_term", "identifier": "CHEBI:32139", "preferred_term":
+    "NaHCO3", "ontology_id": "CHEBI:32139", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id":
+    "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118":
+    [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118",
+    "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term",
+    "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label":
+    "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557",
+    "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl",
+    "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier":
+    "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id":
+    "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939":
+    [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939",
+    "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term":
+    "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209":
+    [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209",
+    "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term":
+    "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label":
+    "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465",
+    "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term":
+    "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:91248": [{"label": "L-Cysteine HCl x H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:91248", "preferred_term": "L-Cysteine HCl x H2O", "ontology_id":
+    "CHEBI:91248", "mapping_status": "MAPPED", "ambiguity": "unique"}]}}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml; data/normalized_yaml/bacterial/blautia_medium.yaml;
+    data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml; data/normalized_yaml/bacterial/for_dsm_14469.yaml;
+    data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 10, "timestamp_issues": []}, {"input":
+    "data/normalized_yaml/bacterial/blautia_medium.yaml", "events": 9, "timestamp_issues":
+    []}, {"input": "data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml",
+    "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:55.113199"}]}, {"input": "data/normalized_yaml/bacterial/for_dsm_14469.yaml",
+    "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:19:00.744441"}]}, {"input": "data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml",
+    "events": 11, "timestamp_issues": [{"index": 0, "issue": "malformed timestamp",
+    "value": "2026-01-27T01:15:03.fZ"}, {"index": 1, "issue": "timezone absent", "value":
+    "2026-02-03T11:18:56.742457"}]}]'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/merge/fingerprint.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Current repair/resolver/nesting/merge code is context, not proof of historical
+    execution. Credit the September owner topology repair; its retained same-signature
+    claim does not verify complete source formula. Generated August topology remains
+    stale. No present guarded merger is universally blamed.
+  snapshot_sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Current repair/resolver/nesting/merge code is context, not proof of historical
+    execution. Credit the September owner topology repair; its retained same-signature
+    claim does not verify complete source formula. Generated August topology remains
+    stale. No present guarded merger is universally blamed.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Current repair/resolver/nesting/merge code is context, not proof of historical
+    execution. Credit the September owner topology repair; its retained same-signature
+    claim does not verify complete source formula. Generated August topology remains
+    stale. No present guarded merger is universally blamed.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/merge_recipes.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Current repair/resolver/nesting/merge code is context, not proof of historical
+    execution. Credit the September owner topology repair; its retained same-signature
+    claim does not verify complete source formula. Generated August topology remains
+    stale. No present guarded merger is universally blamed.
+  snapshot_sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+- evidence_id: writer-4
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Current repair/resolver/nesting/merge code is context, not proof of historical
+    execution. Credit the September owner topology repair; its retained same-signature
+    claim does not verify complete source formula. Generated August topology remains
+    stale. No present guarded merger is universally blamed.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-5
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Current repair/resolver/nesting/merge code is context, not proof of historical
+    execution. Credit the September owner topology repair; its retained same-signature
+    claim does not verify complete source formula. Generated August topology remains
+    stale. No present guarded merger is universally blamed.
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: writer-6
+  kind: record_content
+  reference: scripts/repair_komodo_915_blautia_score10.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Current repair/resolver/nesting/merge code is context, not proof of historical
+    execution. Credit the September owner topology repair; its retained same-signature
+    claim does not verify complete source formula. Generated August topology remains
+    stale. No present guarded merger is universally blamed.
+  snapshot_sha256: 7de4aa9d057d17e2bc98c64eaa5ed8f7308bbc6eb523e00fea4201f8288f3dcc
+- evidence_id: writer-7
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Current repair/resolver/nesting/merge code is context, not proof of historical
+    execution. Credit the September owner topology repair; its retained same-signature
+    claim does not verify complete source formula. Generated August topology remains
+    stale. No present guarded merger is universally blamed.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch043/430/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-22T00:31:24Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 5b72e0427a32ce502f37eb37fe986877a22f9ce7604d66e64a9b8971b81a1b1b
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Base, strain variants and maintained repair
+  outcome: concern
+  summary: Four exact maintained contributors are represented. September13 repair
+    correctly rerooted the base and marked DSM14465/14466 and DSM14469 wrappers as
+    STRAIN_SPECIFIC_VARIANT. The August target still treats these as synonyms/duplicates
+    and points to the DSM14469 child as parent. Identical copied35-ingredient lists
+    do not establish biological or formulation equivalence.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - id-search
+  - dsm-main
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ontology and current CHEBI-based secondary metadata
+  outcome: concern
+  summary: '34 distinct asserted primary and current CHEBI-based secondary IDs resolve
+    to matching nonobsolete labels in all inspected layers. Target linkage: 34/35
+    primary and 32/35 secondary instances; all asserted current mediaingredientmech_chebi_term
+    keys have exact pinned MIM rows. Legacy mediaingredientmech_term assertions are
+    outside this helper lookup and require a separate historical-correspondence assessment.
+    Exact supplied-form mismatch is addressed separately; valid IDs and labels do
+    not establish correct source grounding.'
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - record
+  - mim
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  - chebi131361
+  - chebi131527
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi17634
+  - chebi176843
+  - chebi26710
+  - chebi27470
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi31440
+  - chebi31795
+  - chebi32139
+  - chebi32312
+  - chebi33118
+  - chebi34887
+  - chebi44557
+  - chebi49105
+  - chebi62946
+  - chebi63036
+  - chebi63939
+  - chebi75213
+  - chebi75836
+  - chebi76209
+  - chebi86158
+  - chebi86364
+  - chebi86465
+  - chebi8806
+  - chebi91244
+  - chebi91248
+  details: 'Instance coverage on a 0–100 percent scale, denominator 35: primary 97.14%;
+    secondary 91.43%. These are linkage metrics, not correctness scores. Missing optional
+    links do not establish wrong identity.'
+- assessment_id: forms
+  area: grounding
+  topic: All source forms versus asserted chemistry
+  outcome: concern
+  summary: NiCl2·6H2O is mapped to anhydrous nickel dichloride CHEBI:34887; sodium
+    resazurin is mapped to free-acid CHEBI:8806. These are supplied-form mismatches.
+    Calcium D-(+)-pantothenate is compatible with CHEBI:31345 because its synonyms
+    and stereochemical structure retain D identity despite the short label. CHEBI:16494
+    is a stereounspecified parent compatible with source DL-lipoic acid; no wrong-enantiomer
+    finding. Other explicitly named salts/hydrates, D-glucose, L-cysteine hydrochloride
+    hydrate, vitamins and acid/base identities match the inspected scientific properties
+    at source precision. Generic biotin and vitaminB12 do not justify more specific
+    supplied forms or new molarity calculations. Complex yeast/rumen materials are
+    not pure compounds.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - dsm-main
+  - chebi131361
+  - chebi131527
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi17634
+  - chebi176843
+  - chebi26710
+  - chebi27470
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi31440
+  - chebi31795
+  - chebi32139
+  - chebi32312
+  - chebi33118
+  - chebi34887
+  - chebi44557
+  - chebi49105
+  - chebi62946
+  - chebi63036
+  - chebi63939
+  - chebi75213
+  - chebi75836
+  - chebi76209
+  - chebi86158
+  - chebi86364
+  - chebi86465
+  - chebi8806
+  - chebi91244
+  - chebi91248
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: concern
+  summary: 52 timestamp instances inspected; 6 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: preparation
+  area: completeness
+  topic: Retained primary preparation versus missing stock representation
+  outcome: concern
+  summary: The target and DSM owner retain all three primary preparation paragraphs,
+    including explicit rumen-only cycle and separate mineral pH. The three KOMODO
+    owners lack preparation arrays. The main medium is explicitly rendered anoxic;
+    no empirical growth rate, incubation temperature or automatic strain-growth claim
+    follows. Scoped preparation should accompany corrected stocks and variants; do
+    not erase already-present text.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - record
+  - dsm-main
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+- assessment_id: history-source
+  area: provenance
+  topic: Current repairs and historical reports
+  outcome: supported
+  summary: No attached concentration evidence occurs in these five ingredient arrays.
+    Nine exact identity-matched historical report bodies remain derivative context
+    in the bound package; no report alone authenticates original raw bytes. September
+    source/variant repair is visible and credited, whereas current formula quantities
+    still require correction.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - record
+  - dsm-main
+- assessment_id: quantities
+  area: quantity
+  topic: Complete source-stage quantity decision inventory
+  outcome: concern
+  summary: 58 source-scoped decisions, including every local concentration and explicit
+    source-only quantities. Verified applies only to the named local layer with attached
+    matching evidence.
+  target_ids:
+  - CultureMech:002083
+  evidence_ids:
+  - record
+  - quantity-inventory
+  details: "[\n  {\n    \"decision_id\": \"q1\",\n    \"name\": \"K2HPO4\",\n    \"\
+    stage\": \"Main base batch, all five local layers\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[0].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    0.30\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 3\",\n        \"exact_source_quote\"\
+    : \"   K2HPO4                                                    0.30        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 0.30 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\"\
+    \n  },\n  {\n    \"decision_id\": \"q2\",\n    \"name\": \"KH2PO4\",\n    \"stage\"\
+    : \"Main base batch, all five local layers\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[1].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    0.30\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 4\",\n        \"exact_source_quote\"\
+    : \"   KH2PO4                                                    0.30        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 0.30 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\"\
+    \n  },\n  {\n    \"decision_id\": \"q3\",\n    \"name\": \"(NH4)2SO4\",\n    \"\
+    stage\": \"Main base batch, all five local layers\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[2].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.299401\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    0.30\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 5\",\n        \"exact_source_quote\"\
+    : \"   (NH4)2SO4                                                 0.30        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 0.30 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\"\
+    \n  },\n  {\n    \"decision_id\": \"q4\",\n    \"name\": \"NH4Cl\",\n    \"stage\"\
+    : \"Main base batch, all five local layers\",\n    \"decision\": \"unsupported\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.998004\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.998004\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.998004\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.998004\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[3].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.998004\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    1.00\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 6\",\n        \"exact_source_quote\"\
+    : \"   NH4Cl                                                     1.00        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 1.00 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\"\
+    \n  },\n  {\n    \"decision_id\": \"q5\",\n    \"name\": \"NaCl\",\n    \"stage\"\
+    : \"Separate main and mineral-stock stages\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.6087820000000002\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.6087820000000002\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.6087820000000002\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.6087820000000002\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[4].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.6087820000000002\",\n          \"unit\": \"G_PER_L\"\
+    \n        }\n      }\n    ],\n    \"desired\": {\n      \"main_batch_mass_g\"\
+    : \"0.61\",\n      \"stock_mass_g_per_preparation\": \"1.00\",\n      \"stock_water_ml\"\
+    : \"1000\",\n      \"stock_dose_ml\": \"10\",\n      \"final_stock_volume\": null\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 7\",\n        \"exact_source_quote\"\
+    : \"   NaCl                                                      0.61        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 39\",\n        \"exact_source_quote\"\
+    : \"   NaCl                                                      1.00        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local value sums a normalized\
+    \ base amount and the full printed stock-preparation mass. The primary adds only\
+    \ 10 ml of the mineral stock and lists 1000 ml water for its preparation, without\
+    \ declaring final stock volume. If that final volume were independently established\
+    \ as 1000 ml, the dose would contribute 0.010 g NaCl, 0.030 g MgSO4·7H2O and 0.001\
+    \ g CaCl2·2H2O per printed receiving batch. These are conditional calculations,\
+    \ not source-established delivered masses. Separate main and stock stages and\
+    \ retain both final-volume uncertainties.\"\n  },\n  {\n    \"decision_id\": \"\
+    q6\",\n    \"name\": \"MgSO4 x 7 H2O\",\n    \"stage\": \"Separate main and mineral-stock\
+    \ stages\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[5].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"3.11976\",\n          \"unit\": \"G_PER_L\"\n        }\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.11976\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.11976\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.11976\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[5].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"3.11976\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"main_batch_mass_g\": \"0.12\"\
+    ,\n      \"stock_mass_g_per_preparation\": \"3.00\",\n      \"stock_water_ml\"\
+    : \"1000\",\n      \"stock_dose_ml\": \"10\",\n      \"final_stock_volume\": null\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 8\",\n        \"exact_source_quote\"\
+    : \"   MgSO4 x 7 H2O                                             0.12        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 37\",\n        \"exact_source_quote\"\
+    : \"   MgSO4 x 7 H2O                                             3.00        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local value sums a normalized\
+    \ base amount and the full printed stock-preparation mass. The primary adds only\
+    \ 10 ml of the mineral stock and lists 1000 ml water for its preparation, without\
+    \ declaring final stock volume. If that final volume were independently established\
+    \ as 1000 ml, the dose would contribute 0.010 g NaCl, 0.030 g MgSO4·7H2O and 0.001\
+    \ g CaCl2·2H2O per printed receiving batch. These are conditional calculations,\
+    \ not source-established delivered masses. Separate main and stock stages and\
+    \ retain both final-volume uncertainties.\"\n  },\n  {\n    \"decision_id\": \"\
+    q7\",\n    \"name\": \"CaCl2 x 2 H2O\",\n    \"stage\": \"Separate main and mineral-stock\
+    \ stages\",\n    \"decision\": \"correct\",\n    \"local_fields\": [\n      {\n\
+    \        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"ingredients[6].concentration\",\n        \"stored\": {\n     \
+    \     \"value\": \"0.1798403\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1798403\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1798403\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1798403\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[6].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1798403\",\n          \"unit\": \"G_PER_L\"\n  \
+    \      }\n      }\n    ],\n    \"desired\": {\n      \"main_batch_mass_g\": \"\
+    0.08\",\n      \"stock_mass_g_per_preparation\": \"0.10\",\n      \"stock_water_ml\"\
+    : \"1000\",\n      \"stock_dose_ml\": \"10\",\n      \"final_stock_volume\": null\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 9\",\n        \"exact_source_quote\"\
+    : \"   CaCl2 x 2 H2O                                             0.08        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 42\",\n        \"exact_source_quote\"\
+    : \"   CaCl2 x 2 H2O                                             0.10        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local value sums a normalized\
+    \ base amount and the full printed stock-preparation mass. The primary adds only\
+    \ 10 ml of the mineral stock and lists 1000 ml water for its preparation, without\
+    \ declaring final stock volume. If that final volume were independently established\
+    \ as 1000 ml, the dose would contribute 0.010 g NaCl, 0.030 g MgSO4·7H2O and 0.001\
+    \ g CaCl2·2H2O per printed receiving batch. These are conditional calculations,\
+    \ not source-established delivered masses. Separate main and stock stages and\
+    \ retain both final-volume uncertainties.\"\n  },\n  {\n    \"decision_id\": \"\
+    q8\",\n    \"name\": \"Yeast extract\",\n    \"stage\": \"Main base batch, all\
+    \ five local layers\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.99601\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.99601\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.99601\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.99601\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[7].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.99601\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    2.00\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 12\",\n        \"exact_source_quote\"\
+    : \"   Yeast extract                                             2.00        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 2.00 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\
+    \ DSM14469 explicitly omits yeast extract; this shared row is also wrong for that\
+    \ maintained variant and needs variant-specific correction.\"\n  },\n  {\n   \
+    \ \"decision_id\": \"q9\",\n    \"name\": \"Sodium resazurin\",\n    \"stage\"\
+    : \"Resazurin stock addition\",\n    \"decision\": \"unsupported\",\n    \"local_fields\"\
+    : [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000499002\",\n          \"unit\": \"G_PER_L\"\n\
+    \        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000499002\",\n          \"unit\": \"G_PER_L\"\n\
+    \        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000499002\",\n          \"unit\": \"G_PER_L\"\n\
+    \        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000499002\",\n          \"unit\": \"G_PER_L\"\n\
+    \        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[8].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.000499002\",\n          \"unit\": \"G_PER_L\"\n\
+    \        }\n      }\n    ],\n    \"desired\": {\n      \"stock_strength\": \"\
+    0.1% w/v\",\n      \"dose_ml\": \"0.50\",\n      \"delivered_mass_g\": \"0.0005\"\
+    ,\n      \"final_concentration\": null\n    },\n    \"source_snippets\": [\n \
+    \     {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 13\",\n        \"\
+    exact_source_quote\": \"   Sodium resazurin (0.1% w/v)                       \
+    \        0.50       ml\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Explicit0.1% w/v means0.1 g/100 ml;0.50\
+    \ ml delivers0.0005 g. The existing0.000499002 g/L cannot be verified without\
+    \ final-volume evidence. Preserve the sodium salt identity separately from the\
+    \ incompatible free-acid mapping.\"\n  },\n  {\n    \"decision_id\": \"q10\",\n\
+    \    \"name\": \"NaHCO3\",\n    \"stage\": \"Main base batch, all five local layers\"\
+    ,\n    \"decision\": \"unsupported\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"ingredients[9].concentration\",\n        \"stored\": {\n          \"value\"\
+    : \"7.48503\",\n          \"unit\": \"G_PER_L\"\n        }\n      },\n      {\n\
+    \        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\",\n\
+    \        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.48503\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.48503\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.48503\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[9].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"7.48503\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    7.50\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 14\",\n        \"exact_source_quote\"\
+    : \"   NaHCO3                                                    7.50        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 7.50 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\"\
+    \n  },\n  {\n    \"decision_id\": \"q11\",\n    \"name\": \"D-Glucose\",\n   \
+    \ \"stage\": \"Main base batch, all five local layers\",\n    \"decision\": \"\
+    unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.99002\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.99002\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.99002\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.99002\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[10].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"4.99002\",\n          \"unit\": \"G_PER_L\"\n    \
+    \    }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    5.00\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 15\",\n        \"exact_source_quote\"\
+    : \"   D-Glucose                                                 5.00        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 5.00 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\"\
+    \n  },\n  {\n    \"decision_id\": \"q12\",\n    \"name\": \"L-Cysteine HCl x H2O\"\
+    ,\n    \"stage\": \"Main base batch, all five local layers\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[11].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    0.45\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 17\",\n        \"exact_source_quote\"\
+    : \"   L-Cysteine HCl x H2O                                      0.45        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 0.45 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\"\
+    \n  },\n  {\n    \"decision_id\": \"q13\",\n    \"name\": \"Na2S x 9 H2O\",\n\
+    \    \"stage\": \"Main base batch, all five local layers\",\n    \"decision\"\
+    : \"unsupported\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[12].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.449102\",\n          \"unit\": \"G_PER_L\"\n   \
+    \     }\n      }\n    ],\n    \"desired\": {\n      \"source_batch_mass_g\": \"\
+    0.45\",\n      \"final_concentration\": null\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 18\",\n        \"exact_source_quote\"\
+    : \"   Na2S x 9 H2O                                              0.45        g\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 19\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                         890.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The primary gives 0.45 g for its\
+    \ stated base batch; the stored normalized rate suggests a1.002 L divisor but\
+    \ the primary declares no final measured volume, and later sterile-stock doses\
+    \ are unspecified. Preserve source batch mass and do not silently replace the\
+    \ stored rate with a guessed g/L value. No attached quantity evidence is present.\"\
+    \n  },\n  {\n    \"decision_id\": \"q14\",\n    \"name\": \"Nitrilotriacetic acid\"\
+    ,\n    \"stage\": \"mineral stock flattened in every layer\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[13].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"1.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"1.50\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 36\",\n        \"\
+    exact_source_quote\": \"   Nitrilotriacetic acid                             \
+    \        1.50        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q15\",\n    \"name\": \"MnSO4 x H2O\",\n    \"stage\"\
+    : \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[14].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.5\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.50\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 38\",\n        \"\
+    exact_source_quote\": \"   MnSO4 x H2O                                       \
+    \        0.50        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q16\",\n    \"name\": \"FeSO4 x 7 H2O\",\n    \"\
+    stage\": \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[15].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.10\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 40\",\n        \"\
+    exact_source_quote\": \"   FeSO4 x 7 H2O                                     \
+    \        0.10        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q17\",\n    \"name\": \"CoSO4 x 7 H2O\",\n    \"\
+    stage\": \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[16].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.18\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 41\",\n        \"\
+    exact_source_quote\": \"   CoSO4 x 7 H2O                                     \
+    \        0.18        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q18\",\n    \"name\": \"ZnSO4 x 7 H2O\",\n    \"\
+    stage\": \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[17].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.18\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.18\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 43\",\n        \"\
+    exact_source_quote\": \"   ZnSO4 x 7 H2O                                     \
+    \        0.18        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q19\",\n    \"name\": \"CuSO4 x 5 H2O\",\n    \"\
+    stage\": \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[18].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.01\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 44\",\n        \"\
+    exact_source_quote\": \"   CuSO4 x 5 H2O                                     \
+    \        0.01        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q20\",\n    \"name\": \"AlK(SO4)2 x 12 H2O\",\n \
+    \   \"stage\": \"mineral stock flattened in every layer\",\n    \"decision\":\
+    \ \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[19].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.02\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 45\",\n        \"\
+    exact_source_quote\": \"   AlK(SO4)2 x 12 H2O                                \
+    \        0.02        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q21\",\n    \"name\": \"H3BO3\",\n    \"stage\":\
+    \ \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\",\n\
+    \    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[20].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.01\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 46\",\n        \"\
+    exact_source_quote\": \"   H3BO3                                             \
+    \        0.01        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q22\",\n    \"name\": \"Na2MoO4 x 2 H2O\",\n    \"\
+    stage\": \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[21].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.01\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.01\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 55\",\n        \"\
+    exact_source_quote\": \"   Na2MoO4 x 2 H2O                                   \
+    \        0.01        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q23\",\n    \"name\": \"NiCl2 x 6 H2O\",\n    \"\
+    stage\": \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[22].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.03\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"0.03\"\
+    ,\n      \"printed_unit\": \"g\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"10\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 56\",\n        \"\
+    exact_source_quote\": \"   NiCl2 x 6 H2O                                     \
+    \        0.03        g\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q24\",\n    \"name\": \"Na2SeO3 x 5 H2O\",\n    \"\
+    stage\": \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[23].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0003\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"\
+    0.30\",\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n    \
+    \  \"listed_stock_water_ml\": \"1000\",\n      \"receiving_batch_dose_ml\": \"\
+    10\",\n      \"final_stock_volume\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 57\",\n        \"\
+    exact_source_quote\": \"   Na2SeO3 x 5 H2O                                   \
+    \        0.30       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q25\",\n    \"name\": \"Na2WO4 x 2 H2O\",\n    \"\
+    stage\": \"mineral stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[24].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.0004\",\n          \"unit\": \"G_PER_L\"\n     \
+    \   }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"\
+    0.40\",\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n    \
+    \  \"listed_stock_water_ml\": \"1000\",\n      \"receiving_batch_dose_ml\": \"\
+    10\",\n      \"final_stock_volume\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 58\",\n        \"\
+    exact_source_quote\": \"   Na2WO4 x 2 H2O                                    \
+    \        0.40       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 10\",\n        \"exact_source_quote\"\
+    : \"   Modified Wolin's mineral solution                        10.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q26\",\n    \"name\": \"Biotin\",\n    \"stage\"\
+    : \"10x vitamin stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[25].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"20.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 76\",\n        \"\
+    exact_source_quote\": \"   Biotin                                            \
+    \       20.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q27\",\n    \"name\": \"Folic acid\",\n    \"stage\"\
+    : \"10x vitamin stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[26].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.02\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"20.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 77\",\n        \"\
+    exact_source_quote\": \"   Folic acid                                        \
+    \       20.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q28\",\n    \"name\": \"Pyridoxine hydrochloride\"\
+    ,\n    \"stage\": \"10x vitamin stock flattened in every layer\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[27].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.1\",\n          \"unit\": \"G_PER_L\"\n        }\n\
+    \      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"100.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 78\",\n        \"\
+    exact_source_quote\": \"   Pyridoxine hydrochloride                          \
+    \      100.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q29\",\n    \"name\": \"Thiamine HCl\",\n    \"stage\"\
+    : \"10x vitamin stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[28].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"50.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 79\",\n        \"\
+    exact_source_quote\": \"   Thiamine HCl                                      \
+    \       50.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q30\",\n    \"name\": \"Riboflavin\",\n    \"stage\"\
+    : \"10x vitamin stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[29].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"50.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 80\",\n        \"\
+    exact_source_quote\": \"   Riboflavin                                        \
+    \       50.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q31\",\n    \"name\": \"Nicotinic acid\",\n    \"\
+    stage\": \"10x vitamin stock flattened in every layer\",\n    \"decision\": \"\
+    correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[30].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"50.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 81\",\n        \"\
+    exact_source_quote\": \"   Nicotinic acid                                    \
+    \       50.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q32\",\n    \"name\": \"Calcium D-(+)-pantothenate\"\
+    ,\n    \"stage\": \"10x vitamin stock flattened in every layer\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[31].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"50.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 82\",\n        \"\
+    exact_source_quote\": \"   Calcium D-(+)-pantothenate                        \
+    \       50.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q33\",\n    \"name\": \"Vitamin B12\",\n    \"stage\"\
+    : \"10x vitamin stock flattened in every layer\",\n    \"decision\": \"correct\"\
+    ,\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[32].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.001\",\n          \"unit\": \"G_PER_L\"\n      \
+    \  }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"\
+    1.00\",\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n    \
+    \  \"listed_stock_water_ml\": \"1000\",\n      \"receiving_batch_dose_ml\": \"\
+    2\",\n      \"final_stock_volume\": null\n    },\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 83\",\n        \"\
+    exact_source_quote\": \"   Vitamin B12                                       \
+    \        1.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q34\",\n    \"name\": \"p-Aminobenzoic acid\",\n\
+    \    \"stage\": \"10x vitamin stock flattened in every layer\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[33].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"50.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 84\",\n        \"\
+    exact_source_quote\": \"   p-Aminobenzoic acid                               \
+    \       50.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q35\",\n    \"name\": \"(DL)-alpha-Lipoic acid\"\
+    ,\n    \"stage\": \"10x vitamin stock flattened in every layer\",\n    \"decision\"\
+    : \"correct\",\n    \"local_fields\": [\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ingredients[34].concentration\",\n        \"stored\"\
+    : {\n          \"value\": \"0.05\",\n          \"unit\": \"G_PER_L\"\n       \
+    \ }\n      }\n    ],\n    \"desired\": {\n      \"printed_batch_amount\": \"50.00\"\
+    ,\n      \"printed_unit\": \"mg\",\n      \"final_volume\": null,\n      \"listed_stock_water_ml\"\
+    : \"1000\",\n      \"receiving_batch_dose_ml\": \"2\",\n      \"final_stock_volume\"\
+    : null\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"\
+    dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 85\",\n        \"\
+    exact_source_quote\": \"   (DL)-alpha-Lipoic acid                            \
+    \       50.00       mg\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"The local numerical numerator corresponds\
+    \ to the printed stock-preparation mass, including mg-to-g conversion, but neither\
+    \ a final stock litre nor a main-medium rate is established. Restore the named\
+    \ stock and its printed receiving dose. Listed 1000 ml water is an input, not\
+    \ final volume. The mineral 1/100 and vitamin 1/500 delivered-mass fractions are\
+    \ conditional on independently established 1000 ml final stock volumes; no such\
+    \ declaration is present. Final-medium g/L also remains unresolved.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q36\",\n    \"name\": \"Modified Wolin's mineral\
+    \ solution\",\n    \"stage\": \"Main addition\",\n    \"decision\": \"add\",\n\
+    \    \"local_fields\": [],\n    \"desired\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 10\",\n        \"\
+    exact_source_quote\": \"   Modified Wolin's mineral solution                 \
+    \       10.00       ml\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"10 ml mineral stock is not represented\
+    \ as a stock dose in any local layer. Preserve the literal preparation amount\
+    \ rather than infer a final volume.\"\n  },\n  {\n    \"decision_id\": \"q37\"\
+    ,\n    \"name\": \"Clarified rumen fluid\",\n    \"stage\": \"Main addition\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"desired\": null,\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\",\n  \
+    \      \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 11\",\n        \"\
+    exact_source_quote\": \"   Clarified rumen fluid                             \
+    \      100.00       ml\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"100 ml clarified rumen fluid is omitted\
+    \ from all ingredient lists even though its preparation text is retained in the\
+    \ DSM owner and target. Preserve the literal preparation amount rather than infer\
+    \ a final volume.\"\n  },\n  {\n    \"decision_id\": \"q38\",\n    \"name\": \"\
+    Wolin's vitamin solution (10x)\",\n    \"stage\": \"Main addition\",\n    \"decision\"\
+    : \"add\",\n    \"local_fields\": [],\n    \"desired\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 16\",\n        \"exact_source_quote\"\
+    : \"   Wolin's vitamin solution (10x)                            2.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"2 ml of the10x vitamin stock is omitted\
+    \ as a stock dose; its solutes are instead flattened. Preserve the literal preparation\
+    \ amount rather than infer a final volume.\"\n  },\n  {\n    \"decision_id\":\
+    \ \"q39\",\n    \"name\": \"Distilled water\",\n    \"stage\": \"Main water\"\
+    ,\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"desired\": null,\n\
+    \    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\",\n  \
+    \      \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"DSM915 extracted text line 19\",\n        \"\
+    exact_source_quote\": \"   Distilled water                                   \
+    \      890.00       ml\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"890 ml main water is missing from\
+    \ ingredient lists; no mass-density conversion is justified. Preserve the literal\
+    \ preparation amount rather than infer a final volume.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q40\",\n    \"name\": \"Distilled water\",\n    \"stage\": \"Mineral stock\
+    \ water\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"desired\"\
+    : {\n      \"value\": \"1000\",\n      \"unit\": \"ML\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 59\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"This litre prepares the stock and\
+    \ is not an extra litre of main-medium water.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q41\",\n    \"name\": \"Distilled water\",\n    \"stage\": \"Vitamin stock\
+    \ water\",\n    \"decision\": \"add\",\n    \"local_fields\": [],\n    \"desired\"\
+    : {\n      \"value\": \"1000\",\n      \"unit\": \"ML\"\n    },\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"DSM915 extracted text line 86\",\n        \"exact_source_quote\"\
+    : \"   Distilled water                                        1000.00       ml\"\
+    ,\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"This litre prepares the stock and\
+    \ is not an extra litre of main-medium water.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q42\",\n    \"name\": \"Main CO2 and sparging\",\n    \"stage\": \"main\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve\
+    \ ingredients (except bicarbonate, glucose, vitamins and reducing agents), then\
+    \ sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins\
+    \ (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions\
+    \ prepared under 100% N2 gas. The final pH of the medium should be 7.0.\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents),\
+    \ then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add\
+    \ solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the\
+    \ medium should be 7.0.\"\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"Page1 base preparation\",\n        \"exact_source_quote\"\
+    : \"100% CO2 gas for 30 - 45 min\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q43\"\
+    ,\n    \"name\": \"Main initial pH\",\n    \"stage\": \"main\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"field_path\": \"preparation_steps[0].description\"\
+    ,\n        \"stored\": \"Dissolve ingredients (except bicarbonate, glucose, vitamins\
+    \ and reducing agents), then sparge medium with 100% CO2 gas for 30 - 45 min to\
+    \ make it anoxic. Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium\
+    \ under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials\
+    \ and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and\
+    \ sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The\
+    \ final pH of the medium should be 7.0.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/blautia_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve ingredients\
+    \ (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium\
+    \ with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate,\
+    \ adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins\
+    \ (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions\
+    \ prepared under 100% N2 gas. The final pH of the medium should be 7.0.\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 6.8,\n          \"max\": 7.0\n        }\n      },\n      {\n        \"\
+    input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\",\n        \"field_path\"\
+    : \"ph_range\",\n        \"stored\": {\n          \"min\": 6.8,\n          \"\
+    max\": 7.0\n        }\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ph_range\",\n        \"stored\": {\n          \"\
+    min\": 6.8,\n          \"max\": 7.0\n        }\n      }\n    ],\n    \"desired\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page1 base preparation\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 6.8 - 7.0\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q44\"\
+    ,\n    \"name\": \"Main dispensing atmosphere\",\n    \"stage\": \"main\",\n \
+    \   \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n     \
+    \   \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve ingredients\
+    \ (except bicarbonate, glucose, vitamins and reducing agents), then sparge medium\
+    \ with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate,\
+    \ adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins\
+    \ (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions\
+    \ prepared under 100% N2 gas. The final pH of the medium should be 7.0.\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents),\
+    \ then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add\
+    \ solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the\
+    \ medium should be 7.0.\"\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"Page1 base preparation\",\n        \"exact_source_quote\"\
+    : \"under 100% CO2 gas atmosphere\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q45\"\
+    ,\n    \"name\": \"Sterile stock gas\",\n    \"stage\": \"post-autoclave additions\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"preparation_steps[0].description\",\n        \"stored\": \"Dissolve\
+    \ ingredients (except bicarbonate, glucose, vitamins and reducing agents), then\
+    \ sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid\
+    \ bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere\
+    \ into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins\
+    \ (sterilized by filtration), cysteine and sulfide from sterile anoxic stock solutions\
+    \ prepared under 100% N2 gas. The final pH of the medium should be 7.0.\"\n  \
+    \    },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents),\
+    \ then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add\
+    \ solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the\
+    \ medium should be 7.0.\"\n      }\n    ],\n    \"desired\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\": \"\
+    https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n        \"\
+    source_locator\": \"Page1 base preparation\",\n        \"exact_source_quote\"\
+    : \"under 100% N2 gas\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q46\"\
+    ,\n    \"name\": \"Final main pH\",\n    \"stage\": \"main\",\n    \"decision\"\
+    : \"evidence_only\",\n    \"local_fields\": [\n      {\n        \"input\": \"\
+    data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"field_path\": \"ph_value\"\
+    ,\n        \"stored\": 7.0\n      },\n      {\n        \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents),\
+    \ then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add\
+    \ solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the\
+    \ medium should be 7.0.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[0].description\",\n        \"stored\"\
+    : \"Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents),\
+    \ then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add\
+    \ solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2\
+    \ gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.\
+    \ Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from\
+    \ sterile anoxic stock solutions prepared under 100% N2 gas. The final pH of the\
+    \ medium should be 7.0.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/for_dsm_14469.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0\n      },\n\
+    \      {\n        \"input\": \"data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml\"\
+    ,\n        \"field_path\": \"ph_value\",\n        \"stored\": 7.0\n      }\n \
+    \   ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page1 base preparation\",\n        \"exact_source_quote\"\
+    : \"The final pH of the medium should be 7.0.\",\n        \"snapshot_sha256\"\
+    : \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\",\n    \
+    \    \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q47\"\
+    ,\n    \"name\": \"Mineral initial pH\",\n    \"stage\": \"mineral stock\",\n\
+    \    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n    \
+    \    \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[1].description\",\n        \"stored\": \"First dissolve\
+    \ nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\
+    \ final to pH 7.0 with KOH.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\"\n      }\n    ],\n    \"desired\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page2 mineral preparation\",\n        \"exact_source_quote\"\
+    : \"adjust pH to 6.5 with KOH\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q48\"\
+    ,\n    \"name\": \"Mineral final pH\",\n    \"stage\": \"mineral stock\",\n  \
+    \  \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[1].description\",\n        \"stored\": \"First dissolve\
+    \ nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\
+    \ final to pH 7.0 with KOH.\"\n      },\n      {\n        \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\"\
+    ,\n        \"field_path\": \"preparation_steps[1].description\",\n        \"stored\"\
+    : \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add\
+    \ minerals. Adjust final to pH 7.0 with KOH.\"\n      }\n    ],\n    \"desired\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page2 mineral preparation\",\n        \"exact_source_quote\"\
+    : \"Adjust\\nfinal to pH 7.0 with KOH.\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q49\"\
+    ,\n    \"name\": \"Rumen autoclave cycle\",\n    \"stage\": \"rumen stock only\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"preparation_steps[2].description\",\n        \"stored\": \"Rumen\
+    \ fluid from cow or sheep (obtained from fistulated animals or abattoir refuse)\
+    \ is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged\
+    \ at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100%\
+    \ N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials\
+    \ to 30% of volume and then stored frozen at -20°C.\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\",\n   \
+    \     \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir\
+    \ refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then\
+    \ centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging\
+    \ with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic\
+    \ serum vials to 30% of volume and then stored frozen at -20°C.\"\n      }\n \
+    \   ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page2 clarified rumen fluid\",\n        \"exact_source_quote\"\
+    : \"autoclaved at 121°C for 15 min\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q50\"\
+    ,\n    \"name\": \"Rumen centrifugation\",\n    \"stage\": \"rumen stock only\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"preparation_steps[2].description\",\n        \"stored\": \"Rumen\
+    \ fluid from cow or sheep (obtained from fistulated animals or abattoir refuse)\
+    \ is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged\
+    \ at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100%\
+    \ N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials\
+    \ to 30% of volume and then stored frozen at -20°C.\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\",\n   \
+    \     \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir\
+    \ refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then\
+    \ centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging\
+    \ with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic\
+    \ serum vials to 30% of volume and then stored frozen at -20°C.\"\n      }\n \
+    \   ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page2 clarified rumen fluid\",\n        \"exact_source_quote\"\
+    : \"27,000 g\\nfor 20 min\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q51\"\
+    ,\n    \"name\": \"Rumen gas and sparging\",\n    \"stage\": \"rumen stock only\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"preparation_steps[2].description\",\n        \"stored\": \"Rumen\
+    \ fluid from cow or sheep (obtained from fistulated animals or abattoir refuse)\
+    \ is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged\
+    \ at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100%\
+    \ N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials\
+    \ to 30% of volume and then stored frozen at -20°C.\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\",\n   \
+    \     \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir\
+    \ refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then\
+    \ centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging\
+    \ with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic\
+    \ serum vials to 30% of volume and then stored frozen at -20°C.\"\n      }\n \
+    \   ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page2 clarified rumen fluid\",\n        \"exact_source_quote\"\
+    : \"100% N2 gas for 15 min\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q52\"\
+    ,\n    \"name\": \"Rumen vial filling\",\n    \"stage\": \"rumen stock only\"\
+    ,\n    \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n  \
+    \      \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"\
+    field_path\": \"preparation_steps[2].description\",\n        \"stored\": \"Rumen\
+    \ fluid from cow or sheep (obtained from fistulated animals or abattoir refuse)\
+    \ is filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged\
+    \ at 27,000 g for 20 min. The supernatant is made anoxic by sparging with 100%\
+    \ N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum vials\
+    \ to 30% of volume and then stored frozen at -20°C.\"\n      },\n      {\n   \
+    \     \"input\": \"data/normalized_yaml/bacterial/blautia_medium.yaml\",\n   \
+    \     \"field_path\": \"preparation_steps[2].description\",\n        \"stored\"\
+    : \"Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir\
+    \ refuse) is filtered through muslin, autoclaved at 121°C for 15 min and then\
+    \ centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging\
+    \ with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic\
+    \ serum vials to 30% of volume and then stored frozen at -20°C.\"\n      }\n \
+    \   ],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page2 clarified rumen fluid\",\n        \"exact_source_quote\"\
+    : \"30% of volume\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q53\"\
+    ,\n    \"name\": \"Rumen storage\",\n    \"stage\": \"rumen stock only\",\n  \
+    \  \"decision\": \"evidence_only\",\n    \"local_fields\": [\n      {\n      \
+    \  \"input\": \"data/merge_yaml/merged/BLAUTIA_MEDIUM.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[2].description\",\n        \"stored\": \"Rumen fluid from\
+    \ cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered\
+    \ through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000\
+    \ g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for\
+    \ 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of\
+    \ volume and then stored frozen at -20°C.\"\n      },\n      {\n        \"input\"\
+    : \"data/normalized_yaml/bacterial/blautia_medium.yaml\",\n        \"field_path\"\
+    : \"preparation_steps[2].description\",\n        \"stored\": \"Rumen fluid from\
+    \ cow or sheep (obtained from fistulated animals or abattoir refuse) is filtered\
+    \ through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000\
+    \ g for 20 min. The supernatant is made anoxic by sparging with 100% N2 gas for\
+    \ 15 min, dispensed under same gas atmosphere into anoxic serum vials to 30% of\
+    \ volume and then stored frozen at -20°C.\"\n      }\n    ],\n    \"desired\"\
+    : null,\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page2 clarified rumen fluid\",\n        \"exact_source_quote\"\
+    : \"stored frozen at -20°C.\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"Retain the exact stage and literal\
+    \ numbers. The121°C15 min cycle,27,000 g20 min centrifugation,15 min nitrogen\
+    \ sparging,30% vial fill and−20°C storage belong solely to rumen preparation,\
+    \ not main-medium sterilization/incubation.100% gases describe source atmosphere,\
+    \ not inferred growth-rate evidence.\"\n  },\n  {\n    \"decision_id\": \"q54\"\
+    ,\n    \"name\": \"KOH titration and later sterile-stock doses\",\n    \"stage\"\
+    : \"Preparation gaps\",\n    \"decision\": \"not_quantified\",\n    \"local_fields\"\
+    : [],\n    \"desired\": null,\n    \"source_snippets\": [\n      {\n        \"\
+    source_key\": \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Mineral titration\",\n        \"exact_source_quote\"\
+    : \"with KOH\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      },\n      {\n        \"source_key\": \"dsm915\",\n        \"source_url\"\
+    : \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\",\n    \
+    \    \"source_locator\": \"Main additions\",\n        \"exact_source_quote\":\
+    \ \"from sterile anoxic stock solutions\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"KOH quantities and glucose/cysteine/sulfide\
+    \ stock strengths and delivered volumes are not given. Main autoclave cycle is\
+    \ not specified. Adding printed volumes890+100+10+2+0.5 gives1002.5 ml before\
+    \ unspecified later stock volumes, not a measured final batch volume or authority\
+    \ for1.002 L normalization.\"\n  },\n  {\n    \"decision_id\": \"q55\",\n    \"\
+    name\": \"DSM14465/14466\",\n    \"stage\": \"Explicit source strain variant\"\
+    ,\n    \"decision\": \"correct\",\n    \"local_fields\": [],\n    \"desired\"\
+    : {\n      \"variant_instruction\": \"0.50 g/L sodium formate; retain base\"\n\
+    \    },\n    \"source_snippets\": [\n      {\n        \"source_key\": \"dsm915\"\
+    ,\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page1 strain-specific paragraphs\",\n       \
+    \ \"exact_source_quote\": \"For DSM 14465, DSM 14466: Supplement medium with 0.50\
+    \ g/l sodium formate.\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are explicit per-litre variant\
+    \ rates. The current named wrappers still copy the base35-ingredient list and\
+    \ fail to encode these changes. Apply only to the corresponding maintained variant;\
+    \ no automatic organism growth assertion or modification of the base.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q56\",\n    \"name\": \"DSM14469\",\n    \"stage\"\
+    : \"Explicit source strain variant\",\n    \"decision\": \"correct\",\n    \"\
+    local_fields\": [],\n    \"desired\": {\n      \"variant_instruction\": \"Omit\
+    \ yeast extract; add2.00 g/L Trypticase,2.50 g/L sodium acetate and2.50 g/L sodium\
+    \ formate\"\n    },\n    \"source_snippets\": [\n      {\n        \"source_key\"\
+    : \"dsm915\",\n        \"source_url\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium915.pdf\"\
+    ,\n        \"source_locator\": \"Page1 strain-specific paragraphs\",\n       \
+    \ \"exact_source_quote\": \"For DSM 14469: Omit yeast extract from the medium\
+    \ and add 2.00 g/l Trypticase peptone\\n(BD BBL), 2.50 g/l sodium acetate and\
+    \ 2.50 g/l sodium formate.\",\n        \"snapshot_sha256\": \"1c1983a87fe7771f3f9dc61ec5b44975912d41ffafafc9f35a9a1dceccec036b\"\
+    ,\n        \"parsed_text_sha256\": \"a9d48955ff4b8fa226b557a5266b183c0be4344ec2821d7d38a1202d7dfc0310\"\
+    \n      }\n    ],\n    \"interpretation\": \"These are explicit per-litre variant\
+    \ rates. The current named wrappers still copy the base35-ingredient list and\
+    \ fail to encode these changes. Apply only to the corresponding maintained variant;\
+    \ no automatic organism growth assertion or modification of the base.\"\n  },\n\
+    \  {\n    \"decision_id\": \"q57\",\n    \"name\": \"komodo915 provider quantities\"\
+    ,\n    \"stage\": \"Current provider comparison only\",\n    \"decision\": \"\
+    conflict\",\n    \"local_fields\": [],\n    \"desired\": null,\n    \"source_snippets\"\
+    : [\n      {\n        \"source_key\": \"komodo915\",\n        \"source_url\":\
+    \ \"https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915\"\
+    ,\n        \"source_locator\": \"Complete HTML ingredient and model tables with\
+    \ headers\",\n        \"snapshot_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n        \"decoded_table_rows\": [\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 0,\n          \
+    \  \"cells\": [\n              \"Name\",\n              \"Semi unique name\",\n\
+    \              \"Unique Name\",\n              \"Gram Amount\",\n            \
+    \  \"Mol Amount\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 1,\n          \
+    \  \"cells\": [\n              \"NaHCO3\",\n              \"sodium bicarbonate\"\
+    ,\n              \"SEED-cpd00242#cpd00971#cpd09249#\",\n              \"7.28\"\
+    ,\n              \"0.09\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 2,\n          \
+    \  \"cells\": [\n              \"D-Ca-pantothenate\",\n              \"D-Ca-pantothenate\"\
+    ,\n              \"SEED-cpd00063#cpd00644##\",\n              \"9.71E-5\",\n \
+    \             \"3.76E-7\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 3,\n          \
+    \  \"cells\": [\n              \"Lipoic acid\",\n              \"Lipoic acid\"\
+    ,\n              \"SEED-cpd00541###\",\n              \"9.71E-5\",\n         \
+    \     \"4.74E-7\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 4,\n          \
+    \  \"cells\": [\n              \"Na2S x 9 H2O\",\n              \"Sodium sulfide\
+    \ hydrate\",\n              \"SEED-cpd00239#cpd00971##\",\n              \"0.44\"\
+    ,\n              \"0.00\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 5,\n          \
+    \  \"cells\": [\n              \"Cysteine-HCl x H2O\",\n              \"Cysteine-HCl\"\
+    ,\n              \"SEED-cpd00084#cpd00099##\",\n              \"0.44\",\n    \
+    \          \"0.00\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 6,\n          \
+    \  \"cells\": [\n              \"Nicotinic acid\",\n              \"Niacin\",\n\
+    \              \"SEED-cpd00218###\",\n              \"9.71E-5\",\n           \
+    \   \"7.96E-7\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 7,\n          \
+    \  \"cells\": [\n              \"Riboflavin\",\n              \"Riboflavin\",\n\
+    \              \"SEED-cpd00220###\",\n              \"9.71E-5\",\n           \
+    \   \"2.58E-7\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 8,\n          \
+    \  \"cells\": [\n              \"K2HPO4\",\n              \"di Potassium hydrogen\
+    \ phosphate\",\n              \"SEED-cpd00009#cpd00205##\",\n              \"\
+    0.29\",\n              \"0.00\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 9,\n          \
+    \  \"cells\": [\n              \"KH2PO4\",\n              \"Potassium dihydrogen\
+    \ phosphate\",\n              \"SEED-cpd00009#cpd00205##\",\n              \"\
+    0.29\",\n              \"0.00\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 10,\n         \
+    \   \"cells\": [\n              \"CoSO4 x 7 H2O\",\n              \"CoSO4\",\n\
+    \              \"SEED-cpd00048#cpd00149##\",\n              \"1.75E-3\",\n   \
+    \           \"6.20E-6\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915\"\
+    ,\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 11,\n         \
+    \   \"cells\": [\n              \"Glucose\",\n              \"D-Glucose\",\n \
+    \             \"SEED-cpd00027###\",\n              \"4.85\",\n              \"\
+    0.03\"\n            ],\n            \"representation\": \"Exact decoded DOM cell\
+    \ text; not claimed as a literal HTML substring.\",\n            \"scope\": \"\
+    Optional detail link resolved from the actual catalogue href. Preserve any failure;\
+    \ do not infer historical equivalence.\",\n            \"usable\": true\n    \
+    \      },\n          {\n            \"source_key\": \"komodo915\",\n         \
+    \   \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 12,\n         \
+    \   \"cells\": [\n              \"Vitamin B12\",\n              \"Coenzyme B12\"\
+    ,\n              \"SEED-cpd00166###\",\n              \"1.94E-6\",\n         \
+    \     \"1.23E-9\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 13,\n         \
+    \   \"cells\": [\n              \"MgSO4 x 7 H2O\",\n              \"Magnesium\
+    \ sulfate\",\n              \"SEED-cpd00048#cpd00254##\",\n              \"0.15\"\
+    ,\n              \"0.00\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 14,\n         \
+    \   \"cells\": [\n              \"Folic acid\",\n              \"Folic acid\"\
+    ,\n              \"SEED-cpd00393###\",\n              \"3.88E-5\",\n         \
+    \     \"8.85E-8\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 15,\n         \
+    \   \"cells\": [\n              \"Thiamine-HCl x 2 H2O\",\n              \"Thiamine-HCl\"\
+    ,\n              \"SEED-cpd00099#cpd00305##\",\n              \"9.71E-5\",\n \
+    \             \"2.89E-7\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 16,\n         \
+    \   \"cells\": [\n              \"Yeast extract\",\n              \"Yeast extract\"\
+    ,\n              \"rich-peptone#\",\n              \"1.94\",\n              \"\
+    null\"\n            ],\n            \"representation\": \"Exact decoded DOM cell\
+    \ text; not claimed as a literal HTML substring.\",\n            \"scope\": \"\
+    Optional detail link resolved from the actual catalogue href. Preserve any failure;\
+    \ do not infer historical equivalence.\",\n            \"usable\": true\n    \
+    \      },\n          {\n            \"source_key\": \"komodo915\",\n         \
+    \   \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 17,\n         \
+    \   \"cells\": [\n              \"Pyridoxine HCl\",\n              \"Pyridoxine\
+    \ HCl\",\n              \"SEED-cpd00099#cpd00263##\",\n              \"1.94E-4\"\
+    ,\n              \"9.52E-7\"\n            ],\n            \"representation\":\
+    \ \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 18,\n         \
+    \   \"cells\": [\n              \"Na2MoO4 x 2 H2O\",\n              \"Na2MoO4\"\
+    ,\n              \"SEED-cpd00971#cpd11145##\",\n              \"9.71E-5\",\n \
+    \             \"4.01E-7\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 19,\n         \
+    \   \"cells\": [\n              \"Resazurin\",\n              \"Resazurin\",\n\
+    \              \"SEED-cpd08053###\",\n              \"4.85E-4\",\n           \
+    \   \"2.12E-6\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 20,\n         \
+    \   \"cells\": [\n              \"MnSO4 x H2O\",\n              \"MnSO4\",\n \
+    \             \"SEED-cpd00030#cpd00048##\",\n              \"4.85E-3\",\n    \
+    \          \"2.87E-5\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915\"\
+    ,\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 21,\n         \
+    \   \"cells\": [\n              \"p-Aminobenzoic acid\",\n              \"p Aminobenzoic\
+    \ acid (PABA)\",\n              \"SEED-cpd00443###\",\n              \"9.71E-5\"\
+    ,\n              \"7.14E-7\"\n            ],\n            \"representation\":\
+    \ \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 22,\n         \
+    \   \"cells\": [\n              \"(NH4)2SO4\",\n              \"Ammonium sulfate\"\
+    ,\n              \"SEED-cpd00013#cpd00048##\",\n              \"0.29\",\n    \
+    \          \"0.00\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 23,\n         \
+    \   \"cells\": [\n              \"CuSO4 x 5 H2O\",\n              \"CuSO4\",\n\
+    \              \"SEED-cpd00048#cpd00058##\",\n              \"9.71E-5\",\n   \
+    \           \"3.89E-7\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915\"\
+    ,\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 24,\n         \
+    \   \"cells\": [\n              \"Nitrilotriacetic acid\",\n              \"Nitrilotriacetic\
+    \ acid\",\n              \"SEED-cpd10393###\",\n              \"0.01\",\n    \
+    \          \"0.00\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 25,\n         \
+    \   \"cells\": [\n              \"H2O\",\n              \"H2O\",\n           \
+    \   \"SEED-cpd00001###\",\n              \"null\",\n              \"null\"\n \
+    \           ],\n            \"representation\": \"Exact decoded DOM cell text;\
+    \ not claimed as a literal HTML substring.\",\n            \"scope\": \"Optional\
+    \ detail link resolved from the actual catalogue href. Preserve any failure; do\
+    \ not infer historical equivalence.\",\n            \"usable\": true\n       \
+    \   },\n          {\n            \"source_key\": \"komodo915\",\n            \"\
+    source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 26,\n         \
+    \   \"cells\": [\n              \"N2\",\n              \"N2\",\n             \
+    \ \"SEED-cpd00528###\",\n              \"null\",\n              \"null\"\n   \
+    \         ],\n            \"representation\": \"Exact decoded DOM cell text; not\
+    \ claimed as a literal HTML substring.\",\n            \"scope\": \"Optional detail\
+    \ link resolved from the actual catalogue href. Preserve any failure; do not infer\
+    \ historical equivalence.\",\n            \"usable\": true\n          },\n   \
+    \       {\n            \"source_key\": \"komodo915\",\n            \"source_sha256\"\
+    : \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\",\n    \
+    \        \"table_index\": 2,\n            \"row_index\": 27,\n            \"cells\"\
+    : [\n              \"KOH\",\n              \"KOH\",\n              \"SEED-cpd00001#cpd00205##\"\
+    ,\n              \"null\",\n              \"null\"\n            ],\n         \
+    \   \"representation\": \"Exact decoded DOM cell text; not claimed as a literal\
+    \ HTML substring.\",\n            \"scope\": \"Optional detail link resolved from\
+    \ the actual catalogue href. Preserve any failure; do not infer historical equivalence.\"\
+    ,\n            \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 28,\n         \
+    \   \"cells\": [\n              \"Na2SeO3 x 5 H2O\",\n              \"Sodium selenite\"\
+    ,\n              \"SEED-cpd00971#cpd03387##\",\n              \"2.91E-6\",\n \
+    \             \"1.10E-8\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 29,\n         \
+    \   \"cells\": [\n              \"ZnSO4 x 7 H2O\",\n              \"ZnSO4\",\n\
+    \              \"SEED-cpd00034#cpd00048##\",\n              \"1.75E-3\",\n   \
+    \           \"6.07E-6\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915\"\
+    ,\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 30,\n         \
+    \   \"cells\": [\n              \"Distilled water\",\n              \"H2O\",\n\
+    \              \"SEED-cpd00001###\",\n              \"null\",\n              \"\
+    null\"\n            ],\n            \"representation\": \"Exact decoded DOM cell\
+    \ text; not claimed as a literal HTML substring.\",\n            \"scope\": \"\
+    Optional detail link resolved from the actual catalogue href. Preserve any failure;\
+    \ do not infer historical equivalence.\",\n            \"usable\": true\n    \
+    \      },\n          {\n            \"source_key\": \"komodo915\",\n         \
+    \   \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 31,\n         \
+    \   \"cells\": [\n              \"Biotin\",\n              \"Biotin\",\n     \
+    \         \"SEED-cpd00104###\",\n              \"3.88E-5\",\n              \"\
+    1.60E-7\"\n            ],\n            \"representation\": \"Exact decoded DOM\
+    \ cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 32,\n         \
+    \   \"cells\": [\n              \"FeSO4 x 7 H2O\",\n              \"Iron sulfate\"\
+    ,\n              \"SEED-cpd00048#cpd10515##\",\n              \"9.71E-4\",\n \
+    \             \"3.48E-6\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 33,\n         \
+    \   \"cells\": [\n              \"NH4Cl\",\n              \"Ammonium chloride\"\
+    ,\n              \"SEED-cpd00013#cpd00099##\",\n              \"0.97\",\n    \
+    \          \"0.02\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 34,\n         \
+    \   \"cells\": [\n              \"CaCl2 x 2 H2O\",\n              \"Calcium chloride\
+    \ \",\n              \"SEED-cpd00063#cpd00099##\",\n              \"0.08\",\n\
+    \              \"0.00\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915\"\
+    ,\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 35,\n         \
+    \   \"cells\": [\n              \"NiCl2 x 6 H2O\",\n              \"NiCl2\",\n\
+    \              \"SEED-cpd00099#cpd00244##\",\n              \"2.91E-4\",\n   \
+    \           \"1.22E-6\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915\"\
+    ,\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 36,\n         \
+    \   \"cells\": [\n              \"clarified rumen fluid\",\n              \"clarified\
+    \ rumen fluid\",\n              \"rich-rumen#\",\n              \"97.09\",\n \
+    \             \"0.10\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915\"\
+    ,\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 37,\n         \
+    \   \"cells\": [\n              \"H3BO3\",\n              \"Boric acid\",\n  \
+    \            \"SEED-cpd09225###\",\n              \"9.71E-5\",\n             \
+    \ \"1.57E-6\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 38,\n         \
+    \   \"cells\": [\n              \"NaCl\",\n              \"NaCl\",\n         \
+    \     \"SEED-cpd00099#cpd00971##\",\n              \"0.60\",\n              \"\
+    0.01\"\n            ],\n            \"representation\": \"Exact decoded DOM cell\
+    \ text; not claimed as a literal HTML substring.\",\n            \"scope\": \"\
+    Optional detail link resolved from the actual catalogue href. Preserve any failure;\
+    \ do not infer historical equivalence.\",\n            \"usable\": true\n    \
+    \      },\n          {\n            \"source_key\": \"komodo915\",\n         \
+    \   \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 39,\n         \
+    \   \"cells\": [\n              \"KAl(SO4)2 x 12 H2O\",\n              \"potassium\
+    \ alum\",\n              \"alum#\",\n              \"1.94E-4\",\n            \
+    \  \"4.08E-7\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 0,\n          \
+    \  \"cells\": [\n              \"Seed ID\",\n              \"Name\",\n       \
+    \       \"Mol Concentration\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 1,\n          \
+    \  \"cells\": [\n              \"cpd00239\",\n              \"H2S\",\n       \
+    \       \"0.0017953285550996309\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 2,\n          \
+    \  \"cells\": [\n              \"cpd00218\",\n              \"Niacin\",\n    \
+    \          \"7.957981855801369E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 3,\n          \
+    \  \"cells\": [\n              \"cpd00048\",\n              \"Sulfate\",\n   \
+    \           \"0.002840840899725043\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 4,\n          \
+    \  \"cells\": [\n              \"cpd00443\",\n              \"ABEE\",\n      \
+    \        \"7.138777841233581E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 5,\n          \
+    \  \"cells\": [\n              \"cpd00644\",\n              \"PAN\",\n       \
+    \       \"3.763076691502973E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 6,\n          \
+    \  \"cells\": [\n              \"cpd00149\",\n              \"Co2+\",\n      \
+    \        \"6.195968145839321E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 7,\n          \
+    \  \"cells\": [\n              \"cpd00027\",\n              \"D-Glucose\",\n \
+    \             \"0.026968716289104636\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 8,\n          \
+    \  \"cells\": [\n              \"cpd00104\",\n              \"BIOT\",\n      \
+    \        \"1.5981461504654603E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 9,\n          \
+    \  \"cells\": [\n              \"cpd00242\",\n              \"H2CO3\",\n     \
+    \         \"0.08668515950069348\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 10,\n         \
+    \   \"cells\": [\n              \"cpd00220\",\n              \"RIBF\",\n     \
+    \         \"2.58211113406321E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 11,\n         \
+    \   \"cells\": [\n              \"cpd00263\",\n              \"Pyridoxol\",\n\
+    \              \"9.518370454978109E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 12,\n         \
+    \   \"cells\": [\n              \"cpd00541\",\n              \"Lipoate\",\n  \
+    \            \"4.7359696897939854E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 13,\n         \
+    \   \"cells\": [\n              \"cpd00244\",\n              \"Ni2+\",\n     \
+    \         \"1.224304900892518E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 14,\n         \
+    \   \"cells\": [\n              \"cpd00166\",\n              \"Calomide\",\n \
+    \             \"1.2297324717007819E-9\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 15,\n         \
+    \   \"cells\": [\n              \"cpd00001\",\n              \"H2O\",\n      \
+    \        \"0.9029126213592233\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 16,\n         \
+    \   \"cells\": [\n              \"cpd00084\",\n              \"L-Cysteine\",\n\
+    \              \"0.002508717794335315\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 17,\n         \
+    \   \"cells\": [\n              \"cpd00063\",\n              \"Ca2+\",\n     \
+    \         \"5.379072488791922E-4\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 18,\n         \
+    \   \"cells\": [\n              \"cpd10515\",\n              \"Fe2+\",\n     \
+    \         \"3.4792108453960475E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 19,\n         \
+    \   \"cells\": [\n              \"cpd09225\",\n              \"Boric acid\",\n\
+    \              \"1.5659254619480114E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 20,\n         \
+    \   \"cells\": [\n              \"cpd09249\",\n              \"Sodium bicarbonate\"\
+    ,\n              \"0.0\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915\"\
+    ,\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 21,\n         \
+    \   \"cells\": [\n              \"cpd11145\",\n              \"Sodium molybdate\"\
+    ,\n              \"4.006907909235522E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 22,\n         \
+    \   \"cells\": [\n              \"cpd00528\",\n              \"N2\",\n       \
+    \       \"0.0\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915\",\n     \
+    \       \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 23,\n         \
+    \   \"cells\": [\n              \"cpd00305\",\n              \"THI\",\n      \
+    \        \"2.886927702669542E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 24,\n         \
+    \   \"cells\": [\n              \"cpd10393\",\n              \"Triglycollamic\
+    \ acid\",\n              \"7.746333402189631E-5\"\n            ],\n          \
+    \  \"representation\": \"Exact decoded DOM cell text; not claimed as a literal\
+    \ HTML substring.\",\n            \"scope\": \"Optional detail link resolved from\
+    \ the actual catalogue href. Preserve any failure; do not infer historical equivalence.\"\
+    ,\n            \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 25,\n         \
+    \   \"cells\": [\n              \"cpd00205\",\n              \"K+\",\n       \
+    \       \"0.005505337945913774\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 26,\n         \
+    \   \"cells\": [\n              \"cpd00009\",\n              \"Phosphate\",\n\
+    \              \"0.0038314176245210726\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 27,\n         \
+    \   \"cells\": [\n              \"cpd00971\",\n              \"Na+\",\n      \
+    \        \"0.10065494590511956\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 28,\n         \
+    \   \"cells\": [\n              \"cpd00058\",\n              \"Cu2+\",\n     \
+    \         \"3.8873825281592273E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 29,\n         \
+    \   \"cells\": [\n              \"cpd00099\",\n              \"Cl-\",\n      \
+    \        \"0.03228414813745613\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 30,\n         \
+    \   \"cells\": [\n              \"cpd00013\",\n              \"NH3\",\n      \
+    \        \"0.022731435993938284\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 31,\n         \
+    \   \"cells\": [\n              \"cpd00254\",\n              \"Mg\",\n       \
+    \       \"5.89480137466768E-4\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 32,\n         \
+    \   \"cells\": [\n              \"cpd03387\",\n              \"Selenite\",\n \
+    \             \"1.0960005114669052E-8\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 33,\n         \
+    \   \"cells\": [\n              \"cpd00034\",\n              \"Zn2+\",\n     \
+    \         \"6.0669078824300665E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 34,\n         \
+    \   \"cells\": [\n              \"cpd00393\",\n              \"FOL\",\n      \
+    \        \"8.846230400070772E-8\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 35,\n         \
+    \   \"cells\": [\n              \"cpd00030\",\n              \"Mn2+\",\n     \
+    \         \"2.869860438686867E-5\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915\",\n            \"source_sha256\": \"92243a806400ee953c589db594185ebafb612b5a9ae27678a94061e68f674564\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 36,\n         \
+    \   \"cells\": [\n              \"cpd08053\",\n              \"Resazurin\",\n\
+    \              \"2.1198117607156487E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          }\n        ]\n      }\n    ],\n    \"interpretation\"\
+    : \"All current printed gram/mol/model amounts are preserved. They do not validate\
+    \ the local1.002 divisor or replace the DSM stock recipes; provider-based normalization\
+    \ and form labels remain independently scoped.\"\n  },\n  {\n    \"decision_id\"\
+    : \"q58\",\n    \"name\": \"komodo915.2 provider quantities\",\n    \"stage\"\
+    : \"Current provider comparison only\",\n    \"decision\": \"conflict\",\n   \
+    \ \"local_fields\": [],\n    \"desired\": null,\n    \"source_snippets\": [\n\
+    \      {\n        \"source_key\": \"komodo915.2\",\n        \"source_url\": \"\
+    https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=915.2\"\
+    ,\n        \"source_locator\": \"Complete HTML ingredient and model tables with\
+    \ headers\",\n        \"snapshot_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n        \"decoded_table_rows\": [\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 0,\n          \
+    \  \"cells\": [\n              \"Name\",\n              \"Semi unique name\",\n\
+    \              \"Unique Name\",\n              \"Gram Amount\",\n            \
+    \  \"Mol Amount\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 1,\n          \
+    \  \"cells\": [\n              \"NaHCO3\",\n              \"sodium bicarbonate\"\
+    ,\n              \"SEED-cpd00242#cpd00971#cpd09249#\",\n              \"7.28\"\
+    ,\n              \"0.09\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 2,\n          \
+    \  \"cells\": [\n              \"D-Ca-pantothenate\",\n              \"D-Ca-pantothenate\"\
+    ,\n              \"SEED-cpd00063#cpd00644##\",\n              \"9.71E-5\",\n \
+    \             \"3.76E-7\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 3,\n          \
+    \  \"cells\": [\n              \"Lipoic acid\",\n              \"Lipoic acid\"\
+    ,\n              \"SEED-cpd00541###\",\n              \"9.71E-5\",\n         \
+    \     \"4.74E-7\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 4,\n          \
+    \  \"cells\": [\n              \"Na2S x 9 H2O\",\n              \"Sodium sulfide\
+    \ hydrate\",\n              \"SEED-cpd00239#cpd00971##\",\n              \"0.44\"\
+    ,\n              \"0.00\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 5,\n          \
+    \  \"cells\": [\n              \"Cysteine-HCl x H2O\",\n              \"Cysteine-HCl\"\
+    ,\n              \"SEED-cpd00084#cpd00099##\",\n              \"0.44\",\n    \
+    \          \"0.00\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 6,\n          \
+    \  \"cells\": [\n              \"Nicotinic acid\",\n              \"Niacin\",\n\
+    \              \"SEED-cpd00218###\",\n              \"9.71E-5\",\n           \
+    \   \"7.96E-7\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 7,\n          \
+    \  \"cells\": [\n              \"Riboflavin\",\n              \"Riboflavin\",\n\
+    \              \"SEED-cpd00220###\",\n              \"9.71E-5\",\n           \
+    \   \"2.58E-7\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 8,\n          \
+    \  \"cells\": [\n              \"K2HPO4\",\n              \"di Potassium hydrogen\
+    \ phosphate\",\n              \"SEED-cpd00009#cpd00205##\",\n              \"\
+    0.29\",\n              \"0.00\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 9,\n          \
+    \  \"cells\": [\n              \"KH2PO4\",\n              \"Potassium dihydrogen\
+    \ phosphate\",\n              \"SEED-cpd00009#cpd00205##\",\n              \"\
+    0.29\",\n              \"0.00\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 10,\n         \
+    \   \"cells\": [\n              \"CoSO4 x 7 H2O\",\n              \"CoSO4\",\n\
+    \              \"SEED-cpd00048#cpd00149##\",\n              \"1.75E-3\",\n   \
+    \           \"6.20E-6\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915.2\"\
+    ,\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 11,\n         \
+    \   \"cells\": [\n              \"Glucose\",\n              \"D-Glucose\",\n \
+    \             \"SEED-cpd00027###\",\n              \"4.85\",\n              \"\
+    0.03\"\n            ],\n            \"representation\": \"Exact decoded DOM cell\
+    \ text; not claimed as a literal HTML substring.\",\n            \"scope\": \"\
+    Optional detail link resolved from the actual catalogue href. Preserve any failure;\
+    \ do not infer historical equivalence.\",\n            \"usable\": true\n    \
+    \      },\n          {\n            \"source_key\": \"komodo915.2\",\n       \
+    \     \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 12,\n         \
+    \   \"cells\": [\n              \"Vitamin B12\",\n              \"Coenzyme B12\"\
+    ,\n              \"SEED-cpd00166###\",\n              \"1.94E-6\",\n         \
+    \     \"1.23E-9\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 13,\n         \
+    \   \"cells\": [\n              \"MgSO4 x 7 H2O\",\n              \"Magnesium\
+    \ sulfate\",\n              \"SEED-cpd00048#cpd00254##\",\n              \"0.15\"\
+    ,\n              \"0.00\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 14,\n         \
+    \   \"cells\": [\n              \"Folic acid\",\n              \"Folic acid\"\
+    ,\n              \"SEED-cpd00393###\",\n              \"3.88E-5\",\n         \
+    \     \"8.85E-8\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 15,\n         \
+    \   \"cells\": [\n              \"Thiamine-HCl x 2 H2O\",\n              \"Thiamine-HCl\"\
+    ,\n              \"SEED-cpd00099#cpd00305##\",\n              \"9.71E-5\",\n \
+    \             \"2.89E-7\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 16,\n         \
+    \   \"cells\": [\n              \"sodium acetate\",\n              \"Sodium acetate\"\
+    ,\n              \"SEED-cpd00029#cpd00971##\",\n              \"2.43\",\n    \
+    \          \"0.03\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 17,\n         \
+    \   \"cells\": [\n              \"Pyridoxine HCl\",\n              \"Pyridoxine\
+    \ HCl\",\n              \"SEED-cpd00099#cpd00263##\",\n              \"1.94E-4\"\
+    ,\n              \"9.52E-7\"\n            ],\n            \"representation\":\
+    \ \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 18,\n         \
+    \   \"cells\": [\n              \"Na2MoO4 x 2 H2O\",\n              \"Na2MoO4\"\
+    ,\n              \"SEED-cpd00971#cpd11145##\",\n              \"9.71E-5\",\n \
+    \             \"4.01E-7\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 19,\n         \
+    \   \"cells\": [\n              \"Resazurin\",\n              \"Resazurin\",\n\
+    \              \"SEED-cpd08053###\",\n              \"4.85E-4\",\n           \
+    \   \"2.12E-6\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 20,\n         \
+    \   \"cells\": [\n              \"MnSO4 x H2O\",\n              \"MnSO4\",\n \
+    \             \"SEED-cpd00030#cpd00048##\",\n              \"4.85E-3\",\n    \
+    \          \"2.87E-5\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915.2\"\
+    ,\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 21,\n         \
+    \   \"cells\": [\n              \"p-Aminobenzoic acid\",\n              \"p Aminobenzoic\
+    \ acid (PABA)\",\n              \"SEED-cpd00443###\",\n              \"9.71E-5\"\
+    ,\n              \"7.14E-7\"\n            ],\n            \"representation\":\
+    \ \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 22,\n         \
+    \   \"cells\": [\n              \"(NH4)2SO4\",\n              \"Ammonium sulfate\"\
+    ,\n              \"SEED-cpd00013#cpd00048##\",\n              \"0.29\",\n    \
+    \          \"0.00\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 23,\n         \
+    \   \"cells\": [\n              \"trypticase (BBL)\",\n              \"Trypticase\"\
+    ,\n              \"rich-peptone#\",\n              \"1.94\",\n              \"\
+    null\"\n            ],\n            \"representation\": \"Exact decoded DOM cell\
+    \ text; not claimed as a literal HTML substring.\",\n            \"scope\": \"\
+    Optional detail link resolved from the actual catalogue href. Preserve any failure;\
+    \ do not infer historical equivalence.\",\n            \"usable\": true\n    \
+    \      },\n          {\n            \"source_key\": \"komodo915.2\",\n       \
+    \     \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 24,\n         \
+    \   \"cells\": [\n              \"CuSO4 x 5 H2O\",\n              \"CuSO4\",\n\
+    \              \"SEED-cpd00048#cpd00058##\",\n              \"9.71E-5\",\n   \
+    \           \"3.89E-7\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915.2\"\
+    ,\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 25,\n         \
+    \   \"cells\": [\n              \"Nitrilotriacetic acid\",\n              \"Nitrilotriacetic\
+    \ acid\",\n              \"SEED-cpd10393###\",\n              \"0.01\",\n    \
+    \          \"0.00\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 26,\n         \
+    \   \"cells\": [\n              \"H2O\",\n              \"H2O\",\n           \
+    \   \"SEED-cpd00001###\",\n              \"null\",\n              \"null\"\n \
+    \           ],\n            \"representation\": \"Exact decoded DOM cell text;\
+    \ not claimed as a literal HTML substring.\",\n            \"scope\": \"Optional\
+    \ detail link resolved from the actual catalogue href. Preserve any failure; do\
+    \ not infer historical equivalence.\",\n            \"usable\": true\n       \
+    \   },\n          {\n            \"source_key\": \"komodo915.2\",\n          \
+    \  \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 27,\n         \
+    \   \"cells\": [\n              \"N2\",\n              \"N2\",\n             \
+    \ \"SEED-cpd00528###\",\n              \"null\",\n              \"null\"\n   \
+    \         ],\n            \"representation\": \"Exact decoded DOM cell text; not\
+    \ claimed as a literal HTML substring.\",\n            \"scope\": \"Optional detail\
+    \ link resolved from the actual catalogue href. Preserve any failure; do not infer\
+    \ historical equivalence.\",\n            \"usable\": true\n          },\n   \
+    \       {\n            \"source_key\": \"komodo915.2\",\n            \"source_sha256\"\
+    : \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\",\n    \
+    \        \"table_index\": 2,\n            \"row_index\": 28,\n            \"cells\"\
+    : [\n              \"KOH\",\n              \"KOH\",\n              \"SEED-cpd00001#cpd00205##\"\
+    ,\n              \"null\",\n              \"null\"\n            ],\n         \
+    \   \"representation\": \"Exact decoded DOM cell text; not claimed as a literal\
+    \ HTML substring.\",\n            \"scope\": \"Optional detail link resolved from\
+    \ the actual catalogue href. Preserve any failure; do not infer historical equivalence.\"\
+    ,\n            \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 29,\n         \
+    \   \"cells\": [\n              \"Na2SeO3 x 5 H2O\",\n              \"Sodium selenite\"\
+    ,\n              \"SEED-cpd00971#cpd03387##\",\n              \"2.91E-6\",\n \
+    \             \"1.10E-8\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 30,\n         \
+    \   \"cells\": [\n              \"ZnSO4 x 7 H2O\",\n              \"ZnSO4\",\n\
+    \              \"SEED-cpd00034#cpd00048##\",\n              \"1.75E-3\",\n   \
+    \           \"6.07E-6\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915.2\"\
+    ,\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 31,\n         \
+    \   \"cells\": [\n              \"Distilled water\",\n              \"H2O\",\n\
+    \              \"SEED-cpd00001###\",\n              \"null\",\n              \"\
+    null\"\n            ],\n            \"representation\": \"Exact decoded DOM cell\
+    \ text; not claimed as a literal HTML substring.\",\n            \"scope\": \"\
+    Optional detail link resolved from the actual catalogue href. Preserve any failure;\
+    \ do not infer historical equivalence.\",\n            \"usable\": true\n    \
+    \      },\n          {\n            \"source_key\": \"komodo915.2\",\n       \
+    \     \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 32,\n         \
+    \   \"cells\": [\n              \"Biotin\",\n              \"Biotin\",\n     \
+    \         \"SEED-cpd00104###\",\n              \"3.88E-5\",\n              \"\
+    1.60E-7\"\n            ],\n            \"representation\": \"Exact decoded DOM\
+    \ cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 33,\n         \
+    \   \"cells\": [\n              \"FeSO4 x 7 H2O\",\n              \"Iron sulfate\"\
+    ,\n              \"SEED-cpd00048#cpd10515##\",\n              \"9.71E-4\",\n \
+    \             \"3.48E-6\"\n            ],\n            \"representation\": \"\
+    Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n   \
+    \         \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 34,\n         \
+    \   \"cells\": [\n              \"NH4Cl\",\n              \"Ammonium chloride\"\
+    ,\n              \"SEED-cpd00013#cpd00099##\",\n              \"0.97\",\n    \
+    \          \"0.02\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 35,\n         \
+    \   \"cells\": [\n              \"CaCl2 x 2 H2O\",\n              \"Calcium chloride\
+    \ \",\n              \"SEED-cpd00063#cpd00099##\",\n              \"0.08\",\n\
+    \              \"0.00\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915.2\"\
+    ,\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 36,\n         \
+    \   \"cells\": [\n              \"NiCl2 x 6 H2O\",\n              \"NiCl2\",\n\
+    \              \"SEED-cpd00099#cpd00244##\",\n              \"2.91E-4\",\n   \
+    \           \"1.22E-6\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915.2\"\
+    ,\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 37,\n         \
+    \   \"cells\": [\n              \"clarified rumen fluid\",\n              \"clarified\
+    \ rumen fluid\",\n              \"rich-rumen#\",\n              \"97.09\",\n \
+    \             \"0.10\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915.2\"\
+    ,\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 38,\n         \
+    \   \"cells\": [\n              \"H3BO3\",\n              \"Boric acid\",\n  \
+    \            \"SEED-cpd09225###\",\n              \"9.71E-5\",\n             \
+    \ \"1.57E-6\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 39,\n         \
+    \   \"cells\": [\n              \"NaCl\",\n              \"NaCl\",\n         \
+    \     \"SEED-cpd00099#cpd00971##\",\n              \"0.60\",\n              \"\
+    0.01\"\n            ],\n            \"representation\": \"Exact decoded DOM cell\
+    \ text; not claimed as a literal HTML substring.\",\n            \"scope\": \"\
+    Optional detail link resolved from the actual catalogue href. Preserve any failure;\
+    \ do not infer historical equivalence.\",\n            \"usable\": true\n    \
+    \      },\n          {\n            \"source_key\": \"komodo915.2\",\n       \
+    \     \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 40,\n         \
+    \   \"cells\": [\n              \"KAl(SO4)2 x 12 H2O\",\n              \"potassium\
+    \ alum\",\n              \"alum#\",\n              \"1.94E-4\",\n            \
+    \  \"4.08E-7\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 2,\n            \"row_index\": 41,\n         \
+    \   \"cells\": [\n              \"sodium formate\",\n              \"sodium formate\"\
+    ,\n              \"SEED-cpd00047#cpd00971##\",\n              \"2.43\",\n    \
+    \          \"0.04\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 0,\n          \
+    \  \"cells\": [\n              \"Seed ID\",\n              \"Name\",\n       \
+    \       \"Mol Concentration\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 1,\n          \
+    \  \"cells\": [\n              \"cpd00239\",\n              \"H2S\",\n       \
+    \       \"0.0017953285550996309\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 2,\n          \
+    \  \"cells\": [\n              \"cpd00218\",\n              \"Niacin\",\n    \
+    \          \"7.957981855801369E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 3,\n          \
+    \  \"cells\": [\n              \"cpd00048\",\n              \"Sulfate\",\n   \
+    \           \"0.002840840899725043\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 4,\n          \
+    \  \"cells\": [\n              \"cpd00443\",\n              \"ABEE\",\n      \
+    \        \"7.138777841233581E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 5,\n          \
+    \  \"cells\": [\n              \"cpd00047\",\n              \"Formate\",\n   \
+    \           \"0.0356938892061679\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 6,\n          \
+    \  \"cells\": [\n              \"cpd00644\",\n              \"PAN\",\n       \
+    \       \"3.763076691502973E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 7,\n          \
+    \  \"cells\": [\n              \"cpd00149\",\n              \"Co2+\",\n      \
+    \        \"6.195968145839321E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 8,\n          \
+    \  \"cells\": [\n              \"cpd00027\",\n              \"D-Glucose\",\n \
+    \             \"0.026968716289104636\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 9,\n          \
+    \  \"cells\": [\n              \"cpd00104\",\n              \"BIOT\",\n      \
+    \        \"1.5981461504654603E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 10,\n         \
+    \   \"cells\": [\n              \"cpd00242\",\n              \"H2CO3\",\n    \
+    \          \"0.08668515950069348\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 11,\n         \
+    \   \"cells\": [\n              \"cpd00220\",\n              \"RIBF\",\n     \
+    \         \"2.58211113406321E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 12,\n         \
+    \   \"cells\": [\n              \"cpd00263\",\n              \"Pyridoxol\",\n\
+    \              \"9.518370454978109E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 13,\n         \
+    \   \"cells\": [\n              \"cpd00541\",\n              \"Lipoate\",\n  \
+    \            \"4.7359696897939854E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 14,\n         \
+    \   \"cells\": [\n              \"cpd00244\",\n              \"Ni2+\",\n     \
+    \         \"1.224304900892518E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 15,\n         \
+    \   \"cells\": [\n              \"cpd00166\",\n              \"Calomide\",\n \
+    \             \"1.2297324717007819E-9\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 16,\n         \
+    \   \"cells\": [\n              \"cpd00001\",\n              \"H2O\",\n      \
+    \        \"0.9029126213592233\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 17,\n         \
+    \   \"cells\": [\n              \"cpd00084\",\n              \"L-Cysteine\",\n\
+    \              \"0.002508717794335315\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 18,\n         \
+    \   \"cells\": [\n              \"cpd00063\",\n              \"Ca2+\",\n     \
+    \         \"5.379072488791922E-4\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 19,\n         \
+    \   \"cells\": [\n              \"cpd10515\",\n              \"Fe2+\",\n     \
+    \         \"3.4792108453960475E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 20,\n         \
+    \   \"cells\": [\n              \"cpd09225\",\n              \"Boric acid\",\n\
+    \              \"1.5659254619480114E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 21,\n         \
+    \   \"cells\": [\n              \"cpd09249\",\n              \"Sodium bicarbonate\"\
+    ,\n              \"0.0\"\n            ],\n            \"representation\": \"Exact\
+    \ decoded DOM cell text; not claimed as a literal HTML substring.\",\n       \
+    \     \"scope\": \"Optional detail link resolved from the actual catalogue href.\
+    \ Preserve any failure; do not infer historical equivalence.\",\n            \"\
+    usable\": true\n          },\n          {\n            \"source_key\": \"komodo915.2\"\
+    ,\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 22,\n         \
+    \   \"cells\": [\n              \"cpd11145\",\n              \"Sodium molybdate\"\
+    ,\n              \"4.006907909235522E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 23,\n         \
+    \   \"cells\": [\n              \"cpd00528\",\n              \"N2\",\n       \
+    \       \"0.0\"\n            ],\n            \"representation\": \"Exact decoded\
+    \ DOM cell text; not claimed as a literal HTML substring.\",\n            \"scope\"\
+    : \"Optional detail link resolved from the actual catalogue href. Preserve any\
+    \ failure; do not infer historical equivalence.\",\n            \"usable\": true\n\
+    \          },\n          {\n            \"source_key\": \"komodo915.2\",\n   \
+    \         \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 24,\n         \
+    \   \"cells\": [\n              \"cpd00305\",\n              \"THI\",\n      \
+    \        \"2.886927702669542E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 25,\n         \
+    \   \"cells\": [\n              \"cpd10393\",\n              \"Triglycollamic\
+    \ acid\",\n              \"7.746333402189631E-5\"\n            ],\n          \
+    \  \"representation\": \"Exact decoded DOM cell text; not claimed as a literal\
+    \ HTML substring.\",\n            \"scope\": \"Optional detail link resolved from\
+    \ the actual catalogue href. Preserve any failure; do not infer historical equivalence.\"\
+    ,\n            \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 26,\n         \
+    \   \"cells\": [\n              \"cpd00205\",\n              \"K+\",\n       \
+    \       \"0.005505337945913774\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 27,\n         \
+    \   \"cells\": [\n              \"cpd00029\",\n              \"Acetate\",\n  \
+    \            \"0.029599810561212407\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 28,\n         \
+    \   \"cells\": [\n              \"cpd00009\",\n              \"Phosphate\",\n\
+    \              \"0.0038314176245210726\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 29,\n         \
+    \   \"cells\": [\n              \"cpd00971\",\n              \"Na+\",\n      \
+    \        \"0.16594864567249987\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 30,\n         \
+    \   \"cells\": [\n              \"cpd00058\",\n              \"Cu2+\",\n     \
+    \         \"3.8873825281592273E-7\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 31,\n         \
+    \   \"cells\": [\n              \"cpd00099\",\n              \"Cl-\",\n      \
+    \        \"0.03228414813745613\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 32,\n         \
+    \   \"cells\": [\n              \"cpd00013\",\n              \"NH3\",\n      \
+    \        \"0.022731435993938284\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 33,\n         \
+    \   \"cells\": [\n              \"cpd00254\",\n              \"Mg\",\n       \
+    \       \"5.89480137466768E-4\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 34,\n         \
+    \   \"cells\": [\n              \"cpd03387\",\n              \"Selenite\",\n \
+    \             \"1.0960005114669052E-8\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 35,\n         \
+    \   \"cells\": [\n              \"cpd00034\",\n              \"Zn2+\",\n     \
+    \         \"6.0669078824300665E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 36,\n         \
+    \   \"cells\": [\n              \"cpd00393\",\n              \"FOL\",\n      \
+    \        \"8.846230400070772E-8\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 37,\n         \
+    \   \"cells\": [\n              \"cpd00030\",\n              \"Mn2+\",\n     \
+    \         \"2.869860438686867E-5\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          },\n          {\n            \"source_key\"\
+    : \"komodo915.2\",\n            \"source_sha256\": \"653003e0da3878450aa7dbec3a0162b85c99489256b6f805a4cbd9d9067256bf\"\
+    ,\n            \"table_index\": 3,\n            \"row_index\": 38,\n         \
+    \   \"cells\": [\n              \"cpd08053\",\n              \"Resazurin\",\n\
+    \              \"2.1198117607156487E-6\"\n            ],\n            \"representation\"\
+    : \"Exact decoded DOM cell text; not claimed as a literal HTML substring.\",\n\
+    \            \"scope\": \"Optional detail link resolved from the actual catalogue\
+    \ href. Preserve any failure; do not infer historical equivalence.\",\n      \
+    \      \"usable\": true\n          }\n        ]\n      }\n    ],\n    \"interpretation\"\
+    : \"All current printed gram/mol/model amounts are preserved. They do not validate\
+    \ the local1.002 divisor or replace the DSM stock recipes; provider-based normalization\
+    \ and form labels remain independently scoped.\"\n  }\n]"
+findings:
+- finding_id: f1
+  issue_key: culturemech.002083.variant-conflation
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: The generated record conflates base and distinct DSM variants
+  description: The target presents DSM14465/14466 and DSM14469 wrappers as synonyms/duplicates
+    and points to a variant as parent. Primary source gives different formate/additive
+    instructions, and current owners already classify those wrappers as STRAIN_SPECIFIC_VARIANT.
+    Their copied ingredient equality is not source equivalence.
+  target_ids:
+  - CultureMech:002083
+  field_paths:
+  - synonyms
+  - parent_media
+  - variant_relationship
+  - variant_modifications
+  - ingredients
+  evidence_ids:
+  - record
+  - dsm-main
+  - owner-0
+  - owner-1
+  - owner-2
+  - owner-3
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.5
+  native_severity: P2
+  normalization_reason: P2.5 is escalated to blocker because the generated target
+    denotes incompatible source variants as one recipe, rather than a cosmetic duplicate
+    naming issue.
+- finding_id: f2
+  issue_key: culturemech.002083.stock-flattening-and-sums
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock-preparation amounts and three stock/base sums appear as main rates
+  description: All layers flatten mineral and vitamin stock-preparation amounts as
+    main concentrations. NaCl, MgSO4 and CaCl2 also sum full stock-preparation masses
+    with normalized base amounts despite the separate 10 ml mineral dose. Stock and
+    receiving final volumes are undeclared; exact delivered-mass fractions remain
+    conditional. No stock-dose representation exists.
+  target_ids:
+  - CultureMech:002083
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - dsm-main
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: culturemech.002083.missing-fluid-volume-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Rumen fluid, solvent and dose basis are absent from ingredients
+  description: The source specifies100 ml rumen fluid,890 ml main water,0.50 ml resazurin
+    stock and stock additions. Those volumes and the two stock litres are not faithfully
+    represented by the35-solute lists. Source main masses do not establish the stored1.002-normalized
+    g/L rates after unspecified additions.
+  target_ids:
+  - CultureMech:002083
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - dsm-main
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.3
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: culturemech.002083.nickel-and-resazurin-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium resazurin have incompatible terms
+  description: The source nickel hexahydrate is linked to anhydrous nickel dichloride
+    in both slots; sodium resazurin is linked to the acid. Correct labels do not resolve
+    these form differences.
+  target_ids:
+  - CultureMech:002083
+  field_paths:
+  - ingredients[22].term
+  - ingredients[22].mediaingredientmech_chebi_term
+  - ingredients[8].term
+  evidence_ids:
+  - dsm-main
+  - chebi34887
+  - chebi8806
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: culturemech.002083.quantity-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Scoped primary quantities lack attached evidence
+  description: No matching claim-level quantity evidence is attached to the35 concentrations
+    in any layer; source stock/variant stages need explicit quotations and locators.
+  target_ids:
+  - CultureMech:002083
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - dsm-main
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P4.3
+  native_severity: P4
+  normalization_reason: P4.3 is a minor traceability exception separate from substantive
+    quantity/identity fixes; adding evidence itself must not silently select a new
+    denominator or formulation.
+actions:
+- action_id: a1
+  description: Retain the repaired maintained topology, encode each exact strain-specific
+    formula, and regenerate distinct base/variant projections using source-aware identity.
+    Do not merge those formulations merely because stale ingredient arrays match.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002083
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Restore complete mineral/vitamin stocks and exact10/2 ml doses; split
+    the three base/stock salts before deriving any final concentration. Retain explicit
+    source masses and unresolved final volume.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002083
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Represent each solvent/complex-fluid/stock addition at its proper stage
+    and authenticate the final-volume basis before numerical normalization.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002083
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Resolve exact supplied-form ontology identifiers and update maintained
+    slots without inventing replacements or changing source masses; preserve compatible
+    D-calcium pantothenate and DL-lipoic descriptions.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:002083
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: After stage/variant correction, attach short exact primary rows and
+    preparation snippets to each maintained claim.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:002083
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/blautia_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14465_and_dsm_14466.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/for_dsm_14469.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/medium_for_carbon_dioxide_reducers.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The current REST915 capture returned HTTP503 once; it does not negate the available
+  DSM primary.
+- KOMODO915.1 returned HTTP200 with a java.lang.NullPointerException rather than a
+  recipe. Its exact current provider formulation is unavailable; DSM915 separately
+  supplies the strain-specific formate instruction.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-043
+- generated-medium
+```
