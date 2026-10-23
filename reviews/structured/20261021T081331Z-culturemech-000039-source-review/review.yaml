@@ -1,0 +1,1017 @@
+schema_version: 1.0.0
+review_id: 20261021T081331Z-culturemech-000039-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 3n_bbm_v (CultureMech:000039)'
+started_at: '2026-10-21T08:09:17Z'
+finished_at: '2026-10-21T08:13:31Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The CCAP accession resolves, but the generated 3N-BBM+V contains only six
+  undiluted PIV-stock solutes and a preparation sentence misrepresented as an ingredient.
+  The maintained owner removed that sentence but still lacks the main salts, vitamins
+  and stock doses. Source preparation, conditional agar and importer-supplied cultivation
+  defaults need explicit scope.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/3n_bbm_v.yaml
+    sha256: c93546419ce5ccc8e01868286f2e11e48cb41da16a013277f8e58df949afc856
+    role: target
+  - path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    sha256: 7e35137d107a948717d297376a3c2ab4ff7d460de62d8bc91082d331a4b5a67e
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_ccap_instruction_rows.py
+    sha256: eb1a4c8c46eb45dcdde6a5d2f0f6833792dd0802c45603eefa1b63a3ff96fca5
+    role: context
+  - path: scripts/repair_ccap_sources_score10.py
+    sha256: f518688ae99e154f490af337dab30b9038657a814db72861e0b53658a2541ae6
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/ccap_raw_yaml.py
+    sha256: f2c119c4f67bd245c9fbd2b7480c1c6454a64b79922599cb583203628f476a8c
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/ccap_fetcher.py
+    sha256: 09e297722639216f5211096bcac559fae674a03a46e0d324f8360996836368e8
+    role: context
+  - path: src/culturemech/import/ccap_importer.py
+    sha256: c579c1d8fb62b96e739e5ee5c963453753ebca0bbf50996fb0f0d6eedd75c9ac
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 97; batch 010 item 7 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding nine task batches contain
+    90 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 92 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000039
+targets:
+- target_id: CultureMech:000039
+  path: data/merge_yaml/merged/3n_bbm_v.yaml
+  label: 3n_bbm_v
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/3n_bbm_v.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/3n_bbm_v.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch010/097/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-010/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch010/097/strict.tsv"
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/3n_bbm_v.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/3n_bbm_v.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000039
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/3n_bbm_v.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:13:29Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/algae/3n_bbm_v.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:13:29Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/3n_bbm_v.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:10:01.393208Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/3n_bbm_v.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch010/097/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:10:03.113377Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-010/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch010/097/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/3n_bbm_v.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:10:05.009856Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/3n_bbm_v.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:10:06.213039Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T08:13:29Z'
+  support: supports
+  summary: './data/normalized_yaml/algae/3n_bbm_v.yaml:1:id: CultureMech:000039
+
+    ./data/merge_yaml/merged/3n_bbm_v.yaml:1:id: CultureMech:000039
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi49976
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:04:44.168295Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:04:44.349630Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi64734
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64734
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:04:44.449302Z'
+  support: supports
+  summary: CHEBI:64734 resolves to EDTA disodium salt (anhydrous) and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 95b7557b1867dcce37a69714dbad0a6a6a6c11c66dde39c6793a2307a7fb0e1c
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T06:55:08.404288Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86254
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:04:44.743401Z'
+  support: supports
+  summary: CHEBI:86254 resolves to iron trichloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86368
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:04:45.074853Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate and is not
+    obsolete. This verifies the asserted generic chemical identity; no source grade,
+    salt, hydrate or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T08:13:29Z'
+  support: supports
+  summary: '{}'
+- evidence_id: ccap
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_3N_BBM_V.pdf
+  locator: 'Page 1: Stocks and Medium tables; page 2: version/reference'
+  accessed_at: '2026-10-21T08:04:43.179406Z'
+  support: supports
+  summary: The complete two-page CCAP recipe, revision 002 dated 29 May 2026, was
+    read and the first-page table visually inspected. It separates six major stocks
+    per 100 ml, PIV per litre, B1/B12 stocks per 100 ml, their doses into a final
+    litre, conditional agar and separate 0.3N/1N variants.
+  quote: Stock solutions 2 – 6
+  snapshot_sha256: c523d1e42b9ef6995b8a57ecabb06221591113e87271358da981cf7a2292710c
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/C14
+  locator: data.medium; all four solutions, recipe attributes, volumes and steps
+  accessed_at: '2026-10-21T08:04:42.160151Z'
+  support: supports
+  summary: C14 explicitly links the same CCAP PDF and independently retains stocks
+    6103 (PIV), 6104 (B1), 6105 (B12) and their volumes/doses. Provider major-stock
+    strengths/doses differ from current CCAP, although their six stock-derived final
+    concentrations agree; its KH2PO4 g_l=23.4 conflicts with its own 17.5 g/L stock
+    at 10 ml per litre. These provider fields are not silently substituted for the
+    primary table.
+  snapshot_sha256: f76d348faa81e44b6f4a47f223fbbd00e75abe3b4a8d27eaa7d622feb1fcd863
+- evidence_id: trace
+  kind: validation
+  reference: Target and owner compared with the captured CCAP stock tables
+  locator: Every seven direct rows, six missing major salts, two missing vitamins
+    and final litre
+  accessed_at: '2026-10-21T08:13:29Z'
+  support: supports
+  summary: '[{"field": "ingredients[0].concentration", "material": "Na EDTA", "record_g_per_l":
+    "0.75", "source_stage": "PIV stock, per litre", "stock_dose_ml_per_final_l": 6,
+    "calculation": "0.75 * 6 / 1000", "source_derived_final_g_per_l": "0.00450", "decision":
+    "correct: stock concentration is not final-medium concentration"}, {"field": "ingredients[1].concentration",
+    "material": "FeCl3 x 6 H2O", "record_g_per_l": "0.097", "source_stage": "PIV stock,
+    per litre", "stock_dose_ml_per_final_l": 6, "calculation": "0.097 * 6 / 1000",
+    "source_derived_final_g_per_l": "0.000582", "decision": "correct: stock concentration
+    is not final-medium concentration"}, {"field": "ingredients[2].concentration",
+    "material": "MnCl2 x 4 H2O", "record_g_per_l": "0.041", "source_stage": "PIV stock,
+    per litre", "stock_dose_ml_per_final_l": 6, "calculation": "0.041 * 6 / 1000",
+    "source_derived_final_g_per_l": "0.000246", "decision": "correct: stock concentration
+    is not final-medium concentration"}, {"field": "ingredients[3].concentration",
+    "material": "ZnCl2", "record_g_per_l": "0.005", "source_stage": "PIV stock, per
+    litre", "stock_dose_ml_per_final_l": 6, "calculation": "0.005 * 6 / 1000", "source_derived_final_g_per_l":
+    "0.000030", "decision": "correct: stock concentration is not final-medium concentration"},
+    {"field": "ingredients[4].concentration", "material": "CoCl2 x 6 H2O", "record_g_per_l":
+    "0.002", "source_stage": "PIV stock, per litre", "stock_dose_ml_per_final_l":
+    6, "calculation": "0.002 * 6 / 1000", "source_derived_final_g_per_l": "0.000012",
+    "decision": "correct: stock concentration is not final-medium concentration"},
+    {"field": "ingredients[5].concentration", "material": "Na2MoO4 x 2 H2O", "record_g_per_l":
+    "0.004", "source_stage": "PIV stock, per litre", "stock_dose_ml_per_final_l":
+    6, "calculation": "0.004 * 6 / 1000", "source_derived_final_g_per_l": "0.000024",
+    "decision": "correct: stock concentration is not final-medium concentration"},
+    {"field": "ingredients[6]", "record": {"preferred_term": "Make up to 1 litre with
+    deionised water. For agar, add", "notes": "Ontology mapping not yet available;
+    From CCAP Medium MR_3N_BBM_V.pdf; Curated from CCAP Medium MR_3N_BBM_V.pdf specification",
+    "concentration": {"value": "15", "unit": "G_PER_L"}, "source": "CCAP Medium MR_3N_BBM_V.pdf"},
+    "decision": "correct: instruction fragment, not a chemical ingredient; 15 g/L
+    is conditional agar"}, {"missing_material": "NaNO3", "source_stock_g_per_100ml":
+    "7.5", "dose_ml_per_final_l": "10", "calculated_final_g_per_l": "0.75", "decision":
+    "add source-faithful stock/dose or explicitly derived final amount"}, {"missing_material":
+    "CaCl2.2H2O", "source_stock_g_per_100ml": "2.5", "dose_ml_per_final_l": "1", "calculated_final_g_per_l":
+    "0.025", "decision": "add source-faithful stock/dose or explicitly derived final
+    amount"}, {"missing_material": "MgSO4.7H2O", "source_stock_g_per_100ml": "7.5",
+    "dose_ml_per_final_l": "1", "calculated_final_g_per_l": "0.075", "decision": "add
+    source-faithful stock/dose or explicitly derived final amount"}, {"missing_material":
+    "K2HPO4.3H2O", "source_stock_g_per_100ml": "7.5", "dose_ml_per_final_l": "1",
+    "calculated_final_g_per_l": "0.075", "decision": "add source-faithful stock/dose
+    or explicitly derived final amount"}, {"missing_material": "KH2PO4", "source_stock_g_per_100ml":
+    "17.5", "dose_ml_per_final_l": "1", "calculated_final_g_per_l": "0.175", "decision":
+    "add source-faithful stock/dose or explicitly derived final amount"}, {"missing_material":
+    "NaCl", "source_stock_g_per_100ml": "2.5", "dose_ml_per_final_l": "1", "calculated_final_g_per_l":
+    "0.025", "decision": "add source-faithful stock/dose or explicitly derived final
+    amount"}, {"missing_material": "thiamine hydrochloride", "source_stock_g_per_100ml":
+    "0.12", "dose_ml_per_final_l": 1, "calculated_final_g_per_l": "0.0012", "decision":
+    "add"}, {"missing_material": "cyanocobalamin", "source_initial_stock_g_per_100ml":
+    "0.1", "intermediate_dilution": "1 ml + 99 ml water", "dose_of_diluted_stock_ml_per_final_l":
+    1, "calculated_final_g_per_l": "0.00001", "decision": "add with both dilution
+    stages"}]'
+- evidence_id: writers
+  kind: record_content
+  reference: src/culturemech/import/ccap_importer.py; scripts/repair_ccap_instruction_rows.py;
+    scripts/repair_ccap_sources_score10.py
+  locator: convert_recipe; SIMPLE_TARGETS entry for algae/3n_bbm_v.yaml; CCAP provenance
+    normalization
+  accessed_at: '2026-10-21T08:13:29Z'
+  support: supports
+  summary: Current importer unconditionally assigns complex/liquid and generic light/temperature/applications.
+    The instruction-row repair removes the exact malformed seventh row and adds make-up/conditional-agar/autoclave
+    steps; it does not reconstruct all missing major stocks/vitamins. The provenance
+    repair copies the exact CCAP accession/PDF into sources. These current code paths
+    and owner events explain bounded representation differences; historical execution
+    is not re-enacted.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '6 primary CHEBI identities resolve with matching labels; 0 of 0 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - record
+  - mim
+  - chebi49976
+  - chebi53503
+  - chebi64734
+  - chebi75213
+  - chebi86254
+  - chebi86368
+  details: 7 direct ingredient instances; CHEBI-primary instance linkage 6/7 (85.71%),
+    verified secondary coverage 0/7 (0.00%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Exact CCAP accession and generated owner
+  outcome: concern
+  summary: CCAP:3N_BBM_V, the primary URL and owner stable ID resolve; the algae owner
+    is distinct from the similarly named bacterial C14 record. The asserted medium
+    name is unsupported by this incomplete PIV-like ingredient list. Source variants
+    0.3N-BBM+V and 1N-BBM are distinct and not imported into the reviewed formulation.
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - ccap
+  - provider
+- assessment_id: amounts
+  area: quantity
+  topic: All direct rows and missing stock stages
+  outcome: concern
+  summary: 'All six chemical masses are supported only inside a litre of PIV stock.
+    The recipe uses 6 ml of that stock per final litre, giving 0.0045, 0.000582, 0.000246,
+    0.00003, 0.000012 and 0.000024 g/L respectively. The seventh row is an instruction
+    fragment; conditional agar is 15 g/L. Six major salts and two vitamins are absent
+    from both layers. No density or assumed final volume is needed: the primary recipe
+    explicitly makes up to one litre.'
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - provider
+  - trace
+  details: '[{"field": "ingredients[0].concentration", "material": "Na EDTA", "record_g_per_l":
+    "0.75", "source_stage": "PIV stock, per litre", "stock_dose_ml_per_final_l": 6,
+    "calculation": "0.75 * 6 / 1000", "source_derived_final_g_per_l": "0.00450", "decision":
+    "correct: stock concentration is not final-medium concentration"}, {"field": "ingredients[1].concentration",
+    "material": "FeCl3 x 6 H2O", "record_g_per_l": "0.097", "source_stage": "PIV stock,
+    per litre", "stock_dose_ml_per_final_l": 6, "calculation": "0.097 * 6 / 1000",
+    "source_derived_final_g_per_l": "0.000582", "decision": "correct: stock concentration
+    is not final-medium concentration"}, {"field": "ingredients[2].concentration",
+    "material": "MnCl2 x 4 H2O", "record_g_per_l": "0.041", "source_stage": "PIV stock,
+    per litre", "stock_dose_ml_per_final_l": 6, "calculation": "0.041 * 6 / 1000",
+    "source_derived_final_g_per_l": "0.000246", "decision": "correct: stock concentration
+    is not final-medium concentration"}, {"field": "ingredients[3].concentration",
+    "material": "ZnCl2", "record_g_per_l": "0.005", "source_stage": "PIV stock, per
+    litre", "stock_dose_ml_per_final_l": 6, "calculation": "0.005 * 6 / 1000", "source_derived_final_g_per_l":
+    "0.000030", "decision": "correct: stock concentration is not final-medium concentration"},
+    {"field": "ingredients[4].concentration", "material": "CoCl2 x 6 H2O", "record_g_per_l":
+    "0.002", "source_stage": "PIV stock, per litre", "stock_dose_ml_per_final_l":
+    6, "calculation": "0.002 * 6 / 1000", "source_derived_final_g_per_l": "0.000012",
+    "decision": "correct: stock concentration is not final-medium concentration"},
+    {"field": "ingredients[5].concentration", "material": "Na2MoO4 x 2 H2O", "record_g_per_l":
+    "0.004", "source_stage": "PIV stock, per litre", "stock_dose_ml_per_final_l":
+    6, "calculation": "0.004 * 6 / 1000", "source_derived_final_g_per_l": "0.000024",
+    "decision": "correct: stock concentration is not final-medium concentration"},
+    {"field": "ingredients[6]", "record": {"preferred_term": "Make up to 1 litre with
+    deionised water. For agar, add", "notes": "Ontology mapping not yet available;
+    From CCAP Medium MR_3N_BBM_V.pdf; Curated from CCAP Medium MR_3N_BBM_V.pdf specification",
+    "concentration": {"value": "15", "unit": "G_PER_L"}, "source": "CCAP Medium MR_3N_BBM_V.pdf"},
+    "decision": "correct: instruction fragment, not a chemical ingredient; 15 g/L
+    is conditional agar"}, {"missing_material": "NaNO3", "source_stock_g_per_100ml":
+    "7.5", "dose_ml_per_final_l": "10", "calculated_final_g_per_l": "0.75", "decision":
+    "add source-faithful stock/dose or explicitly derived final amount"}, {"missing_material":
+    "CaCl2.2H2O", "source_stock_g_per_100ml": "2.5", "dose_ml_per_final_l": "1", "calculated_final_g_per_l":
+    "0.025", "decision": "add source-faithful stock/dose or explicitly derived final
+    amount"}, {"missing_material": "MgSO4.7H2O", "source_stock_g_per_100ml": "7.5",
+    "dose_ml_per_final_l": "1", "calculated_final_g_per_l": "0.075", "decision": "add
+    source-faithful stock/dose or explicitly derived final amount"}, {"missing_material":
+    "K2HPO4.3H2O", "source_stock_g_per_100ml": "7.5", "dose_ml_per_final_l": "1",
+    "calculated_final_g_per_l": "0.075", "decision": "add source-faithful stock/dose
+    or explicitly derived final amount"}, {"missing_material": "KH2PO4", "source_stock_g_per_100ml":
+    "17.5", "dose_ml_per_final_l": "1", "calculated_final_g_per_l": "0.175", "decision":
+    "add source-faithful stock/dose or explicitly derived final amount"}, {"missing_material":
+    "NaCl", "source_stock_g_per_100ml": "2.5", "dose_ml_per_final_l": "1", "calculated_final_g_per_l":
+    "0.025", "decision": "add source-faithful stock/dose or explicitly derived final
+    amount"}, {"missing_material": "thiamine hydrochloride", "source_stock_g_per_100ml":
+    "0.12", "dose_ml_per_final_l": 1, "calculated_final_g_per_l": "0.0012", "decision":
+    "add"}, {"missing_material": "cyanocobalamin", "source_initial_stock_g_per_100ml":
+    "0.1", "intermediate_dilution": "1 ml + 99 ml water", "dose_of_diluted_stock_ml_per_final_l":
+    1, "calculated_final_g_per_l": "0.00001", "decision": "add with both dilution
+    stages"}]'
+- assessment_id: forms
+  area: grounding
+  topic: All asserted chemical forms
+  outcome: supported
+  summary: Six primary CHEBI identifiers resolve and match canonical labels (6/7 direct
+    instances, 85.71% linkage); zero secondary links are asserted (0/7, 0%). Source
+    hydrate counts for Fe, Mn, Co and molybdate match these names. Source Na2EDTA
+    does not separately establish a purchased hydrate or grade; no molarity is inferred
+    from it. The instruction fragment receives no invented chemical ID.
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - record
+  - ccap
+  - mim
+  - chebi64734
+  - chebi86254
+  - chebi86368
+  - chebi49976
+  - chebi53503
+  - chebi75213
+- assessment_id: preparation
+  area: completeness
+  topic: Stock preparation, final make-up and conditional agar
+  outcome: concern
+  summary: Target has no preparation_steps. Owner has final make-up to one litre,
+    optional agar and autoclaving at 15 psi for 15 min, but omits PIV addition order/stock
+    scope, vitamin filtration and the B12 1:100 intermediate dilution. Primary supplies
+    pressure/time, not a Celsius temperature. LIQUID is a legitimate base form if
+    agar remains conditional; the target instruction row obscures that distinction.
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - writers
+- assessment_id: conditions
+  area: scope
+  topic: Light, temperature, applications and composition class
+  outcome: concern
+  summary: Source gives no light intensity, light cycle or cultivation temperature,
+    whereas both local layers assert 50–100 micromol photons per square metre per
+    second, 12:12/16:8 cycles and 15–30 C as generic recommendations. These exact
+    strings are assigned unconditionally by the current importer. The broth uses named
+    salts/vitamins; COMPLEX/UNDEFINED is not justified by its formulation. Algal catalogue
+    context does not establish strain-specific growth or each broad application.
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - writers
+- assessment_id: provenance
+  area: provenance
+  topic: Source versions, evidence and history
+  outcome: concern
+  summary: Target contains only the two root references and no claim excerpts. Owner
+    August/September repairs are missing from the August merge. The earlier history
+    entries at indices [2, 5] have no timezone; no timezone is inferred. Curation
+    confidence and ingredients_curated flags are not evidence of recipe completeness.
+    Current primary recipe is dated after the April extraction; the historical April
+    PDF bytes were not recovered and no change chronology is inferred.
+  target_ids:
+  - CultureMech:000039
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - validate-references
+  - writers
+findings:
+- finding_id: f1
+  issue_key: CM000039-piv-as-medium
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: A PIV stock fragment is represented as complete 3N-BBM+V
+  description: Both layers contain only the six PIV chemicals at stock strength, with
+    all major salts/vitamins and their doses missing. This denotes a trace stock rather
+    than the named complete growth medium.
+  target_ids:
+  - CultureMech:000039
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - provider
+  - trace
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM000039-instruction-ingredient
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preparation prose remains an ingredient
+  description: Target row6 has a long preparation sentence as its preferred_term and
+    attaches 15 g/L to it. The maintained owner has already removed the row and represented
+    conditional agar in preparation.
+  target_ids:
+  - CultureMech:000039
+  field_paths:
+  - ingredients[6]
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - writers
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM000039-preparation-stages
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock preparation and vitamin dilution are missing
+  description: Target omits all preparation. Owner repair adds only final make-up,
+    agar and autoclaving and is still insufficient to prepare the documented PIV/vitamin
+    system.
+  target_ids:
+  - CultureMech:000039
+  field_paths:
+  - preparation_steps
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: CM000039-unsupported-culture-defaults
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Importer defaults are presented as cultivation conditions
+  description: The exact light, cycle and temperature defaults lack support in the
+    primary recipe and were unconditionally assigned by current importer code.
+  target_ids:
+  - CultureMech:000039
+  field_paths:
+  - light_intensity
+  - light_cycle
+  - temperature_range
+  - applications
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - writers
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: CM000039-composition-class
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Complex/undefined labels lack formulation support
+  description: The complete broth is composed of specified salts and vitamins; current
+    COMPLEX/UNDEFINED fields follow defaults rather than the source composition. Optional
+    agar must retain its conditional scope.
+  target_ids:
+  - CultureMech:000039
+  field_paths:
+  - medium_type
+  - composition_type
+  - physical_state
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - writers
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f6
+  issue_key: CM000039-provenance-drift
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Later owner repairs and narrow source evidence are absent
+  description: Generated file lacks the maintained preparation/source/history changes,
+    and neither layer has claim excerpts. Two target history timestamps lack offsets.
+  target_ids:
+  - CultureMech:000039
+  field_paths:
+  - sources
+  - references
+  - ingredients[*].evidence
+  - curation_history
+  - data_quality_flags
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap
+  - writers
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Reconstruct the complete primary formulation in the maintained algae
+    owner, retaining stock volumes, final-litre basis and vitamin dilution stages.
+    Resolve historical/current source version explicitly; do not replace it with the
+    C15 customer-order variant.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000039
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Keep the owner correction, verify conditional agar identity and regenerate
+    after the complete formulation is repaired.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000039
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Represent PIV order and stock autoclaving, separate vitamin filtration,
+    B12 serial dilution, final make-up and conditional agar with narrow source evidence.
+    Preserve 15 psi/15 min without inventing temperature.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000039
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Remove or explicitly qualify unsupported defaults in the maintained
+    owner/owning importer. Add only condition- and organism-specific evidence where
+    available.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000039
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Reassess the corrected broth and agar variant against native enums,
+    keeping liquid base and optional solid form distinct.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:000039
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: After owner repair, retain original history and add new evidence-bearing
+    clarification; regenerate and verify all source/conditional fields survive. Do
+    not infer timezone for existing events.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:000039
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/algae/3n_bbm_v.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Review of current cited CCAP formulation and preserved provider representation is
+  complete; the earlier April PDF version was not recovered. The 1963 background reference
+  printed in the PDF was not used to assert organism growth or historical formulation
+  equivalence. No exact organism/strain, growth, pH or incubation claim is established.
+tags:
+- unreviewed-records
+- batch-010
+- generated-medium
