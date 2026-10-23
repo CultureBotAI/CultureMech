@@ -1,0 +1,799 @@
+# Source and formulation review: 1_10_r2a_gellan_gum_medium2 (CultureMech:008724)
+
+- Review: 20261020T034552Z-culturemech-008724-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-19T23:41:06Z
+- Finished UTC: 2026-10-20T03:45:52Z
+- Reviewer: OpenAI Codex with delegated source and validator checks (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M2130 resolves to NBRC1462 and preserves the source component inventory, including supplied salt hydrates and optional gellan gum. Two major findings concern water volume encoded as mass concentration and omitted source pH. The ten non-water numeric amounts match source batch masses, with final-volume normalization remaining qualified.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 27 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; Batch 003 selects ordinals 21-30 after the first two reserved batches; saved bundles are published locally in path order. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008724 | data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml | generated | 1_10_r2a_gellan_gum_medium2 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008724 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:008724 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch003/027/strict.tsv |
+| validate-terms | passed | True | CultureMech:008724 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:008724 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:008724 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:008724.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact source identity and formulation
+
+identity: supported. Targets: CultureMech:008724.
+
+CultureMech:008724 identifies TOGO M2130 and original NBRC1462. Inventory and source name match. No similar R2A recipe is substituted; notably the source explicitly lists the calcium chloride amount, so it must not be scaled merely because the name says1/10.
+
+### Every direct quantity and final-volume basis
+
+quantity: concern. Targets: CultureMech:008724.
+
+All eleven source rows are accounted for. Water has the wrong dimension; ten non-water numeric amounts match source batch masses. No stock or dilution inference is required.
+
+ingredients[0] Distilled water: source 1 L per batch; stored 1 G_PER_L. correct: volume L is not mass concentration.
+ingredients[1] MgSO4·7H2O: source 0.005 g per batch; stored 0.005 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[2] CaCl2·2H2O: source 2 g per batch; stored 2 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[3] K2HPO4: source 0.03 g per batch; stored 0.03 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[4] Sodium pyruvate: source 0.03 g per batch; stored 0.03 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[5] Gellan gum (if needed): source 15 g per batch; stored 15 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[6] Glucose: source 0.05 g per batch; stored 0.05 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[7] Soluble starch: source 0.05 g per batch; stored 0.05 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[8] Bacto Yeast Extract (Difco): source 0.05 g per batch; stored 0.05 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[9] Bacto Proteose Peptone No. 3 (Difco): source 0.05 g per batch; stored 0.05 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+ingredients[10] Bacto Casamino Acids (Difco): source 0.05 g per batch; stored 0.05 G_PER_L. Source mass verified; final-concentration basis remains nominal because 1 L water is not an explicit measured final volume.
+
+### All asserted primary and secondary IDs
+
+grounding: supported. Targets: CultureMech:008724.
+
+Seven primary CHEBI IDs resolve, including exact supplied magnesium/calcium hydrates and sodium pyruvate salt. Starch is supported only at class scope while preferred_term retains soluble qualification. Six MIM CHEBI keys resolve; no legacy key is asserted. Primary linkage7/11 (63.6%) and secondary linkage6/11 (54.5%) count ingredient instances only, not scientific accuracy. Gellan and three complex nutrients are not falsely grounded as pure chemicals.
+
+### Source pH and preparation
+
+completeness: concern. Targets: CultureMech:008724.
+
+Both inspected sources specify pH6.5; target and owner omit it. No source sterilization/incubation condition is supplied, so no typical procedure is invented.
+
+### Optional gel and biological scope
+
+scope: supported. Targets: CultureMech:008724.
+
+Source gellan is explicitly optional. LIQUID is compatible with omitting that optional component; its presence in a conditional ingredient row does not by itself establish a contradictory physical state. COMPLEX/UNDEFINED agrees with three complex nutrients. Stored role/property notes reproduce TOGO annotations; they are not experimental growth evidence. No organism or growth outcome is asserted.
+
+### Maintained ownership and history
+
+ownership: supported. Targets: CultureMech:008724.
+
+Owner and target agree apart from generated bookkeeping, including both identified defects. Source accession/URLs resolve and hydration correction history is reflected in current magnesium term. Future edits belong in normalized source, followed by authorized regeneration. No current generator defect is established and no history/status promotion is made.
+
+## Findings
+
+### f1: Water volume is encoded as mass concentration
+
+major / open / confirmed; issue key: culturemech-008724-water-volume-as-mass-concentration.
+
+Both sources list1L distilled water; owner and target instead assert1G_PER_L. No source density or final-volume conversion supports this dimensional change. Other component values must retain their batch-basis qualification.
+
+### f2: Source pH is omitted
+
+major / open / confirmed; issue key: culturemech-008724-source-ph-omission.
+
+NBRC1462 and TOGO M2130 metadata/comment explicitly specify pH6.5. Neither owner nor target represents that condition.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Preserve source water volume and batch basis in the normalized owner during authorized curation. Do not infer water mass or exact final volume; retain the source solid amounts and optional-gellan qualification.
+
+- Compare repaired fields to exact NBRC/TOGO source amounts, units and scope.
+- Run four documented target validators and inspect actual evidence coverage.
+- After separately authorized regeneration run merge freshness and verification gates.
+
+### a2
+
+During authorized curation add the source-supported pH condition and narrow evidence to the normalized owner, then regenerate. Do not borrow pH or preparation from other R2A formulations.
+
+- Compare repaired fields to exact NBRC/TOGO source amounts, units and scope.
+- Run four documented target validators and inspect actual evidence coverage.
+- After separately authorized regeneration run merge freshness and verification gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/1_10_r2a_gellan_gum_medium2.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch003/027/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch003/027/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| nbrc | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1462; Complete composition table and pH line | supports | NBRC1462 identifies this formulation, eleven ingredients, optional gellan gum and pH6.5. No sterilization or incubation procedure is stated. |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2130; $.meta; $.components[0].items; $.comments | supports | M2130 maps to NBRC_M1462 and exact source URL; component names, batch units and role/property annotations match the record except concentration representation. Metadata and comment specify pH6.5. |
+| chebi-15377 | https://www.ebi.ac.uk/chebi/CHEBI:15377; ChEBI ID/name/formula | supports | Resolved CHEBI:15377 water with supplied-form formula H2O. Identity does not validate concentration or growth. |
+| chebi-31795 | https://www.ebi.ac.uk/chebi/CHEBI:31795; ChEBI ID/name/formula | supports | Resolved CHEBI:31795 magnesium sulfate heptahydrate with supplied-form formula 7H2O.Mg.O4S. Identity does not validate concentration or growth. |
+| chebi-86158 | https://www.ebi.ac.uk/chebi/CHEBI:86158; ChEBI ID/name/formula | supports | Resolved CHEBI:86158 calcium chloride dihydrate with supplied-form formula Ca.2Cl.2H2O. Identity does not validate concentration or growth. |
+| chebi-17234 | https://www.ebi.ac.uk/chebi/CHEBI:17234; ChEBI ID/name/formula | supports | Resolved CHEBI:17234 glucose with supplied-form formula C6H12O6. Identity does not validate concentration or growth. |
+| chebi-28017 | https://www.ebi.ac.uk/chebi/CHEBI:28017; ChEBI ID, name and definition/formula | supports | CHEBI:28017 is starch, an amylose/amylopectin polysaccharide class; it does not specify soluble grade. |
+| chebi-50144 | https://www.ebi.ac.uk/chebi/CHEBI:50144; ChEBI ID, name and definition/formula | supports | CHEBI:50144 is sodium pyruvate, formula C3H3O3.Na, consistent with source salt identity. |
+| chebi-131527 | https://www.ebi.ac.uk/chebi/CHEBI:131527; Official entry ID/name, definition and formula, viewed live during this review | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate, formula HO4P.2K; matches source K2HPO4. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Six asserted secondary CHEBI keys; companion metadata | supports | All six keys have MAPPED preferred rows for the same chemical identity. Packaged snapshot source commit6643131b0f12ab40b66f98135245fca04027e0e9; CSV SHA2564765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5. Alternate incorrect aliases elsewhere are not used to certify supplied forms. |
+
+## Limits And Additional Notes
+
+- NBRC and TOGO specify 1 L water, not a measured final batch volume. Non-water G_PER_L values are nominal batch normalization; exact final concentrations are not independently established.
+- Starch CHEBI grounding identifies the material class, not a verified soluble-starch grade or supplier product. Source mixture names remain unexpanded; no strain growth or exact product interchangeability is inferred.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T034552Z-culturemech-008724-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_10_r2a_gellan_gum_medium2 (CultureMech:008724)'
+started_at: '2026-10-19T23:41:06Z'
+finished_at: '2026-10-20T03:45:52Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M2130 resolves to NBRC1462 and preserves the source component inventory,
+  including supplied salt hydrates and optional gellan gum. Two major findings concern
+  water volume encoded as mass concentration and omitted source pH. The ten non-water
+  numeric amounts match source batch masses, with final-volume normalization remaining
+  qualified.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+    sha256: c7e8ed8857b06e526ca0cc9066f41bc87c3030c6af862cfb5d80956069db66bb
+    role: target
+  - path: data/normalized_yaml/bacterial/1_10_r2a_gellan_gum_medium2.yaml
+    sha256: 88e04639e8bd62021c7a83f9b758bfb140921eb89fbf84b4750a27ccc470b895
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 27 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 003 selects ordinals 21-30 after the
+    first two reserved batches; saved bundles are published locally in path order.
+    On fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008724
+targets:
+- target_id: CultureMech:008724
+  path: data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+  label: 1_10_r2a_gellan_gum_medium2
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_r2a_gellan_gum_medium2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch003/027/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch003/027/strict.tsv"
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008724
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T03:45:52Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1_10_r2a_gellan_gum_medium2.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T03:45:52Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:14.498993Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch003/027/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:16.344056Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-003/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch003/027/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:18.966332Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_10_R2A_gellan_gum_medium2.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:42:20.267256Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1462
+  locator: Complete composition table and pH line
+  accessed_at: '2026-10-19T23:37:53.149961Z'
+  support: supports
+  summary: NBRC1462 identifies this formulation, eleven ingredients, optional gellan
+    gum and pH6.5. No sterilization or incubation procedure is stated.
+  snapshot_sha256: 6883ab407ea2edee52c817c0bdea1e0fb358016047d62208f366afed60bf616f
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2130
+  locator: $.meta; $.components[0].items; $.comments
+  accessed_at: '2026-10-19T23:37:53.025321Z'
+  support: supports
+  summary: M2130 maps to NBRC_M1462 and exact source URL; component names, batch units
+    and role/property annotations match the record except concentration representation.
+    Metadata and comment specify pH6.5.
+  snapshot_sha256: 3f5186403456898c6c1bcc69b356b35dcbfde408c3dfb4734e8ede8798dd8345
+- evidence_id: chebi-15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:15377
+  locator: ChEBI ID/name/formula
+  accessed_at: '2026-10-19T23:32:48.413412Z'
+  support: supports
+  summary: Resolved CHEBI:15377 water with supplied-form formula H2O. Identity does
+    not validate concentration or growth.
+  snapshot_sha256: 1a98a50fba3aa8ec10dc2fd5c355cd22bc1a955252adbd43f4042fd2f1a3ee5d
+- evidence_id: chebi-31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:31795
+  locator: ChEBI ID/name/formula
+  accessed_at: '2026-10-19T23:32:12.808273Z'
+  support: supports
+  summary: Resolved CHEBI:31795 magnesium sulfate heptahydrate with supplied-form
+    formula 7H2O.Mg.O4S. Identity does not validate concentration or growth.
+  snapshot_sha256: 3ce9de4739bdf41bafd0b99fb9db23c45dfe90cf5ccc0ac3f59e5b2e351f8981
+- evidence_id: chebi-86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:86158
+  locator: ChEBI ID/name/formula
+  accessed_at: '2026-10-19T23:42:39.567097Z'
+  support: supports
+  summary: Resolved CHEBI:86158 calcium chloride dihydrate with supplied-form formula
+    Ca.2Cl.2H2O. Identity does not validate concentration or growth.
+  snapshot_sha256: c051447e79dbc7701ddd3bde680e7e8513986d4714e2f3704513b049bb10cd91
+- evidence_id: chebi-17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:17234
+  locator: ChEBI ID/name/formula
+  accessed_at: '2026-10-19T07:35:31.337539Z'
+  support: supports
+  summary: Resolved CHEBI:17234 glucose with supplied-form formula C6H12O6. Identity
+    does not validate concentration or growth.
+  snapshot_sha256: 79006ae44d9d794815f34092ca6407adc60ba22b5a269fbc4f69dce945aef797
+- evidence_id: chebi-28017
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:28017
+  locator: ChEBI ID, name and definition/formula
+  accessed_at: '2026-10-19T23:42:33.553131Z'
+  support: supports
+  summary: CHEBI:28017 is starch, an amylose/amylopectin polysaccharide class; it
+    does not specify soluble grade.
+  snapshot_sha256: 37b0ef9445b0c244af9b11515816e38b76dc0122f8f9efa5b96fc8bfa4dc0f83
+- evidence_id: chebi-50144
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:50144
+  locator: ChEBI ID, name and definition/formula
+  accessed_at: '2026-10-19T23:32:48.264430Z'
+  support: supports
+  summary: CHEBI:50144 is sodium pyruvate, formula C3H3O3.Na, consistent with source
+    salt identity.
+  snapshot_sha256: 6def5decf9b629ef71fab11391190026cedcf849430f722138abe779b875fb53
+- evidence_id: chebi-131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:131527
+  locator: Official entry ID/name, definition and formula, viewed live during this
+    review
+  accessed_at: '2026-10-20T03:45:52Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate, formula HO4P.2K;
+    matches source K2HPO4.
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Six asserted secondary CHEBI keys; companion metadata
+  accessed_at: '2026-10-20T03:45:52Z'
+  support: supports
+  summary: All six keys have MAPPED preferred rows for the same chemical identity.
+    Packaged snapshot source commit6643131b0f12ab40b66f98135245fca04027e0e9; CSV SHA2564765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5.
+    Alternate incorrect aliases elsewhere are not used to certify supplied forms.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact source identity and formulation
+  outcome: supported
+  summary: CultureMech:008724 identifies TOGO M2130 and original NBRC1462. Inventory
+    and source name match. No similar R2A recipe is substituted; notably the source
+    explicitly lists the calcium chloride amount, so it must not be scaled merely
+    because the name says1/10.
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+- assessment_id: amounts
+  area: quantity
+  topic: Every direct quantity and final-volume basis
+  outcome: concern
+  summary: All eleven source rows are accounted for. Water has the wrong dimension;
+    ten non-water numeric amounts match source batch masses. No stock or dilution
+    inference is required.
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  details: 'ingredients[0] Distilled water: source 1 L per batch; stored 1 G_PER_L.
+    correct: volume L is not mass concentration.
+
+    ingredients[1] MgSO4·7H2O: source 0.005 g per batch; stored 0.005 G_PER_L. Source
+    mass verified; final-concentration basis remains nominal because 1 L water is
+    not an explicit measured final volume.
+
+    ingredients[2] CaCl2·2H2O: source 2 g per batch; stored 2 G_PER_L. Source mass
+    verified; final-concentration basis remains nominal because 1 L water is not an
+    explicit measured final volume.
+
+    ingredients[3] K2HPO4: source 0.03 g per batch; stored 0.03 G_PER_L. Source mass
+    verified; final-concentration basis remains nominal because 1 L water is not an
+    explicit measured final volume.
+
+    ingredients[4] Sodium pyruvate: source 0.03 g per batch; stored 0.03 G_PER_L.
+    Source mass verified; final-concentration basis remains nominal because 1 L water
+    is not an explicit measured final volume.
+
+    ingredients[5] Gellan gum (if needed): source 15 g per batch; stored 15 G_PER_L.
+    Source mass verified; final-concentration basis remains nominal because 1 L water
+    is not an explicit measured final volume.
+
+    ingredients[6] Glucose: source 0.05 g per batch; stored 0.05 G_PER_L. Source mass
+    verified; final-concentration basis remains nominal because 1 L water is not an
+    explicit measured final volume.
+
+    ingredients[7] Soluble starch: source 0.05 g per batch; stored 0.05 G_PER_L. Source
+    mass verified; final-concentration basis remains nominal because 1 L water is
+    not an explicit measured final volume.
+
+    ingredients[8] Bacto Yeast Extract (Difco): source 0.05 g per batch; stored 0.05
+    G_PER_L. Source mass verified; final-concentration basis remains nominal because
+    1 L water is not an explicit measured final volume.
+
+    ingredients[9] Bacto Proteose Peptone No. 3 (Difco): source 0.05 g per batch;
+    stored 0.05 G_PER_L. Source mass verified; final-concentration basis remains nominal
+    because 1 L water is not an explicit measured final volume.
+
+    ingredients[10] Bacto Casamino Acids (Difco): source 0.05 g per batch; stored
+    0.05 G_PER_L. Source mass verified; final-concentration basis remains nominal
+    because 1 L water is not an explicit measured final volume.'
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and secondary IDs
+  outcome: supported
+  summary: Seven primary CHEBI IDs resolve, including exact supplied magnesium/calcium
+    hydrates and sodium pyruvate salt. Starch is supported only at class scope while
+    preferred_term retains soluble qualification. Six MIM CHEBI keys resolve; no legacy
+    key is asserted. Primary linkage7/11 (63.6%) and secondary linkage6/11 (54.5%)
+    count ingredient instances only, not scientific accuracy. Gellan and three complex
+    nutrients are not falsely grounded as pure chemicals.
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - record
+  - mim
+  - chebi-15377
+  - chebi-31795
+  - chebi-86158
+  - chebi-131527
+  - chebi-50144
+  - chebi-17234
+  - chebi-28017
+- assessment_id: conditions
+  area: completeness
+  topic: Source pH and preparation
+  outcome: concern
+  summary: Both inspected sources specify pH6.5; target and owner omit it. No source
+    sterilization/incubation condition is supplied, so no typical procedure is invented.
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+- assessment_id: classification
+  area: scope
+  topic: Optional gel and biological scope
+  outcome: supported
+  summary: Source gellan is explicitly optional. LIQUID is compatible with omitting
+    that optional component; its presence in a conditional ingredient row does not
+    by itself establish a contradictory physical state. COMPLEX/UNDEFINED agrees with
+    three complex nutrients. Stored role/property notes reproduce TOGO annotations;
+    they are not experimental growth evidence. No organism or growth outcome is asserted.
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+- assessment_id: provenance
+  area: ownership
+  topic: Maintained ownership and history
+  outcome: supported
+  summary: Owner and target agree apart from generated bookkeeping, including both
+    identified defects. Source accession/URLs resolve and hydration correction history
+    is reflected in current magnesium term. Future edits belong in normalized source,
+    followed by authorized regeneration. No current generator defect is established
+    and no history/status promotion is made.
+  target_ids:
+  - CultureMech:008724
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+findings:
+- finding_id: f1
+  issue_key: culturemech-008724-water-volume-as-mass-concentration
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water volume is encoded as mass concentration
+  description: Both sources list1L distilled water; owner and target instead assert1G_PER_L.
+    No source density or final-volume conversion supports this dimensional change.
+    Other component values must retain their batch-basis qualification.
+  target_ids:
+  - CultureMech:008724
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_r2a_gellan_gum_medium2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: culturemech-008724-source-ph-omission
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source pH is omitted
+  description: NBRC1462 and TOGO M2130 metadata/comment explicitly specify pH6.5.
+    Neither owner nor target represents that condition.
+  target_ids:
+  - CultureMech:008724
+  field_paths:
+  - ph_value
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_r2a_gellan_gum_medium2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Preserve source water volume and batch basis in the normalized owner
+    during authorized curation. Do not infer water mass or exact final volume; retain
+    the source solid amounts and optional-gellan qualification.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008724
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_r2a_gellan_gum_medium2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare repaired fields to exact NBRC/TOGO source amounts, units and scope.
+  - Run four documented target validators and inspect actual evidence coverage.
+  - After separately authorized regeneration run merge freshness and verification
+    gates.
+- action_id: a2
+  description: During authorized curation add the source-supported pH condition and
+    narrow evidence to the normalized owner, then regenerate. Do not borrow pH or
+    preparation from other R2A formulations.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008724
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_10_r2a_gellan_gum_medium2.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Compare repaired fields to exact NBRC/TOGO source amounts, units and scope.
+  - Run four documented target validators and inspect actual evidence coverage.
+  - After separately authorized regeneration run merge freshness and verification
+    gates.
+limitations:
+- NBRC and TOGO specify 1 L water, not a measured final batch volume. Non-water G_PER_L
+  values are nominal batch normalization; exact final concentrations are not independently
+  established.
+- Starch CHEBI grounding identifies the material class, not a verified soluble-starch
+  grade or supplier product. Source mixture names remain unexpanded; no strain growth
+  or exact product interchangeability is inferred.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-003
+- generated-medium
+```
