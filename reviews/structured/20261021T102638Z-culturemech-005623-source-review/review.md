@@ -1,0 +1,2980 @@
+# Source and formulation review: acetohalobium_medium (CultureMech:005623)
+
+- Review: 20261021T102638Z-culturemech-005623-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T10:23:11Z
+- Finished UTC: 2026-10-21T10:26:38Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The accessible DSMZ 494 base recipe distinguishes main ingredients, a mineral stock and a 10x vitamin stock. The generated record flattens those stocks, sums main and stock sodium chloride/calcium without dilution, loses preparation, and incorporates a named glycinebetaine replacement as a synonym despite unavailable variant formulation evidence. Chemical-form and provenance gaps remain; the complete merged-family assessment is partial.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 154; batch 016 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding fifteen task batches contain 150 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 152 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:005623 | data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml | generated | acetohalobium_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:005623 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:005623 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch016/154/strict.tsv |
+| validate-terms | passed | True | CultureMech:005623 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:005623 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:005623 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact glycinebetaine replacement formulation | unavailable | True | CultureMech:005623 | Exact KOMODO replacement detail returned HTTP403. Public list metadata resolves identity only; full variant support remains unavailable. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:005623.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact primary labels and current secondary linkage coverage
+
+grounding: supported. Targets: CultureMech:005623.
+
+33 unique asserted CHEBI identifiers resolve with exact labels. Primary linkage 33/34 (97.06%); verified current secondary linkage 31/34 (91.18%). This is a 0–100 ingredient-instance linkage scale, not scientific correctness. Missing current secondary keys: []. Legacy links and chemical-form correctness are assessed separately.
+
+### Full history and timezone audit
+
+provenance: concern. Targets: CultureMech:005623.
+
+History event counts: [('target', 12), ('data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml', 10), ('data/normalized_yaml/bacterial/acetohalobium_medium.yaml', 10), ('data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml', 10)]. Explicit timestamp defects: [('target', 0, '2026-01-27T01:15:02.fZ', 'malformed ISO timestamp'), ('target', 1, '2026-02-03T11:19:16.083425', 'timezone absent'), ('data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml', 0, '2026-01-27T01:15:02.fZ', 'malformed ISO timestamp'), ('data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml', 1, '2026-02-03T11:19:16.083425', 'timezone absent'), ('data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml', 0, '2026-01-27T01:15:02.fZ', 'malformed ISO timestamp'), ('data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml', 1, '2026-02-03T11:19:18.479145', 'timezone absent')]. Historical bytes are assessed as observed; no inferred timezone or retroactive replacement timestamp is supplied.
+
+### Every direct, stock, stock-addition and preparation quantity
+
+quantity: concern. Targets: CultureMech:005623.
+
+Fifty-three decisions cover all41 literal main/mineral/vitamin source rows, all34 local ingredient nodes, eleven preparation/quantity contexts and the unresolved named replacement quantity. Each base-owner decision is separate from unavailable variant support. No existing local amount is labelled verified without attached claim evidence.
+
+[{"field_path": "ingredients[0].concentration", "decision": "correct", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "NaCl 150.00 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 1; mineral table continuation p2 supplies preparation only", "explanation": "Local149.368g/L adds provider main g_l=148.368 to an undiluted mineral-stock value1g/L. Primary main mass is150g; on the provider's declared basis only, (150g+1g/L*0.010L)/1.011L=148.3778437190900098911968348g/L. This demonstrates the missing dilution and does not establish a final-volume replacement.", "source_amount": 150, "source_unit": "g", "current_ingredient": "NaCl", "current_concentration": {"value": "149.368", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[0]", "provider_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 150,\n                        \"unit\": \"g\",\n                        \"g_l\": 148.368,\n                        \"mmol_l\": 2538.81,\n                        \"optional\": 0\n                    }", "provider_g_l": 148.368, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[1].concentration", "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "KCl 0.33 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 2; mineral table continuation p2 supplies preparation only", "explanation": "Existing base-layer g/L agrees with the provider-declared normalization, but no attached claim evidence establishes its amount/unit/basis. Preserve the original primary mass and explicit provider basis; do not claim a measured final volume.", "source_amount": 0.33, "source_unit": "g", "current_ingredient": "KCl", "current_concentration": {"value": "0.326409", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[1]", "provider_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\": 4.3784,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.326409, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[2].concentration", "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "NH4Cl 0.33 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 3; mineral table continuation p2 supplies preparation only", "explanation": "Existing base-layer g/L agrees with the provider-declared normalization, but no attached claim evidence establishes its amount/unit/basis. Preserve the original primary mass and explicit provider basis; do not claim a measured final volume.", "source_amount": 0.33, "source_unit": "g", "current_ingredient": "NH4Cl", "current_concentration": {"value": "0.326409", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[2]", "provider_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\": 6.10225,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.326409, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[3].concentration", "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "KH2PO4 0.33 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 4; mineral table continuation p2 supplies preparation only", "explanation": "Existing base-layer g/L agrees with the provider-declared normalization, but no attached claim evidence establishes its amount/unit/basis. Preserve the original primary mass and explicit provider basis; do not claim a measured final volume.", "source_amount": 0.33, "source_unit": "g", "current_ingredient": "KH2PO4", "current_concentration": {"value": "0.326409", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[3]", "provider_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\": 2.39857,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.326409, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[4].concentration", "decision": "correct", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "CaCl2 x 2 H2O 0.33 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 5; mineral table continuation p2 supplies preparation only", "explanation": "Local0.42640900000000004g/L adds provider main g_l=0.326409 to an undiluted mineral-stock value0.1g/L. Primary main mass is0.33g; on the provider's declared basis only, (0.33g+0.1g/L*0.010L)/1.011L=0.3273986152324431256181998022g/L. This demonstrates the missing dilution and does not establish a final-volume replacement.", "source_amount": 0.33, "source_unit": "g", "current_ingredient": "CaCl2 x 2 H2O", "current_concentration": {"value": "0.42640900000000004", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[4]", "provider_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\": 2.22025,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.326409, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[5].concentration", "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "MgCl2 x 6 H2O 4.00 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 6; mineral table continuation p2 supplies preparation only", "explanation": "Existing base-layer g/L agrees with the provider-declared normalization, but no attached claim evidence establishes its amount/unit/basis. Preserve the original primary mass and explicit provider basis; do not claim a measured final volume.", "source_amount": 4, "source_unit": "g", "current_ingredient": "MgCl2 x 6 H2O", "current_concentration": {"value": "3.95648", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[5]", "provider_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 4,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.95648,\n                        \"mmol_l\": 19.461,\n                        \"optional\": 0\n                    }", "provider_g_l": 3.95648, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "solutions (missing source stock dose)", "decision": "add", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Modified Wolin's mineral solution 10.00 ml", "source_locator": "DSMZ494 page1; Main sol. 494 table row 7; mineral table continuation p2 supplies preparation only", "explanation": "The source stock addition is absent from both base owners and the target. Add its original ml-per-batch dose and separately staged stock composition; no universal ml/L dose or variant equivalence is inferred.", "source_amount": 10, "source_unit": "ml", "current_ingredient": null, "current_concentration": null, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[6]", "provider_quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l": null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[6].concentration", "decision": "correct", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Sodium resazurin (0.1% w/v) 0.50 ml", "source_locator": "DSMZ494 page1; Main sol. 494 table row 8; mineral table continuation p2 supplies preparation only", "explanation": "The source0.1%w/v indicator is1g/L;0.50ml supplies0.0005g. Provider-basis0.0005g/1.011L=0.000494559842g/L agrees with local0.00049456. Numeric mass is consistent, but the stock strength and dose are missing; sodium-salt grounding is a separate defect.", "source_amount": 0.5, "source_unit": "ml", "current_ingredient": "Sodium resazurin", "current_concentration": {"value": "0.00049456", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[7]", "provider_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.00049456,\n                        \"mmol_l\": 0.00196902,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.00049456, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[7].concentration", "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Na2CO3 2.00 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 9; mineral table continuation p2 supplies preparation only", "explanation": "Existing base-layer g/L agrees with the provider-declared normalization, but no attached claim evidence establishes its amount/unit/basis. Preserve the original primary mass and explicit provider basis; do not claim a measured final volume.", "source_amount": 2, "source_unit": "g", "current_ingredient": "Na2CO3", "current_concentration": {"value": "1.97824", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[8]", "provider_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.97824,\n                        \"mmol_l\": 18.6647,\n                        \"optional\": 0\n                    }", "provider_g_l": 1.97824, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[8].concentration", "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Yeast extract 0.05 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 10; mineral table continuation p2 supplies preparation only", "explanation": "Existing base-layer g/L agrees with the provider-declared normalization, but no attached claim evidence establishes its amount/unit/basis. Preserve the original primary mass and explicit provider basis; do not claim a measured final volume.", "source_amount": 0.05, "source_unit": "g", "current_ingredient": "Yeast extract", "current_concentration": {"value": "0.049456", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[9]", "provider_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.05,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.049456,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.049456, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[9].concentration", "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Trimethylamine-HCl 2.40 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 11; mineral table continuation p2 supplies preparation only", "explanation": "Existing base-layer g/L agrees with the provider-declared normalization, but no attached claim evidence establishes its amount/unit/basis. Preserve the original primary mass and explicit provider basis; do not claim a measured final volume.", "source_amount": 2.4, "source_unit": "g", "current_ingredient": "Trimethylamine-HCl", "current_concentration": {"value": "2.37389", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[10]", "provider_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Trimethylamine-HCl\",\n                        \"compound_id\": 383,\n                        \"amount\": 2.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.37389,\n                        \"optional\": 0\n                    }", "provider_g_l": 2.37389, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "solutions (missing source stock dose)", "decision": "add", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Wolin's vitamin solution (10x) 1.00 ml", "source_locator": "DSMZ494 page1; Main sol. 494 table row 12; mineral table continuation p2 supplies preparation only", "explanation": "The source stock addition is absent from both base owners and the target. Add its original ml-per-batch dose and separately staged stock composition; no universal ml/L dose or variant equivalence is inferred.", "source_amount": 1, "source_unit": "ml", "current_ingredient": null, "current_concentration": null, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[11]", "provider_quote": "{\n                        \"recipe_order\": 12,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l": null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[10].concentration", "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Na2S x 9 H2O 0.50 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 13; mineral table continuation p2 supplies preparation only", "explanation": "Existing base-layer g/L agrees with the provider-declared normalization, but no attached claim evidence establishes its amount/unit/basis. Preserve the original primary mass and explicit provider basis; do not claim a measured final volume.", "source_amount": 0.5, "source_unit": "g", "current_ingredient": "Na2S x 9 H2O", "current_concentration": {"value": "0.49456", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[12]", "provider_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.49456,\n                        \"mmol_l\": 2.0591,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.49456, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "preparation_steps (missing scoped solvent volume)", "decision": "add", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Distilled water 1000.00 ml", "source_locator": "DSMZ494 page1; Main sol. 494 table row 14; mineral table continuation p2 supplies preparation only", "explanation": "This original1000ml water amount is absent at its named main/mineral/vitamin stage. Three separate solvent additions must not be collapsed. Water amount alone is not a measured final volume.", "source_amount": 1000, "source_unit": "ml", "current_ingredient": null, "current_concentration": null, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[0].recipe[13]", "provider_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l": null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[11].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Nitrilotriacetic acid 1.50 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 1; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 1.5, "source_unit": "g", "current_ingredient": "Nitrilotriacetic acid", "current_concentration": {"value": "1.5", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[0]", "provider_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }", "provider_g_l": 1.5, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[12].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "MgSO4 x 7 H2O 3.00 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 2; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 3, "source_unit": "g", "current_ingredient": "MgSO4 x 7 H2O", "current_concentration": {"value": "3", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[1]", "provider_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }", "provider_g_l": 3, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[13].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "MnSO4 x H2O 0.50 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 3; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.5, "source_unit": "g", "current_ingredient": "MnSO4 x H2O", "current_concentration": {"value": "0.5", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[2]", "provider_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.9583,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.5, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[0].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "NaCl 1.00 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 4; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. This stock constituent was also summed into its same-named main ingredient without the stock dilution; preserve the two additions separately.", "source_amount": 1, "source_unit": "g", "current_ingredient": "NaCl", "current_concentration": {"value": "149.368", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[3]", "provider_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }", "provider_g_l": 1, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[14].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "FeSO4 x 7 H2O 0.10 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 5; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.1, "source_unit": "g", "current_ingredient": "FeSO4 x 7 H2O", "current_concentration": {"value": "0.1", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[4]", "provider_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.1, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[15].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "CoSO4 x 7 H2O 0.18 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 6; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.18, "source_unit": "g", "current_ingredient": "CoSO4 x 7 H2O", "current_concentration": {"value": "0.18", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[5]", "provider_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 1.16132,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.18, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[4].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "CaCl2 x 2 H2O 0.10 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 7; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. This stock constituent was also summed into its same-named main ingredient without the stock dilution; preserve the two additions separately.", "source_amount": 0.1, "source_unit": "g", "current_ingredient": "CaCl2 x 2 H2O", "current_concentration": {"value": "0.42640900000000004", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[6]", "provider_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.1, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[16].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "ZnSO4 x 7 H2O 0.18 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 8; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.18, "source_unit": "g", "current_ingredient": "ZnSO4 x 7 H2O", "current_concentration": {"value": "0.18", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[7]", "provider_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 0.625954,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.18, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[17].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "CuSO4 x 5 H2O 0.01 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 9; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.01, "source_unit": "g", "current_ingredient": "CuSO4 x 5 H2O", "current_concentration": {"value": "0.01", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[8]", "provider_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.01, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[18].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "AlK(SO4)2 x 12 H2O 0.02 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 10; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.02, "source_unit": "g", "current_ingredient": "AlK(SO4)2 x 12 H2O", "current_concentration": {"value": "0.02", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[9]", "provider_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\": 908,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0421596,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.02, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[19].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "H3BO3 0.01 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 11; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.01, "source_unit": "g", "current_ingredient": "H3BO3", "current_concentration": {"value": "0.01", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[10]", "provider_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.01, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[20].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Na2MoO4 x 2 H2O 0.01 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 12; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.01, "source_unit": "g", "current_ingredient": "Na2MoO4 x 2 H2O", "current_concentration": {"value": "0.01", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[11]", "provider_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.01, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[21].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "NiCl2 x 6 H2O 0.03 g", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 13; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration.", "source_amount": 0.03, "source_unit": "g", "current_ingredient": "NiCl2 x 6 H2O", "current_concentration": {"value": "0.03", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[12]", "provider_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.231483,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.03, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[22].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Na2SeO3 x 5 H2O 0.30 mg", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 14; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original0.3mg equals0.0003g in this stock only.", "source_amount": 0.3, "source_unit": "mg", "current_ingredient": "Na2SeO3 x 5 H2O", "current_concentration": {"value": "0.0003", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[13]", "provider_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 0.3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0003,\n                        \"mmol_l\": 0.00114062,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.0003, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[23].concentration", "decision": "correct", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Na2WO4 x 2 H2O 0.40 mg", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 15; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original0.4mg equals0.0004g in this stock only.", "source_amount": 0.4, "source_unit": "mg", "current_ingredient": "Na2WO4 x 2 H2O", "current_concentration": {"value": "0.0004", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[14]", "provider_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 0.4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0004,\n                        \"mmol_l\": 0.00121267,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.0004, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "preparation_steps (missing scoped solvent volume)", "decision": "add", "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Distilled water 1000.00 ml", "source_locator": "DSMZ494 page1; Modified Wolin's mineral solution table row 16; mineral table continuation p2 supplies preparation only", "explanation": "This original1000ml water amount is absent at its named main/mineral/vitamin stage. Three separate solvent additions must not be collapsed. Water amount alone is not a measured final volume.", "source_amount": 1000, "source_unit": "ml", "current_ingredient": null, "current_concentration": null, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[1].recipe[15]", "provider_quote": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l": null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[24].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Biotin 20.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 1; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original20mg equals0.02g in this stock only.", "source_amount": 20, "source_unit": "mg", "current_ingredient": "Biotin", "current_concentration": {"value": "0.02", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[0]", "provider_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.02, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[25].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Folic acid 20.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 2; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original20mg equals0.02g in this stock only.", "source_amount": 20, "source_unit": "mg", "current_ingredient": "Folic acid", "current_concentration": {"value": "0.02", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[1]", "provider_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.02, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[26].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Pyridoxine hydrochloride 100.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 3; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original100mg equals0.1g in this stock only.", "source_amount": 100, "source_unit": "mg", "current_ingredient": "Pyridoxine hydrochloride", "current_concentration": {"value": "0.1", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[2]", "provider_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.1, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[27].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Thiamine HCl 50.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 4; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original50mg equals0.05g in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient": "Thiamine HCl", "current_concentration": {"value": "0.05", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[3]", "provider_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[28].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Riboflavin 50.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 5; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original50mg equals0.05g in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient": "Riboflavin", "current_concentration": {"value": "0.05", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[4]", "provider_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[29].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Nicotinic acid 50.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 6; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original50mg equals0.05g in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient": "Nicotinic acid", "current_concentration": {"value": "0.05", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[5]", "provider_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[30].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Calcium D-(+)-pantothenate 50.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 7; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original50mg equals0.05g in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient": "Calcium D-(+)-pantothenate", "current_concentration": {"value": "0.05", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[6]", "provider_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[31].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Vitamin B12 1.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 8; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original1mg equals0.001g in this stock only.", "source_amount": 1, "source_unit": "mg", "current_ingredient": "Vitamin B12", "current_concentration": {"value": "0.001", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[7]", "provider_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.001, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[32].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "p-Aminobenzoic acid 50.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 9; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original50mg equals0.05g in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient": "p-Aminobenzoic acid", "current_concentration": {"value": "0.05", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[8]", "provider_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "ingredients[33].concentration", "decision": "correct", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "(DL)-alpha-Lipoic acid 50.00 mg", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 10; mineral table continuation p2 supplies preparation only", "explanation": "This quantity belongs to the separately prepared stock, but its undiluted provider stock g/L appears in direct ingredients. Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011 for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic, not a source quotation or measured final concentration. Original50mg equals0.05g in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient": "(DL)-alpha-Lipoic acid", "current_concentration": {"value": "0.05", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[9]", "provider_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }", "provider_g_l": 0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "preparation_steps (missing scoped solvent volume)", "decision": "add", "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Distilled water 1000.00 ml", "source_locator": "DSMZ494 page2; Wolin's vitamin solution (10x) table row 11; mineral table continuation p2 supplies preparation only", "explanation": "This original1000ml water amount is absent at its named main/mineral/vitamin stage. Three separate solvent additions must not be collapsed. Water amount alone is not a measured final volume.", "source_amount": 1000, "source_unit": "ml", "current_ingredient": null, "current_concentration": null, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator": "$.data.solutions[2].recipe[10]", "provider_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l": null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit": "The replacement owner copies this base value, but its complete variant recipe is unavailable. Base support is not transferable to that variant."}, {"field_path": "preparation_steps", "decision": "add", "stage": "Base main sparging: gas fractions and duration", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "80% N2 and 20% CO2 gas mixture for 30 - 45 min", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "The primary gives both fractions and30–45min for sparging, followed by dispensing under the same atmosphere. Target and KOMODO base lack preparation; DSMZ owner retains this without claim evidence. No flow rate, incubation duration or physiological preference follows.", "owner_decisions": ["add", "evidence_only", "unsupported"]}, {"field_path": "preparation_steps; solutions", "decision": "add", "stage": "Separate later yeast extract, trimethylamine, vitamin and sulfide stock atmosphere", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "prepared under 100% N2 gas", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "This100%N2 stock atmosphere is distinct from initial main sparging and carbonate stock. DSMZ owner retains it; target/KOMODO base omit it. Source does not specify the yeast/trimethylamine/sulfide stock strengths.", "owner_decisions": ["add", "evidence_only", "unsupported"]}, {"field_path": "preparation_steps; solutions", "decision": "add", "stage": "Carbonate stock atmosphere:80%N2 and20%CO2", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "carbonate from a sterile anoxic stock solution prepared under 80% N2 and\n20% CO2 gas atmosphere.", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "The exact carbonate clause explicitly requires80%N2/20%CO2, separately from100%N2 stocks. Both fractions and their stock scope are preserved.", "owner_decisions": ["add", "evidence_only", "unsupported"]}, {"field_path": "ph_range; preparation_steps", "decision": "evidence_only", "stage": "Complete base-medium pH target7.6–8.0", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "adjust to 7.6 -\n8.0 with a sterile anoxic stock solution of Na2CO3 (5% w/v), if necessary.", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "Both base owners and target retain7.6–8.0. This is a target before use, not a measured value. The exact two-line range is retained; variant list pH alone does not verify all preparation.", "owner_decisions": ["evidence_only", "evidence_only", "unsupported"]}, {"field_path": "solutions (conditional pH-adjustment stock)", "decision": "add", "stage": "Optional carbonate pH-adjustment stock strength", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "Na2CO3 (5% w/v), if necessary.", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "Explicit5%w/v strength is50g/L stock, not5g/L final medium or a universal addition dose. Its dose is unquantified titration to the stated pH. DSMZ owner preserves the strength in prose; target/KOMODO base omit it.", "owner_decisions": ["add", "evidence_only", "unsupported"]}, {"field_path": "solutions (mineral preparation)", "decision": "add", "stage": "Mineral stock: NTA dissolution before adding remaining salts", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "adjust pH to 6.5 with KOH", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "This6.5 adjustment belongs only to mineral stock. Target/KOMODO base omit it; DSMZ owner retains the value as an unscoped main preparation step, requiring scope correction.", "owner_decisions": ["add", "correct", "unsupported"]}, {"field_path": "solutions (mineral preparation)", "decision": "add", "stage": "Mineral stock final pH after adding salts", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "final to pH 7.0 with KOH.", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "This7.0 target is distinct from both preceding mineral6.5 and complete-medium7.6–8.0. DSMZ owner needs stock scoping; target/KOMODO base need the instruction added.", "owner_decisions": ["add", "correct", "unsupported"]}, {"field_path": "solutions (mineral preparation titrant)", "decision": "not_quantified", "stage": "KOH used for the two mineral-stock pH adjustments", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "with KOH", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "Source specifies KOH as titrant without a fixed amount or concentration. Preserve that unquantified instruction rather than assigning zero or a typical dose.", "owner_decisions": ["not_quantified", "not_quantified", "unsupported"]}, {"field_path": "preparation_steps; solutions", "decision": "add", "stage": "Vitamin-stock sterilization exception", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "vitamins (sterilized by\nfiltration)", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "The exact source line break is preserved. Vitamins are filter sterilized before addition; pore size is unspecified. Target/KOMODO base lack preparation and DSMZ owner retains this exception.", "owner_decisions": ["add", "evidence_only", "unsupported"]}, {"field_path": "preparation_steps", "decision": "add", "stage": "Main sterilization followed by excluded-component additions", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "and autoclave. Add yeast extract, trimethylamine, vitamins", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "The complete paragraph excludes carbonate, yeast extract, trimethylamine, vitamins and sulfide initially. Main mixture is autoclaved, then excluded ingredients are separately added from sterile anoxic stocks. Source supplies no autoclave temperature/duration; main ingredient masses do not determine unspecified later-stock strengths or volumes.", "owner_decisions": ["add", "evidence_only", "unsupported"]}, {"field_path": "solutions (pH-adjustment dose)", "decision": "not_quantified", "stage": "Conditional5%w/v carbonate titration to complete-medium pH", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote": "if necessary.", "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged", "explanation": "No fixed addition volume is given for this optional adjustment. Retain the specified stock strength and endpoint, with dose explicitly unquantified.", "owner_decisions": ["not_quantified", "not_quantified", "unsupported"]}, {"field_path": "synonyms[0]; merged_from; replacement owner ingredients[9]", "decision": "unsupported", "stage": "Named glycinebetaine replacement dose and complete formulation", "source_reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList", "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a", "source_quote": "494_replace_Trimethylamine x HCl_with_Glycinebetaine", "source_locator": "MediaList exact replacement accession row; full row in replacement-row evidence", "explanation": "The exact source name identifies a replacement claim but supplies no quantity. The replacement owner still contains base2.37389g/L trimethylamine-HCl and no glycinebetaine ingredient. Do not reuse the base2.40g mass or assert equal recipes; variant details are unavailable.", "provider_reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList", "provider_quote": "&lt;TR&gt;\n\t\t\t\t\t&lt;TD width=\"50\"&gt;&lt;a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=494_replace_Trimethylamine x HCl_with_Glycinebetaine' &gt;494_replace_Trimethylamine x HCl_with_Glycinebetaine&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;ACETOHALOBIUM medium_replace_Trimethylamine x HCl_with_Glycinebetaine&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt; 7.6 - 8.0, Na2CO3&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;true&lt;/TD&gt;\n\t\t\t\t\t&lt;TD&gt;false&lt;/TD&gt;\n&lt;TD&gt;&lt;a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf' &gt;http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf&lt;/a&gt;&lt;/TD&gt;\n\t\t\t\t&lt;/TR&gt;", "affected_owner_paths": ["data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml"], "owner_quantity_decision": "unsupported"}]
+
+### Base494 and distinct named replacement accession
+
+identity: concern. Targets: CultureMech:005623.
+
+Base KOMODO494 resolves to DSMZ/MediaDive494. Exact parent and reverse child IDs/paths resolve. The separate replacement accession explicitly names glycinebetaine substitution, yet all three owner ingredient arrays equal the base and the generated target includes the variant as a synonym. Its detailed formulation remains unavailable; source identity is not proof of formulation equivalence.
+
+### Main formulation, stock doses, repeated salts and volume basis
+
+quantity: concern. Targets: CultureMech:005623.
+
+The41 source rows contain14 main rows,16 mineral rows and11 vitamin rows. Eleven main compound entries plus15 mineral and10 vitamin constituents collapse into34 direct ingredients by summing sodium chloride and calcium across stages. The10ml mineral and1ml vitamin doses and three1000ml water entries are absent. Eight ordinary main compounds match provider g/L; indicator mass also matches numerically but loses stock representation. The two summed salts and23 other undiluted stock constituents require stage correction.
+
+### Every asserted chemical form and exact supplied identity
+
+grounding: concern. Targets: CultureMech:005623.
+
+SourceNiCl2·6H2O is linked to Cl2Ni without hydration, and sodium resazurin is linked to neutralC12H7NO4. Other explicit hydrate identities match. SourceD-(+)-calcium pantothenate agrees with the stereospecified CHEBI31345 structure; no generic/DL mismatch is invented. DL-lipoic acid retains its racemic source label and stereounspecified structure; vitaminB12 stays broad. Yeast extract remains an undefined mixture rather than an invented molecule.
+
+### Main and stock preparation, gas mixtures and pH stages
+
+completeness: concern. Targets: CultureMech:005623.
+
+The target and both KOMODO owners have no preparation_steps. The DSMZ owner retains both primary paragraphs, but the mineral6.5/7.0 adjustments appear at the main level. Source main80:20N2/CO2,30–45min sparging, later100%N2 stocks, separate80:20carbonate stock, vitamin filtration and conditional5%w/v carbonate titration must retain their distinct scopes. Aerobic:Yes metadata is not evidence of growth and conflicts with an operational reading of this anoxic preparation.
+
+### Composition, state and biological assertion scope
+
+scope: supported. Targets: CultureMech:005623.
+
+COMPLEX/SEMI_DEFINED and LIQUID fit the enumerated salts/vitamins plus yeast extract and no solidifier. No target-organism growth result, taxonomic CURIE, incubation temperature or KG match is asserted. The generic cultivation application is not treated as experimental evidence, and the medium title does not establish organism growth.
+
+### Complete maintained ownership and regeneration boundary
+
+ownership: concern. Targets: CultureMech:005623.
+
+All three explicit merge contributors and the merge code are captured. Main ingredients are identical across target/owners, including historical sums. DSMZ preparation exists in its owner but is absent from the generated record. Future work must curate these maintained inputs and resolve the named replacement before regeneration; an ingredient fingerprint cannot establish scientific equivalence.
+
+## Findings
+
+### f1: Stock concentrations and main amounts are combined without dilution
+
+blocker / open / confirmed; issue key: CM005623-stock-stage-sums.
+
+Mineral and vitamin constituents are direct medium rows at stock strength. Sodium chloride149.368g/L sums148.368 main with1.0 stock; calcium0.426409g/L sums0.326409 main with0.1 stock. Missing10ml/1ml doses and solvent stages make the represented formulation materially different from the source.
+
+### f2: Named glycinebetaine replacement is merged as a base synonym
+
+major / open / confirmed; issue key: CM005623-replacement-synonym.
+
+The variant accession explicitly names replacement of trimethylamine hydrochloride, but its normalized owner retains the complete base ingredient array, including trimethylamine, and the generated target lists it as a synonym. Exact variant formulation and dose are unavailable; equal copied arrays cannot justify the merged identity.
+
+### f3: Nickel hexahydrate uses an unhydrated ontology identity
+
+major / open / confirmed; issue key: CM005623-nickel-hydration.
+
+NiCl2 x6H2O in the primary and preferred term maps to CHEBI34887, whose formula is Cl2Ni. Primary and secondary canonical-label matches do not establish the source hydrate.
+
+### f4: Sodium resazurin maps to the neutral molecule
+
+major / open / confirmed; issue key: CM005623-indicator-salt.
+
+The primary/provider specify sodium resazurin but CHEBI8806 is C12H7NO4 without sodium. The correct provider-normalized indicator mass does not establish salt identity.
+
+### f5: Anoxic preparation and distinct stock conditions are lost
+
+major / open / confirmed; issue key: CM005623-preparation-loss.
+
+The target omits preparation retained by the DSMZ owner, including30–45min sparging, main and stock gas mixtures, excluded-component additions and vitamin filtration. Main7.6–8.0 and mineral6.5 then7.0 pH instructions differ. Aerobic:Yes notes lack scoped physiological evidence and cannot replace the primary anoxic procedure.
+
+### f6: Supported base values lack claim-level source evidence
+
+minor / open / confirmed; issue key: CM005623-quantity-evidence-gap.
+
+The ordinary main g/L values and basepH can be traced to inspected source/provider content, but the local claims have no attached excerpts or explicit batch/provider-volume explanation. Generic accessions do not replace narrow evidence.
+
+### f7: KOMODO history contains malformed and timezone-free timestamps
+
+minor / open / confirmed; issue key: CM005623-history-timestamps.
+
+The target and both KOMODO owners retain an import timestamp ending.fZ and a resolver timestamp without timezone. Valid later events do not resolve the historical instants.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore main/mineral/vitamin ownership and original per-batch doses; preserve both salt additions and receiving-volume uncertainty before any derived concentration. Retain the numerically consistent indicator mass alongside its original stock strength and dose.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Retain the distinct source accession and unresolved replacement formulation. Obtain its actual recipe before assigning a glycinebetaine amount or classifying equivalence, then repair maintained family representation and regenerate through current compatibility guards.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Resolve the exact hydrate with verified ontology evidence or retain explicit unresolved grounding; preserve its stock quantity and hydration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Verify the exact sodium-salt identity or leave the mapping explicitly unresolved; retain the source0.1%w/v stock and0.50ml dose without substituting the neutral molecule.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a5
+
+Preserve the complete base procedure at the correct main/stock scopes, qualify oxygen metadata and attach narrow source evidence. Keep unknown stock strengths, gas flow and autoclave cycle parameters unresolved; do not transfer base instructions to the unavailable variant.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a6
+
+Attach exact source excerpts and explicit preparation/volume scope to retained and corrected claims. Keep primary mass, provider normalization and derived arithmetic separate, with unavailable variant support documented.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a7
+
+Preserve append-only history, add supported clarification if evidence exists, and repair future writer serialization without inventing historical times.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-1 | data/normalized_yaml/bacterial/acetohalobium_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| owner-2 | data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch016/154/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch016/154/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml:1:id: CultureMech:005623<br>./data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml:1:id: CultureMech:005623<br> |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:131361 resolves to disodium selenite pentahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["5H2O.2Na.O3Se"], "inchi_string": ["InChI=1S/2Na.H2O3Se.5H2O/c;;1-4(2)3;;;;;/h;;(H2,1,2,3);5*1H2/q2*+1;;;;;;/p-2"], "mass": ["263.012"], "smiles_string": ["O.O.O.O.O.O=[Se]([O-])[O-].[Na+].[Na+]"]} |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:15940 resolves to nicotinic acid; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C6H5NO2"], "inchi_string": ["InChI=1S/C6H5NO2/c8-6(9)5-2-1-3-7-4-5/h1-4H,(H,8,9)"], "mass": ["123.111"], "smiles_string": ["O=C(O)c1cccnc1"]} |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:15956 resolves to biotin; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C10H16N2O3S"], "inchi_string": ["InChI=1S/C10H16N2O3S/c13-8(14)4-2-1-3-7-9-6(5-16-7)11-10(15)12-9/h6-7,9H,1-5H2,(H,13,14)(H2,11,12,15)/t6-,7-,9-/m0/s1"], "mass": ["244.316"], "smiles_string": ["[H][C@]12CS[C@@H](CCCCC(=O)O)[C@@]1([H])NC(=O)N2"]} |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:16494 resolves to lipoic acid; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C8H14O2S2"], "inchi_string": ["InChI=1S/C8H14O2S2/c9-8(10)4-2-1-3-7-5-6-11-12-7/h7H,1-6H2,(H,9,10)"], "mass": ["206.332"], "smiles_string": ["O=C(O)CCCCC1CCSS1"]} |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:17015 resolves to riboflavin; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C17H20N4O6"], "inchi_string": ["InChI=1S/C17H20N4O6/c1-7-3-9-10(4-8(7)2)21(5-11(23)14(25)12(24)6-22)15-13(18-9)16(26)20-17(27)19-15/h3-4,11-12,14,22-25H,5-6H2,1-2H3,(H,20,26,27)/t11-,12+,14-/m0/s1"], "mass": ["376.369"], "smiles_string": ["Cc1cc2nc3c(=O)nc(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)CO)c2cc1C"]} |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:176843 resolves to vitamin B12; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {} |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:26710 resolves to sodium chloride; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Cl.Na"], "inchi_string": ["InChI=1S/ClH.Na/h1H;/q;+1/p-1"], "mass": ["58.443"], "smiles_string": ["[Cl-].[Na+]"]} |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:27470 resolves to folic acid; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C19H19N7O6"], "inchi_string": ["InChI=1S/C19H19N7O6/c20-19-25-15-14(17(30)26-19)23-11(8-22-15)7-21-10-3-1-9(2-4-10)16(29)24-12(18(31)32)5-6-13(27)28/h1-4,8,12,21H,5-7H2,(H,24,29)(H,27,28)(H,31,32)(H3,20,22,25,26,30)/t12-/m0/s1"], "mass": ["441.404"], "smiles_string": ["Nc1nc(=O)c2nc(CNc3ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc3)cnc2n1"]} |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:29377 resolves to sodium carbonate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["CO3.2Na"], "inchi_string": ["InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"], "mass": ["105.988"], "smiles_string": ["O=C([O-])[O-].[Na+].[Na+]"]} |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:30753 resolves to 4-aminobenzoic acid; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C7H7NO2"], "inchi_string": ["InChI=1S/C7H7NO2/c8-6-3-1-5(2-4-6)7(9)10/h1-4H,8H2,(H,9,10)"], "mass": ["137.138"], "smiles_string": ["Nc1ccc(C(=O)O)cc1"]} |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:30961 resolves to pyridoxine hydrochloride; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C8H11NO3.HCl"], "inchi_string": ["InChI=1S/C8H11NO3.ClH/c1-5-8(12)7(4-11)6(3-10)2-9-5;/h2,10-12H,3-4H2,1H3;1H"], "mass": ["205.641"], "smiles_string": ["Cc1ncc(CO)c(CO)c1O.Cl"]} |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:31206 resolves to ammonium chloride; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Cl.H4N"], "inchi_string": ["InChI=1S/ClH.H3N/h1H;1H3"], "mass": ["53.492"], "smiles_string": ["[Cl-].[H][N+]([H])([H])[H]"]} |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:31345 resolves to Calcium pantothenate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["2C9H16NO5.Ca"], "inchi_string": ["InChI=1S/2C9H17NO5.Ca/c2*1-9(2,5-11)7(14)8(15)10-4-3-6(12)13;/h2*7,11,14H,3-5H2,1-2H3,(H,10,15)(H,12,13);/q;;+2/p-2/t2*7-;/m00./s1"], "mass": ["476.536"], "smiles_string": ["CC(C)(CO)[C@@H](O)C(=O)NCCC(=O)[O-].CC(C)(CO)[C@@H](O)C(=O)NCCC(=O)[O-].[Ca+2]"]} |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:31440 resolves to copper(II) sulfate pentahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Cu.5H2O.O4S"], "inchi_string": ["InChI=1S/Cu.H2O4S.5H2O/c;1-5(2,3)4;;;;;/h;(H2,1,2,3,4);5*1H2/q+2;;;;;;/p-2"], "mass": ["249.684"], "smiles_string": ["O=S(=O)([O-])[O-].[Cu+2].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H]"]} |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["7H2O.Mg.O4S"], "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["246.473"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]} |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:32312 resolves to zinc sulfate heptahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["7H2O.O4S.Zn"], "inchi_string": ["InChI=1S/H2O4S.7H2O.Zn/c1-5(2,3)4;;;;;;;;/h(H2,1,2,3,4);7*1H2;/q;;;;;;;;+2/p-2"], "mass": ["287.558"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Zn+2]"]} |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:32588 resolves to potassium chloride; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Cl.K"], "inchi_string": ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "smiles_string": ["[Cl-].[K+]"]} |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:33118 resolves to boric acid; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["H3BO3"], "inchi_string": ["InChI=1S/BH3O3/c2-1(3)4/h2-4H"], "mass": ["61.833"], "smiles_string": ["[H]OB(O[H])O[H]"]} |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:34887 resolves to nickel dichloride; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Cl2Ni"], "inchi_string": ["InChI=1S/2ClH.Ni/h2*1H;/q;;+2/p-2"], "mass": ["129.599"], "smiles_string": ["[Cl][Ni][Cl]"]} |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:44557 resolves to nitrilotriacetic acid; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C6H9NO6"], "inchi_string": ["InChI=1S/C6H9NO6/c8-4(9)1-7(2-5(10)11)3-6(12)13/h1-3H2,(H,8,9)(H,10,11)(H,12,13)"], "mass": ["191.139"], "smiles_string": ["O=C(O)CN(CC(=O)O)CC(=O)O"]} |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:49105 resolves to thiamine hydrochloride; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C12H17N4OS.Cl.HCl"], "inchi_string": ["InChI=1S/C12H17N4OS.2ClH/c1-8-11(3-4-17)18-7-16(8)6-10-5-14-9(2)15-12(10)13;;/h5,7,17H,3-4,6H2,1-2H3,(H2,13,14,15);2*1H/q+1;;/p-1"], "mass": ["337.276"], "smiles_string": ["Cc1ncc(C[n+]2csc(CCO)c2C)c(N)n1.Cl.[Cl-]"]} |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["H2O4P.K"], "inchi_string": ["InChI=1S/K.H3O4P/c;1-5(2,3)4/h;(H3,1,2,3,4)/q+1;/p-1"], "mass": ["136.084"], "smiles_string": ["O=P([O-])(O)O.[K+]"]} |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:63939 resolves to sodium tungstate dihydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["2H2O.2Na.O4W"], "inchi_string": ["InChI=1S/2Na.2H2O.4O.W/h;;2*1H2;;;;;/q2*+1;;;;;2*-1;"], "mass": ["329.846"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[W](=[O])([O-])[O-]"]} |
+| chebi64700 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64700; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:64700 resolves to trimethylamine hydrochloride; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C3H9N.HCl"], "inchi_string": ["InChI=1S/C3H9N.ClH/c1-4(2)3;/h1-3H3;1H"], "mass": ["95.573"], "smiles_string": ["CN(C)C.Cl"]} |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:75213 resolves to sodium molybdate dihydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["2H2O.MoO4.2Na"], "inchi_string": ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"], "mass": ["241.946"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]} |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:75836 resolves to iron(2+) sulfate heptahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Fe.7H2O.O4S"], "inchi_string": ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["278.013"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]} |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:76209 resolves to sodium sulfide nonahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["9H2O.2Na.S"], "inchi_string": ["InChI=1S/2Na.9H2O.S/h;;9*1H2;/q2*+1;;;;;;;;;;-2"], "mass": ["240.182"], "smiles_string": ["O.O.O.O.O.O.O.O.O.[Na+].[Na+].[S-2]"]} |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:86158 resolves to calcium chloride dihydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Ca.2Cl.2H2O"], "inchi_string": ["InChI=1S/Ca.2ClH.2H2O/h;2*1H;2*1H2/q+2;;;;/p-2"], "mass": ["147.014"], "smiles_string": ["O.O.[Ca+2].[Cl-].[Cl-]"]} |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["2Cl.6H2O.Mg"], "inchi_string": ["InChI=1S/2ClH.Mg.6H2O/h2*1H;;6*1H2/q;;+2;;;;;;/p-2"], "mass": ["203.301"], "smiles_string": ["O.O.O.O.O.O.[Cl-].[Cl-].[Mg+2]"]} |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:86364 resolves to manganese(II) sulfate monohydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["H2O.Mn.O4S"], "inchi_string": ["InChI=1S/Mn.H2O4S.H2O/c;1-5(2,3)4;/h;(H2,1,2,3,4);1H2/q+2;;/p-2"], "mass": ["169.016"], "smiles_string": ["O.O=S(=O)([O-])[O-].[Mn+2]"]} |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Al.12H2O.K.2O4S"], "inchi_string": ["InChI=1S/Al.K.2H2O4S.12H2O/c;;2*1-5(2,3)4;;;;;;;;;;;;/h;;2*(H2,1,2,3,4);12*1H2/q+3;+1;;;;;;;;;;;;;;/p-4"], "mass": ["474.386"], "smiles_string": ["O.O.O.O.O.O.O.O.O.O.O.O.O=S(=O)([O-])[O-].O=S(=O)([O-])[O-].[Al+3].[K+]"]} |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:8806 resolves to Resazurin; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["C12H7NO4"], "inchi_string": ["InChI=1S/C12H7NO4/c14-7-1-3-9-11(5-7)17-12-6-8(15)2-4-10(12)13(9)16/h1-6,14H"], "mass": ["229.191"], "smiles_string": ["O=c1ccc2[n+]([O-])c3ccc(O)cc3oc-2c1"]} |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; Exact OLS term identifier, canonical label, definition, formula and structure annotations | supports | CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate; canonical label and live status alone do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure: {"generalized_empirical_formula": ["Co.7H2O.O4S"], "inchi_string": ["InChI=1S/Co.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["281.101"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Co+2]"]} |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Entire pinned CSV; preferred-term MAPPED rows for every asserted secondary CHEBI key | supports | {"CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206": [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206", "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377": [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term", "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:64700": [{"label": "Trimethylamine-HCl", "match_type": "preferred_term", "identifier": "CHEBI:64700", "preferred_term": "Trimethylamine-HCl", "ontology_id": "CHEBI:64700", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label": "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term": "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term", "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id": "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label": "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term": "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244": [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244", "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term": "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id": "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465": [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label": "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term": "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id": "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887": [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887", "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type": "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5 H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id": "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956": [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956", "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type": "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term", "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id": "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105": [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type": "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin", "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label": "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity": "resolved:owned"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type": "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type": "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| api | https://mediadive.dsmz.de/rest/medium/494; $.data.medium; all recipe rows and steps in main1005, mineral241 and vitamin5980 | supports | Complete provider response read. Its 41 rows retain original amounts, units, stock IDs and declared volumes; provider normalization is distinct from primary batch instructions. |
+| primary | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf; Both pages: complete main recipe, mineral and 10x vitamin tables, and all preparation paragraphs | supports | The exact original DSMZ 494 recipe supplies the base formulation and both complete stock definitions on the same document. Cross-reference labels to media141/120 do not authorize importing their unrelated basal formulations. |
+| komodo | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; MediaList exact ID=494 row; accession/name/pH/original-recipe link only | supports | The exact table row supports the linked source identity and displayed pH; it does not supply ingredient amounts or prove a strain-specific recipe is identical to its linked base. |
+| replacement-row | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; MediaList exact first-cell accession=494_replace_Trimethylamine x HCl_with_Glycinebetaine | supports | The distinct accession and name explicitly describe replacement of trimethylamine hydrochloride with glycinebetaine. The linked base PDF and shared pH metadata do not supply a variant dose or full formulation. |
+| replacement-detail | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=494_replace_Trimethylamine%20x%20HCl_with_Glycinebetaine; Exact replacement detail endpoint; preserved HTTP403 response | context_only | The response contains no usable variant formulation. No dose is inferred from the base trimethylamine mass, replacement name or ingredient-set fingerprint. |
+| quantities | /private/tmp/culturemech-review-work-batch016/154/quantity-inventory.json; Complete source-linked quantity decision inventory | context_only | Fifty-three decisions cover all41 literal main/mineral/vitamin source rows, all34 local ingredient nodes, eleven preparation/quantity contexts and the unresolved named replacement quantity. Each base-owner decision is separate from unavailable variant support. No existing local amount is labelled verified without attached claim evidence. |
+| writers | src/culturemech/import/mediadive_importer.py; src/culturemech/enrich/dsmz_resolver.py; scripts/cleanup_media_quality.py; src/culturemech/merge/formulation.py; _parse_api_composition/_is_api_stock_addition/_parse_api_solutions/_parse_preparation_steps; merge_composition; _merge_ingredient_group; formulation_content/merge_formulation_evidence | context_only | Current importer separates main rows and stock references but uses provider g_l, maps bareml toML_PER_L and concatenates preparation from all solution scopes. Resolver copies base ingredients and solutions without preparation or a replacement-specific recipe transformation. Current cleanup no longer sums conflicting duplicates; observed old notes remain evidence of stored sums. Current formulation merging compares scientific fields rather than certifying equal ingredient sets. Current code is contextual, not a replay of historical execution. |
+
+## Limits And Additional Notes
+
+- The exact KOMODO glycinebetaine-replacement detail returned HTTP 403. Its accession and replacement name are confirmed by the public MediaList, but neither a replacement dose nor the complete variant formulation is verified. DSMZ 494 supports the base only; identical copied owner arrays do not establish variant equivalence.
+- Provider main volume is 1011 ml. The primary lists 1000 ml water, 10 ml mineral stock, 1 ml vitamin stock and 0.50 ml indicator stock: listed liquids total 1011.50 ml before unspecified later stock additions. Neither value is a measured final volume. Conditional arithmetic below uses the explicitly declared provider basis solely to demonstrate the stock-stage error.
+- No fixed quantities are invented for pH-adjustment titrant, gas flow, unspecified post-autoclave stock strengths or autoclave time/temperature. Source pH targets and gas preparation contexts are not experimental growth or oxygen-preference evidence.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T102638Z-culturemech-005623-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acetohalobium_medium (CultureMech:005623)'
+started_at: '2026-10-21T10:23:11Z'
+finished_at: '2026-10-21T10:26:38Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The accessible DSMZ 494 base recipe distinguishes main ingredients, a mineral
+  stock and a 10x vitamin stock. The generated record flattens those stocks, sums
+  main and stock sodium chloride/calcium without dilution, loses preparation, and
+  incorporates a named glycinebetaine replacement as a synonym despite unavailable
+  variant formulation evidence. Chemical-form and provenance gaps remain; the complete
+  merged-family assessment is partial.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+    sha256: dd7202c7d58859839e1d33905b2606e9804fa3885c9bcb1c0c2a98415364046d
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    sha256: c7aa44069259e81652bfc2cb9fa3e188b0fa0b057c6cb40d23f65f5530d0343c
+    role: context
+  - path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    sha256: 01157e468180db08110405247ce6b8d4373f8b2a39ca833d025d7fa6b3932589
+    role: context
+  - path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    sha256: e25540fcfbea2895345d07f19600880db763d1e63f3a482c7d892e584ee754fd
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/komodo_web_raw_yaml.py
+    sha256: a1a37015b4e6bac657e49f375b39a319815cc6b02a02135674a858a8b6eab03a
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/komodo_web_fetcher.py
+    sha256: 89c510caa08d989b7ec6cee9ac17cc2f0faab606fe8a29ca435df476e52ff004
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 154; batch 016 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding fifteen task batches
+    contain 150 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 152 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:005623
+targets:
+- target_id: CultureMech:005623
+  path: data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+  label: acetohalobium_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch016/154/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch016/154/strict.tsv"
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:005623
+- check_id: replacement-formulation
+  name: Exact glycinebetaine replacement formulation
+  required: true
+  status: unavailable
+  summary: Exact KOMODO replacement detail returned HTTP403. Public list metadata
+    resolves identity only; full variant support remains unavailable.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - replacement-row
+  - replacement-detail
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T10:26:36Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T10:26:36Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T10:26:36Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T10:26:36Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:23:59.420641Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch016/154/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:24:01.598746Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch016/154/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:24:06.824115Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:24:08.471787Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T10:26:36Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACETOHALOBIUM_MEDIUM.yaml:1:id: CultureMech:005623
+
+    ./data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml:1:id: CultureMech:005623
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi131361
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T07:33:27.980786Z'
+  support: supports
+  summary: 'CHEBI:131361 resolves to disodium selenite pentahydrate; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["5H2O.2Na.O3Se"],
+    "inchi_string": ["InChI=1S/2Na.H2O3Se.5H2O/c;;1-4(2)3;;;;;/h;;(H2,1,2,3);5*1H2/q2*+1;;;;;;/p-2"],
+    "mass": ["263.012"], "smiles_string": ["O.O.O.O.O.O=[Se]([O-])[O-].[Na+].[Na+]"]}'
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: 'CHEBI:15940 resolves to nicotinic acid; canonical label and live status
+    alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["C6H5NO2"], "inchi_string":
+    ["InChI=1S/C6H5NO2/c8-6(9)5-2-1-3-7-4-5/h1-4H,(H,8,9)"], "mass": ["123.111"],
+    "smiles_string": ["O=C(O)c1cccnc1"]}'
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:42:30.425993Z'
+  support: supports
+  summary: 'CHEBI:15956 resolves to biotin; canonical label and live status alone
+    do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure:
+    {"generalized_empirical_formula": ["C10H16N2O3S"], "inchi_string": ["InChI=1S/C10H16N2O3S/c13-8(14)4-2-1-3-7-9-6(5-16-7)11-10(15)12-9/h6-7,9H,1-5H2,(H,13,14)(H2,11,12,15)/t6-,7-,9-/m0/s1"],
+    "mass": ["244.316"], "smiles_string": ["[H][C@]12CS[C@@H](CCCCC(=O)O)[C@@]1([H])NC(=O)N2"]}'
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:13.001958Z'
+  support: supports
+  summary: 'CHEBI:16494 resolves to lipoic acid; canonical label and live status alone
+    do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure:
+    {"generalized_empirical_formula": ["C8H14O2S2"], "inchi_string": ["InChI=1S/C8H14O2S2/c9-8(10)4-2-1-3-7-5-6-11-12-7/h7H,1-6H2,(H,9,10)"],
+    "mass": ["206.332"], "smiles_string": ["O=C(O)CCCCC1CCSS1"]}'
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi17015
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:11.583596Z'
+  support: supports
+  summary: 'CHEBI:17015 resolves to riboflavin; canonical label and live status alone
+    do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure:
+    {"generalized_empirical_formula": ["C17H20N4O6"], "inchi_string": ["InChI=1S/C17H20N4O6/c1-7-3-9-10(4-8(7)2)21(5-11(23)14(25)12(24)6-22)15-13(18-9)16(26)20-17(27)19-15/h3-4,11-12,14,22-25H,5-6H2,1-2H3,(H,20,26,27)/t11-,12+,14-/m0/s1"],
+    "mass": ["376.369"], "smiles_string": ["Cc1cc2nc3c(=O)nc(=O)nc-3n(C[C@H](O)[C@H](O)[C@H](O)CO)c2cc1C"]}'
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:26.997779Z'
+  support: supports
+  summary: 'CHEBI:176843 resolves to vitamin B12; canonical label and live status
+    alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {}'
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: 'CHEBI:26710 resolves to sodium chloride; canonical label and live status
+    alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["Cl.Na"], "inchi_string":
+    ["InChI=1S/ClH.Na/h1H;/q;+1/p-1"], "mass": ["58.443"], "smiles_string": ["[Cl-].[Na+]"]}'
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: 'CHEBI:27470 resolves to folic acid; canonical label and live status alone
+    do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure:
+    {"generalized_empirical_formula": ["C19H19N7O6"], "inchi_string": ["InChI=1S/C19H19N7O6/c20-19-25-15-14(17(30)26-19)23-11(8-22-15)7-21-10-3-1-9(2-4-10)16(29)24-12(18(31)32)5-6-13(27)28/h1-4,8,12,21H,5-7H2,(H,24,29)(H,27,28)(H,31,32)(H3,20,22,25,26,30)/t12-/m0/s1"],
+    "mass": ["441.404"], "smiles_string": ["Nc1nc(=O)c2nc(CNc3ccc(C(=O)N[C@@H](CCC(=O)O)C(=O)O)cc3)cnc2n1"]}'
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi29377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T07:31:16.500548Z'
+  support: supports
+  summary: 'CHEBI:29377 resolves to sodium carbonate; canonical label and live status
+    alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["CO3.2Na"], "inchi_string":
+    ["InChI=1S/CH2O3.2Na/c2-1(3)4;;/h(H2,2,3,4);;/q;2*+1/p-2"], "mass": ["105.988"],
+    "smiles_string": ["O=C([O-])[O-].[Na+].[Na+]"]}'
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi30753
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:12.829785Z'
+  support: supports
+  summary: 'CHEBI:30753 resolves to 4-aminobenzoic acid; canonical label and live
+    status alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["C7H7NO2"], "inchi_string":
+    ["InChI=1S/C7H7NO2/c8-6-3-1-5(2-4-6)7(9)10/h1-4H,8H2,(H,9,10)"], "mass": ["137.138"],
+    "smiles_string": ["Nc1ccc(C(=O)O)cc1"]}'
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:42:44.571163Z'
+  support: supports
+  summary: 'CHEBI:30961 resolves to pyridoxine hydrochloride; canonical label and
+    live status alone do not verify source grade, hydration, stereochemistry or stock
+    identity. Formula/structure: {"generalized_empirical_formula": ["C8H11NO3.HCl"],
+    "inchi_string": ["InChI=1S/C8H11NO3.ClH/c1-5-8(12)7(4-11)6(3-10)2-9-5;/h2,10-12H,3-4H2,1H3;1H"],
+    "mass": ["205.641"], "smiles_string": ["Cc1ncc(CO)c(CO)c1O.Cl"]}'
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:28.439407Z'
+  support: supports
+  summary: 'CHEBI:31206 resolves to ammonium chloride; canonical label and live status
+    alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["Cl.H4N"], "inchi_string":
+    ["InChI=1S/ClH.H3N/h1H;1H3"], "mass": ["53.492"], "smiles_string": ["[Cl-].[H][N+]([H])([H])[H]"]}'
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: 'CHEBI:31345 resolves to Calcium pantothenate; canonical label and live
+    status alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["2C9H16NO5.Ca"], "inchi_string":
+    ["InChI=1S/2C9H17NO5.Ca/c2*1-9(2,5-11)7(14)8(15)10-4-3-6(12)13;/h2*7,11,14H,3-5H2,1-2H3,(H,10,15)(H,12,13);/q;;+2/p-2/t2*7-;/m00./s1"],
+    "mass": ["476.536"], "smiles_string": ["CC(C)(CO)[C@@H](O)C(=O)NCCC(=O)[O-].CC(C)(CO)[C@@H](O)C(=O)NCCC(=O)[O-].[Ca+2]"]}'
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31440
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:28.489501Z'
+  support: supports
+  summary: 'CHEBI:31440 resolves to copper(II) sulfate pentahydrate; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["Cu.5H2O.O4S"],
+    "inchi_string": ["InChI=1S/Cu.H2O4S.5H2O/c;1-5(2,3)4;;;;;/h;(H2,1,2,3,4);5*1H2/q+2;;;;;;/p-2"],
+    "mass": ["249.684"], "smiles_string": ["O=S(=O)([O-])[O-].[Cu+2].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H]"]}'
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: 'CHEBI:31795 resolves to magnesium sulfate heptahydrate; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["7H2O.Mg.O4S"],
+    "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["246.473"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]}'
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:28.879505Z'
+  support: supports
+  summary: 'CHEBI:32312 resolves to zinc sulfate heptahydrate; canonical label and
+    live status alone do not verify source grade, hydration, stereochemistry or stock
+    identity. Formula/structure: {"generalized_empirical_formula": ["7H2O.O4S.Zn"],
+    "inchi_string": ["InChI=1S/H2O4S.7H2O.Zn/c1-5(2,3)4;;;;;;;;/h(H2,1,2,3,4);7*1H2;/q;;;;;;;;+2/p-2"],
+    "mass": ["287.558"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Zn+2]"]}'
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: 'CHEBI:32588 resolves to potassium chloride; canonical label and live status
+    alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["Cl.K"], "inchi_string":
+    ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "smiles_string": ["[Cl-].[K+]"]}'
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:29.364390Z'
+  support: supports
+  summary: 'CHEBI:33118 resolves to boric acid; canonical label and live status alone
+    do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure:
+    {"generalized_empirical_formula": ["H3BO3"], "inchi_string": ["InChI=1S/BH3O3/c2-1(3)4/h2-4H"],
+    "mass": ["61.833"], "smiles_string": ["[H]OB(O[H])O[H]"]}'
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:04:44.093348Z'
+  support: supports
+  summary: 'CHEBI:34887 resolves to nickel dichloride; canonical label and live status
+    alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["Cl2Ni"], "inchi_string":
+    ["InChI=1S/2ClH.Ni/h2*1H;/q;;+2/p-2"], "mass": ["129.599"], "smiles_string": ["[Cl][Ni][Cl]"]}'
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi44557
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:46:15.250117Z'
+  support: supports
+  summary: 'CHEBI:44557 resolves to nitrilotriacetic acid; canonical label and live
+    status alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["C6H9NO6"], "inchi_string":
+    ["InChI=1S/C6H9NO6/c8-4(9)1-7(2-5(10)11)3-6(12)13/h1-3H2,(H,8,9)(H,10,11)(H,12,13)"],
+    "mass": ["191.139"], "smiles_string": ["O=C(O)CN(CC(=O)O)CC(=O)O"]}'
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: 'CHEBI:49105 resolves to thiamine hydrochloride; canonical label and live
+    status alone do not verify source grade, hydration, stereochemistry or stock identity.
+    Formula/structure: {"generalized_empirical_formula": ["C12H17N4OS.Cl.HCl"], "inchi_string":
+    ["InChI=1S/C12H17N4OS.2ClH/c1-8-11(3-4-17)18-7-16(8)6-10-5-14-9(2)15-12(10)13;;/h5,7,17H,3-4,6H2,1-2H3,(H2,13,14,15);2*1H/q+1;;/p-1"],
+    "mass": ["337.276"], "smiles_string": ["Cc1ncc(C[n+]2csc(CCO)c2C)c(N)n1.Cl.[Cl-]"]}'
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: 'CHEBI:63036 resolves to potassium dihydrogen phosphate; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["H2O4P.K"],
+    "inchi_string": ["InChI=1S/K.H3O4P/c;1-5(2,3)4/h;(H3,1,2,3,4)/q+1;/p-1"], "mass":
+    ["136.084"], "smiles_string": ["O=P([O-])(O)O.[K+]"]}'
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:09.796192Z'
+  support: supports
+  summary: 'CHEBI:63939 resolves to sodium tungstate dihydrate; canonical label and
+    live status alone do not verify source grade, hydration, stereochemistry or stock
+    identity. Formula/structure: {"generalized_empirical_formula": ["2H2O.2Na.O4W"],
+    "inchi_string": ["InChI=1S/2Na.2H2O.4O.W/h;;2*1H2;;;;;/q2*+1;;;;;2*-1;"], "mass":
+    ["329.846"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[W](=[O])([O-])[O-]"]}'
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi64700
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64700
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T10:07:18.509525Z'
+  support: supports
+  summary: 'CHEBI:64700 resolves to trimethylamine hydrochloride; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["C3H9N.HCl"],
+    "inchi_string": ["InChI=1S/C3H9N.ClH/c1-4(2)3;/h1-3H3;1H"], "mass": ["95.573"],
+    "smiles_string": ["CN(C)C.Cl"]}'
+  snapshot_sha256: 83f962a3306245af1d138075a9e63f856d2d66fd4778787ccc5ac1ae8640dcba
+- evidence_id: chebi75213
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:29.756647Z'
+  support: supports
+  summary: 'CHEBI:75213 resolves to sodium molybdate dihydrate; canonical label and
+    live status alone do not verify source grade, hydration, stereochemistry or stock
+    identity. Formula/structure: {"generalized_empirical_formula": ["2H2O.MoO4.2Na"],
+    "inchi_string": ["InChI=1S/Mo.2Na.2H2O.4O/h;;;2*1H2;;;;/q;2*+1;;;;;2*-1"], "mass":
+    ["241.946"], "smiles_string": ["O.O.[Na+].[Na+].[O]=[Mo](=[O])([O-])[O-]"]}'
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: 'CHEBI:75836 resolves to iron(2+) sulfate heptahydrate; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["Fe.7H2O.O4S"],
+    "inchi_string": ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["278.013"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]}'
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi76209
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:04.847843Z'
+  support: supports
+  summary: 'CHEBI:76209 resolves to sodium sulfide nonahydrate; canonical label and
+    live status alone do not verify source grade, hydration, stereochemistry or stock
+    identity. Formula/structure: {"generalized_empirical_formula": ["9H2O.2Na.S"],
+    "inchi_string": ["InChI=1S/2Na.9H2O.S/h;;9*1H2;/q2*+1;;;;;;;;;;-2"], "mass": ["240.182"],
+    "smiles_string": ["O.O.O.O.O.O.O.O.O.[Na+].[Na+].[S-2]"]}'
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:30.011607Z'
+  support: supports
+  summary: 'CHEBI:86158 resolves to calcium chloride dihydrate; canonical label and
+    live status alone do not verify source grade, hydration, stereochemistry or stock
+    identity. Formula/structure: {"generalized_empirical_formula": ["Ca.2Cl.2H2O"],
+    "inchi_string": ["InChI=1S/Ca.2ClH.2H2O/h;2*1H;2*1H2/q+2;;;;/p-2"], "mass": ["147.014"],
+    "smiles_string": ["O.O.[Ca+2].[Cl-].[Cl-]"]}'
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:30.382026Z'
+  support: supports
+  summary: 'CHEBI:86345 resolves to magnesium dichloride hexahydrate; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["2Cl.6H2O.Mg"],
+    "inchi_string": ["InChI=1S/2ClH.Mg.6H2O/h2*1H;;6*1H2/q;;+2;;;;;;/p-2"], "mass":
+    ["203.301"], "smiles_string": ["O.O.O.O.O.O.[Cl-].[Cl-].[Mg+2]"]}'
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86364
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T07:33:35.036768Z'
+  support: supports
+  summary: 'CHEBI:86364 resolves to manganese(II) sulfate monohydrate; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["H2O.Mn.O4S"],
+    "inchi_string": ["InChI=1S/Mn.H2O4S.H2O/c;1-5(2,3)4;/h;(H2,1,2,3,4);1H2/q+2;;/p-2"],
+    "mass": ["169.016"], "smiles_string": ["O.O=S(=O)([O-])[O-].[Mn+2]"]}'
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:08.054799Z'
+  support: supports
+  summary: 'CHEBI:86465 resolves to potassium aluminium sulfate dodecahydrate; canonical
+    label and live status alone do not verify source grade, hydration, stereochemistry
+    or stock identity. Formula/structure: {"generalized_empirical_formula": ["Al.12H2O.K.2O4S"],
+    "inchi_string": ["InChI=1S/Al.K.2H2O4S.12H2O/c;;2*1-5(2,3)4;;;;;;;;;;;;/h;;2*(H2,1,2,3,4);12*1H2/q+3;+1;;;;;;;;;;;;;;/p-4"],
+    "mass": ["474.386"], "smiles_string": ["O.O.O.O.O.O.O.O.O.O.O.O.O=S(=O)([O-])[O-].O=S(=O)([O-])[O-].[Al+3].[K+]"]}'
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi8806
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-21T08:17:30.774007Z'
+  support: supports
+  summary: 'CHEBI:8806 resolves to Resazurin; canonical label and live status alone
+    do not verify source grade, hydration, stereochemistry or stock identity. Formula/structure:
+    {"generalized_empirical_formula": ["C12H7NO4"], "inchi_string": ["InChI=1S/C12H7NO4/c14-7-1-3-9-11(5-7)17-12-6-8(15)2-4-10(12)13(9)16/h1-6,14H"],
+    "mass": ["229.191"], "smiles_string": ["O=c1ccc2[n+]([O-])c3ccc(O)cc3oc-2c1"]}'
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91244
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: Exact OLS term identifier, canonical label, definition, formula and structure
+    annotations
+  accessed_at: '2026-10-20T06:55:07.079384Z'
+  support: supports
+  summary: 'CHEBI:91244 resolves to cobalt(2+) sulfate heptahydrate; canonical label
+    and live status alone do not verify source grade, hydration, stereochemistry or
+    stock identity. Formula/structure: {"generalized_empirical_formula": ["Co.7H2O.O4S"],
+    "inchi_string": ["InChI=1S/Co.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["281.101"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Co+2]"]}'
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire pinned CSV; preferred-term MAPPED rows for every asserted secondary
+    CHEBI key
+  accessed_at: '2026-10-21T10:26:36Z'
+  support: supports
+  summary: '{"CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31206":
+    [{"label": "NH4Cl", "match_type": "preferred_term", "identifier": "CHEBI:31206",
+    "preferred_term": "NH4Cl", "ontology_id": "CHEBI:31206", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label":
+    "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158",
+    "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride",
+    "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id":
+    "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:29377":
+    [{"label": "Na2CO3", "match_type": "preferred_term", "identifier": "CHEBI:29377",
+    "preferred_term": "Na2CO3", "ontology_id": "CHEBI:29377", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}, {"label": "Sodium carbonate solution", "match_type": "preferred_term",
+    "identifier": "CHEBI:29377", "preferred_term": "Sodium carbonate solution", "ontology_id":
+    "CHEBI:29377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:64700":
+    [{"label": "Trimethylamine-HCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:64700", "preferred_term": "Trimethylamine-HCl", "ontology_id": "CHEBI:64700",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:76209": [{"label":
+    "Na2S x 9 H2O", "match_type": "preferred_term", "identifier": "CHEBI:76209", "preferred_term":
+    "Na2S x 9 H2O", "ontology_id": "CHEBI:76209", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:44557": [{"label": "Nitrilotriacetic acid", "match_type": "preferred_term",
+    "identifier": "CHEBI:44557", "preferred_term": "Nitrilotriacetic acid", "ontology_id":
+    "CHEBI:44557", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795":
+    [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86364": [{"label":
+    "MnSO4 x H2O", "match_type": "preferred_term", "identifier": "CHEBI:86364", "preferred_term":
+    "MnSO4 x H2O", "ontology_id": "CHEBI:86364", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75836": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:91244":
+    [{"label": "CoSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:91244",
+    "preferred_term": "CoSO4 x 7 H2O", "ontology_id": "CHEBI:91244", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32312": [{"label": "ZnSO4 x 7 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:32312", "preferred_term":
+    "ZnSO4 x 7 H2O", "ontology_id": "CHEBI:32312", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31440": [{"label": "CuSO4 x 5 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31440", "preferred_term": "CuSO4 x 5 H2O", "ontology_id":
+    "CHEBI:31440", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86465":
+    [{"label": "AlK(SO4)2 x 12 H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:86465", "preferred_term": "AlK(SO4)2 x 12 H2O", "ontology_id": "CHEBI:86465",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:33118": [{"label":
+    "H3BO3", "match_type": "preferred_term", "identifier": "CHEBI:33118", "preferred_term":
+    "H3BO3", "ontology_id": "CHEBI:33118", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:75213": [{"label": "Na2MoO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75213", "preferred_term": "Na2MoO4 x 2 H2O", "ontology_id":
+    "CHEBI:75213", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:34887":
+    [{"label": "NiCl2", "match_type": "preferred_term", "identifier": "CHEBI:34887",
+    "preferred_term": "NiCl2", "ontology_id": "CHEBI:34887", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:131361": [{"label": "Na2SeO3 x 5 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:131361", "preferred_term": "Na2SeO3 x 5
+    H2O", "ontology_id": "CHEBI:131361", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:63939": [{"label": "Na2WO4 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:63939", "preferred_term": "Na2WO4 x 2 H2O", "ontology_id":
+    "CHEBI:63939", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:15956":
+    [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956",
+    "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:27470": [{"label": "Folic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:27470", "preferred_term": "Folic acid",
+    "ontology_id": "CHEBI:27470", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:30961": [{"label": "Pyridoxine hydrochloride", "match_type": "preferred_term",
+    "identifier": "CHEBI:30961", "preferred_term": "Pyridoxine hydrochloride", "ontology_id":
+    "CHEBI:30961", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:49105":
+    [{"label": "Thiamine HCl", "match_type": "preferred_term", "identifier": "CHEBI:49105",
+    "preferred_term": "Thiamine HCl", "ontology_id": "CHEBI:49105", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:17015": [{"label": "Riboflavin", "match_type":
+    "preferred_term", "identifier": "CHEBI:17015", "preferred_term": "Riboflavin",
+    "ontology_id": "CHEBI:17015", "mapping_status": "MAPPED", "ambiguity": "unique"}],
+    "CHEBI:15940": [{"label": "Nicotinic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:15940", "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:176843": [{"label":
+    "Vitamin B12", "match_type": "preferred_term", "identifier": "CHEBI:176843", "preferred_term":
+    "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status": "MAPPED", "ambiguity":
+    "resolved:owned"}], "CHEBI:30753": [{"label": "p-Aminobenzoic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:30753", "preferred_term": "p-Aminobenzoic
+    acid", "ontology_id": "CHEBI:30753", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:16494": [{"label": "(DL)-alpha-Lipoic acid", "match_type":
+    "preferred_term", "identifier": "CHEBI:16494", "preferred_term": "(DL)-alpha-Lipoic
+    acid", "ontology_id": "CHEBI:16494", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/494
+  locator: $.data.medium; all recipe rows and steps in main1005, mineral241 and vitamin5980
+  accessed_at: '2026-10-21T10:07:15.156999Z'
+  support: supports
+  summary: Complete provider response read. Its 41 rows retain original amounts, units,
+    stock IDs and declared volumes; provider normalization is distinct from primary
+    batch instructions.
+  snapshot_sha256: d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf
+  locator: 'Both pages: complete main recipe, mineral and 10x vitamin tables, and
+    all preparation paragraphs'
+  accessed_at: '2026-10-21T10:07:16.698353Z'
+  support: supports
+  summary: The exact original DSMZ 494 recipe supplies the base formulation and both
+    complete stock definitions on the same document. Cross-reference labels to media141/120
+    do not authorize importing their unrelated basal formulations.
+  snapshot_sha256: 394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e
+- evidence_id: komodo
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: MediaList exact ID=494 row; accession/name/pH/original-recipe link only
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The exact table row supports the linked source identity and displayed pH;
+    it does not supply ingredient amounts or prove a strain-specific recipe is identical
+    to its linked base.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=494'\
+    \ >494</a></TD>\n\t\t\t\t\t<TD>ACETOHALOBIUM medium</TD>\n\t\t\t\t\t<TD> 7.6 -\
+    \ 8.0, Na2CO3</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\
+    \t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: replacement-row
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: MediaList exact first-cell accession=494_replace_Trimethylamine x HCl_with_Glycinebetaine
+  accessed_at: '2026-10-19T23:42:38.189631Z'
+  support: supports
+  summary: The distinct accession and name explicitly describe replacement of trimethylamine
+    hydrochloride with glycinebetaine. The linked base PDF and shared pH metadata
+    do not supply a variant dose or full formulation.
+  quote: "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href='/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=494_replace_Trimethylamine\
+    \ x HCl_with_Glycinebetaine' >494_replace_Trimethylamine x HCl_with_Glycinebetaine</a></TD>\n\
+    \t\t\t\t\t<TD>ACETOHALOBIUM medium_replace_Trimethylamine x HCl_with_Glycinebetaine</TD>\n\
+    \t\t\t\t\t<TD> 7.6 - 8.0, Na2CO3</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>true</TD>\n\
+    \t\t\t\t\t<TD>false</TD>\n<TD><a href='http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf'\
+    \ >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf</a></TD>\n\t\
+    \t\t\t</TR>"
+  snapshot_sha256: d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a
+- evidence_id: replacement-detail
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=494_replace_Trimethylamine%20x%20HCl_with_Glycinebetaine
+  locator: Exact replacement detail endpoint; preserved HTTP403 response
+  accessed_at: '2026-10-21T10:08:12.668514Z'
+  support: context_only
+  summary: The response contains no usable variant formulation. No dose is inferred
+    from the base trimethylamine mass, replacement name or ingredient-set fingerprint.
+  snapshot_sha256: f449350c6564d7494693c52c09a421576da29a88ddbd2469abd9f2f53bc805c4
+- evidence_id: quantities
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch016/154/quantity-inventory.json
+  locator: Complete source-linked quantity decision inventory
+  accessed_at: '2026-10-21T10:26:36Z'
+  support: context_only
+  summary: Fifty-three decisions cover all41 literal main/mineral/vitamin source rows,
+    all34 local ingredient nodes, eleven preparation/quantity contexts and the unresolved
+    named replacement quantity. Each base-owner decision is separate from unavailable
+    variant support. No existing local amount is labelled verified without attached
+    claim evidence.
+  snapshot_sha256: d01697ebfd5d159f0ae4a48edf4834679064ed4e125862979c2a8455b133338f
+- evidence_id: writers
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py; src/culturemech/enrich/dsmz_resolver.py;
+    scripts/cleanup_media_quality.py; src/culturemech/merge/formulation.py
+  locator: _parse_api_composition/_is_api_stock_addition/_parse_api_solutions/_parse_preparation_steps;
+    merge_composition; _merge_ingredient_group; formulation_content/merge_formulation_evidence
+  accessed_at: '2026-10-21T10:26:36Z'
+  support: context_only
+  summary: Current importer separates main rows and stock references but uses provider
+    g_l, maps bareml toML_PER_L and concatenates preparation from all solution scopes.
+    Resolver copies base ingredients and solutions without preparation or a replacement-specific
+    recipe transformation. Current cleanup no longer sums conflicting duplicates;
+    observed old notes remain evidence of stored sums. Current formulation merging
+    compares scientific fields rather than certifying equal ingredient sets. Current
+    code is contextual, not a replay of historical execution.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding-coverage
+  area: grounding
+  topic: Exact primary labels and current secondary linkage coverage
+  outcome: supported
+  summary: '33 unique asserted CHEBI identifiers resolve with exact labels. Primary
+    linkage 33/34 (97.06%); verified current secondary linkage 31/34 (91.18%). This
+    is a 0–100 ingredient-instance linkage scale, not scientific correctness. Missing
+    current secondary keys: []. Legacy links and chemical-form correctness are assessed
+    separately.'
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - mim
+  - chebi131361
+  - chebi15940
+  - chebi15956
+  - chebi16494
+  - chebi17015
+  - chebi176843
+  - chebi26710
+  - chebi27470
+  - chebi29377
+  - chebi30753
+  - chebi30961
+  - chebi31206
+  - chebi31345
+  - chebi31440
+  - chebi31795
+  - chebi32312
+  - chebi32588
+  - chebi33118
+  - chebi34887
+  - chebi44557
+  - chebi49105
+  - chebi63036
+  - chebi63939
+  - chebi64700
+  - chebi75213
+  - chebi75836
+  - chebi76209
+  - chebi86158
+  - chebi86345
+  - chebi86364
+  - chebi86465
+  - chebi8806
+  - chebi91244
+- assessment_id: history-time
+  area: provenance
+  topic: Full history and timezone audit
+  outcome: concern
+  summary: 'History event counts: [(''target'', 12), (''data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml'',
+    10), (''data/normalized_yaml/bacterial/acetohalobium_medium.yaml'', 10), (''data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml'',
+    10)]. Explicit timestamp defects: [(''target'', 0, ''2026-01-27T01:15:02.fZ'',
+    ''malformed ISO timestamp''), (''target'', 1, ''2026-02-03T11:19:16.083425'',
+    ''timezone absent''), (''data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml'',
+    0, ''2026-01-27T01:15:02.fZ'', ''malformed ISO timestamp''), (''data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml'',
+    1, ''2026-02-03T11:19:16.083425'', ''timezone absent''), (''data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml'',
+    0, ''2026-01-27T01:15:02.fZ'', ''malformed ISO timestamp''), (''data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml'',
+    1, ''2026-02-03T11:19:18.479145'', ''timezone absent'')]. Historical bytes are
+    assessed as observed; no inferred timezone or retroactive replacement timestamp
+    is supplied.'
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+- assessment_id: quantities
+  area: quantity
+  topic: Every direct, stock, stock-addition and preparation quantity
+  outcome: concern
+  summary: Fifty-three decisions cover all41 literal main/mineral/vitamin source rows,
+    all34 local ingredient nodes, eleven preparation/quantity contexts and the unresolved
+    named replacement quantity. Each base-owner decision is separate from unavailable
+    variant support. No existing local amount is labelled verified without attached
+    claim evidence.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - quantities
+  - owner-0
+  - owner-1
+  - owner-2
+  details: '[{"field_path": "ingredients[0].concentration", "decision": "correct",
+    "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "NaCl 150.00 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 1;
+    mineral table continuation p2 supplies preparation only", "explanation": "Local149.368g/L
+    adds provider main g_l=148.368 to an undiluted mineral-stock value1g/L. Primary
+    main mass is150g; on the provider''s declared basis only, (150g+1g/L*0.010L)/1.011L=148.3778437190900098911968348g/L.
+    This demonstrates the missing dilution and does not establish a final-volume replacement.",
+    "source_amount": 150, "source_unit": "g", "current_ingredient": "NaCl", "current_concentration":
+    {"value": "149.368", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[0]", "provider_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 150,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 148.368,\n                        \"mmol_l\":
+    2538.81,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    148.368, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[1].concentration", "decision": "evidence_only", "stage": "DSMZ494
+    base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "KCl 0.33 g", "source_locator": "DSMZ494 page1; Main sol. 494
+    table row 2; mineral table continuation p2 supplies preparation only", "explanation":
+    "Existing base-layer g/L agrees with the provider-declared normalization, but
+    no attached claim evidence establishes its amount/unit/basis. Preserve the original
+    primary mass and explicit provider basis; do not claim a measured final volume.",
+    "source_amount": 0.33, "source_unit": "g", "current_ingredient": "KCl", "current_concentration":
+    {"value": "0.326409", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[1]", "provider_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.33,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\":
+    4.3784,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.326409, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "ingredients[2].concentration", "decision": "evidence_only",
+    "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "NH4Cl 0.33 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 3; mineral
+    table continuation p2 supplies preparation only", "explanation": "Existing base-layer
+    g/L agrees with the provider-declared normalization, but no attached claim evidence
+    establishes its amount/unit/basis. Preserve the original primary mass and explicit
+    provider basis; do not claim a measured final volume.", "source_amount": 0.33,
+    "source_unit": "g", "current_ingredient": "NH4Cl", "current_concentration": {"value":
+    "0.326409", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[2]", "provider_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.33,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\":
+    6.10225,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.326409, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "ingredients[3].concentration", "decision": "evidence_only",
+    "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "KH2PO4 0.33 g", "source_locator": "DSMZ494 page1; Main sol. 494 table row 4;
+    mineral table continuation p2 supplies preparation only", "explanation": "Existing
+    base-layer g/L agrees with the provider-declared normalization, but no attached
+    claim evidence establishes its amount/unit/basis. Preserve the original primary
+    mass and explicit provider basis; do not claim a measured final volume.", "source_amount":
+    0.33, "source_unit": "g", "current_ingredient": "KH2PO4", "current_concentration":
+    {"value": "0.326409", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[3]", "provider_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.33,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\":
+    2.39857,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.326409, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "ingredients[4].concentration", "decision": "correct",
+    "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "CaCl2 x 2 H2O 0.33 g", "source_locator": "DSMZ494 page1; Main sol. 494 table
+    row 5; mineral table continuation p2 supplies preparation only", "explanation":
+    "Local0.42640900000000004g/L adds provider main g_l=0.326409 to an undiluted mineral-stock
+    value0.1g/L. Primary main mass is0.33g; on the provider''s declared basis only,
+    (0.33g+0.1g/L*0.010L)/1.011L=0.3273986152324431256181998022g/L. This demonstrates
+    the missing dilution and does not establish a final-volume replacement.", "source_amount":
+    0.33, "source_unit": "g", "current_ingredient": "CaCl2 x 2 H2O", "current_concentration":
+    {"value": "0.42640900000000004", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[4]", "provider_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.33,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\":
+    2.22025,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.326409, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[5].concentration", "decision": "evidence_only", "stage": "DSMZ494
+    base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "MgCl2 x 6 H2O 4.00 g", "source_locator": "DSMZ494 page1; Main
+    sol. 494 table row 6; mineral table continuation p2 supplies preparation only",
+    "explanation": "Existing base-layer g/L agrees with the provider-declared normalization,
+    but no attached claim evidence establishes its amount/unit/basis. Preserve the
+    original primary mass and explicit provider basis; do not claim a measured final
+    volume.", "source_amount": 4, "source_unit": "g", "current_ingredient": "MgCl2
+    x 6 H2O", "current_concentration": {"value": "3.95648", "unit": "G_PER_L"}, "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[5]", "provider_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.95648,\n                        \"mmol_l\":
+    19.461,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    3.95648, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "solutions (missing source stock dose)", "decision":
+    "add", "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "Modified Wolin''s mineral solution 10.00 ml", "source_locator": "DSMZ494 page1;
+    Main sol. 494 table row 7; mineral table continuation p2 supplies preparation
+    only", "explanation": "The source stock addition is absent from both base owners
+    and the target. Add its original ml-per-batch dose and separately staged stock
+    composition; no universal ml/L dose or variant equivalence is inferred.", "source_amount":
+    10, "source_unit": "ml", "current_ingredient": null, "current_concentration":
+    null, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[0].recipe[6]", "provider_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l":
+    null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[6].concentration", "decision": "correct", "stage": "DSMZ494 base
+    main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Sodium resazurin (0.1% w/v) 0.50 ml", "source_locator": "DSMZ494
+    page1; Main sol. 494 table row 8; mineral table continuation p2 supplies preparation
+    only", "explanation": "The source0.1%w/v indicator is1g/L;0.50ml supplies0.0005g.
+    Provider-basis0.0005g/1.011L=0.000494559842g/L agrees with local0.00049456. Numeric
+    mass is consistent, but the stock strength and dose are missing; sodium-salt grounding
+    is a separate defect.", "source_amount": 0.5, "source_unit": "ml", "current_ingredient":
+    "Sodium resazurin", "current_concentration": {"value": "0.00049456", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[0].recipe[7]", "provider_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00049456,\n                        \"mmol_l\": 0.00196902,\n                        \"optional\":
+    0\n                    }", "provider_g_l": 0.00049456, "owner_decisions": ["correct",
+    "correct", "unsupported"], "variant_owner_limit": "The replacement owner copies
+    this base value, but its complete variant recipe is unavailable. Base support
+    is not transferable to that variant."}, {"field_path": "ingredients[7].concentration",
+    "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Na2CO3 2.00 g", "source_locator": "DSMZ494 page1; Main sol. 494
+    table row 9; mineral table continuation p2 supplies preparation only", "explanation":
+    "Existing base-layer g/L agrees with the provider-declared normalization, but
+    no attached claim evidence establishes its amount/unit/basis. Preserve the original
+    primary mass and explicit provider basis; do not claim a measured final volume.",
+    "source_amount": 2, "source_unit": "g", "current_ingredient": "Na2CO3", "current_concentration":
+    {"value": "1.97824", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[8]", "provider_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.97824,\n                        \"mmol_l\":
+    18.6647,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    1.97824, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "ingredients[8].concentration", "decision": "evidence_only",
+    "stage": "DSMZ494 base main batch; provider volume1011ml", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "Yeast extract 0.05 g", "source_locator": "DSMZ494 page1; Main sol. 494 table
+    row 10; mineral table continuation p2 supplies preparation only", "explanation":
+    "Existing base-layer g/L agrees with the provider-declared normalization, but
+    no attached claim evidence establishes its amount/unit/basis. Preserve the original
+    primary mass and explicit provider basis; do not claim a measured final volume.",
+    "source_amount": 0.05, "source_unit": "g", "current_ingredient": "Yeast extract",
+    "current_concentration": {"value": "0.049456", "unit": "G_PER_L"}, "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[9]", "provider_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 0.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.049456,\n                        \"optional\":
+    0\n                    }", "provider_g_l": 0.049456, "owner_decisions": ["evidence_only",
+    "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner
+    copies this base value, but its complete variant recipe is unavailable. Base support
+    is not transferable to that variant."}, {"field_path": "ingredients[9].concentration",
+    "decision": "evidence_only", "stage": "DSMZ494 base main batch; provider volume1011ml",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Trimethylamine-HCl 2.40 g", "source_locator": "DSMZ494 page1;
+    Main sol. 494 table row 11; mineral table continuation p2 supplies preparation
+    only", "explanation": "Existing base-layer g/L agrees with the provider-declared
+    normalization, but no attached claim evidence establishes its amount/unit/basis.
+    Preserve the original primary mass and explicit provider basis; do not claim a
+    measured final volume.", "source_amount": 2.4, "source_unit": "g", "current_ingredient":
+    "Trimethylamine-HCl", "current_concentration": {"value": "2.37389", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[0].recipe[10]", "provider_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Trimethylamine-HCl\",\n                        \"compound_id\":
+    383,\n                        \"amount\": 2.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.37389,\n                        \"optional\":
+    0\n                    }", "provider_g_l": 2.37389, "owner_decisions": ["evidence_only",
+    "evidence_only", "unsupported"], "variant_owner_limit": "The replacement owner
+    copies this base value, but its complete variant recipe is unavailable. Base support
+    is not transferable to that variant."}, {"field_path": "solutions (missing source
+    stock dose)", "decision": "add", "stage": "DSMZ494 base main batch; provider volume1011ml",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Wolin''s vitamin solution (10x) 1.00 ml", "source_locator": "DSMZ494
+    page1; Main sol. 494 table row 12; mineral table continuation p2 supplies preparation
+    only", "explanation": "The source stock addition is absent from both base owners
+    and the target. Add its original ml-per-batch dose and separately staged stock
+    composition; no universal ml/L dose or variant equivalence is inferred.", "source_amount":
+    1, "source_unit": "ml", "current_ingredient": null, "current_concentration": null,
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[0].recipe[11]", "provider_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l":
+    null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[10].concentration", "decision": "evidence_only", "stage": "DSMZ494
+    base main batch; provider volume1011ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Na2S x 9 H2O 0.50 g", "source_locator": "DSMZ494 page1; Main
+    sol. 494 table row 13; mineral table continuation p2 supplies preparation only",
+    "explanation": "Existing base-layer g/L agrees with the provider-declared normalization,
+    but no attached claim evidence establishes its amount/unit/basis. Preserve the
+    original primary mass and explicit provider basis; do not claim a measured final
+    volume.", "source_amount": 0.5, "source_unit": "g", "current_ingredient": "Na2S
+    x 9 H2O", "current_concentration": {"value": "0.49456", "unit": "G_PER_L"}, "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[12]", "provider_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.49456,\n                        \"mmol_l\":
+    2.0591,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.49456, "owner_decisions": ["evidence_only", "evidence_only", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "preparation_steps (missing scoped solvent volume)",
+    "decision": "add", "stage": "DSMZ494 base main batch; provider volume1011ml",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Distilled water 1000.00 ml", "source_locator": "DSMZ494 page1;
+    Main sol. 494 table row 14; mineral table continuation p2 supplies preparation
+    only", "explanation": "This original1000ml water amount is absent at its named
+    main/mineral/vitamin stage. Three separate solvent additions must not be collapsed.
+    Water amount alone is not a measured final volume.", "source_amount": 1000, "source_unit":
+    "ml", "current_ingredient": null, "current_concentration": null, "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[0].recipe[13]", "provider_quote": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l":
+    null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[11].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Nitrilotriacetic acid 1.50 g", "source_locator": "DSMZ494 page1;
+    Modified Wolin''s mineral solution table row 1; mineral table continuation p2
+    supplies preparation only", "explanation": "This quantity belongs to the separately
+    prepared stock, but its undiluted provider stock g/L appears in direct ingredients.
+    Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 1.5,
+    "source_unit": "g", "current_ingredient": "Nitrilotriacetic acid", "current_concentration":
+    {"value": "1.5", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[0]", "provider_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\":
+    189,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.84765,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    1.5, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[12].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "MgSO4 x 7 H2O 3.00 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 2; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 3,
+    "source_unit": "g", "current_ingredient": "MgSO4 x 7 H2O", "current_concentration":
+    {"value": "3", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[1]", "provider_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\":
+    12.1716,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    3, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[13].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "MnSO4 x H2O 0.50 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 3; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.5,
+    "source_unit": "g", "current_ingredient": "MnSO4 x H2O", "current_concentration":
+    {"value": "0.5", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[2]", "provider_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\":
+    14,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    2.9583,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.5, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[0].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "NaCl 1.00 g", "source_locator": "DSMZ494 page1; Modified Wolin''s
+    mineral solution table row 4; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. This stock constituent
+    was also summed into its same-named main ingredient without the stock dilution;
+    preserve the two additions separately.", "source_amount": 1, "source_unit": "g",
+    "current_ingredient": "NaCl", "current_concentration": {"value": "149.368", "unit":
+    "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[3]", "provider_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    17.1116,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    1, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[14].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "FeSO4 x 7 H2O 0.10 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 5; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.1,
+    "source_unit": "g", "current_ingredient": "FeSO4 x 7 H2O", "current_concentration":
+    {"value": "0.1", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[4]", "provider_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.359693,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.1, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[15].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "CoSO4 x 7 H2O 0.18 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 6; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.18,
+    "source_unit": "g", "current_ingredient": "CoSO4 x 7 H2O", "current_concentration":
+    {"value": "0.18", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[5]", "provider_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\":
+    198,\n                        \"amount\": 0.18,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\":
+    1.16132,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.18, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[4].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "CaCl2 x 2 H2O 0.10 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 7; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. This stock constituent
+    was also summed into its same-named main ingredient without the stock dilution;
+    preserve the two additions separately.", "source_amount": 0.1, "source_unit":
+    "g", "current_ingredient": "CaCl2 x 2 H2O", "current_concentration": {"value":
+    "0.42640900000000004", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[6]", "provider_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.680203,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.1, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[16].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "ZnSO4 x 7 H2O 0.18 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 8; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.18,
+    "source_unit": "g", "current_ingredient": "ZnSO4 x 7 H2O", "current_concentration":
+    {"value": "0.18", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[7]", "provider_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"amount\": 0.18,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\":
+    0.625954,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.18, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[17].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "CuSO4 x 5 H2O 0.01 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 9; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.01,
+    "source_unit": "g", "current_ingredient": "CuSO4 x 5 H2O", "current_concentration":
+    {"value": "0.01", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[8]", "provider_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\":
+    121,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0400503,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.01, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[18].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "AlK(SO4)2 x 12 H2O 0.02 g", "source_locator": "DSMZ494 page1;
+    Modified Wolin''s mineral solution table row 10; mineral table continuation p2
+    supplies preparation only", "explanation": "This quantity belongs to the separately
+    prepared stock, but its undiluted provider stock g/L appears in direct ingredients.
+    Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.02,
+    "source_unit": "g", "current_ingredient": "AlK(SO4)2 x 12 H2O", "current_concentration":
+    {"value": "0.02", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[9]", "provider_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\":
+    908,\n                        \"amount\": 0.02,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0421596,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.02, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[19].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "H3BO3 0.01 g", "source_locator": "DSMZ494 page1; Modified Wolin''s
+    mineral solution table row 11; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.01,
+    "source_unit": "g", "current_ingredient": "H3BO3", "current_concentration": {"value":
+    "0.01", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[10]", "provider_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.161708,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.01, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[20].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Na2MoO4 x 2 H2O 0.01 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 12; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.01,
+    "source_unit": "g", "current_ingredient": "Na2MoO4 x 2 H2O", "current_concentration":
+    {"value": "0.01", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[11]", "provider_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0413309,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.01, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[21].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "NiCl2 x 6 H2O 0.03 g", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 13; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration.", "source_amount": 0.03,
+    "source_unit": "g", "current_ingredient": "NiCl2 x 6 H2O", "current_concentration":
+    {"value": "0.03", "unit": "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[1].recipe[12]", "provider_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.231483,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.03, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[22].concentration", "decision": "correct", "stage": "Modified Wolin
+    mineral stock; source1000ml water, receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Na2SeO3 x 5 H2O 0.30 mg", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 14; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original0.3mg equals0.0003g
+    in this stock only.", "source_amount": 0.3, "source_unit": "mg", "current_ingredient":
+    "Na2SeO3 x 5 H2O", "current_concentration": {"value": "0.0003", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[1].recipe[13]", "provider_quote": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0003,\n                        \"mmol_l\":
+    0.00114062,\n                        \"optional\": 0\n                    }",
+    "provider_g_l": 0.0003, "owner_decisions": ["correct", "correct", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "ingredients[23].concentration", "decision": "correct",
+    "stage": "Modified Wolin mineral stock; source1000ml water, receiving dose10ml",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Na2WO4 x 2 H2O 0.40 mg", "source_locator": "DSMZ494 page1; Modified
+    Wolin''s mineral solution table row 15; mineral table continuation p2 supplies
+    preparation only", "explanation": "This quantity belongs to the separately prepared
+    stock, but its undiluted provider stock g/L appears in direct ingredients. Restore
+    stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original0.4mg equals0.0004g
+    in this stock only.", "source_amount": 0.4, "source_unit": "mg", "current_ingredient":
+    "Na2WO4 x 2 H2O", "current_concentration": {"value": "0.0004", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[1].recipe[14]", "provider_quote": "{\n                        \"recipe_order\":
+    15,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0004,\n                        \"mmol_l\":
+    0.00121267,\n                        \"optional\": 0\n                    }",
+    "provider_g_l": 0.0004, "owner_decisions": ["correct", "correct", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "preparation_steps (missing scoped solvent volume)",
+    "decision": "add", "stage": "Modified Wolin mineral stock; source1000ml water,
+    receiving dose10ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Distilled water 1000.00 ml", "source_locator": "DSMZ494 page1;
+    Modified Wolin''s mineral solution table row 16; mineral table continuation p2
+    supplies preparation only", "explanation": "This original1000ml water amount is
+    absent at its named main/mineral/vitamin stage. Three separate solvent additions
+    must not be collapsed. Water amount alone is not a measured final volume.", "source_amount":
+    1000, "source_unit": "ml", "current_ingredient": null, "current_concentration":
+    null, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[1].recipe[15]", "provider_quote": "{\n                        \"recipe_order\":
+    16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l":
+    null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[24].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Biotin 20.00 mg", "source_locator": "DSMZ494 page2; Wolin''s
+    vitamin solution (10x) table row 1; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original20mg equals0.02g
+    in this stock only.", "source_amount": 20, "source_unit": "mg", "current_ingredient":
+    "Biotin", "current_concentration": {"value": "0.02", "unit": "G_PER_L"}, "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[2].recipe[0]", "provider_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.02, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[25].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Folic acid 20.00 mg", "source_locator": "DSMZ494 page2; Wolin''s
+    vitamin solution (10x) table row 2; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original20mg equals0.02g
+    in this stock only.", "source_amount": 20, "source_unit": "mg", "current_ingredient":
+    "Folic acid", "current_concentration": {"value": "0.02", "unit": "G_PER_L"}, "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[2].recipe[1]", "provider_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.02, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[26].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Pyridoxine hydrochloride 100.00 mg", "source_locator": "DSMZ494
+    page2; Wolin''s vitamin solution (10x) table row 3; mineral table continuation
+    p2 supplies preparation only", "explanation": "This quantity belongs to the separately
+    prepared stock, but its undiluted provider stock g/L appears in direct ingredients.
+    Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original100mg equals0.1g
+    in this stock only.", "source_amount": 100, "source_unit": "mg", "current_ingredient":
+    "Pyridoxine hydrochloride", "current_concentration": {"value": "0.1", "unit":
+    "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[2].recipe[2]", "provider_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.1, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[27].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Thiamine HCl 50.00 mg", "source_locator": "DSMZ494 page2; Wolin''s
+    vitamin solution (10x) table row 4; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original50mg equals0.05g
+    in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient":
+    "Thiamine HCl", "current_concentration": {"value": "0.05", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[2].recipe[3]", "provider_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[28].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Riboflavin 50.00 mg", "source_locator": "DSMZ494 page2; Wolin''s
+    vitamin solution (10x) table row 5; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original50mg equals0.05g
+    in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient":
+    "Riboflavin", "current_concentration": {"value": "0.05", "unit": "G_PER_L"}, "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[2].recipe[4]", "provider_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[29].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Nicotinic acid 50.00 mg", "source_locator": "DSMZ494 page2; Wolin''s
+    vitamin solution (10x) table row 6; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original50mg equals0.05g
+    in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient":
+    "Nicotinic acid", "current_concentration": {"value": "0.05", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[2].recipe[5]", "provider_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[30].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Calcium D-(+)-pantothenate 50.00 mg", "source_locator": "DSMZ494
+    page2; Wolin''s vitamin solution (10x) table row 7; mineral table continuation
+    p2 supplies preparation only", "explanation": "This quantity belongs to the separately
+    prepared stock, but its undiluted provider stock g/L appears in direct ingredients.
+    Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original50mg equals0.05g
+    in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient":
+    "Calcium D-(+)-pantothenate", "current_concentration": {"value": "0.05", "unit":
+    "G_PER_L"}, "provider_reference": "https://mediadive.dsmz.de/rest/medium/494",
+    "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[2].recipe[6]", "provider_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[31].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Vitamin B12 1.00 mg", "source_locator": "DSMZ494 page2; Wolin''s
+    vitamin solution (10x) table row 8; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original1mg equals0.001g
+    in this stock only.", "source_amount": 1, "source_unit": "mg", "current_ingredient":
+    "Vitamin B12", "current_concentration": {"value": "0.001", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[2].recipe[7]", "provider_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }",
+    "provider_g_l": 0.001, "owner_decisions": ["correct", "correct", "unsupported"],
+    "variant_owner_limit": "The replacement owner copies this base value, but its
+    complete variant recipe is unavailable. Base support is not transferable to that
+    variant."}, {"field_path": "ingredients[32].concentration", "decision": "correct",
+    "stage": "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "p-Aminobenzoic acid 50.00 mg", "source_locator": "DSMZ494 page2; Wolin''s vitamin
+    solution (10x) table row 9; mineral table continuation p2 supplies preparation
+    only", "explanation": "This quantity belongs to the separately prepared stock,
+    but its undiluted provider stock g/L appears in direct ingredients. Restore stock
+    ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original50mg equals0.05g
+    in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient":
+    "p-Aminobenzoic acid", "current_concentration": {"value": "0.05", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[2].recipe[8]", "provider_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "ingredients[33].concentration", "decision": "correct", "stage": "Wolin vitamin
+    stock10x; source1000ml water, receiving dose1ml", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "(DL)-alpha-Lipoic acid 50.00 mg", "source_locator": "DSMZ494
+    page2; Wolin''s vitamin solution (10x) table row 10; mineral table continuation
+    p2 supplies preparation only", "explanation": "This quantity belongs to the separately
+    prepared stock, but its undiluted provider stock g/L appears in direct ingredients.
+    Restore stock ownership and dose. Conditional provider-basis contribution is stock_g/L*0.010/1.011
+    for minerals or stock_g/L*0.001/1.011 for vitamins; this is explanatory arithmetic,
+    not a source quotation or measured final concentration. Original50mg equals0.05g
+    in this stock only.", "source_amount": 50, "source_unit": "mg", "current_ingredient":
+    "(DL)-alpha-Lipoic acid", "current_concentration": {"value": "0.05", "unit": "G_PER_L"},
+    "provider_reference": "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256":
+    "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca", "provider_locator":
+    "$.data.solutions[2].recipe[9]", "provider_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }", "provider_g_l":
+    0.05, "owner_decisions": ["correct", "correct", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "preparation_steps (missing scoped solvent volume)", "decision": "add", "stage":
+    "Wolin vitamin stock10x; source1000ml water, receiving dose1ml", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "Distilled water 1000.00 ml", "source_locator": "DSMZ494 page2; Wolin''s vitamin
+    solution (10x) table row 11; mineral table continuation p2 supplies preparation
+    only", "explanation": "This original1000ml water amount is absent at its named
+    main/mineral/vitamin stage. Three separate solvent additions must not be collapsed.
+    Water amount alone is not a measured final volume.", "source_amount": 1000, "source_unit":
+    "ml", "current_ingredient": null, "current_concentration": null, "provider_reference":
+    "https://mediadive.dsmz.de/rest/medium/494", "provider_sha256": "d2b2a6d09fa95aca3d7267707f49513efb2c79178b13179bf2b112daeca0b3ca",
+    "provider_locator": "$.data.solutions[2].recipe[10]", "provider_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "provider_g_l":
+    null, "owner_decisions": ["add", "add", "unsupported"], "variant_owner_limit":
+    "The replacement owner copies this base value, but its complete variant recipe
+    is unavailable. Base support is not transferable to that variant."}, {"field_path":
+    "preparation_steps", "decision": "add", "stage": "Base main sparging: gas fractions
+    and duration", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "80% N2 and 20% CO2 gas mixture for 30 - 45 min", "source_locator":
+    "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly staged",
+    "explanation": "The primary gives both fractions and30–45min for sparging, followed
+    by dispensing under the same atmosphere. Target and KOMODO base lack preparation;
+    DSMZ owner retains this without claim evidence. No flow rate, incubation duration
+    or physiological preference follows.", "owner_decisions": ["add", "evidence_only",
+    "unsupported"]}, {"field_path": "preparation_steps; solutions", "decision": "add",
+    "stage": "Separate later yeast extract, trimethylamine, vitamin and sulfide stock
+    atmosphere", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "prepared under 100% N2 gas", "source_locator": "DSMZ494 main
+    preparation p1 or mineral preparation p2, as explicitly staged", "explanation":
+    "This100%N2 stock atmosphere is distinct from initial main sparging and carbonate
+    stock. DSMZ owner retains it; target/KOMODO base omit it. Source does not specify
+    the yeast/trimethylamine/sulfide stock strengths.", "owner_decisions": ["add",
+    "evidence_only", "unsupported"]}, {"field_path": "preparation_steps; solutions",
+    "decision": "add", "stage": "Carbonate stock atmosphere:80%N2 and20%CO2", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf", "source_sha256":
+    "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e", "source_quote":
+    "carbonate from a sterile anoxic stock solution prepared under 80% N2 and\n20%
+    CO2 gas atmosphere.", "source_locator": "DSMZ494 main preparation p1 or mineral
+    preparation p2, as explicitly staged", "explanation": "The exact carbonate clause
+    explicitly requires80%N2/20%CO2, separately from100%N2 stocks. Both fractions
+    and their stock scope are preserved.", "owner_decisions": ["add", "evidence_only",
+    "unsupported"]}, {"field_path": "ph_range; preparation_steps", "decision": "evidence_only",
+    "stage": "Complete base-medium pH target7.6–8.0", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "adjust to 7.6 -\n8.0 with a sterile anoxic stock solution of
+    Na2CO3 (5% w/v), if necessary.", "source_locator": "DSMZ494 main preparation p1
+    or mineral preparation p2, as explicitly staged", "explanation": "Both base owners
+    and target retain7.6–8.0. This is a target before use, not a measured value. The
+    exact two-line range is retained; variant list pH alone does not verify all preparation.",
+    "owner_decisions": ["evidence_only", "evidence_only", "unsupported"]}, {"field_path":
+    "solutions (conditional pH-adjustment stock)", "decision": "add", "stage": "Optional
+    carbonate pH-adjustment stock strength", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "Na2CO3 (5% w/v), if necessary.", "source_locator": "DSMZ494 main
+    preparation p1 or mineral preparation p2, as explicitly staged", "explanation":
+    "Explicit5%w/v strength is50g/L stock, not5g/L final medium or a universal addition
+    dose. Its dose is unquantified titration to the stated pH. DSMZ owner preserves
+    the strength in prose; target/KOMODO base omit it.", "owner_decisions": ["add",
+    "evidence_only", "unsupported"]}, {"field_path": "solutions (mineral preparation)",
+    "decision": "add", "stage": "Mineral stock: NTA dissolution before adding remaining
+    salts", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "adjust pH to 6.5 with KOH", "source_locator": "DSMZ494 main preparation
+    p1 or mineral preparation p2, as explicitly staged", "explanation": "This6.5 adjustment
+    belongs only to mineral stock. Target/KOMODO base omit it; DSMZ owner retains
+    the value as an unscoped main preparation step, requiring scope correction.",
+    "owner_decisions": ["add", "correct", "unsupported"]}, {"field_path": "solutions
+    (mineral preparation)", "decision": "add", "stage": "Mineral stock final pH after
+    adding salts", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "final to pH 7.0 with KOH.", "source_locator": "DSMZ494 main preparation
+    p1 or mineral preparation p2, as explicitly staged", "explanation": "This7.0 target
+    is distinct from both preceding mineral6.5 and complete-medium7.6–8.0. DSMZ owner
+    needs stock scoping; target/KOMODO base need the instruction added.", "owner_decisions":
+    ["add", "correct", "unsupported"]}, {"field_path": "solutions (mineral preparation
+    titrant)", "decision": "not_quantified", "stage": "KOH used for the two mineral-stock
+    pH adjustments", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "with KOH", "source_locator": "DSMZ494 main preparation p1 or
+    mineral preparation p2, as explicitly staged", "explanation": "Source specifies
+    KOH as titrant without a fixed amount or concentration. Preserve that unquantified
+    instruction rather than assigning zero or a typical dose.", "owner_decisions":
+    ["not_quantified", "not_quantified", "unsupported"]}, {"field_path": "preparation_steps;
+    solutions", "decision": "add", "stage": "Vitamin-stock sterilization exception",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "vitamins (sterilized by\nfiltration)", "source_locator": "DSMZ494
+    main preparation p1 or mineral preparation p2, as explicitly staged", "explanation":
+    "The exact source line break is preserved. Vitamins are filter sterilized before
+    addition; pore size is unspecified. Target/KOMODO base lack preparation and DSMZ
+    owner retains this exception.", "owner_decisions": ["add", "evidence_only", "unsupported"]},
+    {"field_path": "preparation_steps", "decision": "add", "stage": "Main sterilization
+    followed by excluded-component additions", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "and autoclave. Add yeast extract, trimethylamine, vitamins",
+    "source_locator": "DSMZ494 main preparation p1 or mineral preparation p2, as explicitly
+    staged", "explanation": "The complete paragraph excludes carbonate, yeast extract,
+    trimethylamine, vitamins and sulfide initially. Main mixture is autoclaved, then
+    excluded ingredients are separately added from sterile anoxic stocks. Source supplies
+    no autoclave temperature/duration; main ingredient masses do not determine unspecified
+    later-stock strengths or volumes.", "owner_decisions": ["add", "evidence_only",
+    "unsupported"]}, {"field_path": "solutions (pH-adjustment dose)", "decision":
+    "not_quantified", "stage": "Conditional5%w/v carbonate titration to complete-medium
+    pH", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf",
+    "source_sha256": "394dca9434a6054d111896fc5354ceba4bd673df2c95393a6eb8c7c92ac8af7e",
+    "source_quote": "if necessary.", "source_locator": "DSMZ494 main preparation p1
+    or mineral preparation p2, as explicitly staged", "explanation": "No fixed addition
+    volume is given for this optional adjustment. Retain the specified stock strength
+    and endpoint, with dose explicitly unquantified.", "owner_decisions": ["not_quantified",
+    "not_quantified", "unsupported"]}, {"field_path": "synonyms[0]; merged_from; replacement
+    owner ingredients[9]", "decision": "unsupported", "stage": "Named glycinebetaine
+    replacement dose and complete formulation", "source_reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+    "source_sha256": "d8259d98e6dbffdf6961a1ab92bc86f3567d5d96de352bfa079edb2a91e9580a",
+    "source_quote": "494_replace_Trimethylamine x HCl_with_Glycinebetaine", "source_locator":
+    "MediaList exact replacement accession row; full row in replacement-row evidence",
+    "explanation": "The exact source name identifies a replacement claim but supplies
+    no quantity. The replacement owner still contains base2.37389g/L trimethylamine-HCl
+    and no glycinebetaine ingredient. Do not reuse the base2.40g mass or assert equal
+    recipes; variant details are unavailable.", "provider_reference": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+    "provider_quote": "<TR>\n\t\t\t\t\t<TD width=\"50\"><a href=''/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=494_replace_Trimethylamine
+    x HCl_with_Glycinebetaine'' >494_replace_Trimethylamine x HCl_with_Glycinebetaine</a></TD>\n\t\t\t\t\t<TD>ACETOHALOBIUM
+    medium_replace_Trimethylamine x HCl_with_Glycinebetaine</TD>\n\t\t\t\t\t<TD> 7.6
+    - 8.0, Na2CO3</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>true</TD>\n\t\t\t\t\t<TD>false</TD>\n<TD><a
+    href=''http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf'' >http://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium494.pdf</a></TD>\n\t\t\t\t</TR>",
+    "affected_owner_paths": ["data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml"],
+    "owner_quantity_decision": "unsupported"}]'
+- assessment_id: identity
+  area: identity
+  topic: Base494 and distinct named replacement accession
+  outcome: concern
+  summary: Base KOMODO494 resolves to DSMZ/MediaDive494. Exact parent and reverse
+    child IDs/paths resolve. The separate replacement accession explicitly names glycinebetaine
+    substitution, yet all three owner ingredient arrays equal the base and the generated
+    target includes the variant as a synonym. Its detailed formulation remains unavailable;
+    source identity is not proof of formulation equivalence.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - api
+  - komodo
+  - replacement-row
+  - replacement-detail
+  - id-search
+- assessment_id: stages
+  area: quantity
+  topic: Main formulation, stock doses, repeated salts and volume basis
+  outcome: concern
+  summary: The41 source rows contain14 main rows,16 mineral rows and11 vitamin rows.
+    Eleven main compound entries plus15 mineral and10 vitamin constituents collapse
+    into34 direct ingredients by summing sodium chloride and calcium across stages.
+    The10ml mineral and1ml vitamin doses and three1000ml water entries are absent.
+    Eight ordinary main compounds match provider g/L; indicator mass also matches
+    numerically but loses stock representation. The two summed salts and23 other undiluted
+    stock constituents require stage correction.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - api
+  - quantities
+- assessment_id: forms
+  area: grounding
+  topic: Every asserted chemical form and exact supplied identity
+  outcome: concern
+  summary: SourceNiCl2·6H2O is linked to Cl2Ni without hydration, and sodium resazurin
+    is linked to neutralC12H7NO4. Other explicit hydrate identities match. SourceD-(+)-calcium
+    pantothenate agrees with the stereospecified CHEBI31345 structure; no generic/DL
+    mismatch is invented. DL-lipoic acid retains its racemic source label and stereounspecified
+    structure; vitaminB12 stays broad. Yeast extract remains an undefined mixture
+    rather than an invented molecule.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - chebi34887
+  - chebi8806
+  - chebi31345
+  - chebi16494
+  - chebi176843
+  - mim
+- assessment_id: preparation
+  area: completeness
+  topic: Main and stock preparation, gas mixtures and pH stages
+  outcome: concern
+  summary: The target and both KOMODO owners have no preparation_steps. The DSMZ owner
+    retains both primary paragraphs, but the mineral6.5/7.0 adjustments appear at
+    the main level. Source main80:20N2/CO2,30–45min sparging, later100%N2 stocks,
+    separate80:20carbonate stock, vitamin filtration and conditional5%w/v carbonate
+    titration must retain their distinct scopes. Aerobic:Yes metadata is not evidence
+    of growth and conflicts with an operational reading of this anoxic preparation.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - api
+  - quantities
+- assessment_id: classification
+  area: scope
+  topic: Composition, state and biological assertion scope
+  outcome: supported
+  summary: COMPLEX/SEMI_DEFINED and LIQUID fit the enumerated salts/vitamins plus
+    yeast extract and no solidifier. No target-organism growth result, taxonomic CURIE,
+    incubation temperature or KG match is asserted. The generic cultivation application
+    is not treated as experimental evidence, and the medium title does not establish
+    organism growth.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - api
+- assessment_id: ownership
+  area: ownership
+  topic: Complete maintained ownership and regeneration boundary
+  outcome: concern
+  summary: All three explicit merge contributors and the merge code are captured.
+    Main ingredients are identical across target/owners, including historical sums.
+    DSMZ preparation exists in its owner but is absent from the generated record.
+    Future work must curate these maintained inputs and resolve the named replacement
+    before regeneration; an ingredient fingerprint cannot establish scientific equivalence.
+  target_ids:
+  - CultureMech:005623
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - writers
+  - primary
+  - replacement-row
+findings:
+- finding_id: f1
+  issue_key: CM005623-stock-stage-sums
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock concentrations and main amounts are combined without dilution
+  description: Mineral and vitamin constituents are direct medium rows at stock strength.
+    Sodium chloride149.368g/L sums148.368 main with1.0 stock; calcium0.426409g/L sums0.326409
+    main with0.1 stock. Missing10ml/1ml doses and solvent stages make the represented
+    formulation materially different from the source.
+  target_ids:
+  - CultureMech:005623
+  field_paths:
+  - ingredients[*].concentration
+  - ingredients[0].notes
+  - ingredients[4].notes
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - api
+  - quantities
+  - writers
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P1
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM005623-replacement-synonym
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Named glycinebetaine replacement is merged as a base synonym
+  description: The variant accession explicitly names replacement of trimethylamine
+    hydrochloride, but its normalized owner retains the complete base ingredient array,
+    including trimethylamine, and the generated target lists it as a synonym. Exact
+    variant formulation and dose are unavailable; equal copied arrays cannot justify
+    the merged identity.
+  target_ids:
+  - CultureMech:005623
+  field_paths:
+  - synonyms
+  - merged_from
+  - merge_fingerprint
+  - ingredients[9]
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - komodo
+  - replacement-row
+  - replacement-detail
+  - writers
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM005623-nickel-hydration
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate uses an unhydrated ontology identity
+  description: NiCl2 x6H2O in the primary and preferred term maps to CHEBI34887, whose
+    formula is Cl2Ni. Primary and secondary canonical-label matches do not establish
+    the source hydrate.
+  target_ids:
+  - CultureMech:005623
+  field_paths:
+  - ingredients[21].term
+  - ingredients[21].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - chebi34887
+  - mim
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: CM005623-indicator-salt
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Sodium resazurin maps to the neutral molecule
+  description: The primary/provider specify sodium resazurin but CHEBI8806 is C12H7NO4
+    without sodium. The correct provider-normalized indicator mass does not establish
+    salt identity.
+  target_ids:
+  - CultureMech:005623
+  field_paths:
+  - ingredients[6].term
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - api
+  - chebi8806
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: CM005623-preparation-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Anoxic preparation and distinct stock conditions are lost
+  description: The target omits preparation retained by the DSMZ owner, including30–45min
+    sparging, main and stock gas mixtures, excluded-component additions and vitamin
+    filtration. Main7.6–8.0 and mineral6.5 then7.0 pH instructions differ. Aerobic:Yes
+    notes lack scoped physiological evidence and cannot replace the primary anoxic
+    procedure.
+  target_ids:
+  - CultureMech:005623
+  field_paths:
+  - preparation_steps
+  - notes
+  - ph_range
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - api
+  - quantities
+  - writers
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f6
+  issue_key: CM005623-quantity-evidence-gap
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Supported base values lack claim-level source evidence
+  description: The ordinary main g/L values and basepH can be traced to inspected
+    source/provider content, but the local claims have no attached excerpts or explicit
+    batch/provider-volume explanation. Generic accessions do not replace narrow evidence.
+  target_ids:
+  - CultureMech:005623
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - evidence
+  - ph_range
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - owner-2
+  - primary
+  - api
+  - quantities
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f7
+  issue_key: CM005623-history-timestamps
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: KOMODO history contains malformed and timezone-free timestamps
+  description: The target and both KOMODO owners retain an import timestamp ending.fZ
+    and a resolver timestamp without timezone. Valid later events do not resolve the
+    historical instants.
+  target_ids:
+  - CultureMech:005623
+  field_paths:
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-2
+  - writers
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore main/mineral/vitamin ownership and original per-batch doses;
+    preserve both salt additions and receiving-volume uncertainty before any derived
+    concentration. Retain the numerically consistent indicator mass alongside its
+    original stock strength and dose.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:005623
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Retain the distinct source accession and unresolved replacement formulation.
+    Obtain its actual recipe before assigning a glycinebetaine amount or classifying
+    equivalence, then repair maintained family representation and regenerate through
+    current compatibility guards.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:005623
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Resolve the exact hydrate with verified ontology evidence or retain
+    explicit unresolved grounding; preserve its stock quantity and hydration.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:005623
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Verify the exact sodium-salt identity or leave the mapping explicitly
+    unresolved; retain the source0.1%w/v stock and0.50ml dose without substituting
+    the neutral molecule.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:005623
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: Preserve the complete base procedure at the correct main/stock scopes,
+    qualify oxygen metadata and attach narrow source evidence. Keep unknown stock
+    strengths, gas flow and autoclave cycle parameters unresolved; do not transfer
+    base instructions to the unavailable variant.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:005623
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Attach exact source excerpts and explicit preparation/volume scope
+    to retained and corrected claims. Keep primary mass, provider normalization and
+    derived arithmetic separate, with unavailable variant support documented.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:005623
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a7
+  description: Preserve append-only history, add supported clarification if evidence
+    exists, and repair future writer serialization without inventing historical times.
+  finding_ids:
+  - f7
+  target_ids:
+  - CultureMech:005623
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_494_ACETOHALOBIUM_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/acetohalobium_medium_replace_trimethylamine_x_hcl_with_glycinebetaine.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The exact KOMODO glycinebetaine-replacement detail returned HTTP 403. Its accession
+  and replacement name are confirmed by the public MediaList, but neither a replacement
+  dose nor the complete variant formulation is verified. DSMZ 494 supports the base
+  only; identical copied owner arrays do not establish variant equivalence.
+- 'Provider main volume is 1011 ml. The primary lists 1000 ml water, 10 ml mineral
+  stock, 1 ml vitamin stock and 0.50 ml indicator stock: listed liquids total 1011.50
+  ml before unspecified later stock additions. Neither value is a measured final volume.
+  Conditional arithmetic below uses the explicitly declared provider basis solely
+  to demonstrate the stock-stage error.'
+- No fixed quantities are invented for pH-adjustment titrant, gas flow, unspecified
+  post-autoclave stock strengths or autoclave time/temperature. Source pH targets
+  and gas preparation contexts are not experimental growth or oxygen-preference evidence.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-016
+- generated-medium
+```

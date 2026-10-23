@@ -1,0 +1,1009 @@
+schema_version: 1.0.0
+review_id: 20261021T103212Z-culturemech-002536-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: acidianus_brierleyi_medium (CultureMech:002536)'
+started_at: '2026-10-21T10:23:17Z'
+finished_at: '2026-10-21T10:32:12Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Exact JCM GRMD 176 and its MediaDive representation resolve. All seven listed
+  amounts match the provider-declared basis, and five are already evidenced in the
+  maintained owner but absent from the older generated record. Sulfur powder is linked
+  to a sulfur-atom entity, while water, source-grade/evidence detail and the qualified
+  collection sterilization default need source-scoped recovery.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    sha256: ef3985ebe0e228b5a6e5c2823ae8936b40794a35c68eed58cd15fdb5e30ecc74
+    role: target
+  - path: data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    sha256: 0ad9d8462a3c74fe0b49e99362af10df917304fc44c326fd60327fc8e1906d43
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 160; batch 016 item 10 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding fifteen task batches
+    contain 150 ledger-owned validated record reviews; their complete validated lists
+    also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 152 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002536
+targets:
+- target_id: CultureMech:002536
+  path: data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  label: acidianus_brierleyi_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch016/160/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch016/160/strict.tsv"
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:002536
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:24:15.361162Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch016/160/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:24:17.024526Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-016/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch016/160/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:24:18.836597Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T10:24:19.950673Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: supports
+  summary: './data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml:1:id: CultureMech:002536
+
+    ./data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml:1:id:
+    CultureMech:002536
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: bound-source-integrity
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch016/source-preflight-bound/160/source-catalog.json
+  locator: Full per-record bound catalog; raw/text/metadata hashes independently rechecked
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: supports
+  summary: 8 exact bound source captures checked. Captured timestamps remain actual
+    original access times; no new retrieval or cross-record substitution.
+  snapshot_sha256: 12246885af435824918b9c751632f7c18d3f928195164b8d0325417ce2a6f06e
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=176
+  locator: 'Exact GRMD=176 HTML: collection header, complete eight-row table and record-specific
+    preparation paragraph'
+  accessed_at: '2026-10-21T10:12:25.696529Z'
+  support: supports
+  summary: JCM is the original recipe collection. The current page specifies BD-Difco
+    yeast extract and sulfur powder, water in liters, acid normality without a dose,
+    separate yeast handling and a sulfur-specific steam treatment. Its collection
+    autoclave default is explicitly qualified by unless otherwise stated. Copyright
+    2026 is not asserted as the recipe publication year.
+  snapshot_sha256: bb57148e4896ca714f5eea72f53e3ab5b76a73b9c3daa4fb25867d1f18037c48
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J176
+  locator: $.data.medium; solution 3834 complete recipe and steps
+  accessed_at: '2026-10-21T10:12:24.618357Z'
+  support: supports
+  summary: DSMZ supplies the MediaDive dataset, not the original recipe collection.
+    The API declares a 1000 ml main basis, preserves supplier/powder attributes and
+    the specific preparation paragraph, but does not include the JCM page header default.
+    Current raw bytes match the response hash cited in the owner.
+  snapshot_sha256: 72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835
+- evidence_id: chebi26833
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833
+  locator: Exact OLS obo_id, label, obsolete flag and available formula/structure
+    metadata
+  accessed_at: '2026-10-20T06:55:04.114839Z'
+  support: supports
+  summary: CHEBI:26833 resolves to sulfur atom. This establishes live canonical metadata,
+    not the supplied material, product grade or secondary MIM membership.
+  snapshot_sha256: 34952547270a6bcbbfa3a3699082c8d5359e51d0f90518ab9ca5400494a8ae33
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS obo_id, label, obsolete flag and available formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate. This establishes
+    live canonical metadata, not the supplied material, product grade or secondary
+    MIM membership.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS obo_id, label, obsolete flag and available formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride. This establishes live canonical
+    metadata, not the supplied material, product grade or secondary MIM membership.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: Exact OLS obo_id, label, obsolete flag and available formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to ammonium sulfate. This establishes live canonical
+    metadata, not the supplied material, product grade or secondary MIM membership.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS obo_id, label, obsolete flag and available formula/structure
+    metadata
+  accessed_at: '2026-10-21T08:17:29.666916Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate. This establishes
+    live canonical metadata, not the supplied material, product grade or secondary
+    MIM membership.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi64205
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64205
+  locator: Exact OLS obo_id, label, obsolete flag and available formula/structure
+    metadata
+  accessed_at: '2026-10-21T09:00:12.945373Z'
+  support: supports
+  summary: CHEBI:64205 resolves to calcium nitrate. This establishes live canonical
+    metadata, not the supplied material, product grade or secondary MIM membership.
+  snapshot_sha256: cf808711c3d8005562d7cb492a9da7abcb7a9ae6334934a1f4c5bafd1bd86062
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Entire 9077-row pinned CSV; exact identifier and exact Sulfur preferred-label
+    comparisons
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: '{"index_sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "data_row_count":
+    9077, "mapped_preferred_rows": {"CHEBI:26833": [], "CHEBI:31795": [{"label": "MgSO4
+    x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier":
+    "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label":
+    "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term":
+    "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:62946": [{"label": "(NH4)2SO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label":
+    "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term":
+    "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:64205": [{"label": "Ca(NO3)2", "match_type": "preferred_term",
+    "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, "unresolved_asserted_secondary_keys":
+    ["CHEBI:26833"], "exact_Sulfur_label_rows": [{"label": "Sulfur", "match_type":
+    "preferred_term", "identifier": "CHEBI:33403", "preferred_term": "Sulfur", "ontology_id":
+    "CHEBI:33403", "mapping_status": "MAPPED", "ambiguity": "unique"}], "scope": "Complete
+    explicit CSV read, unaffected by gitignore. Exact identifier and exact preferred-label
+    comparisons only; no fuzzy match or replacement-ID endorsement. A missing index
+    key does not make the OLS CHEBI identifier invalid or prove absence from all MIM
+    versions."}'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch016/160/quantity-inventory.json
+  locator: Every listed ingredient/stock-addition concentration and explicitly scoped
+    source-only additions
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: Native decisions retain literal quotes, stable URLs, exact locators, original
+    units/stages and limitations. Arithmetic is outside quotes.
+  snapshot_sha256: 221b5af5b7f18f7a7c595be5e55739f0d13609bd2f28c0280b3228adae367b36
+- evidence_id: owner-amount-evidence
+  kind: record_content
+  reference: data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  locator: All five owner ingredient evidence objects; exact provider response-byte
+    comparison
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: supports
+  summary: '{"response_sha256": "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835",
+    "literal_checks": [{"field_path": "ingredients[0].evidence[0]", "literal_quote_in_current_raw":
+    true, "historical_response_hash_matches_current": true}, {"field_path": "ingredients[1].evidence[0]",
+    "literal_quote_in_current_raw": true, "historical_response_hash_matches_current":
+    true}, {"field_path": "ingredients[2].evidence[0]", "literal_quote_in_current_raw":
+    true, "historical_response_hash_matches_current": true}, {"field_path": "ingredients[3].evidence[0]",
+    "literal_quote_in_current_raw": true, "historical_response_hash_matches_current":
+    true}, {"field_path": "ingredients[4].evidence[0]", "literal_quote_in_current_raw":
+    true, "historical_response_hash_matches_current": true}]}'
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: Current MediaDive parsing uses the first source recipe, excludes solvent
+    volumes from ingredient edges and preserves provider g_l; preparation parsing
+    uses the API paragraph, which does not contain the JCM header default. The amount-evidence
+    reviewer deliberately withholds rows with source attributes and leaves preparation/solvent
+    gaps for source-specific follow-up, explaining the five accepted owner claims
+    without endorsing the remaining forms. Current single-owner merge returns the
+    owner content; the older generated bytes are not evidence that this current code
+    discards later evidence. No importer, evidence mutator or merger was executed.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: Current MediaDive parsing uses the first source recipe, excludes solvent
+    volumes from ingredient edges and preserves provider g_l; preparation parsing
+    uses the API paragraph, which does not contain the JCM header default. The amount-evidence
+    reviewer deliberately withholds rows with source attributes and leaves preparation/solvent
+    gaps for source-specific follow-up, explaining the five accepted owner claims
+    without endorsing the remaining forms. Current single-owner merge returns the
+    owner content; the older generated bytes are not evidence that this current code
+    discards later evidence. No importer, evidence mutator or merger was executed.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: Current MediaDive parsing uses the first source recipe, excludes solvent
+    volumes from ingredient edges and preserves provider g_l; preparation parsing
+    uses the API paragraph, which does not contain the JCM header default. The amount-evidence
+    reviewer deliberately withholds rows with source attributes and leaves preparation/solvent
+    gaps for source-specific follow-up, explaining the five accepted owner claims
+    without endorsing the remaining forms. Current single-owner merge returns the
+    owner content; the older generated bytes are not evidence that this current code
+    discards later evidence. No importer, evidence mutator or merger was executed.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-3
+  kind: record_content
+  reference: scripts/review_medium_concentration_evidence.py
+  locator: Current relevant import/merge/repair functions read; hash pinned in inspection
+    inputs
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: Current MediaDive parsing uses the first source recipe, excludes solvent
+    volumes from ingredient edges and preserves provider g_l; preparation parsing
+    uses the API paragraph, which does not contain the JCM header default. The amount-evidence
+    reviewer deliberately withholds rows with source attributes and leaves preparation/solvent
+    gaps for source-specific follow-up, explaining the five accepted owner claims
+    without endorsing the remaining forms. Current single-owner merge returns the
+    owner content; the older generated bytes are not evidence that this current code
+    discards later evidence. No importer, evidence mutator or merger was executed.
+  snapshot_sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+- evidence_id: history-metadata
+  kind: record_content
+  reference: data/merge_yaml/merged/ACIDIANUS_BRIERLEYI_MEDIUM.yaml; data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+  locator: Complete curation_history arrays; timestamp shape and source/generated
+    chronology
+  accessed_at: '2026-10-21T10:32:11Z'
+  support: context_only
+  summary: '[{"input": "target", "events": 9, "timestamp_issues": []}, {"input": "data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml",
+    "events": 9, "timestamp_issues": []}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: JCM accession, provider identity and exact maintained owner
+  outcome: supported
+  summary: GRMD 176, MediaDive J176 and CultureMech:002536 resolve consistently. The
+    generated target has one exact normalized archaeal owner with the same stable
+    ID and formulation. JCM is explicitly distinguished from the DSMZ dataset provider.
+    No other JCM or DSMZ accession is substituted.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - id-search
+- assessment_id: grounding
+  area: grounding
+  topic: Live ontology identities and exact pinned secondary-key scope
+  outcome: concern
+  summary: Six distinct CHEBI identifiers resolve with canonical labels in both layers.
+    Target has 6/7 primary and 6/7 asserted secondary links. Five of the six secondary
+    keys resolve to live preferred MIM rows; CHEBI:26833 has no exact identifier row
+    in the complete pinned index. Exact preferred label Sulfur is keyed to CHEBI:33403
+    in that snapshot, which is contextual provenance only and is not proposed as a
+    verified replacement. Source powder/atom correspondence is separately assessed.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi26833
+  - chebi31795
+  - chebi32588
+  - chebi62946
+  - chebi63036
+  - chebi64205
+  details: 'Linkage percentages use seven ingredient instances as denominator: primary
+    85.71%, asserted secondary 85.71%, resolved pinned-secondary 71.43%. These are
+    linkage metrics, not correctness scores. Current pinned index contains mixed MgSO4
+    hydration labels under CHEBI:31795; the exact local heptahydrate label and OLS
+    formula are checked independently, not inferred from all index synonyms.'
+- assessment_id: quantities
+  area: quantity
+  topic: Seven solutes, water, pH and all numerical preparation context
+  outcome: concern
+  summary: The 12-row inventory covers every source table row plus existing pH, acid
+    stock normality with unquantified dose, existing sulfur duration/repeat days and
+    missing qualified collection cycle. Five amount claims are already evidenced in
+    the owner; all seven target claims and the two remaining owner claims need evidence
+    preservation/addition. No source amount is numerically changed and no final-volume
+    inference is made.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - quantity-inventory
+  - owner-amount-evidence
+  details: '[{"field_path": "ingredients[0].concentration", "decision": "evidence_only",
+    "current": {"value": "3", "unit": "G_PER_L"}, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "verified"}, "source_stage": "main recipe", "source_original_amount": 3, "source_original_unit":
+    "g", "provider_declared_volume_ml": 1000, "source_snippets": [{"source_key": "mediadiveJ176api",
+    "source_url": "https://mediadive.dsmz.de/rest/medium/J176", "source_locator":
+    "$.data.solutions[0].recipe[0]", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\":
+    22.7032,\n                        \"optional\": 0\n                    }", "snapshot_sha256":
+    "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835"}], "explanation":
+    "Current quantity matches provider g_l=3; 3 g / provider 1 L = 3 g/L. This is
+    the declared source basis, not proof of measured final volume. Target has no attached
+    evidence. Owner already carries a matching literal amount excerpt with explicit
+    scope limits; only the existing owner amount claim is verified."}, {"field_path":
+    "ingredients[1].concentration", "decision": "evidence_only", "current": {"value":
+    "0.5", "unit": "G_PER_L"}, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "verified"}, "source_stage": "main recipe", "source_original_amount": 0.5, "source_original_unit":
+    "g", "provider_declared_volume_ml": 1000, "source_snippets": [{"source_key": "mediadiveJ176api",
+    "source_url": "https://mediadive.dsmz.de/rest/medium/J176", "source_locator":
+    "$.data.solutions[0].recipe[1]", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    3.67415,\n                        \"optional\": 0\n                    }", "snapshot_sha256":
+    "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835"}], "explanation":
+    "Current quantity matches provider g_l=0.5; 0.5 g / provider 1 L = 0.5 g/L. This
+    is the declared source basis, not proof of measured final volume. Target has no
+    attached evidence. Owner already carries a matching literal amount excerpt with
+    explicit scope limits; only the existing owner amount claim is verified."}, {"field_path":
+    "ingredients[2].concentration", "decision": "evidence_only", "current": {"value":
+    "0.5", "unit": "G_PER_L"}, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "verified"}, "source_stage": "main recipe", "source_original_amount": 0.5, "source_original_unit":
+    "g", "provider_declared_volume_ml": 1000, "source_snippets": [{"source_key": "mediadiveJ176api",
+    "source_url": "https://mediadive.dsmz.de/rest/medium/J176", "source_locator":
+    "$.data.solutions[0].recipe[2]", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    2.02859,\n                        \"optional\": 0\n                    }", "snapshot_sha256":
+    "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835"}], "explanation":
+    "Current quantity matches provider g_l=0.5; 0.5 g / provider 1 L = 0.5 g/L. This
+    is the declared source basis, not proof of measured final volume. Target has no
+    attached evidence. Owner already carries a matching literal amount excerpt with
+    explicit scope limits; only the existing owner amount claim is verified."}, {"field_path":
+    "ingredients[3].concentration", "decision": "evidence_only", "current": {"value":
+    "0.1", "unit": "G_PER_L"}, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "verified"}, "source_stage": "main recipe", "source_original_amount": 0.1, "source_original_unit":
+    "g", "provider_declared_volume_ml": 1000, "source_snippets": [{"source_key": "mediadiveJ176api",
+    "source_url": "https://mediadive.dsmz.de/rest/medium/J176", "source_locator":
+    "$.data.solutions[0].recipe[3]", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    1.34138,\n                        \"optional\": 0\n                    }", "snapshot_sha256":
+    "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835"}], "explanation":
+    "Current quantity matches provider g_l=0.1; 0.1 g / provider 1 L = 0.1 g/L. This
+    is the declared source basis, not proof of measured final volume. Target has no
+    attached evidence. Owner already carries a matching literal amount excerpt with
+    explicit scope limits; only the existing owner amount claim is verified."}, {"field_path":
+    "ingredients[4].concentration", "decision": "evidence_only", "current": {"value":
+    "0.01", "unit": "G_PER_L"}, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "verified"}, "source_stage": "main recipe", "source_original_amount": 0.01, "source_original_unit":
+    "g", "provider_declared_volume_ml": 1000, "source_snippets": [{"source_key": "mediadiveJ176api",
+    "source_url": "https://mediadive.dsmz.de/rest/medium/J176", "source_locator":
+    "$.data.solutions[0].recipe[4]", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Ca(NO3)2\",\n                        \"compound_id\":
+    266,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0609422,\n                        \"optional\": 0\n                    }", "snapshot_sha256":
+    "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835"}], "explanation":
+    "Current quantity matches provider g_l=0.01; 0.01 g / provider 1 L = 0.01 g/L.
+    This is the declared source basis, not proof of measured final volume. Target
+    has no attached evidence. Owner already carries a matching literal amount excerpt
+    with explicit scope limits; only the existing owner amount claim is verified."},
+    {"field_path": "ingredients[5].concentration", "decision": "evidence_only", "current":
+    {"value": "0.2", "unit": "G_PER_L"}, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "evidence_only"}, "source_stage": "main recipe", "source_original_amount": 0.2,
+    "source_original_unit": "g", "provider_declared_volume_ml": 1000, "source_snippets":
+    [{"source_key": "mediadiveJ176api", "source_url": "https://mediadive.dsmz.de/rest/medium/J176",
+    "source_locator": "$.data.solutions[0].recipe[5]", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"BD-Difco\",\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.2,\n                        \"optional\": 0\n                    }", "snapshot_sha256":
+    "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835"}], "explanation":
+    "Current quantity matches provider g_l=0.2; 0.2 g / provider 1 L = 0.2 g/L. This
+    is the declared source basis, not proof of measured final volume. Target has no
+    attached evidence. Owner also needs new amount evidence; this review does not
+    label an unevidenced local claim verified. Preserve the source attribute ''BD-Difco'';
+    it is part of this recipe identity, not a typical substitution."}, {"field_path":
+    "ingredients[6].concentration", "decision": "evidence_only", "current": {"value":
+    "10", "unit": "G_PER_L"}, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "evidence_only"}, "source_stage": "main recipe", "source_original_amount": 10,
+    "source_original_unit": "g", "provider_declared_volume_ml": 1000, "source_snippets":
+    [{"source_key": "mediadiveJ176api", "source_url": "https://mediadive.dsmz.de/rest/medium/J176",
+    "source_locator": "$.data.solutions[0].recipe[6]", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Sulfur\",\n                        \"compound_id\":
+    80,\n                        \"attribute\": \"powder\",\n                        \"amount\":
+    10,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    10,\n                        \"mmol_l\": 311.818,\n                        \"optional\":
+    0\n                    }", "snapshot_sha256": "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835"}],
+    "explanation": "Current quantity matches provider g_l=10; 10 g / provider 1 L
+    = 10 g/L. This is the declared source basis, not proof of measured final volume.
+    Target has no attached evidence. Owner also needs new amount evidence; this review
+    does not label an unevidenced local claim verified. Preserve the source attribute
+    ''powder''; it is part of this recipe identity, not a typical substitution. Amount
+    support does not endorse CHEBI:26833 as the supplied powder or establish an allotrope."},
+    {"field_path": "preparation_steps (solvent amount)", "decision": "add", "current":
+    null, "source_stage": "main recipe solvent", "source_original_amount": 1000, "source_original_unit":
+    "ml", "source_snippets": [{"source_key": "mediadiveJ176api", "source_url": "https://mediadive.dsmz.de/rest/medium/J176",
+    "source_locator": "$.data.solutions[0].recipe[7]", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "snapshot_sha256":
+    "72176ae9e35cb7cf2dbc02225abd904b9f4dd741a3de93d1fc69e80ce0437835"}], "explanation":
+    "JCM table specifies 1.0 L water; provider expresses 1000 ml. Preserve this source
+    batch/solvent amount, not a G_PER_L ingredient. It does not establish measured
+    final volume after solids or the unquantified acid addition."}, {"field_path":
+    "ph_value", "decision": "evidence_only", "current": 2.0, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "evidence_only"}, "source_stage": "preparation pH", "source_snippets": [{"source_key":
+    "jcm176", "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=176",
+    "source_locator": "Record-specific paragraph after table; raw HTML", "exact_source_quote":
+    "Adjust pH to 2.0", "snapshot_sha256": "bb57148e4896ca714f5eea72f53e3ab5b76a73b9c3daa4fb25867d1f18037c48"}],
+    "explanation": "pH 2.0 already exists in both scalar fields and preparation prose.
+    Attach exact source support; do not treat it as a missing pH or an organism-growth
+    optimum."}, {"field_path": "preparation_steps[0].description (acid strength and
+    unquantified dose)", "decision": "not_quantified", "current": "10 N H2SO4 already
+    present in preparation prose", "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "not_quantified"}, "source_stage": "acid stock used for pH adjustment", "source_snippets":
+    [{"source_key": "jcm176", "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=176",
+    "source_locator": "Record-specific paragraph after table; raw HTML", "exact_source_quote":
+    "10 N H<sub>2</sub>SO<sub>4</sub>", "snapshot_sha256": "bb57148e4896ca714f5eea72f53e3ab5b76a73b9c3daa4fb25867d1f18037c48"}],
+    "explanation": "Normality is supplied for the acid stock, but no addition amount
+    is stated. Preserve that existing source context with evidence; do not infer a
+    fixed working concentration, a zero dose or a mass/volume addition."}, {"field_path":
+    "preparation_steps[0].description (sulfur duration and repeat days)", "decision":
+    "evidence_only", "current": "Steam sulfur for 3 hr on each of 3 successive days.",
+    "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "evidence_only"}, "source_stage": "separate sulfur treatment", "source_snippets":
+    [{"source_key": "jcm176", "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=176",
+    "source_locator": "Record-specific paragraph after table; raw HTML", "exact_source_quote":
+    "3 hr on each of       3 successive days.", "snapshot_sha256": "bb57148e4896ca714f5eea72f53e3ab5b76a73b9c3daa4fb25867d1f18037c48"}],
+    "explanation": "Both layers already retain this exact duration and repeated-day
+    structure in prose. Add source evidence; preserve it as a separate material treatment
+    rather than replacing it with the collection autoclave default."}, {"field_path":
+    "preparation_steps (qualified collection default)", "decision": "add", "current":
+    null, "owner_decisions": {"data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml":
+    "add"}, "source_stage": "collection default only where no record-specific exception
+    is stated", "source_snippets": [{"source_key": "jcm176", "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=176",
+    "source_locator": "Header above record 176; raw HTML", "exact_source_quote": "Unless
+    otherwise stated", "snapshot_sha256": "bb57148e4896ca714f5eea72f53e3ab5b76a73b9c3daa4fb25867d1f18037c48"},
+    {"source_key": "jcm176", "source_url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=176",
+    "source_locator": "Header above record 176; raw HTML", "exact_source_quote": "121&#176;C
+    for 15 min.", "snapshot_sha256": "bb57148e4896ca714f5eea72f53e3ab5b76a73b9c3daa4fb25867d1f18037c48"}],
+    "explanation": "The numeric cycle is missing locally and in the API record paragraph.
+    Preserve the JCM default with its qualifier and the record-specific separate yeast
+    and sulfur handling. Do not apply the generic cycle to replace an explicitly different
+    sulfur treatment."}]'
+- assessment_id: forms
+  area: grounding
+  topic: Source material, hydrate and supplier scope
+  outcome: concern
+  summary: JCM and provider describe sulfur powder; CHEBI:26833 denotes sulfur atom
+    (formula S, SMILES [S]), which does not specify the supplied bulk material or
+    an allotrope. That atom/material correspondence needs correction or explicit resolution
+    in both CHEBI slots. Magnesium sulfate heptahydrate and the other stated salt
+    formulas agree with captured metadata. Source BD-Difco yeast-extract identity
+    is lost from local preferred_term/notes; no catalogue number or replacement product
+    is inferred.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - primary
+  - provider
+  - chebi26833
+  - chebi31795
+  - chebi64205
+  - mim
+- assessment_id: preparation
+  area: completeness
+  topic: Source preparation, material-specific exceptions and solvent context
+  outcome: concern
+  summary: Existing prose correctly retains pH/acid-strength context, separate yeast-extract
+    autoclaving and the sulfur-specific steam treatment. The qualified JCM header
+    cycle and water amount are absent in both layers. Preserve the default alongside
+    the exceptions, with exact source citation. No dose, sulfur allotrope, gas condition
+    or temperature optimum is invented.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - quantity-inventory
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Owner evidence additions and generated-target lag
+  outcome: concern
+  summary: The owner has five literal provider excerpts and a correctly scoped JCM/DSMZ
+    dataset reference added after the target merge event; the generated target has
+    none. Existing owner evidence explicitly excludes ontology validation and measured
+    final volume. Preserve those limits, add the two remaining amount claims only
+    with source attributes, and confirm later regeneration carries all scoped evidence.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-amount-evidence
+  - primary
+  - provider
+- assessment_id: classification
+  area: scope
+  topic: Composition, physical state and biological scope
+  outcome: supported
+  summary: COMPLEX/SEMI_DEFINED is compatible with defined salts and undefined yeast
+    extract. LIQUID is consistent with the water-based formulation and absence of
+    an agar branch. Archaeal organization and the medium title do not establish a
+    current taxonomy ID, a strain-level growth claim or an optimum; no such assertions
+    are added.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - record
+  - primary
+  - provider
+- assessment_id: history
+  area: provenance
+  topic: Append-only history and timestamp shape
+  outcome: supported
+  summary: 18 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Historical import, repair and enrichment statements are provenance, not source
+    confirmation. Preserve old events; append any later authorized clarification rather
+    than silently rewriting historical records.
+  target_ids:
+  - CultureMech:002536
+  evidence_ids:
+  - record
+  - history-metadata
+  - owner-0
+findings:
+- finding_id: f1
+  issue_key: jcm176-sulfur-material-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Sulfur material grounding and the secondary key need resolution
+  description: The supplied source material is sulfur powder, while both local CHEBI
+    links assert CHEBI:26833 sulfur atom. Its captured formula/structure denotes an
+    atom and does not establish bulk powder identity or an allotrope. The asserted
+    secondary key also has no exact identifier row in the complete pinned MIM index,
+    although the OLS term is live. The snapshot exact Sulfur label uses a different
+    key; this is not a verified replacement or a claim about all historical MIM versions.
+  target_ids:
+  - CultureMech:002536
+  field_paths:
+  - ingredients[6].term
+  - ingredients[6].mediaingredientmech_chebi_term
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - chebi26833
+  - mim
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: jcm176-amount-evidence-and-preparation-scope
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source evidence and qualified preparation details are incomplete
+  description: The generated record lacks the five later owner amount excerpts and
+    source reference. Two remaining amounts lack attached evidence even in the owner;
+    their BD-Difco/powder attributes are omitted locally. Both layers omit water context
+    and the numerical JCM default cycle, although they retain material-specific yeast
+    and sulfur treatment. Recovery must preserve those exceptions rather than flatten
+    them into one cycle.
+  target_ids:
+  - CultureMech:002536
+  field_paths:
+  - ingredients
+  - references
+  - preparation_steps
+  - evidence
+  evidence_ids:
+  - record
+  - owner-0
+  - primary
+  - provider
+  - owner-amount-evidence
+  - quantity-inventory
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3
+  native_severity: P3
+  normalization_reason: P3 normally maps to minor; major is justified because the
+    generated target lacks all attached amount evidence and the omitted collection
+    cycle must be recovered with material-specific exceptions. This is substantive
+    evidence/preparation completeness, not a recommendation to change the source protocol.
+actions:
+- action_id: a1
+  description: Resolve the supplied-material identity and exact current secondary-key
+    provenance in the maintained owner using authoritative form evidence. Retain powder
+    notation and do not guess an allotrope or replacement ID. Remove or qualify unsupported
+    assertions rather than treating amount evidence or a different exact-label index
+    key as chemical-form validation. Regenerate only after owner verification.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002536
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Keep the five existing owner amount excerpts and append-only provenance.
+    Attach exact source-scoped evidence for yeast/sulfur amounts and attributes, add
+    water and the qualified collection cycle, and retain existing pH, acid-strength/unknown-dose
+    and separate-material treatment context. Verify all of this survives separately
+    authorized regeneration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002536
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/JCM_J176_ACIDIANUS_BRIERLEYI_MEDIUM.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- All required exact collection, provider and asserted-term captures are available.
+  Completion does not imply source form correction or measured final-volume verification.
+- Source sulfur powder does not specify an allotrope, and acid normality does not
+  quantify a working dose. No replacement substance, amount, procedure or organism-growth
+  claim is inferred.
+- 'The reference validator reported Reference checks: 0; issues: 0. Its successful
+  exit did not validate source support; exact bound collection/provider comparisons
+  supply that assessment.'
+tags:
+- unreviewed-records
+- batch-016
+- generated-medium
