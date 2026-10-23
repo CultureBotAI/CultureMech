@@ -1,0 +1,1052 @@
+# Source and formulation review: 1_ogawa_medium (CultureMech:003238)
+
+- Review: 20261021T065039Z-culturemech-003238-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T06:36:45Z
+- Finished UTC: 2026-10-21T06:50:39Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+MediaDive J88 verifies the accession but exposes stock sections that the imported record flattened into final-medium ingredients. A dilute dye preparation is represented as pure material, several volume amounts became mass concentrations, and the action enum incorrectly implies membrane sterilization. Original JCM88 access is unavailable.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 59 in Python lexicographic repository-relative path order of the initially uncovered merged corpus; Batch 006 selects ordinals 51-60 after five validated local batches; saved bundles are published locally in path order. On fresh origin/main at this batch base, scripts/record_review.py list validated 34 existing bundles and none listed this target path or ID. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003238 | data/merge_yaml/merged/1_ogawa_medium.yaml | generated | 1_ogawa_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003238 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003238 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-006/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch006/059/strict.tsv |
+| validate-terms | passed | True | CultureMech:003238 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:003238 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003238 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Inspect original JCM88 recipe | unavailable | True | CultureMech:003238 | Original collection lookup returns no recipe; bounded comparisons use the inspected MediaDive provider representation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003238.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:003238.
+
+4 primary CHEBI identities resolve with matching labels; 4 of 4 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+5 direct ingredient instances; primary coverage 4/5 (80.00%), verified secondary coverage 4/5 (80.00%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### Source accession and maintained ownership
+
+identity: supported. Targets: CultureMech:003238.
+
+The unique generated target is linked to MediaDive J88 and its single normalized owner. The provider identifies JCM88. Similar names do not justify merging another accession or adopting its solution IDs.
+
+### ingredients[0].concentration
+
+quantity: concern. Targets: CultureMech:003238.
+
+correct: Na glutamate is a mass-per-volume entry in source Solution I; the record incorrectly presents that local stock concentration as a final-medium amount.
+
+### ingredients[1].concentration
+
+quantity: concern. Targets: CultureMech:003238.
+
+correct: KH2PO4 is a mass-per-volume entry in source Solution I; the record loses the stock boundary and final-mixture basis.
+
+### ingredients[2].concentration
+
+quantity: concern. Targets: CultureMech:003238.
+
+correct: Glycerol is a volume amount in source Solution II; the record uses G_PER_L without a supported density or final-volume calculation.
+
+### ingredients[3]
+
+quantity: concern. Targets: CultureMech:003238.
+
+correct: Malachite green is source Solution II material qualified by a stock-strength attribute and volume amount. The record removes that attribute and asserts a pure-material mass concentration; exact salt form is not supplied by the provider.
+
+### ingredients[4].concentration
+
+quantity: concern. Targets: CultureMech:003238.
+
+correct: Whole egg is a volume amount in source Solution II. The record asserts G_PER_L without density or final-volume support.
+
+### Stock boundaries and solvent basis
+
+completeness: concern. Targets: CultureMech:003238.
+
+Named Solution I and II remain in preparation prose, but no local solution definitions exist in this full target. Source water and local-volume context are lost. Provider stock volumes do not by themselves prove an additive measured final volume or complete main-recipe dosing. No corrected final concentrations are calculated.
+
+### Source text versus controlled action
+
+scope: concern. Targets: CultureMech:003238.
+
+The two preparation descriptions exactly match the provider, including a commercial-product availability comment that is not an operational mixing step. The first action says FILTER_STERILIZE even though the prose specifies gauze filtration and a separate heat operation; the schema meaning is materially different.
+
+### Chemical forms and linkage metrics
+
+grounding: supported. Targets: CultureMech:003238.
+
+Four of five direct ingredient instances have verified primary CHEBI identifiers and four of five have live secondary index keys (80% each, a 0–100 linkage metric). These labels resolve; they do not establish that an unqualified source dye denotes this exact chloride salt or that the stock quantity is a pure-dye dose. Whole egg remains an undefined mixture.
+
+### Medium class and physical-state limits
+
+scope: unknown. Targets: CultureMech:003238.
+
+COMPLEX/UNDEFINED is consistent with whole egg. The provider excerpt does not independently establish the final physical state, so LIQUID is unverified here. Do not replace it with an agar-specific enum without evidence and schema review. No source pH, incubation condition or organism-specific growth assertion is added.
+
+### History and claim-level support
+
+evidence: concern. Targets: CultureMech:003238.
+
+History timestamps parse with timezones and ownership is traceable. No quantity or preparation evidence entries occur in the complete local record; the reference checker examined zero excerpts.
+
+## Findings
+
+### f1: Stock composition is represented as final-medium formulation
+
+blocker / open / confirmed; issue key: CM003238-stock-boundary-collapse.
+
+Both source solution boundaries are lost; a qualified dye preparation becomes an unqualified pure ingredient, while local-stock mass concentrations are asserted as final-medium values. The preparation names undefined local solutions.
+
+### f2: Source volume amounts became mass concentrations
+
+major / open / confirmed; issue key: CM003238-volume-to-mass.
+
+Glycerol, dye preparation and whole egg have volume amounts in the inspected provider sections, but local entries assert G_PER_L. Neither density nor final-volume evidence supports those conversions.
+
+### f3: Gauze filtration is mislabeled as membrane sterilization
+
+major / open / confirmed; issue key: CM003238-gauze-filter-action.
+
+The controlled action FILTER_STERILIZE means a membrane method in this schema, while its own description specifies gauze filtration and separately describes heating. The current keyword classifier has the same overbroad filter rule.
+
+### f4: Supported source statements lack narrow evidence
+
+minor / open / confirmed; issue key: CM003238-claim-evidence-gap.
+
+Import provenance and source links do not provide scoped evidence for individual quantities, solution boundaries or preparation semantics.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Reconcile source-local solution boundaries and the dye preparation in the maintained owner. Preserve uncertainty in final-volume and addition context; verify source-supplied salt form before retaining a more specific chemical identity.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Preserve original units and source preparation stages. Recalculate only when the exact material, density where needed and final-volume basis are verified.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Correct controlled action semantics in the maintained representation and inspect the source importer classifier before any authorized reimport; preserve the source text without treating gauze as membrane sterilization.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach source-scoped evidence to supported and corrected claims, distinguishing the available provider from the unavailable original collection.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1_ogawa_medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/1_ogawa_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1_ogawa_medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1_ogawa_medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch006/059/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-006/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch006/059/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1_ogawa_medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1_ogawa_medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/1_ogawa_medium.yaml:1:id: CultureMech:003238<br>./data/normalized_yaml/bacterial/1_ogawa_medium.yaml:1:id: CultureMech:003238<br> |
+| chebi17754 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17754; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17754 resolves to glycerol and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi64220 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64220; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:64220 resolves to monosodium glutamate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi72449 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_72449; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:72449 resolves to malachite green and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:64220": [{"label": "Na glutamate", "match_type": "preferred_term", "identifier": "CHEBI:64220", "preferred_term": "Na glutamate", "ontology_id": "CHEBI:64220", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036": [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036", "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17754": [{"label": "Glycerol", "match_type": "preferred_term", "identifier": "CHEBI:17754", "preferred_term": "Glycerol", "ontology_id": "CHEBI:17754", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:72449": [{"label": "Malachite green", "match_type": "preferred_term", "identifier": "CHEBI:72449", "preferred_term": "Malachite green", "ontology_id": "CHEBI:72449", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| api | https://mediadive.dsmz.de/rest/medium/J88; data.medium; data.solutions[0:3] | supports | Entire medium object, three solution entries, every ingredient amount/unit/attribute and preparation/comment inspected. The main solution has no recipe array; the two subsidiary solutions carry the formulation. |
+| jcm-access | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=88; Exact GRMD88 response body | context_only | HTTP200 says Nothing found; no original collection recipe was inspected. Endpoint unavailability does not establish historical absence. |
+| history | Complete target and maintained-owner histories; Every timestamp parsed with datetime.fromisoformat; timezone required | supports | {"checked_at": "2026-10-21T06:49:34.434624+00:00", "records": [{"path": "data/merge_yaml/merged/1_ogawa_medium.yaml", "history": [{"timestamp": "2026-01-26T17:53:15.708737Z", "curator": "mediadive-import", "parseable_with_timezone": true}, {"timestamp": "2026-03-13T06:19:18.839956Z", "curator": "culturemech-id-assigner-v1.0", "parseable_with_timezone": true}, {"timestamp": "2026-03-17T06:29:52.000000Z", "curator": "mediaingredientmech-enrichment-v1.0", "parseable_with_timezone": true}, {"timestamp": "2026-03-17T19:45:32.720165+00:00", "curator": "normalize_media_names_to_snake_case.py", "parseable_with_timezone": true}, {"timestamp": "2026-06-05T07:40:15.673987+00:00", "curator": "mim-legacy-to-chebi-migration-v1.0", "parseable_with_timezone": true}, {"timestamp": "2026-06-10T07:46:42.517307+00:00", "curator": "primary-term-label-canonicalization-v1.0", "parseable_with_timezone": true}, {"timestamp": "2026-08-06T03:04:33.917324+00:00", "curator": "merge_recipes.py", "parseable_with_timezone": true}]}, {"path": "data/normalized_yaml/bacterial/1_ogawa_medium.yaml", "history": [{"timestamp": "2026-01-26T17:53:15.708737Z", "curator": "mediadive-import", "parseable_with_timezone": true}, {"timestamp": "2026-03-13T06:19:18.839956Z", "curator": "culturemech-id-assigner-v1.0", "parseable_with_timezone": true}, {"timestamp": "2026-03-17T06:29:52.000000Z", "curator": "mediaingredientmech-enrichment-v1.0", "parseable_with_timezone": true}, {"timestamp": "2026-03-17T19:45:32.720165+00:00", "curator": "normalize_media_names_to_snake_case.py", "parseable_with_timezone": true}, {"timestamp": "2026-06-05T07:40:15.673987+00:00", "curator": "mim-legacy-to-chebi-migration-v1.0", "parseable_with_timezone": true}, {"timestamp": "2026-06-10T07:46:42.517307+00:00", "curator": "primary-term-label-canonicalization-v1.0", "parseable_with_timezone": true}]}]} |
+| action-definition | src/culturemech/schema/culturemech.yaml; PreparationActionEnum.FILTER and FILTER_STERILIZE; PhysicalStateEnum | context_only | FILTER removes solids/particles; FILTER_STERILIZE explicitly means a membrane method. PhysicalStateEnum has LIQUID, SOLID_AGAR, SEMISOLID and BIPHASIC; the latter solid labels have agar-specific descriptions. |
+| classifier | src/culturemech/import/mediadive_importer.py; _classify_preparation_action | supports | Any matching filter substring selects FILTER_STERILIZE before subsequent conditions; this explains how gauze filtration receives the wrong controlled action. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Original JCM88 access is unavailable; completion is partial even though deterministic checks passed.
+- Final mixture volume, stock-addition amounts, exact dye salt form, pH and final physical state are not independently resolved. No replacement formulation or organism-specific growth protocol is proposed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T065039Z-culturemech-003238-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_ogawa_medium (CultureMech:003238)'
+started_at: '2026-10-21T06:36:45Z'
+finished_at: '2026-10-21T06:50:39Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: MediaDive J88 verifies the accession but exposes stock sections that the
+  imported record flattened into final-medium ingredients. A dilute dye preparation
+  is represented as pure material, several volume amounts became mass concentrations,
+  and the action enum incorrectly implies membrane sterilization. Original JCM88 access
+  is unavailable.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_ogawa_medium.yaml
+    sha256: d38f194f6ef3ab1f81fd8c93bcf8b06ab2f62b26fa1eccd83a86d9f0646b8f05
+    role: target
+  - path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    sha256: 58f5707a9ab0e6f98664576473b430a69f56ef19ba3dad8b7b8ba9799615a86f
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 59 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 006 selects ordinals 51-60 after five
+    validated local batches; saved bundles are published locally in path order. On
+    fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003238
+targets:
+- target_id: CultureMech:003238
+  path: data/merge_yaml/merged/1_ogawa_medium.yaml
+  label: 1_ogawa_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_ogawa_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_ogawa_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch006/059/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-006/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch006/059/strict.tsv"
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_ogawa_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_ogawa_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003238
+- check_id: original-collection
+  name: Inspect original JCM88 recipe
+  required: true
+  status: unavailable
+  summary: Original collection lookup returns no recipe; bounded comparisons use the
+    inspected MediaDive provider representation.
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - jcm-access
+  - api
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_ogawa_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T06:50:37Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T06:50:37Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_ogawa_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:38:45.150266Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_ogawa_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch006/059/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:38:46.885535Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-006/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch006/059/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_ogawa_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:38:52.102038Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_ogawa_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:38:53.771433Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T06:50:37Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_ogawa_medium.yaml:1:id: CultureMech:003238
+
+    ./data/normalized_yaml/bacterial/1_ogawa_medium.yaml:1:id: CultureMech:003238
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi17754
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17754
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:49:18.571418Z'
+  support: supports
+  summary: CHEBI:17754 resolves to glycerol and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 0231975176416cbaad3ad04c9efeedbe9bef0b826645e592a4a2f511e8d1db95
+- evidence_id: chebi63036
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:49:18.575865Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi64220
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64220
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:49:18.590575Z'
+  support: supports
+  summary: CHEBI:64220 resolves to monosodium glutamate and is not obsolete. This
+    verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: f365c8a94dc3b7bb63e10235e8728f2333b34fb60943ea59c357ebd3456fb25b
+- evidence_id: chebi72449
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_72449
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:49:19.224484Z'
+  support: supports
+  summary: CHEBI:72449 resolves to malachite green and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 772e604b3f57ee01e38e2457c5d427098077d3bd6a5fc38791d0ae7304623ee7
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T06:50:37Z'
+  support: supports
+  summary: '{"CHEBI:64220": [{"label": "Na glutamate", "match_type": "preferred_term",
+    "identifier": "CHEBI:64220", "preferred_term": "Na glutamate", "ontology_id":
+    "CHEBI:64220", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:63036":
+    [{"label": "KH2PO4", "match_type": "preferred_term", "identifier": "CHEBI:63036",
+    "preferred_term": "KH2PO4", "ontology_id": "CHEBI:63036", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}], "CHEBI:17754": [{"label": "Glycerol", "match_type": "preferred_term",
+    "identifier": "CHEBI:17754", "preferred_term": "Glycerol", "ontology_id": "CHEBI:17754",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:72449": [{"label":
+    "Malachite green", "match_type": "preferred_term", "identifier": "CHEBI:72449",
+    "preferred_term": "Malachite green", "ontology_id": "CHEBI:72449", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J88
+  locator: data.medium; data.solutions[0:3]
+  accessed_at: '2026-10-21T06:49:17.767665Z'
+  support: supports
+  summary: Entire medium object, three solution entries, every ingredient amount/unit/attribute
+    and preparation/comment inspected. The main solution has no recipe array; the
+    two subsidiary solutions carry the formulation.
+  quote: '"attribute": "2%"'
+  snapshot_sha256: 13bf4ba4878aa5af41e9bd6a17ea0b1571b2a45391b7866c6b43b8fbc9311c45
+- evidence_id: jcm-access
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=88
+  locator: Exact GRMD88 response body
+  accessed_at: '2026-10-21T06:49:19.225068Z'
+  support: context_only
+  summary: HTTP200 says Nothing found; no original collection recipe was inspected.
+    Endpoint unavailability does not establish historical absence.
+  snapshot_sha256: 30987abed7918c73b7eac11a9236d07eae101d3648ca4f28b11ff387c6ef94c9
+- evidence_id: history
+  kind: validation
+  reference: Complete target and maintained-owner histories
+  locator: Every timestamp parsed with datetime.fromisoformat; timezone required
+  accessed_at: '2026-10-21T06:49:34.434624Z'
+  support: supports
+  summary: '{"checked_at": "2026-10-21T06:49:34.434624+00:00", "records": [{"path":
+    "data/merge_yaml/merged/1_ogawa_medium.yaml", "history": [{"timestamp": "2026-01-26T17:53:15.708737Z",
+    "curator": "mediadive-import", "parseable_with_timezone": true}, {"timestamp":
+    "2026-03-13T06:19:18.839956Z", "curator": "culturemech-id-assigner-v1.0", "parseable_with_timezone":
+    true}, {"timestamp": "2026-03-17T06:29:52.000000Z", "curator": "mediaingredientmech-enrichment-v1.0",
+    "parseable_with_timezone": true}, {"timestamp": "2026-03-17T19:45:32.720165+00:00",
+    "curator": "normalize_media_names_to_snake_case.py", "parseable_with_timezone":
+    true}, {"timestamp": "2026-06-05T07:40:15.673987+00:00", "curator": "mim-legacy-to-chebi-migration-v1.0",
+    "parseable_with_timezone": true}, {"timestamp": "2026-06-10T07:46:42.517307+00:00",
+    "curator": "primary-term-label-canonicalization-v1.0", "parseable_with_timezone":
+    true}, {"timestamp": "2026-08-06T03:04:33.917324+00:00", "curator": "merge_recipes.py",
+    "parseable_with_timezone": true}]}, {"path": "data/normalized_yaml/bacterial/1_ogawa_medium.yaml",
+    "history": [{"timestamp": "2026-01-26T17:53:15.708737Z", "curator": "mediadive-import",
+    "parseable_with_timezone": true}, {"timestamp": "2026-03-13T06:19:18.839956Z",
+    "curator": "culturemech-id-assigner-v1.0", "parseable_with_timezone": true}, {"timestamp":
+    "2026-03-17T06:29:52.000000Z", "curator": "mediaingredientmech-enrichment-v1.0",
+    "parseable_with_timezone": true}, {"timestamp": "2026-03-17T19:45:32.720165+00:00",
+    "curator": "normalize_media_names_to_snake_case.py", "parseable_with_timezone":
+    true}, {"timestamp": "2026-06-05T07:40:15.673987+00:00", "curator": "mim-legacy-to-chebi-migration-v1.0",
+    "parseable_with_timezone": true}, {"timestamp": "2026-06-10T07:46:42.517307+00:00",
+    "curator": "primary-term-label-canonicalization-v1.0", "parseable_with_timezone":
+    true}]}]}'
+- evidence_id: action-definition
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: PreparationActionEnum.FILTER and FILTER_STERILIZE; PhysicalStateEnum
+  accessed_at: '2026-10-21T06:50:37Z'
+  support: context_only
+  summary: FILTER removes solids/particles; FILTER_STERILIZE explicitly means a membrane
+    method. PhysicalStateEnum has LIQUID, SOLID_AGAR, SEMISOLID and BIPHASIC; the
+    latter solid labels have agar-specific descriptions.
+- evidence_id: classifier
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _classify_preparation_action
+  accessed_at: '2026-10-21T06:50:37Z'
+  support: supports
+  summary: Any matching filter substring selects FILTER_STERILIZE before subsequent
+    conditions; this explains how gauze filtration receives the wrong controlled action.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '4 primary CHEBI identities resolve with matching labels; 4 of 4 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - mim
+  - chebi17754
+  - chebi63036
+  - chebi64220
+  - chebi72449
+  details: 5 direct ingredient instances; primary coverage 4/5 (80.00%), verified
+    secondary coverage 4/5 (80.00%). Percentages use a 0–100 linkage scale, not a
+    scientific correctness score. Complex mixtures without asserted IDs remain ungrounded
+    rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Source accession and maintained ownership
+  outcome: supported
+  summary: The unique generated target is linked to MediaDive J88 and its single normalized
+    owner. The provider identifies JCM88. Similar names do not justify merging another
+    accession or adopting its solution IDs.
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - api
+- assessment_id: quantity-0
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: concern
+  summary: 'correct: Na glutamate is a mass-per-volume entry in source Solution I;
+    the record incorrectly presents that local stock concentration as a final-medium
+    amount.'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+- assessment_id: quantity-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: concern
+  summary: 'correct: KH2PO4 is a mass-per-volume entry in source Solution I; the record
+    loses the stock boundary and final-mixture basis.'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+- assessment_id: quantity-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: concern
+  summary: 'correct: Glycerol is a volume amount in source Solution II; the record
+    uses G_PER_L without a supported density or final-volume calculation.'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+- assessment_id: quantity-3
+  area: quantity
+  topic: ingredients[3]
+  outcome: concern
+  summary: 'correct: Malachite green is source Solution II material qualified by a
+    stock-strength attribute and volume amount. The record removes that attribute
+    and asserts a pure-material mass concentration; exact salt form is not supplied
+    by the provider.'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+- assessment_id: quantity-4
+  area: quantity
+  topic: ingredients[4].concentration
+  outcome: concern
+  summary: 'correct: Whole egg is a volume amount in source Solution II. The record
+    asserts G_PER_L without density or final-volume support.'
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+- assessment_id: assembly
+  area: completeness
+  topic: Stock boundaries and solvent basis
+  outcome: concern
+  summary: Named Solution I and II remain in preparation prose, but no local solution
+    definitions exist in this full target. Source water and local-volume context are
+    lost. Provider stock volumes do not by themselves prove an additive measured final
+    volume or complete main-recipe dosing. No corrected final concentrations are calculated.
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+- assessment_id: preparation
+  area: scope
+  topic: Source text versus controlled action
+  outcome: concern
+  summary: The two preparation descriptions exactly match the provider, including
+    a commercial-product availability comment that is not an operational mixing step.
+    The first action says FILTER_STERILIZE even though the prose specifies gauze filtration
+    and a separate heat operation; the schema meaning is materially different.
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - api
+  - action-definition
+  - classifier
+- assessment_id: grounding-scope
+  area: grounding
+  topic: Chemical forms and linkage metrics
+  outcome: supported
+  summary: Four of five direct ingredient instances have verified primary CHEBI identifiers
+    and four of five have live secondary index keys (80% each, a 0–100 linkage metric).
+    These labels resolve; they do not establish that an unqualified source dye denotes
+    this exact chloride salt or that the stock quantity is a pure-dye dose. Whole
+    egg remains an undefined mixture.
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - mim
+  - chebi64220
+  - chebi63036
+  - chebi17754
+  - chebi72449
+  - api
+- assessment_id: classification
+  area: scope
+  topic: Medium class and physical-state limits
+  outcome: unknown
+  summary: COMPLEX/UNDEFINED is consistent with whole egg. The provider excerpt does
+    not independently establish the final physical state, so LIQUID is unverified
+    here. Do not replace it with an agar-specific enum without evidence and schema
+    review. No source pH, incubation condition or organism-specific growth assertion
+    is added.
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - api
+  - action-definition
+- assessment_id: audit
+  area: evidence
+  topic: History and claim-level support
+  outcome: concern
+  summary: History timestamps parse with timezones and ownership is traceable. No
+    quantity or preparation evidence entries occur in the complete local record; the
+    reference checker examined zero excerpts.
+  target_ids:
+  - CultureMech:003238
+  evidence_ids:
+  - record
+  - owner-0
+  - history
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: CM003238-stock-boundary-collapse
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock composition is represented as final-medium formulation
+  description: Both source solution boundaries are lost; a qualified dye preparation
+    becomes an unqualified pure ingredient, while local-stock mass concentrations
+    are asserted as final-medium values. The preparation names undefined local solutions.
+  target_ids:
+  - CultureMech:003238
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[0].description
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM003238-volume-to-mass
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source volume amounts became mass concentrations
+  description: Glycerol, dye preparation and whole egg have volume amounts in the
+    inspected provider sections, but local entries assert G_PER_L. Neither density
+    nor final-volume evidence supports those conversions.
+  target_ids:
+  - CultureMech:003238
+  field_paths:
+  - ingredients[2].concentration
+  - ingredients[3].concentration
+  - ingredients[4].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CM003238-gauze-filter-action
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Gauze filtration is mislabeled as membrane sterilization
+  description: The controlled action FILTER_STERILIZE means a membrane method in this
+    schema, while its own description specifies gauze filtration and separately describes
+    heating. The current keyword classifier has the same overbroad filter rule.
+  target_ids:
+  - CultureMech:003238
+  field_paths:
+  - preparation_steps[0].action
+  evidence_ids:
+  - record
+  - api
+  - action-definition
+  - classifier
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CM003238-claim-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Supported source statements lack narrow evidence
+  description: Import provenance and source links do not provide scoped evidence for
+    individual quantities, solution boundaries or preparation semantics.
+  target_ids:
+  - CultureMech:003238
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - api
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Reconcile source-local solution boundaries and the dye preparation
+    in the maintained owner. Preserve uncertainty in final-volume and addition context;
+    verify source-supplied salt form before retaining a more specific chemical identity.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003238
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve original units and source preparation stages. Recalculate
+    only when the exact material, density where needed and final-volume basis are
+    verified.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003238
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Correct controlled action semantics in the maintained representation
+    and inspect the source importer classifier before any authorized reimport; preserve
+    the source text without treating gauze as membrane sterilization.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003238
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach source-scoped evidence to supported and corrected claims, distinguishing
+    the available provider from the unavailable original collection.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003238
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/1_ogawa_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Original JCM88 access is unavailable; completion is partial even though deterministic
+  checks passed.
+- Final mixture volume, stock-addition amounts, exact dye salt form, pH and final
+  physical state are not independently resolved. No replacement formulation or organism-specific
+  growth protocol is proposed.
+tags:
+- unreviewed-records
+- batch-006
+- generated-medium
+```
