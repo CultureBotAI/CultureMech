@@ -1,0 +1,932 @@
+# Cycle 2 Stage 2 (causal_graphs) and Stage 3 (protein_examples) Prerequisite &amp; Capability Assessment
+
+- Review: 20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment
+- Repository: culturebotai/CultureMech
+- Started UTC: 2026-10-23T07:10:00Z
+- Finished UTC: 2026-10-23T07:30:00Z
+- Reviewer: antigravity/claude-opus-4-6 (independent)
+- Completion: completed
+- Verdict: blocked
+- Scientific review: false
+
+## Summary
+
+Bounded schema, writer, skill, corpus, and workflow-activation prerequisite assessment for Cycle 2 Stage 2 (causal_graphs) and Stage 3 (protein_examples) at commit 231e0ba71b41d45362168d539efebe7991823464. CultureMech natively represents growth-media compositions, preparation steps, sterilization, organism growth metrics, media perturbations (3/15,915 records), strain modifications (2/15,915 records), nutrient overrides (2/15,915 records), and three-facet ingredient roles (nutritional_roles in 217 records, physicochemical_roles in 249 records, cellular_metabolic_roles in 5 records), rendered as bipartite Mermaid composition-role diagrams by scripts/render_media_role_graph.py and exported via 12 *_to_edge functions across 7 predicates (METPO:2000517, biolink:has_part, biolink:has_attribute, biolink:related_to, biolink:same_as, biolink:subclass_of, and biolink:has_dataset) by src/culturemech/export/kgx_export.py. Across tracked, hidden, and git-ignored paths, CultureMech has no native directed causal-edge schema class or MediaRecipe slot, no UniProtKB prefix among its 31 declared schema prefixes or typed ProteinExample descriptor binding UniProt accessions to NCBITaxon organisms and claim-scoped EvidenceItem snippets (only unpopulated free-text string slots CofactorDescriptor.enzyme_examples, CofactorDescriptor.biosynthesis_genes, CofactorRequirement.genes, TransporterAnnotation.genes, StrainModification.target in 2 records, and 56 cofactor entries with free-text enzyme family strings in data/reference/cofactors.yaml), and no repository-local causal_graphs or protein_examples curation skills. Additionally, under cycle_policy.reload_profile_between_cycles_only: true, candidate edits to workflow/mech-workflow.yaml cannot mutate active Cycle 2 effective-workflow.json, requiring coordinator-side blocked-stage advancement or between-cycle profile reload (#658, #659, #660).
+
+## Scope And Provenance
+
+Full prerequisite inspection of the 8 governing repository artifacts for Stage 2 (causal_graphs) and Stage 3 (protein_examples) representation, validation, export, and workflow activation, backed by deterministic audits across all 47 LinkML classes, 33 enums, 124 Python writer scripts, 19 .claude/skills, 15,915 normalized YAML records in data/normalized_yaml/, and hidden/git-ignored paths (data/merge_yaml/merged/, data/curation/, data/reference/, data/import_tracking/, workspace/, tmp/).
+
+Selection: All 8 architectural targets governing schema representation, role facets, shared discussion anchors, KGX graph export, Mermaid role-graph rendering, ID-label validation targets, reference cofactor data, and workflow stage applicability.
+Coverage: full; 8 reviewed / 8 in the declared population.
+Source: git_commit at Git base 231e0ba71b41d45362168d539efebe7991823464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| schema:culturemech | src/culturemech/schema/culturemech.yaml | maintained | CultureMech LinkML schema |
+| schema:mim_roles | src/culturemech/schema/mim_roles.yaml | maintained | MediaIngredientMech three-facet role enums |
+| schema:mech_shared | src/culturemech/schema/mech_shared.yaml | maintained | Shared Mech discussion and comment schema |
+| export:kgx_export | src/culturemech/export/kgx_export.py | maintained | CultureMech KGX graph exporter |
+| script:render_media_role_graph | scripts/render_media_role_graph.py | maintained | Mermaid composition and ingredient-role graph renderer |
+| workflow:mech-workflow | workflow/mech-workflow.yaml | maintained | CultureMech recurring goal-cycle workflow profile |
+| conf:id_label_targets | conf/id_label_targets.yaml | maintained | CultureMech ID-label correspondence target specification |
+| reference:cofactors | data/reference/cofactors.yaml | generated | Reference cofactor hierarchy and enzyme_examples table |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Deterministic LinkML schema audit | passed | True | schema:culturemech, schema:mim_roles, schema:mech_shared | Audited 47 LinkML classes and 33 enums across 4 schema files with exit_code 0; confirmed absence of CausalEdge/MechanismGraph and UniProtTerm/ProteinExample classes. |
+| Deterministic corpus writer audit | passed | True | export:kgx_export, script:render_media_role_graph, reference:cofactors | Audited 124 Python writer scripts; 24/24 recipe writers append curation_history; 0 scripts write causal edges or UniProt protein examples. |
+| Strict LinkML and quality validation on representative enriched records | passed | True | schema:culturemech, schema:mim_roles | All 4 representative enriched records pass strict LinkML schema, MediaIngredientMech ID, and ChEBI format checks with 0 errors. |
+| Cycle 2 Stage 2 and Stage 3 native capability readiness check | failed | False | schema:culturemech, export:kgx_export, workflow:mech-workflow, conf:id_label_targets, reference:cofactors | Stage 2 (causal_graphs) and Stage 3 (protein_examples) remain blocked by missing schema classes/prefixes, OAK validation targets, maintained writers/exporters, local skills, and coordinator mid-cycle profile immutability. |
+
+## Scientific And Domain Assessments
+
+### Currently supported evidence-backed mechanisms, composition roles, and organism context
+
+completeness: supported. Targets: schema:culturemech, schema:mim_roles, export:kgx_export, script:render_media_role_graph.
+
+CultureMech natively supports evidence-backed media compositions, stock-solution inclusions, preparation steps, sterilization descriptors, three-facet ingredient roles (NutritionalRoleEnum in 217 records, PhysicochemicalRoleEnum in 249 records, CellularMetabolicRoleEnum in 5 records), OrganismDescriptor growth_metrics (including nutrient_overrides in 2 records), perturbations (3 records), and strain_modifications (2 records).
+
+scripts/render_media_role_graph.py renders bipartite composition-to-role Mermaid graphs and src/culturemech/export/kgx_export.py defines 12 *_to_edge functions across lines 468-833 emitting 7 predicates (METPO:2000517, biolink:has_part, biolink:has_attribute, biolink:related_to, biolink:same_as, biolink:subclass_of, and biolink:has_dataset). These represent static functional roles and comparative perturbation observations rather than directed multi-step causal mechanism graphs.
+
+### Stage 2 (causal_graphs) native representation and tooling blockers
+
+representation: concern. Targets: schema:culturemech, schema:mech_shared, export:kgx_export, script:render_media_role_graph, workflow:mech-workflow.
+
+CultureMech has no native CausalEdge/MechanismGraph class or MediaRecipe slot, no writer or KGX causal-predicate exporter, and no repository-local causal-graph curation skill (#658).
+
+mech_shared.yaml mentions causal_graphs#edge_x only inside the shared Discussion.attaches_to docstring inherited across Mech repositories, and scripts/repair_top_causal_graph_score15.py only curates ingredient composition, stock solutions, role enums, pH, and preparation steps.
+
+### Stage 3 (protein_examples) typed UniProt representation, OAK validation, and reference data blockers
+
+grounding: concern. Targets: schema:culturemech, conf:id_label_targets, reference:cofactors, export:kgx_export, workflow:mech-workflow.
+
+CultureMech has no UniProtKB prefix among its 31 declared prefixes in src/culturemech/schema/culturemech.yaml (lines 10-58), no typed UniProtTerm or ProteinExample class binding accessions to NCBITaxon organisms and EvidenceItem snippets, no UniProtKB OAK/id-label validator configuration, and 0 UniProt accessions across 15,915 normalized records and data/reference/cofactors.yaml (#659).
+
+CofactorDescriptor.enzyme_examples and CofactorDescriptor.biosynthesis_genes (lines 1234-1296), StrainModification.target (lines 1565-1602), CofactorRequirement.genes (lines 2000-2028), and TransporterAnnotation.genes (lines 2029-2072) are untyped range:string slots (0 cofactor/transporter/enzyme instances and 2 StrainModification.target instances in data/normalized_yaml/). data/reference/cofactors.yaml contains 56 cofactor entries across 8 categories using enzyme_examples for generic enzyme-family strings without UniProt IDs or organism links and contains a duplicate CHEBI:60052 mapping across heme_c (heme C) and heme_d1 (heme d1).
+
+### Coordinator blocked-stage activation and mid-cycle profile immutability
+
+scope: concern. Targets: workflow:mech-workflow.
+
+Under cycle_policy.reload_profile_between_cycles_only: true, active Cycle 2 pinned effective-workflow.json with Stages 2 and 3 marked applicability: blocked; editing workflow/mech-workflow.yaml affects only Cycle 3+ (#660).
+
+Advancing active Cycle 2 past blocked Stages 2 and 3 to Stage 4 (record_review) requires coordinator-side blocked-stage handling, while activating Stages 2 and 3 in a future cycle requires completing #658 and #659 (typically during Stage 6 infra_implementation) followed by between-cycle profile reload.
+
+## Findings
+
+### F-001: No native causal-edge schema slot, validator, writer, KGX exporter, or skill for Stage 2 (causal_graphs)
+
+blocker / open / confirmed; issue key: stage2-missing-causal-graph-stack.
+
+Stage 2 (causal_graphs) is blocked because MediaRecipe and SolutionRecipe in src/culturemech/schema/culturemech.yaml define composition and three-facet ingredient roles (mim_roles.yaml) plus OrganismDescriptor perturbations/strain_modifications and GrowthMetrics nutrient_overrides, but no directed causal-edge class (subject, causal predicate, object, organism/condition context, and claim-scoped EvidenceItem), no causal KGX export in src/culturemech/export/kgx_export.py, and no causal-graph skill under .claude/skills/. Tracked in GitHub issue #658 and INFRA_TASKS.md task culturemech-infra-0002.
+
+### F-002: No UniProtKB prefix, typed ProteinExample class, OAK validator config, writer, or skill for Stage 3 (protein_examples)
+
+blocker / open / confirmed; issue key: stage3-missing-typed-uniprot-protein-example-stack.
+
+Stage 3 (protein_examples) is blocked because src/culturemech/schema/culturemech.yaml (lines 10-58) declares 31 prefixes without a UniProtKB prefix, UniProtTerm class, or typed ProteinExample descriptor binding a verified UniProt accession to an explicit NCBITaxon organism, sequence/isoform scope, and claim-scoped EvidenceItem. Existing gene/enzyme/target slots (CofactorDescriptor.enzyme_examples, biosynthesis_genes, CofactorRequirement.genes, TransporterAnnotation.genes, StrainModification.target) are untyped free-text strings (0 cofactor/transporter/enzyme instances and 2 StrainModification.target instances in data/normalized_yaml/), and conf/id_label_targets.yaml has no UniProtKB validation support. Tracked in GitHub issue #659 and INFRA_TASKS.md task culturemech-infra-0003.
+
+### F-003: Pinned Cycle 2 effective-workflow.json cannot be unblocked in-place by repository edits under reload_profile_between_cycles_only
+
+blocker / open / confirmed; issue key: coordinator-cycle2-blocked-stage-activation-constraint.
+
+Active Cycle 2 is paused at goal-4672 (stage: 2, phase: blocked) with effective-workflow.json pinned at sha256 22e8c558fe158db19d847bc478901422f5697a48760bb6a9d852de8254ae4071 and reload_profile_between_cycles_only: true. Editing workflow/mech-workflow.yaml affects only next_profile_path for Cycle 3+ and cannot unblock or advance active Cycle 2. Tracked in GitHub issue #660 and INFRA_TASKS.md task culturemech-infra-0004.
+
+### F-004: data/reference/cofactors.yaml has duplicate CHEBI:60052 label mapping and docs/ENRICHMENT_GUIDE.md cites a missing example file
+
+minor / open / confirmed; issue key: reference-cofactors-chebi-collision-and-doc-drift.
+
+data/reference/cofactors.yaml (56 entries across 8 categories) assigns CHEBI:60052 to both heme_c (heme C) and heme_d1 (heme d1) and stores only generic enzyme family names in enzyme_examples; additionally, docs/ENRICHMENT_GUIDE.md references normalized_yaml/bacterial/Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml, which is absent from the repository.
+
+## Recommended Actions And Acceptance Checks
+
+### ACT-001
+
+Resolve Stage 2 (causal_graphs) domain boundary and, if adopted for CultureMech, implement CausalEdge schema class, validator targets, maintained writer, KGX causal-edge exporter, unit tests, and repository-local skill (#658 / culturemech-infra-0002).
+
+- .venv/bin/python scripts/audit_schema.py exits 0 with CausalEdge/MechanismEdge validated (or Stage 2 formally reclassified in workflow contract).
+- .venv/bin/python scripts/audit_writers.py exits 0 and any new causal writer appends curation_history and validates before write.
+- .venv/bin/python scripts/validate_strict.py --out /tmp/instance_validation_failures.tsv exits 0 on representative records.
+- .venv/bin/pytest tests/ passes unit tests for causal-edge validation and KGX export.
+
+### ACT-002
+
+Implement Stage 3 (protein_examples) UniProtKB prefix, UniProtTerm and ProteinExample schema classes (binding UniProt accession + NCBITaxon organism + claim-scoped EvidenceItem), OAK/id-label validator configuration, reference cofactor ChEBI cleanup, maintained writer, KGX protein export, and repository-local curation skill (#659 / culturemech-infra-0003).
+
+- .venv/bin/python scripts/audit_schema.py exits 0 with UniProtKB prefix, UniProtTerm, and ProteinExample classes defined.
+- .venv/bin/python scripts/validate_id_label.py and scripts/validate_strict.py validate UniProtTerm and NCBITaxon organism bindings without UNKNOWN_PREFIX errors.
+- data/reference/cofactors.yaml has unique canonical ChEBI ID-label pairs and docs/ENRICHMENT_GUIDE.md points to existing normalized records.
+- .venv/bin/pytest tests/ passes unit tests for ProteinExample validation and KGX export.
+
+### ACT-003
+
+Coordinate Cycle 2 blocked-stage advancement past Stages 2 and 3 to Stage 4 (record_review) and between-cycle profile reload after Stage 6 prerequisite implementation (#660 / culturemech-infra-0004).
+
+- INFRA_TASKS.md machine-readable YAML inventory contains issue-linked entries culturemech-infra-0002 (#658), culturemech-infra-0003 (#659), and culturemech-infra-0004 (#660).
+- No Stage-2 completion.json receipt is written while Stage 2 is blocked, and coordinator runtime state files remain untouched by the repository agent.
+- workflow/mech-workflow.yaml updates Stage 2/3 applicability and skill_paths only after ACT-001/ACT-002 pass validation for next-cycle reload.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-schema-audit | local:scripts/audit_schema.py; reports/schema_audit.tsv | supports | Deterministic schema audit reports 47 classes, 33 enums, 2,938 lines across 4 schema files; 0 UniProt prefixes/classes and 0 causal-edge classes. |
+| ev-writers-audit | local:scripts/audit_writers.py; reports/writer_audit.tsv | supports | Deterministic writer audit covers 124 Python scripts (recipe=14, mixed=10, report=72, unknown=28); 24/24 recipe writers append curation_history; 0 writers emit causal edges or typed UniProt examples. |
+| ev-corpus-search | file:data/normalized_yaml; data/normalized_yaml/**/*.yaml | supports | Full-corpus scan of 15,915 normalized records and git-ignored directories confirms 0 causal-edge instances and 0 UniProt protein-example instances. |
+| ev-schema-culturemech | file:src/culturemech/schema/culturemech.yaml; lines 10-58, 1234-1296, 1565-1672, 2000-2072 | supports | culturemech.yaml declares 31 prefixes (no UniProt/UniProtKB) and defines free-text string slots on CofactorDescriptor (lines 1234-1296), StrainModification (lines 1565-1602), CofactorRequirement (lines 2000-2028), and TransporterAnnotation (lines 2029-2072) without a CausalEdge or ProteinExample class. |
+| ev-kgx-export | file:src/culturemech/export/kgx_export.py; lines 468-833 | supports | kgx_export.py defines 12 *_to_edge functions across lines 468-833 emitting 7 predicates and flattens three-facet ingredient roles into biolink:ChemicalRole nodes without causal-mechanism or UniProt protein edges. |
+| ev-role-graph-renderer | file:scripts/render_media_role_graph.py; lines 1-95 | supports | render_media_role_graph.py renders bipartite Mermaid diagrams linking MediaRecipe -&gt; IngredientDescriptor -&gt; role facet enums, plus OrganismDescriptor community_role and nutrient_overrides. |
+| ev-cofactors-reference | file:data/reference/cofactors.yaml; lines 1-518 | supports | data/reference/cofactors.yaml contains 56 cofactor entries across 8 categories with generic free-text enzyme family strings in enzyme_examples, 0 UniProt IDs, 0 NCBITaxon links, and duplicate CHEBI:60052 across heme_c (heme C) and heme_d1 (heme d1). |
+| ev-workflow-profile | file:workflow/mech-workflow.yaml; lines 1-145 | supports | workflow/mech-workflow.yaml marks Stage 2 (causal_graphs) and Stage 3 (protein_examples) as applicability: blocked with skill_paths: [] under reload_profile_between_cycles_only: true. |
+| ev-representative-records | file:data/normalized_yaml/archaea/pyrococcus_medium.yaml; lines 376-394 | supports | Representative enriched records (pyrococcus_medium.yaml, magnetospirillum_gryphiswaldense_medium.yaml, TOGO_M2977_chocolate_agar.yaml, my20_agar.yaml) validate cleanly and demonstrate perturbations, strain_modifications, nutrient_overrides, and role facets, but no causal edges or UniProt IDs. |
+| ev-github-issues | https://github.com/CultureBotAI/CultureMech/issues; issues #658, #659, #660 | supports | Prior issue search returned 0 matching issues; created prerequisite issues #658 (Stage 2 causal_graphs), #659 (Stage 3 protein_examples), and #660 (Coordinator Cycle 2 blocked-stage activation/migration). |
+
+## Limits And Additional Notes
+
+- This assessment is a non-scientific schema, tooling, and workflow-prerequisite audit (scientific_review: false); no scientific records in data/normalized_yaml/ were modified.
+- Active Cycle 2 effective-workflow.json is immutable mid-cycle under reload_profile_between_cycles_only: true; advancing active Cycle 2 from blocked Stage 2 to Stage 4 requires external coordinator action (#660).
+- Tracked prerequisite issues: https://github.com/CultureBotAI/CultureMech/issues/658 (culturemech-infra-0002), https://github.com/CultureBotAI/CultureMech/issues/659 (culturemech-infra-0003), and https://github.com/CultureBotAI/CultureMech/issues/660 (culturemech-infra-0004).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment
+title: Cycle 2 Stage 2 (causal_graphs) and Stage 3 (protein_examples) Prerequisite
+  & Capability Assessment
+repository: culturebotai/CultureMech
+skill: audit-schema-gaps
+kind: repository
+started_at: '2026-10-23T07:10:00Z'
+finished_at: '2026-10-23T07:30:00Z'
+completion: completed
+verdict: blocked
+scientific_review: false
+summary: 'Bounded schema, writer, skill, corpus, and workflow-activation prerequisite
+  assessment for Cycle 2 Stage 2 (causal_graphs) and Stage 3 (protein_examples) at
+  commit 231e0ba71b41d45362168d539efebe7991823464. CultureMech natively represents
+  growth-media compositions, preparation steps, sterilization, organism growth metrics,
+  media perturbations (3/15,915 records), strain modifications (2/15,915 records),
+  nutrient overrides (2/15,915 records), and three-facet ingredient roles (nutritional_roles
+  in 217 records, physicochemical_roles in 249 records, cellular_metabolic_roles in
+  5 records), rendered as bipartite Mermaid composition-role diagrams by scripts/render_media_role_graph.py
+  and exported via 12 *_to_edge functions across 7 predicates (METPO:2000517, biolink:has_part,
+  biolink:has_attribute, biolink:related_to, biolink:same_as, biolink:subclass_of,
+  and biolink:has_dataset) by src/culturemech/export/kgx_export.py. Across tracked,
+  hidden, and git-ignored paths, CultureMech has no native directed causal-edge schema
+  class or MediaRecipe slot, no UniProtKB prefix among its 31 declared schema prefixes
+  or typed ProteinExample descriptor binding UniProt accessions to NCBITaxon organisms
+  and claim-scoped EvidenceItem snippets (only unpopulated free-text string slots
+  CofactorDescriptor.enzyme_examples, CofactorDescriptor.biosynthesis_genes, CofactorRequirement.genes,
+  TransporterAnnotation.genes, StrainModification.target in 2 records, and 56 cofactor
+  entries with free-text enzyme family strings in data/reference/cofactors.yaml),
+  and no repository-local causal_graphs or protein_examples curation skills. Additionally,
+  under cycle_policy.reload_profile_between_cycles_only: true, candidate edits to
+  workflow/mech-workflow.yaml cannot mutate active Cycle 2 effective-workflow.json,
+  requiring coordinator-side blocked-stage advancement or between-cycle profile reload
+  (#658, #659, #660).'
+reviewer:
+  kind: agent
+  identity: antigravity/claude-opus-4-6
+  model: claude-opus-4-6
+  independence: independent
+  independence_basis: Executed bounded prerequisite assessment [MECH-PREREQUISITE-CULTURE-20261023]
+    for goal-4672 without mutating scientific records or coordinator state.
+source:
+  git_revision: 231e0ba71b41d45362168d539efebe7991823464
+  state: git_commit
+  inputs:
+  - path: conf/id_label_targets.yaml
+    sha256: cb514c0aa4e390e66878cadf6d4799a5b94e509affcbebfe3732a24e5a17d348
+    role: target
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: data/normalized_yaml/archaea/pyrococcus_medium.yaml
+    sha256: cfeeddb3efb58448b41869ef16e32abce21122cc820cf60e90bafaf897dadf9c
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M2977_chocolate_agar.yaml
+    sha256: 8ae65ff373bfa21a79bc1d4c4814a1a2f114233e73759c8257ea407bf58b92d0
+    role: context
+  - path: data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+    sha256: 4a4e9475918654c9c8483e680055124ef16b3991042de96cba4ed256256b85f8
+    role: context
+  - path: data/normalized_yaml/bacterial/my20_agar.yaml
+    sha256: 16115773e1b2eef2e273c00c7001fe698a5c052bf42ea0b933cafd5b32805624
+    role: context
+  - path: data/reference/cofactors.yaml
+    sha256: 128aa5258127380785a61136a256ce858143b4b6f9862951b871a57f8946169c
+    role: target
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/ENRICHMENT_GUIDE.md
+    sha256: 1a07abcf331ca7136ca38a00c9fa06ac20eb79644c42f2dca8094697318d9d61
+    role: context
+  - path: scripts/audit_schema.py
+    sha256: cd303fcc2052b8849a6a5c73bd7fd03846f1839f82e6d91a1b793e65697b62e9
+    role: context
+  - path: scripts/audit_writers.py
+    sha256: e4b32f8723a44ec20bb21087c57c150b630aa183bb0da8c793bc83766a4d4d60
+    role: context
+  - path: scripts/render_media_role_graph.py
+    sha256: 99f1f97b06f2960d5a5d36ba71489c5b9869af9c08f58c34262cbf4bdc7e33e7
+    role: target
+  - path: scripts/repair_top_causal_graph_score15.py
+    sha256: 3e285e4d371acdacc492c960946bcf53bbf9500b0f4cfe92b63d9a349936aeed
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: target
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 64a778108fd3197a8cc08082f80c1de3ec33eda58350cee5df612ab61d23cea1
+    role: target
+  - path: src/culturemech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: target
+  - path: src/culturemech/schema/mim_roles.yaml
+    sha256: 6a79074a32990090cba3c0ffb7d29c6c3bd115f6bce3d8936d9726796395ad1f
+    role: target
+  - path: workflow/mech-workflow.yaml
+    sha256: ada60a0f8e5f7bc210790a20f83abb2c401a3c3697ef3e43e65a76cbba5bc019
+    role: target
+scope:
+  description: Full prerequisite inspection of the 8 governing repository artifacts
+    for Stage 2 (causal_graphs) and Stage 3 (protein_examples) representation, validation,
+    export, and workflow activation, backed by deterministic audits across all 47
+    LinkML classes, 33 enums, 124 Python writer scripts, 19 .claude/skills, 15,915
+    normalized YAML records in data/normalized_yaml/, and hidden/git-ignored paths
+    (data/merge_yaml/merged/, data/curation/, data/reference/, data/import_tracking/,
+    workspace/, tmp/).
+  selection: All 8 architectural targets governing schema representation, role facets,
+    shared discussion anchors, KGX graph export, Mermaid role-graph rendering, ID-label
+    validation targets, reference cofactor data, and workflow stage applicability.
+  population_size: 8
+  coverage: full
+  reviewed_target_ids:
+  - schema:culturemech
+  - schema:mim_roles
+  - schema:mech_shared
+  - export:kgx_export
+  - script:render_media_role_graph
+  - workflow:mech-workflow
+  - conf:id_label_targets
+  - reference:cofactors
+targets:
+- target_id: schema:culturemech
+  kind: maintained
+  path: src/culturemech/schema/culturemech.yaml
+  label: CultureMech LinkML schema
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: schema
+- target_id: schema:mim_roles
+  kind: maintained
+  path: src/culturemech/schema/mim_roles.yaml
+  label: MediaIngredientMech three-facet role enums
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/schema/mim_roles.yaml
+    role: schema
+- target_id: schema:mech_shared
+  kind: maintained
+  path: src/culturemech/schema/mech_shared.yaml
+  label: Shared Mech discussion and comment schema
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/schema/mech_shared.yaml
+    role: schema
+- target_id: export:kgx_export
+  kind: maintained
+  path: src/culturemech/export/kgx_export.py
+  label: CultureMech KGX graph exporter
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/export/kgx_export.py
+    role: exporter
+- target_id: script:render_media_role_graph
+  kind: maintained
+  path: scripts/render_media_role_graph.py
+  label: Mermaid composition and ingredient-role graph renderer
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: scripts/render_media_role_graph.py
+    role: pipeline
+- target_id: workflow:mech-workflow
+  kind: maintained
+  path: workflow/mech-workflow.yaml
+  label: CultureMech recurring goal-cycle workflow profile
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: workflow/mech-workflow.yaml
+    role: config
+- target_id: conf:id_label_targets
+  kind: maintained
+  path: conf/id_label_targets.yaml
+  label: CultureMech ID-label correspondence target specification
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: conf/id_label_targets.yaml
+    role: config
+- target_id: reference:cofactors
+  kind: generated
+  path: data/reference/cofactors.yaml
+  label: Reference cofactor hierarchy and enzyme_examples table
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/import/import_cofactors.py
+    role: importer
+evidence:
+- evidence_id: ev-schema-audit
+  kind: validation
+  reference: local:scripts/audit_schema.py
+  locator: reports/schema_audit.tsv
+  accessed_at: '2026-10-23T07:12:00Z'
+  support: supports
+  summary: Deterministic schema audit reports 47 classes, 33 enums, 2,938 lines across
+    4 schema files; 0 UniProt prefixes/classes and 0 causal-edge classes.
+  quote: classes=47 enums=33 total_lines=2938; range:string candidates include CofactorDescriptor.enzyme_examples,
+    CofactorDescriptor.biosynthesis_genes, CofactorRequirement.genes, TransporterAnnotation.genes.
+- evidence_id: ev-writers-audit
+  kind: validation
+  reference: local:scripts/audit_writers.py
+  locator: reports/writer_audit.tsv
+  accessed_at: '2026-10-23T07:13:00Z'
+  support: supports
+  summary: Deterministic writer audit covers 124 Python scripts (recipe=14, mixed=10,
+    report=72, unknown=28); 24/24 recipe writers append curation_history; 0 writers
+    emit causal edges or typed UniProt examples.
+  quote: 'Total writers audited: 124; Recipe writers appending curation_history: 24/24;
+    scripts/repair_top_causal_graph_score15.py curates composition/roles/preparation
+    only.'
+- evidence_id: ev-corpus-search
+  kind: search
+  reference: file:data/normalized_yaml
+  locator: data/normalized_yaml/**/*.yaml
+  search_scope: All 15,915 normalized YAML records across archaea, bacterial, fungal,
+    algae, specialized, and solutions plus git-ignored data/merge_yaml/merged/, data/curation/,
+    data/reference/, workspace/, and tmp/.
+  accessed_at: '2026-10-23T07:15:00Z'
+  support: supports
+  summary: Full-corpus scan of 15,915 normalized records and git-ignored directories
+    confirms 0 causal-edge instances and 0 UniProt protein-example instances.
+  quote: 'total_records=15915; nutritional_roles=217; physicochemical_roles=249; cellular_metabolic_roles=5;
+    perturbations=3; strain_modifications=2; nutrient_overrides=2; cofactors_provided=0;
+    cofactor_requirements=0; transporters=0; enzyme_examples=0; uniprot=0; causal_graph=4
+    (all in curation_history.curator: repair_top_causal_graph_score15.py).'
+- evidence_id: ev-schema-culturemech
+  kind: record_content
+  reference: file:src/culturemech/schema/culturemech.yaml
+  locator: lines 10-58, 1234-1296, 1565-1672, 2000-2072
+  accessed_at: '2026-10-23T07:16:00Z'
+  support: supports
+  summary: culturemech.yaml declares 31 prefixes (no UniProt/UniProtKB) and defines
+    free-text string slots on CofactorDescriptor (lines 1234-1296), StrainModification
+    (lines 1565-1602), CofactorRequirement (lines 2000-2028), and TransporterAnnotation
+    (lines 2029-2072) without a CausalEdge or ProteinExample class.
+  quote: 'prefixes: linkml, culturemech, biolink, rdfs, CHEBI, NCBITaxon, DSMZ, TOGO,
+    ATCC, NCIT, UTEX, CCAP, SAG, OBI, ENVO, UO, UBERON, FOODON, mediadive.compound,
+    PMID, DOI, KEGG, EC, geo, sra, GTDB, RefSeq, GenBank, BioSample, sigma, thermofisher;
+    enzyme_examples: range: string; biosynthesis_genes: range: string; target: range:
+    string.'
+- evidence_id: ev-kgx-export
+  kind: record_content
+  reference: file:src/culturemech/export/kgx_export.py
+  locator: lines 468-833
+  accessed_at: '2026-10-23T07:17:00Z'
+  support: supports
+  summary: kgx_export.py defines 12 *_to_edge functions across lines 468-833 emitting
+    7 predicates and flattens three-facet ingredient roles into biolink:ChemicalRole
+    nodes without causal-mechanism or UniProt protein edges.
+  quote: 'Predicates emitted: METPO:2000517, biolink:has_part, biolink:has_attribute,
+    biolink:related_to, biolink:same_as, biolink:subclass_of, biolink:has_dataset.'
+- evidence_id: ev-role-graph-renderer
+  kind: record_content
+  reference: file:scripts/render_media_role_graph.py
+  locator: lines 1-95
+  accessed_at: '2026-10-23T07:18:00Z'
+  support: supports
+  summary: render_media_role_graph.py renders bipartite Mermaid diagrams linking MediaRecipe
+    -> IngredientDescriptor -> role facet enums, plus OrganismDescriptor community_role
+    and nutrient_overrides.
+  quote: Render a MediaRecipe (or corpus roll-up) as a mermaid graph of ingredient
+    <-> role relationships across the three facet enums (nutritional / physicochemical
+    / cellular-metabolic).
+- evidence_id: ev-cofactors-reference
+  kind: record_content
+  reference: file:data/reference/cofactors.yaml
+  locator: lines 1-518
+  accessed_at: '2026-10-23T07:19:00Z'
+  support: supports
+  summary: data/reference/cofactors.yaml contains 56 cofactor entries across 8 categories
+    with generic free-text enzyme family strings in enzyme_examples, 0 UniProt IDs,
+    0 NCBITaxon links, and duplicate CHEBI:60052 across heme_c (heme C) and heme_d1
+    (heme d1).
+  quote: 'cofactor_key: heme_c -> chebi_id: CHEBI:60052; cofactor_key: heme_d1 ->
+    chebi_id: CHEBI:60052; enzyme_examples: [''pyruvate dehydrogenase'', ''alpha-ketoglutarate
+    dehydrogenase''].'
+- evidence_id: ev-workflow-profile
+  kind: record_content
+  reference: file:workflow/mech-workflow.yaml
+  locator: lines 1-145
+  accessed_at: '2026-10-23T07:20:00Z'
+  support: supports
+  summary: 'workflow/mech-workflow.yaml marks Stage 2 (causal_graphs) and Stage 3
+    (protein_examples) as applicability: blocked with skill_paths: [] under reload_profile_between_cycles_only:
+    true.'
+  quote: 'stage: 2 key: causal_graphs applicability: blocked skill_paths: []; stage:
+    3 key: protein_examples applicability: blocked skill_paths: [].'
+- evidence_id: ev-representative-records
+  kind: record_content
+  reference: file:data/normalized_yaml/archaea/pyrococcus_medium.yaml
+  locator: lines 376-394
+  accessed_at: '2026-10-23T07:21:00Z'
+  support: supports
+  summary: Representative enriched records (pyrococcus_medium.yaml, magnetospirillum_gryphiswaldense_medium.yaml,
+    TOGO_M2977_chocolate_agar.yaml, my20_agar.yaml) validate cleanly and demonstrate
+    perturbations, strain_modifications, nutrient_overrides, and role facets, but
+    no causal edges or UniProt IDs.
+  quote: 'strain_modifications: - modification_type: ADAPTATION, target: cellulose
+    utilization, description: serially adapted for growth on CF11 cellulose; growth_metrics:
+    ... nutrient_overrides: - role: CARBON_SOURCE, source: CF11 cellulose, is_sole_source:
+    true.'
+- evidence_id: ev-github-issues
+  kind: search
+  reference: https://github.com/CultureBotAI/CultureMech/issues
+  locator: 'issues #658, #659, #660'
+  search_scope: 'All open and closed issues in CultureBotAI/CultureMech searched via
+    gh issue list --state all before creating prerequisite issues #658, #659, and
+    #660.'
+  accessed_at: '2026-10-23T07:28:14Z'
+  support: supports
+  summary: 'Prior issue search returned 0 matching issues; created prerequisite issues
+    #658 (Stage 2 causal_graphs), #659 (Stage 3 protein_examples), and #660 (Coordinator
+    Cycle 2 blocked-stage activation/migration).'
+  quote: Created https://github.com/CultureBotAI/CultureMech/issues/658, https://github.com/CultureBotAI/CultureMech/issues/659,
+    and https://github.com/CultureBotAI/CultureMech/issues/660.
+checks:
+- check_id: chk-audit-schema
+  name: Deterministic LinkML schema audit
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/audit_schema.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - schema:culturemech
+  - schema:mim_roles
+  - schema:mech_shared
+  evidence_ids:
+  - ev-schema-audit
+  - ev-schema-culturemech
+  summary: Audited 47 LinkML classes and 33 enums across 4 schema files with exit_code
+    0; confirmed absence of CausalEdge/MechanismGraph and UniProtTerm/ProteinExample
+    classes.
+- check_id: chk-audit-writers
+  name: Deterministic corpus writer audit
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/audit_writers.py
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - export:kgx_export
+  - script:render_media_role_graph
+  - reference:cofactors
+  evidence_ids:
+  - ev-writers-audit
+  - ev-kgx-export
+  - ev-role-graph-renderer
+  summary: Audited 124 Python writer scripts; 24/24 recipe writers append curation_history;
+    0 scripts write causal edges or UniProt protein examples.
+- check_id: chk-validate-representative-records
+  name: Strict LinkML and quality validation on representative enriched records
+  status: passed
+  required: true
+  command: .venv/bin/python scripts/validate_strict.py --out /tmp/instance_validation_failures.tsv
+    data/normalized_yaml/archaea/pyrococcus_medium.yaml data/normalized_yaml/bacterial/magnetospirillum_gryphiswaldense_medium.yaml
+    data/normalized_yaml/bacterial/TOGO_M2977_chocolate_agar.yaml data/normalized_yaml/bacterial/my20_agar.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - schema:culturemech
+  - schema:mim_roles
+  evidence_ids:
+  - ev-representative-records
+  summary: All 4 representative enriched records pass strict LinkML schema, MediaIngredientMech
+    ID, and ChEBI format checks with 0 errors.
+- check_id: chk-stage2-stage3-readiness
+  name: Cycle 2 Stage 2 and Stage 3 native capability readiness check
+  status: failed
+  required: false
+  target_ids:
+  - schema:culturemech
+  - export:kgx_export
+  - workflow:mech-workflow
+  - conf:id_label_targets
+  - reference:cofactors
+  evidence_ids:
+  - ev-corpus-search
+  - ev-schema-culturemech
+  - ev-cofactors-reference
+  - ev-workflow-profile
+  summary: Stage 2 (causal_graphs) and Stage 3 (protein_examples) remain blocked by
+    missing schema classes/prefixes, OAK validation targets, maintained writers/exporters,
+    local skills, and coordinator mid-cycle profile immutability.
+assessments:
+- assessment_id: assess-supported-capabilities
+  area: completeness
+  topic: Currently supported evidence-backed mechanisms, composition roles, and organism
+    context
+  outcome: supported
+  target_ids:
+  - schema:culturemech
+  - schema:mim_roles
+  - export:kgx_export
+  - script:render_media_role_graph
+  evidence_ids:
+  - ev-corpus-search
+  - ev-schema-culturemech
+  - ev-kgx-export
+  - ev-role-graph-renderer
+  - ev-representative-records
+  summary: CultureMech natively supports evidence-backed media compositions, stock-solution
+    inclusions, preparation steps, sterilization descriptors, three-facet ingredient
+    roles (NutritionalRoleEnum in 217 records, PhysicochemicalRoleEnum in 249 records,
+    CellularMetabolicRoleEnum in 5 records), OrganismDescriptor growth_metrics (including
+    nutrient_overrides in 2 records), perturbations (3 records), and strain_modifications
+    (2 records).
+  details: scripts/render_media_role_graph.py renders bipartite composition-to-role
+    Mermaid graphs and src/culturemech/export/kgx_export.py defines 12 *_to_edge functions
+    across lines 468-833 emitting 7 predicates (METPO:2000517, biolink:has_part, biolink:has_attribute,
+    biolink:related_to, biolink:same_as, biolink:subclass_of, and biolink:has_dataset).
+    These represent static functional roles and comparative perturbation observations
+    rather than directed multi-step causal mechanism graphs.
+  metrics:
+  - name: records_with_nutritional_roles
+    value: 217.0
+    unit: records
+    definition: Normalized YAML records with populated IngredientDescriptor.nutritional_roles.
+    denominator: 15915
+  - name: records_with_physicochemical_roles
+    value: 249.0
+    unit: records
+    definition: Normalized YAML records with populated IngredientDescriptor.physicochemical_roles.
+    denominator: 15915
+  - name: records_with_cellular_metabolic_roles
+    value: 5.0
+    unit: records
+    definition: Normalized YAML records with populated IngredientDescriptor.cellular_metabolic_roles.
+    denominator: 15915
+  - name: records_with_perturbations
+    value: 3.0
+    unit: records
+    definition: Normalized YAML records with populated OrganismDescriptor.perturbations.
+    denominator: 15915
+  - name: records_with_strain_modifications
+    value: 2.0
+    unit: records
+    definition: Normalized YAML records with populated OrganismDescriptor.strain_modifications.
+    denominator: 15915
+  - name: records_with_nutrient_overrides
+    value: 2.0
+    unit: records
+    definition: Normalized YAML records with populated GrowthMetrics.nutrient_overrides.
+    denominator: 15915
+  - name: records_with_causal_edges_or_uniprot
+    value: 0.0
+    unit: records
+    definition: Normalized YAML records with directed causal edges or typed UniProt
+      protein examples.
+    denominator: 15915
+- assessment_id: assess-stage2-causal-graphs
+  area: representation
+  topic: Stage 2 (causal_graphs) native representation and tooling blockers
+  outcome: concern
+  target_ids:
+  - schema:culturemech
+  - schema:mech_shared
+  - export:kgx_export
+  - script:render_media_role_graph
+  - workflow:mech-workflow
+  evidence_ids:
+  - ev-schema-audit
+  - ev-writers-audit
+  - ev-corpus-search
+  - ev-schema-culturemech
+  - ev-kgx-export
+  - ev-role-graph-renderer
+  summary: CultureMech has no native CausalEdge/MechanismGraph class or MediaRecipe
+    slot, no writer or KGX causal-predicate exporter, and no repository-local causal-graph
+    curation skill (#658).
+  details: mech_shared.yaml mentions causal_graphs#edge_x only inside the shared Discussion.attaches_to
+    docstring inherited across Mech repositories, and scripts/repair_top_causal_graph_score15.py
+    only curates ingredient composition, stock solutions, role enums, pH, and preparation
+    steps.
+- assessment_id: assess-stage3-protein-examples
+  area: grounding
+  topic: Stage 3 (protein_examples) typed UniProt representation, OAK validation,
+    and reference data blockers
+  outcome: concern
+  target_ids:
+  - schema:culturemech
+  - conf:id_label_targets
+  - reference:cofactors
+  - export:kgx_export
+  - workflow:mech-workflow
+  evidence_ids:
+  - ev-schema-audit
+  - ev-corpus-search
+  - ev-schema-culturemech
+  - ev-cofactors-reference
+  - ev-workflow-profile
+  summary: CultureMech has no UniProtKB prefix among its 31 declared prefixes in src/culturemech/schema/culturemech.yaml
+    (lines 10-58), no typed UniProtTerm or ProteinExample class binding accessions
+    to NCBITaxon organisms and EvidenceItem snippets, no UniProtKB OAK/id-label validator
+    configuration, and 0 UniProt accessions across 15,915 normalized records and data/reference/cofactors.yaml
+    (#659).
+  details: CofactorDescriptor.enzyme_examples and CofactorDescriptor.biosynthesis_genes
+    (lines 1234-1296), StrainModification.target (lines 1565-1602), CofactorRequirement.genes
+    (lines 2000-2028), and TransporterAnnotation.genes (lines 2029-2072) are untyped
+    range:string slots (0 cofactor/transporter/enzyme instances and 2 StrainModification.target
+    instances in data/normalized_yaml/). data/reference/cofactors.yaml contains 56
+    cofactor entries across 8 categories using enzyme_examples for generic enzyme-family
+    strings without UniProt IDs or organism links and contains a duplicate CHEBI:60052
+    mapping across heme_c (heme C) and heme_d1 (heme d1).
+- assessment_id: assess-coordinator-activation
+  area: scope
+  topic: Coordinator blocked-stage activation and mid-cycle profile immutability
+  outcome: concern
+  target_ids:
+  - workflow:mech-workflow
+  evidence_ids:
+  - ev-workflow-profile
+  - ev-github-issues
+  summary: 'Under cycle_policy.reload_profile_between_cycles_only: true, active Cycle
+    2 pinned effective-workflow.json with Stages 2 and 3 marked applicability: blocked;
+    editing workflow/mech-workflow.yaml affects only Cycle 3+ (#660).'
+  details: 'Advancing active Cycle 2 past blocked Stages 2 and 3 to Stage 4 (record_review)
+    requires coordinator-side blocked-stage handling, while activating Stages 2 and
+    3 in a future cycle requires completing #658 and #659 (typically during Stage
+    6 infra_implementation) followed by between-cycle profile reload.'
+findings:
+- finding_id: F-001
+  issue_key: stage2-missing-causal-graph-stack
+  title: No native causal-edge schema slot, validator, writer, KGX exporter, or skill
+    for Stage 2 (causal_graphs)
+  severity: blocker
+  certainty: confirmed
+  status: open
+  category: representation
+  target_ids:
+  - schema:culturemech
+  - schema:mech_shared
+  - export:kgx_export
+  - script:render_media_role_graph
+  - workflow:mech-workflow
+  evidence_ids:
+  - ev-schema-audit
+  - ev-writers-audit
+  - ev-corpus-search
+  - ev-schema-culturemech
+  - ev-kgx-export
+  - ev-role-graph-renderer
+  - ev-github-issues
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: schema
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/export/kgx_export.py
+    role: exporter
+  - repository: culturebotai/CultureMech
+    path: workflow/mech-workflow.yaml
+    role: config
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/658
+  description: 'Stage 2 (causal_graphs) is blocked because MediaRecipe and SolutionRecipe
+    in src/culturemech/schema/culturemech.yaml define composition and three-facet
+    ingredient roles (mim_roles.yaml) plus OrganismDescriptor perturbations/strain_modifications
+    and GrowthMetrics nutrient_overrides, but no directed causal-edge class (subject,
+    causal predicate, object, organism/condition context, and claim-scoped EvidenceItem),
+    no causal KGX export in src/culturemech/export/kgx_export.py, and no causal-graph
+    skill under .claude/skills/. Tracked in GitHub issue #658 and INFRA_TASKS.md task
+    culturemech-infra-0002.'
+- finding_id: F-002
+  issue_key: stage3-missing-typed-uniprot-protein-example-stack
+  title: No UniProtKB prefix, typed ProteinExample class, OAK validator config, writer,
+    or skill for Stage 3 (protein_examples)
+  severity: blocker
+  certainty: confirmed
+  status: open
+  category: grounding
+  target_ids:
+  - schema:culturemech
+  - conf:id_label_targets
+  - reference:cofactors
+  - export:kgx_export
+  - workflow:mech-workflow
+  evidence_ids:
+  - ev-schema-audit
+  - ev-corpus-search
+  - ev-schema-culturemech
+  - ev-cofactors-reference
+  - ev-github-issues
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: schema
+  - repository: culturebotai/CultureMech
+    path: conf/id_label_targets.yaml
+    role: config
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/export/kgx_export.py
+    role: exporter
+  - repository: culturebotai/CultureMech
+    path: workflow/mech-workflow.yaml
+    role: config
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/659
+  description: 'Stage 3 (protein_examples) is blocked because src/culturemech/schema/culturemech.yaml
+    (lines 10-58) declares 31 prefixes without a UniProtKB prefix, UniProtTerm class,
+    or typed ProteinExample descriptor binding a verified UniProt accession to an
+    explicit NCBITaxon organism, sequence/isoform scope, and claim-scoped EvidenceItem.
+    Existing gene/enzyme/target slots (CofactorDescriptor.enzyme_examples, biosynthesis_genes,
+    CofactorRequirement.genes, TransporterAnnotation.genes, StrainModification.target)
+    are untyped free-text strings (0 cofactor/transporter/enzyme instances and 2 StrainModification.target
+    instances in data/normalized_yaml/), and conf/id_label_targets.yaml has no UniProtKB
+    validation support. Tracked in GitHub issue #659 and INFRA_TASKS.md task culturemech-infra-0003.'
+- finding_id: F-003
+  issue_key: coordinator-cycle2-blocked-stage-activation-constraint
+  title: Pinned Cycle 2 effective-workflow.json cannot be unblocked in-place by repository
+    edits under reload_profile_between_cycles_only
+  severity: blocker
+  certainty: confirmed
+  status: open
+  category: scope
+  target_ids:
+  - workflow:mech-workflow
+  evidence_ids:
+  - ev-workflow-profile
+  - ev-github-issues
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: workflow/mech-workflow.yaml
+    role: config
+  ownership_note: Active Cycle 2 effective-workflow.json and status.json are owned
+    by the external session coordinator (culturebotai-claw).
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/660
+  description: 'Active Cycle 2 is paused at goal-4672 (stage: 2, phase: blocked) with
+    effective-workflow.json pinned at sha256 22e8c558fe158db19d847bc478901422f5697a48760bb6a9d852de8254ae4071
+    and reload_profile_between_cycles_only: true. Editing workflow/mech-workflow.yaml
+    affects only next_profile_path for Cycle 3+ and cannot unblock or advance active
+    Cycle 2. Tracked in GitHub issue #660 and INFRA_TASKS.md task culturemech-infra-0004.'
+- finding_id: F-004
+  issue_key: reference-cofactors-chebi-collision-and-doc-drift
+  title: data/reference/cofactors.yaml has duplicate CHEBI:60052 label mapping and
+    docs/ENRICHMENT_GUIDE.md cites a missing example file
+  severity: minor
+  certainty: confirmed
+  status: open
+  category: completeness
+  target_ids:
+  - reference:cofactors
+  - schema:culturemech
+  evidence_ids:
+  - ev-cofactors-reference
+  - ev-representative-records
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/import/import_cofactors.py
+    role: importer
+  - repository: culturebotai/CultureMech
+    path: docs/ENRICHMENT_GUIDE.md
+    role: documentation
+  external_issues:
+  - https://github.com/CultureBotAI/CultureMech/issues/659
+  description: data/reference/cofactors.yaml (56 entries across 8 categories) assigns
+    CHEBI:60052 to both heme_c (heme C) and heme_d1 (heme d1) and stores only generic
+    enzyme family names in enzyme_examples; additionally, docs/ENRICHMENT_GUIDE.md
+    references normalized_yaml/bacterial/Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml,
+    which is absent from the repository.
+actions:
+- action_id: ACT-001
+  description: Resolve Stage 2 (causal_graphs) domain boundary and, if adopted for
+    CultureMech, implement CausalEdge schema class, validator targets, maintained
+    writer, KGX causal-edge exporter, unit tests, and repository-local skill (#658
+    / culturemech-infra-0002).
+  finding_ids:
+  - F-001
+  target_ids:
+  - schema:culturemech
+  - schema:mech_shared
+  - export:kgx_export
+  - script:render_media_role_graph
+  - workflow:mech-workflow
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: schema
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/export/kgx_export.py
+    role: exporter
+  - repository: culturebotai/CultureMech
+    path: workflow/mech-workflow.yaml
+    role: config
+  acceptance_checks:
+  - .venv/bin/python scripts/audit_schema.py exits 0 with CausalEdge/MechanismEdge
+    validated (or Stage 2 formally reclassified in workflow contract).
+  - .venv/bin/python scripts/audit_writers.py exits 0 and any new causal writer appends
+    curation_history and validates before write.
+  - .venv/bin/python scripts/validate_strict.py --out /tmp/instance_validation_failures.tsv
+    exits 0 on representative records.
+  - .venv/bin/pytest tests/ passes unit tests for causal-edge validation and KGX export.
+- action_id: ACT-002
+  description: Implement Stage 3 (protein_examples) UniProtKB prefix, UniProtTerm
+    and ProteinExample schema classes (binding UniProt accession + NCBITaxon organism
+    + claim-scoped EvidenceItem), OAK/id-label validator configuration, reference
+    cofactor ChEBI cleanup, maintained writer, KGX protein export, and repository-local
+    curation skill (#659 / culturemech-infra-0003).
+  finding_ids:
+  - F-002
+  - F-004
+  target_ids:
+  - schema:culturemech
+  - conf:id_label_targets
+  - reference:cofactors
+  - export:kgx_export
+  - workflow:mech-workflow
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/schema/culturemech.yaml
+    role: schema
+  - repository: culturebotai/CultureMech
+    path: conf/id_label_targets.yaml
+    role: config
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/import/import_cofactors.py
+    role: importer
+  - repository: culturebotai/CultureMech
+    path: src/culturemech/export/kgx_export.py
+    role: exporter
+  - repository: culturebotai/CultureMech
+    path: workflow/mech-workflow.yaml
+    role: config
+  acceptance_checks:
+  - .venv/bin/python scripts/audit_schema.py exits 0 with UniProtKB prefix, UniProtTerm,
+    and ProteinExample classes defined.
+  - .venv/bin/python scripts/validate_id_label.py and scripts/validate_strict.py validate
+    UniProtTerm and NCBITaxon organism bindings without UNKNOWN_PREFIX errors.
+  - data/reference/cofactors.yaml has unique canonical ChEBI ID-label pairs and docs/ENRICHMENT_GUIDE.md
+    points to existing normalized records.
+  - .venv/bin/pytest tests/ passes unit tests for ProteinExample validation and KGX
+    export.
+- action_id: ACT-003
+  description: Coordinate Cycle 2 blocked-stage advancement past Stages 2 and 3 to
+    Stage 4 (record_review) and between-cycle profile reload after Stage 6 prerequisite
+    implementation (#660 / culturemech-infra-0004).
+  finding_ids:
+  - F-003
+  depends_on:
+  - ACT-001
+  - ACT-002
+  target_ids:
+  - workflow:mech-workflow
+  owner_paths:
+  - repository: culturebotai/CultureMech
+    path: workflow/mech-workflow.yaml
+    role: config
+  - repository: culturebotai/CultureMech
+    path: INFRA_TASKS.md
+    role: documentation
+  acceptance_checks:
+  - INFRA_TASKS.md machine-readable YAML inventory contains issue-linked entries culturemech-infra-0002
+    (#658), culturemech-infra-0003 (#659), and culturemech-infra-0004 (#660).
+  - No Stage-2 completion.json receipt is written while Stage 2 is blocked, and coordinator
+    runtime state files remain untouched by the repository agent.
+  - workflow/mech-workflow.yaml updates Stage 2/3 applicability and skill_paths only
+    after ACT-001/ACT-002 pass validation for next-cycle reload.
+limitations:
+- 'This assessment is a non-scientific schema, tooling, and workflow-prerequisite
+  audit (scientific_review: false); no scientific records in data/normalized_yaml/
+  were modified.'
+- 'Active Cycle 2 effective-workflow.json is immutable mid-cycle under reload_profile_between_cycles_only:
+  true; advancing active Cycle 2 from blocked Stage 2 to Stage 4 requires external
+  coordinator action (#660).'
+notes:
+- 'Tracked prerequisite issues: https://github.com/CultureBotAI/CultureMech/issues/658
+  (culturemech-infra-0002), https://github.com/CultureBotAI/CultureMech/issues/659
+  (culturemech-infra-0003), and https://github.com/CultureBotAI/CultureMech/issues/660
+  (culturemech-infra-0004).'
+```
