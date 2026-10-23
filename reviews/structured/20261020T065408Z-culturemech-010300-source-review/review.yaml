@@ -1,0 +1,892 @@
+schema_version: 1.0.0
+review_id: 20261020T065408Z-culturemech-010300-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_2_r2a_agar (CultureMech:010300)'
+started_at: '2026-10-20T06:52:39Z'
+finished_at: '2026-10-20T06:54:08Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The generated record names the half-strength R2A variant but carries the
+  one-tenth-strength variant’s two solute amounts. Both maintained owners and both
+  collection sources preserve their distinction, and current formulation-aware merging
+  rejects this pair. Water units and omitted collection-default preparation also need
+  correction; exact reciprocal variant links resolve.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_2_R2A_Agar.yaml
+    sha256: ed5606a1ea1fbd7825be0b9f7f66d8f22f2947f3c1dbb48b677be429411a394f
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    sha256: d1b96b4fffbbba62ff3d2e5c99f76ee2572b3396e10163130eebd6b217022319
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    sha256: 9dc0f0ee89225306783fbbb4b05405ede3ed2facd3ac57ba8adaa02df56c28b2
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 38 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; Batch 004 selects ordinals 31-40 after three
+    validated local batches; saved bundles are published locally in path order. On
+    fresh origin/main at this batch base, scripts/record_review.py list validated
+    34 existing bundles and none listed this target path or ID. This bundle selects
+    only the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:010300
+targets:
+- target_id: CultureMech:010300
+  path: data/merge_yaml/merged/1_2_R2A_Agar.yaml
+  label: 1_2_r2a_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_2_R2A_Agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_2_R2A_Agar.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch004/038/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-004/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch004/038/strict.tsv"
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_2_R2A_Agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_2_R2A_Agar.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:010300
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_2_R2A_Agar.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-20T06:54:07Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T06:54:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-20T06:54:07Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_2_R2A_Agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T06:52:40.735745Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_2_R2A_Agar.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch004/038/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-20T06:52:41.807290Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-004/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch004/038/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_2_R2A_Agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T06:52:43.546374Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_2_R2A_Agar.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-20T06:52:44.408539Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-20T06:54:07Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_2_R2A_Agar.yaml:1:id: CultureMech:010300
+
+    ./data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml:1:id: CultureMech:010300
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: jcm845
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=845
+  locator: Complete entry and page default
+  accessed_at: '2026-10-20T06:52:49.130948Z'
+  support: supports
+  summary: JCM 845 identifies the half-strength agar variant, lists the premixed R2A
+    agar, additional agar and water, and supplies an applicable default sterilization
+    instruction.
+  snapshot_sha256: 5e2c53029b662cc76b3b17ae2d910557a8c682f41271d0605ad5d65d0dcfa7f7
+- evidence_id: togo881
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M881
+  locator: meta and complete components[0]
+  accessed_at: '2026-10-20T06:52:50.089359Z'
+  support: supports
+  summary: TOGO M881 resolves to JCM_M845 and reproduces all three original component
+    values/units.
+  snapshot_sha256: 4ba4d443861e90ee092422fc8e6e4b95e21b95cfa4ae308fc86eabce4dedbeb5
+- evidence_id: api845
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J845
+  locator: data.medium and complete data.solutions[0]
+  accessed_at: '2026-10-20T06:52:50.972009Z'
+  support: supports
+  summary: MediaDive J845 confirms the exact collection variant, main recipe volume
+    1000 mL and both source-specific g_l solute values.
+  snapshot_sha256: d3361c3d928484b4e60a84db164240c9d76d22adcbf4c0b68533ad70e7e9cfc9
+- evidence_id: jcm804
+  kind: database
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=804
+  locator: Complete entry and page default
+  accessed_at: '2026-10-20T06:52:54.978426Z'
+  support: supports
+  summary: JCM 804 identifies the one-tenth-strength agar variant, lists the premixed
+    R2A agar, additional agar and water, and supplies an applicable default sterilization
+    instruction.
+  snapshot_sha256: 3c0828e0f7f390ea13539e20340d86c497c6554da0cea0ea6927eb0dfa3cfa09
+- evidence_id: togo839
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M839
+  locator: meta and complete components[0]
+  accessed_at: '2026-10-20T06:52:55.648907Z'
+  support: supports
+  summary: TOGO M839 resolves to JCM_M804 and reproduces all three original component
+    values/units.
+  snapshot_sha256: 16f56ac2eb9ae45425c9760a29e507387fb9a34d5e8f80450fa5ea07bc717dd3
+- evidence_id: api804
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J804
+  locator: data.medium and complete data.solutions[0]
+  accessed_at: '2026-10-20T06:52:56.572648Z'
+  support: supports
+  summary: MediaDive J804 confirms the exact collection variant, main recipe volume
+    1000 mL and both source-specific g_l solute values.
+  snapshot_sha256: 87014fc2e2dfa41bd8598b3acb07e8f9127962e310c79f46a3870d80c95427a6
+- evidence_id: links
+  kind: record_content
+  reference: repository checkout
+  locator: Whole-checkout exact ID lookup and both complete normalized owner links
+  accessed_at: '2026-10-20T06:53:03.907550Z'
+  support: supports
+  summary: "./data/merge_yaml/merged/1_2_R2A_Agar.yaml:1:id: CultureMech:010300\n\
+    ./data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml:1:id: CultureMech:010300\n\
+    ./data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml:1:id: CultureMech:010253\n\
+    \ Reciprocal links: {\"parent_child\": [{\"path\": \"data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml\"\
+    , \"relationship\": \"CONCENTRATION_VARIANT\", \"id\": \"CultureMech:010253\"\
+    , \"name\": \"1_10_r2a_agar\", \"notes\": \"1/10 R2A Agar decreases R2A agar powder\
+    \ from 9.1 g/L to 1.82 g/L and adjusts added agar from 7.5 g/L to 15 g/L.\"}],\
+    \ \"child_parent\": {\"path\": \"data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml\"\
+    , \"relationship\": \"CONCENTRATION_VARIANT\", \"id\": \"CultureMech:010300\"\
+    , \"name\": \"1_2_r2a_agar\", \"notes\": \"Both records are TOGO/NBRC diluted\
+    \ R2A agar formulations; the child is explicitly named 1/10 R2A Agar under the\
+    \ same base medium family.\"}, \"child_modifications\": [\"1/10 R2A Agar decreases\
+    \ R2A agar powder from 9.1 g/L to 1.82 g/L and adjusts added agar from 7.5 g/L\
+    \ to 15 g/L.\"]}"
+  search_scope: rg --no-ignore --hidden for both exact IDs; both asserted normalized
+    paths opened in full.
+- evidence_id: merge
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Bounded evaluation of both exact owners; current matcher and merge entrypoint
+  accessed_at: '2026-10-20T06:53:03.907550Z'
+  support: supports
+  summary: '[{"path": "data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml",
+    "id": "CultureMech:010300", "ingredient_hash": "91d917ee07ef5180979b02c394725670252532c117232acfba08f13ea782dabc",
+    "formulation_hash": "1e16b1888f9f37425f71ea711c96ffb133c23f40a8de67e6aa39ccf141f16808"},
+    {"path": "data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml", "id":
+    "CultureMech:010253", "ingredient_hash": "91d917ee07ef5180979b02c394725670252532c117232acfba08f13ea782dabc",
+    "formulation_hash": "d001809af174f8b2b30adcd67c7e0b571a69e735032a43d7769b2e5ca2ae5f2b"}];
+    merged-pair result: Incompatible formulations; ingredient-set similarity is insufficient.
+    The current merge entrypoint groups compatible formulations; the target is an
+    earlier incompatible generated merge.'
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T04:00:00.223561Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T03:57:34.697126Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-20T06:54:07Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:2509":
+    [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509",
+    "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Variant identity and stale generated consolidation
+  outcome: concern
+  summary: The selected CultureMech:010300 path resolves to the half-strength owner,
+    while its generated ingredient values match the different linked child. Both exact
+    source variants are independently recovered.
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - id-search
+  - links
+  - jcm845
+  - jcm804
+  - merge
+  details: The ingredient-set hashes match the saved merge_fingerprint, but the current
+    formulation hashes differ and the bounded merger rejects the pair. Thus ingredient
+    similarity does not support synonymy. The existing target variant_children note
+    itself describes the different parent amounts; the generated ingredient array
+    contradicts that note. Current code rejection does not by itself regenerate the
+    stale output.
+- assessment_id: water
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: concern
+  summary: 'correct: source 1 L water is encoded as 1 G_PER_L in target and both owners.'
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo881
+  - togo839
+  - jcm845
+  - jcm804
+  details: A source volume is not a mass concentration; do not invent a density conversion.
+  dimensions:
+  - name: concentration_decision
+    value: correct
+    definition: Water dimensional error is independent of the variant conflation
+    evidence_ids:
+    - togo881
+    - jcm845
+- assessment_id: agar
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: concern
+  summary: 'correct: target additional agar 15 G_PER_L belongs to the child variant;
+    the named parent is supported at 7.5 G_PER_L.'
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm845
+  - jcm804
+  - api845
+  - api804
+  details: These are added agar amounts, not the total agar contained in the commercial
+    premix. The two source variants alter the added agar differently; no uniform dilution
+    of all components is inferred.
+  dimensions:
+  - name: concentration_decision
+    value: correct
+    definition: Exact source accession determines the added-agar value
+    evidence_ids:
+    - api845
+    - api804
+- assessment_id: premix
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: concern
+  summary: 'correct: target R2A agar premix 1.82 G_PER_L belongs to the child; the
+    named half-strength parent source and owner have 9.1 G_PER_L.'
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - togo881
+  - togo839
+  - api845
+  - api804
+  details: Supplier qualifier BD-Difco is correctly retained. This is a mass-dosed
+    dry premix, not a stock-solution concentration or a mixture to expand from a generic
+    R2A formula.
+  dimensions:
+  - name: concentration_decision
+    value: correct
+    definition: Exact named formulation determines the source premix dose
+    evidence_ids:
+    - api845
+    - api804
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: 2 primary CHEBI identities and 2 secondary keys resolve with matching labels.
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi2509
+  details: 3 direct ingredient instances; primary coverage 2/3 (66.67%), secondary
+    coverage 2/3 (66.67%). Percentages use a 0–100 linkage scale, not a scientific
+    correctness score. Complex mixtures without asserted IDs remain ungrounded rather
+    than receiving invented pure-molecule identities.
+- assessment_id: references
+  area: graph
+  topic: Reciprocal local variant links
+  outcome: supported
+  summary: The child path, ID and name resolve; its parent link points back to the
+    maintained half-strength record. The concentration-variant direction agrees with
+    both source formulations.
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - links
+  - jcm845
+  - jcm804
+  details: The numeric modification note accurately describes the maintained parent/child
+    distinction. The generated snapshot defeats that distinction by copying child
+    values into the parent. No new child, ID or relationship is minted. The source
+    synonym is not an exact-equivalence assertion that can override the verified variant
+    difference.
+- assessment_id: conditions
+  area: completeness
+  topic: Default preparation and optional conditions
+  outcome: concern
+  summary: The applicable JCM default sterilization is absent from target and both
+    owners. SOLID_AGAR is supported by both source formulations.
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm845
+  - jcm804
+  details: Neither recipe supplies pH, incubation, vessel, light, atmosphere, storage
+    or shelf-life values; none are inferred. Source commercial mixture supports COMPLEX/UNDEFINED.
+    There are no stock or nested-dose assertions. G_PER_L is valid for source-normalized
+    amounts in an agar medium.
+- assessment_id: scope
+  area: scope
+  topic: Classification, roles and growth
+  outcome: supported
+  summary: Generic cultivation use, bacterial filing and copied database ingredient
+    annotations do not assert strain-level growth. No organism identifier, DOI, PMID,
+    pathway or transcriptomic statement is asserted.
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - togo881
+  - togo839
+  details: Two of three direct ingredient instances carry both primary and secondary
+    CHEBI links; the premix remains ungrounded rather than incorrectly mapped to a
+    single constituent. No source-only organism inference is added.
+- assessment_id: evidence
+  area: provenance
+  topic: History and claim-level support placement
+  outcome: concern
+  summary: Both source accessions and complete merge/history records are recoverable.
+    Neither owner nor target has scoped amount evidence; the reference validator examined
+    zero excerpts.
+  target_ids:
+  - CultureMech:010300
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - validate-references
+  - togo881
+  - togo839
+  details: All complete target and owner objects were read. Absence observations refer
+    to those exact objects; ID lookup included hidden and ignored files. Future action
+    belongs in maintained owners and controlled regeneration, not hand editing this
+    generated record or treating a historic merge event as scientific approval.
+findings:
+- finding_id: f1
+  issue_key: culturemech-010300-half-and-tenth-strength-conflation
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Half-strength identity carries the one-tenth-strength formulation
+  description: The generated parent uses the child’s two non-water amounts and lists
+    that child as a synonym, although the exact source formulations and reciprocal
+    variant link distinguish them. Current formulation-aware merging rejects the two
+    owners.
+  target_ids:
+  - CultureMech:010300
+  field_paths:
+  - media_term
+  - ingredients[1].concentration
+  - ingredients[2].concentration
+  - synonyms
+  - merged_from
+  - variant_children
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm845
+  - jcm804
+  - api845
+  - api804
+  - links
+  - merge
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P2.5
+  native_severity: P2
+  normalization_reason: P2 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: culturemech-010300-water-unit-error
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water volume is misrepresented in both source owners
+  description: Target and both owners assert 1 G_PER_L where source entries use one
+    liter water.
+  target_ids:
+  - CultureMech:010300
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm845
+  - jcm804
+  - togo881
+  - togo839
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: culturemech-010300-default-preparation-omitted
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Applicable collection-default sterilization is missing
+  description: The JCM pages state an applicable default and neither variant supplies
+    an exception, but the local target and owners omit preparation.
+  target_ids:
+  - CultureMech:010300
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - jcm845
+  - jcm804
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: culturemech-010300-quantity-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Amounts lack variant-specific supporting excerpts
+  description: Three target quantity assertions have no scoped source evidence; the
+    sources are recoverable but must be kept variant-specific.
+  target_ids:
+  - CultureMech:010300
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-1
+  - validate-references
+  - api845
+  - api804
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Preserve separate maintained variants and regenerate the stale output
+    using current compatibility gates. Retain valid reciprocal variant links and source-specific
+    quantities; do not collapse them into synonyms.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:010300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+  - Verify that parent and child remain distinct after regeneration and each ingredient
+    array agrees with its declared accession and modification note.
+- action_id: a2
+  description: Correct maintained water volume/batch representation without guessing
+    a water mass or final-volume measurement; preserve the distinction between source
+    variants.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:010300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Retain the exact applicable collection default with source evidence
+    in each maintained variant; do not invent additional conditions.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:010300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Add exact short excerpts and original-unit/volume context to each maintained
+    variant independently, then preserve scoped evidence in regeneration.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:010300
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M881_1_2_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M839_1_10_R2A_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- The commercial R2A agar remains an opaque source-specified mixture. No powder composition,
+  total agar content, product SKU or supplier substitution is inferred.
+- Provider-declared main-recipe volume supports numeric normalization; no independent
+  physical final-volume measurement is claimed.
+- The linked child’s parent-note phrase TOGO/NBRC conflicts with its JCM source metadata.
+  This contextual child-field issue is not asserted by the selected target and is
+  not silently rewritten; follow-up should retain JCM provenance.
+tags:
+- unreviewed-records
+- batch-004
+- generated-medium
