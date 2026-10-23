@@ -1,0 +1,2306 @@
+schema_version: 1.0.0
+review_id: 20261021T075301Z-culturemech-000415-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 2asw (CultureMech:000415)'
+started_at: '2026-10-21T07:45:31Z'
+finished_at: '2026-10-21T07:53:01Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact MediaDive C9 import is identifiable, but eleven stock concentrations
+  and variable soil are flattened into parent ingredients while the three stock doses
+  are absent. The MediaDive salt stock and current CCAP half-strength stock give equal
+  calculated final salt contributions at their respective doses. SE1 preparation is
+  attached to the parent, and an air-dry/store-away-from-heat step is mislabeled HEAT.
+  The bacterial category is a source-insensitive fallback. The generated target also
+  omits two supported, bounded study citations/variants from its maintained owner;
+  the owner exporter caveat is stale. Four required diagnostics pass without certifying
+  these scientific claims.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/2asw__59e92e67.yaml
+    sha256: 84b6811d6adfe67eef0c4d314200d75f31845f410ce800afdda9e57e908ecf1b
+    role: target
+  - path: data/normalized_yaml/bacterial/2asw.yaml
+    sha256: 53791685ae44730a58fbbe48317248326a162377283a40c727eec72b7509bdb9
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6118_Vitamin_solution.yaml
+    sha256: 3d93b6702c16c4e325ccb43e9945d97bbcb9745d0affe317999292608ee7db49
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6119_SE1_Soil_Extract_1.yaml
+    sha256: b7c5a145813e23527a92afa5a046ef75f422165af47ebb00ded991f0c0c86dbd
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_6120_Extra_salts.yaml
+    sha256: 3280ddc6c7106b42f9e4a60c9d80d4824d0bcfc4e96b534ba13ac27b5e49a2eb
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 88; batch 009 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding eight task batches contain
+    80 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 82 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000415
+targets:
+- target_id: CultureMech:000415
+  path: data/merge_yaml/merged/2asw__59e92e67.yaml
+  label: 2asw
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/2asw__59e92e67.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/2asw__59e92e67.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch009/088/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch009/088/strict.tsv"
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/2asw__59e92e67.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/2asw__59e92e67.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000415
+- check_id: liang-external-table-s2
+  name: Liang external Table S2 retrieval
+  required: true
+  status: unavailable
+  summary: The preserved exact-URL request failed DNS; only the accessible article-body
+    claims are assessed. Full variant formula remains unverified.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - spectrum2023supplement
+  - spectrum2023xml
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/2asw__59e92e67.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/2asw.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/2asw__59e92e67.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:48:18.961426Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/2asw__59e92e67.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch009/088/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:48:20.669170Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-009/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch009/088/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/2asw__59e92e67.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:48:25.031818Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/2asw__59e92e67.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T07:48:26.580263Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: mediadiveC9api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/C9
+  locator: $.data.medium; $.data.solutions[id=6000,6120,6118,6119].volume, recipe
+    and steps
+  accessed_at: '2026-10-21T07:33:27.332814Z'
+  support: supports
+  summary: Medium C9 identifies 2ASW, CCAP and the MR_2ASW URL. Main solution 6000
+    declares 1000 mL and contains tricine 0.5 g, NaCl 35 g, Extra salts 6120 at 3.75
+    mL, vitamin 6118 at 2.5 mL and SE1 6119 at 25 mL. Separate stock objects contain
+    the eleven solutes and soil/water. Two main-medium steps and three SE1 steps retain
+    their separate solution ownership. Capture source key=mediadiveC9api; actual HTTP
+    status=200; capture reused with its original access timestamp where indicated,
+    not represented as a new retrieval.
+  snapshot_sha256: 3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14
+- evidence_id: ccap2asw
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_2ASW.pdf
+  locator: Page 1, Stocks and Medium tables; preparation paragraph and asterisk; reviewed
+    date
+  accessed_at: '2026-10-21T07:16:20.827259Z'
+  support: supports
+  summary: 'Current CCAP 2ASW PDF, reviewed 29 May 2026: extra-salt stock 15/0.6/0.5
+    g per litre, used at 7.5 mL per litre; eight vitamin concentrations and 2.5 mL
+    dose; SE1 25 mL; tricine 0.5 g and added NaCl 35 g. It specifies filtered natural
+    seawater, or deionised water to 1 L plus 33.6 g Instant Ocean, pH 7.6–7.8 using
+    1 M NaOH/HCl, and autoclaving 15 psi/15 min. These are this source version, not
+    a license to mix its stock strength with the provider dose. Capture source key=ccap2asw;
+    actual HTTP status=200; capture reused with its original access timestamp where
+    indicated, not represented as a new retrieval.'
+  snapshot_sha256: d5d658702a3640ed17c4d9d494f198f7122be90cbc81e64ccdc8afad1c4401cc
+- evidence_id: ccapSE1Marine
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/wp-content/uploads/MR_SE1_Marine.pdf
+  locator: Page 1, Preparing the soil and Medium; reviewed date
+  accessed_at: '2026-10-21T07:18:30.190899Z'
+  support: supports
+  summary: 'Current marine SE1 PDF, reviewed 30 June 2026, supports a marine-algae
+    stock context and distinguishes its preparation version: optional air drying or
+    about 50 C oven drying; dried soil with twice-volume deionised water; two source-stated
+    15 psi/126 C/20 min cycles, settling about 2–3 weeks, aseptic decant, then 15
+    psi/121 C/15 min and refrigeration. Those literal pressure/temperature pairings
+    are not independently corrected here. This differs from the provider two-hour
+    method. Capture source key=ccapSE1Marine; actual HTTP status=200; capture reused
+    with its original access timestamp where indicated, not represented as a new retrieval.'
+  snapshot_sha256: a1aa6a7de8c76d20ee216b828beddae6f94bd94b7e154ef657f7863f562a8934
+- evidence_id: mediadiveSolution6120
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6120
+  locator: $.data.id, name, volume, recipe and steps
+  accessed_at: '2026-10-21T07:42:37.544110Z'
+  support: supports
+  summary: Direct stock API confirms mediadive.solution:6120 (Extra salts) and its
+    nominal 1000 mL volume. All listed local composition amounts agree with the provider
+    or remain VARIABLE where unquantified; no unsupported soil mass is inferred. Capture
+    source key=mediadiveSolution6120; actual HTTP status=200; capture reused with
+    its original access timestamp where indicated, not represented as a new retrieval.
+  snapshot_sha256: ff84cb929d9ea6aa7047cedcde2e0378a173ccd6f5e9f74f957aa7d64349d495
+- evidence_id: stock-6120
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6120_Extra_salts.yaml
+  locator: Entire stock YAML; stable id, solution_term, composition, preparation_notes
+    and existing concentration evidence
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: '{"path": "data/normalized_yaml/bacterial/mediadive_6120_Extra_salts.yaml",
+    "sha256": "3280ddc6c7106b42f9e4a60c9d80d4824d0bcfc4e96b534ba13ac27b5e49a2eb",
+    "culturemech_id": "CultureMech:014824", "provider_id": "mediadive.solution:6120",
+    "provider_name": "Extra salts", "provider_volume_ml": 1000, "composition_rows":
+    [{"composition_index": 0, "preferred_term": "NaNO3", "compound_id": 187, "record_concentration":
+    {"value": "30", "unit": "G_PER_L"}, "provider_g_l": 30, "amount_match": true},
+    {"composition_index": 1, "preferred_term": "Na2HPO4", "compound_id": 233, "record_concentration":
+    {"value": "1.2", "unit": "G_PER_L"}, "provider_g_l": 1.2, "amount_match": true},
+    {"composition_index": 2, "preferred_term": "K2HPO4", "compound_id": 10, "record_concentration":
+    {"value": "1", "unit": "G_PER_L"}, "provider_g_l": 1, "amount_match": true}],
+    "provider_capture_key": "mediadiveSolution6120", "provider_capture_sha256": "ff84cb929d9ea6aa7047cedcde2e0378a173ccd6f5e9f74f957aa7d64349d495",
+    "scope": "Exact dependency identity and composition comparison only; not a separate
+    complete stock review. Stock composition is authoritative; placeholder ingredients
+    are explicitly allowed by the current Solution schema."}'
+  snapshot_sha256: 3280ddc6c7106b42f9e4a60c9d80d4824d0bcfc4e96b534ba13ac27b5e49a2eb
+- evidence_id: mediadiveSolution6118
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6118
+  locator: $.data.id, name, volume, recipe and steps
+  accessed_at: '2026-10-21T07:42:37.541465Z'
+  support: supports
+  summary: Direct stock API confirms mediadive.solution:6118 (Vitamin solution) and
+    its nominal 1000 mL volume. All listed local composition amounts agree with the
+    provider or remain VARIABLE where unquantified; no unsupported soil mass is inferred.
+    Capture source key=mediadiveSolution6118; actual HTTP status=200; capture reused
+    with its original access timestamp where indicated, not represented as a new retrieval.
+  snapshot_sha256: 36752c7585e68ceae9cff8b2d6c61da3fa1335c30650cb5dc8ec09dff3faff20
+- evidence_id: stock-6118
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6118_Vitamin_solution.yaml
+  locator: Entire stock YAML; stable id, solution_term, composition, preparation_notes
+    and existing concentration evidence
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: '{"path": "data/normalized_yaml/bacterial/mediadive_6118_Vitamin_solution.yaml",
+    "sha256": "3d93b6702c16c4e325ccb43e9945d97bbcb9745d0affe317999292608ee7db49",
+    "culturemech_id": "CultureMech:014821", "provider_id": "mediadive.solution:6118",
+    "provider_name": "Vitamin solution", "provider_volume_ml": 1000, "composition_rows":
+    [{"composition_index": 0, "preferred_term": "Biotin", "compound_id": 46, "record_concentration":
+    {"value": "0.0002", "unit": "G_PER_L"}, "provider_g_l": 0.0002, "amount_match":
+    true}, {"composition_index": 1, "preferred_term": "Calcium pantothenate", "compound_id":
+    518, "record_concentration": {"value": "0.02", "unit": "G_PER_L"}, "provider_g_l":
+    0.02, "amount_match": true}, {"composition_index": 2, "preferred_term": "Cyanocobalamine",
+    "compound_id": 847, "record_concentration": {"value": "0.004", "unit": "G_PER_L"},
+    "provider_g_l": 0.004, "amount_match": true}, {"composition_index": 3, "preferred_term":
+    "Folic acid", "compound_id": 138, "record_concentration": {"value": "0.0004",
+    "unit": "G_PER_L"}, "provider_g_l": 0.0004, "amount_match": true}, {"composition_index":
+    4, "preferred_term": "Inositol", "compound_id": 451, "record_concentration": {"value":
+    "1", "unit": "G_PER_L"}, "provider_g_l": 1, "amount_match": true}, {"composition_index":
+    5, "preferred_term": "Nicotinic acid", "compound_id": 139, "record_concentration":
+    {"value": "0.02", "unit": "G_PER_L"}, "provider_g_l": 0.02, "amount_match": true},
+    {"composition_index": 6, "preferred_term": "Thiamine HCl", "compound_id": 1207,
+    "record_concentration": {"value": "0.1", "unit": "G_PER_L"}, "provider_g_l": 0.1,
+    "amount_match": true}, {"composition_index": 7, "preferred_term": "Thymine", "compound_id":
+    560, "record_concentration": {"value": "0.6", "unit": "G_PER_L"}, "provider_g_l":
+    0.6, "amount_match": true}], "provider_capture_key": "mediadiveSolution6118",
+    "provider_capture_sha256": "36752c7585e68ceae9cff8b2d6c61da3fa1335c30650cb5dc8ec09dff3faff20",
+    "scope": "Exact dependency identity and composition comparison only; not a separate
+    complete stock review. Stock composition is authoritative; placeholder ingredients
+    are explicitly allowed by the current Solution schema."}'
+  snapshot_sha256: 3d93b6702c16c4e325ccb43e9945d97bbcb9745d0affe317999292608ee7db49
+- evidence_id: mediadiveSolution6119
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/6119
+  locator: $.data.id, name, volume, recipe and steps
+  accessed_at: '2026-10-21T07:42:37.542622Z'
+  support: supports
+  summary: Direct stock API confirms mediadive.solution:6119 (SE1 (Soil Extract 1))
+    and its nominal 1000 mL volume. All listed local composition amounts agree with
+    the provider or remain VARIABLE where unquantified; no unsupported soil mass is
+    inferred. Capture source key=mediadiveSolution6119; actual HTTP status=200; capture
+    reused with its original access timestamp where indicated, not represented as
+    a new retrieval.
+  snapshot_sha256: dc8f494af7fa3587fcd7241e917d8b7e717cac8e7191eaee674577f114eee33d
+- evidence_id: stock-6119
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_6119_SE1_Soil_Extract_1.yaml
+  locator: Entire stock YAML; stable id, solution_term, composition, preparation_notes
+    and existing concentration evidence
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: '{"path": "data/normalized_yaml/bacterial/mediadive_6119_SE1_Soil_Extract_1.yaml",
+    "sha256": "b7c5a145813e23527a92afa5a046ef75f422165af47ebb00ded991f0c0c86dbd",
+    "culturemech_id": "CultureMech:014822", "provider_id": "mediadive.solution:6119",
+    "provider_name": "SE1 (Soil Extract 1)", "provider_volume_ml": 1000, "composition_rows":
+    [{"composition_index": 0, "preferred_term": "Soil", "compound_id": 2350, "record_concentration":
+    {"value": "variable", "unit": "VARIABLE"}, "provider_g_l": null, "amount_match":
+    true}, {"composition_index": 1, "preferred_term": "Distilled water", "compound_id":
+    4, "record_concentration": {"value": "variable", "unit": "VARIABLE"}, "provider_g_l":
+    null, "amount_match": true}], "provider_capture_key": "mediadiveSolution6119",
+    "provider_capture_sha256": "dc8f494af7fa3587fcd7241e917d8b7e717cac8e7191eaee674577f114eee33d",
+    "scope": "Exact dependency identity and composition comparison only; not a separate
+    complete stock review. Stock composition is authoritative; placeholder ingredients
+    are explicitly allowed by the current Solution schema."}'
+  snapshot_sha256: b7c5a145813e23527a92afa5a046ef75f422165af47ebb00ded991f0c0c86dbd
+- evidence_id: spectrum2023xml
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10269666/fullTextXML
+  locator: article/front/article-meta; Materials and Methods / Algal strains and cultivation
+    conditions; Introduction
+  accessed_at: '2026-10-21T07:16:21.002264Z'
+  support: supports
+  summary: Full JATS metadata/body identifies Liang et al. 2023, DOI 10.1128/spectrum.00069-23,
+    PMID 37022233 and PMC10269666. The methods use D. salina CCAP 19/18 on study-specific
+    2ASW containing 1.5 M NaCl. FACHB-847 is unresolved Dunaliella sp. on a separately
+    cited medium; D. tertiolecta CCAP 19/6B is introduction-only. The exact owner
+    amount excerpt matches after whitespace normalization. Neither the rest of the
+    formula nor equality to this imported parent follows. Capture source key=spectrum2023xml;
+    actual HTTP status=200; capture reused with its original access timestamp where
+    indicated, not represented as a new retrieval.
+  quote: D. salina was cultivated in 2ASW (artificial seawater) medium containing
+    1.5 M NaCl
+  snapshot_sha256: 35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d
+- evidence_id: spectrum2023metadata
+  kind: database
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1128%2Fspectrum.00069-23&format=json&resultType=core
+  locator: Europe PMC DOI search resultList.result
+  accessed_at: '2026-10-21T07:16:22.667080Z'
+  support: supports
+  summary: DOI lookup independently agrees with Liang title, authors/year, PMID 37022233
+    and PMC10269666. Capture source key=spectrum2023metadata; actual HTTP status=200;
+    capture reused with its original access timestamp where indicated, not represented
+    as a new retrieval.
+  snapshot_sha256: 3dc43ab6a9ee6850a6e7437fda40c93f81c75306c8a4d93adf85fed9deab366c
+- evidence_id: frontiers2015
+  kind: primary_source
+  reference: https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2015.00020/full
+  locator: Article metadata; Materials and Methods / Strains and media; Table 1; Results
+    / Preliminary centrate screening; References
+  accessed_at: '2026-10-21T07:16:25.568390Z'
+  support: supports
+  summary: Full publisher article identifies Hiibel et al. 2015 and DOI 10.3389/fenrg.2015.00020.
+    Methods assign 18 Dunaliella strains to modified 2ASW maintenance with 33.6 g/L
+    undefined sea salts replacing NaCl. The owner amount excerpt matches after whitespace
+    normalization. Table 1 centrate percentages describe separate screening, not maintenance
+    growth. Other 22 Neochloris/Nannochloropsis rows use modified Bristol/f/2. Results
+    dispute LB 200 species identification; UTCC 197 zero centrate tolerance is not
+    failure on maintenance 2ASW. The cited Gomord DOI is a plant-glycosylation review,
+    not inspected recipe authority. Capture source key=frontiers2015; actual HTTP
+    status=200; capture reused with its original access timestamp where indicated,
+    not represented as a new retrieval.
+  quote: 33.6 g/L of sea salts were used in place of the NaCl.
+  snapshot_sha256: 25722daafbecd2fdc5d7b886d76e48e978334900fee717ef14f61401792fa792
+- evidence_id: frontiers2015metadata
+  kind: database
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.3389%2Ffenrg.2015.00020&format=json&resultType=core
+  locator: Europe PMC DOI query and hitCount
+  accessed_at: '2026-10-21T07:16:22.851475Z'
+  support: context_only
+  summary: The captured DOI search returned no Europe PMC hit. PMID remains unresolved;
+    a no-hit response does not prove the absence of a PubMed record. Capture source
+    key=frontiers2015metadata; actual HTTP status=200; capture reused with its original
+    access timestamp where indicated, not represented as a new retrieval.
+  snapshot_sha256: cefce1c3365a606dcc5581de87119305e768341a13d4069b5bbf7eb8b181da80
+- evidence_id: taxonomyRetry
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=3046,556484,296543,3044,3047,13790,257627,147822,289300,3026963,3026961,5748,3098&retmode=xml
+  locator: TaxaSet/Taxon with the eleven stated TaxIds; ScientificName, Rank and OtherNames
+  accessed_at: '2026-10-21T07:17:10.700088Z'
+  support: supports
+  summary: 'NCBI XML confirms name/rank qualifications used in the owner: D. salina
+    3046 (including bardawil synonym), genus Dunaliella 3044, D. tertiolecta 3047,
+    D. bioculata 13790, D. primolecta 257627, D. peircei 147822, D. maritima 289300,
+    D. terricola 3026963, D. granulata 3026961; Nannochloropsis 5748 and Neochloris
+    3098 are genus ranks. This ID lookup does not independently verify strains or
+    reproduce the historical FACHB name query. Two other IDs present in the reused
+    XML are not used as evidence for this record. Capture source key=taxonomyRetry;
+    actual HTTP status=200; capture reused with its original access timestamp where
+    indicated, not represented as a new retrieval.'
+  snapshot_sha256: aa7e5c8a8541519fca072335dc8f3768e68563be5bb292cb6e7757d6aafdf352
+- evidence_id: ccap1918
+  kind: primary_source
+  reference: https://www.ccap.ac.uk/catalogue/strain-19-18
+  locator: Strain identity; Culture media, purity and growth conditions; serial subculture
+  accessed_at: '2026-10-21T07:16:20.671359Z'
+  support: supports
+  summary: CCAP catalogue identifies Dunaliella salina CCAP 19/18 and associates its
+    maintenance with 2ASW. Its collection growth-condition range and axenic annotation
+    are collection-specific context, not universal conditions or equivalence to the
+    imported formulation. Capture source key=ccap1918; actual HTTP status=200; capture
+    reused with its original access timestamp where indicated, not represented as
+    a new retrieval.
+  snapshot_sha256: f964fc991978a3f770d411091795fadcd6f81f6e34b069f935a96aa06e5c7989
+- evidence_id: spectrum2023supplement
+  kind: search
+  reference: https://www.biosynnatlab.com/wp-content/uploads/2023/03/Supporting-Information2023OR.pdf
+  locator: Attempted external Supporting Information PDF / Table S2
+  accessed_at: '2026-10-21T07:18:31.356364Z'
+  support: unknown
+  summary: 'The preserved attempt failed: <urlopen error [Errno 8] nodename nor servname
+    provided, or not known>. No supplement contents were inspected. Reused failed-attempt
+    metadata, not a fresh attempt during drafting.'
+  search_scope: Exact public supplement URL named by the article; free request; DNS
+    failure retained. No paid access.
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[4].term", "record": {"id": "CHEBI:131527",
+    "label": "dipotassium hydrogen phosphate"}, "canonical_label": "dipotassium hydrogen
+    phosphate", "canonical_label_matches": true, "is_obsolete": false, "source_key":
+    "chebi131527"}, {"field_path": "ingredients[4].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}, "canonical_label":
+    "dipotassium hydrogen phosphate", "canonical_label_matches": true, "is_obsolete":
+    false, "source_key": "chebi131527"}] Capture source key=chebi131527; actual HTTP
+    status=200; capture reused with its original access timestamp where indicated,
+    not represented as a new retrieval.'
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15940
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T06:55:11.874279Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[10].term", "record": {"id": "CHEBI:15940",
+    "label": "nicotinic acid"}, "canonical_label": "nicotinic acid", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi15940"}, {"field_path": "ingredients[10].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "canonical_label":
+    "nicotinic acid", "canonical_label_matches": true, "is_obsolete": false, "source_key":
+    "chebi15940"}] Capture source key=chebi15940; actual HTTP status=200; capture
+    reused with its original access timestamp where indicated, not represented as
+    a new retrieval.'
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T06:55:10.040495Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[5].term", "record": {"id": "CHEBI:15956",
+    "label": "biotin"}, "canonical_label": "biotin", "canonical_label_matches": true,
+    "is_obsolete": false, "source_key": "chebi15956"}, {"field_path": "ingredients[5].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:15956", "label": "biotin"}, "canonical_label": "biotin",
+    "canonical_label_matches": true, "is_obsolete": false, "source_key": "chebi15956"}]
+    Capture source key=chebi15956; actual HTTP status=200; capture reused with its
+    original access timestamp where indicated, not represented as a new retrieval.'
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi17268
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17268
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-21T07:16:23.488883Z'
+  support: supports
+  summary: CHEBI:17268 is myo-inositol; it is more specific than source Inositol and
+    target CHEBI:24848. The stock specificity is unresolved, not proven chemically
+    wrong. Capture source key=chebi17268; actual HTTP status=200; capture reused with
+    its original access timestamp where indicated, not represented as a new retrieval.
+  snapshot_sha256: 0b0cce127edf288993722217ac5a9c05a0bb876b8c34a481b3a41a20ed847888
+- evidence_id: chebi17439
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17439
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-21T07:16:23.574834Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[7].term", "record": {"id": "CHEBI:17439",
+    "label": "cyanocob(III)alamin"}, "canonical_label": "cyanocob(III)alamin", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi17439"}, {"field_path": "ingredients[7].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:17439", "label": "cyanocob(III)alamin"}, "canonical_label":
+    "cyanocob(III)alamin", "canonical_label_matches": true, "is_obsolete": false,
+    "source_key": "chebi17439"}] Capture source key=chebi17439; actual HTTP status=200;
+    capture reused with its original access timestamp where indicated, not represented
+    as a new retrieval.'
+  snapshot_sha256: 210a9fbc1db1c75e6053f4e23d098851ad5c63f087c736061f7664d9a393dbdd
+- evidence_id: chebi17821
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17821
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-21T07:16:24.079737Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[12].term", "record": {"id": "CHEBI:17821",
+    "label": "thymine"}, "canonical_label": "thymine", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi17821"}, {"field_path": "ingredients[12].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:17821", "label": "thymine"}, "canonical_label": "thymine",
+    "canonical_label_matches": true, "is_obsolete": false, "source_key": "chebi17821"}]
+    Capture source key=chebi17821; actual HTTP status=200; capture reused with its
+    original access timestamp where indicated, not represented as a new retrieval.'
+  snapshot_sha256: fa842c97ef37eb7149260a49f37f93a747804bf52c8534ddc616c9c2e0bdbba4
+- evidence_id: chebi24848
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_24848
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-21T07:23:17.153630Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[9].term", "record": {"id": "CHEBI:24848",
+    "label": "inositol"}, "canonical_label": "inositol", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi24848"}, {"field_path": "ingredients[9].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:24848", "label": "inositol"}, "canonical_label": "inositol",
+    "canonical_label_matches": true, "is_obsolete": false, "source_key": "chebi24848"}]
+    Capture source key=chebi24848; actual HTTP status=200; capture reused with its
+    original access timestamp where indicated, not represented as a new retrieval.'
+  snapshot_sha256: 3fa2e0500a67481ab6bb14c94ab5bf54099850527cad5e97b5f191ea4325ce8d
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T06:54:57.767507Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[1].term", "record": {"id": "CHEBI:26710",
+    "label": "sodium chloride"}, "canonical_label": "sodium chloride", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi26710"}, {"field_path": "ingredients[1].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:26710", "label": "sodium chloride"}, "canonical_label":
+    "sodium chloride", "canonical_label_matches": true, "is_obsolete": false, "source_key":
+    "chebi26710"}] Capture source key=chebi26710; actual HTTP status=200; capture
+    reused with its original access timestamp where indicated, not represented as
+    a new retrieval.'
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi27470
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T06:55:10.450814Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[8].term", "record": {"id": "CHEBI:27470",
+    "label": "folic acid"}, "canonical_label": "folic acid", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi27470"}, {"field_path": "ingredients[8].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:27470", "label": "folic acid"}, "canonical_label": "folic
+    acid", "canonical_label_matches": true, "is_obsolete": false, "source_key": "chebi27470"}]
+    Capture source key=chebi27470; actual HTTP status=200; capture reused with its
+    original access timestamp where indicated, not represented as a new retrieval.'
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi31345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T06:55:12.450283Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[6].term", "record": {"id": "CHEBI:31345",
+    "label": "Calcium pantothenate"}, "canonical_label": "Calcium pantothenate", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi31345"}, {"field_path": "ingredients[6].mediaingredientmech_chebi_term",
+    "record": {"id": "CHEBI:31345", "label": "Calcium pantothenate"}, "canonical_label":
+    "Calcium pantothenate", "canonical_label_matches": true, "is_obsolete": false,
+    "source_key": "chebi31345"}] Capture source key=chebi31345; actual HTTP status=200;
+    capture reused with its original access timestamp where indicated, not represented
+    as a new retrieval.'
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi34683
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34683
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T07:14:38.954484Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[3].term", "record": {"id": "CHEBI:34683",
+    "label": "disodium hydrogenphosphate"}, "canonical_label": "disodium hydrogenphosphate",
+    "canonical_label_matches": true, "is_obsolete": false, "source_key": "chebi34683"},
+    {"field_path": "ingredients[3].mediaingredientmech_chebi_term", "record": {"id":
+    "CHEBI:34683", "label": "disodium hydrogenphosphate"}, "canonical_label": "disodium
+    hydrogenphosphate", "canonical_label_matches": true, "is_obsolete": false, "source_key":
+    "chebi34683"}] Capture source key=chebi34683; actual HTTP status=200; capture
+    reused with its original access timestamp where indicated, not represented as
+    a new retrieval.'
+  snapshot_sha256: 288ee6eaa066e7579840122d3411df9987889818425faea2b7203724bbc41fd2
+- evidence_id: chebi39063
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_39063
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-21T07:23:18.597881Z'
+  support: supports
+  summary: CHEBI:39063 is the packaged MIM Tricine molecular entry; broader target
+    CHEBI:46760 is not a different-chemical allegation. Capture source key=chebi39063;
+    actual HTTP status=200; capture reused with its original access timestamp where
+    indicated, not represented as a new retrieval.
+  snapshot_sha256: 08db884b1f18600e8f95c6a3c02e90a169313cde5e80d487a89ee30465562d1a
+- evidence_id: chebi39063parents
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_39063/parents
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-21T07:24:07.068097Z'
+  support: supports
+  summary: OLS parent relation connects CHEBI:39063 to tricine CHEBI:46760. Capture
+    source key=chebi39063parents; actual HTTP status=200; capture reused with its
+    original access timestamp where indicated, not represented as a new retrieval.
+  snapshot_sha256: d65c8e4fffd677975ad2369420404551f28c3c6aded73114ab5f48cadb1d4e08
+- evidence_id: chebi46760
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_46760
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-21T07:16:24.837633Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[0].term", "record": {"id": "CHEBI:46760",
+    "label": "tricine"}, "canonical_label": "tricine", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi46760"}] Capture source key=chebi46760;
+    actual HTTP status=200; capture reused with its original access timestamp where
+    indicated, not represented as a new retrieval.'
+  snapshot_sha256: 209acf0fe4e8f79f96615834a69b6a113baf59b37f08ecedb1a154b6ada66c27
+- evidence_id: chebi46760children
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCHEBI_46760/children
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-21T07:24:06.405504Z'
+  support: supports
+  summary: OLS child relation connects the broader tricine CHEBI:46760 to CHEBI:39063.
+    Capture source key=chebi46760children; actual HTTP status=200; capture reused
+    with its original access timestamp where indicated, not represented as a new retrieval.
+  snapshot_sha256: 269c5dc28be14829e05a6bb7f2679f922ff98a861442a32ac3de8759b491886d
+- evidence_id: chebi49105
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T06:55:10.911379Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[11].term", "record": {"id": "CHEBI:49105",
+    "label": "thiamine hydrochloride"}, "canonical_label": "thiamine hydrochloride",
+    "canonical_label_matches": true, "is_obsolete": false, "source_key": "chebi49105"},
+    {"field_path": "ingredients[11].mediaingredientmech_chebi_term", "record": {"id":
+    "CHEBI:49105", "label": "thiamine hydrochloride"}, "canonical_label": "thiamine
+    hydrochloride", "canonical_label_matches": true, "is_obsolete": false, "source_key":
+    "chebi49105"}] Capture source key=chebi49105; actual HTTP status=200; capture
+    reused with its original access timestamp where indicated, not represented as
+    a new retrieval.'
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi63005
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  locator: Exact OLS term identity/label/obsolete status or stated direct parent-child
+    relation
+  accessed_at: '2026-10-20T04:02:36.443517Z'
+  support: supports
+  summary: 'Every matching asserted primary/secondary ID-label pair is canonical and
+    non-obsolete: [{"field_path": "ingredients[2].term", "record": {"id": "CHEBI:63005",
+    "label": "sodium nitrate"}, "canonical_label": "sodium nitrate", "canonical_label_matches":
+    true, "is_obsolete": false, "source_key": "chebi63005"}] Capture source key=chebi63005;
+    actual HTTP status=200; capture reused with its original access timestamp where
+    indicated, not represented as a new retrieval.'
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All 14 exact ingredient-label rows, asserted current CHEBI keys, legacy
+    identifier lookup; adjacent metadata pinned in source.inputs
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: context_only
+  summary: '[{"field_path": "ingredients[0]", "preferred_term": "Tricine", "current_primary_term":
+    {"id": "CHEBI:46760", "label": "tricine"}, "mim_link": null, "exact_label_rows":
+    [{"label": "Tricine", "match_type": "preferred_term", "identifier": "CHEBI:39063",
+    "preferred_term": "Tricine", "ontology_id": "CHEBI:39063", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"field_path": "ingredients[1]", "preferred_term": "NaCl",
+    "current_primary_term": {"id": "CHEBI:26710", "label": "sodium chloride"}, "mim_link":
+    {"id": "CHEBI:26710", "label": "sodium chloride"}, "exact_label_rows": [{"label":
+    "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term":
+    "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"field_path": "ingredients[2]", "preferred_term": "NaNO3", "current_primary_term":
+    {"id": "CHEBI:63005", "label": "sodium nitrate"}, "mim_link": {"id": "MediaIngredientMech:000171",
+    "label": "NaNO3"}, "exact_label_rows": [{"label": "NaNO3", "match_type": "preferred_term",
+    "identifier": "CHEBI:63005", "preferred_term": "NaNO3", "ontology_id": "CHEBI:63005",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"field_path": "ingredients[3]",
+    "preferred_term": "Na2HPO4", "current_primary_term": {"id": "CHEBI:34683", "label":
+    "disodium hydrogenphosphate"}, "mim_link": {"id": "CHEBI:34683", "label": "disodium
+    hydrogenphosphate"}, "exact_label_rows": [{"label": "Na2HPO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:34683", "preferred_term": "Na2HPO4", "ontology_id": "CHEBI:34683",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"field_path": "ingredients[4]",
+    "preferred_term": "K2HPO4", "current_primary_term": {"id": "CHEBI:131527", "label":
+    "dipotassium hydrogen phosphate"}, "mim_link": {"id": "CHEBI:131527", "label":
+    "dipotassium hydrogen phosphate"}, "exact_label_rows": [{"label": "K2HPO4", "match_type":
+    "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id":
+    "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"field_path":
+    "ingredients[5]", "preferred_term": "Biotin", "current_primary_term": {"id": "CHEBI:15956",
+    "label": "biotin"}, "mim_link": {"id": "CHEBI:15956", "label": "biotin"}, "exact_label_rows":
+    [{"label": "Biotin", "match_type": "preferred_term", "identifier": "CHEBI:15956",
+    "preferred_term": "Biotin", "ontology_id": "CHEBI:15956", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}, {"field_path": "ingredients[6]", "preferred_term": "Calcium
+    pantothenate", "current_primary_term": {"id": "CHEBI:31345", "label": "Calcium
+    pantothenate"}, "mim_link": {"id": "CHEBI:31345", "label": "Calcium pantothenate"},
+    "exact_label_rows": [{"label": "Calcium pantothenate", "match_type": "preferred_term",
+    "identifier": "CHEBI:31345", "preferred_term": "Calcium pantothenate", "ontology_id":
+    "CHEBI:31345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "Calcium
+    pantothenate", "match_type": "ontology_label", "identifier": "CHEBI:31345", "preferred_term":
+    "Ca-pantothenate", "ontology_id": "CHEBI:31345", "mapping_status": "REJECTED",
+    "ambiguity": "unique"}, {"label": "Calcium pantothenate", "match_type": "ontology_label",
+    "identifier": "CHEBI:31345", "preferred_term": "Calcium D-Pantothenate", "ontology_id":
+    "CHEBI:31345", "mapping_status": "REJECTED", "ambiguity": "unique"}]}, {"field_path":
+    "ingredients[7]", "preferred_term": "Cyanocobalamine", "current_primary_term":
+    {"id": "CHEBI:17439", "label": "cyanocob(III)alamin"}, "mim_link": {"id": "CHEBI:17439",
+    "label": "cyanocob(III)alamin"}, "exact_label_rows": [{"label": "Cyanocobalamine",
+    "match_type": "synonym", "identifier": "CHEBI:17439", "preferred_term": "Cyanocobalamin",
+    "ontology_id": "CHEBI:17439", "mapping_status": "MAPPED", "ambiguity": "unresolved:partial_chemistry"},
+    {"label": "Cyanocobalamine", "match_type": "synonym", "identifier": "CHEBI:176843",
+    "preferred_term": "Vitamin B12", "ontology_id": "CHEBI:176843", "mapping_status":
+    "MAPPED", "ambiguity": "unresolved:partial_chemistry"}]}, {"field_path": "ingredients[8]",
+    "preferred_term": "Folic acid", "current_primary_term": {"id": "CHEBI:27470",
+    "label": "folic acid"}, "mim_link": {"id": "CHEBI:27470", "label": "folic acid"},
+    "exact_label_rows": [{"label": "Folic acid", "match_type": "preferred_term", "identifier":
+    "CHEBI:27470", "preferred_term": "Folic acid", "ontology_id": "CHEBI:27470", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"field_path": "ingredients[9]", "preferred_term":
+    "Inositol", "current_primary_term": {"id": "CHEBI:24848", "label": "inositol"},
+    "mim_link": {"id": "CHEBI:24848", "label": "inositol"}, "exact_label_rows": [{"label":
+    "Inositol", "match_type": "preferred_term", "identifier": "CHEBI:24848", "preferred_term":
+    "Inositol", "ontology_id": "CHEBI:24848", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"field_path": "ingredients[10]", "preferred_term": "Nicotinic acid",
+    "current_primary_term": {"id": "CHEBI:15940", "label": "nicotinic acid"}, "mim_link":
+    {"id": "CHEBI:15940", "label": "nicotinic acid"}, "exact_label_rows": [{"label":
+    "Nicotinic acid", "match_type": "preferred_term", "identifier": "CHEBI:15940",
+    "preferred_term": "Nicotinic acid", "ontology_id": "CHEBI:15940", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"field_path": "ingredients[11]", "preferred_term":
+    "Thiamine HCl", "current_primary_term": {"id": "CHEBI:49105", "label": "thiamine
+    hydrochloride"}, "mim_link": {"id": "CHEBI:49105", "label": "thiamine hydrochloride"},
+    "exact_label_rows": [{"label": "Thiamine HCl", "match_type": "preferred_term",
+    "identifier": "CHEBI:49105", "preferred_term": "Thiamine HCl", "ontology_id":
+    "CHEBI:49105", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"field_path":
+    "ingredients[12]", "preferred_term": "Thymine", "current_primary_term": {"id":
+    "CHEBI:17821", "label": "thymine"}, "mim_link": {"id": "CHEBI:17821", "label":
+    "thymine"}, "exact_label_rows": [{"label": "Thymine", "match_type": "preferred_term",
+    "identifier": "CHEBI:17821", "preferred_term": "Thymine", "ontology_id": "CHEBI:17821",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"field_path": "ingredients[13]",
+    "preferred_term": "Soil", "current_primary_term": null, "mim_link": null, "exact_label_rows":
+    [{"label": "Soil", "match_type": "preferred_term", "identifier": "ENVO:00001998",
+    "preferred_term": "Soil", "ontology_id": "ENVO:00001998", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}]'
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: dependency-search
+  kind: search
+  reference: owned batch008 checkout; byte-identical dependencies bound to fresh batch009
+  locator: Exact stock IDs and legacy MediaIngredientMech:000171 searches
+  accessed_at: '2026-10-21T07:47:17.952573Z'
+  support: context_only
+  summary: Ignored-inclusive searches resolved the three actual stock records. The
+    legacy identifier occurs in many corpus references, but the current packaged index
+    has no exact numeric identifier row; no historical definition is inferred from
+    repetition. Search commands and results retained in /private/tmp/culturemech-review-source-preflight-batch009-tail/088/dependency-searches.json
+  snapshot_sha256: e8e896027297650a815606b3641755f84a9a766300a243eae84d9e399dc32616
+  search_scope: rg --no-ignore --hidden over the owned checkout and exact identifier
+    search in the complete packaged index; includes ignored files. Absence is bounded
+    to these inspected inputs, not all historical releases.
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition lines 491–508; _parse_api_solutions 593–621; _parse_preparation_steps
+    703–719; _classify_preparation_action 723–762; _infer_category 850–870
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: Current composition parsing already separates primary neat compounds from
+    stock doses, so the old flattened record does not prove that current composition
+    parsing still does this. Preparation parsing still appends steps from all solutions
+    to one parent list. The action classifier matches heat before store without negation
+    handling, misreading away from heat. The 2ASW name reaches bacterial fallback.
+    Code inspection is not a historical execution reconstruction.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: exporter
+  kind: record_content
+  reference: src/culturemech/export/kgx_export.py
+  locator: organism_grows_in_medium_edge, lines 482–489
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: Truthy scoped_to_variant now causes a warning and suppresses the parent
+    growth edge. The exporter does not create a variant edge here. Owner notes saying
+    the current exporter ignores scope are stale; no native target_organisms exists
+    in this record, so no actual erroneous growth edge is demonstrated.
+  snapshot_sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+- evidence_id: schema-context
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: OrganismDescriptor.preferred_term/scoped_to_variant; Solution composition;
+    MediaIngredientMechTerm
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: OrganismDescriptor keys by scientific name and scopes the entire descriptor.
+    Solution composition is authoritative and placeholder ingredients are permitted;
+    these dependencies are not invalid merely for carrying their compatibility placeholders.
+    The legacy MIM slot is still allowed.
+  snapshot_sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+- evidence_id: raw-converter
+  kind: record_content
+  reference: src/culturemech/convert/mediadive_raw_yaml.py
+  locator: Raw JSON-to-YAML conversion contract
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: Mechanical 1:1 conversion preserves raw structure; it does not independently
+    curate stock hierarchy, scientific identities or preparation scope.
+  snapshot_sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+- evidence_id: amount-calculations
+  kind: validation
+  reference: Inspected target, provider stock hierarchy and current CCAP tables
+  locator: All 14 ingredient rows and three source stock doses; nominal 1 L receiving-volume
+    basis
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: '{"ingredients": [{"field_path": "ingredients[0]", "preferred_term": "Tricine",
+    "record_amount": {"value": "0.5", "unit": "G_PER_L"}, "provider_solution_id":
+    "6000", "provider_source_row": {"recipe_order": 1, "compound": "Tricine", "compound_id":
+    2349, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.79065, "optional": 0},
+    "source_basis": "Direct parent addition per litre.", "assessment": "Source-supported
+    direct addition.", "nominal_final_contribution_g_per_litre": "0.5", "calculation":
+    "Direct source medium addition per litre; no stock dilution.", "source_locator":
+    "$.data.solutions[id=6000].recipe[compound_id=2349]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[1]", "preferred_term": "NaCl", "record_amount": {"value":
+    "35", "unit": "G_PER_L"}, "provider_solution_id": "6000", "provider_source_row":
+    {"recipe_order": 2, "compound": "NaCl", "compound_id": 43, "amount": 35, "unit":
+    "g", "g_l": 35, "mmol_l": 598.905, "optional": 0}, "source_basis": "Direct parent
+    addition per litre.", "assessment": "Source-supported direct addition. NaCl amount
+    is added NaCl, not total salt from seawater.", "nominal_final_contribution_g_per_litre":
+    "35", "calculation": "Direct source medium addition per litre; no stock dilution.",
+    "source_locator": "$.data.solutions[id=6000].recipe[compound_id=43]", "source_evidence_id":
+    "mediadiveC9api"}, {"field_path": "ingredients[2]", "preferred_term": "NaNO3",
+    "record_amount": {"value": "30", "unit": "G_PER_L"}, "provider_solution_id": "6120",
+    "provider_source_row": {"recipe_order": 2, "compound": "NaNO3", "compound_id":
+    187, "amount": 30, "unit": "g", "g_l": 30, "mmol_l": 352.962, "optional": 0},
+    "source_basis": "Extra-salts stock concentration, not the final medium concentration.",
+    "assessment": "Value matches stock recipe but parent ingredient placement lacks
+    the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre": "0.11250",
+    "calculation": "30 g/L stock × 0.00375 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6120].recipe[compound_id=187]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[3]", "preferred_term": "Na2HPO4", "record_amount":
+    {"value": "1.2", "unit": "G_PER_L"}, "provider_solution_id": "6120", "provider_source_row":
+    {"recipe_order": 3, "compound": "Na2HPO4", "compound_id": 233, "amount": 1.2,
+    "unit": "g", "g_l": 1.2, "mmol_l": 8.45315, "optional": 0}, "source_basis": "Extra-salts
+    stock concentration, not the final medium concentration.", "assessment": "Value
+    matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.004500", "calculation":
+    "1.2 g/L stock × 0.00375 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6120].recipe[compound_id=233]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[4]", "preferred_term":
+    "K2HPO4", "record_amount": {"value": "1", "unit": "G_PER_L"}, "provider_solution_id":
+    "6120", "provider_source_row": {"recipe_order": 4, "compound": "K2HPO4", "compound_id":
+    10, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 5.74132, "optional": 0}, "source_basis":
+    "Extra-salts stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.00375", "calculation":
+    "1 g/L stock × 0.00375 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6120].recipe[compound_id=10]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[5]", "preferred_term":
+    "Biotin", "record_amount": {"value": "0.0002", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 2, "compound": "Biotin", "compound_id":
+    46, "amount": 0.0002, "unit": "g", "g_l": 0.0002, "mmol_l": 0.000818632, "optional":
+    0}, "source_basis": "Vitamin stock concentration, not the final medium concentration.",
+    "assessment": "Value matches stock recipe but parent ingredient placement lacks
+    the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre": "5.0E-7",
+    "calculation": "0.0002 g/L stock × 0.0025 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6118].recipe[compound_id=46]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[6]", "preferred_term": "Calcium pantothenate", "record_amount":
+    {"value": "0.02", "unit": "G_PER_L"}, "provider_solution_id": "6118", "provider_source_row":
+    {"recipe_order": 3, "compound": "Calcium pantothenate", "compound_id": 518, "amount":
+    0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0419698, "optional": 0}, "source_basis":
+    "Vitamin stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.000050", "calculation":
+    "0.02 g/L stock × 0.0025 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6118].recipe[compound_id=518]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[7]", "preferred_term":
+    "Cyanocobalamine", "record_amount": {"value": "0.004", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 4, "compound": "Cyanocobalamine",
+    "compound_id": 847, "amount": 0.004, "unit": "g", "g_l": 0.004, "mmol_l": 0.00295116,
+    "optional": 0}, "source_basis": "Vitamin stock concentration, not the final medium
+    concentration.", "assessment": "Value matches stock recipe but parent ingredient
+    placement lacks the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre":
+    "0.0000100", "calculation": "0.004 g/L stock × 0.0025 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6118].recipe[compound_id=847]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[8]", "preferred_term": "Folic acid", "record_amount":
+    {"value": "0.0004", "unit": "G_PER_L"}, "provider_solution_id": "6118", "provider_source_row":
+    {"recipe_order": 5, "compound": "Folic acid", "compound_id": 138, "amount": 0.0004,
+    "unit": "g", "g_l": 0.0004, "mmol_l": 0.000906208, "optional": 0}, "source_basis":
+    "Vitamin stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.00000100", "calculation":
+    "0.0004 g/L stock × 0.0025 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6118].recipe[compound_id=138]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[9]", "preferred_term":
+    "Inositol", "record_amount": {"value": "1", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 6, "compound": "Inositol", "compound_id":
+    451, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 5.55062, "optional": 0}, "source_basis":
+    "Vitamin stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.0025", "calculation":
+    "1 g/L stock × 0.0025 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6118].recipe[compound_id=451]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[10]", "preferred_term":
+    "Nicotinic acid", "record_amount": {"value": "0.02", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 7, "compound": "Nicotinic acid",
+    "compound_id": 139, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.162456,
+    "optional": 0}, "source_basis": "Vitamin stock concentration, not the final medium
+    concentration.", "assessment": "Value matches stock recipe but parent ingredient
+    placement lacks the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre":
+    "0.000050", "calculation": "0.02 g/L stock × 0.0025 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6118].recipe[compound_id=139]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[11]", "preferred_term": "Thiamine HCl", "record_amount":
+    {"value": "0.1", "unit": "G_PER_L"}, "provider_solution_id": "6118", "provider_source_row":
+    {"recipe_order": 8, "compound": "Thiamine HCl", "compound_id": 1207, "amount":
+    0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.296472, "optional": 0}, "source_basis":
+    "Vitamin stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.00025", "calculation":
+    "0.1 g/L stock × 0.0025 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6118].recipe[compound_id=1207]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[12]", "preferred_term":
+    "Thymine", "record_amount": {"value": "0.6", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 9, "compound": "Thymine", "compound_id":
+    560, "amount": 0.6, "unit": "g", "g_l": 0.6, "mmol_l": 4.75764, "optional": 0},
+    "source_basis": "Vitamin stock concentration, not the final medium concentration.",
+    "assessment": "Value matches stock recipe but parent ingredient placement lacks
+    the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre": "0.00150",
+    "calculation": "0.6 g/L stock × 0.0025 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6118].recipe[compound_id=560]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[13]", "preferred_term": "Soil", "record_amount": {"value":
+    "variable", "unit": "VARIABLE"}, "provider_solution_id": "6119", "provider_source_row":
+    {"recipe_order": 2, "compound": "Soil", "compound_id": 2350, "attribute": "air-dried",
+    "optional": 0}, "source_basis": "Soil is an undefined component of SE1; no numerical
+    compound amount is provided.", "assessment": "VARIABLE avoids inventing a soil
+    concentration, but its parent-level placement loses the SE1 stock context and
+    25 mL/L dose.", "source_locator": "$.data.solutions[id=6119].recipe[compound_id=2350]",
+    "source_evidence_id": "mediadiveC9api"}], "doses": [{"missing_field_path": "solutions[provider_id=mediadive.solution:6120]",
+    "name": "Extra salts", "provider_amount": 3.75, "provider_unit": "ml", "medium_volume_ml":
+    1000, "resolved_dependency": "data/normalized_yaml/bacterial/mediadive_6120_Extra_salts.yaml",
+    "resolved_culturemech_id": "CultureMech:014824", "evidence": {"source_key": "mediadiveC9api",
+    "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6000].recipe[solution_id=6120]", "support": "SUPPORT",
+    "claim": "Exact named stock addition to the medium."}}, {"missing_field_path":
+    "solutions[provider_id=mediadive.solution:6118]", "name": "Vitamin solution",
+    "provider_amount": 2.5, "provider_unit": "ml", "medium_volume_ml": 1000, "resolved_dependency":
+    "data/normalized_yaml/bacterial/mediadive_6118_Vitamin_solution.yaml", "resolved_culturemech_id":
+    "CultureMech:014821", "evidence": {"source_key": "mediadiveC9api", "source_sha256":
+    "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14", "locator":
+    "$.data.solutions[id=6000].recipe[solution_id=6118]", "support": "SUPPORT", "claim":
+    "Exact named stock addition to the medium."}}, {"missing_field_path": "solutions[provider_id=mediadive.solution:6119]",
+    "name": "SE1 (Soil Extract 1)", "provider_amount": 25, "provider_unit": "ml",
+    "medium_volume_ml": 1000, "resolved_dependency": "data/normalized_yaml/bacterial/mediadive_6119_SE1_Soil_Extract_1.yaml",
+    "resolved_culturemech_id": "CultureMech:014822", "evidence": {"source_key": "mediadiveC9api",
+    "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6000].recipe[solution_id=6119]", "support": "SUPPORT",
+    "claim": "Exact named stock addition to the medium."}}], "source_version_comparison":
+    {"extra_salts": [{"component": "NaNO3", "provider_stock_g_per_litre": "30", "provider_dose_ml_per_litre":
+    "3.75", "ccap_stock_g_per_litre": "15", "ccap_dose_ml_per_litre": "7.50", "derived_final_g_per_litre":
+    "0.11250"}, {"component": "Na2HPO4", "provider_stock_g_per_litre": "1.2", "provider_dose_ml_per_litre":
+    "3.75", "ccap_stock_g_per_litre": "0.6", "ccap_dose_ml_per_litre": "7.50", "derived_final_g_per_litre":
+    "0.004500"}, {"component": "K2HPO4", "provider_stock_g_per_litre": "1", "provider_dose_ml_per_litre":
+    "3.75", "ccap_stock_g_per_litre": "0.5", "ccap_dose_ml_per_litre": "7.50", "derived_final_g_per_litre":
+    "0.00375"}], "vitamin_stock": "Both source versions give the same eight stock
+    concentrations and 2.5 mL/L dose.", "se1_dose": "Both source versions specify
+    25 mL/L SE1.", "direct_additions": "Both source versions specify tricine 0.5 g/L
+    and NaCl 35 g/L added to the medium.", "pH": "Both sources give 7.6–7.8 with 1
+    M NaOH or 1 M HCl before autoclaving.", "parent_sterilization": "Both specify
+    15 psi for 15 minutes; no parent autoclave temperature is inferred.", "water_base_difference":
+    "MediaDive retains filtered natural seawater or distilled water plus 33.6 g Ultramarine
+    Synthetica. Current CCAP names filtered natural seawater or deionised water plus
+    33.6 g Instant Ocean. Product identity is a source/version difference; equal mass
+    does not establish product equivalence.", "se1_preparation_difference": "Provider:
+    air-dried soil with twice its volume of distilled water, 15 psi for 2 hours, decant,
+    then sterilize aliquots (for example <=1 L for 15 minutes). Current marine SE1:
+    dried/sieved soil, twice-volume deionised water, two 20-minute cycles at source-stated
+    15 psi/126°C, settling about 2–3 weeks, aseptic decant, then 15 psi/121°C for
+    15 minutes and refrigeration. Preserve literal source pressure/temperature pairing.",
+    "scope_limit": "Equal nominal specified-stock contributions do not prove identical
+    water-base, soil-extract composition, source version, or complete final medium.
+    No total sodium/NaCl/osmolarity calculation is justified.", "evidence": [{"source_key":
+    "mediadiveC9api", "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions", "support": "SUPPORT_FOR_PROVIDER_VERSION", "claim":
+    "Current provider hierarchy and preparation."}, {"source_key": "ccap2asw", "source_sha256":
+    "d5d658702a3640ed17c4d9d494f198f7122be90cbc81e64ccdc8afad1c4401cc", "locator":
+    "Page 1 / stock and medium tables; preparation paragraph and asterisk", "support":
+    "SUPPORT_FOR_CURRENT_CCAP_VERSION", "claim": "Current CCAP source version."},
+    {"source_key": "ccapSE1Marine", "source_sha256": "a1aa6a7de8c76d20ee216b828beddae6f94bd94b7e154ef657f7863f562a8934",
+    "locator": "Page 1 / Preparing the soil and Medium", "support": "SUPPORT_FOR_CURRENT_CCAP_SE1_VERSION",
+    "claim": "Current marine soil-extract preparation."}]}}'
+- evidence_id: history-comparison
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/2asw.yaml
+  locator: Full target/owner comparison; all timestamp fields; target merge event;
+    owner 2026-10-14 event, references and variants
+  accessed_at: '2026-10-21T07:53:01Z'
+  support: supports
+  summary: All history timestamps parse with timezone. Target is the singleton generated
+    C9 owner as identified by its MERGED_RECIPES source 2asw.yaml and stable ID. Both
+    formulation/preparation lists match exactly, but target omits both owner citations,
+    both bounded study variants and the later citation event. No history was changed.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact generated C9 import and maintained owner
+  outcome: supported
+  summary: MediaDive C9, CCAP source URL, source name and singleton merge ownership
+    agree. The independent algae 2ASW record is not merged or reviewed here. LIQUID,
+    COMPLEX and UNDEFINED fit the listed seawater/soil-extract formulation; pH 7.6–7.8
+    and the two parent preparation texts are source-supported.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveC9api
+  - ccap2asw
+  - history-comparison
+- assessment_id: amounts
+  area: quantity
+  topic: All 14 ingredient amounts and preparation stage
+  outcome: concern
+  summary: Tricine 0.5 g/L and added NaCl 35 g/L are direct parent values. Eleven
+    numbers agree with their stock recipes rather than parent final concentrations.
+    Soil is appropriately unquantified but belongs to SE1. Missing stock hierarchy
+    makes the flat parent list materially misleading.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveC9api
+  - amount-calculations
+  details: '[{"field_path": "ingredients[0]", "preferred_term": "Tricine", "record_amount":
+    {"value": "0.5", "unit": "G_PER_L"}, "provider_solution_id": "6000", "provider_source_row":
+    {"recipe_order": 1, "compound": "Tricine", "compound_id": 2349, "amount": 0.5,
+    "unit": "g", "g_l": 0.5, "mmol_l": 2.79065, "optional": 0}, "source_basis": "Direct
+    parent addition per litre.", "assessment": "Source-supported direct addition.",
+    "nominal_final_contribution_g_per_litre": "0.5", "calculation": "Direct source
+    medium addition per litre; no stock dilution.", "source_locator": "$.data.solutions[id=6000].recipe[compound_id=2349]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[1]", "preferred_term":
+    "NaCl", "record_amount": {"value": "35", "unit": "G_PER_L"}, "provider_solution_id":
+    "6000", "provider_source_row": {"recipe_order": 2, "compound": "NaCl", "compound_id":
+    43, "amount": 35, "unit": "g", "g_l": 35, "mmol_l": 598.905, "optional": 0}, "source_basis":
+    "Direct parent addition per litre.", "assessment": "Source-supported direct addition.
+    NaCl amount is added NaCl, not total salt from seawater.", "nominal_final_contribution_g_per_litre":
+    "35", "calculation": "Direct source medium addition per litre; no stock dilution.",
+    "source_locator": "$.data.solutions[id=6000].recipe[compound_id=43]", "source_evidence_id":
+    "mediadiveC9api"}, {"field_path": "ingredients[2]", "preferred_term": "NaNO3",
+    "record_amount": {"value": "30", "unit": "G_PER_L"}, "provider_solution_id": "6120",
+    "provider_source_row": {"recipe_order": 2, "compound": "NaNO3", "compound_id":
+    187, "amount": 30, "unit": "g", "g_l": 30, "mmol_l": 352.962, "optional": 0},
+    "source_basis": "Extra-salts stock concentration, not the final medium concentration.",
+    "assessment": "Value matches stock recipe but parent ingredient placement lacks
+    the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre": "0.11250",
+    "calculation": "30 g/L stock × 0.00375 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6120].recipe[compound_id=187]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[3]", "preferred_term": "Na2HPO4", "record_amount":
+    {"value": "1.2", "unit": "G_PER_L"}, "provider_solution_id": "6120", "provider_source_row":
+    {"recipe_order": 3, "compound": "Na2HPO4", "compound_id": 233, "amount": 1.2,
+    "unit": "g", "g_l": 1.2, "mmol_l": 8.45315, "optional": 0}, "source_basis": "Extra-salts
+    stock concentration, not the final medium concentration.", "assessment": "Value
+    matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.004500", "calculation":
+    "1.2 g/L stock × 0.00375 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6120].recipe[compound_id=233]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[4]", "preferred_term":
+    "K2HPO4", "record_amount": {"value": "1", "unit": "G_PER_L"}, "provider_solution_id":
+    "6120", "provider_source_row": {"recipe_order": 4, "compound": "K2HPO4", "compound_id":
+    10, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 5.74132, "optional": 0}, "source_basis":
+    "Extra-salts stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.00375", "calculation":
+    "1 g/L stock × 0.00375 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6120].recipe[compound_id=10]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[5]", "preferred_term":
+    "Biotin", "record_amount": {"value": "0.0002", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 2, "compound": "Biotin", "compound_id":
+    46, "amount": 0.0002, "unit": "g", "g_l": 0.0002, "mmol_l": 0.000818632, "optional":
+    0}, "source_basis": "Vitamin stock concentration, not the final medium concentration.",
+    "assessment": "Value matches stock recipe but parent ingredient placement lacks
+    the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre": "5.0E-7",
+    "calculation": "0.0002 g/L stock × 0.0025 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6118].recipe[compound_id=46]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[6]", "preferred_term": "Calcium pantothenate", "record_amount":
+    {"value": "0.02", "unit": "G_PER_L"}, "provider_solution_id": "6118", "provider_source_row":
+    {"recipe_order": 3, "compound": "Calcium pantothenate", "compound_id": 518, "amount":
+    0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0419698, "optional": 0}, "source_basis":
+    "Vitamin stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.000050", "calculation":
+    "0.02 g/L stock × 0.0025 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6118].recipe[compound_id=518]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[7]", "preferred_term":
+    "Cyanocobalamine", "record_amount": {"value": "0.004", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 4, "compound": "Cyanocobalamine",
+    "compound_id": 847, "amount": 0.004, "unit": "g", "g_l": 0.004, "mmol_l": 0.00295116,
+    "optional": 0}, "source_basis": "Vitamin stock concentration, not the final medium
+    concentration.", "assessment": "Value matches stock recipe but parent ingredient
+    placement lacks the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre":
+    "0.0000100", "calculation": "0.004 g/L stock × 0.0025 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6118].recipe[compound_id=847]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[8]", "preferred_term": "Folic acid", "record_amount":
+    {"value": "0.0004", "unit": "G_PER_L"}, "provider_solution_id": "6118", "provider_source_row":
+    {"recipe_order": 5, "compound": "Folic acid", "compound_id": 138, "amount": 0.0004,
+    "unit": "g", "g_l": 0.0004, "mmol_l": 0.000906208, "optional": 0}, "source_basis":
+    "Vitamin stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.00000100", "calculation":
+    "0.0004 g/L stock × 0.0025 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6118].recipe[compound_id=138]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[9]", "preferred_term":
+    "Inositol", "record_amount": {"value": "1", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 6, "compound": "Inositol", "compound_id":
+    451, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 5.55062, "optional": 0}, "source_basis":
+    "Vitamin stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.0025", "calculation":
+    "1 g/L stock × 0.0025 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6118].recipe[compound_id=451]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[10]", "preferred_term":
+    "Nicotinic acid", "record_amount": {"value": "0.02", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 7, "compound": "Nicotinic acid",
+    "compound_id": 139, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.162456,
+    "optional": 0}, "source_basis": "Vitamin stock concentration, not the final medium
+    concentration.", "assessment": "Value matches stock recipe but parent ingredient
+    placement lacks the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre":
+    "0.000050", "calculation": "0.02 g/L stock × 0.0025 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6118].recipe[compound_id=139]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[11]", "preferred_term": "Thiamine HCl", "record_amount":
+    {"value": "0.1", "unit": "G_PER_L"}, "provider_solution_id": "6118", "provider_source_row":
+    {"recipe_order": 8, "compound": "Thiamine HCl", "compound_id": 1207, "amount":
+    0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.296472, "optional": 0}, "source_basis":
+    "Vitamin stock concentration, not the final medium concentration.", "assessment":
+    "Value matches stock recipe but parent ingredient placement lacks the receiving-medium
+    stock dose.", "nominal_final_contribution_g_per_litre": "0.00025", "calculation":
+    "0.1 g/L stock × 0.0025 L stock / 1 L medium", "source_locator": "$.data.solutions[id=6118].recipe[compound_id=1207]",
+    "source_evidence_id": "mediadiveC9api"}, {"field_path": "ingredients[12]", "preferred_term":
+    "Thymine", "record_amount": {"value": "0.6", "unit": "G_PER_L"}, "provider_solution_id":
+    "6118", "provider_source_row": {"recipe_order": 9, "compound": "Thymine", "compound_id":
+    560, "amount": 0.6, "unit": "g", "g_l": 0.6, "mmol_l": 4.75764, "optional": 0},
+    "source_basis": "Vitamin stock concentration, not the final medium concentration.",
+    "assessment": "Value matches stock recipe but parent ingredient placement lacks
+    the receiving-medium stock dose.", "nominal_final_contribution_g_per_litre": "0.00150",
+    "calculation": "0.6 g/L stock × 0.0025 L stock / 1 L medium", "source_locator":
+    "$.data.solutions[id=6118].recipe[compound_id=560]", "source_evidence_id": "mediadiveC9api"},
+    {"field_path": "ingredients[13]", "preferred_term": "Soil", "record_amount": {"value":
+    "variable", "unit": "VARIABLE"}, "provider_solution_id": "6119", "provider_source_row":
+    {"recipe_order": 2, "compound": "Soil", "compound_id": 2350, "attribute": "air-dried",
+    "optional": 0}, "source_basis": "Soil is an undefined component of SE1; no numerical
+    compound amount is provided.", "assessment": "VARIABLE avoids inventing a soil
+    concentration, but its parent-level placement loses the SE1 stock context and
+    25 mL/L dose.", "source_locator": "$.data.solutions[id=6119].recipe[compound_id=2350]",
+    "source_evidence_id": "mediadiveC9api"}]'
+- assessment_id: stocks
+  area: representation
+  topic: Three stock identities and receiving-medium doses
+  outcome: concern
+  summary: The explicit provider doses are Extra salts 6120 (CM014824) 3.75 mL/L,
+    vitamin 6118 (CM014821) 2.5 mL/L and SE1 6119 (CM014822) 25 mL/L. All three exact
+    dependencies exist and their compositions agree with their direct APIs. Neither
+    target nor owner represents these additions. Schema-permitted stock placeholders
+    are not a separate defect.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveC9api
+  - mediadiveSolution6120
+  - mediadiveSolution6118
+  - mediadiveSolution6119
+  - stock-6120
+  - stock-6118
+  - stock-6119
+  - schema-context
+  - dependency-search
+  details: '{"doses": [{"missing_field_path": "solutions[provider_id=mediadive.solution:6120]",
+    "name": "Extra salts", "provider_amount": 3.75, "provider_unit": "ml", "medium_volume_ml":
+    1000, "resolved_dependency": "data/normalized_yaml/bacterial/mediadive_6120_Extra_salts.yaml",
+    "resolved_culturemech_id": "CultureMech:014824", "evidence": {"source_key": "mediadiveC9api",
+    "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6000].recipe[solution_id=6120]", "support": "SUPPORT",
+    "claim": "Exact named stock addition to the medium."}}, {"missing_field_path":
+    "solutions[provider_id=mediadive.solution:6118]", "name": "Vitamin solution",
+    "provider_amount": 2.5, "provider_unit": "ml", "medium_volume_ml": 1000, "resolved_dependency":
+    "data/normalized_yaml/bacterial/mediadive_6118_Vitamin_solution.yaml", "resolved_culturemech_id":
+    "CultureMech:014821", "evidence": {"source_key": "mediadiveC9api", "source_sha256":
+    "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14", "locator":
+    "$.data.solutions[id=6000].recipe[solution_id=6118]", "support": "SUPPORT", "claim":
+    "Exact named stock addition to the medium."}}, {"missing_field_path": "solutions[provider_id=mediadive.solution:6119]",
+    "name": "SE1 (Soil Extract 1)", "provider_amount": 25, "provider_unit": "ml",
+    "medium_volume_ml": 1000, "resolved_dependency": "data/normalized_yaml/bacterial/mediadive_6119_SE1_Soil_Extract_1.yaml",
+    "resolved_culturemech_id": "CultureMech:014822", "evidence": {"source_key": "mediadiveC9api",
+    "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6000].recipe[solution_id=6119]", "support": "SUPPORT",
+    "claim": "Exact named stock addition to the medium."}}], "dependencies": [{"path":
+    "data/normalized_yaml/bacterial/mediadive_6120_Extra_salts.yaml", "sha256": "3280ddc6c7106b42f9e4a60c9d80d4824d0bcfc4e96b534ba13ac27b5e49a2eb",
+    "culturemech_id": "CultureMech:014824", "provider_id": "mediadive.solution:6120",
+    "provider_name": "Extra salts", "provider_volume_ml": 1000, "composition_rows":
+    [{"composition_index": 0, "preferred_term": "NaNO3", "compound_id": 187, "record_concentration":
+    {"value": "30", "unit": "G_PER_L"}, "provider_g_l": 30, "amount_match": true},
+    {"composition_index": 1, "preferred_term": "Na2HPO4", "compound_id": 233, "record_concentration":
+    {"value": "1.2", "unit": "G_PER_L"}, "provider_g_l": 1.2, "amount_match": true},
+    {"composition_index": 2, "preferred_term": "K2HPO4", "compound_id": 10, "record_concentration":
+    {"value": "1", "unit": "G_PER_L"}, "provider_g_l": 1, "amount_match": true}],
+    "provider_capture_key": "mediadiveSolution6120", "provider_capture_sha256": "ff84cb929d9ea6aa7047cedcde2e0378a173ccd6f5e9f74f957aa7d64349d495",
+    "scope": "Exact dependency identity and composition comparison only; not a separate
+    complete stock review. Stock composition is authoritative; placeholder ingredients
+    are explicitly allowed by the current Solution schema."}, {"path": "data/normalized_yaml/bacterial/mediadive_6118_Vitamin_solution.yaml",
+    "sha256": "3d93b6702c16c4e325ccb43e9945d97bbcb9745d0affe317999292608ee7db49",
+    "culturemech_id": "CultureMech:014821", "provider_id": "mediadive.solution:6118",
+    "provider_name": "Vitamin solution", "provider_volume_ml": 1000, "composition_rows":
+    [{"composition_index": 0, "preferred_term": "Biotin", "compound_id": 46, "record_concentration":
+    {"value": "0.0002", "unit": "G_PER_L"}, "provider_g_l": 0.0002, "amount_match":
+    true}, {"composition_index": 1, "preferred_term": "Calcium pantothenate", "compound_id":
+    518, "record_concentration": {"value": "0.02", "unit": "G_PER_L"}, "provider_g_l":
+    0.02, "amount_match": true}, {"composition_index": 2, "preferred_term": "Cyanocobalamine",
+    "compound_id": 847, "record_concentration": {"value": "0.004", "unit": "G_PER_L"},
+    "provider_g_l": 0.004, "amount_match": true}, {"composition_index": 3, "preferred_term":
+    "Folic acid", "compound_id": 138, "record_concentration": {"value": "0.0004",
+    "unit": "G_PER_L"}, "provider_g_l": 0.0004, "amount_match": true}, {"composition_index":
+    4, "preferred_term": "Inositol", "compound_id": 451, "record_concentration": {"value":
+    "1", "unit": "G_PER_L"}, "provider_g_l": 1, "amount_match": true}, {"composition_index":
+    5, "preferred_term": "Nicotinic acid", "compound_id": 139, "record_concentration":
+    {"value": "0.02", "unit": "G_PER_L"}, "provider_g_l": 0.02, "amount_match": true},
+    {"composition_index": 6, "preferred_term": "Thiamine HCl", "compound_id": 1207,
+    "record_concentration": {"value": "0.1", "unit": "G_PER_L"}, "provider_g_l": 0.1,
+    "amount_match": true}, {"composition_index": 7, "preferred_term": "Thymine", "compound_id":
+    560, "record_concentration": {"value": "0.6", "unit": "G_PER_L"}, "provider_g_l":
+    0.6, "amount_match": true}], "provider_capture_key": "mediadiveSolution6118",
+    "provider_capture_sha256": "36752c7585e68ceae9cff8b2d6c61da3fa1335c30650cb5dc8ec09dff3faff20",
+    "scope": "Exact dependency identity and composition comparison only; not a separate
+    complete stock review. Stock composition is authoritative; placeholder ingredients
+    are explicitly allowed by the current Solution schema."}, {"path": "data/normalized_yaml/bacterial/mediadive_6119_SE1_Soil_Extract_1.yaml",
+    "sha256": "b7c5a145813e23527a92afa5a046ef75f422165af47ebb00ded991f0c0c86dbd",
+    "culturemech_id": "CultureMech:014822", "provider_id": "mediadive.solution:6119",
+    "provider_name": "SE1 (Soil Extract 1)", "provider_volume_ml": 1000, "composition_rows":
+    [{"composition_index": 0, "preferred_term": "Soil", "compound_id": 2350, "record_concentration":
+    {"value": "variable", "unit": "VARIABLE"}, "provider_g_l": null, "amount_match":
+    true}, {"composition_index": 1, "preferred_term": "Distilled water", "compound_id":
+    4, "record_concentration": {"value": "variable", "unit": "VARIABLE"}, "provider_g_l":
+    null, "amount_match": true}], "provider_capture_key": "mediadiveSolution6119",
+    "provider_capture_sha256": "dc8f494af7fa3587fcd7241e917d8b7e717cac8e7191eaee674577f114eee33d",
+    "scope": "Exact dependency identity and composition comparison only; not a separate
+    complete stock review. Stock composition is authoritative; placeholder ingredients
+    are explicitly allowed by the current Solution schema."}]}'
+- assessment_id: version-comparison
+  area: consistency
+  topic: MediaDive versus current CCAP source versions
+  outcome: supported
+  summary: The paired salt-stock strengths/doses give the same nominal final NaNO3
+    0.1125, Na2HPO4 0.0045 and K2HPO4 0.00375 g/L. Eight vitamin contributions are
+    0.0000005, 0.00005, 0.00001, 0.000001, 0.0025, 0.00005, 0.00025 and 0.0015 g/L
+    in record order. These are derived contributions on the declared 1 L basis, not
+    quoted final analyses or total seawater-derived concentrations. Product and SE1
+    preparation differences remain explicit.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - mediadiveC9api
+  - ccap2asw
+  - ccapSE1Marine
+  - amount-calculations
+  details: '{"extra_salts": [{"component": "NaNO3", "provider_stock_g_per_litre":
+    "30", "provider_dose_ml_per_litre": "3.75", "ccap_stock_g_per_litre": "15", "ccap_dose_ml_per_litre":
+    "7.50", "derived_final_g_per_litre": "0.11250"}, {"component": "Na2HPO4", "provider_stock_g_per_litre":
+    "1.2", "provider_dose_ml_per_litre": "3.75", "ccap_stock_g_per_litre": "0.6",
+    "ccap_dose_ml_per_litre": "7.50", "derived_final_g_per_litre": "0.004500"}, {"component":
+    "K2HPO4", "provider_stock_g_per_litre": "1", "provider_dose_ml_per_litre": "3.75",
+    "ccap_stock_g_per_litre": "0.5", "ccap_dose_ml_per_litre": "7.50", "derived_final_g_per_litre":
+    "0.00375"}], "vitamin_stock": "Both source versions give the same eight stock
+    concentrations and 2.5 mL/L dose.", "se1_dose": "Both source versions specify
+    25 mL/L SE1.", "direct_additions": "Both source versions specify tricine 0.5 g/L
+    and NaCl 35 g/L added to the medium.", "pH": "Both sources give 7.6–7.8 with 1
+    M NaOH or 1 M HCl before autoclaving.", "parent_sterilization": "Both specify
+    15 psi for 15 minutes; no parent autoclave temperature is inferred.", "water_base_difference":
+    "MediaDive retains filtered natural seawater or distilled water plus 33.6 g Ultramarine
+    Synthetica. Current CCAP names filtered natural seawater or deionised water plus
+    33.6 g Instant Ocean. Product identity is a source/version difference; equal mass
+    does not establish product equivalence.", "se1_preparation_difference": "Provider:
+    air-dried soil with twice its volume of distilled water, 15 psi for 2 hours, decant,
+    then sterilize aliquots (for example <=1 L for 15 minutes). Current marine SE1:
+    dried/sieved soil, twice-volume deionised water, two 20-minute cycles at source-stated
+    15 psi/126°C, settling about 2–3 weeks, aseptic decant, then 15 psi/121°C for
+    15 minutes and refrigeration. Preserve literal source pressure/temperature pairing.",
+    "scope_limit": "Equal nominal specified-stock contributions do not prove identical
+    water-base, soil-extract composition, source version, or complete final medium.
+    No total sodium/NaCl/osmolarity calculation is justified.", "evidence": [{"source_key":
+    "mediadiveC9api", "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions", "support": "SUPPORT_FOR_PROVIDER_VERSION", "claim":
+    "Current provider hierarchy and preparation."}, {"source_key": "ccap2asw", "source_sha256":
+    "d5d658702a3640ed17c4d9d494f198f7122be90cbc81e64ccdc8afad1c4401cc", "locator":
+    "Page 1 / stock and medium tables; preparation paragraph and asterisk", "support":
+    "SUPPORT_FOR_CURRENT_CCAP_VERSION", "claim": "Current CCAP source version."},
+    {"source_key": "ccapSE1Marine", "source_sha256": "a1aa6a7de8c76d20ee216b828beddae6f94bd94b7e154ef657f7863f562a8934",
+    "locator": "Page 1 / Preparing the soil and Medium", "support": "SUPPORT_FOR_CURRENT_CCAP_SE1_VERSION",
+    "claim": "Current marine soil-extract preparation."}]}'
+- assessment_id: preparation
+  area: completeness
+  topic: All five preparation steps and their source ownership
+  outcome: concern
+  summary: 'All five descriptions exactly match the provider. Steps 0–1 are parent
+    medium: final-volume seawater alternative, pH/titrants and 15 psi/15 min autoclave.
+    Steps 2–4 are SE1 soil selection, air drying/storage and two-hour stock extraction,
+    incorrectly attached to the parent. Step 3 action HEAT contradicts its own air-dry/store-away-from-heat
+    text. Current CCAP optional oven drying does not retroactively support that old-text
+    action.'
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveC9api
+  - mediadiveSolution6119
+  - ccapSE1Marine
+  - importer
+  details: '[{"field_path": "preparation_steps[0]", "provider_text_exact_match": true,
+    "record_action": "AUTOCLAVE", "source_scope": "parent medium", "assessment": "Parent
+    preparation text is source-supported.", "evidence": {"source_key": "mediadiveC9api",
+    "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6000].steps[0]", "support": "SUPPORT_FOR_TEXT_AND_SCOPE",
+    "claim": "Exact description text matches the provider."}}, {"field_path": "preparation_steps[1]",
+    "provider_text_exact_match": true, "record_action": "MIX", "source_scope": "parent
+    medium", "assessment": "Parent preparation text is source-supported.", "evidence":
+    {"source_key": "mediadiveC9api", "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6000].steps[1]", "support": "SUPPORT_FOR_TEXT_AND_SCOPE",
+    "claim": "Exact description text matches the provider."}}, {"field_path": "preparation_steps[2]",
+    "provider_text_exact_match": true, "record_action": "MIX", "source_scope": "SE1
+    stock preparation", "assessment": "Stock preparation is source-supported but flattened
+    into parent preparation without its stock relationship.", "evidence": {"source_key":
+    "mediadiveC9api", "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6119].steps[0]", "support": "SUPPORT_FOR_TEXT_AND_SCOPE",
+    "claim": "Exact description text matches the provider."}}, {"field_path": "preparation_steps[3]",
+    "provider_text_exact_match": true, "record_action": "HEAT", "source_scope": "SE1
+    stock preparation", "assessment": "Action HEAT conflicts with the preserved provider
+    text, which directs air-drying and storage away from heat. The current classifier
+    matches the negative-context word heat and selects HEAT. This is separate from
+    current CCAP optional oven-drying wording, which the record does not encode.",
+    "evidence": {"source_key": "mediadiveC9api", "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6119].steps[1]", "support": "SUPPORT_FOR_TEXT_AND_SCOPE",
+    "claim": "Exact description text matches the provider."}}, {"field_path": "preparation_steps[4]",
+    "provider_text_exact_match": true, "record_action": "AUTOCLAVE", "source_scope":
+    "SE1 stock preparation", "assessment": "Stock preparation is source-supported
+    but flattened into parent preparation without its stock relationship.", "evidence":
+    {"source_key": "mediadiveC9api", "source_sha256": "3ba241a327ec94ed140ee6a09007aff9e1511f75f48f39615a9364901384ad14",
+    "locator": "$.data.solutions[id=6119].steps[2]", "support": "SUPPORT_FOR_TEXT_AND_SCOPE",
+    "claim": "Exact description text matches the provider."}}]'
+- assessment_id: grounding
+  area: grounding
+  topic: Every asserted canonical term and MIM linkage
+  outcome: supported
+  summary: Thirteen primary CHEBI ID-label pairs and eleven current secondary CHEBI
+    pairs resolve canonically and are non-obsolete. Primary coverage is 13/14 direct
+    ingredient instances (92.86%); current secondary linkage is 11/14 (78.57%); these
+    are 0–100 linkage measures, not correctness scores. Tricine parent/molecular specificity,
+    ambiguous cyanocobalamine label search, generic versus myo-inositol and the legacy
+    nitrate link remain explicitly qualified. No chemical change is inferred from
+    label differences alone.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - record
+  - mim
+  - schema-context
+  - dependency-search
+  - ccap2asw
+  - chebi131527
+  - chebi15940
+  - chebi15956
+  - chebi17268
+  - chebi17439
+  - chebi17821
+  - chebi24848
+  - chebi26710
+  - chebi27470
+  - chebi31345
+  - chebi34683
+  - chebi39063
+  - chebi39063parents
+  - chebi46760
+  - chebi46760children
+  - chebi49105
+  - chebi63005
+  details: '[{"field_path": "ingredients[0].term", "assessment": "CHEBI:46760 tricine
+    is a canonical broader parent of the packaged MIM molecule CHEBI:39063. The relation
+    is verified; not a wrong-chemical finding.", "source_keys": ["chebi46760children",
+    "chebi39063parents"]}, {"field_path": "ingredients[2].mediaingredientmech_term",
+    "assessment": "Legacy MediaIngredientMech:000171 is allowed by the schema legacy
+    slot. Its exact historical definition was not independently recovered; the current
+    packaged NaNO3 row maps to CHEBI:63005, agreeing with the primary term. Ignored-inclusive
+    corpus search found many legacy references but no authority was inferred from
+    repetition.", "search_artifact": "/private/tmp/culturemech-review-source-preflight-batch009-tail/088/dependency-searches.json"},
+    {"field_path": "ingredients[7].term", "assessment": "Cyanocobalamine is a provider
+    spelling for the CCAP-listed cyanocobalamin. CHEBI:17439 canonical label is verified.
+    Packaged label search returns both specific cyanocobalamin and broader vitaminB12
+    entries; do not select from ambiguous labels alone.", "source_keys": ["ccap2asw",
+    "mediadiveC9api", "chebi17439"]}, {"field_path": "ingredients[9].term; linked
+    vitamin stock composition[4].chebi_term", "assessment": "Target uses generic inositol
+    CHEBI:24848, consistent with the generic source wording and packaged exact-label
+    row. The existing stock uses myo-inositol CHEBI:17268; source stereochemical specificity
+    remains unresolved. Neither a different-isomer allegation nor automatic narrowing
+    is justified.", "source_keys": ["chebi24848", "chebi17268", "ccap2asw", "mediadiveSolution6118"]}]'
+- assessment_id: variants
+  area: evidence
+  topic: Both owner study variants, citation identity and exact amount excerpts
+  outcome: supported
+  summary: Both DOI identities and accessible full sources support the narrowly attached
+    excerpts. Liang supports 1.5 M NaCl in its specific CCAP 19/18 study medium; Hiibel
+    supports undefined sea salts 33.6 g/L replacing NaCl in modified maintenance 2ASW.
+    Neither certifies the remaining formula or parent equivalence. Hiibel PMID stays
+    unresolved; absent supplement access and mismatched Gomord background citation
+    do not license filling recipe gaps.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - owner-0
+  - spectrum2023xml
+  - spectrum2023metadata
+  - spectrum2023supplement
+  - frontiers2015
+  - frontiers2015metadata
+  details: '[{"owner_field_path": "variants[0]", "name": "2asw_1_5_m_nacl", "absent_from_generated_target":
+    true, "evidence_snippet_exact_after_whitespace_normalization": true, "evidence":
+    [{"source_key": "spectrum2023xml", "source_sha256": "35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d",
+    "locator": "Materials and Methods / Algal strains and cultivation conditions",
+    "support": "SUPPORT_FOR_NARROW_AMOUNT_CLAIM", "claim": "Source supports the stated
+    study-specific concentration/substitution; owner explicitly limits complete-formula
+    and parent-equivalence claims.", "snippet": "D. salina was cultivated in 2ASW
+    (artificial seawater) medium containing 1.5 M NaCl"}], "field_assessment": {"description":
+    "Accurately preserves the limited study/formulation context.", "modifications[0]":
+    "Supported reported medium concentration; no unsupported arithmetic.", "modifications[1]":
+    "Accurately records unverified full formula and no automatic parent inheritance.",
+    "evidence[0]": "Correctly narrowed to modifications[0].", "relationship": "No
+    unsupported named relationship asserted."}}, {"owner_field_path": "variants[1]",
+    "name": "2asw_sea_salt_substitution_33_6_g_l", "absent_from_generated_target":
+    true, "evidence_snippet_exact_after_whitespace_normalization": true, "evidence":
+    [{"source_key": "frontiers2015", "source_sha256": "25722daafbecd2fdc5d7b886d76e48e978334900fee717ef14f61401792fa792",
+    "locator": "Materials and Methods / Strains and media", "support": "SUPPORT_FOR_NARROW_AMOUNT_CLAIM",
+    "claim": "Source supports the stated study-specific concentration/substitution;
+    owner explicitly limits complete-formula and parent-equivalence claims.", "snippet":
+    "33.6 g/L of sea salts were used in place of the NaCl."}], "field_assessment":
+    {"description": "Accurately preserves the limited study/formulation context.",
+    "modifications[0]": "Supported reported medium concentration; no unsupported arithmetic.",
+    "modifications[1]": "Accurately records unverified full formula and no automatic
+    parent inheritance.", "evidence[0]": "Correctly narrowed to modifications[0].",
+    "relationship": "SUBSTITUTED_COMPONENT_VARIANT is supported by explicit replacement
+    wording."}}]'
+- assessment_id: organisms
+  area: scope
+  topic: All owner algal mention and cultivation qualifications
+  outcome: supported
+  summary: All 18 Dunaliella maintenance rows and their qualified taxonomy agree with
+    the paper and captured NCBI records; LB 200 remains genus-only because the source
+    disputes its species. UTCC 197 zero centrate tolerance is not failure on maintenance
+    2ASW. The other 22 rows belong to modified Bristol/f/2. Liang CCAP 19/18 is its
+    study culture, FACHB-847 remains unresolved on a separate medium, and CCAP 19/6B
+    is introduction-only. There are no native parent growth assertions to expand.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - owner-0
+  - spectrum2023xml
+  - frontiers2015
+  - taxonomyRetry
+  - ccap1918
+  details: '{"dunaliella_rows": [{"reported_name": "Dunaliella bardawil", "strain":
+    "UTEX LB 2538", "canonical_scientific_name": "Dunaliella salina", "taxon_id":
+    "NCBITaxon:3046", "taxon_rank": "species", "taxonomy_match": "verified_synonym_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 23 (header excluded), Saltwater
+    Dunaliella row 1", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity."}, {"reported_name": "Dunaliella bioculata",
+    "strain": "UTEX LB 199", "canonical_scientific_name": "Dunaliella bioculata",
+    "taxon_id": "NCBITaxon:13790", "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 24 (header excluded), Saltwater
+    Dunaliella row 2", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity."}, {"reported_name": "Dunaliella salina",
+    "strain": "UTEX LB 200", "canonical_scientific_name": "Dunaliella", "taxon_id":
+    "NCBITaxon:3044", "taxon_rank": "genus", "taxonomy_match": "parent_rank_only",
+    "paper_locator": "Hiibel 2015, Table 1, data row 25 (header excluded), Saltwater
+    Dunaliella row 3", "limit": "The paper disputes its own Table 1 D. salina identification
+    in Results / Preliminary centrate screening; genus-only mapping preserves this
+    uncertainty. The cited Ben-Amotz source was not independently audited here."},
+    {"reported_name": "Dunaliella tertiolecta", "strain": "UTEX LB 999", "canonical_scientific_name":
+    "Dunaliella tertiolecta", "taxon_id": "NCBITaxon:3047", "taxon_rank": "species",
+    "taxonomy_match": "exact_name_at_species_rank", "paper_locator": "Hiibel 2015,
+    Table 1, data row 26 (header excluded), Saltwater Dunaliella row 4", "limit":
+    "Name-level taxonomy agreement only; no independent verification of collection
+    strain identity."}, {"reported_name": "Dunaliella salina", "strain": "UTEX LB
+    1644", "canonical_scientific_name": "Dunaliella salina", "taxon_id": "NCBITaxon:3046",
+    "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank", "paper_locator":
+    "Hiibel 2015, Table 1, data row 27 (header excluded), Saltwater Dunaliella row
+    5", "limit": "Name-level taxonomy agreement only; no independent verification
+    of collection strain identity."}, {"reported_name": "Dunaliella primolecta", "strain":
+    "UTEX LB 1000", "canonical_scientific_name": "Dunaliella primolecta", "taxon_id":
+    "NCBITaxon:257627", "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 28 (header excluded), Saltwater
+    Dunaliella row 6", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity."}, {"reported_name": "Dunaliella peircei",
+    "strain": "UTEX LB 2192", "canonical_scientific_name": "Dunaliella peircei", "taxon_id":
+    "NCBITaxon:147822", "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 29 (header excluded), Saltwater
+    Dunaliella row 7", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity."}, {"reported_name": "Dunaliella salina",
+    "strain": "UTCC 197", "canonical_scientific_name": "Dunaliella salina", "taxon_id":
+    "NCBITaxon:3046", "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 30 (header excluded), Saltwater
+    Dunaliella row 8", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity. Its zero centrate tolerance is not
+    evidence of failure on modified 2ASW maintenance medium; the Results first prints
+    UTC 197 but later uses UTCC 197 consistently with Table 1."}, {"reported_name":
+    "Dunaliella tertiolecta", "strain": "UTCC 420", "canonical_scientific_name": "Dunaliella
+    tertiolecta", "taxon_id": "NCBITaxon:3047", "taxon_rank": "species", "taxonomy_match":
+    "exact_name_at_species_rank", "paper_locator": "Hiibel 2015, Table 1, data row
+    31 (header excluded), Saltwater Dunaliella row 9", "limit": "Name-level taxonomy
+    agreement only; no independent verification of collection strain identity."},
+    {"reported_name": "Dunaliella sp.", "strain": "UTCC 457", "canonical_scientific_name":
+    "Dunaliella", "taxon_id": "NCBITaxon:3044", "taxon_rank": "genus", "taxonomy_match":
+    "parent_rank_only", "paper_locator": "Hiibel 2015, Table 1, data row 32 (header
+    excluded), Saltwater Dunaliella row 10", "limit": "The source reports genus only;
+    species remains unresolved and no strain-level taxon is asserted."}, {"reported_name":
+    "Dunaliella salina", "strain": "CCAP 19/18", "canonical_scientific_name": "Dunaliella
+    salina", "taxon_id": "NCBITaxon:3046", "taxon_rank": "species", "taxonomy_match":
+    "exact_name_at_species_rank", "paper_locator": "Hiibel 2015, Table 1, data row
+    33 (header excluded), Saltwater Dunaliella row 11", "limit": "Name-level taxonomy
+    agreement only; no independent verification of collection strain identity."},
+    {"reported_name": "Dunaliella tertiolecta", "strain": "CCAP 19/6B", "canonical_scientific_name":
+    "Dunaliella tertiolecta", "taxon_id": "NCBITaxon:3047", "taxon_rank": "species",
+    "taxonomy_match": "exact_name_at_species_rank", "paper_locator": "Hiibel 2015,
+    Table 1, data row 34 (header excluded), Saltwater Dunaliella row 12", "limit":
+    "Name-level taxonomy agreement only; no independent verification of collection
+    strain identity."}, {"reported_name": "Dunaliella tertiolecta", "strain": "CCAP
+    19/24", "canonical_scientific_name": "Dunaliella tertiolecta", "taxon_id": "NCBITaxon:3047",
+    "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank", "paper_locator":
+    "Hiibel 2015, Table 1, data row 35 (header excluded), Saltwater Dunaliella row
+    13", "limit": "Name-level taxonomy agreement only; no independent verification
+    of collection strain identity."}, {"reported_name": "Dunaliella tertiolecta",
+    "strain": "CCAP 19/27", "canonical_scientific_name": "Dunaliella tertiolecta",
+    "taxon_id": "NCBITaxon:3047", "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 36 (header excluded), Saltwater
+    Dunaliella row 14", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity."}, {"reported_name": "Dunaliella maritima",
+    "strain": "SAG 42.89", "canonical_scientific_name": "Dunaliella maritima", "taxon_id":
+    "NCBITaxon:289300", "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 37 (header excluded), Saltwater
+    Dunaliella row 15", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity."}, {"reported_name": "Dunaliella sp.",
+    "strain": "SAG 19-5", "canonical_scientific_name": "Dunaliella", "taxon_id": "NCBITaxon:3044",
+    "taxon_rank": "genus", "taxonomy_match": "parent_rank_only", "paper_locator":
+    "Hiibel 2015, Table 1, data row 38 (header excluded), Saltwater Dunaliella row
+    16", "limit": "The source reports genus only; species remains unresolved and no
+    strain-level taxon is asserted."}, {"reported_name": "Dunaliella terricola", "strain":
+    "SAG 43.89", "canonical_scientific_name": "Dunaliella terricola", "taxon_id":
+    "NCBITaxon:3026963", "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 39 (header excluded), Saltwater
+    Dunaliella row 17", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity."}, {"reported_name": "Dunaliella granulata",
+    "strain": "SAG 41.89", "canonical_scientific_name": "Dunaliella granulata", "taxon_id":
+    "NCBITaxon:3026961", "taxon_rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "paper_locator": "Hiibel 2015, Table 1, data row 40 (header excluded), Saltwater
+    Dunaliella row 18", "limit": "Name-level taxonomy agreement only; no independent
+    verification of collection strain identity."}], "excluded_cohorts": [{"reported_cohort":
+    "Neochloris", "table_data_rows": [1, 11], "row_count": 11, "reported_accessions":
+    ["UTEX 138", "UTEX 776", "UTEX 777", "UTEX 1185", "UTEX 1249", "UTEX 1707", "UTEX
+    1981", "UTEX b778", "UTEX b947", "CCAP 213/4", "CCAP 254/1"], "maintenance_medium":
+    "Bold''s modified Bristol", "paper_locator": "Hiibel 2015, Materials and Methods
+    / Strains and media; Table 1", "taxon_id": "NCBITaxon:3098", "rank": "genus",
+    "taxonomy_locator": "TaxaSet/Taxon[TaxId=''3098'']/ScientificName; Rank", "assessment":
+    "Owner correctly excludes these rows from its 2ASW cultivation inventory.", "paper_source_sha256":
+    "25722daafbecd2fdc5d7b886d76e48e978334900fee717ef14f61401792fa792", "taxonomy_source_sha256":
+    "aa7e5c8a8541519fca072335dc8f3768e68563be5bb292cb6e7757d6aafdf352"}, {"reported_cohort":
+    "Nannochloropsis", "table_data_rows": [12, 22], "row_count": 11, "reported_accessions":
+    ["CCAP 211/78", "CCAP 849/8", "CCAP 849/9", "CCAP 849/5", "CCAP 849/10", "CCAP
+    849/1", "CCAP 849/7", "CCAP 849/2", "CCAP 849/3", "CCAP 849/4", "CCAP 849/6"],
+    "maintenance_medium": "Modified f/2 with the 2ASW vitamin solution substituted",
+    "paper_locator": "Hiibel 2015, Materials and Methods / Strains and media; Table
+    1", "taxon_id": "NCBITaxon:5748", "rank": "genus", "taxonomy_locator": "TaxaSet/Taxon[TaxId=''5748'']/ScientificName;
+    Rank", "assessment": "Owner correctly excludes these rows from its 2ASW cultivation
+    inventory; use of a 2ASW vitamin solution does not make f/2 a 2ASW growth assertion.",
+    "paper_source_sha256": "25722daafbecd2fdc5d7b886d76e48e978334900fee717ef14f61401792fa792",
+    "taxonomy_source_sha256": "aa7e5c8a8541519fca072335dc8f3768e68563be5bb292cb6e7757d6aafdf352"}],
+    "liang": [{"owner_locator": "references[0].notes; Dunaliella salina CCAP 19/18",
+    "paper_locator": "article/body/sec[@id=''s3'']/sec[@id=''s3-1'']/p[1] (Materials
+    and Methods / Algal strains and cultivation conditions)", "reported_name": "Dunaliella
+    salina", "strain": "CCAP 19/18", "medium_scope": "Study-specific 2ASW containing
+    1.5 M NaCl; the accessible methods do not establish the remainder of the formula
+    or equality to the local parent.", "canonical_scientific_name": "Dunaliella salina",
+    "taxon_id": "NCBITaxon:3046", "rank": "species", "taxonomy_match": "exact_name_at_species_rank",
+    "assessment": "Owner correctly scopes this strain to the study 2ASW, while explicitly
+    declining strain identity verification.", "paper_source_key": "spectrum2023xml",
+    "paper_source_sha256": "35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d",
+    "taxonomy_locator": "TaxaSet/Taxon[TaxId=''3046'']/ScientificName; Rank", "taxonomy_source_sha256":
+    "aa7e5c8a8541519fca072335dc8f3768e68563be5bb292cb6e7757d6aafdf352", "owner_agrees_with_source_scope":
+    true}, {"owner_locator": "references[0].notes; Dunaliella sp. FACHB-847", "paper_locator":
+    "article/body/sec[@id=''s3'']/sec[@id=''s3-1'']/p[1]", "reported_name": "Dunaliella
+    sp.", "historical_name": "Dunaliella bardawil strain FACHB-847", "strain": "FACHB-847",
+    "medium_scope": "Separately cited Dunaliella medium (reference 58), not demonstrated
+    2ASW.", "canonical_scientific_name": "Dunaliella", "taxon_id": "NCBITaxon:3044",
+    "rank": "genus", "taxonomy_match": "parent_rank_only", "assessment": "The methods
+    explicitly preserve the historical bardawil name but use Dunaliella sp.; the owner
+    correctly retains unresolved species and separate-medium scope.", "historical_query_limit":
+    "The owner reports no exact FACHB-847 query match on 2026-10-14. This audit uses
+    a current captured ID-based EFetch, not a fresh name search, so it does not independently
+    certify that historical query outcome or taxon absence.", "paper_source_key":
+    "spectrum2023xml", "paper_source_sha256": "35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d",
+    "taxonomy_locator": "TaxaSet/Taxon[TaxId=''3044'']/ScientificName; Rank", "taxonomy_source_sha256":
+    "aa7e5c8a8541519fca072335dc8f3768e68563be5bb292cb6e7757d6aafdf352", "owner_agrees_with_source_scope":
+    true}, {"owner_locator": "references[0].notes; Dunaliella tertiolecta CCAP 19/6B",
+    "paper_locator": "article/body/sec[@id=''s1'']/p[4] (Introduction)", "reported_name":
+    "Dunaliella tertiolecta", "strain": "CCAP 19/6B", "canonical_scientific_name":
+    "Dunaliella tertiolecta", "taxon_id": "NCBITaxon:3047", "rank": "species", "taxonomy_match":
+    "exact_name_at_species_rank", "medium_scope": "Background comparator only; no
+    cultivation on 2ASW is asserted in this passage.", "assessment": "Owner correctly
+    distinguishes this introductory mention from cultivation evidence.", "paper_source_key":
+    "spectrum2023xml", "paper_source_sha256": "35398747e184a6699fa12f46288848dcc97932d087fa49e4056ea90f2debf22d",
+    "taxonomy_locator": "TaxaSet/Taxon[TaxId=''3047'']/ScientificName; Rank", "taxonomy_source_sha256":
+    "aa7e5c8a8541519fca072335dc8f3768e68563be5bb292cb6e7757d6aafdf352", "owner_agrees_with_source_scope":
+    true}], "collection_check": {"claim_scope": "CCAP19/18 is directly maintained
+    on the CCAP medium family; not a validation of every imported amount, historical
+    medium version, or all other strains.", "evidence": {"source_key": "ccap1918",
+    "source_sha256": "f964fc991978a3f770d411091795fadcd6f81f6e34b069f935a96aa06e5c7989",
+    "locator": "Culture media, purity and growth conditions / Medium; Axenic; maintained
+    by serial subculture; 20–35 deg C", "support": "SUPPORT_FOR_COLLECTION_ASSOCIATION",
+    "claim": "Current catalogue links Dunaliella salina CCAP19/18 to 2ASW maintenance."}}}'
+- assessment_id: category
+  area: scope
+  topic: Source-supported category versus import fallback
+  outcome: concern
+  summary: CCAP 2ASW and its marine SE1 source are algal-medium context; CCAP independently
+    maintains D. salina 19/18 on this medium family. The current name-based classifier
+    falls back to bacterial for 2ASW. This is a classification problem, not evidence
+    that bacteria cannot grow or that any specific bacterial strain does grow.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap2asw
+  - ccapSE1Marine
+  - ccap1918
+  - importer
+- assessment_id: freshness
+  area: provenance
+  topic: Generated record omits bounded owner curation
+  outcome: concern
+  summary: Both verified, explicitly limited references/variants and the later owner
+    citation event are absent from the generated target. The reference validator reports
+    zero checkable references in the generated record and therefore does not validate
+    these owner citations. Regeneration must preserve the scoped evidence rather than
+    importing unrelated sibling claims.
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - record
+  - owner-0
+  - history-comparison
+  - spectrum2023xml
+  - frontiers2015
+  - validate-references
+- assessment_id: implementation
+  area: graph
+  topic: Current writer/exporter claims in owner notes
+  outcome: concern
+  summary: 'The schema key/scoping caveat remains accurate. The exporter caveat does
+    not: current code suppresses variant-scoped parent growth edges, though it does
+    not create variant edges. No actual erroneous edge is demonstrated here. Current
+    composition parsing already separates stocks, while preparation flattening and
+    negative heat-keyword handling remain visible code paths. No historical execution
+    is inferred.'
+  target_ids:
+  - CultureMech:000415
+  evidence_ids:
+  - owner-0
+  - schema-context
+  - exporter
+  - importer
+  - raw-converter
+  details: '[{"field_path": "references[0].notes; references[1].notes", "claim": "OrganismDescriptor
+    keys scientific names and scopes the whole descriptor.", "assessment": "SUPPORTED_BY_CURRENT_SCHEMA",
+    "input_path": "src/culturemech/schema/culturemech.yaml", "locator": "OrganismDescriptor.preferred_term
+    identifier:true and scoped_to_variant, lines 1069–1096", "input_sha256": "cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6"},
+    {"field_path": "references[0].notes; references[1].notes", "claim": "The current
+    KGX growth exporter also ignores scoped_to_variant.", "assessment": "STALE_CURRENT_BEHAVIOR_CLAIM",
+    "input_path": "src/culturemech/export/kgx_export.py", "locator": "organism_grows_in_medium_edge
+    lines 482–489", "current_behavior": "Truthy variant scope causes warning and omission
+    of a parent growth edge. It does not currently generate a growth edge to the variant.
+    This record has no target_organisms, so no variant-only growth assertion is currently
+    exported from its notes.", "input_sha256": "d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70"},
+    {"field_path": "ingredients; solutions", "claim": "Potential importer cause of
+    flattened composition.", "assessment": "CURRENT_COMPOSITION_PARSER_ALREADY_SEPARATES_STOCKS",
+    "input_path": "src/culturemech/import/mediadive_importer.py", "locator": "_parse_api_composition
+    lines 491–508; _parse_api_solutions lines 593–621", "current_behavior": "Only
+    primary-solution compounds become ingredients; stock rows are excluded and preserved
+    as solutions. Do not attribute the persistent record defect to unchanged current
+    composition logic.", "input_sha256": "fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69"},
+    {"field_path": "preparation_steps", "claim": "Stock preparation attachment.",
+    "assessment": "CURRENT_PARSER_STILL_FLATTENS_STOCK_STEPS", "input_path": "src/culturemech/import/mediadive_importer.py",
+    "locator": "_parse_preparation_steps lines 703–719", "current_behavior": "Steps
+    from all provider solutions are appended into one parent list.", "input_sha256":
+    "fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69"}, {"field_path":
+    "preparation_steps[3].action", "claim": "HEAT", "assessment": "NEGATED_SOURCE_WORD_CAUSES_WRONG_ACTION",
+    "input_path": "src/culturemech/import/mediadive_importer.py", "locator": "_classify_preparation_action
+    lines 748–750", "current_behavior": "The generic heat keyword is checked before
+    storage and without negation handling; the record sentence says to store away
+    from heat.", "input_sha256": "fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69"},
+    {"field_path": "category", "claim": "bacterial", "assessment": "UNSUPPORTED_SOURCE_CLASSIFICATION_DEFAULT",
+    "input_path": "src/culturemech/import/mediadive_importer.py", "locator": "_infer_category
+    lines 850–870", "current_behavior": "The 2ASW name matches no earlier keyword,
+    so bacterial is the fallback. CCAP identifies an algal medium family and directly
+    maintains D. salina CCAP19/18 on 2ASW. This is not proof that bacteria cannot
+    grow in it.", "input_sha256": "fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69"}]'
+findings:
+- finding_id: f1
+  issue_key: CM000415-stock-hierarchy
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Stock concentrations are represented as parent-medium ingredients
+  description: Eleven stock concentrations and variable soil are flattened into the
+    parent while 6120/6118/6119 additions are absent. The three salt values are about
+    266.67 times their nominal final stock contributions; the eight vitamin values
+    are 400 times theirs. The missing 25 mL/L SE1 dose cannot be replaced by variable
+    soil. This materially changes the encoded recipe.
+  target_ids:
+  - CultureMech:000415
+  field_paths:
+  - ingredients[2]
+  - ingredients[3]
+  - ingredients[4]
+  - ingredients[5]
+  - ingredients[6]
+  - ingredients[7]
+  - ingredients[8]
+  - ingredients[9]
+  - ingredients[10]
+  - ingredients[11]
+  - ingredients[12]
+  - ingredients[13]
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveC9api
+  - amount-calculations
+  - stock-6120
+  - stock-6118
+  - stock-6119
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM000415-stock-preparation-scope
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: SE1 preparation is attached to the parent medium
+  description: The final three preparation descriptions are provider 6119 stock-making
+    steps, not main solution 6000 steps. Their flat placement loses the distinction
+    between preparing soil extract and adding 25 mL to the medium.
+  target_ids:
+  - CultureMech:000415
+  field_paths:
+  - preparation_steps[2]
+  - preparation_steps[3]
+  - preparation_steps[4]
+  - solutions
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveC9api
+  - mediadiveSolution6119
+  - stock-6119
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: source-specific preparation writer
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM000415-negated-heat-action
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: HEAT contradicts the preserved air-drying and storage instruction
+  description: The fourth step directs air-drying and storage away from heat. The
+    assigned HEAT action is opposite to that text. The inspected current classifier
+    matches the negative-context heat keyword before storage. Current CCAP optional
+    oven drying is a different source version and cannot justify this action.
+  target_ids:
+  - CultureMech:000415
+  field_paths:
+  - preparation_steps[3].action
+  - preparation_steps[3].description
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveC9api
+  - mediadiveSolution6119
+  - ccapSE1Marine
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: source-specific action classifier
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: CM000415-category-default
+  category: scope
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Bacterial category is unsupported by the identified source context
+  description: The exact source is CCAP algal 2ASW, with marine-algae SE1 and independent
+    D. salina 19/18 collection association. The name-based importer returns bacterial
+    as its default for 2ASW. The assigned category therefore lacks this source support;
+    no bacterial growth exclusion is claimed.
+  target_ids:
+  - CultureMech:000415
+  field_paths:
+  - category
+  evidence_ids:
+  - record
+  - owner-0
+  - ccap2asw
+  - ccapSE1Marine
+  - ccap1918
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: source-specific category classifier
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f5
+  issue_key: CM000415-stale-owner-evidence
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated target omits two supported bounded citations and variants
+  description: The owner has two DOI-backed citations, two study variants and a later
+    append-only citation event that are missing from the generated target. Their narrow
+    amounts and taxonomy qualifications are supported, with full formulations and
+    historical searches explicitly limited. A clean generated reference check covers
+    none of them.
+  target_ids:
+  - CultureMech:000415
+  field_paths:
+  - references
+  - variants
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - history-comparison
+  - spectrum2023xml
+  - frontiers2015
+  - taxonomyRetry
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f6
+  issue_key: CM000415-stale-exporter-note
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Maintained citation notes describe outdated exporter behavior as current
+  description: Both owner reference notes say current KGX ignores scoped_to_variant.
+    Current exporter instead warns and suppresses a parent edge for variant-scoped
+    descriptors; it still does not emit a variant growth edge. This record has no
+    target_organisms, so the finding is inaccurate implementation context, not demonstrated
+    false growth export.
+  target_ids:
+  - CultureMech:000415
+  field_paths:
+  - data/normalized_yaml/bacterial/2asw.yaml:references[0].notes
+  - data/normalized_yaml/bacterial/2asw.yaml:references[1].notes
+  evidence_ids:
+  - owner-0
+  - exporter
+  - schema-context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Restore exact source-version stock relationships and 3.75/2.5/25 mL/L
+    doses in the normalized owner. Preserve MediaDive 30/1.2/1 g/L stock values with
+    its dose; never combine them with the current CCAP doubled dose. Verify nested
+    amounts and generic/myo-inositol specificity before regeneration. Current composition
+    parser already separates stocks; investigate stored-data repair without assuming
+    that old defect remains in current composition code.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000415
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Preserve the chosen SE1 source version in its stock context and separate
+    parent dosing/preparation. If maintaining the importer, make its preparation handling
+    respect provider solution ownership; do not silently replace the provider two-hour
+    extraction with the different current CCAP sequence.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000415
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: source-specific preparation writer
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Represent the actual provider actions without inventing a heating step;
+    address negative-context classification in the maintained writer if used for future
+    imports. Check the complete text and action together after regenerating.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000415
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: source-specific action classifier
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Use source-supported category information while retaining the stable
+    C9 import identity and keeping separate records distinct. Review default categorization
+    only within an explicitly authorized writer change.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000415
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: source-specific category classifier
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a5
+  description: After owner corrections, regenerate and verify preservation of both
+    bounded citations, exact amount excerpts, variant relationships, qualified organism
+    notes and history. Preserve Table S2/PMID/strain limits; do not create parent
+    growth assertions or copy unrelated 2ASW sibling claims.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:000415
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a6
+  description: Update or clearly date the owner implementation caveat to distinguish
+    current suppression from unsupported variant-edge export; retain the scientific
+    scope restrictions and append-only history.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:000415
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/2asw.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- 'Liang external Table S2 remains inaccessible: the preserved 2026-10-21 retrieval
+  failed DNS. The same failed capture was reused, not newly fetched during this draft.
+  Only the accessible 1.5 M NaCl statement and cultivation context are supported;
+  other study ingredients, stocks and complete parent equivalence remain unresolved.'
+- The owner historical 2026-10-14 no-match FACHB-847 query was not reproduced. The
+  present ID-based taxonomy EFetch supports the stated name/rank qualifications but
+  cannot certify that historical search result or taxon absence.
+- Current MediaDive and current CCAP preserve different stock/preparation versions.
+  The original imported PDF bytes were not recovered. Equal specified salt contributions
+  do not establish equal seawater, undefined sea-salt products, soil extracts, total
+  NaCl or osmolarity.
+- The three stock files are inspected dependencies for exact identity, composition,
+  dose and preparation scope, not three additional complete record reviews. The vitamin
+  stock myo-inositol specificity is unresolved against generic source wording.
+- All 18 Hiibel Dunaliella names/accessions and taxonomy qualifications were checked
+  against the full paper/table and captured taxonomy. Most collection-level strain
+  identities were not independently verified. CCAP 19/18 catalogue support is limited
+  to its own collection association.
+- The current packaged CHEBI-keyed MIM snapshot does not independently recover the
+  historical definition of MediaIngredientMech:000171. Repeated legacy corpus occurrences
+  are not identity authority.
+- No native target_organisms or assembly accession is asserted in this target/owner.
+  The source inventory does not convert citation mentions or study-specific cultivation
+  into parent-medium growth. Unrelated 2ASW records and their diatom claims are outside
+  this target.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-009
+- generated-medium
