@@ -1,0 +1,941 @@
+# Source and formulation review: 1_tryptone_agar (CultureMech:008412)
+
+- Review: 20261021T070155Z-culturemech-008412-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T06:57:06Z
+- Finished UTC: 2026-10-21T07:01:55Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+TOGO M1839 and primary NBRC1072 support the supplied product names, solute amounts and pH. The generated record retains a water-unit error and omits source-backed owner corrections. The owner also has a bounded ontology-label capitalization mismatch and lacks narrow claim evidence.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 63; batch 007 item 3 of 10, selected in Python lexicographic repository-relative path order from the current uncovered merged corpus. The prior six validated batch lists contain 60 distinct merged target paths. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c has 40 validated baseline bundles covering 2 current merged paths. The union with prior batches covers 62 of 6320 current merged paths before this batch. This target path occurs in neither set. Task ordinals continue the saved-review sequence, not global path ranks after upstream corpus or coverage changes. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008412 | data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml | generated | 1_tryptone_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008412 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:008412 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch007/063/strict.tsv |
+| validate-terms | passed | True | CultureMech:008412 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:008412 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:008412 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:008412.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:008412.
+
+1 primary CHEBI identities resolve with matching labels; 1 of 1 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+3 direct ingredient instances; CHEBI-primary instance linkage 1/3 (33.33%), verified secondary coverage 1/3 (33.33%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### NBRC accession and source specificity
+
+identity: supported. Targets: CultureMech:008412.
+
+The target and owner identify TOGO M1839, explicitly sourced from NBRC1072. The same title used by JCM does not transfer collection-specific instructions to this NBRC record. Supplied-product labels are retained.
+
+### ingredients[1].concentration
+
+quantity: supported. Targets: CultureMech:008412.
+
+verified at source batch basis: source mass numerals agree with the nominal one-liter-water formulation. Preserve the stated water batch context; neither source independently reports a measured final volume.
+
+### ingredients[2].concentration
+
+quantity: supported. Targets: CultureMech:008412.
+
+verified at source batch basis: source mass numerals agree with the nominal one-liter-water formulation. Preserve the stated water batch context; neither source independently reports a measured final volume.
+
+### ingredients[0].concentration
+
+quantity: concern. Targets: CultureMech:008412.
+
+correct: the source liter amount is represented as a mass concentration. The owner has already restored a literal L batch dose; no density conversion is justified.
+
+### Source pH and maintained corrections
+
+completeness: concern. Targets: CultureMech:008412.
+
+The original source pH is absent from the target, while the owner retains it, the corrected water unit, agar identity, a generic tryptone identity, references and a later curation event. The generated record predates these fields.
+
+### Generated versus maintained ingredient mapping
+
+grounding: concern. Targets: CultureMech:008412.
+
+The target has one verified primary and secondary key among three direct instances:1/3 (33.33%) each on a 0–100 linkage scale. All three owner IDs resolve, including the mixture-level MICRO tryptone term; its canonical label capitalization differs. The target-only term gate cannot validate absent owner mappings. No pure molecule is assigned to tryptone.
+
+### Composition, state and source limits
+
+scope: supported. Targets: CultureMech:008412.
+
+COMPLEX/UNDEFINED and SOLID_AGAR agree with the recipe. NBRC supplies pH but no preparation or incubation detail beyond that in the inspected table; absence does not license importing the JCM default. Generic cultivation supplies no strain-specific growth assertion.
+
+### History and claim-level evidence
+
+evidence: concern. Targets: CultureMech:008412.
+
+Target/owner history timestamps parse with timezones. References and source notes in the owner lack narrow ingredient/preparation evidence, while the target reference gate checked zero excerpts.
+
+## Findings
+
+### f1: Generated water volume remains encoded as mass
+
+major / open / confirmed; issue key: CM008412-water-volume-unit.
+
+Source water volume was imported into G_PER_L; the maintained owner already uses the literal L batch amount.
+
+### f2: Generated record lacks source-backed owner corrections
+
+major / open / confirmed; issue key: CM008412-stale-ph-and-mappings.
+
+Source pH and later ingredient grounding/reference context are present in the owner but absent from the target.
+
+### f3: Maintained tryptone label differs from the canonical label
+
+minor / open / confirmed; issue key: CM008412-owner-micro-label-case.
+
+The future regeneration owner writes MICRO:0000182 with label Tryptone; OLS gives tryptone. Identity resolves and the discrepancy is capitalization only. The generated target currently lacks this mapping.
+
+### f4: Narrow formulation evidence is absent
+
+minor / open / confirmed; issue key: CM008412-claim-evidence-gap.
+
+Source references and curation prose are not claim-level quantity evidence.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Verify the maintained correction and regenerate the derived record without a density or final-volume assumption.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Recheck owner identifiers and evidence, then regenerate the derived record. Preserve NBRC scope and do not copy collection defaults from a different source.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Canonicalize the maintained ontology label while preserving the supplier-specific preferred term before regeneration. Do not change the supported ID merely to repair its label.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Attach exact source-scoped evidence for amounts, supplied products, water basis and pH in the maintained owner.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch007/063/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch007/063/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml:1:id: CultureMech:008412<br>./data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml:1:id: CultureMech:008412<br> |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| nbrc | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1072; Medium No.1072; Composition; pH; Comment | supports | Complete medium detail table and comment field inspected: supplied product labels, three quantities and pH are stated; no sterilization or incubation instruction appears in this recipe. |
+| togo | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1839; meta; components[0]; comments | supports | Source accession, three rows, annotations and pH inspected. |
+| owner-chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; Exact owner identifier, canonical label and obsolete status | supports | CHEBI:2509 resolves to agar. The owner label matches the canonical agar label. |
+| owner-micro0000182 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000182; Exact owner identifier, canonical label and obsolete status | supports | MICRO:0000182 resolves to tryptone. The owner writes Tryptone with uppercase T; this is a label mismatch, not evidence of a wrong ingredient ID. |
+| context | Full target, owner and TOGO source; All three quantity/annotation rows; every history timestamp | supports | {"row_comparisons": [{"field_path": "ingredients[0]", "source_amount": 1, "source_unit": "L", "target_concentration": {"value": "1", "unit": "G_PER_L"}, "source_annotations_retained": true}, {"field_path": "ingredients[1]", "source_amount": 15, "source_unit": "g", "target_concentration": {"value": "15", "unit": "G_PER_L"}, "source_annotations_retained": true}, {"field_path": "ingredients[2]", "source_amount": 10, "source_unit": "g", "target_concentration": {"value": "10", "unit": "G_PER_L"}, "source_annotations_retained": true}], "timezone_bearing_history_counts": [7, 7]} |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- No sterilization or incubation prescription is inferred from a same-named medium in another collection.
+- The observed owner label drift is contextual follow-up before regeneration; no owner mutation or separate owner-review bundle was performed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T070155Z-culturemech-008412-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1_tryptone_agar (CultureMech:008412)'
+started_at: '2026-10-21T06:57:06Z'
+finished_at: '2026-10-21T07:01:55Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: TOGO M1839 and primary NBRC1072 support the supplied product names, solute
+  amounts and pH. The generated record retains a water-unit error and omits source-backed
+  owner corrections. The owner also has a bounded ontology-label capitalization mismatch
+  and lacks narrow claim evidence.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+    sha256: d79cdd76ea4b1904e8d88d8caa28853cf8b057f28a94db9b30fd8cd55595d2de
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    sha256: 8303711e8d5b50230907b912731616d1fd404dfdc61fc29404faa31d240eadcd
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/togo_raw_yaml.py
+    sha256: ce5e73545c9ecde54724259d2fd475676c0f3cb44dcfd283950e89fd49c10993
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/togo_fetcher.py
+    sha256: 7aac40fe1d47e30810ae0be02f6e369ddb9bf657d630072595c62f46fb0bf339
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 63; batch 007 item 3 of 10, selected in Python lexicographic
+    repository-relative path order from the current uncovered merged corpus. The prior
+    six validated batch lists contain 60 distinct merged target paths. Fresh origin/main
+    at 24a1d277eb7f0437af53af0d178a30f9bfa6374c has 40 validated baseline bundles
+    covering 2 current merged paths. The union with prior batches covers 62 of 6320
+    current merged paths before this batch. This target path occurs in neither set.
+    Task ordinals continue the saved-review sequence, not global path ranks after
+    upstream corpus or coverage changes. This bundle selects only the named record;
+    no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008412
+targets:
+- target_id: CultureMech:008412
+  path: data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+  label: 1_tryptone_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch007/063/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch007/063/strict.tsv"
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:008412
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T07:01:53Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T07:01:53Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:57:36.939793Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch007/063/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:57:40.066550Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch007/063/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:57:45.751375Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:57:50.727150Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T07:01:53Z'
+  support: supports
+  summary: './data/merge_yaml/merged/1_tryptone_agar__cfec473e.yaml:1:id: CultureMech:008412
+
+    ./data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml:1:id: CultureMech:008412
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T04:00:00.223561Z'
+  support: supports
+  summary: CHEBI:15377 resolves to water and is not obsolete. This verifies the asserted
+    generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond
+    the record is inferred.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T07:01:53Z'
+  support: supports
+  summary: '{"CHEBI:15377": [{"label": "Distilled water", "match_type": "preferred_term",
+    "identifier": "CHEBI:15377", "preferred_term": "Distilled water", "ontology_id":
+    "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity": "unique"}]}'
+- evidence_id: nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1072
+  locator: Medium No.1072; Composition; pH; Comment
+  accessed_at: '2026-10-21T06:55:22.675458Z'
+  support: supports
+  summary: 'Complete medium detail table and comment field inspected: supplied product
+    labels, three quantities and pH are stated; no sterilization or incubation instruction
+    appears in this recipe.'
+  quote: Bacto Tryptone (Difco) 10 g Bacto Agar 15 g Distilled water 1 L pH 7.0
+  snapshot_sha256: 513dc36aa0c8f91728dbde7b1d2fcff7ba535feaa5fc0cc934204fdd27914a54
+- evidence_id: togo
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1839
+  locator: meta; components[0]; comments
+  accessed_at: '2026-10-21T06:55:22.017689Z'
+  support: supports
+  summary: Source accession, three rows, annotations and pH inspected.
+  snapshot_sha256: 0fce12f729719cc26baed3547a1368de4c16af476a3f46b1ff3c5ead61426b5a
+- evidence_id: owner-chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: Exact owner identifier, canonical label and obsolete status
+  accessed_at: '2026-10-20T07:07:41.448510Z'
+  support: supports
+  summary: CHEBI:2509 resolves to agar. The owner label matches the canonical agar
+    label.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: owner-micro0000182
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000182
+  locator: Exact owner identifier, canonical label and obsolete status
+  accessed_at: '2026-10-20T07:37:21.973857Z'
+  support: supports
+  summary: MICRO:0000182 resolves to tryptone. The owner writes Tryptone with uppercase
+    T; this is a label mismatch, not evidence of a wrong ingredient ID.
+  snapshot_sha256: 01875997c482a49e4d41eb35c6c697e190afd236a8527625e94b6f96df3872b0
+- evidence_id: context
+  kind: validation
+  reference: Full target, owner and TOGO source
+  locator: All three quantity/annotation rows; every history timestamp
+  accessed_at: '2026-10-21T07:01:53Z'
+  support: supports
+  summary: '{"row_comparisons": [{"field_path": "ingredients[0]", "source_amount":
+    1, "source_unit": "L", "target_concentration": {"value": "1", "unit": "G_PER_L"},
+    "source_annotations_retained": true}, {"field_path": "ingredients[1]", "source_amount":
+    15, "source_unit": "g", "target_concentration": {"value": "15", "unit": "G_PER_L"},
+    "source_annotations_retained": true}, {"field_path": "ingredients[2]", "source_amount":
+    10, "source_unit": "g", "target_concentration": {"value": "10", "unit": "G_PER_L"},
+    "source_annotations_retained": true}], "timezone_bearing_history_counts": [7,
+    7]}'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '1 primary CHEBI identities resolve with matching labels; 1 of 1 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  details: 3 direct ingredient instances; CHEBI-primary instance linkage 1/3 (33.33%),
+    verified secondary coverage 1/3 (33.33%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: NBRC accession and source specificity
+  outcome: supported
+  summary: The target and owner identify TOGO M1839, explicitly sourced from NBRC1072.
+    The same title used by JCM does not transfer collection-specific instructions
+    to this NBRC record. Supplied-product labels are retained.
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - nbrc
+  - togo
+- assessment_id: amount-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: supported
+  summary: 'verified at source batch basis: source mass numerals agree with the nominal
+    one-liter-water formulation. Preserve the stated water batch context; neither
+    source independently reports a measured final volume.'
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - context
+- assessment_id: amount-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: supported
+  summary: 'verified at source batch basis: source mass numerals agree with the nominal
+    one-liter-water formulation. Preserve the stated water batch context; neither
+    source independently reports a measured final volume.'
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+  - context
+- assessment_id: water
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: concern
+  summary: 'correct: the source liter amount is represented as a mass concentration.
+    The owner has already restored a literal L batch dose; no density conversion is
+    justified.'
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - context
+- assessment_id: freshness
+  area: completeness
+  topic: Source pH and maintained corrections
+  outcome: concern
+  summary: The original source pH is absent from the target, while the owner retains
+    it, the corrected water unit, agar identity, a generic tryptone identity, references
+    and a later curation event. The generated record predates these fields.
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - context
+  - owner-chebi2509
+  - owner-micro0000182
+- assessment_id: grounding-scope
+  area: grounding
+  topic: Generated versus maintained ingredient mapping
+  outcome: concern
+  summary: The target has one verified primary and secondary key among three direct
+    instances:1/3 (33.33%) each on a 0–100 linkage scale. All three owner IDs resolve,
+    including the mixture-level MICRO tryptone term; its canonical label capitalization
+    differs. The target-only term gate cannot validate absent owner mappings. No pure
+    molecule is assigned to tryptone.
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi15377
+  - owner-chebi2509
+  - owner-micro0000182
+  - validate-terms
+- assessment_id: scope
+  area: scope
+  topic: Composition, state and source limits
+  outcome: supported
+  summary: COMPLEX/UNDEFINED and SOLID_AGAR agree with the recipe. NBRC supplies pH
+    but no preparation or incubation detail beyond that in the inspected table; absence
+    does not license importing the JCM default. Generic cultivation supplies no strain-specific
+    growth assertion.
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - nbrc
+  - togo
+- assessment_id: audit
+  area: evidence
+  topic: History and claim-level evidence
+  outcome: concern
+  summary: Target/owner history timestamps parse with timezones. References and source
+    notes in the owner lack narrow ingredient/preparation evidence, while the target
+    reference gate checked zero excerpts.
+  target_ids:
+  - CultureMech:008412
+  evidence_ids:
+  - record
+  - owner-0
+  - context
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: CM008412-water-volume-unit
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated water volume remains encoded as mass
+  description: Source water volume was imported into G_PER_L; the maintained owner
+    already uses the literal L batch amount.
+  target_ids:
+  - CultureMech:008412
+  field_paths:
+  - ingredients[0].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - context
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM008412-stale-ph-and-mappings
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated record lacks source-backed owner corrections
+  description: Source pH and later ingredient grounding/reference context are present
+    in the owner but absent from the target.
+  target_ids:
+  - CultureMech:008412
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - ingredients[1].term
+  - ingredients[2].term
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - context
+  - owner-chebi2509
+  - owner-micro0000182
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: CM008412-owner-micro-label-case
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Maintained tryptone label differs from the canonical label
+  description: The future regeneration owner writes MICRO:0000182 with label Tryptone;
+    OLS gives tryptone. Identity resolves and the discrepancy is capitalization only.
+    The generated target currently lacks this mapping.
+  target_ids:
+  - CultureMech:008412
+  field_paths:
+  - data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml:ingredients[0].term.label
+  evidence_ids:
+  - owner-0
+  - owner-micro0000182
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: CM008412-claim-evidence-gap
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Narrow formulation evidence is absent
+  description: Source references and curation prose are not claim-level quantity evidence.
+  target_ids:
+  - CultureMech:008412
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  - references
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - togo
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Verify the maintained correction and regenerate the derived record
+    without a density or final-volume assumption.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008412
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Recheck owner identifiers and evidence, then regenerate the derived
+    record. Preserve NBRC scope and do not copy collection defaults from a different
+    source.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008412
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Canonicalize the maintained ontology label while preserving the supplier-specific
+    preferred term before regeneration. Do not change the supported ID merely to repair
+    its label.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008412
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Attach exact source-scoped evidence for amounts, supplied products,
+    water basis and pH in the maintained owner.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:008412
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1839_1_Tryptone_Agar.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- No sterilization or incubation prescription is inferred from a same-named medium
+  in another collection.
+- The observed owner label drift is contextual follow-up before regeneration; no owner
+  mutation or separate owner-review bundle was performed.
+tags:
+- unreviewed-records
+- batch-007
+- generated-medium
+```

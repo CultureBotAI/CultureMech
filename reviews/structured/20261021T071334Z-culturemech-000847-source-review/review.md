@@ -1,0 +1,985 @@
+# Source and formulation review: 23_mgm_medium (CultureMech:000847)
+
+- Review: 20261021T071334Z-culturemech-000847-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T06:57:13Z
+- Finished UTC: 2026-10-21T07:13:34Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ1387 and MediaDive support the 23% MGM title, all eleven solute amounts, chemical forms, pH and autoclave instruction. The record omits the source water-batch context and predates eleven verified concentration-evidence entries in its maintained owner. The high_metal flag is supported under the repository definition.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 70; batch 007 item 10 of 10, selected in Python lexicographic repository-relative path order from the current uncovered merged corpus. The prior six validated batch lists contain 60 distinct merged target paths. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c has 40 validated baseline bundles covering 2 current merged paths. The union with prior batches covers 62 of 6320 current merged paths before this batch. This target path occurs in neither set. Task ordinals continue the saved-review sequence, not global path ranks after upstream corpus or coverage changes. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:000847 | data/merge_yaml/merged/23_mgm_medium.yaml | generated | 23_mgm_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:000847 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:000847 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch007/070/strict.tsv |
+| validate-terms | passed | True | CultureMech:000847 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:000847 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:000847 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:000847.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### All asserted primary and current secondary ingredient identifiers
+
+grounding: supported. Targets: CultureMech:000847.
+
+6 primary CHEBI identities resolve with matching labels; 6 of 6 current secondary keys have live pinned-index rows. Unresolved keys: [].
+
+11 direct ingredient instances; CHEBI-primary instance linkage 6/11 (54.55%), verified secondary coverage 6/11 (54.55%). Percentages use a 0–100 linkage scale, not a scientific correctness score. Complex mixtures without asserted IDs remain ungrounded rather than receiving invented pure-molecule identities.
+
+### DSMZ1387 main formulation
+
+identity: supported. Targets: CultureMech:000847.
+
+Stable ID, original23% MGM title, MediaDive1387 and official PDF all identify the same source recipe. The API main solution2815 is source grouping, not a missing stock reference in this target. No organism identifier or stock addition is asserted.
+
+### All eleven solutes and explicit provider concentrations
+
+quantity: supported. Targets: CultureMech:000847.
+
+verified: eleven target quantities match the official gram amounts and the provider-declared g_l values. Source main-solution volume is1000mL; concentration support is limited to the provider declaration, not an independently measured final volume after adding these salts. No density or stock conversion is performed.
+
+[{"field_path": "ingredients[0].concentration", "ingredient": "NaCl", "amount_g": 200, "provider_g_l": 200, "target_concentration": {"value": "200", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[1].concentration", "ingredient": "KCl", "amount_g": 4.7, "provider_g_l": 4.7, "target_concentration": {"value": "4.7", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[2].concentration", "ingredient": "MgCl2 x 6 H2O", "amount_g": 20, "provider_g_l": 20, "target_concentration": {"value": "20", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[3].concentration", "ingredient": "MgSO4 x 7 H2O", "amount_g": 23.3, "provider_g_l": 23.3, "target_concentration": {"value": "23.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[4].concentration", "ingredient": "CaCl2 x 2 H2O", "amount_g": 0.05, "provider_g_l": 0.05, "target_concentration": {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[5].concentration", "ingredient": "Meat peptone", "amount_g": 3.4, "provider_g_l": 3.4, "target_concentration": {"value": "3.4", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[6].concentration", "ingredient": "Soy peptone", "amount_g": 3.3, "provider_g_l": 3.3, "target_concentration": {"value": "3.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[7].concentration", "ingredient": "Yeast extract", "amount_g": 2, "provider_g_l": 2, "target_concentration": {"value": "2", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[8].concentration", "ingredient": "Proteose peptone", "amount_g": 3.3, "provider_g_l": 3.3, "target_concentration": {"value": "3.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[9].concentration", "ingredient": "Meat extract", "amount_g": 2, "provider_g_l": 2, "target_concentration": {"value": "2", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[10].concentration", "ingredient": "Glucose", "amount_g": 0.5, "provider_g_l": 0.5, "target_concentration": {"value": "0.5", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}]
+
+### Source solvent-batch context
+
+completeness: concern. Targets: CultureMech:000847.
+
+add: the original table and API explicitly supply1000mL distilled water, but neither whole local record retains this solvent input or a preparation-volume instruction. Owner evidence explains the provider volume but does not restore a preparation step. Preserve source solvent amount separately from final-volume and mass-concentration semantics.
+
+### pH and sterilization scope
+
+completeness: supported. Targets: CultureMech:000847.
+
+pH7.0 and autoclaving are explicitly supported and retained, including AUTOCLAVE action. The two sources do not specify time or temperature, so none is supplied. Incubation, storage and growth outcomes are not established by this recipe.
+
+### All asserted chemical forms and undefined nutrients
+
+grounding: supported. Targets: CultureMech:000847.
+
+All six primary and secondary keys resolve and their canonical labels and hydrate forms agree with source. Glucose is generic; no unstated stereochemistry is inferred. The other five rows are undefined peptones/extracts and remain ungrounded. Both coverage classes are6/11(54.55%) on a0-100 linkage scale, not an accuracy score.
+
+### Native high-metal flag, composition and state
+
+scope: supported. Targets: CultureMech:000847.
+
+Under the schema definition, source NaCl3422.31mM alone exceeds the1049.84mM total-metal threshold, supporting high_metal=true. This is not a biological toxicity claim. COMPLEX/UNDEFINED agrees with peptones/extracts and LIQUID with the source recipe. The numeric title is preserved as a source name, not used to invent a percent-basis conversion. No organism-specific category or growth result is inferred.
+
+### Exact owner excerpts and generated omission
+
+evidence: concern. Targets: CultureMech:000847.
+
+All eleven maintained concentration snippets are exact substrings of the current raw API and parse to the matching rows; their source URL and response hash agree. These entries and detailed reference were added after the target merge event and are absent from the target. The target reference gate checked zero excerpts; separate comparisons above verify the owner excerpts.
+
+### Complete target and maintained audit trail
+
+provenance: supported. Targets: CultureMech:000847.
+
+Every event timestamp in both full files parses with a timezone. The owner records evidence-only changes and explicitly leaves source-only rows/preparation context for follow-up; this review does not close that work or rewrite history.
+
+## Findings
+
+### f1: Source solvent input is missing from preparation
+
+major / open / confirmed; issue key: CM000847-source-water-context.
+
+Both inspected sources specify1000mL distilled water. The local ingredient list omits solvent, but neither target nor maintained preparation restores its amount.
+
+### f2: Generated record omits verified owner concentration evidence
+
+major / open / confirmed; issue key: CM000847-stale-concentration-evidence.
+
+The maintained record contains eleven exact source-linked concentration excerpts, detailed reference metadata and later history absent from the generated target. These omissions make the derived provenance materially incomplete.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Add source-supported solvent-batch context to the maintained preparation and verify importer handling; preserve provider concentration scope without turning water input into an unsupported final-volume or mass claim.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+After verifying source-only preparation context, regenerate from the maintained owner and confirm all eleven excerpts, reference metadata and audit provenance survive.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/23_mgm_medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/23_mgm_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/23_mgm_medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/23_mgm_medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch007/070/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch007/070/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/23_mgm_medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/23_mgm_medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| id-search | repository checkout; Exact top-level ID lookup | supports | ./data/merge_yaml/merged/23_mgm_medium.yaml:1:id: CultureMech:000847<br>./data/normalized_yaml/bacterial/23_mgm_medium.yaml:1:id: CultureMech:000847<br> |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:17234 resolves to glucose and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:32588 resolves to potassium chloride and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; Exact OLS term identifier, label, available definition/form and obsolete flag | supports | CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete. This verifies the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry beyond the record is inferred. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; All live preferred-term rows for asserted secondary CHEBI keys; metadata captured | supports | {"CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier": "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345": [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term": "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term", "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id": "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234": [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234", "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED", "ambiguity": "unique"}]} |
+| dsmz | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1387.pdf; Page1; complete recipe table and preparation sentence | supports | Complete single-page official recipe inspected, including eleven solute rows, distilled water1000mL and pH7/autoclave instruction. The displayed copyright is2012; no independent recipe publication date or measured final volume is inferred. |
+| mediadive | https://mediadive.dsmz.de/rest/medium/1387; data.medium; data.solutions[0].volume, recipe[0:12], steps | supports | Complete medium1387 response inspected: identity, all twelve source rows, provider g_l values, declared main-solution volume1000mL and preparation. Its captured raw response SHA256 matches the hash retained in the owner concentration evidence. |
+| context | Entire target and owner versus current captured MediaDive API; Every solute amount, all eleven exact evidence excerpts, water row and history timestamps | supports | {"rows": [{"field_path": "ingredients[0].concentration", "ingredient": "NaCl", "amount_g": 200, "provider_g_l": 200, "target_concentration": {"value": "200", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[1].concentration", "ingredient": "KCl", "amount_g": 4.7, "provider_g_l": 4.7, "target_concentration": {"value": "4.7", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[2].concentration", "ingredient": "MgCl2 x 6 H2O", "amount_g": 20, "provider_g_l": 20, "target_concentration": {"value": "20", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[3].concentration", "ingredient": "MgSO4 x 7 H2O", "amount_g": 23.3, "provider_g_l": 23.3, "target_concentration": {"value": "23.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[4].concentration", "ingredient": "CaCl2 x 2 H2O", "amount_g": 0.05, "provider_g_l": 0.05, "target_concentration": {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[5].concentration", "ingredient": "Meat peptone", "amount_g": 3.4, "provider_g_l": 3.4, "target_concentration": {"value": "3.4", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[6].concentration", "ingredient": "Soy peptone", "amount_g": 3.3, "provider_g_l": 3.3, "target_concentration": {"value": "3.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[7].concentration", "ingredient": "Yeast extract", "amount_g": 2, "provider_g_l": 2, "target_concentration": {"value": "2", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[8].concentration", "ingredient": "Proteose peptone", "amount_g": 3.3, "provider_g_l": 3.3, "target_concentration": {"value": "3.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[9].concentration", "ingredient": "Meat extract", "amount_g": 2, "provider_g_l": 2, "target_concentration": {"value": "2", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[10].concentration", "ingredient": "Glucose", "amount_g": 0.5, "provider_g_l": 0.5, "target_concentration": {"value": "0.5", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}], "source_water_row": {"recipe_order": 12, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "current_api_sha256": "1cce21f85e645e1c446b5f7fc3a22a3d4ad008a498bf51733c1b05151a14a064", "timezone_bearing_history_counts": [6, 6]} |
+| importer | src/culturemech/import/mediadive_importer.py; _parse_api_composition, lines455-537 | supports | The current parser explicitly skips water rows as solvent volumes belonging to preparation, and uses provider g_l when supplied. The full target and owner nevertheless lack a water addition or preparation-volume instruction. Current code was read; historical runtime was not reconstructed. |
+| metal-rule | src/culturemech/schema/culturemech.yaml; MediaRecipe.high_metal slot, lines129-138 | supports | The repository definition includes sodium and has a total-metal threshold at1049.84mM. The source NaCl mmol_l value3422.31 alone exceeds it with one sodium per NaCl formula unit. This supports the native classification, not metal toxicity or tolerance. |
+
+## Limits And Additional Notes
+
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+- Source recipe and provider declarations were assessed; measured final volume, an experimental interpretation of the23% title, strain-specific growth and unspecified autoclave settings were not established.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T071334Z-culturemech-000847-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 23_mgm_medium (CultureMech:000847)'
+started_at: '2026-10-21T06:57:13Z'
+finished_at: '2026-10-21T07:13:34Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ1387 and MediaDive support the 23% MGM title, all eleven solute amounts,
+  chemical forms, pH and autoclave instruction. The record omits the source water-batch
+  context and predates eleven verified concentration-evidence entries in its maintained
+  owner. The high_metal flag is supported under the repository definition.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/23_mgm_medium.yaml
+    sha256: 15146733a03df3d49bf3b0fe67607e177cbaed874eb6e572028ac526b9e5053a
+    role: target
+  - path: data/normalized_yaml/bacterial/23_mgm_medium.yaml
+    sha256: 039babe80992aeeb8975b39f9b35e4da274af0088aa506be245a09a13aeced09
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 70; batch 007 item 10 of 10, selected in Python lexicographic
+    repository-relative path order from the current uncovered merged corpus. The prior
+    six validated batch lists contain 60 distinct merged target paths. Fresh origin/main
+    at 24a1d277eb7f0437af53af0d178a30f9bfa6374c has 40 validated baseline bundles
+    covering 2 current merged paths. The union with prior batches covers 62 of 6320
+    current merged paths before this batch. This target path occurs in neither set.
+    Task ordinals continue the saved-review sequence, not global path ranks after
+    upstream corpus or coverage changes. This bundle selects only the named record;
+    no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000847
+targets:
+- target_id: CultureMech:000847
+  path: data/merge_yaml/merged/23_mgm_medium.yaml
+  label: 23_mgm_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/23_mgm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/23_mgm_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/23_mgm_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch007/070/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch007/070/strict.tsv"
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/23_mgm_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/23_mgm_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:000847
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/23_mgm_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T07:13:33Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/23_mgm_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T07:13:33Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/23_mgm_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:59:31.012169Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/23_mgm_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch007/070/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:59:35.334296Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-007/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch007/070/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/23_mgm_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:59:38.715047Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/23_mgm_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T06:59:40.609163Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T07:13:33Z'
+  support: supports
+  summary: './data/merge_yaml/merged/23_mgm_medium.yaml:1:id: CultureMech:000847
+
+    ./data/normalized_yaml/bacterial/23_mgm_medium.yaml:1:id: CultureMech:000847
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi17234
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T03:57:32.595833Z'
+  support: supports
+  summary: CHEBI:17234 resolves to glucose and is not obsolete. This verifies the
+    asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-20T07:11:31.325976Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:46.747221Z'
+  support: supports
+  summary: CHEBI:31795 resolves to magnesium sulfate heptahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:47.406565Z'
+  support: supports
+  summary: CHEBI:32588 resolves to potassium chloride and is not obsolete. This verifies
+    the asserted generic chemical identity; no source grade, salt, hydrate or stereochemistry
+    beyond the record is inferred.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi86158
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:48.767939Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T06:57:48.885937Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate and is not obsolete.
+    This verifies the asserted generic chemical identity; no source grade, salt, hydrate
+    or stereochemistry beyond the record is inferred.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T07:13:33Z'
+  support: supports
+  summary: '{"CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:32588": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:86345":
+    [{"label": "Magnesium chloride", "match_type": "preferred_term", "identifier":
+    "CHEBI:86345", "preferred_term": "Magnesium chloride", "ontology_id": "CHEBI:86345",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgCl2 x 6 H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:86345", "preferred_term":
+    "MgCl2 x 6 H2O", "ontology_id": "CHEBI:86345", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:31795": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id":
+    "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4\u00b7H2O",
+    "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term":
+    "MgSO4\u00b7H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}], "CHEBI:86158": [{"label": "CaCl2 x 2 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:86158", "preferred_term": "CaCl2 x 2 H2O", "ontology_id":
+    "CHEBI:86158", "mapping_status": "MAPPED", "ambiguity": "unique"}], "CHEBI:17234":
+    [{"label": "Glucose", "match_type": "preferred_term", "identifier": "CHEBI:17234",
+    "preferred_term": "Glucose", "ontology_id": "CHEBI:17234", "mapping_status": "MAPPED",
+    "ambiguity": "unique"}]}'
+- evidence_id: dsmz
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1387.pdf
+  locator: Page1; complete recipe table and preparation sentence
+  accessed_at: '2026-10-21T06:57:46.163086Z'
+  support: supports
+  summary: Complete single-page official recipe inspected, including eleven solute
+    rows, distilled water1000mL and pH7/autoclave instruction. The displayed copyright
+    is2012; no independent recipe publication date or measured final volume is inferred.
+  quote: Distilled water 1000.00 ml
+  snapshot_sha256: 79be612095c47592228be8c7a666bdb43662b0b0121fc2c6da3518ab7ce2f4e3
+- evidence_id: mediadive
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1387
+  locator: data.medium; data.solutions[0].volume, recipe[0:12], steps
+  accessed_at: '2026-10-21T06:57:44.862289Z'
+  support: supports
+  summary: 'Complete medium1387 response inspected: identity, all twelve source rows,
+    provider g_l values, declared main-solution volume1000mL and preparation. Its
+    captured raw response SHA256 matches the hash retained in the owner concentration
+    evidence.'
+  snapshot_sha256: 1cce21f85e645e1c446b5f7fc3a22a3d4ad008a498bf51733c1b05151a14a064
+- evidence_id: context
+  kind: validation
+  reference: Entire target and owner versus current captured MediaDive API
+  locator: Every solute amount, all eleven exact evidence excerpts, water row and
+    history timestamps
+  accessed_at: '2026-10-21T07:13:33Z'
+  support: supports
+  summary: '{"rows": [{"field_path": "ingredients[0].concentration", "ingredient":
+    "NaCl", "amount_g": 200, "provider_g_l": 200, "target_concentration": {"value":
+    "200", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true},
+    {"field_path": "ingredients[1].concentration", "ingredient": "KCl", "amount_g":
+    4.7, "provider_g_l": 4.7, "target_concentration": {"value": "4.7", "unit": "G_PER_L"},
+    "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[2].concentration",
+    "ingredient": "MgCl2 x 6 H2O", "amount_g": 20, "provider_g_l": 20, "target_concentration":
+    {"value": "20", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true},
+    {"field_path": "ingredients[3].concentration", "ingredient": "MgSO4 x 7 H2O",
+    "amount_g": 23.3, "provider_g_l": 23.3, "target_concentration": {"value": "23.3",
+    "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[4].concentration",
+    "ingredient": "CaCl2 x 2 H2O", "amount_g": 0.05, "provider_g_l": 0.05, "target_concentration":
+    {"value": "0.05", "unit": "G_PER_L"}, "decision": "verified provider-declared
+    concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row":
+    true}, {"field_path": "ingredients[5].concentration", "ingredient": "Meat peptone",
+    "amount_g": 3.4, "provider_g_l": 3.4, "target_concentration": {"value": "3.4",
+    "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[6].concentration",
+    "ingredient": "Soy peptone", "amount_g": 3.3, "provider_g_l": 3.3, "target_concentration":
+    {"value": "3.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true},
+    {"field_path": "ingredients[7].concentration", "ingredient": "Yeast extract",
+    "amount_g": 2, "provider_g_l": 2, "target_concentration": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[8].concentration",
+    "ingredient": "Proteose peptone", "amount_g": 3.3, "provider_g_l": 3.3, "target_concentration":
+    {"value": "3.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true},
+    {"field_path": "ingredients[9].concentration", "ingredient": "Meat extract", "amount_g":
+    2, "provider_g_l": 2, "target_concentration": {"value": "2", "unit": "G_PER_L"},
+    "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[10].concentration",
+    "ingredient": "Glucose", "amount_g": 0.5, "provider_g_l": 0.5, "target_concentration":
+    {"value": "0.5", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}],
+    "source_water_row": {"recipe_order": 12, "compound": "Distilled water", "compound_id":
+    4, "amount": 1000, "unit": "ml", "optional": 0}, "current_api_sha256": "1cce21f85e645e1c446b5f7fc3a22a3d4ad008a498bf51733c1b05151a14a064",
+    "timezone_bearing_history_counts": [6, 6]}'
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, lines455-537
+  accessed_at: '2026-10-21T07:13:33Z'
+  support: supports
+  summary: The current parser explicitly skips water rows as solvent volumes belonging
+    to preparation, and uses provider g_l when supplied. The full target and owner
+    nevertheless lack a water addition or preparation-volume instruction. Current
+    code was read; historical runtime was not reconstructed.
+- evidence_id: metal-rule
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: MediaRecipe.high_metal slot, lines129-138
+  accessed_at: '2026-10-21T07:13:33Z'
+  support: supports
+  summary: The repository definition includes sodium and has a total-metal threshold
+    at1049.84mM. The source NaCl mmol_l value3422.31 alone exceeds it with one sodium
+    per NaCl formula unit. This supports the native classification, not metal toxicity
+    or tolerance.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '6 primary CHEBI identities resolve with matching labels; 6 of 6 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - mim
+  - chebi17234
+  - chebi26710
+  - chebi31795
+  - chebi32588
+  - chebi86158
+  - chebi86345
+  details: 11 direct ingredient instances; CHEBI-primary instance linkage 6/11 (54.55%),
+    verified secondary coverage 6/11 (54.55%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: DSMZ1387 main formulation
+  outcome: supported
+  summary: Stable ID, original23% MGM title, MediaDive1387 and official PDF all identify
+    the same source recipe. The API main solution2815 is source grouping, not a missing
+    stock reference in this target. No organism identifier or stock addition is asserted.
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - dsmz
+  - mediadive
+- assessment_id: quantities
+  area: quantity
+  topic: All eleven solutes and explicit provider concentrations
+  outcome: supported
+  summary: 'verified: eleven target quantities match the official gram amounts and
+    the provider-declared g_l values. Source main-solution volume is1000mL; concentration
+    support is limited to the provider declaration, not an independently measured
+    final volume after adding these salts. No density or stock conversion is performed.'
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - dsmz
+  - mediadive
+  - context
+  details: '[{"field_path": "ingredients[0].concentration", "ingredient": "NaCl",
+    "amount_g": 200, "provider_g_l": 200, "target_concentration": {"value": "200",
+    "unit": "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[1].concentration",
+    "ingredient": "KCl", "amount_g": 4.7, "provider_g_l": 4.7, "target_concentration":
+    {"value": "4.7", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true},
+    {"field_path": "ingredients[2].concentration", "ingredient": "MgCl2 x 6 H2O",
+    "amount_g": 20, "provider_g_l": 20, "target_concentration": {"value": "20", "unit":
+    "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[3].concentration",
+    "ingredient": "MgSO4 x 7 H2O", "amount_g": 23.3, "provider_g_l": 23.3, "target_concentration":
+    {"value": "23.3", "unit": "G_PER_L"}, "decision": "verified provider-declared
+    concentration", "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row":
+    true}, {"field_path": "ingredients[4].concentration", "ingredient": "CaCl2 x 2
+    H2O", "amount_g": 0.05, "provider_g_l": 0.05, "target_concentration": {"value":
+    "0.05", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true},
+    {"field_path": "ingredients[5].concentration", "ingredient": "Meat peptone", "amount_g":
+    3.4, "provider_g_l": 3.4, "target_concentration": {"value": "3.4", "unit": "G_PER_L"},
+    "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[6].concentration",
+    "ingredient": "Soy peptone", "amount_g": 3.3, "provider_g_l": 3.3, "target_concentration":
+    {"value": "3.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true},
+    {"field_path": "ingredients[7].concentration", "ingredient": "Yeast extract",
+    "amount_g": 2, "provider_g_l": 2, "target_concentration": {"value": "2", "unit":
+    "G_PER_L"}, "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[8].concentration",
+    "ingredient": "Proteose peptone", "amount_g": 3.3, "provider_g_l": 3.3, "target_concentration":
+    {"value": "3.3", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true},
+    {"field_path": "ingredients[9].concentration", "ingredient": "Meat extract", "amount_g":
+    2, "provider_g_l": 2, "target_concentration": {"value": "2", "unit": "G_PER_L"},
+    "decision": "verified provider-declared concentration", "owner_evidence_exact_substring":
+    true, "owner_excerpt_equals_source_row": true}, {"field_path": "ingredients[10].concentration",
+    "ingredient": "Glucose", "amount_g": 0.5, "provider_g_l": 0.5, "target_concentration":
+    {"value": "0.5", "unit": "G_PER_L"}, "decision": "verified provider-declared concentration",
+    "owner_evidence_exact_substring": true, "owner_excerpt_equals_source_row": true}]'
+- assessment_id: water
+  area: completeness
+  topic: Source solvent-batch context
+  outcome: concern
+  summary: 'add: the original table and API explicitly supply1000mL distilled water,
+    but neither whole local record retains this solvent input or a preparation-volume
+    instruction. Owner evidence explains the provider volume but does not restore
+    a preparation step. Preserve source solvent amount separately from final-volume
+    and mass-concentration semantics.'
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - mediadive
+  - context
+  - importer
+- assessment_id: preparation
+  area: completeness
+  topic: pH and sterilization scope
+  outcome: supported
+  summary: pH7.0 and autoclaving are explicitly supported and retained, including
+    AUTOCLAVE action. The two sources do not specify time or temperature, so none
+    is supplied. Incubation, storage and growth outcomes are not established by this
+    recipe.
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - dsmz
+  - mediadive
+- assessment_id: forms
+  area: grounding
+  topic: All asserted chemical forms and undefined nutrients
+  outcome: supported
+  summary: All six primary and secondary keys resolve and their canonical labels and
+    hydrate forms agree with source. Glucose is generic; no unstated stereochemistry
+    is inferred. The other five rows are undefined peptones/extracts and remain ungrounded.
+    Both coverage classes are6/11(54.55%) on a0-100 linkage scale, not an accuracy
+    score.
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - dsmz
+  - mediadive
+  - mim
+  - chebi26710
+  - chebi32588
+  - chebi86345
+  - chebi31795
+  - chebi86158
+  - chebi17234
+- assessment_id: classification
+  area: scope
+  topic: Native high-metal flag, composition and state
+  outcome: supported
+  summary: Under the schema definition, source NaCl3422.31mM alone exceeds the1049.84mM
+    total-metal threshold, supporting high_metal=true. This is not a biological toxicity
+    claim. COMPLEX/UNDEFINED agrees with peptones/extracts and LIQUID with the source
+    recipe. The numeric title is preserved as a source name, not used to invent a
+    percent-basis conversion. No organism-specific category or growth result is inferred.
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - dsmz
+  - mediadive
+  - metal-rule
+- assessment_id: evidence-freshness
+  area: evidence
+  topic: Exact owner excerpts and generated omission
+  outcome: concern
+  summary: All eleven maintained concentration snippets are exact substrings of the
+    current raw API and parse to the matching rows; their source URL and response
+    hash agree. These entries and detailed reference were added after the target merge
+    event and are absent from the target. The target reference gate checked zero excerpts;
+    separate comparisons above verify the owner excerpts.
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadive
+  - context
+  - validate-references
+- assessment_id: history
+  area: provenance
+  topic: Complete target and maintained audit trail
+  outcome: supported
+  summary: Every event timestamp in both full files parses with a timezone. The owner
+    records evidence-only changes and explicitly leaves source-only rows/preparation
+    context for follow-up; this review does not close that work or rewrite history.
+  target_ids:
+  - CultureMech:000847
+  evidence_ids:
+  - record
+  - owner-0
+  - context
+findings:
+- finding_id: f1
+  issue_key: CM000847-source-water-context
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source solvent input is missing from preparation
+  description: Both inspected sources specify1000mL distilled water. The local ingredient
+    list omits solvent, but neither target nor maintained preparation restores its
+    amount.
+  target_ids:
+  - CultureMech:000847
+  field_paths:
+  - ingredients
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - mediadive
+  - context
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/23_mgm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: CM000847-stale-concentration-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated record omits verified owner concentration evidence
+  description: The maintained record contains eleven exact source-linked concentration
+    excerpts, detailed reference metadata and later history absent from the generated
+    target. These omissions make the derived provenance materially incomplete.
+  target_ids:
+  - CultureMech:000847
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadive
+  - context
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/23_mgm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Add source-supported solvent-batch context to the maintained preparation
+    and verify importer handling; preserve provider concentration scope without turning
+    water input into an unsupported final-volume or mass claim.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000847
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/23_mgm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: After verifying source-only preparation context, regenerate from the
+    maintained owner and confirm all eleven excerpts, reference metadata and audit
+    provenance survive.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000847
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/23_mgm_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- Source recipe and provider declarations were assessed; measured final volume, an
+  experimental interpretation of the23% title, strain-specific growth and unspecified
+  autoclave settings were not established.
+tags:
+- unreviewed-records
+- batch-007
+- generated-medium
+```
