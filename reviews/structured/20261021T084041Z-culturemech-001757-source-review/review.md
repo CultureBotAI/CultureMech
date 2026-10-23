@@ -1,0 +1,1069 @@
+# Source and formulation review: 5_sorbitol_medium (CultureMech:001757)
+
+- Review: 20261021T084041Z-culturemech-001757-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T08:29:15Z
+- Finished UTC: 2026-10-21T08:40:41Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSMZ626 primary recipe and current MediaDive response support all four solute amounts, D-sorbitol identity, agar state and pH 6.0 with HCl. The owner already adds four concentration-evidence objects and a structured reference; these are absent from the stale generated target. Preparation retains the pH sentence but labels it MIX and omits the solvent basis. The four documented diagnostics pass. Exact KG-Microbe projected-set verification is unavailable because the required graph snapshot was not found in the bounded owned task directories, so completion is partial.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 108; batch 011 item 8 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding ten task batches contain 100 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 102 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001757 | data/merge_yaml/merged/5_sorbitol_medium.yaml | generated | 5_sorbitol_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001757 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:001757 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch011/108/strict.tsv |
+| validate-terms | passed | True | CultureMech:001757 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:001757 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:001757 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Exact asserted KG-Microbe graph projection | unavailable | True | CultureMech:001757 | Required nodes/edges graph snapshot was not available in the bounded owned task scope. No matcher run or graph equality result is claimed; exact provider626 identity alone cannot establish the graph projection. |
+| Scoped history timestamp syntax and timezone check | passed | False | CultureMech:001757 | 12 timestamp instances inspected; 0 malformed or timezone-naive instances. Existing provenance is preserved; no timestamps were rewritten. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:001757.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Exact DSMZ626 source and maintained owner
+
+identity: supported. Targets: CultureMech:001757.
+
+Stable ID, source URL, provider accession and primary title agree. The four-solute agar formula and pH 6.0 are the same exact source formulation; no nearby sorbitol recipe or biological strain is substituted.
+
+### Every solute amount, solvent basis and unquantified HCl
+
+quantity: supported. Targets: CultureMech:001757.
+
+All four concentrations 50, 10, 10, 15 g/L agree with the provider’s explicit 1000 mL basis and the primary nominal recipe. The owner’s four JSON snippets exactly match the current provider rows, including all row keys. HCl is an unquantified pH-adjustment reagent in source prose, not a fixed mass to infer. No stock solutions or nested doses are asserted.
+
+[{"field": "ingredients[0].concentration", "ingredient": "D-Sorbitol", "source_amount": 50, "source_unit": "g", "value": "50", "unit": "G_PER_L", "provider_locator": "$.data.solutions[0].recipe[0]", "volume_locator": "$.data.solutions[0].volume=1000mL", "calculation": "50 g / provider-declared1L = 50 g/L", "decision": "verified; owner evidence exact; preserve through regeneration"}, {"field": "ingredients[1].concentration", "ingredient": "Yeast extract", "source_amount": 10, "source_unit": "g", "value": "10", "unit": "G_PER_L", "provider_locator": "$.data.solutions[0].recipe[1]", "volume_locator": "$.data.solutions[0].volume=1000mL", "calculation": "10 g / provider-declared1L = 10 g/L", "decision": "verified; owner evidence exact; preserve through regeneration"}, {"field": "ingredients[2].concentration", "ingredient": "Peptone", "source_amount": 10, "source_unit": "g", "value": "10", "unit": "G_PER_L", "provider_locator": "$.data.solutions[0].recipe[2]", "volume_locator": "$.data.solutions[0].volume=1000mL", "calculation": "10 g / provider-declared1L = 10 g/L", "decision": "verified; owner evidence exact; preserve through regeneration"}, {"field": "ingredients[3].concentration", "ingredient": "Agar", "source_amount": 15, "source_unit": "g", "value": "15", "unit": "G_PER_L", "provider_locator": "$.data.solutions[0].recipe[3]", "volume_locator": "$.data.solutions[0].volume=1000mL", "calculation": "15 g / provider-declared1L = 15 g/L", "decision": "verified; owner evidence exact; preserve through regeneration"}]
+
+### Every asserted primary label, chemical form and secondary key
+
+grounding: supported. Targets: CultureMech:001757.
+
+Primary IDs are checked against the exact OLS responses, including available chemical-form annotations; current secondary keys are checked against the pinned packaged index. Ingredient-instance denominators include direct and nested stock composition rows, exclude stock-addition doses, and remain separate for generated target, owner and contextual records. These 0–100 percentages measure linkage, not scientific correctness. Undefined mixtures are not assigned invented pure compounds.
+
+{"counts": {"target": {"ingredient_instances": 4, "primary_ontology_instances": 2, "primary_CHEBI_instances": 2, "secondary_asserted_instances": 2, "secondary_verified_instances": 2, "primary_ontology_percent": 50.0, "secondary_verified_percent": 50.0}, "owner": {"ingredient_instances": 4, "primary_ontology_instances": 2, "primary_CHEBI_instances": 2, "secondary_asserted_instances": 2, "secondary_verified_instances": 2, "primary_ontology_percent": 50.0, "secondary_verified_percent": 50.0}}, "instances": [{"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[0]", "preferred_term": "D-Sorbitol", "primary_id": "CHEBI:17924", "canonical_label": "D-glucitol", "source_key": "chebi17924", "synonyms": ["(-)-sorbitol", "(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol", "D-(-)-sorbitol", "D-Glucitol", "D-Glucitol", "D-SORBITOL", "D-Sorbit", "D-Sorbitol", "D-glucitol", "D-glucitol", "D-sorbitol", "E 420", "E-420", "E420", "G-ol", "Glc-ol", "L-Gulitol"], "form_annotations": {"generalized_empirical_formula": ["C6H14O6"], "inchi_string": ["InChI=1S/C6H14O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3-12H,1-2H2/t3-,4+,5-,6-/m1/s1"], "mass": ["182.172"], "smiles_string": ["OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"]}, "description": ["The &lt;small&gt;D&lt;/small&gt;-enantiomer of glucitol (also known as &lt;small&gt;D&lt;/small&gt;-sorbitol)."], "secondary_id": "CHEBI:17924", "secondary_index_rows": [{"label": "D-Sorbitol", "match_type": "preferred_term", "identifier": "CHEBI:17924", "preferred_term": "D-Sorbitol", "ontology_id": "CHEBI:17924", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[1]", "preferred_term": "Yeast extract"}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[2]", "preferred_term": "Peptone"}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[3]", "preferred_term": "Agar", "primary_id": "CHEBI:2509", "canonical_label": "agar", "source_key": "chebi2509", "synonyms": [], "form_annotations": {}, "description": ["A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties."], "secondary_id": "CHEBI:2509", "secondary_index_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[0]", "preferred_term": "D-Sorbitol", "primary_id": "CHEBI:17924", "canonical_label": "D-glucitol", "source_key": "chebi17924", "synonyms": ["(-)-sorbitol", "(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol", "D-(-)-sorbitol", "D-Glucitol", "D-Glucitol", "D-SORBITOL", "D-Sorbit", "D-Sorbitol", "D-glucitol", "D-glucitol", "D-sorbitol", "E 420", "E-420", "E420", "G-ol", "Glc-ol", "L-Gulitol"], "form_annotations": {"generalized_empirical_formula": ["C6H14O6"], "inchi_string": ["InChI=1S/C6H14O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3-12H,1-2H2/t3-,4+,5-,6-/m1/s1"], "mass": ["182.172"], "smiles_string": ["OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"]}, "description": ["The &lt;small&gt;D&lt;/small&gt;-enantiomer of glucitol (also known as &lt;small&gt;D&lt;/small&gt;-sorbitol)."], "secondary_id": "CHEBI:17924", "secondary_index_rows": [{"label": "D-Sorbitol", "match_type": "preferred_term", "identifier": "CHEBI:17924", "preferred_term": "D-Sorbitol", "ontology_id": "CHEBI:17924", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[1]", "preferred_term": "Yeast extract"}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[2]", "preferred_term": "Peptone"}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[3]", "preferred_term": "Agar", "primary_id": "CHEBI:2509", "canonical_label": "agar", "source_key": "chebi2509", "synonyms": [], "form_annotations": {}, "description": ["A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties."], "secondary_id": "CHEBI:2509", "secondary_index_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]}
+
+### Retained HCl/pH instruction and missing solvent context
+
+consistency: concern. Targets: CultureMech:001757.
+
+The text correctly preserves final pH 6.0 with HCl, but action MIX does not encode its pH-adjustment meaning. Neither layer states the primary 1000 mL water in preparation context; provider final-volume attribution resides only in owner evidence. Current importer deliberately omits water chemical edges, so the bounded remedy is preparation/volume context rather than inventing an extra solute. No absent sterilization protocol is filled with a generic default.
+
+### Projected two-identifier graph-match claim
+
+grounding: unknown. Targets: CultureMech:001757.
+
+The asserted CHEBI set is exactly {CHEBI:17924, CHEBI:2509}; the recipe and provider share the corresponding sorbitol/agar identities. The exact graph snapshot needed to confirm whether mediadive.medium:626 has that projected set is unavailable. This is an explicit unresolved verification, not evidence of an incorrect KG match.
+
+### Classification, applications and bounded biological evidence
+
+scope: supported. Targets: CultureMech:001757.
+
+The source recipe contains complex biological mixtures and agar where asserted, supporting COMPLEX/UNDEFINED and the specified liquid or agar formulation. Bacterial filing and generic microbial-cultivation application are catalogue scope. Neither target nor normalized owner asserts target organisms, strains, taxa, genomes, DOI/PMID claims or growth outcomes; no species-level growth claim is inferred from recipe names, source catalogue membership or ontology labels. Empty optional organism fields are not treated as a source contradiction.
+
+### Owner amount evidence versus stale generated target
+
+ownership: concern. Targets: CultureMech:001757.
+
+The October owner adds one exact provider evidence object per ingredient and a structured reference with retrieval/hash metadata; the August merged target omits them. The amounts and terms themselves agree. Preserve this already-curated evidence through regeneration instead of duplicating or rewriting the historical event.
+
+### Existing claim-level support and its proper limits
+
+evidence: supported. Targets: CultureMech:001757.
+
+Owner evidence is correctly attached to each ingredient amount, quotes a complete matching source row, states the provider-declared main volume and limits its claim to that concentration. The historical response hash matches current captured bytes. This supports the amounts, not secondary mapping validity, measured final volume, growth or the KG graph projection.
+
+### Append-only event history and timestamp interpretation
+
+provenance: supported. Targets: CultureMech:001757.
+
+All 12 scoped timestamps were checked for ISO syntax and timezone. Every instance parses and has an explicit timezone. Curation events are process provenance rather than independent confirmation of recipe correctness.
+
+[]
+
+## Findings
+
+### f1: Generated target omits the owner’s exact amount evidence
+
+minor / open / confirmed; issue key: cm001757-generated-concentration-evidence-missing.
+
+The owner has four matching MediaDive concentration-evidence objects and a structured source reference added after the generated target was produced. The target still carries only a source URL note; its unchanged amounts are scientifically supported, but the generated evidence is stale.
+
+### f2: Preparation action and solvent context need source-faithful representation
+
+minor / open / confirmed; issue key: cm001757-preparation-action-and-solvent-context.
+
+The retained sentence explicitly adjusts final pH 6.0 with HCl but is typed MIX. The primary 1000 mL distilled-water basis is also absent from preparation fields. These are bounded representation gaps; the actual pH text and four ingredient values remain supported.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Regenerate from the verified current owner and confirm all four amount evidence objects, source metadata and history survive without rewriting their historical retrieval times or adding duplicate snippets.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Use a pH-adjustment action for the retained source sentence and preserve the source solvent amount/preparation basis. Keep unknown HCl dose and absent source sterilization detail explicit; do not add an unsupported generic protocol.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/5_sorbitol_medium.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/5_sorbitol_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/5_sorbitol_medium.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/5_sorbitol_medium.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch011/108/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch011/108/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/5_sorbitol_medium.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/5_sorbitol_medium.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| dsmz626 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium626.pdf; PDF page1: title, five-row recipe and final instruction | supports | Read the full one-page DSMZ626 PDF and visually checked the row alignment: D-sorbitol 50 g, yeast extract 10 g, peptone 10 g, agar 15 g and distilled water 1000 mL. The final sentence adjusts pH to 6.0 with HCl. There is no sterilization or growth claim on this page. |
+| mediadive626api | https://mediadive.dsmz.de/rest/medium/626; $.data.medium; $.data.solutions[0] | supports | Exact provider 626 has main solution 1339 volume 1000 mL, solute g_l 50, 10, 10, 15, water 1000 mL and the same HCl/pH sentence. The current response hash exactly equals the owner-pinned historical hash; this confirms byte correspondence, not a replay of the historical retrieval time. |
+| mediadive-writer | src/culturemech/import/mediadive_importer.py; _parse_ingredients_from_api; _classify_preparation_action | context_only | Current importer uses primary-solution rows and excludes solvent water from chemical composition. Its pH classifier recognizes adjust ph or ph to, while the exact phrase Adjust medium for final pH 6.0 with HCl falls through to MIX. A solvent preparation note and semantically correct action are warranted; water need not be inserted as a chemical composition edge. |
+| concentration-writer | scripts/review_medium_concentration_evidence.py; Source selection, claim-level amount evidence and existing owner curation provenance | context_only | Read current concentration-evidence workflow as maintained context; the owner contains four exact provider-row snippets, declared-volume arithmetic and an explicit historical response hash. No historical rerun or new source claim is inferred from the writer alone. |
+| kg-matcher | src/culturemech/match/kg_media_matcher.py; __init__, _load_kg_microbe_data, extract_recipe_ingredients, find_exact_match | context_only | Matcher expects transformed mediadive nodes.tsv and edges.tsv, follows medium-to-solution and solution-to-CHEBI/FOODON edges, and compares projected identifier sets without concentration. This target projection is exactly {CHEBI:17924, CHEBI:2509}; ungrounded yeast extract and peptone are outside that projection. |
+| kg-graph-search | /private/tmp/culturemech-review-work-batch011/kg-graph-file-search.json; Actual ignored-inclusive filename search over22 owned roots | context_only | {"argv": ["rg", "--files", "--no-ignore", "--hidden", "/private/tmp/culturemech-review-work-batch005", "/private/tmp/culturemech-review-work-batch002", "/private/tmp/culturemech-review-work-batch003", "/private/tmp/culturemech-review-work-batch004", "/private/tmp/culturemech-record-review-20261019-batch-011", "/private/tmp/culturemech-record-review-20261019-batch-010", "/private/tmp/culturemech-record-review-20261019-batch-004", "/private/tmp/culturemech-record-review-20261019-batch-003", "/private/tmp/culturemech-record-review-20261019-batch-002", "/private/tmp/culturemech-record-review-20261019-batch-005", "/private/tmp/culturemech-review-work", "/private/tmp/culturemech-review-work-batch010", "/private/tmp/culturemech-review-work-batch011", "/private/tmp/culturemech-review-work-batch006", "/private/tmp/culturemech-review-work-batch008", "/private/tmp/culturemech-review-work-batch009", "/private/tmp/culturemech-review-work-batch007", "/private/tmp/culturemech-record-review-20261019", "/private/tmp/culturemech-record-review-20261019-batch-009", "/private/tmp/culturemech-record-review-20261019-batch-007", "/private/tmp/culturemech-record-review-20261019-batch-006", "/private/tmp/culturemech-record-review-20261019-batch-008"], "exit_code": 0, "ignored_files_included": true, "searched_roots": 22, "matching_paths": [], "scope": "Owned task clones/worktrees and review scratch only. Filename search, not graph provenance validation."} |
+| chebi17924 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17924; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms, annotation | supports | CHEBI:17924 resolves to the asserted canonical label D-glucitol and is not obsolete. Complete response including available form, formula, synonym and structure annotations was inspected; recipe-specific grade and amount are separate claims. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms, annotation | supports | CHEBI:2509 resolves to the asserted canonical label agar and is not obsolete. Complete response including available form, formula, synonym and structure annotations was inspected; recipe-specific grade and amount are separate claims. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact MAPPED/preferred_term rows for every asserted secondary key; adjacent pinned metadata | supports | {"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count": 9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id", "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"}, "instances": [{"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[0]", "preferred_term": "D-Sorbitol", "primary_id": "CHEBI:17924", "canonical_label": "D-glucitol", "source_key": "chebi17924", "synonyms": ["(-)-sorbitol", "(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol", "D-(-)-sorbitol", "D-Glucitol", "D-Glucitol", "D-SORBITOL", "D-Sorbit", "D-Sorbitol", "D-glucitol", "D-glucitol", "D-sorbitol", "E 420", "E-420", "E420", "G-ol", "Glc-ol", "L-Gulitol"], "form_annotations": {"generalized_empirical_formula": ["C6H14O6"], "inchi_string": ["InChI=1S/C6H14O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3-12H,1-2H2/t3-,4+,5-,6-/m1/s1"], "mass": ["182.172"], "smiles_string": ["OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"]}, "description": ["The &lt;small&gt;D&lt;/small&gt;-enantiomer of glucitol (also known as &lt;small&gt;D&lt;/small&gt;-sorbitol)."], "secondary_id": "CHEBI:17924", "secondary_index_rows": [{"label": "D-Sorbitol", "match_type": "preferred_term", "identifier": "CHEBI:17924", "preferred_term": "D-Sorbitol", "ontology_id": "CHEBI:17924", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[1]", "preferred_term": "Yeast extract"}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[2]", "preferred_term": "Peptone"}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[3]", "preferred_term": "Agar", "primary_id": "CHEBI:2509", "canonical_label": "agar", "source_key": "chebi2509", "synonyms": [], "form_annotations": {}, "description": ["A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties."], "secondary_id": "CHEBI:2509", "secondary_index_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[0]", "preferred_term": "D-Sorbitol", "primary_id": "CHEBI:17924", "canonical_label": "D-glucitol", "source_key": "chebi17924", "synonyms": ["(-)-sorbitol", "(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol", "D-(-)-sorbitol", "D-Glucitol", "D-Glucitol", "D-SORBITOL", "D-Sorbit", "D-Sorbitol", "D-glucitol", "D-glucitol", "D-sorbitol", "E 420", "E-420", "E420", "G-ol", "Glc-ol", "L-Gulitol"], "form_annotations": {"generalized_empirical_formula": ["C6H14O6"], "inchi_string": ["InChI=1S/C6H14O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3-12H,1-2H2/t3-,4+,5-,6-/m1/s1"], "mass": ["182.172"], "smiles_string": ["OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"]}, "description": ["The &lt;small&gt;D&lt;/small&gt;-enantiomer of glucitol (also known as &lt;small&gt;D&lt;/small&gt;-sorbitol)."], "secondary_id": "CHEBI:17924", "secondary_index_rows": [{"label": "D-Sorbitol", "match_type": "preferred_term", "identifier": "CHEBI:17924", "preferred_term": "D-Sorbitol", "ontology_id": "CHEBI:17924", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[1]", "preferred_term": "Yeast extract"}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[2]", "preferred_term": "Peptone"}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[3]", "preferred_term": "Agar", "primary_id": "CHEBI:2509", "canonical_label": "agar", "source_key": "chebi2509", "synonyms": [], "form_annotations": {}, "description": ["A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties."], "secondary_id": "CHEBI:2509", "secondary_index_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier": "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]} |
+| history | data/merge_yaml/merged/5_sorbitol_medium.yaml; Every timestamp in target, owner and explicitly listed contextual dependencies | supports | [{"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-26T17:53:11.770743Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[1].timestamp", "value": "2026-03-13T06:19:06.995508Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-17T06:30:52.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-17T19:45:19.245163+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[4].timestamp", "value": "2026-06-05T07:40:15.875357+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[5].timestamp", "value": "2026-08-06T03:04:34.163847+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-26T17:53:11.770743Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "curation_history[1].timestamp", "value": "2026-03-13T06:19:06.995508Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-17T06:30:52.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-17T19:45:19.245163+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "curation_history[4].timestamp", "value": "2026-06-05T07:40:15.875357+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "curation_history[5].timestamp", "value": "2026-10-07T12:21:30.028294+00:00", "valid_ISO_datetime": true, "timezone_aware": true}] |
+
+## Limits And Additional Notes
+
+- The primary source states1000 mL distilled water; the provider separately declares 1000 mL main volume and explicit g_l values. This supports provider-normalized concentrations without treating added water as an independently measured final volume.
+- The exact source PDF was read as text and visually inspected on page 1 using a local rendering of the bound bytes. It states no sterilization procedure, organisms, growth atmosphere or incubation conditions; none were invented.
+- The target’s kg_microbe_match projects only grounded CHEBI/FOODON ingredients. It does not assert complete formula, quantity, preparation or organism identity. No false-match finding is inferred from ungrounded complex mixtures or from graph unavailability.
+- The graph filename search was bounded to 22 owned task checkouts and scratch directories, including ignored files. It does not establish absence in other user checkouts, arbitrary files with other names or remote graph distributions.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T084041Z-culturemech-001757-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 5_sorbitol_medium (CultureMech:001757)'
+started_at: '2026-10-21T08:29:15Z'
+finished_at: '2026-10-21T08:40:41Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSMZ626 primary recipe and current MediaDive response support all
+  four solute amounts, D-sorbitol identity, agar state and pH 6.0 with HCl. The owner
+  already adds four concentration-evidence objects and a structured reference; these
+  are absent from the stale generated target. Preparation retains the pH sentence
+  but labels it MIX and omits the solvent basis. The four documented diagnostics pass.
+  Exact KG-Microbe projected-set verification is unavailable because the required
+  graph snapshot was not found in the bounded owned task directories, so completion
+  is partial.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/5_sorbitol_medium.yaml
+    sha256: 45dc3cb83a59a806c3c28c2a5acba4e9419bff090fd323f6c343839a5d18bb2a
+    role: target
+  - path: data/normalized_yaml/bacterial/5_sorbitol_medium.yaml
+    sha256: 04ce0c8b0d9e6280d44de88d8536f67c3507b2f18009ff51fae467c875034581
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 108; batch 011 item 8 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding ten task batches contain
+    100 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 102 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001757
+targets:
+- target_id: CultureMech:001757
+  path: data/merge_yaml/merged/5_sorbitol_medium.yaml
+  label: 5_sorbitol_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_sorbitol_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/5_sorbitol_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/5_sorbitol_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch011/108/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch011/108/strict.tsv"
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/5_sorbitol_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/5_sorbitol_medium.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001757
+- check_id: kg-projected-set-verification
+  name: Exact asserted KG-Microbe graph projection
+  required: true
+  status: unavailable
+  summary: Required nodes/edges graph snapshot was not available in the bounded owned
+    task scope. No matcher run or graph equality result is claimed; exact provider626
+    identity alone cannot establish the graph projection.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - kg-matcher
+  - kg-graph-search
+  - mediadive626api
+- check_id: scoped-history-timestamps
+  name: Scoped history timestamp syntax and timezone check
+  required: false
+  status: passed
+  summary: 12 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Existing provenance is preserved; no timestamps were rewritten.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/5_sorbitol_medium.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T08:40:41Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/5_sorbitol_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T08:40:41Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/5_sorbitol_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:43.722011Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/5_sorbitol_medium.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch011/108/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:49.273428Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-011/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch011/108/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/5_sorbitol_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:54.993805Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/5_sorbitol_medium.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T08:30:58.574137Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: dsmz626
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium626.pdf
+  locator: 'PDF page1: title, five-row recipe and final instruction'
+  accessed_at: '2026-10-21T08:23:34.866793Z'
+  support: supports
+  summary: 'Read the full one-page DSMZ626 PDF and visually checked the row alignment:
+    D-sorbitol 50 g, yeast extract 10 g, peptone 10 g, agar 15 g and distilled water
+    1000 mL. The final sentence adjusts pH to 6.0 with HCl. There is no sterilization
+    or growth claim on this page.'
+  snapshot_sha256: 8ab1d8c9e5b311a890e3b7071d35946ae665e73afce9aab07128a84c27fb9d5f
+- evidence_id: mediadive626api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/626
+  locator: $.data.medium; $.data.solutions[0]
+  accessed_at: '2026-10-21T08:23:33.417481Z'
+  support: supports
+  summary: Exact provider 626 has main solution 1339 volume 1000 mL, solute g_l 50,
+    10, 10, 15, water 1000 mL and the same HCl/pH sentence. The current response hash
+    exactly equals the owner-pinned historical hash; this confirms byte correspondence,
+    not a replay of the historical retrieval time.
+  snapshot_sha256: a13a754ac6b9ebf3c78141c8fde47d537d0babd94b33ce448fe1c77ee587eb7f
+- evidence_id: mediadive-writer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_ingredients_from_api; _classify_preparation_action
+  accessed_at: '2026-10-21T08:40:41Z'
+  support: context_only
+  summary: Current importer uses primary-solution rows and excludes solvent water
+    from chemical composition. Its pH classifier recognizes adjust ph or ph to, while
+    the exact phrase Adjust medium for final pH 6.0 with HCl falls through to MIX.
+    A solvent preparation note and semantically correct action are warranted; water
+    need not be inserted as a chemical composition edge.
+- evidence_id: concentration-writer
+  kind: record_content
+  reference: scripts/review_medium_concentration_evidence.py
+  locator: Source selection, claim-level amount evidence and existing owner curation
+    provenance
+  accessed_at: '2026-10-21T08:40:41Z'
+  support: context_only
+  summary: Read current concentration-evidence workflow as maintained context; the
+    owner contains four exact provider-row snippets, declared-volume arithmetic and
+    an explicit historical response hash. No historical rerun or new source claim
+    is inferred from the writer alone.
+- evidence_id: kg-matcher
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: __init__, _load_kg_microbe_data, extract_recipe_ingredients, find_exact_match
+  accessed_at: '2026-10-21T08:40:41Z'
+  support: context_only
+  summary: Matcher expects transformed mediadive nodes.tsv and edges.tsv, follows
+    medium-to-solution and solution-to-CHEBI/FOODON edges, and compares projected
+    identifier sets without concentration. This target projection is exactly {CHEBI:17924,
+    CHEBI:2509}; ungrounded yeast extract and peptone are outside that projection.
+- evidence_id: kg-graph-search
+  kind: search
+  reference: /private/tmp/culturemech-review-work-batch011/kg-graph-file-search.json
+  locator: Actual ignored-inclusive filename search over22 owned roots
+  accessed_at: '2026-10-21T08:40:41Z'
+  support: context_only
+  summary: '{"argv": ["rg", "--files", "--no-ignore", "--hidden", "/private/tmp/culturemech-review-work-batch005",
+    "/private/tmp/culturemech-review-work-batch002", "/private/tmp/culturemech-review-work-batch003",
+    "/private/tmp/culturemech-review-work-batch004", "/private/tmp/culturemech-record-review-20261019-batch-011",
+    "/private/tmp/culturemech-record-review-20261019-batch-010", "/private/tmp/culturemech-record-review-20261019-batch-004",
+    "/private/tmp/culturemech-record-review-20261019-batch-003", "/private/tmp/culturemech-record-review-20261019-batch-002",
+    "/private/tmp/culturemech-record-review-20261019-batch-005", "/private/tmp/culturemech-review-work",
+    "/private/tmp/culturemech-review-work-batch010", "/private/tmp/culturemech-review-work-batch011",
+    "/private/tmp/culturemech-review-work-batch006", "/private/tmp/culturemech-review-work-batch008",
+    "/private/tmp/culturemech-review-work-batch009", "/private/tmp/culturemech-review-work-batch007",
+    "/private/tmp/culturemech-record-review-20261019", "/private/tmp/culturemech-record-review-20261019-batch-009",
+    "/private/tmp/culturemech-record-review-20261019-batch-007", "/private/tmp/culturemech-record-review-20261019-batch-006",
+    "/private/tmp/culturemech-record-review-20261019-batch-008"], "exit_code": 0,
+    "ignored_files_included": true, "searched_roots": 22, "matching_paths": [], "scope":
+    "Owned task clones/worktrees and review scratch only. Filename search, not graph
+    provenance validation."}'
+  snapshot_sha256: 2e7414eff25225f1cb79ae22bc1d06c05a9afe9e43cc5e99aa1ceba41ec61c68
+  search_scope: All22 explicitly listed owned task checkouts/review scratch roots
+    in the captured rg --files --no-ignore --hidden argv; candidate nodes.tsv/edges.tsv
+    and gz variants. No claim about other user directories, differently named payloads
+    or remote graphs.
+- evidence_id: chebi17924
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17924
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms,
+    annotation'
+  accessed_at: '2026-10-21T08:23:34.953801Z'
+  support: supports
+  summary: CHEBI:17924 resolves to the asserted canonical label D-glucitol and is
+    not obsolete. Complete response including available form, formula, synonym and
+    structure annotations was inspected; recipe-specific grade and amount are separate
+    claims.
+  snapshot_sha256: 8dad073169f74831c4cd79c8d5899141193bbbfcc244ee0ab2e7f64602a56c34
+- evidence_id: chebi2509
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms,
+    annotation'
+  accessed_at: '2026-10-21T08:17:27.847373Z'
+  support: supports
+  summary: CHEBI:2509 resolves to the asserted canonical label agar and is not obsolete.
+    Complete response including available form, formula, synonym and structure annotations
+    was inspected; recipe-specific grade and amount are separate claims.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact MAPPED/preferred_term rows for every asserted secondary key; adjacent
+    pinned metadata
+  accessed_at: '2026-10-21T08:40:41Z'
+  support: supports
+  summary: '{"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count":
+    9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id",
+    "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"},
+    "instances": [{"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml",
+    "field": "ingredients[0]", "preferred_term": "D-Sorbitol", "primary_id": "CHEBI:17924",
+    "canonical_label": "D-glucitol", "source_key": "chebi17924", "synonyms": ["(-)-sorbitol",
+    "(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol", "D-(-)-sorbitol", "D-Glucitol", "D-Glucitol",
+    "D-SORBITOL", "D-Sorbit", "D-Sorbitol", "D-glucitol", "D-glucitol", "D-sorbitol",
+    "E 420", "E-420", "E420", "G-ol", "Glc-ol", "L-Gulitol"], "form_annotations":
+    {"generalized_empirical_formula": ["C6H14O6"], "inchi_string": ["InChI=1S/C6H14O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3-12H,1-2H2/t3-,4+,5-,6-/m1/s1"],
+    "mass": ["182.172"], "smiles_string": ["OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"]},
+    "description": ["The <small>D</small>-enantiomer of glucitol (also known as <small>D</small>-sorbitol)."],
+    "secondary_id": "CHEBI:17924", "secondary_index_rows": [{"label": "D-Sorbitol",
+    "match_type": "preferred_term", "identifier": "CHEBI:17924", "preferred_term":
+    "D-Sorbitol", "ontology_id": "CHEBI:17924", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml",
+    "field": "ingredients[1]", "preferred_term": "Yeast extract"}, {"layer": "target",
+    "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[2]",
+    "preferred_term": "Peptone"}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml",
+    "field": "ingredients[3]", "preferred_term": "Agar", "primary_id": "CHEBI:2509",
+    "canonical_label": "agar", "source_key": "chebi2509", "synonyms": [], "form_annotations":
+    {}, "description": ["A complex mixture of polysaccharides extracted from species
+    of red algae. Its two main components are agarose and agaropectin. Agarose is
+    the component responsible for the high-strength gelling properties of agar, while
+    agaropectin provides the viscous properties."], "secondary_id": "CHEBI:2509",
+    "secondary_index_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "ingredients[0]", "preferred_term": "D-Sorbitol", "primary_id": "CHEBI:17924",
+    "canonical_label": "D-glucitol", "source_key": "chebi17924", "synonyms": ["(-)-sorbitol",
+    "(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol", "D-(-)-sorbitol", "D-Glucitol", "D-Glucitol",
+    "D-SORBITOL", "D-Sorbit", "D-Sorbitol", "D-glucitol", "D-glucitol", "D-sorbitol",
+    "E 420", "E-420", "E420", "G-ol", "Glc-ol", "L-Gulitol"], "form_annotations":
+    {"generalized_empirical_formula": ["C6H14O6"], "inchi_string": ["InChI=1S/C6H14O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3-12H,1-2H2/t3-,4+,5-,6-/m1/s1"],
+    "mass": ["182.172"], "smiles_string": ["OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"]},
+    "description": ["The <small>D</small>-enantiomer of glucitol (also known as <small>D</small>-sorbitol)."],
+    "secondary_id": "CHEBI:17924", "secondary_index_rows": [{"label": "D-Sorbitol",
+    "match_type": "preferred_term", "identifier": "CHEBI:17924", "preferred_term":
+    "D-Sorbitol", "ontology_id": "CHEBI:17924", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "ingredients[1]", "preferred_term": "Yeast extract"}, {"layer": "owner",
+    "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[2]",
+    "preferred_term": "Peptone"}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "ingredients[3]", "preferred_term": "Agar", "primary_id": "CHEBI:2509",
+    "canonical_label": "agar", "source_key": "chebi2509", "synonyms": [], "form_annotations":
+    {}, "description": ["A complex mixture of polysaccharides extracted from species
+    of red algae. Its two main components are agarose and agaropectin. Agarose is
+    the component responsible for the high-strength gelling properties of agar, while
+    agaropectin provides the viscous properties."], "secondary_id": "CHEBI:2509",
+    "secondary_index_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}]}'
+- evidence_id: history
+  kind: record_content
+  reference: data/merge_yaml/merged/5_sorbitol_medium.yaml
+  locator: Every timestamp in target, owner and explicitly listed contextual dependencies
+  accessed_at: '2026-10-21T08:40:41Z'
+  support: supports
+  summary: '[{"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[0].timestamp",
+    "value": "2026-01-26T17:53:11.770743Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[1].timestamp",
+    "value": "2026-03-13T06:19:06.995508Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[2].timestamp",
+    "value": "2026-03-17T06:30:52.000000Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[3].timestamp",
+    "value": "2026-03-17T19:45:19.245163+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[4].timestamp",
+    "value": "2026-06-05T07:40:15.875357+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "curation_history[5].timestamp",
+    "value": "2026-08-06T03:04:34.163847+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field":
+    "curation_history[0].timestamp", "value": "2026-01-26T17:53:11.770743Z", "valid_ISO_datetime":
+    true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "curation_history[1].timestamp", "value": "2026-03-13T06:19:06.995508Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "curation_history[2].timestamp", "value": "2026-03-17T06:30:52.000000Z",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "curation_history[3].timestamp", "value": "2026-03-17T19:45:19.245163+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "curation_history[4].timestamp", "value": "2026-06-05T07:40:15.875357+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "curation_history[5].timestamp", "value": "2026-10-07T12:21:30.028294+00:00",
+    "valid_ISO_datetime": true, "timezone_aware": true}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact DSMZ626 source and maintained owner
+  outcome: supported
+  summary: Stable ID, source URL, provider accession and primary title agree. The
+    four-solute agar formula and pH 6.0 are the same exact source formulation; no
+    nearby sorbitol recipe or biological strain is substituted.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz626
+  - mediadive626api
+- assessment_id: amounts
+  area: quantity
+  topic: Every solute amount, solvent basis and unquantified HCl
+  outcome: supported
+  summary: All four concentrations 50, 10, 10, 15 g/L agree with the provider’s explicit
+    1000 mL basis and the primary nominal recipe. The owner’s four JSON snippets exactly
+    match the current provider rows, including all row keys. HCl is an unquantified
+    pH-adjustment reagent in source prose, not a fixed mass to infer. No stock solutions
+    or nested doses are asserted.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz626
+  - mediadive626api
+  - concentration-writer
+  details: '[{"field": "ingredients[0].concentration", "ingredient": "D-Sorbitol",
+    "source_amount": 50, "source_unit": "g", "value": "50", "unit": "G_PER_L", "provider_locator":
+    "$.data.solutions[0].recipe[0]", "volume_locator": "$.data.solutions[0].volume=1000mL",
+    "calculation": "50 g / provider-declared1L = 50 g/L", "decision": "verified; owner
+    evidence exact; preserve through regeneration"}, {"field": "ingredients[1].concentration",
+    "ingredient": "Yeast extract", "source_amount": 10, "source_unit": "g", "value":
+    "10", "unit": "G_PER_L", "provider_locator": "$.data.solutions[0].recipe[1]",
+    "volume_locator": "$.data.solutions[0].volume=1000mL", "calculation": "10 g /
+    provider-declared1L = 10 g/L", "decision": "verified; owner evidence exact; preserve
+    through regeneration"}, {"field": "ingredients[2].concentration", "ingredient":
+    "Peptone", "source_amount": 10, "source_unit": "g", "value": "10", "unit": "G_PER_L",
+    "provider_locator": "$.data.solutions[0].recipe[2]", "volume_locator": "$.data.solutions[0].volume=1000mL",
+    "calculation": "10 g / provider-declared1L = 10 g/L", "decision": "verified; owner
+    evidence exact; preserve through regeneration"}, {"field": "ingredients[3].concentration",
+    "ingredient": "Agar", "source_amount": 15, "source_unit": "g", "value": "15",
+    "unit": "G_PER_L", "provider_locator": "$.data.solutions[0].recipe[3]", "volume_locator":
+    "$.data.solutions[0].volume=1000mL", "calculation": "15 g / provider-declared1L
+    = 15 g/L", "decision": "verified; owner evidence exact; preserve through regeneration"}]'
+- assessment_id: grounding
+  area: grounding
+  topic: Every asserted primary label, chemical form and secondary key
+  outcome: supported
+  summary: Primary IDs are checked against the exact OLS responses, including available
+    chemical-form annotations; current secondary keys are checked against the pinned
+    packaged index. Ingredient-instance denominators include direct and nested stock
+    composition rows, exclude stock-addition doses, and remain separate for generated
+    target, owner and contextual records. These 0–100 percentages measure linkage,
+    not scientific correctness. Undefined mixtures are not assigned invented pure
+    compounds.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi17924
+  - chebi2509
+  details: '{"counts": {"target": {"ingredient_instances": 4, "primary_ontology_instances":
+    2, "primary_CHEBI_instances": 2, "secondary_asserted_instances": 2, "secondary_verified_instances":
+    2, "primary_ontology_percent": 50.0, "secondary_verified_percent": 50.0}, "owner":
+    {"ingredient_instances": 4, "primary_ontology_instances": 2, "primary_CHEBI_instances":
+    2, "secondary_asserted_instances": 2, "secondary_verified_instances": 2, "primary_ontology_percent":
+    50.0, "secondary_verified_percent": 50.0}}, "instances": [{"layer": "target",
+    "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[0]",
+    "preferred_term": "D-Sorbitol", "primary_id": "CHEBI:17924", "canonical_label":
+    "D-glucitol", "source_key": "chebi17924", "synonyms": ["(-)-sorbitol", "(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol",
+    "D-(-)-sorbitol", "D-Glucitol", "D-Glucitol", "D-SORBITOL", "D-Sorbit", "D-Sorbitol",
+    "D-glucitol", "D-glucitol", "D-sorbitol", "E 420", "E-420", "E420", "G-ol", "Glc-ol",
+    "L-Gulitol"], "form_annotations": {"generalized_empirical_formula": ["C6H14O6"],
+    "inchi_string": ["InChI=1S/C6H14O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3-12H,1-2H2/t3-,4+,5-,6-/m1/s1"],
+    "mass": ["182.172"], "smiles_string": ["OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"]},
+    "description": ["The <small>D</small>-enantiomer of glucitol (also known as <small>D</small>-sorbitol)."],
+    "secondary_id": "CHEBI:17924", "secondary_index_rows": [{"label": "D-Sorbitol",
+    "match_type": "preferred_term", "identifier": "CHEBI:17924", "preferred_term":
+    "D-Sorbitol", "ontology_id": "CHEBI:17924", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml",
+    "field": "ingredients[1]", "preferred_term": "Yeast extract"}, {"layer": "target",
+    "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml", "field": "ingredients[2]",
+    "preferred_term": "Peptone"}, {"layer": "target", "path": "data/merge_yaml/merged/5_sorbitol_medium.yaml",
+    "field": "ingredients[3]", "preferred_term": "Agar", "primary_id": "CHEBI:2509",
+    "canonical_label": "agar", "source_key": "chebi2509", "synonyms": [], "form_annotations":
+    {}, "description": ["A complex mixture of polysaccharides extracted from species
+    of red algae. Its two main components are agarose and agaropectin. Agarose is
+    the component responsible for the high-strength gelling properties of agar, while
+    agaropectin provides the viscous properties."], "secondary_id": "CHEBI:2509",
+    "secondary_index_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "ingredients[0]", "preferred_term": "D-Sorbitol", "primary_id": "CHEBI:17924",
+    "canonical_label": "D-glucitol", "source_key": "chebi17924", "synonyms": ["(-)-sorbitol",
+    "(2R,3R,4R,5S)-hexane-1,2,3,4,5,6-hexol", "D-(-)-sorbitol", "D-Glucitol", "D-Glucitol",
+    "D-SORBITOL", "D-Sorbit", "D-Sorbitol", "D-glucitol", "D-glucitol", "D-sorbitol",
+    "E 420", "E-420", "E420", "G-ol", "Glc-ol", "L-Gulitol"], "form_annotations":
+    {"generalized_empirical_formula": ["C6H14O6"], "inchi_string": ["InChI=1S/C6H14O6/c7-1-3(9)5(11)6(12)4(10)2-8/h3-12H,1-2H2/t3-,4+,5-,6-/m1/s1"],
+    "mass": ["182.172"], "smiles_string": ["OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](O)CO"]},
+    "description": ["The <small>D</small>-enantiomer of glucitol (also known as <small>D</small>-sorbitol)."],
+    "secondary_id": "CHEBI:17924", "secondary_index_rows": [{"label": "D-Sorbitol",
+    "match_type": "preferred_term", "identifier": "CHEBI:17924", "preferred_term":
+    "D-Sorbitol", "ontology_id": "CHEBI:17924", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "ingredients[1]", "preferred_term": "Yeast extract"}, {"layer": "owner",
+    "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml", "field": "ingredients[2]",
+    "preferred_term": "Peptone"}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/5_sorbitol_medium.yaml",
+    "field": "ingredients[3]", "preferred_term": "Agar", "primary_id": "CHEBI:2509",
+    "canonical_label": "agar", "source_key": "chebi2509", "synonyms": [], "form_annotations":
+    {}, "description": ["A complex mixture of polysaccharides extracted from species
+    of red algae. Its two main components are agarose and agaropectin. Agarose is
+    the component responsible for the high-strength gelling properties of agar, while
+    agaropectin provides the viscous properties."], "secondary_id": "CHEBI:2509",
+    "secondary_index_rows": [{"label": "Agar", "match_type": "preferred_term", "identifier":
+    "CHEBI:2509", "preferred_term": "Agar", "ontology_id": "CHEBI:2509", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}]}'
+- assessment_id: preparation
+  area: consistency
+  topic: Retained HCl/pH instruction and missing solvent context
+  outcome: concern
+  summary: The text correctly preserves final pH 6.0 with HCl, but action MIX does
+    not encode its pH-adjustment meaning. Neither layer states the primary 1000 mL
+    water in preparation context; provider final-volume attribution resides only in
+    owner evidence. Current importer deliberately omits water chemical edges, so the
+    bounded remedy is preparation/volume context rather than inventing an extra solute.
+    No absent sterilization protocol is filled with a generic default.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz626
+  - mediadive626api
+  - mediadive-writer
+- assessment_id: kg-projection
+  area: grounding
+  topic: Projected two-identifier graph-match claim
+  outcome: unknown
+  summary: The asserted CHEBI set is exactly {CHEBI:17924, CHEBI:2509}; the recipe
+    and provider share the corresponding sorbitol/agar identities. The exact graph
+    snapshot needed to confirm whether mediadive.medium:626 has that projected set
+    is unavailable. This is an explicit unresolved verification, not evidence of an
+    incorrect KG match.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - record
+  - kg-matcher
+  - kg-graph-search
+  - mediadive626api
+- assessment_id: biological-scope
+  area: scope
+  topic: Classification, applications and bounded biological evidence
+  outcome: supported
+  summary: The source recipe contains complex biological mixtures and agar where asserted,
+    supporting COMPLEX/UNDEFINED and the specified liquid or agar formulation. Bacterial
+    filing and generic microbial-cultivation application are catalogue scope. Neither
+    target nor normalized owner asserts target organisms, strains, taxa, genomes,
+    DOI/PMID claims or growth outcomes; no species-level growth claim is inferred
+    from recipe names, source catalogue membership or ontology labels. Empty optional
+    organism fields are not treated as a source contradiction.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz626
+- assessment_id: ownership
+  area: ownership
+  topic: Owner amount evidence versus stale generated target
+  outcome: concern
+  summary: The October owner adds one exact provider evidence object per ingredient
+    and a structured reference with retrieval/hash metadata; the August merged target
+    omits them. The amounts and terms themselves agree. Preserve this already-curated
+    evidence through regeneration instead of duplicating or rewriting the historical
+    event.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - record
+  - owner-0
+  - concentration-writer
+  - mediadive626api
+- assessment_id: evidence
+  area: evidence
+  topic: Existing claim-level support and its proper limits
+  outcome: supported
+  summary: Owner evidence is correctly attached to each ingredient amount, quotes
+    a complete matching source row, states the provider-declared main volume and limits
+    its claim to that concentration. The historical response hash matches current
+    captured bytes. This supports the amounts, not secondary mapping validity, measured
+    final volume, growth or the KG graph projection.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - owner-0
+  - mediadive626api
+  - dsmz626
+- assessment_id: history
+  area: provenance
+  topic: Append-only event history and timestamp interpretation
+  outcome: supported
+  summary: All 12 scoped timestamps were checked for ISO syntax and timezone. Every
+    instance parses and has an explicit timezone. Curation events are process provenance
+    rather than independent confirmation of recipe correctness.
+  target_ids:
+  - CultureMech:001757
+  evidence_ids:
+  - record
+  - owner-0
+  - history
+  details: '[]'
+findings:
+- finding_id: f1
+  issue_key: cm001757-generated-concentration-evidence-missing
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generated target omits the owner’s exact amount evidence
+  description: The owner has four matching MediaDive concentration-evidence objects
+    and a structured source reference added after the generated target was produced.
+    The target still carries only a source URL note; its unchanged amounts are scientifically
+    supported, but the generated evidence is stale.
+  target_ids:
+  - CultureMech:001757
+  field_paths:
+  - ingredients[*].evidence
+  - references
+  - curation_history
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadive626api
+  - concentration-writer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_sorbitol_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P4
+  normalization_reason: P4 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm001757-preparation-action-and-solvent-context
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preparation action and solvent context need source-faithful representation
+  description: The retained sentence explicitly adjusts final pH 6.0 with HCl but
+    is typed MIX. The primary 1000 mL distilled-water basis is also absent from preparation
+    fields. These are bounded representation gaps; the actual pH text and four ingredient
+    values remain supported.
+  target_ids:
+  - CultureMech:001757
+  field_paths:
+  - preparation_steps[0].action
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz626
+  - mediadive626api
+  - mediadive-writer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_sorbitol_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Regenerate from the verified current owner and confirm all four amount
+    evidence objects, source metadata and history survive without rewriting their
+    historical retrieval times or adding duplicate snippets.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001757
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_sorbitol_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Use a pH-adjustment action for the retained source sentence and preserve
+    the source solvent amount/preparation basis. Keep unknown HCl dose and absent
+    source sterilization detail explicit; do not add an unsupported generic protocol.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001757
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/5_sorbitol_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The primary source states1000 mL distilled water; the provider separately declares
+  1000 mL main volume and explicit g_l values. This supports provider-normalized concentrations
+  without treating added water as an independently measured final volume.
+- The exact source PDF was read as text and visually inspected on page 1 using a local
+  rendering of the bound bytes. It states no sterilization procedure, organisms, growth
+  atmosphere or incubation conditions; none were invented.
+- The target’s kg_microbe_match projects only grounded CHEBI/FOODON ingredients. It
+  does not assert complete formula, quantity, preparation or organism identity. No
+  false-match finding is inferred from ungrounded complex mixtures or from graph unavailability.
+- The graph filename search was bounded to 22 owned task checkouts and scratch directories,
+  including ignored files. It does not establish absence in other user checkouts,
+  arbitrary files with other names or remote graph distributions.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-011
+- generated-medium
+```
