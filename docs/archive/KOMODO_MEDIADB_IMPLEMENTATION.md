@@ -481,8 +481,8 @@ grep "medium_type: DEFINED" kb/media/bacterial/MEDIADB_*.yaml | wc -l
 
 ### KOMODO
 
-- **Paper**: Zarecki et al. (2015) Nature Communications
-- **DOI**: https://doi.org/10.1038/ncomms7859
+- **Paper**: Oberhardt et al. (2015) Nature Communications 6, 8493
+- **DOI**: https://doi.org/10.1038/ncomms9493
 - **Website**: https://komodo.modelseed.org/
 - **Contact**: raphy.zarecki@gmail.com
 
