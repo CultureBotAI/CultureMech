@@ -1,0 +1,2945 @@
+# Source and formulation review: 9k_medium (CultureMech:003277)
+
+- Review: 20261021T092047Z-culturemech-003277-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-21T09:12:05Z
+- Finished UTC: 2026-10-21T09:20:47Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+JCM 92 is unambiguously identified, and its seven asserted ingredient identities are grounded consistently. The substantive quantity error is sulfuric acid represented as 1 g/L instead of the source addition of 1 mL of 10 N acid; source water and sterilization context also need restoration. Three other provider g/L values have small last-digit arithmetic conflicts that must remain distinct from that unit error. The owner carries three exact provider-backed evidence entries absent from the generated target. CommunityMech explains the environmental notes but supplies modified recipes and circular imported rows, not independent exact-JCM92 validation. The initial term check failed to download ENVO; its separately authorized retry passed with all original outputs preserved.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Task review 124; batch 013 item 4 of 10, selected in Python lexicographic order of currently uncovered merged paths. The preceding twelve task batches contain 120 ledger-owned validated record reviews; their complete validated lists also retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c contains 40 validated baseline bundles covering 2 current merged paths. Unioning all prior lists with this baseline covers 122 of 6320 current merged paths, including 2 paths beyond task-owned reviews. This target path is absent from that union. Task ordinals count task reviews, not current global path ranks or all upstream coverage. Only the named target is reviewed; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 24a1d277eb7f0437af53af0d178a30f9bfa6374c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003277 | data/merge_yaml/merged/9K_MEDIUM.yaml | generated | 9k_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003277 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:003277 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-013/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch013/124/strict.tsv |
+| validate-terms | failed | True | CultureMech:003277 | Validating ontology terms (MediaRecipe)...<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py", line 204, in _new_conn<br>    sock = connection.create_connection(<br>        (self._dns_host, self.port),<br>    ...&lt;2 lines&gt;...<br>        socket_options=self.socket_options,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection<br>    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):<br>               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "/Users/marcin/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/socket.py", line 977, in getaddrinfo<br>    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):<br>               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>socket.gaierror: [Errno 8] nodename nor servname provided, or not known<br><br>The above exception was the direct cause of the following exception:<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen<br>    response = self._make_request(<br>        conn,<br>    ...&lt;10 lines&gt;...<br>        **response_kw,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request<br>    raise new_e<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request<br>    self._validate_conn(conn)<br>    ~~~~~~~~~~~~~~~~~~~^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn<br>    conn.connect()<br>    ~~~~~~~~~~~~^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py", line 759, in connect<br>    self.sock = sock = self._new_conn()<br>                       ~~~~~~~~~~~~~~^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py", line 211, in _new_conn<br>    raise NameResolutionError(self.host, self, e) from e<br>urllib3.exceptions.NameResolutionError: HTTPSConnection(host='semanticsql.berkeleybop.io', port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename nor servname provided, or not known)<br><br>The above exception was the direct cause of the following exception:<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/adapters.py", line 644, in send<br>    resp = conn.urlopen(<br>        method=request.method,<br>    ...&lt;9 lines&gt;...<br>        chunked=chunked,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen<br>    retries = retries.increment(<br>        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/util/retry.py", line 535, in increment<br>    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]<br>    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='semanticsql.berkeleybop.io', port=443): Max retries exceeded with url: /envo.db.gz (Caused by NameResolutionError("HTTPSConnection(host='semanticsql.berkeleybop.io', port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename nor servname provided, or not known)"))<br><br>During handling of the above exception, another exception occurred:<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/utils/download.py", line 202, in download<br>    with requests.get(url, **kwargs) as response, path.open("wb") as file:  # noqa:S113<br>         ~~~~~~~~~~~~^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/api.py", line 73, in get<br>    return request("get", url, params=params, **kwargs)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/api.py", line 59, in request<br>    return session.request(method=method, url=url, **kwargs)<br>           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/sessions.py", line 589, in request<br>    resp = self.send(prep, **send_kwargs)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/sessions.py", line 703, in send<br>    r = adapter.send(request, **kwargs)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/adapters.py", line 677, in send<br>    raise ConnectionError(e, request=request)<br>requests.exceptions.ConnectionError: HTTPSConnectionPool(host='semanticsql.berkeleybop.io', port=443): Max retries exceeded with url: /envo.db.gz (Caused by NameResolutionError("HTTPSConnection(host='semanticsql.berkeleybop.io', port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename nor servname provided, or not known)"))<br><br>The above exception was the direct cause of the following exception:<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/bin/linkml-term-validator", line 10, in &lt;module&gt;<br>    sys.exit(main())<br>             ~~~~^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/cli.py", line 431, in main<br>    app()<br>    ~~~^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py", line 336, in __call__<br>    raise e<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py", line 319, in __call__<br>    return get_command(self)(*args, **kwargs)<br>           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py", line 1631, in __call__<br>    return self.main(*args, **kwargs)<br>           ~~~~~~~~~^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/core.py", line 814, in main<br>    return _main(<br>        self,<br>    ...&lt;6 lines&gt;...<br>        **extra,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/core.py", line 190, in _main<br>    rv = self.invoke(ctx)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py", line 2032, in invoke<br>    return _process_result(sub_ctx.command.invoke(sub_ctx))<br>                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py", line 1415, in invoke<br>    return ctx.invoke(self.callback, **ctx.params)<br>           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py", line 910, in invoke<br>    return callback(*args, **kwargs)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py", line 706, in wrapper<br>    return callback(**use_params)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/cli.py", line 278, in validate_data<br>    report = validator.validate_source(loader, target_class=target_class)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml/validator/validator.py", line 68, in validate_source<br>    return ValidationReport(results=list(self.iter_results_from_source(loader, target_class)))<br>                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml/validator/validator.py", line 105, in iter_results_from_source<br>    for result in plugin.process(instance, context):<br>                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 192, in process<br>    yield from self._process_recursive(<br>    ...&lt;4 lines&gt;...<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 257, in _process_recursive<br>    yield from self._process_recursive(<br>    ...&lt;4 lines&gt;...<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 238, in _process_recursive<br>    yield from self._validate_binding(<br>    ...&lt;6 lines&gt;...<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 335, in _validate_binding<br>    yield from self._validate_term_exists(<br>    ...&lt;6 lines&gt;...<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 565, in _validate_term_exists<br>    ontology_label = self.get_ontology_label(field_value)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/base.py", line 251, in get_ontology_label<br>    adapter = self._get_adapter(prefix)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/base.py", line 219, in _get_adapter<br>    adapter = get_adapter(adapter_string)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/selector.py", line 155, in get_adapter<br>    return res.implementation_class(res, **kwargs)<br>           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^<br>  File "&lt;string&gt;", line 27, in __init__<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/implementations/sqldb/sql_implementation.py", line 350, in __post_init__<br>    db_path = FILE_CACHE.ensure_gunzip(<br>        url=url, autoclean=False, download_kwargs=SEMSQL_SQLITE_DOWNLOAD_KWARGS<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/utilities/caching.py", line 277, in ensure_gunzip<br>    self._module.ensure_gunzip(<br>    ~~~~~~~~~~~~~~~~~~~~~~~~~~^<br>        url=url,<br>        ^^^^^^^^<br>    ...&lt;3 lines&gt;...<br>        download_kwargs=download_kwargs,<br>        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>    )<br>    ^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/impl.py", line 455, in ensure_gunzip<br>    path = self.ensure(<br>        *subkeys,<br>    ...&lt;3 lines&gt;...<br>        download_kwargs=download_kwargs,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/impl.py", line 284, in ensure<br>    utils.download(<br>    ~~~~~~~~~~~~~~^<br>        url=url,<br>        ^^^^^^^^<br>    ...&lt;3 lines&gt;...<br>        **(download_kwargs or {}),<br>        ^^^^^^^^^^^^^^^^^^^^^^^^^^<br>    )<br>    ^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/utils/download.py", line 220, in download<br>    raise DownloadError(backend, url, path, e) from e<br>pystow.utils.download.DownloadError: Failed with requests to download https://semanticsql.berkeleybop.io/envo.db.gz to /private/tmp/culturemech-review-pystow/oaklib/envo.db.gz<br>error: recipe &#96;validate-terms&#96; failed with exit code 1 |
+| validate-references | passed | True | CultureMech:003277 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:003277 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+| Required ontology term check: authorized environment retry | passed | True | CultureMech:003277 | The identical target term check passed after the required ENVO database downloaded into the owned PYSTOW cache. Initial exit 1 and original output files remain unchanged. No other check was repeated. |
+| Scoped history timestamp syntax and timezone check | passed | False | CultureMech:003277 | 20 timestamp instances inspected; 0 malformed or timezone-naive instances. Existing provenance is preserved; no timestamps were rewritten. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:003277.
+
+Schema, strict and reference checks passed initially. Term validation initially stopped before completion because ENVO cache download failed DNS resolution, then passed in the separately authorized network-enabled retry. This is a recovered environment limitation, not a demonstrated invalid term or an erased failure.
+
+### JCM accession, provider accession and generated ownership
+
+identity: supported. Targets: CultureMech:003277.
+
+Stable CultureMech ID, exact owner merge source, original_name 9K MEDIUM and mediadive.medium:J92 identify the exact JCM 92 catalogue formulation. MediaDive is the dataset provider; JCM is the recipe collection. The source does not license substitution with generic or modified 9K recipes.
+
+### All seven direct ingredients, acid-stock dose and source water
+
+quantity: concern. Targets: CultureMech:003277.
+
+Every current ingredient amount in both layers is itemized with a native decision, exact quote and locator. Six reported mass rates are distinguished from primary source masses and the provider 1001 mL normalization. Three pass the guarded arithmetic test, and three have small last-digit conflicts. The acid is a substantive unit/stock-strength error. Source water belongs in preparation context. No stock references or inline solution compositions are asserted, and no new stock ID is fabricated.
+
+{"inventory": [{"layer": "target", "field_path": "ingredients[0].concentration", "name": "K2HPO4", "current": {"value": "0.499501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.499501,\n                        \"mmol_l\": 2.86779,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[0]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "K2HPO4 0.5 g", "primary_locator": "Medium 92 composition row 1", "source_mass": {"amount": 0.5, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l": "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance": "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider reports 0.499501 g/L."}, "rationale": "Literal reported rate is preserved, but it marginally exceeds the allowed last-digit rounding interval for the provider mass/volume arithmetic.", "evidence_ids": ["provider-row-1", "primary-row-1", "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[0].concentration", "name": "K2HPO4", "current": {"value": "0.499501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.499501,\n                        \"mmol_l\": 2.86779,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[0]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "K2HPO4 0.5 g", "primary_locator": "Medium 92 composition row 1", "source_mass": {"amount": 0.5, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l": "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance": "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider reports 0.499501 g/L."}, "rationale": "Literal reported rate is preserved, but it marginally exceeds the allowed last-digit rounding interval for the provider mass/volume arithmetic.", "evidence_ids": ["provider-row-1", "primary-row-1", "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[1].concentration", "name": "(NH4)2SO4", "current": {"value": "2.997", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.997,\n                        \"mmol_l\": 22.6805,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[1]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "(NH4)2SO4 3.0 g", "primary_locator": "Medium 92 composition row 2", "source_mass": {"amount": 3, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "2.997002997002997002997002997", "reported_g_per_l": "2.997", "absolute_difference_g_per_l": "0.000002997002997002997002997", "source_quantum": "0.001", "guarded_rounding_tolerance": "0.00001498501498501498501498501498", "passes_current_writer_rounding_guard": true, "calculation": "3 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 2.997002997002997002997002997 g/L; provider reports 2.997 g/L."}, "rationale": "Exact provider rate and scoped arithmetic are supported; claim-level evidence needs adding or propagation.", "evidence_ids": ["provider-row-2", "primary-row-2", "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[1].concentration", "name": "(NH4)2SO4", "current": {"value": "2.997", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.997,\n                        \"mmol_l\": 22.6805,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[1]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "(NH4)2SO4 3.0 g", "primary_locator": "Medium 92 composition row 2", "source_mass": {"amount": 3, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "2.997002997002997002997002997", "reported_g_per_l": "2.997", "absolute_difference_g_per_l": "0.000002997002997002997002997", "source_quantum": "0.001", "guarded_rounding_tolerance": "0.00001498501498501498501498501498", "passes_current_writer_rounding_guard": true, "calculation": "3 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 2.997002997002997002997002997 g/L; provider reports 2.997 g/L."}, "rationale": "Exact provider rate and scoped arithmetic are supported; attached owner evidence is verified against identical response bytes.", "evidence_ids": ["provider-row-2", "primary-row-2", "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[2].concentration", "name": "KCl", "current": {"value": "0.0999001", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0999001,\n                        \"mmol_l\": 1.34004,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[2]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "KCl 0.1 g", "primary_locator": "Medium 92 composition row 3", "source_mass": {"amount": 0.1, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "0.09990009990009990009990009990", "reported_g_per_l": "0.0999001", "absolute_difference_g_per_l": "9.990009990009990010E-11", "source_quantum": "1E-7", "guarded_rounding_tolerance": "5E-8", "passes_current_writer_rounding_guard": true, "calculation": "0.1 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.09990009990009990009990009990 g/L; provider reports 0.0999001 g/L."}, "rationale": "Exact provider rate and scoped arithmetic are supported; claim-level evidence needs adding or propagation.", "evidence_ids": ["provider-row-3", "primary-row-3", "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[2].concentration", "name": "KCl", "current": {"value": "0.0999001", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0999001,\n                        \"mmol_l\": 1.34004,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[2]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "KCl 0.1 g", "primary_locator": "Medium 92 composition row 3", "source_mass": {"amount": 0.1, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "0.09990009990009990009990009990", "reported_g_per_l": "0.0999001", "absolute_difference_g_per_l": "9.990009990009990010E-11", "source_quantum": "1E-7", "guarded_rounding_tolerance": "5E-8", "passes_current_writer_rounding_guard": true, "calculation": "0.1 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.09990009990009990009990009990 g/L; provider reports 0.0999001 g/L."}, "rationale": "Exact provider rate and scoped arithmetic are supported; attached owner evidence is verified against identical response bytes.", "evidence_ids": ["provider-row-3", "primary-row-3", "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[3].concentration", "name": "MgSO4 x 7 H2O", "current": {"value": "0.499501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.499501,\n                        \"mmol_l\": 2.02657,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[3]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "MgSO4·7H2O 0.5 g", "primary_locator": "Medium 92 composition row 4", "source_mass": {"amount": 0.5, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l": "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance": "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider reports 0.499501 g/L."}, "rationale": "Literal reported rate is preserved, but it marginally exceeds the allowed last-digit rounding interval for the provider mass/volume arithmetic.", "evidence_ids": ["provider-row-4", "primary-row-4", "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[3].concentration", "name": "MgSO4 x 7 H2O", "current": {"value": "0.499501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.499501,\n                        \"mmol_l\": 2.02657,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[3]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "MgSO4·7H2O 0.5 g", "primary_locator": "Medium 92 composition row 4", "source_mass": {"amount": 0.5, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l": "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance": "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider reports 0.499501 g/L."}, "rationale": "Literal reported rate is preserved, but it marginally exceeds the allowed last-digit rounding interval for the provider mass/volume arithmetic.", "evidence_ids": ["provider-row-4", "primary-row-4", "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[4].concentration", "name": "FeSO4 x 7 H2O", "current": {"value": "49.9501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 50,\n                        \"unit\": \"g\",\n                        \"g_l\": 49.9501,\n                        \"mmol_l\": 179.667,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[4]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "FeSO4·7H2O 50.0 g", "primary_locator": "Medium 92 composition row 5", "source_mass": {"amount": 50, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "49.95004995004995004995004995", "reported_g_per_l": "49.9501", "absolute_difference_g_per_l": "0.00005004995004995004995005", "source_quantum": "0.0001", "guarded_rounding_tolerance": "0.00005", "passes_current_writer_rounding_guard": false, "calculation": "50 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 49.95004995004995004995004995 g/L; provider reports 49.9501 g/L."}, "rationale": "Literal reported rate is preserved, but it marginally exceeds the allowed last-digit rounding interval for the provider mass/volume arithmetic.", "evidence_ids": ["provider-row-5", "primary-row-5", "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[4].concentration", "name": "FeSO4 x 7 H2O", "current": {"value": "49.9501", "unit": "G_PER_L"}, "decision": "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 50,\n                        \"unit\": \"g\",\n                        \"g_l\": 49.9501,\n                        \"mmol_l\": 179.667,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[4]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "FeSO4·7H2O 50.0 g", "primary_locator": "Medium 92 composition row 5", "source_mass": {"amount": 50, "unit": "g"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "49.95004995004995004995004995", "reported_g_per_l": "49.9501", "absolute_difference_g_per_l": "0.00005004995004995004995005", "source_quantum": "0.0001", "guarded_rounding_tolerance": "0.00005", "passes_current_writer_rounding_guard": false, "calculation": "50 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 49.95004995004995004995004995 g/L; provider reports 49.9501 g/L."}, "rationale": "Literal reported rate is preserved, but it marginally exceeds the allowed last-digit rounding interval for the provider mass/volume arithmetic.", "evidence_ids": ["provider-row-5", "primary-row-5", "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[5].concentration", "name": "Ca(NO3)2", "current": {"value": "0.00999001", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Ca(NO3)2\",\n                        \"compound_id\": 266,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.00999001,\n                        \"mmol_l\": 0.0608813,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[5]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "Ca(NO3)2 10.0 mg", "primary_locator": "Medium 92 composition row 6", "source_mass": {"amount": 10, "unit": "mg"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "0.009990009990009990009990009990", "reported_g_per_l": "0.00999001", "absolute_difference_g_per_l": "9.990009990009990010E-12", "source_quantum": "1E-8", "guarded_rounding_tolerance": "5E-9", "passes_current_writer_rounding_guard": true, "calculation": "10 mg × 0.001 g/mg ÷ (1001 mL / 1000 mL per L) = 0.009990009990009990009990009990 g/L; provider reports 0.00999001 g/L."}, "rationale": "Exact provider rate and scoped arithmetic are supported; claim-level evidence needs adding or propagation.", "evidence_ids": ["provider-row-6", "primary-row-6", "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[5].concentration", "name": "Ca(NO3)2", "current": {"value": "0.00999001", "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Ca(NO3)2\",\n                        \"compound_id\": 266,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.00999001,\n                        \"mmol_l\": 0.0608813,\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[5]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "Ca(NO3)2 10.0 mg", "primary_locator": "Medium 92 composition row 6", "source_mass": {"amount": 10, "unit": "mg"}, "normalization_basis": "Provider-declared 1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l": "0.009990009990009990009990009990", "reported_g_per_l": "0.00999001", "absolute_difference_g_per_l": "9.990009990009990010E-12", "source_quantum": "1E-8", "guarded_rounding_tolerance": "5E-9", "passes_current_writer_rounding_guard": true, "calculation": "10 mg × 0.001 g/mg ÷ (1001 mL / 1000 mL per L) = 0.009990009990009990009990009990 g/L; provider reports 0.00999001 g/L."}, "rationale": "Exact provider rate and scoped arithmetic are supported; attached owner evidence is verified against identical response bytes.", "evidence_ids": ["provider-row-6", "primary-row-6", "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[6].concentration", "name": "H2SO4", "current": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"H2SO4\",\n                        \"compound_id\": 122,\n                        \"attribute\": \"10 N\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[6]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "10 N H2SO4 1.0 ml", "primary_locator": "Medium 92 composition row 7", "proposed_representation": "1 mL of 10 N H2SO4 stock per listed source batch, with stock strength and dose retained separately.", "arithmetic": "No conversion from mL to g/L. Density and a neat-acid mass are not assumed.", "rationale": "Source explicitly supplies stock strength and liquid dose, not a 1 g/L acid concentration.", "evidence_ids": ["provider-row-7", "primary-row-7"]}, {"layer": "owner", "field_path": "ingredients[6].concentration", "name": "H2SO4", "current": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"H2SO4\",\n                        \"compound_id\": 122,\n                        \"attribute\": \"10 N\",\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[6]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "10 N H2SO4 1.0 ml", "primary_locator": "Medium 92 composition row 7", "proposed_representation": "1 mL of 10 N H2SO4 stock per listed source batch, with stock strength and dose retained separately.", "arithmetic": "No conversion from mL to g/L. Density and a neat-acid mass are not assumed.", "rationale": "Source explicitly supplies stock strength and liquid dose, not a 1 g/L acid concentration.", "evidence_ids": ["provider-row-7", "primary-row-7"]}, {"layer": "source-only preparation context for both target and owner", "field_path": "preparation_steps (source water basis absent)", "name": "Distilled water", "current": null, "decision": "add", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "source_locator": "$.data.solutions[0].recipe[7]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "primary_quote": "Distilled water 1.0 L", "primary_locator": "Medium 92 composition row 8", "proposed_representation": "Preserve the stated 1 L source water as preparation/batch context; do not infer that it alone establishes measured final volume.", "arithmetic": "1 L × 1000 mL/L = 1000 mL; no conversion to mass.", "evidence_ids": ["provider-row-8", "primary-row-8"]}], "precision_conflicts": [{"ingredient_index": 0, "name": "K2HPO4", "computed_g_per_l": "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l": "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance": "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider reports 0.499501 g/L."}, {"ingredient_index": 3, "name": "MgSO4 x 7 H2O", "computed_g_per_l": "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l": "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance": "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider reports 0.499501 g/L."}, {"ingredient_index": 4, "name": "FeSO4 x 7 H2O", "computed_g_per_l": "49.95004995004995004995004995", "reported_g_per_l": "49.9501", "absolute_difference_g_per_l": "0.00005004995004995004995005", "source_quantum": "0.0001", "guarded_rounding_tolerance": "0.00005", "passes_current_writer_rounding_guard": false, "calculation": "50 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 49.95004995004995004995004995 g/L; provider reports 49.9501 g/L."}], "verified_historical_owner_evidence": [{"layer": "owner", "field_path": "ingredients[1].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response": true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}, {"layer": "owner", "field_path": "ingredients[2].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response": true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}, {"layer": "owner", "field_path": "ingredients[5].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response": true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}]}
+
+### All asserted primary IDs, canonical labels and current secondary keys
+
+grounding: supported. Targets: CultureMech:003277.
+
+The generated target has 7/7 primary ontology links and 7/7 verified secondary links. The owner has 7/7 primary ontology links, including 7 CHEBI instances, and 7/7 verified secondary links. 0 owner primary labels differ from canonical labels. These are separate layer-specific linkage denominators on a 0–100 scale, not scientific accuracy scores. No secondary denominator of zero is invented when no keys are asserted.
+
+{"counts": {"target": {"ingredient_instances": 7, "primary_ontology_instances": 7, "primary_CHEBI_instances": 7, "canonical_primary_label_instances": 7, "secondary_asserted_instances": 7, "secondary_verified_instances": 7, "primary_ontology_percent": 100.0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 100.0}, "owner": {"ingredient_instances": 7, "primary_ontology_instances": 7, "primary_CHEBI_instances": 7, "canonical_primary_label_instances": 7, "secondary_asserted_instances": 7, "secondary_verified_instances": 7, "primary_ontology_percent": 100.0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 100.0}}, "label_drift": [], "instances": [{"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[0]", "preferred_term": "K2HPO4", "primary_id": "CHEBI:131527", "asserted_label": "dipotassium hydrogen phosphate", "canonical_label": "dipotassium hydrogen phosphate", "label_equal": true, "source_key": "chebi131527", "description": ["A potassium salt that is the dipotassium salt of phosphoric acid."], "synonyms": ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate", "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate", "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197", "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"], "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string": ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"], "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]}, "secondary_id": "CHEBI:131527", "secondary_asserted_label": "dipotassium hydrogen phosphate", "secondary_index_rows": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[1]", "preferred_term": "(NH4)2SO4", "primary_id": "CHEBI:62946", "asserted_label": "ammonium sulfate", "canonical_label": "ammonium sulfate", "label_equal": true, "source_key": "chebi62946", "description": ["An inorganic sulfate salt obtained by reaction of sulfuric acid with two equivalents of ammonia. A high-melting (decomposes above 280°C) white solid which is very soluble in water (70.6 g/100 g water at 0°C; 103.8 g/100 g water at 100°C), it is widely used as a fertilizer for alkaline soils."], "synonyms": ["(NH4)2SO4", "ammonium sulfate (2:1)", "ammonium sulphate", "diammonium sulfate", "diazanium sulfate", "diazanium sulfate", "mascagnite", "sulfuric acid ammonium salt (1:2)", "sulfuric acid, diammonium salt", "sulphate of ammonia"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7783-20-2", "kegg.drug:D08853", "metacyc.compound:NH42SO4", "ppdb:36", "pubmed:20556652", "reaxys:11343144", "wikipedia.en:Ammonium_sulfate"], "generalized_empirical_formula": ["2H4N.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:62946"], "inchi_key_string": ["BFNBIHQBYMNNAN-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/2H3N.H2O4S/c;;1-5(2,3)4/h2*1H3;(H2,1,2,3,4)"], "mass": ["132.141"], "monoisotopic_mass": ["132.02048"], "smiles_string": ["O=S(=O)([O-])[O-].[NH4+].[NH4+]"]}, "secondary_id": "CHEBI:62946", "secondary_asserted_label": "ammonium sulfate", "secondary_index_rows": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[2]", "preferred_term": "KCl", "primary_id": "CHEBI:32588", "asserted_label": "potassium chloride", "canonical_label": "potassium chloride", "label_equal": true, "source_key": "chebi32588", "description": ["A metal chloride salt with a K(+) counterion."], "synonyms": ["KCl", "Kaliumchlorid", "Kaon-Cl 10", "Klor-con", "Klotrix", "Monopotassium chloride", "[KCl]", "muriate of potash", "potassium chloride", "potassium chloride", "sylvite"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7447-40-7", "drugbank:DB00761", "kegg.drug:D02060", "metacyc.compound:KCL", "molbase:881", "reaxys:3534978", "wikipedia.en:Potassium_Chloride"], "generalized_empirical_formula": ["Cl.K"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32588"], "inchi_key_string": ["WCUXLLCKKVVCTQ-UHFFFAOYSA-M"], "inchi_string": ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "monoisotopic_mass": ["73.93256"], "smiles_string": ["[Cl-].[K+]"]}, "secondary_id": "CHEBI:32588", "secondary_asserted_label": "potassium chloride", "secondary_index_rows": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[3]", "preferred_term": "MgSO4 x 7 H2O", "primary_id": "CHEBI:31795", "asserted_label": "magnesium sulfate heptahydrate", "canonical_label": "magnesium sulfate heptahydrate", "label_equal": true, "source_key": "chebi31795", "description": ["A hydrate that is the heptahydrate form of magnesium sulfate."], "synonyms": ["Magnesium sulfate heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric acid magnesium salt heptahydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505", "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222", "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"], "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]}, "secondary_id": "CHEBI:31795", "secondary_asserted_label": "magnesium sulfate heptahydrate", "secondary_index_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[4]", "preferred_term": "FeSO4 x 7 H2O", "primary_id": "CHEBI:75836", "asserted_label": "iron(2+) sulfate heptahydrate", "canonical_label": "iron(2+) sulfate heptahydrate", "label_equal": true, "source_key": "chebi75836", "description": ["A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage treatments; for solid-dosage treatments, the monohydrate is normally used)."], "synonyms": ["FeSO4.7H2O", "Fero-Gradumet", "Tetucur-S", "copperas", "ferrous sulfate heptahydrate", "ferrous sulfate.7H2O", "green vitriol", "iron vitriol", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate.7H2O", "iron(II) sulfate.7H2O", "melanterite mineral", "melanterite"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7782-63-0", "kegg.drug:D01725", "metacyc.compound:CPD0-2418", "pubmed:3729890", "reaxys:11322534"], "generalized_empirical_formula": ["Fe.7H2O.O4S"], "has_alternative_id": ["CHEBI:31609"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75836"], "inchi_key_string": ["SURQXAFEQWPFPV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["278.013"], "monoisotopic_mass": ["277.96062"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]}, "secondary_id": "CHEBI:75836", "secondary_asserted_label": "iron(2+) sulfate heptahydrate", "secondary_index_rows": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[5]", "preferred_term": "Ca(NO3)2", "primary_id": "CHEBI:64205", "asserted_label": "calcium nitrate", "canonical_label": "calcium nitrate", "label_equal": true, "source_key": "chebi64205", "description": ["Inorganic nitrate salt of calcium."], "synonyms": ["Calcium saltpeter", "Calcium(II) nitrate (1:2)", "Lime nitrate", "Lime saltpeter", "Nitric acid, calcium salt", "Norge saltpeter", "Norway saltpeter", "Norwegian saltpeter", "Saltpeter", "anhydrous calcium nitrate", "calcium dinitrate", "calcium dinitrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:10124-37-5", "pubmed:13495183", "pubmed:13558529", "pubmed:13717848", "pubmed:14651109", "pubmed:14672118", "pubmed:15244341", "pubmed:18201926", "pubmed:19594125", "pubmed:22307899", "pubmed:22360256", "pubmed:23069075", "pubmed:25135170", "pubmed:25868152", "reaxys:3565319", "wikipedia.en:Calcium_nitrate"], "generalized_empirical_formula": ["Ca.2NO3"], "has_alternative_id": ["CHEBI:88273"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:64205"], "inchi_key_string": ["ZCCIPPOKBCJFDN-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1"], "mass": ["164.086"], "monoisotopic_mass": ["163.93823"], "smiles_string": ["O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ca+2]"]}, "secondary_id": "CHEBI:64205", "secondary_asserted_label": "calcium nitrate", "secondary_index_rows": [{"label": "Ca(NO3)2", "match_type": "preferred_term", "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[6]", "preferred_term": "H2SO4", "primary_id": "CHEBI:26836", "asserted_label": "sulfuric acid", "canonical_label": "sulfuric acid", "label_equal": true, "source_key": "chebi26836", "description": ["A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently to a central sulfur atom."], "synonyms": ["Acide sulfurique", "Acido sulfurico", "Acidum sulfuricum", "H2SO4", "Schwefelsaeureloesungen", "Sulfuric acid", "[S(OH)2O2]", "[SO2(OH)2]", "dihydrogen tetraoxosulfate", "dihydrogen tetraoxosulfate", "dihydroxidodioxidosulfur", "dihydroxidodioxidosulfur", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(VI)", "hydrogen tetraoxosulfate(VI)", "sulfuric acid", "sulfuric acid", "sulphuric acid", "tetraoxosulfuric acid", "tetraoxosulfuric acid"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7664-93-9", "gmelin:2122", "kegg.compound:C00059", "kegg.drug:D05963", "knapsack:C00007530", "molbase:4", "ppdb:606", "pubmed:13568755", "pubmed:16122922", "pubmed:19397353", "pubmed:22047659", "pubmed:22136045", "pubmed:22204399", "pubmed:22267186", "pubmed:22296037", "pubmed:22364556", "pubmed:22435616", "reaxys:2037554", "wikipedia.en:Sulfuric_acid"], "generalized_empirical_formula": ["H2O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:26836"], "inchi_key_string": ["QAOWNCQODCNURD-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"], "mass": ["98.079"], "monoisotopic_mass": ["97.96738"], "smiles_string": ["[H]OS(=O)(=O)O[H]"]}, "secondary_id": "CHEBI:26836", "secondary_asserted_label": "sulfuric acid", "secondary_index_rows": [{"label": "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[0]", "preferred_term": "K2HPO4", "primary_id": "CHEBI:131527", "asserted_label": "dipotassium hydrogen phosphate", "canonical_label": "dipotassium hydrogen phosphate", "label_equal": true, "source_key": "chebi131527", "description": ["A potassium salt that is the dipotassium salt of phosphoric acid."], "synonyms": ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate", "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate", "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197", "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"], "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string": ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"], "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]}, "secondary_id": "CHEBI:131527", "secondary_asserted_label": "dipotassium hydrogen phosphate", "secondary_index_rows": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[1]", "preferred_term": "(NH4)2SO4", "primary_id": "CHEBI:62946", "asserted_label": "ammonium sulfate", "canonical_label": "ammonium sulfate", "label_equal": true, "source_key": "chebi62946", "description": ["An inorganic sulfate salt obtained by reaction of sulfuric acid with two equivalents of ammonia. A high-melting (decomposes above 280°C) white solid which is very soluble in water (70.6 g/100 g water at 0°C; 103.8 g/100 g water at 100°C), it is widely used as a fertilizer for alkaline soils."], "synonyms": ["(NH4)2SO4", "ammonium sulfate (2:1)", "ammonium sulphate", "diammonium sulfate", "diazanium sulfate", "diazanium sulfate", "mascagnite", "sulfuric acid ammonium salt (1:2)", "sulfuric acid, diammonium salt", "sulphate of ammonia"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7783-20-2", "kegg.drug:D08853", "metacyc.compound:NH42SO4", "ppdb:36", "pubmed:20556652", "reaxys:11343144", "wikipedia.en:Ammonium_sulfate"], "generalized_empirical_formula": ["2H4N.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:62946"], "inchi_key_string": ["BFNBIHQBYMNNAN-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/2H3N.H2O4S/c;;1-5(2,3)4/h2*1H3;(H2,1,2,3,4)"], "mass": ["132.141"], "monoisotopic_mass": ["132.02048"], "smiles_string": ["O=S(=O)([O-])[O-].[NH4+].[NH4+]"]}, "secondary_id": "CHEBI:62946", "secondary_asserted_label": "ammonium sulfate", "secondary_index_rows": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[2]", "preferred_term": "KCl", "primary_id": "CHEBI:32588", "asserted_label": "potassium chloride", "canonical_label": "potassium chloride", "label_equal": true, "source_key": "chebi32588", "description": ["A metal chloride salt with a K(+) counterion."], "synonyms": ["KCl", "Kaliumchlorid", "Kaon-Cl 10", "Klor-con", "Klotrix", "Monopotassium chloride", "[KCl]", "muriate of potash", "potassium chloride", "potassium chloride", "sylvite"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7447-40-7", "drugbank:DB00761", "kegg.drug:D02060", "metacyc.compound:KCL", "molbase:881", "reaxys:3534978", "wikipedia.en:Potassium_Chloride"], "generalized_empirical_formula": ["Cl.K"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32588"], "inchi_key_string": ["WCUXLLCKKVVCTQ-UHFFFAOYSA-M"], "inchi_string": ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "monoisotopic_mass": ["73.93256"], "smiles_string": ["[Cl-].[K+]"]}, "secondary_id": "CHEBI:32588", "secondary_asserted_label": "potassium chloride", "secondary_index_rows": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[3]", "preferred_term": "MgSO4 x 7 H2O", "primary_id": "CHEBI:31795", "asserted_label": "magnesium sulfate heptahydrate", "canonical_label": "magnesium sulfate heptahydrate", "label_equal": true, "source_key": "chebi31795", "description": ["A hydrate that is the heptahydrate form of magnesium sulfate."], "synonyms": ["Magnesium sulfate heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric acid magnesium salt heptahydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505", "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222", "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"], "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]}, "secondary_id": "CHEBI:31795", "secondary_asserted_label": "magnesium sulfate heptahydrate", "secondary_index_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[4]", "preferred_term": "FeSO4 x 7 H2O", "primary_id": "CHEBI:75836", "asserted_label": "iron(2+) sulfate heptahydrate", "canonical_label": "iron(2+) sulfate heptahydrate", "label_equal": true, "source_key": "chebi75836", "description": ["A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage treatments; for solid-dosage treatments, the monohydrate is normally used)."], "synonyms": ["FeSO4.7H2O", "Fero-Gradumet", "Tetucur-S", "copperas", "ferrous sulfate heptahydrate", "ferrous sulfate.7H2O", "green vitriol", "iron vitriol", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate.7H2O", "iron(II) sulfate.7H2O", "melanterite mineral", "melanterite"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7782-63-0", "kegg.drug:D01725", "metacyc.compound:CPD0-2418", "pubmed:3729890", "reaxys:11322534"], "generalized_empirical_formula": ["Fe.7H2O.O4S"], "has_alternative_id": ["CHEBI:31609"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75836"], "inchi_key_string": ["SURQXAFEQWPFPV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["278.013"], "monoisotopic_mass": ["277.96062"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]}, "secondary_id": "CHEBI:75836", "secondary_asserted_label": "iron(2+) sulfate heptahydrate", "secondary_index_rows": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[5]", "preferred_term": "Ca(NO3)2", "primary_id": "CHEBI:64205", "asserted_label": "calcium nitrate", "canonical_label": "calcium nitrate", "label_equal": true, "source_key": "chebi64205", "description": ["Inorganic nitrate salt of calcium."], "synonyms": ["Calcium saltpeter", "Calcium(II) nitrate (1:2)", "Lime nitrate", "Lime saltpeter", "Nitric acid, calcium salt", "Norge saltpeter", "Norway saltpeter", "Norwegian saltpeter", "Saltpeter", "anhydrous calcium nitrate", "calcium dinitrate", "calcium dinitrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:10124-37-5", "pubmed:13495183", "pubmed:13558529", "pubmed:13717848", "pubmed:14651109", "pubmed:14672118", "pubmed:15244341", "pubmed:18201926", "pubmed:19594125", "pubmed:22307899", "pubmed:22360256", "pubmed:23069075", "pubmed:25135170", "pubmed:25868152", "reaxys:3565319", "wikipedia.en:Calcium_nitrate"], "generalized_empirical_formula": ["Ca.2NO3"], "has_alternative_id": ["CHEBI:88273"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:64205"], "inchi_key_string": ["ZCCIPPOKBCJFDN-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1"], "mass": ["164.086"], "monoisotopic_mass": ["163.93823"], "smiles_string": ["O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ca+2]"]}, "secondary_id": "CHEBI:64205", "secondary_asserted_label": "calcium nitrate", "secondary_index_rows": [{"label": "Ca(NO3)2", "match_type": "preferred_term", "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[6]", "preferred_term": "H2SO4", "primary_id": "CHEBI:26836", "asserted_label": "sulfuric acid", "canonical_label": "sulfuric acid", "label_equal": true, "source_key": "chebi26836", "description": ["A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently to a central sulfur atom."], "synonyms": ["Acide sulfurique", "Acido sulfurico", "Acidum sulfuricum", "H2SO4", "Schwefelsaeureloesungen", "Sulfuric acid", "[S(OH)2O2]", "[SO2(OH)2]", "dihydrogen tetraoxosulfate", "dihydrogen tetraoxosulfate", "dihydroxidodioxidosulfur", "dihydroxidodioxidosulfur", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(VI)", "hydrogen tetraoxosulfate(VI)", "sulfuric acid", "sulfuric acid", "sulphuric acid", "tetraoxosulfuric acid", "tetraoxosulfuric acid"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7664-93-9", "gmelin:2122", "kegg.compound:C00059", "kegg.drug:D05963", "knapsack:C00007530", "molbase:4", "ppdb:606", "pubmed:13568755", "pubmed:16122922", "pubmed:19397353", "pubmed:22047659", "pubmed:22136045", "pubmed:22204399", "pubmed:22267186", "pubmed:22296037", "pubmed:22364556", "pubmed:22435616", "reaxys:2037554", "wikipedia.en:Sulfuric_acid"], "generalized_empirical_formula": ["H2O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:26836"], "inchi_key_string": ["QAOWNCQODCNURD-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"], "mass": ["98.079"], "monoisotopic_mass": ["97.96738"], "smiles_string": ["[H]OS(=O)(=O)O[H]"]}, "secondary_id": "CHEBI:26836", "secondary_asserted_label": "sulfuric acid", "secondary_index_rows": [{"label": "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]}
+
+### Exact phosphate, sulfate hydrates, nitrate and acid identities
+
+grounding: supported. Targets: CultureMech:003277.
+
+All seven ingredient primary IDs and labels resolve, and all seven secondary keys in each layer have matching current preferred-term rows in the pinned MIM index. Magnesium and iron sulfate are explicitly heptahydrates, matching source formulas and OLS structural annotations. Calcium nitrate has no hydrate specified and retains the anhydrous calcium-nitrate identity. The phosphate is dipotassium hydrogen phosphate, not monopotassium phosphate. Sulfuric acid identity is correct, while its stock strength and quantity are separately incorrect. Chemical identity support does not validate concentration.
+
+### Environmental identity and distinct linkage denominator
+
+grounding: supported. Targets: CultureMech:003277.
+
+Each layer has two source_environment descriptors; one of the two carries an asserted ENVO term, and that one ID/label resolves correctly. This is 1/2 environment linkage (50% on a 0–100 linkage scale), separate from the 7/7 ingredient denominators. Mine tailing has no asserted ID, so no invalid or invented replacement is claimed. A more specific ENVO term in current CommunityMech is not automatically transferred.
+
+### Preparation water, acid dose, pH and sterilization
+
+completeness: concern. Targets: CultureMech:003277.
+
+Both layers retain only Adjust pH to 3.0. The exact collection source also supplies the water/acid quantities and its default autoclaving cycle of 121°C for 15 min. This default is directly sourced rather than generic laboratory convention. The record omits the cycle and preparation basis; no source-specific storage, cooling, vessel or incubation details are invented.
+
+### Defined chemical formulation and bounded biological scope
+
+scope: supported. Targets: CultureMech:003277.
+
+JCM 92 lists specified inorganic salts, acid stock and water, consistent with a defined liquid medium and the provider complex_medium=no. No complex nutrient product, agar, target organism, strain, taxonomy ID, assembly, parent medium or variant is asserted in the target or owner. Generic Microbial cultivation is not treated as organism-specific growth evidence. The environmental annotations do not convert this record into a documented co-culture formulation.
+
+### Environmental notes, modified media and circular provenance
+
+scope: concern. Targets: CultureMech:003277.
+
+The two environment-note strings exactly match public CommunityMech:000019 and CommunityMech:000027, both linked to CultureMech:003277. Those records describe laboratory variants with different iron values, pH and supplements, as well as explicit CultureMech-imported rows. This supports the provenance of the association and environmental text, not equivalence of those recipes with JCM 92 or independent proof of all ecological details. Under the schema these notes describe habitat context: their pH below 3 or temperatures are not automatically contradictions of preparation pH 3.0. Keep association provenance and variant limits explicit, and do not infer organism growth from the link.
+
+[{"field_path": "source_environment[0]", "source_key": "community_copper_biomining_heap_leach", "source_record_id": "CommunityMech:000019", "source_url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Copper_Biomining_Heap_Leach.yaml", "source_sha256": "5c620e46ecbe040463098d40373531e88b5b2bc12f08bb57b4d926b3537a0c4e", "source_accessed_at": "2026-10-21T09:01:16.748065Z", "notes_exactly_equal": true, "source_environment": {"preferred_term": "mine tailing", "term": {"id": "ENVO:00000003", "label": "mine tailing"}, "notes": "Industrial copper sulfide ore heap leach operation. Crushed low-grade ore is piled in heaps and irrigated with acidic solution (pH 1.5-2.5) containing the microbial consortium. The heaps provide a heterogeneous environment with spatial gradients in pH (1.67-2.5), Fe²⁺/Fe³⁺ ratios, oxygen availability, temperature, and copper concentration. Heap age ranges from fresh ore (&lt;100 days) to aged ore (&gt;250 days), with microbial succession reflecting changing chemical conditions. The engineered environment promotes iron and sulfur oxidation to generate sulfuric acid and ferric iron for mineral dissolution.\n"}, "linked_medium_name": "Standard 9K Medium (laboratory cultivation of consortium members)", "linked_culturemech_id": "CultureMech:003277", "modified_recipe_rows": [{"name": "Ammonium sulfate", "concentration": 3.0, "unit": "g/L", "chebi_term": {"preferred_term": "ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000258", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000258"}, {"name": "Dipotassium hydrogen phosphate", "concentration": 0.5, "unit": "g/L", "chebi_term": {"preferred_term": "dipotassium hydrogen phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000639", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000639"}, {"name": "Magnesium sulfate heptahydrate", "concentration": 0.5, "unit": "g/L", "chebi_term": {"preferred_term": "magnesium sulfate heptahydrate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000614", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000614"}, {"name": "Potassium chloride", "concentration": 0.1, "unit": "g/L", "chebi_term": {"preferred_term": "potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000230", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000230"}, {"name": "Calcium nitrate", "concentration": 0.01, "unit": "g/L", "chebi_term": {"preferred_term": "calcium nitrate", "term": {"id": "CHEBI:64205", "label": "calcium nitrate"}}, "from_source": "community_curated"}, {"name": "Iron(II) sulfate heptahydrate", "concentration": 44.22, "unit": "g/L", "chebi_term": {"preferred_term": "iron(II) sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}}, "from_source": "community_curated"}, {"name": "Elemental sulfur", "concentration": 10, "unit": "g/L", "chebi_term": {"preferred_term": "sulfur atom", "term": {"id": "CHEBI:26833", "label": "sulfur atom"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000727", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000727"}], "circular_imported_rows": [{"name": "K2HPO4", "concentration": "0.499501", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000122", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000122"}, {"name": "(NH4)2SO4", "concentration": "2.997", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000145", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000145"}, {"name": "KCl", "concentration": "0.0999001", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000123", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000123"}, {"name": "MgSO4 x 7 H2O", "concentration": "0.499501", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000118", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000118"}, {"name": "FeSO4 x 7 H2O", "concentration": "49.9501", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000130", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000130"}, {"name": "Ca(NO3)2", "concentration": "0.00999001", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000470", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000470"}, {"name": "H2SO4", "concentration": "1", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000181", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000181"}], "linked_conditions": {"ph": 2.0, "ph_range": "1.5-2.5", "temperature": 30, "temperature_range": "28-55", "atmosphere": "AEROBIC"}, "scope_limit": "These are environment provenance and modified-medium annotations. No ecological number, exact-JCM92 growth outcome, taxon or independent experimental validation is promoted from them."}, {"field_path": "source_environment[1]", "source_key": "community_ferroplasma_leptospirillum_syntrophy", "source_record_id": "CommunityMech:000027", "source_url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Ferroplasma_Leptospirillum_Syntrophy.yaml", "source_sha256": "08e60d74c495dfee5ec77a2a8ed63da4da51b1ebe1adb527350591d0e5b6340b", "source_accessed_at": "2026-10-21T09:02:30.816822Z", "notes_exactly_equal": true, "source_environment": {"preferred_term": "acid mine drainage", "term": {"id": "ENVO:00001997", "label": "acid mine drainage"}, "notes": "Extremely acidic (pH &lt;2), metal-rich environments including natural acid mine drainage and industrial biomining operations. The consortium thrives on pyrite (FeS₂) and chalcopyrite (CuFeS₂) surfaces where ferrous iron concentrations are high. Environments are aerobic to microaerobic, with temperatures ranging from 30-50°C. High concentrations of dissolved metals (Fe, Cu, Zn) and sulfate are characteristic. The extreme acidity and metal content exclude most organisms, creating niches for specialized acidophiles.\n"}, "linked_medium_name": "Modified 9K Medium for Ferroplasma-Leptospirillum Co-culture", "linked_culturemech_id": "CultureMech:003277", "modified_recipe_rows": [{"name": "Ammonium sulfate", "concentration": 3.0, "unit": "g/L", "chebi_term": {"preferred_term": "ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000258", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000258"}, {"name": "Magnesium sulfate heptahydrate", "concentration": 0.5, "unit": "g/L", "chebi_term": {"preferred_term": "magnesium sulfate heptahydrate", "term": {"id": "CHEBI:32599", "label": "magnesium sulfate"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000614", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000614"}, {"name": "Dipotassium hydrogen phosphate", "concentration": 0.5, "unit": "g/L", "chebi_term": {"preferred_term": "dipotassium hydrogen phosphate", "term": {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000639", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000639"}, {"name": "Potassium chloride", "concentration": 0.1, "unit": "g/L", "chebi_term": {"preferred_term": "potassium chloride", "term": {"id": "CHEBI:32588", "label": "potassium chloride"}}, "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000230", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000230"}, {"name": "Calcium nitrate", "concentration": 0.01, "unit": "g/L", "chebi_term": {"preferred_term": "calcium nitrate", "term": {"id": "CHEBI:64205", "label": "calcium nitrate"}}, "from_source": "community_curated"}, {"name": "Iron(II) sulfate heptahydrate", "concentration": 44.2, "unit": "g/L", "chebi_term": {"preferred_term": "iron(II) sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}}, "from_source": "community_curated"}, {"name": "Yeast extract", "concentration": 0.04, "unit": "% wt/vol", "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000025", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000025"}], "circular_imported_rows": [{"name": "K2HPO4", "concentration": "0.499501", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000122", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000122"}, {"name": "(NH4)2SO4", "concentration": "2.997", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000145", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000145"}, {"name": "KCl", "concentration": "0.0999001", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000123", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000123"}, {"name": "MgSO4 x 7 H2O", "concentration": "0.499501", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000118", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000118"}, {"name": "FeSO4 x 7 H2O", "concentration": "49.9501", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000130", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000130"}, {"name": "Ca(NO3)2", "concentration": "0.00999001", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000470", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000470"}, {"name": "H2SO4", "concentration": "1", "unit": "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000181", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000181"}], "linked_conditions": {"ph": 1.7, "ph_range": "1.5-2.0", "temperature": 37.5, "temperature_range": "35-40", "atmosphere": "AEROBIC"}, "scope_limit": "These are environment provenance and modified-medium annotations. No ecological number, exact-JCM92 growth outcome, taxon or independent experimental validation is promoted from them."}]
+
+### Maintained source evidence and generated record freshness
+
+ownership: concern. Targets: CultureMech:003277.
+
+Target and owner share the same seven chemical quantities, environmental notes and one-step preparation. The owner adds three scoped concentration evidence entries and the provider reference after the target merge; all three snippets are present literally in identical current response bytes. Their historical access time and response hash remain valid provenance. Regeneration should retain those entries after substantive quantity/preparation corrections rather than discarding or broadening their scope.
+
+[{"layer": "owner", "field_path": "ingredients[1].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response": true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}, {"layer": "owner", "field_path": "ingredients[2].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response": true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}, {"layer": "owner", "field_path": "ingredients[5].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response": true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}]
+
+### Primary recipe, provider and upstream environment provenance
+
+evidence: concern. Targets: CultureMech:003277.
+
+The generated target has no structured references and its reference checker checked zero entries. The owner reference accurately identifies DSMZ as provider and JCM 92 as original collection, and its three amount snippets are verified. The environmental backfill history names CommunityMech generically without the exact source records or modified-recipe/circularity limits. Add narrow provenance rather than transferring unrelated upstream DOI/PMID or organism claims.
+
+### Append-only event history and timestamp interpretation
+
+provenance: supported. Targets: CultureMech:003277.
+
+All 20 scoped timestamps were checked for ISO syntax and timezone. Every instance parses and has an explicit timezone. Curation events are process provenance rather than independent confirmation of recipe correctness.
+
+[]
+
+## Findings
+
+### f1: A 10 N acid stock addition is represented as 1 g/L
+
+major / open / confirmed; issue key: cm003277-acid-stock-dose-as-mass.
+
+Both layers encode H2SO4 concentration 1 G_PER_L. Exact JCM 92 and MediaDive J92 instead specify 1 mL of 10 N H2SO4, with no provider g_l for that row. The liquid dose and strength cannot be replaced by an unqualified mass concentration. Water 1 L is also absent from the one-step preparation context. The other six provider-normalized mass rows do not license that conversion.
+
+### f2: The explicit collection sterilization cycle is omitted
+
+major / open / confirmed; issue key: cm003277-missing-source-sterilization.
+
+Both layers provide only pH adjustment. The exact JCM page prescribes autoclaving at 121°C for 15 min unless otherwise stated, and this recipe gives no exception. The omission loses a source-specific reproducibility requirement. Native P3.5 is elevated to major because the fully available, explicit cycle is absent from both maintained and generated preparation, rather than an optional generic detail.
+
+### f3: Three provider rates narrowly conflict with literal mass/volume arithmetic
+
+minor / open / confirmed; issue key: cm003277-provider-last-digit-conflicts.
+
+K2HPO4, magnesium sulfate heptahydrate and iron sulfate heptahydrate retain the provider-reported rates. Dividing their source masses by its declared 1.001 L gives the itemized exact values, each about 1.002 parts per million below the reported value and marginally beyond half the final decimal quantum. The guarded writer therefore does not establish arithmetic support for those three. This is a small source precision conflict, not a unit-scale error or evidence that the source measured a different final volume.
+
+### f4: Claim-level provenance needs propagation and environmental scope
+
+minor / open / confirmed; issue key: cm003277-source-provenance-scope.
+
+Three verified owner amount-evidence entries and its exact provider reference are absent from the generated target. Both layers also retain detailed environmental notes without the exact public CommunityMech record citations or the limits of modified recipes and rows copied from CultureMech. The environmental notes are habitat context under the schema; they should not be read as exact recipe equivalence or tested growth claims.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Represent the exact 1 mL dose of 10 N acid with stock strength and source-batch basis in supported maintained fields, and restore the 1 L source water as preparation context. Do not invent a neat-acid mass, final-volume concentration or stock ID. Review the importer attribute path before separately authorized regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a2
+
+Add the exact source-default cycle and its evidence to the maintained preparation while retaining pH 3.0 and the corrected acid/water context. Do not add unsupported cooling, storage or growth instructions; verify the cycle survives regeneration.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a3
+
+Preserve the literal provider values and source masses with an explicit precision-conflict explanation, or resolve the provider rounding/normalization rule before asserting derived concentration evidence. Do not silently round or claim measured final volume.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+### a4
+
+Retain and propagate the three verified owner snippets with their original source hash/time during regeneration. Add exact environmental provenance and explicitly distinguish habitat context, modified formulations and circular imported rows; do not promote their citations to new exact-JCM92 organism or growth evidence.
+
+- Verify the exact source accession, ingredient form, original unit and batch/preparation context.
+- Run just validate-schema, just validate-strict, just validate-terms and just validate-references on separately authorized maintained-input corrections.
+- Regenerate derived records only after owner verification; run just verify-merges and just audit-merge-freshness and confirm corrected fields/evidence survive.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/9K_MEDIUM.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/9k_medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/9K_MEDIUM.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/9K_MEDIUM.yaml --workers 1 --out /private/tmp/culturemech-review-work-batch013/124/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-013/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work-batch013/124/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/9K_MEDIUM.yaml; Actual command output | context_only | Validating ontology terms (MediaRecipe)...<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py", line 204, in _new_conn<br>    sock = connection.create_connection(<br>        (self._dns_host, self.port),<br>    ...&lt;2 lines&gt;...<br>        socket_options=self.socket_options,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/util/connection.py", line 60, in create_connection<br>    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):<br>               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "/Users/marcin/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/socket.py", line 977, in getaddrinfo<br>    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):<br>               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>socket.gaierror: [Errno 8] nodename nor servname provided, or not known<br><br>The above exception was the direct cause of the following exception:<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 787, in urlopen<br>    response = self._make_request(<br>        conn,<br>    ...&lt;10 lines&gt;...<br>        **response_kw,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 488, in _make_request<br>    raise new_e<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 464, in _make_request<br>    self._validate_conn(conn)<br>    ~~~~~~~~~~~~~~~~~~~^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn<br>    conn.connect()<br>    ~~~~~~~~~~~~^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py", line 759, in connect<br>    self.sock = sock = self._new_conn()<br>                       ~~~~~~~~~~~~~~^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py", line 211, in _new_conn<br>    raise NameResolutionError(self.host, self, e) from e<br>urllib3.exceptions.NameResolutionError: HTTPSConnection(host='semanticsql.berkeleybop.io', port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename nor servname provided, or not known)<br><br>The above exception was the direct cause of the following exception:<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/adapters.py", line 644, in send<br>    resp = conn.urlopen(<br>        method=request.method,<br>    ...&lt;9 lines&gt;...<br>        chunked=chunked,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen<br>    retries = retries.increment(<br>        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/util/retry.py", line 535, in increment<br>    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]<br>    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='semanticsql.berkeleybop.io', port=443): Max retries exceeded with url: /envo.db.gz (Caused by NameResolutionError("HTTPSConnection(host='semanticsql.berkeleybop.io', port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename nor servname provided, or not known)"))<br><br>During handling of the above exception, another exception occurred:<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/utils/download.py", line 202, in download<br>    with requests.get(url, **kwargs) as response, path.open("wb") as file:  # noqa:S113<br>         ~~~~~~~~~~~~^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/api.py", line 73, in get<br>    return request("get", url, params=params, **kwargs)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/api.py", line 59, in request<br>    return session.request(method=method, url=url, **kwargs)<br>           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/sessions.py", line 589, in request<br>    resp = self.send(prep, **send_kwargs)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/sessions.py", line 703, in send<br>    r = adapter.send(request, **kwargs)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/adapters.py", line 677, in send<br>    raise ConnectionError(e, request=request)<br>requests.exceptions.ConnectionError: HTTPSConnectionPool(host='semanticsql.berkeleybop.io', port=443): Max retries exceeded with url: /envo.db.gz (Caused by NameResolutionError("HTTPSConnection(host='semanticsql.berkeleybop.io', port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename nor servname provided, or not known)"))<br><br>The above exception was the direct cause of the following exception:<br><br>Traceback (most recent call last):<br>  File "/private/tmp/culturemech-review-env/bin/linkml-term-validator", line 10, in &lt;module&gt;<br>    sys.exit(main())<br>             ~~~~^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/cli.py", line 431, in main<br>    app()<br>    ~~~^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py", line 336, in __call__<br>    raise e<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py", line 319, in __call__<br>    return get_command(self)(*args, **kwargs)<br>           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py", line 1631, in __call__<br>    return self.main(*args, **kwargs)<br>           ~~~~~~~~~^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/core.py", line 814, in main<br>    return _main(<br>        self,<br>    ...&lt;6 lines&gt;...<br>        **extra,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/core.py", line 190, in _main<br>    rv = self.invoke(ctx)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py", line 2032, in invoke<br>    return _process_result(sub_ctx.command.invoke(sub_ctx))<br>                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py", line 1415, in invoke<br>    return ctx.invoke(self.callback, **ctx.params)<br>           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py", line 910, in invoke<br>    return callback(*args, **kwargs)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py", line 706, in wrapper<br>    return callback(**use_params)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/cli.py", line 278, in validate_data<br>    report = validator.validate_source(loader, target_class=target_class)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml/validator/validator.py", line 68, in validate_source<br>    return ValidationReport(results=list(self.iter_results_from_source(loader, target_class)))<br>                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml/validator/validator.py", line 105, in iter_results_from_source<br>    for result in plugin.process(instance, context):<br>                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 192, in process<br>    yield from self._process_recursive(<br>    ...&lt;4 lines&gt;...<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 257, in _process_recursive<br>    yield from self._process_recursive(<br>    ...&lt;4 lines&gt;...<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 238, in _process_recursive<br>    yield from self._validate_binding(<br>    ...&lt;6 lines&gt;...<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 335, in _validate_binding<br>    yield from self._validate_term_exists(<br>    ...&lt;6 lines&gt;...<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py", line 565, in _validate_term_exists<br>    ontology_label = self.get_ontology_label(field_value)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/base.py", line 251, in get_ontology_label<br>    adapter = self._get_adapter(prefix)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/base.py", line 219, in _get_adapter<br>    adapter = get_adapter(adapter_string)<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/selector.py", line 155, in get_adapter<br>    return res.implementation_class(res, **kwargs)<br>           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^<br>  File "&lt;string&gt;", line 27, in __init__<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/implementations/sqldb/sql_implementation.py", line 350, in __post_init__<br>    db_path = FILE_CACHE.ensure_gunzip(<br>        url=url, autoclean=False, download_kwargs=SEMSQL_SQLITE_DOWNLOAD_KWARGS<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/utilities/caching.py", line 277, in ensure_gunzip<br>    self._module.ensure_gunzip(<br>    ~~~~~~~~~~~~~~~~~~~~~~~~~~^<br>        url=url,<br>        ^^^^^^^^<br>    ...&lt;3 lines&gt;...<br>        download_kwargs=download_kwargs,<br>        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br>    )<br>    ^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/impl.py", line 455, in ensure_gunzip<br>    path = self.ensure(<br>        *subkeys,<br>    ...&lt;3 lines&gt;...<br>        download_kwargs=download_kwargs,<br>    )<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/impl.py", line 284, in ensure<br>    utils.download(<br>    ~~~~~~~~~~~~~~^<br>        url=url,<br>        ^^^^^^^^<br>    ...&lt;3 lines&gt;...<br>        **(download_kwargs or {}),<br>        ^^^^^^^^^^^^^^^^^^^^^^^^^^<br>    )<br>    ^<br>  File "/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/utils/download.py", line 220, in download<br>    raise DownloadError(backend, url, path, e) from e<br>pystow.utils.download.DownloadError: Failed with requests to download https://semanticsql.berkeleybop.io/envo.db.gz to /private/tmp/culturemech-review-pystow/oaklib/envo.db.gz<br>error: recipe &#96;validate-terms&#96; failed with exit code 1 |
+| validate-references | just validate-references data/merge_yaml/merged/9K_MEDIUM.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| source-catalog | /private/tmp/culturemech-review-work-batch013/source-preflight-bound/124/source-catalog.json; All bound per-record source metadata, successful captures and retained failed attempts | context_only | [{"key": "chebi131527", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527", "status": 200, "accessed_at": "2026-10-20T07:22:08.349487Z", "sha256": "349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3", "metadata_sha256": "4e0a3a75a605d8d029113177d5618be5ca0eb78849c1f4fb35c18dc5ba074526", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/120/chebi131527.json", "content_limit": null, "error": null}, {"key": "chebi26836", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836", "status": 200, "accessed_at": "2026-10-20T07:29:13.222926Z", "sha256": "19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737", "metadata_sha256": "dd16744e549b57ac1be8ee3011ff7285cf5713c050b236ca9e207315ea620fe7", "reused_capture_from": "/private/tmp/culturemech-review-work-batch005/sources/chebi26836.json", "content_limit": null, "error": null}, {"key": "chebi31795", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795", "status": 200, "accessed_at": "2026-10-21T08:42:45.232212Z", "sha256": "45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb", "metadata_sha256": "60079fd49a218aeb8e93a52fb1312ed4743593e29bf3163333fa7ec9a9194f42", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi31795.json", "content_limit": null, "error": null}, {"key": "chebi32588", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588", "status": 200, "accessed_at": "2026-10-21T08:17:29.045588Z", "sha256": "536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411", "metadata_sha256": "1ca965cf6afcdb2c82513a242e96a65c29f91f4f0d87bcf2eec4bba52c069332", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi32588.json", "content_limit": null, "error": null}, {"key": "chebi62946", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946", "status": 200, "accessed_at": "2026-10-21T08:43:02.566401Z", "sha256": "10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5", "metadata_sha256": "0121fe1e861332df994862014f2a28a24c24fb4bf775ef0bedffd81371913b9a", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012/113/chebi62946.json", "content_limit": null, "error": null}, {"key": "chebi75836", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836", "status": 200, "accessed_at": "2026-10-20T06:55:07.038393Z", "sha256": "14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525", "metadata_sha256": "d3a8ee10a4173e48e7d4268d57867e4a3f8c1bf8ab4a38970eb44c4d61ce5899", "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/120/chebi75836.json", "content_limit": null, "error": null}, {"key": "jcm92_attempt1_sandbox", "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "status": null, "accessed_at": "2026-10-21T08:59:42.053101Z", "sha256": null, "metadata_sha256": "5af7c612cfe59f24c522853a45bae0dff8b6b1db705217ad51cfbf204c0f3d98", "reused_capture_from": null, "content_limit": "Failed transport attempt; no source content retrieved.", "error": "&lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;"}, {"key": "mediadiveJ92api_attempt1_sandbox", "url": "https://mediadive.dsmz.de/rest/medium/J92", "status": null, "accessed_at": "2026-10-21T08:59:41.885945Z", "sha256": null, "metadata_sha256": "9ca9b5ddc729279d3826f1b68b01e1c2c06fe732a9348cb4580afc0cdec3cdb0", "reused_capture_from": null, "content_limit": "Failed transport attempt; no source content retrieved.", "error": "&lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;"}, {"key": "chebi64205_attempt1_sandbox", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64205", "status": null, "accessed_at": "2026-10-21T08:59:42.033214Z", "sha256": null, "metadata_sha256": "fd5593b5df3cd164f4e12564a9f839d23ab4db2883b68735158667202254db48", "reused_capture_from": null, "content_limit": "Failed transport attempt; no source content retrieved.", "error": "&lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;"}, {"key": "envo00002186_attempt1_sandbox", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002186", "status": null, "accessed_at": "2026-10-21T08:59:42.033439Z", "sha256": null, "metadata_sha256": "3b7b7e1733baf68592e2949b7e547ecb24874ddfc5d76ff6e27449dbcd57a4dd", "reused_capture_from": null, "content_limit": "Failed transport attempt; no source content retrieved.", "error": "&lt;urlopen error [Errno 8] nodename nor servname provided, or not known&gt;"}, {"key": "jcm92", "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "status": 200, "accessed_at": "2026-10-21T09:00:12.131955Z", "sha256": "3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d", "metadata_sha256": "b532ee9f0434d75999a5ed1f43a6bd2f3a4cc84d0947e0809df2f593e6fda891", "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "mediadiveJ92api", "url": "https://mediadive.dsmz.de/rest/medium/J92", "status": 200, "accessed_at": "2026-10-21T09:00:12.130263Z", "sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "metadata_sha256": "ef581b0d3ad8a5843b58418547a5b2f02a34e867d8a4dac4f36b0c0dcef77848", "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "chebi64205", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64205", "status": 200, "accessed_at": "2026-10-21T09:00:12.130926Z", "sha256": "cf808711c3d8005562d7cb492a9da7abcb7a9ae6334934a1f4c5bafd1bd86062", "metadata_sha256": "ad63fa8b8ddd74724c4333e84c7c34d4dd830bfd1ce3b5e4ff82e6be0882c74d", "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "envo00002186", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002186", "status": 200, "accessed_at": "2026-10-21T09:00:12.131146Z", "sha256": "c6ae58fddd7f0e77735df960d1b575a9afec4e1f027eae26652473db6950dbb1", "metadata_sha256": "83c7c63b57eaa6fea2b63e1f794fb0ea5eaa2881840e5ca63ff192887f7bafc3", "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "communitymech_tree", "url": "https://api.github.com/repos/CultureBotAI/CommunityMech/git/trees/main?recursive=1", "status": 200, "accessed_at": "2026-10-21T09:00:49.568217Z", "sha256": "d60be19a68aff7a3eac3a5dc6932ea1417e5a3c6f0335af86ade9d1b369d506f", "metadata_sha256": "110ddfe79b6be3a35305566f3176f01e091d5c82aae7cffbbeae50b259cef86f", "reused_capture_from": null, "content_limit": "Public source-provenance context only. CommunityMech is a curated secondary dataset; copied CultureMech rows and modified recipes are not independent support for exact JCM 92 growth or environmental claims. Unrelated community claims were not assessed.", "error": null}, {"key": "communitymech_commit", "url": "https://api.github.com/repos/CultureBotAI/CommunityMech/commits/main", "status": 200, "accessed_at": "2026-10-21T09:01:16.136619Z", "sha256": "487fc05cd9977bf83fab3a1fc63172d127703bb6b1e802385e978cb69efda1d6", "metadata_sha256": "14b020a63adc9f90fc3fc86e7825b701d38573d151f025539df57ebd8fb134c7", "reused_capture_from": null, "content_limit": "Public source-provenance context only. CommunityMech is a curated secondary dataset; copied CultureMech rows and modified recipes are not independent support for exact JCM 92 growth or environmental claims. Unrelated community claims were not assessed.", "error": null}, {"key": "community_copper_biomining_heap_leach", "url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Copper_Biomining_Heap_Leach.yaml", "status": 200, "accessed_at": "2026-10-21T09:01:16.748065Z", "sha256": "5c620e46ecbe040463098d40373531e88b5b2bc12f08bb57b4d926b3537a0c4e", "metadata_sha256": "88de0de6b7dd0444a8c3d01ef33b07e00bf033ec2df44da66325128a5f7301b1", "reused_capture_from": null, "content_limit": "Public source-provenance context only. CommunityMech is a curated secondary dataset; copied CultureMech rows and modified recipes are not independent support for exact JCM 92 growth or environmental claims. Unrelated community claims were not assessed.", "error": null}, {"key": "community_richmond_mine_amd_biofilm", "url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Richmond_Mine_AMD_Biofilm.yaml", "status": 200, "accessed_at": "2026-10-21T09:01:16.965263Z", "sha256": "2e4f2eef58a26396f76ccedc7483735ea00ea52447f3af4a7469931326686b97", "metadata_sha256": "fc7de7aa30417fdfdd123ec378d3f21e3ba2edebe6a62689dffe464f39a2c3e3", "reused_capture_from": null, "content_limit": "Public source-provenance context only. CommunityMech is a curated secondary dataset; copied CultureMech rows and modified recipes are not independent support for exact JCM 92 growth or environmental claims. Unrelated community claims were not assessed.", "error": null}, {"key": "community_amd_acidophile_heterotroph_network", "url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/AMD_Acidophile_Heterotroph_Network.yaml", "status": 200, "accessed_at": "2026-10-21T09:01:17.238059Z", "sha256": "81fe29292038349e959041675b876ef4e351cdfb6884796989540185c6797834", "metadata_sha256": "bcfa649163f939c7c0a205cc21474acb717f934883f1ed23e1de795a8eaf5aa5", "reused_capture_from": null, "content_limit": "Public source-provenance context only. CommunityMech is a curated secondary dataset; copied CultureMech rows and modified recipes are not independent support for exact JCM 92 growth or environmental claims. Unrelated community claims were not assessed.", "error": null}, {"key": "community_ferroplasma_leptospirillum_syntrophy", "url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Ferroplasma_Leptospirillum_Syntrophy.yaml", "status": 200, "accessed_at": "2026-10-21T09:02:30.816822Z", "sha256": "08e60d74c495dfee5ec77a2a8ed63da4da51b1ebe1adb527350591d0e5b6340b", "metadata_sha256": "322b35248e6476bf681830cdfca95fd61b2acd9b51931491a8c5ff3ca04a000b", "reused_capture_from": null, "content_limit": "Public source-provenance context only. CommunityMech is a curated secondary dataset; copied CultureMech rows and modified recipes are not independent support for exact JCM 92 growth or environmental claims. Unrelated community claims were not assessed.", "error": null}] |
+| terms-network-retry | just validate-terms data/merge_yaml/merged/9K_MEDIUM.yaml; Separately recorded network-enabled retry after ENVO cache download DNS failure | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br><br><br>Downloading envo.db.gz:   0%&#124;          &#124; 0.00/14.2M [00:00&lt;?, ?B/s]<br>Downloading envo.db.gz:  46%&#124;████▌     &#124; 6.50M/14.2M [00:00&lt;00:00, 58.6MB/s] |
+| jcm92 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table, pH sentence and default sterilization paragraph | supports | Exact official JCM 92 formulation, eight source rows, pH 3.0 and collection-wide default sterilization statement were inspected. The acid is a liquid dose of a 10 N stock, and the source gives water 1 L. |
+| mediadiveJ92api | https://mediadive.dsmz.de/rest/medium/J92; $.data.medium; $.data.solutions[0]: id, name, volume, recipe and steps | supports | Exact provider medium J92 links to the official JCM 92 page, names main solution 3722 and declares volume 1001 mL. All eight source recipe rows and the pH step were inspected. Its response bytes match the hash cited in the owner historical evidence. |
+| provider-row-1 | https://mediadive.dsmz.de/rest/medium/J92; $.data.solutions[0].recipe[0] | supports | Exact provider row, retained with literal amount/unit and any stock-strength attribute. Provider rates are assessed separately from arithmetic and primary recipe amounts. |
+| primary-row-1 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table row 1 | supports | Literal official recipe row; source mass or liquid dose is distinct from a provider-normalized final concentration. |
+| provider-row-2 | https://mediadive.dsmz.de/rest/medium/J92; $.data.solutions[0].recipe[1] | supports | Exact provider row, retained with literal amount/unit and any stock-strength attribute. Provider rates are assessed separately from arithmetic and primary recipe amounts. |
+| primary-row-2 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table row 2 | supports | Literal official recipe row; source mass or liquid dose is distinct from a provider-normalized final concentration. |
+| provider-row-3 | https://mediadive.dsmz.de/rest/medium/J92; $.data.solutions[0].recipe[2] | supports | Exact provider row, retained with literal amount/unit and any stock-strength attribute. Provider rates are assessed separately from arithmetic and primary recipe amounts. |
+| primary-row-3 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table row 3 | supports | Literal official recipe row; source mass or liquid dose is distinct from a provider-normalized final concentration. |
+| provider-row-4 | https://mediadive.dsmz.de/rest/medium/J92; $.data.solutions[0].recipe[3] | supports | Exact provider row, retained with literal amount/unit and any stock-strength attribute. Provider rates are assessed separately from arithmetic and primary recipe amounts. |
+| primary-row-4 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table row 4 | supports | Literal official recipe row; source mass or liquid dose is distinct from a provider-normalized final concentration. |
+| provider-row-5 | https://mediadive.dsmz.de/rest/medium/J92; $.data.solutions[0].recipe[4] | supports | Exact provider row, retained with literal amount/unit and any stock-strength attribute. Provider rates are assessed separately from arithmetic and primary recipe amounts. |
+| primary-row-5 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table row 5 | supports | Literal official recipe row; source mass or liquid dose is distinct from a provider-normalized final concentration. |
+| provider-row-6 | https://mediadive.dsmz.de/rest/medium/J92; $.data.solutions[0].recipe[5] | supports | Exact provider row, retained with literal amount/unit and any stock-strength attribute. Provider rates are assessed separately from arithmetic and primary recipe amounts. |
+| primary-row-6 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table row 6 | supports | Literal official recipe row; source mass or liquid dose is distinct from a provider-normalized final concentration. |
+| provider-row-7 | https://mediadive.dsmz.de/rest/medium/J92; $.data.solutions[0].recipe[6] | supports | Exact provider row, retained with literal amount/unit and any stock-strength attribute. Provider rates are assessed separately from arithmetic and primary recipe amounts. |
+| primary-row-7 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table row 7 | supports | Literal official recipe row; source mass or liquid dose is distinct from a provider-normalized final concentration. |
+| provider-row-8 | https://mediadive.dsmz.de/rest/medium/J92; $.data.solutions[0].recipe[7] | supports | Exact provider row, retained with literal amount/unit and any stock-strength attribute. Provider rates are assessed separately from arithmetic and primary recipe amounts. |
+| primary-row-8 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Medium 92 composition table row 8 | supports | Literal official recipe row; source mass or liquid dose is distinct from a provider-normalized final concentration. |
+| amount-writer | scripts/review_medium_concentration_evidence.py; decide; review; evidence insertion and source pointer handling | context_only | The guarded writer supports eligible main-recipe quantities only; liquid doses and attributes are withheld. It retains provider volume and source hash in explanations rather than claiming independently measured final volume. |
+| rounding-guard | scripts/review_solution_concentration_evidence.py; rounded_equal | context_only | The comparison allows the smaller of five parts per million of computed value and half the final reported decimal quantum. Three source values here marginally fail that last-digit bound; no replacement value is silently written. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms and annotation | supports | CHEBI:131527 resolves to canonical label dipotassium hydrogen phosphate and is not obsolete. The complete response, including available formula, hydration, structure, synonyms and definitions, was inspected. Literal owner-label equality is assessed separately; ontology descriptions do not establish recipe quantities. |
+| chebi62946 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms and annotation | supports | CHEBI:62946 resolves to canonical label ammonium sulfate and is not obsolete. The complete response, including available formula, hydration, structure, synonyms and definitions, was inspected. Literal owner-label equality is assessed separately; ontology descriptions do not establish recipe quantities. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms and annotation | supports | CHEBI:32588 resolves to canonical label potassium chloride and is not obsolete. The complete response, including available formula, hydration, structure, synonyms and definitions, was inspected. Literal owner-label equality is assessed separately; ontology descriptions do not establish recipe quantities. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms and annotation | supports | CHEBI:31795 resolves to canonical label magnesium sulfate heptahydrate and is not obsolete. The complete response, including available formula, hydration, structure, synonyms and definitions, was inspected. Literal owner-label equality is assessed separately; ontology descriptions do not establish recipe quantities. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms and annotation | supports | CHEBI:75836 resolves to canonical label iron(2+) sulfate heptahydrate and is not obsolete. The complete response, including available formula, hydration, structure, synonyms and definitions, was inspected. Literal owner-label equality is assessed separately; ontology descriptions do not establish recipe quantities. |
+| chebi64205 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64205; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms and annotation | supports | CHEBI:64205 resolves to canonical label calcium nitrate and is not obsolete. The complete response, including available formula, hydration, structure, synonyms and definitions, was inspected. Literal owner-label equality is assessed separately; ontology descriptions do not establish recipe quantities. |
+| chebi26836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836; $._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms and annotation | supports | CHEBI:26836 resolves to canonical label sulfuric acid and is not obsolete. The complete response, including available formula, hydration, structure, synonyms and definitions, was inspected. Literal owner-label equality is assessed separately; ontology descriptions do not establish recipe quantities. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Exact MAPPED/preferred_term rows for each asserted secondary key; adjacent pinned metadata | supports | {"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count": 9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id", "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech", "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5", "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"}, "counts": {"target": {"ingredient_instances": 7, "primary_ontology_instances": 7, "primary_CHEBI_instances": 7, "canonical_primary_label_instances": 7, "secondary_asserted_instances": 7, "secondary_verified_instances": 7, "primary_ontology_percent": 100.0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 100.0}, "owner": {"ingredient_instances": 7, "primary_ontology_instances": 7, "primary_CHEBI_instances": 7, "canonical_primary_label_instances": 7, "secondary_asserted_instances": 7, "secondary_verified_instances": 7, "primary_ontology_percent": 100.0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 100.0}}, "secondary_instances": [{"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[0]", "preferred_term": "K2HPO4", "primary_id": "CHEBI:131527", "asserted_label": "dipotassium hydrogen phosphate", "canonical_label": "dipotassium hydrogen phosphate", "label_equal": true, "source_key": "chebi131527", "description": ["A potassium salt that is the dipotassium salt of phosphoric acid."], "synonyms": ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate", "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate", "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197", "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"], "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string": ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"], "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]}, "secondary_id": "CHEBI:131527", "secondary_asserted_label": "dipotassium hydrogen phosphate", "secondary_index_rows": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[1]", "preferred_term": "(NH4)2SO4", "primary_id": "CHEBI:62946", "asserted_label": "ammonium sulfate", "canonical_label": "ammonium sulfate", "label_equal": true, "source_key": "chebi62946", "description": ["An inorganic sulfate salt obtained by reaction of sulfuric acid with two equivalents of ammonia. A high-melting (decomposes above 280°C) white solid which is very soluble in water (70.6 g/100 g water at 0°C; 103.8 g/100 g water at 100°C), it is widely used as a fertilizer for alkaline soils."], "synonyms": ["(NH4)2SO4", "ammonium sulfate (2:1)", "ammonium sulphate", "diammonium sulfate", "diazanium sulfate", "diazanium sulfate", "mascagnite", "sulfuric acid ammonium salt (1:2)", "sulfuric acid, diammonium salt", "sulphate of ammonia"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7783-20-2", "kegg.drug:D08853", "metacyc.compound:NH42SO4", "ppdb:36", "pubmed:20556652", "reaxys:11343144", "wikipedia.en:Ammonium_sulfate"], "generalized_empirical_formula": ["2H4N.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:62946"], "inchi_key_string": ["BFNBIHQBYMNNAN-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/2H3N.H2O4S/c;;1-5(2,3)4/h2*1H3;(H2,1,2,3,4)"], "mass": ["132.141"], "monoisotopic_mass": ["132.02048"], "smiles_string": ["O=S(=O)([O-])[O-].[NH4+].[NH4+]"]}, "secondary_id": "CHEBI:62946", "secondary_asserted_label": "ammonium sulfate", "secondary_index_rows": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[2]", "preferred_term": "KCl", "primary_id": "CHEBI:32588", "asserted_label": "potassium chloride", "canonical_label": "potassium chloride", "label_equal": true, "source_key": "chebi32588", "description": ["A metal chloride salt with a K(+) counterion."], "synonyms": ["KCl", "Kaliumchlorid", "Kaon-Cl 10", "Klor-con", "Klotrix", "Monopotassium chloride", "[KCl]", "muriate of potash", "potassium chloride", "potassium chloride", "sylvite"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7447-40-7", "drugbank:DB00761", "kegg.drug:D02060", "metacyc.compound:KCL", "molbase:881", "reaxys:3534978", "wikipedia.en:Potassium_Chloride"], "generalized_empirical_formula": ["Cl.K"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32588"], "inchi_key_string": ["WCUXLLCKKVVCTQ-UHFFFAOYSA-M"], "inchi_string": ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "monoisotopic_mass": ["73.93256"], "smiles_string": ["[Cl-].[K+]"]}, "secondary_id": "CHEBI:32588", "secondary_asserted_label": "potassium chloride", "secondary_index_rows": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[3]", "preferred_term": "MgSO4 x 7 H2O", "primary_id": "CHEBI:31795", "asserted_label": "magnesium sulfate heptahydrate", "canonical_label": "magnesium sulfate heptahydrate", "label_equal": true, "source_key": "chebi31795", "description": ["A hydrate that is the heptahydrate form of magnesium sulfate."], "synonyms": ["Magnesium sulfate heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric acid magnesium salt heptahydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505", "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222", "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"], "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]}, "secondary_id": "CHEBI:31795", "secondary_asserted_label": "magnesium sulfate heptahydrate", "secondary_index_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[4]", "preferred_term": "FeSO4 x 7 H2O", "primary_id": "CHEBI:75836", "asserted_label": "iron(2+) sulfate heptahydrate", "canonical_label": "iron(2+) sulfate heptahydrate", "label_equal": true, "source_key": "chebi75836", "description": ["A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage treatments; for solid-dosage treatments, the monohydrate is normally used)."], "synonyms": ["FeSO4.7H2O", "Fero-Gradumet", "Tetucur-S", "copperas", "ferrous sulfate heptahydrate", "ferrous sulfate.7H2O", "green vitriol", "iron vitriol", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate.7H2O", "iron(II) sulfate.7H2O", "melanterite mineral", "melanterite"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7782-63-0", "kegg.drug:D01725", "metacyc.compound:CPD0-2418", "pubmed:3729890", "reaxys:11322534"], "generalized_empirical_formula": ["Fe.7H2O.O4S"], "has_alternative_id": ["CHEBI:31609"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75836"], "inchi_key_string": ["SURQXAFEQWPFPV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["278.013"], "monoisotopic_mass": ["277.96062"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]}, "secondary_id": "CHEBI:75836", "secondary_asserted_label": "iron(2+) sulfate heptahydrate", "secondary_index_rows": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[5]", "preferred_term": "Ca(NO3)2", "primary_id": "CHEBI:64205", "asserted_label": "calcium nitrate", "canonical_label": "calcium nitrate", "label_equal": true, "source_key": "chebi64205", "description": ["Inorganic nitrate salt of calcium."], "synonyms": ["Calcium saltpeter", "Calcium(II) nitrate (1:2)", "Lime nitrate", "Lime saltpeter", "Nitric acid, calcium salt", "Norge saltpeter", "Norway saltpeter", "Norwegian saltpeter", "Saltpeter", "anhydrous calcium nitrate", "calcium dinitrate", "calcium dinitrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:10124-37-5", "pubmed:13495183", "pubmed:13558529", "pubmed:13717848", "pubmed:14651109", "pubmed:14672118", "pubmed:15244341", "pubmed:18201926", "pubmed:19594125", "pubmed:22307899", "pubmed:22360256", "pubmed:23069075", "pubmed:25135170", "pubmed:25868152", "reaxys:3565319", "wikipedia.en:Calcium_nitrate"], "generalized_empirical_formula": ["Ca.2NO3"], "has_alternative_id": ["CHEBI:88273"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:64205"], "inchi_key_string": ["ZCCIPPOKBCJFDN-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1"], "mass": ["164.086"], "monoisotopic_mass": ["163.93823"], "smiles_string": ["O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ca+2]"]}, "secondary_id": "CHEBI:64205", "secondary_asserted_label": "calcium nitrate", "secondary_index_rows": [{"label": "Ca(NO3)2", "match_type": "preferred_term", "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[6]", "preferred_term": "H2SO4", "primary_id": "CHEBI:26836", "asserted_label": "sulfuric acid", "canonical_label": "sulfuric acid", "label_equal": true, "source_key": "chebi26836", "description": ["A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently to a central sulfur atom."], "synonyms": ["Acide sulfurique", "Acido sulfurico", "Acidum sulfuricum", "H2SO4", "Schwefelsaeureloesungen", "Sulfuric acid", "[S(OH)2O2]", "[SO2(OH)2]", "dihydrogen tetraoxosulfate", "dihydrogen tetraoxosulfate", "dihydroxidodioxidosulfur", "dihydroxidodioxidosulfur", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(VI)", "hydrogen tetraoxosulfate(VI)", "sulfuric acid", "sulfuric acid", "sulphuric acid", "tetraoxosulfuric acid", "tetraoxosulfuric acid"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7664-93-9", "gmelin:2122", "kegg.compound:C00059", "kegg.drug:D05963", "knapsack:C00007530", "molbase:4", "ppdb:606", "pubmed:13568755", "pubmed:16122922", "pubmed:19397353", "pubmed:22047659", "pubmed:22136045", "pubmed:22204399", "pubmed:22267186", "pubmed:22296037", "pubmed:22364556", "pubmed:22435616", "reaxys:2037554", "wikipedia.en:Sulfuric_acid"], "generalized_empirical_formula": ["H2O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:26836"], "inchi_key_string": ["QAOWNCQODCNURD-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"], "mass": ["98.079"], "monoisotopic_mass": ["97.96738"], "smiles_string": ["[H]OS(=O)(=O)O[H]"]}, "secondary_id": "CHEBI:26836", "secondary_asserted_label": "sulfuric acid", "secondary_index_rows": [{"label": "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[0]", "preferred_term": "K2HPO4", "primary_id": "CHEBI:131527", "asserted_label": "dipotassium hydrogen phosphate", "canonical_label": "dipotassium hydrogen phosphate", "label_equal": true, "source_key": "chebi131527", "description": ["A potassium salt that is the dipotassium salt of phosphoric acid."], "synonyms": ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate", "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate", "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197", "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"], "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string": ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"], "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]}, "secondary_id": "CHEBI:131527", "secondary_asserted_label": "dipotassium hydrogen phosphate", "secondary_index_rows": [{"label": "K2HPO4", "match_type": "preferred_term", "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[1]", "preferred_term": "(NH4)2SO4", "primary_id": "CHEBI:62946", "asserted_label": "ammonium sulfate", "canonical_label": "ammonium sulfate", "label_equal": true, "source_key": "chebi62946", "description": ["An inorganic sulfate salt obtained by reaction of sulfuric acid with two equivalents of ammonia. A high-melting (decomposes above 280°C) white solid which is very soluble in water (70.6 g/100 g water at 0°C; 103.8 g/100 g water at 100°C), it is widely used as a fertilizer for alkaline soils."], "synonyms": ["(NH4)2SO4", "ammonium sulfate (2:1)", "ammonium sulphate", "diammonium sulfate", "diazanium sulfate", "diazanium sulfate", "mascagnite", "sulfuric acid ammonium salt (1:2)", "sulfuric acid, diammonium salt", "sulphate of ammonia"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7783-20-2", "kegg.drug:D08853", "metacyc.compound:NH42SO4", "ppdb:36", "pubmed:20556652", "reaxys:11343144", "wikipedia.en:Ammonium_sulfate"], "generalized_empirical_formula": ["2H4N.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:62946"], "inchi_key_string": ["BFNBIHQBYMNNAN-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/2H3N.H2O4S/c;;1-5(2,3)4/h2*1H3;(H2,1,2,3,4)"], "mass": ["132.141"], "monoisotopic_mass": ["132.02048"], "smiles_string": ["O=S(=O)([O-])[O-].[NH4+].[NH4+]"]}, "secondary_id": "CHEBI:62946", "secondary_asserted_label": "ammonium sulfate", "secondary_index_rows": [{"label": "(NH4)2SO4", "match_type": "preferred_term", "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[2]", "preferred_term": "KCl", "primary_id": "CHEBI:32588", "asserted_label": "potassium chloride", "canonical_label": "potassium chloride", "label_equal": true, "source_key": "chebi32588", "description": ["A metal chloride salt with a K(+) counterion."], "synonyms": ["KCl", "Kaliumchlorid", "Kaon-Cl 10", "Klor-con", "Klotrix", "Monopotassium chloride", "[KCl]", "muriate of potash", "potassium chloride", "potassium chloride", "sylvite"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7447-40-7", "drugbank:DB00761", "kegg.drug:D02060", "metacyc.compound:KCL", "molbase:881", "reaxys:3534978", "wikipedia.en:Potassium_Chloride"], "generalized_empirical_formula": ["Cl.K"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:32588"], "inchi_key_string": ["WCUXLLCKKVVCTQ-UHFFFAOYSA-M"], "inchi_string": ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "monoisotopic_mass": ["73.93256"], "smiles_string": ["[Cl-].[K+]"]}, "secondary_id": "CHEBI:32588", "secondary_asserted_label": "potassium chloride", "secondary_index_rows": [{"label": "KCl", "match_type": "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id": "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[3]", "preferred_term": "MgSO4 x 7 H2O", "primary_id": "CHEBI:31795", "asserted_label": "magnesium sulfate heptahydrate", "canonical_label": "magnesium sulfate heptahydrate", "label_equal": true, "source_key": "chebi31795", "description": ["A hydrate that is the heptahydrate form of magnesium sulfate."], "synonyms": ["Magnesium sulfate heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric acid magnesium salt heptahydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505", "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222", "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"], "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]}, "secondary_id": "CHEBI:31795", "secondary_asserted_label": "magnesium sulfate heptahydrate", "secondary_index_rows": [{"label": "MgSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}, {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[4]", "preferred_term": "FeSO4 x 7 H2O", "primary_id": "CHEBI:75836", "asserted_label": "iron(2+) sulfate heptahydrate", "canonical_label": "iron(2+) sulfate heptahydrate", "label_equal": true, "source_key": "chebi75836", "description": ["A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage treatments; for solid-dosage treatments, the monohydrate is normally used)."], "synonyms": ["FeSO4.7H2O", "Fero-Gradumet", "Tetucur-S", "copperas", "ferrous sulfate heptahydrate", "ferrous sulfate.7H2O", "green vitriol", "iron vitriol", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate.7H2O", "iron(II) sulfate.7H2O", "melanterite mineral", "melanterite"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7782-63-0", "kegg.drug:D01725", "metacyc.compound:CPD0-2418", "pubmed:3729890", "reaxys:11322534"], "generalized_empirical_formula": ["Fe.7H2O.O4S"], "has_alternative_id": ["CHEBI:31609"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:75836"], "inchi_key_string": ["SURQXAFEQWPFPV-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"], "mass": ["278.013"], "monoisotopic_mass": ["277.96062"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]}, "secondary_id": "CHEBI:75836", "secondary_asserted_label": "iron(2+) sulfate heptahydrate", "secondary_index_rows": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term", "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id": "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[5]", "preferred_term": "Ca(NO3)2", "primary_id": "CHEBI:64205", "asserted_label": "calcium nitrate", "canonical_label": "calcium nitrate", "label_equal": true, "source_key": "chebi64205", "description": ["Inorganic nitrate salt of calcium."], "synonyms": ["Calcium saltpeter", "Calcium(II) nitrate (1:2)", "Lime nitrate", "Lime saltpeter", "Nitric acid, calcium salt", "Norge saltpeter", "Norway saltpeter", "Norwegian saltpeter", "Saltpeter", "anhydrous calcium nitrate", "calcium dinitrate", "calcium dinitrate"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:10124-37-5", "pubmed:13495183", "pubmed:13558529", "pubmed:13717848", "pubmed:14651109", "pubmed:14672118", "pubmed:15244341", "pubmed:18201926", "pubmed:19594125", "pubmed:22307899", "pubmed:22360256", "pubmed:23069075", "pubmed:25135170", "pubmed:25868152", "reaxys:3565319", "wikipedia.en:Calcium_nitrate"], "generalized_empirical_formula": ["Ca.2NO3"], "has_alternative_id": ["CHEBI:88273"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:64205"], "inchi_key_string": ["ZCCIPPOKBCJFDN-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1"], "mass": ["164.086"], "monoisotopic_mass": ["163.93823"], "smiles_string": ["O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ca+2]"]}, "secondary_id": "CHEBI:64205", "secondary_asserted_label": "calcium nitrate", "secondary_index_rows": [{"label": "Ca(NO3)2", "match_type": "preferred_term", "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[6]", "preferred_term": "H2SO4", "primary_id": "CHEBI:26836", "asserted_label": "sulfuric acid", "canonical_label": "sulfuric acid", "label_equal": true, "source_key": "chebi26836", "description": ["A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently to a central sulfur atom."], "synonyms": ["Acide sulfurique", "Acido sulfurico", "Acidum sulfuricum", "H2SO4", "Schwefelsaeureloesungen", "Sulfuric acid", "[S(OH)2O2]", "[SO2(OH)2]", "dihydrogen tetraoxosulfate", "dihydrogen tetraoxosulfate", "dihydroxidodioxidosulfur", "dihydroxidodioxidosulfur", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(VI)", "hydrogen tetraoxosulfate(VI)", "sulfuric acid", "sulfuric acid", "sulphuric acid", "tetraoxosulfuric acid", "tetraoxosulfuric acid"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7664-93-9", "gmelin:2122", "kegg.compound:C00059", "kegg.drug:D05963", "knapsack:C00007530", "molbase:4", "ppdb:606", "pubmed:13568755", "pubmed:16122922", "pubmed:19397353", "pubmed:22047659", "pubmed:22136045", "pubmed:22204399", "pubmed:22267186", "pubmed:22296037", "pubmed:22364556", "pubmed:22435616", "reaxys:2037554", "wikipedia.en:Sulfuric_acid"], "generalized_empirical_formula": ["H2O4S"], "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:26836"], "inchi_key_string": ["QAOWNCQODCNURD-UHFFFAOYSA-N"], "inchi_string": ["InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"], "mass": ["98.079"], "monoisotopic_mass": ["97.96738"], "smiles_string": ["[H]OS(=O)(=O)O[H]"]}, "secondary_id": "CHEBI:26836", "secondary_asserted_label": "sulfuric acid", "secondary_index_rows": [{"label": "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term": "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}]} |
+| envo00002186 | https://www.ebi.ac.uk/ols4/api/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002186; $._embedded.terms[0]: obo_id, label, obsolete flag and annotation | supports | ENVO:00002186 is nonobsolete contaminated water, matching the asserted canonical label. This broader term alone does not establish all acid-mine-drainage details or a new organism/medium relationship. |
+| sterilization-default | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Page-wide default before Medium 92 table | supports | The collection supplies a source-specific default cycle unless otherwise stated; no exception appears for this recipe. |
+| source-ph | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92; Sentence following Medium 92 composition table | supports | Source pH is the preparation target retained in both records. |
+| backfill | scripts/backfill_source_environment.py; collect_env_links; _collect_culturemech_ids; merge_into_recipe | context_only | Current code recursively collects culturemech_id links from a CommunityMech document and appends its environment descriptor, deduplicating by term/name. It does not establish exact formulation equivalence or transfer primary experimental evidence. Code inspection explains current semantics, not a replay of the historical event. |
+| environment-schema | src/culturemech/schema/culturemech.yaml; MediaRecipe.source_environment; SourceEnvironmentDescriptor | context_only | The field describes the environment from which target organisms originate or for which the medium is designed, with additional environmental context in notes. Environmental conditions are not automatically the medium preparation/incubation conditions. |
+| community_copper_biomining_heap_leach | https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Copper_Biomining_Heap_Leach.yaml; $.environment_term; $.growth_media[0]: name, composition, culturemech_id, pH, preparation_notes and evidence | context_only | Exact public upstream environment notes and explicit CultureMech link were inspected. The linked medium includes community-curated modified recipe rows and rows imported from CultureMech; those rows are not independent validation of JCM 92. |
+| community_ferroplasma_leptospirillum_syntrophy | https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Ferroplasma_Leptospirillum_Syntrophy.yaml; $.environment_term; $.growth_media[0]: name, composition, culturemech_id, pH, preparation_notes and evidence | context_only | Exact public upstream environment notes and explicit CultureMech link were inspected. The linked medium includes community-curated modified recipe rows and rows imported from CultureMech; those rows are not independent validation of JCM 92. |
+| importer | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _normalize_unit; _parse_preparation_steps | context_only | Current importer uses main-recipe rows, skips water, prefers g_l and otherwise maps ml to ML_PER_L. Stock detection recognizes solution IDs or percent attributes; the direct-compound path does not retain this 10 N attribute. It collects provider preparation text, which here lacks the primary collection-wide default. Current code therefore does not justify re-running blindly as a full fix; it was not executed. |
+| exporter | src/culturemech/export/kgx_export.py; ingredient_to_edge; _quantity; _resolved_ingredient_id | context_only | Exporter resolves ingredient identity and carries stored numeric values/units into ingredient edges; it does not correct acid-unit errors or establish source volumes. No export was run and no edge count or new graph match is claimed. |
+| history | data/merge_yaml/merged/9K_MEDIUM.yaml; Every timestamp in target, owner and explicitly listed contextual dependencies | supports | [{"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-26T17:53:15.716491Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[1].timestamp", "value": "2026-02-06T05:10:41.566544Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:19.139420Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-17T06:30:32.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[4].timestamp", "value": "2026-03-17T19:45:33.055479+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[5].timestamp", "value": "2026-05-24T04:38:33.227537+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[6].timestamp", "value": "2026-06-05T07:40:15.983714+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[7].timestamp", "value": "2026-06-08T23:19:27.194785+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[8].timestamp", "value": "2026-06-10T07:46:42.591874+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[9].timestamp", "value": "2026-08-06T03:04:34.255529+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[0].timestamp", "value": "2026-01-26T17:53:15.716491Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[1].timestamp", "value": "2026-02-06T05:10:41.566544Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[2].timestamp", "value": "2026-03-13T06:19:19.139420Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[3].timestamp", "value": "2026-03-17T06:30:32.000000Z", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[4].timestamp", "value": "2026-03-17T19:45:33.055479+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[5].timestamp", "value": "2026-05-24T04:38:33.227537+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[6].timestamp", "value": "2026-06-05T07:40:15.983714+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[7].timestamp", "value": "2026-06-08T23:19:27.194785+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[8].timestamp", "value": "2026-06-10T07:46:42.591874+00:00", "valid_ISO_datetime": true, "timezone_aware": true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[9].timestamp", "value": "2026-10-07T14:33:27.670564+00:00", "valid_ISO_datetime": true, "timezone_aware": true}] |
+
+## Limits And Additional Notes
+
+- MediaDive declares 1001 mL for its main recipe; this is provider normalization, not an independently measured final volume. JCM lists 1 L water plus 1 mL acid and does not instruct making up to a measured final volume.
+- No density-based acid conversion or inferred neat-acid mass is made. The exact supplied stock is 10 N H2SO4, added as 1 mL in the stated source batch.
+- CommunityMech source notes and explicit linked IDs were inspected at the captured public commit. Their ecological assertions and cited papers were not independently re-reviewed, and modified recipes plus rows imported from CultureMech cannot validate this exact recipe or new organism growth claims.
+- Environmental pH, temperature, metal and heap-age descriptions concern source habitats. They are not silently adopted as this medium preparation or incubation conditions.
+- The first required term-validation attempt failed during ENVO cache download. The separately recorded network-enabled retry succeeded; both attempts and their actual timestamps remain in this review and original diagnostics were not overwritten.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. Reference-check coverage must be read from its actual output; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T092047Z-culturemech-003277-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 9k_medium (CultureMech:003277)'
+started_at: '2026-10-21T09:12:05Z'
+finished_at: '2026-10-21T09:20:47Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: JCM 92 is unambiguously identified, and its seven asserted ingredient identities
+  are grounded consistently. The substantive quantity error is sulfuric acid represented
+  as 1 g/L instead of the source addition of 1 mL of 10 N acid; source water and sterilization
+  context also need restoration. Three other provider g/L values have small last-digit
+  arithmetic conflicts that must remain distinct from that unit error. The owner carries
+  three exact provider-backed evidence entries absent from the generated target. CommunityMech
+  explains the environmental notes but supplies modified recipes and circular imported
+  rows, not independent exact-JCM92 validation. The initial term check failed to download
+  ENVO; its separately authorized retry passed with all original outputs preserved.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/9K_MEDIUM.yaml
+    sha256: 19550d847b770ea5cb6bc93af351abb271976db6d9025fce765167a05d576faf
+    role: target
+  - path: data/normalized_yaml/bacterial/9k_medium.yaml
+    sha256: 7c3855da19dcca522cb62809ce5c4f18c5cda3ea2de39b65e082aa38f13a867c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/backfill_source_environment.py
+    sha256: d6a6594e27e0bb905302ed7e190b3bbcbf7ea9843e33c61eb31e72cd27830ae7
+    role: context
+  - path: scripts/fetch_medium_concentration_sources.py
+    sha256: 746c2828863e6ee409d88409a540ea0a8d01ffad3e38be4a4a47f47bec5bbeb5
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 124; batch 013 item 4 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twelve task batches contain
+    120 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 122 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003277
+targets:
+- target_id: CultureMech:003277
+  path: data/merge_yaml/merged/9K_MEDIUM.yaml
+  label: 9k_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/9K_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/9K_MEDIUM.yaml --workers 1
+    --out /private/tmp/culturemech-review-work-batch013/124/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-013/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch013/124/strict.tsv"
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/9K_MEDIUM.yaml
+  exit_code: 1
+  required: true
+  status: failed
+  summary: "Validating ontology terms (MediaRecipe)...\n\nTraceback (most recent call\
+    \ last):\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py\"\
+    , line 204, in _new_conn\n    sock = connection.create_connection(\n        (self._dns_host,\
+    \ self.port),\n    ...<2 lines>...\n        socket_options=self.socket_options,\n\
+    \    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/util/connection.py\"\
+    , line 60, in create_connection\n    for res in socket.getaddrinfo(host, port,\
+    \ family, socket.SOCK_STREAM):\n               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    \  File \"/Users/marcin/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/socket.py\"\
+    , line 977, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family,\
+    \ type, proto, flags):\n               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    socket.gaierror: [Errno 8] nodename nor servname provided, or not known\n\nThe\
+    \ above exception was the direct cause of the following exception:\n\nTraceback\
+    \ (most recent call last):\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 787, in urlopen\n    response = self._make_request(\n        conn,\n  \
+    \  ...<10 lines>...\n        **response_kw,\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 488, in _make_request\n    raise new_e\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 464, in _make_request\n    self._validate_conn(conn)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 1093, in _validate_conn\n    conn.connect()\n    ~~~~~~~~~~~~^^\n  File\
+    \ \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py\"\
+    , line 759, in connect\n    self.sock = sock = self._new_conn()\n            \
+    \           ~~~~~~~~~~~~~~^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py\"\
+    , line 211, in _new_conn\n    raise NameResolutionError(self.host, self, e) from\
+    \ e\nurllib3.exceptions.NameResolutionError: HTTPSConnection(host='semanticsql.berkeleybop.io',\
+    \ port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename\
+    \ nor servname provided, or not known)\n\nThe above exception was the direct cause\
+    \ of the following exception:\n\nTraceback (most recent call last):\n  File \"\
+    /private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/adapters.py\"\
+    , line 644, in send\n    resp = conn.urlopen(\n        method=request.method,\n\
+    \    ...<9 lines>...\n        chunked=chunked,\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 841, in urlopen\n    retries = retries.increment(\n        method, url,\
+    \ error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/util/retry.py\"\
+    , line 535, in increment\n    raise MaxRetryError(_pool, url, reason) from reason\
+    \  # type: ignore[arg-type]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='semanticsql.berkeleybop.io',\
+    \ port=443): Max retries exceeded with url: /envo.db.gz (Caused by NameResolutionError(\"\
+    HTTPSConnection(host='semanticsql.berkeleybop.io', port=443): Failed to resolve\
+    \ 'semanticsql.berkeleybop.io' ([Errno 8] nodename nor servname provided, or not\
+    \ known)\"))\n\nDuring handling of the above exception, another exception occurred:\n\
+    \nTraceback (most recent call last):\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/utils/download.py\"\
+    , line 202, in download\n    with requests.get(url, **kwargs) as response, path.open(\"\
+    wb\") as file:  # noqa:S113\n         ~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/api.py\"\
+    , line 73, in get\n    return request(\"get\", url, params=params, **kwargs)\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/api.py\"\
+    , line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n\
+    \           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/sessions.py\"\
+    , line 589, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/sessions.py\"\
+    , line 703, in send\n    r = adapter.send(request, **kwargs)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/adapters.py\"\
+    , line 677, in send\n    raise ConnectionError(e, request=request)\nrequests.exceptions.ConnectionError:\
+    \ HTTPSConnectionPool(host='semanticsql.berkeleybop.io', port=443): Max retries\
+    \ exceeded with url: /envo.db.gz (Caused by NameResolutionError(\"HTTPSConnection(host='semanticsql.berkeleybop.io',\
+    \ port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename\
+    \ nor servname provided, or not known)\"))\n\nThe above exception was the direct\
+    \ cause of the following exception:\n\nTraceback (most recent call last):\n  File\
+    \ \"/private/tmp/culturemech-review-env/bin/linkml-term-validator\", line 10,\
+    \ in <module>\n    sys.exit(main())\n             ~~~~^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/cli.py\"\
+    , line 431, in main\n    app()\n    ~~~^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py\"\
+    , line 336, in __call__\n    raise e\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py\"\
+    , line 319, in __call__\n    return get_command(self)(*args, **kwargs)\n     \
+    \      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py\"\
+    , line 1631, in __call__\n    return self.main(*args, **kwargs)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^^\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/core.py\"\
+    , line 814, in main\n    return _main(\n        self,\n    ...<6 lines>...\n \
+    \       **extra,\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/core.py\"\
+    , line 190, in _main\n    rv = self.invoke(ctx)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py\"\
+    , line 2032, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n\
+    \                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py\"\
+    , line 1415, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n \
+    \          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py\"\
+    , line 910, in invoke\n    return callback(*args, **kwargs)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py\"\
+    , line 706, in wrapper\n    return callback(**use_params)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/cli.py\"\
+    , line 278, in validate_data\n    report = validator.validate_source(loader, target_class=target_class)\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml/validator/validator.py\"\
+    , line 68, in validate_source\n    return ValidationReport(results=list(self.iter_results_from_source(loader,\
+    \ target_class)))\n                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml/validator/validator.py\"\
+    , line 105, in iter_results_from_source\n    for result in plugin.process(instance,\
+    \ context):\n                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 192, in process\n    yield from self._process_recursive(\n    ...<4 lines>...\n\
+    \    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 257, in _process_recursive\n    yield from self._process_recursive(\n \
+    \   ...<4 lines>...\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 238, in _process_recursive\n    yield from self._validate_binding(\n  \
+    \  ...<6 lines>...\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 335, in _validate_binding\n    yield from self._validate_term_exists(\n\
+    \    ...<6 lines>...\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 565, in _validate_term_exists\n    ontology_label = self.get_ontology_label(field_value)\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/base.py\"\
+    , line 251, in get_ontology_label\n    adapter = self._get_adapter(prefix)\n \
+    \ File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/base.py\"\
+    , line 219, in _get_adapter\n    adapter = get_adapter(adapter_string)\n  File\
+    \ \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/selector.py\"\
+    , line 155, in get_adapter\n    return res.implementation_class(res, **kwargs)\n\
+    \           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"<string>\", line\
+    \ 27, in __init__\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/implementations/sqldb/sql_implementation.py\"\
+    , line 350, in __post_init__\n    db_path = FILE_CACHE.ensure_gunzip(\n      \
+    \  url=url, autoclean=False, download_kwargs=SEMSQL_SQLITE_DOWNLOAD_KWARGS\n \
+    \   )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/utilities/caching.py\"\
+    , line 277, in ensure_gunzip\n    self._module.ensure_gunzip(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n\
+    \        url=url,\n        ^^^^^^^^\n    ...<3 lines>...\n        download_kwargs=download_kwargs,\n\
+    \        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/impl.py\"\
+    , line 455, in ensure_gunzip\n    path = self.ensure(\n        *subkeys,\n   \
+    \ ...<3 lines>...\n        download_kwargs=download_kwargs,\n    )\n  File \"\
+    /private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/impl.py\"\
+    , line 284, in ensure\n    utils.download(\n    ~~~~~~~~~~~~~~^\n        url=url,\n\
+    \        ^^^^^^^^\n    ...<3 lines>...\n        **(download_kwargs or {}),\n \
+    \       ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/utils/download.py\"\
+    , line 220, in download\n    raise DownloadError(backend, url, path, e) from e\n\
+    pystow.utils.download.DownloadError: Failed with requests to download https://semanticsql.berkeleybop.io/envo.db.gz\
+    \ to /private/tmp/culturemech-review-pystow/oaklib/envo.db.gz\nerror: recipe `validate-terms`\
+    \ failed with exit code 1"
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/9K_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:003277
+- check_id: terms-network-retry
+  name: 'Required ontology term check: authorized environment retry'
+  command: just validate-terms data/merge_yaml/merged/9K_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: The identical target term check passed after the required ENVO database
+    downloaded into the owned PYSTOW cache. Initial exit 1 and original output files
+    remain unchanged. No other check was repeated.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - validate-terms
+  - terms-network-retry
+- check_id: scoped-history-timestamps
+  name: Scoped history timestamp syntax and timezone check
+  required: false
+  status: passed
+  summary: 20 timestamp instances inspected; 0 malformed or timezone-naive instances.
+    Existing provenance is preserved; no timestamps were rewritten.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - history
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/9K_MEDIUM.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/9k_medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/9K_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:13:00.766317Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/9K_MEDIUM.yaml --workers
+    1 --out /private/tmp/culturemech-review-work-batch013/124/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:13:02.322717Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-013/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch013/124/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/9K_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:13:04.069961Z'
+  support: context_only
+  summary: "Validating ontology terms (MediaRecipe)...\n\nTraceback (most recent call\
+    \ last):\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py\"\
+    , line 204, in _new_conn\n    sock = connection.create_connection(\n        (self._dns_host,\
+    \ self.port),\n    ...<2 lines>...\n        socket_options=self.socket_options,\n\
+    \    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/util/connection.py\"\
+    , line 60, in create_connection\n    for res in socket.getaddrinfo(host, port,\
+    \ family, socket.SOCK_STREAM):\n               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    \  File \"/Users/marcin/.local/share/uv/python/cpython-3.13.2-macos-aarch64-none/lib/python3.13/socket.py\"\
+    , line 977, in getaddrinfo\n    for res in _socket.getaddrinfo(host, port, family,\
+    \ type, proto, flags):\n               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    socket.gaierror: [Errno 8] nodename nor servname provided, or not known\n\nThe\
+    \ above exception was the direct cause of the following exception:\n\nTraceback\
+    \ (most recent call last):\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 787, in urlopen\n    response = self._make_request(\n        conn,\n  \
+    \  ...<10 lines>...\n        **response_kw,\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 488, in _make_request\n    raise new_e\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 464, in _make_request\n    self._validate_conn(conn)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 1093, in _validate_conn\n    conn.connect()\n    ~~~~~~~~~~~~^^\n  File\
+    \ \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py\"\
+    , line 759, in connect\n    self.sock = sock = self._new_conn()\n            \
+    \           ~~~~~~~~~~~~~~^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connection.py\"\
+    , line 211, in _new_conn\n    raise NameResolutionError(self.host, self, e) from\
+    \ e\nurllib3.exceptions.NameResolutionError: HTTPSConnection(host='semanticsql.berkeleybop.io',\
+    \ port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename\
+    \ nor servname provided, or not known)\n\nThe above exception was the direct cause\
+    \ of the following exception:\n\nTraceback (most recent call last):\n  File \"\
+    /private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/adapters.py\"\
+    , line 644, in send\n    resp = conn.urlopen(\n        method=request.method,\n\
+    \    ...<9 lines>...\n        chunked=chunked,\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/connectionpool.py\"\
+    , line 841, in urlopen\n    retries = retries.increment(\n        method, url,\
+    \ error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/urllib3/util/retry.py\"\
+    , line 535, in increment\n    raise MaxRetryError(_pool, url, reason) from reason\
+    \  # type: ignore[arg-type]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='semanticsql.berkeleybop.io',\
+    \ port=443): Max retries exceeded with url: /envo.db.gz (Caused by NameResolutionError(\"\
+    HTTPSConnection(host='semanticsql.berkeleybop.io', port=443): Failed to resolve\
+    \ 'semanticsql.berkeleybop.io' ([Errno 8] nodename nor servname provided, or not\
+    \ known)\"))\n\nDuring handling of the above exception, another exception occurred:\n\
+    \nTraceback (most recent call last):\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/utils/download.py\"\
+    , line 202, in download\n    with requests.get(url, **kwargs) as response, path.open(\"\
+    wb\") as file:  # noqa:S113\n         ~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/api.py\"\
+    , line 73, in get\n    return request(\"get\", url, params=params, **kwargs)\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/api.py\"\
+    , line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n\
+    \           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/sessions.py\"\
+    , line 589, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/sessions.py\"\
+    , line 703, in send\n    r = adapter.send(request, **kwargs)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/requests/adapters.py\"\
+    , line 677, in send\n    raise ConnectionError(e, request=request)\nrequests.exceptions.ConnectionError:\
+    \ HTTPSConnectionPool(host='semanticsql.berkeleybop.io', port=443): Max retries\
+    \ exceeded with url: /envo.db.gz (Caused by NameResolutionError(\"HTTPSConnection(host='semanticsql.berkeleybop.io',\
+    \ port=443): Failed to resolve 'semanticsql.berkeleybop.io' ([Errno 8] nodename\
+    \ nor servname provided, or not known)\"))\n\nThe above exception was the direct\
+    \ cause of the following exception:\n\nTraceback (most recent call last):\n  File\
+    \ \"/private/tmp/culturemech-review-env/bin/linkml-term-validator\", line 10,\
+    \ in <module>\n    sys.exit(main())\n             ~~~~^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/cli.py\"\
+    , line 431, in main\n    app()\n    ~~~^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py\"\
+    , line 336, in __call__\n    raise e\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py\"\
+    , line 319, in __call__\n    return get_command(self)(*args, **kwargs)\n     \
+    \      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py\"\
+    , line 1631, in __call__\n    return self.main(*args, **kwargs)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^^\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/core.py\"\
+    , line 814, in main\n    return _main(\n        self,\n    ...<6 lines>...\n \
+    \       **extra,\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/core.py\"\
+    , line 190, in _main\n    rv = self.invoke(ctx)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py\"\
+    , line 2032, in invoke\n    return _process_result(sub_ctx.command.invoke(sub_ctx))\n\
+    \                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py\"\
+    , line 1415, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n \
+    \          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/click/core.py\"\
+    , line 910, in invoke\n    return callback(*args, **kwargs)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/typer/main.py\"\
+    , line 706, in wrapper\n    return callback(**use_params)\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/cli.py\"\
+    , line 278, in validate_data\n    report = validator.validate_source(loader, target_class=target_class)\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml/validator/validator.py\"\
+    , line 68, in validate_source\n    return ValidationReport(results=list(self.iter_results_from_source(loader,\
+    \ target_class)))\n                                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml/validator/validator.py\"\
+    , line 105, in iter_results_from_source\n    for result in plugin.process(instance,\
+    \ context):\n                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 192, in process\n    yield from self._process_recursive(\n    ...<4 lines>...\n\
+    \    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 257, in _process_recursive\n    yield from self._process_recursive(\n \
+    \   ...<4 lines>...\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 238, in _process_recursive\n    yield from self._validate_binding(\n  \
+    \  ...<6 lines>...\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 335, in _validate_binding\n    yield from self._validate_term_exists(\n\
+    \    ...<6 lines>...\n    )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/binding_plugin.py\"\
+    , line 565, in _validate_term_exists\n    ontology_label = self.get_ontology_label(field_value)\n\
+    \  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/base.py\"\
+    , line 251, in get_ontology_label\n    adapter = self._get_adapter(prefix)\n \
+    \ File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/linkml_term_validator/plugins/base.py\"\
+    , line 219, in _get_adapter\n    adapter = get_adapter(adapter_string)\n  File\
+    \ \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/selector.py\"\
+    , line 155, in get_adapter\n    return res.implementation_class(res, **kwargs)\n\
+    \           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"<string>\", line\
+    \ 27, in __init__\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/implementations/sqldb/sql_implementation.py\"\
+    , line 350, in __post_init__\n    db_path = FILE_CACHE.ensure_gunzip(\n      \
+    \  url=url, autoclean=False, download_kwargs=SEMSQL_SQLITE_DOWNLOAD_KWARGS\n \
+    \   )\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/oaklib/utilities/caching.py\"\
+    , line 277, in ensure_gunzip\n    self._module.ensure_gunzip(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~^\n\
+    \        url=url,\n        ^^^^^^^^\n    ...<3 lines>...\n        download_kwargs=download_kwargs,\n\
+    \        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/impl.py\"\
+    , line 455, in ensure_gunzip\n    path = self.ensure(\n        *subkeys,\n   \
+    \ ...<3 lines>...\n        download_kwargs=download_kwargs,\n    )\n  File \"\
+    /private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/impl.py\"\
+    , line 284, in ensure\n    utils.download(\n    ~~~~~~~~~~~~~~^\n        url=url,\n\
+    \        ^^^^^^^^\n    ...<3 lines>...\n        **(download_kwargs or {}),\n \
+    \       ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/private/tmp/culturemech-review-env/lib/python3.13/site-packages/pystow/utils/download.py\"\
+    , line 220, in download\n    raise DownloadError(backend, url, path, e) from e\n\
+    pystow.utils.download.DownloadError: Failed with requests to download https://semanticsql.berkeleybop.io/envo.db.gz\
+    \ to /private/tmp/culturemech-review-pystow/oaklib/envo.db.gz\nerror: recipe `validate-terms`\
+    \ failed with exit code 1"
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/9K_MEDIUM.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:13:07.336263Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: source-catalog
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch013/source-preflight-bound/124/source-catalog.json
+  locator: All bound per-record source metadata, successful captures and retained
+    failed attempts
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: '[{"key": "chebi131527", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527",
+    "status": 200, "accessed_at": "2026-10-20T07:22:08.349487Z", "sha256": "349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3",
+    "metadata_sha256": "4e0a3a75a605d8d029113177d5618be5ca0eb78849c1f4fb35c18dc5ba074526",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/120/chebi131527.json",
+    "content_limit": null, "error": null}, {"key": "chebi26836", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836",
+    "status": 200, "accessed_at": "2026-10-20T07:29:13.222926Z", "sha256": "19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737",
+    "metadata_sha256": "dd16744e549b57ac1be8ee3011ff7285cf5713c050b236ca9e207315ea620fe7",
+    "reused_capture_from": "/private/tmp/culturemech-review-work-batch005/sources/chebi26836.json",
+    "content_limit": null, "error": null}, {"key": "chebi31795", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795",
+    "status": 200, "accessed_at": "2026-10-21T08:42:45.232212Z", "sha256": "45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb",
+    "metadata_sha256": "60079fd49a218aeb8e93a52fb1312ed4743593e29bf3163333fa7ec9a9194f42",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi31795.json",
+    "content_limit": null, "error": null}, {"key": "chebi32588", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588",
+    "status": 200, "accessed_at": "2026-10-21T08:17:29.045588Z", "sha256": "536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411",
+    "metadata_sha256": "1ca965cf6afcdb2c82513a242e96a65c29f91f4f0d87bcf2eec4bba52c069332",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/119/chebi32588.json",
+    "content_limit": null, "error": null}, {"key": "chebi62946", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946",
+    "status": 200, "accessed_at": "2026-10-21T08:43:02.566401Z", "sha256": "10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5",
+    "metadata_sha256": "0121fe1e861332df994862014f2a28a24c24fb4bf775ef0bedffd81371913b9a",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012/113/chebi62946.json",
+    "content_limit": null, "error": null}, {"key": "chebi75836", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836",
+    "status": 200, "accessed_at": "2026-10-20T06:55:07.038393Z", "sha256": "14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525",
+    "metadata_sha256": "d3a8ee10a4173e48e7d4268d57867e4a3f8c1bf8ab4a38970eb44c4d61ce5899",
+    "reused_capture_from": "/private/tmp/culturemech-review-source-preflight-batch012-tail/120/chebi75836.json",
+    "content_limit": null, "error": null}, {"key": "jcm92_attempt1_sandbox", "url":
+    "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92", "status": null, "accessed_at":
+    "2026-10-21T08:59:42.053101Z", "sha256": null, "metadata_sha256": "5af7c612cfe59f24c522853a45bae0dff8b6b1db705217ad51cfbf204c0f3d98",
+    "reused_capture_from": null, "content_limit": "Failed transport attempt; no source
+    content retrieved.", "error": "<urlopen error [Errno 8] nodename nor servname
+    provided, or not known>"}, {"key": "mediadiveJ92api_attempt1_sandbox", "url":
+    "https://mediadive.dsmz.de/rest/medium/J92", "status": null, "accessed_at": "2026-10-21T08:59:41.885945Z",
+    "sha256": null, "metadata_sha256": "9ca9b5ddc729279d3826f1b68b01e1c2c06fe732a9348cb4580afc0cdec3cdb0",
+    "reused_capture_from": null, "content_limit": "Failed transport attempt; no source
+    content retrieved.", "error": "<urlopen error [Errno 8] nodename nor servname
+    provided, or not known>"}, {"key": "chebi64205_attempt1_sandbox", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64205",
+    "status": null, "accessed_at": "2026-10-21T08:59:42.033214Z", "sha256": null,
+    "metadata_sha256": "fd5593b5df3cd164f4e12564a9f839d23ab4db2883b68735158667202254db48",
+    "reused_capture_from": null, "content_limit": "Failed transport attempt; no source
+    content retrieved.", "error": "<urlopen error [Errno 8] nodename nor servname
+    provided, or not known>"}, {"key": "envo00002186_attempt1_sandbox", "url": "https://www.ebi.ac.uk/ols4/api/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002186",
+    "status": null, "accessed_at": "2026-10-21T08:59:42.033439Z", "sha256": null,
+    "metadata_sha256": "3b7b7e1733baf68592e2949b7e547ecb24874ddfc5d76ff6e27449dbcd57a4dd",
+    "reused_capture_from": null, "content_limit": "Failed transport attempt; no source
+    content retrieved.", "error": "<urlopen error [Errno 8] nodename nor servname
+    provided, or not known>"}, {"key": "jcm92", "url": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "status": 200, "accessed_at": "2026-10-21T09:00:12.131955Z", "sha256": "3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d",
+    "metadata_sha256": "b532ee9f0434d75999a5ed1f43a6bd2f3a4cc84d0947e0809df2f593e6fda891",
+    "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "mediadiveJ92api",
+    "url": "https://mediadive.dsmz.de/rest/medium/J92", "status": 200, "accessed_at":
+    "2026-10-21T09:00:12.130263Z", "sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a",
+    "metadata_sha256": "ef581b0d3ad8a5843b58418547a5b2f02a34e867d8a4dac4f36b0c0dcef77848",
+    "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "chebi64205",
+    "url": "https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64205",
+    "status": 200, "accessed_at": "2026-10-21T09:00:12.130926Z", "sha256": "cf808711c3d8005562d7cb492a9da7abcb7a9ae6334934a1f4c5bafd1bd86062",
+    "metadata_sha256": "ad63fa8b8ddd74724c4333e84c7c34d4dd830bfd1ce3b5e4ff82e6be0882c74d",
+    "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "envo00002186",
+    "url": "https://www.ebi.ac.uk/ols4/api/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002186",
+    "status": 200, "accessed_at": "2026-10-21T09:00:12.131146Z", "sha256": "c6ae58fddd7f0e77735df960d1b575a9afec4e1f027eae26652473db6950dbb1",
+    "metadata_sha256": "83c7c63b57eaa6fea2b63e1f794fb0ea5eaa2881840e5ca63ff192887f7bafc3",
+    "reused_capture_from": null, "content_limit": null, "error": null}, {"key": "communitymech_tree",
+    "url": "https://api.github.com/repos/CultureBotAI/CommunityMech/git/trees/main?recursive=1",
+    "status": 200, "accessed_at": "2026-10-21T09:00:49.568217Z", "sha256": "d60be19a68aff7a3eac3a5dc6932ea1417e5a3c6f0335af86ade9d1b369d506f",
+    "metadata_sha256": "110ddfe79b6be3a35305566f3176f01e091d5c82aae7cffbbeae50b259cef86f",
+    "reused_capture_from": null, "content_limit": "Public source-provenance context
+    only. CommunityMech is a curated secondary dataset; copied CultureMech rows and
+    modified recipes are not independent support for exact JCM 92 growth or environmental
+    claims. Unrelated community claims were not assessed.", "error": null}, {"key":
+    "communitymech_commit", "url": "https://api.github.com/repos/CultureBotAI/CommunityMech/commits/main",
+    "status": 200, "accessed_at": "2026-10-21T09:01:16.136619Z", "sha256": "487fc05cd9977bf83fab3a1fc63172d127703bb6b1e802385e978cb69efda1d6",
+    "metadata_sha256": "14b020a63adc9f90fc3fc86e7825b701d38573d151f025539df57ebd8fb134c7",
+    "reused_capture_from": null, "content_limit": "Public source-provenance context
+    only. CommunityMech is a curated secondary dataset; copied CultureMech rows and
+    modified recipes are not independent support for exact JCM 92 growth or environmental
+    claims. Unrelated community claims were not assessed.", "error": null}, {"key":
+    "community_copper_biomining_heap_leach", "url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Copper_Biomining_Heap_Leach.yaml",
+    "status": 200, "accessed_at": "2026-10-21T09:01:16.748065Z", "sha256": "5c620e46ecbe040463098d40373531e88b5b2bc12f08bb57b4d926b3537a0c4e",
+    "metadata_sha256": "88de0de6b7dd0444a8c3d01ef33b07e00bf033ec2df44da66325128a5f7301b1",
+    "reused_capture_from": null, "content_limit": "Public source-provenance context
+    only. CommunityMech is a curated secondary dataset; copied CultureMech rows and
+    modified recipes are not independent support for exact JCM 92 growth or environmental
+    claims. Unrelated community claims were not assessed.", "error": null}, {"key":
+    "community_richmond_mine_amd_biofilm", "url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Richmond_Mine_AMD_Biofilm.yaml",
+    "status": 200, "accessed_at": "2026-10-21T09:01:16.965263Z", "sha256": "2e4f2eef58a26396f76ccedc7483735ea00ea52447f3af4a7469931326686b97",
+    "metadata_sha256": "fc7de7aa30417fdfdd123ec378d3f21e3ba2edebe6a62689dffe464f39a2c3e3",
+    "reused_capture_from": null, "content_limit": "Public source-provenance context
+    only. CommunityMech is a curated secondary dataset; copied CultureMech rows and
+    modified recipes are not independent support for exact JCM 92 growth or environmental
+    claims. Unrelated community claims were not assessed.", "error": null}, {"key":
+    "community_amd_acidophile_heterotroph_network", "url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/AMD_Acidophile_Heterotroph_Network.yaml",
+    "status": 200, "accessed_at": "2026-10-21T09:01:17.238059Z", "sha256": "81fe29292038349e959041675b876ef4e351cdfb6884796989540185c6797834",
+    "metadata_sha256": "bcfa649163f939c7c0a205cc21474acb717f934883f1ed23e1de795a8eaf5aa5",
+    "reused_capture_from": null, "content_limit": "Public source-provenance context
+    only. CommunityMech is a curated secondary dataset; copied CultureMech rows and
+    modified recipes are not independent support for exact JCM 92 growth or environmental
+    claims. Unrelated community claims were not assessed.", "error": null}, {"key":
+    "community_ferroplasma_leptospirillum_syntrophy", "url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Ferroplasma_Leptospirillum_Syntrophy.yaml",
+    "status": 200, "accessed_at": "2026-10-21T09:02:30.816822Z", "sha256": "08e60d74c495dfee5ec77a2a8ed63da4da51b1ebe1adb527350591d0e5b6340b",
+    "metadata_sha256": "322b35248e6476bf681830cdfca95fd61b2acd9b51931491a8c5ff3ca04a000b",
+    "reused_capture_from": null, "content_limit": "Public source-provenance context
+    only. CommunityMech is a curated secondary dataset; copied CultureMech rows and
+    modified recipes are not independent support for exact JCM 92 growth or environmental
+    claims. Unrelated community claims were not assessed.", "error": null}]'
+  snapshot_sha256: cfab82e5f55cccf7cf3dce6d55d7d4adccad691a7e411f528027812c83099b75
+- evidence_id: terms-network-retry
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/9K_MEDIUM.yaml
+  locator: Separately recorded network-enabled retry after ENVO cache download DNS
+    failure
+  accessed_at: '2026-10-21T09:14:32.381319Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+
+
+    Downloading envo.db.gz:   0%|          | 0.00/14.2M [00:00<?, ?B/s]
+
+    Downloading envo.db.gz:  46%|████▌     | 6.50M/14.2M [00:00<00:00, 58.6MB/s]'
+- evidence_id: jcm92
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table, pH sentence and default sterilization paragraph
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Exact official JCM 92 formulation, eight source rows, pH 3.0 and collection-wide
+    default sterilization statement were inspected. The acid is a liquid dose of a
+    10 N stock, and the source gives water 1 L.
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: mediadiveJ92api
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: '$.data.medium; $.data.solutions[0]: id, name, volume, recipe and steps'
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider medium J92 links to the official JCM 92 page, names main
+    solution 3722 and declares volume 1001 mL. All eight source recipe rows and the
+    pH step were inspected. Its response bytes match the hash cited in the owner historical
+    evidence.
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: provider-row-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: $.data.solutions[0].recipe[0]
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider row, retained with literal amount/unit and any stock-strength
+    attribute. Provider rates are assessed separately from arithmetic and primary
+    recipe amounts.
+  quote: "{\n                        \"recipe_order\": 1,\n                      \
+    \  \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n \
+    \                       \"amount\": 0.5,\n                        \"unit\": \"\
+    g\",\n                        \"g_l\": 0.499501,\n                        \"mmol_l\"\
+    : 2.86779,\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: primary-row-1
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table row 1
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Literal official recipe row; source mass or liquid dose is distinct from
+    a provider-normalized final concentration.
+  quote: K2HPO4 0.5 g
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: provider-row-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: $.data.solutions[0].recipe[1]
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider row, retained with literal amount/unit and any stock-strength
+    attribute. Provider rates are assessed separately from arithmetic and primary
+    recipe amounts.
+  quote: "{\n                        \"recipe_order\": 2,\n                      \
+    \  \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n\
+    \                        \"amount\": 3,\n                        \"unit\": \"\
+    g\",\n                        \"g_l\": 2.997,\n                        \"mmol_l\"\
+    : 22.6805,\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: primary-row-2
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table row 2
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Literal official recipe row; source mass or liquid dose is distinct from
+    a provider-normalized final concentration.
+  quote: (NH4)2SO4 3.0 g
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: provider-row-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: $.data.solutions[0].recipe[2]
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider row, retained with literal amount/unit and any stock-strength
+    attribute. Provider rates are assessed separately from arithmetic and primary
+    recipe amounts.
+  quote: "{\n                        \"recipe_order\": 3,\n                      \
+    \  \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n    \
+    \                    \"amount\": 0.1,\n                        \"unit\": \"g\"\
+    ,\n                        \"g_l\": 0.0999001,\n                        \"mmol_l\"\
+    : 1.34004,\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: primary-row-3
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table row 3
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Literal official recipe row; source mass or liquid dose is distinct from
+    a provider-normalized final concentration.
+  quote: KCl 0.1 g
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: provider-row-4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: $.data.solutions[0].recipe[3]
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider row, retained with literal amount/unit and any stock-strength
+    attribute. Provider rates are assessed separately from arithmetic and primary
+    recipe amounts.
+  quote: "{\n                        \"recipe_order\": 4,\n                      \
+    \  \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":\
+    \ 8,\n                        \"amount\": 0.5,\n                        \"unit\"\
+    : \"g\",\n                        \"g_l\": 0.499501,\n                       \
+    \ \"mmol_l\": 2.02657,\n                        \"optional\": 0\n            \
+    \        }"
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: primary-row-4
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table row 4
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Literal official recipe row; source mass or liquid dose is distinct from
+    a provider-normalized final concentration.
+  quote: MgSO4·7H2O 0.5 g
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: provider-row-5
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: $.data.solutions[0].recipe[4]
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider row, retained with literal amount/unit and any stock-strength
+    attribute. Provider rates are assessed separately from arithmetic and primary
+    recipe amounts.
+  quote: "{\n                        \"recipe_order\": 5,\n                      \
+    \  \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":\
+    \ 12,\n                        \"amount\": 50,\n                        \"unit\"\
+    : \"g\",\n                        \"g_l\": 49.9501,\n                        \"\
+    mmol_l\": 179.667,\n                        \"optional\": 0\n                \
+    \    }"
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: primary-row-5
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table row 5
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Literal official recipe row; source mass or liquid dose is distinct from
+    a provider-normalized final concentration.
+  quote: FeSO4·7H2O 50.0 g
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: provider-row-6
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: $.data.solutions[0].recipe[5]
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider row, retained with literal amount/unit and any stock-strength
+    attribute. Provider rates are assessed separately from arithmetic and primary
+    recipe amounts.
+  quote: "{\n                        \"recipe_order\": 6,\n                      \
+    \  \"compound\": \"Ca(NO3)2\",\n                        \"compound_id\": 266,\n\
+    \                        \"amount\": 10,\n                        \"unit\": \"\
+    mg\",\n                        \"g_l\": 0.00999001,\n                        \"\
+    mmol_l\": 0.0608813,\n                        \"optional\": 0\n              \
+    \      }"
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: primary-row-6
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table row 6
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Literal official recipe row; source mass or liquid dose is distinct from
+    a provider-normalized final concentration.
+  quote: Ca(NO3)2 10.0 mg
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: provider-row-7
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: $.data.solutions[0].recipe[6]
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider row, retained with literal amount/unit and any stock-strength
+    attribute. Provider rates are assessed separately from arithmetic and primary
+    recipe amounts.
+  quote: "{\n                        \"recipe_order\": 7,\n                      \
+    \  \"compound\": \"H2SO4\",\n                        \"compound_id\": 122,\n \
+    \                       \"attribute\": \"10 N\",\n                        \"amount\"\
+    : 1,\n                        \"unit\": \"ml\",\n                        \"optional\"\
+    : 0\n                    }"
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: primary-row-7
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table row 7
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Literal official recipe row; source mass or liquid dose is distinct from
+    a provider-normalized final concentration.
+  quote: 10 N H2SO4 1.0 ml
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: provider-row-8
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J92
+  locator: $.data.solutions[0].recipe[7]
+  accessed_at: '2026-10-21T09:00:12.130263Z'
+  support: supports
+  summary: Exact provider row, retained with literal amount/unit and any stock-strength
+    attribute. Provider rates are assessed separately from arithmetic and primary
+    recipe amounts.
+  quote: "{\n                        \"recipe_order\": 8,\n                      \
+    \  \"compound\": \"Distilled water\",\n                        \"compound_id\"\
+    : 4,\n                        \"amount\": 1000,\n                        \"unit\"\
+    : \"ml\",\n                        \"optional\": 0\n                    }"
+  snapshot_sha256: 867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a
+- evidence_id: primary-row-8
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Medium 92 composition table row 8
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Literal official recipe row; source mass or liquid dose is distinct from
+    a provider-normalized final concentration.
+  quote: Distilled water 1.0 L
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: amount-writer
+  kind: record_content
+  reference: scripts/review_medium_concentration_evidence.py
+  locator: decide; review; evidence insertion and source pointer handling
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: The guarded writer supports eligible main-recipe quantities only; liquid
+    doses and attributes are withheld. It retains provider volume and source hash
+    in explanations rather than claiming independently measured final volume.
+- evidence_id: rounding-guard
+  kind: record_content
+  reference: scripts/review_solution_concentration_evidence.py
+  locator: rounded_equal
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: The comparison allows the smaller of five parts per million of computed
+    value and half the final reported decimal quantum. Three source values here marginally
+    fail that last-digit bound; no replacement value is silently written.
+- evidence_id: chebi131527
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms
+    and annotation'
+  accessed_at: '2026-10-20T07:22:08.349487Z'
+  support: supports
+  summary: CHEBI:131527 resolves to canonical label dipotassium hydrogen phosphate
+    and is not obsolete. The complete response, including available formula, hydration,
+    structure, synonyms and definitions, was inspected. Literal owner-label equality
+    is assessed separately; ontology descriptions do not establish recipe quantities.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi62946
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_62946
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms
+    and annotation'
+  accessed_at: '2026-10-21T08:43:02.566401Z'
+  support: supports
+  summary: CHEBI:62946 resolves to canonical label ammonium sulfate and is not obsolete.
+    The complete response, including available formula, hydration, structure, synonyms
+    and definitions, was inspected. Literal owner-label equality is assessed separately;
+    ontology descriptions do not establish recipe quantities.
+  snapshot_sha256: 10c25b481047a1fdfbc201104ecc06b15b32d5e72319beed5133e5d5693bede5
+- evidence_id: chebi32588
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms
+    and annotation'
+  accessed_at: '2026-10-21T08:17:29.045588Z'
+  support: supports
+  summary: CHEBI:32588 resolves to canonical label potassium chloride and is not obsolete.
+    The complete response, including available formula, hydration, structure, synonyms
+    and definitions, was inspected. Literal owner-label equality is assessed separately;
+    ontology descriptions do not establish recipe quantities.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi31795
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms
+    and annotation'
+  accessed_at: '2026-10-21T08:42:45.232212Z'
+  support: supports
+  summary: CHEBI:31795 resolves to canonical label magnesium sulfate heptahydrate
+    and is not obsolete. The complete response, including available formula, hydration,
+    structure, synonyms and definitions, was inspected. Literal owner-label equality
+    is assessed separately; ontology descriptions do not establish recipe quantities.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi75836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms
+    and annotation'
+  accessed_at: '2026-10-20T06:55:07.038393Z'
+  support: supports
+  summary: CHEBI:75836 resolves to canonical label iron(2+) sulfate heptahydrate and
+    is not obsolete. The complete response, including available formula, hydration,
+    structure, synonyms and definitions, was inspected. Literal owner-label equality
+    is assessed separately; ontology descriptions do not establish recipe quantities.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi64205
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_64205
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms
+    and annotation'
+  accessed_at: '2026-10-21T09:00:12.130926Z'
+  support: supports
+  summary: CHEBI:64205 resolves to canonical label calcium nitrate and is not obsolete.
+    The complete response, including available formula, hydration, structure, synonyms
+    and definitions, was inspected. Literal owner-label equality is assessed separately;
+    ontology descriptions do not establish recipe quantities.
+  snapshot_sha256: cf808711c3d8005562d7cb492a9da7abcb7a9ae6334934a1f4c5bafd1bd86062
+- evidence_id: chebi26836
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836
+  locator: '$._embedded.terms[0]: obo_id, label, is_obsolete, description, synonyms
+    and annotation'
+  accessed_at: '2026-10-20T07:29:13.222926Z'
+  support: supports
+  summary: CHEBI:26836 resolves to canonical label sulfuric acid and is not obsolete.
+    The complete response, including available formula, hydration, structure, synonyms
+    and definitions, was inspected. Literal owner-label equality is assessed separately;
+    ontology descriptions do not establish recipe quantities.
+  snapshot_sha256: 19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact MAPPED/preferred_term rows for each asserted secondary key; adjacent
+    pinned metadata
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: supports
+  summary: '{"metadata": {"byte_count": 824387, "consumer_contract_version": 1, "data_row_count":
+    9077, "header": ["label", "match_type", "identifier", "preferred_term", "ontology_id",
+    "mapping_status", "ambiguity"], "repository": "https://github.com/CultureBotAI/MediaIngredientMech",
+    "sha256": "4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5",
+    "source_commit": "6643131b0f12ab40b66f98135245fca04027e0e9", "source_path": "docs/data/label_index.csv"},
+    "counts": {"target": {"ingredient_instances": 7, "primary_ontology_instances":
+    7, "primary_CHEBI_instances": 7, "canonical_primary_label_instances": 7, "secondary_asserted_instances":
+    7, "secondary_verified_instances": 7, "primary_ontology_percent": 100.0, "primary_CHEBI_percent":
+    100.0, "secondary_verified_percent": 100.0}, "owner": {"ingredient_instances":
+    7, "primary_ontology_instances": 7, "primary_CHEBI_instances": 7, "canonical_primary_label_instances":
+    7, "secondary_asserted_instances": 7, "secondary_verified_instances": 7, "primary_ontology_percent":
+    100.0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 100.0}},
+    "secondary_instances": [{"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml",
+    "field": "ingredients[0]", "preferred_term": "K2HPO4", "primary_id": "CHEBI:131527",
+    "asserted_label": "dipotassium hydrogen phosphate", "canonical_label": "dipotassium
+    hydrogen phosphate", "label_equal": true, "source_key": "chebi131527", "description":
+    ["A potassium salt that is the dipotassium salt of phosphoric acid."], "synonyms":
+    ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium
+    monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate",
+    "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric
+    acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen
+    phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium
+    phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate",
+    "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197",
+    "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"],
+    "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string":
+    ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"],
+    "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]},
+    "secondary_id": "CHEBI:131527", "secondary_asserted_label": "dipotassium hydrogen
+    phosphate", "secondary_index_rows": [{"label": "K2HPO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path":
+    "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[1]", "preferred_term":
+    "(NH4)2SO4", "primary_id": "CHEBI:62946", "asserted_label": "ammonium sulfate",
+    "canonical_label": "ammonium sulfate", "label_equal": true, "source_key": "chebi62946",
+    "description": ["An inorganic sulfate salt obtained by reaction of sulfuric acid
+    with two equivalents of ammonia. A high-melting (decomposes above 280°C) white
+    solid which is very soluble in water (70.6 g/100 g water at 0°C; 103.8 g/100 g
+    water at 100°C), it is widely used as a fertilizer for alkaline soils."], "synonyms":
+    ["(NH4)2SO4", "ammonium sulfate (2:1)", "ammonium sulphate", "diammonium sulfate",
+    "diazanium sulfate", "diazanium sulfate", "mascagnite", "sulfuric acid ammonium
+    salt (1:2)", "sulfuric acid, diammonium salt", "sulphate of ammonia"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7783-20-2", "kegg.drug:D08853",
+    "metacyc.compound:NH42SO4", "ppdb:36", "pubmed:20556652", "reaxys:11343144", "wikipedia.en:Ammonium_sulfate"],
+    "generalized_empirical_formula": ["2H4N.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:62946"], "inchi_key_string": ["BFNBIHQBYMNNAN-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/2H3N.H2O4S/c;;1-5(2,3)4/h2*1H3;(H2,1,2,3,4)"], "mass": ["132.141"],
+    "monoisotopic_mass": ["132.02048"], "smiles_string": ["O=S(=O)([O-])[O-].[NH4+].[NH4+]"]},
+    "secondary_id": "CHEBI:62946", "secondary_asserted_label": "ammonium sulfate",
+    "secondary_index_rows": [{"label": "(NH4)2SO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path":
+    "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[2]", "preferred_term":
+    "KCl", "primary_id": "CHEBI:32588", "asserted_label": "potassium chloride", "canonical_label":
+    "potassium chloride", "label_equal": true, "source_key": "chebi32588", "description":
+    ["A metal chloride salt with a K(+) counterion."], "synonyms": ["KCl", "Kaliumchlorid",
+    "Kaon-Cl 10", "Klor-con", "Klotrix", "Monopotassium chloride", "[KCl]", "muriate
+    of potash", "potassium chloride", "potassium chloride", "sylvite"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7447-40-7", "drugbank:DB00761",
+    "kegg.drug:D02060", "metacyc.compound:KCL", "molbase:881", "reaxys:3534978", "wikipedia.en:Potassium_Chloride"],
+    "generalized_empirical_formula": ["Cl.K"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:32588"], "inchi_key_string": ["WCUXLLCKKVVCTQ-UHFFFAOYSA-M"], "inchi_string":
+    ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "monoisotopic_mass": ["73.93256"],
+    "smiles_string": ["[Cl-].[K+]"]}, "secondary_id": "CHEBI:32588", "secondary_asserted_label":
+    "potassium chloride", "secondary_index_rows": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer":
+    "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[3]",
+    "preferred_term": "MgSO4 x 7 H2O", "primary_id": "CHEBI:31795", "asserted_label":
+    "magnesium sulfate heptahydrate", "canonical_label": "magnesium sulfate heptahydrate",
+    "label_equal": true, "source_key": "chebi31795", "description": ["A hydrate that
+    is the heptahydrate form of magnesium sulfate."], "synonyms": ["Magnesium sulfate
+    heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium
+    sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water
+    (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric
+    acid magnesium salt heptahydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505",
+    "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222",
+    "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"],
+    "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]},
+    "secondary_id": "CHEBI:31795", "secondary_asserted_label": "magnesium sulfate
+    heptahydrate", "secondary_index_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml",
+    "field": "ingredients[4]", "preferred_term": "FeSO4 x 7 H2O", "primary_id": "CHEBI:75836",
+    "asserted_label": "iron(2+) sulfate heptahydrate", "canonical_label": "iron(2+)
+    sulfate heptahydrate", "label_equal": true, "source_key": "chebi75836", "description":
+    ["A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a
+    source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage
+    treatments; for solid-dosage treatments, the monohydrate is normally used)."],
+    "synonyms": ["FeSO4.7H2O", "Fero-Gradumet", "Tetucur-S", "copperas", "ferrous
+    sulfate heptahydrate", "ferrous sulfate.7H2O", "green vitriol", "iron vitriol",
+    "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate.7H2O",
+    "iron(II) sulfate.7H2O", "melanterite mineral", "melanterite"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7782-63-0", "kegg.drug:D01725",
+    "metacyc.compound:CPD0-2418", "pubmed:3729890", "reaxys:11322534"], "generalized_empirical_formula":
+    ["Fe.7H2O.O4S"], "has_alternative_id": ["CHEBI:31609"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:75836"], "inchi_key_string": ["SURQXAFEQWPFPV-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["278.013"], "monoisotopic_mass": ["277.96062"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]},
+    "secondary_id": "CHEBI:75836", "secondary_asserted_label": "iron(2+) sulfate heptahydrate",
+    "secondary_index_rows": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer":
+    "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[5]",
+    "preferred_term": "Ca(NO3)2", "primary_id": "CHEBI:64205", "asserted_label": "calcium
+    nitrate", "canonical_label": "calcium nitrate", "label_equal": true, "source_key":
+    "chebi64205", "description": ["Inorganic nitrate salt of calcium."], "synonyms":
+    ["Calcium saltpeter", "Calcium(II) nitrate (1:2)", "Lime nitrate", "Lime saltpeter",
+    "Nitric acid, calcium salt", "Norge saltpeter", "Norway saltpeter", "Norwegian
+    saltpeter", "Saltpeter", "anhydrous calcium nitrate", "calcium dinitrate", "calcium
+    dinitrate"], "form_annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10124-37-5", "pubmed:13495183", "pubmed:13558529", "pubmed:13717848", "pubmed:14651109",
+    "pubmed:14672118", "pubmed:15244341", "pubmed:18201926", "pubmed:19594125", "pubmed:22307899",
+    "pubmed:22360256", "pubmed:23069075", "pubmed:25135170", "pubmed:25868152", "reaxys:3565319",
+    "wikipedia.en:Calcium_nitrate"], "generalized_empirical_formula": ["Ca.2NO3"],
+    "has_alternative_id": ["CHEBI:88273"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:64205"], "inchi_key_string": ["ZCCIPPOKBCJFDN-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1"], "mass": ["164.086"], "monoisotopic_mass":
+    ["163.93823"], "smiles_string": ["O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ca+2]"]},
+    "secondary_id": "CHEBI:64205", "secondary_asserted_label": "calcium nitrate",
+    "secondary_index_rows": [{"label": "Ca(NO3)2", "match_type": "preferred_term",
+    "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path":
+    "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[6]", "preferred_term":
+    "H2SO4", "primary_id": "CHEBI:26836", "asserted_label": "sulfuric acid", "canonical_label":
+    "sulfuric acid", "label_equal": true, "source_key": "chebi26836", "description":
+    ["A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently
+    to a central sulfur atom."], "synonyms": ["Acide sulfurique", "Acido sulfurico",
+    "Acidum sulfuricum", "H2SO4", "Schwefelsaeureloesungen", "Sulfuric acid", "[S(OH)2O2]",
+    "[SO2(OH)2]", "dihydrogen tetraoxosulfate", "dihydrogen tetraoxosulfate", "dihydroxidodioxidosulfur",
+    "dihydroxidodioxidosulfur", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(2-)",
+    "hydrogen tetraoxosulfate(VI)", "hydrogen tetraoxosulfate(VI)", "sulfuric acid",
+    "sulfuric acid", "sulphuric acid", "tetraoxosulfuric acid", "tetraoxosulfuric
+    acid"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7664-93-9",
+    "gmelin:2122", "kegg.compound:C00059", "kegg.drug:D05963", "knapsack:C00007530",
+    "molbase:4", "ppdb:606", "pubmed:13568755", "pubmed:16122922", "pubmed:19397353",
+    "pubmed:22047659", "pubmed:22136045", "pubmed:22204399", "pubmed:22267186", "pubmed:22296037",
+    "pubmed:22364556", "pubmed:22435616", "reaxys:2037554", "wikipedia.en:Sulfuric_acid"],
+    "generalized_empirical_formula": ["H2O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:26836"], "inchi_key_string": ["QAOWNCQODCNURD-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"], "mass": ["98.079"], "monoisotopic_mass":
+    ["97.96738"], "smiles_string": ["[H]OS(=O)(=O)O[H]"]}, "secondary_id": "CHEBI:26836",
+    "secondary_asserted_label": "sulfuric acid", "secondary_index_rows": [{"label":
+    "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term":
+    "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml",
+    "field": "ingredients[0]", "preferred_term": "K2HPO4", "primary_id": "CHEBI:131527",
+    "asserted_label": "dipotassium hydrogen phosphate", "canonical_label": "dipotassium
+    hydrogen phosphate", "label_equal": true, "source_key": "chebi131527", "description":
+    ["A potassium salt that is the dipotassium salt of phosphoric acid."], "synonyms":
+    ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium
+    monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate",
+    "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric
+    acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen
+    phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium
+    phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate",
+    "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197",
+    "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"],
+    "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string":
+    ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"],
+    "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]},
+    "secondary_id": "CHEBI:131527", "secondary_asserted_label": "dipotassium hydrogen
+    phosphate", "secondary_index_rows": [{"label": "K2HPO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path":
+    "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[1]", "preferred_term":
+    "(NH4)2SO4", "primary_id": "CHEBI:62946", "asserted_label": "ammonium sulfate",
+    "canonical_label": "ammonium sulfate", "label_equal": true, "source_key": "chebi62946",
+    "description": ["An inorganic sulfate salt obtained by reaction of sulfuric acid
+    with two equivalents of ammonia. A high-melting (decomposes above 280°C) white
+    solid which is very soluble in water (70.6 g/100 g water at 0°C; 103.8 g/100 g
+    water at 100°C), it is widely used as a fertilizer for alkaline soils."], "synonyms":
+    ["(NH4)2SO4", "ammonium sulfate (2:1)", "ammonium sulphate", "diammonium sulfate",
+    "diazanium sulfate", "diazanium sulfate", "mascagnite", "sulfuric acid ammonium
+    salt (1:2)", "sulfuric acid, diammonium salt", "sulphate of ammonia"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7783-20-2", "kegg.drug:D08853",
+    "metacyc.compound:NH42SO4", "ppdb:36", "pubmed:20556652", "reaxys:11343144", "wikipedia.en:Ammonium_sulfate"],
+    "generalized_empirical_formula": ["2H4N.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:62946"], "inchi_key_string": ["BFNBIHQBYMNNAN-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/2H3N.H2O4S/c;;1-5(2,3)4/h2*1H3;(H2,1,2,3,4)"], "mass": ["132.141"],
+    "monoisotopic_mass": ["132.02048"], "smiles_string": ["O=S(=O)([O-])[O-].[NH4+].[NH4+]"]},
+    "secondary_id": "CHEBI:62946", "secondary_asserted_label": "ammonium sulfate",
+    "secondary_index_rows": [{"label": "(NH4)2SO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path":
+    "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[2]", "preferred_term":
+    "KCl", "primary_id": "CHEBI:32588", "asserted_label": "potassium chloride", "canonical_label":
+    "potassium chloride", "label_equal": true, "source_key": "chebi32588", "description":
+    ["A metal chloride salt with a K(+) counterion."], "synonyms": ["KCl", "Kaliumchlorid",
+    "Kaon-Cl 10", "Klor-con", "Klotrix", "Monopotassium chloride", "[KCl]", "muriate
+    of potash", "potassium chloride", "potassium chloride", "sylvite"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7447-40-7", "drugbank:DB00761",
+    "kegg.drug:D02060", "metacyc.compound:KCL", "molbase:881", "reaxys:3534978", "wikipedia.en:Potassium_Chloride"],
+    "generalized_empirical_formula": ["Cl.K"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:32588"], "inchi_key_string": ["WCUXLLCKKVVCTQ-UHFFFAOYSA-M"], "inchi_string":
+    ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "monoisotopic_mass": ["73.93256"],
+    "smiles_string": ["[Cl-].[K+]"]}, "secondary_id": "CHEBI:32588", "secondary_asserted_label":
+    "potassium chloride", "secondary_index_rows": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer":
+    "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[3]",
+    "preferred_term": "MgSO4 x 7 H2O", "primary_id": "CHEBI:31795", "asserted_label":
+    "magnesium sulfate heptahydrate", "canonical_label": "magnesium sulfate heptahydrate",
+    "label_equal": true, "source_key": "chebi31795", "description": ["A hydrate that
+    is the heptahydrate form of magnesium sulfate."], "synonyms": ["Magnesium sulfate
+    heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium
+    sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water
+    (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric
+    acid magnesium salt heptahydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505",
+    "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222",
+    "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"],
+    "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]},
+    "secondary_id": "CHEBI:31795", "secondary_asserted_label": "magnesium sulfate
+    heptahydrate", "secondary_index_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml",
+    "field": "ingredients[4]", "preferred_term": "FeSO4 x 7 H2O", "primary_id": "CHEBI:75836",
+    "asserted_label": "iron(2+) sulfate heptahydrate", "canonical_label": "iron(2+)
+    sulfate heptahydrate", "label_equal": true, "source_key": "chebi75836", "description":
+    ["A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a
+    source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage
+    treatments; for solid-dosage treatments, the monohydrate is normally used)."],
+    "synonyms": ["FeSO4.7H2O", "Fero-Gradumet", "Tetucur-S", "copperas", "ferrous
+    sulfate heptahydrate", "ferrous sulfate.7H2O", "green vitriol", "iron vitriol",
+    "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate.7H2O",
+    "iron(II) sulfate.7H2O", "melanterite mineral", "melanterite"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7782-63-0", "kegg.drug:D01725",
+    "metacyc.compound:CPD0-2418", "pubmed:3729890", "reaxys:11322534"], "generalized_empirical_formula":
+    ["Fe.7H2O.O4S"], "has_alternative_id": ["CHEBI:31609"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:75836"], "inchi_key_string": ["SURQXAFEQWPFPV-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["278.013"], "monoisotopic_mass": ["277.96062"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]},
+    "secondary_id": "CHEBI:75836", "secondary_asserted_label": "iron(2+) sulfate heptahydrate",
+    "secondary_index_rows": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer":
+    "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[5]",
+    "preferred_term": "Ca(NO3)2", "primary_id": "CHEBI:64205", "asserted_label": "calcium
+    nitrate", "canonical_label": "calcium nitrate", "label_equal": true, "source_key":
+    "chebi64205", "description": ["Inorganic nitrate salt of calcium."], "synonyms":
+    ["Calcium saltpeter", "Calcium(II) nitrate (1:2)", "Lime nitrate", "Lime saltpeter",
+    "Nitric acid, calcium salt", "Norge saltpeter", "Norway saltpeter", "Norwegian
+    saltpeter", "Saltpeter", "anhydrous calcium nitrate", "calcium dinitrate", "calcium
+    dinitrate"], "form_annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10124-37-5", "pubmed:13495183", "pubmed:13558529", "pubmed:13717848", "pubmed:14651109",
+    "pubmed:14672118", "pubmed:15244341", "pubmed:18201926", "pubmed:19594125", "pubmed:22307899",
+    "pubmed:22360256", "pubmed:23069075", "pubmed:25135170", "pubmed:25868152", "reaxys:3565319",
+    "wikipedia.en:Calcium_nitrate"], "generalized_empirical_formula": ["Ca.2NO3"],
+    "has_alternative_id": ["CHEBI:88273"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:64205"], "inchi_key_string": ["ZCCIPPOKBCJFDN-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1"], "mass": ["164.086"], "monoisotopic_mass":
+    ["163.93823"], "smiles_string": ["O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ca+2]"]},
+    "secondary_id": "CHEBI:64205", "secondary_asserted_label": "calcium nitrate",
+    "secondary_index_rows": [{"label": "Ca(NO3)2", "match_type": "preferred_term",
+    "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path":
+    "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[6]", "preferred_term":
+    "H2SO4", "primary_id": "CHEBI:26836", "asserted_label": "sulfuric acid", "canonical_label":
+    "sulfuric acid", "label_equal": true, "source_key": "chebi26836", "description":
+    ["A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently
+    to a central sulfur atom."], "synonyms": ["Acide sulfurique", "Acido sulfurico",
+    "Acidum sulfuricum", "H2SO4", "Schwefelsaeureloesungen", "Sulfuric acid", "[S(OH)2O2]",
+    "[SO2(OH)2]", "dihydrogen tetraoxosulfate", "dihydrogen tetraoxosulfate", "dihydroxidodioxidosulfur",
+    "dihydroxidodioxidosulfur", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(2-)",
+    "hydrogen tetraoxosulfate(VI)", "hydrogen tetraoxosulfate(VI)", "sulfuric acid",
+    "sulfuric acid", "sulphuric acid", "tetraoxosulfuric acid", "tetraoxosulfuric
+    acid"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7664-93-9",
+    "gmelin:2122", "kegg.compound:C00059", "kegg.drug:D05963", "knapsack:C00007530",
+    "molbase:4", "ppdb:606", "pubmed:13568755", "pubmed:16122922", "pubmed:19397353",
+    "pubmed:22047659", "pubmed:22136045", "pubmed:22204399", "pubmed:22267186", "pubmed:22296037",
+    "pubmed:22364556", "pubmed:22435616", "reaxys:2037554", "wikipedia.en:Sulfuric_acid"],
+    "generalized_empirical_formula": ["H2O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:26836"], "inchi_key_string": ["QAOWNCQODCNURD-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"], "mass": ["98.079"], "monoisotopic_mass":
+    ["97.96738"], "smiles_string": ["[H]OS(=O)(=O)O[H]"]}, "secondary_id": "CHEBI:26836",
+    "secondary_asserted_label": "sulfuric acid", "secondary_index_rows": [{"label":
+    "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term":
+    "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}]}'
+- evidence_id: envo00002186
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00002186
+  locator: '$._embedded.terms[0]: obo_id, label, obsolete flag and annotation'
+  accessed_at: '2026-10-21T09:00:12.131146Z'
+  support: supports
+  summary: ENVO:00002186 is nonobsolete contaminated water, matching the asserted
+    canonical label. This broader term alone does not establish all acid-mine-drainage
+    details or a new organism/medium relationship.
+  snapshot_sha256: c6ae58fddd7f0e77735df960d1b575a9afec4e1f027eae26652473db6950dbb1
+- evidence_id: sterilization-default
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Page-wide default before Medium 92 table
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: The collection supplies a source-specific default cycle unless otherwise
+    stated; no exception appears for this recipe.
+  quote: Unless otherwise stated, sterilize media by autoclaving at 121°C for 15 min.
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: source-ph
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92
+  locator: Sentence following Medium 92 composition table
+  accessed_at: '2026-10-21T09:00:12.131955Z'
+  support: supports
+  summary: Source pH is the preparation target retained in both records.
+  quote: Adjust pH to 3.0.
+  snapshot_sha256: 3d608a40d0c3ac9e54aef695416957a54497252d2da61c1b12a481b88455bc2d
+- evidence_id: backfill
+  kind: record_content
+  reference: scripts/backfill_source_environment.py
+  locator: collect_env_links; _collect_culturemech_ids; merge_into_recipe
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: Current code recursively collects culturemech_id links from a CommunityMech
+    document and appends its environment descriptor, deduplicating by term/name. It
+    does not establish exact formulation equivalence or transfer primary experimental
+    evidence. Code inspection explains current semantics, not a replay of the historical
+    event.
+- evidence_id: environment-schema
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: MediaRecipe.source_environment; SourceEnvironmentDescriptor
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: The field describes the environment from which target organisms originate
+    or for which the medium is designed, with additional environmental context in
+    notes. Environmental conditions are not automatically the medium preparation/incubation
+    conditions.
+- evidence_id: community_copper_biomining_heap_leach
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Copper_Biomining_Heap_Leach.yaml
+  locator: '$.environment_term; $.growth_media[0]: name, composition, culturemech_id,
+    pH, preparation_notes and evidence'
+  accessed_at: '2026-10-21T09:01:16.748065Z'
+  support: context_only
+  summary: Exact public upstream environment notes and explicit CultureMech link were
+    inspected. The linked medium includes community-curated modified recipe rows and
+    rows imported from CultureMech; those rows are not independent validation of JCM
+    92.
+  snapshot_sha256: 5c620e46ecbe040463098d40373531e88b5b2bc12f08bb57b4d926b3537a0c4e
+- evidence_id: community_ferroplasma_leptospirillum_syntrophy
+  kind: database
+  reference: https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Ferroplasma_Leptospirillum_Syntrophy.yaml
+  locator: '$.environment_term; $.growth_media[0]: name, composition, culturemech_id,
+    pH, preparation_notes and evidence'
+  accessed_at: '2026-10-21T09:02:30.816822Z'
+  support: context_only
+  summary: Exact public upstream environment notes and explicit CultureMech link were
+    inspected. The linked medium includes community-curated modified recipe rows and
+    rows imported from CultureMech; those rows are not independent validation of JCM
+    92.
+  snapshot_sha256: 08e60d74c495dfee5ec77a2a8ed63da4da51b1ebe1adb527350591d0e5b6340b
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _normalize_unit;
+    _parse_preparation_steps
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: Current importer uses main-recipe rows, skips water, prefers g_l and otherwise
+    maps ml to ML_PER_L. Stock detection recognizes solution IDs or percent attributes;
+    the direct-compound path does not retain this 10 N attribute. It collects provider
+    preparation text, which here lacks the primary collection-wide default. Current
+    code therefore does not justify re-running blindly as a full fix; it was not executed.
+- evidence_id: exporter
+  kind: record_content
+  reference: src/culturemech/export/kgx_export.py
+  locator: ingredient_to_edge; _quantity; _resolved_ingredient_id
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: context_only
+  summary: Exporter resolves ingredient identity and carries stored numeric values/units
+    into ingredient edges; it does not correct acid-unit errors or establish source
+    volumes. No export was run and no edge count or new graph match is claimed.
+- evidence_id: history
+  kind: record_content
+  reference: data/merge_yaml/merged/9K_MEDIUM.yaml
+  locator: Every timestamp in target, owner and explicitly listed contextual dependencies
+  accessed_at: '2026-10-21T09:20:47Z'
+  support: supports
+  summary: '[{"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[0].timestamp",
+    "value": "2026-01-26T17:53:15.716491Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[1].timestamp",
+    "value": "2026-02-06T05:10:41.566544Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[2].timestamp",
+    "value": "2026-03-13T06:19:19.139420Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[3].timestamp",
+    "value": "2026-03-17T06:30:32.000000Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[4].timestamp",
+    "value": "2026-03-17T19:45:33.055479+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[5].timestamp",
+    "value": "2026-05-24T04:38:33.227537+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[6].timestamp",
+    "value": "2026-06-05T07:40:15.983714+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[7].timestamp",
+    "value": "2026-06-08T23:19:27.194785+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[8].timestamp",
+    "value": "2026-06-10T07:46:42.591874+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "curation_history[9].timestamp",
+    "value": "2026-08-06T03:04:34.255529+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[0].timestamp",
+    "value": "2026-01-26T17:53:15.716491Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[1].timestamp",
+    "value": "2026-02-06T05:10:41.566544Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[2].timestamp",
+    "value": "2026-03-13T06:19:19.139420Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[3].timestamp",
+    "value": "2026-03-17T06:30:32.000000Z", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[4].timestamp",
+    "value": "2026-03-17T19:45:33.055479+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[5].timestamp",
+    "value": "2026-05-24T04:38:33.227537+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[6].timestamp",
+    "value": "2026-06-05T07:40:15.983714+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[7].timestamp",
+    "value": "2026-06-08T23:19:27.194785+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[8].timestamp",
+    "value": "2026-06-10T07:46:42.591874+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}, {"path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "curation_history[9].timestamp",
+    "value": "2026-10-07T14:33:27.670564+00:00", "valid_ISO_datetime": true, "timezone_aware":
+    true}]'
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: Schema, strict and reference checks passed initially. Term validation initially
+    stopped before completion because ENVO cache download failed DNS resolution, then
+    passed in the separately authorized network-enabled retry. This is a recovered
+    environment limitation, not a demonstrated invalid term or an erased failure.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+  - terms-network-retry
+- assessment_id: identity
+  area: identity
+  topic: JCM accession, provider accession and generated ownership
+  outcome: supported
+  summary: Stable CultureMech ID, exact owner merge source, original_name 9K MEDIUM
+    and mediadive.medium:J92 identify the exact JCM 92 catalogue formulation. MediaDive
+    is the dataset provider; JCM is the recipe collection. The source does not license
+    substitution with generic or modified 9K recipes.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm92
+  - mediadiveJ92api
+- assessment_id: amounts
+  area: quantity
+  topic: All seven direct ingredients, acid-stock dose and source water
+  outcome: concern
+  summary: Every current ingredient amount in both layers is itemized with a native
+    decision, exact quote and locator. Six reported mass rates are distinguished from
+    primary source masses and the provider 1001 mL normalization. Three pass the guarded
+    arithmetic test, and three have small last-digit conflicts. The acid is a substantive
+    unit/stock-strength error. Source water belongs in preparation context. No stock
+    references or inline solution compositions are asserted, and no new stock ID is
+    fabricated.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm92
+  - mediadiveJ92api
+  - provider-row-1
+  - provider-row-2
+  - provider-row-3
+  - provider-row-4
+  - provider-row-5
+  - provider-row-6
+  - provider-row-7
+  - provider-row-8
+  - primary-row-1
+  - primary-row-2
+  - primary-row-3
+  - primary-row-4
+  - primary-row-5
+  - primary-row-6
+  - primary-row-7
+  - primary-row-8
+  details: '{"inventory": [{"layer": "target", "field_path": "ingredients[0].concentration",
+    "name": "K2HPO4", "current": {"value": "0.499501", "unit": "G_PER_L"}, "decision":
+    "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote":
+    "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.499501,\n                        \"mmol_l\": 2.86779,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[0]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "K2HPO4 0.5 g", "primary_locator": "Medium 92 composition row
+    1", "source_mass": {"amount": 0.5, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l":
+    "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance":
+    "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g ×
+    1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider
+    reports 0.499501 g/L."}, "rationale": "Literal reported rate is preserved, but
+    it marginally exceeds the allowed last-digit rounding interval for the provider
+    mass/volume arithmetic.", "evidence_ids": ["provider-row-1", "primary-row-1",
+    "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[0].concentration",
+    "name": "K2HPO4", "current": {"value": "0.499501", "unit": "G_PER_L"}, "decision":
+    "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote":
+    "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.499501,\n                        \"mmol_l\": 2.86779,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[0]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "K2HPO4 0.5 g", "primary_locator": "Medium 92 composition row
+    1", "source_mass": {"amount": 0.5, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l":
+    "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance":
+    "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g ×
+    1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider
+    reports 0.499501 g/L."}, "rationale": "Literal reported rate is preserved, but
+    it marginally exceeds the allowed last-digit rounding interval for the provider
+    mass/volume arithmetic.", "evidence_ids": ["provider-row-1", "primary-row-1",
+    "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[1].concentration",
+    "name": "(NH4)2SO4", "current": {"value": "2.997", "unit": "G_PER_L"}, "decision":
+    "evidence_only", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92",
+    "source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"(NH4)2SO4\",\n                        \"compound_id\": 27,\n                        \"amount\":
+    3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2.997,\n                        \"mmol_l\": 22.6805,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[1]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "(NH4)2SO4 3.0 g", "primary_locator": "Medium 92 composition
+    row 2", "source_mass": {"amount": 3, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "2.997002997002997002997002997", "reported_g_per_l": "2.997", "absolute_difference_g_per_l":
+    "0.000002997002997002997002997", "source_quantum": "0.001", "guarded_rounding_tolerance":
+    "0.00001498501498501498501498501498", "passes_current_writer_rounding_guard":
+    true, "calculation": "3 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 2.997002997002997002997002997
+    g/L; provider reports 2.997 g/L."}, "rationale": "Exact provider rate and scoped
+    arithmetic are supported; claim-level evidence needs adding or propagation.",
+    "evidence_ids": ["provider-row-2", "primary-row-2", "mediadiveJ92api"]}, {"layer":
+    "owner", "field_path": "ingredients[1].concentration", "name": "(NH4)2SO4", "current":
+    {"value": "2.997", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"(NH4)2SO4\",\n                        \"compound_id\":
+    27,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.997,\n                        \"mmol_l\":
+    22.6805,\n                        \"optional\": 0\n                    }", "source_locator":
+    "$.data.solutions[0].recipe[1]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "(NH4)2SO4 3.0 g", "primary_locator": "Medium 92 composition
+    row 2", "source_mass": {"amount": 3, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "2.997002997002997002997002997", "reported_g_per_l": "2.997", "absolute_difference_g_per_l":
+    "0.000002997002997002997002997", "source_quantum": "0.001", "guarded_rounding_tolerance":
+    "0.00001498501498501498501498501498", "passes_current_writer_rounding_guard":
+    true, "calculation": "3 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 2.997002997002997002997002997
+    g/L; provider reports 2.997 g/L."}, "rationale": "Exact provider rate and scoped
+    arithmetic are supported; attached owner evidence is verified against identical
+    response bytes.", "evidence_ids": ["provider-row-2", "primary-row-2", "mediadiveJ92api"]},
+    {"layer": "target", "field_path": "ingredients[2].concentration", "name": "KCl",
+    "current": {"value": "0.0999001", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote":
+    "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0999001,\n                        \"mmol_l\": 1.34004,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[2]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "KCl 0.1 g", "primary_locator": "Medium 92 composition row 3",
+    "source_mass": {"amount": 0.1, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "0.09990009990009990009990009990", "reported_g_per_l": "0.0999001", "absolute_difference_g_per_l":
+    "9.990009990009990010E-11", "source_quantum": "1E-7", "guarded_rounding_tolerance":
+    "5E-8", "passes_current_writer_rounding_guard": true, "calculation": "0.1 g ×
+    1 g/g ÷ (1001 mL / 1000 mL per L) = 0.09990009990009990009990009990 g/L; provider
+    reports 0.0999001 g/L."}, "rationale": "Exact provider rate and scoped arithmetic
+    are supported; claim-level evidence needs adding or propagation.", "evidence_ids":
+    ["provider-row-3", "primary-row-3", "mediadiveJ92api"]}, {"layer": "owner", "field_path":
+    "ingredients[2].concentration", "name": "KCl", "current": {"value": "0.0999001",
+    "unit": "G_PER_L"}, "decision": "verified", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92",
+    "source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0999001,\n                        \"mmol_l\": 1.34004,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[2]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "KCl 0.1 g", "primary_locator": "Medium 92 composition row 3",
+    "source_mass": {"amount": 0.1, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "0.09990009990009990009990009990", "reported_g_per_l": "0.0999001", "absolute_difference_g_per_l":
+    "9.990009990009990010E-11", "source_quantum": "1E-7", "guarded_rounding_tolerance":
+    "5E-8", "passes_current_writer_rounding_guard": true, "calculation": "0.1 g ×
+    1 g/g ÷ (1001 mL / 1000 mL per L) = 0.09990009990009990009990009990 g/L; provider
+    reports 0.0999001 g/L."}, "rationale": "Exact provider rate and scoped arithmetic
+    are supported; attached owner evidence is verified against identical response
+    bytes.", "evidence_ids": ["provider-row-3", "primary-row-3", "mediadiveJ92api"]},
+    {"layer": "target", "field_path": "ingredients[3].concentration", "name": "MgSO4
+    x 7 H2O", "current": {"value": "0.499501", "unit": "G_PER_L"}, "decision": "conflict",
+    "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote":
+    "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.499501,\n                        \"mmol_l\": 2.02657,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[3]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "MgSO4·7H2O 0.5 g", "primary_locator": "Medium 92 composition
+    row 4", "source_mass": {"amount": 0.5, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l":
+    "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance":
+    "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g ×
+    1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider
+    reports 0.499501 g/L."}, "rationale": "Literal reported rate is preserved, but
+    it marginally exceeds the allowed last-digit rounding interval for the provider
+    mass/volume arithmetic.", "evidence_ids": ["provider-row-4", "primary-row-4",
+    "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[3].concentration",
+    "name": "MgSO4 x 7 H2O", "current": {"value": "0.499501", "unit": "G_PER_L"},
+    "decision": "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92",
+    "source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.499501,\n                        \"mmol_l\": 2.02657,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[3]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "MgSO4·7H2O 0.5 g", "primary_locator": "Medium 92 composition
+    row 4", "source_mass": {"amount": 0.5, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "0.4995004995004995004995004995", "reported_g_per_l": "0.499501", "absolute_difference_g_per_l":
+    "5.004995004995004995005E-7", "source_quantum": "0.000001", "guarded_rounding_tolerance":
+    "5E-7", "passes_current_writer_rounding_guard": false, "calculation": "0.5 g ×
+    1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995 g/L; provider
+    reports 0.499501 g/L."}, "rationale": "Literal reported rate is preserved, but
+    it marginally exceeds the allowed last-digit rounding interval for the provider
+    mass/volume arithmetic.", "evidence_ids": ["provider-row-4", "primary-row-4",
+    "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[4].concentration",
+    "name": "FeSO4 x 7 H2O", "current": {"value": "49.9501", "unit": "G_PER_L"}, "decision":
+    "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote":
+    "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\":
+    50,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    49.9501,\n                        \"mmol_l\": 179.667,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[4]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "FeSO4·7H2O 50.0 g", "primary_locator": "Medium 92 composition
+    row 5", "source_mass": {"amount": 50, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "49.95004995004995004995004995", "reported_g_per_l": "49.9501", "absolute_difference_g_per_l":
+    "0.00005004995004995004995005", "source_quantum": "0.0001", "guarded_rounding_tolerance":
+    "0.00005", "passes_current_writer_rounding_guard": false, "calculation": "50 g
+    × 1 g/g ÷ (1001 mL / 1000 mL per L) = 49.95004995004995004995004995 g/L; provider
+    reports 49.9501 g/L."}, "rationale": "Literal reported rate is preserved, but
+    it marginally exceeds the allowed last-digit rounding interval for the provider
+    mass/volume arithmetic.", "evidence_ids": ["provider-row-5", "primary-row-5",
+    "mediadiveJ92api"]}, {"layer": "owner", "field_path": "ingredients[4].concentration",
+    "name": "FeSO4 x 7 H2O", "current": {"value": "49.9501", "unit": "G_PER_L"}, "decision":
+    "conflict", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote":
+    "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\":
+    50,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    49.9501,\n                        \"mmol_l\": 179.667,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[4]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "FeSO4·7H2O 50.0 g", "primary_locator": "Medium 92 composition
+    row 5", "source_mass": {"amount": 50, "unit": "g"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "49.95004995004995004995004995", "reported_g_per_l": "49.9501", "absolute_difference_g_per_l":
+    "0.00005004995004995004995005", "source_quantum": "0.0001", "guarded_rounding_tolerance":
+    "0.00005", "passes_current_writer_rounding_guard": false, "calculation": "50 g
+    × 1 g/g ÷ (1001 mL / 1000 mL per L) = 49.95004995004995004995004995 g/L; provider
+    reports 49.9501 g/L."}, "rationale": "Literal reported rate is preserved, but
+    it marginally exceeds the allowed last-digit rounding interval for the provider
+    mass/volume arithmetic.", "evidence_ids": ["provider-row-5", "primary-row-5",
+    "mediadiveJ92api"]}, {"layer": "target", "field_path": "ingredients[5].concentration",
+    "name": "Ca(NO3)2", "current": {"value": "0.00999001", "unit": "G_PER_L"}, "decision":
+    "evidence_only", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92",
+    "source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Ca(NO3)2\",\n                        \"compound_id\": 266,\n                        \"amount\":
+    10,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.00999001,\n                        \"mmol_l\": 0.0608813,\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[5]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "Ca(NO3)2 10.0 mg", "primary_locator": "Medium 92 composition
+    row 6", "source_mass": {"amount": 10, "unit": "mg"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "0.009990009990009990009990009990", "reported_g_per_l": "0.00999001", "absolute_difference_g_per_l":
+    "9.990009990009990010E-12", "source_quantum": "1E-8", "guarded_rounding_tolerance":
+    "5E-9", "passes_current_writer_rounding_guard": true, "calculation": "10 mg ×
+    0.001 g/mg ÷ (1001 mL / 1000 mL per L) = 0.009990009990009990009990009990 g/L;
+    provider reports 0.00999001 g/L."}, "rationale": "Exact provider rate and scoped
+    arithmetic are supported; claim-level evidence needs adding or propagation.",
+    "evidence_ids": ["provider-row-6", "primary-row-6", "mediadiveJ92api"]}, {"layer":
+    "owner", "field_path": "ingredients[5].concentration", "name": "Ca(NO3)2", "current":
+    {"value": "0.00999001", "unit": "G_PER_L"}, "decision": "verified", "source_reference":
+    "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Ca(NO3)2\",\n                        \"compound_id\":
+    266,\n                        \"amount\": 10,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.00999001,\n                        \"mmol_l\":
+    0.0608813,\n                        \"optional\": 0\n                    }", "source_locator":
+    "$.data.solutions[0].recipe[5]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "Ca(NO3)2 10.0 mg", "primary_locator": "Medium 92 composition
+    row 6", "source_mass": {"amount": 10, "unit": "mg"}, "normalization_basis": "Provider-declared
+    1001 mL only; not an independently measured final volume.", "arithmetic": {"computed_g_per_l":
+    "0.009990009990009990009990009990", "reported_g_per_l": "0.00999001", "absolute_difference_g_per_l":
+    "9.990009990009990010E-12", "source_quantum": "1E-8", "guarded_rounding_tolerance":
+    "5E-9", "passes_current_writer_rounding_guard": true, "calculation": "10 mg ×
+    0.001 g/mg ÷ (1001 mL / 1000 mL per L) = 0.009990009990009990009990009990 g/L;
+    provider reports 0.00999001 g/L."}, "rationale": "Exact provider rate and scoped
+    arithmetic are supported; attached owner evidence is verified against identical
+    response bytes.", "evidence_ids": ["provider-row-6", "primary-row-6", "mediadiveJ92api"]},
+    {"layer": "target", "field_path": "ingredients[6].concentration", "name": "H2SO4",
+    "current": {"value": "1", "unit": "G_PER_L"}, "decision": "correct", "source_reference":
+    "https://mediadive.dsmz.de/rest/medium/J92", "source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"H2SO4\",\n                        \"compound_id\":
+    122,\n                        \"attribute\": \"10 N\",\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[6]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "10 N H2SO4 1.0 ml", "primary_locator": "Medium 92 composition
+    row 7", "proposed_representation": "1 mL of 10 N H2SO4 stock per listed source
+    batch, with stock strength and dose retained separately.", "arithmetic": "No conversion
+    from mL to g/L. Density and a neat-acid mass are not assumed.", "rationale": "Source
+    explicitly supplies stock strength and liquid dose, not a 1 g/L acid concentration.",
+    "evidence_ids": ["provider-row-7", "primary-row-7"]}, {"layer": "owner", "field_path":
+    "ingredients[6].concentration", "name": "H2SO4", "current": {"value": "1", "unit":
+    "G_PER_L"}, "decision": "correct", "source_reference": "https://mediadive.dsmz.de/rest/medium/J92",
+    "source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"H2SO4\",\n                        \"compound_id\": 122,\n                        \"attribute\":
+    \"10 N\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "source_locator":
+    "$.data.solutions[0].recipe[6]", "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "10 N H2SO4 1.0 ml", "primary_locator": "Medium 92 composition
+    row 7", "proposed_representation": "1 mL of 10 N H2SO4 stock per listed source
+    batch, with stock strength and dose retained separately.", "arithmetic": "No conversion
+    from mL to g/L. Density and a neat-acid mass are not assumed.", "rationale": "Source
+    explicitly supplies stock strength and liquid dose, not a 1 g/L acid concentration.",
+    "evidence_ids": ["provider-row-7", "primary-row-7"]}, {"layer": "source-only preparation
+    context for both target and owner", "field_path": "preparation_steps (source water
+    basis absent)", "name": "Distilled water", "current": null, "decision": "add",
+    "source_reference": "https://mediadive.dsmz.de/rest/medium/J92", "source_quote":
+    "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "source_locator": "$.data.solutions[0].recipe[7]",
+    "primary_reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=92",
+    "primary_quote": "Distilled water 1.0 L", "primary_locator": "Medium 92 composition
+    row 8", "proposed_representation": "Preserve the stated 1 L source water as preparation/batch
+    context; do not infer that it alone establishes measured final volume.", "arithmetic":
+    "1 L × 1000 mL/L = 1000 mL; no conversion to mass.", "evidence_ids": ["provider-row-8",
+    "primary-row-8"]}], "precision_conflicts": [{"ingredient_index": 0, "name": "K2HPO4",
+    "computed_g_per_l": "0.4995004995004995004995004995", "reported_g_per_l": "0.499501",
+    "absolute_difference_g_per_l": "5.004995004995004995005E-7", "source_quantum":
+    "0.000001", "guarded_rounding_tolerance": "5E-7", "passes_current_writer_rounding_guard":
+    false, "calculation": "0.5 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995
+    g/L; provider reports 0.499501 g/L."}, {"ingredient_index": 3, "name": "MgSO4
+    x 7 H2O", "computed_g_per_l": "0.4995004995004995004995004995", "reported_g_per_l":
+    "0.499501", "absolute_difference_g_per_l": "5.004995004995004995005E-7", "source_quantum":
+    "0.000001", "guarded_rounding_tolerance": "5E-7", "passes_current_writer_rounding_guard":
+    false, "calculation": "0.5 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 0.4995004995004995004995004995
+    g/L; provider reports 0.499501 g/L."}, {"ingredient_index": 4, "name": "FeSO4
+    x 7 H2O", "computed_g_per_l": "49.95004995004995004995004995", "reported_g_per_l":
+    "49.9501", "absolute_difference_g_per_l": "0.00005004995004995004995005", "source_quantum":
+    "0.0001", "guarded_rounding_tolerance": "0.00005", "passes_current_writer_rounding_guard":
+    false, "calculation": "50 g × 1 g/g ÷ (1001 mL / 1000 mL per L) = 49.95004995004995004995004995
+    g/L; provider reports 49.9501 g/L."}], "verified_historical_owner_evidence": [{"layer":
+    "owner", "field_path": "ingredients[1].evidence", "historical_source_sha256":
+    "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "historical_accessed_at":
+    "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response":
+    true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}, {"layer": "owner",
+    "field_path": "ingredients[2].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a",
+    "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response":
+    true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}, {"layer": "owner",
+    "field_path": "ingredients[5].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a",
+    "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response":
+    true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}]}'
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary IDs, canonical labels and current secondary keys
+  outcome: supported
+  summary: The generated target has 7/7 primary ontology links and 7/7 verified secondary
+    links. The owner has 7/7 primary ontology links, including 7 CHEBI instances,
+    and 7/7 verified secondary links. 0 owner primary labels differ from canonical
+    labels. These are separate layer-specific linkage denominators on a 0–100 scale,
+    not scientific accuracy scores. No secondary denominator of zero is invented when
+    no keys are asserted.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - mim
+  - chebi131527
+  - chebi62946
+  - chebi32588
+  - chebi31795
+  - chebi75836
+  - chebi64205
+  - chebi26836
+  details: '{"counts": {"target": {"ingredient_instances": 7, "primary_ontology_instances":
+    7, "primary_CHEBI_instances": 7, "canonical_primary_label_instances": 7, "secondary_asserted_instances":
+    7, "secondary_verified_instances": 7, "primary_ontology_percent": 100.0, "primary_CHEBI_percent":
+    100.0, "secondary_verified_percent": 100.0}, "owner": {"ingredient_instances":
+    7, "primary_ontology_instances": 7, "primary_CHEBI_instances": 7, "canonical_primary_label_instances":
+    7, "secondary_asserted_instances": 7, "secondary_verified_instances": 7, "primary_ontology_percent":
+    100.0, "primary_CHEBI_percent": 100.0, "secondary_verified_percent": 100.0}},
+    "label_drift": [], "instances": [{"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml",
+    "field": "ingredients[0]", "preferred_term": "K2HPO4", "primary_id": "CHEBI:131527",
+    "asserted_label": "dipotassium hydrogen phosphate", "canonical_label": "dipotassium
+    hydrogen phosphate", "label_equal": true, "source_key": "chebi131527", "description":
+    ["A potassium salt that is the dipotassium salt of phosphoric acid."], "synonyms":
+    ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium
+    monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate",
+    "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric
+    acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen
+    phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium
+    phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate",
+    "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197",
+    "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"],
+    "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string":
+    ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"],
+    "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]},
+    "secondary_id": "CHEBI:131527", "secondary_asserted_label": "dipotassium hydrogen
+    phosphate", "secondary_index_rows": [{"label": "K2HPO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path":
+    "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[1]", "preferred_term":
+    "(NH4)2SO4", "primary_id": "CHEBI:62946", "asserted_label": "ammonium sulfate",
+    "canonical_label": "ammonium sulfate", "label_equal": true, "source_key": "chebi62946",
+    "description": ["An inorganic sulfate salt obtained by reaction of sulfuric acid
+    with two equivalents of ammonia. A high-melting (decomposes above 280°C) white
+    solid which is very soluble in water (70.6 g/100 g water at 0°C; 103.8 g/100 g
+    water at 100°C), it is widely used as a fertilizer for alkaline soils."], "synonyms":
+    ["(NH4)2SO4", "ammonium sulfate (2:1)", "ammonium sulphate", "diammonium sulfate",
+    "diazanium sulfate", "diazanium sulfate", "mascagnite", "sulfuric acid ammonium
+    salt (1:2)", "sulfuric acid, diammonium salt", "sulphate of ammonia"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7783-20-2", "kegg.drug:D08853",
+    "metacyc.compound:NH42SO4", "ppdb:36", "pubmed:20556652", "reaxys:11343144", "wikipedia.en:Ammonium_sulfate"],
+    "generalized_empirical_formula": ["2H4N.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:62946"], "inchi_key_string": ["BFNBIHQBYMNNAN-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/2H3N.H2O4S/c;;1-5(2,3)4/h2*1H3;(H2,1,2,3,4)"], "mass": ["132.141"],
+    "monoisotopic_mass": ["132.02048"], "smiles_string": ["O=S(=O)([O-])[O-].[NH4+].[NH4+]"]},
+    "secondary_id": "CHEBI:62946", "secondary_asserted_label": "ammonium sulfate",
+    "secondary_index_rows": [{"label": "(NH4)2SO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path":
+    "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[2]", "preferred_term":
+    "KCl", "primary_id": "CHEBI:32588", "asserted_label": "potassium chloride", "canonical_label":
+    "potassium chloride", "label_equal": true, "source_key": "chebi32588", "description":
+    ["A metal chloride salt with a K(+) counterion."], "synonyms": ["KCl", "Kaliumchlorid",
+    "Kaon-Cl 10", "Klor-con", "Klotrix", "Monopotassium chloride", "[KCl]", "muriate
+    of potash", "potassium chloride", "potassium chloride", "sylvite"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7447-40-7", "drugbank:DB00761",
+    "kegg.drug:D02060", "metacyc.compound:KCL", "molbase:881", "reaxys:3534978", "wikipedia.en:Potassium_Chloride"],
+    "generalized_empirical_formula": ["Cl.K"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:32588"], "inchi_key_string": ["WCUXLLCKKVVCTQ-UHFFFAOYSA-M"], "inchi_string":
+    ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "monoisotopic_mass": ["73.93256"],
+    "smiles_string": ["[Cl-].[K+]"]}, "secondary_id": "CHEBI:32588", "secondary_asserted_label":
+    "potassium chloride", "secondary_index_rows": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer":
+    "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[3]",
+    "preferred_term": "MgSO4 x 7 H2O", "primary_id": "CHEBI:31795", "asserted_label":
+    "magnesium sulfate heptahydrate", "canonical_label": "magnesium sulfate heptahydrate",
+    "label_equal": true, "source_key": "chebi31795", "description": ["A hydrate that
+    is the heptahydrate form of magnesium sulfate."], "synonyms": ["Magnesium sulfate
+    heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium
+    sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water
+    (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric
+    acid magnesium salt heptahydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505",
+    "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222",
+    "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"],
+    "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]},
+    "secondary_id": "CHEBI:31795", "secondary_asserted_label": "magnesium sulfate
+    heptahydrate", "secondary_index_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml",
+    "field": "ingredients[4]", "preferred_term": "FeSO4 x 7 H2O", "primary_id": "CHEBI:75836",
+    "asserted_label": "iron(2+) sulfate heptahydrate", "canonical_label": "iron(2+)
+    sulfate heptahydrate", "label_equal": true, "source_key": "chebi75836", "description":
+    ["A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a
+    source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage
+    treatments; for solid-dosage treatments, the monohydrate is normally used)."],
+    "synonyms": ["FeSO4.7H2O", "Fero-Gradumet", "Tetucur-S", "copperas", "ferrous
+    sulfate heptahydrate", "ferrous sulfate.7H2O", "green vitriol", "iron vitriol",
+    "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate.7H2O",
+    "iron(II) sulfate.7H2O", "melanterite mineral", "melanterite"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7782-63-0", "kegg.drug:D01725",
+    "metacyc.compound:CPD0-2418", "pubmed:3729890", "reaxys:11322534"], "generalized_empirical_formula":
+    ["Fe.7H2O.O4S"], "has_alternative_id": ["CHEBI:31609"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:75836"], "inchi_key_string": ["SURQXAFEQWPFPV-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["278.013"], "monoisotopic_mass": ["277.96062"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]},
+    "secondary_id": "CHEBI:75836", "secondary_asserted_label": "iron(2+) sulfate heptahydrate",
+    "secondary_index_rows": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer":
+    "target", "path": "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[5]",
+    "preferred_term": "Ca(NO3)2", "primary_id": "CHEBI:64205", "asserted_label": "calcium
+    nitrate", "canonical_label": "calcium nitrate", "label_equal": true, "source_key":
+    "chebi64205", "description": ["Inorganic nitrate salt of calcium."], "synonyms":
+    ["Calcium saltpeter", "Calcium(II) nitrate (1:2)", "Lime nitrate", "Lime saltpeter",
+    "Nitric acid, calcium salt", "Norge saltpeter", "Norway saltpeter", "Norwegian
+    saltpeter", "Saltpeter", "anhydrous calcium nitrate", "calcium dinitrate", "calcium
+    dinitrate"], "form_annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10124-37-5", "pubmed:13495183", "pubmed:13558529", "pubmed:13717848", "pubmed:14651109",
+    "pubmed:14672118", "pubmed:15244341", "pubmed:18201926", "pubmed:19594125", "pubmed:22307899",
+    "pubmed:22360256", "pubmed:23069075", "pubmed:25135170", "pubmed:25868152", "reaxys:3565319",
+    "wikipedia.en:Calcium_nitrate"], "generalized_empirical_formula": ["Ca.2NO3"],
+    "has_alternative_id": ["CHEBI:88273"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:64205"], "inchi_key_string": ["ZCCIPPOKBCJFDN-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1"], "mass": ["164.086"], "monoisotopic_mass":
+    ["163.93823"], "smiles_string": ["O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ca+2]"]},
+    "secondary_id": "CHEBI:64205", "secondary_asserted_label": "calcium nitrate",
+    "secondary_index_rows": [{"label": "Ca(NO3)2", "match_type": "preferred_term",
+    "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "target", "path":
+    "data/merge_yaml/merged/9K_MEDIUM.yaml", "field": "ingredients[6]", "preferred_term":
+    "H2SO4", "primary_id": "CHEBI:26836", "asserted_label": "sulfuric acid", "canonical_label":
+    "sulfuric acid", "label_equal": true, "source_key": "chebi26836", "description":
+    ["A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently
+    to a central sulfur atom."], "synonyms": ["Acide sulfurique", "Acido sulfurico",
+    "Acidum sulfuricum", "H2SO4", "Schwefelsaeureloesungen", "Sulfuric acid", "[S(OH)2O2]",
+    "[SO2(OH)2]", "dihydrogen tetraoxosulfate", "dihydrogen tetraoxosulfate", "dihydroxidodioxidosulfur",
+    "dihydroxidodioxidosulfur", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(2-)",
+    "hydrogen tetraoxosulfate(VI)", "hydrogen tetraoxosulfate(VI)", "sulfuric acid",
+    "sulfuric acid", "sulphuric acid", "tetraoxosulfuric acid", "tetraoxosulfuric
+    acid"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7664-93-9",
+    "gmelin:2122", "kegg.compound:C00059", "kegg.drug:D05963", "knapsack:C00007530",
+    "molbase:4", "ppdb:606", "pubmed:13568755", "pubmed:16122922", "pubmed:19397353",
+    "pubmed:22047659", "pubmed:22136045", "pubmed:22204399", "pubmed:22267186", "pubmed:22296037",
+    "pubmed:22364556", "pubmed:22435616", "reaxys:2037554", "wikipedia.en:Sulfuric_acid"],
+    "generalized_empirical_formula": ["H2O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:26836"], "inchi_key_string": ["QAOWNCQODCNURD-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"], "mass": ["98.079"], "monoisotopic_mass":
+    ["97.96738"], "smiles_string": ["[H]OS(=O)(=O)O[H]"]}, "secondary_id": "CHEBI:26836",
+    "secondary_asserted_label": "sulfuric acid", "secondary_index_rows": [{"label":
+    "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term":
+    "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml",
+    "field": "ingredients[0]", "preferred_term": "K2HPO4", "primary_id": "CHEBI:131527",
+    "asserted_label": "dipotassium hydrogen phosphate", "canonical_label": "dipotassium
+    hydrogen phosphate", "label_equal": true, "source_key": "chebi131527", "description":
+    ["A potassium salt that is the dipotassium salt of phosphoric acid."], "synonyms":
+    ["Dibasic potassium phosphate", "Dipotassium hydrogenorthophosphate", "Dipotassium
+    monohydrogen phosphate", "Dipotassium monophosphate", "Dipotassium orthophosphate",
+    "Dipotassium phosphate", "Hydrogen dipotassium phosphate", "K2HPO4", "Phosphoric
+    acid, dipotassium salt", "Potassium dibasic phosphate", "Potassium monohydrogen
+    phosphate", "Potassium monophosphate", "Potassium phosphate (dibasic)", "Potassium
+    phosphate, dibasic", "dipotassium hydrogen phosphate", "dipotassium hydrogen phosphate",
+    "dipotassium hydrogenphosphate", "potassium dibasic phosphate trihydrate"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7758-11-4", "kegg.compound:C13197",
+    "kegg.drug:D02403", "metacyc.compound:CPD0-2433", "reaxys:11343458", "wikipedia.en:Dipotassium_phosphate"],
+    "generalized_empirical_formula": ["HO4P.2K"], "has_alternative_id": ["CHEBI:32031"],
+    "has_obo_namespace": ["chebi_ontology"], "id": ["CHEBI:131527"], "inchi_key_string":
+    ["ZPWVASYFFYYZEW-UHFFFAOYSA-L"], "inchi_string": ["InChI=1S/2K.H3O4P/c;;1-5(2,3)4/h;;(H3,1,2,3,4)/q2*+1;/p-2"],
+    "mass": ["174.174"], "monoisotopic_mass": ["173.88866"], "smiles_string": ["O=P([O-])([O-])O.[K+].[K+]"]},
+    "secondary_id": "CHEBI:131527", "secondary_asserted_label": "dipotassium hydrogen
+    phosphate", "secondary_index_rows": [{"label": "K2HPO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:131527", "preferred_term": "K2HPO4", "ontology_id": "CHEBI:131527",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path":
+    "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[1]", "preferred_term":
+    "(NH4)2SO4", "primary_id": "CHEBI:62946", "asserted_label": "ammonium sulfate",
+    "canonical_label": "ammonium sulfate", "label_equal": true, "source_key": "chebi62946",
+    "description": ["An inorganic sulfate salt obtained by reaction of sulfuric acid
+    with two equivalents of ammonia. A high-melting (decomposes above 280°C) white
+    solid which is very soluble in water (70.6 g/100 g water at 0°C; 103.8 g/100 g
+    water at 100°C), it is widely used as a fertilizer for alkaline soils."], "synonyms":
+    ["(NH4)2SO4", "ammonium sulfate (2:1)", "ammonium sulphate", "diammonium sulfate",
+    "diazanium sulfate", "diazanium sulfate", "mascagnite", "sulfuric acid ammonium
+    salt (1:2)", "sulfuric acid, diammonium salt", "sulphate of ammonia"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7783-20-2", "kegg.drug:D08853",
+    "metacyc.compound:NH42SO4", "ppdb:36", "pubmed:20556652", "reaxys:11343144", "wikipedia.en:Ammonium_sulfate"],
+    "generalized_empirical_formula": ["2H4N.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:62946"], "inchi_key_string": ["BFNBIHQBYMNNAN-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/2H3N.H2O4S/c;;1-5(2,3)4/h2*1H3;(H2,1,2,3,4)"], "mass": ["132.141"],
+    "monoisotopic_mass": ["132.02048"], "smiles_string": ["O=S(=O)([O-])[O-].[NH4+].[NH4+]"]},
+    "secondary_id": "CHEBI:62946", "secondary_asserted_label": "ammonium sulfate",
+    "secondary_index_rows": [{"label": "(NH4)2SO4", "match_type": "preferred_term",
+    "identifier": "CHEBI:62946", "preferred_term": "(NH4)2SO4", "ontology_id": "CHEBI:62946",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path":
+    "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[2]", "preferred_term":
+    "KCl", "primary_id": "CHEBI:32588", "asserted_label": "potassium chloride", "canonical_label":
+    "potassium chloride", "label_equal": true, "source_key": "chebi32588", "description":
+    ["A metal chloride salt with a K(+) counterion."], "synonyms": ["KCl", "Kaliumchlorid",
+    "Kaon-Cl 10", "Klor-con", "Klotrix", "Monopotassium chloride", "[KCl]", "muriate
+    of potash", "potassium chloride", "potassium chloride", "sylvite"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7447-40-7", "drugbank:DB00761",
+    "kegg.drug:D02060", "metacyc.compound:KCL", "molbase:881", "reaxys:3534978", "wikipedia.en:Potassium_Chloride"],
+    "generalized_empirical_formula": ["Cl.K"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:32588"], "inchi_key_string": ["WCUXLLCKKVVCTQ-UHFFFAOYSA-M"], "inchi_string":
+    ["InChI=1S/ClH.K/h1H;/q;+1/p-1"], "mass": ["74.551"], "monoisotopic_mass": ["73.93256"],
+    "smiles_string": ["[Cl-].[K+]"]}, "secondary_id": "CHEBI:32588", "secondary_asserted_label":
+    "potassium chloride", "secondary_index_rows": [{"label": "KCl", "match_type":
+    "preferred_term", "identifier": "CHEBI:32588", "preferred_term": "KCl", "ontology_id":
+    "CHEBI:32588", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer":
+    "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[3]",
+    "preferred_term": "MgSO4 x 7 H2O", "primary_id": "CHEBI:31795", "asserted_label":
+    "magnesium sulfate heptahydrate", "canonical_label": "magnesium sulfate heptahydrate",
+    "label_equal": true, "source_key": "chebi31795", "description": ["A hydrate that
+    is the heptahydrate form of magnesium sulfate."], "synonyms": ["Magnesium sulfate
+    heptahydrate", "MgSO4.7H2O", "bitter salt", "epsom salt", "epsomite", "magnesium
+    sulfate (1:1) heptahydrate", "magnesium sulfate heptahydrate", "magnesium sulfate--water
+    (1/7)", "magnesium sulfate--water (1/7)", "magnesium sulphate heptahydrate", "sulfuric
+    acid magnesium salt heptahydrate"], "form_annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10034-99-8", "drugbank:DBSALT001240", "foodb.food:FDB015432", "kegg.compound:C12505",
+    "kegg.drug:D01108", "metacyc.compound:CPD0-2387", "pubmed:12078740", "pubmed:21595222",
+    "pubmed:26281883", "pubmed:28970193", "pubmed:30510660", "pubmed:5492983", "wikipedia.en:Epsomite"],
+    "generalized_empirical_formula": ["7H2O.Mg.O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:31795"], "inchi_key_string": ["WRUGWIBCXHJTDG-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Mg.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["246.473"], "monoisotopic_mass": ["246.01072"], "smiles_string": ["O=S(=O)([O-])[O-].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[H]O[H].[Mg+2]"]},
+    "secondary_id": "CHEBI:31795", "secondary_asserted_label": "magnesium sulfate
+    heptahydrate", "secondary_index_rows": [{"label": "MgSO4 x 7 H2O", "match_type":
+    "preferred_term", "identifier": "CHEBI:31795", "preferred_term": "MgSO4 x 7 H2O",
+    "ontology_id": "CHEBI:31795", "mapping_status": "MAPPED", "ambiguity": "unique"},
+    {"label": "MgSO4·H2O", "match_type": "preferred_term", "identifier": "CHEBI:31795",
+    "preferred_term": "MgSO4·H2O", "ontology_id": "CHEBI:31795", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml",
+    "field": "ingredients[4]", "preferred_term": "FeSO4 x 7 H2O", "primary_id": "CHEBI:75836",
+    "asserted_label": "iron(2+) sulfate heptahydrate", "canonical_label": "iron(2+)
+    sulfate heptahydrate", "label_equal": true, "source_key": "chebi75836", "description":
+    ["A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a
+    source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage
+    treatments; for solid-dosage treatments, the monohydrate is normally used)."],
+    "synonyms": ["FeSO4.7H2O", "Fero-Gradumet", "Tetucur-S", "copperas", "ferrous
+    sulfate heptahydrate", "ferrous sulfate.7H2O", "green vitriol", "iron vitriol",
+    "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate--water (1/7)", "iron(2+) sulfate.7H2O",
+    "iron(II) sulfate.7H2O", "melanterite mineral", "melanterite"], "form_annotations":
+    {"charge": [0.0], "database_cross_reference": ["cas:7782-63-0", "kegg.drug:D01725",
+    "metacyc.compound:CPD0-2418", "pubmed:3729890", "reaxys:11322534"], "generalized_empirical_formula":
+    ["Fe.7H2O.O4S"], "has_alternative_id": ["CHEBI:31609"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:75836"], "inchi_key_string": ["SURQXAFEQWPFPV-UHFFFAOYSA-L"], "inchi_string":
+    ["InChI=1S/Fe.H2O4S.7H2O/c;1-5(2,3)4;;;;;;;/h;(H2,1,2,3,4);7*1H2/q+2;;;;;;;;/p-2"],
+    "mass": ["278.013"], "monoisotopic_mass": ["277.96062"], "smiles_string": ["O.O.O.O.O.O.O.O=S(=O)([O-])[O-].[Fe+2]"]},
+    "secondary_id": "CHEBI:75836", "secondary_asserted_label": "iron(2+) sulfate heptahydrate",
+    "secondary_index_rows": [{"label": "FeSO4 x 7 H2O", "match_type": "preferred_term",
+    "identifier": "CHEBI:75836", "preferred_term": "FeSO4 x 7 H2O", "ontology_id":
+    "CHEBI:75836", "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer":
+    "owner", "path": "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[5]",
+    "preferred_term": "Ca(NO3)2", "primary_id": "CHEBI:64205", "asserted_label": "calcium
+    nitrate", "canonical_label": "calcium nitrate", "label_equal": true, "source_key":
+    "chebi64205", "description": ["Inorganic nitrate salt of calcium."], "synonyms":
+    ["Calcium saltpeter", "Calcium(II) nitrate (1:2)", "Lime nitrate", "Lime saltpeter",
+    "Nitric acid, calcium salt", "Norge saltpeter", "Norway saltpeter", "Norwegian
+    saltpeter", "Saltpeter", "anhydrous calcium nitrate", "calcium dinitrate", "calcium
+    dinitrate"], "form_annotations": {"charge": [0.0], "database_cross_reference":
+    ["cas:10124-37-5", "pubmed:13495183", "pubmed:13558529", "pubmed:13717848", "pubmed:14651109",
+    "pubmed:14672118", "pubmed:15244341", "pubmed:18201926", "pubmed:19594125", "pubmed:22307899",
+    "pubmed:22360256", "pubmed:23069075", "pubmed:25135170", "pubmed:25868152", "reaxys:3565319",
+    "wikipedia.en:Calcium_nitrate"], "generalized_empirical_formula": ["Ca.2NO3"],
+    "has_alternative_id": ["CHEBI:88273"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:64205"], "inchi_key_string": ["ZCCIPPOKBCJFDN-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/Ca.2NO3/c;2*2-1(3)4/q+2;2*-1"], "mass": ["164.086"], "monoisotopic_mass":
+    ["163.93823"], "smiles_string": ["O=[N+]([O-])[O-].O=[N+]([O-])[O-].[Ca+2]"]},
+    "secondary_id": "CHEBI:64205", "secondary_asserted_label": "calcium nitrate",
+    "secondary_index_rows": [{"label": "Ca(NO3)2", "match_type": "preferred_term",
+    "identifier": "CHEBI:64205", "preferred_term": "Ca(NO3)2", "ontology_id": "CHEBI:64205",
+    "mapping_status": "MAPPED", "ambiguity": "unique"}]}, {"layer": "owner", "path":
+    "data/normalized_yaml/bacterial/9k_medium.yaml", "field": "ingredients[6]", "preferred_term":
+    "H2SO4", "primary_id": "CHEBI:26836", "asserted_label": "sulfuric acid", "canonical_label":
+    "sulfuric acid", "label_equal": true, "source_key": "chebi26836", "description":
+    ["A sulfur oxoacid that consists of two oxo and two hydroxy groups joined covalently
+    to a central sulfur atom."], "synonyms": ["Acide sulfurique", "Acido sulfurico",
+    "Acidum sulfuricum", "H2SO4", "Schwefelsaeureloesungen", "Sulfuric acid", "[S(OH)2O2]",
+    "[SO2(OH)2]", "dihydrogen tetraoxosulfate", "dihydrogen tetraoxosulfate", "dihydroxidodioxidosulfur",
+    "dihydroxidodioxidosulfur", "hydrogen tetraoxosulfate(2-)", "hydrogen tetraoxosulfate(2-)",
+    "hydrogen tetraoxosulfate(VI)", "hydrogen tetraoxosulfate(VI)", "sulfuric acid",
+    "sulfuric acid", "sulphuric acid", "tetraoxosulfuric acid", "tetraoxosulfuric
+    acid"], "form_annotations": {"charge": [0.0], "database_cross_reference": ["cas:7664-93-9",
+    "gmelin:2122", "kegg.compound:C00059", "kegg.drug:D05963", "knapsack:C00007530",
+    "molbase:4", "ppdb:606", "pubmed:13568755", "pubmed:16122922", "pubmed:19397353",
+    "pubmed:22047659", "pubmed:22136045", "pubmed:22204399", "pubmed:22267186", "pubmed:22296037",
+    "pubmed:22364556", "pubmed:22435616", "reaxys:2037554", "wikipedia.en:Sulfuric_acid"],
+    "generalized_empirical_formula": ["H2O4S"], "has_obo_namespace": ["chebi_ontology"],
+    "id": ["CHEBI:26836"], "inchi_key_string": ["QAOWNCQODCNURD-UHFFFAOYSA-N"], "inchi_string":
+    ["InChI=1S/H2O4S/c1-5(2,3)4/h(H2,1,2,3,4)"], "mass": ["98.079"], "monoisotopic_mass":
+    ["97.96738"], "smiles_string": ["[H]OS(=O)(=O)O[H]"]}, "secondary_id": "CHEBI:26836",
+    "secondary_asserted_label": "sulfuric acid", "secondary_index_rows": [{"label":
+    "H2SO4", "match_type": "preferred_term", "identifier": "CHEBI:26836", "preferred_term":
+    "H2SO4", "ontology_id": "CHEBI:26836", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}]}'
+- assessment_id: forms
+  area: grounding
+  topic: Exact phosphate, sulfate hydrates, nitrate and acid identities
+  outcome: supported
+  summary: All seven ingredient primary IDs and labels resolve, and all seven secondary
+    keys in each layer have matching current preferred-term rows in the pinned MIM
+    index. Magnesium and iron sulfate are explicitly heptahydrates, matching source
+    formulas and OLS structural annotations. Calcium nitrate has no hydrate specified
+    and retains the anhydrous calcium-nitrate identity. The phosphate is dipotassium
+    hydrogen phosphate, not monopotassium phosphate. Sulfuric acid identity is correct,
+    while its stock strength and quantity are separately incorrect. Chemical identity
+    support does not validate concentration.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm92
+  - mim
+  - chebi131527
+  - chebi62946
+  - chebi32588
+  - chebi31795
+  - chebi75836
+  - chebi64205
+  - chebi26836
+- assessment_id: environment-grounding
+  area: grounding
+  topic: Environmental identity and distinct linkage denominator
+  outcome: supported
+  summary: Each layer has two source_environment descriptors; one of the two carries
+    an asserted ENVO term, and that one ID/label resolves correctly. This is 1/2 environment
+    linkage (50% on a 0–100 linkage scale), separate from the 7/7 ingredient denominators.
+    Mine tailing has no asserted ID, so no invalid or invented replacement is claimed.
+    A more specific ENVO term in current CommunityMech is not automatically transferred.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - envo00002186
+- assessment_id: preparation
+  area: completeness
+  topic: Preparation water, acid dose, pH and sterilization
+  outcome: concern
+  summary: Both layers retain only Adjust pH to 3.0. The exact collection source also
+    supplies the water/acid quantities and its default autoclaving cycle of 121°C
+    for 15 min. This default is directly sourced rather than generic laboratory convention.
+    The record omits the cycle and preparation basis; no source-specific storage,
+    cooling, vessel or incubation details are invented.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm92
+  - primary-row-7
+  - primary-row-8
+  - sterilization-default
+  - source-ph
+- assessment_id: classification
+  area: scope
+  topic: Defined chemical formulation and bounded biological scope
+  outcome: supported
+  summary: JCM 92 lists specified inorganic salts, acid stock and water, consistent
+    with a defined liquid medium and the provider complex_medium=no. No complex nutrient
+    product, agar, target organism, strain, taxonomy ID, assembly, parent medium or
+    variant is asserted in the target or owner. Generic Microbial cultivation is not
+    treated as organism-specific growth evidence. The environmental annotations do
+    not convert this record into a documented co-culture formulation.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm92
+  - mediadiveJ92api
+- assessment_id: environment-provenance
+  area: scope
+  topic: Environmental notes, modified media and circular provenance
+  outcome: concern
+  summary: 'The two environment-note strings exactly match public CommunityMech:000019
+    and CommunityMech:000027, both linked to CultureMech:003277. Those records describe
+    laboratory variants with different iron values, pH and supplements, as well as
+    explicit CultureMech-imported rows. This supports the provenance of the association
+    and environmental text, not equivalence of those recipes with JCM 92 or independent
+    proof of all ecological details. Under the schema these notes describe habitat
+    context: their pH below 3 or temperatures are not automatically contradictions
+    of preparation pH 3.0. Keep association provenance and variant limits explicit,
+    and do not infer organism growth from the link.'
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - backfill
+  - environment-schema
+  - community_copper_biomining_heap_leach
+  - community_ferroplasma_leptospirillum_syntrophy
+  details: '[{"field_path": "source_environment[0]", "source_key": "community_copper_biomining_heap_leach",
+    "source_record_id": "CommunityMech:000019", "source_url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Copper_Biomining_Heap_Leach.yaml",
+    "source_sha256": "5c620e46ecbe040463098d40373531e88b5b2bc12f08bb57b4d926b3537a0c4e",
+    "source_accessed_at": "2026-10-21T09:01:16.748065Z", "notes_exactly_equal": true,
+    "source_environment": {"preferred_term": "mine tailing", "term": {"id": "ENVO:00000003",
+    "label": "mine tailing"}, "notes": "Industrial copper sulfide ore heap leach operation.
+    Crushed low-grade ore is piled in heaps and irrigated with acidic solution (pH
+    1.5-2.5) containing the microbial consortium. The heaps provide a heterogeneous
+    environment with spatial gradients in pH (1.67-2.5), Fe²⁺/Fe³⁺ ratios, oxygen
+    availability, temperature, and copper concentration. Heap age ranges from fresh
+    ore (<100 days) to aged ore (>250 days), with microbial succession reflecting
+    changing chemical conditions. The engineered environment promotes iron and sulfur
+    oxidation to generate sulfuric acid and ferric iron for mineral dissolution.\n"},
+    "linked_medium_name": "Standard 9K Medium (laboratory cultivation of consortium
+    members)", "linked_culturemech_id": "CultureMech:003277", "modified_recipe_rows":
+    [{"name": "Ammonium sulfate", "concentration": 3.0, "unit": "g/L", "chebi_term":
+    {"preferred_term": "ammonium sulfate", "term": {"id": "CHEBI:62946", "label":
+    "ammonium sulfate"}}, "from_source": "community_curated", "media_ingredient_mech_id":
+    "MediaIngredientMech:000258", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000258"},
+    {"name": "Dipotassium hydrogen phosphate", "concentration": 0.5, "unit": "g/L",
+    "chebi_term": {"preferred_term": "dipotassium hydrogen phosphate", "term": {"id":
+    "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}}, "from_source": "community_curated",
+    "media_ingredient_mech_id": "MediaIngredientMech:000639", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000639"},
+    {"name": "Magnesium sulfate heptahydrate", "concentration": 0.5, "unit": "g/L",
+    "chebi_term": {"preferred_term": "magnesium sulfate heptahydrate", "term": {"id":
+    "CHEBI:32599", "label": "magnesium sulfate"}}, "from_source": "community_curated",
+    "media_ingredient_mech_id": "MediaIngredientMech:000614", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000614"},
+    {"name": "Potassium chloride", "concentration": 0.1, "unit": "g/L", "chebi_term":
+    {"preferred_term": "potassium chloride", "term": {"id": "CHEBI:32588", "label":
+    "potassium chloride"}}, "from_source": "community_curated", "media_ingredient_mech_id":
+    "MediaIngredientMech:000230", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000230"},
+    {"name": "Calcium nitrate", "concentration": 0.01, "unit": "g/L", "chebi_term":
+    {"preferred_term": "calcium nitrate", "term": {"id": "CHEBI:64205", "label": "calcium
+    nitrate"}}, "from_source": "community_curated"}, {"name": "Iron(II) sulfate heptahydrate",
+    "concentration": 44.22, "unit": "g/L", "chebi_term": {"preferred_term": "iron(II)
+    sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}},
+    "from_source": "community_curated"}, {"name": "Elemental sulfur", "concentration":
+    10, "unit": "g/L", "chebi_term": {"preferred_term": "sulfur atom", "term": {"id":
+    "CHEBI:26833", "label": "sulfur atom"}}, "from_source": "community_curated", "media_ingredient_mech_id":
+    "MediaIngredientMech:000727", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000727"}],
+    "circular_imported_rows": [{"name": "K2HPO4", "concentration": "0.499501", "unit":
+    "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000122",
+    "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000122"},
+    {"name": "(NH4)2SO4", "concentration": "2.997", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000145", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000145"},
+    {"name": "KCl", "concentration": "0.0999001", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000123", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000123"},
+    {"name": "MgSO4 x 7 H2O", "concentration": "0.499501", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000118", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000118"},
+    {"name": "FeSO4 x 7 H2O", "concentration": "49.9501", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000130", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000130"},
+    {"name": "Ca(NO3)2", "concentration": "0.00999001", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000470", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000470"},
+    {"name": "H2SO4", "concentration": "1", "unit": "G_PER_L", "from_source": "CultureMech",
+    "media_ingredient_mech_id": "MediaIngredientMech:000181", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000181"}],
+    "linked_conditions": {"ph": 2.0, "ph_range": "1.5-2.5", "temperature": 30, "temperature_range":
+    "28-55", "atmosphere": "AEROBIC"}, "scope_limit": "These are environment provenance
+    and modified-medium annotations. No ecological number, exact-JCM92 growth outcome,
+    taxon or independent experimental validation is promoted from them."}, {"field_path":
+    "source_environment[1]", "source_key": "community_ferroplasma_leptospirillum_syntrophy",
+    "source_record_id": "CommunityMech:000027", "source_url": "https://raw.githubusercontent.com/CultureBotAI/CommunityMech/c6e5a9b9af2d05e12eaafb2555a53f3a079268f3/kb/communities/Ferroplasma_Leptospirillum_Syntrophy.yaml",
+    "source_sha256": "08e60d74c495dfee5ec77a2a8ed63da4da51b1ebe1adb527350591d0e5b6340b",
+    "source_accessed_at": "2026-10-21T09:02:30.816822Z", "notes_exactly_equal": true,
+    "source_environment": {"preferred_term": "acid mine drainage", "term": {"id":
+    "ENVO:00001997", "label": "acid mine drainage"}, "notes": "Extremely acidic (pH
+    <2), metal-rich environments including natural acid mine drainage and industrial
+    biomining operations. The consortium thrives on pyrite (FeS₂) and chalcopyrite
+    (CuFeS₂) surfaces where ferrous iron concentrations are high. Environments are
+    aerobic to microaerobic, with temperatures ranging from 30-50°C. High concentrations
+    of dissolved metals (Fe, Cu, Zn) and sulfate are characteristic. The extreme acidity
+    and metal content exclude most organisms, creating niches for specialized acidophiles.\n"},
+    "linked_medium_name": "Modified 9K Medium for Ferroplasma-Leptospirillum Co-culture",
+    "linked_culturemech_id": "CultureMech:003277", "modified_recipe_rows": [{"name":
+    "Ammonium sulfate", "concentration": 3.0, "unit": "g/L", "chebi_term": {"preferred_term":
+    "ammonium sulfate", "term": {"id": "CHEBI:62946", "label": "ammonium sulfate"}},
+    "from_source": "community_curated", "media_ingredient_mech_id": "MediaIngredientMech:000258",
+    "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000258"},
+    {"name": "Magnesium sulfate heptahydrate", "concentration": 0.5, "unit": "g/L",
+    "chebi_term": {"preferred_term": "magnesium sulfate heptahydrate", "term": {"id":
+    "CHEBI:32599", "label": "magnesium sulfate"}}, "from_source": "community_curated",
+    "media_ingredient_mech_id": "MediaIngredientMech:000614", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000614"},
+    {"name": "Dipotassium hydrogen phosphate", "concentration": 0.5, "unit": "g/L",
+    "chebi_term": {"preferred_term": "dipotassium hydrogen phosphate", "term": {"id":
+    "CHEBI:131527", "label": "dipotassium hydrogen phosphate"}}, "from_source": "community_curated",
+    "media_ingredient_mech_id": "MediaIngredientMech:000639", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000639"},
+    {"name": "Potassium chloride", "concentration": 0.1, "unit": "g/L", "chebi_term":
+    {"preferred_term": "potassium chloride", "term": {"id": "CHEBI:32588", "label":
+    "potassium chloride"}}, "from_source": "community_curated", "media_ingredient_mech_id":
+    "MediaIngredientMech:000230", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000230"},
+    {"name": "Calcium nitrate", "concentration": 0.01, "unit": "g/L", "chebi_term":
+    {"preferred_term": "calcium nitrate", "term": {"id": "CHEBI:64205", "label": "calcium
+    nitrate"}}, "from_source": "community_curated"}, {"name": "Iron(II) sulfate heptahydrate",
+    "concentration": 44.2, "unit": "g/L", "chebi_term": {"preferred_term": "iron(II)
+    sulfate", "term": {"id": "CHEBI:75832", "label": "iron(2+) sulfate (anhydrous)"}},
+    "from_source": "community_curated"}, {"name": "Yeast extract", "concentration":
+    0.04, "unit": "% wt/vol", "from_source": "community_curated", "media_ingredient_mech_id":
+    "MediaIngredientMech:000025", "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000025"}],
+    "circular_imported_rows": [{"name": "K2HPO4", "concentration": "0.499501", "unit":
+    "G_PER_L", "from_source": "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000122",
+    "media_ingredient_mech_url": "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000122"},
+    {"name": "(NH4)2SO4", "concentration": "2.997", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000145", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000145"},
+    {"name": "KCl", "concentration": "0.0999001", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000123", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000123"},
+    {"name": "MgSO4 x 7 H2O", "concentration": "0.499501", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000118", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000118"},
+    {"name": "FeSO4 x 7 H2O", "concentration": "49.9501", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000130", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000130"},
+    {"name": "Ca(NO3)2", "concentration": "0.00999001", "unit": "G_PER_L", "from_source":
+    "CultureMech", "media_ingredient_mech_id": "MediaIngredientMech:000470", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000470"},
+    {"name": "H2SO4", "concentration": "1", "unit": "G_PER_L", "from_source": "CultureMech",
+    "media_ingredient_mech_id": "MediaIngredientMech:000181", "media_ingredient_mech_url":
+    "https://github.com/CultureBotAI/MediaIngredientMech/tree/main/data/ingredients/MediaIngredientMech:000181"}],
+    "linked_conditions": {"ph": 1.7, "ph_range": "1.5-2.0", "temperature": 37.5, "temperature_range":
+    "35-40", "atmosphere": "AEROBIC"}, "scope_limit": "These are environment provenance
+    and modified-medium annotations. No ecological number, exact-JCM92 growth outcome,
+    taxon or independent experimental validation is promoted from them."}]'
+- assessment_id: owner-correspondence
+  area: ownership
+  topic: Maintained source evidence and generated record freshness
+  outcome: concern
+  summary: Target and owner share the same seven chemical quantities, environmental
+    notes and one-step preparation. The owner adds three scoped concentration evidence
+    entries and the provider reference after the target merge; all three snippets
+    are present literally in identical current response bytes. Their historical access
+    time and response hash remain valid provenance. Regeneration should retain those
+    entries after substantive quantity/preparation corrections rather than discarding
+    or broadening their scope.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveJ92api
+  - amount-writer
+  - importer
+  - exporter
+  details: '[{"layer": "owner", "field_path": "ingredients[1].evidence", "historical_source_sha256":
+    "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a", "historical_accessed_at":
+    "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response":
+    true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}, {"layer": "owner",
+    "field_path": "ingredients[2].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a",
+    "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response":
+    true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}, {"layer": "owner",
+    "field_path": "ingredients[5].evidence", "historical_source_sha256": "867a8f1c9396fbdf0895d7573ba81dfb0d6723740e4a21498a4c1ba3f334e16a",
+    "historical_accessed_at": "2026-10-07T14:01:55.211155+00:00", "literal_snippet_in_current_identical_response":
+    true, "current_accessed_at": "2026-10-21T09:00:12.130263Z"}]'
+- assessment_id: reference-scope
+  area: evidence
+  topic: Primary recipe, provider and upstream environment provenance
+  outcome: concern
+  summary: The generated target has no structured references and its reference checker
+    checked zero entries. The owner reference accurately identifies DSMZ as provider
+    and JCM 92 as original collection, and its three amount snippets are verified.
+    The environmental backfill history names CommunityMech generically without the
+    exact source records or modified-recipe/circularity limits. Add narrow provenance
+    rather than transferring unrelated upstream DOI/PMID or organism claims.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm92
+  - mediadiveJ92api
+  - source-catalog
+  - validate-references
+  - community_copper_biomining_heap_leach
+  - community_ferroplasma_leptospirillum_syntrophy
+- assessment_id: history
+  area: provenance
+  topic: Append-only event history and timestamp interpretation
+  outcome: supported
+  summary: All 20 scoped timestamps were checked for ISO syntax and timezone. Every
+    instance parses and has an explicit timezone. Curation events are process provenance
+    rather than independent confirmation of recipe correctness.
+  target_ids:
+  - CultureMech:003277
+  evidence_ids:
+  - record
+  - owner-0
+  - history
+  details: '[]'
+findings:
+- finding_id: f1
+  issue_key: cm003277-acid-stock-dose-as-mass
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: A 10 N acid stock addition is represented as 1 g/L
+  description: Both layers encode H2SO4 concentration 1 G_PER_L. Exact JCM 92 and
+    MediaDive J92 instead specify 1 mL of 10 N H2SO4, with no provider g_l for that
+    row. The liquid dose and strength cannot be replaced by an unqualified mass concentration.
+    Water 1 L is also absent from the one-step preparation context. The other six
+    provider-normalized mass rows do not license that conversion.
+  target_ids:
+  - CultureMech:003277
+  field_paths:
+  - ingredients[6].concentration
+  - ingredients[6]
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm92
+  - mediadiveJ92api
+  - primary-row-7
+  - provider-row-7
+  - primary-row-8
+  - provider-row-8
+  - importer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: cm003277-missing-source-sterilization
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The explicit collection sterilization cycle is omitted
+  description: Both layers provide only pH adjustment. The exact JCM page prescribes
+    autoclaving at 121°C for 15 min unless otherwise stated, and this recipe gives
+    no exception. The omission loses a source-specific reproducibility requirement.
+    Native P3.5 is elevated to major because the fully available, explicit cycle is
+    absent from both maintained and generated preparation, rather than an optional
+    generic detail.
+  target_ids:
+  - CultureMech:003277
+  field_paths:
+  - preparation_steps
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm92
+  - sterilization-default
+  - source-ph
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.5
+  native_severity: P3.5
+  normalization_reason: P3.5 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: cm003277-provider-last-digit-conflicts
+  category: quantity
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Three provider rates narrowly conflict with literal mass/volume arithmetic
+  description: K2HPO4, magnesium sulfate heptahydrate and iron sulfate heptahydrate
+    retain the provider-reported rates. Dividing their source masses by its declared
+    1.001 L gives the itemized exact values, each about 1.002 parts per million below
+    the reported value and marginally beyond half the final decimal quantum. The guarded
+    writer therefore does not establish arithmetic support for those three. This is
+    a small source precision conflict, not a unit-scale error or evidence that the
+    source measured a different final volume.
+  target_ids:
+  - CultureMech:003277
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[3].concentration
+  - ingredients[4].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveJ92api
+  - provider-row-1
+  - provider-row-4
+  - provider-row-5
+  - rounding-guard
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: cm003277-source-provenance-scope
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Claim-level provenance needs propagation and environmental scope
+  description: Three verified owner amount-evidence entries and its exact provider
+    reference are absent from the generated target. Both layers also retain detailed
+    environmental notes without the exact public CommunityMech record citations or
+    the limits of modified recipes and rows copied from CultureMech. The environmental
+    notes are habitat context under the schema; they should not be read as exact recipe
+    equivalence or tested growth claims.
+  target_ids:
+  - CultureMech:003277
+  field_paths:
+  - ingredients[1].evidence
+  - ingredients[2].evidence
+  - ingredients[5].evidence
+  - references
+  - source_environment
+  evidence_ids:
+  - record
+  - owner-0
+  - mediadiveJ92api
+  - amount-writer
+  - backfill
+  - environment-schema
+  - community_copper_biomining_heap_leach
+  - community_ferroplasma_leptospirillum_syntrophy
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Represent the exact 1 mL dose of 10 N acid with stock strength and
+    source-batch basis in supported maintained fields, and restore the 1 L source
+    water as preparation context. Do not invent a neat-acid mass, final-volume concentration
+    or stock ID. Review the importer attribute path before separately authorized regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Add the exact source-default cycle and its evidence to the maintained
+    preparation while retaining pH 3.0 and the corrected acid/water context. Do not
+    add unsupported cooling, storage or growth instructions; verify the cycle survives
+    regeneration.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Preserve the literal provider values and source masses with an explicit
+    precision-conflict explanation, or resolve the provider rounding/normalization
+    rule before asserting derived concentration evidence. Do not silently round or
+    claim measured final volume.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Retain and propagate the three verified owner snippets with their original
+    source hash/time during regeneration. Add exact environmental provenance and explicitly
+    distinguish habitat context, modified formulations and circular imported rows;
+    do not promote their citations to new exact-JCM92 organism or growth evidence.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:003277
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/9k_medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- MediaDive declares 1001 mL for its main recipe; this is provider normalization,
+  not an independently measured final volume. JCM lists 1 L water plus 1 mL acid and
+  does not instruct making up to a measured final volume.
+- No density-based acid conversion or inferred neat-acid mass is made. The exact supplied
+  stock is 10 N H2SO4, added as 1 mL in the stated source batch.
+- CommunityMech source notes and explicit linked IDs were inspected at the captured
+  public commit. Their ecological assertions and cited papers were not independently
+  re-reviewed, and modified recipes plus rows imported from CultureMech cannot validate
+  this exact recipe or new organism growth claims.
+- Environmental pH, temperature, metal and heap-age descriptions concern source habitats.
+  They are not silently adopted as this medium preparation or incubation conditions.
+- The first required term-validation attempt failed during ENVO cache download. The
+  separately recorded network-enabled retry succeeded; both attempts and their actual
+  timestamps remain in this review and original diagnostics were not overwritten.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-013
+- generated-medium
+```
