@@ -18,12 +18,16 @@ summary: 'Bounded schema, writer, skill, corpus, and workflow-activation prerequ
   nutrient overrides (2/15,915 records), and three-facet ingredient roles (nutritional_roles
   in 217 records, physicochemical_roles in 249 records, cellular_metabolic_roles in
   5 records), rendered as bipartite Mermaid composition-role diagrams by scripts/render_media_role_graph.py
-  and exported as 10 composition/growth/attribute edge shapes by src/culturemech/export/kgx_export.py.
-  Across tracked, hidden, and git-ignored paths, CultureMech has no native directed
-  causal-edge schema class or MediaRecipe slot, no UniProtKB prefix or typed ProteinExample
-  descriptor binding UniProt accessions to NCBITaxon organisms and claim-scoped EvidenceItem
-  snippets (only unpopulated free-text string slots enzyme_examples, biosynthesis_genes,
-  genes, and 48 free-text enzyme family strings in data/reference/cofactors.yaml),
+  and exported via 12 *_to_edge functions across 7 predicates (METPO:2000517, biolink:has_part,
+  biolink:has_attribute, biolink:related_to, biolink:same_as, biolink:subclass_of,
+  and biolink:has_dataset) by src/culturemech/export/kgx_export.py. Across tracked,
+  hidden, and git-ignored paths, CultureMech has no native directed causal-edge schema
+  class or MediaRecipe slot, no UniProtKB prefix among its 31 declared schema prefixes
+  or typed ProteinExample descriptor binding UniProt accessions to NCBITaxon organisms
+  and claim-scoped EvidenceItem snippets (only unpopulated free-text string slots
+  CofactorDescriptor.enzyme_examples, CofactorDescriptor.biosynthesis_genes, CofactorRequirement.genes,
+  TransporterAnnotation.genes, StrainModification.target in 2 records, and 56 cofactor
+  entries with free-text enzyme family strings in data/reference/cofactors.yaml),
   and no repository-local causal_graphs or protein_examples curation skills. Additionally,
   under cycle_policy.reload_profile_between_cycles_only: true, candidate edits to
   workflow/mech-workflow.yaml cannot mutate active Cycle 2 effective-workflow.json,
@@ -222,26 +226,29 @@ evidence:
 - evidence_id: ev-schema-culturemech
   kind: record_content
   reference: file:src/culturemech/schema/culturemech.yaml
-  locator: lines 14-31, 459-670
+  locator: lines 10-58, 1234-1296, 1565-1672, 2000-2072
   accessed_at: '2026-10-23T07:16:00Z'
   support: supports
-  summary: culturemech.yaml declares 15 prefixes (no UniProt/UniProtKB) and defines
-    free-text string slots on CofactorDescriptor, CofactorRequirement, and TransporterAnnotation
-    without a CausalEdge or ProteinExample class.
-  quote: 'prefixes: linkml, culturemech, biolink, CHEBI, NCBITaxon, ENVO, UO, IAO,
-    OBI, MICRO, EC, GO, KEGG, MediaIngredientMech, gomodel; enzyme_examples: range:
-    string; biosynthesis_genes: range: string.'
+  summary: culturemech.yaml declares 31 prefixes (no UniProt/UniProtKB) and defines
+    free-text string slots on CofactorDescriptor (lines 1234-1296), StrainModification
+    (lines 1565-1602), CofactorRequirement (lines 2000-2028), and TransporterAnnotation
+    (lines 2029-2072) without a CausalEdge or ProteinExample class.
+  quote: 'prefixes: linkml, culturemech, biolink, rdfs, CHEBI, NCBITaxon, DSMZ, TOGO,
+    ATCC, NCIT, UTEX, CCAP, SAG, OBI, ENVO, UO, UBERON, FOODON, mediadive.compound,
+    PMID, DOI, KEGG, EC, geo, sra, GTDB, RefSeq, GenBank, BioSample, sigma, thermofisher;
+    enzyme_examples: range: string; biosynthesis_genes: range: string; target: range:
+    string.'
 - evidence_id: ev-kgx-export
   kind: record_content
   reference: file:src/culturemech/export/kgx_export.py
-  locator: lines 1-624
+  locator: lines 468-833
   accessed_at: '2026-10-23T07:17:00Z'
   support: supports
-  summary: kgx_export.py emits 10 composition, growth, and attribute edge shapes and
-    flattens three-facet ingredient roles into biolink:ChemicalRole nodes without
-    causal-mechanism or UniProt protein edges.
+  summary: kgx_export.py defines 12 *_to_edge functions across lines 468-833 emitting
+    7 predicates and flattens three-facet ingredient roles into biolink:ChemicalRole
+    nodes without causal-mechanism or UniProt protein edges.
   quote: 'Predicates emitted: METPO:2000517, biolink:has_part, biolink:has_attribute,
-    biolink:related_to, biolink:same_as, biolink:subclass_of.'
+    biolink:related_to, biolink:same_as, biolink:subclass_of, biolink:has_dataset.'
 - evidence_id: ev-role-graph-renderer
   kind: record_content
   reference: file:scripts/render_media_role_graph.py
@@ -260,9 +267,10 @@ evidence:
   locator: lines 1-518
   accessed_at: '2026-10-23T07:19:00Z'
   support: supports
-  summary: data/reference/cofactors.yaml contains 48 cofactor entries with generic
-    free-text enzyme family strings in enzyme_examples, 0 UniProt IDs, 0 NCBITaxon
-    links, and duplicate CHEBI:60052 across heme C and heme d1.
+  summary: data/reference/cofactors.yaml contains 56 cofactor entries across 8 categories
+    with generic free-text enzyme family strings in enzyme_examples, 0 UniProt IDs,
+    0 NCBITaxon links, and duplicate CHEBI:60052 across heme_c (heme C) and heme_d1
+    (heme d1).
   quote: 'cofactor_key: heme_c -> chebi_id: CHEBI:60052; cofactor_key: heme_d1 ->
     chebi_id: CHEBI:60052; enzyme_examples: [''pyruvate dehydrogenase'', ''alpha-ketoglutarate
     dehydrogenase''].'
@@ -280,15 +288,17 @@ evidence:
 - evidence_id: ev-representative-records
   kind: record_content
   reference: file:data/normalized_yaml/archaea/pyrococcus_medium.yaml
-  locator: lines 1-118
+  locator: lines 376-394
   accessed_at: '2026-10-23T07:21:00Z'
   support: supports
   summary: Representative enriched records (pyrococcus_medium.yaml, magnetospirillum_gryphiswaldense_medium.yaml,
     TOGO_M2977_chocolate_agar.yaml, my20_agar.yaml) validate cleanly and demonstrate
     perturbations, strain_modifications, nutrient_overrides, and role facets, but
     no causal edges or UniProt IDs.
-  quote: 'strain_modifications: genes_affected: [''pyrE'', ''pyrF'']; nutrient_overrides:
-    ingredient_name: Uracil, role: ESSENTIAL_COFACTOR.'
+  quote: 'strain_modifications: - modification_type: ADAPTATION, target: cellulose
+    utilization, description: serially adapted for growth on CF11 cellulose; growth_metrics:
+    ... nutrient_overrides: - role: CARBON_SOURCE, source: CF11 cellulose, is_sole_source:
+    true.'
 - evidence_id: ev-github-issues
   kind: search
   reference: https://github.com/CultureBotAI/CultureMech/issues
@@ -392,12 +402,15 @@ assessments:
   summary: CultureMech natively supports evidence-backed media compositions, stock-solution
     inclusions, preparation steps, sterilization descriptors, three-facet ingredient
     roles (NutritionalRoleEnum in 217 records, PhysicochemicalRoleEnum in 249 records,
-    CellularMetabolicRoleEnum in 5 records), OrganismDescriptor growth_metrics, perturbations
-    (3 records), strain_modifications (2 records), and nutrient_overrides (2 records).
+    CellularMetabolicRoleEnum in 5 records), OrganismDescriptor growth_metrics (including
+    nutrient_overrides in 2 records), perturbations (3 records), and strain_modifications
+    (2 records).
   details: scripts/render_media_role_graph.py renders bipartite composition-to-role
-    Mermaid graphs and src/culturemech/export/kgx_export.py emits 10 composition/growth/attribute
-    edge shapes. These represent static functional roles and comparative perturbation
-    observations rather than directed multi-step causal mechanism graphs.
+    Mermaid graphs and src/culturemech/export/kgx_export.py defines 12 *_to_edge functions
+    across lines 468-833 emitting 7 predicates (METPO:2000517, biolink:has_part, biolink:has_attribute,
+    biolink:related_to, biolink:same_as, biolink:subclass_of, and biolink:has_dataset).
+    These represent static functional roles and comparative perturbation observations
+    rather than directed multi-step causal mechanism graphs.
   metrics:
   - name: records_with_nutritional_roles
     value: 217.0
@@ -427,7 +440,7 @@ assessments:
   - name: records_with_nutrient_overrides
     value: 2.0
     unit: records
-    definition: Normalized YAML records with populated OrganismDescriptor.nutrient_overrides.
+    definition: Normalized YAML records with populated GrowthMetrics.nutrient_overrides.
     denominator: 15915
   - name: records_with_causal_edges_or_uniprot
     value: 0.0
@@ -476,15 +489,19 @@ assessments:
   - ev-schema-culturemech
   - ev-cofactors-reference
   - ev-workflow-profile
-  summary: CultureMech has no UniProtKB prefix, no typed UniProtTerm or ProteinExample
-    class binding accessions to NCBITaxon organisms and EvidenceItem snippets, no
-    UniProtKB OAK/id-label validator configuration, and 0 UniProt accessions across
-    15,915 normalized records and data/reference/cofactors.yaml (#659).
-  details: CofactorDescriptor.enzyme_examples, CofactorDescriptor.biosynthesis_genes,
-    CofactorRequirement.genes, and TransporterAnnotation.genes are untyped range:string
-    slots (0 populated in data/normalized_yaml/). data/reference/cofactors.yaml uses
-    enzyme_examples for 48 generic enzyme-family strings without UniProt IDs or organism
-    links and contains a duplicate CHEBI:60052 mapping across heme C and heme d1.
+  summary: CultureMech has no UniProtKB prefix among its 31 declared prefixes in src/culturemech/schema/culturemech.yaml
+    (lines 10-58), no typed UniProtTerm or ProteinExample class binding accessions
+    to NCBITaxon organisms and EvidenceItem snippets, no UniProtKB OAK/id-label validator
+    configuration, and 0 UniProt accessions across 15,915 normalized records and data/reference/cofactors.yaml
+    (#659).
+  details: CofactorDescriptor.enzyme_examples and CofactorDescriptor.biosynthesis_genes
+    (lines 1234-1296), StrainModification.target (lines 1565-1602), CofactorRequirement.genes
+    (lines 2000-2028), and TransporterAnnotation.genes (lines 2029-2072) are untyped
+    range:string slots (0 cofactor/transporter/enzyme instances and 2 StrainModification.target
+    instances in data/normalized_yaml/). data/reference/cofactors.yaml contains 56
+    cofactor entries across 8 categories using enzyme_examples for generic enzyme-family
+    strings without UniProt IDs or organism links and contains a duplicate CHEBI:60052
+    mapping across heme_c (heme C) and heme_d1 (heme d1).
 - assessment_id: assess-coordinator-activation
   area: scope
   topic: Coordinator blocked-stage activation and mid-cycle profile immutability
@@ -536,13 +553,14 @@ findings:
     role: config
   external_issues:
   - https://github.com/CultureBotAI/CultureMech/issues/658
-  description: 'Stage 2 (causal_graphs) is blocked because MediaRecipe and SolutionDescriptor
+  description: 'Stage 2 (causal_graphs) is blocked because MediaRecipe and SolutionRecipe
     in src/culturemech/schema/culturemech.yaml define composition and three-facet
-    ingredient roles (mim_roles.yaml) plus OrganismDescriptor perturbations/nutrient_overrides,
-    but no directed causal-edge class (subject, causal predicate, object, organism/condition
-    context, and claim-scoped EvidenceItem), no causal KGX export in src/culturemech/export/kgx_export.py,
-    and no causal-graph skill under .claude/skills/. Tracked in GitHub issue #658
-    and INFRA_TASKS.md task culturemech-infra-0002.'
+    ingredient roles (mim_roles.yaml) plus OrganismDescriptor perturbations/strain_modifications
+    and GrowthMetrics nutrient_overrides, but no directed causal-edge class (subject,
+    causal predicate, object, organism/condition context, and claim-scoped EvidenceItem),
+    no causal KGX export in src/culturemech/export/kgx_export.py, and no causal-graph
+    skill under .claude/skills/. Tracked in GitHub issue #658 and INFRA_TASKS.md task
+    culturemech-infra-0002.'
 - finding_id: F-002
   issue_key: stage3-missing-typed-uniprot-protein-example-stack
   title: No UniProtKB prefix, typed ProteinExample class, OAK validator config, writer,
@@ -579,13 +597,14 @@ findings:
   external_issues:
   - https://github.com/CultureBotAI/CultureMech/issues/659
   description: 'Stage 3 (protein_examples) is blocked because src/culturemech/schema/culturemech.yaml
-    lacks a UniProtKB prefix, UniProtTerm class, and typed ProteinExample descriptor
-    binding a verified UniProt accession to an explicit NCBITaxon organism, sequence/isoform
-    scope, and claim-scoped EvidenceItem. Existing gene/enzyme slots (CofactorDescriptor.enzyme_examples,
-    biosynthesis_genes, CofactorRequirement.genes, TransporterAnnotation.genes) are
-    untyped free-text strings with 0 instances in data/normalized_yaml/, and conf/id_label_targets.yaml
-    has no UniProtKB validation support. Tracked in GitHub issue #659 and INFRA_TASKS.md
-    task culturemech-infra-0003.'
+    (lines 10-58) declares 31 prefixes without a UniProtKB prefix, UniProtTerm class,
+    or typed ProteinExample descriptor binding a verified UniProt accession to an
+    explicit NCBITaxon organism, sequence/isoform scope, and claim-scoped EvidenceItem.
+    Existing gene/enzyme/target slots (CofactorDescriptor.enzyme_examples, biosynthesis_genes,
+    CofactorRequirement.genes, TransporterAnnotation.genes, StrainModification.target)
+    are untyped free-text strings (0 cofactor/transporter/enzyme instances and 2 StrainModification.target
+    instances in data/normalized_yaml/), and conf/id_label_targets.yaml has no UniProtKB
+    validation support. Tracked in GitHub issue #659 and INFRA_TASKS.md task culturemech-infra-0003.'
 - finding_id: F-003
   issue_key: coordinator-cycle2-blocked-stage-activation-constraint
   title: Pinned Cycle 2 effective-workflow.json cannot be unblocked in-place by repository
@@ -635,9 +654,10 @@ findings:
     role: documentation
   external_issues:
   - https://github.com/CultureBotAI/CultureMech/issues/659
-  description: data/reference/cofactors.yaml assigns CHEBI:60052 to both heme_c (heme
-    C) and heme_d1 (heme d1) and stores only generic enzyme family names in enzyme_examples;
-    additionally, docs/ENRICHMENT_GUIDE.md references normalized_yaml/bacterial/Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml,
+  description: data/reference/cofactors.yaml (56 entries across 8 categories) assigns
+    CHEBI:60052 to both heme_c (heme C) and heme_d1 (heme d1) and stores only generic
+    enzyme family names in enzyme_examples; additionally, docs/ENRICHMENT_GUIDE.md
+    references normalized_yaml/bacterial/Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml,
     which is absent from the repository.
 actions:
 - action_id: ACT-001
