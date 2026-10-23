@@ -1,0 +1,1769 @@
+schema_version: 1.0.0
+review_id: 20261019T074043Z-culturemech-007681-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 0_3_x_hyphomicrobium_medium (CultureMech:007681)'
+started_at: '2026-10-19T07:31:31Z'
+finished_at: '2026-10-19T07:40:43Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'Completed review of CultureMech:007681: official TOGO/JCM source identity
+  is supported, but water quantities were combined across units and preparations,
+  vitamin stocks and liquid doses were converted to unsupported mass concentrations,
+  the Visniac stock remains unresolved, and the required preparation order was lost.
+  Four deterministic validators pass; reference checks cover zero evidence claims.
+  Five major and one minor findings require owner curation.'
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+    sha256: 813b1b79262079954dd4d4731e93b39998a1326acaf100dd412742c287d3dc84
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    sha256: 19458a2630b159f1e12306ee19de278401a18e184e613f536ad97ec7750b255f
+    role: context
+  - path: data/normalized_yaml/bacterial/TOGO_M925_Hyphomicrobium_Medium.yaml
+    sha256: 1a80f725a361dbd2b92865ae64bfe1a8576db57c02617010bcf69052f99d5ce4
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 4 of the first ten uncovered repository-relative paths selected
+    in lexicographic path order by the coordinating review session. Exactly one resolved
+    generated record is assessed in this bundle; normalized owners and linked stock
+    sources are context, not additional reviewed targets.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007681
+  exclusions:
+  - target: Other merged records and external stock-source media
+    reason: Context sources were inspected only to interpret this one target; they
+      are not certified by this record bundle.
+targets:
+- target_id: CultureMech:007681
+  path: data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  label: 0_3_x_hyphomicrobium_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work/004/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work/004/strict.tsv"
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007681
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-19T07:39:42Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-19T07:39:42Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:33:14.262978Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work/004/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:33:16.882313Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work/004/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:33:20.740968Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:33:23.149661Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: jcm1088
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1088
+  locator: Medium 1088 heading; complete basal ingredient table; post-autoclave sentence;
+    Trace vitamins table; default sterilization banner
+  accessed_at: '2026-10-19T07:37:43Z'
+  support: supports
+  summary: Official JCM1088 names the requested 0.3 x Hyphomicrobium medium. Main
+    recipe includes four salts, agar, methanol, 1 mL trace elements, 2 mL trace vitamins
+    and 1 L water. Vitamins are separately prepared in 500 mL water. The default banner
+    specifies 121 C for 15 min; sterile vitamins and methanol are added after autoclaving.
+  quote: After autoclaving, aseptically add filter-sterilized trace vitamins solution
+    and methanol.
+  snapshot_sha256: 2a95f365597ae08ab8ac5f7ec2954a72f5a4c3215770ba1bc8e9833bfb336469
+- evidence_id: jcm884
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=884
+  locator: Visniac trace elements table, reached through JCM1088 reference to Medium
+    884
+  accessed_at: '2026-10-19T07:37:43Z'
+  support: supports
+  summary: The referenced stock has eight trace constituents in a separate 500 mL
+    water preparation. Its molybdate is explicitly ammonium heptamolybdate tetrahydrate.
+    The parent JCM884 basal medium is not this stock and must not be substituted for
+    it.
+  snapshot_sha256: 46aef22628e3d3b939c1fec791efd5c22fe75f555d60b114aca4b8a18eaea023
+- evidence_id: mediadive-j1088
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J1088
+  locator: data.medium; data.solutions[0] main id 5158, [1] vitamins id 5159, [2]
+    Visniac id 4873; each recipe amount/unit/g_l and volume
+  accessed_at: '2026-10-19T07:37:44Z'
+  support: supports
+  summary: MediaDive confirms J1088 and JCM1088 provenance. It explicitly separates
+    a main solution with volume 1005 from two stocks with volume 500 each; main recipe
+    adds 2 mL vitamin stock and 1 mL trace stock. Main salts/agar and stock components
+    have separate calculated g_l fields. Methanol has amount 2, unit ml, without g_l.
+  quote: '"compound": "Methanol"'
+  snapshot_sha256: 84577170ba510189ee696cfa38d004d61a14c43f711c0043ebe216c86b72b5c1
+- evidence_id: togo-m1158
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1158
+  locator: meta; components[0] paragraph 1; components[1] paragraph 3 Trace vitamins;
+    comments[0] paragraph 2
+  accessed_at: '2026-10-19T07:37:44Z'
+  support: supports
+  summary: TOGO M1158 resolves to JCM_M1088. Its JSON preserves main medium versus
+    vitamin-stock paragraphs, original grams/milligrams/millilitres/litres, the M925
+    stock-source pointer, and the separate post-autoclave additions. Imported role/property
+    notes are traceable to item annotations, not to newly demonstrated mechanisms.
+  snapshot_sha256: 19b5ff69a1c7bd23d89bdcbbe70fd3a2ebdca5ef7a43f575389b38a236a86d50
+- evidence_id: togo-m925
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M925
+  locator: meta; components[1] paragraph 2 Visniac trace elements
+  accessed_at: '2026-10-19T07:37:44Z'
+  support: supports
+  summary: TOGO M925 resolves to JCM_M884 Hyphomicrobium Medium; the referenced trace-element
+    stock is a subsection of that medium, not the whole medium.
+  snapshot_sha256: 6696748ca07424e657f798035fd49f1898a566c7bcbc6c764a15caf7575f3516
+- evidence_id: linked-owner-m925
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M925_Hyphomicrobium_Medium.yaml
+  locator: Entire YAML, particularly id, media_term, notes and solutions[0]
+  accessed_at: '2026-10-19T07:39:42Z'
+  support: context_only
+  summary: CultureMech:010346 is the complete M925/JCM884 medium and contains its
+    own empty trace-stock placeholder. Its basal methylamine/salts must not be substituted
+    for the specific stock requested by this target. This context record is not itself
+    a reviewed target.
+- evidence_id: chebi-15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:15377
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:44Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:15377 with the stored label water;
+    identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: 1a98a50fba3aa8ec10dc2fd5c355cd22bc1a955252adbd43f4042fd2f1a3ee5d
+- evidence_id: chebi-31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:31795
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:39Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:31795 with the stored label magnesium
+    sulfate heptahydrate; identity/name and relevant definition or supplied-form formula
+    were inspected.
+  snapshot_sha256: 3ce9de4739bdf41bafd0b99fb9db23c45dfe90cf5ccc0ac3f59e5b2e351f8981
+- evidence_id: chebi-131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:131527
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:39Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:131527 with the stored label dipotassium
+    hydrogen phosphate; identity/name and relevant definition or supplied-form formula
+    were inspected.
+  snapshot_sha256: 15afbeb66ea2b40a0c858fc9e74508ae888df3275466b2f5079c4d6529039555
+- evidence_id: chebi-62946
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:62946
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:39Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:62946 with the stored label ammonium
+    sulfate; identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: 609382f78e618b2fd7b34533363529708bfd987cbd6f1006ec0d24102095b417
+- evidence_id: chebi-17790
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:17790
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:39Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:17790 with the stored label methanol;
+    identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: f9646ee1f7d51f35a14c1036ab741a9f90d374dbaab5e7b2a7be141505362fef
+- evidence_id: chebi-37585
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:37585
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:39Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:37585 with the stored label sodium
+    dihydrogenphosphate; identity/name and relevant definition or supplied-form formula
+    were inspected.
+  snapshot_sha256: 2f6c29803e2e91f72d95621cb2081f1c4aca6a842b6e0703bbaf2d76d84ebe99
+- evidence_id: chebi-2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:2509
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:39Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:2509 with the stored label agar; identity/name
+    and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: fdf12a8280861ef7a97ff6940adfaeba3e1bbe69671dbc1e4ee58869fc4f6bd3
+- evidence_id: chebi-49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:49105
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:41Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:49105 with the stored label thiamine
+    hydrochloride; identity/name and relevant definition or supplied-form formula
+    were inspected.
+  snapshot_sha256: f41eb0f076ac819fcec7763ab166635cb11897c7da78dd22bf2777dd2195030a
+- evidence_id: chebi-27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:27470
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:41Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:27470 with the stored label folic
+    acid; identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: af2d9189982893120ea884fcd0bbb4453481c9071acaf98460d35d1faff5034f
+- evidence_id: chebi-176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:176843
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:41Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:176843 with the stored label vitamin
+    B12; identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: e5ba9cfa69b6bd39be1855a3dcb3ffeb62753d9156b80d6ca057bd17d94ae1c6
+- evidence_id: chebi-17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:17015
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:41Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:17015 with the stored label riboflavin;
+    identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: 8d246c2c6096b124c9368e90029cd3bf51d953a09fc17fcf927a4c42d97a5473
+- evidence_id: chebi-15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:15940
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:41Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:15940 with the stored label nicotinic
+    acid; identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: ec926f5c47c6df2e780b5595bbe2beb89abf074919ac39ac839b9624026e710b
+- evidence_id: chebi-22652
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:22652
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:41Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:22652 with the stored label ascorbic
+    acid; identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: 4b07428a2821250ebb48c64386a71078c04f5effdeb727a197845da4c1afad62
+- evidence_id: chebi-7916
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:7916
+  locator: ChEBI ID/name; definition and chemical formula where supplied
+  accessed_at: '2026-10-19T07:37:42Z'
+  support: supports
+  summary: Official ChEBI record resolves CHEBI:7916 with the stored label pantothenic
+    acid; identity/name and relevant definition or supplied-form formula were inspected.
+  snapshot_sha256: a54a043c8eb89bf2b2c5fe2978a929cec9e9689306c84591b9e49341a9e03388
+- evidence_id: mim-index
+  kind: authority
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact identifier search for every primary and MIM-link CHEBI ID in this
+    target
+  accessed_at: '2026-10-19T07:39:42Z'
+  support: context_only
+  summary: Every one of the 14 distinct primary chemical identifiers occurs in the
+    pinned MIM label index. Presence is distinct from chemical correspondence. CHEBI:91249
+    is represented as diammonium molybdate. Metadata pins source commit 6643131b0f12ab40b66f98135245fca04027e0e9
+    and snapshot SHA2564765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5.
+- evidence_id: bounded-fields
+  kind: search
+  reference: data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  locator: Entire target and normalized owner, plus ignored-inclusive key search
+  accessed_at: '2026-10-19T07:39:42Z'
+  support: context_only
+  summary: Full-file reads and ignored-inclusive rg searches found no root/ingredient
+    evidence arrays, references list, organism-growth claims, pH or structured sterilization
+    fields in this target. The result is bounded to the inspected files; source-bearing
+    notes are present.
+  search_scope: rg --no-ignore --hidden over the exact two Hyphomicrobium generated
+    targets and their two normalized owners for evidence, references, pH, sterilization,
+    preparation, solutions and organism/growth keys. Ignored and hidden files were
+    included. This is not an absence claim about the entire repository.
+- evidence_id: owner-correspondence
+  kind: validation
+  reference: data/merge_yaml/merged/0_3_x_hyphomicrobium_medium__ea4b6083.yaml
+  locator: Python YAML object comparison with authoritative normalized owner
+  accessed_at: '2026-10-19T07:39:42Z'
+  support: supports
+  summary: The generated target equals its normalized owner after removing merge_fingerprint,
+    merged_from and the appended MERGED_RECIPES event; no scientific-field differences
+    remained. Owner/target event and ingredient counts were explicitly inspected.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Exact accession, source lineage and physical state
+  outcome: supported
+  summary: The original name, source accession and source formulation identify this
+    one JCM1088 lineage; source agar supports SOLID_AGAR. A common name with another
+    representation does not authorize merging.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1088
+  - mediadive-j1088
+  - togo-m1158
+  dimensions:
+  - name: record_kind
+    value: MediaRecipe
+    definition: The resolved record is a receiving culture medium, not a standalone
+      stock.
+    evidence_ids:
+    - record
+  - name: source_accession
+    value: JCM1088 via TOGO M1158
+    definition: Exact inspected accession mapping.
+    evidence_ids:
+    - jcm1088
+    - mediadive-j1088
+    - togo-m1158
+  - name: record_surface
+    value: generated
+    definition: The reviewed YAML is derived; maintained curation belongs in its normalized
+      owner.
+    evidence_ids:
+    - record
+    - owner-0
+    - owner-correspondence
+- assessment_id: ownership
+  area: ownership
+  topic: Maintained source and generated record correspondence
+  outcome: supported
+  summary: Every scientific field is retained from the normalized owner; the detected
+    defects therefore require maintained-input curation followed by authorized regeneration,
+    rather than direct generated-file edits.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-correspondence
+  details: 'Owning generator: src/culturemech/merge/merge_recipes.py. Source-specific
+    importer implementation was not assessed, so any claim that a particular importer
+    line caused the historical corruption remains unproven.'
+- assessment_id: history
+  area: provenance
+  topic: Embedded curation history and field provenance
+  outcome: supported
+  summary: Inspected all 13 embedded events, including import, ID assignment, schema/name/term
+    normalization and final merge provenance. The 12 owner events are preserved in
+    order, followed by one generated merge event.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - owner-0
+  - owner-correspondence
+  details: Events document pipeline operations, not scientific approval. Earlier events
+    were not rewritten in this review. The final merge event and merged_from identify
+    the maintained owner. No record-level REVIEWED status is asserted. The local review
+    profile specifies the four recorded validation recipes; embedded-history assessment
+    supplements those checks.
+- assessment_id: conditions-growth
+  area: scope
+  topic: Conditions, organisms and expression-source applicability
+  outcome: not_applicable
+  summary: The target asserts no strain-specific growth endpoint, organism identifier,
+    paper DOI/PMID, gene, locus or expression dataset. JCM does not specify pH, incubation
+    temperature, atmosphere, storage or shelf life here; those values remain not_quantified.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - jcm1088
+  - bounded-fields
+  details: Microbial cultivation is a general application, not evidence that all members
+    of a genus grow in this formulation. iModulonDB cannot establish this recipe and
+    is not applicable.
+- assessment_id: evidence-placement
+  area: evidence
+  topic: Source URLs versus claim-level formulation support
+  outcome: concern
+  summary: Source-bearing notes recover the formulation, but quantities have no narrow
+    evidence objects, excerpts or conversion-basis metadata. The reference validator
+    therefore checked zero claims.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - bounded-fields
+  - validate-references
+  - jcm1088
+  - mediadive-j1088
+- assessment_id: mim-coverage
+  area: grounding
+  topic: MIM linkage presence and ontology identity
+  outcome: supported
+  summary: 12/15 direct ingredient descriptors contain a MIM CHEBI link. All 14 distinct
+    primary IDs resolve and match stored labels. This presence check does not validate
+    source quantities or exact supplied-form correspondence.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - mim-index
+  - chebi-15377
+  - chebi-31795
+  - chebi-131527
+  - chebi-62946
+  - chebi-17790
+  - chebi-37585
+  - chebi-2509
+  - chebi-49105
+  - chebi-27470
+  - chebi-176843
+  - chebi-17015
+  - chebi-15940
+  - chebi-22652
+  - chebi-7916
+  details: Missing links occur at indices 1,7,8. Index7 denotes a stock and must first
+    be represented as such. Other ontology labels/forms examined are compatible with
+    the source naming. Empty solutions[0].composition has zero ingredient instances,
+    so no percentage is calculated for it.
+  metrics:
+  - name: MIM link presence
+    value: 80.0
+    unit: percent
+    definition: 100 times direct descriptors carrying mediaingredientmech_chebi_term
+      divided by all direct ingredient descriptors; presence only, not accuracy.
+    denominator: 15
+    minimum: 0.0
+    maximum: 100.0
+- assessment_id: classification
+  area: consistency
+  topic: Composition axis and source classification
+  outcome: unknown
+  summary: COMPLEX/UNDEFINED is internally consistent, but the inspected TOGO API
+    does not explicitly assert this medium-level classification.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - mediadive-j1088
+  - togo-m1158
+  details: Both records contain agar, which ChEBI classifies as a mixture. This review
+    does not infer whether project nutritional composition classification excludes
+    the gelling agent; no unsupported type replacement is proposed.
+- assessment_id: amount-0
+  area: quantity
+  topic: ingredients[0].concentration
+  outcome: concern
+  summary: 'Distilled water: stored 501.0 G_PER_L; decision=correct. Notes explicitly
+    show duplicate merger 1.0+500.0 into 501 G_PER_L, mixing both units and stages.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: main water 1 L; vitamin-stock water 500 mL, in
+    different source paragraphs. Preparation stage: two separate preparations improperly
+    collapsed. Original batch and source-volume basis are retained separately from
+    any normalized concentration. No unstated density or measured final volume was
+    assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[0].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: main water 1 L; vitamin-stock water 500 mL, in different source paragraphs
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: two separate preparations improperly collapsed
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 501.0 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-1
+  area: quantity
+  topic: ingredients[1].concentration
+  outcome: concern
+  summary: 'MgSO4・7H2O: stored 0.07 G_PER_L; decision=evidence_only. Source mass is
+    verified, but the encoded G_PER_L statement assumes a nominal 1 L convention not
+    explicitly documented as measured final volume.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 0.07 g per main source recipe with 1 L water
+    plus separate liquid additions. Preparation stage: main solution. Original batch
+    and source-volume basis are retained separately from any normalized concentration.
+    No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[1].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: evidence_only
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 0.07 g per main source recipe with 1 L water plus separate liquid additions
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: main solution
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 0.07 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-2
+  area: quantity
+  topic: ingredients[2].concentration
+  outcome: concern
+  summary: 'K2HPO4: stored 0.85 G_PER_L; decision=evidence_only. Source mass is verified,
+    but the encoded G_PER_L statement assumes a nominal 1 L convention not explicitly
+    documented as measured final volume.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 0.85 g per main source recipe with 1 L water
+    plus separate liquid additions. Preparation stage: main solution. Original batch
+    and source-volume basis are retained separately from any normalized concentration.
+    No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[2].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: evidence_only
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 0.85 g per main source recipe with 1 L water plus separate liquid additions
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: main solution
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 0.85 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-3
+  area: quantity
+  topic: ingredients[3].concentration
+  outcome: concern
+  summary: '(NH4)2SO4: stored 0.2 G_PER_L; decision=evidence_only. Source mass is
+    verified, but the encoded G_PER_L statement assumes a nominal 1 L convention not
+    explicitly documented as measured final volume.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 0.2 g per main source recipe with 1 L water plus
+    separate liquid additions. Preparation stage: main solution. Original batch and
+    source-volume basis are retained separately from any normalized concentration.
+    No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[3].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: evidence_only
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 0.2 g per main source recipe with 1 L water plus separate liquid additions
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: main solution
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 0.2 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-5
+  area: quantity
+  topic: ingredients[5].concentration
+  outcome: concern
+  summary: 'NaH2PO4: stored 0.75 G_PER_L; decision=evidence_only. Source mass is verified,
+    but the encoded G_PER_L statement assumes a nominal 1 L convention not explicitly
+    documented as measured final volume.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 0.75 g per main source recipe with 1 L water
+    plus separate liquid additions. Preparation stage: main solution. Original batch
+    and source-volume basis are retained separately from any normalized concentration.
+    No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[5].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: evidence_only
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 0.75 g per main source recipe with 1 L water plus separate liquid additions
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: main solution
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 0.75 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-6
+  area: quantity
+  topic: ingredients[6].concentration
+  outcome: concern
+  summary: 'Agar: stored 15 G_PER_L; decision=evidence_only. Source mass is verified,
+    but the encoded G_PER_L statement assumes a nominal 1 L convention not explicitly
+    documented as measured final volume.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 15 g per main source recipe with 1 L water plus
+    separate liquid additions. Preparation stage: main solution. Original batch and
+    source-volume basis are retained separately from any normalized concentration.
+    No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[6].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: evidence_only
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 15 g per main source recipe with 1 L water plus separate liquid additions
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: main solution
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 15 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-4
+  area: quantity
+  topic: ingredients[4].concentration
+  outcome: concern
+  summary: 'Methanol: stored 2 G_PER_L; decision=correct. Volumetric source amount
+    has been relabeled as mass.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 2 mL per main batch. Preparation stage: post-autoclave
+    methanol addition. Original batch and source-volume basis are retained separately
+    from any normalized concentration. No unstated density or measured final volume
+    was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[4].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 2 mL per main batch
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: post-autoclave methanol addition
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 2 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-7
+  area: quantity
+  topic: ingredients[7].concentration
+  outcome: concern
+  summary: 'Trace vitamins (see below): stored 2 G_PER_L; decision=correct. Stock
+    identity/dose should be represented as a solution; mass unit is unsupported.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 2 mL of separately prepared Trace vitamins. Preparation
+    stage: receiving-medium stock dose, not a direct chemical ingredient. Original
+    batch and source-volume basis are retained separately from any normalized concentration.
+    No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[7].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 2 mL of separately prepared Trace vitamins
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: receiving-medium stock dose, not a direct chemical ingredient
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 2 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-8
+  area: quantity
+  topic: ingredients[8].concentration
+  outcome: concern
+  summary: 'Thiamine・HCl: stored 25 G_PER_L; decision=correct. The original stock-batch
+    milligram numeral became G_PER_L and lost its stock boundary.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 25 mg in vitamin-stock batch with 500 mL water;
+    receiving dose 2 mL. Preparation stage: vitamin stock composition, not final medium.
+    Original batch and source-volume basis are retained separately from any normalized
+    concentration. No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[8].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 25 mg in vitamin-stock batch with 500 mL water; receiving dose 2 mL
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: vitamin stock composition, not final medium
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 25 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-9
+  area: quantity
+  topic: ingredients[9].concentration
+  outcome: concern
+  summary: 'Folic acid: stored 12.5 G_PER_L; decision=correct. The original stock-batch
+    milligram numeral became G_PER_L and lost its stock boundary.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 12.5 mg in vitamin-stock batch with 500 mL water;
+    receiving dose 2 mL. Preparation stage: vitamin stock composition, not final medium.
+    Original batch and source-volume basis are retained separately from any normalized
+    concentration. No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[9].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 12.5 mg in vitamin-stock batch with 500 mL water; receiving dose 2 mL
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: vitamin stock composition, not final medium
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 12.5 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-10
+  area: quantity
+  topic: ingredients[10].concentration
+  outcome: concern
+  summary: 'Vitamin B12: stored 125 G_PER_L; decision=correct. The original stock-batch
+    milligram numeral became G_PER_L and lost its stock boundary.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 125 mg in vitamin-stock batch with 500 mL water;
+    receiving dose 2 mL. Preparation stage: vitamin stock composition, not final medium.
+    Original batch and source-volume basis are retained separately from any normalized
+    concentration. No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[10].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 125 mg in vitamin-stock batch with 500 mL water; receiving dose 2 mL
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: vitamin stock composition, not final medium
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 125 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-11
+  area: quantity
+  topic: ingredients[11].concentration
+  outcome: concern
+  summary: 'Riboflavin: stored 25 G_PER_L; decision=correct. The original stock-batch
+    milligram numeral became G_PER_L and lost its stock boundary.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 25 mg in vitamin-stock batch with 500 mL water;
+    receiving dose 2 mL. Preparation stage: vitamin stock composition, not final medium.
+    Original batch and source-volume basis are retained separately from any normalized
+    concentration. No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[11].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 25 mg in vitamin-stock batch with 500 mL water; receiving dose 2 mL
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: vitamin stock composition, not final medium
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 25 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-12
+  area: quantity
+  topic: ingredients[12].concentration
+  outcome: concern
+  summary: 'Niacin: stored 25 G_PER_L; decision=correct. The original stock-batch
+    milligram numeral became G_PER_L and lost its stock boundary.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 25 mg in vitamin-stock batch with 500 mL water;
+    receiving dose 2 mL. Preparation stage: vitamin stock composition, not final medium.
+    Original batch and source-volume basis are retained separately from any normalized
+    concentration. No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[12].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 25 mg in vitamin-stock batch with 500 mL water; receiving dose 2 mL
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: vitamin stock composition, not final medium
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 25 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-13
+  area: quantity
+  topic: ingredients[13].concentration
+  outcome: concern
+  summary: 'Ascorbic acid: stored 40 G_PER_L; decision=correct. The original stock-batch
+    milligram numeral became G_PER_L and lost its stock boundary.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 40 mg in vitamin-stock batch with 500 mL water;
+    receiving dose 2 mL. Preparation stage: vitamin stock composition, not final medium.
+    Original batch and source-volume basis are retained separately from any normalized
+    concentration. No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[13].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 40 mg in vitamin-stock batch with 500 mL water; receiving dose 2 mL
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: vitamin stock composition, not final medium
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 40 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: amount-14
+  area: quantity
+  topic: ingredients[14].concentration
+  outcome: concern
+  summary: 'Pantothenic acid: stored 25 G_PER_L; decision=correct. The original stock-batch
+    milligram numeral became G_PER_L and lost its stock boundary.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 25 mg in vitamin-stock batch with 500 mL water;
+    receiving dose 2 mL. Preparation stage: vitamin stock composition, not final medium.
+    Original batch and source-volume basis are retained separately from any normalized
+    concentration. No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: ingredients[14].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 25 mg in vitamin-stock batch with 500 mL water; receiving dose 2 mL
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: vitamin stock composition, not final medium
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 25 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: stock-0
+  area: quantity
+  topic: solutions[0].concentration
+  outcome: concern
+  summary: 'Visniac trace elements (see Medium [M925]): stored 1 G_PER_L; decision=correct.
+    Dose is relabeled as mass; empty composition and textual medium pointer do not
+    encode the specific stock.'
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  details: 'Inspected source amount: 1 mL of Visniac trace elements from M925 stock
+    subsection. Preparation stage: receiving-medium trace-stock dose. Original batch
+    and source-volume basis are retained separately from any normalized concentration.
+    No unstated density or measured final volume was assumed.'
+  dimensions:
+  - name: field_path
+    value: solutions[0].concentration
+    definition: Exact quantity assertion being assessed.
+    evidence_ids:
+    - record
+  - name: decision
+    value: correct
+    definition: Concentration-evidence contract decision for this current field.
+    evidence_ids:
+    - record
+    - togo-m1158
+    - jcm1088
+  - name: source_amount
+    value: 1 mL of Visniac trace elements from M925 stock subsection
+    definition: Inspected source amount and original unit/batch basis.
+    evidence_ids:
+    - togo-m1158
+  - name: preparation_stage
+    value: receiving-medium trace-stock dose
+    definition: Distinguishes receiving-medium additions from separately prepared
+      stock composition.
+    evidence_ids:
+    - togo-m1158
+  - name: current_amount
+    value: 1 G_PER_L
+    definition: Current encoded value/unit.
+    evidence_ids:
+    - record
+- assessment_id: stock-boundaries
+  area: representation
+  topic: Referenced stock source and inline vitamin preparation
+  outcome: concern
+  summary: The source separates main medium, Trace vitamins and the M925 Visniac subsection.
+    The record has 15 direct ingredients plus one empty solution descriptor, losing
+    the explicit nesting.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - togo-m1158
+  - togo-m925
+  - linked-owner-m925
+  - jcm1088
+  - jcm884
+  details: M925/CultureMech:010346 denotes a whole Hyphomicrobium medium with its
+    own trace-stock subsection. Its identifier must not be used as if it denoted the
+    stock alone; the primary and TOGO stock tables are recoverable. No claim is made
+    that a suitable standalone stock is absent elsewhere in the repository.
+- assessment_id: preparation
+  area: completeness
+  topic: Sterilization and post-autoclave additions
+  outcome: concern
+  summary: Both inspected sources require separately sterilized vitamins and methanol
+    to be added after basal autoclaving. The record provides no preparation steps,
+    so this material source boundary is lost.
+  target_ids:
+  - CultureMech:007681
+  evidence_ids:
+  - record
+  - bounded-fields
+  - jcm1088
+  - togo-m1158
+findings:
+- finding_id: f1
+  issue_key: cm007681-water-cross-stage-sum
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Water quantities from different preparations were added as incompatible numbers
+  description: ingredients[0] records 501 G_PER_L and a duplicate-merger note 1.0,500.0.
+    TOGO preserves 1 L main-medium water separately from 500 mL vitamin-stock water.
+    The local sum combines incompatible units and preparation stages.
+  target_ids:
+  - CultureMech:007681
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[0].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - togo-m1158
+  - jcm1088
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: cm007681-vitamin-stock-collapse
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Vitamin-stock milligrams and stock dose became direct mass concentrations
+  description: Seven vitamin stock-batch milligram numerals became G_PER_L direct-medium
+    amounts, while the source 2 mL stock addition is another direct ingredient at
+    2 G_PER_L. This loses both unit conversion and stock nesting and can double-count
+    the preparation.
+  target_ids:
+  - CultureMech:007681
+  field_paths:
+  - ingredients[7]
+  - ingredients[8].concentration
+  - ingredients[9].concentration
+  - ingredients[10].concentration
+  - ingredients[11].concentration
+  - ingredients[12].concentration
+  - ingredients[13].concentration
+  - ingredients[14].concentration
+  - solutions
+  evidence_ids:
+  - record
+  - togo-m1158
+  - jcm1088
+  - mediadive-j1088
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: cm007681-methanol-mass-unit
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Methanol volume was represented as mass concentration
+  description: Both primary JCM and source databases specify a 2 mL methanol addition.
+    ingredients[4] instead asserts 2 G_PER_L; no density or source-supported mass
+    conversion is given.
+  target_ids:
+  - CultureMech:007681
+  field_paths:
+  - ingredients[4].concentration
+  evidence_ids:
+  - record
+  - jcm1088
+  - mediadive-j1088
+  - togo-m1158
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: cm007681-quantity-evidence-basis
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Quantity evidence and source-volume convention are not represented
+  description: Source notes recover the recipe, but concentration claims lack scoped
+    evidence and conversion metadata. JCM lists 1 L water with separate additions;
+    MediaDive uses a calculated 1005 mL main volume. The current record does not explain
+    which volume basis its values use. This is a documentation/source-basis gap, not
+    proof that the secondary database numerical conversion is arithmetically wrong.
+  target_ids:
+  - CultureMech:007681
+  field_paths:
+  - ingredients[*].evidence
+  - evidence
+  - references
+  - ingredients[*].concentration
+  evidence_ids:
+  - record
+  - bounded-fields
+  - jcm1088
+  - mediadive-j1088
+  - validate-references
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f5
+  issue_key: cm007681-visniac-stock-unresolved
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Visniac stock identity, contents and volumetric dose are not encoded
+  description: solutions[0] has name Unknown solution, empty composition, textual
+    M925 pointer and 1 G_PER_L. The source specifies 1 mL of the Visniac subsection
+    within M925/JCM884. M925 exists as a complete medium, so blindly linking it as
+    a stock would introduce unrelated basal ingredients. No broken nonexistent CultureMech
+    reference is claimed because none is encoded.
+  target_ids:
+  - CultureMech:007681
+  field_paths:
+  - solutions[0].name
+  - solutions[0].preferred_term
+  - solutions[0].composition
+  - solutions[0].concentration
+  evidence_ids:
+  - record
+  - togo-m1158
+  - togo-m925
+  - jcm884
+  - linked-owner-m925
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f6
+  issue_key: cm007681-preparation-order-loss
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate sterilization and post-autoclave additions were lost
+  description: The target omits preparation_steps entirely. JCM and TOGO explicitly
+    require sterile trace vitamins and methanol to be added after autoclaving. Given
+    the flattened ingredient list, this omission materially changes how the source
+    formulation can be reconstructed.
+  target_ids:
+  - CultureMech:007681
+  field_paths:
+  - preparation_steps
+  - sterilization
+  evidence_ids:
+  - record
+  - bounded-fields
+  - jcm1088
+  - togo-m1158
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  rule_id: P3.4; P3.5
+  native_severity: P3
+  normalization_reason: Native P3 preparation-completeness rules are upgraded to major
+    because loss of the explicit sterilization/addition boundary materially changes
+    this formulation, especially alongside flattened stock components.
+actions:
+- action_id: a1
+  description: Restore water to its respective medium and stock preparations; correct
+    the maintained record and prevent duplicate handling from merging quantities across
+    stages or units.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007681
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Main1 L water and stock 500 mL water remain in separate preparations.
+  - The unsupported 501 G_PER_L assertion is removed with source-backed provenance.
+  - Other ingredient quantities are not normalized against the invalid 501 value.
+- action_id: a2
+  description: Restore Trace vitamins as a separately prepared stock with the source
+    milligram amounts,500 mL water basis and 2 mL receiving dose.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007681
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - All seven original stock ingredient masses and exact supplied forms are retained
+    at stock stage.
+  - Receiving dose 2 mL is separate from stock composition and uses a documented medium-volume
+    basis.
+  - No direct-ingredient plus expanded-stock double-counting remains.
+- action_id: a3
+  description: Retain the source volumetric dose and separately document the receiving-volume
+    convention in the normalized owner.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007681
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - The source amount, original ml unit and receiving preparation stage are explicitly
+    retained.
+  - No mass conversion is asserted without verified methanol density and volume basis.
+  - just validate-schema <owner>; just validate-strict <owner>; just validate-terms
+    <owner>; just validate-references <owner>
+- action_id: a4
+  description: Attach formulation evidence to the narrowest claim and document source
+    batch amounts, stock boundaries and the chosen normalized-volume convention without
+    upgrading water volume to an explicitly measured final volume.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007681
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Every retained or corrected amount has an inspected persistent source URL, exact
+    supported excerpt and preparation-stage scope.
+  - Primary water/addition instructions and secondary-derived volume are distinguished.
+  - Reference checking performs real supported excerpt checks after curation.
+- action_id: a5
+  description: Represent the specific Visniac stock inline or through a verified standalone
+    stock reference, retaining the source eight-component composition,500 mL water
+    basis and 1 mL receiving dose.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:007681
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - The referenced object or inline composition denotes only the trace-element stock,
+    not the entire M925 medium.
+  - All eight stock constituents and exact source forms are verified.
+  - The receiving dose remains 1 mL, with explicit normalization basis.
+  - Documented schema, strict, term and reference checks pass after source-backed
+    curation.
+- action_id: a6
+  description: Restore the basal autoclaving stage and post-autoclave filter-sterile
+    vitamin/methanol additions, with the source default 121 C/15 min scope.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:007681
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1158_0.3_x_Hyphomicrobium_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Vitamins and methanol are separately sterilized and added after basal autoclaving.
+  - Default autoclave conditions retain JCM source scope.
+  - No unsupported pH, incubation or storage parameters are invented.
+limitations:
+- The primary JCM recipe states water volumes and separate additions; it does not
+  explicitly prescribe a measured final volume. MediaDive calculates a 1005 mL receiving
+  solution. Both source conventions are preserved as evidence, without silently turning
+  a water volume into a verified final volume.
+- The collection pages support formulation and preparation, not strain-specific growth
+  or optimal conditions. No strain-growth assertion, DOI or PMID was present to verify.
+- MIM existence was checked against the pinned packaged index; this does not establish
+  exact chemical-form correspondence or independently certify the index. No fuzzy
+  replacement grounding was attempted.
+- Browser extraction of the MediaDive/TOGO frontends failed; official JSON APIs subsequently
+  provided the source content and identifiers. The failed frontend attempts are not
+  evidence of missing records.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. The reference recipe performed zero excerpt checks for this target; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-001
+- generated-medium

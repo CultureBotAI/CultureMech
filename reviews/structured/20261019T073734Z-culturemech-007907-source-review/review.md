@@ -1,0 +1,1123 @@
+# Source and formulation review: 0_01_lb_seawater_medium (CultureMech:007907)
+
+- Review: 20261019T073734Z-culturemech-007907-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-19T07:31:26Z
+- Finished UTC: 2026-10-19T07:37:34Z
+- Reviewer: OpenAI Codex with delegated source and validator checks (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The named JCM1273 lineage is recoverable, but the encoded formulation substitutes full-strength Miller LB constituents for the source 0.1 g Lennox broth and corrupts source quantity units. Correct the maintained owner before regenerating the derived record.
+
+## Scope And Provenance
+
+One complete generated MediaRecipe, including source identity, every listed amount, chemical forms, stocks, conditions, preparation, classifications, provenance, and maintained-input correspondence.
+
+Selection: Record 2 of the first ten uncovered paths in Python lexicographic repository-relative path order. Initial scripts/record_review.py list validated 34 existing bundles, whose targets covered 0 of 6320 merged records. This bundle selects only the named record; no sampling or fleet-wide scientific claim.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 7c568537897ee4bba1b8e97f8172133c1572aec0.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:007907 | data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml | generated | 0_01_lb_seawater_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:007907 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:007907 | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work/002/strict.tsv |
+| validate-terms | passed | True | CultureMech:007907 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:007907 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| iModulonDB applicability | not_applicable | False | CultureMech:007907 | The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic dataset requiring an iModulonDB cross-check; expression-module membership cannot establish this formulation. |
+
+## Scientific And Domain Assessments
+
+### Documented deterministic checks
+
+schema: supported. Targets: CultureMech:007907.
+
+The four documented recipes completed; interpret the scope of each separately.
+
+### Source accession, formulation lineage and maintained ownership
+
+identity: supported. Targets: CultureMech:007907.
+
+The exact source accession and original name resolve to JCM1273; the target maps to one maintained normalized owner. The separate records are not asserted merge-equivalent.
+
+The target differs from its current owner only by merge bookkeeping; the scientific defects occur in the owner too. Embedded history retains import/normalization/merge provenance and is not changed by this review.
+
+### Every direct concentration claim, including unchanged amounts
+
+quantity: concern. Targets: CultureMech:007907.
+
+All listed quantities were compared with source masses/volumes at the correct preparation stage. Full-strength Miller additions and several units conflict with the source.
+
+Source basis: JCM and TOGO specify amounts added to 1 L seawater, without a final-volume make-up step. The comparisons below use the listed batch basis and exact mass-unit arithmetic; they do not claim measured final-solution volume or assume seawater density.
+ingredients[0].concentration &#124; K2HPO4 &#124; 5 G_PER_L &#124; 5 mg per source batch &#124; correct; nominal factor 1000
+ingredients[1].concentration &#124; Biotin &#124; 1 G_PER_L &#124; 1 ug per source batch &#124; correct; nominal factor 1000000
+ingredients[2].concentration &#124; Thiamine HCl &#124; 100 G_PER_L &#124; 100 ug per source batch &#124; correct; nominal factor 1000000
+ingredients[3].concentration &#124; Vitamin B12 &#124; 1 G_PER_L &#124; 1 ug per source batch &#124; correct; nominal factor 1000000
+ingredients[4].concentration &#124; NaNO3 &#124; 120 G_PER_L &#124; 120 mg per source batch &#124; correct; nominal factor 1000
+ingredients[5].concentration &#124; Seawater &#124; 1 G_PER_L &#124; 1 L seawater &#124; correct dimension; do not infer density
+ingredients[6].concentration &#124; Tris &#124; 1 G_PER_L &#124; 1 g per source batch &#124; verified on source batch basis; evidence_only
+ingredients[7].concentration &#124; Fe(III)-EDTA &#124; 259 G_PER_L &#124; 259 ug per source batch &#124; correct; nominal factor 1000000
+ingredients[8..10].concentration &#124; Tryptone / Yeast extract / NaCl &#124; 10 / 5 / 10 G_PER_L &#124; 0.1 g total LB Broth Lennox (BD-Difco) per source batch &#124; correct representation; restore product and dose
+ingredients[11].concentration &#124; Mn(II)-EDTA &#124; 332 G_PER_L &#124; 332 ug per source batch &#124; correct; nominal factor 1000000
+ingredients[12].concentration &#124; HCl &#124; variable VARIABLE &#124; unquantified pH-adjustment reagent &#124; not_quantified; preserve absence of fixed dose; add pH endpoint/preparation purpose
+
+### Chemical identity, mixtures and historical linkage
+
+grounding: supported. Targets: CultureMech:007907.
+
+All asserted CHEBI/MICRO/FOODON IDs resolve; exact supplied forms and legacy linkage have the stated limits.
+
+Vitamin B12 is a source-compatible class, not a verified vitamer/molar mass. Fe(III)-EDTA names an anion; counterion/hydrate are unspecified. Mn(II)-EDTA and seawater are intentionally ungrounded; no replacement ID guessed. MICRO supports tryptic casein hydrolysate, but the broad casein-peptone EXACT synonym and yeast-autodigest species specificity are not established by these sources. HCl is unquantified pH-adjustment reagent; its molecular term does not establish aqueous stock strength. TOGO source roles are attribution, not experimental function evidence.
+
+### Preparation, classifications, growth and source evidence
+
+completeness: concern. Targets: CultureMech:007907.
+
+Source-backed preparation and formulation classifications are distinguishable from unsupported high-metal and supplier claims.
+
+Complex/undefined/liquid classification is consistent with seawater and commercial mixture. The target loses pH8.0, mixing/autoclaving and the optional alternate-seawater instruction; HCl has no fabricated fixed dose but lacks its endpoint/purpose. No target-organism or experimental-growth claim is asserted. Root/supplier URLs provide recoverable provenance, but no claim-scoped quantity evidence is encoded; corrections need narrow source evidence. Stock solutions are not asserted in either target, so the direct list is the full concentration scope. high_metal:true is not verified by the source or valid metal arithmetic.
+
+## Findings
+
+### f1: Lennox broth dose is replaced by full-strength Miller constituents
+
+blocker / open / confirmed; issue key: cm-007907-lb-expansion.
+
+Same confirmed full-strength Miller substitution for 0.1 g Lennox product as 001; independently observed in this target and its normalized owner.
+
+### f2: Milligram and microgram units are lost
+
+major / open / confirmed; issue key: cm-007907-mass-units.
+
+Two mg values and five ug values become unchanged G_PER_L values; TOGO JSON directly preserves original units.
+
+### f3: Seawater volume becomes an unsupported mass concentration
+
+major / open / confirmed; issue key: cm-007907-seawater-dimension.
+
+Source 1 L seawater becomes 1 G_PER_L, changing a volume input into an unsupported mass concentration.
+
+### f4: Source pH and preparation sequence are lost
+
+major / open / confirmed; issue key: cm-007907-missing-preparation.
+
+Both TOGO meta.ph and comments explicitly require pH 8.0 via HCl, mixing and autoclaving; target omits pH/preparation completely. Its unquantified HCl entry lacks the purpose/endpoint. Artificial seawater alternative is also lost. JCM supplies 121 C/15 min default.
+
+### f5: Catalog identities do not match the specified Lennox broth
+
+major / open / confirmed; issue key: cm-007907-product-provenance.
+
+Same wrong Miller supplier/catalog attribution as 001; official BD244520 is agar and SigmaL3522 is Miller broth.
+
+### f6: High-metal threshold assertion lacks valid supporting quantities
+
+major / open / confirmed; issue key: cm-007907-high-metal.
+
+Threshold classification has no established support after mg/ug/solvent and commercial dose errors; natural seawater composition and final-volume denominator remain unestablished.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Restore specified source product/dose with evidence; source-specific decomposition only after manufacturer identity and dilution basis verification. Apply only to the maintained normalized owner after authorization, then regenerate; preserve append-only history.
+
+- Compare corrected field paths with the exact JCM1273/TOGO source and preserve source preparation stage and batch basis.
+- Run focused schema, strict, term and reference recipes; confirm source-to-output claim retention and run merge verification/freshness for the subsequent curation change.
+
+### a2
+
+Correct each item using TOGO/JCM exact quantities and explicit source batch basis; retain evidence at ingredient scope. Apply only to the maintained normalized owner after authorization, then regenerate; preserve append-only history.
+
+- Compare corrected field paths with the exact JCM1273/TOGO source and preserve source preparation stage and batch basis.
+- Run focused schema, strict, term and reference recipes; confirm source-to-output claim retention and run merge verification/freshness for the subsequent curation change.
+
+### a3
+
+Restore a schema-supported volume/batch representation without assuming density. Apply only to the maintained normalized owner after authorization, then regenerate; preserve append-only history.
+
+- Compare corrected field paths with the exact JCM1273/TOGO source and preserve source preparation stage and batch basis.
+- Run focused schema, strict, term and reference recipes; confirm source-to-output claim retention and run merge verification/freshness for the subsequent curation change.
+
+### a4
+
+Restore source pH, ordered preparation, autoclave parameters and explicitly optional JCM1118 seawater substitution; keep HCl dose unquantified. Apply only to the maintained normalized owner after authorization, then regenerate; preserve append-only history.
+
+- Compare corrected field paths with the exact JCM1273/TOGO source and preserve source preparation stage and batch basis.
+- Run focused schema, strict, term and reference recipes; confirm source-to-output claim retention and run merge verification/freshness for the subsequent curation change.
+
+### a5
+
+Correct source-specific product citation and catalog provenance in normalized owner. Apply only to the maintained normalized owner after authorization, then regenerate; preserve append-only history.
+
+- Compare corrected field paths with the exact JCM1273/TOGO source and preserve source preparation stage and batch basis.
+- Run focused schema, strict, term and reference recipes; confirm source-to-output claim retention and run merge verification/freshness for the subsequent curation change.
+
+### a6
+
+Withdraw or independently recompute on verified inputs; do not assert false by default. Apply only to the maintained normalized owner after authorization, then regenerate; preserve append-only history.
+
+- Compare corrected field paths with the exact JCM1273/TOGO source and preserve source preparation stage and batch basis.
+- Run focused schema, strict, term and reference recipes; confirm source-to-output claim retention and run merge verification/freshness for the subsequent curation change.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml; Entire YAML; exact source hash captured in source.inputs | context_only | Complete generated record read, including all ingredients, notes, preparation, annotations, and history. |
+| owner-0 | data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml; Entire maintained YAML | context_only | Maintained owner read in full and compared with generated target; ownership is traced from the merge event source and merged_from. |
+| validate-schema | just validate-schema data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml; Actual command output | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | just validate-strict data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml --workers 1 --out /private/tmp/culturemech-review-work/002/strict.tsv; Actual command output | supports | Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019/src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                /private/tmp/culturemech-review-work/002/strict.tsv |
+| validate-terms | just validate-terms data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml; Actual command output | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | just validate-references data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml; Actual command output | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| jcm1273 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1273; medium 1273 table; following preparation/comment; page sterilization default | supports | 0.01% LB SEAWATER MEDIUM. Ten table components on a 1.0 L seawater basis, pH 8.0 with HCl, autoclave. Default 121 C for 15 min. Alternate artificial seawater in JCM 1118 allowed. |
+| togo1369 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1369; meta; components[0].items[0..10]; comments[0..1] | supports | HTTP 200. Resolves M1369 to JCM_M1273 and official JCM URL; meta.ph is 8.0. Gives all exact source amounts/units, including 0.1 g Lennox powder and 1 L seawater. HCl item has no amount. Both JCM preparation comments retained. Imported Role/Properties notes for original ten components/HCl match TOGO attributes. |
+| mediadive1273 | https://mediadive.dsmz.de/medium/J1273; culture medium recipe; metadata; source link | supports | Same amounts and preparation; source JCM, complex medium, bacteria, pH 8.0; externally supplied status. |
+| mediadive5415 | https://mediadive.dsmz.de/solutions/5415; Main sol. J1273 / internal solution ID S5415 | supports | Same ingredient table; confirms source solution accession only. No SolutionDescriptor exists in either target, so no broken internal solution reference is asserted. |
+| jcm1118 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1118; Artificial seawater subrecipe only | supports | Referenced alternative exists. NaCl 26.3 g; CaCl2·2H2O 1.54 g; KBr 0.1 g; KF 0.004 g; KCl 0.7 g; H3BO3 30 mg; MgSO4·7H2O 7 g; KHCO3 0.24 g; SrCl2·6H2O 17 mg; MgCl2·6H2O 5.2 g; distilled water 1 L. Do not import the other JCM1118 nutrients or its main-medium sterilization into JCM1273. |
+| sigma_l3522 | https://www.sigmaaldrich.com/US/en/product/sigma/l3522; product identity; Properties/composition; Preparation Note | supports | L3522 is LB Broth (Miller); composition 10 g/L NaCl, 10 g/L tryptone, 5 g/L yeast extract, prepared from 25 g powder in 1 L water. Verifies origin of imported full-strength numbers, not suitability for JCM's 0.1 g Lennox addition. |
+| bd244520 | https://www.bd.com/en-us/products-and-solutions/products/product-page.244520; product title and catalog identity | supports | Catalog 244520 identifies LB Agar, Miller; it is not the source's Lennox broth. |
+| bd240230 | https://www.bd.com/en-us/products-and-solutions/products/product-page.240230; product title and catalog identity | supports | Official BD page identifies 240230 as Difco LB Broth, Lennox 500g. The page establishes product identity, but an exact BD composition document was not inspected; do not assert replacement constituent concentrations from a generic supplier formulation. |
+| chem-CHEBI-63005 | https://www.ebi.ac.uk/chebi/CHEBI:63005; Official term identity, label and definition | supports | CHEBI:63005 resolves to sodium nitrate. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-CHEBI-131527 | https://www.ebi.ac.uk/chebi/CHEBI:131527; Official term identity, label and definition | supports | CHEBI:131527 resolves to dipotassium hydrogen phosphate. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-CHEBI-15956 | https://www.ebi.ac.uk/chebi/CHEBI:15956; Official term identity, label and definition | supports | CHEBI:15956 resolves to biotin. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-CHEBI-176843 | https://www.ebi.ac.uk/chebi/CHEBI:176843; Official term identity, label and definition | supports | CHEBI:176843 resolves to vitamin B12. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-CHEBI-49105 | https://www.ebi.ac.uk/chebi/CHEBI:49105; Official term identity, label and definition | supports | CHEBI:49105 resolves to thiamine hydrochloride. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-CHEBI-9754 | https://www.ebi.ac.uk/chebi/CHEBI:9754; Official term identity, label and definition | supports | CHEBI:9754 resolves to tris. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-CHEBI-26710 | https://www.ebi.ac.uk/chebi/CHEBI:26710; Official term identity, label and definition | supports | CHEBI:26710 resolves to sodium chloride. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-CHEBI-17883 | https://www.ebi.ac.uk/chebi/CHEBI:17883; Official term identity, label and definition | supports | CHEBI:17883 resolves to hydrogen chloride. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-FOODON-03315426 | https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFOODON_03315426; Official term identity, label and definition | supports | FOODON:03315426 resolves to yeast extract. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| chem-MICRO-0000182 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMICRO_0000182; Official term identity, label and definition | supports | MICRO:0000182 resolves to tryptone. Existence and label correspondence are separate from exact supplied-form and formulation support. |
+| mim-snapshot | src/culturemech/data/mediaingredientmech/label_index.csv; Exact NaNO3, Tryptone and Yeast extract rows; adjacent metadata | supports | Snapshot byte hash matches its metadata (source commit6643131b0f12ab40b66f98135245fca04027e0e9); rows identify CHEBI:63005, MICRO:0000182 and FOODON:03315426. This is a pinned cross-check, not proof of every historical legacy ID. |
+| metal-schema | src/culturemech/schema/culturemech.yaml; MediaRecipe.high_metal description | context_only | The flag denotes total metal concentration at least1049.84mM, based on concentration analysis. It is not simply the presence of trace metals. |
+
+## Limits And Additional Notes
+
+- The exact Lennox manufacturer formulation was not inspected; restoring the source product and dose does not justify guessed component decomposition.
+- No natural-seawater density/metal composition, measured final volume, chelate counterion/hydrate, HCl stock strength, or specific B12 vitamer was established.
+- The secondary Laboratory Notes page could not be inspected reliably and is not used as formulation support.
+- A schema/term pass does not establish chemical identity, correct source quantities, or growth. The reference recipe performed zero excerpt checks for this target; direct source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No new experiment or exhaustive literature review was performed. Full-corpus regeneration, ID/product/merge gates are acceptance checks for follow-up changes, not executed by this read-only single-record review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261019T073734Z-culturemech-007907-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 0_01_lb_seawater_medium (CultureMech:007907)'
+started_at: '2026-10-19T07:31:26Z'
+finished_at: '2026-10-19T07:37:34Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The named JCM1273 lineage is recoverable, but the encoded formulation substitutes
+  full-strength Miller LB constituents for the source 0.1 g Lennox broth and corrupts
+  source quantity units. Correct the maintained owner before regenerating the derived
+  record.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+    sha256: e7e23b249c1dbb1afc6f7f3295cb7d2ffdc556cbe6c58a598247580c05aea212
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    sha256: a07d57330325d173642f904ca8cd1afa1993e829cc9c08ab7717906e49b9308f
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 2 of the first ten uncovered paths in Python lexicographic repository-relative
+    path order. Initial scripts/record_review.py list validated 34 existing bundles,
+    whose targets covered 0 of 6320 merged records. This bundle selects only the named
+    record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007907
+targets:
+- target_id: CultureMech:007907
+  path: data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+  label: 0_01_lb_seawater_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work/002/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work/002/strict.tsv"
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007907
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-19T07:37:34Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-19T07:37:34Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:32:50.048646Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work/002/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:32:53.936448Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work/002/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:32:59.434917Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/0_01_lb_seawater_medium__c6dadec3.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T07:33:01.340104Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: jcm1273
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1273
+  locator: medium 1273 table; following preparation/comment; page sterilization default
+  accessed_at: '2026-10-19T07:29:09Z'
+  support: supports
+  summary: 0.01% LB SEAWATER MEDIUM. Ten table components on a 1.0 L seawater basis,
+    pH 8.0 with HCl, autoclave. Default 121 C for 15 min. Alternate artificial seawater
+    in JCM 1118 allowed.
+- evidence_id: togo1369
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1369
+  locator: meta; components[0].items[0..10]; comments[0..1]
+  accessed_at: '2026-10-19T07:33:03.840235Z'
+  support: supports
+  summary: HTTP 200. Resolves M1369 to JCM_M1273 and official JCM URL; meta.ph is
+    8.0. Gives all exact source amounts/units, including 0.1 g Lennox powder and 1
+    L seawater. HCl item has no amount. Both JCM preparation comments retained. Imported
+    Role/Properties notes for original ten components/HCl match TOGO attributes.
+  snapshot_sha256: f83dc34536c2784e58faf2890ec21e22ff6a538b2dc889e77511e824727b70b7
+- evidence_id: mediadive1273
+  kind: database
+  reference: https://mediadive.dsmz.de/medium/J1273
+  locator: culture medium recipe; metadata; source link
+  accessed_at: '2026-10-19T07:29:30Z'
+  support: supports
+  summary: Same amounts and preparation; source JCM, complex medium, bacteria, pH
+    8.0; externally supplied status.
+- evidence_id: mediadive5415
+  kind: database
+  reference: https://mediadive.dsmz.de/solutions/5415
+  locator: Main sol. J1273 / internal solution ID S5415
+  accessed_at: '2026-10-19T07:29:50Z'
+  support: supports
+  summary: Same ingredient table; confirms source solution accession only. No SolutionDescriptor
+    exists in either target, so no broken internal solution reference is asserted.
+- evidence_id: jcm1118
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1118
+  locator: Artificial seawater subrecipe only
+  accessed_at: '2026-10-19T07:29:10Z'
+  support: supports
+  summary: Referenced alternative exists. NaCl 26.3 g; CaCl2·2H2O 1.54 g; KBr 0.1
+    g; KF 0.004 g; KCl 0.7 g; H3BO3 30 mg; MgSO4·7H2O 7 g; KHCO3 0.24 g; SrCl2·6H2O
+    17 mg; MgCl2·6H2O 5.2 g; distilled water 1 L. Do not import the other JCM1118
+    nutrients or its main-medium sterilization into JCM1273.
+- evidence_id: sigma_l3522
+  kind: primary_source
+  reference: https://www.sigmaaldrich.com/US/en/product/sigma/l3522
+  locator: product identity; Properties/composition; Preparation Note
+  accessed_at: '2026-10-19T07:31:54Z'
+  support: supports
+  summary: L3522 is LB Broth (Miller); composition 10 g/L NaCl, 10 g/L tryptone, 5
+    g/L yeast extract, prepared from 25 g powder in 1 L water. Verifies origin of
+    imported full-strength numbers, not suitability for JCM's 0.1 g Lennox addition.
+- evidence_id: bd244520
+  kind: primary_source
+  reference: https://www.bd.com/en-us/products-and-solutions/products/product-page.244520
+  locator: product title and catalog identity
+  accessed_at: '2026-10-19T07:32:05Z'
+  support: supports
+  summary: Catalog 244520 identifies LB Agar, Miller; it is not the source's Lennox
+    broth.
+- evidence_id: bd240230
+  kind: primary_source
+  reference: https://www.bd.com/en-us/products-and-solutions/products/product-page.240230
+  locator: product title and catalog identity
+  accessed_at: '2026-10-19T07:32:46Z'
+  support: supports
+  summary: Official BD page identifies 240230 as Difco LB Broth, Lennox 500g. The
+    page establishes product identity, but an exact BD composition document was not
+    inspected; do not assert replacement constituent concentrations from a generic
+    supplier formulation.
+- evidence_id: chem-CHEBI-63005
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:63005
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:31:45Z'
+  support: supports
+  summary: CHEBI:63005 resolves to sodium nitrate. Existence and label correspondence
+    are separate from exact supplied-form and formulation support.
+- evidence_id: chem-CHEBI-131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:131527
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:31:45Z'
+  support: supports
+  summary: CHEBI:131527 resolves to dipotassium hydrogen phosphate. Existence and
+    label correspondence are separate from exact supplied-form and formulation support.
+- evidence_id: chem-CHEBI-15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:15956
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:31:45Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin. Existence and label correspondence are
+    separate from exact supplied-form and formulation support.
+- evidence_id: chem-CHEBI-176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:176843
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:31:49Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12. Existence and label correspondence
+    are separate from exact supplied-form and formulation support.
+- evidence_id: chem-CHEBI-49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:49105
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:31:49Z'
+  support: supports
+  summary: CHEBI:49105 resolves to thiamine hydrochloride. Existence and label correspondence
+    are separate from exact supplied-form and formulation support.
+- evidence_id: chem-CHEBI-9754
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:9754
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:31:49Z'
+  support: supports
+  summary: CHEBI:9754 resolves to tris. Existence and label correspondence are separate
+    from exact supplied-form and formulation support.
+- evidence_id: chem-CHEBI-26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:26710
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:31:49Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride. Existence and label correspondence
+    are separate from exact supplied-form and formulation support.
+- evidence_id: chem-CHEBI-17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/CHEBI:17883
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:32:46Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride. Existence and label correspondence
+    are separate from exact supplied-form and formulation support.
+- evidence_id: chem-FOODON-03315426
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FFOODON_03315426
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:33:04.951472Z'
+  support: supports
+  summary: FOODON:03315426 resolves to yeast extract. Existence and label correspondence
+    are separate from exact supplied-form and formulation support.
+- evidence_id: chem-MICRO-0000182
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMICRO_0000182
+  locator: Official term identity, label and definition
+  accessed_at: '2026-10-19T07:33:05.772296Z'
+  support: supports
+  summary: MICRO:0000182 resolves to tryptone. Existence and label correspondence
+    are separate from exact supplied-form and formulation support.
+- evidence_id: mim-snapshot
+  kind: authority
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Exact NaNO3, Tryptone and Yeast extract rows; adjacent metadata
+  accessed_at: '2026-10-19T07:37:34Z'
+  support: supports
+  summary: Snapshot byte hash matches its metadata (source commit6643131b0f12ab40b66f98135245fca04027e0e9);
+    rows identify CHEBI:63005, MICRO:0000182 and FOODON:03315426. This is a pinned
+    cross-check, not proof of every historical legacy ID.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: metal-schema
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  locator: MediaRecipe.high_metal description
+  accessed_at: '2026-10-19T07:37:34Z'
+  support: context_only
+  summary: The flag denotes total metal concentration at least1049.84mM, based on
+    concentration analysis. It is not simply the presence of trace metals.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Source accession, formulation lineage and maintained ownership
+  outcome: supported
+  summary: The exact source accession and original name resolve to JCM1273; the target
+    maps to one maintained normalized owner. The separate records are not asserted
+    merge-equivalent.
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - togo1369
+  details: The target differs from its current owner only by merge bookkeeping; the
+    scientific defects occur in the owner too. Embedded history retains import/normalization/merge
+    provenance and is not changed by this review.
+- assessment_id: amounts
+  area: quantity
+  topic: Every direct concentration claim, including unchanged amounts
+  outcome: concern
+  summary: All listed quantities were compared with source masses/volumes at the correct
+    preparation stage. Full-strength Miller additions and several units conflict with
+    the source.
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - sigma_l3522
+  - togo1369
+  details: 'Source basis: JCM and TOGO specify amounts added to 1 L seawater, without
+    a final-volume make-up step. The comparisons below use the listed batch basis
+    and exact mass-unit arithmetic; they do not claim measured final-solution volume
+    or assume seawater density.
+
+    ingredients[0].concentration | K2HPO4 | 5 G_PER_L | 5 mg per source batch | correct;
+    nominal factor 1000
+
+    ingredients[1].concentration | Biotin | 1 G_PER_L | 1 ug per source batch | correct;
+    nominal factor 1000000
+
+    ingredients[2].concentration | Thiamine HCl | 100 G_PER_L | 100 ug per source
+    batch | correct; nominal factor 1000000
+
+    ingredients[3].concentration | Vitamin B12 | 1 G_PER_L | 1 ug per source batch
+    | correct; nominal factor 1000000
+
+    ingredients[4].concentration | NaNO3 | 120 G_PER_L | 120 mg per source batch |
+    correct; nominal factor 1000
+
+    ingredients[5].concentration | Seawater | 1 G_PER_L | 1 L seawater | correct dimension;
+    do not infer density
+
+    ingredients[6].concentration | Tris | 1 G_PER_L | 1 g per source batch | verified
+    on source batch basis; evidence_only
+
+    ingredients[7].concentration | Fe(III)-EDTA | 259 G_PER_L | 259 ug per source
+    batch | correct; nominal factor 1000000
+
+    ingredients[8..10].concentration | Tryptone / Yeast extract / NaCl | 10 / 5 /
+    10 G_PER_L | 0.1 g total LB Broth Lennox (BD-Difco) per source batch | correct
+    representation; restore product and dose
+
+    ingredients[11].concentration | Mn(II)-EDTA | 332 G_PER_L | 332 ug per source
+    batch | correct; nominal factor 1000000
+
+    ingredients[12].concentration | HCl | variable VARIABLE | unquantified pH-adjustment
+    reagent | not_quantified; preserve absence of fixed dose; add pH endpoint/preparation
+    purpose'
+  dimensions:
+  - name: quantity_decisions
+    value: verified/evidence_only for unchanged source-mass comparisons; correct for
+      unit/product defects; not_quantified for unmeasured pH reagent
+    definition: Field-specific dispositions appear in details; supported source batch
+      values are not measured final-volume concentrations.
+    evidence_ids:
+    - record
+    - jcm1273
+- assessment_id: grounding
+  area: grounding
+  topic: Chemical identity, mixtures and historical linkage
+  outcome: supported
+  summary: All asserted CHEBI/MICRO/FOODON IDs resolve; exact supplied forms and legacy
+    linkage have the stated limits.
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - record
+  - mim-snapshot
+  - chem-CHEBI-63005
+  - chem-CHEBI-131527
+  - chem-CHEBI-15956
+  - chem-CHEBI-176843
+  - chem-CHEBI-49105
+  - chem-CHEBI-9754
+  - chem-CHEBI-26710
+  - chem-CHEBI-17883
+  - chem-FOODON-03315426
+  - chem-MICRO-0000182
+  details: Vitamin B12 is a source-compatible class, not a verified vitamer/molar
+    mass. Fe(III)-EDTA names an anion; counterion/hydrate are unspecified. Mn(II)-EDTA
+    and seawater are intentionally ungrounded; no replacement ID guessed. MICRO supports
+    tryptic casein hydrolysate, but the broad casein-peptone EXACT synonym and yeast-autodigest
+    species specificity are not established by these sources. HCl is unquantified
+    pH-adjustment reagent; its molecular term does not establish aqueous stock strength.
+    TOGO source roles are attribution, not experimental function evidence.
+- assessment_id: protocol
+  area: completeness
+  topic: Preparation, classifications, growth and source evidence
+  outcome: concern
+  summary: Source-backed preparation and formulation classifications are distinguishable
+    from unsupported high-metal and supplier claims.
+  target_ids:
+  - CultureMech:007907
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - jcm1118
+  - sigma_l3522
+  - bd244520
+  details: Complex/undefined/liquid classification is consistent with seawater and
+    commercial mixture. The target loses pH8.0, mixing/autoclaving and the optional
+    alternate-seawater instruction; HCl has no fabricated fixed dose but lacks its
+    endpoint/purpose. No target-organism or experimental-growth claim is asserted.
+    Root/supplier URLs provide recoverable provenance, but no claim-scoped quantity
+    evidence is encoded; corrections need narrow source evidence. Stock solutions
+    are not asserted in either target, so the direct list is the full concentration
+    scope. high_metal:true is not verified by the source or valid metal arithmetic.
+findings:
+- finding_id: f1
+  issue_key: cm-007907-lb-expansion
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Lennox broth dose is replaced by full-strength Miller constituents
+  description: Same confirmed full-strength Miller substitution for 0.1 g Lennox product
+    as 001; independently observed in this target and its normalized owner.
+  target_ids:
+  - CultureMech:007907
+  field_paths:
+  - ingredients[8]
+  - ingredients[9]
+  - ingredients[10]
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - togo1369
+  - sigma_l3522
+  - bd244520
+  - bd240230
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: cm-007907-mass-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Milligram and microgram units are lost
+  description: Two mg values and five ug values become unchanged G_PER_L values; TOGO
+    JSON directly preserves original units.
+  target_ids:
+  - CultureMech:007907
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[1].concentration
+  - ingredients[2].concentration
+  - ingredients[3].concentration
+  - ingredients[4].concentration
+  - ingredients[7].concentration
+  - ingredients[11].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - togo1369
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f3
+  issue_key: cm-007907-seawater-dimension
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Seawater volume becomes an unsupported mass concentration
+  description: Source 1 L seawater becomes 1 G_PER_L, changing a volume input into
+    an unsupported mass concentration.
+  target_ids:
+  - CultureMech:007907
+  field_paths:
+  - ingredients[5].concentration
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - togo1369
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f4
+  issue_key: cm-007907-missing-preparation
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source pH and preparation sequence are lost
+  description: Both TOGO meta.ph and comments explicitly require pH 8.0 via HCl, mixing
+    and autoclaving; target omits pH/preparation completely. Its unquantified HCl
+    entry lacks the purpose/endpoint. Artificial seawater alternative is also lost.
+    JCM supplies 121 C/15 min default.
+  target_ids:
+  - CultureMech:007907
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - sterilization
+  - ingredients[12].notes
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - togo1369
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f5
+  issue_key: cm-007907-product-provenance
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Catalog identities do not match the specified Lennox broth
+  description: Same wrong Miller supplier/catalog attribution as 001; official BD244520
+    is agar and SigmaL3522 is Miller broth.
+  target_ids:
+  - CultureMech:007907
+  field_paths:
+  - ingredients[8].supplier_catalog
+  - ingredients[9].supplier_catalog
+  - ingredients[10].supplier_catalog
+  - notes
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - togo1369
+  - sigma_l3522
+  - bd244520
+  - bd240230
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f6
+  issue_key: cm-007907-high-metal
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: High-metal threshold assertion lacks valid supporting quantities
+  description: Threshold classification has no established support after mg/ug/solvent
+    and commercial dose errors; natural seawater composition and final-volume denominator
+    remain unestablished.
+  target_ids:
+  - CultureMech:007907
+  field_paths:
+  - high_metal
+  evidence_ids:
+  - record
+  - owner-0
+  - jcm1273
+  - togo1369
+  - metal-schema
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Restore specified source product/dose with evidence; source-specific
+    decomposition only after manufacturer identity and dilution basis verification.
+    Apply only to the maintained normalized owner after authorization, then regenerate;
+    preserve append-only history.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007907
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after separately authorized
+    owner curation and source review)
+  acceptance_checks:
+  - Compare corrected field paths with the exact JCM1273/TOGO source and preserve
+    source preparation stage and batch basis.
+  - Run focused schema, strict, term and reference recipes; confirm source-to-output
+    claim retention and run merge verification/freshness for the subsequent curation
+    change.
+- action_id: a2
+  description: Correct each item using TOGO/JCM exact quantities and explicit source
+    batch basis; retain evidence at ingredient scope. Apply only to the maintained
+    normalized owner after authorization, then regenerate; preserve append-only history.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007907
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after separately authorized
+    owner curation and source review)
+  acceptance_checks:
+  - Compare corrected field paths with the exact JCM1273/TOGO source and preserve
+    source preparation stage and batch basis.
+  - Run focused schema, strict, term and reference recipes; confirm source-to-output
+    claim retention and run merge verification/freshness for the subsequent curation
+    change.
+- action_id: a3
+  description: Restore a schema-supported volume/batch representation without assuming
+    density. Apply only to the maintained normalized owner after authorization, then
+    regenerate; preserve append-only history.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:007907
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after separately authorized
+    owner curation and source review)
+  acceptance_checks:
+  - Compare corrected field paths with the exact JCM1273/TOGO source and preserve
+    source preparation stage and batch basis.
+  - Run focused schema, strict, term and reference recipes; confirm source-to-output
+    claim retention and run merge verification/freshness for the subsequent curation
+    change.
+- action_id: a4
+  description: Restore source pH, ordered preparation, autoclave parameters and explicitly
+    optional JCM1118 seawater substitution; keep HCl dose unquantified. Apply only
+    to the maintained normalized owner after authorization, then regenerate; preserve
+    append-only history.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:007907
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after separately authorized
+    owner curation and source review)
+  acceptance_checks:
+  - Compare corrected field paths with the exact JCM1273/TOGO source and preserve
+    source preparation stage and batch basis.
+  - Run focused schema, strict, term and reference recipes; confirm source-to-output
+    claim retention and run merge verification/freshness for the subsequent curation
+    change.
+- action_id: a5
+  description: Correct source-specific product citation and catalog provenance in
+    normalized owner. Apply only to the maintained normalized owner after authorization,
+    then regenerate; preserve append-only history.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:007907
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after separately authorized
+    owner curation and source review)
+  acceptance_checks:
+  - Compare corrected field paths with the exact JCM1273/TOGO source and preserve
+    source preparation stage and batch basis.
+  - Run focused schema, strict, term and reference recipes; confirm source-to-output
+    claim retention and run merge verification/freshness for the subsequent curation
+    change.
+- action_id: a6
+  description: Withdraw or independently recompute on verified inputs; do not assert
+    false by default. Apply only to the maintained normalized owner after authorization,
+    then regenerate; preserve append-only history.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:007907
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1369_0.01_LB_Seawater_Medium.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after separately authorized
+    owner curation and source review)
+  acceptance_checks:
+  - Compare corrected field paths with the exact JCM1273/TOGO source and preserve
+    source preparation stage and batch basis.
+  - Run focused schema, strict, term and reference recipes; confirm source-to-output
+    claim retention and run merge verification/freshness for the subsequent curation
+    change.
+limitations:
+- The exact Lennox manufacturer formulation was not inspected; restoring the source
+  product and dose does not justify guessed component decomposition.
+- No natural-seawater density/metal composition, measured final volume, chelate counterion/hydrate,
+  HCl stock strength, or specific B12 vitamer was established.
+- The secondary Laboratory Notes page could not be inspected reliably and is not used
+  as formulation support.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. The reference recipe performed zero excerpt checks for this target; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-001
+- generated-medium
+```
