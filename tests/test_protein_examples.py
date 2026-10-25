@@ -26,6 +26,7 @@ import apply_protein_examples  # noqa: E402
 import validate_id_label_correspondence  # noqa: E402
 import validate_protein_examples  # noqa: E402
 import validate_strict  # noqa: E402
+
 from culturemech.export.kgx_export import (  # noqa: E402
     _QUALIFIER_COLUMNS,
     nodes,
@@ -163,11 +164,13 @@ class TestProteinExampleValidation:
         recipe["target_organisms"][0]["cofactor_requirements"][0]["protein_examples"] = [
             _valid_protein_example("UniProtKB:P0ABJ9", "Cytochrome b562")
         ]
-        recipe["target_organisms"][0]["cofactor_requirements"][0]["cofactor"]["protein_examples"] = [
-            _valid_protein_example("UniProtKB:P0ABK2", "Cytochrome c-type biogenesis protein")
-        ]
+        recipe["target_organisms"][0]["cofactor_requirements"][0]["cofactor"][
+            "protein_examples"
+        ] = [_valid_protein_example("UniProtKB:P0ABK2", "Cytochrome c-type biogenesis protein")]
         recipe["target_organisms"][0]["transporters"][0]["protein_examples"] = [
-            _valid_protein_example("UniProtKB:P0AEX9", "Maltose/maltodextrin-binding periplasmic protein")
+            _valid_protein_example(
+                "UniProtKB:P0AEX9", "Maltose/maltodextrin-binding periplasmic protein"
+            )
         ]
         recipe["ingredients"][0]["cofactors_provided"] = [
             {
@@ -259,25 +262,18 @@ class TestProteinExampleValidation:
         refute_only["evidence"][0]["supports"] = "REFUTE"
         recipe["protein_examples"] = [refute_only]
         assert any(
-            "SUPPORT or PARTIAL" in i.message
-            for i in validate_recipe_protein_examples(recipe)
+            "SUPPORT or PARTIAL" in i.message for i in validate_recipe_protein_examples(recipe)
         )
 
         no_snippet = _valid_protein_example()
         no_snippet["evidence"][0]["snippet"] = ""
         recipe["protein_examples"] = [no_snippet]
-        assert any(
-            "snippet" in i.message
-            for i in validate_recipe_protein_examples(recipe)
-        )
+        assert any("snippet" in i.message for i in validate_recipe_protein_examples(recipe))
 
         bad_ref = _valid_protein_example()
         bad_ref["evidence"][0]["reference"] = "invalid-ref-string"
         recipe["protein_examples"] = [bad_ref]
-        assert any(
-            "expected PMID:" in i.message
-            for i in validate_recipe_protein_examples(recipe)
-        )
+        assert any("expected PMID:" in i.message for i in validate_recipe_protein_examples(recipe))
 
     def test_rejects_duplicate_uniprot_organism_pair_in_list(self) -> None:
         recipe = _base_recipe()
@@ -310,7 +306,9 @@ class TestApplyProteinExamplesWriter:
                 }
             ]
         }
-        proposals_path.write_text(yaml.safe_dump(proposals_payload, sort_keys=False), encoding="utf-8")
+        proposals_path.write_text(
+            yaml.safe_dump(proposals_payload, sort_keys=False), encoding="utf-8"
+        )
 
         # 1. Dry-run does not mutate the file on disk
         rc = apply_protein_examples.main(
@@ -462,11 +460,7 @@ class TestKGXProteinExport:
         assert protein_node["name"] == "Outer membrane porin F"
 
         edge_list = list(transform(recipe))
-        protein_edges = [
-            e
-            for e in edge_list
-            if "UniProtKB:P02931" in (e["subject"], e["object"])
-        ]
+        protein_edges = [e for e in edge_list if "UniProtKB:P02931" in (e["subject"], e["object"])]
         assert len(protein_edges) == len({e["id"] for e in protein_edges})
         triples = {(e["subject"], e["predicate"], e["object"]) for e in protein_edges}
         assert ("CultureMech:999659", "biolink:related_to", "UniProtKB:P02931") in triples
@@ -499,7 +493,9 @@ class TestReferenceAndConfigPrerequisites:
         assert by_name["siroheme"] == "CHEBI:28788"
 
     def test_oak_and_id_label_configs_handle_uniprotkb(self) -> None:
-        oak_cfg = yaml.safe_load((REPO_ROOT / "conf" / "oak_config.yaml").read_text(encoding="utf-8"))
+        oak_cfg = yaml.safe_load(
+            (REPO_ROOT / "conf" / "oak_config.yaml").read_text(encoding="utf-8")
+        )
         assert "UniProtKB" in oak_cfg.get("ontology_adapters", {})
 
         targets_cfg = yaml.safe_load(
@@ -565,9 +561,7 @@ class TestReferenceAndConfigPrerequisites:
         invalid_file = tmp_path / "invalid.yaml"
         invalid_file.write_text(yaml.safe_dump(invalid_recipe, sort_keys=False), encoding="utf-8")
         assert (
-            validate_protein_examples.main(
-                ["--paths", str(invalid_file), "--out", str(tsv_out)]
-            )
+            validate_protein_examples.main(["--paths", str(invalid_file), "--out", str(tsv_out)])
             == 1
         )
         assert "UniProtKB:BAD" in tsv_out.read_text(encoding="utf-8")

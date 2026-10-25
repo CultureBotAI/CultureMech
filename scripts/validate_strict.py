@@ -46,6 +46,7 @@ DEFAULT_ROOTS = [
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(_REPO_ROOT / "src"))
 from record_kinds import has_solution_shape  # noqa: E402  -- shared medium/solution rule
+
 from culturemech.validation.protein_examples import validate_recipe_protein_examples  # noqa: E402
 
 

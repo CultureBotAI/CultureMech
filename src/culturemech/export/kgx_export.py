@@ -993,7 +993,10 @@ def protein_example_to_edges(
         predicate="biolink:related_to",
         obj=uniprot_id,
         qualifiers=[
-            {"qualifier_type_id": "biolink:relationship_type", "qualifier_value": "protein_example"},
+            {
+                "qualifier_type_id": "biolink:relationship_type",
+                "qualifier_value": "protein_example",
+            },
             *role_qualifiers,
         ],
         publications=publications,

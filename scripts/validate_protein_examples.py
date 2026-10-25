@@ -17,8 +17,8 @@ from __future__ import annotations
 import argparse
 import csv
 import sys
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 
 import yaml
 
@@ -107,7 +107,11 @@ def main(argv: list[str] | None = None) -> int:
         else:
             results = validate_recipe(instance)
             for res in results:
-                ctx = ",".join(res.context) if res.context else (str(res.instance_index) if res.instance_index else "")
+                ctx = (
+                    ",".join(res.context)
+                    if res.context
+                    else (str(res.instance_index) if res.instance_index else "")
+                )
                 loc = f" ({ctx})" if ctx else ""
                 print(f"[ERROR] {yaml_path}{loc}: {res.message}", file=sys.stderr)
                 rows.append((str(yaml_path), ctx, res.message))
