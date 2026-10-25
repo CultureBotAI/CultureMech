@@ -255,15 +255,22 @@ def transform(
             yield edge
 
     # Edge Type 11: Curated UniProt Protein Examples (#659)
+    seen_protein_edge_ids: set[str] = set()
     for example, inherited_cofactor_id, inherited_substrate_id in _iter_protein_examples_for_export(
         record
     ):
-        yield from protein_example_to_edges(
+        for edge in protein_example_to_edges(
             medium_id,
             example,
             inherited_cofactor_id=inherited_cofactor_id,
             inherited_substrate_id=inherited_substrate_id,
-        )
+        ):
+            edge_id = edge.get("id")
+            if edge_id in seen_protein_edge_ids:
+                continue
+            if edge_id:
+                seen_protein_edge_ids.add(edge_id)
+            yield edge
 
 
 # ================================================================
@@ -917,6 +924,35 @@ def _iter_protein_examples_for_export(
         for example in transporter.get("protein_examples") or []:
             if isinstance(example, dict):
                 yield example, None, substrate_id
+
+    for ing in record.get("ingredients") or []:
+        if not isinstance(ing, dict):
+            continue
+        for cof in ing.get("cofactors_provided") or []:
+            if not isinstance(cof, dict):
+                continue
+            cofactor_id = _get_term_id(cof, ["term", "id"]) or _get_term_id(
+                cof, ["cofactor_term", "id"]
+            )
+            for example in cof.get("protein_examples") or []:
+                if isinstance(example, dict):
+                    yield example, cofactor_id, None
+
+    for sol in record.get("solutions") or []:
+        if not isinstance(sol, dict):
+            continue
+        for comp in sol.get("composition") or []:
+            if not isinstance(comp, dict):
+                continue
+            for cof in comp.get("cofactors_provided") or []:
+                if not isinstance(cof, dict):
+                    continue
+                cofactor_id = _get_term_id(cof, ["term", "id"]) or _get_term_id(
+                    cof, ["cofactor_term", "id"]
+                )
+                for example in cof.get("protein_examples") or []:
+                    if isinstance(example, dict):
+                        yield example, cofactor_id, None
 
 
 def protein_example_to_edges(

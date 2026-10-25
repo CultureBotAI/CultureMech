@@ -136,6 +136,41 @@ def iter_protein_example_lists(
         if isinstance(cof_pe, list):
             found.append((f"cofactors[{cof_idx}].protein_examples", cof_pe, None))
 
+    for ing_idx, ing in enumerate(instance.get("ingredients") or []):
+        if not isinstance(ing, dict):
+            continue
+        for cp_idx, cp in enumerate(ing.get("cofactors_provided") or []):
+            if not isinstance(cp, dict):
+                continue
+            cp_pe = cp.get("protein_examples")
+            if isinstance(cp_pe, list):
+                found.append(
+                    (
+                        f"ingredients[{ing_idx}].cofactors_provided[{cp_idx}].protein_examples",
+                        cp_pe,
+                        None,
+                    )
+                )
+
+    for sol_idx, sol in enumerate(instance.get("solutions") or []):
+        if not isinstance(sol, dict):
+            continue
+        for comp_idx, comp in enumerate(sol.get("composition") or []):
+            if not isinstance(comp, dict):
+                continue
+            for cp_idx, cp in enumerate(comp.get("cofactors_provided") or []):
+                if not isinstance(cp, dict):
+                    continue
+                cp_pe = cp.get("protein_examples")
+                if isinstance(cp_pe, list):
+                    found.append(
+                        (
+                            f"solutions[{sol_idx}].composition[{comp_idx}].cofactors_provided[{cp_idx}].protein_examples",
+                            cp_pe,
+                            None,
+                        )
+                    )
+
     return found
 
 

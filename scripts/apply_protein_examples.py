@@ -72,9 +72,9 @@ def _load_proposals(batch_path: Path) -> list[dict[str, Any]]:
 def _assert_normalized_yaml_scope(yaml_dir: Path) -> None:
     resolved = yaml_dir.resolve()
     parts = resolved.parts
-    if "merge_yaml" in parts:
+    if "merge_yaml" in parts or "normalized_yaml" not in parts:
         raise LayerBoundaryError(
-            f"Refusing to write to generated merge directory {yaml_dir}; "
+            f"Refusing to write to {yaml_dir}; "
             "authoritative edits must target data/normalized_yaml/."
         )
 
@@ -213,10 +213,10 @@ def apply_proposals_to_directory(
     recipes_touched = 0
     recipes_written = 0
 
-    for recipe_path in sorted(yaml_dir.rglob("*.yaml")):
-        if recipe_path.name.endswith("_index.yaml"):
+    for yaml_path in sorted(yaml_dir.rglob("*.yaml")):
+        if yaml_path.name.endswith("_index.yaml"):
             continue
-        recipe = yaml.safe_load(recipe_path.read_text(encoding="utf-8"))
+        recipe = yaml.safe_load(yaml_path.read_text(encoding="utf-8"))
         if not isinstance(recipe, dict):
             continue
         rid = recipe.get("id")
@@ -245,10 +245,10 @@ def apply_proposals_to_directory(
 
         errors = validate_recipe(recipe)
         if errors:
-            raise ValidationFailedError(recipe_path, errors)
+            raise ValidationFailedError(yaml_path, errors)
 
         if not dry_run:
-            write_validated_recipe(recipe, recipe_path)
+            write_validated_recipe(recipe, yaml_path)
             recipes_written += 1
 
     return recipes_touched, recipes_written

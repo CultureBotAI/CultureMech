@@ -169,6 +169,16 @@ class TestProteinExampleValidation:
         recipe["target_organisms"][0]["transporters"][0]["protein_examples"] = [
             _valid_protein_example("UniProtKB:P0AEX9", "Maltose/maltodextrin-binding periplasmic protein")
         ]
+        recipe["ingredients"][0]["cofactors_provided"] = [
+            {
+                "preferred_term": "heme C",
+                "category": "METALS",
+                "term": {"id": "CHEBI:60562", "label": "ferroheme c"},
+                "protein_examples": [
+                    _valid_protein_example("UniProtKB:P0ABK5", "Cytochrome c biogenesis protein")
+                ],
+            }
+        ]
 
         assert validate_recipe_protein_examples(recipe) == []
         assert validate_recipe(recipe) == []
@@ -384,6 +394,19 @@ class TestApplyProteinExamplesWriter:
                 ]
             )
 
+        raw_dir = tmp_path / "data" / "raw_yaml"
+        raw_dir.mkdir(parents=True)
+        with pytest.raises(LayerBoundaryError):
+            apply_protein_examples.main(
+                [
+                    "--input",
+                    str(proposals_path),
+                    "--normalized-dir",
+                    str(raw_dir),
+                    "--apply",
+                ]
+            )
+
     def test_refuses_invalid_proposal_without_mutating_file(self, tmp_path: Path) -> None:
         norm_dir = tmp_path / "data" / "normalized_yaml" / "bacterial"
         norm_dir.mkdir(parents=True)
@@ -426,6 +449,7 @@ class TestKGXProteinExport:
 
     def test_emits_biolink_protein_node_and_edges(self) -> None:
         recipe = _base_recipe()
+        recipe["protein_examples"] = [_valid_protein_example()]
         recipe["target_organisms"][0]["cofactor_requirements"][0]["protein_examples"] = [
             _valid_protein_example()
         ]
@@ -443,6 +467,7 @@ class TestKGXProteinExport:
             for e in edge_list
             if "UniProtKB:P02931" in (e["subject"], e["object"])
         ]
+        assert len(protein_edges) == len({e["id"] for e in protein_edges})
         triples = {(e["subject"], e["predicate"], e["object"]) for e in protein_edges}
         assert ("CultureMech:999659", "biolink:related_to", "UniProtKB:P02931") in triples
         assert ("UniProtKB:P02931", "biolink:in_taxon", "NCBITaxon:562") in triples
