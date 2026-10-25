@@ -1,5 +1,5 @@
 # Auto generated from culturemech.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-10-11T01:57:23
+# Generation date: 2026-10-24T22:28:48
 # Schema: culturemech
 #
 # id: https://w3id.org/culturemech
@@ -61,7 +61,7 @@ from rdflib import (
 from linkml_runtime.linkml_model.types import Boolean, Date, Float, Integer, String, Uri, Uriorcurie
 from linkml_runtime.utils.metamodelcore import Bool, URI, URIorCURIE, XSDDate
 
-metamodel_version = "1.11.0"
+metamodel_version = "1.12.0"
 version = None
 
 # Namespaces
@@ -90,6 +90,7 @@ TOGO = CurieNamespace('TOGO', 'http://togodb.org/db/medium/')
 UBERON = CurieNamespace('UBERON', 'http://purl.obolibrary.org/obo/UBERON_')
 UO = CurieNamespace('UO', 'http://purl.obolibrary.org/obo/UO_')
 UTEX = CurieNamespace('UTEX', 'https://utex.org/products/')
+UNIPROTKB = CurieNamespace('UniProtKB', 'https://www.uniprot.org/uniprotkb/')
 BIOLINK = CurieNamespace('biolink', 'https://w3id.org/biolink/vocab/')
 CULTUREMECH = CurieNamespace('culturemech', 'https://w3id.org/culturemech/')
 GEO = CurieNamespace('geo', 'https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=')
@@ -168,6 +169,10 @@ class EnvironmentTermId(TermId):
     pass
 
 
+class UniProtTermId(TermId):
+    pass
+
+
 @dataclass(repr=False)
 class MediaRecipe(YAMLRoot):
     """
@@ -239,6 +244,7 @@ class MediaRecipe(YAMLRoot):
     sources: Optional[Union[Union[dict, "SourceReference"], list[Union[dict, "SourceReference"]]]] = empty_list()
     incubation_atmosphere: Optional[Union[str, "AtmosphereEnum"]] = None
     source_data: Optional[Union[dict, "SourceData"]] = None
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.id):
@@ -421,6 +427,10 @@ class MediaRecipe(YAMLRoot):
 
         if self.source_data is not None and not isinstance(self.source_data, SourceData):
             self.source_data = SourceData(**as_dict(self.source_data))
+
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
 
         super().__post_init__(**kwargs)
 
@@ -930,6 +940,7 @@ class OrganismDescriptor(Descriptor):
     transporters: Optional[Union[Union[dict, "TransporterAnnotation"], list[Union[dict, "TransporterAnnotation"]]]] = empty_list()
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, "EvidenceItem"]], list[Union[dict, "EvidenceItem"]]]] = empty_dict()
     strain_modifications: Optional[Union[Union[dict, "StrainModification"], list[Union[dict, "StrainModification"]]]] = empty_list()
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.preferred_term):
@@ -978,6 +989,10 @@ class OrganismDescriptor(Descriptor):
         self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
 
         self._normalize_inlined_as_list(slot_name="strain_modifications", slot_type=StrainModification, key_name="modification_type", keyed=False)
+
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
 
         super().__post_init__(**kwargs)
 
@@ -1034,6 +1049,7 @@ class CofactorDescriptor(Descriptor):
     ec_associations: Optional[Union[str, list[str]]] = empty_list()
     kegg_pathways: Optional[Union[str, list[str]]] = empty_list()
     enzyme_examples: Optional[Union[str, list[str]]] = empty_list()
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
     biosynthesis_genes: Optional[Union[str, list[str]]] = empty_list()
     bioavailability: Optional[str] = None
     notes: Optional[str] = None
@@ -1067,6 +1083,10 @@ class CofactorDescriptor(Descriptor):
         if not isinstance(self.enzyme_examples, list):
             self.enzyme_examples = [self.enzyme_examples] if self.enzyme_examples is not None else []
         self.enzyme_examples = [v if isinstance(v, str) else str(v) for v in self.enzyme_examples]
+
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
 
         if not isinstance(self.biosynthesis_genes, list):
             self.biosynthesis_genes = [self.biosynthesis_genes] if self.biosynthesis_genes is not None else []
@@ -1984,6 +2004,7 @@ class CofactorRequirement(YAMLRoot):
     confidence: Optional[float] = None
     evidence: Optional[Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]]] = empty_dict()
     genes: Optional[Union[str, list[str]]] = empty_list()
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
 
     def __post_init__(self, *_: str, **kwargs: Any):
         if self._is_empty(self.cofactor):
@@ -2004,6 +2025,10 @@ class CofactorRequirement(YAMLRoot):
         if not isinstance(self.genes, list):
             self.genes = [self.genes] if self.genes is not None else []
         self.genes = [v if isinstance(v, str) else str(v) for v in self.genes]
+
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
 
         super().__post_init__(**kwargs)
 
@@ -2026,6 +2051,7 @@ class TransporterAnnotation(YAMLRoot):
     substrate_terms: Optional[Union[dict[Union[str, ChemicalEntityTermId], Union[dict, "ChemicalEntityTerm"]], list[Union[dict, "ChemicalEntityTerm"]]]] = empty_dict()
     direction: Optional[str] = None
     genes: Optional[Union[str, list[str]]] = empty_list()
+    protein_examples: Optional[Union[Union[dict, "ProteinExample"], list[Union[dict, "ProteinExample"]]]] = empty_list()
     ec_number: Optional[str] = None
     notes: Optional[str] = None
 
@@ -2053,8 +2079,79 @@ class TransporterAnnotation(YAMLRoot):
             self.genes = [self.genes] if self.genes is not None else []
         self.genes = [v if isinstance(v, str) else str(v) for v in self.genes]
 
+        if not isinstance(self.protein_examples, list):
+            self.protein_examples = [self.protein_examples] if self.protein_examples is not None else []
+        self.protein_examples = [v if isinstance(v, ProteinExample) else ProteinExample(**as_dict(v)) for v in self.protein_examples]
+
         if self.ec_number is not None and not isinstance(self.ec_number, str):
             self.ec_number = str(self.ec_number)
+
+        if self.notes is not None and not isinstance(self.notes, str):
+            self.notes = str(self.notes)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class ProteinExample(YAMLRoot):
+    """
+    A typed, organism-specific UniProtKB protein example linked to a growth medium, target organism, cofactor
+    requirement, or transporter with claim-scoped evidence.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["ProteinExample"]
+    class_class_curie: ClassVar[str] = "culturemech:ProteinExample"
+    class_name: ClassVar[str] = "ProteinExample"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.ProteinExample
+
+    uniprot_term: Union[dict, "UniProtTerm"] = None
+    organism_term: Union[dict, "OrganismTerm"] = None
+    evidence: Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]] = empty_dict()
+    gene_symbol: Optional[str] = None
+    locus_tag: Optional[str] = None
+    ec_number: Optional[str] = None
+    sequence_scope: Optional[str] = None
+    functional_role: Optional[str] = None
+    cofactor_term: Optional[Union[dict, "ChemicalEntityTerm"]] = None
+    substrate_term: Optional[Union[dict, "ChemicalEntityTerm"]] = None
+    notes: Optional[str] = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.uniprot_term):
+            self.MissingRequiredField("uniprot_term")
+        if not isinstance(self.uniprot_term, UniProtTerm):
+            self.uniprot_term = UniProtTerm(**as_dict(self.uniprot_term))
+
+        if self._is_empty(self.organism_term):
+            self.MissingRequiredField("organism_term")
+        if not isinstance(self.organism_term, OrganismTerm):
+            self.organism_term = OrganismTerm(**as_dict(self.organism_term))
+
+        if self._is_empty(self.evidence):
+            self.MissingRequiredField("evidence")
+        self._normalize_inlined_as_list(slot_name="evidence", slot_type=EvidenceItem, key_name="reference", keyed=True)
+
+        if self.gene_symbol is not None and not isinstance(self.gene_symbol, str):
+            self.gene_symbol = str(self.gene_symbol)
+
+        if self.locus_tag is not None and not isinstance(self.locus_tag, str):
+            self.locus_tag = str(self.locus_tag)
+
+        if self.ec_number is not None and not isinstance(self.ec_number, str):
+            self.ec_number = str(self.ec_number)
+
+        if self.sequence_scope is not None and not isinstance(self.sequence_scope, str):
+            self.sequence_scope = str(self.sequence_scope)
+
+        if self.functional_role is not None and not isinstance(self.functional_role, str):
+            self.functional_role = str(self.functional_role)
+
+        if self.cofactor_term is not None and not isinstance(self.cofactor_term, ChemicalEntityTerm):
+            self.cofactor_term = ChemicalEntityTerm(**as_dict(self.cofactor_term))
+
+        if self.substrate_term is not None and not isinstance(self.substrate_term, ChemicalEntityTerm):
+            self.substrate_term = ChemicalEntityTerm(**as_dict(self.substrate_term))
 
         if self.notes is not None and not isinstance(self.notes, str):
             self.notes = str(self.notes)
@@ -2279,6 +2376,36 @@ class EnvironmentTerm(Term):
             self.MissingRequiredField("id")
         if not isinstance(self.id, EnvironmentTermId):
             self.id = EnvironmentTermId(self.id)
+
+        super().__post_init__(**kwargs)
+
+
+@dataclass(repr=False)
+class UniProtTerm(Term):
+    """
+    A UniProtKB protein entry term. Must use the UniProtKB CURIE prefix with a canonical 6-character or 10-character
+    primary accession (for example, UniProtKB:P02931 or UniProtKB:A0A0H2ZRI7) and a non-empty protein label.
+    """
+    _inherited_slots: ClassVar[list[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = CULTUREMECH["UniProtTerm"]
+    class_class_curie: ClassVar[str] = "culturemech:UniProtTerm"
+    class_name: ClassVar[str] = "UniProtTerm"
+    class_model_uri: ClassVar[URIRef] = CULTUREMECH.UniProtTerm
+
+    id: Union[str, UniProtTermId] = None
+    label: str = None
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if self._is_empty(self.id):
+            self.MissingRequiredField("id")
+        if not isinstance(self.id, UniProtTermId):
+            self.id = UniProtTermId(self.id)
+
+        if self._is_empty(self.label):
+            self.MissingRequiredField("label")
+        if not isinstance(self.label, str):
+            self.label = str(self.label)
 
         super().__post_init__(**kwargs)
 
@@ -4221,6 +4348,9 @@ slots.mediaRecipe__incubation_atmosphere = Slot(uri=CULTUREMECH.incubation_atmos
 slots.mediaRecipe__source_data = Slot(uri=CULTUREMECH.source_data, name="mediaRecipe__source_data", curie=CULTUREMECH.curie('source_data'),
                    model_uri=CULTUREMECH.mediaRecipe__source_data, domain=None, range=Optional[Union[dict, SourceData]])
 
+slots.mediaRecipe__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="mediaRecipe__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.mediaRecipe__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
 slots.solutionRecipe__id = Slot(uri=CULTUREMECH.id, name="solutionRecipe__id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.solutionRecipe__id, domain=None, range=URIRef,
                    pattern=re.compile(r'^CultureMech:(?!000000)\d{6}$'))
@@ -4518,6 +4648,9 @@ slots.organismDescriptor__evidence = Slot(uri=CULTUREMECH.evidence, name="organi
 slots.organismDescriptor__strain_modifications = Slot(uri=CULTUREMECH.strain_modifications, name="organismDescriptor__strain_modifications", curie=CULTUREMECH.curie('strain_modifications'),
                    model_uri=CULTUREMECH.organismDescriptor__strain_modifications, domain=None, range=Optional[Union[Union[dict, StrainModification], list[Union[dict, StrainModification]]]])
 
+slots.organismDescriptor__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="organismDescriptor__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.organismDescriptor__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
 slots.sourceEnvironmentDescriptor__preferred_term = Slot(uri=CULTUREMECH.preferred_term, name="sourceEnvironmentDescriptor__preferred_term", curie=CULTUREMECH.curie('preferred_term'),
                    model_uri=CULTUREMECH.sourceEnvironmentDescriptor__preferred_term, domain=None, range=str)
 
@@ -4550,6 +4683,9 @@ slots.cofactorDescriptor__kegg_pathways = Slot(uri=CULTUREMECH.kegg_pathways, na
 
 slots.cofactorDescriptor__enzyme_examples = Slot(uri=CULTUREMECH.enzyme_examples, name="cofactorDescriptor__enzyme_examples", curie=CULTUREMECH.curie('enzyme_examples'),
                    model_uri=CULTUREMECH.cofactorDescriptor__enzyme_examples, domain=None, range=Optional[Union[str, list[str]]])
+
+slots.cofactorDescriptor__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="cofactorDescriptor__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.cofactorDescriptor__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
 
 slots.cofactorDescriptor__biosynthesis_genes = Slot(uri=CULTUREMECH.biosynthesis_genes, name="cofactorDescriptor__biosynthesis_genes", curie=CULTUREMECH.curie('biosynthesis_genes'),
                    model_uri=CULTUREMECH.cofactorDescriptor__biosynthesis_genes, domain=None, range=Optional[Union[str, list[str]]])
@@ -4915,6 +5051,9 @@ slots.cofactorRequirement__evidence = Slot(uri=CULTUREMECH.evidence, name="cofac
 slots.cofactorRequirement__genes = Slot(uri=CULTUREMECH.genes, name="cofactorRequirement__genes", curie=CULTUREMECH.curie('genes'),
                    model_uri=CULTUREMECH.cofactorRequirement__genes, domain=None, range=Optional[Union[str, list[str]]])
 
+slots.cofactorRequirement__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="cofactorRequirement__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.cofactorRequirement__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
 slots.transporterAnnotation__name = Slot(uri=CULTUREMECH.name, name="transporterAnnotation__name", curie=CULTUREMECH.curie('name'),
                    model_uri=CULTUREMECH.transporterAnnotation__name, domain=None, range=str)
 
@@ -4933,11 +5072,48 @@ slots.transporterAnnotation__direction = Slot(uri=CULTUREMECH.direction, name="t
 slots.transporterAnnotation__genes = Slot(uri=CULTUREMECH.genes, name="transporterAnnotation__genes", curie=CULTUREMECH.curie('genes'),
                    model_uri=CULTUREMECH.transporterAnnotation__genes, domain=None, range=Optional[Union[str, list[str]]])
 
+slots.transporterAnnotation__protein_examples = Slot(uri=CULTUREMECH.protein_examples, name="transporterAnnotation__protein_examples", curie=CULTUREMECH.curie('protein_examples'),
+                   model_uri=CULTUREMECH.transporterAnnotation__protein_examples, domain=None, range=Optional[Union[Union[dict, ProteinExample], list[Union[dict, ProteinExample]]]])
+
 slots.transporterAnnotation__ec_number = Slot(uri=CULTUREMECH.ec_number, name="transporterAnnotation__ec_number", curie=CULTUREMECH.curie('ec_number'),
                    model_uri=CULTUREMECH.transporterAnnotation__ec_number, domain=None, range=Optional[str])
 
 slots.transporterAnnotation__notes = Slot(uri=CULTUREMECH.notes, name="transporterAnnotation__notes", curie=CULTUREMECH.curie('notes'),
                    model_uri=CULTUREMECH.transporterAnnotation__notes, domain=None, range=Optional[str])
+
+slots.proteinExample__uniprot_term = Slot(uri=CULTUREMECH.uniprot_term, name="proteinExample__uniprot_term", curie=CULTUREMECH.curie('uniprot_term'),
+                   model_uri=CULTUREMECH.proteinExample__uniprot_term, domain=None, range=Union[dict, UniProtTerm])
+
+slots.proteinExample__organism_term = Slot(uri=CULTUREMECH.organism_term, name="proteinExample__organism_term", curie=CULTUREMECH.curie('organism_term'),
+                   model_uri=CULTUREMECH.proteinExample__organism_term, domain=None, range=Union[dict, OrganismTerm])
+
+slots.proteinExample__gene_symbol = Slot(uri=CULTUREMECH.gene_symbol, name="proteinExample__gene_symbol", curie=CULTUREMECH.curie('gene_symbol'),
+                   model_uri=CULTUREMECH.proteinExample__gene_symbol, domain=None, range=Optional[str])
+
+slots.proteinExample__locus_tag = Slot(uri=CULTUREMECH.locus_tag, name="proteinExample__locus_tag", curie=CULTUREMECH.curie('locus_tag'),
+                   model_uri=CULTUREMECH.proteinExample__locus_tag, domain=None, range=Optional[str])
+
+slots.proteinExample__ec_number = Slot(uri=CULTUREMECH.ec_number, name="proteinExample__ec_number", curie=CULTUREMECH.curie('ec_number'),
+                   model_uri=CULTUREMECH.proteinExample__ec_number, domain=None, range=Optional[str],
+                   pattern=re.compile(r'^EC:[0-9]+(\.([0-9]+|-)){0,3}$'))
+
+slots.proteinExample__sequence_scope = Slot(uri=CULTUREMECH.sequence_scope, name="proteinExample__sequence_scope", curie=CULTUREMECH.curie('sequence_scope'),
+                   model_uri=CULTUREMECH.proteinExample__sequence_scope, domain=None, range=Optional[str])
+
+slots.proteinExample__functional_role = Slot(uri=CULTUREMECH.functional_role, name="proteinExample__functional_role", curie=CULTUREMECH.curie('functional_role'),
+                   model_uri=CULTUREMECH.proteinExample__functional_role, domain=None, range=Optional[str])
+
+slots.proteinExample__cofactor_term = Slot(uri=CULTUREMECH.cofactor_term, name="proteinExample__cofactor_term", curie=CULTUREMECH.curie('cofactor_term'),
+                   model_uri=CULTUREMECH.proteinExample__cofactor_term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
+
+slots.proteinExample__substrate_term = Slot(uri=CULTUREMECH.substrate_term, name="proteinExample__substrate_term", curie=CULTUREMECH.curie('substrate_term'),
+                   model_uri=CULTUREMECH.proteinExample__substrate_term, domain=None, range=Optional[Union[dict, ChemicalEntityTerm]])
+
+slots.proteinExample__evidence = Slot(uri=CULTUREMECH.evidence, name="proteinExample__evidence", curie=CULTUREMECH.curie('evidence'),
+                   model_uri=CULTUREMECH.proteinExample__evidence, domain=None, range=Union[dict[Union[str, EvidenceItemReference], Union[dict, EvidenceItem]], list[Union[dict, EvidenceItem]]])
+
+slots.proteinExample__notes = Slot(uri=CULTUREMECH.notes, name="proteinExample__notes", curie=CULTUREMECH.curie('notes'),
+                   model_uri=CULTUREMECH.proteinExample__notes, domain=None, range=Optional[str])
 
 slots.importMetadata__source_database = Slot(uri=CULTUREMECH.source_database, name="importMetadata__source_database", curie=CULTUREMECH.curie('source_database'),
                    model_uri=CULTUREMECH.importMetadata__source_database, domain=None, range=Union[str, "SourceDatabaseEnum"])
@@ -5153,4 +5329,12 @@ slots.CultureMechTerm_id = Slot(uri=CULTUREMECH.id, name="CultureMechTerm_id", c
 slots.EnvironmentTerm_id = Slot(uri=CULTUREMECH.id, name="EnvironmentTerm_id", curie=CULTUREMECH.curie('id'),
                    model_uri=CULTUREMECH.EnvironmentTerm_id, domain=EnvironmentTerm, range=Union[str, EnvironmentTermId],
                    pattern=re.compile(r'^ENVO:\d{7,8}$'))
+
+slots.UniProtTerm_id = Slot(uri=CULTUREMECH.id, name="UniProtTerm_id", curie=CULTUREMECH.curie('id'),
+                   model_uri=CULTUREMECH.UniProtTerm_id, domain=UniProtTerm, range=Union[str, UniProtTermId],
+                   pattern=re.compile(r'^UniProtKB:([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})$'))
+
+slots.UniProtTerm_label = Slot(uri=CULTUREMECH.label, name="UniProtTerm_label", curie=CULTUREMECH.curie('label'),
+                   model_uri=CULTUREMECH.UniProtTerm_label, domain=UniProtTerm, range=str,
+                   pattern=re.compile(r'\S'))
 

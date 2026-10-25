@@ -204,6 +204,16 @@
                     "description": "Human-readable cofactor name (e.g., \"Thiamine pyrophosphate\", \"NAD\")",
                     "type": "string"
                 },
+                "protein_examples": {
+                    "description": "Typed, organism-specific UniProtKB protein examples requiring or biosynthesizing this cofactor, with claim-scoped evidence.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "term": {
                     "anyOf": [
                         {
@@ -255,6 +265,16 @@
                     "description": "Genes related to biosynthesis or utilization",
                     "items": {
                         "type": "string"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
+                "protein_examples": {
+                    "description": "Typed UniProtKB protein examples for cofactor biosynthesis or utilization in the target organism.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
                     },
                     "type": [
                         "array",
@@ -1852,6 +1872,16 @@
                         "null"
                     ]
                 },
+                "protein_examples": {
+                    "description": "Typed, organism-specific UniProtKB protein examples supported by claim-scoped evidence for this medium formulation.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "record_kind": {
                     "$ref": "#/$defs/RecordKindEnum",
                     "description": "What kind of record this is: a growth MEDIUM, or a standalone stock SOLUTION. Normally inferred from the `term.id` prefix (`mediadive.solution:*`), and only stated explicitly for solutions that carry no upstream solution identifier \u2014 202 records imported from KOMODO as media (\"Trace element solution (medium 929)\", \"10 x M9 salts\") whose composition was flattened into their parent medium. A curated assertion, written by `just retype-solution-records` and reviewable in the diff. It is NOT derived from the name at read time: matching \"*solution*\" would silently reclassify a genuine medium such as Ringer's solution."
@@ -2463,6 +2493,16 @@
                     "description": "Organism name (e.g., \"Escherichia coli\")",
                     "type": "string"
                 },
+                "protein_examples": {
+                    "description": "Typed UniProtKB protein examples (enzymes, transporters, or regulatory proteins) specific to this target organism on the medium.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "scoped_to_variant": {
                     "description": "Name of the `variants[]` entry this organism's growth evidence is scoped to, when growth is verified only on a specific variant of the medium and NOT on the parent recipe. Must match a `variants[].name` on the same record. Downstream KG builds should attach the organism<->medium edge to the named variant rather than the parent, so variant-only evidence is not propagated as a parent-medium claim.",
                     "type": [
@@ -2852,6 +2892,100 @@
                 }
             },
             "title": "ProposedExperiment",
+            "type": "object"
+        },
+        "ProteinExample": {
+            "additionalProperties": false,
+            "description": "A typed, organism-specific UniProtKB protein example linked to a growth medium, target organism, cofactor requirement, or transporter with claim-scoped evidence.",
+            "properties": {
+                "cofactor_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ChemicalEntityTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Optional CHEBI term for the cofactor bound or utilized by this protein"
+                },
+                "ec_number": {
+                    "description": "Enzyme Commission number in EC CURIE format when enzymatic (e.g., EC:1.7.5.1)",
+                    "pattern": "^EC:[0-9]+(\\.([0-9]+|-)){0,3}$",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "evidence": {
+                    "description": "Claim-scoped literature or database evidence supporting this organism-specific UniProtKB protein example.",
+                    "items": {
+                        "$ref": "#/$defs/EvidenceItem"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                },
+                "functional_role": {
+                    "description": "Concise functional role of the protein in nutrient uptake, cofactor utilization, or growth in the medium.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "gene_symbol": {
+                    "description": "Canonical gene symbol (e.g., ompF, narG, btuB)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "locus_tag": {
+                    "description": "Ordered locus or strain-specific gene identifier (e.g., b0929)",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "notes": {
+                    "description": "Additional curation notes or caveats",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "organism_term": {
+                    "$ref": "#/$defs/OrganismTerm",
+                    "description": "Explicit NCBITaxon organism term to which this UniProtKB entry belongs (e.g., id: NCBITaxon:83333, label: Escherichia coli K-12)."
+                },
+                "sequence_scope": {
+                    "description": "Sequence or isoform scope when relevant (e.g., canonical, UniProtKB:P02931-1, mature peptide range).",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "substrate_term": {
+                    "anyOf": [
+                        {
+                            "$ref": "#/$defs/ChemicalEntityTerm"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "description": "Optional CHEBI/chemical term for the substrate or transported nutrient"
+                },
+                "uniprot_term": {
+                    "$ref": "#/$defs/UniProtTerm",
+                    "description": "Canonical UniProtKB accession and protein label for this protein example (e.g., id: UniProtKB:P02931, label: Outer membrane porin F)."
+                }
+            },
+            "required": [
+                "uniprot_term",
+                "organism_term",
+                "evidence"
+            ],
+            "title": "ProteinExample",
             "type": "object"
         },
         "PublicationReference": {
@@ -3872,6 +4006,16 @@
                         "null"
                     ]
                 },
+                "protein_examples": {
+                    "description": "Typed UniProtKB protein examples for this transport system in the target organism.",
+                    "items": {
+                        "$ref": "#/$defs/ProteinExample"
+                    },
+                    "type": [
+                        "array",
+                        "null"
+                    ]
+                },
                 "substrate_terms": {
                     "description": "CHEBI terms for substrates",
                     "items": {
@@ -3921,6 +4065,39 @@
             ],
             "title": "TransporterTypeEnum",
             "type": "string"
+        },
+        "UniProtTerm": {
+            "additionalProperties": false,
+            "description": "A UniProtKB protein entry term. Must use the UniProtKB CURIE prefix with a canonical 6-character or 10-character primary accession (for example, UniProtKB:P02931 or UniProtKB:A0A0H2ZRI7) and a non-empty protein label.",
+            "properties": {
+                "confidence": {
+                    "description": "Confidence score for the mapping (0.0-1.0). Populated by automated grounding pipelines.",
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "id": {
+                    "description": "Ontology identifier (CURIE)",
+                    "pattern": "^UniProtKB:([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})$",
+                    "type": "string"
+                },
+                "label": {
+                    "description": "CANONICAL ontology label for `id` (e.g. \"magnesium sulfate\" for CHEBI:32599). Verified against the ontology by the id\u2194label gate; the sibling `preferred_term` holds the free/source name.",
+                    "pattern": "\\S",
+                    "type": "string"
+                },
+                "match_type": {
+                    "$ref": "#/$defs/TermMatchTypeEnum",
+                    "description": "Provenance/method of the term mapping (e.g. \"kg_fallback\", \"exact\", \"manual_curated\")."
+                }
+            },
+            "required": [
+                "id",
+                "label"
+            ],
+            "title": "UniProtTerm",
+            "type": "object"
         },
         "UpdateActionEnum": {
             "description": "Type of update action applied to an imported record",
@@ -3993,7 +4170,7 @@
     "$id": "https://w3id.org/culturemech",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
-    "metamodel_version": "1.11.0",
+    "metamodel_version": "1.12.0",
     "title": "culturemech",
     "type": "object",
     "version": null

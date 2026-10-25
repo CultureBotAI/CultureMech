@@ -199,9 +199,18 @@ The following domain constraints were inherited from the previous inspected
 workflow and must be rechecked against current source before changing a binding:
 
 - Authoritative curation is data/normalized_yaml; merged recipes and Pages are generated.
-- Native schema has gene-name/enzyme annotation strings but no native causal graph or typed UniProt protein-example slot. Do not invent fields or equate composition/role visualizations with causal mechanisms.
+- Native schema has no native causal graph (`CausalEdge` / `MechanismGraph`) slot yet (#658). Do not invent causal fields or equate composition/role visualizations with causal mechanisms.
+- Typed UniProtKB protein-example representation (`UniProtKB` prefix, `UniProtTerm`, `ProteinExample`, `protein_examples` slots on `MediaRecipe`, `OrganismDescriptor`, `CofactorDescriptor`, `CofactorRequirement`, and `TransporterAnnotation`), semantic validation (`src/culturemech/validation/protein_examples.py`, `scripts/validate_protein_examples.py`, `src/culturemech/validation/write_validated.py`, `scripts/validate_strict.py`), maintained history-appending writer (`scripts/apply_protein_examples.py`), KGX `biolink:Protein` export (`src/culturemech/export/kgx_export.py`), and `.claude/skills/curate-protein-examples/SKILL.md` are implemented for https://github.com/CultureBotAI/CultureMech/issues/659 (`culturemech-infra-0003`).
 
-Verified local inspection: 377d68c67960b43fe622c68f28e25f4194e4420e. This records an inspected
+### Profile Evolution Log
+
+- **Profile version `1.1.0` (2026-10-25, issue https://github.com/CultureBotAI/CultureMech/issues/659 / `culturemech-infra-0003`)**:
+  - **Rationale**: Bind `.claude/skills/curate-protein-examples/SKILL.md` to Stage 3 (`protein_examples`) in `workflow/mech-workflow.yaml` after implementing the repository-local typed `UniProtKB` / `ProteinExample` schema, validator, writer, KGX exporter, reference cofactor ChEBI fix, and unit test suite (`tests/test_protein_examples.py`).
+  - **Supporting paths**: `src/culturemech/schema/culturemech.yaml`, `src/culturemech/validation/protein_examples.py`, `scripts/validate_protein_examples.py`, `scripts/apply_protein_examples.py`, `src/culturemech/export/kgx_export.py`, `conf/id_label_targets.yaml`, `conf/oak_config.yaml`, `data/reference/cofactors.yaml`, `.claude/skills/curate-protein-examples/SKILL.md`, `tests/test_protein_examples.py`.
+  - **Validation**: `kg_microbe_workflows validate`, `scripts/audit_schema.py`, `scripts/audit_writers.py`, `scripts/validate_claude_skills.py`, `scripts/check_vendored_sync.sh`, and `pytest tests/test_protein_examples.py` all pass (`0` errors).
+  - **Compatibility & activation cycle**: Backward-compatible candidate update (`reload_profile_between_cycles_only: true`). Active Cycle 2 runtime files (`effective-workflow.json`, `status.json`, `completion.json`) remain untouched, and Stage 2 (`#658`) and Stage 3 remain `applicability: blocked` until between-cycle coordinator activation (`https://github.com/CultureBotAI/CultureMech/issues/660`).
+
+Verified local inspection: 01e60706cb29ecefbf49204369dd8238df7b52fc. This records an inspected
 local revision, not a claim about the current published default branch.
 
 Run profile validation from the verified CLAW checkout, with its interpreter
