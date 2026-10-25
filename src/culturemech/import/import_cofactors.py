@@ -27,6 +27,15 @@ CATEGORY_MAPPING = {
     "other_specialized": "OTHER_SPECIALIZED",
 }
 
+# Canonical ChEBI overrides for upstream entries that share a collided ChEBI ID
+# (upstream assigns CHEBI:60052 [siroheme(8-)] to both heme_c and heme_d1; #659).
+_CHEBI_ID_OVERRIDES = {
+    "heme_c": "CHEBI:60562",  # ferroheme c (synonym: heme c)
+    "heme_d1": "CHEBI:61147",  # ferroheme d1 (synonym: heme d1)
+    "heme C": "CHEBI:60562",
+    "heme d1": "CHEBI:61147",
+}
+
 
 def import_cofactor_hierarchy():
     """Convert PFAS cofactor hierarchy to CultureMech format."""
@@ -50,8 +59,13 @@ def import_cofactor_hierarchy():
 
             # Add CHEBI term
             if "id" in cofactor_data:
+                chebi_id = (
+                    _CHEBI_ID_OVERRIDES.get(cofactor_key)
+                    or _CHEBI_ID_OVERRIDES.get(cofactor["preferred_term"])
+                    or cofactor_data["id"]
+                )
                 cofactor["term"] = {
-                    "id": cofactor_data["id"],
+                    "id": chebi_id,
                     "label": cofactor["preferred_term"],
                 }
 

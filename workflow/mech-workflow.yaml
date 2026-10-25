@@ -1,6 +1,6 @@
 schema_version: 1.0.0
 profile_id: culturemech-goal-cycle
-profile_version: 1.0.0
+profile_version: 1.1.0
 repository_key: culturemech
 github_repository: CultureBotAI/CultureMech
 parent:
@@ -42,10 +42,11 @@ stages:
   skill_paths:
   - .claude/skills/culturemech-evolve-workflow/SKILL.md
   - .claude/skills/review-yaml-record/SKILL.md
+  - .claude/skills/curate-protein-examples/SKILL.md
   applicability: blocked
-  applicability_reason: Native representation or maintained writer prerequisites must be verified and
-    implemented before scientific mutation; retain an explicit applicability/blocked assessment and issue-linked
-    infrastructure intake.
+  applicability_reason: Native UniProtKB ProteinExample schema, semantic validator, history-appending writer,
+    KGX exporter, and curate-protein-examples skill are implemented (#659); stage remains blocked in Cycle 2
+    pending Stage 2 domain/schema resolution (#658) and between-cycle coordinator profile reload (#660).
 - stage: 4
   key: record_review
   goal_text: Use CultureMech repository-local record-review and cohort-review skills to review every eligible

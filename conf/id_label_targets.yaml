@@ -78,6 +78,7 @@ ignored_prefixes:
   - ATCC                   # ATCC culture-collection ids
   - TOGO                   # TogoMedia ids
   - GTDB                   # GTDB taxa (not in NCBITaxon namespace)
+  - UniProtKB              # UniProtKB protein accessions (validated by UniProtTerm pattern + protein_examples validator)
 
 synonym_scope: exact_related
 

@@ -2865,3 +2865,21 @@ embed:
 embed-map:
     python3 scripts/embed_map.py
 
+# =============================================================================
+# CURATED UNIPROT PROTEIN EXAMPLES (#659)
+# =============================================================================
+
+# Apply or preview curated UniProt protein examples on normalized_yaml records (dry-run by default)
+[group('Enrichment')]
+apply-protein-examples input_file normalized_dir="data/normalized_yaml" mode="--dry-run":
+    uv run python scripts/apply_protein_examples.py \
+        --input "{{input_file}}" \
+        --normalized-dir "{{normalized_dir}}" \
+        {{mode}}
+
+# Validate UniProt protein_examples across normalized_yaml records
+[group('QC')]
+validate-protein-examples path="data/normalized_yaml":
+    uv run python scripts/validate_protein_examples.py "{{path}}"
+
+

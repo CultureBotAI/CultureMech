@@ -96,22 +96,32 @@ tasks:
 
 - **Originating run / cycle / stage**: `mech-goal-sequence-20261019`, cycle `2`, stage `2` prerequisite assessment (`goal-4672`)
 - **Issue**: https://github.com/CultureBotAI/CultureMech/issues/659
-- **Status**: `open`
+- **Status**: `completed`
 - **Priority**: `P1` (blocking prerequisite for Stage 3 `protein_examples`)
-- **Dependencies**: None for schema/validator/writer implementation; required before `workflow/mech-workflow.yaml` Stage 3 can transition from `blocked` to `applicable`.
-- **Observation**: `src/culturemech/schema/culturemech.yaml` declares 31 prefixes (lines 10–58) without `UniProt` or `UniProtKB` and defines only untyped `range: string` slots (`CofactorDescriptor.enzyme_examples` at line 1270, `CofactorDescriptor.biosynthesis_genes` at line 1277, `StrainModification.target` at line 1581, `CofactorRequirement.genes` at line 2014, `TransporterAnnotation.genes` at line 2051), with `0` populated cofactor/transporter/enzyme instances across `15,915` normalized records (`StrainModification.target` is populated in 2 records as free-text phenotype targets). `data/reference/cofactors.yaml` (56 cofactor entries across 8 categories from `src/culturemech/import/import_cofactors.py`) stores only generic enzyme family names in `enzyme_examples` with `0` UniProt accessions, `0` `NCBITaxon` bindings, and a duplicate `CHEBI:60052` mapping across `heme C` and `heme d1`; `docs/ENRICHMENT_GUIDE.md` also references a non-existent `Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml`. Furthermore, `conf/oak_config.yaml` and `conf/id_label_targets.yaml` have no `UniProtKB` adapter/prefix handling, `src/culturemech/export/kgx_export.py` emits no protein nodes/edges, and no repository-local protein-example curation skill exists.
+- **Dependencies**: None for schema/validator/writer implementation; coordinator activation tracked separately in `culturemech-infra-0004` (#660) before `workflow/mech-workflow.yaml` Stage 3 transitions from `blocked` to `applicable`.
+- **Observation**: `src/culturemech/schema/culturemech.yaml` previously declared 31 prefixes without `UniProt` or `UniProtKB` and defined only untyped `range: string` slots (`CofactorDescriptor.enzyme_examples`, `CofactorDescriptor.biosynthesis_genes`, `StrainModification.target`, `CofactorRequirement.genes`, `TransporterAnnotation.genes`), with `0` populated cofactor/transporter/enzyme instances across `15,915` normalized records. `data/reference/cofactors.yaml` stored generic enzyme family names in `enzyme_examples` with a duplicate `CHEBI:60052` mapping across `heme C` and `heme d1`; `docs/ENRICHMENT_GUIDE.md` referenced a non-existent `Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml`. Furthermore, `conf/oak_config.yaml` and `conf/id_label_targets.yaml` had no `UniProtKB` handling, `src/culturemech/export/kgx_export.py` emitted no protein nodes/edges, and no repository-local protein-example curation skill existed.
 - **Desired outcome**: Add `UniProtKB` prefix, `UniProtTerm` (validated accession pattern + canonical protein label), and `ProteinExample` class (binding `uniprot_term`, explicit `NCBITaxonTerm` organism, optional gene/EC/isoform scope, and mandatory claim-scoped `EvidenceItem`) to `src/culturemech/schema/culturemech.yaml`; configure `conf/id_label_targets.yaml` and `scripts/validate_strict.py`; fix `data/reference/cofactors.yaml` ChEBI collisions and `docs/ENRICHMENT_GUIDE.md` example path; add a `curation_history`-appending writer, KGX protein export, unit tests, and a `.claude/skills/` protein-example curation skill.
 - **Evidence paths**:
   - `src/culturemech/schema/culturemech.yaml`
+  - `src/culturemech/schema/culturemech_dataclasses.py`
+  - `src/culturemech/schema/culturemech.schema.json`
+  - `src/culturemech/validation/protein_examples.py`
+  - `src/culturemech/validation/write_validated.py`
+  - `scripts/validate_protein_examples.py`
+  - `scripts/validate_strict.py`
+  - `scripts/apply_protein_examples.py`
+  - `project.justfile`
   - `conf/id_label_targets.yaml`
   - `conf/oak_config.yaml`
   - `data/reference/cofactors.yaml`
   - `src/culturemech/import/import_cofactors.py`
   - `src/culturemech/export/kgx_export.py`
   - `docs/ENRICHMENT_GUIDE.md`
+  - `.claude/skills/curate-protein-examples/SKILL.md`
+  - `tests/test_protein_examples.py`
   - `workflow/mech-workflow.yaml`
   - `reviews/structured/20261023T073000Z-cycle2-stage2-stage3-prerequisite-assessment/review.yaml`
-- **Disposition**: Open prerequisite tracked in https://github.com/CultureBotAI/CultureMech/issues/659 for Stage 6 (`infra_implementation`) execution.
+- **Disposition**: Implemented in auxiliary prerequisite checkpoint for https://github.com/CultureBotAI/CultureMech/issues/659 (`UniProtKB` prefix, `UniProtTerm`, `ProteinExample`, semantic validator `src/culturemech/validation/protein_examples.py` + `scripts/validate_protein_examples.py`, maintained writer `scripts/apply_protein_examples.py`, KGX `biolink:Protein` export, `data/reference/cofactors.yaml` ChEBI collision fix, `docs/ENRICHMENT_GUIDE.md` path fix, `.claude/skills/curate-protein-examples/SKILL.md`, and `tests/test_protein_examples.py`). Cycle 2 Stage 2 and Stage 3 remain `blocked` pending `#658` and coordinator activation `#660`.
 
 ### `culturemech-infra-0004` — Coordinate Cycle 2 blocked-stage advancement and between-cycle profile reload migration
 

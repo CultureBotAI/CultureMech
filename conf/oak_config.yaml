@@ -42,6 +42,7 @@ ontology_adapters:
   sra: ""
   PMID: ""
   DOI: ""
+  UniProtKB: ""
 
   # Suppliers - Skip validation
   sigma: ""

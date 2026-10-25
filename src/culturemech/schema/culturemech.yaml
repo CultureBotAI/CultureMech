@@ -43,6 +43,8 @@ prefixes:
   # Pathways
   KEGG: https://www.genome.jp/entry/
   EC: https://enzyme.expasy.org/EC/
+  # Proteins
+  UniProtKB: https://www.uniprot.org/uniprotkb/
   # Data repositories
   geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
   sra: https://www.ncbi.nlm.nih.gov/sra/
@@ -516,6 +518,14 @@ classes:
         comments:
           - Records imported from CommunityMech include community IDs and evidence
           - Preserves bidirectional linking between repositories
+
+      protein_examples:
+        description: >-
+          Typed, organism-specific UniProtKB protein examples supported by
+          claim-scoped evidence for this medium formulation.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
 
   SolutionRecipe:
     class_uri: culturemech:SolutionRecipe
@@ -1197,6 +1207,14 @@ classes:
         multivalued: true
         inlined_as_list: true
 
+      protein_examples:
+        description: >-
+          Typed UniProtKB protein examples (enzymes, transporters, or
+          regulatory proteins) specific to this target organism on the medium.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
   SourceEnvironmentDescriptor:
     is_a: Descriptor
     description: >-
@@ -1280,6 +1298,14 @@ classes:
         description: Example enzymes requiring this cofactor
         range: string
         multivalued: true
+
+      protein_examples:
+        description: >-
+          Typed, organism-specific UniProtKB protein examples requiring or
+          biosynthesizing this cofactor, with claim-scoped evidence.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
 
       biosynthesis_genes:
         description: Genes involved in cofactor biosynthesis
@@ -2026,6 +2052,14 @@ classes:
         range: string
         multivalued: true
 
+      protein_examples:
+        description: >-
+          Typed UniProtKB protein examples for cofactor biosynthesis or
+          utilization in the target organism.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
   TransporterAnnotation:
     description: Annotation of a transporter or transport system
     attributes:
@@ -2062,12 +2096,103 @@ classes:
         range: string
         multivalued: true
 
+      protein_examples:
+        description: >-
+          Typed UniProtKB protein examples for this transport system in the
+          target organism.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+
       ec_number:
         description: EC number if enzymatic
         range: string
 
       notes:
         description: Additional functional notes
+        range: string
+
+  ProteinExample:
+    description: >-
+      A typed, organism-specific UniProtKB protein example linked to a growth
+      medium, target organism, cofactor requirement, or transporter with
+      claim-scoped evidence.
+    attributes:
+      uniprot_term:
+        description: >-
+          Canonical UniProtKB accession and protein label for this protein
+          example (e.g., id: UniProtKB:P02931, label: Outer membrane porin F).
+        range: UniProtTerm
+        required: true
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      organism_term:
+        description: >-
+          Explicit NCBITaxon organism term to which this UniProtKB entry
+          belongs (e.g., id: NCBITaxon:83333, label: Escherichia coli K-12).
+        range: OrganismTerm
+        required: true
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      gene_symbol:
+        description: Canonical gene symbol (e.g., ompF, narG, btuB)
+        range: string
+
+      locus_tag:
+        description: Ordered locus or strain-specific gene identifier (e.g., b0929)
+        range: string
+
+      ec_number:
+        description: Enzyme Commission number in EC CURIE format when enzymatic (e.g., EC:1.7.5.1)
+        range: string
+        pattern: "^EC:[0-9]+(\\.([0-9]+|-)){0,3}$"
+
+      sequence_scope:
+        description: >-
+          Sequence or isoform scope when relevant (e.g., canonical,
+          UniProtKB:P02931-1, mature peptide range).
+        range: string
+
+      functional_role:
+        description: >-
+          Concise functional role of the protein in nutrient uptake, cofactor
+          utilization, or growth in the medium.
+        range: string
+
+      cofactor_term:
+        description: Optional CHEBI term for the cofactor bound or utilized by this protein
+        range: ChemicalEntityTerm
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      substrate_term:
+        description: Optional CHEBI/chemical term for the substrate or transported nutrient
+        range: ChemicalEntityTerm
+        inlined: true
+        bindings:
+          - binds_value_of: id
+            obligation_level: REQUIRED
+
+      evidence:
+        description: >-
+          Claim-scoped literature or database evidence supporting this
+          organism-specific UniProtKB protein example.
+        range: EvidenceItem
+        required: true
+        minimum_cardinality: 1
+        multivalued: true
+        inlined_as_list: true
+
+      notes:
+        description: Additional curation notes or caveats
         range: string
 
 # ================================================================
@@ -2195,6 +2320,22 @@ classes:
       - ENVO prefix already defined in schema prefixes
       - Pattern allows both 7 and 8 digit ENVO IDs
       - "Examples: ENVO:00000044 (peatland), ENVO:00002149 (sea water)"
+
+  UniProtTerm:
+    is_a: Term
+    description: >-
+      A UniProtKB protein entry term. Must use the UniProtKB CURIE prefix with
+      a canonical 6-character or 10-character primary accession (for example,
+      UniProtKB:P02931 or UniProtKB:A0A0H2ZRI7) and a non-empty protein label.
+    slot_usage:
+      id:
+        required: true
+        pattern: "^UniProtKB:([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})$"
+      label:
+        required: true
+        pattern: "\\S"
+    id_prefixes:
+      - UniProtKB
 
   ImportMetadata:
     description: >-

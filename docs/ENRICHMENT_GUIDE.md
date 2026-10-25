@@ -262,12 +262,17 @@ target_organisms:
 
 ## Complete Example
 
-See the fully enriched example at:
+See existing NMS media records at:
 ```
-normalized_yaml/bacterial/Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml
+data/normalized_yaml/bacterial/JCM_J510_NMS_MEDIUM.yaml
+data/normalized_yaml/bacterial/TOGO_M511_NMS_Medium.yaml
 ```
 
-This shows all new fields in action.
+For curated UniProt protein examples (`protein_examples` on `MediaRecipe`, `OrganismDescriptor`, `CofactorDescriptor`, `CofactorRequirement`, or `TransporterAnnotation`), use the maintained writer and validator:
+```bash
+just apply-protein-examples proposals.yaml data/normalized_yaml --dry-run
+just validate-protein-examples data/normalized_yaml
+```
 
 ---
 
@@ -416,5 +421,5 @@ Generated reference data:
 ## Questions?
 
 - Check the schema: `src/culturemech/schema/culturemech.yaml`
-- View the enriched example: `normalized_yaml/bacterial/Nitrate_Mineral_Salts_Medium_(NMS)_ENRICHED_EXAMPLE.yaml`
+- View existing NMS media records: `data/normalized_yaml/bacterial/JCM_J510_NMS_MEDIUM.yaml` and `data/normalized_yaml/bacterial/TOGO_M511_NMS_Medium.yaml`
 - Run import scripts with `--help` for options

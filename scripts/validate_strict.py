@@ -44,7 +44,10 @@ DEFAULT_ROOTS = [
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(_REPO_ROOT / "src"))
 from record_kinds import has_solution_shape  # noqa: E402  -- shared medium/solution rule
+
+from culturemech.validation.protein_examples import validate_recipe_protein_examples  # noqa: E402
 
 
 def infer_target_class(instance: dict) -> str:
@@ -166,6 +169,17 @@ def validate_one(path: Path) -> list[dict]:
                 "detail": detail,
                 "path": result.instance_index or "",
                 "message": result.message[:300],
+            }
+        )
+    for pe_issue in validate_recipe_protein_examples(instance):
+        rows.append(
+            {
+                "file": str(path),
+                "layer": "protein_examples",
+                "category": pe_issue.category,
+                "detail": pe_issue.detail,
+                "path": pe_issue.path,
+                "message": pe_issue.message[:300],
             }
         )
     return rows
