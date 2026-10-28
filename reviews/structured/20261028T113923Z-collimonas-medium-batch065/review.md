@@ -1,0 +1,1533 @@
+# Scientific review of collimonas_medium
+
+- Review: 20261028T113923Z-collimonas-medium-batch065
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T11:30:33.354608Z
+- Finished UTC: 2026-10-28T11:39:23.254725Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact primary supports the two basal inputs and pH, but a full-strength TSB/TSA expansion replaces a 3 g commercial broth addition and introduces unsupported agar. Solvent/preparation context and provenance need bounded repair in maintained owners before regeneration.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch065 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:003548 | data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml | generated | collimonas_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:003548 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:003548 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:003548 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:003548 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### Exact DSM1035 source and unverified commercial detail
+
+identity: concern. Targets: CultureMech:003548.
+
+The three selected layers identify DSM1035 or KOMODO1035, and the primary/API agree. The local ingredient expansion blends a full-strength TSB/TSA description into a source requiring only 3 g broth. Exact manufacturer/product and current KOMODO identity-page bytes remain unavailable; those limitations do not negate the direct primary recipe.
+
+### Classification and physical state
+
+consistency: concern. Targets: CultureMech:003548.
+
+LIQUID and complex/undefined composition are consistent with the exact broth source. The local 15 G_PER_L agar contradicts that representation; repair the product expansion rather than changing the source medium into agar. No organism-specific growth or atmospheric claim is inferred from the medium name.
+
+### Exact identifier labels versus commercial component identity
+
+grounding: unknown. Targets: CultureMech:003548.
+
+All asserted CHEBI, MICRO and FOODON labels match current authority objects. MICRO:0000182 identifies tryptone; FOODON:03315720 is the broader hydrolyzed-vegetable-protein class. Neither these labels nor current MIM rows authenticate the particular peptic soybean digest, glucose synonym or commercial formulation claimed in the expansion. The precisely supplied product remains unresolved.
+
+### Historical assertions and current writers
+
+provenance: concern. Targets: CultureMech:003548.
+
+All five exact historical reports were read. Current matching API bytes and each historical excerpt are authenticated in the sidecar, but old blanket conflicts do not override the two supported main inputs. No selected layer has attached formulation evidence. Exact KOMODO retrieval is HTTP403; the failed manufacturer leads do not authenticate a product formula. Current writers are credited as inspected, including the conservative grouping guard and distinct duplicate-cleanup behaviors. Current conservative merging preserves scientific fields and rejects incompatible formulations. Inspected writer behavior is described separately by exact file and function; it does not prove historical execution.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:003548.
+
+All 24 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:003548", "selected_concentration_field_count": 24, "selected_concentration_fields_covered": 24, "decisions": [{"decision_id": "q1", "subject": "KH2PO4", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "Separate main-recipe input on provider-declared basis", "interpretation": "The existing value matches the direct primary mass and the API g_l. No attached formulation claim exists in any selected layer. Retain this source-supported main input with new evidence, while keeping listed water separate from a measured final-volume assertion.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 7.34835,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "KH2PO4                                      1.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject": "NaCl", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "Separate main-recipe input on provider-declared basis", "interpretation": "The existing value matches the direct primary mass and the API g_l. No attached formulation claim exists in any selected layer. Retain this source-supported main input with new evidence, while keeping listed water separate from a measured final-volume assertion.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 85.5578,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "NaCl                                        5.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject": "Pancreatic digest of casein", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "17.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "17.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "17.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a commercial broth into main-medium ingredients", "interpretation": "The exact primary specifies one 3 g Tryptone Soy Broth input. This locally expanded component and its full-strength rate are not stated there; together the six expanded rows total 45 g and include agar, which is absent from the source recipe. The record notes list multiple possible commercial products without selecting one. Do not scale a guessed manufacturer formula or collapse supplemental and product-contained NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\": 99,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone Soy Broth                          3.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject": "Peptic digest of soybean meal", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "3.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "3.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "3.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a commercial broth into main-medium ingredients", "interpretation": "The exact primary specifies one 3 g Tryptone Soy Broth input. This locally expanded component and its full-strength rate are not stated there; together the six expanded rows total 45 g and include agar, which is absent from the source recipe. The record notes list multiple possible commercial products without selecting one. Do not scale a guessed manufacturer formula or collapse supplemental and product-contained NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\": 99,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone Soy Broth                          3.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject": "Glucose", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a commercial broth into main-medium ingredients", "interpretation": "The exact primary specifies one 3 g Tryptone Soy Broth input. This locally expanded component and its full-strength rate are not stated there; together the six expanded rows total 45 g and include agar, which is absent from the source recipe. The record notes list multiple possible commercial products without selecting one. Do not scale a guessed manufacturer formula or collapse supplemental and product-contained NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\": 99,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone Soy Broth                          3.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject": "Sodium chloride", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "5.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "5.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "5.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a commercial broth into main-medium ingredients", "interpretation": "The exact primary specifies one 3 g Tryptone Soy Broth input. This locally expanded component and its full-strength rate are not stated there; together the six expanded rows total 45 g and include agar, which is absent from the source recipe. The record notes list multiple possible commercial products without selecting one. Do not scale a guessed manufacturer formula or collapse supplemental and product-contained NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\": 99,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone Soy Broth                          3.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject": "Dipotassium phosphate", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a commercial broth into main-medium ingredients", "interpretation": "The exact primary specifies one 3 g Tryptone Soy Broth input. This locally expanded component and its full-strength rate are not stated there; together the six expanded rows total 45 g and include agar, which is absent from the source recipe. The record notes list multiple possible commercial products without selecting one. Do not scale a guessed manufacturer formula or collapse supplemental and product-contained NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\": 99,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone Soy Broth                          3.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject": "Agar", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "15.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "15.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "15.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a commercial broth into main-medium ingredients", "interpretation": "The exact primary specifies one 3 g Tryptone Soy Broth input. This locally expanded component and its full-strength rate are not stated there; together the six expanded rows total 45 g and include agar, which is absent from the source recipe. The record notes list multiple possible commercial products without selecting one. Do not scale a guessed manufacturer formula or collapse supplemental and product-contained NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\": 99,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone Soy Broth                          3.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q9", "subject": "Opaque Tryptone Soy Broth input", "local_fields": [], "decision": "add", "stage": "Main commercial-product input", "interpretation": "Restore the exact 3 g broth input and its provider-declared g_l=3 with product identity unresolved beyond the source label. A manufacturer specification is needed before any optional decomposition; agar from a TSA formulation must not be imported into this broth recipe.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\": 99,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone Soy Broth                          3.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q10", "subject": "Distilled water", "local_fields": [], "decision": "add", "stage": "Absolute solvent input", "interpretation": "Retain the listed 1000 ml water as an absolute input or source-scoped preparation statement. The text does not say make up to a measured final volume; do not infer a replacement denominator.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Distilled water                          1000.0   ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q11", "subject": "pH", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ph_value", "original": 6.5}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml", "field_path": "ph_value", "original": 6.5}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "ph_value", "original": 6.5}], "decision": "evidence_only", "stage": "Main preparation control", "interpretation": "Existing pH 6.5 agrees with the primary. Retain the timing before autoclaving and attach evidence at the root scoped to this control.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"step\": \"adjust pH to 6.5 before autoclaving.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "adjust pH to 6.5 before autoclaving.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q12", "subject": "Retained direct-DSM preparation", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path": "preparation_steps[0].description", "original": "adjust pH to 6.5 before autoclaving."}], "decision": "evidence_only", "stage": "pH adjustment before autoclaving", "interpretation": "The direct DSM owner retains the exact pH-before-autoclaving instruction. Target and KOMODO owner lack that step. No autoclave temperature or duration is stated or inferred.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"step\": \"adjust pH to 6.5 before autoclaving.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf", "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2", "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef", "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "adjust pH to 6.5 before autoclaving.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch065/record04/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: supported. Targets: CultureMech:003548.
+
+data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml: primary 8/8, secondary 2/8; data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml: primary 8/8, secondary 2/8; data/normalized_yaml/bacterial/collimonas_medium.yaml: primary 8/8, secondary 2/8. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric legacy MediaIngredientMech mentions occur across the complete selected documents, with exact locators in the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Scope and source limits
+
+scope: supported. Targets: CultureMech:003548.
+
+Complete selected target and exact maintained owners reviewed. Dependencies transfer only their explicitly named stock subsection; unrelated parent media and source prescriptions are not growth evidence.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:003548.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Commercial broth expansion changes the source formulation
+
+major / open / confirmed; issue key: culturemech-003548-commercial-broth-expanded-as-full-strength-agar.
+
+All layers replace the source 3 g Tryptone Soy Broth input with six component rates totaling 45 G_PER_L, including 15 G_PER_L agar. Supplemental KH2PO4 1 and NaCl 5 remain supported. Neither an unspecified brand formula nor a TSA ingredient table can substantiate this expansion.
+
+### f2: Solvent and preparation context are incomplete in generated content
+
+major / open / confirmed; issue key: culturemech-003548-missing-solvent-and-ph-before-autoclaving.
+
+All selected layers omit the absolute water input. The direct DSM owner retains pH adjustment before autoclaving, but the target and KOMODO owner omit preparation. Existing pH 6.5 is correct and is credited. Root claim-scoped evidence is absent; an invented evidence member on PreparationStep is not proposed.
+
+### f3: Original KOMODO import event has a malformed timestamp
+
+minor / open / confirmed; issue key: culturemech-003548-malformed-komodo-import-timestamp.
+
+The maintained KOMODO owner stores a literal .fZ import timestamp, while current importer code contains the unsupported %f strftime directive. A later naive timestamp also lacks a timezone. These are provenance limitations; current code does not establish the original run time.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Repair the maintained owners to preserve the exact commercial broth input and its source amount. Retain the two independent basal inputs. Decompose a product only after verifying its exact specification and basis, with provenance and stock/product boundaries; then regenerate through the current conservative merger.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Retain the source water input and pH-before-autoclaving sequence, credit the already correct DSM owner step, and attach scoped root evidence. Review the present resolver preparation omission and preserve fields when regenerating; do not invent sterilization settings.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Keep original events unchanged. Correct future writer timestamp formatting and append a new verified context event with the actual current curation date; recover historical context only from evidence and never invent or rewrite the original time.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local2 | data/normalized_yaml/bacterial/collimonas_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch065/record04/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch065/record04/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch065/record04/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch065/record04/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| dsmz1035 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| api1035 | https://mediadive.dsmz.de/rest/medium/1035; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current MediaDive API identity, primary recipe, separate stock recipes and preparation read. Explicit g_l values are provider normalization; solution volume metadata and listed water do not establish a measured final medium volume. Supplied mass/form takes priority over unverified mmol_l conversions. |
+| komodo1035 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1035; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 403, error &lt;HTTPError 403: 'Forbidden'&gt;. This response does not authenticate a recipe. |
+| micro182 | https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000182; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact MICRO:0000182 = tryptone; definition []; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| foodon03315720 | https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315720; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact FOODON:03315720 = vegetable protein, hydrolyzed; definition ['SIREN DB annotation:\n* protein extract, concentrate or isolate FOODON:03420236\n* food hydrolyzation process FOODON:03460277']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17234 = glucose; definition ['An aldohexose used as a source of energy and metabolic intermediate.']; formula ['C6H12O6']; mass ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties.']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| sigma22092 | https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/288/904/22092dat.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP None, error TimeoutError('The read operation timed out'). This response does not authenticate a recipe. |
+| bd211825 | https://www.bd.com/en-us/products-and-solutions/products/product-page.211825; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 403, error &lt;HTTPError 403: 'Forbidden'&gt;. This response does not authenticate a recipe. |
+| grounding | REVIEW_WORK/batch065/record04/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/collimonas_medium.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. Current api1035 raw bytes exactly match the cited historical SHA, and 5 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history1 | reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. Current api1035 raw bytes exactly match the cited historical SHA, and 5 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/collimonas_medium.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history4 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/COLLIMONAS_MEDIUM.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history-auth | REVIEW_WORK/batch065/record04/historical-authentication.json; reports | supports | Exact report headers, source digest and every quoted API object reconciled; all reports fully read with duplicate cells pooled. Current primary sources independently govern scientific decisions. |
+| writer26 | scripts/apply_mim_groundings.py; target_slot; groundable; apply_to_record | context_only | Current target_slot preserves existing CHEBI assertions; groundable excludes conflicting corpus opinions, and apply_to_record fills ungrounded entries from proposals. This writer does not authenticate source amounts or automatically repair an existing wrong supplied-form ID. |
+| writer27 | scripts/assign_culturemech_ids.py; assign_ids; _assign_id_to_file | context_only | Current assign_ids selects records with missing IDs; _assign_id_to_file checks new-ID collisions and appends identifier provenance. Identifier assignment does not authenticate recipe content or demonstrate historical source access. |
+| writer28 | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current _merge_ingredient_group collapses equal duplicate values without summing them and retains the first conflicting value with a flag. This behavior is distinct from historical summed-amount artifacts and does not authenticate source-specific stock or product structure. |
+| writer29 | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients; merge_ingredient_group | context_only | Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group retains the first concentration, flags differing values and selects the first CHEBI. It cannot establish source stages or justify collapsing independent supplemental and product-contained components. |
+| writer30 | scripts/enrich_with_chebi.py; RecipeEnricher.enrich_ingredient; enrich_recipe; enrich_file | context_only | Current RecipeEnricher.enrich_ingredient skips already grounded entries and delegates missing-term mapping to ChemicalMapper; enrich_recipe traverses ingredient and solution structure, and enrich_file writes results and history. Only the read wrapper behavior is claimed here; the mapper is not treated as an independent supplied-form authority. |
+| writer31 | scripts/enrich_with_mediaingredientmech.py; main | context_only | Current main orchestrates a local or cloned MIM repository, its loader and ingredient linker. The CLI orchestration was read; it does not itself verify source recipe quantities, supplied chemical forms or the validity of historical MIM assertions. Linker internals are not claimed as separately audited scientific evidence. |
+| writer32 | scripts/migrate_chebi_regrounding.py; rewrite_entry; migrate_file | context_only | Current rewrite_entry applies configured exact-ID/label remaps across primary and secondary slots; migrate_file records applied changes. A successful current mapping operation does not establish source-specific hydrate or stereochemical equivalence. |
+| writer33 | scripts/migrate_legacy_mim_to_chebi.py; _resolve_chebi; _rewrite_entry | context_only | Current _resolve_chebi reuses current primary CHEBI where available and considers bounded exact-name/synonym matches with a stereo-prefix guard; _rewrite_entry retains unresolved links. Current-row presence is distinct from historical validity and from source-specific supplied-form equivalence. |
+| writer34 | scripts/normalize_media_names_to_snake_case.py; process_file; add_curation_history | context_only | Current process_file preserves the original medium name while normalizing its machine name; add_curation_history appends a naming event. Name normalization does not prove equivalence of differently maintained source branches or recipe variants. |
+| writer35 | scripts/refill_term_labels.py; refill_text | context_only | Current refill_text replaces term labels using the current exact identifier lookup while preserving other text. Canonical label correspondence is not an independent choice of the correct chemical form for the supplied source reagent. |
+| writer36 | scripts/repair_komodo_strain_backlinks.py; PARENTS; CHILDREN; repair_parent; plan_repairs; _upsert_event | context_only | Current repair_parent and plan_repairs target only the explicitly listed 131/777 parents and their two strain children. They do not repair the selected records. _upsert_event replaces a matching curator/action event or appends it; this existing behavior is not permission to rewrite history during this review. |
+| writer37 | scripts/repair_merged_duplicates.py; repair_ingredient; repair_record | context_only | Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS duplicate notes. This bounded repair is not a general solution for product decomposition, stock flattening or differing source formulations. |
+| writer38 | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata | context_only | Current DSMZCompositionResolver.merge_composition copies ingredients and solutions, fills pH when absent and copies physical/medium type, but does not copy preparation steps. _add_enrichment_metadata records a naive current timestamp. This explains a present omission risk, not historical execution. |
+| writer39 | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current _convert_to_culturemech constructs source notes and default LIQUID with empty ingredients. Its time.strftime format contains %f, which is unsupported here and is consistent with literal .fZ in stored import events. Current code does not authenticate the original retrieval or justify rewriting historical time. |
+| writer40 | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps | context_only | Current _parse_api_composition considers the primary recipe, prefers provider g_l when available and excludes recognized solvents; _is_api_stock_addition distinguishes stock additions. _parse_api_solutions retains separate stock structure. _parse_preparation_steps collects solution prose. These present behaviors do not establish historical execution and cannot justify interpreting flattened stock rates as final-medium concentrations. |
+| writer41 | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation_content retains exact scientific quantities, preparation and other scientific fields; merge_formulation_evidence rejects incompatible projections and unions evidence at matching scopes. A source-equivalence claim is not established by shared ingredient identities. |
+| writer42 | src/culturemech/merge/matcher.py; group_formulations; group_recipes | context_only | Current group_formulations calls group_recipes with fail_on_invalid=True and FormulationFingerprinter. Expected standalone or unfingerprintable records are excluded; malformed or unexpected inputs raise. Valid records are grouped by full scientific content. This guard does not retrieve or authenticate source recipes. |
+| writer43 | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group routes a single maintained owner with merge metadata; multiple owners pass through conservative merge_formulation_evidence. Regenerating from an unrepaired owner retains its defects. Current conservative behavior is credited and does not establish how the old generated record was produced. |
+| writer44 | src/culturemech/validation/schema_defaulter.py; apply_defaults; _fix_ingredient; _fix_solution | context_only | Current apply_defaults, _fix_ingredient and _fix_solution can insert VARIABLE amounts and placeholder names for structural completeness. A default is not evidence for a dose, composition, solution identity or denominator; existing default-history events remain contextual. |
+| quantity-inventory | REVIEW_WORK/batch065/record04/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- Current KOMODO1035 retrieval is HTTP403. Official manufacturer leads returned a timeout or HTTP403, so no particular product specification is authenticated; no search snippet is used as formulation evidence.
+- The source lists 1000 ml water without an explicit final make-up instruction. No organism, strain, growth outcome, sterilization setting or commercial-product composition is inferred.
+- Current exact API bytes authenticate matching historical excerpts, not historical access times or separate KOMODO catalogue bytes. All source and record files remain unchanged.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T113923Z-collimonas-medium-batch065
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of collimonas_medium
+started_at: '2026-10-28T11:30:33.354608Z'
+finished_at: '2026-10-28T11:39:23.254725Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact primary supports the two basal inputs and pH, but a full-strength
+  TSB/TSA expansion replaces a 3 g commercial broth addition and introduces unsupported
+  agar. Solvent/preparation context and provenance need bounded repair in maintained
+  owners before regeneration.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml
+    sha256: 5e58f8bfa624960cc6b1c3f05a2e02a38923f121a138dd0ba24aedd2ab77c16c
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+    sha256: 17447b319ca5c1d68e27c940a6a4faf63d9177096f63c1ab7b059e0ae80e717f
+    role: context
+  - path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+    sha256: ce6ccf39baff751e8269a641d9420b517e2e498c56674dd625ce548971ab8a4b
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml.md
+    sha256: 3d0a7bfb0fe47d4cbb533e1ad90e1ba831a2bc5bd2930683f79252a0786b0fc1
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/collimonas_medium.yaml.md
+    sha256: 8cb0ff18cb5e1f140d2f8422b1593d45e6e887e6de3d1e2c8ab0119642ba655a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/COLLIMONAS_MEDIUM.md
+    sha256: 9fa2aa8da37f898919e5c0f61c40b5509aeb24012621d5a57c36ce2e55466c21
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.md
+    sha256: 138593e96127a947efae6c05adee4a59c7768c2515e573307818f53a931930d5
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/collimonas_medium.md
+    sha256: 4b373b27a6a0142b2fee273c0b651420f6679c7caf402a9eb56bc8a92238c0ff
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_komodo_strain_backlinks.py
+    sha256: 06d56149f4e8333f31ae6dd7e4b9127881227810bc957429c849ba00de21c963
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch065 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:003548
+targets:
+- target_id: CultureMech:003548
+  path: data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml
+  label: collimonas_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:003548
+  command: just validate-schema data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:003548
+  command: just validate-strict data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml --workers
+    1 --out REVIEW_WORK/batch065/record04/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:003548
+  command: just validate-terms data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:003548
+  command: just validate-references data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T11:39:23.245567Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 5e58f8bfa624960cc6b1c3f05a2e02a38923f121a138dd0ba24aedd2ab77c16c
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T11:39:23.245706Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 17447b319ca5c1d68e27c940a6a4faf63d9177096f63c1ab7b059e0ae80e717f
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/collimonas_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T11:39:23.245729Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: ce6ccf39baff751e8269a641d9420b517e2e498c56674dd625ce548971ab8a4b
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch065/record04/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T11:30:34.363102Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 654153d916b4076463eb7f65754477c0edc6bba3c03595b01dfc1d614abf57a1
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch065/record04/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T11:30:35.274723Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 61f70449e9d847c5a9dd4a83949a03e839829769ca7d6937e44b368db9fe1a2d
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch065/record04/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T11:30:36.272966Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 0cfd00fca0a13c9894b989ba86217da6a0a50c8b7b7e94a90e08e0a5c9150598
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch065/record04/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T11:30:36.936994Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 662185f124cd6221c9bbb469422d69c869f1f3d38e049f6c18759e7848f145dc
+- evidence_id: dsmz1035
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T11:31:07.570016Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2
+- evidence_id: api1035
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1035
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T11:31:07.482461Z'
+  support: supports
+  summary: Complete current MediaDive API identity, primary recipe, separate stock
+    recipes and preparation read. Explicit g_l values are provider normalization;
+    solution volume metadata and listed water do not establish a measured final medium
+    volume. Supplied mass/form takes priority over unverified mmol_l conversions.
+  snapshot_sha256: 76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e
+- evidence_id: komodo1035
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1035
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T11:31:07.446323Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: 3b0bdc637e67775cc686c27c5126cd87fb1976519cdaf29405961fdc83d506d6
+- evidence_id: micro182
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000182
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T11:31:07.444126Z'
+  support: supports
+  summary: OLS current exact MICRO:0000182 = tryptone; definition []; formula None;
+    mass None; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 01875997c482a49e4d41eb35c6c697e190afd236a8527625e94b6f96df3872b0
+- evidence_id: foodon03315720
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315720
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T11:31:07.441893Z'
+  support: supports
+  summary: OLS current exact FOODON:03315720 = vegetable protein, hydrolyzed; definition
+    ['SIREN DB annotation:\n* protein extract, concentrate or isolate FOODON:03420236\n*
+    food hydrolyzation process FOODON:03460277']; formula None; mass None; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: aa063e8b88177611aba640828e84d3982b1b3b1c65b11647d89c9efbf6274c25
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T11:31:06.834305Z'
+  support: supports
+  summary: OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition
+    ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula
+    ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T11:31:06.827251Z'
+  support: supports
+  summary: OLS current exact CHEBI:17234 = glucose; definition ['An aldohexose used
+    as a source of energy and metabolic intermediate.']; formula ['C6H12O6']; mass
+    ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T11:31:04.031044Z'
+  support: supports
+  summary: OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of
+    polysaccharides extracted from species of red algae. Its two main components are
+    agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties.'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T11:31:04.030956Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T11:31:05.999284Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: sigma22092
+  kind: database
+  reference: https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/288/904/22092dat.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T11:32:01.175096Z'
+  support: unknown
+  summary: Actual retrieval HTTP None, error TimeoutError('The read operation timed
+    out'). This response does not authenticate a recipe.
+  snapshot_sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- evidence_id: bd211825
+  kind: database
+  reference: https://www.bd.com/en-us/products-and-solutions/products/product-page.211825
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T11:32:20.262739Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: f83c97413c93410cbc3b23031cac5b2175186badf991aa0f37e1bdb7c935d2c6
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch065/record04/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T11:39:23.248438Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: 65fbc551ec61386c6b8d42f787e6d5f0425ae822237716ed0dfeffcb99f2da87
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/collimonas_medium.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T11:39:23.249028Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. Current api1035 raw bytes exactly match the cited historical SHA, and 5
+    quoted objects match both decoded locators and literal current raw substrings.
+    This authenticates the cited API payload and excerpts, not the reported historical
+    access time, execution or separate KOMODO catalogue/page.
+  snapshot_sha256: 8cb0ff18cb5e1f140d2f8422b1593d45e6e887e6de3d1e2c8ab0119642ba655a
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T11:39:23.249054Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. Current api1035 raw bytes exactly match the cited historical SHA, and 5
+    quoted objects match both decoded locators and literal current raw substrings.
+    This authenticates the cited API payload and excerpts, not the reported historical
+    access time, execution or separate KOMODO catalogue/page.
+  snapshot_sha256: 3d0a7bfb0fe47d4cbb533e1ad90e1ba831a2bc5bd2930683f79252a0786b0fc1
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/collimonas_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T11:39:23.249073Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 4b373b27a6a0142b2fee273c0b651420f6679c7caf402a9eb56bc8a92238c0ff
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T11:39:23.249090Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 138593e96127a947efae6c05adee4a59c7768c2515e573307818f53a931930d5
+- evidence_id: history4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/COLLIMONAS_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T11:39:23.249112Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 9fa2aa8da37f898919e5c0f61c40b5509aeb24012621d5a57c36ce2e55466c21
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record04/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T11:39:23.249132Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: bd8b6ffb96c6ce80027ad6304899831165dc1e98d9ab23ef8d615219c0999bc5
+- evidence_id: writer26
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: target_slot; groundable; apply_to_record
+  accessed_at: '2026-10-28T11:39:23.249189Z'
+  support: context_only
+  summary: Current target_slot preserves existing CHEBI assertions; groundable excludes
+    conflicting corpus opinions, and apply_to_record fills ungrounded entries from
+    proposals. This writer does not authenticate source amounts or automatically repair
+    an existing wrong supplied-form ID.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer27
+  kind: record_content
+  reference: scripts/assign_culturemech_ids.py
+  locator: assign_ids; _assign_id_to_file
+  accessed_at: '2026-10-28T11:39:23.249213Z'
+  support: context_only
+  summary: Current assign_ids selects records with missing IDs; _assign_id_to_file
+    checks new-ID collisions and appends identifier provenance. Identifier assignment
+    does not authenticate recipe content or demonstrate historical source access.
+  snapshot_sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+- evidence_id: writer28
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T11:39:23.249234Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer29
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T11:39:23.249255Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer30
+  kind: record_content
+  reference: scripts/enrich_with_chebi.py
+  locator: RecipeEnricher.enrich_ingredient; enrich_recipe; enrich_file
+  accessed_at: '2026-10-28T11:39:23.249275Z'
+  support: context_only
+  summary: Current RecipeEnricher.enrich_ingredient skips already grounded entries
+    and delegates missing-term mapping to ChemicalMapper; enrich_recipe traverses
+    ingredient and solution structure, and enrich_file writes results and history.
+    Only the read wrapper behavior is claimed here; the mapper is not treated as an
+    independent supplied-form authority.
+  snapshot_sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+- evidence_id: writer31
+  kind: record_content
+  reference: scripts/enrich_with_mediaingredientmech.py
+  locator: main
+  accessed_at: '2026-10-28T11:39:23.249294Z'
+  support: context_only
+  summary: Current main orchestrates a local or cloned MIM repository, its loader
+    and ingredient linker. The CLI orchestration was read; it does not itself verify
+    source recipe quantities, supplied chemical forms or the validity of historical
+    MIM assertions. Linker internals are not claimed as separately audited scientific
+    evidence.
+  snapshot_sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+- evidence_id: writer32
+  kind: record_content
+  reference: scripts/migrate_chebi_regrounding.py
+  locator: rewrite_entry; migrate_file
+  accessed_at: '2026-10-28T11:39:23.249314Z'
+  support: context_only
+  summary: Current rewrite_entry applies configured exact-ID/label remaps across primary
+    and secondary slots; migrate_file records applied changes. A successful current
+    mapping operation does not establish source-specific hydrate or stereochemical
+    equivalence.
+  snapshot_sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+- evidence_id: writer33
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: _resolve_chebi; _rewrite_entry
+  accessed_at: '2026-10-28T11:39:23.249334Z'
+  support: context_only
+  summary: Current _resolve_chebi reuses current primary CHEBI where available and
+    considers bounded exact-name/synonym matches with a stereo-prefix guard; _rewrite_entry
+    retains unresolved links. Current-row presence is distinct from historical validity
+    and from source-specific supplied-form equivalence.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: writer34
+  kind: record_content
+  reference: scripts/normalize_media_names_to_snake_case.py
+  locator: process_file; add_curation_history
+  accessed_at: '2026-10-28T11:39:23.249354Z'
+  support: context_only
+  summary: Current process_file preserves the original medium name while normalizing
+    its machine name; add_curation_history appends a naming event. Name normalization
+    does not prove equivalence of differently maintained source branches or recipe
+    variants.
+  snapshot_sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+- evidence_id: writer35
+  kind: record_content
+  reference: scripts/refill_term_labels.py
+  locator: refill_text
+  accessed_at: '2026-10-28T11:39:23.249374Z'
+  support: context_only
+  summary: Current refill_text replaces term labels using the current exact identifier
+    lookup while preserving other text. Canonical label correspondence is not an independent
+    choice of the correct chemical form for the supplied source reagent.
+  snapshot_sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+- evidence_id: writer36
+  kind: record_content
+  reference: scripts/repair_komodo_strain_backlinks.py
+  locator: PARENTS; CHILDREN; repair_parent; plan_repairs; _upsert_event
+  accessed_at: '2026-10-28T11:39:23.249393Z'
+  support: context_only
+  summary: Current repair_parent and plan_repairs target only the explicitly listed
+    131/777 parents and their two strain children. They do not repair the selected
+    records. _upsert_event replaces a matching curator/action event or appends it;
+    this existing behavior is not permission to rewrite history during this review.
+  snapshot_sha256: 06d56149f4e8333f31ae6dd7e4b9127881227810bc957429c849ba00de21c963
+- evidence_id: writer37
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; repair_record
+  accessed_at: '2026-10-28T11:39:23.249411Z'
+  support: context_only
+  summary: Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS
+    duplicate notes. This bounded repair is not a general solution for product decomposition,
+    stock flattening or differing source formulations.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer38
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata
+  accessed_at: '2026-10-28T11:39:23.249436Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver.merge_composition copies ingredients and
+    solutions, fills pH when absent and copies physical/medium type, but does not
+    copy preparation steps. _add_enrichment_metadata records a naive current timestamp.
+    This explains a present omission risk, not historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer39
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T11:39:23.249457Z'
+  support: context_only
+  summary: Current _convert_to_culturemech constructs source notes and default LIQUID
+    with empty ingredients. Its time.strftime format contains %f, which is unsupported
+    here and is consistent with literal .fZ in stored import events. Current code
+    does not authenticate the original retrieval or justify rewriting historical time.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer40
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps
+  accessed_at: '2026-10-28T11:39:23.249486Z'
+  support: context_only
+  summary: Current _parse_api_composition considers the primary recipe, prefers provider
+    g_l when available and excludes recognized solvents; _is_api_stock_addition distinguishes
+    stock additions. _parse_api_solutions retains separate stock structure. _parse_preparation_steps
+    collects solution prose. These present behaviors do not establish historical execution
+    and cannot justify interpreting flattened stock rates as final-medium concentrations.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer41
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T11:39:23.249506Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer42
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T11:39:23.249525Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer43
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T11:39:23.249546Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer44
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  locator: apply_defaults; _fix_ingredient; _fix_solution
+  accessed_at: '2026-10-28T11:39:23.249567Z'
+  support: context_only
+  summary: Current apply_defaults, _fix_ingredient and _fix_solution can insert VARIABLE
+    amounts and placeholder names for structural completeness. A default is not evidence
+    for a dose, composition, solution identity or denominator; existing default-history
+    events remain contextual.
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch065/record04/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T11:39:23.254654Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 480ca67085109df02b123e3e223b526aa8cd70fe8ca91f9860193bdf3870ff79
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact DSM1035 source and unverified commercial detail
+  outcome: concern
+  summary: The three selected layers identify DSM1035 or KOMODO1035, and the primary/API
+    agree. The local ingredient expansion blends a full-strength TSB/TSA description
+    into a source requiring only 3 g broth. Exact manufacturer/product and current
+    KOMODO identity-page bytes remain unavailable; those limitations do not negate
+    the direct primary recipe.
+  target_ids:
+  - CultureMech:003548
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - dsmz1035
+  - api1035
+  - komodo1035
+- assessment_id: a2
+  area: consistency
+  topic: Classification and physical state
+  outcome: concern
+  summary: LIQUID and complex/undefined composition are consistent with the exact
+    broth source. The local 15 G_PER_L agar contradicts that representation; repair
+    the product expansion rather than changing the source medium into agar. No organism-specific
+    growth or atmospheric claim is inferred from the medium name.
+  target_ids:
+  - CultureMech:003548
+  evidence_ids:
+  - local0
+  - dsmz1035
+  - api1035
+- assessment_id: a3
+  area: grounding
+  topic: Exact identifier labels versus commercial component identity
+  outcome: unknown
+  summary: All asserted CHEBI, MICRO and FOODON labels match current authority objects.
+    MICRO:0000182 identifies tryptone; FOODON:03315720 is the broader hydrolyzed-vegetable-protein
+    class. Neither these labels nor current MIM rows authenticate the particular peptic
+    soybean digest, glucose synonym or commercial formulation claimed in the expansion.
+    The precisely supplied product remains unresolved.
+  target_ids:
+  - CultureMech:003548
+  evidence_ids:
+  - grounding
+  - micro182
+  - foodon03315720
+- assessment_id: a4
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All five exact historical reports were read. Current matching API bytes
+    and each historical excerpt are authenticated in the sidecar, but old blanket
+    conflicts do not override the two supported main inputs. No selected layer has
+    attached formulation evidence. Exact KOMODO retrieval is HTTP403; the failed manufacturer
+    leads do not authenticate a product formula. Current writers are credited as inspected,
+    including the conservative grouping guard and distinct duplicate-cleanup behaviors.
+    Current conservative merging preserves scientific fields and rejects incompatible
+    formulations. Inspected writer behavior is described separately by exact file
+    and function; it does not prove historical execution.
+  target_ids:
+  - CultureMech:003548
+  evidence_ids:
+  - history-auth
+  - writer26
+  - writer27
+  - writer28
+  - writer29
+  - writer30
+  - writer31
+  - writer32
+  - writer33
+  - writer34
+  - writer35
+  - writer36
+  - writer37
+  - writer38
+  - writer39
+  - writer40
+  - writer41
+  - writer42
+  - writer43
+  - writer44
+- assessment_id: a5
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 24 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:003548
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:003548",
+    "selected_concentration_field_count": 24, "selected_concentration_fields_covered":
+    24, "decisions": [{"decision_id": "q1", "subject": "KH2PO4", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "original": {"value": "1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "Separate main-recipe input
+    on provider-declared basis", "interpretation": "The existing value matches the
+    direct primary mass and the API g_l. No attached formulation claim exists in any
+    selected layer. Retain this source-supported main input with new evidence, while
+    keeping listed water separate from a measured final-volume assertion.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api1035", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    7.34835,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz1035",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "KH2PO4                                      1.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject":
+    "NaCl", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "Separate main-recipe input
+    on provider-declared basis", "interpretation": "The existing value matches the
+    direct primary mass and the API g_l. No attached formulation claim exists in any
+    selected layer. Retain this source-supported main input with new evidence, while
+    keeping listed water separate from a measured final-volume assertion.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api1035", "reference":
+    "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    85.5578,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsmz1035",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "NaCl                                        5.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject":
+    "Pancreatic digest of casein", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "17.0", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "17.0", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "17.0", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a
+    commercial broth into main-medium ingredients", "interpretation": "The exact primary
+    specifies one 3 g Tryptone Soy Broth input. This locally expanded component and
+    its full-strength rate are not stated there; together the six expanded rows total
+    45 g and include agar, which is absent from the source recipe. The record notes
+    list multiple possible commercial products without selecting one. Do not scale
+    a guessed manufacturer formula or collapse supplemental and product-contained
+    NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035",
+    "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\":
+    99,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone
+    Soy Broth                          3.0    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q4", "subject": "Peptic digest of soybean
+    meal", "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "3.0", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "3.0", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "3.0", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a
+    commercial broth into main-medium ingredients", "interpretation": "The exact primary
+    specifies one 3 g Tryptone Soy Broth input. This locally expanded component and
+    its full-strength rate are not stated there; together the six expanded rows total
+    45 g and include agar, which is absent from the source recipe. The record notes
+    list multiple possible commercial products without selecting one. Do not scale
+    a guessed manufacturer formula or collapse supplemental and product-contained
+    NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035",
+    "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\":
+    99,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone
+    Soy Broth                          3.0    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q5", "subject": "Glucose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a
+    commercial broth into main-medium ingredients", "interpretation": "The exact primary
+    specifies one 3 g Tryptone Soy Broth input. This locally expanded component and
+    its full-strength rate are not stated there; together the six expanded rows total
+    45 g and include agar, which is absent from the source recipe. The record notes
+    list multiple possible commercial products without selecting one. Do not scale
+    a guessed manufacturer formula or collapse supplemental and product-contained
+    NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035",
+    "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\":
+    99,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone
+    Soy Broth                          3.0    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q6", "subject": "Sodium chloride", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "original": {"value": "5.0", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "5.0", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "5.0", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a
+    commercial broth into main-medium ingredients", "interpretation": "The exact primary
+    specifies one 3 g Tryptone Soy Broth input. This locally expanded component and
+    its full-strength rate are not stated there; together the six expanded rows total
+    45 g and include agar, which is absent from the source recipe. The record notes
+    list multiple possible commercial products without selecting one. Do not scale
+    a guessed manufacturer formula or collapse supplemental and product-contained
+    NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035",
+    "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\":
+    99,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone
+    Soy Broth                          3.0    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q7", "subject": "Dipotassium phosphate",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a
+    commercial broth into main-medium ingredients", "interpretation": "The exact primary
+    specifies one 3 g Tryptone Soy Broth input. This locally expanded component and
+    its full-strength rate are not stated there; together the six expanded rows total
+    45 g and include agar, which is absent from the source recipe. The record notes
+    list multiple possible commercial products without selecting one. Do not scale
+    a guessed manufacturer formula or collapse supplemental and product-contained
+    NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035",
+    "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\":
+    99,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone
+    Soy Broth                          3.0    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q8", "subject": "Agar", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ingredients[7].concentration",
+    "original": {"value": "15.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "15.0", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "15.0", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Unsupported decomposition of a
+    commercial broth into main-medium ingredients", "interpretation": "The exact primary
+    specifies one 3 g Tryptone Soy Broth input. This locally expanded component and
+    its full-strength rate are not stated there; together the six expanded rows total
+    45 g and include agar, which is absent from the source recipe. The record notes
+    list multiple possible commercial products without selecting one. Do not scale
+    a guessed manufacturer formula or collapse supplemental and product-contained
+    NaCl as if they were duplicates.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035",
+    "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\":
+    99,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone
+    Soy Broth                          3.0    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q9", "subject": "Opaque Tryptone Soy Broth
+    input", "local_fields": [], "decision": "add", "stage": "Main commercial-product
+    input", "interpretation": "Restore the exact 3 g broth input and its provider-declared
+    g_l=3 with product identity unresolved beyond the source label. A manufacturer
+    specification is needed before any optional decomposition; agar from a TSA formulation
+    must not be imported into this broth recipe.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035",
+    "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Trypticase soy broth\",\n                        \"compound_id\":
+    99,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 6-6", "source_key": "dsmz1035", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Tryptone
+    Soy Broth                          3.0    g", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q10", "subject": "Distilled water", "local_fields":
+    [], "decision": "add", "stage": "Absolute solvent input", "interpretation": "Retain
+    the listed 1000 ml water as an absolute input or source-scoped preparation statement.
+    The text does not say make up to a measured final volume; do not infer a replacement
+    denominator.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256":
+    "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256":
+    "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at":
+    "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz1035",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "Distilled
+    water                          1000.0   ml", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q11", "subject": "pH", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml", "field_path": "ph_value", "original":
+    6.5}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml",
+    "field_path": "ph_value", "original": 6.5}, {"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml",
+    "field_path": "ph_value", "original": 6.5}], "decision": "evidence_only", "stage":
+    "Main preparation control", "interpretation": "Existing pH 6.5 agrees with the
+    primary. Retain the timing before autoclaving and attach evidence at the root
+    scoped to this control.", "sources": [{"locator": "$.data.solutions[0].steps[0]",
+    "source_key": "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035",
+    "source_raw_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "source_text_sha256": "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e",
+    "accessed_at": "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"step\":
+    \"adjust pH to 6.5 before autoclaving.\"\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "dsmz1035",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "adjust pH
+    to 6.5 before autoclaving.", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q12", "subject": "Retained direct-DSM preparation", "local_fields":
+    [{"record_path": "data/normalized_yaml/bacterial/collimonas_medium.yaml", "field_path":
+    "preparation_steps[0].description", "original": "adjust pH to 6.5 before autoclaving."}],
+    "decision": "evidence_only", "stage": "pH adjustment before autoclaving", "interpretation":
+    "The direct DSM owner retains the exact pH-before-autoclaving instruction. Target
+    and KOMODO owner lack that step. No autoclave temperature or duration is stated
+    or inferred.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api1035", "reference": "https://mediadive.dsmz.de/rest/medium/1035", "source_raw_sha256":
+    "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "source_text_sha256":
+    "76dc1faf4d359650fb3a12284ccf8532f6944082e72bb503507573337bd7d25e", "accessed_at":
+    "2026-10-28T11:31:07.482461Z", "exact_source_quote": "{\n                        \"step\":
+    \"adjust pH to 6.5 before autoclaving.\"\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "dsmz1035",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1035.pdf",
+    "source_raw_sha256": "c3b80ff92f1962a1698a7bd6d3f889589e34794107f0eb3b0786951fa39f4ff2",
+    "source_text_sha256": "e40477c5254a020d079a91ba38317ac2a1dddd104ec6355d5bf9d21d9e497fef",
+    "accessed_at": "2026-10-28T11:31:07.570016Z", "exact_source_quote": "adjust pH
+    to 6.5 before autoclaving.", "quote_representation": "captured extracted text"}]}],
+    "local_field_census_reference": "REVIEW_WORK/batch065/record04/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a6
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: supported
+  summary: 'data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml: primary 8/8, secondary
+    2/8; data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml: primary
+    8/8, secondary 2/8; data/normalized_yaml/bacterial/collimonas_medium.yaml: primary
+    8/8, secondary 2/8. These are ingredient-instance linkage fractions, not accuracy
+    scores. Solution terms are audited separately. Every actually asserted CHEBI term
+    is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric
+    legacy MediaIngredientMech mentions occur across the complete selected documents,
+    with exact locators in the inventory; NNNNNN is a historical placeholder, not
+    an ID. Complex commercial/product components are not forced to pure-compound IDs.'
+  target_ids:
+  - CultureMech:003548
+  evidence_ids:
+  - grounding
+- assessment_id: a7
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:003548
+  evidence_ids:
+  - local0
+- assessment_id: a8
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:003548
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-003548-commercial-broth-expanded-as-full-strength-agar
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Commercial broth expansion changes the source formulation
+  description: All layers replace the source 3 g Tryptone Soy Broth input with six
+    component rates totaling 45 G_PER_L, including 15 G_PER_L agar. Supplemental KH2PO4
+    1 and NaCl 5 remain supported. Neither an unspecified brand formula nor a TSA
+    ingredient table can substantiate this expansion.
+  target_ids:
+  - CultureMech:003548
+  field_paths:
+  - ingredients[2]
+  - ingredients[3]
+  - ingredients[4]
+  - ingredients[5]
+  - ingredients[6]
+  - ingredients[7]
+  - notes
+  evidence_ids:
+  - dsmz1035
+  - api1035
+  - local0
+  rule_id: review-ingredient-concentrations/commercial-product-stage
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-003548-missing-solvent-and-ph-before-autoclaving
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Solvent and preparation context are incomplete in generated content
+  description: All selected layers omit the absolute water input. The direct DSM owner
+    retains pH adjustment before autoclaving, but the target and KOMODO owner omit
+    preparation. Existing pH 6.5 is correct and is credited. Root claim-scoped evidence
+    is absent; an invented evidence member on PreparationStep is not proposed.
+  target_ids:
+  - CultureMech:003548
+  field_paths:
+  - preparation_steps
+  - evidence
+  - data/merge_yaml/merged/COLLIMONAS_MEDIUM.yaml::ingredients
+  - data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml::ingredients
+  - data/normalized_yaml/bacterial/collimonas_medium.yaml::ingredients
+  evidence_ids:
+  - dsmz1035
+  - api1035
+  - local2
+  rule_id: review-yaml-record/preparation-and-solvent-completeness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-003548-malformed-komodo-import-timestamp
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Original KOMODO import event has a malformed timestamp
+  description: The maintained KOMODO owner stores a literal .fZ import timestamp,
+    while current importer code contains the unsupported %f strftime directive. A
+    later naive timestamp also lacks a timezone. These are provenance limitations;
+    current code does not establish the original run time.
+  target_ids:
+  - CultureMech:003548
+  field_paths:
+  - data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml::curation_history[1].timestamp
+  evidence_ids:
+  - local1
+  rule_id: review-yaml-record/history-timestamp-traceability
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Repair the maintained owners to preserve the exact commercial broth
+    input and its source amount. Retain the two independent basal inputs. Decompose
+    a product only after verifying its exact specification and basis, with provenance
+    and stock/product boundaries; then regenerate through the current conservative
+    merger.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:003548
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Retain the source water input and pH-before-autoclaving sequence, credit
+    the already correct DSM owner step, and attach scoped root evidence. Review the
+    present resolver preparation omission and preserve fields when regenerating; do
+    not invent sterilization settings.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:003548
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Keep original events unchanged. Correct future writer timestamp formatting
+    and append a new verified context event with the actual current curation date;
+    recover historical context only from evidence and never invent or rewrite the
+    original time.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:003548
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1035_COLLIMONAS_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/collimonas_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- Current KOMODO1035 retrieval is HTTP403. Official manufacturer leads returned a
+  timeout or HTTP403, so no particular product specification is authenticated; no
+  search snippet is used as formulation evidence.
+- The source lists 1000 ml water without an explicit final make-up instruction. No
+  organism, strain, growth outcome, sterilization setting or commercial-product composition
+  is inferred.
+- Current exact API bytes authenticate matching historical excerpts, not historical
+  access times or separate KOMODO catalogue bytes. All source and record files remain
+  unchanged.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```
