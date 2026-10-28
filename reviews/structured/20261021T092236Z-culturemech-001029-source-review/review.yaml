@@ -1,0 +1,949 @@
+schema_version: 1.0.0
+review_id: 20261021T092236Z-culturemech-001029-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 948_oxoid_nutrient_broth_with_additonal_salt
+  (CultureMech:001029)'
+started_at: '2026-10-21T09:12:04Z'
+finished_at: '2026-10-21T09:22:36Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed recipe bytes.
+    This is an independent agent review of captured local inputs and inspected primary/database
+    sources, not experimental validation.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSMZ 1551 record retains the commercial Oxoid broth product and
+  its component breakdown as simultaneous direct ingredients. Source stages, the provider
+  product-normalization conflict, and the current KG 74 mismatch require curation;
+  source quantities and chemical labels were reviewed individually.
+source:
+  git_revision: 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+  state: working_tree
+  inputs:
+  - path: .claude/skills/audit-schema-gaps/SKILL.md
+    sha256: 86467f280ecdd2d60531d3b2a9249d7a38efa4cfeab714d55421b9a62cfabb7d
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/match-kg-microbe/SKILL.md
+    sha256: add85aafc1e18164de2a9717cc9d63e5e20f34a1d597568a0c6d8b039c574a99
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: .claude/skills/schema-gap-analysis/SKILL.md
+    sha256: 09665fe53584559e776f75ab41dfabd997eff0cac10bafcca0a721b678ccee93
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    sha256: 59176fb6db18c3f8606fae306abb1c5ab5d979108f7a3073cbd25045b3d4f052
+    role: target
+  - path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    sha256: b7d38626a936dac55db76b6c076a01d1ab08ae31457446e2c0df5304a1755779
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/enrich_with_kg_microbe_matches.py
+    sha256: 61351f99ef2cb0cef03e74ad92d21dcf3b38df77a06602bdac814974e7728eeb
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/repair_dsmz_1551_687_score15.py
+    sha256: 8d6df8debee25199456cb7b8bde62e265b78864396fe01259a924ad22a183745
+    role: context
+  - path: scripts/repair_rejected_peptone_groundings.py
+    sha256: 0369834a0e47fc95bace9faf2570600468e61c5087fe9ca20de708b855fc9fe0
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/mediadive_raw_yaml.py
+    sha256: 70ba720001705c315f2c5bd40871e08f6f429b6229c78255e6c94dfdcc482432
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/export/kgx_export.py
+    sha256: d7553aff8f5f026f00765298e436e7cb001b0cdce25b0841e92a5764b4481a70
+    role: context
+  - path: src/culturemech/fetch/mediadive_api_fetcher.py
+    sha256: 60b15f231d96099bd76ff10bb215de2d0ca9ad71de5d7977b0054d1b7b622c5e
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Task review 122; batch 013 item 2 of 10, selected in Python lexicographic
+    order of currently uncovered merged paths. The preceding twelve task batches contain
+    120 ledger-owned validated record reviews; their complete validated lists also
+    retain upstream baseline reviews. Fresh origin/main at 24a1d277eb7f0437af53af0d178a30f9bfa6374c
+    contains 40 validated baseline bundles covering 2 current merged paths. Unioning
+    all prior lists with this baseline covers 122 of 6320 current merged paths, including
+    2 paths beyond task-owned reviews. This target path is absent from that union.
+    Task ordinals count task reviews, not current global path ranks or all upstream
+    coverage. Only the named target is reviewed; no sampling or fleet-wide scientific
+    claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001029
+targets:
+- target_id: CultureMech:001029
+  path: data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  label: 948_oxoid_nutrient_broth_with_additonal_salt
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch013/122/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-013/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch013/122/strict.tsv"
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:001029
+- check_id: kg74-source-correspondence
+  name: Exact asserted KG 74 correspondence
+  required: true
+  status: failed
+  summary: Read-only source-graph comparison refutes current exact ingredient-set
+    correspondence; this is a scientific evidence result, not a failed canonical target
+    recipe. Source file hashes and exact edges are retained.
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - kg74
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-21T09:22:35Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-21T09:22:35Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:12:47.428168Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    --workers 1 --out /private/tmp/culturemech-review-work-batch013/122/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:12:50.369652Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-013/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch013/122/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:12:52.500042Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-21T09:12:53.759710Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: id-search
+  kind: record_content
+  reference: repository checkout
+  locator: Exact top-level ID lookup
+  accessed_at: '2026-10-21T09:22:35Z'
+  support: supports
+  summary: './data/merge_yaml/merged/948_oxoid_nutrient_broth_with_additonal_salt.yaml:1:id:
+    CultureMech:001029
+
+    ./data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml:1:id:
+    CultureMech:001029
+
+    '
+  search_scope: Whole checkout with rg --no-ignore --hidden; maintained and generated
+    layers distinguished.
+- evidence_id: chebi15377
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:17:26.097802Z'
+  support: supports
+  summary: CHEBI:15377 resolves to canonical label water; this is term-label metadata,
+    not a complete material or formulation validation.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi26710
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: Exact OLS term identifier, label, available definition/form and obsolete
+    flag
+  accessed_at: '2026-10-21T08:42:42.219040Z'
+  support: supports
+  summary: CHEBI:26710 resolves to canonical label sodium chloride; this is term-label
+    metadata, not a complete material or formulation validation.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: All live preferred-term rows for asserted secondary CHEBI keys; metadata
+    captured
+  accessed_at: '2026-10-21T09:22:35Z'
+  support: supports
+  summary: '{"CHEBI:26710": [{"label": "NaCl", "match_type": "preferred_term", "identifier":
+    "CHEBI:26710", "preferred_term": "NaCl", "ontology_id": "CHEBI:26710", "mapping_status":
+    "MAPPED", "ambiguity": "unique"}], "CHEBI:15377": [{"label": "Distilled water",
+    "match_type": "preferred_term", "identifier": "CHEBI:15377", "preferred_term":
+    "Distilled water", "ontology_id": "CHEBI:15377", "mapping_status": "MAPPED", "ambiguity":
+    "unique"}]}'
+- evidence_id: dsmz
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf
+  locator: PDF page 1, main recipe and asterisked Oxoid-product composition; page
+    image independently read
+  accessed_at: '2026-10-21T09:00:10.590638Z'
+  support: supports
+  summary: 'The sheet identifies DSMZ 1551 and separates the 13 g commercial product
+    and 17.5 g additional NaCl from the product composition: 1 g Lab-Lemco powder,
+    2 g yeast extract, 5 g peptone and 5 g NaCl. It gives water 1000 ml in each description
+    and places pH 7.2 beneath the product-composition subsection. No sterilization
+    is supplied.'
+  quote: '* (composition of Oxoid nutrient broth):'
+  snapshot_sha256: 890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c
+- evidence_id: provider
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1551
+  locator: $.data.medium; $.data.solutions[0:2]
+  accessed_at: '2026-10-21T09:00:10.590103Z'
+  support: supports
+  summary: Exact 1551 identity and primary PDF link agree. Main solution 3209 contains
+    the product as solution 5721 with amount 13 g and g_l 6.5; it declares volume
+    1000 ml. The nested product composition is separately represented, with pH 7.2
+    in its own steps. This conflicts with treating every row as an independent main-medium
+    addition.
+  snapshot_sha256: 9765bacf8f06b82f98ab579e90f534548325fdcb7959d90825609d6233ec778e
+- evidence_id: foodon03302088
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03302088
+  locator: $._embedded.terms[0] label, definition and annotation
+  accessed_at: '2026-10-21T08:00:49.378816Z'
+  support: supports
+  summary: Exact asserted ontology metadata inspected; generic label agreement does
+    not establish product-specific grade, origin or processing.
+  snapshot_sha256: ee2e9f57bae58d8170d339f9a0575ea59cda36ff7c8a09fcf457358dcc894f22
+- evidence_id: foodon03315426
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFOODON_03315426
+  locator: $._embedded.terms[0] label, definition and annotation
+  accessed_at: '2026-10-21T08:00:49.388263Z'
+  support: supports
+  summary: Exact asserted ontology metadata inspected; generic label agreement does
+    not establish product-specific grade, origin or processing.
+  snapshot_sha256: cf2b158469d7dedbe7c31242b5901230a29b5765e04bb37c92f0b1ddd6ea9c44
+- evidence_id: micro0000178
+  kind: database
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/micro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMICRO_0000178
+  locator: $._embedded.terms[0] label, definition and annotation
+  accessed_at: '2026-10-21T08:00:49.423450Z'
+  support: supports
+  summary: Exact asserted ontology metadata inspected; generic label agreement does
+    not establish product-specific grade, origin or processing.
+  snapshot_sha256: ef45aa186438f91d015280171fde8ccb25740a50cc6f2c6e848de6aad3339b31
+- evidence_id: quantities
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch013/122/quantity-inventory.json
+  locator: All seven target/owner amounts, pH scope and product solvent context
+  accessed_at: '2026-10-21T09:22:35Z'
+  support: context_only
+  summary: Nine decisions retain exact primary quotations and locators; seven rows
+    explicitly cover both layers. Arithmetic and interpretation are separate from
+    literal quotes.
+  snapshot_sha256: f9b6c3dd8c665155359119f0a73c020c5c0bf95ec458d3aa1bb0e0d9ced4f615
+- evidence_id: kg74
+  kind: record_content
+  reference: /private/tmp/culturemech-review-work-batch013/122/kg74-evidence.json
+  locator: Exact current KG node 74, solution 119, direct has_part edges and source
+    graph hashes
+  accessed_at: '2026-10-21T09:14:25.902440Z'
+  support: refutes
+  summary: Current node 74 is THERMUS THERMOPHILUS MEDIUM. Its CHEBI/FOODON set is
+    water, sodium chloride and yeast extract. The target additionally asserts FOODON:03302088
+    beef extract, so the current exact sets differ even after numeric-ID normalization.
+    Graph also has the internal Proteose peptone no. 3 ingredient node. Concentration-independent
+    correspondence would not prove recipe identity even if sets matched.
+  snapshot_sha256: 70a749f7a7ed778aeb6d80a9ff3adb65676598ba51e6bcdc8df4e6077108e241
+- evidence_id: writer
+  kind: record_content
+  reference: scripts/repair_dsmz_1551_687_score15.py
+  locator: _dsmz_1551_ingredients; TARGETS entry for 1551; repair_record
+  accessed_at: '2026-10-21T09:22:35Z'
+  support: context_only
+  summary: The inspected current repair writer explicitly builds the seven simultaneous
+    ingredient rows, and a root ph_value 7.2 plus ADJUST_PH instruction. Target/owner
+    history names this writer with its timezone-bearing September 11 event. No historical
+    execution was reconstructed.
+- evidence_id: matcher
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: _load_kg_microbe_data; extract_recipe_ingredients; find_exact_match
+  accessed_at: '2026-10-21T09:22:35Z'
+  support: context_only
+  summary: Current built-in matcher aggregates CHEBI/FOODON graph edges and compares
+    sets without quantities; MICRO and ungrounded product descriptions are excluded.
+    Matching cannot establish product composition or source identity.
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: grounding
+  area: grounding
+  topic: All asserted primary and current secondary ingredient identifiers
+  outcome: supported
+  summary: '2 primary CHEBI identities resolve with matching labels; 3 of 3 current
+    secondary keys have live pinned-index rows. Unresolved keys: [].'
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - record
+  - mim
+  - chebi15377
+  - chebi26710
+  details: 7 direct ingredient instances; CHEBI-primary instance linkage 3/7 (42.86%),
+    verified secondary coverage 3/7 (42.86%). Percentages use a 0–100 linkage scale,
+    not a scientific correctness score. Complex mixtures without asserted IDs remain
+    ungrounded rather than receiving invented pure-molecule identities.
+- assessment_id: identity
+  area: identity
+  topic: Source accession, stable identity and current KG link
+  outcome: concern
+  summary: CultureMech 001029 denotes DSMZ 1551; 948 is part of its source title,
+    not an alternate accession. The single normalized owner agrees with the source
+    term and PDF. KG 74 is an independently assessed secondary correspondence that
+    currently fails exact-set comparison.
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - record
+  - owner-0
+  - id-search
+  - dsmz
+  - provider
+  - kg74
+  - matcher
+- assessment_id: amounts
+  area: quantity
+  topic: Product dose and disclosed composition are different description levels
+  outcome: concern
+  summary: All seven numerical claims are inventoried with exact primary text. Four
+    dry product constituents sum 13 g and are not additional to 13 g product. MediaDive
+    reports 13 g literal dose but 6.5 g/L; that explicit conflict remains visible.
+    Additional NaCl 17.5 g is separate; product NaCl 5 g is included only once when
+    discussing a decomposed representation. No second liter or measured final volume
+    is inferred.
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - provider
+  - quantities
+  details: '[{"field_path": "ingredients[0].concentration", "owner_field_path": "data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml:ingredients[0].concentration",
+    "ingredient": "Nutrient broth (Oxoid)", "record_value": {"value": "13", "unit":
+    "G_PER_L"}, "owner_value": {"value": "13", "unit": "G_PER_L"}, "decision": "conflict",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf",
+    "source_sha256": "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c",
+    "source_quote": "Nutrient broth (Oxoid)* 13.0 g", "source_locator": "PDF page
+    1 main recipe row 1", "original_source_amount": 13, "original_source_unit": "g",
+    "provider_locator": "$.data.solutions[0].recipe[0]", "provider_g_l": 6.5, "stage":
+    "main recipe", "explanation": "The literal product dose is 13 g. Four dry constituents
+    sum 1+2+5+5 = 13 g. Provider g_l 6.5 conflicts with this literal dose and its
+    declared 1000 ml main volume; retain the conflict and both description levels
+    without adding them together."}, {"field_path": "ingredients[1].concentration",
+    "owner_field_path": "data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml:ingredients[1].concentration",
+    "ingredient": "NaCl", "record_value": {"value": "17.5", "unit": "G_PER_L"}, "owner_value":
+    {"value": "17.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf", "source_sha256":
+    "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c", "source_quote":
+    "NaCl 17.5 g", "source_locator": "PDF page 1 main recipe row 2", "original_source_amount":
+    17.5, "original_source_unit": "g", "provider_locator": "$.data.solutions[0].recipe[1]",
+    "provider_g_l": 17.5, "stage": "main recipe", "explanation": "The 17.5 g amount
+    is additional NaCl outside the product. Provider explicitly reports 17.5 g/L;
+    the primary water instruction alone is not measured final volume."}, {"field_path":
+    "ingredients[2].concentration", "owner_field_path": "data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml:ingredients[2].concentration",
+    "ingredient": "Distilled water", "record_value": {"value": "1000", "unit": "ML_PER_L"},
+    "owner_value": {"value": "1000", "unit": "ML_PER_L"}, "decision": "correct", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf", "source_sha256":
+    "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c", "source_quote":
+    "Distilled water 1000.0 ml", "source_locator": "PDF page 1 main recipe row 3",
+    "original_source_amount": 1000, "original_source_unit": "ml", "provider_locator":
+    "$.data.solutions[0].recipe[2]", "provider_g_l": null, "stage": "main recipe",
+    "explanation": "Water 1000 ml is the main recipe solvent amount; the note claiming
+    final medium is stronger than the primary source. Do not add the product-composition
+    water as a second liter."}, {"field_path": "ingredients[3].concentration", "owner_field_path":
+    "data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml:ingredients[3].concentration",
+    "ingredient": "Lab-Lemco beef extract", "record_value": {"value": "1", "unit":
+    "G_PER_L"}, "owner_value": {"value": "1", "unit": "G_PER_L"}, "decision": "correct",
+    "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf",
+    "source_sha256": "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c",
+    "source_quote": "\"Lab-Lemco\" powder (Oxoid) 1.0 g", "source_locator": "PDF page
+    1 asterisked product-composition row 1", "original_source_amount": 1, "original_source_unit":
+    "g", "provider_locator": "$.data.solutions[1].recipe[0]", "provider_g_l": 1, "stage":
+    "commercial product composition", "explanation": "This is a constituent of the
+    13 g product, not another independent addition alongside that product. Keep the
+    exact mass and product context; do not add it twice or infer undefined-mixture
+    molarity."}, {"field_path": "ingredients[4].concentration", "owner_field_path":
+    "data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml:ingredients[4].concentration",
+    "ingredient": "Yeast extract", "record_value": {"value": "2", "unit": "G_PER_L"},
+    "owner_value": {"value": "2", "unit": "G_PER_L"}, "decision": "correct", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf", "source_sha256":
+    "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c", "source_quote":
+    "Yeast extract 2.0 g", "source_locator": "PDF page 1 asterisked product-composition
+    row 2", "original_source_amount": 2, "original_source_unit": "g", "provider_locator":
+    "$.data.solutions[1].recipe[1]", "provider_g_l": 2, "stage": "commercial product
+    composition", "explanation": "This is a constituent of the 13 g product, not another
+    independent addition alongside that product. Keep the exact mass and product context;
+    do not add it twice or infer undefined-mixture molarity."}, {"field_path": "ingredients[5].concentration",
+    "owner_field_path": "data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml:ingredients[5].concentration",
+    "ingredient": "Peptone", "record_value": {"value": "5", "unit": "G_PER_L"}, "owner_value":
+    {"value": "5", "unit": "G_PER_L"}, "decision": "correct", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf", "source_sha256":
+    "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c", "source_quote":
+    "Peptone 5.0 g", "source_locator": "PDF page 1 asterisked product-composition
+    row 3", "original_source_amount": 5, "original_source_unit": "g", "provider_locator":
+    "$.data.solutions[1].recipe[2]", "provider_g_l": 5, "stage": "commercial product
+    composition", "explanation": "This is a constituent of the 13 g product, not another
+    independent addition alongside that product. Keep the exact mass and product context;
+    do not add it twice or infer undefined-mixture molarity."}, {"field_path": "ingredients[6].concentration",
+    "owner_field_path": "data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml:ingredients[6].concentration",
+    "ingredient": "NaCl", "record_value": {"value": "5", "unit": "G_PER_L"}, "owner_value":
+    {"value": "5", "unit": "G_PER_L"}, "decision": "correct", "source_reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf", "source_sha256":
+    "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c", "source_quote":
+    "NaCl 5.0 g", "source_locator": "PDF page 1 asterisked product-composition row
+    4", "original_source_amount": 5, "original_source_unit": "g", "provider_locator":
+    "$.data.solutions[1].recipe[3]", "provider_g_l": 5, "stage": "commercial product
+    composition", "explanation": "This is a constituent of the 13 g product, not another
+    independent addition alongside that product. Keep the exact mass and product context;
+    do not add it twice or infer undefined-mixture molarity."}, {"field_path": "ph_value;
+    preparation_steps[1]", "decision": "correct", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf",
+    "source_sha256": "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c",
+    "source_quote": "pH 7.2", "source_locator": "PDF page 1 below product-composition
+    subsection; provider $.data.solutions[1].steps[1]", "explanation": "The number
+    7.2 is source text; the provider associates it with product solution 5721. No
+    direct statement establishes an adjustment or measured pH of the final additional-salt
+    medium. Preserve this scope ambiguity instead of treating the invented adjustment
+    verb as a literal source instruction."}, {"field_path": "source-only product solvent
+    context", "decision": "evidence_only", "source_reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf",
+    "source_sha256": "890faed448ea39b1ba596d9f25436f1ebea98c37a21415847c2c237743560d0c",
+    "source_quote": "Distilled water 1000.0 ml", "source_locator": "PDF page 1 asterisked
+    product-composition water row; provider $.data.solutions[1].recipe[4]", "explanation":
+    "This is the basis of the disclosed broth-product composition, not a second additive
+    solvent quantity. The upper recipe already has 1000 ml water."}]'
+- assessment_id: forms
+  area: grounding
+  topic: All ontology IDs and source materials
+  outcome: concern
+  summary: The six asserted primary instances comprise two CHEBI identities, two FOODON
+    identities and one MICRO identity, with sodium chloride repeated. All canonical
+    labels resolve. Three secondary CHEBI instances have pinned-index rows. Lab-Lemco
+    is retained as a beef-extract product label in the provider; primary says Lab-Lemco
+    powder. Generic source Peptone does not independently establish the mammalian
+    enzymatic-digest specificity of MICRO:0000178. Product source/brand and ingredient
+    roles cannot be established solely from canonical labels.
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - provider
+  - mim
+  - chebi15377
+  - chebi26710
+  - foodon03302088
+  - foodon03315426
+  - micro0000178
+- assessment_id: preparation
+  area: scope
+  topic: pH stage, water basis and missing sterilization source
+  outcome: concern
+  summary: The preparation correctly mentions the commercial product and additional
+    salt rather than all seven direct rows, exposing an internal representation conflict.
+    pH 7.2 appears below the product composition and in the provider product step;
+    root final-medium adjustment is not an exact source instruction. The complete
+    PDF has no sterilization protocol, so that remains unspecified without invented
+    defaults.
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - provider
+  - quantities
+  - writer
+- assessment_id: classification
+  area: scope
+  topic: Complex mixture, liquid state and claim boundaries
+  outcome: supported
+  summary: The product contains undefined extracts/peptone; COMPLEX/UNDEFINED and
+    broth LIQUID are consistent with the source. No target organisms, parent, native
+    variants, growth assay or strain-specific claim is present. Bacterial filing and
+    general cultivation application are not growth evidence. No broad duplicate search
+    or synonym-based merge is claimed.
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - provider
+- assessment_id: provenance
+  area: provenance
+  topic: Source reference, repair history and evidence placement
+  outcome: concern
+  summary: All 9 target and 8 owner timestamps are timezone-aware; target history
+    matches owner plus its final merge event. The reference points to the exact DSMZ
+    PDF but has no claim-level snippets. The historical repair note does not turn
+    product constituents into independent doses. No corpus or history bytes were changed.
+  target_ids:
+  - CultureMech:001029
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - provider
+  - writer
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: CM001029-product-component-double-representation
+  category: quantity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Commercial broth and its constituents are simultaneously direct additions
+  description: Both layers list 13 g Oxoid product plus its four constituent masses
+    1+2+5+5 g in the same ingredients list. The source asterisk and provider solution
+    relationship identify those constituents as the product composition. Preparation
+    names only product+additional salt, so the seven flat rows are internally inconsistent
+    and can double-count material.
+  target_ids:
+  - CultureMech:001029
+  field_paths:
+  - ingredients
+  - preparation_steps[0]
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - provider
+  - quantities
+  - writer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P1
+  normalization_reason: P1 normalized to blocker based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f2
+  issue_key: CM001029-kg74-current-correspondence
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Current KG 74 ingredient-set correspondence does not hold
+  description: The current graph identifies node 74 as THERMUS THERMOPHILUS MEDIUM
+    and lacks target beef-extract FOODON:03302088 in the comparable CHEBI/FOODON set.
+    The shared salt/yeast/water subset is insufficient. The secondary kg_microbe_match
+    is not proof of DSMZ 1551 identity or complete formulation.
+  target_ids:
+  - CultureMech:001029
+  field_paths:
+  - kg_microbe_match
+  evidence_ids:
+  - record
+  - owner-0
+  - kg74
+  - matcher
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f3
+  issue_key: CM001029-ph-product-stage
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Product pH was promoted into a final-medium adjustment instruction
+  description: The source gives pH 7.2 beneath the product-composition footnote; MediaDive
+    places it in solution 5721, not main 3209. Both layers assert root ph_value 7.2
+    and an ADJUST_PH command. The number itself is present, but its final-medium adjustment
+    scope is unresolved.
+  target_ids:
+  - CultureMech:001029
+  field_paths:
+  - ph_value
+  - preparation_steps[1]
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - provider
+  - quantities
+  - writer
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P2
+  normalization_reason: P2 normalized to major based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+- finding_id: f4
+  issue_key: CM001029-evidence-material-specificity
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Claim-level evidence and peptone specificity remain incomplete
+  description: The exact PDF is linked but does not provide ingredient-level snippets
+    or establish the mammalian enzymatic-digest specificity of the asserted MICRO
+    peptone. The product g_l conflict and lack of sterilization text should remain
+    explicit source limitations, not guessed corrections.
+  target_ids:
+  - CultureMech:001029
+  field_paths:
+  - ingredients[*].evidence
+  - ingredients[5].term
+  - references
+  - evidence
+  - sterilization
+  evidence_ids:
+  - record
+  - owner-0
+  - dsmz
+  - provider
+  - micro0000178
+  - quantities
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  native_severity: P3
+  normalization_reason: P3 normalized to minor based on the specific formulation,
+    identity or representation impact described here; deterministic passing checks
+    do not negate it.
+actions:
+- action_id: a1
+  description: Choose a supported product or decomposed formulation representation,
+    preserving component provenance without simultaneous additive claims. Keep additional
+    NaCl separate; do not turn the disclosed product into an invented liquid stock.
+    Correct the maintained owner and relevant repair writer before regeneration.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001029
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a2
+  description: Reassess or remove the asserted KG correspondence using a versioned
+    complete graph and exact current ingredients; preserve graph hashes and distinguish
+    set correspondence from source identity. Do not replace it with 1551 solely because
+    that is the source accession.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001029
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a3
+  description: Retain the source pH and its exact product-stage placement; qualify
+    the unresolved additional-salt medium scope and obtain direct source support before
+    asserting a final-medium adjustment.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001029
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+- action_id: a4
+  description: Add exact scoped source snippets and locators, preserve the normalization
+    conflict, and qualify peptone specificity pending product documentation. Leave
+    absent sterilization instructions explicitly unresolved rather than inventing
+    a protocol.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001029
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/948_oxoid_nutrient_broth_with_additonal_salt.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Verify the exact source accession, ingredient form, original unit and batch/preparation
+    context.
+  - Run just validate-schema, just validate-strict, just validate-terms and just validate-references
+    on separately authorized maintained-input corrections.
+  - Regenerate derived records only after owner verification; run just verify-merges
+    and just audit-merge-freshness and confirm corrected fields/evidence survive.
+limitations:
+- The DSMZ sheet gives nominal recipe amounts with 1000 ml water, not a measured final
+  volume. MediaDive reports a conflicting 6.5 g/L value for the literal 13 g product
+  addition; no convenient normalization is silently selected.
+- The exact DSMZ PDF supplies no sterilization instructions. None are invented from
+  common practice. No strain growth or optimal conditions are inferred.
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+tags:
+- unreviewed-records
+- batch-013
+- generated-medium
