@@ -1,0 +1,1607 @@
+# Scientific review of corynebacterium_medium_with_blood
+
+- Review: 20261028T121622Z-corynebacterium-medium-with-blood-batch066
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T12:04:57.968848Z
+- Finished UTC: 2026-10-28T12:16:22.239257Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The five basal amounts are supported on their declared provider basis, and eight existing owner claims authenticate exactly. Blood remains an unresolved percentage represented as a mass concentration; basal source detail, preparation and generated evidence are incomplete. Current DSM owner preparation and pH are credited.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch066 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:004613 | data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml | generated | corynebacterium_medium_with_blood |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:004613 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:004613 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:004613 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:004613 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### Exact generic source and basal dependency
+
+identity: supported. Targets: CultureMech:004613.
+
+DSM 240 explicitly refers to DSM 53 plus a blood supplement. Both current primary PDFs and APIs agree on that identity, while the historical KOMODO mapping is preserved separately from the fresh inaccessible detail route. No species, strain-specific growth or diphtheria association is asserted by these generic sources or this review.
+
+### Classification and atmosphere
+
+consistency: concern. Targets: CultureMech:004613.
+
+Complex/undefined agar classification agrees with the exact sources. The inherited Aerobic:No note in target and KOMODO owner is not supported by these primary pages. Absence of a primary atmosphere statement does not establish the opposite atmosphere or a strain-specific growth requirement.
+
+### Canonical IDs and exact source forms
+
+grounding: supported. Targets: CultureMech:004613.
+
+All 18 asserted CHEBI primary/secondary slots have exact canonical labels: generic glucose, sodium chloride and agar. The primary does not establish a glucose stereoisomer, so no D-specific replacement is inferred. Current MIM preferred rows support the asserted IDs; its other conflicting synonym rows are not used to prove stereochemistry. Complex peptone, yeast extract and blood are not forced to pure-compound IDs. The missing tryptic-digest qualifier remains a source-completeness issue.
+
+### Historical assertions and current writers
+
+provenance: concern. Targets: CultureMech:004613.
+
+All five historical reports were read in full. Current API 240 exactly authenticates the cited raw digest, historical objects and eight attached owner ingredient claims. The catalogue excerpt remains distinct and unauthenticated; exact detail retrieval was 403. The old casein uncertainty is now resolved for the nominal amount and tryptic-digest source identity, while the blood percentage basis remains unresolved. Current resolver omits preparation copying; current conservative merger and current pH migration are credited as actual code behavior, without asserting historical execution. Current conservative merging preserves scientific fields and rejects incompatible formulations. Inspected writer behavior is described separately by exact file and function; it does not prove historical execution.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:004613.
+
+All 18 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:004613", "selected_concentration_field_count": 18, "selected_concentration_fields_covered": 18, "decisions": [{"decision_id": "q1", "subject": "Casein peptone, tryptic digest", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal DSM 53 input represented by provider nominal rate", "interpretation": "The source explicitly specifies a tryptic digest and 10 g; both APIs declare g_l=10. Retain the nominal provider amount and restore the missing tryptic-digest qualifier. There is no attached claim for this row. Listed water is not an independently measured final volume after supplementation.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Casein peptone\",\n                        \"compound_id\": 21,\n                        \"condition\": \"\",\n                        \"attribute\": \"tryptic digest\",\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[0]", "source_key": "api53", "reference": "https://mediadive.dsmz.de/rest/medium/53", "source_raw_sha256": "f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b", "source_text_sha256": "f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b", "accessed_at": "2026-10-28T12:05:39.347211Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Casein peptone\",\n                        \"compound_id\": 21,\n                        \"condition\": \"\",\n                        \"attribute\": \"tryptic digest\",\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 10,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Casein peptone, tryptic digest             10.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject": "Yeast extract in generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal provider-declared formulation basis", "interpretation": "The unchanged target amount agrees with the primary basal input and explicit provider g_l. New claim evidence is needed on the target; it does not inherit the later owner attachments automatically. No post-blood final-volume concentration is inferred.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Yeast extract                               5.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject": "Yeast extract in maintained owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "verified", "stage": "Existing attached provider-basis evidence", "interpretation": "Both owners already carry exact ingredient-level source snippets and the matching API 240 raw digest. Those eight claims are authenticated in the sidecar. Retain these supported amounts and evidence without treating the provider volume metadata as a measured final volume.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Yeast extract                               5.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject": "Glucose in generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal provider-declared formulation basis", "interpretation": "The unchanged target amount agrees with the primary basal input and explicit provider g_l. New claim evidence is needed on the target; it does not inherit the later owner attachments automatically. No post-blood final-volume concentration is inferred.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Glucose                                     5.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject": "Glucose in maintained owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "verified", "stage": "Existing attached provider-basis evidence", "interpretation": "Both owners already carry exact ingredient-level source snippets and the matching API 240 raw digest. Those eight claims are authenticated in the sidecar. Retain these supported amounts and evidence without treating the provider volume metadata as a measured final volume.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\": 5,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Glucose                                     5.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject": "NaCl in generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal provider-declared formulation basis", "interpretation": "The unchanged target amount agrees with the primary basal input and explicit provider g_l. New claim evidence is needed on the target; it does not inherit the later owner attachments automatically. No post-blood final-volume concentration is inferred.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 85.5578,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "NaCl                                        5.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject": "NaCl in maintained owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "verified", "stage": "Existing attached provider-basis evidence", "interpretation": "Both owners already carry exact ingredient-level source snippets and the matching API 240 raw digest. Those eight claims are authenticated in the sidecar. Retain these supported amounts and evidence without treating the provider volume metadata as a measured final volume.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\": 85.5578,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "NaCl                                        5.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject": "Agar in generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "15", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal provider-declared formulation basis", "interpretation": "The unchanged target amount agrees with the primary basal input and explicit provider g_l. New claim evidence is needed on the target; it does not inherit the later owner attachments automatically. No post-blood final-volume concentration is inferred.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Agar                                       15.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q9", "subject": "Agar in maintained owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "15", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "15", "unit": "G_PER_L"}}], "decision": "verified", "stage": "Existing attached provider-basis evidence", "interpretation": "Both owners already carry exact ingredient-level source snippets and the matching API 240 raw digest. Those eight claims are authenticated in the sidecar. Retain these supported amounts and evidence without treating the provider volume metadata as a measured final volume.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Agar\",\n                        \"compound_id\": 3,\n                        \"amount\": 15,\n                        \"unit\": \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\": 44.5991,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Agar                                       15.0    g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q10", "subject": "Defibrinated blood", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "50", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "50", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "50", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Aseptic supplement after cooling", "interpretation": "Primary DSM 240 states 5% without an explicit mass/volume basis, density, animal source or final-volume definition. API 240 preserves amount 5 / unit % but also supplies g_l=50. That derived field does not independently establish 50 grams per litre for this liquid supplement. Preserve the exact percentage and its unresolved basis in source-scoped text; do not substitute a guessed PERCENT_W_V, PERCENT_V_V or fixed mass/volume dose.", "sources": [{"locator": "$.data.solutions[0].recipe[6]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Defibrinated Blood\",\n                        \"compound_id\": 1177,\n                        \"amount\": 5,\n                        \"unit\": \"%\",\n                        \"g_l\": 50,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz240", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf", "source_raw_sha256": "d284ca2e8d6f1a3238bd648d439fd3e705e6f0686657c258e2e0ec800749f6d9", "source_text_sha256": "692236a94c7dc33b50f99efdf97698710a1e5f3ae69a090334b809c8e15f4528", "accessed_at": "2026-10-28T12:05:40.021575Z", "exact_source_quote": "Sterilize medium 53 and cool to about 45C. Aseptically add 5% defibrinated blood.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q11", "subject": "Basal distilled water", "local_fields": [], "decision": "add", "stage": "Absolute basal solvent input", "interpretation": "DSM 53 lists 1000 ml distilled water, also retained by both APIs. All selected YAML ingredient lists omit it. Record the absolute input or scoped preparation statement without claiming that 1000 ml is the measured final volume after dissolved solids or blood addition.", "sources": [{"locator": "$.data.solutions[0].recipe[5]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[5]", "source_key": "api53", "reference": "https://mediadive.dsmz.de/rest/medium/53", "source_raw_sha256": "f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b", "source_text_sha256": "f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b", "accessed_at": "2026-10-28T12:05:39.347211Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Distilled water                          1000.0   ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q12", "subject": "Basal pH range", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "ph_range.min", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "ph_range.max", "original": 7.4}], "decision": "evidence_only", "stage": "Basal source control", "interpretation": "The current DSM owner correctly retains 7.2–7.4 and the range-migration event. Target and KOMODO owner lack it. Attach root evidence scoped to the basal control; the listing order in the assembled API is not proof that adjustment occurs after blood addition.", "sources": [{"locator": "$.data.solutions[0].steps[1]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"step\": \"Adjust pH to 7.2 - 7.4.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 11-11", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Adjust pH to 7.2 - 7.4.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q13", "subject": "Sterilization, cooling and aseptic supplement sequence", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "preparation_steps[0].description", "original": "Sterilize medium and cool to about 45°C . Aseptically add 5% defibrinated blood."}], "decision": "evidence_only", "stage": "Separate basal sterilization and post-cooling addition", "interpretation": "The direct DSM owner already retains the complete source description, including about 45 degrees C and the aseptic percentage addition. Target and KOMODO owner omit preparation. No sterilization temperature, duration, blood species or final percent basis is inferred.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"step\": \"Sterilize medium and cool to about 45\\u00b0C . Aseptically add 5% defibrinated blood.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz240", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf", "source_raw_sha256": "d284ca2e8d6f1a3238bd648d439fd3e705e6f0686657c258e2e0ec800749f6d9", "source_text_sha256": "692236a94c7dc33b50f99efdf97698710a1e5f3ae69a090334b809c8e15f4528", "accessed_at": "2026-10-28T12:05:40.021575Z", "exact_source_quote": "Sterilize medium 53 and cool to about 45C. Aseptically add 5% defibrinated blood.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q14", "subject": "Combined preparation action code", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "preparation_steps[0].action", "original": "HEAT"}], "decision": "unsupported", "stage": "Structured stage semantics", "interpretation": "The single HEAT action describes a sequence containing sterilization, cooling and aseptic addition. Preserve the correct prose but represent these distinct source stages faithfully; changing the whole combined step blindly to COOL would still lose other operations. This is an action-code completeness issue, not a changed temperature or dose.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"step\": \"Sterilize medium and cool to about 45\\u00b0C . Aseptically add 5% defibrinated blood.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz240", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf", "source_raw_sha256": "d284ca2e8d6f1a3238bd648d439fd3e705e6f0686657c258e2e0ec800749f6d9", "source_text_sha256": "692236a94c7dc33b50f99efdf97698710a1e5f3ae69a090334b809c8e15f4528", "accessed_at": "2026-10-28T12:05:40.021575Z", "exact_source_quote": "Sterilize medium 53 and cool to about 45C. Aseptically add 5% defibrinated blood.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q15", "subject": "Retained pH preparation", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "preparation_steps[1].description", "original": "Adjust pH to 7.2 - 7.4."}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml", "field_path": "preparation_steps[1].action", "original": "ADJUST_PH"}], "decision": "evidence_only", "stage": "Basal pH adjustment", "interpretation": "The current ADJUST_PH action and description agree with the primary basal source. Credit the retained owner content and preserve its basal scope when restoring generated preparation.", "sources": [{"locator": "$.data.solutions[0].steps[1]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"step\": \"Adjust pH to 7.2 - 7.4.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text lines 11-11", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf", "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8", "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a", "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Adjust pH to 7.2 - 7.4.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch066/record06/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: supported. Targets: CultureMech:004613.
+
+data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml: primary 3/6, secondary 3/6; data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml: primary 3/6, secondary 3/6; data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml: primary 3/6, secondary 3/6. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric legacy MediaIngredientMech mentions occur across the complete selected documents, with exact locators in the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Scope and source limits
+
+scope: supported. Targets: CultureMech:004613.
+
+Complete selected target and exact maintained owners reviewed. Dependencies transfer only their explicitly named stock subsection; unrelated parent media and source prescriptions are not growth evidence.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:004613.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Blood percentage is represented as an unsupported mass concentration
+
+major / open / confirmed; issue key: culturemech-004613-unresolved-blood-percentage-mass-conversion.
+
+All three layers encode the liquid supplement as 50 G_PER_L. The primary gives an unqualified percentage, while the API contains both that percentage and a derived mass field. Neither a percentage basis nor density or final-volume measurement authenticates the mass assertion. No alternative numeric concentration is established.
+
+### f2: Basal qualifier, solvent, preparation and later evidence are incompletely represented
+
+major / open / confirmed; issue key: culturemech-004613-missing-basal-identity-and-preparation-context.
+
+The selected layers omit the tryptic-digest qualifier and absolute basal water input. The DSM owner already retains the source pH range and full preparation prose, but its first HEAT action compresses multiple stages. Target and KOMODO owner lack preparation and pH; the target also omits all eight later authenticated ingredient claims. Current source-preserving merge guards are credited and do not validate the old generated result.
+
+### f3: Imported atmosphere and timestamps need bounded provenance clarification
+
+minor / open / confirmed; issue key: culturemech-004613-unsupported-atmosphere-and-history-times.
+
+Target and KOMODO owner retain Aerobic:No without explicit primary support and historical times ending in literal .fZ or lacking timezone. Current importer/resolver code explains present formatting risks, not the original execution instant. Existing later evidence and range-migration events are preserved.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Replace the unsupported mass assertion only with a representation that preserves the exact source percentage and explicitly unresolved basis. Keep the supplement stage separate; do not invent density, animal origin, final-volume arithmetic or a percent enum basis.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Retain the correct existing basal rates and eight owner claims. Restore the exact peptone qualifier and source-scoped solvent/control context; separate sterilization, cooling and addition actions while preserving correct existing prose. Add root-scoped preparation evidence and regenerate only after maintained-input reconciliation. No evidence field is proposed on a PreparationStep or ConcentrationValue.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Qualify unsupported atmosphere metadata and correct future timestamp formatting. Preserve old events unchanged; append a verified current-date provenance clarification rather than inventing or rewriting historical instants.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local2 | data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch066/record06/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch066/record06/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch066/record06/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch066/record06/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| dsmz240 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| dsmz53 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| api240 | https://mediadive.dsmz.de/rest/medium/240; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current MediaDive API identity, primary recipe, separate stock recipes and preparation read. Explicit g_l values are provider normalization; solution volume metadata and listed water do not establish a measured final medium volume. Supplied mass/form takes priority over unverified mmol_l conversions. |
+| api53 | https://mediadive.dsmz.de/rest/medium/53; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current MediaDive API identity, primary recipe, separate stock recipes and preparation read. Explicit g_l values are provider normalization; solution volume metadata and listed water do not establish a measured final medium volume. Supplied mass/form takes priority over unverified mmol_l conversions. |
+| komodo240 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=240; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 403, error &lt;HTTPError 403: 'Forbidden'&gt;. This response does not authenticate a recipe. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17234 = glucose; definition ['An aldohexose used as a source of energy and metabolic intermediate.']; formula ['C6H12O6']; mass ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties.']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| grounding | REVIEW_WORK/batch066/record06/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/corynebacterium_medium_with_blood.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. Current api240 raw bytes exactly match the cited historical SHA, and 9 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history1 | reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. Current api240 raw bytes exactly match the cited historical SHA, and 9 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/corynebacterium_medium_with_blood.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history4 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.md; entire report; historical-authentication.json | supports | Entire historical report read, including every unchanged and unresolved field. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history-auth | REVIEW_WORK/batch066/record06/historical-authentication.json; reports | supports | Exact report headers, source digest and every quoted API object reconciled; all reports fully read with duplicate cells pooled. Current primary sources independently govern scientific decisions. |
+| writer22 | scripts/apply_mim_groundings.py; target_slot; groundable; apply_to_record | context_only | Current target_slot preserves existing CHEBI assertions; groundable excludes conflicting corpus opinions, and apply_to_record fills ungrounded entries from proposals. This writer does not authenticate source amounts or automatically repair an existing wrong supplied-form ID. |
+| writer23 | scripts/assign_culturemech_ids.py; assign_ids; _assign_id_to_file | context_only | Current assign_ids selects records with missing IDs; _assign_id_to_file checks new-ID collisions and appends identifier provenance. Identifier assignment does not authenticate recipe content or demonstrate historical source access. |
+| writer24 | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current _merge_ingredient_group collapses equal duplicate values without summing them and retains the first conflicting value with a flag. This behavior is distinct from historical summed-amount artifacts and does not authenticate source-specific stock or product structure. |
+| writer25 | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients; merge_ingredient_group | context_only | Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group retains the first concentration, flags differing values and selects the first CHEBI. It cannot establish source stages or justify collapsing independent supplemental and product-contained components. |
+| writer26 | scripts/enrich_with_chebi.py; RecipeEnricher.enrich_ingredient; enrich_recipe; enrich_file | context_only | Current RecipeEnricher.enrich_ingredient skips already grounded entries and delegates missing-term mapping to ChemicalMapper; enrich_recipe traverses ingredient and solution structure, and enrich_file writes results and history. Only the read wrapper behavior is claimed here; the mapper is not treated as an independent supplied-form authority. |
+| writer27 | scripts/enrich_with_mediaingredientmech.py; main | context_only | Current main orchestrates a local or cloned MIM repository, its loader and ingredient linker. The CLI orchestration was read; it does not itself verify source recipe quantities, supplied chemical forms or the validity of historical MIM assertions. Linker internals are not claimed as separately audited scientific evidence. |
+| writer28 | scripts/migrate_chebi_regrounding.py; rewrite_entry; migrate_file | context_only | Current rewrite_entry applies configured exact-ID/label remaps across primary and secondary slots; migrate_file records applied changes. A successful current mapping operation does not establish source-specific hydrate or stereochemical equivalence. |
+| writer29 | scripts/migrate_legacy_mim_to_chebi.py; _resolve_chebi; _rewrite_entry | context_only | Current _resolve_chebi reuses current primary CHEBI where available and considers bounded exact-name/synonym matches with a stereo-prefix guard; _rewrite_entry retains unresolved links. Current-row presence is distinct from historical validity and from source-specific supplied-form equivalence. |
+| writer30 | scripts/migrate_ph_range.py; parse_ph_range; migrate_one | context_only | Current parse_ph_range retains qualifiers in notes and migrate_one converts only string-valued pH ranges, recording provenance. No particular source range is authenticated by this writer. |
+| writer31 | scripts/normalize_media_names_to_snake_case.py; process_file; add_curation_history | context_only | Current process_file preserves the original medium name while normalizing its machine name; add_curation_history appends a naming event. Name normalization does not prove equivalence of differently maintained source branches or recipe variants. |
+| writer32 | scripts/refill_term_labels.py; refill_text | context_only | Current refill_text replaces term labels using the current exact identifier lookup while preserving other text. Canonical label correspondence is not an independent choice of the correct chemical form for the supplied source reagent. |
+| writer33 | scripts/repair_komodo_strain_backlinks.py; PARENTS; CHILDREN; repair_parent; plan_repairs; _upsert_event | context_only | Current repair_parent and plan_repairs target only the explicitly listed 131/777 parents and their two strain children. They do not repair the selected records. _upsert_event replaces a matching curator/action event or appends it; this existing behavior is not permission to rewrite history during this review. |
+| writer34 | scripts/repair_merged_duplicates.py; repair_ingredient; repair_record | context_only | Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS duplicate notes. This bounded repair is not a general solution for product decomposition, stock flattening or differing source formulations. |
+| writer35 | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata | context_only | Current DSMZCompositionResolver.merge_composition copies ingredients and solutions, fills pH when absent and copies physical/medium type, but does not copy preparation steps. _add_enrichment_metadata records a naive current timestamp. This explains a present omission risk, not historical execution. |
+| writer36 | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current _convert_to_culturemech constructs source notes and default LIQUID with empty ingredients. Its time.strftime format contains %f, which is unsupported here and is consistent with literal .fZ in stored import events. Current code does not authenticate the original retrieval or justify rewriting historical time. |
+| writer37 | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps | context_only | Current _parse_api_composition considers the primary recipe, prefers provider g_l when available and excludes recognized solvents; _is_api_stock_addition distinguishes stock additions. _parse_api_solutions retains separate stock structure. _parse_preparation_steps collects solution prose. These present behaviors do not establish historical execution and cannot justify interpreting flattened stock rates as final-medium concentrations. |
+| writer38 | src/culturemech/match/kg_media_matcher.py; extract_recipe_ingredients; find_matches; find_exact_match | context_only | Current extract_recipe_ingredients collects asserted CHEBI/FOODON IDs, find_matches compares set Jaccard and find_exact_match selects the first exact identifier set. Quantities, preparation and ungrounded ingredients are not compared, so an exact set match does not establish formulation identity. |
+| writer39 | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation_content retains exact scientific quantities, preparation and other scientific fields; merge_formulation_evidence rejects incompatible projections and unions evidence at matching scopes. A source-equivalence claim is not established by shared ingredient identities. |
+| writer40 | src/culturemech/merge/matcher.py; group_formulations; group_recipes | context_only | Current group_formulations calls group_recipes with fail_on_invalid=True and FormulationFingerprinter. Expected standalone or unfingerprintable records are excluded; malformed or unexpected inputs raise. Valid records are grouped by full scientific content. This guard does not retrieve or authenticate source recipes. |
+| writer41 | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group routes a single maintained owner with merge metadata; multiple owners pass through conservative merge_formulation_evidence. Regenerating from an unrepaired owner retains its defects. Current conservative behavior is credited and does not establish how the old generated record was produced. |
+| writer42 | src/culturemech/validation/schema_defaulter.py; apply_defaults; _fix_ingredient; _fix_solution | context_only | Current apply_defaults, _fix_ingredient and _fix_solution can insert VARIABLE amounts and placeholder names for structural completeness. A default is not evidence for a dose, composition, solution identity or denominator; existing default-history events remain contextual. |
+| attached-claims | REVIEW_WORK/batch066/record06/attached-claim-authentication.json; claims | supports | All eight current owner ingredient excerpts exactly match fresh API 240 raw bytes, cited digest and decoded locator. The separate catalogue identity claim remains unresolved. |
+| quantity-inventory | REVIEW_WORK/batch066/record06/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- Exact current KOMODO 240 detail route returned HTTP 403. Current API bytes authenticate matching ingredient claims and report objects, not historical access times or separate catalogue bytes.
+- The generic sources establish no species-specific growth claim. Blood species, density, percentage basis and measured post-supplement final volume remain unspecified; no such values are inferred.
+- The listed basal water is an absolute input. No universal dilution denominator, sterilization settings or operational organism adaptation is proposed.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T121622Z-corynebacterium-medium-with-blood-batch066
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of corynebacterium_medium_with_blood
+started_at: '2026-10-28T12:04:57.968848Z'
+finished_at: '2026-10-28T12:16:22.239257Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The five basal amounts are supported on their declared provider basis, and
+  eight existing owner claims authenticate exactly. Blood remains an unresolved percentage
+  represented as a mass concentration; basal source detail, preparation and generated
+  evidence are incomplete. Current DSM owner preparation and pH are credited.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml
+    sha256: 48ab884dd6439b5b90fca23ae758b1cb32fb3b34975f1738a2869350ec3423a8
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+    sha256: 3755000529e620bd661c10c4cf1c70fbee1e51bd6f2d56d041c1c52976402627
+    role: context
+  - path: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+    sha256: f1d1a93798920f48bb14051db016f403513a7d837cd4404833b6843507ed0494
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml.md
+    sha256: 85325625287b5659224a644de4de656b8d22082f65dacfcad70bb1c19b7724f6
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/corynebacterium_medium_with_blood.yaml.md
+    sha256: 7aebe3265cca9de74b9cc887e8aa6dc9c3ff1aa11e84f2b06d16729fc96225af
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.md
+    sha256: e8e68718a7fda103c99160b57516e5674e73370055c4d00145cdbc2aeadd97ae
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.md
+    sha256: 0e17cf68999f2b2edb5e7a13427a10aec716fa241dcc03baca8bea65267c0718
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/corynebacterium_medium_with_blood.md
+    sha256: fa7e951b36a4ae1b6b625a55723ac43d379ccef464be7ddbaad8b7c61cb4b4b4
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_komodo_strain_backlinks.py
+    sha256: 06d56149f4e8333f31ae6dd7e4b9127881227810bc957429c849ba00de21c963
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch066 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004613
+targets:
+- target_id: CultureMech:004613
+  path: data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml
+  label: corynebacterium_medium_with_blood
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:004613
+  command: just validate-schema data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:004613
+  command: just validate-strict data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml
+    --workers 1 --out REVIEW_WORK/batch066/record06/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:004613
+  command: just validate-terms data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:004613
+  command: just validate-references data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T12:16:22.230612Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 48ab884dd6439b5b90fca23ae758b1cb32fb3b34975f1738a2869350ec3423a8
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T12:16:22.230771Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 3755000529e620bd661c10c4cf1c70fbee1e51bd6f2d56d041c1c52976402627
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T12:16:22.230801Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: f1d1a93798920f48bb14051db016f403513a7d837cd4404833b6843507ed0494
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch066/record06/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T12:04:59.408608Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 7f15647493ae34f55479e563305c074ae3f0fe93f2f32470fbb6f6bb53e2ae13
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch066/record06/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T12:05:01.062045Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 0942c2c0d7148b68b22c962d7d1f38f7ccd1ca58f0a7de0bff31a4f486ed47dd
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch066/record06/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T12:05:03.298853Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 8ddfb0097c3da865327e2a29c01b6e079dfef201d63d445cddea75f7cdba0b39
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch066/record06/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T12:05:04.643986Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 0eb8c0753c5ae780b01d769e0f1ca84d6bb926ee30bc6754803adc5a49bf2e7e
+- evidence_id: dsmz240
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T12:05:40.021575Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: d284ca2e8d6f1a3238bd648d439fd3e705e6f0686657c258e2e0ec800749f6d9
+- evidence_id: dsmz53
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T12:05:39.580854Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8
+- evidence_id: api240
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/240
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T12:05:39.347248Z'
+  support: supports
+  summary: Complete current MediaDive API identity, primary recipe, separate stock
+    recipes and preparation read. Explicit g_l values are provider normalization;
+    solution volume metadata and listed water do not establish a measured final medium
+    volume. Supplied mass/form takes priority over unverified mmol_l conversions.
+  snapshot_sha256: 73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a
+- evidence_id: api53
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/53
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T12:05:39.347211Z'
+  support: supports
+  summary: Complete current MediaDive API identity, primary recipe, separate stock
+    recipes and preparation read. Explicit g_l values are provider normalization;
+    solution volume metadata and listed water do not establish a measured final medium
+    volume. Supplied mass/form takes priority over unverified mmol_l conversions.
+  snapshot_sha256: f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b
+- evidence_id: komodo240
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=240
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T12:05:39.347173Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: 57153322d1a079f1a77123a62667172e953b0c5e4469a8fc7d62f7b0ef7c7f1c
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T12:05:39.347129Z'
+  support: supports
+  summary: OLS current exact CHEBI:17234 = glucose; definition ['An aldohexose used
+    as a source of energy and metabolic intermediate.']; formula ['C6H12O6']; mass
+    ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T12:05:39.347056Z'
+  support: supports
+  summary: OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of
+    polysaccharides extracted from species of red algae. Its two main components are
+    agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties.'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T12:05:39.346770Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch066/record06/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T12:16:22.232163Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: a78508f37d3c34a5caf74e0ba1d45253eeb0c3451e25f6f16f6a2cd39e3bcd7d
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/corynebacterium_medium_with_blood.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T12:16:22.232786Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. Current api240 raw bytes exactly match the cited historical SHA, and 9
+    quoted objects match both decoded locators and literal current raw substrings.
+    This authenticates the cited API payload and excerpts, not the reported historical
+    access time, execution or separate KOMODO catalogue/page.
+  snapshot_sha256: 7aebe3265cca9de74b9cc887e8aa6dc9c3ff1aa11e84f2b06d16729fc96225af
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-1000-1500/records/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T12:16:22.232810Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. Current api240 raw bytes exactly match the cited historical SHA, and 9
+    quoted objects match both decoded locators and literal current raw substrings.
+    This authenticates the cited API payload and excerpts, not the reported historical
+    access time, execution or separate KOMODO catalogue/page.
+  snapshot_sha256: 85325625287b5659224a644de4de656b8d22082f65dacfcad70bb1c19b7724f6
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/corynebacterium_medium_with_blood.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T12:16:22.232829Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: fa7e951b36a4ae1b6b625a55723ac43d379ccef464be7ddbaad8b7c61cb4b4b4
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T12:16:22.232847Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 0e17cf68999f2b2edb5e7a13427a10aec716fa241dcc03baca8bea65267c0718
+- evidence_id: history4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T12:16:22.232864Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: e8e68718a7fda103c99160b57516e5674e73370055c4d00145cdbc2aeadd97ae
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record06/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T12:16:22.232884Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: 3d03b3e54891ea5956396f814fbaebf93c839037731ff4e436c70de528ff9fa2
+- evidence_id: writer22
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: target_slot; groundable; apply_to_record
+  accessed_at: '2026-10-28T12:16:22.232937Z'
+  support: context_only
+  summary: Current target_slot preserves existing CHEBI assertions; groundable excludes
+    conflicting corpus opinions, and apply_to_record fills ungrounded entries from
+    proposals. This writer does not authenticate source amounts or automatically repair
+    an existing wrong supplied-form ID.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer23
+  kind: record_content
+  reference: scripts/assign_culturemech_ids.py
+  locator: assign_ids; _assign_id_to_file
+  accessed_at: '2026-10-28T12:16:22.232960Z'
+  support: context_only
+  summary: Current assign_ids selects records with missing IDs; _assign_id_to_file
+    checks new-ID collisions and appends identifier provenance. Identifier assignment
+    does not authenticate recipe content or demonstrate historical source access.
+  snapshot_sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+- evidence_id: writer24
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T12:16:22.232982Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer25
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T12:16:22.233003Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer26
+  kind: record_content
+  reference: scripts/enrich_with_chebi.py
+  locator: RecipeEnricher.enrich_ingredient; enrich_recipe; enrich_file
+  accessed_at: '2026-10-28T12:16:22.233022Z'
+  support: context_only
+  summary: Current RecipeEnricher.enrich_ingredient skips already grounded entries
+    and delegates missing-term mapping to ChemicalMapper; enrich_recipe traverses
+    ingredient and solution structure, and enrich_file writes results and history.
+    Only the read wrapper behavior is claimed here; the mapper is not treated as an
+    independent supplied-form authority.
+  snapshot_sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+- evidence_id: writer27
+  kind: record_content
+  reference: scripts/enrich_with_mediaingredientmech.py
+  locator: main
+  accessed_at: '2026-10-28T12:16:22.233041Z'
+  support: context_only
+  summary: Current main orchestrates a local or cloned MIM repository, its loader
+    and ingredient linker. The CLI orchestration was read; it does not itself verify
+    source recipe quantities, supplied chemical forms or the validity of historical
+    MIM assertions. Linker internals are not claimed as separately audited scientific
+    evidence.
+  snapshot_sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+- evidence_id: writer28
+  kind: record_content
+  reference: scripts/migrate_chebi_regrounding.py
+  locator: rewrite_entry; migrate_file
+  accessed_at: '2026-10-28T12:16:22.233061Z'
+  support: context_only
+  summary: Current rewrite_entry applies configured exact-ID/label remaps across primary
+    and secondary slots; migrate_file records applied changes. A successful current
+    mapping operation does not establish source-specific hydrate or stereochemical
+    equivalence.
+  snapshot_sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+- evidence_id: writer29
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: _resolve_chebi; _rewrite_entry
+  accessed_at: '2026-10-28T12:16:22.233081Z'
+  support: context_only
+  summary: Current _resolve_chebi reuses current primary CHEBI where available and
+    considers bounded exact-name/synonym matches with a stereo-prefix guard; _rewrite_entry
+    retains unresolved links. Current-row presence is distinct from historical validity
+    and from source-specific supplied-form equivalence.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: writer30
+  kind: record_content
+  reference: scripts/migrate_ph_range.py
+  locator: parse_ph_range; migrate_one
+  accessed_at: '2026-10-28T12:16:22.233098Z'
+  support: context_only
+  summary: Current parse_ph_range retains qualifiers in notes and migrate_one converts
+    only string-valued pH ranges, recording provenance. No particular source range
+    is authenticated by this writer.
+  snapshot_sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+- evidence_id: writer31
+  kind: record_content
+  reference: scripts/normalize_media_names_to_snake_case.py
+  locator: process_file; add_curation_history
+  accessed_at: '2026-10-28T12:16:22.233117Z'
+  support: context_only
+  summary: Current process_file preserves the original medium name while normalizing
+    its machine name; add_curation_history appends a naming event. Name normalization
+    does not prove equivalence of differently maintained source branches or recipe
+    variants.
+  snapshot_sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+- evidence_id: writer32
+  kind: record_content
+  reference: scripts/refill_term_labels.py
+  locator: refill_text
+  accessed_at: '2026-10-28T12:16:22.233137Z'
+  support: context_only
+  summary: Current refill_text replaces term labels using the current exact identifier
+    lookup while preserving other text. Canonical label correspondence is not an independent
+    choice of the correct chemical form for the supplied source reagent.
+  snapshot_sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+- evidence_id: writer33
+  kind: record_content
+  reference: scripts/repair_komodo_strain_backlinks.py
+  locator: PARENTS; CHILDREN; repair_parent; plan_repairs; _upsert_event
+  accessed_at: '2026-10-28T12:16:22.233156Z'
+  support: context_only
+  summary: Current repair_parent and plan_repairs target only the explicitly listed
+    131/777 parents and their two strain children. They do not repair the selected
+    records. _upsert_event replaces a matching curator/action event or appends it;
+    this existing behavior is not permission to rewrite history during this review.
+  snapshot_sha256: 06d56149f4e8333f31ae6dd7e4b9127881227810bc957429c849ba00de21c963
+- evidence_id: writer34
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; repair_record
+  accessed_at: '2026-10-28T12:16:22.233175Z'
+  support: context_only
+  summary: Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS
+    duplicate notes. This bounded repair is not a general solution for product decomposition,
+    stock flattening or differing source formulations.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer35
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata
+  accessed_at: '2026-10-28T12:16:22.233202Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver.merge_composition copies ingredients and
+    solutions, fills pH when absent and copies physical/medium type, but does not
+    copy preparation steps. _add_enrichment_metadata records a naive current timestamp.
+    This explains a present omission risk, not historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer36
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T12:16:22.233224Z'
+  support: context_only
+  summary: Current _convert_to_culturemech constructs source notes and default LIQUID
+    with empty ingredients. Its time.strftime format contains %f, which is unsupported
+    here and is consistent with literal .fZ in stored import events. Current code
+    does not authenticate the original retrieval or justify rewriting historical time.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer37
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps
+  accessed_at: '2026-10-28T12:16:22.233260Z'
+  support: context_only
+  summary: Current _parse_api_composition considers the primary recipe, prefers provider
+    g_l when available and excludes recognized solvents; _is_api_stock_addition distinguishes
+    stock additions. _parse_api_solutions retains separate stock structure. _parse_preparation_steps
+    collects solution prose. These present behaviors do not establish historical execution
+    and cannot justify interpreting flattened stock rates as final-medium concentrations.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer38
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: extract_recipe_ingredients; find_matches; find_exact_match
+  accessed_at: '2026-10-28T12:16:22.233286Z'
+  support: context_only
+  summary: Current extract_recipe_ingredients collects asserted CHEBI/FOODON IDs,
+    find_matches compares set Jaccard and find_exact_match selects the first exact
+    identifier set. Quantities, preparation and ungrounded ingredients are not compared,
+    so an exact set match does not establish formulation identity.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+- evidence_id: writer39
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T12:16:22.233305Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer40
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T12:16:22.233325Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer41
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T12:16:22.233348Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer42
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  locator: apply_defaults; _fix_ingredient; _fix_solution
+  accessed_at: '2026-10-28T12:16:22.233370Z'
+  support: context_only
+  summary: Current apply_defaults, _fix_ingredient and _fix_solution can insert VARIABLE
+    amounts and placeholder names for structural completeness. A default is not evidence
+    for a dose, composition, solution identity or denominator; existing default-history
+    events remain contextual.
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+- evidence_id: attached-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record06/attached-claim-authentication.json
+  locator: claims
+  accessed_at: '2026-10-28T12:16:22.233646Z'
+  support: supports
+  summary: All eight current owner ingredient excerpts exactly match fresh API 240
+    raw bytes, cited digest and decoded locator. The separate catalogue identity claim
+    remains unresolved.
+  snapshot_sha256: 85d9cf4cc4a682653d730aef220faeeb20e3dc02504e36df9211e0209974f46c
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record06/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T12:16:22.239171Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: e500552975e6d90b818f5a326deb660251562b2191a91835fa86205c9a78ab03
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact generic source and basal dependency
+  outcome: supported
+  summary: DSM 240 explicitly refers to DSM 53 plus a blood supplement. Both current
+    primary PDFs and APIs agree on that identity, while the historical KOMODO mapping
+    is preserved separately from the fresh inaccessible detail route. No species,
+    strain-specific growth or diphtheria association is asserted by these generic
+    sources or this review.
+  target_ids:
+  - CultureMech:004613
+  evidence_ids:
+  - local0
+  - dsmz240
+  - dsmz53
+  - api240
+  - api53
+  - komodo240
+- assessment_id: a2
+  area: consistency
+  topic: Classification and atmosphere
+  outcome: concern
+  summary: Complex/undefined agar classification agrees with the exact sources. The
+    inherited Aerobic:No note in target and KOMODO owner is not supported by these
+    primary pages. Absence of a primary atmosphere statement does not establish the
+    opposite atmosphere or a strain-specific growth requirement.
+  target_ids:
+  - CultureMech:004613
+  evidence_ids:
+  - local0
+  - local1
+  - dsmz240
+  - dsmz53
+- assessment_id: a3
+  area: grounding
+  topic: Canonical IDs and exact source forms
+  outcome: supported
+  summary: 'All 18 asserted CHEBI primary/secondary slots have exact canonical labels:
+    generic glucose, sodium chloride and agar. The primary does not establish a glucose
+    stereoisomer, so no D-specific replacement is inferred. Current MIM preferred
+    rows support the asserted IDs; its other conflicting synonym rows are not used
+    to prove stereochemistry. Complex peptone, yeast extract and blood are not forced
+    to pure-compound IDs. The missing tryptic-digest qualifier remains a source-completeness
+    issue.'
+  target_ids:
+  - CultureMech:004613
+  evidence_ids:
+  - grounding
+  - chebi17234
+  - chebi26710
+  - chebi2509
+  - dsmz53
+- assessment_id: a4
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All five historical reports were read in full. Current API 240 exactly
+    authenticates the cited raw digest, historical objects and eight attached owner
+    ingredient claims. The catalogue excerpt remains distinct and unauthenticated;
+    exact detail retrieval was 403. The old casein uncertainty is now resolved for
+    the nominal amount and tryptic-digest source identity, while the blood percentage
+    basis remains unresolved. Current resolver omits preparation copying; current
+    conservative merger and current pH migration are credited as actual code behavior,
+    without asserting historical execution. Current conservative merging preserves
+    scientific fields and rejects incompatible formulations. Inspected writer behavior
+    is described separately by exact file and function; it does not prove historical
+    execution.
+  target_ids:
+  - CultureMech:004613
+  evidence_ids:
+  - history-auth
+  - writer22
+  - writer23
+  - writer24
+  - writer25
+  - writer26
+  - writer27
+  - writer28
+  - writer29
+  - writer30
+  - writer31
+  - writer32
+  - writer33
+  - writer34
+  - writer35
+  - writer36
+  - writer37
+  - writer38
+  - writer39
+  - writer40
+  - writer41
+  - writer42
+- assessment_id: a5
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 18 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:004613
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:004613",
+    "selected_concentration_field_count": 18, "selected_concentration_fields_covered":
+    18, "decisions": [{"decision_id": "q1", "subject": "Casein peptone, tryptic digest",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal DSM 53 input represented
+    by provider nominal rate", "interpretation": "The source explicitly specifies
+    a tryptic digest and 10 g; both APIs declare g_l=10. Retain the nominal provider
+    amount and restore the missing tryptic-digest qualifier. There is no attached
+    claim for this row. Listed water is not an independently measured final volume
+    after supplementation.", "sources": [{"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Casein peptone\",\n                        \"compound_id\":
+    21,\n                        \"condition\": \"\",\n                        \"attribute\":
+    \"tryptic digest\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 10,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "$.data.solutions[0].recipe[0]", "source_key": "api53", "reference": "https://mediadive.dsmz.de/rest/medium/53",
+    "source_raw_sha256": "f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b",
+    "source_text_sha256": "f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b",
+    "accessed_at": "2026-10-28T12:05:39.347211Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Casein peptone\",\n                        \"compound_id\":
+    21,\n                        \"condition\": \"\",\n                        \"attribute\":
+    \"tryptic digest\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 10,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 4-4", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Casein peptone,
+    tryptic digest             10.0    g", "quote_representation": "captured extracted
+    text"}]}, {"decision_id": "q2", "subject": "Yeast extract in generated target",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal provider-declared formulation
+    basis", "interpretation": "The unchanged target amount agrees with the primary
+    basal input and explicit provider g_l. New claim evidence is needed on the target;
+    it does not inherit the later owner attachments automatically. No post-blood final-volume
+    concentration is inferred.", "sources": [{"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 5-5", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Yeast extract                               5.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject":
+    "Yeast extract in maintained owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "Existing attached provider-basis
+    evidence", "interpretation": "Both owners already carry exact ingredient-level
+    source snippets and the matching API 240 raw digest. Those eight claims are authenticated
+    in the sidecar. Retain these supported amounts and evidence without treating the
+    provider volume metadata as a measured final volume.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[1]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 5-5", "source_key": "dsmz53", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Yeast extract                               5.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject":
+    "Glucose in generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal provider-declared formulation
+    basis", "interpretation": "The unchanged target amount agrees with the primary
+    basal input and explicit provider g_l. New claim evidence is needed on the target;
+    it does not inherit the later owner attachments automatically. No post-blood final-volume
+    concentration is inferred.", "sources": [{"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    27.7531,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Glucose                                     5.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject":
+    "Glucose in maintained owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "Existing attached provider-basis
+    evidence", "interpretation": "Both owners already carry exact ingredient-level
+    source snippets and the matching API 240 raw digest. Those eight claims are authenticated
+    in the sidecar. Retain these supported amounts and evidence without treating the
+    provider volume metadata as a measured final volume.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[2]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Glucose\",\n                        \"compound_id\":
+    5,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    27.7531,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Glucose                                     5.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject":
+    "NaCl in generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal provider-declared formulation
+    basis", "interpretation": "The unchanged target amount agrees with the primary
+    basal input and explicit provider g_l. New claim evidence is needed on the target;
+    it does not inherit the later owner attachments automatically. No post-blood final-volume
+    concentration is inferred.", "sources": [{"locator": "$.data.solutions[0].recipe[3]",
+    "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    85.5578,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "NaCl                                        5.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject":
+    "NaCl in maintained owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "Existing attached provider-basis
+    evidence", "interpretation": "Both owners already carry exact ingredient-level
+    source snippets and the matching API 240 raw digest. Those eight claims are authenticated
+    in the sidecar. Retain these supported amounts and evidence without treating the
+    provider volume metadata as a measured final volume.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[3]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 5,\n                        \"mmol_l\":
+    85.5578,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "NaCl                                        5.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject":
+    "Agar in generated target", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "15", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "Basal provider-declared formulation
+    basis", "interpretation": "The unchanged target amount agrees with the primary
+    basal input and explicit provider g_l. New claim evidence is needed on the target;
+    it does not inherit the later owner attachments automatically. No post-blood final-volume
+    concentration is inferred.", "sources": [{"locator": "$.data.solutions[0].recipe[4]",
+    "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    44.5991,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Agar                                       15.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q9", "subject":
+    "Agar in maintained owners", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "15", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "15", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "Existing attached provider-basis
+    evidence", "interpretation": "Both owners already carry exact ingredient-level
+    source snippets and the matching API 240 raw digest. Those eight claims are authenticated
+    in the sidecar. Retain these supported amounts and evidence without treating the
+    provider volume metadata as a measured final volume.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[4]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Agar\",\n                        \"compound_id\":
+    3,\n                        \"amount\": 15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 15,\n                        \"mmol_l\":
+    44.5991,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Agar                                       15.0    g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q10", "subject":
+    "Defibrinated blood", "local_fields": [{"record_path": "data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Aseptic supplement after cooling",
+    "interpretation": "Primary DSM 240 states 5% without an explicit mass/volume basis,
+    density, animal source or final-volume definition. API 240 preserves amount 5
+    / unit % but also supplies g_l=50. That derived field does not independently establish
+    50 grams per litre for this liquid supplement. Preserve the exact percentage and
+    its unresolved basis in source-scoped text; do not substitute a guessed PERCENT_W_V,
+    PERCENT_V_V or fixed mass/volume dose.", "sources": [{"locator": "$.data.solutions[0].recipe[6]",
+    "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Defibrinated Blood\",\n                        \"compound_id\":
+    1177,\n                        \"amount\": 5,\n                        \"unit\":
+    \"%\",\n                        \"g_l\": 50,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 4-4", "source_key": "dsmz240", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf",
+    "source_raw_sha256": "d284ca2e8d6f1a3238bd648d439fd3e705e6f0686657c258e2e0ec800749f6d9",
+    "source_text_sha256": "692236a94c7dc33b50f99efdf97698710a1e5f3ae69a090334b809c8e15f4528",
+    "accessed_at": "2026-10-28T12:05:40.021575Z", "exact_source_quote": "Sterilize
+    medium 53 and cool to about 45C. Aseptically add 5% defibrinated blood.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q11", "subject": "Basal distilled
+    water", "local_fields": [], "decision": "add", "stage": "Absolute basal solvent
+    input", "interpretation": "DSM 53 lists 1000 ml distilled water, also retained
+    by both APIs. All selected YAML ingredient lists omit it. Record the absolute
+    input or scoped preparation statement without claiming that 1000 ml is the measured
+    final volume after dissolved solids or blood addition.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[5]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[5]", "source_key":
+    "api53", "reference": "https://mediadive.dsmz.de/rest/medium/53", "source_raw_sha256":
+    "f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b", "source_text_sha256":
+    "f6bc3bbbfa543d479b6e6bf30f456c4f4c63f61e6f0290e191ba001b0e11ff3b", "accessed_at":
+    "2026-10-28T12:05:39.347211Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Distilled
+    water                          1000.0   ml", "quote_representation": "captured
+    extracted text"}]}, {"decision_id": "q12", "subject": "Basal pH range", "local_fields":
+    [{"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "ph_range.min", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "ph_range.max", "original": 7.4}], "decision": "evidence_only",
+    "stage": "Basal source control", "interpretation": "The current DSM owner correctly
+    retains 7.2–7.4 and the range-migration event. Target and KOMODO owner lack it.
+    Attach root evidence scoped to the basal control; the listing order in the assembled
+    API is not proof that adjustment occurs after blood addition.", "sources": [{"locator":
+    "$.data.solutions[0].steps[1]", "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust pH to 7.2 - 7.4.\"\n                    }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 11-11", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Adjust pH
+    to 7.2 - 7.4.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q13", "subject": "Sterilization, cooling and aseptic supplement sequence", "local_fields":
+    [{"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Sterilize medium
+    and cool to about 45°C . Aseptically add 5% defibrinated blood."}], "decision":
+    "evidence_only", "stage": "Separate basal sterilization and post-cooling addition",
+    "interpretation": "The direct DSM owner already retains the complete source description,
+    including about 45 degrees C and the aseptic percentage addition. Target and KOMODO
+    owner omit preparation. No sterilization temperature, duration, blood species
+    or final percent basis is inferred.", "sources": [{"locator": "$.data.solutions[0].steps[0]",
+    "source_key": "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240",
+    "source_raw_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "source_text_sha256": "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a",
+    "accessed_at": "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"step\":
+    \"Sterilize medium and cool to about 45\\u00b0C . Aseptically add 5% defibrinated
+    blood.\"\n                    }", "quote_representation": "raw JSON object"},
+    {"locator": "extracted-text lines 4-4", "source_key": "dsmz240", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf", "source_raw_sha256":
+    "d284ca2e8d6f1a3238bd648d439fd3e705e6f0686657c258e2e0ec800749f6d9", "source_text_sha256":
+    "692236a94c7dc33b50f99efdf97698710a1e5f3ae69a090334b809c8e15f4528", "accessed_at":
+    "2026-10-28T12:05:40.021575Z", "exact_source_quote": "Sterilize medium 53 and
+    cool to about 45C. Aseptically add 5% defibrinated blood.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q14", "subject": "Combined preparation
+    action code", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "preparation_steps[0].action", "original": "HEAT"}], "decision":
+    "unsupported", "stage": "Structured stage semantics", "interpretation": "The single
+    HEAT action describes a sequence containing sterilization, cooling and aseptic
+    addition. Preserve the correct prose but represent these distinct source stages
+    faithfully; changing the whole combined step blindly to COOL would still lose
+    other operations. This is an action-code completeness issue, not a changed temperature
+    or dose.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api240", "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256":
+    "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256":
+    "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at":
+    "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"step\":
+    \"Sterilize medium and cool to about 45\\u00b0C . Aseptically add 5% defibrinated
+    blood.\"\n                    }", "quote_representation": "raw JSON object"},
+    {"locator": "extracted-text lines 4-4", "source_key": "dsmz240", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf", "source_raw_sha256":
+    "d284ca2e8d6f1a3238bd648d439fd3e705e6f0686657c258e2e0ec800749f6d9", "source_text_sha256":
+    "692236a94c7dc33b50f99efdf97698710a1e5f3ae69a090334b809c8e15f4528", "accessed_at":
+    "2026-10-28T12:05:40.021575Z", "exact_source_quote": "Sterilize medium 53 and
+    cool to about 45C. Aseptically add 5% defibrinated blood.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q15", "subject": "Retained pH preparation",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "preparation_steps[1].description", "original": "Adjust pH to 7.2
+    - 7.4."}, {"record_path": "data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml",
+    "field_path": "preparation_steps[1].action", "original": "ADJUST_PH"}], "decision":
+    "evidence_only", "stage": "Basal pH adjustment", "interpretation": "The current
+    ADJUST_PH action and description agree with the primary basal source. Credit the
+    retained owner content and preserve its basal scope when restoring generated preparation.",
+    "sources": [{"locator": "$.data.solutions[0].steps[1]", "source_key": "api240",
+    "reference": "https://mediadive.dsmz.de/rest/medium/240", "source_raw_sha256":
+    "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "source_text_sha256":
+    "73cfff4fa0268937cd9e0c50c3cf06e4a0507f0bf426e37314358caeee5bd37a", "accessed_at":
+    "2026-10-28T12:05:39.347248Z", "exact_source_quote": "{\n                        \"step\":
+    \"Adjust pH to 7.2 - 7.4.\"\n                    }", "quote_representation": "raw
+    JSON object"}, {"locator": "extracted-text lines 11-11", "source_key": "dsmz53",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf",
+    "source_raw_sha256": "ea2153b1ff04ddce16129886e7bccedca8b435a9dd47aed5bbb13347e5eeced8",
+    "source_text_sha256": "cfbc6b06a57b8f4682d9846c8b4d2783a318395bd24bac83d52be1c579505e7a",
+    "accessed_at": "2026-10-28T12:05:39.580854Z", "exact_source_quote": "Adjust pH
+    to 7.2 - 7.4.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference":
+    "REVIEW_WORK/batch066/record06/grounding-inventory.json", "source_only_gaps_are_explicit":
+    true, "note": "Batch amounts, provider normalization, stock composition, working
+    dose and preparation controls are separate. No source edits or automatic curation
+    performed."}'
+- assessment_id: a6
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: supported
+  summary: 'data/merge_yaml/merged/CORYNEBACTERIUM_MEDIUM_WITH_BLOOD.yaml: primary
+    3/6, secondary 3/6; data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml:
+    primary 3/6, secondary 3/6; data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml:
+    primary 3/6, secondary 3/6. These are ingredient-instance linkage fractions, not
+    accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    0 numeric legacy MediaIngredientMech mentions occur across the complete selected
+    documents, with exact locators in the inventory; NNNNNN is a historical placeholder,
+    not an ID. Complex commercial/product components are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:004613
+  evidence_ids:
+  - grounding
+- assessment_id: a7
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:004613
+  evidence_ids:
+  - local0
+- assessment_id: a8
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:004613
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-004613-unresolved-blood-percentage-mass-conversion
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Blood percentage is represented as an unsupported mass concentration
+  description: All three layers encode the liquid supplement as 50 G_PER_L. The primary
+    gives an unqualified percentage, while the API contains both that percentage and
+    a derived mass field. Neither a percentage basis nor density or final-volume measurement
+    authenticates the mass assertion. No alternative numeric concentration is established.
+  target_ids:
+  - CultureMech:004613
+  field_paths:
+  - ingredients[5].concentration
+  evidence_ids:
+  - dsmz240
+  - api240
+  rule_id: review-ingredient-concentrations/liquid-percentage-basis
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-004613-missing-basal-identity-and-preparation-context
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Basal qualifier, solvent, preparation and later evidence are incompletely
+    represented
+  description: The selected layers omit the tryptic-digest qualifier and absolute
+    basal water input. The DSM owner already retains the source pH range and full
+    preparation prose, but its first HEAT action compresses multiple stages. Target
+    and KOMODO owner lack preparation and pH; the target also omits all eight later
+    authenticated ingredient claims. Current source-preserving merge guards are credited
+    and do not validate the old generated result.
+  target_ids:
+  - CultureMech:004613
+  field_paths:
+  - ingredients[0].preferred_term
+  - ingredients
+  - ph_range
+  - preparation_steps
+  - evidence
+  - data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml::preparation_steps[0].action
+  - ingredients[1].evidence
+  - ingredients[2].evidence
+  - ingredients[3].evidence
+  - ingredients[4].evidence
+  evidence_ids:
+  - dsmz240
+  - dsmz53
+  - api240
+  - attached-claims
+  - local2
+  rule_id: review-yaml-record/basal-preparation-and-evidence-completeness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-004613-unsupported-atmosphere-and-history-times
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Imported atmosphere and timestamps need bounded provenance clarification
+  description: Target and KOMODO owner retain Aerobic:No without explicit primary
+    support and historical times ending in literal .fZ or lacking timezone. Current
+    importer/resolver code explains present formatting risks, not the original execution
+    instant. Existing later evidence and range-migration events are preserved.
+  target_ids:
+  - CultureMech:004613
+  field_paths:
+  - notes
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml::curation_history[0].timestamp
+  evidence_ids:
+  - local0
+  - local1
+  - dsmz240
+  - dsmz53
+  rule_id: review-yaml-record/provenance-traceability
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Replace the unsupported mass assertion only with a representation that
+    preserves the exact source percentage and explicitly unresolved basis. Keep the
+    supplement stage separate; do not invent density, animal origin, final-volume
+    arithmetic or a percent enum basis.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:004613
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Retain the correct existing basal rates and eight owner claims. Restore
+    the exact peptone qualifier and source-scoped solvent/control context; separate
+    sterilization, cooling and addition actions while preserving correct existing
+    prose. Add root-scoped preparation evidence and regenerate only after maintained-input
+    reconciliation. No evidence field is proposed on a PreparationStep or ConcentrationValue.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:004613
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Qualify unsupported atmosphere metadata and correct future timestamp
+    formatting. Preserve old events unchanged; append a verified current-date provenance
+    clarification rather than inventing or rewriting historical instants.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:004613
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/corynebacterium_medium_with_blood.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- Exact current KOMODO 240 detail route returned HTTP 403. Current API bytes authenticate
+  matching ingredient claims and report objects, not historical access times or separate
+  catalogue bytes.
+- The generic sources establish no species-specific growth claim. Blood species, density,
+  percentage basis and measured post-supplement final volume remain unspecified; no
+  such values are inferred.
+- The listed basal water is an absolute input. No universal dilution denominator,
+  sterilization settings or operational organism adaptation is proposed.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```

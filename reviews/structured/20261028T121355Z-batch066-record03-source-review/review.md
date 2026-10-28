@@ -1,0 +1,2828 @@
+# COPROTHERMOBACTER PLATENSIS DSM834: preserve stocks, anoxic preparation and supplied forms
+
+- Review: 20261028T121355Z-batch066-record03-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T12:01:28.540841Z
+- Finished UTC: 2026-10-28T12:13:55.733988Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact DSM834 primary and provider response support the main-stage quantities but distinguish three stock formulations that all local layers flatten into direct ingredients. The selected target and KOMODO owner omit preparation retained by the DSM owner and carry an aerobic flag inconsistent with the source anoxic preparation. Two supplied-form mappings are incorrect; original KOMODO provenance remains limited by exact-route 403 responses. No recipe is changed.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; explicitly scoped dependency and external-source limits retained.
+
+Selection: Actual batch066 native selection index 03.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:006626 | data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml | generated | coprothermobacter_platensis_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:006626 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:006626 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:006626 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:006626 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### DSM834 and KOMODO834 lineage
+
+identity: concern. Targets: CultureMech:006626.
+
+Exact maintained contributors and historical DSM cross-reference resolve this selected lineage. Fresh primary/API834 agree, while exact KOMODO detail/catalog are 403 and leave that original branch independently unverified. The source-duplicate links establish an ingredient-signature relationship, not complete formulation/preparation equivalence.
+
+### Supported classification and layer differences
+
+completeness: concern. Targets: CultureMech:006626.
+
+Complex/undefined liquid medium is consistent with the peptone/extract source. All three layers have the same 31 quantitative rows and pH, but only the DSM owner retains the two preparation narratives. Supplier attributes, stock topology, waters and exact evidence need preservation; no named-medium claim is promoted to strain-level growth.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:006626.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id": "q1", "topic": "Meat peptone — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Meat peptone\",\n                        \"compound_id\": 646,\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.98504,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "Meat peptone", "compound_id": 646, "attribute": "BD Bacto", "amount": 5, "unit": "g", "g_l": 4.98504, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 3", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Meat peptone (BD Bacto)                                    5.00         g"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. The primary and API explicitly specify BD Bacto; preserve that supplier attribute rather than treating all commercial peptones as interchangeable.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "4.98504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. The primary and API explicitly specify BD Bacto; preserve that supplier attribute rather than treating all commercial peptones as interchangeable."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "4.98504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. The primary and API explicitly specify BD Bacto; preserve that supplier attribute rather than treating all commercial peptones as interchangeable."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[0].concentration", "stored_value": {"value": "4.98504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. The primary and API explicitly specify BD Bacto; preserve that supplier attribute rather than treating all commercial peptones as interchangeable."}]}, {"quantity_id": "q2", "topic": "Tryptone — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"attribute\": \"BD Bacto\",\n                        \"amount\": 5,\n                        \"unit\": \"g\",\n                        \"g_l\": 4.98504,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "Tryptone", "compound_id": 71, "attribute": "BD Bacto", "amount": 5, "unit": "g", "g_l": 4.98504, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 4", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Tryptone (BD Bacto)                                        5.00         g"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. The primary and API explicitly specify BD Bacto; preserve that supplier attribute rather than treating all commercial peptones as interchangeable.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "4.98504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. The primary and API explicitly specify BD Bacto; preserve that supplier attribute rather than treating all commercial peptones as interchangeable."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "4.98504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. The primary and API explicitly specify BD Bacto; preserve that supplier attribute rather than treating all commercial peptones as interchangeable."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[1].concentration", "stored_value": {"value": "4.98504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. The primary and API explicitly specify BD Bacto; preserve that supplier attribute rather than treating all commercial peptones as interchangeable."}]}, {"quantity_id": "q3", "topic": "Yeast extract — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 10,\n                        \"unit\": \"g\",\n                        \"g_l\": 9.97009,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "Yeast extract", "compound_id": 16, "amount": 10, "unit": "g", "g_l": 9.97009, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 5", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Yeast extract                                             10.00         g"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "9.97009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "9.97009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[2].concentration", "stored_value": {"value": "9.97009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}]}, {"quantity_id": "q4", "topic": "KH2PO4 — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.299103,\n                        \"mmol_l\": 2.19791,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit": "g", "g_l": 0.299103, "mmol_l": 2.19791, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 6", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   KH2PO4                                                     0.30         g"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.299103", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}]}, {"quantity_id": "q5", "topic": "NaCl — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.598205,\n                        \"mmol_l\": 10.2362,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "NaCl", "compound_id": 43, "amount": 0.6, "unit": "g", "g_l": 0.598205, "mmol_l": 10.2362, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 7", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   NaCl                                                       0.60         g"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.598205", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.598205", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.598205", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}]}, {"quantity_id": "q6", "topic": "MgCl2 x 6 H2O — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0997009,\n                        \"mmol_l\": 0.490405,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.1, "unit": "g", "g_l": 0.0997009, "mmol_l": 0.490405, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 8", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   MgCl2 x 6 H2O                                              0.10         g"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.0997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.0997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.0997009", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}]}, {"quantity_id": "q7", "topic": "CaCl2 x 2 H2O — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.08,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0797607,\n                        \"mmol_l\": 0.542535,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.08, "unit": "g", "g_l": 0.0797607, "mmol_l": 0.542535, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 9", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   CaCl2 x 2 H2O                                              0.08         g"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0797607", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0797607", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0797607", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}]}, {"quantity_id": "q8", "topic": "Sodium resazurin — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498504,\n                        \"mmol_l\": 0.00198473,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504, "mmol_l": 0.00198473, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 12", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Sodium resazurin (0.1% w/v)                                0.50        ml"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. Preserve 0.50 ml of 0.1% w/v sodium-resazurin stock separately; its nominal amount support does not validate the neutral-form ID.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. Preserve 0.50 ml of 0.1% w/v sodium-resazurin stock separately; its nominal amount support does not validate the neutral-form ID."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. Preserve 0.50 ml of 0.1% w/v sodium-resazurin stock separately; its nominal amount support does not validate the neutral-form ID."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.000498504", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement. Preserve 0.50 ml of 0.1% w/v sodium-resazurin stock separately; its nominal amount support does not validate the neutral-form ID."}]}, {"quantity_id": "q9", "topic": "L-Cysteine HCl x H2O — Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.25,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.249252,\n                        \"mmol_l\": 1.41914,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound": "L-Cysteine HCl x H2O", "compound_id": 770, "amount": 0.25, "unit": "g", "g_l": 0.249252, "mmol_l": 1.41914, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 14", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   L-Cysteine HCl x H2O                                       0.25         g"}], "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.249252", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.249252", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.249252", "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit in the current provider. Retain source batch mass, declared provider basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume statement."}]}, {"quantity_id": "q10", "topic": "HCl — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "HCl", "compound_id": 68, "attribute": "25%", "amount": 10, "unit": "ml", "g_l": 2.5, "mmol_l": 68.5683, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 27", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   HCl (25%)                                                  10.00      ml"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Primary HCl 25% lacks a percent basis; the provider 2.5 g/L is an explicit SL-10 assertion, not independently recomputed from 10 ml.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Primary HCl 25% lacks a percent basis; the provider 2.5 g/L is an explicit SL-10 assertion, not independently recomputed from 10 ml."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Primary HCl 25% lacks a percent basis; the provider 2.5 g/L is an explicit SL-10 assertion, not independently recomputed from 10 ml."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Primary HCl 25% lacks a percent basis; the provider 2.5 g/L is an explicit SL-10 assertion, not independently recomputed from 10 ml."}]}, {"quantity_id": "q11", "topic": "FeCl2 x 4 H2O — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "FeCl2 x 4 H2O", "compound_id": 260, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.54482, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 28", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   FeCl2 x 4 H2O                                               1.50       g"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q12", "topic": "ZnCl2 — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "ZnCl2", "compound_id": 64, "amount": 70, "unit": "mg", "g_l": 0.07, "mmol_l": 0.513573, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 29", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   ZnCl2                                                      70.00      mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q13", "topic": "MnCl2 x 4 H2O — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "MnCl2 x 4 H2O", "compound_id": 36, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.505293, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 30", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   MnCl2 x 4 H2O                                             100.00      mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q14", "topic": "H3BO3 — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "H3BO3", "compound_id": 37, "amount": 6, "unit": "mg", "g_l": 0.006, "mmol_l": 0.0970246, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 31", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   H3BO3                                                       6.00      mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q15", "topic": "CoCl2 x 6 H2O — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "CoCl2 x 6 H2O", "compound_id": 38, "amount": 190, "unit": "mg", "g_l": 0.19, "mmol_l": 1.46335, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 32", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   CoCl2 x 6 H2O                                             190.00      mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q16", "topic": "CuCl2 x 2 H2O — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound": "CuCl2 x 2 H2O", "compound_id": 39, "amount": 2, "unit": "mg", "g_l": 0.002, "mmol_l": 0.0117314, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 33", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   CuCl2 x 2 H2O                                               2.00      mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q17", "topic": "NiCl2 x 6 H2O — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 24, "unit": "mg", "g_l": 0.024, "mmol_l": 0.185187, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 34", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   NiCl2 x 6 H2O                                              24.00      mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q18", "topic": "Na2MoO4 x 2 H2O — Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 36, "unit": "mg", "g_l": 0.036, "mmol_l": 0.148791, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 35", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Na2MoO4 x 2 H2O                                            36.00      mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q19", "topic": "NaOH — Selenite-tungstate solution", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "NaOH", "compound_id": 256, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 12.5009, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 44", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   NaOH                                                       0.50        g"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q20", "topic": "Na2SeO3 x 5 H2O — Selenite-tungstate solution", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 3, "unit": "mg", "g_l": 0.003, "mmol_l": 0.0114062, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 45", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Na2SeO3 x 5 H2O                                            3.00       mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q21", "topic": "Na2WO4 x 2 H2O — Selenite-tungstate solution", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 4, "unit": "mg", "g_l": 0.004, "mmol_l": 0.0121267, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 46", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Na2WO4 x 2 H2O                                             4.00       mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q22", "topic": "Biotin — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound": "Biotin", "compound_id": 46, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0818632, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 58", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Biotin                                     20.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q23", "topic": "Folic acid — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound": "Folic acid", "compound_id": 138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l": 0.0453104, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 59", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Folic acid                                 20.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q24", "topic": "Pyridoxine hydrochloride — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound": "Pyridoxine hydrochloride", "compound_id": 519, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.486287, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 60", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Pyridoxine hydrochloride                  100.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q25", "topic": "Thiamine HCl — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[3]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "Thiamine HCl", "compound_id": 1207, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.148236, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 61", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Thiamine HCl                               50.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q26", "topic": "Riboflavin — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[4]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound": "Riboflavin", "compound_id": 136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.132837, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 62", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Riboflavin                                 50.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q27", "topic": "Nicotinic acid — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[5]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound": "Nicotinic acid", "compound_id": 139, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.406141, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 63", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Nicotinic acid                             50.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q28", "topic": "Calcium D-(+)-pantothenate — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[6]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound": "Calcium D-(+)-pantothenate", "compound_id": 1512, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.209846, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 64", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Calcium D-(+)-pantothenate                 50.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Source explicitly names calcium D-(+)-pantothenate; current CHEBI:31345 stereochemical structure is consistent, despite its generic preferred label.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Source explicitly names calcium D-(+)-pantothenate; current CHEBI:31345 stereochemical structure is consistent, despite its generic preferred label."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Source explicitly names calcium D-(+)-pantothenate; current CHEBI:31345 stereochemical structure is consistent, despite its generic preferred label."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Source explicitly names calcium D-(+)-pantothenate; current CHEBI:31345 stereochemical structure is consistent, despite its generic preferred label."}]}, {"quantity_id": "q29", "topic": "Vitamin B12 — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[7]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound": "Vitamin B12", "compound_id": 18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l": 0.00073779, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 65", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Vitamin B12                                 1.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Vitamin B12 is a generic source family; no unreported vitamer is selected.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Vitamin B12 is a generic source family; no unreported vitamer is selected."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Vitamin B12 is a generic source family; no unreported vitamer is selected."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. Vitamin B12 is a generic source family; no unreported vitamer is selected."}]}, {"quantity_id": "q30", "topic": "p-Aminobenzoic acid — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[8]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound": "p-Aminobenzoic acid", "compound_id": 47, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.364591, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 66", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   p-Aminobenzoic acid                        50.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred."}]}, {"quantity_id": "q31", "topic": "(DL)-alpha-Lipoic acid — Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[9]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "(DL)-alpha-Lipoic acid", "compound_id": 252, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l": 0.24233, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 67", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   (DL)-alpha-Lipoic acid                     50.00   mg"}], "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. The source supplies DL-alpha-lipoic acid; nonspecific CHEBI:16494 does not assert an incompatible R-only form.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. The source supplies DL-alpha-lipoic acid; nonspecific CHEBI:16494 does not assert an incompatible R-only form."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. The source supplies DL-alpha-lipoic acid; nonspecific CHEBI:16494 does not assert an incompatible R-only form."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named stock and restore the receiving-dose link; no final-medium amount is inferred. The source supplies DL-alpha-lipoic acid; nonspecific CHEBI:16494 does not assert an incompatible R-only form."}]}, {"quantity_id": "q32", "topic": "Missing stock dose: Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 8, "solution": "Trace element solution SL-10", "solution_id": 595, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 10", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Trace element solution SL-10                               1.00        ml"}], "decision": "add", "rationale": "Preserve the exact 1 ml source-batch receiving dose and named stock; the source main final volume is not stated, so no stock-component final-medium rate is manufactured.", "layer_assessments": []}, {"quantity_id": "q33", "topic": "Missing stock dose: Selenite-tungstate solution", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 9, "solution": "Selenite-tungstate solution", "solution_id": 777, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 11", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Selenite-tungstate solution                                1.00        ml"}], "decision": "add", "rationale": "Preserve the exact 1 ml source-batch receiving dose and named stock; the source main final volume is not stated, so no stock-component final-medium rate is manufactured.", "layer_assessments": []}, {"quantity_id": "q34", "topic": "Missing stock dose: Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 11, "solution": "Wolin's vitamin solution (10x)", "solution_id": 5980, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 13", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Wolin's vitamin solution (10x)                             1.00        ml"}], "decision": "add", "rationale": "Preserve the exact 1 ml source-batch receiving dose and named stock; the source main final volume is not stated, so no stock-component final-medium rate is manufactured.", "layer_assessments": []}, {"quantity_id": "q35", "topic": "Missing indicator stock definition/dose", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000498504,\n                        \"mmol_l\": 0.00198473,\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504, "mmol_l": 0.00198473, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 12", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "   Sodium resazurin (0.1% w/v)                                0.50        ml"}], "decision": "add", "rationale": "Preserve 0.50 ml of 0.1% w/v supplied stock, corresponding to 0.0005 g added mass, separately from the provider-normalized main rate. The chemical-form mapping is a separate defect.", "layer_assessments": []}, {"quantity_id": "q36", "topic": "Water input: Main sol. 834", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 13, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "add", "rationale": "Retain this exact solvent volume within its named stage. Only SL-10 has a separate explicit make-up-to-final-volume instruction; other water inputs are not automatically final volume.", "layer_assessments": []}, {"quantity_id": "q37", "topic": "Water input: Trace element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound": "Distilled water", "compound_id": 4, "amount": 990, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "add", "rationale": "Retain this exact solvent volume within its named stage. Only SL-10 has a separate explicit make-up-to-final-volume instruction; other water inputs are not automatically final volume.", "layer_assessments": []}, {"quantity_id": "q38", "topic": "Water input: Selenite-tungstate solution", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "add", "rationale": "Retain this exact solvent volume within its named stage. Only SL-10 has a separate explicit make-up-to-final-volume instruction; other water inputs are not automatically final volume.", "layer_assessments": []}, {"quantity_id": "q39", "topic": "Water input: Wolin's vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[3].recipe[10]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}], "decision": "add", "rationale": "Retain this exact solvent volume within its named stage. Only SL-10 has a separate explicit make-up-to-final-volume instruction; other water inputs are not automatically final volume.", "layer_assessments": []}, {"quantity_id": "q40", "topic": "Supported pH", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except vitamins and cysteine), boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solution prepared under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except vitamins and cysteine), boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solution prepared under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF line 21", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "solution prepared under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary."}], "decision": "evidence_only", "rationale": "Retain the supported pH with root evidence and its source stage.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale": "Existing pH 7.0 matches the source complete-medium target; exact measured pH or adjustment reagent is not supplied."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale": "Existing pH 7.0 matches the source complete-medium target; exact measured pH or adjustment reagent is not supplied."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale": "Existing pH 7.0 matches the source complete-medium target; exact measured pH or adjustment reagent is not supplied."}]}, {"quantity_id": "q41", "topic": "DSM owner main preparation; missing target/KOMODO preparation", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"step\": \"Dissolve ingredients (except vitamins and cysteine), boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solution prepared under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.\"\n                    }", "exact_decoded_object": {"step": "Dissolve ingredients (except vitamins and cysteine), boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solution prepared under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF section", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "Dissolve ingredients (except vitamins and cysteine), boil medium for 1 min, then cool to\nroom temperature under 100% N2 gas atmosphere. Dispense medium under same gas\natmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before\ninoculation, add vitamins (sterilized by filtration) and cysteine from sterile anoxic stock\nsolution prepared under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary."}], "decision": "mixed", "rationale": "Credit the already-correct DSM owner narrative; do not allege every layer lacks preparation. Cysteine stock strength/addition volume is not supplied and is not calculated.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients (except vitamins and cysteine), boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before inoculation, add vitamins (sterilized by filtration) and cysteine from sterile anoxic stock solution prepared under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.", "decision": "evidence_only", "rationale": "Existing source narrative correctly retains 1 minute boiling, 100% N2 handling, autoclaving, filtered vitamins, sterile anoxic cysteine stock and final pH. AUTOCLAVE is a broad classifier label; step_number is local ordering."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "preparation_steps[0].action", "stored_value": "AUTOCLAVE", "decision": "evidence_only", "rationale": "Existing source narrative correctly retains 1 minute boiling, 100% N2 handling, autoclaving, filtered vitamins, sterile anoxic cysteine stock and final pH. AUTOCLAVE is a broad classifier label; step_number is local ordering."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "preparation_steps[0].step_number", "stored_value": 1, "decision": "evidence_only", "rationale": "Existing source narrative correctly retains 1 minute boiling, 100% N2 handling, autoclaving, filtered vitamins, sterile anoxic cysteine stock and final pH. AUTOCLAVE is a broad classifier label; step_number is local ordering."}, {"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "Target/KOMODO layer lacks the source preparation retained by the DSM owner; reconcile exact provenance and source identity before regeneration.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml", "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale": "Target/KOMODO layer lacks the source preparation retained by the DSM owner; reconcile exact provenance and source identity before regeneration.", "missing": true}]}, {"quantity_id": "q42", "topic": "DSM owner SL-10 preparation", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72", "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T12:04:10.180404Z", "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }", "exact_decoded_object": {"step": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a", "locator": "Exact visually checked PDF section", "accessed_at": "2026-10-28T12:04:10.299536Z", "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml."}], "decision": "evidence_only", "rationale": "Retain stock-specific instruction and root evidence. The acid-percent basis remains unspecified.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "preparation_steps[1].description", "stored_value": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.", "decision": "evidence_only", "rationale": "Existing stock preparation and final 1000 ml agree; explicitly associate this instruction with SL-10 rather than main-medium final volume."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "preparation_steps[1].action", "stored_value": "DISSOLVE", "decision": "evidence_only", "rationale": "Existing stock preparation and final 1000 ml agree; explicitly associate this instruction with SL-10 rather than main-medium final volume."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path": "preparation_steps[1].step_number", "stored_value": 2, "decision": "evidence_only", "rationale": "Existing stock preparation and final 1000 ml agree; explicitly associate this instruction with SL-10 rather than main-medium final volume."}]}]
+
+### Current ontology and MIM correspondence
+
+grounding: concern. Targets: CultureMech:006626.
+
+All current primary/secondary slots were compared to fresh OLS canonical objects and exact packaged MIM rows. Sodium-resazurin and nickel-hexahydrate mismatches are confirmed. CHEBI:91248 is specifically monohydrate; CHEBI:31345 has stereochemistry consistent with source D-(+)-pantothenate; CHEBI:16494 is nonstereospecific rather than R-only. Vitamin B12 remains the generic source family. MAPPED and REJECTED aliases are retained as current catalog observations, not historical validity judgments.
+
+### History and evidence scope
+
+provenance: concern. Targets: CultureMech:006626.
+
+Five full selected historical reports, both exact selected plan rows and the archive exact parent/child row were read. Current API834 raw bytes and both reports’ 40 source objects each are independently joined; the old KOMODO catalog bytes/access event are not recovered. Malformed .fZ and naive historical timestamps remain original evidence, with append-only correction proposed.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:006626.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:006626.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Restore three separate stock formulations
+
+major / open / confirmed; issue key: culturemech-006626-restore-three-separate-stock-formulations.
+
+Nine SL-10, three selenite-tungstate and ten Wolin 10x components appear as direct main ingredients in every layer at undiluted stock rates. The exact source adds 1 ml of each stock and 0.50 ml of 0.1% w/v indicator; all stock and main water inputs are unrepresented. Current provider main-stage g_l supports the existing nine main rows and is not replaced by a guessed final litre.
+
+### f2: Correct supplied sodium and hydrated nickel forms
+
+major / open / confirmed; issue key: culturemech-006626-correct-supplied-sodium-and-hydrated-nickel-forms.
+
+The primary/API sodium-resazurin stock is linked to neutral CHEBI:8806, and nickel chloride hexahydrate is linked in both slots to anhydrous CHEBI:34887. These accessions resolve but denote different supplied forms. Other exact hydrate identities are supported, including L-cysteine hydrochloride monohydrate; source calcium D-(+)-pantothenate and DL-lipoic acid are not silently replaced by generic different materials.
+
+### f3: Preserve anoxic preparation across source-specific layers
+
+major / open / confirmed; issue key: culturemech-006626-preserve-anoxic-preparation-across-source-specific-layers.
+
+The selected target and KOMODO owner omit the primary preparation and retain Aerobic: Yes. The DSM owner already contains the correct N2/anoxic main preparation and SL-10 instruction. Current resolver does not copy preparation_steps; current merge compatibility rejects differing scientific preparation/notes rather than blindly collapsing equal ingredient lists. Present code does not prove historical causation.
+
+### f4: Preserve and qualify historical event metadata
+
+minor / open / confirmed; issue key: culturemech-006626-preserve-and-qualify-historical-event-metadata.
+
+KOMODO import events contain a literal .fZ timestamp and resolver events omit a UTC offset. Historical concentration reports preserve unresolved claims and exact source mappings, but are not independent proof of those historical retrieval events. All local concentrations and preparation claims also lack attached exact source linkage; fresh evidence must be added at supported ingredient/root slots. Both October 7 reports left topology and variant claims unresolved; their current raw-object matches do not establish a completed historical scientific review.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Restore each named stock composition and exact source-batch receiving dose, indicator attribute/dose, water stage and BD Bacto attributes. Remove undiluted stock rates from direct-medium interpretation. Retain source-supported main provider rates with explicit basis; do not infer final volume or calculate an unstated acid-percent conversion.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+Verify and use the exact sodium-resazurin and nickel-hexahydrate identifiers/canonical labels in maintained inputs, preserving supported masses and stage decisions. Keep other supported forms, including monohydrate and source stereochemical descriptions; current MIM aliases alone do not override primary form.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+Preserve the already-correct DSM owner preparation and add exact root source evidence. Reconcile the KOMODO aerobic flag and missing preparation against the exact accession source before any regenerated merge; retain unresolved original metadata as qualified provenance instead of silently overwriting it. Do not force a merge based only on ingredient signature.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action4
+
+Retain every original event byte-for-byte. If authoritative provenance is recovered, append a verified correction or context event; never invent or overwrite its timestamp. Link fresh source evidence separately and preserve unresolved accession limitations.
+
+- Every original history event remains byte-preserved; any verified new context is appended with exact provenance.
+- Fresh ingredient/root evidence names exact source stage, field, quotation and retrieval; the KOMODO403 branch remains explicitly unresolved until actually recovered.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| owner-2 | data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| dsm834 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf; Exact source identity and scoped formulation/preparation | supports | Full two-page primary PDF visually read: main formulation, complete SL-10/selenite-tungstate/Wolin 10x stock tables, source receiving doses, pH and staged anoxic preparation. No strain-specific inference is made. |
+| api834 | https://mediadive.dsmz.de/rest/medium/834; Exact source identity and scoped formulation/preparation | supports | Full exact current provider response: main solution 1701 volume 1003 ml and explicit main g_l; separate stock 595/777/5980 rates, water rows and preparation. Provider normalization is distinguished from an explicitly measured final volume. |
+| komodo834 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=834; HTTP status/body only; exact report-linked /komodo/servlet route | context_only | Exact historical MediaInfo=834 hyperlink returned 403; retained challenge body contains no recipe and does not verify the accession mapping or aerobic flag. |
+| komodoList | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; HTTP status/body only; report-linked MediaList route | context_only | Exact historical catalog endpoint returned 403; the old catalog mapping remains derivative evidence and its old whole-response digest is not recovered here. |
+| identity-search | REVIEW_WORK/batch066/record03/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _parse_api_solutions, _parse_preparation_steps | context_only | Current composition parser restricts ingredients to the primary solution, excludes solvent and recognized stock additions, and retains explicit g_l. The solution parser preserves referenced or percent-defined stocks and source attributes. Preparation parsing still concatenates all solution steps into root preparation_steps; source-stage annotation remains important. These present functions do not prove the historical execution that produced this record. |
+| writer-merge | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group copies a sole contributor with merge metadata. For multiple contributors it passes records to merge_formulation_evidence, which checks compatibility; it does not authorize merging different preparation assertions. |
+| writer-formulation | src/culturemech/merge/formulation.py; formulation_content, merge_formulation_evidence | context_only | Current compatibility preserves scientific fields and list order and rejects unequal formulations; only specified provenance/evidence lists are unioned. It performs no concentration conversion or stock expansion and does not authenticate historical merges. |
+| writer-cleanup | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients, merge_ingredient_group | context_only | Current cleanup groups identical normalized names, keeps the first entry as a base, flags differing concentrations and combines a warning note; it does not sum concentrations. It can still discard distinctions when names repeat, so source stage must be retained. Current behavior does not establish the historical cause of an existing discrepancy. |
+| writer-resolver | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.merge_composition | context_only | Current merge_composition copies nonplaceholder ingredients and available solutions, ph_value when absent, physical_state and medium_type. It does not copy preparation_steps or ph_range; present behavior is not proof of historical execution. |
+| writer-komodo | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current _convert_to_culturemech builds KOMODO identity, source mapping and aerobic notes from table flags and emits placeholder ingredients. It uses time.strftime with %f, which does not itself establish a valid fractional timestamp. Existing malformed events remain original evidence, not a license to rewrite history. |
+| historical-1 | reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md; Exact selected-owner matching rows, if present, plus report purpose/method and validation claims only; all other pair-specific conclusions outside scope. | context_only | Historical source-duplicate report: only exact selected-owner rows, where present, and its stated signature method are in scope. Similarity does not prove complete preparation identity; no assertion about absent exact pairs is inferred. |
+| historical-2 | reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Current independent capture exactly matches the cited old response digest; 40 historical literal/decoded objects join. Access-event provenance remains historical. |
+| historical-3 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/coprothermobacter_platensis_medium.yaml.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Current independent capture exactly matches the cited old response digest; 40 historical literal/decoded objects join. Access-event provenance remains historical. |
+| historical-4 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Historical derivative context; current response does not authenticate the old full raw digest. Exact object matches and differences are recorded separately; old conclusions are reassessed. |
+| historical-5 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Historical derivative context; current response does not authenticate the old full raw digest. Exact object matches and differences are recorded separately; old conclusions are reassessed. |
+| historical-6 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/coprothermobacter_platensis_medium.md; Complete exact-header report, including unchanged/unsupported claims, source objects and narrative; repeated literal rows compared losslessly. | context_only | Historical derivative context; current response does not authenticate the old full raw digest. Exact object matches and differences are recorded separately; old conclusions are reassessed. |
+| historical-reader | REVIEW_WORK/batch066/record03/historical-reader.json | context_only | Full exact-header historical texts and scoped large report, with literal/decoded current-source joins and explicit mismatches. Historical access events are not reauthenticated. |
+| historical-plan-1 | reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/plan.json; $.records[99] | context_only | Exact selected contributor plan row only, including unchanged decisions and original source provenance. Current source comparisons never reauthenticate the historical access event. |
+| historical-plan-2 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json; $.records[393] | context_only | Exact selected contributor plan row only, including unchanged decisions and original source provenance. Current source comparisons never reauthenticate the historical access event. |
+| historical-plan-rows | REVIEW_WORK/batch066/record03/historical-plan-rows.json | context_only | Exact scoped plan-row membership; full parent payload retained as an inspected pin without transferring neighboring records. |
+| attached-evidence-joins | REVIEW_WORK/batch066/record03/attached-evidence-joins.json | context_only | Every existing attached evidence claim is preserved and compared to the exact freshly captured response. Matching snippets do not authenticate historical access times. |
+| complete-source-rows | REVIEW_WORK/batch066/record03/complete-source-rows.json | context_only | Every source recipe row and preparation object, with exact raw substring and decoded JSON locator, kept in its own solution stage. No biological recommendation follows from provider equipment metadata. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86345; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86158; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_91248; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17883; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86249; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49976; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86368; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_33118; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53503; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86318; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_34887; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75213; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32145; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131361; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63939; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15956; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_27470; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30961; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49105; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17015; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15940; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31345; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_176843; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30753; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16494; _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms | supports | Exact OLS term object: accession, current preferred label, obsolete flag, definition and synonyms. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch066/record03/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch066/record03/grounding-inventory.json | context_only | All recursive asserted identifier/label slots, exact current OLS objects and current packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch066/record03/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch066/record03/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch066/record03/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch066/record03/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch066/record03/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch066/record03/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch066/record03/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- Exact report-linked KOMODO detail/catalog routes returned 403; historical mapping remains derivative. Review is partial for that accession branch, despite successful DSM primary/provider access.
+- Provider main volume 1003 ml and g_l are declared normalization metadata, not proof of measured final volume. Primary 1000 ml water plus source additions does not authorize a replacement denominator.
+- Primary HCl 25% lacks a percent basis; unused provider mmol_l conversions are not validated. Selenite/vitamin water inputs are not explicit final make-up instructions. Cysteine stock strength and addition volume remain unknown.
+- No growth temperature, strain response or biological performance is inferred from the source title, generic bacterial category or provider equipment. Native reference checking performed zero checks.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T121355Z-batch066-record03-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'COPROTHERMOBACTER PLATENSIS DSM834: preserve stocks, anoxic preparation and
+  supplied forms'
+started_at: '2026-10-28T12:01:28.540841Z'
+finished_at: '2026-10-28T12:13:55.733988Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact DSM834 primary and provider response support the main-stage quantities
+  but distinguish three stock formulations that all local layers flatten into direct
+  ingredients. The selected target and KOMODO owner omit preparation retained by the
+  DSM owner and carry an aerobic flag inconsistent with the source anoxic preparation.
+  Two supplied-form mappings are incorrect; original KOMODO provenance remains limited
+  by exact-route 403 responses. No recipe is changed.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml
+    sha256: fdf02e28c4fe3d517c05f137b875f780448aab87bae8ff1ba4dc462abee85868
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    sha256: 7b22f2f38994c334c6d84553b961c6f2a15f794c0f6d6107b4ed28e58d70a614
+    role: context
+  - path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    sha256: 41efc5d1a9024f1b91707f845e7e4826137015dd1d9ca74998e5e862eab40e7c
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+    sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/plan.json
+    sha256: 1eec521fb8743316925ed3d629323b5c1312db0b35497db1e8bbe560a13e3508
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml.md
+    sha256: 9bff513bdb21d3f8e68f4abff23f6b18ad46993e3ffeb12fe16ae55ad9ab0ef1
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/coprothermobacter_platensis_medium.yaml.md
+    sha256: 36bb3c89cf2ff690145fc7b4ff889a99d1f33a917cab5c964c3ac510c72c4d36
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.md
+    sha256: 357b3eef9e1b9d36a15e4846793652a9cd08db006e9e828f27393236a67b6a4f
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.md
+    sha256: fa43264268995640058d7a494ab53719f04d73e1d35614df9e59f1f220b40ac9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/coprothermobacter_platensis_medium.md
+    sha256: 3ac64f7985204553295f894f9a54bc2ed387e0cefeb91710af6c6a15d8aab77d
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_media_variant_links.py
+    sha256: d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch066 native selection index 03.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006626
+targets:
+- target_id: CultureMech:006626
+  path: data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml
+  label: coprothermobacter_platensis_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006626
+  command: just validate-schema data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006626
+  command: just validate-strict data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml
+    --out REVIEW_WORK/batch066/record03/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006626
+  command: just validate-terms data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:006626
+  command: just validate-references data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: fdf02e28c4fe3d517c05f137b875f780448aab87bae8ff1ba4dc462abee85868
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 7b22f2f38994c334c6d84553b961c6f2a15f794c0f6d6107b4ed28e58d70a614
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 41efc5d1a9024f1b91707f845e7e4826137015dd1d9ca74998e5e862eab40e7c
+- evidence_id: dsm834
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T12:04:10.299536Z'
+  support: supports
+  summary: 'Full two-page primary PDF visually read: main formulation, complete SL-10/selenite-tungstate/Wolin
+    10x stock tables, source receiving doses, pH and staged anoxic preparation. No
+    strain-specific inference is made.'
+  snapshot_sha256: 0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a
+- evidence_id: api834
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/834
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T12:04:10.180404Z'
+  support: supports
+  summary: 'Full exact current provider response: main solution 1701 volume 1003 ml
+    and explicit main g_l; separate stock 595/777/5980 rates, water rows and preparation.
+    Provider normalization is distinguished from an explicitly measured final volume.'
+  snapshot_sha256: 5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72
+- evidence_id: komodo834
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=834
+  locator: HTTP status/body only; exact report-linked /komodo/servlet route
+  accessed_at: '2026-10-28T12:04:09.489498Z'
+  support: context_only
+  summary: Exact historical MediaInfo=834 hyperlink returned 403; retained challenge
+    body contains no recipe and does not verify the accession mapping or aerobic flag.
+  snapshot_sha256: 6e7aee957046fa974bc596d5e998f6429004000a1da91d8a3bd7bccbe0afc986
+- evidence_id: komodoList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: HTTP status/body only; report-linked MediaList route
+  accessed_at: '2026-10-28T12:04:09.435641Z'
+  support: context_only
+  summary: Exact historical catalog endpoint returned 403; the old catalog mapping
+    remains derivative evidence and its old whole-response digest is not recovered
+    here.
+  snapshot_sha256: 2e4ddd7bfa0bafe381bd292e068fe0d9fd40c4ed8bc5e443bd9a3d0cc5f346ef
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch066/record03/identity-search.json
+  accessed_at: '2026-10-28T12:13:26.670701Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    excluded namesakes are retained in the census. Similar names and source accessions
+    are not promoted to owners.
+  snapshot_sha256: f4c4d5e431f45260094eb4a58b10fa4636bfeabb4069600fa09e66806eaf8f6e
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. Current behavior does not establish the historical
+    cause of an existing discrepancy.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer-resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Current merge_composition copies nonplaceholder ingredients and available
+    solutions, ph_value when absent, physical_state and medium_type. It does not copy
+    preparation_steps or ph_range; present behavior is not proof of historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-komodo
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Current _convert_to_culturemech builds KOMODO identity, source mapping
+    and aerobic notes from table flags and emits placeholder ingredients. It uses
+    time.strftime with %f, which does not itself establish a valid fractional timestamp.
+    Existing malformed events remain original evidence, not a license to rewrite history.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+  locator: Exact selected-owner matching rows, if present, plus report purpose/method
+    and validation claims only; all other pair-specific conclusions outside scope.
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: 'Historical source-duplicate report: only exact selected-owner rows, where
+    present, and its stated signature method are in scope. Similarity does not prove
+    complete preparation identity; no assertion about absent exact pairs is inferred.'
+  snapshot_sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Current independent capture exactly matches the cited old response digest;
+    40 historical literal/decoded objects join. Access-event provenance remains historical.
+  snapshot_sha256: 9bff513bdb21d3f8e68f4abff23f6b18ad46993e3ffeb12fe16ae55ad9ab0ef1
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/coprothermobacter_platensis_medium.yaml.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Current independent capture exactly matches the cited old response digest;
+    40 historical literal/decoded objects join. Access-event provenance remains historical.
+  snapshot_sha256: 36bb3c89cf2ff690145fc7b4ff889a99d1f33a917cab5c964c3ac510c72c4d36
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 357b3eef9e1b9d36a15e4846793652a9cd08db006e9e828f27393236a67b6a4f
+- evidence_id: historical-5
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: fa43264268995640058d7a494ab53719f04d73e1d35614df9e59f1f220b40ac9
+- evidence_id: historical-6
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/coprothermobacter_platensis_medium.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 3ac64f7985204553295f894f9a54bc2ed387e0cefeb91710af6c6a15d8aab77d
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record03/historical-reader.json
+  accessed_at: '2026-10-28T12:13:26.675279Z'
+  support: context_only
+  summary: Full exact-header historical texts and scoped large report, with literal/decoded
+    current-source joins and explicit mismatches. Historical access events are not
+    reauthenticated.
+  snapshot_sha256: af415a7b412d7f6220cd7423f11b67f09cf890c25eb82cb6aa14c9771147a9be
+- evidence_id: historical-plan-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/plan.json
+  locator: $.records[99]
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Exact selected contributor plan row only, including unchanged decisions
+    and original source provenance. Current source comparisons never reauthenticate
+    the historical access event.
+  snapshot_sha256: 1eec521fb8743316925ed3d629323b5c1312db0b35497db1e8bbe560a13e3508
+- evidence_id: historical-plan-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+  locator: $.records[393]
+  accessed_at: '2026-10-28T12:13:26.608149Z'
+  support: context_only
+  summary: Exact selected contributor plan row only, including unchanged decisions
+    and original source provenance. Current source comparisons never reauthenticate
+    the historical access event.
+  snapshot_sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+- evidence_id: historical-plan-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record03/historical-plan-rows.json
+  accessed_at: '2026-10-28T12:13:26.749188Z'
+  support: context_only
+  summary: Exact scoped plan-row membership; full parent payload retained as an inspected
+    pin without transferring neighboring records.
+  snapshot_sha256: 870f5e1afe4a25ec46cc397a6c5a7d2be9b6a03bdad3fc6cd91b7495c904d655
+- evidence_id: attached-evidence-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record03/attached-evidence-joins.json
+  accessed_at: '2026-10-28T12:13:26.752432Z'
+  support: context_only
+  summary: Every existing attached evidence claim is preserved and compared to the
+    exact freshly captured response. Matching snippets do not authenticate historical
+    access times.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: complete-source-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record03/complete-source-rows.json
+  accessed_at: '2026-10-28T12:13:26.759549Z'
+  support: context_only
+  summary: Every source recipe row and preparation object, with exact raw substring
+    and decoded JSON locator, kept in its own solution stage. No biological recommendation
+    follows from provider equipment metadata.
+  snapshot_sha256: f566eba30256e79a7790c8dca11a1f691f8aa414a19c01dc33e28b37af9827f3
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:15.244306Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 913baf38abc38dd61f05c5d636fd6532b70a668673a1f5762f290d2b67270164
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26710
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:12.654897Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: b145f4ff9b90ebb993ff576d9ab35a6c10b7c42a3b99e18feffcc8d75c0e1e50
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:16.790925Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 015a33a158257cc5cba8a8e62de382053399be060366af5d95074883bb22b86e
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86158
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:15.832569Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: df8f702eb5b9d3e50209bfa2b0c4b6f1db30c116e56a58e348cbd4bf3bc0ebc1
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:17.676664Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: ceb05e9dd7fba3802d28b34c50bbb604ded87951e4ea3a812739824a84648d72
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_91248
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:18.121905Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 98a5682728cfda4162de150a88ae8c4b3a70c2d7c248634a5108be50a888a692
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17883
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:12.348224Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 5f7b2f292559b9033f3c62c8403ed552842a28535010d6af5daa018a0977c28d
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86249
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:17.475532Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 69797bf2582679b3f621fa4f982077ed90f48f3a5e1293c7444a3aaacbb25ba2
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49976
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:14.806791Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2d2305ca671adbbd3b0cc07b2331373a768bb44d41f32f61ba894594ae470eff
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86368
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:17.709334Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2bb4588e6734285b5536bdac78701f9800fdb8d17236d12cf5a1c30490f1614d
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_33118
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:14.460789Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f23e1405347fa9d8a0826d4dd1279b7cdec8361390d20e439154dcbbd386a2d4
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_53503
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:15.062988Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 31dc996638b0cc1341ed24fcb38ec344af726c99d376ac94e952210fcb9ed583
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_86318
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:16.876777Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 8ba4e0a242571ae9a62ca7ba5c0f4af765962a02f5119a96d47dda9df7c9d593
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_34887
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:14.661129Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: a43b8268f70ae50c4cfbc53e12bbd195618c521619cfab8f71d3704b338af95b
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_75213
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:15.771128Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0271a149a298ff837ad8f690ce8cb0acf111f5d25c5efaf6fa828401ab951d56
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32145
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:13.861961Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1f39a220b091088af20782dd27577fb7ca89e037d2b0ea83e76075fb8d77b797
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_131361
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:10.950171Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 345cb9c46670b2812cacd12098169f03ea94fe064710e06a7aa545a2717706b0
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63939
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:15.574626Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f2fb7b5c3e7fec44d19e40f18cfbfa699c6010ad22cb76a9d2acd2b60950d98e
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:11.524857Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0d2e75e0bd98dbffff14d85a41dfd0af8aae2a8d65a945d34a4126a17091c2b8
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_27470
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:12.759003Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: dcee85bb585d3a73341ab66eff772dc6361330b3c899c4daecbda49d5e84e590
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30961
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:13.256156Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 491af523ba70d13857fcb828561d0556e46382fa0591011a06693d7db24ad91f
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:14.630475Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: fc6b8e9d8657914ed8fd568c69d8a5b2cf41b26767bd6361a5e2d258883be97d
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17015
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:12.019243Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f8bec809c7ba5a36faea58b8fe1b5110f0d75dbd4ac1929a121cd352bce63309
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15940
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:11.473148Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2890ef915cd546e70c1e638af285a3cc19b8299ae7722d00b43a40170a57ab8a
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:13.373447Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: d2a04309eb6976fd395f9684ec4c3f5192362e2b6b75464b0af128a28e188d25
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_176843
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:12.174603Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 5c42e2236866d0314bc8d45947ddf9eb2fdf6364d08e802b0fb271011cbfe563
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30753
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:13.002517Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 42ea4022bd68e8fa28962bc496ca757174da7bbd18ce06b7f3d521885609a50c
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16494
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T12:04:11.557548Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: db6824ffab0d71efc11d1e64b505ae583949e9d5837086a4b0e7b364b2933a22
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record03/quantity-inventory.json
+  accessed_at: '2026-10-28T12:13:26.826502Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 6c74204dc47eb91017878e4aeb13de04d50e43d90979a704a714d9c9a204f8b1
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record03/grounding-inventory.json
+  accessed_at: '2026-10-28T12:13:26.826590Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: b0b4cb95ddafa36b912aaa2881273b244e5b75955cd0e6e34be745541871dd87
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record03/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T12:13:26.827139Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: bb8d657804a36cbb138b7e65f9ff7a16cebfa4d08d7dd3d48e88ce994cc00655
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch066/record03/scalar-census.json
+  accessed_at: '2026-10-28T12:13:26.827163Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 8079557701daeb29b376f66f9f09e162d4bb15a7799227150acbf8e9e17d99cf
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch066/record03/validate-schema.json
+  accessed_at: '2026-10-28T12:01:29.602427Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: ec9b19d24934bdf1f436754e7b2bc0ceec7fe9343cab0005476f0244972b49e8
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch066/record03/validate-strict.json
+  accessed_at: '2026-10-28T12:01:30.544880Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch066/record03/strict.tsv\n"
+  snapshot_sha256: 6525f955f367d33c25041e47c6f0022c2b0bd8625c189177df14da9973deeada
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch066/record03/validate-terms.json
+  accessed_at: '2026-10-28T12:01:31.588396Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 5664bd43f257096366c3684bcd11e763a0e113f9861678b2cc8f9ccee1eae08c
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch066/record03/validate-references.json
+  accessed_at: '2026-10-28T12:01:32.336288Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: c561a341bd8fe64a87529e11b027fc8281ee577dc220f8805dd9dc69c0ebbb96
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: DSM834 and KOMODO834 lineage
+  outcome: concern
+  summary: Exact maintained contributors and historical DSM cross-reference resolve
+    this selected lineage. Fresh primary/API834 agree, while exact KOMODO detail/catalog
+    are 403 and leave that original branch independently unverified. The source-duplicate
+    links establish an ingredient-signature relationship, not complete formulation/preparation
+    equivalence.
+  target_ids:
+  - CultureMech:006626
+  evidence_ids:
+  - identity-search
+  - dsm834
+  - api834
+  - historical-reader
+  - komodo834
+  - komodoList
+- assessment_id: a2
+  area: completeness
+  topic: Supported classification and layer differences
+  outcome: concern
+  summary: Complex/undefined liquid medium is consistent with the peptone/extract
+    source. All three layers have the same 31 quantitative rows and pH, but only the
+    DSM owner retains the two preparation narratives. Supplier attributes, stock topology,
+    waters and exact evidence need preservation; no named-medium claim is promoted
+    to strain-level growth.
+  target_ids:
+  - CultureMech:006626
+  evidence_ids:
+  - dsm834
+  - api834
+  - quantities
+  - owner-1
+  - owner-2
+- assessment_id: a3
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:006626
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "Meat peptone — Main sol. 834", "source":
+    [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Meat peptone\",\n                        \"compound_id\": 646,\n                        \"attribute\":
+    \"BD Bacto\",\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.98504,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "Meat peptone", "compound_id": 646, "attribute": "BD Bacto", "amount": 5, "unit":
+    "g", "g_l": 4.98504, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 3", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Meat peptone (BD Bacto)                                    5.00         g"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. The primary and API explicitly specify BD Bacto; preserve that supplier
+    attribute rather than treating all commercial peptones as interchangeable.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[0].concentration", "stored_value": {"value": "4.98504", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. The primary and API explicitly specify BD Bacto; preserve that supplier
+    attribute rather than treating all commercial peptones as interchangeable."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "4.98504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. The primary and API explicitly specify BD Bacto; preserve that supplier
+    attribute rather than treating all commercial peptones as interchangeable."},
+    {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "4.98504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. The primary and API explicitly specify BD Bacto; preserve that supplier
+    attribute rather than treating all commercial peptones as interchangeable."}]},
+    {"quantity_id": "q2", "topic": "Tryptone — Main sol. 834", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Tryptone\",\n                        \"compound_id\": 71,\n                        \"attribute\":
+    \"BD Bacto\",\n                        \"amount\": 5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 4.98504,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "Tryptone", "compound_id": 71, "attribute": "BD Bacto", "amount": 5, "unit": "g",
+    "g_l": 4.98504, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 4", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Tryptone (BD Bacto)                                        5.00         g"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. The primary and API explicitly specify BD Bacto; preserve that supplier
+    attribute rather than treating all commercial peptones as interchangeable.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[1].concentration", "stored_value": {"value": "4.98504", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. The primary and API explicitly specify BD Bacto; preserve that supplier
+    attribute rather than treating all commercial peptones as interchangeable."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "4.98504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. The primary and API explicitly specify BD Bacto; preserve that supplier
+    attribute rather than treating all commercial peptones as interchangeable."},
+    {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "4.98504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. The primary and API explicitly specify BD Bacto; preserve that supplier
+    attribute rather than treating all commercial peptones as interchangeable."}]},
+    {"quantity_id": "q3", "topic": "Yeast extract — Main sol. 834", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\":
+    10,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    9.97009,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 3, "compound": "Yeast extract", "compound_id": 16, "amount":
+    10, "unit": "g", "g_l": 9.97009, "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 5", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Yeast extract                                             10.00         g"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "9.97009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "9.97009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "9.97009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}]}, {"quantity_id": "q4", "topic": "KH2PO4 — Main sol. 834", "source":
+    [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.299103,\n                        \"mmol_l\": 2.19791,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "KH2PO4", "compound_id": 11, "amount": 0.3, "unit": "g", "g_l": 0.299103, "mmol_l":
+    2.19791, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 6", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   KH2PO4                                                     0.30         g"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.299103",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.299103",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.299103",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}]}, {"quantity_id": "q5", "topic": "NaCl — Main sol. 834", "source":
+    [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    0.6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.598205,\n                        \"mmol_l\": 10.2362,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "NaCl", "compound_id": 43, "amount": 0.6, "unit": "g", "g_l": 0.598205, "mmol_l":
+    10.2362, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 7", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   NaCl                                                       0.60         g"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.598205",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.598205",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.598205",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}]}, {"quantity_id": "q6", "topic": "MgCl2 x 6 H2O — Main sol. 834",
+    "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0997009,\n                        \"mmol_l\": 0.490405,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.1, "unit": "g", "g_l": 0.0997009,
+    "mmol_l": 0.490405, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 8", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   MgCl2 x 6 H2O                                              0.10         g"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.0997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.0997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.0997009",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}]}, {"quantity_id": "q7", "topic": "CaCl2 x 2 H2O — Main sol. 834",
+    "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    0.08,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0797607,\n                        \"mmol_l\": 0.542535,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.08, "unit": "g", "g_l": 0.0797607,
+    "mmol_l": 0.542535, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 9", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   CaCl2 x 2 H2O                                              0.08         g"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0797607",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0797607",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.0797607",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}]}, {"quantity_id": "q8", "topic": "Sodium resazurin — Main sol. 834",
+    "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498504,\n                        \"mmol_l\":
+    0.00198473,\n                        \"optional\": 0\n                    }",
+    "exact_decoded_object": {"recipe_order": 10, "compound": "Sodium resazurin", "compound_id":
+    1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504,
+    "mmol_l": 0.00198473, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 12", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Sodium resazurin (0.1% w/v)                                0.50        ml"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. Preserve 0.50 ml of 0.1% w/v sodium-resazurin stock separately; its
+    nominal amount support does not validate the neutral-form ID.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[7].concentration", "stored_value": {"value": "0.000498504", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. Preserve 0.50 ml of 0.1% w/v sodium-resazurin stock separately; its
+    nominal amount support does not validate the neutral-form ID."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.000498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. Preserve 0.50 ml of 0.1% w/v sodium-resazurin stock separately; its
+    nominal amount support does not validate the neutral-form ID."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.000498504",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement. Preserve 0.50 ml of 0.1% w/v sodium-resazurin stock separately; its
+    nominal amount support does not validate the neutral-form ID."}]}, {"quantity_id":
+    "q9", "topic": "L-Cysteine HCl x H2O — Main sol. 834", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\":
+    0.25,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.249252,\n                        \"mmol_l\": 1.41914,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound":
+    "L-Cysteine HCl x H2O", "compound_id": 770, "amount": 0.25, "unit": "g", "g_l":
+    0.249252, "mmol_l": 1.41914, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 14", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   L-Cysteine HCl x H2O                                       0.25         g"}],
+    "decision": "evidence_only", "rationale": "The unchanged main-stage rate is explicit
+    in the current provider. Retain source batch mass, declared provider basis and
+    exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.249252",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.249252",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.249252",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The unchanged main-stage
+    rate is explicit in the current provider. Retain source batch mass, declared provider
+    basis and exact brand/stock context; primary 1000 ml water is not a measured final-volume
+    statement."}]}, {"quantity_id": "q10", "topic": "HCl — Trace element solution
+    SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\":
+    \"25%\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\":
+    68.5683,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 1, "compound": "HCl", "compound_id": 68, "attribute": "25%",
+    "amount": 10, "unit": "ml", "g_l": 2.5, "mmol_l": 68.5683, "optional": 0}, "quote_basis":
+    "Literal UTF-8 raw-response substring; decoded object independently equals exact
+    JSON locator."}, {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 27", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   HCl (25%)                                                  10.00      ml"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.
+    Primary HCl 25% lacks a percent basis; the provider 2.5 g/L is an explicit SL-10
+    assertion, not independently recomputed from 10 ml.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[9].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.
+    Primary HCl 25% lacks a percent basis; the provider 2.5 g/L is an explicit SL-10
+    assertion, not independently recomputed from 10 ml."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "2.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred. Primary HCl 25% lacks a percent basis; the provider 2.5 g/L
+    is an explicit SL-10 assertion, not independently recomputed from 10 ml."}, {"path":
+    "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml", "field_path":
+    "ingredients[9].concentration", "stored_value": {"value": "2.5", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.
+    Primary HCl 25% lacks a percent basis; the provider 2.5 g/L is an explicit SL-10
+    assertion, not independently recomputed from 10 ml."}]}, {"quantity_id": "q11",
+    "topic": "FeCl2 x 4 H2O — Trace element solution SL-10", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "FeCl2 x 4 H2O", "compound_id": 260, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l":
+    7.54482, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 28", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   FeCl2 x 4 H2O                                               1.50       g"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q12", "topic": "ZnCl2 — Trace element
+    solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\":
+    70,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "ZnCl2", "compound_id": 64, "amount": 70, "unit": "mg", "g_l": 0.07, "mmol_l":
+    0.513573, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 29", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   ZnCl2                                                      70.00      mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.07",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q13", "topic": "MnCl2 x 4 H2O — Trace
+    element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "MnCl2 x 4 H2O", "compound_id": 36, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l":
+    0.505293, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 30", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   MnCl2 x 4 H2O                                             100.00      mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q14", "topic": "H3BO3 — Trace element
+    solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\":
+    6,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "H3BO3", "compound_id": 37, "amount": 6, "unit": "mg", "g_l": 0.006, "mmol_l":
+    0.0970246, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 31", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   H3BO3                                                       6.00      mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.006",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q15", "topic": "CoCl2 x 6 H2O — Trace
+    element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\":
+    190,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "CoCl2 x 6 H2O", "compound_id": 38, "amount": 190, "unit": "mg", "g_l": 0.19,
+    "mmol_l": 1.46335, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 32", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   CoCl2 x 6 H2O                                             190.00      mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.19",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q16", "topic": "CuCl2 x 2 H2O — Trace
+    element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\":
+    2,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "CuCl2 x 2 H2O", "compound_id": 39, "amount": 2, "unit": "mg", "g_l": 0.002, "mmol_l":
+    0.0117314, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 33", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   CuCl2 x 2 H2O                                               2.00      mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.002",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q17", "topic": "NiCl2 x 6 H2O — Trace
+    element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\":
+    24,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "NiCl2 x 6 H2O", "compound_id": 40, "amount": 24, "unit": "mg", "g_l": 0.024,
+    "mmol_l": 0.185187, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 34", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   NiCl2 x 6 H2O                                              24.00      mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.024",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q18", "topic": "Na2MoO4 x 2 H2O — Trace
+    element solution SL-10", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\":
+    36,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 36, "unit": "mg", "g_l": 0.036,
+    "mmol_l": 0.148791, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 35", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Na2MoO4 x 2 H2O                                            36.00      mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.036",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q19", "topic": "NaOH — Selenite-tungstate
+    solution", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[2].recipe[0]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "NaOH", "compound_id": 256, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l":
+    12.5009, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 44", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   NaOH                                                       0.50        g"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q20", "topic": "Na2SeO3 x 5 H2O — Selenite-tungstate
+    solution", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[2].recipe[1]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\":
+    3,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 3, "unit": "mg", "g_l": 0.003,
+    "mmol_l": 0.0114062, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 45", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Na2SeO3 x 5 H2O                                            3.00       mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.003",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q21", "topic": "Na2WO4 x 2 H2O — Selenite-tungstate
+    solution", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[2].recipe[2]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\":
+    4,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 4, "unit": "mg", "g_l": 0.004,
+    "mmol_l": 0.0121267, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 46", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Na2WO4 x 2 H2O                                             4.00       mg"}],
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.",
+    "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored_value": {"value": "0.004",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q22", "topic": "Biotin — Wolin''s vitamin
+    solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[0]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "Biotin", "compound_id": 46, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l":
+    0.0818632, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 58", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Biotin                                     20.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[21].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[21].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q23", "topic": "Folic acid — Wolin''s
+    vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[1]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "Folic acid", "compound_id": 138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l":
+    0.0453104, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 59", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Folic acid                                 20.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[22].concentration", "stored_value": {"value": "0.02", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q24", "topic": "Pyridoxine hydrochloride
+    — Wolin''s vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference":
+    "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin",
+    "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[2]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "Pyridoxine hydrochloride", "compound_id": 519, "amount": 100, "unit": "mg", "g_l":
+    0.1, "mmol_l": 0.486287, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 60", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Pyridoxine hydrochloride                  100.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[23].concentration", "stored_value": {"value": "0.1", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q25", "topic": "Thiamine HCl — Wolin''s
+    vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[3]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Thiamine HCl", "compound_id": 1207, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.148236, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 61", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Thiamine HCl                               50.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[24].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[24].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q26", "topic": "Riboflavin — Wolin''s
+    vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[4]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "Riboflavin", "compound_id": 136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l":
+    0.132837, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 62", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Riboflavin                                 50.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[25].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[25].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q27", "topic": "Nicotinic acid — Wolin''s
+    vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[5]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "Nicotinic acid", "compound_id": 139, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.406141, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 63", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Nicotinic acid                             50.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[26].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[26].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q28", "topic": "Calcium D-(+)-pantothenate
+    — Wolin''s vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference":
+    "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin",
+    "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[6]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "Calcium D-(+)-pantothenate", "compound_id": 1512, "amount": 50, "unit": "mg",
+    "g_l": 0.05, "mmol_l": 0.209846, "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 64", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Calcium D-(+)-pantothenate                 50.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred. Source
+    explicitly names calcium D-(+)-pantothenate; current CHEBI:31345 stereochemical
+    structure is consistent, despite its generic preferred label.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[27].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.
+    Source explicitly names calcium D-(+)-pantothenate; current CHEBI:31345 stereochemical
+    structure is consistent, despite its generic preferred label."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred. Source explicitly names calcium D-(+)-pantothenate; current
+    CHEBI:31345 stereochemical structure is consistent, despite its generic preferred
+    label."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[27].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred. Source explicitly names calcium D-(+)-pantothenate; current
+    CHEBI:31345 stereochemical structure is consistent, despite its generic preferred
+    label."}]}, {"quantity_id": "q29", "topic": "Vitamin B12 — Wolin''s vitamin solution
+    (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[7]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "Vitamin B12", "compound_id": 18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l":
+    0.00073779, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 65", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Vitamin B12                                 1.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred. Vitamin
+    B12 is a generic source family; no unreported vitamer is selected.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[28].concentration", "stored_value": {"value": "0.001", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred.
+    Vitamin B12 is a generic source family; no unreported vitamer is selected."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred. Vitamin B12 is a generic source family; no unreported vitamer
+    is selected."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[28].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred. Vitamin B12 is a generic source family; no unreported vitamer
+    is selected."}]}, {"quantity_id": "q30", "topic": "p-Aminobenzoic acid — Wolin''s
+    vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[8]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "p-Aminobenzoic acid", "compound_id": 47, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.364591, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 66", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   p-Aminobenzoic acid                        50.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml", "field_path":
+    "ingredients[29].concentration", "stored_value": {"value": "0.05", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "This undiluted source-stock rate is incorrectly
+    exposed as a main-medium ingredient. Preserve the mass/rate inside its exact named
+    stock and restore the receiving-dose link; no final-medium amount is inferred."},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[29].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred."}]}, {"quantity_id": "q31", "topic": "(DL)-alpha-Lipoic acid
+    — Wolin''s vitamin solution (10x)", "source": [{"evidence_id": "api834", "reference":
+    "https://mediadive.dsmz.de/rest/medium/834", "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin",
+    "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[9]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "(DL)-alpha-Lipoic acid", "compound_id": 252, "amount": 50, "unit": "mg", "g_l":
+    0.05, "mmol_l": 0.24233, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 67", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   (DL)-alpha-Lipoic acid                     50.00   mg"}], "decision":
+    "correct", "rationale": "This undiluted source-stock rate is incorrectly exposed
+    as a main-medium ingredient. Preserve the mass/rate inside its exact named stock
+    and restore the receiving-dose link; no final-medium amount is inferred. The source
+    supplies DL-alpha-lipoic acid; nonspecific CHEBI:16494 does not assert an incompatible
+    R-only form.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred. The source supplies DL-alpha-lipoic acid; nonspecific CHEBI:16494
+    does not assert an incompatible R-only form."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred. The source supplies DL-alpha-lipoic acid; nonspecific CHEBI:16494
+    does not assert an incompatible R-only form."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ingredients[30].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This undiluted source-stock
+    rate is incorrectly exposed as a main-medium ingredient. Preserve the mass/rate
+    inside its exact named stock and restore the receiving-dose link; no final-medium
+    amount is inferred. The source supplies DL-alpha-lipoic acid; nonspecific CHEBI:16494
+    does not assert an incompatible R-only form."}]}, {"quantity_id": "q32", "topic":
+    "Missing stock dose: Trace element solution SL-10", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\":
+    \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "solution":
+    "Trace element solution SL-10", "solution_id": 595, "amount": 1, "unit": "ml",
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 10", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Trace element solution SL-10                               1.00        ml"}],
+    "decision": "add", "rationale": "Preserve the exact 1 ml source-batch receiving
+    dose and named stock; the source main final volume is not stated, so no stock-component
+    final-medium rate is manufactured.", "layer_assessments": []}, {"quantity_id":
+    "q33", "topic": "Missing stock dose: Selenite-tungstate solution", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\":
+    \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "solution":
+    "Selenite-tungstate solution", "solution_id": 777, "amount": 1, "unit": "ml",
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, {"evidence_id": "dsm834", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 11", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Selenite-tungstate solution                                1.00        ml"}],
+    "decision": "add", "rationale": "Preserve the exact 1 ml source-batch receiving
+    dose and named stock; the source main final volume is not stated, so no stock-component
+    final-medium rate is manufactured.", "layer_assessments": []}, {"quantity_id":
+    "q34", "topic": "Missing stock dose: Wolin''s vitamin solution (10x)", "source":
+    [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"solution\":
+    \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 11, "solution": "Wolin''s vitamin solution (10x)", "solution_id":
+    5980, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    {"evidence_id": "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 13", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Wolin''s vitamin solution (10x)                             1.00        ml"}],
+    "decision": "add", "rationale": "Preserve the exact 1 ml source-batch receiving
+    dose and named stock; the source main final volume is not stated, so no stock-component
+    final-medium rate is manufactured.", "layer_assessments": []}, {"quantity_id":
+    "q35", "topic": "Missing indicator stock definition/dose", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000498504,\n                        \"mmol_l\":
+    0.00198473,\n                        \"optional\": 0\n                    }",
+    "exact_decoded_object": {"recipe_order": 10, "compound": "Sodium resazurin", "compound_id":
+    1852, "attribute": "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504,
+    "mmol_l": 0.00198473, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 12", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "   Sodium resazurin (0.1% w/v)                                0.50        ml"}],
+    "decision": "add", "rationale": "Preserve 0.50 ml of 0.1% w/v supplied stock,
+    corresponding to 0.0005 g added mass, separately from the provider-normalized
+    main rate. The chemical-form mapping is a separate defect.", "layer_assessments":
+    []}, {"quantity_id": "q36", "topic": "Water input: Main sol. 834", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].recipe[12]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 13, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "add", "rationale": "Retain this exact
+    solvent volume within its named stage. Only SL-10 has a separate explicit make-up-to-final-volume
+    instruction; other water inputs are not automatically final volume.", "layer_assessments":
+    []}, {"quantity_id": "q37", "topic": "Water input: Trace element solution SL-10",
+    "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    990,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "Distilled water", "compound_id": 4, "amount": 990, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "add", "rationale": "Retain this exact
+    solvent volume within its named stage. Only SL-10 has a separate explicit make-up-to-final-volume
+    instruction; other water inputs are not automatically final volume.", "layer_assessments":
+    []}, {"quantity_id": "q38", "topic": "Water input: Selenite-tungstate solution",
+    "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[2].recipe[3]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "add", "rationale": "Retain this exact
+    solvent volume within its named stage. Only SL-10 has a separate explicit make-up-to-final-volume
+    instruction; other water inputs are not automatically final volume.", "layer_assessments":
+    []}, {"quantity_id": "q39", "topic": "Water input: Wolin''s vitamin solution (10x)",
+    "source": [{"evidence_id": "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[3].recipe[10]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "add", "rationale": "Retain this exact
+    solvent volume within its named stage. Only SL-10 has a separate explicit make-up-to-final-volume
+    instruction; other water inputs are not automatically final volume.", "layer_assessments":
+    []}, {"quantity_id": "q40", "topic": "Supported pH", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    vitamins and cysteine), boil medium for 1 min, then cool to room temperature under
+    100% N2 gas atmosphere. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Before inoculation, add vitamins
+    (sterilized by filtration) and cysteine from sterile anoxic stock solution prepared
+    under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.\"\n                    }",
+    "exact_decoded_object": {"step": "Dissolve ingredients (except vitamins and cysteine),
+    boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Before inoculation, add vitamins (sterilized by filtration)
+    and cysteine from sterile anoxic stock solution prepared under 100% N2 gas. Adjust
+    pH of complete medium to 7.0, if necessary."}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF line 21", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "solution prepared under 100% N2 gas. Adjust pH of complete medium to
+    7.0, if necessary."}], "decision": "evidence_only", "rationale": "Retain the supported
+    pH with root evidence and its source stage.", "layer_assessments": [{"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale":
+    "Existing pH 7.0 matches the source complete-medium target; exact measured pH
+    or adjustment reagent is not supplied."}, {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale":
+    "Existing pH 7.0 matches the source complete-medium target; exact measured pH
+    or adjustment reagent is not supplied."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "ph_value", "stored_value": 7.0, "decision": "evidence_only", "rationale":
+    "Existing pH 7.0 matches the source complete-medium target; exact measured pH
+    or adjustment reagent is not supplied."}]}, {"quantity_id": "q41", "topic": "DSM
+    owner main preparation; missing target/KOMODO preparation", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    vitamins and cysteine), boil medium for 1 min, then cool to room temperature under
+    100% N2 gas atmosphere. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Before inoculation, add vitamins
+    (sterilized by filtration) and cysteine from sterile anoxic stock solution prepared
+    under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.\"\n                    }",
+    "exact_decoded_object": {"step": "Dissolve ingredients (except vitamins and cysteine),
+    boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Before inoculation, add vitamins (sterilized by filtration)
+    and cysteine from sterile anoxic stock solution prepared under 100% N2 gas. Adjust
+    pH of complete medium to 7.0, if necessary."}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm834", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF section", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "Dissolve ingredients (except vitamins and cysteine), boil medium for
+    1 min, then cool to\nroom temperature under 100% N2 gas atmosphere. Dispense medium
+    under same gas\natmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Before\ninoculation, add vitamins (sterilized by filtration) and cysteine from
+    sterile anoxic stock\nsolution prepared under 100% N2 gas. Adjust pH of complete
+    medium to 7.0, if necessary."}], "decision": "mixed", "rationale": "Credit the
+    already-correct DSM owner narrative; do not allege every layer lacks preparation.
+    Cysteine stock strength/addition volume is not supplied and is not calculated.",
+    "layer_assessments": [{"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients
+    (except vitamins and cysteine), boil medium for 1 min, then cool to room temperature
+    under 100% N2 gas atmosphere. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Before inoculation, add vitamins
+    (sterilized by filtration) and cysteine from sterile anoxic stock solution prepared
+    under 100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.", "decision":
+    "evidence_only", "rationale": "Existing source narrative correctly retains 1 minute
+    boiling, 100% N2 handling, autoclaving, filtered vitamins, sterile anoxic cysteine
+    stock and final pH. AUTOCLAVE is a broad classifier label; step_number is local
+    ordering."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "preparation_steps[0].action", "stored_value": "AUTOCLAVE", "decision":
+    "evidence_only", "rationale": "Existing source narrative correctly retains 1 minute
+    boiling, 100% N2 handling, autoclaving, filtered vitamins, sterile anoxic cysteine
+    stock and final pH. AUTOCLAVE is a broad classifier label; step_number is local
+    ordering."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "preparation_steps[0].step_number", "stored_value": 1, "decision":
+    "evidence_only", "rationale": "Existing source narrative correctly retains 1 minute
+    boiling, 100% N2 handling, autoclaving, filtered vitamins, sterile anoxic cysteine
+    stock and final pH. AUTOCLAVE is a broad classifier label; step_number is local
+    ordering."}, {"path": "data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Target/KOMODO layer lacks the source preparation retained by the DSM owner; reconcile
+    exact provenance and source identity before regeneration.", "missing": true},
+    {"path": "data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Target/KOMODO layer lacks the source preparation retained by the DSM owner; reconcile
+    exact provenance and source identity before regeneration.", "missing": true}]},
+    {"quantity_id": "q42", "topic": "DSM owner SL-10 preparation", "source": [{"evidence_id":
+    "api834", "reference": "https://mediadive.dsmz.de/rest/medium/834", "raw_path":
+    "REVIEW_WORK/batch066/source01-03/api834.bin", "raw_sha256": "5c3be8d72b21962db6e16a490b53b51fa8a18b3710f47796828a7b3f89d56a72",
+    "locator": "$.data.solutions[1].steps[0]", "accessed_at": "2026-10-28T12:04:10.180404Z",
+    "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl,
+    then dilute in water, add and dissolve the other salts. Finally make up to 1000.00
+    ml.\"\n                    }", "exact_decoded_object": {"step": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml."}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm834",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium834.pdf",
+    "raw_path": "REVIEW_WORK/batch066/source01-03/dsm834.bin", "raw_sha256": "0e9dfee15d9599dbb5e09745ccbac8a7485798dc9f2756680b3b73d1d4e4b02a",
+    "locator": "Exact visually checked PDF section", "accessed_at": "2026-10-28T12:04:10.299536Z",
+    "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally\nmake up to 1000.00 ml."}], "decision": "evidence_only",
+    "rationale": "Retain stock-specific instruction and root evidence. The acid-percent
+    basis remains unspecified.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "preparation_steps[1].description", "stored_value": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml.", "decision": "evidence_only", "rationale": "Existing stock
+    preparation and final 1000 ml agree; explicitly associate this instruction with
+    SL-10 rather than main-medium final volume."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "preparation_steps[1].action", "stored_value": "DISSOLVE", "decision":
+    "evidence_only", "rationale": "Existing stock preparation and final 1000 ml agree;
+    explicitly associate this instruction with SL-10 rather than main-medium final
+    volume."}, {"path": "data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml",
+    "field_path": "preparation_steps[1].step_number", "stored_value": 2, "decision":
+    "evidence_only", "rationale": "Existing stock preparation and final 1000 ml agree;
+    explicitly associate this instruction with SL-10 rather than main-medium final
+    volume."}]}]'
+- assessment_id: a4
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: All current primary/secondary slots were compared to fresh OLS canonical
+    objects and exact packaged MIM rows. Sodium-resazurin and nickel-hexahydrate mismatches
+    are confirmed. CHEBI:91248 is specifically monohydrate; CHEBI:31345 has stereochemistry
+    consistent with source D-(+)-pantothenate; CHEBI:16494 is nonstereospecific rather
+    than R-only. Vitamin B12 remains the generic source family. MAPPED and REJECTED
+    aliases are retained as current catalog observations, not historical validity
+    judgments.
+  target_ids:
+  - CultureMech:006626
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: Five full selected historical reports, both exact selected plan rows and
+    the archive exact parent/child row were read. Current API834 raw bytes and both
+    reports’ 40 source objects each are independently joined; the old KOMODO catalog
+    bytes/access event are not recovered. Malformed .fZ and naive historical timestamps
+    remain original evidence, with append-only correction proposed.
+  target_ids:
+  - CultureMech:006626
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a6
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:006626
+  evidence_ids:
+  - local-target
+- assessment_id: a7
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:006626
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-006626-restore-three-separate-stock-formulations
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore three separate stock formulations
+  description: Nine SL-10, three selenite-tungstate and ten Wolin 10x components appear
+    as direct main ingredients in every layer at undiluted stock rates. The exact
+    source adds 1 ml of each stock and 0.50 ml of 0.1% w/v indicator; all stock and
+    main water inputs are unrepresented. Current provider main-stage g_l supports
+    the existing nine main rows and is not replaced by a guessed final litre.
+  target_ids:
+  - CultureMech:006626
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - dsm834
+  - api834
+  - quantities
+  - writer-mediadive
+  rule_id: custom-stock-stage-and-solvent
+  native_severity: P2
+  normalization_reason: 'Major: 22 stock-strength concentrations are represented at
+    the wrong solution stage. Equal g/L units do not make stock and main-medium denominators
+    interchangeable; this is a custom topology rule.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-006626-correct-supplied-sodium-and-hydrated-nickel-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Correct supplied sodium and hydrated nickel forms
+  description: The primary/API sodium-resazurin stock is linked to neutral CHEBI:8806,
+    and nickel chloride hexahydrate is linked in both slots to anhydrous CHEBI:34887.
+    These accessions resolve but denote different supplied forms. Other exact hydrate
+    identities are supported, including L-cysteine hydrochloride monohydrate; source
+    calcium D-(+)-pantothenate and DL-lipoic acid are not silently replaced by generic
+    different materials.
+  target_ids:
+  - CultureMech:006626
+  field_paths:
+  - ingredients[7].term
+  - ingredients[16].term
+  - ingredients[16].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm834
+  - api834
+  - chebi8806
+  - chebi34887
+  - chebi91248
+  - chebi31345
+  - chebi16494
+  - grounding
+  rule_id: custom-supplied-form-correspondence
+  native_severity: P2
+  normalization_reason: 'Major: resolvable ontology identities mismatch the explicitly
+    supplied salt/hydrate. Native invalid-ID rule P2.2 is not claimed.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-006626-preserve-anoxic-preparation-across-source-specific-layers
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preserve anoxic preparation across source-specific layers
+  description: 'The selected target and KOMODO owner omit the primary preparation
+    and retain Aerobic: Yes. The DSM owner already contains the correct N2/anoxic
+    main preparation and SL-10 instruction. Current resolver does not copy preparation_steps;
+    current merge compatibility rejects differing scientific preparation/notes rather
+    than blindly collapsing equal ingredient lists. Present code does not prove historical
+    causation.'
+  target_ids:
+  - CultureMech:006626
+  field_paths:
+  - notes
+  - preparation_steps
+  - parent_media
+  - variant_relationship
+  - data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml::notes
+  - data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml::preparation_steps
+  - data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml::preparation_steps
+  evidence_ids:
+  - dsm834
+  - api834
+  - owner-1
+  - owner-2
+  - quantities
+  - writer-resolver
+  - writer-komodo
+  - writer-merge
+  - writer-formulation
+  - historical-reader
+  rule_id: custom-source-preparation-and-merge-scope
+  native_severity: P2
+  normalization_reason: 'Major: generated and KOMODO layers lose the complete source
+    preparation and expose contradictory atmosphere metadata. The DSM owner is explicitly
+    credited; the custom rule is narrower than a generic missing-step score.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-006626-preserve-and-qualify-historical-event-metadata
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preserve and qualify historical event metadata
+  description: KOMODO import events contain a literal .fZ timestamp and resolver events
+    omit a UTC offset. Historical concentration reports preserve unresolved claims
+    and exact source mappings, but are not independent proof of those historical retrieval
+    events. All local concentrations and preparation claims also lack attached exact
+    source linkage; fresh evidence must be added at supported ingredient/root slots.
+    Both October 7 reports left topology and variant claims unresolved; their current
+    raw-object matches do not establish a completed historical scientific review.
+  target_ids:
+  - CultureMech:006626
+  field_paths:
+  - data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml::curation_history[0].timestamp
+  - data/merge_yaml/merged/COPROTHERMOBACTER_PLATENSIS_MEDIUM.yaml::curation_history[1].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml::curation_history[1].timestamp
+  evidence_ids:
+  - history
+  - historical-reader
+  - writer-komodo
+  rule_id: custom-event-metadata-provenance
+  native_severity: P3
+  normalization_reason: 'Minor: malformed or timezone-unspecified historical event
+    metadata limits auditability without changing any recipe quantity; native P4.4
+    only covers a one-event history and is not invoked.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Restore each named stock composition and exact source-batch receiving
+    dose, indicator attribute/dose, water stage and BD Bacto attributes. Remove undiluted
+    stock rates from direct-medium interpretation. Retain source-supported main provider
+    rates with explicit basis; do not infer final volume or calculate an unstated
+    acid-percent conversion.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006626
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Verify and use the exact sodium-resazurin and nickel-hexahydrate identifiers/canonical
+    labels in maintained inputs, preserving supported masses and stage decisions.
+    Keep other supported forms, including monohydrate and source stereochemical descriptions;
+    current MIM aliases alone do not override primary form.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006626
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: Preserve the already-correct DSM owner preparation and add exact root
+    source evidence. Reconcile the KOMODO aerobic flag and missing preparation against
+    the exact accession source before any regenerated merge; retain unresolved original
+    metadata as qualified provenance instead of silently overwriting it. Do not force
+    a merge based only on ingredient signature.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006626
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Retain every original event byte-for-byte. If authoritative provenance
+    is recovered, append a verified correction or context event; never invent or overwrite
+    its timestamp. Link fresh source evidence separately and preserve unresolved accession
+    limitations.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006626
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_834_COPROTHERMOBACTER_PLATENSIS_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/coprothermobacter_platensis_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Every original history event remains byte-preserved; any verified new context
+    is appended with exact provenance.
+  - Fresh ingredient/root evidence names exact source stage, field, quotation and
+    retrieval; the KOMODO403 branch remains explicitly unresolved until actually recovered.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Exact report-linked KOMODO detail/catalog routes returned 403; historical mapping
+  remains derivative. Review is partial for that accession branch, despite successful
+  DSM primary/provider access.
+- Provider main volume 1003 ml and g_l are declared normalization metadata, not proof
+  of measured final volume. Primary 1000 ml water plus source additions does not authorize
+  a replacement denominator.
+- Primary HCl 25% lacks a percent basis; unused provider mmol_l conversions are not
+  validated. Selenite/vitamin water inputs are not explicit final make-up instructions.
+  Cysteine stock strength and addition volume remain unknown.
+- No growth temperature, strain response or biological performance is inferred from
+  the source title, generic bacterial category or provider equipment. Native reference
+  checking performed zero checks.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
+```
