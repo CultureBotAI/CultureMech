@@ -1,0 +1,3256 @@
+# Caldinitratiruptor medium: mineral-stock scope and generated-record review
+
+- Review: 20261028T054423Z-culturemech-004013-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T05:40:06.057016Z
+- Finished UTC: 2026-10-28T05:44:23.022207Z
+- Reviewer: OpenAI Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+DSMZ1251 identity and all four native checks are supported. Four major findings concern mineral-stock scope, stale generated values, preparation stages and nickel hydration; two minor findings concern legacy nitrate linkage and source/history provenance. KOMODO catalog access remains unavailable.
+
+## Scope And Provenance
+
+One entire generated record and both exact maintained owners; all72 existing concentration fields,29 source rows, both preparation paragraphs, identifiers, history and current writers.
+
+Selection: Batch057 item10; Python-sorted uncovered paths from successful native lists. 493 of6325 paths covered at selection; base9ea7ff33d354e37b791df96a880005153e446ce3.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:004013 | data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml | generated | CALDINITRATIRUPTOR MEDIUM |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:004013 | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | passed | True | CultureMech:004013 | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch057/record10/strict.tsv |
+| validate-terms | passed | True | CultureMech:004013 | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | passed | True | CultureMech:004013 | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+| Manual embedded history assessment | passed | False | CultureMech:004013 | All embedded history entries read; malformed and timezone-absent KOMODO entries retained as provenance observations. Standalone history-tree validator does not target these embedded entries. |
+
+## Scientific And Domain Assessments
+
+### Source identity and generated ownership
+
+identity: supported. Targets: CultureMech:004013.
+
+DSMZ1251 and both maintained owners resolve exactly; fresh KOMODO catalog access is unavailable.
+
+Historical exact KOMODO1251 HTML row points to the same DSMZ1251 PDF. It supports the old cross-reference only; no current catalog response was obtained. All reciprocal parent/child paths and IDs resolve locally. iModulonDB is not applicable: no gene, locus or expression module claim. The similarly named organism is not a demonstrated growth target.
+
+### Full concentration census and source stages
+
+evidence: concern. Targets: CultureMech:004013.
+
+72 existing fields assessed:31 evidence_only and41 conflict;29 source recipe rows retained.
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "ingredient": "NH4Cl", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-0"], "source_matches": [{"locator": "$.data.solutions[0].recipe[0]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 18.6951, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "ingredient": "KH2PO4", "existing": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-1"], "source_matches": [{"locator": "$.data.solutions[0].recipe[1]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 2.2045, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "ingredient": "K2HPO4", "existing": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-2"], "source_matches": [{"locator": "$.data.solutions[0].recipe[2]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "ingredient": "KCl", "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[3]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 4, "compound": "KCl", "compound_id": 61, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 1.34138, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "ingredient": "NaCl", "existing": {"value": "2.0", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-0-4", "q-1-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[4]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 5, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"locator": "$.data.solutions[1].recipe[3]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 4, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Generated value is the old sum of same-named main and stock concentrations. Distinct source stages cannot be added at stock strength. Both maintained owners already restore the reported main-row value; that repair does not restore the separate stock contribution.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "ingredient": "NaNO3", "existing": {"value": "1.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-5"], "source_matches": [{"locator": "$.data.solutions[0].recipe[5]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 6, "compound": "NaNO3", "compound_id": 187, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 17.6481, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "ingredient": "CaCl2 x 2 H2O", "existing": {"value": "0.2", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-0-6", "q-1-6"], "source_matches": [{"locator": "$.data.solutions[0].recipe[6]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}, {"locator": "$.data.solutions[1].recipe[6]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Generated value is the old sum of same-named main and stock concentrations. Distinct source stages cannot be added at stock strength. Both maintained owners already restore the reported main-row value; that repair does not restore the separate stock contribution.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "ingredient": "MgCl2 x 6 H2O", "existing": {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-7"], "source_matches": [{"locator": "$.data.solutions[0].recipe[7]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 8, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.45938, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "ingredient": "Yeast extract", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-9"], "source_matches": [{"locator": "$.data.solutions[0].recipe[9]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 10, "compound": "Yeast extract", "compound_id": 16, "amount": 1, "unit": "g", "g_l": 1, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "ingredient": "Na2CO3", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-10"], "source_matches": [{"locator": "$.data.solutions[0].recipe[10]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 11, "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 9.43503, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "ingredient": "D-Glucose", "existing": {"value": "3.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-11"], "source_matches": [{"locator": "$.data.solutions[0].recipe[11]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 12, "compound": "D-Glucose", "compound_id": 211, "amount": 3.5, "unit": "g", "g_l": 3.5, "mmol_l": 19.4272, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "ingredient": "Nitrilotriacetic acid", "existing": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-0"], "source_matches": [{"locator": "$.data.solutions[1].recipe[0]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 1, "compound": "Nitrilotriacetic acid", "compound_id": 189, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.84765, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "ingredient": "MgSO4 x 7 H2O", "existing": {"value": "3", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-1"], "source_matches": [{"locator": "$.data.solutions[1].recipe[1]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 2, "compound": "MgSO4 x 7 H2O", "compound_id": 8, "amount": 3, "unit": "g", "g_l": 3, "mmol_l": 12.1716, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "ingredient": "MnSO4 x H2O", "existing": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-2"], "source_matches": [{"locator": "$.data.solutions[1].recipe[2]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 3, "compound": "MnSO4 x H2O", "compound_id": 14, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.9583, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "ingredient": "FeSO4 x 7 H2O", "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-4"], "source_matches": [{"locator": "$.data.solutions[1].recipe[4]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 5, "compound": "FeSO4 x 7 H2O", "compound_id": 12, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.359693, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "ingredient": "CoSO4 x 7 H2O", "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-5"], "source_matches": [{"locator": "$.data.solutions[1].recipe[5]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 6, "compound": "CoSO4 x 7 H2O", "compound_id": 198, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 1.16132, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "ingredient": "ZnSO4 x 7 H2O", "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-7"], "source_matches": [{"locator": "$.data.solutions[1].recipe[7]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 8, "compound": "ZnSO4 x 7 H2O", "compound_id": 35, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 0.625954, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "ingredient": "CuSO4 x 5 H2O", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-8"], "source_matches": [{"locator": "$.data.solutions[1].recipe[8]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 9, "compound": "CuSO4 x 5 H2O", "compound_id": 121, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0400503, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "ingredient": "AlK(SO4)2 x 12 H2O", "existing": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-9"], "source_matches": [{"locator": "$.data.solutions[1].recipe[9]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 10, "compound": "AlK(SO4)2 x 12 H2O", "compound_id": 908, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0421596, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "ingredient": "H3BO3", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-10"], "source_matches": [{"locator": "$.data.solutions[1].recipe[10]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 11, "compound": "H3BO3", "compound_id": 37, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.161708, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "ingredient": "Na2MoO4 x 2 H2O", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-11"], "source_matches": [{"locator": "$.data.solutions[1].recipe[11]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 12, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0413309, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "ingredient": "NiCl2 x 6 H2O", "existing": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-12"], "source_matches": [{"locator": "$.data.solutions[1].recipe[12]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 13, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.231483, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "ingredient": "Na2SeO3 x 5 H2O", "existing": {"value": "0.0003", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-13"], "source_matches": [{"locator": "$.data.solutions[1].recipe[13]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 14, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 0.3, "unit": "mg", "g_l": 0.0003, "mmol_l": 0.00114062, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "ingredient": "Na2WO4 x 2 H2O", "existing": {"value": "0.0004", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-14"], "source_matches": [{"locator": "$.data.solutions[1].recipe[14]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 15, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 0.4, "unit": "mg", "g_l": 0.0004, "mmol_l": 0.00121267, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[0].concentration", "ingredient": "NH4Cl", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-0"], "source_matches": [{"locator": "$.data.solutions[0].recipe[0]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 18.6951, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[1].concentration", "ingredient": "KH2PO4", "existing": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-1"], "source_matches": [{"locator": "$.data.solutions[0].recipe[1]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 2.2045, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[2].concentration", "ingredient": "K2HPO4", "existing": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-2"], "source_matches": [{"locator": "$.data.solutions[0].recipe[2]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[3].concentration", "ingredient": "KCl", "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[3]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 4, "compound": "KCl", "compound_id": 61, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 1.34138, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[4].concentration", "ingredient": "NaCl", "existing": {"value": "1.0", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-4", "q-1-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[4]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 5, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"locator": "$.data.solutions[1].recipe[3]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 4, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water. This compound also occurs in the mineral stock; restore that separate scoped stock row rather than treating this main value as the complete total or collapsing the two stages.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[5].concentration", "ingredient": "NaNO3", "existing": {"value": "1.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-5"], "source_matches": [{"locator": "$.data.solutions[0].recipe[5]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 6, "compound": "NaNO3", "compound_id": 187, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 17.6481, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[6].concentration", "ingredient": "CaCl2 x 2 H2O", "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-6", "q-1-6"], "source_matches": [{"locator": "$.data.solutions[0].recipe[6]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}, {"locator": "$.data.solutions[1].recipe[6]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water. This compound also occurs in the mineral stock; restore that separate scoped stock row rather than treating this main value as the complete total or collapsing the two stages.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[7].concentration", "ingredient": "MgCl2 x 6 H2O", "existing": {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-7"], "source_matches": [{"locator": "$.data.solutions[0].recipe[7]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 8, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.45938, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[8].concentration", "ingredient": "Yeast extract", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-9"], "source_matches": [{"locator": "$.data.solutions[0].recipe[9]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 10, "compound": "Yeast extract", "compound_id": 16, "amount": 1, "unit": "g", "g_l": 1, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[9].concentration", "ingredient": "Na2CO3", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-10"], "source_matches": [{"locator": "$.data.solutions[0].recipe[10]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 11, "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 9.43503, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[10].concentration", "ingredient": "D-Glucose", "existing": {"value": "3.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-11"], "source_matches": [{"locator": "$.data.solutions[0].recipe[11]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 12, "compound": "D-Glucose", "compound_id": 211, "amount": 3.5, "unit": "g", "g_l": 3.5, "mmol_l": 19.4272, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[11].concentration", "ingredient": "Nitrilotriacetic acid", "existing": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-0"], "source_matches": [{"locator": "$.data.solutions[1].recipe[0]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 1, "compound": "Nitrilotriacetic acid", "compound_id": 189, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.84765, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[12].concentration", "ingredient": "MgSO4 x 7 H2O", "existing": {"value": "3", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-1"], "source_matches": [{"locator": "$.data.solutions[1].recipe[1]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 2, "compound": "MgSO4 x 7 H2O", "compound_id": 8, "amount": 3, "unit": "g", "g_l": 3, "mmol_l": 12.1716, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[13].concentration", "ingredient": "MnSO4 x H2O", "existing": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-2"], "source_matches": [{"locator": "$.data.solutions[1].recipe[2]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 3, "compound": "MnSO4 x H2O", "compound_id": 14, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.9583, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[14].concentration", "ingredient": "FeSO4 x 7 H2O", "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-4"], "source_matches": [{"locator": "$.data.solutions[1].recipe[4]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 5, "compound": "FeSO4 x 7 H2O", "compound_id": 12, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.359693, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[15].concentration", "ingredient": "CoSO4 x 7 H2O", "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-5"], "source_matches": [{"locator": "$.data.solutions[1].recipe[5]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 6, "compound": "CoSO4 x 7 H2O", "compound_id": 198, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 1.16132, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[16].concentration", "ingredient": "ZnSO4 x 7 H2O", "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-7"], "source_matches": [{"locator": "$.data.solutions[1].recipe[7]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 8, "compound": "ZnSO4 x 7 H2O", "compound_id": 35, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 0.625954, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[17].concentration", "ingredient": "CuSO4 x 5 H2O", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-8"], "source_matches": [{"locator": "$.data.solutions[1].recipe[8]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 9, "compound": "CuSO4 x 5 H2O", "compound_id": 121, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0400503, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[18].concentration", "ingredient": "AlK(SO4)2 x 12 H2O", "existing": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-9"], "source_matches": [{"locator": "$.data.solutions[1].recipe[9]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 10, "compound": "AlK(SO4)2 x 12 H2O", "compound_id": 908, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0421596, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[19].concentration", "ingredient": "H3BO3", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-10"], "source_matches": [{"locator": "$.data.solutions[1].recipe[10]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 11, "compound": "H3BO3", "compound_id": 37, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.161708, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[20].concentration", "ingredient": "Na2MoO4 x 2 H2O", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-11"], "source_matches": [{"locator": "$.data.solutions[1].recipe[11]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 12, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0413309, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[21].concentration", "ingredient": "NiCl2 x 6 H2O", "existing": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-12"], "source_matches": [{"locator": "$.data.solutions[1].recipe[12]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 13, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.231483, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[22].concentration", "ingredient": "Na2SeO3 x 5 H2O", "existing": {"value": "0.0003", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-13"], "source_matches": [{"locator": "$.data.solutions[1].recipe[13]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 14, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 0.3, "unit": "mg", "g_l": 0.0003, "mmol_l": 0.00114062, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml", "field_path": "ingredients[23].concentration", "ingredient": "Na2WO4 x 2 H2O", "existing": {"value": "0.0004", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-14"], "source_matches": [{"locator": "$.data.solutions[1].recipe[14]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 15, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 0.4, "unit": "mg", "g_l": 0.0004, "mmol_l": 0.00121267, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[0].concentration", "ingredient": "NH4Cl", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-0"], "source_matches": [{"locator": "$.data.solutions[0].recipe[0]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 18.6951, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[1].concentration", "ingredient": "KH2PO4", "existing": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-1"], "source_matches": [{"locator": "$.data.solutions[0].recipe[1]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 2.2045, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[2].concentration", "ingredient": "K2HPO4", "existing": {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-2"], "source_matches": [{"locator": "$.data.solutions[0].recipe[2]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[3].concentration", "ingredient": "KCl", "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[3]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 4, "compound": "KCl", "compound_id": 61, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 1.34138, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[4].concentration", "ingredient": "NaCl", "existing": {"value": "1.0", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-4", "q-1-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[4]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 5, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"locator": "$.data.solutions[1].recipe[3]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 4, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water. This compound also occurs in the mineral stock; restore that separate scoped stock row rather than treating this main value as the complete total or collapsing the two stages.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[5].concentration", "ingredient": "NaNO3", "existing": {"value": "1.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-5"], "source_matches": [{"locator": "$.data.solutions[0].recipe[5]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 6, "compound": "NaNO3", "compound_id": 187, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 17.6481, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[6].concentration", "ingredient": "CaCl2 x 2 H2O", "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-6", "q-1-6"], "source_matches": [{"locator": "$.data.solutions[0].recipe[6]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}, {"locator": "$.data.solutions[1].recipe[6]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water. This compound also occurs in the mineral stock; restore that separate scoped stock row rather than treating this main value as the complete total or collapsing the two stages.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[7].concentration", "ingredient": "MgCl2 x 6 H2O", "existing": {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-7"], "source_matches": [{"locator": "$.data.solutions[0].recipe[7]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 8, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.45938, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[8].concentration", "ingredient": "Yeast extract", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-9"], "source_matches": [{"locator": "$.data.solutions[0].recipe[9]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 10, "compound": "Yeast extract", "compound_id": 16, "amount": 1, "unit": "g", "g_l": 1, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[9].concentration", "ingredient": "Na2CO3", "existing": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-10"], "source_matches": [{"locator": "$.data.solutions[0].recipe[10]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 11, "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 9.43503, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[10].concentration", "ingredient": "D-Glucose", "existing": {"value": "3.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-11"], "source_matches": [{"locator": "$.data.solutions[0].recipe[11]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 12, "compound": "D-Glucose", "compound_id": 211, "amount": 3.5, "unit": "g", "g_l": 3.5, "mmol_l": 19.4272, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly reported API main-solution g_l. This supports the database-reported main-row concentration, not an independently derived final mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[11].concentration", "ingredient": "Nitrilotriacetic acid", "existing": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-0"], "source_matches": [{"locator": "$.data.solutions[1].recipe[0]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 1, "compound": "Nitrilotriacetic acid", "compound_id": 189, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.84765, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[12].concentration", "ingredient": "MgSO4 x 7 H2O", "existing": {"value": "3", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-1"], "source_matches": [{"locator": "$.data.solutions[1].recipe[1]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 2, "compound": "MgSO4 x 7 H2O", "compound_id": 8, "amount": 3, "unit": "g", "g_l": 3, "mmol_l": 12.1716, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[13].concentration", "ingredient": "MnSO4 x H2O", "existing": {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-2"], "source_matches": [{"locator": "$.data.solutions[1].recipe[2]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 3, "compound": "MnSO4 x H2O", "compound_id": 14, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.9583, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[14].concentration", "ingredient": "FeSO4 x 7 H2O", "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-4"], "source_matches": [{"locator": "$.data.solutions[1].recipe[4]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 5, "compound": "FeSO4 x 7 H2O", "compound_id": 12, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.359693, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[15].concentration", "ingredient": "CoSO4 x 7 H2O", "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-5"], "source_matches": [{"locator": "$.data.solutions[1].recipe[5]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 6, "compound": "CoSO4 x 7 H2O", "compound_id": 198, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 1.16132, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[16].concentration", "ingredient": "ZnSO4 x 7 H2O", "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-7"], "source_matches": [{"locator": "$.data.solutions[1].recipe[7]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 8, "compound": "ZnSO4 x 7 H2O", "compound_id": 35, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 0.625954, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[17].concentration", "ingredient": "CuSO4 x 5 H2O", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-8"], "source_matches": [{"locator": "$.data.solutions[1].recipe[8]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 9, "compound": "CuSO4 x 5 H2O", "compound_id": 121, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0400503, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[18].concentration", "ingredient": "AlK(SO4)2 x 12 H2O", "existing": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-9"], "source_matches": [{"locator": "$.data.solutions[1].recipe[9]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 10, "compound": "AlK(SO4)2 x 12 H2O", "compound_id": 908, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0421596, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[19].concentration", "ingredient": "H3BO3", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-10"], "source_matches": [{"locator": "$.data.solutions[1].recipe[10]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 11, "compound": "H3BO3", "compound_id": 37, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.161708, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[20].concentration", "ingredient": "Na2MoO4 x 2 H2O", "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-11"], "source_matches": [{"locator": "$.data.solutions[1].recipe[11]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 12, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0413309, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[21].concentration", "ingredient": "NiCl2 x 6 H2O", "existing": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-12"], "source_matches": [{"locator": "$.data.solutions[1].recipe[12]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 13, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.231483, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[22].concentration", "ingredient": "Na2SeO3 x 5 H2O", "existing": {"value": "0.0003", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-13"], "source_matches": [{"locator": "$.data.solutions[1].recipe[13]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 14, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 0.3, "unit": "mg", "g_l": 0.0003, "mmol_l": 0.00114062, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+{"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml", "field_path": "ingredients[23].concentration", "ingredient": "Na2WO4 x 2 H2O", "existing": {"value": "0.0004", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-14"], "source_matches": [{"locator": "$.data.solutions[1].recipe[14]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 15, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 0.4, "unit": "mg", "g_l": 0.0004, "mmol_l": 0.00121267, "optional": 0}}], "calculation": "none; directly reported source g_l compared at its own stage", "explanation": "The local direct-medium amount equals a separately reported mineral-stock g_l. Restore the stock compartment and receiving batch addition before deriving any final-medium concentration; no replacement final amount is asserted.", "proposed_amount": "none asserted"}
+
+All source rows: [{"evidence_id": "q-0-0", "locator": "$.data.solutions[0].recipe[0]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 18.6951, "optional": 0}}, {"evidence_id": "q-0-1", "locator": "$.data.solutions[0].recipe[1]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 2.2045, "optional": 0}}, {"evidence_id": "q-0-2", "locator": "$.data.solutions[0].recipe[2]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10, "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}}, {"evidence_id": "q-0-3", "locator": "$.data.solutions[0].recipe[3]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 4, "compound": "KCl", "compound_id": 61, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 1.34138, "optional": 0}}, {"evidence_id": "q-0-4", "locator": "$.data.solutions[0].recipe[4]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 5, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"evidence_id": "q-0-5", "locator": "$.data.solutions[0].recipe[5]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 6, "compound": "NaNO3", "compound_id": 187, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 17.6481, "optional": 0}}, {"evidence_id": "q-0-6", "locator": "$.data.solutions[0].recipe[6]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}, {"evidence_id": "q-0-7", "locator": "$.data.solutions[0].recipe[7]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 8, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.45938, "optional": 0}}, {"evidence_id": "q-0-8", "locator": "$.data.solutions[0].recipe[8]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 9, "solution": "Modified Wolin's mineral solution", "solution_id": 241, "amount": 10, "unit": "ml", "optional": 0}}, {"evidence_id": "q-0-9", "locator": "$.data.solutions[0].recipe[9]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 10, "compound": "Yeast extract", "compound_id": 16, "amount": 1, "unit": "g", "g_l": 1, "optional": 0}}, {"evidence_id": "q-0-10", "locator": "$.data.solutions[0].recipe[10]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 11, "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 9.43503, "optional": 0}}, {"evidence_id": "q-0-11", "locator": "$.data.solutions[0].recipe[11]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 12, "compound": "D-Glucose", "compound_id": 211, "amount": 3.5, "unit": "g", "g_l": 3.5, "mmol_l": 19.4272, "optional": 0}}, {"evidence_id": "q-0-12", "locator": "$.data.solutions[0].recipe[12]", "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 13, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}}, {"evidence_id": "q-1-0", "locator": "$.data.solutions[1].recipe[0]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 1, "compound": "Nitrilotriacetic acid", "compound_id": 189, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.84765, "optional": 0}}, {"evidence_id": "q-1-1", "locator": "$.data.solutions[1].recipe[1]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 2, "compound": "MgSO4 x 7 H2O", "compound_id": 8, "amount": 3, "unit": "g", "g_l": 3, "mmol_l": 12.1716, "optional": 0}}, {"evidence_id": "q-1-2", "locator": "$.data.solutions[1].recipe[2]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 3, "compound": "MnSO4 x H2O", "compound_id": 14, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.9583, "optional": 0}}, {"evidence_id": "q-1-3", "locator": "$.data.solutions[1].recipe[3]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 4, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"evidence_id": "q-1-4", "locator": "$.data.solutions[1].recipe[4]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 5, "compound": "FeSO4 x 7 H2O", "compound_id": 12, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.359693, "optional": 0}}, {"evidence_id": "q-1-5", "locator": "$.data.solutions[1].recipe[5]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 6, "compound": "CoSO4 x 7 H2O", "compound_id": 198, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 1.16132, "optional": 0}}, {"evidence_id": "q-1-6", "locator": "$.data.solutions[1].recipe[6]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}, {"evidence_id": "q-1-7", "locator": "$.data.solutions[1].recipe[7]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 8, "compound": "ZnSO4 x 7 H2O", "compound_id": 35, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 0.625954, "optional": 0}}, {"evidence_id": "q-1-8", "locator": "$.data.solutions[1].recipe[8]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 9, "compound": "CuSO4 x 5 H2O", "compound_id": 121, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0400503, "optional": 0}}, {"evidence_id": "q-1-9", "locator": "$.data.solutions[1].recipe[9]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 10, "compound": "AlK(SO4)2 x 12 H2O", "compound_id": 908, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0421596, "optional": 0}}, {"evidence_id": "q-1-10", "locator": "$.data.solutions[1].recipe[10]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 11, "compound": "H3BO3", "compound_id": 37, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.161708, "optional": 0}}, {"evidence_id": "q-1-11", "locator": "$.data.solutions[1].recipe[11]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 12, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0413309, "optional": 0}}, {"evidence_id": "q-1-12", "locator": "$.data.solutions[1].recipe[12]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 13, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.231483, "optional": 0}}, {"evidence_id": "q-1-13", "locator": "$.data.solutions[1].recipe[13]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 14, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 0.3, "unit": "mg", "g_l": 0.0003, "mmol_l": 0.00114062, "optional": 0}}, {"evidence_id": "q-1-14", "locator": "$.data.solutions[1].recipe[14]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 15, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 0.4, "unit": "mg", "g_l": 0.0004, "mmol_l": 0.00121267, "optional": 0}}, {"evidence_id": "q-1-15", "locator": "$.data.solutions[1].recipe[15]", "solution_id": 241, "solution_name": "Modified Wolin's mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 16, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional": 0}}]
+Two1000 ml water inputs retain source/preparation scope; neither is an explicit final-volume make-up instruction. Main source addition is10 ml of mineral stock241 per listed batch; API main volume1010 ml. Do not silently claim10 ML_PER_L. Stock contains15 solutes, including NaCl and calcium chloride also separately present in main medium. All15 must remain stock-scoped. Main and stock preparation paragraphs have different stages; no inferred incubation or target-organism growth.
+
+### Mineral stock and main-medium boundaries
+
+representation: concern. Targets: CultureMech:004013.
+
+All three records contain13 stock-only solutes as direct ingredients and omit the stock addition; shared NaCl/calcium rows also lose their stock context.
+
+Mineral solution241 has15 solutes;13 occur only in its table, while NaCl and calcium chloride have independent main and stock entries. The generated record sums those two stages at full strength; normalized owners repaired the sums but still omit the stock representation. Current importer correctly restricts direct composition to the primary source solution and produces the named addition. It still treats ml as ML_PER_L, so current behavior is not a complete denominator repair. Do not attribute all-stock flattening to current importer code. Solvent omission from chemical edges alone is not a defect; the original water input and source-volume semantics belong in scoped preparation evidence.
+
+### Exact chemical form and current MIM mapping
+
+grounding: concern. Targets: CultureMech:004013.
+
+All23 primary CHEBI labels resolve, but nickel hexahydrate carries an anhydrous identity; sodium nitrate retains one legacy MIM field.
+
+[{"id": "CHEBI:131361", "label": "disodium selenite pentahydrate", "formula": ["5H2O.2Na.O3Se"], "obsolete": false, "evidence_id": "chebi-131361"}, {"id": "CHEBI:131527", "label": "dipotassium hydrogen phosphate", "formula": ["HO4P.2K"], "obsolete": false, "evidence_id": "chebi-131527"}, {"id": "CHEBI:17634", "label": "D-glucose", "formula": ["C6H12O6"], "obsolete": false, "evidence_id": "chebi-17634"}, {"id": "CHEBI:26710", "label": "sodium chloride", "formula": ["Cl.Na"], "obsolete": false, "evidence_id": "chebi-26710"}, {"id": "CHEBI:29377", "label": "sodium carbonate", "formula": ["CO3.2Na"], "obsolete": false, "evidence_id": "chebi-29377"}, {"id": "CHEBI:31206", "label": "ammonium chloride", "formula": ["Cl.H4N"], "obsolete": false, "evidence_id": "chebi-31206"}, {"id": "CHEBI:31440", "label": "copper(II) sulfate pentahydrate", "formula": ["Cu.5H2O.O4S"], "obsolete": false, "evidence_id": "chebi-31440"}, {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate", "formula": ["7H2O.Mg.O4S"], "obsolete": false, "evidence_id": "chebi-31795"}, {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate", "formula": ["7H2O.O4S.Zn"], "obsolete": false, "evidence_id": "chebi-32312"}, {"id": "CHEBI:32588", "label": "potassium chloride", "formula": ["Cl.K"], "obsolete": false, "evidence_id": "chebi-32588"}, {"id": "CHEBI:33118", "label": "boric acid", "formula": ["H3BO3"], "obsolete": false, "evidence_id": "chebi-33118"}, {"id": "CHEBI:34887", "label": "nickel dichloride", "formula": ["Cl2Ni"], "obsolete": false, "evidence_id": "chebi-34887"}, {"id": "CHEBI:44557", "label": "nitrilotriacetic acid", "formula": ["C6H9NO6"], "obsolete": false, "evidence_id": "chebi-44557"}, {"id": "CHEBI:53542", "label": "nickel chloride hexahydrate", "formula": ["2Cl.6H2O.Ni"], "obsolete": false, "evidence_id": "chebi-53542"}, {"id": "CHEBI:63005", "label": "sodium nitrate", "formula": ["NO3.Na"], "obsolete": false, "evidence_id": "chebi-63005"}, {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate", "formula": ["H2O4P.K"], "obsolete": false, "evidence_id": "chebi-63036"}, {"id": "CHEBI:63939", "label": "sodium tungstate dihydrate", "formula": ["2H2O.2Na.O4W"], "obsolete": false, "evidence_id": "chebi-63939"}, {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate", "formula": ["2H2O.MoO4.2Na"], "obsolete": false, "evidence_id": "chebi-75213"}, {"id": "CHEBI:75836", "label": "iron(2+) sulfate heptahydrate", "formula": ["Fe.7H2O.O4S"], "obsolete": false, "evidence_id": "chebi-75836"}, {"id": "CHEBI:86158", "label": "calcium chloride dihydrate", "formula": ["Ca.2Cl.2H2O"], "obsolete": false, "evidence_id": "chebi-86158"}, {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate", "formula": ["2Cl.6H2O.Mg"], "obsolete": false, "evidence_id": "chebi-86345"}, {"id": "CHEBI:86364", "label": "manganese(II) sulfate monohydrate", "formula": ["H2O.Mn.O4S"], "obsolete": false, "evidence_id": "chebi-86364"}, {"id": "CHEBI:86465", "label": "potassium aluminium sulfate dodecahydrate", "formula": ["Al.12H2O.K.2O4S"], "obsolete": false, "evidence_id": "chebi-86465"}, {"id": "CHEBI:91244", "label": "cobalt(2+) sulfate heptahydrate", "formula": ["Co.7H2O.O4S"], "obsolete": false, "evidence_id": "chebi-91244"}]
+Nickel34887 has formulaCl2Ni, whereas verified53542 has2Cl.6H2O.Ni. The packaged exact NiCl2 x6H2O answer returns53542 with mapping_status REJECTED; preserve this status and independently ground the chemical-form conclusion to fresh OLS. The other asserted hydrate formulae and explicit D-glucose identity agree with source names. Sodium nitrate primary63005 is correct, but MediaIngredientMech:000171 is a legacy local identifier, not a verified current CHEBI-keyed secondary object. Yeast extract is an undefined mixture; its observed FOODON:03315426 package answer was not externally validated as a new proposed grounding.
+
+### Source preparation, pH and organism scope
+
+completeness: concern. Targets: CultureMech:004013.
+
+DSMZ owner retains both paragraphs; main preparation is absent from the generated and KOMODO documents, and stock preparation is at medium level in the DSMZ owner.
+
+The DSMZ owner main paragraph exactly matches source main preparation, including the carbonate/glucose exclusions and distinct gas/sterilization stages; AUTOCLAVE is a keyword label for a multi-action paragraph. Its second paragraph belongs only to mineral stock241. Source main pH7 is retained. Do not move stock pH6.5 to main conditions. COMPLEX/UNDEFINED and LIQUID are consistent with yeast extract and no gelling ingredient. No strain-specific growth, incubation temperature, storage lifetime or optional role annotation is inferred. Empty optional organism/role fields are not negative findings.
+
+### History, evidence and current merge compatibility
+
+provenance: concern. Targets: CultureMech:004013.
+
+The generated target predates normalized amount repairs and current exact formulation logic rejects a two-owner union.
+
+All current ingredient-set hashes coincide; their current73f11749… value is not the stored historicalbf5baf44… value. Formulation hashes differ in notes, parent_media, preparation_steps, variant_children, variant_modifications and variant_relationship. Do not remove these assertions to force a merge. Two October curation reports retain unchanged owner hashes and exact current API digest; all31 source objects per report agree with fresh bytes, which does not authenticate historical access times. September per-final-litre and water-chemical-edge recommendations are not adopted without explicit basis. KOMODO history0 timestamp2026-01-27T01:15:01.fZ is malformed, and history1 timestamp2026-02-03T11:18:56.650983 has no timezone. Preserve the events without inventing corrected instants.
+
+## Findings
+
+### F1: Mineral-stock constituents are represented at direct-medium scope
+
+major / open / confirmed; issue key: CM004013-stock-scope.
+
+All three documents flatten13 stock-only solutes; the complete15-solute stock and its10 ml batch addition are missing. Shared NaCl/calcium entries must be preserved independently at main and stock stages. No explicit final-volume evidence supports silently creating10 ML_PER_L.
+
+### F2: Generated concentrations and preparation lag maintained inputs
+
+major / open / confirmed; issue key: CM004013-stale-merge.
+
+The generated NaCl2.0 and calcium-chloride0.2 G_PER_L values predate the normalized repairs. It also lacks DSMZ main preparation. Current exact formulation comparison rejects owner union; regeneration must respect differing assertions.
+
+### F3: Main preparation is incomplete and stock preparation misplaced
+
+major / open / confirmed; issue key: CM004013-preparation-stage.
+
+KOMODO owner has no preparation; DSMZ owner retains correct main prose but places stock241 dissolution/pH instructions at medium level. Preserve distinct main/stock and supplement stages in future curation.
+
+### F4: Nickel hexahydrate uses an anhydrous ontology identity
+
+major / open / confirmed; issue key: CM004013-nickel-hydrate.
+
+All three ingredient21 primary and CHEBI-keyed secondary terms use34887 despite the explicit hexahydrate source. Fresh53542 identity supports a scoped candidate; package REJECTED status remains visible.
+
+### F5: Sodium nitrate retains a legacy MIM identifier
+
+minor / open / confirmed; issue key: CM004013-legacy-nitrate-link.
+
+Primary sodium nitrate63005 is correct. All three ingredient5 descriptors still use the old MediaIngredientMech:000171 slot; current resolver supplies the CHEBI identity. Preserve the correct primary grounding while modernizing the secondary representation.
+
+### F6: Source claims and malformed history need scoped provenance
+
+minor / open / confirmed; issue key: CM004013-claim-provenance.
+
+Current records lack attached concentration/preparation evidence despite recoverable source claims. Exact KOMODO catalog is inaccessible, and its first two history timestamps are malformed or lack timezone. Preserve historical bytes and add honest provenance.
+
+## Recommended Actions And Acceptance Checks
+
+### A1
+
+Restore exact main/stock membership and receiving batch-dose representation in maintained records.
+
+- Account for all29 source recipe rows and every existing amount; keep15 stock solutes separate from main rows.
+- Retain source10 ml batch addition,1010 ml API reported main volume and1000 ml water input as distinct facts. Explicit final-volume evidence is required before a per-litre conversion.
+- Do not collapse same-name NaCl or calcium entries across compartments; preserve supported main API values.
+- Run four native recipe checks and independent source/quantity comparison after authorized curation.
+
+### A2
+
+Regenerate from curated maintained inputs under current formulation-aware matching.
+
+- Verify repaired main rows, preparation and source lineage in generated output.
+- Do not discard notes, relationships or preparation to force the old two-owner merge.
+- Run just verify-merges and just audit-merge-freshness after authorized regeneration.
+
+### A3
+
+Preserve source-supported main preparation and scope mineral-stock preparation to that stock.
+
+- Credit the existing DSMZ main paragraph; retain all original stage distinctions.
+- Keep stock pH/dissolution instructions off the main-medium stage.
+- Do not infer incubation, temperature, growth or stock strength absent from source; validate schema and references.
+
+### A4
+
+Resolve nickel supplied-form grounding in both maintained owners and the packaged mapping workflow.
+
+- Compare source hexahydrate to current OLS53542 and34887 formulae; assess primary and secondary terms together.
+- Review the exact MIM REJECTED status rather than silently upgrading it; use the snapshot maintenance contract, without hand-editing its immutable CSV.
+- Run term/label checks and regenerate only after approved curation.
+
+### A5
+
+Migrate the sodium-nitrate secondary linkage with the maintained resolver.
+
+- Retain primary63005 and its verified canonical label.
+- Replace the legacy slot only through the authorized mapping workflow; rerun linkage/term and schema checks.
+
+### A6
+
+Attach scoped evidence and preserve unresolved access/history metadata.
+
+- Use ingredient evidence for supported quantity claims and root evidence scoped to solution/preparation paths; do not invent nonexistent nested evidence slots.
+- Retain actual source bytes, access times and historical-report distinction; retry catalog access only when necessary.
+- Keep history append-only; document malformed/unknown timezone values without guessing corrected instants.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| target | data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml; entire file | context_only | Entire document read, including all24 ingredients, source identity, history, relationship fields and preparation where present. No solutions are represented. |
+| owner1 | data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml; entire file | context_only | Entire document read, including all24 ingredients, source identity, history, relationship fields and preparation where present. No solutions are represented. |
+| owner2 | data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml; entire file | context_only | Entire document read, including all24 ingredients, source identity, history, relationship fields and preparation where present. No solutions are represented. |
+| registry | data/culturemech_id_registry.tsv; rows710 and4011 | context_only | CM000711 and CM004013 resolve to the exact maintained DSMZ and KOMODO owners. |
+| schema | src/culturemech/schema/culturemech.yaml; MediaRecipe; IngredientDescriptor; SolutionDescriptor; PreparationStep; evidence and history | context_only | Schema contracts inspected; scoped root evidence is available for solution/preparation claims. These descriptor classes have no nested evidence slot. |
+| importer | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _parse_api_solutions; _parse_preparation_steps; _classify_preparation_action | context_only | Current importer selects main-only composition and a named stock addition; it skips solvent chemical edges. The remaining ml-to-ML_PER_L and concatenated-stock-preparation behaviors require care. |
+| generator | src/culturemech/merge/merger.py; merge_group | context_only | Current merger requires exact formulation compatibility; an old ingredient fingerprint is not authority to force a union. |
+| formulation | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Exact equality preserves preparation, notes and relationship assertions; current owner union rejects six differing formulation keys. |
+| mim-index | src/culturemech/data/mediaingredientmech/label_index.csv; all24 exact descriptor lookups | context_only | All24 labels resolved by maintained exact resolver. Its answers are observed package decisions, not independent supplied-form proof. |
+| mim-metadata | src/culturemech/data/mediaingredientmech/label_index.metadata.json; entire file | context_only | Resolver verifies the packaged snapshot metadata when loading. |
+| mediadive1251 | https://mediadive.dsmz.de/rest/medium/1251; $.data.medium; both full solutions | supports | Exact DSMZ1251 identity, formulation, scoped stock and preparation inspected. DSMZ is the source author; PDF copyright2022, API publication date not supplied. Discovery was the existing accession and source link. |
+| dsm1251 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1251.pdf; pages1–2; main table, mineral stock table and their preparation paragraphs | supports | Exact DSMZ1251 identity, formulation, scoped stock and preparation inspected. DSMZ is the source author; PDF copyright2022, API publication date not supplied. Discovery was the existing accession and source link. |
+| komodo-access | https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList; exact MediaList endpoint | context_only | Current exact catalog request returned HTTP403; historical captured row is corroborating provenance only. |
+| q-0-0 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[0] | supports | NH4Cl; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-1 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[1] | supports | KH2PO4; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-2 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[2] | supports | K2HPO4; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-3 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[3] | supports | KCl; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-4 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[4] | supports | NaCl; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-5 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[5] | supports | NaNO3; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-6 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[6] | supports | CaCl2 x 2 H2O; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-7 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[7] | supports | MgCl2 x 6 H2O; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-8 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[8] | supports | Modified Wolin's mineral solution; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-9 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[9] | supports | Yeast extract; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-10 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[10] | supports | Na2CO3; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-11 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[11] | supports | D-Glucose; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-0-12 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[0].recipe[12] | supports | Distilled water; source solution2483 (Main sol. 1251), reported volume1010 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-0 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[0] | supports | Nitrilotriacetic acid; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-1 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[1] | supports | MgSO4 x 7 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-2 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[2] | supports | MnSO4 x H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-3 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[3] | supports | NaCl; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-4 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[4] | supports | FeSO4 x 7 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-5 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[5] | supports | CoSO4 x 7 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-6 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[6] | supports | CaCl2 x 2 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-7 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[7] | supports | ZnSO4 x 7 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-8 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[8] | supports | CuSO4 x 5 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-9 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[9] | supports | AlK(SO4)2 x 12 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-10 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[10] | supports | H3BO3; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-11 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[11] | supports | Na2MoO4 x 2 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-12 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[12] | supports | NiCl2 x 6 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-13 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[13] | supports | Na2SeO3 x 5 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-14 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[14] | supports | Na2WO4 x 2 H2O; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| q-1-15 | https://mediadive.dsmz.de/rest/medium/1251; $.data.solutions[1].recipe[15] | supports | Distilled water; source solution241 (Modified Wolin's mineral solution), reported volume1000 ml. Original quantity retained at its source stage; no final-medium conversion inferred. |
+| chebi-131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; exact IRI term object | supports | CHEBI:131361: disodium selenite pentahydrate; obsolete=False; formula=['5H2O.2Na.O3Se']. Chemical identity only. |
+| chebi-131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; exact IRI term object | supports | CHEBI:131527: dipotassium hydrogen phosphate; obsolete=False; formula=['HO4P.2K']. Chemical identity only. |
+| chebi-17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; exact IRI term object | supports | CHEBI:17634: D-glucose; obsolete=False; formula=['C6H12O6']. Chemical identity only. |
+| chebi-26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; exact IRI term object | supports | CHEBI:26710: sodium chloride; obsolete=False; formula=['Cl.Na']. Chemical identity only. |
+| chebi-29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; exact IRI term object | supports | CHEBI:29377: sodium carbonate; obsolete=False; formula=['CO3.2Na']. Chemical identity only. |
+| chebi-31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; exact IRI term object | supports | CHEBI:31206: ammonium chloride; obsolete=False; formula=['Cl.H4N']. Chemical identity only. |
+| chebi-31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; exact IRI term object | supports | CHEBI:31440: copper(II) sulfate pentahydrate; obsolete=False; formula=['Cu.5H2O.O4S']. Chemical identity only. |
+| chebi-31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; exact IRI term object | supports | CHEBI:31795: magnesium sulfate heptahydrate; obsolete=False; formula=['7H2O.Mg.O4S']. Chemical identity only. |
+| chebi-32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; exact IRI term object | supports | CHEBI:32312: zinc sulfate heptahydrate; obsolete=False; formula=['7H2O.O4S.Zn']. Chemical identity only. |
+| chebi-32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; exact IRI term object | supports | CHEBI:32588: potassium chloride; obsolete=False; formula=['Cl.K']. Chemical identity only. |
+| chebi-33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; exact IRI term object | supports | CHEBI:33118: boric acid; obsolete=False; formula=['H3BO3']. Chemical identity only. |
+| chebi-34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; exact IRI term object | supports | CHEBI:34887: nickel dichloride; obsolete=False; formula=['Cl2Ni']. Chemical identity only. |
+| chebi-44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; exact IRI term object | supports | CHEBI:44557: nitrilotriacetic acid; obsolete=False; formula=['C6H9NO6']. Chemical identity only. |
+| chebi-53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542; exact IRI term object | supports | CHEBI:53542: nickel chloride hexahydrate; obsolete=False; formula=['2Cl.6H2O.Ni']. Chemical identity only. |
+| chebi-63005 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005; exact IRI term object | supports | CHEBI:63005: sodium nitrate; obsolete=False; formula=['NO3.Na']. Chemical identity only. |
+| chebi-63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; exact IRI term object | supports | CHEBI:63036: potassium dihydrogen phosphate; obsolete=False; formula=['H2O4P.K']. Chemical identity only. |
+| chebi-63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; exact IRI term object | supports | CHEBI:63939: sodium tungstate dihydrate; obsolete=False; formula=['2H2O.2Na.O4W']. Chemical identity only. |
+| chebi-75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; exact IRI term object | supports | CHEBI:75213: sodium molybdate dihydrate; obsolete=False; formula=['2H2O.MoO4.2Na']. Chemical identity only. |
+| chebi-75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; exact IRI term object | supports | CHEBI:75836: iron(2+) sulfate heptahydrate; obsolete=False; formula=['Fe.7H2O.O4S']. Chemical identity only. |
+| chebi-86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; exact IRI term object | supports | CHEBI:86158: calcium chloride dihydrate; obsolete=False; formula=['Ca.2Cl.2H2O']. Chemical identity only. |
+| chebi-86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; exact IRI term object | supports | CHEBI:86345: magnesium dichloride hexahydrate; obsolete=False; formula=['2Cl.6H2O.Mg']. Chemical identity only. |
+| chebi-86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; exact IRI term object | supports | CHEBI:86364: manganese(II) sulfate monohydrate; obsolete=False; formula=['H2O.Mn.O4S']. Chemical identity only. |
+| chebi-86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; exact IRI term object | supports | CHEBI:86465: potassium aluminium sulfate dodecahydrate; obsolete=False; formula=['Al.12H2O.K.2O4S']. Chemical identity only. |
+| chebi-91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; exact IRI term object | supports | CHEBI:91244: cobalt(2+) sulfate heptahydrate; obsolete=False; formula=['Co.7H2O.O4S']. Chemical identity only. |
+| historical-1 | reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/caldinitratiruptor_medium.yaml.md; entire file | context_only | Complete historical report assessed as context, not native coverage. October source digest and31 quoted source objects per curation report match current API bytes; old retrieval times remain historical assertions. Earlier blanket quantity flags and per-litre assumptions are reassessed below. |
+| historical-2 | reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml.md; entire file | context_only | Complete historical report assessed as context, not native coverage. October source digest and31 quoted source objects per curation report match current API bytes; old retrieval times remain historical assertions. Earlier blanket quantity flags and per-litre assumptions are reassessed below. |
+| historical-3 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.md; entire file | context_only | Complete historical report assessed as context, not native coverage. October source digest and31 quoted source objects per curation report match current API bytes; old retrieval times remain historical assertions. Earlier blanket quantity flags and per-litre assumptions are reassessed below. |
+| historical-4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.md; entire file | context_only | Complete historical report assessed as context, not native coverage. October source digest and31 quoted source objects per curation report match current API bytes; old retrieval times remain historical assertions. Earlier blanket quantity flags and per-litre assumptions are reassessed below. |
+| historical-5 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldinitratiruptor_medium.md; entire file | context_only | Complete historical report assessed as context, not native coverage. October source digest and31 quoted source objects per curation report match current API bytes; old retrieval times remain historical assertions. Earlier blanket quantity flags and per-litre assumptions are reassessed below. |
+| historical-6 | reports/yaml_record_review/20260922T021954Z-CALDINITRATIRUPTOR_MEDIUM.md; entire file | context_only | Complete historical report assessed as context, not native coverage. October source digest and31 quoted source objects per curation report match current API bytes; old retrieval times remain historical assertions. Earlier blanket quantity flags and per-litre assumptions are reassessed below. |
+| diagnostics | REVIEW_WORK/batch057/record10/diagnostics.json; entire file | context_only | Maintained read-only MIM, importer and formulation comparisons. Current importer emits11 direct ingredients and one stock addition; current owner formulation union rejects six differing keys. |
+| ownership-search | REVIEW_WORK/batch057/record10/ownership-search-result.json; full argv/output | context_only | Exact maintained paths, IDs and report leads found in ignored-inclusive local search. |
+| validate-schema | REVIEW_WORK/batch057/record10/validate-schema-result.json; full argv/stdout/stderr | context_only | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed |
+| validate-strict | REVIEW_WORK/batch057/record10/validate-strict-result.json; full argv/stdout/stderr | context_only | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch057/record10/strict.tsv |
+| validate-terms | REVIEW_WORK/batch057/record10/validate-terms-result.json; full argv/stdout/stderr | context_only | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed |
+| validate-references | REVIEW_WORK/batch057/record10/validate-references-result.json; full argv/stdout/stderr | context_only | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed |
+
+## Limits And Additional Notes
+
+- Current exact KOMODO catalog request returnedHTTP403. Historical source mapping remains corroborating provenance, not fresh catalog authentication.
+- API g_l is a directly reported field at its solution stage. PDF input-water volumes do not prove final mixed volume; no new dilution, molarity, density or final-medium stock contribution was calculated.
+- The legacy MediaIngredientMech numeric identifier was not authenticated as a current external accession. The observed yeast-extract FOODON mapping is not an externally verified new grounding proposal.
+- Canonical checks target the generated record; maintained owners were read as context. Deterministic validity is not scientific accuracy. Embedded histories were manually assessed; full-corpus ID/product/merge gates were not rerun for this review-only addition.
+- The complete PDF was read through text extraction and API cross-check. No experiment or organism-growth review was performed.
+- All scientific inputs remain unchanged; original native inspect hashes and source/check receipts are retained.
+- Six historical reports were read with complete prose and lossless distinct-cell comparison;62 quoted source-object/literal joins match fresh API. They are not structured coverage and no historical finding is closed.
+- Stock definition is contained in DSMZ1251 itself; the Medium141 cross-reference does not transfer parent-medium formulation or culture claims.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T054423Z-culturemech-004013-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Caldinitratiruptor medium: mineral-stock scope and generated-record review'
+started_at: '2026-10-28T05:40:06.057016Z'
+finished_at: '2026-10-28T05:44:23.022207Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify the assessed scientific records;
+    direct source and exact-input review, without experimental validation.
+skill: review-yaml-record
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ1251 identity and all four native checks are supported. Four major findings
+  concern mineral-stock scope, stale generated values, preparation stages and nickel
+  hydration; two minor findings concern legacy nitrate linkage and source/history
+  provenance. KOMODO catalog access remains unavailable.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml
+    sha256: 1bc754c95a9a99ea6d1bc1cc2e9f4d1488d9288ad77cadaa841cd95752da672d
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    sha256: 3ad2f031f8b1201019ccf11e7901e9e10e2aa87b6a6b062ade4b7fc2deb747e1
+    role: context
+  - path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    sha256: 03ca01fbf420a0bc420b3ca8361ed9da26e84b935efde53db13dcc1f00d64454
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/caldinitratiruptor_medium.yaml.md
+    sha256: e735781f17a0aade431e990466f2832bd06aac97af390cded6e3cef415191381
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml.md
+    sha256: 5f88266726090c14f150e6b2f3dd6c23537d4b1e82c2c7f03992aadb3297b19c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.md
+    sha256: 5fb06208ffea3a6740eacdb9cb24bd75b789a229f000fa95e8602e7311554f1e
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.md
+    sha256: 978c4af27975c143056561fd1dc1b4485f963d804941b4ae1a06a2874512637c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldinitratiruptor_medium.md
+    sha256: ec0c6d7ee155f9c2316a18cb45099534c1c374f4e05ebdaffe3cfe36def4aabe
+    role: context
+  - path: reports/yaml_record_review/20260922T021954Z-CALDINITRATIRUPTOR_MEDIUM.md
+    sha256: b9b770efdef1e4f0fe163946b6ee24f73771e09d76a5f5da319fc2ac52eb3da0
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One entire generated record and both exact maintained owners; all72
+    existing concentration fields,29 source rows, both preparation paragraphs, identifiers,
+    history and current writers.
+  selection: Batch057 item10; Python-sorted uncovered paths from successful native
+    lists. 493 of6325 paths covered at selection; base9ea7ff33d354e37b791df96a880005153e446ce3.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:004013
+  exclusions:
+  - target: Other medium variants, organisms and strain-specific growth
+    reason: No formulation, incubation or growth assertion transferred from names
+      or related media.
+targets:
+- target_id: CultureMech:004013
+  path: data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml
+  label: CALDINITRATIRUPTOR MEDIUM
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merger.py
+    role: generated merge implementation
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml
+    --out REVIEW_WORK/batch057/record10/strict.tsv --workers 1
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch057/record10/strict.tsv"
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - validate-references
+- check_id: embedded-history
+  name: Manual embedded history assessment
+  required: false
+  status: passed
+  summary: All embedded history entries read; malformed and timezone-absent KOMODO
+    entries retained as provenance observations. Standalone history-tree validator
+    does not target these embedded entries.
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Entire document read, including all24 ingredients, source identity, history,
+    relationship fields and preparation where present. No solutions are represented.
+  locator: entire file
+  snapshot_sha256: 1bc754c95a9a99ea6d1bc1cc2e9f4d1488d9288ad77cadaa841cd95752da672d
+- evidence_id: owner1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Entire document read, including all24 ingredients, source identity, history,
+    relationship fields and preparation where present. No solutions are represented.
+  locator: entire file
+  snapshot_sha256: 03ca01fbf420a0bc420b3ca8361ed9da26e84b935efde53db13dcc1f00d64454
+- evidence_id: owner2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Entire document read, including all24 ingredients, source identity, history,
+    relationship fields and preparation where present. No solutions are represented.
+  locator: entire file
+  snapshot_sha256: 3ad2f031f8b1201019ccf11e7901e9e10e2aa87b6a6b062ade4b7fc2deb747e1
+- evidence_id: registry
+  kind: record_content
+  reference: data/culturemech_id_registry.tsv
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: CM000711 and CM004013 resolve to the exact maintained DSMZ and KOMODO owners.
+  locator: rows710 and4011
+  snapshot_sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+- evidence_id: schema
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Schema contracts inspected; scoped root evidence is available for solution/preparation
+    claims. These descriptor classes have no nested evidence slot.
+  locator: MediaRecipe; IngredientDescriptor; SolutionDescriptor; PreparationStep;
+    evidence and history
+  snapshot_sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Current importer selects main-only composition and a named stock addition;
+    it skips solvent chemical edges. The remaining ml-to-ML_PER_L and concatenated-stock-preparation
+    behaviors require care.
+  locator: _parse_api_composition; _parse_api_solutions; _parse_preparation_steps;
+    _classify_preparation_action
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: generator
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Current merger requires exact formulation compatibility; an old ingredient
+    fingerprint is not authority to force a union.
+  locator: merge_group
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Exact equality preserves preparation, notes and relationship assertions;
+    current owner union rejects six differing formulation keys.
+  locator: formulation_content; merge_formulation_evidence
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: mim-index
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: All24 labels resolved by maintained exact resolver. Its answers are observed
+    package decisions, not independent supplied-form proof.
+  locator: all24 exact descriptor lookups
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-metadata
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Resolver verifies the packaged snapshot metadata when loading.
+  locator: entire file
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: mediadive1251
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Exact DSMZ1251 identity, formulation, scoped stock and preparation inspected.
+    DSMZ is the source author; PDF copyright2022, API publication date not supplied.
+    Discovery was the existing accession and source link.
+  locator: $.data.medium; both full solutions
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+- evidence_id: dsm1251
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1251.pdf
+  accessed_at: '2026-10-28T05:40:18.873219Z'
+  support: supports
+  summary: Exact DSMZ1251 identity, formulation, scoped stock and preparation inspected.
+    DSMZ is the source author; PDF copyright2022, API publication date not supplied.
+    Discovery was the existing accession and source link.
+  locator: pages1–2; main table, mineral stock table and their preparation paragraphs
+  snapshot_sha256: a7e2e604991deb6a2088b1acd88b4b7a2d3401cc6bb9ad91be03f7a53501ac8e
+- evidence_id: komodo-access
+  kind: search
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  accessed_at: '2026-10-28T05:40:18.062955Z'
+  support: context_only
+  summary: Current exact catalog request returned HTTP403; historical captured row
+    is corroborating provenance only.
+  locator: exact MediaList endpoint
+  search_scope: One exact KOMODO MediaList request; no current text obtained. This
+    is bounded access failure, not global absence.
+- evidence_id: q-0-0
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: NH4Cl; source solution2483 (Main sol. 1251), reported volume1010 ml. Original
+    quantity retained at its source stage; no final-medium conversion inferred.
+  locator: $.data.solutions[0].recipe[0]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1,\n                        \"unit\": \"g\",\n             \
+    \           \"g_l\": 1"
+- evidence_id: q-0-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: KH2PO4; source solution2483 (Main sol. 1251), reported volume1010 ml. Original
+    quantity retained at its source stage; no final-medium conversion inferred.
+  locator: $.data.solutions[0].recipe[1]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.3,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.3"
+- evidence_id: q-0-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: K2HPO4; source solution2483 (Main sol. 1251), reported volume1010 ml. Original
+    quantity retained at its source stage; no final-medium conversion inferred.
+  locator: $.data.solutions[0].recipe[2]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.3,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.3"
+- evidence_id: q-0-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: KCl; source solution2483 (Main sol. 1251), reported volume1010 ml. Original
+    quantity retained at its source stage; no final-medium conversion inferred.
+  locator: $.data.solutions[0].recipe[3]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.1,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.1"
+- evidence_id: q-0-4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: NaCl; source solution2483 (Main sol. 1251), reported volume1010 ml. Original
+    quantity retained at its source stage; no final-medium conversion inferred.
+  locator: $.data.solutions[0].recipe[4]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1,\n                        \"unit\": \"g\",\n             \
+    \           \"g_l\": 1"
+- evidence_id: q-0-5
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: NaNO3; source solution2483 (Main sol. 1251), reported volume1010 ml. Original
+    quantity retained at its source stage; no final-medium conversion inferred.
+  locator: $.data.solutions[0].recipe[5]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 1.5"
+- evidence_id: q-0-6
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: CaCl2 x 2 H2O; source solution2483 (Main sol. 1251), reported volume1010
+    ml. Original quantity retained at its source stage; no final-medium conversion
+    inferred.
+  locator: $.data.solutions[0].recipe[6]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.1,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.1"
+- evidence_id: q-0-7
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: MgCl2 x 6 H2O; source solution2483 (Main sol. 1251), reported volume1010
+    ml. Original quantity retained at its source stage; no final-medium conversion
+    inferred.
+  locator: $.data.solutions[0].recipe[7]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.5"
+- evidence_id: q-0-8
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Modified Wolin's mineral solution; source solution2483 (Main sol. 1251),
+    reported volume1010 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[0].recipe[8]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 10,\n                        \"unit\": \"ml\""
+- evidence_id: q-0-9
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Yeast extract; source solution2483 (Main sol. 1251), reported volume1010
+    ml. Original quantity retained at its source stage; no final-medium conversion
+    inferred.
+  locator: $.data.solutions[0].recipe[9]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1,\n                        \"unit\": \"g\",\n             \
+    \           \"g_l\": 1"
+- evidence_id: q-0-10
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Na2CO3; source solution2483 (Main sol. 1251), reported volume1010 ml. Original
+    quantity retained at its source stage; no final-medium conversion inferred.
+  locator: $.data.solutions[0].recipe[10]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1,\n                        \"unit\": \"g\",\n             \
+    \           \"g_l\": 1"
+- evidence_id: q-0-11
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: D-Glucose; source solution2483 (Main sol. 1251), reported volume1010 ml.
+    Original quantity retained at its source stage; no final-medium conversion inferred.
+  locator: $.data.solutions[0].recipe[11]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 3.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 3.5"
+- evidence_id: q-0-12
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Distilled water; source solution2483 (Main sol. 1251), reported volume1010
+    ml. Original quantity retained at its source stage; no final-medium conversion
+    inferred.
+  locator: $.data.solutions[0].recipe[12]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1000,\n                        \"unit\": \"ml\""
+- evidence_id: q-1-0
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Nitrilotriacetic acid; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[0]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 1.5"
+- evidence_id: q-1-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: MgSO4 x 7 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[1]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 3,\n                        \"unit\": \"g\",\n             \
+    \           \"g_l\": 3"
+- evidence_id: q-1-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: MnSO4 x H2O; source solution241 (Modified Wolin's mineral solution), reported
+    volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[2]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.5"
+- evidence_id: q-1-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: NaCl; source solution241 (Modified Wolin's mineral solution), reported
+    volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[3]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1,\n                        \"unit\": \"g\",\n             \
+    \           \"g_l\": 1"
+- evidence_id: q-1-4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: FeSO4 x 7 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[4]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.1,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.1"
+- evidence_id: q-1-5
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: CoSO4 x 7 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[5]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.18,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.18"
+- evidence_id: q-1-6
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: CaCl2 x 2 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[6]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.1,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.1"
+- evidence_id: q-1-7
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: ZnSO4 x 7 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[7]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.18,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.18"
+- evidence_id: q-1-8
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: CuSO4 x 5 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[8]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.01,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.01"
+- evidence_id: q-1-9
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: AlK(SO4)2 x 12 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[9]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.02,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.02"
+- evidence_id: q-1-10
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: H3BO3; source solution241 (Modified Wolin's mineral solution), reported
+    volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[10]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.01,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.01"
+- evidence_id: q-1-11
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Na2MoO4 x 2 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[11]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.01,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.01"
+- evidence_id: q-1-12
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: NiCl2 x 6 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[12]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.03,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.03"
+- evidence_id: q-1-13
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Na2SeO3 x 5 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[13]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.3,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.0003"
+- evidence_id: q-1-14
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Na2WO4 x 2 H2O; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[14]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 0.4,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.0004"
+- evidence_id: q-1-15
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1251
+  accessed_at: '2026-10-28T05:40:18.547348Z'
+  support: supports
+  summary: Distilled water; source solution241 (Modified Wolin's mineral solution),
+    reported volume1000 ml. Original quantity retained at its source stage; no final-medium
+    conversion inferred.
+  locator: $.data.solutions[1].recipe[15]
+  snapshot_sha256: fae23e8ebc3752cc2be0db54ed97d1fecf8eb8692146b2faa3f8b96e00ae9f58
+  quote: "\"amount\": 1000,\n                        \"unit\": \"ml\""
+- evidence_id: chebi-131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  accessed_at: '2026-10-28T05:40:18.458830Z'
+  support: supports
+  summary: 'CHEBI:131361: disodium selenite pentahydrate; obsolete=False; formula=[''5H2O.2Na.O3Se''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi-131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  accessed_at: '2026-10-28T05:40:18.461398Z'
+  support: supports
+  summary: 'CHEBI:131527: dipotassium hydrogen phosphate; obsolete=False; formula=[''HO4P.2K''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi-17634
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  accessed_at: '2026-10-28T05:40:18.453844Z'
+  support: supports
+  summary: 'CHEBI:17634: D-glucose; obsolete=False; formula=[''C6H12O6'']. Chemical
+    identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi-26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  accessed_at: '2026-10-28T05:40:18.668319Z'
+  support: supports
+  summary: 'CHEBI:26710: sodium chloride; obsolete=False; formula=[''Cl.Na'']. Chemical
+    identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi-29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  accessed_at: '2026-10-28T05:40:19.033694Z'
+  support: supports
+  summary: 'CHEBI:29377: sodium carbonate; obsolete=False; formula=[''CO3.2Na''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi-31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  accessed_at: '2026-10-28T05:40:19.056433Z'
+  support: supports
+  summary: 'CHEBI:31206: ammonium chloride; obsolete=False; formula=[''Cl.H4N''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi-31440
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  accessed_at: '2026-10-28T05:40:19.107889Z'
+  support: supports
+  summary: 'CHEBI:31440: copper(II) sulfate pentahydrate; obsolete=False; formula=[''Cu.5H2O.O4S''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi-31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  accessed_at: '2026-10-28T05:40:19.158804Z'
+  support: supports
+  summary: 'CHEBI:31795: magnesium sulfate heptahydrate; obsolete=False; formula=[''7H2O.Mg.O4S''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi-32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  accessed_at: '2026-10-28T05:40:19.267124Z'
+  support: supports
+  summary: 'CHEBI:32312: zinc sulfate heptahydrate; obsolete=False; formula=[''7H2O.O4S.Zn''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi-32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  accessed_at: '2026-10-28T05:40:19.477780Z'
+  support: supports
+  summary: 'CHEBI:32588: potassium chloride; obsolete=False; formula=[''Cl.K'']. Chemical
+    identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi-33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  accessed_at: '2026-10-28T05:40:19.652639Z'
+  support: supports
+  summary: 'CHEBI:33118: boric acid; obsolete=False; formula=[''H3BO3'']. Chemical
+    identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi-34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  accessed_at: '2026-10-28T05:40:19.661182Z'
+  support: supports
+  summary: 'CHEBI:34887: nickel dichloride; obsolete=False; formula=[''Cl2Ni'']. Chemical
+    identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi-44557
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  accessed_at: '2026-10-28T05:40:19.736776Z'
+  support: supports
+  summary: 'CHEBI:44557: nitrilotriacetic acid; obsolete=False; formula=[''C6H9NO6''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi-53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  accessed_at: '2026-10-28T05:40:19.762960Z'
+  support: supports
+  summary: 'CHEBI:53542: nickel chloride hexahydrate; obsolete=False; formula=[''2Cl.6H2O.Ni''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: chebi-63005
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63005
+  accessed_at: '2026-10-28T05:40:19.871353Z'
+  support: supports
+  summary: 'CHEBI:63005: sodium nitrate; obsolete=False; formula=[''NO3.Na'']. Chemical
+    identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 1ec6a815a0e22ba0d12f84ad998bef39b9e6b80cf90c25cd1ab51903bbb54da3
+- evidence_id: chebi-63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  accessed_at: '2026-10-28T05:40:20.488897Z'
+  support: supports
+  summary: 'CHEBI:63036: potassium dihydrogen phosphate; obsolete=False; formula=[''H2O4P.K''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi-63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  accessed_at: '2026-10-28T05:40:20.239708Z'
+  support: supports
+  summary: 'CHEBI:63939: sodium tungstate dihydrate; obsolete=False; formula=[''2H2O.2Na.O4W''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi-75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  accessed_at: '2026-10-28T05:40:20.273405Z'
+  support: supports
+  summary: 'CHEBI:75213: sodium molybdate dihydrate; obsolete=False; formula=[''2H2O.MoO4.2Na''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi-75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  accessed_at: '2026-10-28T05:40:20.341949Z'
+  support: supports
+  summary: 'CHEBI:75836: iron(2+) sulfate heptahydrate; obsolete=False; formula=[''Fe.7H2O.O4S''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi-86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  accessed_at: '2026-10-28T05:40:20.366170Z'
+  support: supports
+  summary: 'CHEBI:86158: calcium chloride dihydrate; obsolete=False; formula=[''Ca.2Cl.2H2O''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi-86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  accessed_at: '2026-10-28T05:40:20.481356Z'
+  support: supports
+  summary: 'CHEBI:86345: magnesium dichloride hexahydrate; obsolete=False; formula=[''2Cl.6H2O.Mg''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi-86364
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  accessed_at: '2026-10-28T05:40:20.836826Z'
+  support: supports
+  summary: 'CHEBI:86364: manganese(II) sulfate monohydrate; obsolete=False; formula=[''H2O.Mn.O4S''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi-86465
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  accessed_at: '2026-10-28T05:40:20.880156Z'
+  support: supports
+  summary: 'CHEBI:86465: potassium aluminium sulfate dodecahydrate; obsolete=False;
+    formula=[''Al.12H2O.K.2O4S'']. Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi-91244
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  accessed_at: '2026-10-28T05:40:20.931899Z'
+  support: supports
+  summary: 'CHEBI:91244: cobalt(2+) sulfate heptahydrate; obsolete=False; formula=[''Co.7H2O.O4S''].
+    Chemical identity only.'
+  locator: exact IRI term object
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: historical-1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/caldinitratiruptor_medium.yaml.md
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Complete historical report assessed as context, not native coverage. October
+    source digest and31 quoted source objects per curation report match current API
+    bytes; old retrieval times remain historical assertions. Earlier blanket quantity
+    flags and per-litre assumptions are reassessed below.
+  locator: entire file
+  snapshot_sha256: e735781f17a0aade431e990466f2832bd06aac97af390cded6e3cef415191381
+- evidence_id: historical-2
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/records/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml.md
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Complete historical report assessed as context, not native coverage. October
+    source digest and31 quoted source objects per curation report match current API
+    bytes; old retrieval times remain historical assertions. Earlier blanket quantity
+    flags and per-litre assumptions are reassessed below.
+  locator: entire file
+  snapshot_sha256: 5f88266726090c14f150e6b2f3dd6c23537d4b1e82c2c7f03992aadb3297b19c
+- evidence_id: historical-3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.md
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Complete historical report assessed as context, not native coverage. October
+    source digest and31 quoted source objects per curation report match current API
+    bytes; old retrieval times remain historical assertions. Earlier blanket quantity
+    flags and per-litre assumptions are reassessed below.
+  locator: entire file
+  snapshot_sha256: 5fb06208ffea3a6740eacdb9cb24bd75b789a229f000fa95e8602e7311554f1e
+- evidence_id: historical-4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.md
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Complete historical report assessed as context, not native coverage. October
+    source digest and31 quoted source objects per curation report match current API
+    bytes; old retrieval times remain historical assertions. Earlier blanket quantity
+    flags and per-litre assumptions are reassessed below.
+  locator: entire file
+  snapshot_sha256: 978c4af27975c143056561fd1dc1b4485f963d804941b4ae1a06a2874512637c
+- evidence_id: historical-5
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldinitratiruptor_medium.md
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Complete historical report assessed as context, not native coverage. October
+    source digest and31 quoted source objects per curation report match current API
+    bytes; old retrieval times remain historical assertions. Earlier blanket quantity
+    flags and per-litre assumptions are reassessed below.
+  locator: entire file
+  snapshot_sha256: ec0c6d7ee155f9c2316a18cb45099534c1c374f4e05ebdaffe3cfe36def4aabe
+- evidence_id: historical-6
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T021954Z-CALDINITRATIRUPTOR_MEDIUM.md
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Complete historical report assessed as context, not native coverage. October
+    source digest and31 quoted source objects per curation report match current API
+    bytes; old retrieval times remain historical assertions. Earlier blanket quantity
+    flags and per-litre assumptions are reassessed below.
+  locator: entire file
+  snapshot_sha256: b9b770efdef1e4f0fe163946b6ee24f73771e09d76a5f5da319fc2ac52eb3da0
+- evidence_id: diagnostics
+  kind: validation
+  reference: REVIEW_WORK/batch057/record10/diagnostics.json
+  accessed_at: '2026-10-28T05:40:46.770450Z'
+  support: context_only
+  summary: Maintained read-only MIM, importer and formulation comparisons. Current
+    importer emits11 direct ingredients and one stock addition; current owner formulation
+    union rejects six differing keys.
+  locator: entire file
+  snapshot_sha256: eeaecb5f0de331afc702954459a1ee90fad334bb68748efdbf21eb9f18225696
+- evidence_id: ownership-search
+  kind: search
+  reference: REVIEW_WORK/batch057/record10/ownership-search-result.json
+  accessed_at: '2026-10-28T05:44:23.015446Z'
+  support: context_only
+  summary: Exact maintained paths, IDs and report leads found in ignored-inclusive
+    local search.
+  locator: full argv/output
+  snapshot_sha256: e99641fff395d6aaca4eaf9fe674d346caa775d2d2164fbeb367c0cccbc7ae90
+  search_scope: rg --no-ignore --hidden -n -l across data/normalized_yaml and reports
+    for CultureMech:000711, CultureMech:004013 and both exact owner slugs; hidden/ignored
+    files included. No global literature absence claim.
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch057/record10/validate-schema-result.json
+  accessed_at: '2026-10-28T05:40:07.470408Z'
+  support: context_only
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  locator: full argv/stdout/stderr
+  snapshot_sha256: f9ba686be252525bd7745deb9910ed87f1dd5e36b8d797940f651e1775e3e055
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch057/record10/validate-strict-result.json
+  accessed_at: '2026-10-28T05:40:08.483734Z'
+  support: context_only
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch057/record10/strict.tsv"
+  locator: full argv/stdout/stderr
+  snapshot_sha256: d169e28b0d8da71597c0c79a998e30272f607bfc5fbe98fb14ad930107757435
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch057/record10/validate-terms-result.json
+  accessed_at: '2026-10-28T05:40:10.075549Z'
+  support: context_only
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  locator: full argv/stdout/stderr
+  snapshot_sha256: 30bbc39b8d3f2d798fb33031beba51476b3f95e52eeb8ca5c4edfd5dc9ab7d4b
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch057/record10/validate-references-result.json
+  accessed_at: '2026-10-28T05:40:10.952114Z'
+  support: context_only
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  locator: full argv/stdout/stderr
+  snapshot_sha256: b4dbb979611245b20627ad65be6452ab6b5f64ab4efb4a08d34967b8e5e15c87
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Source identity and generated ownership
+  outcome: supported
+  summary: DSMZ1251 and both maintained owners resolve exactly; fresh KOMODO catalog
+    access is unavailable.
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - registry
+  - dsm1251
+  - mediadive1251
+  - komodo-access
+  details: 'Historical exact KOMODO1251 HTML row points to the same DSMZ1251 PDF.
+    It supports the old cross-reference only; no current catalog response was obtained.
+    All reciprocal parent/child paths and IDs resolve locally. iModulonDB is not applicable:
+    no gene, locus or expression module claim. The similarly named organism is not
+    a demonstrated growth target.'
+- assessment_id: quantity
+  area: evidence
+  topic: Full concentration census and source stages
+  outcome: concern
+  summary: 72 existing fields assessed:31 evidence_only and41 conflict;29 source recipe
+    rows retained.
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - dsm1251
+  - mediadive1251
+  - q-0-0
+  - q-0-1
+  - q-0-2
+  - q-0-3
+  - q-0-4
+  - q-0-5
+  - q-0-6
+  - q-0-7
+  - q-0-8
+  - q-0-9
+  - q-0-10
+  - q-0-11
+  - q-0-12
+  - q-1-0
+  - q-1-1
+  - q-1-2
+  - q-1-3
+  - q-1-4
+  - q-1-5
+  - q-1-6
+  - q-1-7
+  - q-1-8
+  - q-1-9
+  - q-1-10
+  - q-1-11
+  - q-1-12
+  - q-1-13
+  - q-1-14
+  - q-1-15
+  details: '{"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "ingredient": "NH4Cl", "existing":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-0"], "source_matches": [{"locator": "$.data.solutions[0].recipe[0]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42, "amount": 1, "unit":
+    "g", "g_l": 1, "mmol_l": 18.6951, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[1].concentration", "ingredient": "KH2PO4", "existing": {"value":
+    "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-1"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[1]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit":
+    "g", "g_l": 0.3, "mmol_l": 2.2045, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[2].concentration", "ingredient": "K2HPO4", "existing": {"value":
+    "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-2"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[2]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10, "amount": 0.3, "unit":
+    "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "ingredient": "KCl", "existing": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-3"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[3]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 4, "compound": "KCl", "compound_id": 61, "amount": 0.1, "unit":
+    "g", "g_l": 0.1, "mmol_l": 1.34138, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "ingredient": "NaCl", "existing": {"value": "2.0",
+    "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-0-4", "q-1-3"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[4]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 5, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit":
+    "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"locator": "$.data.solutions[1].recipe[3]",
+    "solution_id": 241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 4, "compound": "NaCl", "compound_id": 43,
+    "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "Generated value is the old sum of same-named main and stock concentrations. Distinct
+    source stages cannot be added at stock strength. Both maintained owners already
+    restore the reported main-row value; that repair does not restore the separate
+    stock contribution.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "ingredient": "NaNO3", "existing": {"value": "1.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-5"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[5]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 6, "compound": "NaNO3", "compound_id": 187, "amount": 1.5, "unit":
+    "g", "g_l": 1.5, "mmol_l": 17.6481, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "ingredient": "CaCl2 x 2 H2O", "existing": {"value":
+    "0.2", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-0-6",
+    "q-1-6"], "source_matches": [{"locator": "$.data.solutions[0].recipe[6]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1,
+    "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}, {"locator": "$.data.solutions[1].recipe[6]",
+    "solution_id": 241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id":
+    7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "Generated value is the old sum of same-named main and stock concentrations.
+    Distinct source stages cannot be added at stock strength. Both maintained owners
+    already restore the reported main-row value; that repair does not restore the
+    separate stock contribution.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[7].concentration", "ingredient": "MgCl2 x 6 H2O", "existing": {"value":
+    "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-7"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[7]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 8, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount":
+    0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.45938, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "Existing G_PER_L matches directly reported API main-solution g_l. This supports
+    the database-reported main-row concentration, not an independently derived final
+    mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[8].concentration", "ingredient": "Yeast extract", "existing": {"value":
+    "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-9"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[9]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 10, "compound": "Yeast extract", "compound_id": 16, "amount":
+    1, "unit": "g", "g_l": 1, "optional": 0}}], "calculation": "none; directly reported
+    source g_l compared at its own stage", "explanation": "Existing G_PER_L matches
+    directly reported API main-solution g_l. This supports the database-reported main-row
+    concentration, not an independently derived final mixed-medium value from input
+    water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[9].concentration", "ingredient": "Na2CO3", "existing": {"value":
+    "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-10"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[10]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 11, "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit":
+    "g", "g_l": 1, "mmol_l": 9.43503, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[10].concentration", "ingredient": "D-Glucose", "existing": {"value":
+    "3.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence": ["q-0-11"],
+    "source_matches": [{"locator": "$.data.solutions[0].recipe[11]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 12, "compound": "D-Glucose", "compound_id": 211, "amount": 3.5,
+    "unit": "g", "g_l": 3.5, "mmol_l": 19.4272, "optional": 0}}], "calculation": "none;
+    directly reported source g_l compared at its own stage", "explanation": "Existing
+    G_PER_L matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[11].concentration", "ingredient": "Nitrilotriacetic acid", "existing":
+    {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-0"], "source_matches": [{"locator": "$.data.solutions[1].recipe[0]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 1, "compound": "Nitrilotriacetic acid", "compound_id":
+    189, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.84765, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[12].concentration", "ingredient": "MgSO4 x 7 H2O", "existing": {"value":
+    "3", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-1"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[1]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 2, "compound": "MgSO4 x 7 H2O", "compound_id":
+    8, "amount": 3, "unit": "g", "g_l": 3, "mmol_l": 12.1716, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "The local direct-medium amount equals a separately reported mineral-stock g_l.
+    Restore the stock compartment and receiving batch addition before deriving any
+    final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[13].concentration", "ingredient": "MnSO4 x H2O", "existing": {"value":
+    "0.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-2"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[2]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 3, "compound": "MnSO4 x H2O", "compound_id":
+    14, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.9583, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[14].concentration", "ingredient": "FeSO4 x 7 H2O", "existing": {"value":
+    "0.1", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-4"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[4]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 5, "compound": "FeSO4 x 7 H2O", "compound_id":
+    12, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.359693, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[15].concentration", "ingredient": "CoSO4 x 7 H2O", "existing": {"value":
+    "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-5"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[5]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 6, "compound": "CoSO4 x 7 H2O", "compound_id":
+    198, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 1.16132, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[16].concentration", "ingredient": "ZnSO4 x 7 H2O", "existing": {"value":
+    "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-7"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[7]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 8, "compound": "ZnSO4 x 7 H2O", "compound_id":
+    35, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 0.625954, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[17].concentration", "ingredient": "CuSO4 x 5 H2O", "existing": {"value":
+    "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-8"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[8]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 9, "compound": "CuSO4 x 5 H2O", "compound_id":
+    121, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0400503, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[18].concentration", "ingredient": "AlK(SO4)2 x 12 H2O", "existing":
+    {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-9"], "source_matches": [{"locator": "$.data.solutions[1].recipe[9]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 10, "compound": "AlK(SO4)2 x 12 H2O", "compound_id":
+    908, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0421596, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[19].concentration", "ingredient": "H3BO3", "existing": {"value":
+    "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-10"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[10]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 11, "compound": "H3BO3", "compound_id": 37,
+    "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.161708, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[20].concentration", "ingredient": "Na2MoO4 x 2 H2O", "existing":
+    {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-11"], "source_matches": [{"locator": "$.data.solutions[1].recipe[11]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 12, "compound": "Na2MoO4 x 2 H2O", "compound_id":
+    9, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0413309, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[21].concentration", "ingredient": "NiCl2 x 6 H2O", "existing": {"value":
+    "0.03", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-12"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[12]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 13, "compound": "NiCl2 x 6 H2O", "compound_id":
+    40, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.231483, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[22].concentration", "ingredient": "Na2SeO3 x 5 H2O", "existing":
+    {"value": "0.0003", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-13"], "source_matches": [{"locator": "$.data.solutions[1].recipe[13]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 14, "compound": "Na2SeO3 x 5 H2O", "compound_id":
+    107, "amount": 0.3, "unit": "mg", "g_l": 0.0003, "mmol_l": 0.00114062, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/merge_yaml/merged/CALDINITRATIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[23].concentration", "ingredient": "Na2WO4 x 2 H2O", "existing": {"value":
+    "0.0004", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence": ["q-1-14"],
+    "source_matches": [{"locator": "$.data.solutions[1].recipe[14]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 15, "compound": "Na2WO4 x 2 H2O", "compound_id":
+    249, "amount": 0.4, "unit": "mg", "g_l": 0.0004, "mmol_l": 0.00121267, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[0].concentration", "ingredient": "NH4Cl", "existing":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-0"], "source_matches": [{"locator": "$.data.solutions[0].recipe[0]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42, "amount": 1, "unit":
+    "g", "g_l": 1, "mmol_l": 18.6951, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "KH2PO4", "existing":
+    {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-1"], "source_matches": [{"locator": "$.data.solutions[0].recipe[1]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit":
+    "g", "g_l": 0.3, "mmol_l": 2.2045, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "K2HPO4", "existing":
+    {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-2"], "source_matches": [{"locator": "$.data.solutions[0].recipe[2]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10, "amount": 0.3, "unit":
+    "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "KCl", "existing":
+    {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[3]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 4, "compound": "KCl", "compound_id": 61, "amount": 0.1, "unit":
+    "g", "g_l": 0.1, "mmol_l": 1.34138, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "NaCl", "existing":
+    {"value": "1.0", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-4", "q-1-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[4]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 5, "compound": "NaCl", "compound_id": 43,
+    "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"locator":
+    "$.data.solutions[1].recipe[3]", "solution_id": 241, "solution_name": "Modified
+    Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    4, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1,
+    "mmol_l": 17.1116, "optional": 0}}], "calculation": "none; directly reported source
+    g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly
+    reported API main-solution g_l. This supports the database-reported main-row concentration,
+    not an independently derived final mixed-medium value from input water. This compound
+    also occurs in the mineral stock; restore that separate scoped stock row rather
+    than treating this main value as the complete total or collapsing the two stages.",
+    "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[5].concentration", "ingredient": "NaNO3", "existing":
+    {"value": "1.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-5"], "source_matches": [{"locator": "$.data.solutions[0].recipe[5]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 6, "compound": "NaNO3", "compound_id": 187, "amount": 1.5, "unit":
+    "g", "g_l": 1.5, "mmol_l": 17.6481, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[6].concentration", "ingredient": "CaCl2 x 2 H2O", "existing":
+    {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-6", "q-1-6"], "source_matches": [{"locator": "$.data.solutions[0].recipe[6]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id":
+    7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}},
+    {"locator": "$.data.solutions[1].recipe[6]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1,
+    "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "Existing G_PER_L matches directly reported API main-solution g_l. This supports
+    the database-reported main-row concentration, not an independently derived final
+    mixed-medium value from input water. This compound also occurs in the mineral
+    stock; restore that separate scoped stock row rather than treating this main value
+    as the complete total or collapsing the two stages.", "proposed_amount": "none
+    asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[7].concentration", "ingredient": "MgCl2 x 6 H2O", "existing":
+    {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-7"], "source_matches": [{"locator": "$.data.solutions[0].recipe[7]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 8, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount":
+    0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.45938, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "Existing G_PER_L matches directly reported API main-solution g_l. This supports
+    the database-reported main-row concentration, not an independently derived final
+    mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[8].concentration", "ingredient": "Yeast extract", "existing":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-9"], "source_matches": [{"locator": "$.data.solutions[0].recipe[9]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 10, "compound": "Yeast extract", "compound_id": 16, "amount":
+    1, "unit": "g", "g_l": 1, "optional": 0}}], "calculation": "none; directly reported
+    source g_l compared at its own stage", "explanation": "Existing G_PER_L matches
+    directly reported API main-solution g_l. This supports the database-reported main-row
+    concentration, not an independently derived final mixed-medium value from input
+    water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[9].concentration", "ingredient": "Na2CO3", "existing":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-10"], "source_matches": [{"locator": "$.data.solutions[0].recipe[10]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 11, "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit":
+    "g", "g_l": 1, "mmol_l": 9.43503, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[10].concentration", "ingredient": "D-Glucose", "existing":
+    {"value": "3.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-11"], "source_matches": [{"locator": "$.data.solutions[0].recipe[11]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 12, "compound": "D-Glucose", "compound_id": 211, "amount": 3.5,
+    "unit": "g", "g_l": 3.5, "mmol_l": 19.4272, "optional": 0}}], "calculation": "none;
+    directly reported source g_l compared at its own stage", "explanation": "Existing
+    G_PER_L matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[11].concentration", "ingredient": "Nitrilotriacetic
+    acid", "existing": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict",
+    "source_evidence": ["q-1-0"], "source_matches": [{"locator": "$.data.solutions[1].recipe[0]",
+    "solution_id": 241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 1, "compound": "Nitrilotriacetic acid", "compound_id":
+    189, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.84765, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[12].concentration", "ingredient": "MgSO4 x 7 H2O",
+    "existing": {"value": "3", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-1"], "source_matches": [{"locator": "$.data.solutions[1].recipe[1]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 2, "compound": "MgSO4 x 7 H2O", "compound_id":
+    8, "amount": 3, "unit": "g", "g_l": 3, "mmol_l": 12.1716, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "The local direct-medium amount equals a separately reported mineral-stock g_l.
+    Restore the stock compartment and receiving batch addition before deriving any
+    final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[13].concentration", "ingredient": "MnSO4 x H2O", "existing":
+    {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-2"], "source_matches": [{"locator": "$.data.solutions[1].recipe[2]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 3, "compound": "MnSO4 x H2O", "compound_id":
+    14, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.9583, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[14].concentration", "ingredient": "FeSO4 x 7 H2O",
+    "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-4"], "source_matches": [{"locator": "$.data.solutions[1].recipe[4]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 5, "compound": "FeSO4 x 7 H2O", "compound_id":
+    12, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.359693, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[15].concentration", "ingredient": "CoSO4 x 7 H2O",
+    "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-5"], "source_matches": [{"locator": "$.data.solutions[1].recipe[5]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 6, "compound": "CoSO4 x 7 H2O", "compound_id":
+    198, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 1.16132, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[16].concentration", "ingredient": "ZnSO4 x 7 H2O",
+    "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-7"], "source_matches": [{"locator": "$.data.solutions[1].recipe[7]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 8, "compound": "ZnSO4 x 7 H2O", "compound_id":
+    35, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 0.625954, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[17].concentration", "ingredient": "CuSO4 x 5 H2O",
+    "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-8"], "source_matches": [{"locator": "$.data.solutions[1].recipe[8]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 9, "compound": "CuSO4 x 5 H2O", "compound_id":
+    121, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0400503, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[18].concentration", "ingredient": "AlK(SO4)2 x 12 H2O",
+    "existing": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-9"], "source_matches": [{"locator": "$.data.solutions[1].recipe[9]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 10, "compound": "AlK(SO4)2 x 12 H2O", "compound_id":
+    908, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0421596, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[19].concentration", "ingredient": "H3BO3", "existing":
+    {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-10"], "source_matches": [{"locator": "$.data.solutions[1].recipe[10]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 11, "compound": "H3BO3", "compound_id": 37,
+    "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.161708, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[20].concentration", "ingredient": "Na2MoO4 x 2 H2O",
+    "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-11"], "source_matches": [{"locator": "$.data.solutions[1].recipe[11]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 12, "compound": "Na2MoO4 x 2 H2O", "compound_id":
+    9, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0413309, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[21].concentration", "ingredient": "NiCl2 x 6 H2O",
+    "existing": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-12"], "source_matches": [{"locator": "$.data.solutions[1].recipe[12]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 13, "compound": "NiCl2 x 6 H2O", "compound_id":
+    40, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.231483, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[22].concentration", "ingredient": "Na2SeO3 x 5 H2O",
+    "existing": {"value": "0.0003", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-13"], "source_matches": [{"locator": "$.data.solutions[1].recipe[13]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 14, "compound": "Na2SeO3 x 5 H2O", "compound_id":
+    107, "amount": 0.3, "unit": "mg", "g_l": 0.0003, "mmol_l": 0.00114062, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml",
+    "field_path": "ingredients[23].concentration", "ingredient": "Na2WO4 x 2 H2O",
+    "existing": {"value": "0.0004", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-14"], "source_matches": [{"locator": "$.data.solutions[1].recipe[14]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 15, "compound": "Na2WO4 x 2 H2O", "compound_id":
+    249, "amount": 0.4, "unit": "mg", "g_l": 0.0004, "mmol_l": 0.00121267, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[0].concentration", "ingredient": "NH4Cl", "existing":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-0"], "source_matches": [{"locator": "$.data.solutions[0].recipe[0]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42, "amount": 1, "unit":
+    "g", "g_l": 1, "mmol_l": 18.6951, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[1].concentration", "ingredient": "KH2PO4", "existing":
+    {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-1"], "source_matches": [{"locator": "$.data.solutions[0].recipe[1]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 2, "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit":
+    "g", "g_l": 0.3, "mmol_l": 2.2045, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[2].concentration", "ingredient": "K2HPO4", "existing":
+    {"value": "0.3", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-2"], "source_matches": [{"locator": "$.data.solutions[0].recipe[2]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10, "amount": 0.3, "unit":
+    "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[3].concentration", "ingredient": "KCl", "existing":
+    {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[3]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 4, "compound": "KCl", "compound_id": 61, "amount": 0.1, "unit":
+    "g", "g_l": 0.1, "mmol_l": 1.34138, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[4].concentration", "ingredient": "NaCl", "existing":
+    {"value": "1.0", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-4", "q-1-3"], "source_matches": [{"locator": "$.data.solutions[0].recipe[4]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 5, "compound": "NaCl", "compound_id": 43,
+    "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"locator":
+    "$.data.solutions[1].recipe[3]", "solution_id": 241, "solution_name": "Modified
+    Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    4, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit": "g", "g_l": 1,
+    "mmol_l": 17.1116, "optional": 0}}], "calculation": "none; directly reported source
+    g_l compared at its own stage", "explanation": "Existing G_PER_L matches directly
+    reported API main-solution g_l. This supports the database-reported main-row concentration,
+    not an independently derived final mixed-medium value from input water. This compound
+    also occurs in the mineral stock; restore that separate scoped stock row rather
+    than treating this main value as the complete total or collapsing the two stages.",
+    "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[5].concentration", "ingredient": "NaNO3", "existing":
+    {"value": "1.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-5"], "source_matches": [{"locator": "$.data.solutions[0].recipe[5]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 6, "compound": "NaNO3", "compound_id": 187, "amount": 1.5, "unit":
+    "g", "g_l": 1.5, "mmol_l": 17.6481, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[6].concentration", "ingredient": "CaCl2 x 2 H2O", "existing":
+    {"value": "0.1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-6", "q-1-6"], "source_matches": [{"locator": "$.data.solutions[0].recipe[6]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id":
+    7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}},
+    {"locator": "$.data.solutions[1].recipe[6]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1,
+    "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "Existing G_PER_L matches directly reported API main-solution g_l. This supports
+    the database-reported main-row concentration, not an independently derived final
+    mixed-medium value from input water. This compound also occurs in the mineral
+    stock; restore that separate scoped stock row rather than treating this main value
+    as the complete total or collapsing the two stages.", "proposed_amount": "none
+    asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[7].concentration", "ingredient": "MgCl2 x 6 H2O", "existing":
+    {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-7"], "source_matches": [{"locator": "$.data.solutions[0].recipe[7]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 8, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount":
+    0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.45938, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "Existing G_PER_L matches directly reported API main-solution g_l. This supports
+    the database-reported main-row concentration, not an independently derived final
+    mixed-medium value from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[8].concentration", "ingredient": "Yeast extract", "existing":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-9"], "source_matches": [{"locator": "$.data.solutions[0].recipe[9]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 10, "compound": "Yeast extract", "compound_id": 16, "amount":
+    1, "unit": "g", "g_l": 1, "optional": 0}}], "calculation": "none; directly reported
+    source g_l compared at its own stage", "explanation": "Existing G_PER_L matches
+    directly reported API main-solution g_l. This supports the database-reported main-row
+    concentration, not an independently derived final mixed-medium value from input
+    water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[9].concentration", "ingredient": "Na2CO3", "existing":
+    {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-10"], "source_matches": [{"locator": "$.data.solutions[0].recipe[10]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 11, "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit":
+    "g", "g_l": 1, "mmol_l": 9.43503, "optional": 0}}], "calculation": "none; directly
+    reported source g_l compared at its own stage", "explanation": "Existing G_PER_L
+    matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[10].concentration", "ingredient": "D-Glucose", "existing":
+    {"value": "3.5", "unit": "G_PER_L"}, "decision": "evidence_only", "source_evidence":
+    ["q-0-11"], "source_matches": [{"locator": "$.data.solutions[0].recipe[11]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 12, "compound": "D-Glucose", "compound_id": 211, "amount": 3.5,
+    "unit": "g", "g_l": 3.5, "mmol_l": 19.4272, "optional": 0}}], "calculation": "none;
+    directly reported source g_l compared at its own stage", "explanation": "Existing
+    G_PER_L matches directly reported API main-solution g_l. This supports the database-reported
+    main-row concentration, not an independently derived final mixed-medium value
+    from input water.", "proposed_amount": "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[11].concentration", "ingredient": "Nitrilotriacetic
+    acid", "existing": {"value": "1.5", "unit": "G_PER_L"}, "decision": "conflict",
+    "source_evidence": ["q-1-0"], "source_matches": [{"locator": "$.data.solutions[1].recipe[0]",
+    "solution_id": 241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 1, "compound": "Nitrilotriacetic acid", "compound_id":
+    189, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.84765, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[12].concentration", "ingredient": "MgSO4 x 7 H2O",
+    "existing": {"value": "3", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-1"], "source_matches": [{"locator": "$.data.solutions[1].recipe[1]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 2, "compound": "MgSO4 x 7 H2O", "compound_id":
+    8, "amount": 3, "unit": "g", "g_l": 3, "mmol_l": 12.1716, "optional": 0}}], "calculation":
+    "none; directly reported source g_l compared at its own stage", "explanation":
+    "The local direct-medium amount equals a separately reported mineral-stock g_l.
+    Restore the stock compartment and receiving batch addition before deriving any
+    final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[13].concentration", "ingredient": "MnSO4 x H2O", "existing":
+    {"value": "0.5", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-2"], "source_matches": [{"locator": "$.data.solutions[1].recipe[2]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 3, "compound": "MnSO4 x H2O", "compound_id":
+    14, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.9583, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[14].concentration", "ingredient": "FeSO4 x 7 H2O",
+    "existing": {"value": "0.1", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-4"], "source_matches": [{"locator": "$.data.solutions[1].recipe[4]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 5, "compound": "FeSO4 x 7 H2O", "compound_id":
+    12, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.359693, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[15].concentration", "ingredient": "CoSO4 x 7 H2O",
+    "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-5"], "source_matches": [{"locator": "$.data.solutions[1].recipe[5]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 6, "compound": "CoSO4 x 7 H2O", "compound_id":
+    198, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 1.16132, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[16].concentration", "ingredient": "ZnSO4 x 7 H2O",
+    "existing": {"value": "0.18", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-7"], "source_matches": [{"locator": "$.data.solutions[1].recipe[7]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 8, "compound": "ZnSO4 x 7 H2O", "compound_id":
+    35, "amount": 0.18, "unit": "g", "g_l": 0.18, "mmol_l": 0.625954, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[17].concentration", "ingredient": "CuSO4 x 5 H2O",
+    "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-8"], "source_matches": [{"locator": "$.data.solutions[1].recipe[8]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 9, "compound": "CuSO4 x 5 H2O", "compound_id":
+    121, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0400503, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[18].concentration", "ingredient": "AlK(SO4)2 x 12 H2O",
+    "existing": {"value": "0.02", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-9"], "source_matches": [{"locator": "$.data.solutions[1].recipe[9]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 10, "compound": "AlK(SO4)2 x 12 H2O", "compound_id":
+    908, "amount": 0.02, "unit": "g", "g_l": 0.02, "mmol_l": 0.0421596, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[19].concentration", "ingredient": "H3BO3", "existing":
+    {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-10"], "source_matches": [{"locator": "$.data.solutions[1].recipe[10]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 11, "compound": "H3BO3", "compound_id": 37,
+    "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.161708, "optional": 0}}],
+    "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[20].concentration", "ingredient": "Na2MoO4 x 2 H2O",
+    "existing": {"value": "0.01", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-11"], "source_matches": [{"locator": "$.data.solutions[1].recipe[11]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 12, "compound": "Na2MoO4 x 2 H2O", "compound_id":
+    9, "amount": 0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0413309, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[21].concentration", "ingredient": "NiCl2 x 6 H2O",
+    "existing": {"value": "0.03", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-12"], "source_matches": [{"locator": "$.data.solutions[1].recipe[12]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 13, "compound": "NiCl2 x 6 H2O", "compound_id":
+    40, "amount": 0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.231483, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[22].concentration", "ingredient": "Na2SeO3 x 5 H2O",
+    "existing": {"value": "0.0003", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-13"], "source_matches": [{"locator": "$.data.solutions[1].recipe[13]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 14, "compound": "Na2SeO3 x 5 H2O", "compound_id":
+    107, "amount": 0.3, "unit": "mg", "g_l": 0.0003, "mmol_l": 0.00114062, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    {"record_path": "data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml",
+    "field_path": "ingredients[23].concentration", "ingredient": "Na2WO4 x 2 H2O",
+    "existing": {"value": "0.0004", "unit": "G_PER_L"}, "decision": "conflict", "source_evidence":
+    ["q-1-14"], "source_matches": [{"locator": "$.data.solutions[1].recipe[14]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 15, "compound": "Na2WO4 x 2 H2O", "compound_id":
+    249, "amount": 0.4, "unit": "mg", "g_l": 0.0004, "mmol_l": 0.00121267, "optional":
+    0}}], "calculation": "none; directly reported source g_l compared at its own stage",
+    "explanation": "The local direct-medium amount equals a separately reported mineral-stock
+    g_l. Restore the stock compartment and receiving batch addition before deriving
+    any final-medium concentration; no replacement final amount is asserted.", "proposed_amount":
+    "none asserted"}
+
+
+    All source rows: [{"evidence_id": "q-0-0", "locator": "$.data.solutions[0].recipe[0]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 1, "compound": "NH4Cl", "compound_id": 42,
+    "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 18.6951, "optional": 0}}, {"evidence_id":
+    "q-0-1", "locator": "$.data.solutions[0].recipe[1]", "solution_id": 2483, "solution_name":
+    "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 2,
+    "compound": "KH2PO4", "compound_id": 11, "amount": 0.3, "unit": "g", "g_l": 0.3,
+    "mmol_l": 2.2045, "optional": 0}}, {"evidence_id": "q-0-2", "locator": "$.data.solutions[0].recipe[2]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 3, "compound": "K2HPO4", "compound_id": 10,
+    "amount": 0.3, "unit": "g", "g_l": 0.3, "mmol_l": 1.7224, "optional": 0}}, {"evidence_id":
+    "q-0-3", "locator": "$.data.solutions[0].recipe[3]", "solution_id": 2483, "solution_name":
+    "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 4,
+    "compound": "KCl", "compound_id": 61, "amount": 0.1, "unit": "g", "g_l": 0.1,
+    "mmol_l": 1.34138, "optional": 0}}, {"evidence_id": "q-0-4", "locator": "$.data.solutions[0].recipe[4]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 5, "compound": "NaCl", "compound_id": 43,
+    "amount": 1, "unit": "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"evidence_id":
+    "q-0-5", "locator": "$.data.solutions[0].recipe[5]", "solution_id": 2483, "solution_name":
+    "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 6,
+    "compound": "NaNO3", "compound_id": 187, "amount": 1.5, "unit": "g", "g_l": 1.5,
+    "mmol_l": 17.6481, "optional": 0}}, {"evidence_id": "q-0-6", "locator": "$.data.solutions[0].recipe[6]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 7, "compound": "CaCl2 x 2 H2O", "compound_id":
+    7, "amount": 0.1, "unit": "g", "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}},
+    {"evidence_id": "q-0-7", "locator": "$.data.solutions[0].recipe[7]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 8, "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount":
+    0.5, "unit": "g", "g_l": 0.5, "mmol_l": 2.45938, "optional": 0}}, {"evidence_id":
+    "q-0-8", "locator": "$.data.solutions[0].recipe[8]", "solution_id": 2483, "solution_name":
+    "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 9,
+    "solution": "Modified Wolin''s mineral solution", "solution_id": 241, "amount":
+    10, "unit": "ml", "optional": 0}}, {"evidence_id": "q-0-9", "locator": "$.data.solutions[0].recipe[9]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 10, "compound": "Yeast extract", "compound_id":
+    16, "amount": 1, "unit": "g", "g_l": 1, "optional": 0}}, {"evidence_id": "q-0-10",
+    "locator": "$.data.solutions[0].recipe[10]", "solution_id": 2483, "solution_name":
+    "Main sol. 1251", "reported_volume_ml": 1010, "source_row": {"recipe_order": 11,
+    "compound": "Na2CO3", "compound_id": 32, "amount": 1, "unit": "g", "g_l": 1, "mmol_l":
+    9.43503, "optional": 0}}, {"evidence_id": "q-0-11", "locator": "$.data.solutions[0].recipe[11]",
+    "solution_id": 2483, "solution_name": "Main sol. 1251", "reported_volume_ml":
+    1010, "source_row": {"recipe_order": 12, "compound": "D-Glucose", "compound_id":
+    211, "amount": 3.5, "unit": "g", "g_l": 3.5, "mmol_l": 19.4272, "optional": 0}},
+    {"evidence_id": "q-0-12", "locator": "$.data.solutions[0].recipe[12]", "solution_id":
+    2483, "solution_name": "Main sol. 1251", "reported_volume_ml": 1010, "source_row":
+    {"recipe_order": 13, "compound": "Distilled water", "compound_id": 4, "amount":
+    1000, "unit": "ml", "optional": 0}}, {"evidence_id": "q-1-0", "locator": "$.data.solutions[1].recipe[0]",
+    "solution_id": 241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 1, "compound": "Nitrilotriacetic acid", "compound_id":
+    189, "amount": 1.5, "unit": "g", "g_l": 1.5, "mmol_l": 7.84765, "optional": 0}},
+    {"evidence_id": "q-1-1", "locator": "$.data.solutions[1].recipe[1]", "solution_id":
+    241, "solution_name": "Modified Wolin''s mineral solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 2, "compound": "MgSO4 x 7 H2O", "compound_id":
+    8, "amount": 3, "unit": "g", "g_l": 3, "mmol_l": 12.1716, "optional": 0}}, {"evidence_id":
+    "q-1-2", "locator": "$.data.solutions[1].recipe[2]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 3, "compound": "MnSO4 x H2O", "compound_id": 14, "amount": 0.5,
+    "unit": "g", "g_l": 0.5, "mmol_l": 2.9583, "optional": 0}}, {"evidence_id": "q-1-3",
+    "locator": "$.data.solutions[1].recipe[3]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 4, "compound": "NaCl", "compound_id": 43, "amount": 1, "unit":
+    "g", "g_l": 1, "mmol_l": 17.1116, "optional": 0}}, {"evidence_id": "q-1-4", "locator":
+    "$.data.solutions[1].recipe[4]", "solution_id": 241, "solution_name": "Modified
+    Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    5, "compound": "FeSO4 x 7 H2O", "compound_id": 12, "amount": 0.1, "unit": "g",
+    "g_l": 0.1, "mmol_l": 0.359693, "optional": 0}}, {"evidence_id": "q-1-5", "locator":
+    "$.data.solutions[1].recipe[5]", "solution_id": 241, "solution_name": "Modified
+    Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    6, "compound": "CoSO4 x 7 H2O", "compound_id": 198, "amount": 0.18, "unit": "g",
+    "g_l": 0.18, "mmol_l": 1.16132, "optional": 0}}, {"evidence_id": "q-1-6", "locator":
+    "$.data.solutions[1].recipe[6]", "solution_id": 241, "solution_name": "Modified
+    Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    7, "compound": "CaCl2 x 2 H2O", "compound_id": 7, "amount": 0.1, "unit": "g",
+    "g_l": 0.1, "mmol_l": 0.680203, "optional": 0}}, {"evidence_id": "q-1-7", "locator":
+    "$.data.solutions[1].recipe[7]", "solution_id": 241, "solution_name": "Modified
+    Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    8, "compound": "ZnSO4 x 7 H2O", "compound_id": 35, "amount": 0.18, "unit": "g",
+    "g_l": 0.18, "mmol_l": 0.625954, "optional": 0}}, {"evidence_id": "q-1-8", "locator":
+    "$.data.solutions[1].recipe[8]", "solution_id": 241, "solution_name": "Modified
+    Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    9, "compound": "CuSO4 x 5 H2O", "compound_id": 121, "amount": 0.01, "unit": "g",
+    "g_l": 0.01, "mmol_l": 0.0400503, "optional": 0}}, {"evidence_id": "q-1-9", "locator":
+    "$.data.solutions[1].recipe[9]", "solution_id": 241, "solution_name": "Modified
+    Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    10, "compound": "AlK(SO4)2 x 12 H2O", "compound_id": 908, "amount": 0.02, "unit":
+    "g", "g_l": 0.02, "mmol_l": 0.0421596, "optional": 0}}, {"evidence_id": "q-1-10",
+    "locator": "$.data.solutions[1].recipe[10]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 11, "compound": "H3BO3", "compound_id": 37, "amount": 0.01, "unit":
+    "g", "g_l": 0.01, "mmol_l": 0.161708, "optional": 0}}, {"evidence_id": "q-1-11",
+    "locator": "$.data.solutions[1].recipe[11]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 12, "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount":
+    0.01, "unit": "g", "g_l": 0.01, "mmol_l": 0.0413309, "optional": 0}}, {"evidence_id":
+    "q-1-12", "locator": "$.data.solutions[1].recipe[12]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 13, "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount":
+    0.03, "unit": "g", "g_l": 0.03, "mmol_l": 0.231483, "optional": 0}}, {"evidence_id":
+    "q-1-13", "locator": "$.data.solutions[1].recipe[13]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 14, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount":
+    0.3, "unit": "mg", "g_l": 0.0003, "mmol_l": 0.00114062, "optional": 0}}, {"evidence_id":
+    "q-1-14", "locator": "$.data.solutions[1].recipe[14]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 15, "compound": "Na2WO4 x 2 H2O", "compound_id": 249, "amount":
+    0.4, "unit": "mg", "g_l": 0.0004, "mmol_l": 0.00121267, "optional": 0}}, {"evidence_id":
+    "q-1-15", "locator": "$.data.solutions[1].recipe[15]", "solution_id": 241, "solution_name":
+    "Modified Wolin''s mineral solution", "reported_volume_ml": 1000, "source_row":
+    {"recipe_order": 16, "compound": "Distilled water", "compound_id": 4, "amount":
+    1000, "unit": "ml", "optional": 0}}]
+
+    Two1000 ml water inputs retain source/preparation scope; neither is an explicit
+    final-volume make-up instruction. Main source addition is10 ml of mineral stock241
+    per listed batch; API main volume1010 ml. Do not silently claim10 ML_PER_L. Stock
+    contains15 solutes, including NaCl and calcium chloride also separately present
+    in main medium. All15 must remain stock-scoped. Main and stock preparation paragraphs
+    have different stages; no inferred incubation or target-organism growth.'
+  dimensions:
+  - name: decision_counts
+    value: '{"evidence_only": 31, "conflict": 41}'
+    definition: Exact72 existing local concentration fields; not a scientific accuracy
+      score.
+    evidence_ids:
+    - target
+    - owner1
+    - owner2
+    - mediadive1251
+- assessment_id: stock-stage
+  area: representation
+  topic: Mineral stock and main-medium boundaries
+  outcome: concern
+  summary: All three records contain13 stock-only solutes as direct ingredients and
+    omit the stock addition; shared NaCl/calcium rows also lose their stock context.
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - dsm1251
+  - mediadive1251
+  - importer
+  - diagnostics
+  details: Mineral solution241 has15 solutes;13 occur only in its table, while NaCl
+    and calcium chloride have independent main and stock entries. The generated record
+    sums those two stages at full strength; normalized owners repaired the sums but
+    still omit the stock representation. Current importer correctly restricts direct
+    composition to the primary source solution and produces the named addition. It
+    still treats ml as ML_PER_L, so current behavior is not a complete denominator
+    repair. Do not attribute all-stock flattening to current importer code. Solvent
+    omission from chemical edges alone is not a defect; the original water input and
+    source-volume semantics belong in scoped preparation evidence.
+- assessment_id: grounding
+  area: grounding
+  topic: Exact chemical form and current MIM mapping
+  outcome: concern
+  summary: All23 primary CHEBI labels resolve, but nickel hexahydrate carries an anhydrous
+    identity; sodium nitrate retains one legacy MIM field.
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - mim-index
+  - mim-metadata
+  - diagnostics
+  - chebi-131361
+  - chebi-131527
+  - chebi-17634
+  - chebi-26710
+  - chebi-29377
+  - chebi-31206
+  - chebi-31440
+  - chebi-31795
+  - chebi-32312
+  - chebi-32588
+  - chebi-33118
+  - chebi-34887
+  - chebi-44557
+  - chebi-53542
+  - chebi-63005
+  - chebi-63036
+  - chebi-63939
+  - chebi-75213
+  - chebi-75836
+  - chebi-86158
+  - chebi-86345
+  - chebi-86364
+  - chebi-86465
+  - chebi-91244
+  details: '[{"id": "CHEBI:131361", "label": "disodium selenite pentahydrate", "formula":
+    ["5H2O.2Na.O3Se"], "obsolete": false, "evidence_id": "chebi-131361"}, {"id": "CHEBI:131527",
+    "label": "dipotassium hydrogen phosphate", "formula": ["HO4P.2K"], "obsolete":
+    false, "evidence_id": "chebi-131527"}, {"id": "CHEBI:17634", "label": "D-glucose",
+    "formula": ["C6H12O6"], "obsolete": false, "evidence_id": "chebi-17634"}, {"id":
+    "CHEBI:26710", "label": "sodium chloride", "formula": ["Cl.Na"], "obsolete": false,
+    "evidence_id": "chebi-26710"}, {"id": "CHEBI:29377", "label": "sodium carbonate",
+    "formula": ["CO3.2Na"], "obsolete": false, "evidence_id": "chebi-29377"}, {"id":
+    "CHEBI:31206", "label": "ammonium chloride", "formula": ["Cl.H4N"], "obsolete":
+    false, "evidence_id": "chebi-31206"}, {"id": "CHEBI:31440", "label": "copper(II)
+    sulfate pentahydrate", "formula": ["Cu.5H2O.O4S"], "obsolete": false, "evidence_id":
+    "chebi-31440"}, {"id": "CHEBI:31795", "label": "magnesium sulfate heptahydrate",
+    "formula": ["7H2O.Mg.O4S"], "obsolete": false, "evidence_id": "chebi-31795"},
+    {"id": "CHEBI:32312", "label": "zinc sulfate heptahydrate", "formula": ["7H2O.O4S.Zn"],
+    "obsolete": false, "evidence_id": "chebi-32312"}, {"id": "CHEBI:32588", "label":
+    "potassium chloride", "formula": ["Cl.K"], "obsolete": false, "evidence_id": "chebi-32588"},
+    {"id": "CHEBI:33118", "label": "boric acid", "formula": ["H3BO3"], "obsolete":
+    false, "evidence_id": "chebi-33118"}, {"id": "CHEBI:34887", "label": "nickel dichloride",
+    "formula": ["Cl2Ni"], "obsolete": false, "evidence_id": "chebi-34887"}, {"id":
+    "CHEBI:44557", "label": "nitrilotriacetic acid", "formula": ["C6H9NO6"], "obsolete":
+    false, "evidence_id": "chebi-44557"}, {"id": "CHEBI:53542", "label": "nickel chloride
+    hexahydrate", "formula": ["2Cl.6H2O.Ni"], "obsolete": false, "evidence_id": "chebi-53542"},
+    {"id": "CHEBI:63005", "label": "sodium nitrate", "formula": ["NO3.Na"], "obsolete":
+    false, "evidence_id": "chebi-63005"}, {"id": "CHEBI:63036", "label": "potassium
+    dihydrogen phosphate", "formula": ["H2O4P.K"], "obsolete": false, "evidence_id":
+    "chebi-63036"}, {"id": "CHEBI:63939", "label": "sodium tungstate dihydrate", "formula":
+    ["2H2O.2Na.O4W"], "obsolete": false, "evidence_id": "chebi-63939"}, {"id": "CHEBI:75213",
+    "label": "sodium molybdate dihydrate", "formula": ["2H2O.MoO4.2Na"], "obsolete":
+    false, "evidence_id": "chebi-75213"}, {"id": "CHEBI:75836", "label": "iron(2+)
+    sulfate heptahydrate", "formula": ["Fe.7H2O.O4S"], "obsolete": false, "evidence_id":
+    "chebi-75836"}, {"id": "CHEBI:86158", "label": "calcium chloride dihydrate", "formula":
+    ["Ca.2Cl.2H2O"], "obsolete": false, "evidence_id": "chebi-86158"}, {"id": "CHEBI:86345",
+    "label": "magnesium dichloride hexahydrate", "formula": ["2Cl.6H2O.Mg"], "obsolete":
+    false, "evidence_id": "chebi-86345"}, {"id": "CHEBI:86364", "label": "manganese(II)
+    sulfate monohydrate", "formula": ["H2O.Mn.O4S"], "obsolete": false, "evidence_id":
+    "chebi-86364"}, {"id": "CHEBI:86465", "label": "potassium aluminium sulfate dodecahydrate",
+    "formula": ["Al.12H2O.K.2O4S"], "obsolete": false, "evidence_id": "chebi-86465"},
+    {"id": "CHEBI:91244", "label": "cobalt(2+) sulfate heptahydrate", "formula": ["Co.7H2O.O4S"],
+    "obsolete": false, "evidence_id": "chebi-91244"}]
+
+    Nickel34887 has formulaCl2Ni, whereas verified53542 has2Cl.6H2O.Ni. The packaged
+    exact NiCl2 x6H2O answer returns53542 with mapping_status REJECTED; preserve this
+    status and independently ground the chemical-form conclusion to fresh OLS. The
+    other asserted hydrate formulae and explicit D-glucose identity agree with source
+    names. Sodium nitrate primary63005 is correct, but MediaIngredientMech:000171
+    is a legacy local identifier, not a verified current CHEBI-keyed secondary object.
+    Yeast extract is an undefined mixture; its observed FOODON:03315426 package answer
+    was not externally validated as a new proposed grounding.'
+  metrics:
+  - name: primary_term_presence
+    value: 95.83333333333333
+    unit: percent
+    denominator: 24
+    minimum: 0
+    maximum: 100
+    definition: 23 of24 ingredient instances have a primary CHEBI term; presence only.
+  - name: secondary_CHEBI_presence
+    value: 91.66666666666667
+    unit: percent
+    denominator: 24
+    minimum: 0
+    maximum: 100
+    definition: 22 of24 instances have a CHEBI-keyed secondary link; one legacy and
+      one missing.
+  - name: existing_secondary_agreement
+    value: 95.45454545454545
+    unit: percent
+    denominator: 22
+    minimum: 0
+    maximum: 100
+    definition: 21 of22 existing CHEBI-keyed links match current exact resolver output;
+      nickel differs. Agreement is not scientific accuracy.
+- assessment_id: preparation
+  area: completeness
+  topic: Source preparation, pH and organism scope
+  outcome: concern
+  summary: DSMZ owner retains both paragraphs; main preparation is absent from the
+    generated and KOMODO documents, and stock preparation is at medium level in the
+    DSMZ owner.
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - dsm1251
+  - mediadive1251
+  - importer
+  details: The DSMZ owner main paragraph exactly matches source main preparation,
+    including the carbonate/glucose exclusions and distinct gas/sterilization stages;
+    AUTOCLAVE is a keyword label for a multi-action paragraph. Its second paragraph
+    belongs only to mineral stock241. Source main pH7 is retained. Do not move stock
+    pH6.5 to main conditions. COMPLEX/UNDEFINED and LIQUID are consistent with yeast
+    extract and no gelling ingredient. No strain-specific growth, incubation temperature,
+    storage lifetime or optional role annotation is inferred. Empty optional organism/role
+    fields are not negative findings.
+- assessment_id: provenance
+  area: provenance
+  topic: History, evidence and current merge compatibility
+  outcome: concern
+  summary: The generated target predates normalized amount repairs and current exact
+    formulation logic rejects a two-owner union.
+  target_ids:
+  - CultureMech:004013
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - generator
+  - formulation
+  - diagnostics
+  - historical-1
+  - historical-2
+  - historical-3
+  - historical-4
+  - historical-5
+  - historical-6
+  details: All current ingredient-set hashes coincide; their current73f11749… value
+    is not the stored historicalbf5baf44… value. Formulation hashes differ in notes,
+    parent_media, preparation_steps, variant_children, variant_modifications and variant_relationship.
+    Do not remove these assertions to force a merge. Two October curation reports
+    retain unchanged owner hashes and exact current API digest; all31 source objects
+    per report agree with fresh bytes, which does not authenticate historical access
+    times. September per-final-litre and water-chemical-edge recommendations are not
+    adopted without explicit basis. KOMODO history0 timestamp2026-01-27T01:15:01.fZ
+    is malformed, and history1 timestamp2026-02-03T11:18:56.650983 has no timezone.
+    Preserve the events without inventing corrected instants.
+findings:
+- finding_id: F1
+  issue_key: CM004013-stock-scope
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Mineral-stock constituents are represented at direct-medium scope
+  description: All three documents flatten13 stock-only solutes; the complete15-solute
+    stock and its10 ml batch addition are missing. Shared NaCl/calcium entries must
+    be preserved independently at main and stock stages. No explicit final-volume
+    evidence supports silently creating10 ML_PER_L.
+  target_ids:
+  - CultureMech:004013
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - mediadive1251
+  - dsm1251
+  - importer
+  rule_id: concentration-evidence-contract
+  native_severity: P2
+  normalization_reason: 'P2 normalized to major: material source-stage, supplied-form
+    or representation defect.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+- finding_id: F2
+  issue_key: CM004013-stale-merge
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated concentrations and preparation lag maintained inputs
+  description: The generated NaCl2.0 and calcium-chloride0.2 G_PER_L values predate
+    the normalized repairs. It also lacks DSMZ main preparation. Current exact formulation
+    comparison rejects owner union; regeneration must respect differing assertions.
+  target_ids:
+  - CultureMech:004013
+  field_paths:
+  - ingredients[4].concentration
+  - ingredients[6].concentration
+  - preparation_steps
+  - merged_from
+  - merge_fingerprint
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - generator
+  - formulation
+  - diagnostics
+  rule_id: generated-input-ownership
+  native_severity: P2
+  normalization_reason: 'P2 normalized to major: material source-stage, supplied-form
+    or representation defect.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merger.py
+    role: generated merge implementation
+- finding_id: F3
+  issue_key: CM004013-preparation-stage
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Main preparation is incomplete and stock preparation misplaced
+  description: KOMODO owner has no preparation; DSMZ owner retains correct main prose
+    but places stock241 dissolution/pH instructions at medium level. Preserve distinct
+    main/stock and supplement stages in future curation.
+  target_ids:
+  - CultureMech:004013
+  field_paths:
+  - data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml::preparation_steps
+  - data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml::preparation_steps[1]
+  evidence_ids:
+  - owner1
+  - owner2
+  - mediadive1251
+  - dsm1251
+  - importer
+  rule_id: source-preparation-scope
+  native_severity: P2
+  normalization_reason: 'P2 normalized to major: material source-stage, supplied-form
+    or representation defect.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+- finding_id: F4
+  issue_key: CM004013-nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate uses an anhydrous ontology identity
+  description: All three ingredient21 primary and CHEBI-keyed secondary terms use34887
+    despite the explicit hexahydrate source. Fresh53542 identity supports a scoped
+    candidate; package REJECTED status remains visible.
+  target_ids:
+  - CultureMech:004013
+  field_paths:
+  - ingredients[21].term
+  - ingredients[21].mediaingredientmech_chebi_term
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - chebi-34887
+  - chebi-53542
+  - diagnostics
+  rule_id: exact-supplied-form
+  native_severity: P2
+  normalization_reason: 'P2 normalized to major: material source-stage, supplied-form
+    or representation defect.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+- finding_id: F5
+  issue_key: CM004013-legacy-nitrate-link
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Sodium nitrate retains a legacy MIM identifier
+  description: Primary sodium nitrate63005 is correct. All three ingredient5 descriptors
+    still use the old MediaIngredientMech:000171 slot; current resolver supplies the
+    CHEBI identity. Preserve the correct primary grounding while modernizing the secondary
+    representation.
+  target_ids:
+  - CultureMech:004013
+  field_paths:
+  - ingredients[5].mediaingredientmech_term
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - chebi-63005
+  - mim-index
+  - diagnostics
+  rule_id: MIM-linkage-contract
+  native_severity: P3
+  normalization_reason: 'P3 normalized to minor: bounded provenance or legacy linkage
+    defect with recoverable primary identity.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+- finding_id: F6
+  issue_key: CM004013-claim-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Source claims and malformed history need scoped provenance
+  description: Current records lack attached concentration/preparation evidence despite
+    recoverable source claims. Exact KOMODO catalog is inaccessible, and its first
+    two history timestamps are malformed or lack timezone. Preserve historical bytes
+    and add honest provenance.
+  target_ids:
+  - CultureMech:004013
+  field_paths:
+  - ingredients[].evidence
+  - evidence
+  - data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml::curation_history[1].timestamp
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - mediadive1251
+  - dsm1251
+  - komodo-access
+  rule_id: source-provenance-and-history
+  native_severity: P3
+  normalization_reason: 'P3 normalized to minor: bounded provenance or legacy linkage
+    defect with recoverable primary identity.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+actions:
+- action_id: A1
+  description: Restore exact main/stock membership and receiving batch-dose representation
+    in maintained records.
+  finding_ids:
+  - F1
+  target_ids:
+  - CultureMech:004013
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Account for all29 source recipe rows and every existing amount; keep15 stock solutes
+    separate from main rows.
+  - Retain source10 ml batch addition,1010 ml API reported main volume and1000 ml
+    water input as distinct facts. Explicit final-volume evidence is required before
+    a per-litre conversion.
+  - Do not collapse same-name NaCl or calcium entries across compartments; preserve
+    supported main API values.
+  - Run four native recipe checks and independent source/quantity comparison after
+    authorized curation.
+- action_id: A2
+  description: Regenerate from curated maintained inputs under current formulation-aware
+    matching.
+  finding_ids:
+  - F2
+  target_ids:
+  - CultureMech:004013
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merger.py
+    role: generated merge implementation
+  acceptance_checks:
+  - Verify repaired main rows, preparation and source lineage in generated output.
+  - Do not discard notes, relationships or preparation to force the old two-owner
+    merge.
+  - Run just verify-merges and just audit-merge-freshness after authorized regeneration.
+  depends_on:
+  - A1
+  - A3
+  - A4
+  generator: python -m culturemech.merge.merge_recipes
+- action_id: A3
+  description: Preserve source-supported main preparation and scope mineral-stock
+    preparation to that stock.
+  finding_ids:
+  - F3
+  target_ids:
+  - CultureMech:004013
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Credit the existing DSMZ main paragraph; retain all original stage distinctions.
+  - Keep stock pH/dissolution instructions off the main-medium stage.
+  - Do not infer incubation, temperature, growth or stock strength absent from source;
+    validate schema and references.
+- action_id: A4
+  description: Resolve nickel supplied-form grounding in both maintained owners and
+    the packaged mapping workflow.
+  finding_ids:
+  - F4
+  target_ids:
+  - CultureMech:004013
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Compare source hexahydrate to current OLS53542 and34887 formulae; assess primary
+    and secondary terms together.
+  - Review the exact MIM REJECTED status rather than silently upgrading it; use the
+    snapshot maintenance contract, without hand-editing its immutable CSV.
+  - Run term/label checks and regenerate only after approved curation.
+- action_id: A5
+  description: Migrate the sodium-nitrate secondary linkage with the maintained resolver.
+  finding_ids:
+  - F5
+  target_ids:
+  - CultureMech:004013
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Retain primary63005 and its verified canonical label.
+  - Replace the legacy slot only through the authorized mapping workflow; rerun linkage/term
+    and schema checks.
+- action_id: A6
+  description: Attach scoped evidence and preserve unresolved access/history metadata.
+  finding_ids:
+  - F6
+  target_ids:
+  - CultureMech:004013
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldinitratiruptor_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_1251_CALDINITRATIRUPTOR_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Use ingredient evidence for supported quantity claims and root evidence scoped
+    to solution/preparation paths; do not invent nonexistent nested evidence slots.
+  - Retain actual source bytes, access times and historical-report distinction; retry
+    catalog access only when necessary.
+  - Keep history append-only; document malformed/unknown timezone values without guessing
+    corrected instants.
+limitations:
+- Current exact KOMODO catalog request returnedHTTP403. Historical source mapping
+  remains corroborating provenance, not fresh catalog authentication.
+- API g_l is a directly reported field at its solution stage. PDF input-water volumes
+  do not prove final mixed volume; no new dilution, molarity, density or final-medium
+  stock contribution was calculated.
+- The legacy MediaIngredientMech numeric identifier was not authenticated as a current
+  external accession. The observed yeast-extract FOODON mapping is not an externally
+  verified new grounding proposal.
+- Canonical checks target the generated record; maintained owners were read as context.
+  Deterministic validity is not scientific accuracy. Embedded histories were manually
+  assessed; full-corpus ID/product/merge gates were not rerun for this review-only
+  addition.
+- The complete PDF was read through text extraction and API cross-check. No experiment
+  or organism-growth review was performed.
+notes:
+- All scientific inputs remain unchanged; original native inspect hashes and source/check
+  receipts are retained.
+- Six historical reports were read with complete prose and lossless distinct-cell
+  comparison;62 quoted source-object/literal joins match fresh API. They are not structured
+  coverage and no historical finding is closed.
+- Stock definition is contained in DSMZ1251 itself; the Medium141 cross-reference
+  does not transfer parent-medium formulation or culture claims.
+tags:
+- source-review
+- generated-record
+- mediadive
+- stock-topology
+- batch-057
+```

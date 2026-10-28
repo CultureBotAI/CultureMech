@@ -1,0 +1,1479 @@
+schema_version: 1.0.0
+review_id: 20261028T055046Z-caldicellulosiruptor-medium-batch057
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of caldicellulosiruptor_medium
+started_at: '2026-10-28T05:41:16.435342Z'
+finished_at: '2026-10-28T05:50:46.605537Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ 640 identity and the main preparation are supported. SL-10 is flattened
+  at stock strength, its dose is missing, and nickel hydrate/sodium-resazurin mappings
+  do not encode the supplied forms. Main declared rates are credited without inventing
+  a final volume; stock and strain-specific prescriptions remain separate.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml
+    sha256: b7d0863275a775cc28d623d76250095e20fd28eed99844c9d240b9e5d47f4095
+    role: target
+  - path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+    sha256: 2ab213a4a0eba7b1fc5df13ef009df17d1da9d74f38a42e3835ca5eb619201ef
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/caldicellulosiruptor_medium.yaml.md
+    sha256: f5b97920dce1bd3085623b000d9eb179f74aa44a599db7e7f95182ed1753dc95
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.md
+    sha256: a726ad0ef1b18812fb218fed04583eba439b6399e8eb2a4cbb438676acbdb0cd
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldicellulosiruptor_medium.md
+    sha256: 9fe2a55e22ce311bd5cac6c7d9782a1e023452bfe777990c66a7d893c6d6e3c5
+    role: context
+  - path: reports/yaml_record_review/20260922T020100Z-CALDICELLULOSIRUPTOR_MEDIUM.md
+    sha256: afdf3e7cd752758aac1dba1563bff55664f2d0c54fda625de27e155fccc8271d
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch057 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001777
+targets:
+- target_id: CultureMech:001777
+  path: data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml
+  label: caldicellulosiruptor_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001777
+  command: just validate-schema data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001777
+  command: just validate-strict data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml
+    --workers 1 --out REVIEW_WORK/batch057/record04/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001777
+  command: just validate-terms data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:001777
+  command: just validate-references data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T05:49:53.169774Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: b7d0863275a775cc28d623d76250095e20fd28eed99844c9d240b9e5d47f4095
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T05:49:53.169962Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 2ab213a4a0eba7b1fc5df13ef009df17d1da9d74f38a42e3835ca5eb619201ef
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch057/record04/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T05:41:17.542435Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 89fc8a5b1047214fd27ee288caf5b97b6bd0b60fc2fd5bf721b0e2c6e9d119eb
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch057/record04/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T05:41:18.544533Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 91b9ac75c8e54d02ed15cdab9adb2d9f23c7ec76c0288778a48b1ca3394bb41d
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch057/record04/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T05:41:19.640740Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: f31fbafdd9372d0efec4946a3d40f1e688aa8e2428c70c3f8e96b4224aa20524
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch057/record04/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T05:41:20.424481Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: e2bdabc1021fe8c9dd62f7a5ba3f5c233313a8808164bd21088f599b4ee2a420
+- evidence_id: dsmz640
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T05:42:07.056325Z'
+  support: supports
+  summary: 'Complete current DSMZ primary PDF text and both rendered pages read: exact
+    main recipe, separate stock tables, preparation and any strain-specific prescriptions.
+    A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9
+- evidence_id: api640
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/640
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T05:42:07.056627Z'
+  support: supports
+  summary: Complete current MediaDive API identity, primary recipe, separate stock
+    recipes and preparation read. Explicit g_l values are provider normalization;
+    solution volume metadata and listed water do not establish a measured final medium
+    volume. Supplied mass/form takes priority over unverified mmol_l conversions.
+  snapshot_sha256: 970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.056713Z'
+  support: supports
+  summary: OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition
+    ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula
+    ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17057
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17057
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.056768Z'
+  support: supports
+  summary: OLS current exact CHEBI:17057 = cellobiose; definition ['A glycosylglucose
+    consisting of two glucose units linked via a β(1→4) bond.']; formula ['C12H22O11'];
+    mass ['342.297']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 3548f79d3274a33683125152944998cffa00bd4fce774c8d872db9003222ed06
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.056810Z'
+  support: supports
+  summary: OLS current exact CHEBI:17883 = hydrogen chloride; definition ['A mononuclear
+    parent hydride consisting of covalently bonded hydrogen and chlorine atoms.'];
+    formula ['HCl']; mass ['36.461']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.056846Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.747547Z'
+  support: supports
+  summary: OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic
+    chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.814036Z'
+  support: supports
+  summary: OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3'];
+    mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.829289Z'
+  support: supports
+  summary: OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound
+    of nickel and chloride in which the ratio of nickel (in the +2 oxidation state)
+    to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.829366Z'
+  support: supports
+  summary: OLS current exact CHEBI:49976 = zinc dichloride; definition ['A compound
+    of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms,
+    in each of which the Zn<small><sup>2+</small></sup> ions are trigonal planar coordinated
+    to four chloride ions.']; formula ['2Cl.Zn']; mass ['136.296']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:07.844388Z'
+  support: supports
+  summary: OLS current exact CHEBI:53503 = cobalt chloride hexahydrate; definition
+    ['A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride
+    and water moieties in the ratio 1:2:6.']; formula ['2Cl.Co.6H2O']; mass ['237.929'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:08.092555Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:08.364999Z'
+  support: supports
+  summary: OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na'];
+    mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:08.411406Z'
+  support: supports
+  summary: OLS current exact CHEBI:86249 = iron dichloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of iron dichloride.']; formula ['Cl2Fe.4H2O'];
+    mass ['198.811']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86254
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86254
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:08.424542Z'
+  support: supports
+  summary: OLS current exact CHEBI:86254 = iron trichloride hexahydrate; definition
+    ['A hydrate that is the hexahydrate form of iron trichloride.']; formula ['Cl3Fe.6H2O'];
+    mass ['270.294']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 89afba545ad02f24a850933df154af25dee37357b583f82de13866b44f18d683
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:08.448939Z'
+  support: supports
+  summary: OLS current exact CHEBI:86318 = copper(II) chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of copper(II) chloride. It occurs naturally
+    as the mineral eriochalcite.']; formula ['Cl2Cu.2H2O']; mass ['170.482']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:08.469876Z'
+  support: supports
+  summary: OLS current exact CHEBI:86345 = magnesium dichloride hexahydrate; definition
+    ['A hydrate that is the hexahydrate form of magnesium dichloride.']; formula ['2Cl.6H2O.Mg'];
+    mass ['203.301']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:08.701682Z'
+  support: supports
+  summary: OLS current exact CHEBI:86368 = manganese(II) chloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of manganese(II) chloride.']; formula
+    ['Cl2Mn.4H2O']; mass ['197.904']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:08.989635Z'
+  support: supports
+  summary: OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4'];
+    mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T05:42:09.006326Z'
+  support: supports
+  summary: OLS current exact CHEBI:91248 = L-cysteine hydrochloride hydrate; definition
+    ['A hydrate that is the monohydrate form of <small>L</small>-cysteine hydrochloride.'];
+    formula ['C3H7NO2S.H2O.HCl']; mass ['175.637']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch057/record04/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T05:49:53.172320Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: a42ea3a45bd0e584565e530d5c7e3d6900d558b3895a6798d2bb18ea6265fd30
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T020100Z-CALDICELLULOSIRUPTOR_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T05:49:53.173111Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: afdf3e7cd752758aac1dba1563bff55664f2d0c54fda625de27e155fccc8271d
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/caldicellulosiruptor_medium.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T05:49:53.173148Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. Current api640 raw bytes exactly match the cited historical SHA, and 25
+    quoted objects match both decoded locators and literal current raw substrings.
+    This authenticates the cited API payload and excerpts, not the reported historical
+    access time, execution or separate KOMODO catalogue/page.
+  snapshot_sha256: f5b97920dce1bd3085623b000d9eb179f74aa44a599db7e7f95182ed1753dc95
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldicellulosiruptor_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T05:49:53.173169Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 9fe2a55e22ce311bd5cac6c7d9782a1e023452bfe777990c66a7d893c6d6e3c5
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T05:49:53.173188Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: a726ad0ef1b18812fb218fed04583eba439b6399e8eb2a4cbb438676acbdb0cd
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record04/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T05:49:53.173209Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: 4402d3aacfb614418dbbf9755f26de7b35d10ca27ab63d1610eb8f18db54b870
+- evidence_id: writer32
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T05:49:53.173245Z'
+  support: context_only
+  summary: Current _parse_api_composition restricts direct ingredients to primary
+    recipe, skips stock additions and water, and prefers provider g_l; _parse_api_solutions
+    preserves referenced/percent stocks. This limits the old flattening attribution;
+    water needs preparation-volume representation and historical run provenance remains
+    separate.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer33
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T05:49:53.173267Z'
+  support: context_only
+  summary: Current formulation_content retains scientific fields, quantities, notes
+    and preparation; merge_formulation_evidence rejects incompatible scientific projections
+    and unions scoped evidence. Ingredient-set similarity does not prove scientific
+    equivalence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer34
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T05:49:53.173286Z'
+  support: context_only
+  summary: Current group_formulations uses full formulation fingerprints for compatible
+    automatic merging; broader group_recipes discovers ingredient-set candidates only.
+    Neither grouping path substitutes for source verification.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer35
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T05:49:53.173306Z'
+  support: context_only
+  summary: Current merge_group returns a single owner with routing metadata, and calls
+    conservative merge_formulation_evidence for multiple owners. Current code supports
+    regenerating stale content after owner repair but does not authenticate old generated
+    outputs.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch057/record04/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T05:49:53.188990Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: ff706b90932c73444666d975e5b011b5652256560ec28e68b5a6de661a9d2aac
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact base identity and variant limits
+  outcome: supported
+  summary: The target and sole maintained owner identify DSMZ 640, confirmed by the
+    current PDF/API. Unselected KOMODO or strain variants are not owners. The primary
+    lists several strain-specific substrate replacements; these remain separate evidence-only
+    prescriptions, not base-recipe changes or growth claims.
+  target_ids:
+  - CultureMech:001777
+  evidence_ids:
+  - local0
+  - local1
+  - dsmz640
+  - api640
+- assessment_id: a2
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: 'The September narrative correctly identifies stock flattening and nickel
+    hydration, but its final-litre wording exceeds the present PDF. The October blanket
+    conflicts are triage decisions: direct primary rates are now explicitly credited
+    while stock-stage defects remain. All historical API excerpts with matching current
+    raw digests are independently authenticated in historical-authentication.json.
+    Matching bytes do not verify old execution or the separate KOMODO catalogue. Current
+    MediaDive code separates stock additions but gathers all solution preparation
+    into a root list; current conservative merging preserves scientific fields and
+    rejects incompatible formulations. Those present behaviors do not prove how the
+    old generated records were produced.'
+  target_ids:
+  - CultureMech:001777
+  evidence_ids:
+  - history-auth
+  - writer32
+  - writer33
+  - writer34
+  - writer35
+- assessment_id: a3
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 40 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:001777
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:001777",
+    "selected_concentration_field_count": 40, "selected_concentration_fields_covered":
+    40, "decisions": [{"decision_id": "q1", "subject": "NH4Cl", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "original": {"value": "0.9", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.9", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 0.9 g in the batch and the
+    API explicitly reports g_l=0.9, matching the local value. Retain that declared
+    provider basis and exact form/grade; listed 1000 ml water plus additions is not
+    a measured final volume. No new final-volume division is inferred.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api640", "reference":
+    "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.9,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.9,\n                        \"mmol_l\":
+    16.8256,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 3-3", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "NH4Cl                                                  0.90        g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject":
+    "NaCl", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.9", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.9", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 0.9 g in the batch and the
+    API explicitly reports g_l=0.9, matching the local value. Retain that declared
+    provider basis and exact form/grade; listed 1000 ml water plus additions is not
+    a measured final volume. No new final-volume division is inferred.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api640", "reference":
+    "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 0.9,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.9,\n                        \"mmol_l\":
+    15.4004,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 4-4", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "NaCl                                                   0.90        g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject":
+    "MgCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.4", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.4", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 0.4 g in the batch and the
+    API explicitly reports g_l=0.4, matching the local value. Retain that declared
+    provider basis and exact form/grade; listed 1000 ml water plus additions is not
+    a measured final volume. No new final-volume division is inferred.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api640", "reference":
+    "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.4,\n                        \"mmol_l\":
+    1.96751,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 5-5", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "MgCl2 x 6
+    H2O                                          0.40        g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q4", "subject": "KH2PO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "original": {"value": "0.75", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "0.75", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 0.75 g in the batch and the
+    API explicitly reports g_l=0.75, matching the local value. Retain that declared
+    provider basis and exact form/grade; listed 1000 ml water plus additions is not
+    a measured final volume. No new final-volume division is inferred.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api640", "reference":
+    "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.75,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.75,\n                        \"mmol_l\":
+    5.51126,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 6-6", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "KH2PO4                                                 0.75        g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject":
+    "K2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 1.5 g in the batch and the
+    API explicitly reports g_l=1.5, matching the local value. Retain that declared
+    provider basis and exact form/grade; listed 1000 ml water plus additions is not
+    a measured final volume. No new final-volume division is inferred.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api640", "reference":
+    "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    8.61198,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 7-7", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "K2HPO4                                                 1.50        g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject":
+    "Trypticase peptone", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 2 g in the batch and the API
+    explicitly reports g_l=2, matching the local value. Retain that declared provider
+    basis and exact form/grade; listed 1000 ml water plus additions is not a measured
+    final volume. No new final-volume division is inferred.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[5]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Trypticase peptone\",\n                        \"compound_id\":
+    124,\n                        \"attribute\": \"BD BBL\",\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    2,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 8-8", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "Trypticase
+    peptone (BD BBL)                            2.00        g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q7", "subject": "Yeast extract",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 1 g in the batch and the API
+    explicitly reports g_l=1, matching the local value. Retain that declared provider
+    basis and exact form/grade; listed 1000 ml water plus additions is not a measured
+    final volume. No new final-volume division is inferred.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[6]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"OXOID\",\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 9-9", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "Yeast extract
+    (OXOID)                                  1.00        g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q8", "subject": "L-Cysteine HCl
+    x H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.75", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.75", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 0.75 g in the batch and the
+    API explicitly reports g_l=0.75, matching the local value. Retain that declared
+    provider basis and exact form/grade; listed 1000 ml water plus additions is not
+    a measured final volume. No new final-volume division is inferred.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[10]", "source_key": "api640", "reference":
+    "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.75,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.75,\n                        \"mmol_l\":
+    4.2702,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 13-13", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "L-Cysteine
+    HCl x H2O                                   0.75        g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q9", "subject": "Cellobiose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[10].concentration", "original": {"value": "1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "main medium, provider-declared
+    rate", "interpretation": "The primary PDF specifies 1 g in the batch and the API
+    explicitly reports g_l=1, matching the local value. Retain that declared provider
+    basis and exact form/grade; listed 1000 ml water plus additions is not a measured
+    final volume. No new final-volume division is inferred.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[11]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Cellobiose\",\n                        \"compound_id\":
+    214,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    2.92141,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 14-14", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "Cellobiose                                             1.00        g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q10", "subject":
+    "FeCl3 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.0025",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.0025",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate liquid stock
+    addition", "interpretation": "The local 0.0025 G_PER_L matches the API declared
+    rate. The PDF instead records the stock volume and 0.1% w/v strength: 0.1 g/100
+    ml = 0.001 g/ml, delivering 0.0025 g to the batch. Preserve dose and stock strength
+    explicitly; that mass is not independently a final g/L without a final-volume
+    basis. The ferric stock additionally carries 0.2 N HCl; resazurin is the sodium
+    salt.", "sources": [{"locator": "$.data.solutions[0].recipe[8]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"FeCl3 x 6 H2O\",\n                        \"compound_id\":
+    82,\n                        \"attribute\": \"0.1% w/v in 0.2 N HCl\",\n                        \"amount\":
+    2.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.0025,\n                        \"mmol_l\": 0.00924912,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 11-11", "source_key": "dsmz640", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "FeCl3 x 6
+    H2O (0.1% w/v in 0.2 N HCl)                  2.50       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q11", "subject": "Sodium resazurin",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.0005",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.0005",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "separate liquid stock
+    addition", "interpretation": "The local 0.0005 G_PER_L matches the API declared
+    rate. The PDF instead records the stock volume and 0.1% w/v strength: 0.1 g/100
+    ml = 0.001 g/ml, delivering 0.0005 g to the batch. Preserve dose and stock strength
+    explicitly; that mass is not independently a final g/L without a final-volume
+    basis. The ferric stock additionally carries 0.2 N HCl; resazurin is the sodium
+    salt.", "sources": [{"locator": "$.data.solutions[0].recipe[9]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.0005,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 12-12", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "Sodium resazurin
+    (0.1% w/v)                            0.50       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q12", "subject": "SL-10 hydrochloric
+    acid", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "SL-10 stock liquid", "interpretation":
+    "The source specifies 10 ml HCl labelled 25%; the percentage basis is unspecified
+    in this source. API g_l=2.5 is an unverified liquid-to-mass conversion and is
+    not adequate evidence for local 2.5 G_PER_L. Preserve volume and stock attribute
+    without inventing density or a w/v definition; this acid also belongs to the stock,
+    not directly to the receiving medium.", "sources": [{"locator": "$.data.solutions[1].recipe[0]",
+    "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text lines 43-43", "source_key": "dsmz640", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "HCl (25%)                                             10.00      ml",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q13", "subject":
+    "FeCl2 x 4 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "SL-10 stock composition, not direct
+    medium", "interpretation": "1.5 g corresponds to 1.5 g in the stock. The explicit
+    make-up to 1000 ml supports 1.5 g/L STOCK strength. The local number is correct
+    only at that stock stage; move it under the separate SL-10 composition and preserve
+    its 1 ml batch addition. Do not copy the stock rate into final-medium ingredients.
+    No final-medium concentration is asserted.", "sources": [{"locator": "$.data.solutions[1].recipe[1]",
+    "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 44-44", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "FeCl2 x 4
+    H2O                                          1.50       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q14", "subject": "ZnCl2", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[13].concentration", "original": {"value": "0.07", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "SL-10 stock composition, not direct
+    medium", "interpretation": "70 mg corresponds to 0.07 g in the stock. The explicit
+    make-up to 1000 ml supports 0.07 g/L STOCK strength. The local number is correct
+    only at that stock stage; move it under the separate SL-10 composition and preserve
+    its 1 ml batch addition. Do not copy the stock rate into final-medium ingredients.
+    No final-medium concentration is asserted.", "sources": [{"locator": "$.data.solutions[1].recipe[2]",
+    "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 45-45", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "ZnCl2                                                 70.00      mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]",
+    "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q15", "subject": "MnCl2 x 4 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[14].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "SL-10 stock composition, not direct
+    medium", "interpretation": "100 mg corresponds to 0.1 g in the stock. The explicit
+    make-up to 1000 ml supports 0.1 g/L STOCK strength. The local number is correct
+    only at that stock stage; move it under the separate SL-10 composition and preserve
+    its 1 ml batch addition. Do not copy the stock rate into final-medium ingredients.
+    No final-medium concentration is asserted.", "sources": [{"locator": "$.data.solutions[1].recipe[3]",
+    "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 52-52", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "MnCl2 x 4
+    H2O                                             100.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q16", "subject": "H3BO3", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[15].concentration", "original": {"value": "0.006", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.006",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "SL-10 stock composition,
+    not direct medium", "interpretation": "6 mg corresponds to 0.006 g in the stock.
+    The explicit make-up to 1000 ml supports 0.006 g/L STOCK strength. The local number
+    is correct only at that stock stage; move it under the separate SL-10 composition
+    and preserve its 1 ml batch addition. Do not copy the stock rate into final-medium
+    ingredients. No final-medium concentration is asserted.", "sources": [{"locator":
+    "$.data.solutions[1].recipe[4]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 53-53", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "H3BO3                                                       6.00      mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]",
+    "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q17", "subject": "CoCl2 x 6 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[16].concentration", "original": {"value": "0.19", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.19", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "SL-10 stock composition, not direct
+    medium", "interpretation": "190 mg corresponds to 0.19 g in the stock. The explicit
+    make-up to 1000 ml supports 0.19 g/L STOCK strength. The local number is correct
+    only at that stock stage; move it under the separate SL-10 composition and preserve
+    its 1 ml batch addition. Do not copy the stock rate into final-medium ingredients.
+    No final-medium concentration is asserted.", "sources": [{"locator": "$.data.solutions[1].recipe[5]",
+    "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 54-54", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "CoCl2 x 6
+    H2O                                             190.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q18", "subject": "CuCl2 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[17].concentration", "original": {"value": "0.002", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.002",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "SL-10 stock composition,
+    not direct medium", "interpretation": "2 mg corresponds to 0.002 g in the stock.
+    The explicit make-up to 1000 ml supports 0.002 g/L STOCK strength. The local number
+    is correct only at that stock stage; move it under the separate SL-10 composition
+    and preserve its 1 ml batch addition. Do not copy the stock rate into final-medium
+    ingredients. No final-medium concentration is asserted.", "sources": [{"locator":
+    "$.data.solutions[1].recipe[6]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 55-55", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "CuCl2 x 2
+    H2O                                               2.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q19", "subject": "NiCl2 x 6 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[18].concentration", "original": {"value": "0.024", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "SL-10 stock composition,
+    not direct medium", "interpretation": "24 mg corresponds to 0.024 g in the stock.
+    The explicit make-up to 1000 ml supports 0.024 g/L STOCK strength. The local number
+    is correct only at that stock stage; move it under the separate SL-10 composition
+    and preserve its 1 ml batch addition. Do not copy the stock rate into final-medium
+    ingredients. No final-medium concentration is asserted.", "sources": [{"locator":
+    "$.data.solutions[1].recipe[7]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 56-56", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "NiCl2 x 6
+    H2O                                              24.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q20", "subject": "Na2MoO4 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml", "field_path":
+    "ingredients[19].concentration", "original": {"value": "0.036", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.036",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "SL-10 stock composition,
+    not direct medium", "interpretation": "36 mg corresponds to 0.036 g in the stock.
+    The explicit make-up to 1000 ml supports 0.036 g/L STOCK strength. The local number
+    is correct only at that stock stage; move it under the separate SL-10 composition
+    and preserve its 1 ml batch addition. Do not copy the stock rate into final-medium
+    ingredients. No final-medium concentration is asserted.", "sources": [{"locator":
+    "$.data.solutions[1].recipe[8]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 57-57", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "Na2MoO4 x
+    2 H2O                                            36.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].steps[0]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q21", "subject": "SL-10 receiving dose",
+    "local_fields": [], "decision": "evidence_only", "stage": "main batch addition",
+    "interpretation": "Restore the 1 ml stock addition to the specified batch. The
+    PDF does not say to make the completed medium up to one litre.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[7]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 10-10", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "Trace element
+    solution SL-10                           1.00       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q22", "subject": "Main preparation
+    water", "local_fields": [], "decision": "evidence_only", "stage": "main batch
+    addition", "interpretation": "Retain 1000 ml water as the preparation amount;
+    neither convert it to a mass concentration nor silently treat it as a measured
+    final volume.", "sources": [{"locator": "$.data.solutions[0].recipe[12]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text lines 15-15", "source_key": "dsmz640",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "Distilled
+    water                                     1000.00       ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q23", "subject": "SL-10 water and
+    final stock basis", "local_fields": [], "decision": "evidence_only", "stage":
+    "stock preparation", "interpretation": "Preserve 990 ml listed water and the explicit
+    instruction to make the completed stock up to 1000 ml. This final stock basis
+    does not establish the receiving medium final volume.", "sources": [{"locator":
+    "$.data.solutions[1].recipe[9]", "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[1].steps[0]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q24", "subject": "Main anaerobic preparation
+    and pH", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients
+    except cysteine and cellobiose. Sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic, then add cysteine and adjust pH to 7.2. Distribute medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cellobiose after autoclaving from an anoxic stock solution prepared under
+    100% N2 gas atmosphere and sterilized by filtration. Adjust pH of the complete
+    medium to 7.2, if necessary."}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients
+    except cysteine and cellobiose. Sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic, then add cysteine and adjust pH to 7.2. Distribute medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cellobiose after autoclaving from an anoxic stock solution prepared under
+    100% N2 gas atmosphere and sterilized by filtration. Adjust pH of the complete
+    medium to 7.2, if necessary."}, {"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "ph_value", "original": 7.2}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "ph_value", "original": 7.2}], "decision": "evidence_only", "stage":
+    "main preparation", "interpretation": "Retain 100% N2 sparging for 30–45 min,
+    cysteine added before pH 7.2 adjustment and autoclaving, then filter-sterilized
+    anoxic cellobiose stock and final pH 7.2 if needed. The existing prose is substantially
+    supported. No autoclave temperature, hold time, stock volume or organism growth
+    claim is invented.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640", "source_raw_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "source_text_sha256":
+    "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b", "accessed_at":
+    "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients except cysteine and cellobiose. Sparge medium with 100%
+    N2 gas for 30 - 45 min to make it anoxic, then add cysteine and adjust pH to 7.2.
+    Distribute medium under same gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. Add cellobiose after autoclaving from an anoxic stock
+    solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust
+    pH of the complete medium to 7.2, if necessary.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q25", "subject": "SL-10 dissolution order",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml",
+    "field_path": "preparation_steps[1].description", "original": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml."}, {"record_path": "data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml",
+    "field_path": "preparation_steps[1].description", "original": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml."}], "decision": "correct", "stage": "stock preparation
+    only", "interpretation": "The retained FeCl2-in-HCl dissolution instruction belongs
+    to SL-10 and its final 1000 ml, not a second main-medium preparation step. Preserve
+    it with the stock context.", "sources": [{"locator": "$.data.solutions[1].steps[0]",
+    "source_key": "api640", "reference": "https://mediadive.dsmz.de/rest/medium/640",
+    "source_raw_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "source_text_sha256": "970d20f183a4dffbe5bfb0db09dea3ce997c4b5ac759f977c847b76840109c3b",
+    "accessed_at": "2026-10-28T05:42:07.056627Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q26", "subject": "DSM 640 strain-specific
+    prescription", "local_fields": [], "decision": "evidence_only", "stage": "separate
+    source variant", "interpretation": "Keep this exact strain-specific substrate/pH
+    instruction separate from the base cellobiose recipe. Explicit g/l and pH values
+    apply only to the named strains; a prescription is not an experimental growth
+    result and does not justify changing every owner.", "sources": [{"locator": "extracted-text
+    lines 25-38", "source_key": "dsmz640", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640.pdf",
+    "source_raw_sha256": "beeed5f3fc213484552e0a4ecc2ca197b07961b48fbbebf580286ba83e2f2df9",
+    "source_text_sha256": "fbf6281e418523ae8951a4c89f908a5e750e170ca707581428e525c5eb79662c",
+    "accessed_at": "2026-10-28T05:42:07.056325Z", "exact_source_quote": "For DSM 8685,
+    DSM 8691, DSM 8692, DSM 10170: Replace cellobiose with 5.00 g/l\nD-xylose added
+    to the autoclaved medium from an anoxic stock solution sterilized by\nfiltration.
+    Adjust pH of the complete medium to 5.2 - 5.4!\nFor DSM 10319, DSM 11055, DSM
+    11056, DSM 11057, DSM 11426, DSM 22141, DSM\n101588: Replace cellobiose with 5.00
+    g/l D-glucose added to the autoclaved medium from\na sterile anoxic stock solution.\nFor
+    DSM 13528: Replace cellobiose with 5.00 g/l D-fructose added to the autoclaved\nmedium
+    from a sterile anoxic stock solution. Adjust pH of the complete medium to 6.0!\nFor
+    DSM 16488, DSM 24455: Replace cellobiose with 2.00 g/l D-glucose added to the\nautoclaved
+    medium from a sterile anoxic stock solution.\nFor DSM 22658: Replace cellobiose
+    with 5.00 g/l D-fructose added to the autoclaved\nmedium from a sterile anoxic
+    stock solution.\nFor DSM 24750: Replace cellobiose with 2.00 g/l Na-pyruvate added
+    to the autoclaved\nmedium from an anoxic stock solution sterilized by filtration.",
+    "quote_representation": "captured extracted text"}]}], "local_field_census_reference":
+    "REVIEW_WORK/batch057/record04/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a4
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/CALDICELLULOSIRUPTOR_MEDIUM.yaml: primary 18/20,
+    secondary 17/20; data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml:
+    primary 18/20, secondary 17/20. These are ingredient-instance linkage fractions,
+    not accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    Zero numeric legacy MediaIngredientMech identifiers occur in the full selected
+    documents; NNNNNN is a historical placeholder, not an ID. Complex commercial/product
+    components are not forced to pure-compound IDs.'
+  target_ids:
+  - CultureMech:001777
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:001777
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-001777-sl10-stock-flattening
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: SL-10 stock chemistry is represented as direct medium ingredients
+  description: The record contains the undiluted SL-10 HCl and eight other compound
+    rows but omits the separate 1 ml stock addition. The stock has an explicit 1000
+    ml final volume; the receiving recipe lists 1000 ml water and separate additions.
+    Those are different stages. HCl 25% also lacks the basis needed to validate the
+    API-derived mass rate.
+  target_ids:
+  - CultureMech:001777
+  field_paths:
+  - ingredients[11].concentration
+  - ingredients[12].concentration
+  - ingredients[13].concentration
+  - ingredients[14].concentration
+  - ingredients[15].concentration
+  - ingredients[16].concentration
+  - ingredients[17].concentration
+  - ingredients[18].concentration
+  - ingredients[19].concentration
+  - solutions
+  - preparation_steps[1]
+  evidence_ids:
+  - dsmz640
+  - api640
+  rule_id: stock-stage-and-unit-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-001777-nickel-hydrate-and-sodium-resazurin-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium resazurin are linked to different supplied forms
+  description: Every selected layer names nickel chloride hexahydrate but asserts
+    anhydrous nickel dichloride CHEBI:34887 in both primary and secondary slots. Sodium
+    resazurin is linked through its primary slot to neutral Resazurin CHEBI:8806;
+    there is no asserted resazurin secondary slot to correct. Exact labels pass native
+    checks, but OLS formulas Cl2Ni and C12H7NO4 do not encode the supplied forms.
+    Current MIM matches describe those asserted IDs, not hydrate or sodium-salt equivalence.
+  target_ids:
+  - CultureMech:001777
+  field_paths:
+  - ingredients[18].term
+  - ingredients[18].mediaingredientmech_chebi_term
+  - ingredients[8].term
+  evidence_ids:
+  - dsmz640
+  - chebi34887
+  - chebi8806
+  - grounding
+  rule_id: supplied-chemical-form-correspondence
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-001777-batch-liquid-context-and-claim-evidence
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Batch water and liquid-stock context need explicit representation
+  description: The recipe lacks the listed 1000 ml preparation water and structured
+    ferric/resazurin stock doses; ferric carrier acidity 0.2 N HCl is lost. Correct
+    direct rows and existing main preparation should be retained. Amounts have no
+    attached claim-level source evidence despite available exact sources.
+  target_ids:
+  - CultureMech:001777
+  field_paths:
+  - solutions
+  - preparation_steps
+  - evidence
+  - ingredients[7].concentration
+  - ingredients[8].concentration
+  evidence_ids:
+  - dsmz640
+  - api640
+  rule_id: source-preparation-and-evidence-completeness
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Represent SL-10 separately with its exact composition, final stock
+    volume, acid attribute and dissolution order; restore the stated stock dose. Retain
+    main provider rates on their explicit basis and do not calculate a final medium
+    volume from listed water.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001777
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Resolve the exact source hydrate and sodium-salt identities against
+    authoritative ontology and MIM records. Use verified supplied-form mappings or
+    retain precise source labels with unresolved mapping; preserve source masses and
+    do not substitute anhydrous molar arithmetic.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001777
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Add source-scoped preparation water and liquid-stock context, retaining
+    the 0.1% w/v attributes and ferric acid carrier. Attach ingredient evidence where
+    supported and enclosing root evidence scoped to solution/preparation paths; do
+    not invent evidence slots on SolutionDescriptor or PreparationStep.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001777
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldicellulosiruptor_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- No empirical growth experiment was identified in the selected recipe sources; named
+  DSM prescriptions are not growth measurements.
+- No measured final main-medium volume or HCl 25% percentage basis is supplied. API
+  mmol_l values are not adopted as chemical-form verification.
+- Current MIM lookup is a packaged snapshot at the exact commit recorded in grounding-inventory.json;
+  rejected synonym rows and identifier matches do not prove historical mapping validity.
+- The separate unselected KOMODO 640 peer was an identity-search lead, not an owner
+  or a fully assessed variant.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
