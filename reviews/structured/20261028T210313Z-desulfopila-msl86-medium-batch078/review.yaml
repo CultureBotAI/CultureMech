@@ -1,0 +1,2567 @@
+schema_version: 1.0.0
+review_id: 20261028T210313Z-desulfopila-msl86-medium-batch078
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of desulfopila_msl86_medium
+started_at: '2026-10-28T20:57:49.157814Z'
+finished_at: '2026-10-28T21:03:13.486902Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: Eleven main rates and pH 7.5 are supported with explicit provider normalization.
+  Nineteen stock rates are flattened, stock preparation is misplaced, and two supplied
+  chemical forms are misidentified. The maintained KOMODO branch also lacks the current
+  DSM anoxic sequence; its exact endpoint remains inaccessible.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml
+    sha256: 50bbfcc708ca5a1f4d9604ad94fd3369727b36ef5dd50dd55ac40768a41e0678
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    sha256: 1cd998cb2bd882804075c0050e3fccea1959bedaddb42c66107ca34923db0e33
+    role: context
+  - path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    sha256: d3b975a875976d85e68032bf0de083e82c7f5dd2cedc3d6975f93b0bd1e029e8
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/inspected-candidate-context.json
+    sha256: 0bb2da58a82dc2b4a90beef1224a7355fd5632db772be0ef053bde40754ded87
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/plan.json
+    sha256: 1eec521fb8743316925ed3d629323b5c1312db0b35497db1e8bbe560a13e3508
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/msl86_medium.yaml.md
+    sha256: 6ad628368ee0bb9aaac2dbedbb100683db266214a6c85454ed1ea046dc20ff4e
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/plan.json
+    sha256: 94e89303f14558d9b0d485aa6cb4eb646050837864ab920d759763a3a483b94f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfopila_msl86_medium.yaml.md
+    sha256: 747852405c88f459fecd485d10a6bcec8c35ad900b183f61946a14fcb8055aae
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.md
+    sha256: ef93cd14f26f8d0c008e3e742e1f37f3957583e7126bbd7b46a9489dc6a61344
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfopila_msl86_medium.md
+    sha256: b7de3c902a00318a13a9d38b6e1376819b08ad72eb220f697df3464531fd8b90
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/msl86_medium.md
+    sha256: 5aea0f94eb48d1a1bb62838e45b5355d9ed7b39e6fe3c073692a3bf0cab4b866
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/propose_cocktail_nesting.py
+    sha256: e886c446a8398f08f1cc735b1c3a9812c5fc6371a36b69ef5325f1c53f14e6c0
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim, embedded source stocks and current writers.
+  selection: Authoritative batch078 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:000500
+targets:
+- target_id: CultureMech:000500
+  path: data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml
+  label: desulfopila_msl86_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000500
+  command: just validate-schema data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000500
+  command: just validate-strict data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml
+    --workers 1 --out REVIEW_WORK/batch078/record04/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:000500
+  command: just validate-terms data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:000500
+  command: just validate-references data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T21:03:13.415422Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 50bbfcc708ca5a1f4d9604ad94fd3369727b36ef5dd50dd55ac40768a41e0678
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T21:03:13.415607Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 1cd998cb2bd882804075c0050e3fccea1959bedaddb42c66107ca34923db0e33
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/msl86_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T21:03:13.415636Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: d3b975a875976d85e68032bf0de083e82c7f5dd2cedc3d6975f93b0bd1e029e8
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch078/record04/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T20:57:50.296829Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: f87457f509b7ddb53e0f50cda620ffbd222ff82afa8adbcc4c0ed42707516637
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch078/record04/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T20:57:51.300583Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: 2553c1506b382386ba22d0afcbdc2f876be3ea60bf2dc420225a063e35a58c89
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch078/record04/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T20:57:52.392493Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 741b86344e8d6aad09a05c848ab81c6645fd114c5731eb499b6b0eea89e02a19
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch078/record04/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T20:57:53.178836Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: ddb4ef71b6a6f8e5f248ffa002350c61023eda278490ac8abe1874e0a037ac08
+- evidence_id: dsm1068
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T20:57:49.518573Z'
+  support: supports
+  summary: Complete exact DSM primary PDF text and all rendered pages read, including
+    the main recipe, embedded stock tables and staged procedures. Physical LF locators
+    refer to preserved pdftototext output; no page-wide or stock instruction is transferred
+    to another stage.
+  snapshot_sha256: fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e
+- evidence_id: api1068
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/1068
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T20:57:49.518850Z'
+  support: supports
+  summary: Complete current provider identity, solution tables and preparation read.
+    Explicit g_l and declared volumes are credited only on their named provider stock
+    or recipe basis; they are not independent measured final volumes. Provider mmol_l
+    values are not adopted as chemical-form authority.
+  snapshot_sha256: 11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da
+- evidence_id: komodo1068
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=1068
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T20:57:50.193510Z'
+  support: unknown
+  summary: Actual HTTP 403 response, not formulation evidence.
+  snapshot_sha256: 3f3af40fd1f35b23f04d319eef15be7041b31906c40c4658304359f543ec225b
+- evidence_id: dsm18488Identity
+  kind: primary_source
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-18488
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T20:57:50.352199Z'
+  support: supports
+  summary: Current official collection identity, strain synonyms, environmental isolation
+    and exact medium association only. The page is not a recipe or a new experimental
+    growth assertion.
+  snapshot_sha256: da762ee85218187f49ca00475a7086d55f3020cf8303d42733fa2689d94ee6af
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:8806
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896332Z'
+  support: supports
+  summary: OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4'];
+    mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f2530ec9c15f59a3d132a466c9c3a899497bab0f85b996d3e27bef8612f89982
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896620Z'
+  support: supports
+  summary: OLS current exact CHEBI:15940 = nicotinic acid; definition ['A pyridinemonocarboxylic
+    acid that is pyridine in which the hydrogen at position 3 is replaced by a carboxy
+    group.']; formula ['C6H5NO2']; mass ['123.111']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896704Z'
+  support: supports
+  summary: OLS current exact CHEBI:15956 = biotin; definition ['An organic heterobicyclic
+    compound that consists of 2-oxohexahydro-1<em>H</em>-thieno[3,4-<em>d</em>]imidazole
+    having a valeric acid substituent attached to the tetrahydrothiophene ring. The
+    parent of the class of biotins.']; formula ['C10H16N2O3S']; mass ['244.316'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896775Z'
+  support: supports
+  summary: OLS current exact CHEBI:16494 = lipoic acid; definition ['A heterocyclic
+    thia fatty acid comprising pentanoic acid with a 1,2-dithiolan-3-yl group at the
+    5-position.']; formula ['C8H14O2S2']; mass ['206.332']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: 192c51f672f633c6071a3397d5785fb2bca6eaf8f9b787f7aaaa6c2aeb3b1a2f
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896835Z'
+  support: supports
+  summary: OLS current exact CHEBI:17015 = riboflavin; definition ['<small>D</small>-Ribitol
+    in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[<em>g</em>]pteridin-10(2<em>H</em>)-yl
+    moiety. It is a nutritional factor found in milk, eggs, malted barley, liver,
+    kidney, heart, and leafy vegetables, but the richest natural source is yeast.
+    The free form occurs only in the retina of the eye, in whey, and in urine; its
+    principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine
+    dinucleotide.']; formula ['C17H20N4O6']; mass ['376.369']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: 17f7ac7c03d75b85a96f951321902906266f3ce8fa44faea4814fac46560e3e6
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17883
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:18.896878Z'
+  support: supports
+  summary: OLS current exact CHEBI:17883 = hydrogen chloride; definition ['A mononuclear
+    parent hydride consisting of covalently bonded hydrogen and chlorine atoms.'];
+    formula ['HCl']; mass ['36.461']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: e5ab164ef9ff955da1a504ca34ab4d3b69539d9bf721936c9dd563ccbbd0e3b0
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.628135Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 70cf14c35e06f40427c1a2aa30e99794518eda976b5e5b3c86610efc28b7f25a
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.653114Z'
+  support: supports
+  summary: OLS current exact CHEBI:27470 = folic acid; definition ['An <em>N</em>-acyl-amino
+    acid that is a form of the water-soluble vitamin B<small><sub>9</sub></small>.
+    Its biologically active forms (tetrahydrofolate and others) are essential for
+    nucleotide biosynthesis and homocysteine remethylation.']; formula ['C19H19N7O6'];
+    mass ['441.404']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: e1820a7a704794fa20995eea5037e03c2b22b847817c28bb2f45f80762c275d1
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.697139Z'
+  support: supports
+  summary: OLS current exact CHEBI:30753 = 4-aminobenzoic acid; definition ['An aminobenzoic
+    acid in which the amino group is <em>para</em> to the carboxy group.']; formula
+    ['C7H7NO2']; mass ['137.138']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.760461Z'
+  support: supports
+  summary: OLS current exact CHEBI:30961 = pyridoxine hydrochloride; definition ['The
+    hydrochloride salt of pyridoxine.']; formula ['C8H11NO3.HCl']; mass ['205.641'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:19.804930Z'
+  support: supports
+  summary: OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic
+    chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.231810Z'
+  support: supports
+  summary: OLS current exact CHEBI:31345 = Calcium pantothenate; definition []; formula
+    ['2C9H16NO5.Ca']; mass ['476.536']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31795
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.275424Z'
+  support: supports
+  summary: OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S'];
+    mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: ceb0c93d1964844e99454d74730971855710441d92eec74aff5c873c833e324a
+- evidence_id: chebi32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32149
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.338532Z'
+  support: supports
+  summary: OLS current exact CHEBI:32149 = sodium sulfate; definition []; formula
+    ['2Na.O4S']; mass ['142.043']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 96b73aef765e4edc893460a376cfedd136930f253bbeac639827b1daddb65d71
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.419186Z'
+  support: supports
+  summary: OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3'];
+    mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.849805Z'
+  support: supports
+  summary: OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound
+    of nickel and chloride in which the ratio of nickel (in the +2 oxidation state)
+    to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.879786Z'
+  support: supports
+  summary: OLS current exact CHEBI:49105 = thiamine hydrochloride; definition ['A
+    hydrochloride obtained by combining thiamine chloride with one molar equivalent
+    of hydrochloric acid.']; formula ['C12H17N4OS.Cl.HCl']; mass ['337.276']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: f9dbae8cd2dcbd38d914abb99730e341ff280d3a44f20f95b2663e47664780cf
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49976
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.931497Z'
+  support: supports
+  summary: OLS current exact CHEBI:49976 = zinc dichloride; definition ['A compound
+    of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms,
+    in each of which the Zn<small><sup>2+</small></sup> ions are trigonal planar coordinated
+    to four chloride ions.']; formula ['2Cl.Zn']; mass ['136.296']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d3bdc4c6f01d01422fafe433df4e4011e01cf7e55e0329ab341a60ece780946f
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.936976Z'
+  support: supports
+  summary: OLS current exact CHEBI:53503 = cobalt chloride hexahydrate; definition
+    ['A hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride
+    and water moieties in the ratio 1:2:6.']; formula ['2Cl.Co.6H2O']; mass ['237.929'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:20.957833Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.446979Z'
+  support: supports
+  summary: OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na'];
+    mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi75228
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75228
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.511157Z'
+  support: supports
+  summary: OLS current exact CHEBI:75228 = sodium lactate; definition ['An organic
+    sodium salt having lactate as the counterion.']; formula ['C3H5O3.Na']; mass ['112.06'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 02869dcf8cd74aa7f8b975f2590e5bdbd4512df6c748979a72d5337751ae5774
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:76209
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.561689Z'
+  support: supports
+  summary: OLS current exact CHEBI:76209 = sodium sulfide nonahydrate; definition
+    ['A hydrate with formula Na<small><sub>2</sub></small>S·9H<small><sub>2</sub></small>O.'];
+    formula ['9H2O.2Na.S']; mass ['240.182']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 4896ec517123ebeb1afcbac7bc30a7103976f03891af0c86c992196b5f0db969
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.562858Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86249
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.569110Z'
+  support: supports
+  summary: OLS current exact CHEBI:86249 = iron dichloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of iron dichloride.']; formula ['Cl2Fe.4H2O'];
+    mass ['198.811']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 4d7f48f88badcba85a62e59842c6ec921f5478eb76695098b17847ed62c8530a
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:21.647139Z'
+  support: supports
+  summary: OLS current exact CHEBI:86318 = copper(II) chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of copper(II) chloride. It occurs naturally
+    as the mineral eriochalcite.']; formula ['Cl2Cu.2H2O']; mass ['170.482']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.118640Z'
+  support: supports
+  summary: OLS current exact CHEBI:86368 = manganese(II) chloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of manganese(II) chloride.']; formula
+    ['Cl2Mn.4H2O']; mass ['197.904']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:91248
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.149866Z'
+  support: supports
+  summary: OLS current exact CHEBI:91248 = L-cysteine hydrochloride hydrate; definition
+    ['A hydrate that is the monohydrate form of <small>L</small>-cysteine hydrochloride.'];
+    formula ['C3H7NO2S.H2O.HCl']; mass ['175.637']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: d0959ac455ece32a6e94c13fd8e592403109201b6c61144dccfe0d58f1916380
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T20:58:22.711906Z'
+  support: supports
+  summary: OLS current exact CHEBI:176843 = vitamin B12; definition ['Any member of
+    a group of cobalamin vitamers that exhibit biological activity against vitamin
+    B<small><sub>12</sub></small> deficiency. Vitamin B<small><sub>12</sub></small>
+    deficiency is associated with low red blood cell count and anemia. The vitamers
+    are found in foods such as cereals, meat, fish, and poultry. The vitamers include
+    adenosylcobalamin, hydroxocobalamin, cyanocobalamin, aquacobalamin, nitritocobalamin
+    and methylcobabalamin (also includes their ionized, salt and phosphate derivatives).'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch078/record04/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T21:03:13.420472Z'
+  support: supports
+  summary: Complete selected term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; No external dependency is included.
+    No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: ee442e31d73361d02028ff897f175109c93b30e4269336f2f3f71d1c69d08636
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/msl86_medium.yaml.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:03:13.454462Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: 6ad628368ee0bb9aaac2dbedbb100683db266214a6c85454ed1ea046dc20ff4e
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/desulfopila_msl86_medium.yaml.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:03:13.454499Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: 747852405c88f459fecd485d10a6bcec8c35ad900b183f61946a14fcb8055aae
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:03:13.454527Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: ef93cd14f26f8d0c008e3e742e1f37f3957583e7126bbd7b46a9489dc6a61344
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfopila_msl86_medium.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:03:13.454549Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: b7de3c902a00318a13a9d38b6e1376819b08ad72eb220f697df3464531fd8b90
+- evidence_id: history4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/msl86_medium.md
+  locator: entire report; lossless historical reader; exact selected parent rows
+  accessed_at: '2026-10-28T21:03:13.454569Z'
+  support: supports
+  summary: Complete report body read and losslessly retained. Zero-source-check diagnostics
+    are historical structure only. Exact selected historical parent rows and current
+    byte matches are separately joined; same-label unselected siblings and unrelated
+    dependency parent recipes remain context-only. Old report conclusions are reassessed
+    against the exact current source rather than automatically adopted; dates and
+    historical execution are not authenticated.
+  snapshot_sha256: 5aea0f94eb48d1a1bb62838e45b5355d9ed7b39e6fe3c073692a3bf0cab4b866
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record04/historical-authentication.json
+  locator: attached_claims; historical_plan_claims
+  accessed_at: '2026-10-28T21:03:13.454685Z'
+  support: supports
+  summary: Actual attached claims and historical parent-plan claims are separate populations.
+    Current raw-digest equality and literal or normalized-HTML excerpt equality are
+    independently recorded. No attached formulation claims occur on the selected target
+    or its maintained contributors. Current byte matches do not authenticate historical
+    execution or access dates.
+  snapshot_sha256: 9eb9b1431315a7f8895c2594343188357456c85bbc8ca9402464c578036cb05d
+- evidence_id: historical-current-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record04/historical-current-joins.json
+  locator: all selected parents and claims
+  accessed_at: '2026-10-28T21:03:13.454776Z'
+  support: supports
+  summary: Exact selected historical parent rows, source raw digest and all literal/decoded
+    source-object joins. These are separate from absent attached formulation evidence
+    and do not authenticate historical dates.
+  snapshot_sha256: ecf3302d89ce01180159e0f6cbd6ee555825e9e7acdc6668cbf897b4b40681c6
+- evidence_id: writer48
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: target_slot; groundable; apply_to_record
+  accessed_at: '2026-10-28T21:03:13.454854Z'
+  support: context_only
+  summary: Current target_slot preserves existing CHEBI assertions; groundable excludes
+    conflicting corpus opinions, and apply_to_record fills ungrounded entries from
+    proposals. This writer does not authenticate source amounts or automatically repair
+    an existing wrong supplied-form ID.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer49
+  kind: record_content
+  reference: scripts/assign_culturemech_ids.py
+  locator: assign_ids; _assign_id_to_file
+  accessed_at: '2026-10-28T21:03:13.454885Z'
+  support: context_only
+  summary: Current assign_ids selects records with missing IDs; _assign_id_to_file
+    checks new-ID collisions and appends identifier provenance. Identifier assignment
+    does not authenticate recipe content or demonstrate historical source access.
+  snapshot_sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+- evidence_id: writer50
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T21:03:13.454909Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer51
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T21:03:13.454932Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer52
+  kind: record_content
+  reference: scripts/migrate_legacy_mim_to_chebi.py
+  locator: _resolve_chebi; _rewrite_entry
+  accessed_at: '2026-10-28T21:03:13.454960Z'
+  support: context_only
+  summary: Current _resolve_chebi reuses current primary CHEBI where available and
+    considers bounded exact-name/synonym matches with a stereo-prefix guard; _rewrite_entry
+    retains unresolved links. Current-row presence is distinct from historical validity
+    and from source-specific supplied-form equivalence.
+  snapshot_sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+- evidence_id: writer53
+  kind: record_content
+  reference: scripts/migrate_ph_range.py
+  locator: parse_ph_range; migrate_one
+  accessed_at: '2026-10-28T21:03:13.454980Z'
+  support: context_only
+  summary: Current parse_ph_range retains qualifiers in notes and migrate_one converts
+    only string-valued pH ranges, recording provenance. No particular source range
+    is authenticated by this writer.
+  snapshot_sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+- evidence_id: writer54
+  kind: record_content
+  reference: scripts/refill_term_labels.py
+  locator: refill_text
+  accessed_at: '2026-10-28T21:03:13.455007Z'
+  support: context_only
+  summary: Current refill_text replaces term labels using the current exact identifier
+    lookup while preserving other text. Canonical label correspondence is not an independent
+    choice of the correct chemical form for the supplied source reagent.
+  snapshot_sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+- evidence_id: writer55
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata
+  accessed_at: '2026-10-28T21:03:13.455043Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver.merge_composition copies ingredients and
+    solutions, fills pH when absent and copies physical/medium type, but does not
+    copy preparation steps. _add_enrichment_metadata records a naive current timestamp.
+    This explains a present omission risk, not historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer56
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T21:03:13.455066Z'
+  support: context_only
+  summary: Current _convert_to_culturemech constructs source notes and default LIQUID
+    with empty ingredients. Its time.strftime format contains %f, which is unsupported
+    here and is consistent with literal .fZ in stored import events. Current code
+    does not authenticate the original retrieval or justify rewriting historical time.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer57
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps
+  accessed_at: '2026-10-28T21:03:13.455096Z'
+  support: context_only
+  summary: Current _parse_api_composition considers the primary recipe, prefers provider
+    g_l when available and excludes four recognized water labels; tap water is not
+    among those exclusions; _is_api_stock_addition distinguishes stock additions.
+    _parse_api_solutions retains separate stock structure. _parse_preparation_steps
+    collects solution prose. These present behaviors do not establish historical execution
+    and cannot justify interpreting flattened stock rates as final-medium concentrations.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer58
+  kind: record_content
+  reference: src/culturemech/match/kg_media_matcher.py
+  locator: extract_recipe_ingredients; find_matches; find_exact_match
+  accessed_at: '2026-10-28T21:03:13.455122Z'
+  support: context_only
+  summary: Current extract_recipe_ingredients collects asserted CHEBI/FOODON IDs,
+    find_matches compares set Jaccard and find_exact_match selects the first exact
+    identifier set. Quantities, preparation and ungrounded ingredients are not compared,
+    so an exact set match does not establish formulation identity.
+  snapshot_sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+- evidence_id: writer59
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T21:03:13.455142Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer60
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T21:03:13.455166Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer61
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T21:03:13.455188Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer62
+  kind: record_content
+  reference: src/culturemech/validation/schema_defaulter.py
+  locator: apply_defaults; _fix_ingredient; _fix_solution
+  accessed_at: '2026-10-28T21:03:13.455215Z'
+  support: context_only
+  summary: Current apply_defaults, _fix_ingredient and _fix_solution can insert VARIABLE
+    amounts and placeholder names for structural completeness. A default is not evidence
+    for a dose, composition, solution identity or denominator; existing default-history
+    events remain contextual.
+  snapshot_sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record04/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T21:03:13.486673Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 00d2292b63c3df5423cfa41b4d79663c8ca2d72ade7f7db0032bf3976572ed50
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact DSM1068 and maintained KOMODO1068 identity
+  outcome: concern
+  summary: The target and DSM contributor identify DSM1068; collection DSM18488 confirms
+    Desulfopila aestuarii MSL86 association, not a new growth assertion. The maintained
+    msl86 owner and SOURCE_DUPLICATE relationship point to KOMODO1068. Exact current
+    KOMODO retrieval returned 403; historical exported row identity and current DSM/API
+    evidence are kept separate.
+  target_ids:
+  - CultureMech:000500
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - dsm1068
+  - api1068
+  - dsm18488Identity
+  - komodo1068
+  - historical-current-joins
+- assessment_id: a2
+  area: consistency
+  topic: Supported classification and current retained fields
+  outcome: supported
+  summary: All eleven main rates agree with explicit current provider g_l, with nominal-volume
+    attribution. pH 7.5 and the DSM main sequence are correct. COMPLEX, SEMI_DEFINED
+    and LIQUID are consistent with yeast extract and current API complex_medium. These
+    positive fields must survive stock reconstruction.
+  target_ids:
+  - CultureMech:000500
+  evidence_ids:
+  - dsm1068
+  - api1068
+- assessment_id: a3
+  area: grounding
+  topic: Supplied forms and exact preferred spelling
+  outcome: concern
+  summary: Other named hydrates, cysteine hydrochloride monohydrate, calcium pantothenate
+    and broad DL-lactate are supported at their asserted scope. Nickel hexahydrate
+    is wrongly assigned anhydrous 34887, and sodium resazurin is assigned neutral
+    8806. MIM preferred CoCl2 x 6 H2O is REJECTED while Cobalt chloride hexahydrate
+    is MAPPED for the same correct 53503; the spelling-status discrepancy is distinct
+    from chemical identity. Vitamin B12 remains a class and lipoic acid does not establish
+    one enantiomer.
+  target_ids:
+  - CultureMech:000500
+  evidence_ids:
+  - grounding
+  - chebi34887
+  - chebi8806
+  - chebi53503
+  - chebi91248
+  - chebi31345
+  - chebi75228
+- assessment_id: a4
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All five complete historical reports and both exact parent rows (136 claims)
+    were read. Both cited parent raw-source digests match the current API1068 bytes;
+    74 historical source objects join literally and as decoded objects. Remaining
+    local unresolved claims and zero-source-check reports are historical context.
+    No selected document has attached formulation claims. Current main g_l support
+    narrows the old blanket topology conflict; current equality does not prove earlier
+    access or execution. Current conservative merging preserves scientific fields
+    and rejects incompatible formulations. Inspected writer behavior is described
+    separately by exact file and function; it does not prove historical execution.
+  target_ids:
+  - CultureMech:000500
+  evidence_ids:
+  - history-auth
+  - historical-current-joins
+  - writer48
+  - writer49
+  - writer50
+  - writer51
+  - writer52
+  - writer53
+  - writer54
+  - writer55
+  - writer56
+  - writer57
+  - writer58
+  - writer59
+  - writer60
+  - writer61
+  - writer62
+- assessment_id: a5
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 90 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:000500
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:000500",
+    "selected_concentration_field_count": 90, "selected_concentration_fields_covered":
+    90, "decisions": [{"decision_id": "q1", "subject": "KH2PO4", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "original": {"value": "0.499002", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.499002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.499002",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=0.499002 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 3-3", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   KH2PO4                                                     0.50         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[0]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.499002,\n                        \"mmol_l\":
+    3.66684,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q2", "subject": "NH4Cl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[1].concentration", "original": {"value": "0.998004", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.998004",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.998004",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=0.998004 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 4-4", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   NH4Cl                                                      1.00         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[1]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\":
+    18.6578,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q3", "subject": "Na2SO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[2].concentration", "original": {"value": "0.998004", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.998004",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.998004",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=0.998004 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 5-5", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Na2SO4                                                     1.00         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[2]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\":
+    110,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\":
+    7.02622,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q4", "subject": "NaCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "original": {"value": "9.98004", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "9.98004",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "9.98004",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=9.98004 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 6-6", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   NaCl                                                      10.00         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[3]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 10,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 9.98004,\n                        \"mmol_l\":
+    170.774,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q5", "subject": "CaCl2 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "original": {"value": "0.0998004", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0998004",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.0998004",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=0.0998004 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 7-7", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   CaCl2 x 2 H2O                                              0.10         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[4]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0998004,\n                        \"mmol_l\":
+    0.678845,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q6", "subject": "MgSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "original": {"value": "1.99601", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "1.99601",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "1.99601",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=1.99601 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 8-8", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   MgSO4 x 7 H2O                                              2.00         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[5]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\":
+    8.09818,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q7", "subject": "Yeast extract", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "original": {"value": "0.499002", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.499002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.499002",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=0.499002 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 10-10", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Yeast extract                                              0.50         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.499002,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q8", "subject": "Sodium resazurin", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.000499002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.000499002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.000499002",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=0.000499002 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. The primary resazurin
+    reagent is explicitly 0.1% w/v and 0.5 ml; its stock concentration is not a main-medium
+    percentage.", "sources": [{"locator": "extracted-text physical LF lines 11-11",
+    "source_key": "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Sodium
+    resazurin (0.1% w/v)                                0.50        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[8]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q9", "subject": "Na-DL-lactate", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "2.49501",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "2.49501",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "2.49501",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=2.49501 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 12-12", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Na-DL-lactate                                              2.50         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[9]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Na-DL-lactate\",\n                        \"compound_id\":
+    111,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.49501,\n                        \"mmol_l\":
+    22.2649,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q10", "subject": "L-Cysteine HCl x H2O",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.249501",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.249501",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.249501",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=0.249501 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 14-14", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   L-Cysteine HCl x H2O                                       0.25         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[11]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.249501,\n                        \"mmol_l\":
+    1.42056,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q11", "subject": "Na2S x 9 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[10].concentration", "original": {"value": "0.249501", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.249501",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.249501",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM1068 provider
+    main-medium normalization", "interpretation": "The stored value equals current
+    explicit provider g_l=0.249501 on its declared 1002 ml recipe basis. The primary
+    separately gives the quoted batch input; its 1000 ml water is not an explicit
+    measured final volume. Preserve the supported provider rate with that qualification
+    and source preparation. No attached formulation claim exists. ", "sources": [{"locator":
+    "extracted-text physical LF lines 15-15", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Na2S x 9 H2O                                               0.25         g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[12]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.249501,\n                        \"mmol_l\":
+    1.0388,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q12", "subject": "HCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[11].concentration", "original": {"value": "2.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "2.5", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "The quoted batch amount and explicit provider g_l=2.5
+    belong only to Trace element solution SL-10. The same stock rate is wrongly placed
+    among main ingredients in all three layers. Restore its stock scope and separate
+    receiving addition; do not treat it as final-medium concentration. The primary
+    specifies 10 ml HCl (25%) but gives no percentage basis or density; provider 2.5
+    g/L is only a provider assertion, not independently derivable pure-HCl mass.",
+    "sources": [{"locator": "extracted-text physical LF lines 29-29", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   HCl (25%)                                                  10.00      ml",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[0]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text physical LF lines 40-41", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve FeCl2 in
+    the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q13", "subject": "FeCl2 x 4 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "The quoted batch amount and explicit provider g_l=1.5
+    belong only to Trace element solution SL-10. The same stock rate is wrongly placed
+    among main ingredients in all three layers. Restore its stock scope and separate
+    receiving addition; do not treat it as final-medium concentration. The SL-10 procedure
+    explicitly makes up to 1000 ml, supporting this stock mass rate.", "sources":
+    [{"locator": "extracted-text physical LF lines 30-30", "source_key": "dsm1068",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   FeCl2
+    x 4 H2O                                               1.50       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[1]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-41", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q14", "subject": "ZnCl2", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "0.07", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "The quoted batch amount and explicit provider g_l=0.07
+    belong only to Trace element solution SL-10. The same stock rate is wrongly placed
+    among main ingredients in all three layers. Restore its stock scope and separate
+    receiving addition; do not treat it as final-medium concentration. The SL-10 procedure
+    explicitly makes up to 1000 ml, supporting this stock mass rate.", "sources":
+    [{"locator": "extracted-text physical LF lines 31-31", "source_key": "dsm1068",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   ZnCl2                                                      70.00      mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[2]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-41", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q15", "subject": "MnCl2 x 4 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "The quoted batch amount and explicit provider g_l=0.1
+    belong only to Trace element solution SL-10. The same stock rate is wrongly placed
+    among main ingredients in all three layers. Restore its stock scope and separate
+    receiving addition; do not treat it as final-medium concentration. The SL-10 procedure
+    explicitly makes up to 1000 ml, supporting this stock mass rate.", "sources":
+    [{"locator": "extracted-text physical LF lines 32-32", "source_key": "dsm1068",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   MnCl2
+    x 4 H2O                                             100.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[3]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-41", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q16", "subject": "H3BO3", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.006",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.006",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.006",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element
+    solution SL-10", "interpretation": "The quoted batch amount and explicit provider
+    g_l=0.006 belong only to Trace element solution SL-10. The same stock rate is
+    wrongly placed among main ingredients in all three layers. Restore its stock scope
+    and separate receiving addition; do not treat it as final-medium concentration.
+    The SL-10 procedure explicitly makes up to 1000 ml, supporting this stock mass
+    rate.", "sources": [{"locator": "extracted-text physical LF lines 33-33", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   H3BO3                                                       6.00      mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[4]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-41", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q17", "subject": "CoCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.19", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.19", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.19", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element solution
+    SL-10", "interpretation": "The quoted batch amount and explicit provider g_l=0.19
+    belong only to Trace element solution SL-10. The same stock rate is wrongly placed
+    among main ingredients in all three layers. Restore its stock scope and separate
+    receiving addition; do not treat it as final-medium concentration. The SL-10 procedure
+    explicitly makes up to 1000 ml, supporting this stock mass rate.", "sources":
+    [{"locator": "extracted-text physical LF lines 34-34", "source_key": "dsm1068",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   CoCl2
+    x 6 H2O                                             190.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[5]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-41", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q18", "subject": "CuCl2 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.002",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element
+    solution SL-10", "interpretation": "The quoted batch amount and explicit provider
+    g_l=0.002 belong only to Trace element solution SL-10. The same stock rate is
+    wrongly placed among main ingredients in all three layers. Restore its stock scope
+    and separate receiving addition; do not treat it as final-medium concentration.
+    The SL-10 procedure explicitly makes up to 1000 ml, supporting this stock mass
+    rate.", "sources": [{"locator": "extracted-text physical LF lines 35-35", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   CuCl2
+    x 2 H2O                                               2.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[6]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-41", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q19", "subject": "NiCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.024",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element
+    solution SL-10", "interpretation": "The quoted batch amount and explicit provider
+    g_l=0.024 belong only to Trace element solution SL-10. The same stock rate is
+    wrongly placed among main ingredients in all three layers. Restore its stock scope
+    and separate receiving addition; do not treat it as final-medium concentration.
+    The SL-10 procedure explicitly makes up to 1000 ml, supporting this stock mass
+    rate.", "sources": [{"locator": "extracted-text physical LF lines 36-36", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   NiCl2
+    x 6 H2O                                              24.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[7]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-41", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q20", "subject": "Na2MoO4 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.036",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.036",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.036",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Trace element
+    solution SL-10", "interpretation": "The quoted batch amount and explicit provider
+    g_l=0.036 belong only to Trace element solution SL-10. The same stock rate is
+    wrongly placed among main ingredients in all three layers. Restore its stock scope
+    and separate receiving addition; do not treat it as final-medium concentration.
+    The SL-10 procedure explicitly makes up to 1000 ml, supporting this stock mass
+    rate.", "sources": [{"locator": "extracted-text physical LF lines 37-37", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Na2MoO4
+    x 2 H2O                                            36.00      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[8]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-41", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q21", "subject": "Biotin", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.02
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 46-46", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Biotin                                                     20.00      mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[0]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q22", "subject": "Folic acid", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[21].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.02
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 47-47", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Folic acid                                                 20.00      mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[1]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q23", "subject": "Pyridoxine hydrochloride",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.1
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 55-55", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Pyridoxine hydrochloride          100.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[2]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q24", "subject": "Thiamine HCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[23].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.05
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 56-56", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Thiamine HCl                       50.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[3]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q25", "subject": "Riboflavin", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[24].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.05
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 57-57", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Riboflavin                         50.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[4]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q26", "subject": "Nicotinic acid", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[25].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[25].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[25].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.05
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 58-58", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Nicotinic acid                     50.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[5]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q27", "subject": "Calcium D-(+)-pantothenate",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[26].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.05
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 59-59", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Calcium D-(+)-pantothenate         50.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[6]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q28", "subject": "Vitamin B12", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "ingredients[27].concentration", "original": {"value": "0.001", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[27].concentration", "original": {"value": "0.001",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[27].concentration", "original": {"value": "0.001",
+    "unit": "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin
+    solution (10x)", "interpretation": "The quoted batch amount and explicit provider
+    g_l=0.001 belong only to Wolin''s vitamin solution (10x). The same stock rate
+    is wrongly placed among main ingredients in all three layers. Restore its stock
+    scope and separate receiving addition; do not treat it as final-medium concentration.
+    The primary lists 1000 ml stock water; provider stock g_l is explicit, but water
+    input alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 60-60", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Vitamin B12                         1.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[7]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q29", "subject":
+    "p-Aminobenzoic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[28].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[28].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[28].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.05
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 61-61", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   p-Aminobenzoic acid                50.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[8]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q30", "subject": "(DL)-alpha-Lipoic acid",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ingredients[29].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ingredients[29].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ingredients[29].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "separate Wolin''s vitamin solution
+    (10x)", "interpretation": "The quoted batch amount and explicit provider g_l=0.05
+    belong only to Wolin''s vitamin solution (10x). The same stock rate is wrongly
+    placed among main ingredients in all three layers. Restore its stock scope and
+    separate receiving addition; do not treat it as final-medium concentration. The
+    primary lists 1000 ml stock water; provider stock g_l is explicit, but water input
+    alone does not establish measured final stock volume.", "sources": [{"locator":
+    "extracted-text physical LF lines 62-62", "source_key": "dsm1068", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf", "source_raw_sha256":
+    "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e", "source_text_sha256":
+    "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246", "accessed_at":
+    "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   (DL)-alpha-Lipoic acid             50.00   mg",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[2].recipe[9]",
+    "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q31", "subject": "Missing Trace element
+    solution SL-10 addition", "local_fields": [], "decision": "add", "stage": "main
+    batch addition", "interpretation": "The source specifies a separate 1 ml batch
+    addition. Restore that source amount and its stock identity without silently interpreting
+    it as exactly 1 ml per final litre.", "sources": [{"locator": "extracted-text
+    physical LF lines 9-9", "source_key": "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Trace
+    element solution SL-10                               1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[6]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q32", "subject": "Missing Wolin''s vitamin
+    solution (10x) addition", "local_fields": [], "decision": "add", "stage": "main
+    batch addition", "interpretation": "The source specifies a separate 1 ml batch
+    addition. Restore that source amount and its stock identity without silently interpreting
+    it as exactly 1 ml per final litre.", "sources": [{"locator": "extracted-text
+    physical LF lines 13-13", "source_key": "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Wolin''s
+    vitamin solution (10x)                             1.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[10]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q33", "subject": "Water for Main sol. 1068",
+    "local_fields": [], "decision": "add", "stage": "separate water input", "interpretation":
+    "Preserve this exact water input in its own batch. Main and Wolin water are not
+    explicit final volumes; SL-10 alone separately instructs make-up to 1000 ml. Stock
+    preparation water does not add directly to the receiving recipe.", "sources":
+    [{"locator": "extracted-text physical LF lines 16-16", "source_key": "dsm1068",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Distilled
+    water                                         1000.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[13]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q34", "subject": "Water for Trace element
+    solution SL-10", "local_fields": [], "decision": "add", "stage": "separate water
+    input", "interpretation": "Preserve this exact water input in its own batch. Main
+    and Wolin water are not explicit final volumes; SL-10 alone separately instructs
+    make-up to 1000 ml. Stock preparation water does not add directly to the receiving
+    recipe.", "sources": [{"locator": "extracted-text physical LF lines 38-38", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Distilled
+    water                                           990.00      ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[1].recipe[9]", "source_key":
+    "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q35", "subject": "Water for Wolin''s vitamin
+    solution (10x)", "local_fields": [], "decision": "add", "stage": "separate water
+    input", "interpretation": "Preserve this exact water input in its own batch. Main
+    and Wolin water are not explicit final volumes; SL-10 alone separately instructs
+    make-up to 1000 ml. Stock preparation water does not add directly to the receiving
+    recipe.", "sources": [{"locator": "extracted-text physical LF lines 63-63", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Distilled
+    water                  1000.00   ml", "quote_representation": "captured extracted
+    text"}, {"locator": "$.data.solutions[2].recipe[10]", "source_key": "api1068",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q36", "subject": "Main volume basis", "local_fields":
+    [], "decision": "unsupported", "stage": "main final-volume claim", "interpretation":
+    "The primary lists 1000 ml water and two 1 ml additions; the API declares a nominal
+    1002 ml volume. Its explicit g_l values are usable with provider attribution,
+    but no independently measured final-volume claim or new denominator is inferred.",
+    "sources": [{"locator": "extracted-text physical LF lines 9-16", "source_key":
+    "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "   Trace
+    element solution SL-10                               1.00        ml\n   Yeast
+    extract                                              0.50         g\n   Sodium
+    resazurin (0.1% w/v)                                0.50        ml\n   Na-DL-lactate                                              2.50         g\n   Wolin''s
+    vitamin solution (10x)                             1.00        ml\n   L-Cysteine
+    HCl x H2O                                       0.25         g\n   Na2S x 9 H2O                                               0.25         g\n   Distilled
+    water                                         1000.00        ml", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0]", "source_key": "api1068",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                \"id\":
+    2157,\n                \"name\": \"Main sol. 1068\",\n                \"volume\":
+    1002,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.499002,\n                        \"mmol_l\":
+    3.66684,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\":
+    18.6578,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\":
+    110,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.998004,\n                        \"mmol_l\":
+    7.02622,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 10,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 9.98004,\n                        \"mmol_l\":
+    170.774,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0998004,\n                        \"mmol_l\":
+    0.678845,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.99601,\n                        \"mmol_l\":
+    8.09818,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\":
+    595,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.499002,\n                        \"optional\":
+    0\n                    },\n                    {\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.000499002,\n                        \"mmol_l\": 0.00198671,\n                        \"optional\":
+    0\n                    },\n                    {\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Na-DL-lactate\",\n                        \"compound_id\":
+    111,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.49501,\n                        \"mmol_l\":
+    22.2649,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    11,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.249501,\n                        \"mmol_l\":
+    1.42056,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.25,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.249501,\n                        \"mmol_l\":
+    1.0388,\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"step\": \"Dissolve ingredients
+    (except lactate, vitamins and reducing agents), adjust pH to 7.5 and sparge medium
+    with 100% N2 gas for at least 30 - 45 min to make it anoxic. Dispense medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add lactate, vitamins, sulfide and cysteine from sterile anoxic stock solutions
+    prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration.
+    Adjust pH of the complete medium to 7.5, if necessary.\"\n                    }\n                ],\n                \"equipment\":
+    {\n                    \"242\": \"Hungate tubes\",\n                    \"1294\":
+    \"Filter\",\n                    \"3287\": \"Autoclave\",\n                    \"4108\":
+    \"Gassing station\"\n                }\n            }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q37", "subject": "Retained pH and DSM main
+    preparation", "local_fields": [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "ph_value", "original": 7.5}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "ph_value", "original": 7.5}, {"record_path": "data/normalized_yaml/bacterial/msl86_medium.yaml",
+    "field_path": "ph_value", "original": 7.5}, {"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients
+    (except lactate, vitamins and reducing agents), adjust pH to 7.5 and sparge medium
+    with 100% N2 gas for at least 30 - 45 min to make it anoxic. Dispense medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add lactate, vitamins, sulfide and cysteine from sterile anoxic stock solutions
+    prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration.
+    Adjust pH of the complete medium to 7.5, if necessary."}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients
+    (except lactate, vitamins and reducing agents), adjust pH to 7.5 and sparge medium
+    with 100% N2 gas for at least 30 - 45 min to make it anoxic. Dispense medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add lactate, vitamins, sulfide and cysteine from sterile anoxic stock solutions
+    prepared under 100% N2 gas. The vitamin solution should be sterilized by filtration.
+    Adjust pH of the complete medium to 7.5, if necessary."}], "decision": "evidence_only",
+    "stage": "main staged preparation", "interpretation": "Preserve pH 7.5 in all
+    three layers and the correct target/DSM main procedure: 100% N2 for 30–45 minutes,
+    separate sterile anoxic additions and vitamin filtration. AUTOCLAVE must not absorb
+    the explicitly filtered vitamin stage.", "sources": [{"locator": "extracted-text
+    physical LF lines 18-23", "source_key": "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "Dissolve
+    ingredients (except lactate, vitamins and reducing agents), adjust pH to 7.5 and\nsparge
+    medium with 100% N2 gas for at least 30 - 45 min to make it anoxic. Dispense\nmedium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and\nautoclave.
+    Add lactate, vitamins, sulfide and cysteine from sterile anoxic stock solutions\nprepared
+    under 100% N2 gas. The vitamin solution should be sterilized by filtration. Adjust\npH
+    of the complete medium to 7.5, if necessary.", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "api1068",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients (except lactate, vitamins and reducing agents), adjust
+    pH to 7.5 and sparge medium with 100% N2 gas for at least 30 - 45 min to make
+    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add lactate, vitamins, sulfide and cysteine
+    from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution
+    should be sterilized by filtration. Adjust pH of the complete medium to 7.5, if
+    necessary.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q38", "subject": "KOMODO main procedure gap", "local_fields":
+    [], "decision": "add", "stage": "maintained KOMODO source branch", "interpretation":
+    "The KOMODO owner lacks the main procedure and instead retains Aerobic: Yes in
+    notes. The exact historical endpoint is unavailable, so record the current DSM
+    conflict and source identity limit; do not silently recast it as freshly retrieved
+    KOMODO experimental evidence.", "sources": [{"locator": "extracted-text physical
+    LF lines 18-23", "source_key": "dsm1068", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "Dissolve
+    ingredients (except lactate, vitamins and reducing agents), adjust pH to 7.5 and\nsparge
+    medium with 100% N2 gas for at least 30 - 45 min to make it anoxic. Dispense\nmedium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and\nautoclave.
+    Add lactate, vitamins, sulfide and cysteine from sterile anoxic stock solutions\nprepared
+    under 100% N2 gas. The vitamin solution should be sterilized by filtration. Adjust\npH
+    of the complete medium to 7.5, if necessary.", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "api1068",
+    "reference": "https://mediadive.dsmz.de/rest/medium/1068", "source_raw_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "source_text_sha256":
+    "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da", "accessed_at":
+    "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients (except lactate, vitamins and reducing agents), adjust
+    pH to 7.5 and sparge medium with 100% N2 gas for at least 30 - 45 min to make
+    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add lactate, vitamins, sulfide and cysteine
+    from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution
+    should be sterilized by filtration. Adjust pH of the complete medium to 7.5, if
+    necessary.\"\n                    }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q39", "subject": "SL-10 makeup and sequence", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml", "field_path":
+    "preparation_steps[1].description", "original": "First dissolve FeCl2 in the HCl,
+    then dilute in water, add and dissolve the other salts. Finally make up to 1000.00
+    ml."}, {"record_path": "data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml",
+    "field_path": "preparation_steps[1].description", "original": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally
+    make up to 1000.00 ml."}], "decision": "correct", "stage": "stock preparation
+    only", "interpretation": "The retained dissolve/make-up-to-1000 ml instruction
+    is correct for SL-10 but is wrongly placed at main preparation_steps[1]. Relocate
+    it with SL-10, retaining the separate acid reagent and ingredient order.", "sources":
+    [{"locator": "extracted-text physical LF lines 40-41", "source_key": "dsm1068",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1068.pdf",
+    "source_raw_sha256": "fe2d61f74a7ba118e87d30ad83be4ddee13e85439487db7fd21ce8cf5d208a2e",
+    "source_text_sha256": "2fae2505c15fd83bb9e147474777398121e2fd96af273d69d9ee880ee8ab6246",
+    "accessed_at": "2026-10-28T20:57:49.518573Z", "exact_source_quote": "First dissolve
+    FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake
+    up to 1000.00 ml.", "quote_representation": "captured extracted text"}, {"locator":
+    "$.data.solutions[1].steps[0]", "source_key": "api1068", "reference": "https://mediadive.dsmz.de/rest/medium/1068",
+    "source_raw_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "source_text_sha256": "11a4babe82a08ed6c1fe0d695130b8488828e3672eb6fbef43ea8f91bc06e2da",
+    "accessed_at": "2026-10-28T20:57:49.518850Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the
+    other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_representation":
+    "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch078/record04/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a6
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml: primary 29/30, secondary
+    27/30; data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml: primary 29/30,
+    secondary 27/30; data/normalized_yaml/bacterial/msl86_medium.yaml: primary 29/30,
+    secondary 27/30. These are ingredient-instance linkage fractions, not accuracy
+    scores. Solution terms are audited separately. Every actually asserted CHEBI term
+    is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric
+    legacy MediaIngredientMech mentions occur across the complete selected documents,
+    with exact locators in the inventory; NNNNNN is a historical placeholder, not
+    an ID. Complex commercial/product components are not forced to pure-compound IDs.'
+  target_ids:
+  - CultureMech:000500
+  evidence_ids:
+  - grounding
+- assessment_id: a7
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and every exact maintained contributor reviewed.
+    All stocks assessed here are embedded in the exact named DSM source. No external
+    dependency or unrelated medium formulation transfers. Collection identity pages
+    establish association only.
+  target_ids:
+  - CultureMech:000500
+  evidence_ids:
+  - local0
+- assessment_id: a8
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:000500
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-000500-stock-topology
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate stock rates are flattened into the receiving medium
+  description: All nineteen SL-10 and Wolin constituent rates occupy root ingredients
+    11–29. The two 1 ml batch additions and separately scoped waters are missing.
+    Eleven main rates are supported as provider normalization and should be retained.
+  target_ids:
+  - CultureMech:000500
+  field_paths:
+  - ingredients[11].concentration
+  - ingredients[29].concentration
+  - solutions
+  evidence_ids:
+  - dsm1068
+  - api1068
+  - quantity-inventory
+  rule_id: source-specific-formulation-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-000500-preparation-stage
+  category: consistency
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock preparation is misplaced and the KOMODO branch lacks the main sequence
+  description: 'Target and DSM contributor place the SL-10 makeup instruction at main
+    preparation_steps[1]. The KOMODO owner lacks preparation and retains Aerobic:
+    Yes in notes, contrary to the exact current DSM anoxic sequence. Correct retained
+    DSM main pH and preparation should remain.'
+  target_ids:
+  - CultureMech:000500
+  field_paths:
+  - data/merge_yaml/merged/DESULFOPILA_MSL86_MEDIUM.yaml::preparation_steps[1].description
+  - data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml::preparation_steps[1].description
+  - data/normalized_yaml/bacterial/msl86_medium.yaml::notes
+  evidence_ids:
+  - dsm1068
+  - api1068
+  - local2
+  rule_id: source-preparation-stage-placement
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-000500-nickel-hydrate-and-sodium-resazurin-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium resazurin are linked to different supplied forms
+  description: Every selected layer names nickel chloride hexahydrate but asserts
+    anhydrous nickel dichloride CHEBI:34887 in both primary and secondary slots. Sodium
+    resazurin is linked through its primary slot to neutral Resazurin CHEBI:8806;
+    there is no asserted resazurin secondary slot to correct. Exact labels pass native
+    checks, but OLS formulas Cl2Ni and C12H7NO4 do not encode the supplied forms.
+    Current MIM matches describe those asserted IDs, not hydrate or sodium-salt equivalence.
+  target_ids:
+  - CultureMech:000500
+  field_paths:
+  - ingredients[18].term
+  - ingredients[18].mediaingredientmech_chebi_term
+  - ingredients[7].term
+  evidence_ids:
+  - dsm1068
+  - chebi34887
+  - chebi8806
+  - grounding
+  rule_id: supplied-chemical-form-correspondence
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-000500-claim-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Scientific claims lack attached excerpts and stored timestamps need qualified
+    provenance
+  description: Historical matches are not attached ingredient evidence. The KOMODO
+    event stores literal 2026-01-27T01:15:01.fZ; the present importer uses unsupported
+    %f formatting, while the resolver writes a naive timestamp. These observations
+    explain current writer risks without authenticating or replacing historical dates.
+  target_ids:
+  - CultureMech:000500
+  field_paths:
+  - ingredients[*]
+  - curation_history
+  evidence_ids:
+  - history-auth
+  - historical-current-joins
+  - writer48
+  - writer49
+  - writer50
+  - writer51
+  - writer52
+  - writer53
+  - writer54
+  - writer55
+  - writer56
+  - writer57
+  - writer58
+  - writer59
+  - writer60
+  - writer61
+  - writer62
+  rule_id: claim-scoped-source-provenance
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: current import timestamp writer
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: current enrichment timestamp and preparation propagation writer
+actions:
+- action_id: action1
+  description: Reconstruct both exact embedded stocks and their independent batch
+    additions, preserving provider rate attribution and explicit stock make-up evidence.
+    Keep the HCl percentage basis unresolved rather than deriving a pure-acid mass.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:000500
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Scope the SL-10 instruction to its stock and reconcile the maintained
+    KOMODO atmosphere/procedure with explicit source identity and the unavailable
+    endpoint limitation. Preserve the correct main pH and filtration distinction.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:000500
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Resolve the exact source hydrate and sodium-salt identities against
+    authoritative ontology and MIM records. Use verified supplied-form mappings or
+    retain precise source labels with unresolved mapping; preserve source masses and
+    do not substitute anhydrous molar arithmetic.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:000500
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Attach exact current source evidence at valid scopes and preserve original
+    history. Correct future timestamp emission in the inspected importer/resolver,
+    recording a new actual-dated event rather than rewriting old execution.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:000500
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfopila_msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/msl86_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: current import timestamp writer
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: current enrichment timestamp and preparation propagation writer
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+  - Future importer and resolver timestamps must be timezone-aware UTC values without
+    literal formatting tokens; retain existing historical strings and distinguish
+    verified current access from past events.
+limitations:
+- Exact current KOMODO1068 returned HTTP 403; historical export/source-byte matches
+  do not recover a new primary retrieval.
+- Main API volume 1002 ml is provider normalization, not a measured-final-volume claim.
+  Bare HCl 25% has no verified percentage basis or density.
+- All selected documents were reviewed; collection association is not a new experimental
+  growth claim. Historical dates/execution remain unauthenticated.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.

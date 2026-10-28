@@ -1,0 +1,2381 @@
+# Desulfosporomusa medium: stock boundaries, volume additions and existing evidence
+
+- Review: 20261028T212338Z-batch078-record09-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T20:57:32.249658Z
+- Finished UTC: 2026-10-28T21:23:38.476267Z
+- Reviewer: Codex independent source reviewer (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+JCM430 and the current provider authenticate the selected medium and its one maintained contributor. Eight main-ingredient values agree with provider-declared1010ml normalization, and eight existing claims in the supporting main-solution record remain valid in that bounded scope. Nineteen stock components are flattened into the medium, four liquid stock doses are expressed as mass concentrations, the supporting main solution has five factor-ten percentage errors, and nickel hexahydrate is assigned an anhydrous identifier. Existing preparation text is retained, with missing stock descriptors and evidence identified for curation.
+
+## Scope And Provenance
+
+Full selected record and exact maintained contributors; explicitly scoped dependency and external-source limits retained.
+
+Selection: Actual batch078 native selection index 09.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:002782 | data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml | generated | desulfosporomusa_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:002782 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-strict | passed | True | CultureMech:002782 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-terms | passed | True | CultureMech:002782 | Original once-only canonical command exited 0; full stdout/stderr retained and read. |
+| validate-references | passed | True | CultureMech:002782 | Native reference checker performed zero reference checks; this is not claim authentication. |
+
+## Scientific And Domain Assessments
+
+### Exact contributor and source boundaries
+
+identity: supported. Targets: CultureMech:002782.
+
+The stable registry, generated merged_from and complete normalized census identify only desulfosporomusa_medium.yaml as contributor. JCM430 and APIJ430 authenticate that exact medium. Main4168 is a separately maintained supporting solution. TOGO:M430 is a noncontributing sibling; an older diagnostic name-based owner suggestion is not accepted as merge lineage.
+
+### Positive evidence and retained preparation
+
+completeness: supported. Targets: CultureMech:002782.
+
+Eight main ingredient numbers agree with qualified provider1010ml normalization; eight current4168 evidence claims remain correctly scoped and unchanged. Both main preparation descriptions and providerpH7.2 are supported. COMPLEX/UNDEFINED are compatible with yeast extract and LIQUID with the source formulation. Missing stock descriptors, solvent and strength metadata remain material.
+
+### Historical assessments reconciled
+
+evidence: supported. Targets: CultureMech:002782.
+
+Five full reports and both exact selected parent rows were read. All88claims were inspected;45current local fields and56literal/decoded source quote occurrences join fresh source bytes. Owner before/after/current hashes are equal; supporting solution current hash equals historical after hash. Existing eight evidence additions are credited. Historical blanket withholding of all31main rates is refined by direct positive main-source arithmetic, without treating stock values as final-medium rates.
+
+### Current conversion mechanisms
+
+ownership: concern. Targets: CultureMech:002782.
+
+The current main importer distinguishes main ingredients and stock descriptors, but source-step aggregation and raw volume normalization still require source-aware review. The standalone solution importer uses g_l when present; otherwise it scales ml to per-liter numbers while labellingPERCENT_V_V, skips nested solution-only rows and drops attribute stock strengths. This explains a present mechanism compatible with4168 defects, not proof of its historical execution. Use maintained owners and compatible-formulation regeneration.
+
+### Quantity scope and inventory
+
+quantity: concern. Targets: CultureMech:002782.
+
+Every selected target/owner concentration field has an explicit disposition; scoped dependency fields and source-only preparation are separate from receiving-medium rates.
+
+[{"quantity_id":"q1","topic":"Main ingredient: Na2SO4","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.9703,\n                        \"mmol_l\": 20.9117,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary amount3g and provider g_l=2.9703 agree with the provider1010ml normalization at reported precision. All eight calculations were independently checked. The nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this an independently measured final volume. Retain the qualified provider rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored_value":{"value":"2.9703","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[0].concentration","stored_value":{"value":"2.9703","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[0].concentration","stored_value":{"value":"2.9703","unit":"G_PER_L"},"decision":"verified","rationale":"Existing attached evidence correctly limits the value to provider-declared solution volume; retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[0] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;SO&lt;sub&gt;4&lt;/sub&gt;                                            &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;3.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[0]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\": 110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\": \"g\",\n                \"g_l\": 2.9703,\n                \"mmol_l\": 20.9117,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q2","topic":"Main ingredient: KH2PO4","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.19802,\n                        \"mmol_l\": 1.45511,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary amount0.2g and provider g_l=0.19802 agree with the provider1010ml normalization at reported precision. All eight calculations were independently checked. The nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this an independently measured final volume. Retain the qualified provider rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored_value":{"value":"0.19802","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[1].concentration","stored_value":{"value":"0.19802","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[1].concentration","stored_value":{"value":"0.19802","unit":"G_PER_L"},"decision":"verified","rationale":"Existing attached evidence correctly limits the value to provider-declared solution volume; retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[1] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; KH&lt;sub&gt;2&lt;/sub&gt;PO&lt;sub&gt;4&lt;/sub&gt;                                            &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.2&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[1]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 2,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\": 11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.2,\n                \"unit\": \"g\",\n                \"g_l\": 0.19802,\n                \"mmol_l\": 1.45511,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q3","topic":"Main ingredient: NH4Cl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[2]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 5.553,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary amount0.3g and provider g_l=0.29703 agree with the provider1010ml normalization at reported precision. All eight calculations were independently checked. The nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this an independently measured final volume. Retain the qualified provider rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored_value":{"value":"0.29703","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[2].concentration","stored_value":{"value":"0.29703","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[2].concentration","stored_value":{"value":"0.29703","unit":"G_PER_L"},"decision":"verified","rationale":"Existing attached evidence correctly limits the value to provider-declared solution volume; retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[2] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; NH&lt;sub&gt;4&lt;/sub&gt;Cl                                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.3&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[2]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 3,\n                \"compound\": \"NH4Cl\",\n                \"compound_id\": 42,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\": \"g\",\n                \"g_l\": 0.29703,\n                \"mmol_l\": 5.553,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q4","topic":"Main ingredient: NaCl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[3]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 16.9421,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary amount1g and provider g_l=0.990099 agree with the provider1010ml normalization at reported precision. All eight calculations were independently checked. The nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this an independently measured final volume. Retain the qualified provider rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored_value":{"value":"0.990099","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[3].concentration","stored_value":{"value":"0.990099","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[3].concentration","stored_value":{"value":"0.990099","unit":"G_PER_L"},"decision":"verified","rationale":"Existing attached evidence correctly limits the value to provider-declared solution volume; retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[3] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; NaCl                                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[3]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 4,\n                \"compound\": \"NaCl\",\n                \"compound_id\": 43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"g_l\": 0.990099,\n                \"mmol_l\": 16.9421,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q5","topic":"Main ingredient: MgCl2 x 6 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[4]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.39604,\n                        \"mmol_l\": 1.94803,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary amount0.4g and provider g_l=0.39604 agree with the provider1010ml normalization at reported precision. All eight calculations were independently checked. The nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this an independently measured final volume. Retain the qualified provider rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored_value":{"value":"0.39604","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[4].concentration","stored_value":{"value":"0.39604","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[4].concentration","stored_value":{"value":"0.39604","unit":"G_PER_L"},"decision":"verified","rationale":"Existing attached evidence correctly limits the value to provider-declared solution volume; retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[4] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; MgCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.4&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[4]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 5,\n                \"compound\": \"MgCl2 x 6 H2O\",\n                \"compound_id\": 79,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\": \"g\",\n                \"g_l\": 0.39604,\n                \"mmol_l\": 1.94803,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q6","topic":"Main ingredient: KCl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[5]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.49505,\n                        \"mmol_l\": 6.6405,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary amount0.5g and provider g_l=0.49505 agree with the provider1010ml normalization at reported precision. All eight calculations were independently checked. The nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this an independently measured final volume. Retain the qualified provider rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored_value":{"value":"0.49505","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[5].concentration","stored_value":{"value":"0.49505","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[5].concentration","stored_value":{"value":"0.49505","unit":"G_PER_L"},"decision":"verified","rationale":"Existing attached evidence correctly limits the value to provider-declared solution volume; retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[5] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; KCl                                                     &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.5&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[5]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 6,\n                \"compound\": \"KCl\",\n                \"compound_id\": 61,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\": \"g\",\n                \"g_l\": 0.49505,\n                \"mmol_l\": 6.6405,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q7","topic":"Main ingredient: CaCl2 x 2 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[6]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.15,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.148515,\n                        \"mmol_l\": 1.0102,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary amount0.15g and provider g_l=0.148515 agree with the provider1010ml normalization at reported precision. All eight calculations were independently checked. The nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this an independently measured final volume. Retain the qualified provider rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored_value":{"value":"0.148515","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[6].concentration","stored_value":{"value":"0.148515","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[6].concentration","stored_value":{"value":"0.148515","unit":"G_PER_L"},"decision":"verified","rationale":"Existing attached evidence correctly limits the value to provider-declared solution volume; retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[6] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; CaCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.15&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[6]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 7,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\": 7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.15,\n                \"unit\": \"g\",\n                \"g_l\": 0.148515,\n                \"mmol_l\": 1.0102,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q8","topic":"Main ingredient: Resazurin","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[9]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\": 25,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.000990099,\n                        \"mmol_l\": 0.00431999,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary amount1mg and provider g_l=0.000990099 agree with the provider1010ml normalization at reported precision. All eight calculations were independently checked. The nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this an independently measured final volume. Retain the qualified provider rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored_value":{"value":"0.000990099","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[7].concentration","stored_value":{"value":"0.000990099","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric value matches the provider-declared main-solution basis; attach that exact qualification and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[7].concentration","stored_value":{"value":"0.000990099","unit":"G_PER_L"},"decision":"verified","rationale":"Existing attached evidence correctly limits the value to provider-declared solution volume; retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[9] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Resazurin                                               &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[9]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 10,\n                \"compound\": \"Resazurin\",\n                \"compound_id\": 25,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"mg\",\n                \"g_l\": 0.000990099,\n                \"mmol_l\": 0.00431999,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q9","topic":"Liquid stock addition: Sodium lactate","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[11]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Sodium lactate\",\n                        \"compound_id\": 1392,\n                        \"attribute\": \"*, 1.0 M\",\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Primary states20ml of stock with strength*, 1.0 M. Root20G_PER_L is a copied volume, not supported mass. Supporting solution value is numerically ml per provider L but labelledPERCENT_V_V, ten times the corresponding provider-based volume percentage. Preserve literal batch dose, stock strength and preparation stage rather than substituting an unqualified rate. Explicit1.0M times20ml delivers20mmol; no density is needed for this amount, but final molarity requires a justified receiving volume.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored_value":{"value":"20","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[8].concentration","stored_value":{"value":"20","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[9].concentration","stored_value":{"value":"19.801980198019802","unit":"PERCENT_V_V"},"decision":"correct","rationale":"Retain literal stock volume and attribute; stored percentage is tenfold the provider-based volume fraction."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[11] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; 1.0 M Sodium lactate solution*                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;20.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[11]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 12,\n                \"compound\": \"Sodium lactate\",\n                \"compound_id\": 1392,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"*, 1.0 M\",\n                \"amount\": 20,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q10","topic":"Liquid stock addition: Yeast extract","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[12]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 13,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\": \"10%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Primary states10ml of stock with strength10%. Root10G_PER_L is a copied volume, not supported mass. Supporting solution value is numerically ml per provider L but labelledPERCENT_V_V, ten times the corresponding provider-based volume percentage. Preserve literal batch dose, stock strength and preparation stage rather than substituting an unqualified rate. The bare percentage does not explicitly identify w/v or w/w; no density or pure-solute mass is guessed.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored_value":{"value":"10","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[9].concentration","stored_value":{"value":"10","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[10].concentration","stored_value":{"value":"9.900990099009901","unit":"PERCENT_V_V"},"decision":"correct","rationale":"Retain literal stock volume and attribute; stored percentage is tenfold the provider-based volume fraction."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[12] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; 10% Yeast extract solution                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[12]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 13,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\": 16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"10%\",\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q11","topic":"Liquid stock addition: NaHCO3","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[14]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 15,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"attribute\": \"*, 8%\",\n                        \"amount\": 60,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Primary states60ml of stock with strength*, 8%. Root60G_PER_L is a copied volume, not supported mass. Supporting solution value is numerically ml per provider L but labelledPERCENT_V_V, ten times the corresponding provider-based volume percentage. Preserve literal batch dose, stock strength and preparation stage rather than substituting an unqualified rate. The bare percentage does not explicitly identify w/v or w/w; no density or pure-solute mass is guessed.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored_value":{"value":"60","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[10].concentration","stored_value":{"value":"60","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[11].concentration","stored_value":{"value":"59.4059405940594","unit":"PERCENT_V_V"},"decision":"correct","rationale":"Retain literal stock volume and attribute; stored percentage is tenfold the provider-based volume fraction."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[14] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; 8% NaHCO&lt;sub&gt;3&lt;/sub&gt; solution*                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;60.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[14]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 15,\n                \"compound\": \"NaHCO3\",\n                \"compound_id\": 55,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"*, 8%\",\n                \"amount\": 60,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q12","topic":"Liquid stock addition: Na2S x 9 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[15]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"attribute\": \"5%\",\n                        \"amount\": 8,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Primary states8ml of stock with strength5%. Root8G_PER_L is a copied volume, not supported mass. Supporting solution value is numerically ml per provider L but labelledPERCENT_V_V, ten times the corresponding provider-based volume percentage. Preserve literal batch dose, stock strength and preparation stage rather than substituting an unqualified rate. The bare percentage does not explicitly identify w/v or w/w; no density or pure-solute mass is guessed.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored_value":{"value":"8","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[11].concentration","stored_value":{"value":"8","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[12].concentration","stored_value":{"value":"7.920792079207921","unit":"PERCENT_V_V"},"decision":"correct","rationale":"Retain literal stock volume and attribute; stored percentage is tenfold the provider-based volume fraction."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[15] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; 5% Na&lt;sub&gt;2&lt;/sub&gt;S&amp;#183;9H&lt;sub&gt;2&lt;/sub&gt;O solution                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;8.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[15]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 16,\n                \"compound\": \"Na2S x 9 H2O\",\n                \"compound_id\": 54,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"5%\",\n                \"amount\": 8,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q13","topic":"Stock component: FeCl2 solution / HCl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[1].recipe[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"7.7 M, 25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Primary10ml HCl explicitly labelled25% (7.7M) belongs to FeCl2 stock. The molar label gives77mmol delivered; on the provider-declared1000ml stock basis this is77mmol/L, whereas the same provider reports68.5683mmol/L and2.5g/L. Preserve this internal discrepancy and literal10ml/7.7M statement. Do not call the percent basis or density known, and do not retain an undiluted acid-stock concentration as a whole-medium rate.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored_value":{"value":"2.5","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal source10ml HCl labelled25% (7.7M) at FeCl2-stock scope with its separate receiving dose. Keep the provider2.5g/L and68.5683mmol/L discrepancy unresolved; do not endorse those numerals, infer the percent basis or density, or substitute a new mass concentration."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[12].concentration","stored_value":{"value":"2.5","unit":"G_PER_L"},"decision":"correct","rationale":"Represent the literal source10ml HCl labelled25% (7.7M) at FeCl2-stock scope with its separate receiving dose. Keep the provider2.5g/L and68.5683mmol/L discrepancy unresolved; do not endorse those numerals, infer the percent basis or density, or substitute a new mass concentration."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[16] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; 25% HCl (7.7 M)                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q14","topic":"Stock component: FeCl2 solution / FeCl2 x 4 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[1].recipe[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal1.5g belongs to separately preparedFeCl2 solution, provider volume1000ml and g_l=1.5. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored_value":{"value":"1.5","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[13].concentration","stored_value":{"value":"1.5","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[17] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; FeCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;4H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.5&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; g  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q15","topic":"Stock solvent: FeCl2 solution","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[1].recipe[2]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Primary gives990ml water for this stock only. Preserve batch solvent separately. Provider1000ml stock metadata is not an independent measured-volume or make-up instruction.","layer_assessments":[],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[18] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;990.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q16","topic":"Stock component: Trace element solution / ZnCl2","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal70mg belongs to separately preparedTrace element solution, provider volume1000ml and g_l=0.07. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored_value":{"value":"0.07","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[14].concentration","stored_value":{"value":"0.07","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[19] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; ZnCl&lt;sub&gt;2&lt;/sub&gt;                                               &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;70.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q17","topic":"Stock component: Trace element solution / MnCl2 x 4 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal100mg belongs to separately preparedTrace element solution, provider volume1000ml and g_l=0.1. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored_value":{"value":"0.1","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[15].concentration","stored_value":{"value":"0.1","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[20] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; MnCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;4H&lt;sub&gt;2&lt;/sub&gt;O                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;100.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q18","topic":"Stock component: Trace element solution / H3BO3","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[2]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal6mg belongs to separately preparedTrace element solution, provider volume1000ml and g_l=0.006. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored_value":{"value":"0.006","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[16].concentration","stored_value":{"value":"0.006","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[21] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; H&lt;sub&gt;3&lt;/sub&gt;BO&lt;sub&gt;3&lt;/sub&gt;                                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;6.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q19","topic":"Stock component: Trace element solution / CoCl2 x 6 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[3]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal190mg belongs to separately preparedTrace element solution, provider volume1000ml and g_l=0.19. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored_value":{"value":"0.19","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[17].concentration","stored_value":{"value":"0.19","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[22] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; CoCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;190.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q20","topic":"Stock component: Trace element solution / CuCl2 x 2 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[4]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal2mg belongs to separately preparedTrace element solution, provider volume1000ml and g_l=0.002. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[18].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[23] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; CuCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q21","topic":"Stock component: Trace element solution / NiCl2 x 6 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[5]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal24mg belongs to separately preparedTrace element solution, provider volume1000ml and g_l=0.024. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored_value":{"value":"0.024","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[19].concentration","stored_value":{"value":"0.024","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[24] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; NiCl&lt;sub&gt;2&lt;/sub&gt;&amp;#183;6H&lt;sub&gt;2&lt;/sub&gt;O                                 &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;24.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q22","topic":"Stock component: Trace element solution / Na2MoO4 x 2 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[6]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal36mg belongs to separately preparedTrace element solution, provider volume1000ml and g_l=0.036. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored_value":{"value":"0.036","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[20].concentration","stored_value":{"value":"0.036","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[25] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Na&lt;sub&gt;2&lt;/sub&gt;MoO&lt;sub&gt;4&lt;/sub&gt;&amp;#183;2H&lt;sub&gt;2&lt;/sub&gt;O                            &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;36.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q23","topic":"Stock solvent: Trace element solution","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[7]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Primary gives1000ml water for this stock only. Preserve batch solvent separately. Provider1000ml stock metadata is not an independent measured-volume or make-up instruction.","layer_assessments":[],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML tr[26] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L        &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q24","topic":"Stock component: Trace vitamins / Biotin","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00818632,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal2mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.002. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[21].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[15] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Biotin                                                  &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q25","topic":"Stock component: Trace vitamins / Folic acid","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.00453104,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal2mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.002. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[22].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[16] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Folic acid                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;2.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q26","topic":"Stock component: Trace vitamins / Pyridoxine hydrochloride","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[2]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 10,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0486287,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal10mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.01. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored_value":{"value":"0.01","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[23].concentration","stored_value":{"value":"0.01","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[17] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Pyridoxine&amp;#183;HCl                                   &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q27","topic":"Stock component: Trace vitamins / Thiamine HCl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[3]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0148236,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[24].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[18] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Thiamine&amp;#183;HCl                                      &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q28","topic":"Stock component: Trace vitamins / Riboflavin","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[4]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0132837,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[25].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[19] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Riboflavin                                              &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q29","topic":"Stock component: Trace vitamins / Nicotinic acid","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[5]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0406141,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[26].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[20] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Nicotinic acid                                          &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q30","topic":"Stock component: Trace vitamins / Calcium pantothenate","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[6]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0104925,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[27].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[21] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Calcium pantothenate                                    &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q31","topic":"Stock component: Trace vitamins / Vitamin B12","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[7]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 0.1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0001,\n                        \"mmol_l\": 7.3779e-5,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal0.1mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.0001. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored_value":{"value":"0.0001","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[28].concentration","stored_value":{"value":"0.0001","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[22] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Vitamin B&lt;sub&gt;1&lt;/sub&gt;&lt;sub&gt;2&lt;/sub&gt;                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;0.1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q32","topic":"Stock component: Trace vitamins / p-Aminobenzoic acid","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[8]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.0364591,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[29].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[23] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; &lt;I&gt;p&lt;/I&gt;-Aminobenzoic acid                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q33","topic":"Stock component: Trace vitamins / Lipoic acid","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[9]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Lipoic acid\",\n                        \"compound_id\": 368,\n                        \"amount\": 5,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\": 0.024233,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005. The undiluted stock rate is incorrectly placed in the receiving medium. Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[30].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[24] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Lipoic acid                                             &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;5.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; mg  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q34","topic":"Stock solvent: Trace vitamins","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[10]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Primary gives1000ml water for this stock only. Preserve batch solvent separately. Provider1000ml stock metadata is not an independent measured-volume or make-up instruction.","layer_assessments":[],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML tr[25] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                         &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; L  &lt;/TD&gt;&lt;/TR&gt;"}]},{"quantity_id":"q35","topic":"Main water batch input","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[10]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 900,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Source900ml water is0.9L batch solvent. Dividing by provider1010ml would give89.1089%v/v, not891.089%; this is a diagnostic comparison, not endorsement of an independently measured final volume.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"water","stored_value":null,"decision":"add","rationale":"Main900ml solvent input is absent; record the literal batch quantity without treating it as a final-volume assertion.","missing":true},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"water","stored_value":null,"decision":"add","rationale":"Main900ml solvent input is absent; record the literal batch quantity without treating it as a final-volume assertion.","missing":true},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[8].concentration","stored_value":{"value":"891.0891089108911","unit":"PERCENT_V_V"},"decision":"correct","rationale":"891.089% is the mislabeled891.089ml per provider L; primary input is900ml."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[10] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Distilled water                                       &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;900.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[10]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 11,\n                \"compound\": \"Distilled water\",\n                \"compound_id\": 4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 900,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q36","topic":"Missing receiving descriptor: FeCl2 solution","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[7]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 8,\n                        \"solution\": \"FeCl2 solution\",\n                        \"solution_id\": 3846,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Preserve1ml ofFeCl2 solution (provider solution3846) as a batch addition. The supporting4168 record also omits this source-only nested row; its exact native representation requires structural curation. No whole parent recipe or unrelated parent conditions are imported.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing named stock descriptor and literal receiving dose.","missing":true},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing named stock descriptor and literal receiving dose.","missing":true}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[7] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; FeCl&lt;sub&gt;2&lt;/sub&gt; solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=187\"&gt;187&lt;/a&gt;)                &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[7]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 8,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"FeCl2 solution\",\n                \"solution_id\": 3846,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q37","topic":"Missing receiving descriptor: Trace element solution","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[8]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 9,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\": 3847,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Preserve1ml ofTrace element solution (provider solution3847) as a batch addition. The supporting4168 record also omits this source-only nested row; its exact native representation requires structural curation. No whole parent recipe or unrelated parent conditions are imported.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing named stock descriptor and literal receiving dose.","missing":true},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing named stock descriptor and literal receiving dose.","missing":true}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[8] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Trace element solution (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=187\"&gt;187&lt;/a&gt;)           &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;1.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[8]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 9,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Trace element solution\",\n                \"solution_id\": 3847,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q38","topic":"Missing receiving descriptor: Trace vitamins","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[13]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 14,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\": 3861,\n                        \"attribute\": \"*\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Preserve10ml ofTrace vitamins (provider solution3861) as a batch addition. The supporting4168 record also omits this source-only nested row; its exact native representation requires structural curation. No whole parent recipe or unrelated parent conditions are imported.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing named stock descriptor and literal receiving dose.","missing":true},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing named stock descriptor and literal receiving dose.","missing":true}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML tr[13] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"&lt;TR&gt;&lt;TD WIDTH=75%&gt; Trace vitamins* (see Medium No. &lt;a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=197\"&gt;197&lt;/a&gt;)                 &lt;/TD&gt;&lt;TD WIDTH=15% ALIGN=RIGHT&gt;&lt;font size=+1&gt;&lt;tt&gt;&amp;nbsp;10.0&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/tt&gt;&lt;/font&gt;&lt;/TD&gt;&lt;TD WIDTH=10% ALIGN=RIGHT&gt; ml  &lt;/TD&gt;&lt;/TR&gt;"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[13]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 14,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\": \"Trace vitamins\",\n                \"solution_id\": 3861,\n                \"condition\": null,\n                \"attribute\": \"*\",\n                \"amount\": 10,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q39","topic":"Legacy supporting-solution placeholder","source":{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[0]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\": 1,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\": 110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\": \"g\",\n                \"g_l\": 2.9703,\n                \"mmol_l\": 20.9117,\n                \"optional\": 0\n            }"},"decision":"unsupported","rationale":"The complete provider composition is available and current local composition already has13 entries. Resolve the legacy placeholder and incomplete_composition flag only after restoring the three missing stock edges; do not interpret VARIABLE as a physical reagent amount.","layer_assessments":[{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"ingredients[0].concentration","stored_value":{"value":"variable","unit":"VARIABLE"},"decision":"unsupported","rationale":"See source for composition is a legacy placeholder, not an actual source ingredient or usable quantitative claim."}]},{"quantity_id":"q40","topic":"Retained main preparation 1","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].steps[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\": 12,\n                        \"step\": \"Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere. After cooling, aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized): \"\n                    }"},"decision":"evidence_only","rationale":"Preserve the N2/CO2(4:1v/v), anaerobic postcooling additions and star-marked filtration distinctions; attach the missing stock list to make the retained first instruction usable.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored_value":"Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere. After cooling, aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):","decision":"evidence_only","rationale":"Existing main preparation text matches the current provider and primary; retain unchanged and attach exact evidence."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"preparation_steps[0].description","stored_value":"Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere. After cooling, aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):","decision":"evidence_only","rationale":"Existing main preparation text matches the current provider and primary; retain unchanged and attach exact evidence."}]},{"quantity_id":"q41","topic":"Retained main preparation 2","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].steps[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"step\": \"Adjust pH to 7.1 - 7.4, if necessary.\"\n                    }"},"decision":"evidence_only","rationale":"Primary pH7.1–7.4 adjustment is conditional; no titrant identity or delivered amount is specified. The existing provider metadata pH7.2 lies within this range. No parent187/197 pH is transferred.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored_value":"Adjust pH to 7.1 - 7.4, if necessary.","decision":"evidence_only","rationale":"Existing main preparation text matches the current provider and primary; retain unchanged and attach exact evidence."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"preparation_steps[1].description","stored_value":"Adjust pH to 7.1 - 7.4, if necessary.","decision":"evidence_only","rationale":"Existing main preparation text matches the current provider and primary; retain unchanged and attach exact evidence."}]},{"quantity_id":"q42","topic":"Provider pH metadata","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.medium","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n            \"id\": \"J430\",\n            \"name\": \"DESULFOSPOROMUSA MEDIUM\",\n            \"complex_medium\": \"yes\",\n            \"min_pH\": 7.2,\n            \"max_pH\": 7.2,\n            \"source\": \"JCM\",\n            \"link\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430\"\n        }"},"decision":"evidence_only","rationale":"Keep the source distinction: provider scalar7.2 and primary preparation range7.1–7.4 are compatible but not identical claims. Attach their respective evidence without inventing a titrant dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ph_value","stored_value":7.2,"decision":"evidence_only","rationale":"Existing7.2 is exactly the provider value and is within the primary7.1–7.4 range."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ph_value","stored_value":7.2,"decision":"evidence_only","rationale":"Existing7.2 is exactly the provider value and is within the primary7.1–7.4 range."}]},{"quantity_id":"q43","topic":"Primary default sterilization context","source":{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"Page-wide default sentence","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"Unless otherwise stated, sterilize media by autoclaving at 121&amp;#176;C for 15 min.\n"},"decision":"evidence_only","rationale":"The primary default is121C for15min unless otherwise stated. Record-specific asterisk filtration overrides the default for marked additions. Preserve source scope; do not infer another organism incubation temperature or time.","layer_assessments":[]}]
+
+### Current ontology and MIM correspondence
+
+grounding: concern. Targets: CultureMech:002782.
+
+All148recursive slots,31asserted CHEBI identities,32OLS scientific projections including the nickel-hexahydrate candidate,634exact catalog rows and33preferred spellings were examined. One confirmed hydrate contradiction remains. Resazurin is not explicitly sodium in this source; no sodium-form mismatch is invented. Generic calcium pantothenate does not establish D stereochemistry, B12 does not specify a single vitamer, and generic lipoic acid does not establish a particular stereochemical mixture. Preserve source wording and those limits. Co53503 is chemically compatible despite a rejected spelling alias; sodium-lactate75228 is separate from the rejected D/aspartyl catalogue artifact. Ungrounded yeast extract is a mixture; a catalog lead is not new ontology curation.
+
+### History and evidence scope
+
+provenance: concern. Targets: CultureMech:002782.
+
+Complete current histories and eight attached supporting-solution claims were read; two exact parent rows contain88claims and56literal/decoded source quotes. Five reports are retained as historical context. Owner hashes and supporting after hash match current bytes, and both historical API digests match fresh responses. None of this authenticates historical access times or execution. Missing medium claim placement remains distinct from the existing sound supporting evidence.
+
+### Growth and taxonomic evidence
+
+scope: unknown. Targets: CultureMech:002782.
+
+Generic cultivation applications and bacterial filing are not strain-level growth evidence. No organism-specific growth, temperature or atmosphere is inferred from names or source catalog identifiers.
+
+### Canonical diagnostics
+
+schema: supported. Targets: CultureMech:002782.
+
+All four original canonical diagnostics passed. Reference checks were zero; structural and term diagnostics do not establish formulation accuracy.
+
+## Findings
+
+### f1: Undiluted stock components are flattened into the medium
+
+major / open / confirmed; issue key: culturemech-002782-undiluted-stock-components-are-flattened-into-the-medium.
+
+Nineteen ingredient entries12–30 in target and contributor belong to separately prepared FeCl2, trace-element or vitamin stocks. JCM430 adds1ml,1ml and10ml respectively. Restore stock boundaries and receiving doses, with the exact187Fe/trace and197vitamin blocks only. Keep all eight supported main values and existing4168 evidence. The supporting4168 composition omits three stock-only source rows and retains a legacy placeholder, so it cannot yet substitute for a complete medium recipe.
+
+### f2: Liquid stock volumes and percentages carry unsupported units
+
+major / open / confirmed; issue key: culturemech-002782-liquid-stock-volumes-and-percentages-carry-unsupported-units.
+
+Four root values20,10,60,8G_PER_L are literal ml additions of sodium lactate, yeast extract, bicarbonate and sulfide stocks. Preserve volume and strength separately. All five supporting4168 PERCENT_V_V numbers are tenfold their provider-volume fractions, including891.089% water. Prefer literal batch volumes rather than inventing final-volume certainty. Primary HCl25%(7.7M) gives77mmol for10ml; the provider1000ml stock reports68.5683mmol/L/2.5g/L, so retain the conflict instead of silently adopting either mass conversion.
+
+### f3: Nickel hexahydrate is assigned an anhydrous identifier
+
+major / open / confirmed; issue key: culturemech-002782-nickel-hexahydrate-is-assigned-an-anhydrous-identifier.
+
+NiCl2x6H2O in ingredients[19] carriesCHEBI34887 in both primary and MIM-linked slots of target and contributor. Current primary and provider retain the hexahydrate; OLS53542 supplies the exact-form candidate. Packaged source-spelling preferred row isREJECTED while its Nickel(II)chloride hexahydrate counterpart isMAPPED; distinguish aliases from scientific form identity. Preserve24mg stock amount without anhydrous mass substitution.
+
+### f4: Medium claims lack field-level evidence
+
+minor / open / confirmed; issue key: culturemech-002782-medium-claims-lack-field-level-evidence.
+
+Target and contributor retain no field-level formulation claims or references. Attach the verified narrow primary/provider scopes and preserve the existing eight4168 claims. The supporting record retains timezone-less historical quality events and a default-added placeholder; preserve original history rather than inventing dates or treating a legacy default as scientific content.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Nineteen ingredient entries12–30 in target and contributor belong to separately prepared FeCl2, trace-element or vitamin stocks. JCM430 adds1ml,1ml and10ml respectively. Restore stock boundaries and receiving doses, with the exact187Fe/trace and197vitamin blocks only. Keep all eight supported main values and existing4168 evidence. The supporting4168 composition omits three stock-only source rows and retains a legacy placeholder, so it cannot yet substitute for a complete medium recipe.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action2
+
+Four root values20,10,60,8G_PER_L are literal ml additions of sodium lactate, yeast extract, bicarbonate and sulfide stocks. Preserve volume and strength separately. All five supporting4168 PERCENT_V_V numbers are tenfold their provider-volume fractions, including891.089% water. Prefer literal batch volumes rather than inventing final-volume certainty. Primary HCl25%(7.7M) gives77mmol for10ml; the provider1000ml stock reports68.5683mmol/L/2.5g/L, so retain the conflict instead of silently adopting either mass conversion.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action3
+
+NiCl2x6H2O in ingredients[19] carriesCHEBI34887 in both primary and MIM-linked slots of target and contributor. Current primary and provider retain the hexahydrate; OLS53542 supplies the exact-form candidate. Packaged source-spelling preferred row isREJECTED while its Nickel(II)chloride hexahydrate counterpart isMAPPED; distinguish aliases from scientific form identity. Preserve24mg stock amount without anhydrous mass substitution.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+### action4
+
+Target and contributor retain no field-level formulation claims or references. Attach the verified narrow primary/provider scopes and preserve the existing eight4168 claims. The supporting record retains timezone-less historical quality events and a default-added placeholder; preserve original history rather than inventing dates or treating a legacy default as scientific content.
+
+- Exact owner/source scopes and all quantity decisions are reconciled.
+- Regenerated target retains claim-level evidence and passes the four canonical diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local-target | data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml; Complete document | context_only | Complete selected generated record; no changes made. |
+| owner-1 | data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml; Complete document | context_only | Complete maintained contributor including current curation history, evidence, quantities and preparation; no changes made. |
+| identity-search | REVIEW_WORK/batch078/record09/identity-search.json | supports | Exact generated lineage resolves every maintained contributor; no filename-only transfer from neighboring variants. |
+| support-main | data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml; Complete document | context_only | Complete current supporting solution4168, including all13 composition entries, legacy placeholder, preparation, eight attached claims and full history. It is not a merged contributor. |
+| noncontributing-sibling | data/normalized_yaml/bacterial/TOGO_M430_Desulfosporomusa_Medium.yaml; Complete document | context_only | Complete file read only to establish separate TOGO:M430 source identity and noncontributor status. Its quantities, organism implications and linked parent formulations are not assessed. |
+| jcm430 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430; Exact source identity and scoped formulation/preparation | supports | Complete primary HTML text and all16 table rows read, including literal masses, seven separate stock additions,900ml water, N2/CO2 sequence, asterisk filtration markers and pH7.1–7.4. Page-wide default121C/15min applies unless otherwise stated. No measured final-volume declaration. |
+| jcm187 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187; Exact source identity and scoped formulation/preparation | supports | Complete page read; only the FeCl2 solution and Trace element solution blocks are used for JCM430. Other main-medium formulation and conditions are excluded. HCl explicitly has25% and7.7M labels, plus10ml dose. |
+| jcm197 | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197; Exact source identity and scoped formulation/preparation | supports | Complete page read; only the Trace vitamins block is used for JCM430. The separate Trace mineral solution and parent main-medium conditions are excluded. |
+| apiJ430 | https://mediadive.dsmz.de/rest/medium/J430; Exact source identity and scoped formulation/preparation | supports | Complete identity, all four solutions and their recipes/steps/equipment read. Provider volume1010ml is kept distinct from an independently measured final volume. Stocks3846/3847/3861 remain separate receiving edges. |
+| api4168 | https://mediadive.dsmz.de/rest/solution/4168; Exact source identity and scoped formulation/preparation | supports | Complete standalone main-solution recipe, volume, steps and equipment read. Current bytes match the historical evidence digest; this authenticates content, not historic retrieval or execution. |
+| historical-0 | reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/desulfosporomusa_medium.yaml.md; All report bytes reconstructed from historical-reading-cells.json | context_only | Complete exact per-record report read via lossless cells; current source and record bytes independently reassess the older output. |
+| historical-1 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-3000-3500/records/bacterial/mediadive_4168_Main_sol_J430.yaml.md; All report bytes reconstructed from historical-reading-cells.json | context_only | Complete exact per-record report read via lossless cells; current source and record bytes independently reassess the older output. |
+| historical-2 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.md; All report bytes reconstructed from historical-reading-cells.json | context_only | Complete exact per-record report read via lossless cells; current source and record bytes independently reassess the older output. |
+| historical-3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfosporomusa_medium.md; All report bytes reconstructed from historical-reading-cells.json | context_only | Complete exact per-record report read via lossless cells; current source and record bytes independently reassess the older output. |
+| historical-4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.md; All report bytes reconstructed from historical-reading-cells.json | context_only | Complete exact per-record report read via lossless cells; current source and record bytes independently reassess the older output. |
+| parent-plan-0 | reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json; Selected row424 in medium plan; row103 in solution plan | context_only | Complete exact selected owner or supporting-solution row read, including all88 combined claims and source/local joins. Unrelated rows excluded. |
+| parent-plan-1 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-3000-3500/plan.json; Selected row424 in medium plan; row103 in solution plan | context_only | Complete exact selected owner or supporting-solution row read, including all88 combined claims and source/local joins. Unrelated rows excluded. |
+| writer-0 | src/culturemech/import/mediadive_importer.py; MediaDive main/API/stock/preparation functions; solution importer class39–333; compatible merge/formulation functions | context_only | Current relevant conversion/merge functions read directly or through exact scientific reading reuse; no historical execution inference. |
+| writer-1 | scripts/import_mediadive_solutions.py; MediaDive main/API/stock/preparation functions; solution importer class39–333; compatible merge/formulation functions | context_only | Current relevant conversion/merge functions read directly or through exact scientific reading reuse; no historical execution inference. |
+| writer-2 | src/culturemech/merge/merger.py; MediaDive main/API/stock/preparation functions; solution importer class39–333; compatible merge/formulation functions | context_only | Current relevant conversion/merge functions read directly or through exact scientific reading reuse; no historical execution inference. |
+| writer-3 | src/culturemech/merge/formulation.py; MediaDive main/API/stock/preparation functions; solution importer class39–333; compatible merge/formulation functions | context_only | Current relevant conversion/merge functions read directly or through exact scientific reading reuse; no historical execution inference. |
+| parent-claims | REVIEW_WORK/batch078/record09/selected-parent-plan-reading.json | context_only | Two complete selected rows retain88claims;45 local values and56 literal/decoded source quotations join current bytes. Source hashes remain equal; old all31-main-conflict policy is not automatically endorsed. |
+| attached-claims | REVIEW_WORK/batch078/record09/current-claim-and-history-source-joins.json | context_only | All eight current attached solution claims verified against exact fresh source objects. Eight provider arithmetic checks and five independent percentage diagnostics retained. |
+| full-catalog | REVIEW_WORK/batch078/record09/complete-current-grounding-reading.json | context_only | All148 asserted identifier/label slots,634 exact packaged identifier rows and current ontology scientific fields read; chemical form and catalogue status remain separate. |
+| reading-proof | REVIEW_WORK/batch078/record09/root-reading-reuse-proof.json | context_only | Explicit root scientific reading and exact prior-reading proof:28 reused ontology projections plus4 newly read;578 reused CSV rows plus56 newly read;162 prior historical cells plus233 newly read reconstruct all5 reports. |
+| spellings | REVIEW_WORK/batch078/record09/preferred-spelling-reading.json | context_only | All33 current preferred spellings inspected against exact strong-key packaged rows. Rejected aliases, mapped counterparts, ungrounded yeast mixture and legacy placeholder remain distinguished. |
+| primary-rows | REVIEW_WORK/batch078/record09/primary-html-rows.json | context_only | Literal HTML table-row spans and their readable text retained for narrow primary-source quantity quotes. |
+| ols34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; Exact obo_id/label/formula/definition/obsolete flag | supports | Exact current scientific fields read with bounded prior-projection equality: source hexahydrate and anhydrous identity remain distinct. |
+| ols53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542; Exact obo_id/label/formula/definition/obsolete flag | supports | Exact current scientific fields read with bounded prior-projection equality: source hexahydrate and anhydrous identity remain distinct. |
+| ols32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols75228 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols32139 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| ols15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation chemical properties | supports | Exact OLS accession, current preferred label, obsolete flag, definition, chemical formula, mass and CAS annotations examined. The full object is retained; unrelated literature links are not asserted verified. Supports identifier correspondence only, not recipe amounts or growth. |
+| quantities | REVIEW_WORK/batch078/record09/quantity-inventory.json | context_only | Complete local concentration and source-stage decision inventory; includes exact local paths and source failure limits. |
+| grounding | REVIEW_WORK/batch078/record09/grounding-inventory.json | context_only | All selected target/owner recursive asserted identifier/label slots and explicitly scoped dependency slots; current OLS scientific objects and packaged MIM preferred-row joins. |
+| history | REVIEW_WORK/batch078/record09/history-and-evidence-inventory.json | context_only | Complete current history, references and attached evidence; source-specific claims are assessed without authenticating historical execution from code. |
+| scalars | REVIEW_WORK/batch078/record09/scalar-census.json | context_only | Lossless scalar census of the selected target and all maintained contributors. |
+| validate-schema | REVIEW_WORK/batch078/record09/validate-schema.json | supports | Validating schema structure (MediaRecipe)...<br>No issues found<br>✓ Schema validation passed<br> |
+| validate-strict | REVIEW_WORK/batch078/record09/validate-strict.json | supports | Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml<br><br>=== validate-strict summary ===<br>  files scanned:      1<br>  layers:             schema<br>  files with ERROR:   0<br>  total ERROR rows:   0<br>  TSV:                REVIEW_WORK/batch078/record09/strict.tsv<br> |
+| validate-terms | REVIEW_WORK/batch078/record09/validate-terms.json | supports | Validating ontology terms (MediaRecipe)...<br>✅ Validation passed<br>✓ Term validation passed<br> |
+| validate-references | REVIEW_WORK/batch078/record09/validate-references.json | supports | Validating evidence references (MediaRecipe)...<br>Reference checks: 0; issues: 0<br>✓ Reference validation passed<br> |
+
+## Limits And Additional Notes
+
+- Only the selected generated target, its one maintained contributor and supporting main4168 are assessed. TOGO M430 is bounded identity context; other normalized stocks and receiving media are not fully reviewed. JCM187/197 are used only for their exact referenced stock blocks.
+- Provider1010ml and1000ml volumes support explicitly attributed arithmetic, not independent final-volume measurements. Nominal liquid sums do not supply measured-volume evidence. Bare stock percentages remain unspecified as to basis; HCl also carries an explicit molar label whose conflict is preserved.
+- Generic calcium pantothenate stereochemistry, vitaminB12 identity and lipoic-acid stereochemistry remain unresolved at the source wording level. No guessed mass, hydrate conversion or taxonomic growth assertion is introduced.
+- Four original canonical target checks passed once; reference checks were zero. No focused embedded-history validator is documented, and no corpus-wide validation or historical execution replay is claimed. iModulonDB is inapplicable to this formulation review.
+- Exact scientific reading reuse and new direct reading are documented in the private proof. No recipe, generated product, prior review, Git publication or scientific status was changed.
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source files remain unchanged.
+- This draft authoring step performed no formal review validation/save, Git mutation or publication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T212338Z-batch078-record09-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Desulfosporomusa medium: stock boundaries, volume additions and existing evidence'
+started_at: '2026-10-28T20:57:32.249658Z'
+finished_at: '2026-10-28T21:23:38.476267Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: JCM430 and the current provider authenticate the selected medium and its
+  one maintained contributor. Eight main-ingredient values agree with provider-declared1010ml
+  normalization, and eight existing claims in the supporting main-solution record
+  remain valid in that bounded scope. Nineteen stock components are flattened into
+  the medium, four liquid stock doses are expressed as mass concentrations, the supporting
+  main solution has five factor-ten percentage errors, and nickel hexahydrate is assigned
+  an anhydrous identifier. Existing preparation text is retained, with missing stock
+  descriptors and evidence identified for curation.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml
+    sha256: dfde88a14be405fe68b80e3760aa0d6b2bf9f8ca43cd88887461393ba5151d79
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M430_Desulfosporomusa_Medium.yaml
+    sha256: c390b30e6a842c2d520bf249d16d7a3ba4c1fe9bd3f8dac499240af0d3877d5f
+    role: context
+  - path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    sha256: 445a4144d620c3c5905eec3dc54c6826c020297e6d695622a7d4fad3bed8e42f
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml
+    sha256: 967d77f529d20a23c8cac1856b38f7a622fe17534852bdafaafd0eac1e1652ce
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json
+    sha256: 2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/desulfosporomusa_medium.yaml.md
+    sha256: 53afbe101005818ae09085eaf0753e88f73d7630d48d2d52770737e9607a106c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-3000-3500/plan.json
+    sha256: afdfbbf6f5a77d4200d504ceb257a0897b7bd977c16398194749ec21822526b6
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-3000-3500/records/bacterial/mediadive_4168_Main_sol_J430.yaml.md
+    sha256: a26ee9b69d5f85b8f18462928ac8a2b74771bd50d86b2c2d8e065ca4e1cbd532
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.md
+    sha256: 279d1fdf69c48286a867dee950f28243a7e076bdd9d560abca2a289a12bf763c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfosporomusa_medium.md
+    sha256: 56c4916dc1aa0e8aaaa89f7efd3ac0c70b10ec8286f16e1167b0fa85a6d137bc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.md
+    sha256: 2af95c18ebbcbb733df6d291461a4f1eef36a0b49a8a39eed9817ac4e7778f79
+    role: context
+  - path: reports/label_plausibility_2026-07-19.tsv
+    sha256: eda647ffbb87d5ea90db812858b2d1d9388393c4d1abc8dec78672324c1509d9
+    role: context
+  - path: reports/media_content_review_manifest.tsv
+    sha256: e5ff2f1241ba046ae7a5dc0d543d340bdba10d31fa1fdc3e36203600cf1ec0ce
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/fix_primary_term_grounding.py
+    sha256: 9d35bef88897003d1ae3af0789103052d8574a3d33b4d1e504e431184d2681b6
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch078 native selection index 09.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002782
+targets:
+- target_id: CultureMech:002782
+  path: data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml
+  label: desulfosporomusa_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:002782
+  command: just validate-schema data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:002782
+  command: just validate-strict data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml
+    --out REVIEW_WORK/batch078/record09/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:002782
+  command: just validate-terms data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:002782
+  command: just validate-references data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: dfde88a14be405fe68b80e3760aa0d6b2bf9f8ca43cd88887461393ba5151d79
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 445a4144d620c3c5905eec3dc54c6826c020297e6d695622a7d4fad3bed8e42f
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch078/record09/identity-search.json
+  accessed_at: '2026-10-28T21:04:24.018375Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    only exact resolved owner matches are retained in this result. Similar names and
+    source accessions are not promoted to owners.
+  snapshot_sha256: e5f246ad06c1194351ae26ecac0e4e89e7ace74fd8254314b345167ee2272179
+- evidence_id: support-main
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete current supporting solution4168, including all13 composition entries,
+    legacy placeholder, preparation, eight attached claims and full history. It is
+    not a merged contributor.
+  snapshot_sha256: 967d77f529d20a23c8cac1856b38f7a622fe17534852bdafaafd0eac1e1652ce
+- evidence_id: noncontributing-sibling
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M430_Desulfosporomusa_Medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete file read only to establish separate TOGO:M430 source identity
+    and noncontributor status. Its quantities, organism implications and linked parent
+    formulations are not assessed.
+  snapshot_sha256: c390b30e6a842c2d520bf249d16d7a3ba4c1fe9bd3f8dac499240af0d3877d5f
+- evidence_id: jcm430
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T20:57:31.704129Z'
+  support: supports
+  summary: Complete primary HTML text and all16 table rows read, including literal
+    masses, seven separate stock additions,900ml water, N2/CO2 sequence, asterisk
+    filtration markers and pH7.1–7.4. Page-wide default121C/15min applies unless otherwise
+    stated. No measured final-volume declaration.
+  snapshot_sha256: 867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce
+- evidence_id: jcm187
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T20:57:31.695402Z'
+  support: supports
+  summary: Complete page read; only the FeCl2 solution and Trace element solution
+    blocks are used for JCM430. Other main-medium formulation and conditions are excluded.
+    HCl explicitly has25% and7.7M labels, plus10ml dose.
+  snapshot_sha256: e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804
+- evidence_id: jcm197
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T20:57:31.707406Z'
+  support: supports
+  summary: Complete page read; only the Trace vitamins block is used for JCM430. The
+    separate Trace mineral solution and parent main-medium conditions are excluded.
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: apiJ430
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/J430
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T20:57:31.801826Z'
+  support: supports
+  summary: Complete identity, all four solutions and their recipes/steps/equipment
+    read. Provider volume1010ml is kept distinct from an independently measured final
+    volume. Stocks3846/3847/3861 remain separate receiving edges.
+  snapshot_sha256: a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a
+- evidence_id: api4168
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/4168
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T20:57:31.615751Z'
+  support: supports
+  summary: Complete standalone main-solution recipe, volume, steps and equipment read.
+    Current bytes match the historical evidence digest; this authenticates content,
+    not historic retrieval or execution.
+  snapshot_sha256: 8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26
+- evidence_id: historical-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/records/bacterial/desulfosporomusa_medium.yaml.md
+  locator: All report bytes reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete exact per-record report read via lossless cells; current source
+    and record bytes independently reassess the older output.
+  snapshot_sha256: 53afbe101005818ae09085eaf0753e88f73d7630d48d2d52770737e9607a106c
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-3000-3500/records/bacterial/mediadive_4168_Main_sol_J430.yaml.md
+  locator: All report bytes reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete exact per-record report read via lossless cells; current source
+    and record bytes independently reassess the older output.
+  snapshot_sha256: a26ee9b69d5f85b8f18462928ac8a2b74771bd50d86b2c2d8e065ca4e1cbd532
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.md
+  locator: All report bytes reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete exact per-record report read via lossless cells; current source
+    and record bytes independently reassess the older output.
+  snapshot_sha256: 279d1fdf69c48286a867dee950f28243a7e076bdd9d560abca2a289a12bf763c
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfosporomusa_medium.md
+  locator: All report bytes reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete exact per-record report read via lossless cells; current source
+    and record bytes independently reassess the older output.
+  snapshot_sha256: 56c4916dc1aa0e8aaaa89f7efd3ac0c70b10ec8286f16e1167b0fa85a6d137bc
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.md
+  locator: All report bytes reconstructed from historical-reading-cells.json
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete exact per-record report read via lossless cells; current source
+    and record bytes independently reassess the older output.
+  snapshot_sha256: 2af95c18ebbcbb733df6d291461a4f1eef36a0b49a8a39eed9817ac4e7778f79
+- evidence_id: parent-plan-0
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-2000-2500/plan.json
+  locator: Selected row424 in medium plan; row103 in solution plan
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete exact selected owner or supporting-solution row read, including
+    all88 combined claims and source/local joins. Unrelated rows excluded.
+  snapshot_sha256: 2a664ea8af07a25caadaa3e00421ae8eaa883ddd3e42c83f5013b3bf303c789b
+- evidence_id: parent-plan-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-3000-3500/plan.json
+  locator: Selected row424 in medium plan; row103 in solution plan
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Complete exact selected owner or supporting-solution row read, including
+    all88 combined claims and source/local joins. Unrelated rows excluded.
+  snapshot_sha256: afdfbbf6f5a77d4200d504ceb257a0897b7bd977c16398194749ec21822526b6
+- evidence_id: writer-0
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: MediaDive main/API/stock/preparation functions; solution importer class39–333;
+    compatible merge/formulation functions
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Current relevant conversion/merge functions read directly or through exact
+    scientific reading reuse; no historical execution inference.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-1
+  kind: record_content
+  reference: scripts/import_mediadive_solutions.py
+  locator: MediaDive main/API/stock/preparation functions; solution importer class39–333;
+    compatible merge/formulation functions
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Current relevant conversion/merge functions read directly or through exact
+    scientific reading reuse; no historical execution inference.
+  snapshot_sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+- evidence_id: writer-2
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: MediaDive main/API/stock/preparation functions; solution importer class39–333;
+    compatible merge/formulation functions
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Current relevant conversion/merge functions read directly or through exact
+    scientific reading reuse; no historical execution inference.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-3
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: MediaDive main/API/stock/preparation functions; solution importer class39–333;
+    compatible merge/formulation functions
+  accessed_at: '2026-10-28T21:04:23.967760Z'
+  support: context_only
+  summary: Current relevant conversion/merge functions read directly or through exact
+    scientific reading reuse; no historical execution inference.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: parent-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/selected-parent-plan-reading.json
+  accessed_at: '2026-10-28T21:04:24.032646Z'
+  support: context_only
+  summary: Two complete selected rows retain88claims;45 local values and56 literal/decoded
+    source quotations join current bytes. Source hashes remain equal; old all31-main-conflict
+    policy is not automatically endorsed.
+  snapshot_sha256: f0fc0e4a3d208d86ec21d2e7282e2034db0710f6698f248503b90ae85e0dae49
+- evidence_id: attached-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/current-claim-and-history-source-joins.json
+  accessed_at: '2026-10-28T21:04:24.032705Z'
+  support: context_only
+  summary: All eight current attached solution claims verified against exact fresh
+    source objects. Eight provider arithmetic checks and five independent percentage
+    diagnostics retained.
+  snapshot_sha256: 6d5f530fda701527e8def86c1fd16f8759cf192e38280202f454ffcd8c5f99ac
+- evidence_id: full-catalog
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/complete-current-grounding-reading.json
+  accessed_at: '2026-10-28T21:04:24.032744Z'
+  support: context_only
+  summary: All148 asserted identifier/label slots,634 exact packaged identifier rows
+    and current ontology scientific fields read; chemical form and catalogue status
+    remain separate.
+  snapshot_sha256: 8bd8ba8907755ee0052e5323e7fd726f19ece67d42c7b9a93180919482aab059
+- evidence_id: reading-proof
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/root-reading-reuse-proof.json
+  accessed_at: '2026-10-28T21:04:24.032805Z'
+  support: context_only
+  summary: Explicit root scientific reading and exact prior-reading proof:28 reused
+    ontology projections plus4 newly read;578 reused CSV rows plus56 newly read;162
+    prior historical cells plus233 newly read reconstruct all5 reports.
+  snapshot_sha256: b090bfd4634e2d47c930bcb7671b6f3bf779464ca7dcc098759b9d7e38d4e78d
+- evidence_id: spellings
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/preferred-spelling-reading.json
+  accessed_at: '2026-10-28T21:04:24.032842Z'
+  support: context_only
+  summary: All33 current preferred spellings inspected against exact strong-key packaged
+    rows. Rejected aliases, mapped counterparts, ungrounded yeast mixture and legacy
+    placeholder remain distinguished.
+  snapshot_sha256: a68a4d664626cabcb9f2c1765f7bfce1c89397a39b30bd3e8e038880865fb444
+- evidence_id: primary-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/primary-html-rows.json
+  accessed_at: '2026-10-28T21:04:24.032871Z'
+  support: context_only
+  summary: Literal HTML table-row spans and their readable text retained for narrow
+    primary-source quantity quotes.
+  snapshot_sha256: 5409805ac2c004c86e3119a38a6de4f50fa3b9ecdcec398cef251c7c56d054db
+- evidence_id: ols34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: Exact obo_id/label/formula/definition/obsolete flag
+  accessed_at: '2026-10-28T20:57:34.034426Z'
+  support: supports
+  summary: 'Exact current scientific fields read with bounded prior-projection equality:
+    source hexahydrate and anhydrous identity remain distinct.'
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: ols53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  locator: Exact obo_id/label/formula/definition/obsolete flag
+  accessed_at: '2026-10-28T20:57:32.229301Z'
+  support: supports
+  summary: 'Exact current scientific fields read with bounded prior-projection equality:
+    source hexahydrate and anhydrous identity remain distinct.'
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: ols32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.661038Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: ols63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.297463Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: ols31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.434245Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: ols26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:32.933720Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: ols86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.946671Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: ols32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.670732Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: ols86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.765680Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: ols8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:35.298045Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: ols75228
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75228
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.647881Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 725fbc04444c481cec25519a6f632470427a7020613af93e84e05b5f23d66ccf
+- evidence_id: ols32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.553333Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: ols76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.682170Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: ols17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:32.870550Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: ols86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.862171Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: ols49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.167458Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: ols86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:35.248845Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: ols33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.747346Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: ols53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.253990Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: ols86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.910445Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: ols75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.353680Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: ols15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:32.394832Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: ols27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.059597Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: ols30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.150578Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: ols49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:34.097389Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: ols17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:32.524573Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: ols15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:32.433434Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: ols31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.484423Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: ols176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:32.813720Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: ols30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:33.059553Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: ols16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:32.327881Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: ols15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/annotation
+    chemical properties
+  accessed_at: '2026-10-28T20:57:32.263646Z'
+  support: supports
+  summary: Exact OLS accession, current preferred label, obsolete flag, definition,
+    chemical formula, mass and CAS annotations examined. The full object is retained;
+    unrelated literature links are not asserted verified. Supports identifier correspondence
+    only, not recipe amounts or growth.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/quantity-inventory.json
+  accessed_at: '2026-10-28T21:23:38.476065Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 22ccaf8931c74554fd284c4513b23571a60174cd5758d108be07414d0a38eff7
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/grounding-inventory.json
+  accessed_at: '2026-10-28T21:04:24.084843Z'
+  support: context_only
+  summary: All selected target/owner recursive asserted identifier/label slots and
+    explicitly scoped dependency slots; current OLS scientific objects and packaged
+    MIM preferred-row joins.
+  snapshot_sha256: 7a42f1a8e4e4a06fd5a6d72d0f7e530275366fc62b0c4ec81e54c921906a24ca
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T21:04:24.084994Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: 3cf6c505daeb9e1fdec20245ebd670fb267d198484971b935483b626f135b407
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch078/record09/scalar-census.json
+  accessed_at: '2026-10-28T21:04:24.085019Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 1bedb61e990ec25982f98d3082e31ced53f61478b28de24ae2f0f20c200f74a4
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch078/record09/validate-schema.json
+  accessed_at: '2026-10-28T20:57:33.338791Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: f05599350ec26748b39646a54d4e284366fdcd6e3a78c30a23bc9208b5a190c4
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch078/record09/validate-strict.json
+  accessed_at: '2026-10-28T20:57:34.334209Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch078/record09/strict.tsv\n"
+  snapshot_sha256: b8a2dca630170db30533ddb269b6b05b58a6ba9fdf11118f5a0b18fba5f8e14c
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch078/record09/validate-terms.json
+  accessed_at: '2026-10-28T20:57:35.762557Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 6ef75a320f009c7b1a6627eee927d757ec62d343e2b9bcf85c60501f8fd14227
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch078/record09/validate-references.json
+  accessed_at: '2026-10-28T20:57:36.542902Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: eee66acc3619b182b1b23232044a1e63618b8f13571a28d4612b20e483ab1b36
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact contributor and source boundaries
+  outcome: supported
+  summary: The stable registry, generated merged_from and complete normalized census
+    identify only desulfosporomusa_medium.yaml as contributor. JCM430 and APIJ430
+    authenticate that exact medium. Main4168 is a separately maintained supporting
+    solution. TOGO:M430 is a noncontributing sibling; an older diagnostic name-based
+    owner suggestion is not accepted as merge lineage.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - identity-search
+  - local-target
+  - owner-1
+  - support-main
+  - noncontributing-sibling
+  - jcm430
+  - apiJ430
+- assessment_id: a2
+  area: completeness
+  topic: Positive evidence and retained preparation
+  outcome: supported
+  summary: Eight main ingredient numbers agree with qualified provider1010ml normalization;
+    eight current4168 evidence claims remain correctly scoped and unchanged. Both
+    main preparation descriptions and providerpH7.2 are supported. COMPLEX/UNDEFINED
+    are compatible with yeast extract and LIQUID with the source formulation. Missing
+    stock descriptors, solvent and strength metadata remain material.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - jcm430
+  - apiJ430
+  - api4168
+  - attached-claims
+  - support-main
+  - quantities
+- assessment_id: a3
+  area: evidence
+  topic: Historical assessments reconciled
+  outcome: supported
+  summary: Five full reports and both exact selected parent rows were read. All88claims
+    were inspected;45current local fields and56literal/decoded source quote occurrences
+    join fresh source bytes. Owner before/after/current hashes are equal; supporting
+    solution current hash equals historical after hash. Existing eight evidence additions
+    are credited. Historical blanket withholding of all31main rates is refined by
+    direct positive main-source arithmetic, without treating stock values as final-medium
+    rates.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - parent-claims
+  - attached-claims
+  - reading-proof
+  - apiJ430
+  - api4168
+- assessment_id: a4
+  area: ownership
+  topic: Current conversion mechanisms
+  outcome: concern
+  summary: The current main importer distinguishes main ingredients and stock descriptors,
+    but source-step aggregation and raw volume normalization still require source-aware
+    review. The standalone solution importer uses g_l when present; otherwise it scales
+    ml to per-liter numbers while labellingPERCENT_V_V, skips nested solution-only
+    rows and drops attribute stock strengths. This explains a present mechanism compatible
+    with4168 defects, not proof of its historical execution. Use maintained owners
+    and compatible-formulation regeneration.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - writer-0
+  - writer-1
+  - writer-2
+  - writer-3
+- assessment_id: a5
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id":"q1","topic":"Main ingredient: Na2SO4","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\":
+    110,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.9703,\n                        \"mmol_l\":
+    20.9117,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary
+    amount3g and provider g_l=2.9703 agree with the provider1010ml normalization at
+    reported precision. All eight calculations were independently checked. The nominal
+    liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not call this
+    an independently measured final volume. Retain the qualified provider rate and
+    primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored_value":{"value":"2.9703","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[0].concentration","stored_value":{"value":"2.9703","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[0].concentration","stored_value":{"value":"2.9703","unit":"G_PER_L"},"decision":"verified","rationale":"Existing
+    attached evidence correctly limits the value to provider-declared solution volume;
+    retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[0] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> Na<sub>2</sub>SO<sub>4</sub>                                            </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;3.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[0]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\":
+    110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9703,\n                \"mmol_l\": 20.9117,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q2","topic":"Main ingredient: KH2PO4","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.19802,\n                        \"mmol_l\":
+    1.45511,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary
+    amount0.2g and provider g_l=0.19802 agree with the provider1010ml normalization
+    at reported precision. All eight calculations were independently checked. The
+    nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not
+    call this an independently measured final volume. Retain the qualified provider
+    rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored_value":{"value":"0.19802","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[1].concentration","stored_value":{"value":"0.19802","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[1].concentration","stored_value":{"value":"0.19802","unit":"G_PER_L"},"decision":"verified","rationale":"Existing
+    attached evidence correctly limits the value to provider-declared solution volume;
+    retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[1] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> KH<sub>2</sub>PO<sub>4</sub>                                            </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.2&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[1]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    2,\n                \"compound\": \"KH2PO4\",\n                \"compound_id\":
+    11,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.2,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.19802,\n                \"mmol_l\": 1.45511,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q3","topic":"Main ingredient: NH4Cl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[2]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\":
+    5.553,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary
+    amount0.3g and provider g_l=0.29703 agree with the provider1010ml normalization
+    at reported precision. All eight calculations were independently checked. The
+    nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not
+    call this an independently measured final volume. Retain the qualified provider
+    rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored_value":{"value":"0.29703","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[2].concentration","stored_value":{"value":"0.29703","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[2].concentration","stored_value":{"value":"0.29703","unit":"G_PER_L"},"decision":"verified","rationale":"Existing
+    attached evidence correctly limits the value to provider-declared solution volume;
+    retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[2] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> NH<sub>4</sub>Cl                                                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.3&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[2]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    3,\n                \"compound\": \"NH4Cl\",\n                \"compound_id\":
+    42,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.29703,\n                \"mmol_l\": 5.553,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q4","topic":"Main ingredient: NaCl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[3]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\":
+    16.9421,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary
+    amount1g and provider g_l=0.990099 agree with the provider1010ml normalization
+    at reported precision. All eight calculations were independently checked. The
+    nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not
+    call this an independently measured final volume. Retain the qualified provider
+    rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored_value":{"value":"0.990099","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[3].concentration","stored_value":{"value":"0.990099","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[3].concentration","stored_value":{"value":"0.990099","unit":"G_PER_L"},"decision":"verified","rationale":"Existing
+    attached evidence correctly limits the value to provider-declared solution volume;
+    retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[3] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> NaCl                                                    </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[3]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    4,\n                \"compound\": \"NaCl\",\n                \"compound_id\":
+    43,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.990099,\n                \"mmol_l\": 16.9421,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q5","topic":"Main ingredient: MgCl2 x 6 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[4]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.39604,\n                        \"mmol_l\":
+    1.94803,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary
+    amount0.4g and provider g_l=0.39604 agree with the provider1010ml normalization
+    at reported precision. All eight calculations were independently checked. The
+    nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not
+    call this an independently measured final volume. Retain the qualified provider
+    rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored_value":{"value":"0.39604","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[4].concentration","stored_value":{"value":"0.39604","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[4].concentration","stored_value":{"value":"0.39604","unit":"G_PER_L"},"decision":"verified","rationale":"Existing
+    attached evidence correctly limits the value to provider-declared solution volume;
+    retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[4] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> MgCl<sub>2</sub>&#183;6H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.4&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[4]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    5,\n                \"compound\": \"MgCl2 x 6 H2O\",\n                \"compound_id\":
+    79,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.4,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.39604,\n                \"mmol_l\": 1.94803,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q6","topic":"Main ingredient: KCl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[5]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.49505,\n                        \"mmol_l\":
+    6.6405,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary
+    amount0.5g and provider g_l=0.49505 agree with the provider1010ml normalization
+    at reported precision. All eight calculations were independently checked. The
+    nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not
+    call this an independently measured final volume. Retain the qualified provider
+    rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored_value":{"value":"0.49505","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[5].concentration","stored_value":{"value":"0.49505","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[5].concentration","stored_value":{"value":"0.49505","unit":"G_PER_L"},"decision":"verified","rationale":"Existing
+    attached evidence correctly limits the value to provider-declared solution volume;
+    retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[5] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> KCl                                                     </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;0.5&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[5]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    6,\n                \"compound\": \"KCl\",\n                \"compound_id\": 61,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.5,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.49505,\n                \"mmol_l\": 6.6405,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q7","topic":"Main ingredient: CaCl2 x 2 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[6]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.15,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.148515,\n                        \"mmol_l\":
+    1.0102,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary
+    amount0.15g and provider g_l=0.148515 agree with the provider1010ml normalization
+    at reported precision. All eight calculations were independently checked. The
+    nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not
+    call this an independently measured final volume. Retain the qualified provider
+    rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored_value":{"value":"0.148515","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[6].concentration","stored_value":{"value":"0.148515","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[6].concentration","stored_value":{"value":"0.148515","unit":"G_PER_L"},"decision":"verified","rationale":"Existing
+    attached evidence correctly limits the value to provider-declared solution volume;
+    retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[6] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> CaCl<sub>2</sub>&#183;2H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.15&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[6]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    7,\n                \"compound\": \"CaCl2 x 2 H2O\",\n                \"compound_id\":
+    7,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.15,\n                \"unit\":
+    \"g\",\n                \"g_l\": 0.148515,\n                \"mmol_l\": 1.0102,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q8","topic":"Main ingredient: Resazurin","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[9]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Resazurin\",\n                        \"compound_id\":
+    25,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.000990099,\n                        \"mmol_l\":
+    0.00431999,\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Primary
+    amount1mg and provider g_l=0.000990099 agree with the provider1010ml normalization
+    at reported precision. All eight calculations were independently checked. The
+    nominal liquid inputs900+1+1+20+10+10+60+8 sum1010ml, but the primary does not
+    call this an independently measured final volume. Retain the qualified provider
+    rate and primary batch amount; no provider mmol_l is adopted.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored_value":{"value":"0.000990099","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[7].concentration","stored_value":{"value":"0.000990099","unit":"G_PER_L"},"decision":"evidence_only","rationale":"Numeric
+    value matches the provider-declared main-solution basis; attach that exact qualification
+    and preserve the primary literal batch amount."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[7].concentration","stored_value":{"value":"0.000990099","unit":"G_PER_L"},"decision":"verified","rationale":"Existing
+    attached evidence correctly limits the value to provider-declared solution volume;
+    retain it."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[9] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> Resazurin                                               </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[9]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    10,\n                \"compound\": \"Resazurin\",\n                \"compound_id\":
+    25,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"mg\",\n                \"g_l\": 0.000990099,\n                \"mmol_l\": 0.00431999,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q9","topic":"Liquid stock addition: Sodium
+    lactate","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[11]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Sodium lactate\",\n                        \"compound_id\":
+    1392,\n                        \"attribute\": \"*, 1.0 M\",\n                        \"amount\":
+    20,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"},"decision":"correct","rationale":"Primary states20ml
+    of stock with strength*, 1.0 M. Root20G_PER_L is a copied volume, not supported
+    mass. Supporting solution value is numerically ml per provider L but labelledPERCENT_V_V,
+    ten times the corresponding provider-based volume percentage. Preserve literal
+    batch dose, stock strength and preparation stage rather than substituting an unqualified
+    rate. Explicit1.0M times20ml delivers20mmol; no density is needed for this amount,
+    but final molarity requires a justified receiving volume.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored_value":{"value":"20","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[8].concentration","stored_value":{"value":"20","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[9].concentration","stored_value":{"value":"19.801980198019802","unit":"PERCENT_V_V"},"decision":"correct","rationale":"Retain
+    literal stock volume and attribute; stored percentage is tenfold the provider-based
+    volume fraction."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[11] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> 1.0 M Sodium lactate solution*                         </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;20.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[11]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    12,\n                \"compound\": \"Sodium lactate\",\n                \"compound_id\":
+    1392,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"*, 1.0 M\",\n                \"amount\":
+    20,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q10","topic":"Liquid
+    stock addition: Yeast extract","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[12]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"attribute\": \"10%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"},"decision":"correct","rationale":"Primary states10ml
+    of stock with strength10%. Root10G_PER_L is a copied volume, not supported mass.
+    Supporting solution value is numerically ml per provider L but labelledPERCENT_V_V,
+    ten times the corresponding provider-based volume percentage. Preserve literal
+    batch dose, stock strength and preparation stage rather than substituting an unqualified
+    rate. The bare percentage does not explicitly identify w/v or w/w; no density
+    or pure-solute mass is guessed.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored_value":{"value":"10","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[9].concentration","stored_value":{"value":"10","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[10].concentration","stored_value":{"value":"9.900990099009901","unit":"PERCENT_V_V"},"decision":"correct","rationale":"Retain
+    literal stock volume and attribute; stored percentage is tenfold the provider-based
+    volume fraction."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[12] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> 10% Yeast extract solution                             </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[12]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    13,\n                \"compound\": \"Yeast extract\",\n                \"compound_id\":
+    16,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"10%\",\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q11","topic":"Liquid stock addition: NaHCO3","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[14]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    15,\n                        \"compound\": \"NaHCO3\",\n                        \"compound_id\":
+    55,\n                        \"attribute\": \"*, 8%\",\n                        \"amount\":
+    60,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"},"decision":"correct","rationale":"Primary states60ml
+    of stock with strength*, 8%. Root60G_PER_L is a copied volume, not supported mass.
+    Supporting solution value is numerically ml per provider L but labelledPERCENT_V_V,
+    ten times the corresponding provider-based volume percentage. Preserve literal
+    batch dose, stock strength and preparation stage rather than substituting an unqualified
+    rate. The bare percentage does not explicitly identify w/v or w/w; no density
+    or pure-solute mass is guessed.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored_value":{"value":"60","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[10].concentration","stored_value":{"value":"60","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[11].concentration","stored_value":{"value":"59.4059405940594","unit":"PERCENT_V_V"},"decision":"correct","rationale":"Retain
+    literal stock volume and attribute; stored percentage is tenfold the provider-based
+    volume fraction."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[14] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> 8% NaHCO<sub>3</sub> solution*                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;60.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[14]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    15,\n                \"compound\": \"NaHCO3\",\n                \"compound_id\":
+    55,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"*, 8%\",\n                \"amount\":
+    60,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\":
+    null,\n                \"optional\": 0\n            }"}]},{"quantity_id":"q12","topic":"Liquid
+    stock addition: Na2S x 9 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[15]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    16,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"attribute\": \"5%\",\n                        \"amount\":
+    8,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"},"decision":"correct","rationale":"Primary states8ml
+    of stock with strength5%. Root8G_PER_L is a copied volume, not supported mass.
+    Supporting solution value is numerically ml per provider L but labelledPERCENT_V_V,
+    ten times the corresponding provider-based volume percentage. Preserve literal
+    batch dose, stock strength and preparation stage rather than substituting an unqualified
+    rate. The bare percentage does not explicitly identify w/v or w/w; no density
+    or pure-solute mass is guessed.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored_value":{"value":"8","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[11].concentration","stored_value":{"value":"8","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal liquid stock dose and its strength; current mass unit is unsupported."},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[12].concentration","stored_value":{"value":"7.920792079207921","unit":"PERCENT_V_V"},"decision":"correct","rationale":"Retain
+    literal stock volume and attribute; stored percentage is tenfold the provider-based
+    volume fraction."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[15] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> 5% Na<sub>2</sub>S&#183;9H<sub>2</sub>O solution                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;8.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[15]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    16,\n                \"compound\": \"Na2S x 9 H2O\",\n                \"compound_id\":
+    54,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"5%\",\n                \"amount\": 8,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q13","topic":"Stock component: FeCl2 solution
+    / HCl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[1].recipe[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\":
+    68,\n                        \"attribute\": \"7.7 M, 25%\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\":
+    0\n                    }"},"decision":"correct","rationale":"Primary10ml HCl explicitly
+    labelled25% (7.7M) belongs to FeCl2 stock. The molar label gives77mmol delivered;
+    on the provider-declared1000ml stock basis this is77mmol/L, whereas the same provider
+    reports68.5683mmol/L and2.5g/L. Preserve this internal discrepancy and literal10ml/7.7M
+    statement. Do not call the percent basis or density known, and do not retain an
+    undiluted acid-stock concentration as a whole-medium rate.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored_value":{"value":"2.5","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal source10ml HCl labelled25% (7.7M) at FeCl2-stock scope with its separate
+    receiving dose. Keep the provider2.5g/L and68.5683mmol/L discrepancy unresolved;
+    do not endorse those numerals, infer the percent basis or density, or substitute
+    a new mass concentration."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[12].concentration","stored_value":{"value":"2.5","unit":"G_PER_L"},"decision":"correct","rationale":"Represent
+    the literal source10ml HCl labelled25% (7.7M) at FeCl2-stock scope with its separate
+    receiving dose. Keep the provider2.5g/L and68.5683mmol/L discrepancy unresolved;
+    do not endorse those numerals, infer the percent basis or density, or substitute
+    a new mass concentration."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[16] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> 25% HCl (7.7 M)                                       </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"}]},{"quantity_id":"q14","topic":"Stock
+    component: FeCl2 solution / FeCl2 x 4 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[1].recipe[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\":
+    260,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.54482,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal1.5g
+    belongs to separately preparedFeCl2 solution, provider volume1000ml and g_l=1.5.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored_value":{"value":"1.5","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[13].concentration","stored_value":{"value":"1.5","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[17] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> FeCl<sub>2</sub>&#183;4H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.5&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> g  </TD></TR>"}]},{"quantity_id":"q15","topic":"Stock solvent:
+    FeCl2 solution","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[1].recipe[2]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 990,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Primary
+    gives990ml water for this stock only. Preserve batch solvent separately. Provider1000ml
+    stock metadata is not an independent measured-volume or make-up instruction.","layer_assessments":[],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[18] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> Distilled water                                       </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;990.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"}]},{"quantity_id":"q16","topic":"Stock
+    component: Trace element solution / ZnCl2","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\":
+    64,\n                        \"amount\": 70,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\":
+    0.513573,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal70mg
+    belongs to separately preparedTrace element solution, provider volume1000ml and
+    g_l=0.07. The undiluted stock rate is incorrectly placed in the receiving medium.
+    Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored_value":{"value":"0.07","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[14].concentration","stored_value":{"value":"0.07","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[19] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> ZnCl<sub>2</sub>                                               </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;70.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q17","topic":"Stock
+    component: Trace element solution / MnCl2 x 4 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.505293,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal100mg
+    belongs to separately preparedTrace element solution, provider volume1000ml and
+    g_l=0.1. The undiluted stock rate is incorrectly placed in the receiving medium.
+    Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored_value":{"value":"0.1","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[15].concentration","stored_value":{"value":"0.1","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[20] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> MnCl<sub>2</sub>&#183;4H<sub>2</sub>O                                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;100.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q18","topic":"Stock
+    component: Trace element solution / H3BO3","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[2]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 6,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\":
+    0.0970246,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal6mg
+    belongs to separately preparedTrace element solution, provider volume1000ml and
+    g_l=0.006. The undiluted stock rate is incorrectly placed in the receiving medium.
+    Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored_value":{"value":"0.006","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[16].concentration","stored_value":{"value":"0.006","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[21] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> H<sub>3</sub>BO<sub>3</sub>                                             </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;6.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q19","topic":"Stock
+    component: Trace element solution / CoCl2 x 6 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[3]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 190,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\":
+    1.46335,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal190mg
+    belongs to separately preparedTrace element solution, provider volume1000ml and
+    g_l=0.19. The undiluted stock rate is incorrectly placed in the receiving medium.
+    Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored_value":{"value":"0.19","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[17].concentration","stored_value":{"value":"0.19","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[22] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> CoCl<sub>2</sub>&#183;6H<sub>2</sub>O                                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;190.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q20","topic":"Stock
+    component: Trace element solution / CuCl2 x 2 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[4]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.0117314,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal2mg
+    belongs to separately preparedTrace element solution, provider volume1000ml and
+    g_l=0.002. The undiluted stock rate is incorrectly placed in the receiving medium.
+    Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[18].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[23] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> CuCl<sub>2</sub>&#183;2H<sub>2</sub>O                                  </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q21","topic":"Stock
+    component: Trace element solution / NiCl2 x 6 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[5]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 24,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\":
+    0.185187,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal24mg
+    belongs to separately preparedTrace element solution, provider volume1000ml and
+    g_l=0.024. The undiluted stock rate is incorrectly placed in the receiving medium.
+    Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored_value":{"value":"0.024","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[19].concentration","stored_value":{"value":"0.024","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[24] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> NiCl<sub>2</sub>&#183;6H<sub>2</sub>O                                 </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;24.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q22","topic":"Stock
+    component: Trace element solution / Na2MoO4 x 2 H2O","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[6]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 36,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\":
+    0.148791,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal36mg
+    belongs to separately preparedTrace element solution, provider volume1000ml and
+    g_l=0.036. The undiluted stock rate is incorrectly placed in the receiving medium.
+    Preserve the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored_value":{"value":"0.036","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[20].concentration","stored_value":{"value":"0.036","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[25] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> Na<sub>2</sub>MoO<sub>4</sub>&#183;2H<sub>2</sub>O                            </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;36.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q23","topic":"Stock
+    solvent: Trace element solution","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[2].recipe[7]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Primary
+    gives1000ml water for this stock only. Preserve batch solvent separately. Provider1000ml
+    stock metadata is not an independent measured-volume or make-up instruction.","layer_assessments":[],"additional_sources":[{"evidence_id":"jcm187","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=187","raw_path":"REVIEW_WORK/batch078/source09/jcm187.raw","raw_sha256":"e01f3a9740644bb7c30a64c901083747c0a05ff1c6bc123f63de8632ecfce804","locator":"HTML
+    tr[26] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.695402Z","quote":"<TR><TD
+    WIDTH=75%> Distilled water                                         </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> L        </TD></TR>"}]},{"quantity_id":"q24","topic":"Stock
+    component: Trace vitamins / Biotin","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.00818632,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal2mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.002.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[21].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[15] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Biotin                                                  </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q25","topic":"Stock
+    component: Trace vitamins / Folic acid","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 2,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\":
+    0.00453104,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal2mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.002.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[22].concentration","stored_value":{"value":"0.002","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[16] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Folic acid                                              </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;2.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q26","topic":"Stock
+    component: Trace vitamins / Pyridoxine hydrochloride","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[2]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 10,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0486287,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal10mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.01.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored_value":{"value":"0.01","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[23].concentration","stored_value":{"value":"0.01","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[17] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Pyridoxine&#183;HCl                                   </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q27","topic":"Stock
+    component: Trace vitamins / Thiamine HCl","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[3]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 5,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\":
+    0.0148236,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[24].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[18] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Thiamine&#183;HCl                                      </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q28","topic":"Stock
+    component: Trace vitamins / Riboflavin","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[4]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 5,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\":
+    0.0132837,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[25].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[19] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Riboflavin                                              </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q29","topic":"Stock
+    component: Trace vitamins / Nicotinic acid","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[5]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 5,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\":
+    0.0406141,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[26].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[20] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Nicotinic acid                                          </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q30","topic":"Stock
+    component: Trace vitamins / Calcium pantothenate","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[6]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\":
+    518,\n                        \"amount\": 5,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\":
+    0.0104925,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[27].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[27].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[21] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Calcium pantothenate                                    </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q31","topic":"Stock
+    component: Trace vitamins / Vitamin B12","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[7]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0001,\n                        \"mmol_l\":
+    7.3779e-5,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal0.1mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.0001.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[28].concentration","stored_value":{"value":"0.0001","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[28].concentration","stored_value":{"value":"0.0001","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[22] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Vitamin B<sub>1</sub><sub>2</sub>                                       </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;0.1&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q32","topic":"Stock
+    component: Trace vitamins / p-Aminobenzoic acid","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[8]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 5,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\":
+    0.0364591,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[29].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[29].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[23] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> <I>p</I>-Aminobenzoic acid                             </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q33","topic":"Stock
+    component: Trace vitamins / Lipoic acid","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[9]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Lipoic acid\",\n                        \"compound_id\":
+    368,\n                        \"amount\": 5,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.005,\n                        \"mmol_l\":
+    0.024233,\n                        \"optional\": 0\n                    }"},"decision":"correct","rationale":"Literal5mg
+    belongs to separately preparedTrace vitamins, provider volume1000ml and g_l=0.005.
+    The undiluted stock rate is incorrectly placed in the receiving medium. Preserve
+    the stated chemical form and stock amount; restore its receiving dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ingredients[30].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ingredients[30].concentration","stored_value":{"value":"0.005","unit":"G_PER_L"},"decision":"correct","rationale":"Move
+    this numeric value into its exact stock scope; a separate receiving dose is required."}],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[24] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Lipoic acid                                             </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;5.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> mg  </TD></TR>"}]},{"quantity_id":"q34","topic":"Stock
+    solvent: Trace vitamins","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[3].recipe[10]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Primary
+    gives1000ml water for this stock only. Preserve batch solvent separately. Provider1000ml
+    stock metadata is not an independent measured-volume or make-up instruction.","layer_assessments":[],"additional_sources":[{"evidence_id":"jcm197","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197","raw_path":"REVIEW_WORK/batch078/source09/jcm197.raw","raw_sha256":"39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532","locator":"HTML
+    tr[25] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.707406Z","quote":"<TR><TD
+    WIDTH=75%> Distilled water                                         </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> L  </TD></TR>"}]},{"quantity_id":"q35","topic":"Main water
+    batch input","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[10]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 900,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"mixed","rationale":"Source900ml
+    water is0.9L batch solvent. Dividing by provider1010ml would give89.1089%v/v,
+    not891.089%; this is a diagnostic comparison, not endorsement of an independently
+    measured final volume.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"water","stored_value":null,"decision":"add","rationale":"Main900ml
+    solvent input is absent; record the literal batch quantity without treating it
+    as a final-volume assertion.","missing":true},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"water","stored_value":null,"decision":"add","rationale":"Main900ml
+    solvent input is absent; record the literal batch quantity without treating it
+    as a final-volume assertion.","missing":true},{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"composition[8].concentration","stored_value":{"value":"891.0891089108911","unit":"PERCENT_V_V"},"decision":"correct","rationale":"891.089%
+    is the mislabeled891.089ml per provider L; primary input is900ml."}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[10] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> Distilled water                                       </TD><TD WIDTH=15%
+    ALIGN=RIGHT><font size=+1><tt>&nbsp;900.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[10]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    11,\n                \"compound\": \"Distilled water\",\n                \"compound_id\":
+    4,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 900,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q36","topic":"Missing receiving descriptor:
+    FeCl2 solution","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[7]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"FeCl2 solution\",\n                        \"solution_id\":
+    3846,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Preserve1ml
+    ofFeCl2 solution (provider solution3846) as a batch addition. The supporting4168
+    record also omits this source-only nested row; its exact native representation
+    requires structural curation. No whole parent recipe or unrelated parent conditions
+    are imported.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing
+    named stock descriptor and literal receiving dose.","missing":true},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing
+    named stock descriptor and literal receiving dose.","missing":true}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[7] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> FeCl<sub>2</sub> solution (see Medium No. <a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=187\">187</a>)                </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[7]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    8,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"FeCl2 solution\",\n                \"solution_id\": 3846,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q37","topic":"Missing receiving descriptor:
+    Trace element solution","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[8]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"solution\": \"Trace element solution\",\n                        \"solution_id\":
+    3847,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }"},"decision":"add","rationale":"Preserve1ml
+    ofTrace element solution (provider solution3847) as a batch addition. The supporting4168
+    record also omits this source-only nested row; its exact native representation
+    requires structural curation. No whole parent recipe or unrelated parent conditions
+    are imported.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing
+    named stock descriptor and literal receiving dose.","missing":true},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing
+    named stock descriptor and literal receiving dose.","missing":true}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[8] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> Trace element solution (see Medium No. <a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=187\">187</a>)           </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;1.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[8]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    9,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Trace element solution\",\n                \"solution_id\": 3847,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q38","topic":"Missing receiving descriptor:
+    Trace vitamins","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].recipe[13]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    14,\n                        \"solution\": \"Trace vitamins\",\n                        \"solution_id\":
+    3861,\n                        \"attribute\": \"*\",\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }"},"decision":"add","rationale":"Preserve10ml ofTrace
+    vitamins (provider solution3861) as a batch addition. The supporting4168 record
+    also omits this source-only nested row; its exact native representation requires
+    structural curation. No whole parent recipe or unrelated parent conditions are
+    imported.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing
+    named stock descriptor and literal receiving dose.","missing":true},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"solutions","stored_value":null,"decision":"add","rationale":"Missing
+    named stock descriptor and literal receiving dose.","missing":true}],"additional_sources":[{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"HTML
+    tr[13] (zero-based document table-row order)","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"<TR><TD
+    WIDTH=75%> Trace vitamins* (see Medium No. <a href=\"/cgi-bin/jcm/jcm_grmd?GRMD=197\">197</a>)                 </TD><TD
+    WIDTH=15% ALIGN=RIGHT><font size=+1><tt>&nbsp;10.0&nbsp;&nbsp;&nbsp;&nbsp;</tt></font></TD><TD
+    WIDTH=10% ALIGN=RIGHT> ml  </TD></TR>"},{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[13]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    14,\n                \"compound\": null,\n                \"compound_id\": null,\n                \"solution\":
+    \"Trace vitamins\",\n                \"solution_id\": 3861,\n                \"condition\":
+    null,\n                \"attribute\": \"*\",\n                \"amount\": 10,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }"}]},{"quantity_id":"q39","topic":"Legacy supporting-solution
+    placeholder","source":{"evidence_id":"api4168","reference":"https://mediadive.dsmz.de/rest/solution/4168","raw_path":"REVIEW_WORK/batch078/source09/api4168.raw","raw_sha256":"8aa97f4669392b5c9027a4c06cd1b9e93e202664cdeae648d43d28eaf1793b26","locator":"$.data.recipe[0]","accessed_at":"2026-10-28T20:57:31.615751Z","quote":"{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Na2SO4\",\n                \"compound_id\":
+    110,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 3,\n                \"unit\":
+    \"g\",\n                \"g_l\": 2.9703,\n                \"mmol_l\": 20.9117,\n                \"optional\":
+    0\n            }"},"decision":"unsupported","rationale":"The complete provider
+    composition is available and current local composition already has13 entries.
+    Resolve the legacy placeholder and incomplete_composition flag only after restoring
+    the three missing stock edges; do not interpret VARIABLE as a physical reagent
+    amount.","layer_assessments":[{"path":"data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml","field_path":"ingredients[0].concentration","stored_value":{"value":"variable","unit":"VARIABLE"},"decision":"unsupported","rationale":"See
+    source for composition is a legacy placeholder, not an actual source ingredient
+    or usable quantitative claim."}]},{"quantity_id":"q40","topic":"Retained main
+    preparation 1","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].steps[0]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"step\": \"Mix components thoroughly and autoclave
+    under a N2-CO2 (4:1, v/v) gas atmosphere. After cooling, aseptically and anaerobically
+    add the following solutions (autoclaved or *filter-sterilized): \"\n                    }"},"decision":"evidence_only","rationale":"Preserve
+    the N2/CO2(4:1v/v), anaerobic postcooling additions and star-marked filtration
+    distinctions; attach the missing stock list to make the retained first instruction
+    usable.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored_value":"Mix
+    components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere.
+    After cooling, aseptically and anaerobically add the following solutions (autoclaved
+    or *filter-sterilized):","decision":"evidence_only","rationale":"Existing main
+    preparation text matches the current provider and primary; retain unchanged and
+    attach exact evidence."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"preparation_steps[0].description","stored_value":"Mix
+    components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere.
+    After cooling, aseptically and anaerobically add the following solutions (autoclaved
+    or *filter-sterilized):","decision":"evidence_only","rationale":"Existing main
+    preparation text matches the current provider and primary; retain unchanged and
+    attach exact evidence."}]},{"quantity_id":"q41","topic":"Retained main preparation
+    2","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.solutions[0].steps[1]","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n                        \"step\":
+    \"Adjust pH to 7.1 - 7.4, if necessary.\"\n                    }"},"decision":"evidence_only","rationale":"Primary
+    pH7.1–7.4 adjustment is conditional; no titrant identity or delivered amount is
+    specified. The existing provider metadata pH7.2 lies within this range. No parent187/197
+    pH is transferred.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored_value":"Adjust
+    pH to 7.1 - 7.4, if necessary.","decision":"evidence_only","rationale":"Existing
+    main preparation text matches the current provider and primary; retain unchanged
+    and attach exact evidence."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"preparation_steps[1].description","stored_value":"Adjust
+    pH to 7.1 - 7.4, if necessary.","decision":"evidence_only","rationale":"Existing
+    main preparation text matches the current provider and primary; retain unchanged
+    and attach exact evidence."}]},{"quantity_id":"q42","topic":"Provider pH metadata","source":{"evidence_id":"apiJ430","reference":"https://mediadive.dsmz.de/rest/medium/J430","raw_path":"REVIEW_WORK/batch078/source09/apiJ430.raw","raw_sha256":"a454901e46ed62e34fb45743b0d428ded417a8387e93afb0f23d4c7ceef52a1a","locator":"$.data.medium","accessed_at":"2026-10-28T20:57:31.801826Z","quote":"{\n            \"id\":
+    \"J430\",\n            \"name\": \"DESULFOSPOROMUSA MEDIUM\",\n            \"complex_medium\":
+    \"yes\",\n            \"min_pH\": 7.2,\n            \"max_pH\": 7.2,\n            \"source\":
+    \"JCM\",\n            \"link\": \"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430\"\n        }"},"decision":"evidence_only","rationale":"Keep
+    the source distinction: provider scalar7.2 and primary preparation range7.1–7.4
+    are compatible but not identical claims. Attach their respective evidence without
+    inventing a titrant dose.","layer_assessments":[{"path":"data/merge_yaml/merged/DESULFOSPOROMUSA_MEDIUM.yaml","field_path":"ph_value","stored_value":7.2,"decision":"evidence_only","rationale":"Existing7.2
+    is exactly the provider value and is within the primary7.1–7.4 range."},{"path":"data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml","field_path":"ph_value","stored_value":7.2,"decision":"evidence_only","rationale":"Existing7.2
+    is exactly the provider value and is within the primary7.1–7.4 range."}]},{"quantity_id":"q43","topic":"Primary
+    default sterilization context","source":{"evidence_id":"jcm430","reference":"https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430","raw_path":"REVIEW_WORK/batch078/source09/jcm430.raw","raw_sha256":"867c1b46bc64ac5273300140231183b7cc4e84858f78822248875742d8ebebce","locator":"Page-wide
+    default sentence","accessed_at":"2026-10-28T20:57:31.704129Z","quote":"Unless
+    otherwise stated, sterilize media by autoclaving at 121&#176;C for 15 min.\n"},"decision":"evidence_only","rationale":"The
+    primary default is121C for15min unless otherwise stated. Record-specific asterisk
+    filtration overrides the default for marked additions. Preserve source scope;
+    do not infer another organism incubation temperature or time.","layer_assessments":[]}]'
+- assessment_id: a6
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: All148recursive slots,31asserted CHEBI identities,32OLS scientific projections
+    including the nickel-hexahydrate candidate,634exact catalog rows and33preferred
+    spellings were examined. One confirmed hydrate contradiction remains. Resazurin
+    is not explicitly sodium in this source; no sodium-form mismatch is invented.
+    Generic calcium pantothenate does not establish D stereochemistry, B12 does not
+    specify a single vitamer, and generic lipoic acid does not establish a particular
+    stereochemical mixture. Preserve source wording and those limits. Co53503 is chemically
+    compatible despite a rejected spelling alias; sodium-lactate75228 is separate
+    from the rejected D/aspartyl catalogue artifact. Ungrounded yeast extract is a
+    mixture; a catalog lead is not new ontology curation.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - grounding
+  - full-catalog
+- assessment_id: a7
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: Complete current histories and eight attached supporting-solution claims
+    were read; two exact parent rows contain88claims and56literal/decoded source quotes.
+    Five reports are retained as historical context. Owner hashes and supporting after
+    hash match current bytes, and both historical API digests match fresh responses.
+    None of this authenticates historical access times or execution. Missing medium
+    claim placement remains distinct from the existing sound supporting evidence.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - history
+  - scalars
+  - parent-claims
+  - attached-claims
+  - reading-proof
+  - historical-0
+  - historical-1
+  - historical-2
+  - historical-3
+  - historical-4
+- assessment_id: a8
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - local-target
+- assessment_id: a9
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:002782
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-002782-undiluted-stock-components-are-flattened-into-the-medium
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Undiluted stock components are flattened into the medium
+  description: Nineteen ingredient entries12–30 in target and contributor belong to
+    separately prepared FeCl2, trace-element or vitamin stocks. JCM430 adds1ml,1ml
+    and10ml respectively. Restore stock boundaries and receiving doses, with the exact187Fe/trace
+    and197vitamin blocks only. Keep all eight supported main values and existing4168
+    evidence. The supporting4168 composition omits three stock-only source rows and
+    retains a legacy placeholder, so it cannot yet substitute for a complete medium
+    recipe.
+  target_ids:
+  - CultureMech:002782
+  field_paths:
+  - ingredients
+  - solutions
+  - data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml::composition
+  - data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml::ingredients[0]
+  evidence_ids:
+  - jcm430
+  - jcm187
+  - jcm197
+  - apiJ430
+  - api4168
+  - quantities
+  - writer-0
+  - writer-1
+  rule_id: P2-stock-scope-and-missing-additions
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-002782-liquid-stock-volumes-and-percentages-carry-unsupported-units
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Liquid stock volumes and percentages carry unsupported units
+  description: Four root values20,10,60,8G_PER_L are literal ml additions of sodium
+    lactate, yeast extract, bicarbonate and sulfide stocks. Preserve volume and strength
+    separately. All five supporting4168 PERCENT_V_V numbers are tenfold their provider-volume
+    fractions, including891.089% water. Prefer literal batch volumes rather than inventing
+    final-volume certainty. Primary HCl25%(7.7M) gives77mmol for10ml; the provider1000ml
+    stock reports68.5683mmol/L/2.5g/L, so retain the conflict instead of silently
+    adopting either mass conversion.
+  target_ids:
+  - CultureMech:002782
+  field_paths:
+  - ingredients[8].concentration
+  - ingredients[9].concentration
+  - ingredients[10].concentration
+  - ingredients[11].concentration
+  - ingredients[12].concentration
+  - data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml::composition
+  evidence_ids:
+  - jcm430
+  - jcm187
+  - apiJ430
+  - api4168
+  - attached-claims
+  - quantities
+  - writer-1
+  rule_id: P2-liquid-dose-units
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-002782-nickel-hexahydrate-is-assigned-an-anhydrous-identifier
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is assigned an anhydrous identifier
+  description: NiCl2x6H2O in ingredients[19] carriesCHEBI34887 in both primary and
+    MIM-linked slots of target and contributor. Current primary and provider retain
+    the hexahydrate; OLS53542 supplies the exact-form candidate. Packaged source-spelling
+    preferred row isREJECTED while its Nickel(II)chloride hexahydrate counterpart
+    isMAPPED; distinguish aliases from scientific form identity. Preserve24mg stock
+    amount without anhydrous mass substitution.
+  target_ids:
+  - CultureMech:002782
+  field_paths:
+  - ingredients[19].term
+  - ingredients[19].mediaingredientmech_chebi_term
+  evidence_ids:
+  - jcm187
+  - apiJ430
+  - ols34887
+  - ols53542
+  - full-catalog
+  - spellings
+  rule_id: P2-hydrate-grounding
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-002782-medium-claims-lack-field-level-evidence
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Medium claims lack field-level evidence
+  description: Target and contributor retain no field-level formulation claims or
+    references. Attach the verified narrow primary/provider scopes and preserve the
+    existing eight4168 claims. The supporting record retains timezone-less historical
+    quality events and a default-added placeholder; preserve original history rather
+    than inventing dates or treating a legacy default as scientific content.
+  target_ids:
+  - CultureMech:002782
+  field_paths:
+  - ingredients
+  - preparation_steps
+  - references
+  - curation_history
+  evidence_ids:
+  - local-target
+  - owner-1
+  - support-main
+  - history
+  - attached-claims
+  - parent-claims
+  rule_id: P3-claim-evidence-provenance
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Nineteen ingredient entries12–30 in target and contributor belong to
+    separately prepared FeCl2, trace-element or vitamin stocks. JCM430 adds1ml,1ml
+    and10ml respectively. Restore stock boundaries and receiving doses, with the exact187Fe/trace
+    and197vitamin blocks only. Keep all eight supported main values and existing4168
+    evidence. The supporting4168 composition omits three stock-only source rows and
+    retains a legacy placeholder, so it cannot yet substitute for a complete medium
+    recipe.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:002782
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Four root values20,10,60,8G_PER_L are literal ml additions of sodium
+    lactate, yeast extract, bicarbonate and sulfide stocks. Preserve volume and strength
+    separately. All five supporting4168 PERCENT_V_V numbers are tenfold their provider-volume
+    fractions, including891.089% water. Prefer literal batch volumes rather than inventing
+    final-volume certainty. Primary HCl25%(7.7M) gives77mmol for10ml; the provider1000ml
+    stock reports68.5683mmol/L/2.5g/L, so retain the conflict instead of silently
+    adopting either mass conversion.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:002782
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_4168_Main_sol_J430.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: NiCl2x6H2O in ingredients[19] carriesCHEBI34887 in both primary and
+    MIM-linked slots of target and contributor. Current primary and provider retain
+    the hexahydrate; OLS53542 supplies the exact-form candidate. Packaged source-spelling
+    preferred row isREJECTED while its Nickel(II)chloride hexahydrate counterpart
+    isMAPPED; distinguish aliases from scientific form identity. Preserve24mg stock
+    amount without anhydrous mass substitution.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:002782
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Target and contributor retain no field-level formulation claims or
+    references. Attach the verified narrow primary/provider scopes and preserve the
+    existing eight4168 claims. The supporting record retains timezone-less historical
+    quality events and a default-added placeholder; preserve original history rather
+    than inventing dates or treating a legacy default as scientific content.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:002782
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfosporomusa_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Only the selected generated target, its one maintained contributor and supporting
+  main4168 are assessed. TOGO M430 is bounded identity context; other normalized stocks
+  and receiving media are not fully reviewed. JCM187/197 are used only for their exact
+  referenced stock blocks.
+- Provider1010ml and1000ml volumes support explicitly attributed arithmetic, not independent
+  final-volume measurements. Nominal liquid sums do not supply measured-volume evidence.
+  Bare stock percentages remain unspecified as to basis; HCl also carries an explicit
+  molar label whose conflict is preserved.
+- Generic calcium pantothenate stereochemistry, vitaminB12 identity and lipoic-acid
+  stereochemistry remain unresolved at the source wording level. No guessed mass,
+  hydrate conversion or taxonomic growth assertion is introduced.
+- Four original canonical target checks passed once; reference checks were zero. No
+  focused embedded-history validator is documented, and no corpus-wide validation
+  or historical execution replay is claimed. iModulonDB is inapplicable to this formulation
+  review.
+- Exact scientific reading reuse and new direct reading are documented in the private
+  proof. No recipe, generated product, prior review, Git publication or scientific
+  status was changed.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- This draft authoring step performed no formal review validation/save, Git mutation
+  or publication.
+```
