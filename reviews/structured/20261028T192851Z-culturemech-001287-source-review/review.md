@@ -1,0 +1,3433 @@
+# Scientific review: DESULFOFABA MEDIUM
+
+- Review: 20261028T192851Z-culturemech-001287-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T18:55:22.988886Z
+- Finished UTC: 2026-10-28T19:28:51.179920Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The complete selected target and maintained owner formulations were reviewed against current primary sources, complete provider graphs, fresh ontology objects, the current MIM snapshot, all historical reports and current writers. Source-stage flattening and retained metadata require curation; supported unchanged quantities and existing partial repairs are explicitly credited. The conditional DSM 2075 override is excluded from the generic formulation.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch075 index 08
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001287 | data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml | generated | desulfofaba_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:001287 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:001287 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:001287 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:001287 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact source and branch scope
+
+identity: supported. Targets: CultureMech:001287.
+
+The primary DSM 193b and current provider agree on exact source identity. The selected 193b formulation is distinct from the explicitly conditional DSM 2075 override, which is excluded.
+
+### Medium classification and physical state
+
+consistency: supported. Targets: CultureMech:001287.
+
+LIQUID is consistent with the selected formulation. DEFINED is consistent with the chemically specified selected formulation; no classification correction is inferred from anaerobic preparation or old names.
+
+### Native structural checks and evidence completeness
+
+schema: supported. Targets: CultureMech:001287.
+
+All four original canonical diagnostics passed. A zero-reference diagnostic count is not source verification; quantities, missing attached claims and current scientific disagreements were assessed independently.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:001287.
+
+62 current concentration fields are covered by 66 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema": "fresh-b075-quantity-inventory-v1", "target": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "quantity_field_count": 62, "decisions": [{"quantity_id": "q1", "label": "Na2SO4", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "stored": {"value": "3.21888", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[0].concentration", "stored": {"value": "3.21888", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 3.21888 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.21888,\n                        \"mmol_l\": 22.6618,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 29-29", "quote": "Na2SO4                                                   3.00        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "decision": "correct", "rationale": "The provider explicitly declares 3.21888 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[0].concentration", "decision": "correct", "rationale": "The provider explicitly declares 3.21888 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q2", "label": "KH2PO4", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "stored": {"value": "0.214592", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[1].concentration", "stored": {"value": "0.214592", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.214592 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.214592,\n                        \"mmol_l\": 1.5769,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 30-30", "quote": "KH2PO4                                                   0.20        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.214592 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[1].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.214592 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q3", "label": "NH4Cl", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "stored": {"value": "0.321888", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[2].concentration", "stored": {"value": "0.321888", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.321888 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[2]", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.321888,\n                        \"mmol_l\": 6.01773,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 31-31", "quote": "NH4Cl                                                    0.30        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.321888 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[2].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.321888 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q4", "label": "NaCl", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "stored": {"value": "7.51073", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[3].concentration", "stored": {"value": "7.51073", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 7.51073 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[3]", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 7,\n                        \"unit\": \"g\",\n                        \"g_l\": 7.51073,\n                        \"mmol_l\": 128.52,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 32-32", "quote": "NaCl                                                     7.00        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "decision": "correct", "rationale": "The provider explicitly declares 7.51073 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[3].concentration", "decision": "correct", "rationale": "The provider explicitly declares 7.51073 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q5", "label": "KCl", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "stored": {"value": "0.536481", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[4].concentration", "stored": {"value": "0.536481", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.536481 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[4]", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.536481,\n                        \"mmol_l\": 7.19625,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 33-33", "quote": "KCl                                                      0.50        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.536481 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[4].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.536481 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q6", "label": "MgCl2 x 6 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "stored": {"value": "575.643777", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[5].concentration", "stored": {"value": "575.643777", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The local value is the sum of rates belonging to Solution A (0.643777 g/L), Solution E (575 g/L). Although the units have the same dimensions, the solution bases differ: their sum is not a valid final-medium total. Retain each source addition and stage separately; current no-sum/identical-only repair guards already avoid guessing a replacement.", "source_stage": "Solution A; Solution E", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[5]", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.643777,\n                        \"mmol_l\": 3.16659,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 34-34", "quote": "MgCl2 x 6 H2O                                            0.60        g", "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 11.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 575,\n                        \"mmol_l\": 2828.29,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 64-64", "quote": "MgCl2 x 6 H2O                                              11.50        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "decision": "correct", "rationale": "The local value is the sum of rates belonging to Solution A (0.643777 g/L), Solution E (575 g/L). Although the units have the same dimensions, the solution bases differ: their sum is not a valid final-medium total. Retain each source addition and stage separately; current no-sum/identical-only repair guards already avoid guessing a replacement."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[5].concentration", "decision": "correct", "rationale": "The local value is the sum of rates belonging to Solution A (0.643777 g/L), Solution E (575 g/L). Although the units have the same dimensions, the solution bases differ: their sum is not a valid final-medium total. Retain each source addition and stage separately; current no-sum/identical-only repair guards already avoid guessing a replacement."}]}, {"quantity_id": "q7", "label": "Sodium resazurin", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "stored": {"value": "0.000536481", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[6].concentration", "stored": {"value": "0.000536481", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.000536481 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[8]", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.000536481,\n                        \"mmol_l\": 0.00213593,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 37-37", "quote": "Sodium resazurin (0.1% w/v)                              0.50       ml", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.000536481 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[6].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.000536481 g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q8", "label": "Na2CO3", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "stored": {"value": "50", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[7].concentration", "stored": {"value": "50", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 50 g/L in Solution B. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution B", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[2].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 50,\n                        \"mmol_l\": 471.752,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 42-42", "quote": "Na2CO3                                                   1.50        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "decision": "correct", "rationale": "The provider explicitly declares 50 g/L in Solution B. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[7].concentration", "decision": "correct", "rationale": "The provider explicitly declares 50 g/L in Solution B. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q9", "label": "Na-propionate", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "stored": {"value": "150", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[8].concentration", "stored": {"value": "150", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 150 g/L in Solution C. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution C", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[3].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na-propionate\",\n                        \"compound_id\": 301,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 150,\n                        \"mmol_l\": 1561.52,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 47-47", "quote": "Na-propionate                                            1.50        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "decision": "correct", "rationale": "The provider explicitly declares 150 g/L in Solution C. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[8].concentration", "decision": "correct", "rationale": "The provider explicitly declares 150 g/L in Solution C. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q10", "label": "CaCl2 x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "stored": {"value": "75", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[9].concentration", "stored": {"value": "75", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 75 g/L in Solution E. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution E", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 75,\n                        \"mmol_l\": 510.152,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 63-63", "quote": "CaCl2 x 2 H2O                                               1.50        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "decision": "correct", "rationale": "The provider explicitly declares 75 g/L in Solution E. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[9].concentration", "decision": "correct", "rationale": "The provider explicitly declares 75 g/L in Solution E. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q11", "label": "Na2S x 9 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "stored": {"value": "40", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[10].concentration", "stored": {"value": "40", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 40 g/L in Solution F. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Solution F", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[6].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.4,\n                        \"unit\": \"g\",\n                        \"g_l\": 40,\n                        \"mmol_l\": 166.54,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 69-69", "quote": "Na2S x 9 H2O                                                0.40        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "decision": "correct", "rationale": "The provider explicitly declares 40 g/L in Solution F. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[10].concentration", "decision": "correct", "rationale": "The provider explicitly declares 40 g/L in Solution F. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q12", "label": "NaOH", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "stored": {"value": "0.5", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[11].concentration", "stored": {"value": "0.5", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.5 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Selenite-tungstate solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[7].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 74-74", "quote": "NaOH                                                       0.50        g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.5 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[11].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.5 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q13", "label": "Na2SeO3 x 5 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "stored": {"value": "0.003", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[12].concentration", "stored": {"value": "0.003", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.003 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Selenite-tungstate solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[7].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 75-75", "quote": "Na2SeO3 x 5 H2O                                            3.00       mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.003 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[12].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.003 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q14", "label": "Na2WO4 x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "stored": {"value": "0.004", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[13].concentration", "stored": {"value": "0.004", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.004 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Selenite-tungstate solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[7].recipe[2]", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 76-76", "quote": "Na2WO4 x 2 H2O                                             4.00       mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.004 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[13].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.004 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q15", "label": "HCl", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "stored": {"value": "2.5", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[14].concentration", "stored": {"value": "2.5", "unit": "G_PER_L"}}], "decision": "unsupported", "rationale": "The source specifies a 25% HCl stock by volume, without stating the percentage basis or density. The provider emits 2.5 g/L for the SL-10 stock, but that number does not independently establish a mass conversion; its flattened final-medium use is also unsupported. Preserve the native stock volume and percentage text pending basis verification.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\": \"25%\",\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\": 68.5683,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 81-81", "quote": "HCl (25%)                                                  10.00      ml", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "decision": "unsupported", "rationale": "The source specifies a 25% HCl stock by volume, without stating the percentage basis or density. The provider emits 2.5 g/L for the SL-10 stock, but that number does not independently establish a mass conversion; its flattened final-medium use is also unsupported. Preserve the native stock volume and percentage text pending basis verification."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[14].concentration", "decision": "unsupported", "rationale": "The source specifies a 25% HCl stock by volume, without stating the percentage basis or density. The provider emits 2.5 g/L for the SL-10 stock, but that number does not independently establish a mass conversion; its flattened final-medium use is also unsupported. Preserve the native stock volume and percentage text pending basis verification."}]}, {"quantity_id": "q16", "label": "FeCl2 x 4 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "stored": {"value": "1.5", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[0].composition[0].concentration", "stored": {"value": "1.5", "unit": "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly declares 1.5 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 82-82", "quote": "FeCl2 x 4 H2O                                               1.50       g", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "decision": "correct", "rationale": "The provider explicitly declares 1.5 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[0].composition[0].concentration", "decision": "evidence_only", "rationale": "The provider explicitly declares 1.5 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q17", "label": "ZnCl2", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "stored": {"value": "0.07", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[15].concentration", "stored": {"value": "0.07", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.07 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[2]", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\": 70,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 83-83", "quote": "ZnCl2                                                      70.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.07 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[15].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.07 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q18", "label": "MnCl2 x 4 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "stored": {"value": "0.1", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[16].concentration", "stored": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.1 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[3]", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 84-84", "quote": "MnCl2 x 4 H2O                                             100.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.1 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[16].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.1 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q19", "label": "H3BO3", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "stored": {"value": "0.006", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[17].concentration", "stored": {"value": "0.006", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.006 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[4]", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 6,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 85-85", "quote": "H3BO3                                                       6.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.006 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[17].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.006 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q20", "label": "CoCl2 x 6 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "stored": {"value": "0.19", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[18].concentration", "stored": {"value": "0.19", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.19 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[5]", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 190,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 86-86", "quote": "CoCl2 x 6 H2O                                             190.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.19 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[18].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.19 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q21", "label": "CuCl2 x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "stored": {"value": "0.002", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[19].concentration", "stored": {"value": "0.002", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.002 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[6]", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 2,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 87-87", "quote": "CuCl2 x 2 H2O                                               2.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.002 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[19].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.002 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q22", "label": "NiCl2 x 6 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "stored": {"value": "0.024", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[20].concentration", "stored": {"value": "0.024", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.024 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[7]", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 24,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 88-88", "quote": "NiCl2 x 6 H2O                                              24.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.024 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[20].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.024 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q23", "label": "Na2MoO4 x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "stored": {"value": "0.036", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[21].concentration", "stored": {"value": "0.036", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.036 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[8]", "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 36,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 89-89", "quote": "Na2MoO4 x 2 H2O                                            36.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.036 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[21].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.036 g/L in Trace element solution SL-10. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q24", "label": "Vitamin B12", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "stored": {"value": "0.1", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].composition[0].concentration", "stored": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.073779,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 98-98", "quote": "Vitamin B12                                               100.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].composition[0].concentration", "decision": "evidence_only", "rationale": "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q25", "label": "p-Aminobenzoic acid", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "stored": {"value": "0.08", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[22].concentration", "stored": {"value": "0.08", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.08 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 80,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.08,\n                        \"mmol_l\": 0.583345,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 99-99", "quote": "p-Aminobenzoic acid                                        80.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.08 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[22].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.08 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q26", "label": "D-(+)-biotin", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "stored": {"value": "0.02", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[23].concentration", "stored": {"value": "0.02", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.02 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[2]", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"D-(+)-biotin\",\n                        \"compound_id\": 1359,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 100-100", "quote": "D-(+)-biotin                                               20.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.02 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[23].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.02 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q27", "label": "Nicotinic acid", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "stored": {"value": "0.2", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].composition[1].concentration", "stored": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly declares 0.2 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[3]", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.62456,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 101-101", "quote": "Nicotinic acid                                            200.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[26].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.2 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].composition[1].concentration", "decision": "evidence_only", "rationale": "The provider explicitly declares 0.2 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q28", "label": "Calcium pantothenate", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "stored": {"value": "0.1", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[24].concentration", "stored": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[4]", "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.209849,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 102-102", "quote": "Calcium pantothenate                                      100.00      mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[27].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[24].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q29", "label": "Pyridoxine hydrochloride", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "stored": {"value": "0.3", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].composition[2].concentration", "stored": {"value": "0.3", "unit": "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly declares 0.3 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[5]", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 300,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 1.45886,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 110-110", "quote": "Pyridoxine hydrochloride          300.00   mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[28].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.3 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].composition[2].concentration", "decision": "evidence_only", "rationale": "The provider explicitly declares 0.3 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q30", "label": "Thiamine-HCl x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "stored": {"value": "0.2", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].composition[3].concentration", "stored": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly declares 0.2 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume.", "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[6]", "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\": 77,\n                        \"amount\": 200,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.535761,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 111-111", "quote": "Thiamine-HCl x 2 H2O              200.00   mg", "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[29].concentration", "decision": "correct", "rationale": "The provider explicitly declares 0.2 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].composition[3].concentration", "decision": "evidence_only", "rationale": "The provider explicitly declares 0.2 g/L in Seven vitamins solution. That stock/subsolution basis is supported; it is not the assembled-medium concentration. Existing nested placement, where present, is credited on the provider basis, while direct main-ingredient placement requires correction. Listed input water alone is not measured final stock volume."}]}, {"quantity_id": "q31", "label": "Solution A in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Main sol. 193b. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\": 345,\n                        \"amount\": 932,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-3", "quote": "Solution A                                             932.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q32", "label": "Solution B in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Main sol. 193b. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[1]", "quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\": 347,\n                        \"amount\": 30,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 4-4", "quote": "Solution B                                              30.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q33", "label": "Solution C in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Main sol. 193b. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[2]", "quote": "{\n                        \"recipe_order\": 4,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\": 348,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 5-5", "quote": "Solution C                                              10.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q34", "label": "Solution D in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Main sol. 193b. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[3]", "quote": "{\n                        \"recipe_order\": 5,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\": 349,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 6-6", "quote": "Solution D                                               1.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q35", "label": "Solution E in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Main sol. 193b. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[4]", "quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Solution E\",\n                        \"solution_id\": 350,\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 7-7", "quote": "Solution E                                              20.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q36", "label": "Solution F in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Main sol. 193b. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[5]", "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Solution F\",\n                        \"solution_id\": 351,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 8-8", "quote": "Solution F                                              10.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q37", "label": "Selenite-tungstate solution in Solution A", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Solution A. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[6]", "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\": \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 35-35", "quote": "Selenite-tungstate solution                              1.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q38", "label": "Trace element solution SL-10 in Solution A", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Solution A. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[7]", "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 36-36", "quote": "Trace element solution SL-10                             1.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q39", "label": "Distilled water in Solution A", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only input-water quantity for this stage. It is not an independently measured final volume; retain separately from provider volume metadata.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[9]", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 930,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 38-38", "quote": "Distilled water                                        930.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q40", "label": "Distilled water in Solution B", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only input-water quantity for this stage. It is not an independently measured final volume; retain separately from provider volume metadata.", "source_stage": "Solution B", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[2].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 30,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 43-43", "quote": "Distilled water                                         30.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q41", "label": "Distilled water in Solution C", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only input-water quantity for this stage. It is not an independently measured final volume; retain separately from provider volume metadata.", "source_stage": "Solution C", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[3].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 55-55", "quote": "Distilled water                                            10.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q42", "label": "Seven vitamins solution in Solution D", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only receiving addition into Solution D. Preserve this exact batch volume and graph edge, not an assumed per-litre dose or direct stock-component concentration.", "source_stage": "Solution D", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[4].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 59-59", "quote": "Seven vitamins solution                                     1.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q43", "label": "Distilled water in Solution E", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only input-water quantity for this stage. It is not an independently measured final volume; retain separately from provider volume metadata.", "source_stage": "Solution E", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[2]", "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 65-65", "quote": "Distilled water                                            20.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q44", "label": "Distilled water in Solution F", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only input-water quantity for this stage. It is not an independently measured final volume; retain separately from provider volume metadata.", "source_stage": "Solution F", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[6].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 70-70", "quote": "Distilled water                                            10.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q45", "label": "Distilled water in Selenite-tungstate solution", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only input-water quantity for this stage. It is not an independently measured final volume; retain separately from provider volume metadata.", "source_stage": "Selenite-tungstate solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[7].recipe[3]", "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 77-77", "quote": "Distilled water                                         1000.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q46", "label": "Distilled water in Trace element solution SL-10", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only input-water quantity for this stage. It is not an independently measured final volume; retain separately from provider volume metadata.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[9]", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 90-90", "quote": "Distilled water                                           990.00      ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q47", "label": "Distilled water in Seven vitamins solution", "local_fields": [], "decision": "evidence_only", "rationale": "Source-only input-water quantity for this stage. It is not an independently measured final volume; retain separately from provider volume metadata.", "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[7]", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 112-112", "quote": "Distilled water                  1000.00   ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q48", "label": "Retained preparation step 1", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "preparation_steps[0]", "stored": {"step_number": 1, "action": "AUTOCLAVE", "description": "Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas. \r\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium appropriate amounts of solutions B to F are added to the sterile solution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4."}}], "decision": "evidence_only", "rationale": "Existing main preparation text already retains the source sequence, stated atmosphere, times, pH and conditional controls. Preserve this unchanged text and its scope; no new growth claim is inferred.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[0]", "quote": "{\n                        \"step\": \"Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas. \\r\\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium appropriate amounts of solutions B to F are added to the sterile solution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16", "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions B to F are added to the sterile\nsolution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id": "q49", "label": "Retained preparation step 2", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "preparation_steps[1]", "stored": {"step_number": 2, "action": "FILTER_STERILIZE", "description": "Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers use 5 - 10% (v/v) inoculum."}}], "decision": "evidence_only", "rationale": "Existing main preparation text already retains the source sequence, stated atmosphere, times, pH and conditional controls. Preserve this unchanged text and its scope; no new growth claim is inferred.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[1]", "quote": "{\n                        \"step\": \"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers use 5 - 10% (v/v) inoculum.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 17-19", "quote": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,\nfreshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For\ntransfers use 5 - 10% (v/v) inoculum.", "quote_basis": "derivative text"}]}, {"quantity_id": "q50", "label": "Retained preparation step 3", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "preparation_steps[2]", "stored": {"step_number": 3, "action": "DISSOLVE", "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}}], "decision": "correct", "rationale": "The literal numeric instruction is source-supported, but it belongs to Trace element solution SL-10 and needs an explicit stock container/scope instead of an unqualified main-method step.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].steps[0]", "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 92-93", "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_basis": "derivative text"}]}, {"quantity_id": "q51", "label": "Existing pH", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ph_range", "stored": {"min": 7.1, "max": 7.4}}], "decision": "evidence_only", "rationale": "The existing main pH range in the selected target and its sole maintained DSM owner is explicitly supported by DSM193b and the current API. No KOMODO contributor or scalar pH is present in this review scope; retain the source-supported range.", "source_stage": "main pH", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.medium", "quote": "{\n            \"id\": \"193b\",\n            \"name\": \"DESULFOFABA MEDIUM\",\n            \"complex_medium\": \"no\",\n            \"min_pH\": 7.1,\n            \"max_pH\": 7.4,\n            \"source\": \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf\"\n        }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16", "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions B to F are added to the sterile\nsolution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id": "q52", "label": "Retained numeric provenance note for MgCl2 x 6 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[5].notes", "stored": " [Merged 2 duplicates: 0.643777, 575.0]"}], "decision": "evidence_only", "rationale": "Retain the historical numeric note as evidence of the prior transformation, not as endorsement of an invalid sum. Correct the scientific assertion through separately scoped quantities without deleting provenance.", "source_stage": "historical numerical note", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[5]", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.643777,\n                        \"mmol_l\": 3.16659,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 34-34", "quote": "MgCl2 x 6 H2O                                            0.60        g", "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 11.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 575,\n                        \"mmol_l\": 2828.29,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 64-64", "quote": "MgCl2 x 6 H2O                                              11.50        g", "quote_basis": "derivative text"}]}, {"quantity_id": "q53", "label": "Trace element solution SL-10 receiving dose", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[0].concentration", "stored": {"value": "1", "unit": "ML_PER_L"}}], "decision": "correct", "rationale": "The source adds 1 mL to the complete recipe, whose provider assembly volume is 1003 mL; the primary does not independently state a measured final volume. This does not support the existing 1 ML_PER_L denominator. Keep the native batch dose and named stock; partial nesting itself is credited.", "source_stage": "receiving medium", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[7]", "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 36-36", "quote": "Trace element solution SL-10                             1.00       ml", "quote_basis": "derivative text"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8", "quote": "Solution A                                             932.00       ml\n   Solution B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution F                                              10.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q54", "label": "Trace element solution SL-10 retained preparation note", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[0].preparation_notes", "stored": "Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}], "decision": "correct", "rationale": "Credit the source-supported stock identity and provider 1000 mL normalization. Correct the unsupported per-litre receiving assertion. SL-10 explicitly makes up to 1000 mL. Preserve this historical repair credit while making the basis explicit.", "source_stage": "stock preparation and receiving-dose statement", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[7]", "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 36-36", "quote": "Trace element solution SL-10                             1.00       ml", "quote_basis": "derivative text"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8", "quote": "Solution A                                             932.00       ml\n   Solution B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution F                                              10.00       ml", "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[9]", "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 990,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 90-90", "quote": "Distilled water                                           990.00      ml", "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].steps[0]", "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 92-93", "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_basis": "derivative text"}]}, {"quantity_id": "q55", "label": "Seven vitamins solution receiving dose", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].concentration", "stored": {"value": "1", "unit": "ML_PER_L"}}], "decision": "correct", "rationale": "The source adds 1 mL to the complete recipe, whose provider assembly volume is 1003 mL; the primary does not independently state a measured final volume. This does not support the existing 1 ML_PER_L denominator. Keep the native batch dose and named stock; partial nesting itself is credited.", "source_stage": "receiving medium", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[4].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 59-59", "quote": "Seven vitamins solution                                     1.00       ml", "quote_basis": "derivative text"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8", "quote": "Solution A                                             932.00       ml\n   Solution B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution F                                              10.00       ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q56", "label": "Seven vitamins solution retained preparation note", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "solutions[1].preparation_notes", "stored": "Stock prepared in 1000 ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}], "decision": "correct", "rationale": "Credit the source-supported stock identity and provider 1000 mL normalization. Correct the unsupported per-litre receiving assertion. The source lists stock water; no independently measured final stock volume is inferred. Preserve this historical repair credit while making the basis explicit.", "source_stage": "stock preparation and receiving-dose statement", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[4].recipe[0]", "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\": \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 59-59", "quote": "Seven vitamins solution                                     1.00       ml", "quote_basis": "derivative text"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8", "quote": "Solution A                                             932.00       ml\n   Solution B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution F                                              10.00       ml", "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[7]", "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 112-112", "quote": "Distilled water                  1000.00   ml", "quote_basis": "derivative text"}]}, {"quantity_id": "q57", "label": "Retained preparation step 1", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "preparation_steps[0]", "stored": {"step_number": 1, "action": "AUTOCLAVE", "description": "Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas. \r\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium appropriate amounts of solutions B to F are added to the sterile solution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4."}}], "decision": "evidence_only", "rationale": "Existing main preparation text already retains the source sequence, stated atmosphere, times, pH and conditional controls. Preserve this unchanged text and its scope; no new growth claim is inferred.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[0]", "quote": "{\n                        \"step\": \"Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas. \\r\\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium appropriate amounts of solutions B to F are added to the sterile solution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16", "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions B to F are added to the sterile\nsolution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id": "q58", "label": "Retained preparation step 2", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "preparation_steps[1]", "stored": {"step_number": 2, "action": "FILTER_STERILIZE", "description": "Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers use 5 - 10% (v/v) inoculum."}}], "decision": "evidence_only", "rationale": "Existing main preparation text already retains the source sequence, stated atmosphere, times, pH and conditional controls. Preserve this unchanged text and its scope; no new growth claim is inferred.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[1]", "quote": "{\n                        \"step\": \"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers use 5 - 10% (v/v) inoculum.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 17-19", "quote": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,\nfreshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For\ntransfers use 5 - 10% (v/v) inoculum.", "quote_basis": "derivative text"}]}, {"quantity_id": "q59", "label": "Retained preparation step 3", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "preparation_steps[2]", "stored": {"step_number": 3, "action": "DISSOLVE", "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml."}}], "decision": "correct", "rationale": "The literal numeric instruction is source-supported, but it belongs to Trace element solution SL-10 and needs an explicit stock container/scope instead of an unqualified main-method step.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].steps[0]", "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 92-93", "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_basis": "derivative text"}]}, {"quantity_id": "q60", "label": "Existing pH", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ph_range", "stored": {"min": 7.1, "max": 7.4}}], "decision": "evidence_only", "rationale": "The existing main pH range in the selected target and its sole maintained DSM owner is explicitly supported by DSM193b and the current API. No KOMODO contributor or scalar pH is present in this review scope; retain the source-supported range.", "source_stage": "main pH", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.medium", "quote": "{\n            \"id\": \"193b\",\n            \"name\": \"DESULFOFABA MEDIUM\",\n            \"complex_medium\": \"no\",\n            \"min_pH\": 7.1,\n            \"max_pH\": 7.4,\n            \"source\": \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf\"\n        }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16", "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions B to F are added to the sterile\nsolution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id": "q61", "label": "Retained numeric provenance note for MgCl2 x 6 H2O", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ingredients[5].notes", "stored": " [Merged 2 duplicates: 0.643777, 575.0]"}], "decision": "evidence_only", "rationale": "Retain the historical numeric note as evidence of the prior transformation, not as endorsement of an invalid sum. Correct the scientific assertion through separately scoped quantities without deleting provenance.", "source_stage": "historical numerical note", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[5]", "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.6,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.643777,\n                        \"mmol_l\": 3.16659,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 34-34", "quote": "MgCl2 x 6 H2O                                            0.60        g", "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[1]", "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 11.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 575,\n                        \"mmol_l\": 2828.29,\n                        \"optional\": 0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 64-64", "quote": "MgCl2 x 6 H2O                                              11.50        g", "quote_basis": "derivative text"}]}, {"quantity_id": "q62", "label": "Source control Main sol. 193b 1", "local_fields": [], "decision": "evidence_only", "rationale": "Exact source control remains scoped to its named solution and conditional language. No omitted branch, alternate strain or final-volume inference is authorized.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[0]", "quote": "{\n                        \"step\": \"Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas. \\r\\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium appropriate amounts of solutions B to F are added to the sterile solution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16", "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions B to F are added to the sterile\nsolution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id": "q63", "label": "Source control Main sol. 193b 2", "local_fields": [], "decision": "evidence_only", "rationale": "Exact source control remains scoped to its named solution and conditional language. No omitted branch, alternate strain or final-volume inference is authorized.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[1]", "quote": "{\n                        \"step\": \"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers use 5 - 10% (v/v) inoculum.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 17-19", "quote": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,\nfreshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For\ntransfers use 5 - 10% (v/v) inoculum.", "quote_basis": "derivative text"}]}, {"quantity_id": "q64", "label": "Source control Trace element solution SL-10 1", "local_fields": [], "decision": "evidence_only", "rationale": "Exact source control remains scoped to its named solution and conditional language. No omitted branch, alternate strain or final-volume inference is authorized.", "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].steps[0]", "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally make up to 1000.00 ml.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 92-93", "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally\nmake up to 1000.00 ml.", "quote_basis": "derivative text"}]}, {"quantity_id": "q65", "label": "Assembly volume basis", "local_fields": [], "decision": "evidence_only", "rationale": "The listed assembly doses sum to 1003 mL and the provider declares that volume. This is a provider/assembly basis, not a separately printed measured-final-volume statement.", "source_stage": "assembled medium", "sources": [{"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8", "quote": "Solution A                                             932.00       ml\n   Solution B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution F                                              10.00       ml", "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da", "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0]", "quote": "{\n                \"id\": 344,\n                \"name\": \"Main sol. 193b\",\n                \"volume\": 1003,\n                \"recipe\": [\n                    {\n                        \"recipe_order\": 1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\": 345,\n                        \"amount\": 932,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 3,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\": 347,\n                        \"amount\": 30,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 4,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\": 348,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 5,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\": 349,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 6,\n                        \"solution\": \"Solution E\",\n                        \"solution_id\": 350,\n                        \"amount\": 20,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\": 7,\n                        \"solution\": \"Solution F\",\n                        \"solution_id\": 351,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\": [\n                    {\n                        \"step\": \"Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas. \\r\\nSolution D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium appropriate amounts of solutions B to F are added to the sterile solution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.\"\n                    },\n                    {\n                        \"step\": \"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers use 5 - 10% (v/v) inoculum.\"\n                    }\n                ],\n                \"equipment\": {\n                    \"2130\": \"Hungate tubes\",\n                    \"2930\": \"Gassing station\",\n                    \"3043\": \"Autoclave\",\n                    \"4589\": \"Filter\"\n                }\n            }", "quote_basis": "raw UTF-8"}]}, {"quantity_id": "q66", "label": "Excluded DSM 2075 override", "local_fields": [], "decision": "evidence_only", "rationale": "This explicitly conditional DSM 2075 substitution is preserved only as a source-variant boundary; it is not applied to the selected generic formulation.", "source_stage": "excluded strain-specific override", "sources": [{"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf", "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab", "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677", "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 22-24", "quote": "For DSM 2075: Na-propionate is replaced by 0.70 g/l Na-butyrate, 0.30 g/l Na-caproate and\n0.15 g/l Na-octanoate added after autoclaving from sterile anoxic stock solutions prepared\nunder 100% N2 gas.", "quote_basis": "derivative text"}]}], "document_scopes": {"data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml": null, "data/normalized_yaml/bacterial/desulfofaba_medium.yaml": null}, "scope": "Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:001287.
+
+All current primary/secondary ontology slots and preferred-term MIM lookups are enumerated against fresh exact OLS objects and the pinned 9077-row snapshot. Source hydrate/salt and stereochemical specificity were checked separately from canonical labels. Sodium resazurin is incorrectly linked to neutral resazurin CHEBI:8806. Nickel chloride hexahydrate is incorrectly linked in both primary and secondary slots to anhydrous CHEBI:34887; fresh CHEBI:53542 is a verified hydrate candidate. CHEBI:31345 has D stereochemistry in its current structure; the source generic calcium pantothenate leaves stereochemistry unresolved, so this is a limitation rather than an asserted wrong-ID finding. The vitamin-B12 class is not narrowed to an unsupported vitamer. Exact secondary-link presence and label-agreement populations are separate metrics in the inventory; missing links do not certify or refute chemical identity.
+
+### Existing repair credit and writer limits
+
+provenance: concern. Targets: CultureMech:001287.
+
+All complete per-record October 5 and October 7 reports and exact selected parent objects were read. October 5 had zero source checks; October 7 explicitly retained unresolved source/stage claims and no quantity repair. Current object and raw-digest comparisons are recorded separately, without claiming recovery of earlier retrieval events. Existing partial nested repairs, where present, are credited; current cleanup no longer sums unequal values, identical-only repair correctly refuses them, and current formulation merging includes scientific fields. The current preparation parser still concatenates steps from all solution stages without a solution label.
+
+## Findings
+
+### f1: Partial nesting leaves assembly rates and summed magnesium in the main list
+
+major / open / confirmed; issue key: culturemech-001287-stock-stages.
+
+Complete the exact A–F and embedded stock graph. Credit the owner’s five already nested stock components, but the other stock/subsolution rates remain main ingredients and generated output loses that nesting. MgCl2 575.643777 g/L adds rates 0.643777 in A and 575 in E; retain those distinct stages. Source HCl 25% lacks a stated percentage basis, so the flattened 2.5 g/L mass assertion is unsupported. Preserve provider volume 1003 mL as its declared assembly basis, not an independently measured final volume.
+
+### f2: One millilitre batch additions were asserted per litre
+
+major / open / confirmed; issue key: culturemech-001287-receiving-basis.
+
+Correct the two owner receiving-dose units and preparation-note basis after source reconciliation. Each source adds 1 mL into an assembled recipe declared as 1003 mL, not 1 mL per litre. Retain the supported stock identities and existing nested strengths. Current apply_plan writes addition_volume_ml as ML_PER_L without an assembled-volume denominator; fix that path while preserving candidate/applicability guards.
+
+### f3: Supplied salt forms do not match ontology assertions
+
+major / open / confirmed; issue key: culturemech-001287-supplied-forms.
+
+Resolve sodium resazurin’s supplied salt identity; CHEBI:8806 is neutral resazurin. Resolve both primary and secondary NiCl2 x 6 H2O mappings: CHEBI:34887 is anhydrous nickel dichloride, while the exact hydrate candidate CHEBI:53542 was freshly checked. Preserve all source masses and stage boundaries; changing an ID does not authorize a formula-mass conversion.
+
+### f4: Retained stock preparation text lacks its stock container
+
+minor / open / confirmed; issue key: culturemech-001287-preparation-scope.
+
+Retain the existing main preparation text, including its numeric conditions. Label and relocate the stock-only SL-10 final makeup instruction so they cannot be read as instructions for the complete medium. Current _parse_preparation_steps concatenates all solution steps without preserving their solution label; repair that stage association and append evidence, without deleting existing text.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Complete the exact A–F and embedded stock graph. Credit the owner’s five already nested stock components, but the other stock/subsolution rates remain main ingredients and generated output loses that nesting. MgCl2 575.643777 g/L adds rates 0.643777 in A and 575 in E; retain those distinct stages. Source HCl 25% lacks a stated percentage basis, so the flattened 2.5 g/L mass assertion is unsupported. Preserve provider volume 1003 mL as its declared assembly basis, not an independently measured final volume.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+Correct the two owner receiving-dose units and preparation-note basis after source reconciliation. Each source adds 1 mL into an assembled recipe declared as 1003 mL, not 1 mL per litre. Retain the supported stock identities and existing nested strengths. Current apply_plan writes addition_volume_ml as ML_PER_L without an assembled-volume denominator; fix that path while preserving candidate/applicability guards.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+Resolve sodium resazurin’s supplied salt identity; CHEBI:8806 is neutral resazurin. Resolve both primary and secondary NiCl2 x 6 H2O mappings: CHEBI:34887 is anhydrous nickel dichloride, while the exact hydrate candidate CHEBI:53542 was freshly checked. Preserve all source masses and stage boundaries; changing an ID does not authorize a formula-mass conversion.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+Retain the existing main preparation text, including its numeric conditions. Label and relocate the stock-only SL-10 final makeup instruction so they cannot be read as instructions for the complete medium. Current _parse_preparation_steps concatenates all solution steps without preserving their solution label; repair that stage association and append evidence, without deleting existing text.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| api193b | https://mediadive.dsmz.de/rest/medium/193b; REVIEW_WORK/batch075/source07-08-10/api193b.json; exact original raw/text/hash/time metadata | context_only | Complete exact current MediaDive 193b JSON, including medium metadata, ordered solution graph, recipe objects, volumes and preparation steps; provider normalization is evaluated at its own stage. |
+| dsm193b | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf; REVIEW_WORK/batch075/source07-08-10/dsm193b.json; exact original raw/text/hash/time metadata | context_only | Complete current DSMZ 193b primary recipe, all pages and embedded stock sections read in text and rendered images; conditional variants remain separately scoped. |
+| target | data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/desulfofaba_medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-17 | reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-18 | reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/desulfofaba_medium.yaml.md; Complete report | context_only | Historical report; exact headers are retained in the reading sidecar and neighboring-record mentions remain comparison-only. Old source/check claims are not newly executed. |
+| report-19 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOFABA_MEDIUM.md; Complete report | context_only | Historical report; exact headers are retained in the reading sidecar and neighboring-record mentions remain comparison-only. Old source/check claims are not newly executed. |
+| report-20 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfofaba_medium.md; Complete report | context_only | Historical report; exact headers are retained in the reading sidecar and neighboring-record mentions remain comparison-only. Old source/check claims are not newly executed. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542; REVIEW_WORK/batch075/source07-08-10/chebi53542.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| writer-cleanup | scripts/cleanup_media_quality.py; MediaQualityFixer._merge_ingredient_group | context_only | Current _merge_ingredient_group no longer sums differing concentrations; it flags disagreement and retains the first. Existing unequal sums need source curation, not blind replay. |
+| writer-repair | scripts/repair_merged_duplicates.py; repair_ingredient, repair_record | context_only | repair_ingredient and repair_record collapse only IDENTICAL_PARTS and preserve unequal parts for source curation. This correctly refuses the different solution-stage components here. |
+| writer-nesting | scripts/apply_cocktail_nesting.py; plan_record, apply_plan, source_medium, stocks_for_record | context_only | plan_record skips documents already containing solutions. apply_plan preserves candidate versus asserted basis but writes an asserted addition_volume_ml as ML_PER_L without normalizing the assembled medium volume. source_medium gates researched applicability to MediaDive identities. |
+| historical-reading | REVIEW_WORK/batch075/record08/historical-reading.json; Complete artifact; exact original input paths and hashes retained | context_only | Lossless exact report cells and independently joined current decoded source objects. |
+| historical-selected-parent-rows | REVIEW_WORK/batch075/record08/historical-selected-parent-rows.json; Complete artifact; exact original input paths and hashes retained | context_only | Exact selected historical parent objects; parent provenance only, not automatic original source authentication. |
+| complete-document-reader | REVIEW_WORK/batch075/record08/complete-document-reader.json; Complete artifact; exact original input paths and hashes retained | context_only | Complete exact target and owner parsed documents with lossless long-string pooling. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _is_api_stock_addition, _api_stock_name, _parse_api_solutions, _normalize_unit, _classify_preparation_action | context_only | Current parser excludes percent-stock additions from primary ingredients, preserves referenced stock amounts/attributes separately and prioritizes explicit provider g_l. It skips source water; bare units alone do not establish a final-volume basis. Current code is not historical execution proof. |
+| writer-matcher | src/culturemech/merge/matcher.py; group_formulations | context_only | Current group_formulations uses conservative FormulationFingerprinter; ingredient similarity is only candidate discovery. |
+| historical-object-joins | REVIEW_WORK/batch075/record08/historical-current-object-joins.json; Complete exact decoded-object comparisons | context_only | Historical object correspondence is distinct from raw-response authentication. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; REVIEW_WORK/batch075/source07-08-10/chebi8806.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; REVIEW_WORK/batch075/source07-08-10/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi32149 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149; REVIEW_WORK/batch075/source07-08-10/chebi32149.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; REVIEW_WORK/batch075/source07-08-10/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; REVIEW_WORK/batch075/source07-08-10/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; REVIEW_WORK/batch075/source07-08-10/chebi26710.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; REVIEW_WORK/batch075/source07-08-10/chebi32588.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; REVIEW_WORK/batch075/source07-08-10/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; REVIEW_WORK/batch075/source07-08-10/chebi29377.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi132106 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132106; REVIEW_WORK/batch075/source07-08-10/chebi132106.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; REVIEW_WORK/batch075/source07-08-10/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; REVIEW_WORK/batch075/source07-08-10/chebi76209.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi32145 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145; REVIEW_WORK/batch075/source07-08-10/chebi32145.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; REVIEW_WORK/batch075/source07-08-10/chebi131361.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; REVIEW_WORK/batch075/source07-08-10/chebi63939.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi17883 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883; REVIEW_WORK/batch075/source07-08-10/chebi17883.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86249 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249; REVIEW_WORK/batch075/source07-08-10/chebi86249.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi49976 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976; REVIEW_WORK/batch075/source07-08-10/chebi49976.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368; REVIEW_WORK/batch075/source07-08-10/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; REVIEW_WORK/batch075/source07-08-10/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503; REVIEW_WORK/batch075/source07-08-10/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318; REVIEW_WORK/batch075/source07-08-10/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; REVIEW_WORK/batch075/source07-08-10/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843; REVIEW_WORK/batch075/source07-08-10/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753; REVIEW_WORK/batch075/source07-08-10/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956; REVIEW_WORK/batch075/source07-08-10/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940; REVIEW_WORK/batch075/source07-08-10/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345; REVIEW_WORK/batch075/source07-08-10/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961; REVIEW_WORK/batch075/source07-08-10/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| chebi132751 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132751; REVIEW_WORK/batch075/source07-08-10/chebi132751.json; exact original raw/text/hash/time metadata | context_only | Exact current ontology object; chemical identity/form, not recipe concentration evidence. |
+| quantities | REVIEW_WORK/batch075/record08/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch075/record08/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch075/record08/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch075/record08/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch075/record08/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch075/record08/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch075/record08/existing-claim-authentication.json; Complete sidecar | context_only | No attached claims in this scoped sidecar; historical object joins are separate evidence. |
+| check-schema | REVIEW_WORK/batch075/record08/schema-result.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch075/record08/strict-result.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch075/record08/terms-result.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch075/record08/references-result.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- PDF text locators count Python splitlines(), including form-feed boundaries; every quoted row was checked against the rendered primary page and the chemical identity at the API locator.
+- Provider mmol_l values are not endorsed as new conversions. In particular nickel and calcium-pantothenate formula-unit/hydrate mass bases require separate assessment before molar conversion.
+- Current MIM alias rows can include chemically broad or conflicting synonyms; exact preferred-term/status rows and fresh ontology formulae take precedence over an alias-only match.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T192851Z-culturemech-001287-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: DESULFOFABA MEDIUM'
+started_at: '2026-10-28T18:55:22.988886Z'
+finished_at: '2026-10-28T19:28:51.179920Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The complete selected target and maintained owner formulations were reviewed
+  against current primary sources, complete provider graphs, fresh ontology objects,
+  the current MIM snapshot, all historical reports and current writers. Source-stage
+  flattening and retained metadata require curation; supported unchanged quantities
+  and existing partial repairs are explicitly credited. The conditional DSM 2075 override
+  is excluded from the generic formulation.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml
+    sha256: 892db5f73db80fc983ced63e0252be24e6d8983c40352cac49693768dc5e8ce1
+    role: target
+  - path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    sha256: 3a9d613c17aa95072c91c1ac26caf89725f22fc9e549dc8deebcb9662251dc23
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+    sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/desulfofaba_medium.yaml.md
+    sha256: e7cf720bb8b3f6ccf35715797db46c007fab5550e97444ec2456a21f39f693c9
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOFABA_MEDIUM.md
+    sha256: 6e6bf34c8c1b407b3bac20e28cec7d1abd52551d80a4546bb50f971f10a04a69
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfofaba_medium.md
+    sha256: 780ac19d075df51987475437e794c3fe14f65824085a82cb61afcd9331d72f58
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_io.py
+    sha256: bff4715f85d7ff2ff681b88f0a2de2667e5767d7a2c196bd50a37d5d329957ac
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch075 index 08
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001287
+targets:
+- target_id: CultureMech:001287
+  path: data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml
+  label: desulfofaba_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001287
+  command: just validate-schema data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001287
+  command: just validate-strict data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml --out
+    REVIEW_WORK/batch075/record08/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001287
+  command: just validate-terms data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001287
+  command: just validate-references data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: api193b
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/193b
+  accessed_at: '2026-10-28T18:55:15.934244Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/api193b.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Complete exact current MediaDive 193b JSON, including medium metadata,
+    ordered solution graph, recipe objects, volumes and preparation steps; provider
+    normalization is evaluated at its own stage.
+  snapshot_sha256: 0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da
+- evidence_id: dsm193b
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf
+  accessed_at: '2026-10-28T18:55:16.143363Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/dsm193b.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Complete current DSMZ 193b primary recipe, all pages and embedded stock
+    sections read in text and rendered images; conditional variants remain separately
+    scoped.
+  snapshot_sha256: c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T19:05:39.348689Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 892db5f73db80fc983ced63e0252be24e6d8983c40352cac49693768dc5e8ce1
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T19:05:39.348880Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 3a9d613c17aa95072c91c1ac26caf89725f22fc9e549dc8deebcb9662251dc23
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T19:05:39.348916Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T19:05:39.349265Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T19:05:39.349291Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T19:05:39.349315Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T19:05:39.349341Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: 1ada7bec3dbf8c0a4bb2e448ab02750c2cfd126352f8488695ed34cf2a821f5c
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0000-0500/records/bacterial/desulfofaba_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T19:05:39.355139Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: e7cf720bb8b3f6ccf35715797db46c007fab5550e97444ec2456a21f39f693c9
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DESULFOFABA_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T19:05:39.355206Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: 6e6bf34c8c1b407b3bac20e28cec7d1abd52551d80a4546bb50f971f10a04a69
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/desulfofaba_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T19:05:39.355236Z'
+  support: context_only
+  summary: Historical report; exact headers are retained in the reading sidecar and
+    neighboring-record mentions remain comparison-only. Old source/check claims are
+    not newly executed.
+  snapshot_sha256: 780ac19d075df51987475437e794c3fe14f65824085a82cb61afcd9331d72f58
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  accessed_at: '2026-10-28T18:55:20.285584Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi53542.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: MediaQualityFixer._merge_ingredient_group
+  accessed_at: '2026-10-28T19:05:39.355429Z'
+  support: context_only
+  summary: Current _merge_ingredient_group no longer sums differing concentrations;
+    it flags disagreement and retains the first. Existing unequal sums need source
+    curation, not blind replay.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer-repair
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient, repair_record
+  accessed_at: '2026-10-28T19:05:39.355455Z'
+  support: context_only
+  summary: repair_ingredient and repair_record collapse only IDENTICAL_PARTS and preserve
+    unequal parts for source curation. This correctly refuses the different solution-stage
+    components here.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer-nesting
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  locator: plan_record, apply_plan, source_medium, stocks_for_record
+  accessed_at: '2026-10-28T19:05:39.355477Z'
+  support: context_only
+  summary: plan_record skips documents already containing solutions. apply_plan preserves
+    candidate versus asserted basis but writes an asserted addition_volume_ml as ML_PER_L
+    without normalizing the assembled medium volume. source_medium gates researched
+    applicability to MediaDive identities.
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: historical-reading
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/historical-reading.json
+  accessed_at: '2026-10-28T19:05:39.357605Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Lossless exact report cells and independently joined current decoded source
+    objects.
+  snapshot_sha256: a71787c23dc28835cb45f2ccb67801d5db60a5b0c52862be0c7044d76ece9cab
+- evidence_id: historical-selected-parent-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T19:05:39.357651Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Exact selected historical parent objects; parent provenance only, not automatic
+    original source authentication.
+  snapshot_sha256: e5db0ced062c846e5a407aad11aee7dcef39f1350135b8ee8530c92775a01214
+- evidence_id: complete-document-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/complete-document-reader.json
+  accessed_at: '2026-10-28T19:05:39.357839Z'
+  locator: Complete artifact; exact original input paths and hashes retained
+  support: context_only
+  summary: Complete exact target and owner parsed documents with lossless long-string
+    pooling.
+  snapshot_sha256: cfc325904fed6cc8d3c4fd60e446780b0035ff0750f10cb42ced1f992eff2c7c
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _api_stock_name, _parse_api_solutions,
+    _normalize_unit, _classify_preparation_action
+  accessed_at: '2026-10-28T19:05:39.357877Z'
+  support: context_only
+  summary: Current parser excludes percent-stock additions from primary ingredients,
+    preserves referenced stock amounts/attributes separately and prioritizes explicit
+    provider g_l. It skips source water; bare units alone do not establish a final-volume
+    basis. Current code is not historical execution proof.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-matcher
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations
+  accessed_at: '2026-10-28T19:05:39.357913Z'
+  support: context_only
+  summary: Current group_formulations uses conservative FormulationFingerprinter;
+    ingredient similarity is only candidate discovery.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: historical-object-joins
+  kind: prior_review
+  reference: REVIEW_WORK/batch075/record08/historical-current-object-joins.json
+  accessed_at: '2026-10-28T19:05:39.357940Z'
+  locator: Complete exact decoded-object comparisons
+  support: context_only
+  summary: Historical object correspondence is distinct from raw-response authentication.
+  snapshot_sha256: 0ba460823b6d800056cf8db7d48da31fab5bddba4dfa72dc3b09e6eb1d29f9be
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  accessed_at: '2026-10-28T18:55:22.082616Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi8806.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  accessed_at: '2026-10-28T18:55:19.476270Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi34887.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi32149
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32149
+  accessed_at: '2026-10-28T18:55:19.089461Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi32149.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 49c4b3ee63a59ea3acba0006afd53c6050dd13cd2210a15e3395b100bc6749b8
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  accessed_at: '2026-10-28T18:55:20.528935Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi63036.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  accessed_at: '2026-10-28T18:55:18.490786Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi31206.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  accessed_at: '2026-10-28T18:55:17.887875Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi26710.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  accessed_at: '2026-10-28T18:55:19.303661Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi32588.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  accessed_at: '2026-10-28T18:55:21.719134Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi86345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  accessed_at: '2026-10-28T18:55:18.050965Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi29377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi132106
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132106
+  accessed_at: '2026-10-28T18:55:16.813697Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi132106.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: fea2db167b20ccb8e0c62a8571314d91d82c864498b75845a6b6347742ee61d0
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  accessed_at: '2026-10-28T18:55:21.179332Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi86158.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  accessed_at: '2026-10-28T18:55:20.886279Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi76209.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  accessed_at: '2026-10-28T18:55:18.865671Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi32145.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  accessed_at: '2026-10-28T18:55:16.809126Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi131361.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  accessed_at: '2026-10-28T18:55:20.524689Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi63939.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  accessed_at: '2026-10-28T18:55:17.660755Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi17883.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  accessed_at: '2026-10-28T18:55:21.293146Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi86249.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  accessed_at: '2026-10-28T18:55:19.922383Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi49976.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  accessed_at: '2026-10-28T18:55:21.796967Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi86368.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  accessed_at: '2026-10-28T18:55:19.387980Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi33118.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  accessed_at: '2026-10-28T18:55:20.085412Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi53503.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  accessed_at: '2026-10-28T18:55:21.489952Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi86318.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  accessed_at: '2026-10-28T18:55:20.583878Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi75213.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  accessed_at: '2026-10-28T18:55:17.430956Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi176843.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  accessed_at: '2026-10-28T18:55:18.161127Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi30753.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  accessed_at: '2026-10-28T18:55:17.287375Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi15956.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  accessed_at: '2026-10-28T18:55:17.036037Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi15940.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  accessed_at: '2026-10-28T18:55:18.700388Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi31345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  accessed_at: '2026-10-28T18:55:18.261197Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi30961.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132751
+  accessed_at: '2026-10-28T18:55:16.816986Z'
+  locator: REVIEW_WORK/batch075/source07-08-10/chebi132751.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current ontology object; chemical identity/form, not recipe concentration
+    evidence.
+  snapshot_sha256: 509a9cc0fafffbbccf4801dc30121b1cf3d5d176746d0003356be395faf625e9
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T19:28:51.179896Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: b20c236316f55823cc86848dc743f7b8730005f9efcd160a8844db5e42f2527f
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T19:05:39.487650Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 52130c7166e7c4fcd9deeaac6d586f3af088e4d8f17d4643069fef63c7f4ec30
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T19:05:39.487786Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: a168b86c2d59b36f62f0c1cc3869b48821f191409d7da13aef214f834355940a
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T19:05:39.487850Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 3fc03b7687b488d035a6fb5c37492896440399d2e9ba19f7f7f036ab9a042cb1
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T19:05:39.487908Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 6f2716dddad15c1bf711163d3ff02b72fe8f091a3b3b49ee13e6e92fc55594b8
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T19:05:39.487932Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: f8c8d87847b0638279d351a27e0cfaa3435f5fe468d4aa39b87c5c14ec661621
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch075/record08/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T19:05:39.487956Z'
+  support: context_only
+  summary: No attached claims in this scoped sidecar; historical object joins are
+    separate evidence.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch075/record08/schema-result.json
+  accessed_at: '2026-10-28T18:55:24.152952Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 7f3e8d9d27fc1188053d7cc66d6f508d410f5b5de0116c52cc5bb21548d154f1
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch075/record08/strict-result.json
+  accessed_at: '2026-10-28T18:55:25.175469Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: e3274849ac03537d472d0c867a78cd45d77a2b505704823778543352e3a0db0b
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch075/record08/terms-result.json
+  accessed_at: '2026-10-28T18:55:26.298974Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: af6845ecb5573bf3770ddd64b5481083d5564f578dae33f1adb2bd7abf60ce59
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch075/record08/references-result.json
+  accessed_at: '2026-10-28T18:55:27.126772Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: 98d5ab6fb5864900421b0a7a45d01b826871a19348426b12648f4ff2297659f1
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact source and branch scope
+  outcome: supported
+  summary: The primary DSM 193b and current provider agree on exact source identity.
+    The selected 193b formulation is distinct from the explicitly conditional DSM
+    2075 override, which is excluded.
+  target_ids:
+  - CultureMech:001287
+  evidence_ids:
+  - dsm193b
+  - api193b
+  - target
+  - owner
+  - historical-selected-parent-rows
+- assessment_id: classification
+  area: consistency
+  topic: Medium classification and physical state
+  outcome: supported
+  summary: LIQUID is consistent with the selected formulation. DEFINED is consistent
+    with the chemically specified selected formulation; no classification correction
+    is inferred from anaerobic preparation or old names.
+  target_ids:
+  - CultureMech:001287
+  evidence_ids:
+  - target
+  - owner
+  - dsm193b
+  - api193b
+- assessment_id: schema
+  area: schema
+  topic: Native structural checks and evidence completeness
+  outcome: supported
+  summary: All four original canonical diagnostics passed. A zero-reference diagnostic
+    count is not source verification; quantities, missing attached claims and current
+    scientific disagreements were assessed independently.
+  target_ids:
+  - CultureMech:001287
+  evidence_ids:
+  - check-schema
+  - check-strict
+  - check-terms
+  - check-references
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 62 current concentration fields are covered by 66 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:001287
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema": "fresh-b075-quantity-inventory-v1", "target": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "quantity_field_count": 62, "decisions": [{"quantity_id": "q1", "label": "Na2SO4",
+    "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path":
+    "ingredients[0].concentration", "stored": {"value": "3.21888", "unit": "G_PER_L"}},
+    {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path":
+    "ingredients[0].concentration", "stored": {"value": "3.21888", "unit": "G_PER_L"}}],
+    "decision": "correct", "rationale": "The provider explicitly declares 3.21888
+    g/L in Solution A. That stock/subsolution basis is supported; it is not the assembled-medium
+    concentration. Existing nested placement, where present, is credited on the provider
+    basis, while direct main-ingredient placement requires correction. Listed input
+    water alone is not measured final stock volume.", "source_stage": "Solution A",
+    "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Na2SO4\",\n                        \"compound_id\": 110,\n                        \"amount\":
+    3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    3.21888,\n                        \"mmol_l\": 22.6618,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 29-29",
+    "quote": "Na2SO4                                                   3.00        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 3.21888 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[0].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 3.21888 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q2", "label": "KH2PO4", "local_fields": [{"path":
+    "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[1].concentration",
+    "stored": {"value": "0.214592", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored": {"value": "0.214592",
+    "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly
+    declares 0.214592 g/L in Solution A. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\":
+    0.2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.214592,\n                        \"mmol_l\": 1.5769,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 30-30",
+    "quote": "KH2PO4                                                   0.20        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.214592 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[1].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.214592 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q3", "label": "NH4Cl", "local_fields": [{"path":
+    "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[2].concentration",
+    "stored": {"value": "0.321888", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored": {"value": "0.321888",
+    "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly
+    declares 0.321888 g/L in Solution A. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[2]",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\":
+    0.3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.321888,\n                        \"mmol_l\": 6.01773,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 31-31",
+    "quote": "NH4Cl                                                    0.30        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.321888 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[2].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.321888 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q4", "label": "NaCl", "local_fields": [{"path":
+    "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[3].concentration",
+    "stored": {"value": "7.51073", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored": {"value": "7.51073", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    7.51073 g/L in Solution A. That stock/subsolution basis is supported; it is not
+    the assembled-medium concentration. Existing nested placement, where present,
+    is credited on the provider basis, while direct main-ingredient placement requires
+    correction. Listed input water alone is not measured final stock volume.", "source_stage":
+    "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[3]",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\":
+    7,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    7.51073,\n                        \"mmol_l\": 128.52,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 32-32",
+    "quote": "NaCl                                                     7.00        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 7.51073 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[3].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 7.51073 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q5", "label": "KCl", "local_fields": [{"path":
+    "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[4].concentration",
+    "stored": {"value": "0.536481", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored": {"value": "0.536481",
+    "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly
+    declares 0.536481 g/L in Solution A. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[4]",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.536481,\n                        \"mmol_l\": 7.19625,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 33-33",
+    "quote": "KCl                                                      0.50        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.536481 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[4].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.536481 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q6", "label": "MgCl2 x 6 H2O", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[5].concentration",
+    "stored": {"value": "575.643777", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored": {"value": "575.643777",
+    "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The local value is
+    the sum of rates belonging to Solution A (0.643777 g/L), Solution E (575 g/L).
+    Although the units have the same dimensions, the solution bases differ: their
+    sum is not a valid final-medium total. Retain each source addition and stage separately;
+    current no-sum/identical-only repair guards already avoid guessing a replacement.",
+    "source_stage": "Solution A; Solution E", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[5]",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.643777,\n                        \"mmol_l\": 3.16659,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 34-34",
+    "quote": "MgCl2 x 6 H2O                                            0.60        g",
+    "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    11.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    575,\n                        \"mmol_l\": 2828.29,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 64-64",
+    "quote": "MgCl2 x 6 H2O                                              11.50        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[5].concentration", "decision": "correct", "rationale":
+    "The local value is the sum of rates belonging to Solution A (0.643777 g/L), Solution
+    E (575 g/L). Although the units have the same dimensions, the solution bases differ:
+    their sum is not a valid final-medium total. Retain each source addition and stage
+    separately; current no-sum/identical-only repair guards already avoid guessing
+    a replacement."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[5].concentration", "decision": "correct", "rationale":
+    "The local value is the sum of rates belonging to Solution A (0.643777 g/L), Solution
+    E (575 g/L). Although the units have the same dimensions, the solution bases differ:
+    their sum is not a valid final-medium total. Retain each source addition and stage
+    separately; current no-sum/identical-only repair guards already avoid guessing
+    a replacement."}]}, {"quantity_id": "q7", "label": "Sodium resazurin", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[6].concentration",
+    "stored": {"value": "0.000536481", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored": {"value": "0.000536481",
+    "unit": "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly
+    declares 0.000536481 g/L in Solution A. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[8]",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.000536481,\n                        \"mmol_l\":
+    0.00213593,\n                        \"optional\": 0\n                    }",
+    "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 37-37",
+    "quote": "Sodium resazurin (0.1% w/v)                              0.50       ml",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[6].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.000536481 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[6].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.000536481 g/L in Solution A. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q8", "label": "Na2CO3", "local_fields": [{"path":
+    "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[7].concentration",
+    "stored": {"value": "50", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored": {"value": "50", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    50 g/L in Solution B. That stock/subsolution basis is supported; it is not the
+    assembled-medium concentration. Existing nested placement, where present, is credited
+    on the provider basis, while direct main-ingredient placement requires correction.
+    Listed input water alone is not measured final stock volume.", "source_stage":
+    "Solution B", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[2].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    50,\n                        \"mmol_l\": 471.752,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 42-42",
+    "quote": "Na2CO3                                                   1.50        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 50 g/L in Solution B. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[7].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 50 g/L in Solution B. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q9", "label": "Na-propionate", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[8].concentration",
+    "stored": {"value": "150", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored": {"value": "150", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    150 g/L in Solution C. That stock/subsolution basis is supported; it is not the
+    assembled-medium concentration. Existing nested placement, where present, is credited
+    on the provider basis, while direct main-ingredient placement requires correction.
+    Listed input water alone is not measured final stock volume.", "source_stage":
+    "Solution C", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[3].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Na-propionate\",\n                        \"compound_id\": 301,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    150,\n                        \"mmol_l\": 1561.52,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 47-47",
+    "quote": "Na-propionate                                            1.50        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 150 g/L in Solution C. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[8].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 150 g/L in Solution C. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q10", "label": "CaCl2 x 2 H2O", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[9].concentration",
+    "stored": {"value": "75", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored": {"value": "75", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    75 g/L in Solution E. That stock/subsolution basis is supported; it is not the
+    assembled-medium concentration. Existing nested placement, where present, is credited
+    on the provider basis, while direct main-ingredient placement requires correction.
+    Listed input water alone is not measured final stock volume.", "source_stage":
+    "Solution E", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    75,\n                        \"mmol_l\": 510.152,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 63-63",
+    "quote": "CaCl2 x 2 H2O                                               1.50        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 75 g/L in Solution E. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[9].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 75 g/L in Solution E. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q11", "label": "Na2S x 9 H2O", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[10].concentration",
+    "stored": {"value": "40", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored": {"value": "40", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    40 g/L in Solution F. That stock/subsolution basis is supported; it is not the
+    assembled-medium concentration. Existing nested placement, where present, is credited
+    on the provider basis, while direct main-ingredient placement requires correction.
+    Listed input water alone is not measured final stock volume.", "source_stage":
+    "Solution F", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[6].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    0.4,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    40,\n                        \"mmol_l\": 166.54,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 69-69",
+    "quote": "Na2S x 9 H2O                                                0.40        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 40 g/L in Solution F. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[10].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 40 g/L in Solution F. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q12", "label": "NaOH", "local_fields": [{"path":
+    "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[11].concentration",
+    "stored": {"value": "0.5", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.5 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Selenite-tungstate solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[7].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"NaOH\",\n                        \"compound_id\": 256,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 12.5009,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 74-74",
+    "quote": "NaOH                                                       0.50        g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.5 g/L in Selenite-tungstate solution. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[11].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.5 g/L in Selenite-tungstate solution. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q13", "label": "Na2SeO3
+    x 5 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored": {"value": "0.003", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored": {"value": "0.003", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.003 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Selenite-tungstate solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[7].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\":
+    3,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.003,\n                        \"mmol_l\": 0.0114062,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 75-75",
+    "quote": "Na2SeO3 x 5 H2O                                            3.00       mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.003 g/L in Selenite-tungstate solution. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[12].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.003 g/L in Selenite-tungstate solution. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q14", "label": "Na2WO4
+    x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored": {"value": "0.004", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored": {"value": "0.004", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.004 g/L in Selenite-tungstate solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Selenite-tungstate solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[7].recipe[2]",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\":
+    4,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.004,\n                        \"mmol_l\": 0.0121267,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 76-76",
+    "quote": "Na2WO4 x 2 H2O                                             4.00       mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.004 g/L in Selenite-tungstate solution. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[13].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.004 g/L in Selenite-tungstate solution. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q15", "label": "HCl",
+    "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path":
+    "ingredients[14].concentration", "stored": {"value": "2.5", "unit": "G_PER_L"}},
+    {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path":
+    "ingredients[14].concentration", "stored": {"value": "2.5", "unit": "G_PER_L"}}],
+    "decision": "unsupported", "rationale": "The source specifies a 25% HCl stock
+    by volume, without stating the percentage basis or density. The provider emits
+    2.5 g/L for the SL-10 stock, but that number does not independently establish
+    a mass conversion; its flattened final-medium use is also unsupported. Preserve
+    the native stock volume and percentage text pending basis verification.", "source_stage":
+    "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"HCl\",\n                        \"compound_id\": 68,\n                        \"attribute\":
+    \"25%\",\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 2.5,\n                        \"mmol_l\":
+    68.5683,\n                        \"optional\": 0\n                    }", "quote_basis":
+    "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 81-81",
+    "quote": "HCl (25%)                                                  10.00      ml",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "decision": "unsupported", "rationale":
+    "The source specifies a 25% HCl stock by volume, without stating the percentage
+    basis or density. The provider emits 2.5 g/L for the SL-10 stock, but that number
+    does not independently establish a mass conversion; its flattened final-medium
+    use is also unsupported. Preserve the native stock volume and percentage text
+    pending basis verification."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[14].concentration", "decision": "unsupported", "rationale":
+    "The source specifies a 25% HCl stock by volume, without stating the percentage
+    basis or density. The provider emits 2.5 g/L for the SL-10 stock, but that number
+    does not independently establish a mass conversion; its flattened final-medium
+    use is also unsupported. Preserve the native stock volume and percentage text
+    pending basis verification."}]}, {"quantity_id": "q16", "label": "FeCl2 x 4 H2O",
+    "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path":
+    "ingredients[15].concentration", "stored": {"value": "1.5", "unit": "G_PER_L"}},
+    {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path":
+    "solutions[0].composition[0].concentration", "stored": {"value": "1.5", "unit":
+    "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly declares
+    1.5 g/L in Trace element solution SL-10. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"FeCl2 x 4 H2O\",\n                        \"compound_id\": 260,\n                        \"amount\":
+    1.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.5,\n                        \"mmol_l\": 7.54482,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 82-82",
+    "quote": "FeCl2 x 4 H2O                                               1.50       g",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 1.5 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[0].composition[0].concentration", "decision": "evidence_only",
+    "rationale": "The provider explicitly declares 1.5 g/L in Trace element solution
+    SL-10. That stock/subsolution basis is supported; it is not the assembled-medium
+    concentration. Existing nested placement, where present, is credited on the provider
+    basis, while direct main-ingredient placement requires correction. Listed input
+    water alone is not measured final stock volume."}]}, {"quantity_id": "q17", "label":
+    "ZnCl2", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "stored": {"value": "0.07", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored": {"value": "0.07", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.07 g/L in Trace element solution SL-10. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[2]",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"ZnCl2\",\n                        \"compound_id\": 64,\n                        \"amount\":
+    70,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.07,\n                        \"mmol_l\": 0.513573,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 83-83",
+    "quote": "ZnCl2                                                      70.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.07 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[15].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.07 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q18", "label": "MnCl2
+    x 4 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "stored": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.1 g/L in Trace element solution SL-10. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[3]",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.505293,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 84-84",
+    "quote": "MnCl2 x 4 H2O                                             100.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.1 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[16].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.1 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q19", "label": "H3BO3",
+    "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path":
+    "ingredients[18].concentration", "stored": {"value": "0.006", "unit": "G_PER_L"}},
+    {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path":
+    "ingredients[17].concentration", "stored": {"value": "0.006", "unit": "G_PER_L"}}],
+    "decision": "correct", "rationale": "The provider explicitly declares 0.006 g/L
+    in Trace element solution SL-10. That stock/subsolution basis is supported; it
+    is not the assembled-medium concentration. Existing nested placement, where present,
+    is credited on the provider basis, while direct main-ingredient placement requires
+    correction. Listed input water alone is not measured final stock volume.", "source_stage":
+    "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[4]",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\":
+    6,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.006,\n                        \"mmol_l\": 0.0970246,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 85-85",
+    "quote": "H3BO3                                                       6.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.006 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[17].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.006 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q20", "label": "CoCl2
+    x 6 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "stored": {"value": "0.19", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored": {"value": "0.19", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.19 g/L in Trace element solution SL-10. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[5]",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\":
+    190,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.19,\n                        \"mmol_l\": 1.46335,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 86-86",
+    "quote": "CoCl2 x 6 H2O                                             190.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.19 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[18].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.19 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q21", "label": "CuCl2
+    x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "stored": {"value": "0.002", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored": {"value": "0.002", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.002 g/L in Trace element solution SL-10. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[6]",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\":
+    2,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.002,\n                        \"mmol_l\": 0.0117314,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 87-87",
+    "quote": "CuCl2 x 2 H2O                                               2.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.002 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[19].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.002 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q22", "label": "NiCl2
+    x 6 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "stored": {"value": "0.024", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[20].concentration", "stored": {"value": "0.024", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.024 g/L in Trace element solution SL-10. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[7]",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\":
+    24,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.024,\n                        \"mmol_l\": 0.185187,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 88-88",
+    "quote": "NiCl2 x 6 H2O                                              24.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[21].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.024 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[20].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.024 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q23", "label": "Na2MoO4
+    x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "stored": {"value": "0.036", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[21].concentration", "stored": {"value": "0.036", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.036 g/L in Trace element solution SL-10. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[8]",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\":
+    36,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.036,\n                        \"mmol_l\": 0.148791,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 89-89",
+    "quote": "Na2MoO4 x 2 H2O                                            36.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[22].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.036 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[21].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.036 g/L in Trace element solution SL-10. That
+    stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q24", "label": "Vitamin
+    B12", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "stored": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].composition[0].concentration", "stored": {"value":
+    "0.1", "unit": "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly
+    declares 0.1 g/L in Seven vitamins solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.073779,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 98-98",
+    "quote": "Vitamin B12                                               100.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[23].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].composition[0].concentration", "decision": "evidence_only",
+    "rationale": "The provider explicitly declares 0.1 g/L in Seven vitamins solution.
+    That stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q25", "label": "p-Aminobenzoic
+    acid", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "stored": {"value": "0.08", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[22].concentration", "stored": {"value": "0.08", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.08 g/L in Seven vitamins solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\":
+    80,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.08,\n                        \"mmol_l\": 0.583345,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 99-99",
+    "quote": "p-Aminobenzoic acid                                        80.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[24].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.08 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[22].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.08 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q26", "label": "D-(+)-biotin", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[25].concentration",
+    "stored": {"value": "0.02", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[23].concentration", "stored": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.02 g/L in Seven vitamins solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[2]",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"D-(+)-biotin\",\n                        \"compound_id\": 1359,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 100-100",
+    "quote": "D-(+)-biotin                                               20.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[25].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.02 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[23].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.02 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q27", "label": "Nicotinic acid", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[26].concentration",
+    "stored": {"value": "0.2", "unit": "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].composition[1].concentration", "stored": {"value":
+    "0.2", "unit": "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly
+    declares 0.2 g/L in Seven vitamins solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[3]",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\":
+    200,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.2,\n                        \"mmol_l\": 1.62456,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 101-101",
+    "quote": "Nicotinic acid                                            200.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[26].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.2 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].composition[1].concentration", "decision": "evidence_only",
+    "rationale": "The provider explicitly declares 0.2 g/L in Seven vitamins solution.
+    That stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q28", "label": "Calcium
+    pantothenate", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[27].concentration", "stored": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[24].concentration", "stored": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "rationale": "The provider explicitly declares
+    0.1 g/L in Seven vitamins solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[4]",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Calcium pantothenate\",\n                        \"compound_id\": 518,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.209849,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 102-102",
+    "quote": "Calcium pantothenate                                      100.00      mg",
+    "quote_basis": "derivative text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[27].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "ingredients[24].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.1 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}]}, {"quantity_id": "q29", "label": "Pyridoxine hydrochloride",
+    "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path":
+    "ingredients[28].concentration", "stored": {"value": "0.3", "unit": "G_PER_L"}},
+    {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path":
+    "solutions[1].composition[2].concentration", "stored": {"value": "0.3", "unit":
+    "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly declares
+    0.3 g/L in Seven vitamins solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[5]",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\":
+    300,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.3,\n                        \"mmol_l\": 1.45886,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 110-110",
+    "quote": "Pyridoxine hydrochloride          300.00   mg", "quote_basis": "derivative
+    text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[28].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.3 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].composition[2].concentration", "decision": "evidence_only",
+    "rationale": "The provider explicitly declares 0.3 g/L in Seven vitamins solution.
+    That stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q30", "label": "Thiamine-HCl
+    x 2 H2O", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[29].concentration", "stored": {"value": "0.2", "unit":
+    "G_PER_L"}}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].composition[3].concentration", "stored": {"value":
+    "0.2", "unit": "G_PER_L"}}], "decision": "mixed", "rationale": "The provider explicitly
+    declares 0.2 g/L in Seven vitamins solution. That stock/subsolution basis is supported;
+    it is not the assembled-medium concentration. Existing nested placement, where
+    present, is credited on the provider basis, while direct main-ingredient placement
+    requires correction. Listed input water alone is not measured final stock volume.",
+    "source_stage": "Seven vitamins solution", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[6]",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Thiamine-HCl x 2 H2O\",\n                        \"compound_id\": 77,\n                        \"amount\":
+    200,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.2,\n                        \"mmol_l\": 0.535761,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 111-111",
+    "quote": "Thiamine-HCl x 2 H2O              200.00   mg", "quote_basis": "derivative
+    text"}], "layer_decisions": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "ingredients[29].concentration", "decision": "correct", "rationale":
+    "The provider explicitly declares 0.2 g/L in Seven vitamins solution. That stock/subsolution
+    basis is supported; it is not the assembled-medium concentration. Existing nested
+    placement, where present, is credited on the provider basis, while direct main-ingredient
+    placement requires correction. Listed input water alone is not measured final
+    stock volume."}, {"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].composition[3].concentration", "decision": "evidence_only",
+    "rationale": "The provider explicitly declares 0.2 g/L in Seven vitamins solution.
+    That stock/subsolution basis is supported; it is not the assembled-medium concentration.
+    Existing nested placement, where present, is credited on the provider basis, while
+    direct main-ingredient placement requires correction. Listed input water alone
+    is not measured final stock volume."}]}, {"quantity_id": "q31", "label": "Solution
+    A in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only receiving addition into Main sol. 193b. Preserve this exact batch
+    volume and graph edge, not an assumed per-litre dose or direct stock-component
+    concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id":
+    "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path":
+    "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\":
+    \"Solution A\",\n                        \"solution_id\": 345,\n                        \"amount\":
+    932,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-3",
+    "quote": "Solution A                                             932.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q32", "label": "Solution
+    B in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only receiving addition into Main sol. 193b. Preserve this exact batch
+    volume and graph edge, not an assumed per-litre dose or direct stock-component
+    concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id":
+    "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path":
+    "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"solution\":
+    \"Solution B\",\n                        \"solution_id\": 347,\n                        \"amount\":
+    30,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 4-4",
+    "quote": "Solution B                                              30.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q33", "label": "Solution
+    C in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only receiving addition into Main sol. 193b. Preserve this exact batch
+    volume and graph edge, not an assumed per-litre dose or direct stock-component
+    concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id":
+    "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path":
+    "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[2]",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"solution\":
+    \"Solution C\",\n                        \"solution_id\": 348,\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 5-5",
+    "quote": "Solution C                                              10.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q34", "label": "Solution
+    D in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only receiving addition into Main sol. 193b. Preserve this exact batch
+    volume and graph edge, not an assumed per-litre dose or direct stock-component
+    concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id":
+    "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path":
+    "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[3]",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"solution\":
+    \"Solution D\",\n                        \"solution_id\": 349,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 6-6",
+    "quote": "Solution D                                               1.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q35", "label": "Solution
+    E in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only receiving addition into Main sol. 193b. Preserve this exact batch
+    volume and graph edge, not an assumed per-litre dose or direct stock-component
+    concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id":
+    "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path":
+    "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[4]",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"solution\":
+    \"Solution E\",\n                        \"solution_id\": 350,\n                        \"amount\":
+    20,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 7-7",
+    "quote": "Solution E                                              20.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q36", "label": "Solution
+    F in Main sol. 193b", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only receiving addition into Main sol. 193b. Preserve this exact batch
+    volume and graph edge, not an assumed per-litre dose or direct stock-component
+    concentration.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id":
+    "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path":
+    "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].recipe[5]",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\":
+    \"Solution F\",\n                        \"solution_id\": 351,\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 8-8",
+    "quote": "Solution F                                              10.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q37", "label": "Selenite-tungstate
+    solution in Solution A", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only receiving addition into Solution A. Preserve this exact batch volume
+    and graph edge, not an assumed per-litre dose or direct stock-component concentration.",
+    "source_stage": "Solution A", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[6]",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"solution\":
+    \"Selenite-tungstate solution\",\n                        \"solution_id\": 777,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 35-35",
+    "quote": "Selenite-tungstate solution                              1.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q38", "label": "Trace element
+    solution SL-10 in Solution A", "local_fields": [], "decision": "evidence_only",
+    "rationale": "Source-only receiving addition into Solution A. Preserve this exact
+    batch volume and graph edge, not an assumed per-litre dose or direct stock-component
+    concentration.", "source_stage": "Solution A", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[7]",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\":
+    \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 36-36",
+    "quote": "Trace element solution SL-10                             1.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q39", "label": "Distilled
+    water in Solution A", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only input-water quantity for this stage. It is not an independently measured
+    final volume; retain separately from provider volume metadata.", "source_stage":
+    "Solution A", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[9]",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    930,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 38-38",
+    "quote": "Distilled water                                        930.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q40", "label": "Distilled
+    water in Solution B", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only input-water quantity for this stage. It is not an independently measured
+    final volume; retain separately from provider volume metadata.", "source_stage":
+    "Solution B", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[2].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    30,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 43-43",
+    "quote": "Distilled water                                         30.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q41", "label": "Distilled
+    water in Solution C", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only input-water quantity for this stage. It is not an independently measured
+    final volume; retain separately from provider volume metadata.", "source_stage":
+    "Solution C", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[3].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 55-55",
+    "quote": "Distilled water                                            10.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q42", "label": "Seven vitamins
+    solution in Solution D", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only receiving addition into Solution D. Preserve this exact batch volume
+    and graph edge, not an assumed per-litre dose or direct stock-component concentration.",
+    "source_stage": "Solution D", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[4].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\":
+    \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 59-59",
+    "quote": "Seven vitamins solution                                     1.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q43", "label": "Distilled
+    water in Solution E", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only input-water quantity for this stage. It is not an independently measured
+    final volume; retain separately from provider volume metadata.", "source_stage":
+    "Solution E", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[2]",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    20,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 65-65",
+    "quote": "Distilled water                                            20.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q44", "label": "Distilled
+    water in Solution F", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Source-only input-water quantity for this stage. It is not an independently measured
+    final volume; retain separately from provider volume metadata.", "source_stage":
+    "Solution F", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[6].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    10,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 70-70",
+    "quote": "Distilled water                                            10.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q45", "label": "Distilled
+    water in Selenite-tungstate solution", "local_fields": [], "decision": "evidence_only",
+    "rationale": "Source-only input-water quantity for this stage. It is not an independently
+    measured final volume; retain separately from provider volume metadata.", "source_stage":
+    "Selenite-tungstate solution", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[7].recipe[3]",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 77-77",
+    "quote": "Distilled water                                         1000.00       ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q46", "label": "Distilled
+    water in Trace element solution SL-10", "local_fields": [], "decision": "evidence_only",
+    "rationale": "Source-only input-water quantity for this stage. It is not an independently
+    measured final volume; retain separately from provider volume metadata.", "source_stage":
+    "Trace element solution SL-10", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[9]",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    990,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 90-90",
+    "quote": "Distilled water                                           990.00      ml",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q47", "label": "Distilled
+    water in Seven vitamins solution", "local_fields": [], "decision": "evidence_only",
+    "rationale": "Source-only input-water quantity for this stage. It is not an independently
+    measured final volume; retain separately from provider volume metadata.", "source_stage":
+    "Seven vitamins solution", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[7]",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 112-112",
+    "quote": "Distilled water                  1000.00   ml", "quote_basis": "derivative
+    text"}]}, {"quantity_id": "q48", "label": "Retained preparation step 1", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "preparation_steps[0]",
+    "stored": {"step_number": 1, "action": "AUTOCLAVE", "description": "Solution A
+    is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least
+    30 min), then distributed under the same gas atmosphere in anoxic Hungate-type
+    tubes or serum vials and autoclaved. Solution B is autoclaved separately under
+    80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100%
+    N2 gas. \r\nSolution D is prepared under 100% N2 gas atmosphere and sterilized
+    by filtration. To complete the medium appropriate amounts of solutions B to F
+    are added to the sterile solution A in the sequence as indicated. Final pH of
+    the medium should be 7.1 - 7.4."}}], "decision": "evidence_only", "rationale":
+    "Existing main preparation text already retains the source sequence, stated atmosphere,
+    times, pH and conditional controls. Preserve this unchanged text and its scope;
+    no new growth claim is inferred.", "source_stage": "Main sol. 193b", "sources":
+    [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[0]",
+    "quote": "{\n                        \"step\": \"Solution A is sparged with 80%
+    N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed
+    under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and
+    autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere.
+    Solutions C, E and F are autoclaved under 100% N2 gas. \\r\\nSolution D is prepared
+    under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium
+    appropriate amounts of solutions B to F are added to the sterile solution A in
+    the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.\"\n                    }",
+    "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16",
+    "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere
+    in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are
+    autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions
+    B to F are added to the sterile\nsolution A in the sequence as indicated. Final
+    pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id":
+    "q49", "label": "Retained preparation step 2", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "preparation_steps[1]", "stored": {"step_number": 2, "action": "FILTER_STERILIZE",
+    "description": "Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g.
+    from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
+    growth at the beginning. For transfers use 5 - 10% (v/v) inoculum."}}], "decision":
+    "evidence_only", "rationale": "Existing main preparation text already retains
+    the source sequence, stated atmosphere, times, pH and conditional controls. Preserve
+    this unchanged text and its scope; no new growth claim is inferred.", "source_stage":
+    "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[1]",
+    "quote": "{\n                        \"step\": \"Note: Addition of 10 - 20 mg
+    sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under
+    N2 and filter-sterilized) may stimulate growth at the beginning. For transfers
+    use 5 - 10% (v/v) inoculum.\"\n                    }", "quote_basis": "raw UTF-8"},
+    {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 17-19",
+    "quote": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution,\nfreshly prepared under N2 and filter-sterilized) may stimulate
+    growth at the beginning. For\ntransfers use 5 - 10% (v/v) inoculum.", "quote_basis":
+    "derivative text"}]}, {"quantity_id": "q50", "label": "Retained preparation step
+    3", "local_fields": [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml",
+    "field_path": "preparation_steps[2]", "stored": {"step_number": 3, "action": "DISSOLVE",
+    "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml."}}], "decision": "correct",
+    "rationale": "The literal numeric instruction is source-supported, but it belongs
+    to Trace element solution SL-10 and needs an explicit stock container/scope instead
+    of an unqualified main-method step.", "source_stage": "Trace element solution
+    SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].steps[0]",
+    "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl,
+    then dilute in water, add and dissolve the other salts. Finally make up to 1000.00
+    ml.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 92-93",
+    "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally\nmake up to 1000.00 ml.", "quote_basis": "derivative
+    text"}]}, {"quantity_id": "q51", "label": "Existing pH", "local_fields": [{"path":
+    "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ph_range", "stored":
+    {"min": 7.1, "max": 7.4}}], "decision": "evidence_only", "rationale": "The existing
+    main pH range in the selected target and its sole maintained DSM owner is explicitly
+    supported by DSM193b and the current API. No KOMODO contributor or scalar pH is
+    present in this review scope; retain the source-supported range.", "source_stage":
+    "main pH", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.medium", "quote":
+    "{\n            \"id\": \"193b\",\n            \"name\": \"DESULFOFABA MEDIUM\",\n            \"complex_medium\":
+    \"no\",\n            \"min_pH\": 7.1,\n            \"max_pH\": 7.4,\n            \"source\":
+    \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf\"\n        }",
+    "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16",
+    "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere
+    in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are
+    autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions
+    B to F are added to the sterile\nsolution A in the sequence as indicated. Final
+    pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id":
+    "q52", "label": "Retained numeric provenance note for MgCl2 x 6 H2O", "local_fields":
+    [{"path": "data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml", "field_path": "ingredients[5].notes",
+    "stored": " [Merged 2 duplicates: 0.643777, 575.0]"}], "decision": "evidence_only",
+    "rationale": "Retain the historical numeric note as evidence of the prior transformation,
+    not as endorsement of an invalid sum. Correct the scientific assertion through
+    separately scoped quantities without deleting provenance.", "source_stage": "historical
+    numerical note", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[5]",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.643777,\n                        \"mmol_l\": 3.16659,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 34-34",
+    "quote": "MgCl2 x 6 H2O                                            0.60        g",
+    "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    11.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    575,\n                        \"mmol_l\": 2828.29,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 64-64",
+    "quote": "MgCl2 x 6 H2O                                              11.50        g",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q53", "label": "Trace element
+    solution SL-10 receiving dose", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[0].concentration", "stored": {"value": "1", "unit": "ML_PER_L"}}],
+    "decision": "correct", "rationale": "The source adds 1 mL to the complete recipe,
+    whose provider assembly volume is 1003 mL; the primary does not independently
+    state a measured final volume. This does not support the existing 1 ML_PER_L denominator.
+    Keep the native batch dose and named stock; partial nesting itself is credited.",
+    "source_stage": "receiving medium", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[7]",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\":
+    \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 36-36",
+    "quote": "Trace element solution SL-10                             1.00       ml",
+    "quote_basis": "derivative text"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8",
+    "quote": "Solution A                                             932.00       ml\n   Solution
+    B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution
+    D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution
+    F                                              10.00       ml", "quote_basis":
+    "derivative text"}]}, {"quantity_id": "q54", "label": "Trace element solution
+    SL-10 retained preparation note", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[0].preparation_notes", "stored": "Stock prepared in 1000
+    ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}],
+    "decision": "correct", "rationale": "Credit the source-supported stock identity
+    and provider 1000 mL normalization. Correct the unsupported per-litre receiving
+    assertion. SL-10 explicitly makes up to 1000 mL. Preserve this historical repair
+    credit while making the basis explicit.", "source_stage": "stock preparation and
+    receiving-dose statement", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[7]",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\":
+    \"Trace element solution SL-10\",\n                        \"solution_id\": 595,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 36-36",
+    "quote": "Trace element solution SL-10                             1.00       ml",
+    "quote_basis": "derivative text"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8",
+    "quote": "Solution A                                             932.00       ml\n   Solution
+    B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution
+    D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution
+    F                                              10.00       ml", "quote_basis":
+    "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].recipe[9]",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    990,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 90-90",
+    "quote": "Distilled water                                           990.00      ml",
+    "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].steps[0]",
+    "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl,
+    then dilute in water, add and dissolve the other salts. Finally make up to 1000.00
+    ml.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 92-93",
+    "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally\nmake up to 1000.00 ml.", "quote_basis": "derivative
+    text"}]}, {"quantity_id": "q55", "label": "Seven vitamins solution receiving dose",
+    "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].concentration", "stored": {"value": "1", "unit": "ML_PER_L"}}],
+    "decision": "correct", "rationale": "The source adds 1 mL to the complete recipe,
+    whose provider assembly volume is 1003 mL; the primary does not independently
+    state a measured final volume. This does not support the existing 1 ML_PER_L denominator.
+    Keep the native batch dose and named stock; partial nesting itself is credited.",
+    "source_stage": "receiving medium", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[4].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\":
+    \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 59-59",
+    "quote": "Seven vitamins solution                                     1.00       ml",
+    "quote_basis": "derivative text"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8",
+    "quote": "Solution A                                             932.00       ml\n   Solution
+    B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution
+    D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution
+    F                                              10.00       ml", "quote_basis":
+    "derivative text"}]}, {"quantity_id": "q56", "label": "Seven vitamins solution
+    retained preparation note", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "solutions[1].preparation_notes", "stored": "Stock prepared in 1000
+    ml; added at 1 ml per litre of medium. Composition and volume from MediaDive (#150)."}],
+    "decision": "correct", "rationale": "Credit the source-supported stock identity
+    and provider 1000 mL normalization. Correct the unsupported per-litre receiving
+    assertion. The source lists stock water; no independently measured final stock
+    volume is inferred. Preserve this historical repair credit while making the basis
+    explicit.", "source_stage": "stock preparation and receiving-dose statement",
+    "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[4].recipe[0]",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"solution\":
+    \"Seven vitamins solution\",\n                        \"solution_id\": 1038,\n                        \"amount\":
+    1,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 59-59",
+    "quote": "Seven vitamins solution                                     1.00       ml",
+    "quote_basis": "derivative text"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8",
+    "quote": "Solution A                                             932.00       ml\n   Solution
+    B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution
+    D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution
+    F                                              10.00       ml", "quote_basis":
+    "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[9].recipe[7]",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 112-112",
+    "quote": "Distilled water                  1000.00   ml", "quote_basis": "derivative
+    text"}]}, {"quantity_id": "q57", "label": "Retained preparation step 1", "local_fields":
+    [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path":
+    "preparation_steps[0]", "stored": {"step_number": 1, "action": "AUTOCLAVE", "description":
+    "Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below
+    6 (at least 30 min), then distributed under the same gas atmosphere in anoxic
+    Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved separately
+    under 80% N2 and 20% CO2 gas atmosphere. Solutions C, E and F are autoclaved under
+    100% N2 gas. \r\nSolution D is prepared under 100% N2 gas atmosphere and sterilized
+    by filtration. To complete the medium appropriate amounts of solutions B to F
+    are added to the sterile solution A in the sequence as indicated. Final pH of
+    the medium should be 7.1 - 7.4."}}], "decision": "evidence_only", "rationale":
+    "Existing main preparation text already retains the source sequence, stated atmosphere,
+    times, pH and conditional controls. Preserve this unchanged text and its scope;
+    no new growth claim is inferred.", "source_stage": "Main sol. 193b", "sources":
+    [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[0]",
+    "quote": "{\n                        \"step\": \"Solution A is sparged with 80%
+    N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed
+    under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and
+    autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere.
+    Solutions C, E and F are autoclaved under 100% N2 gas. \\r\\nSolution D is prepared
+    under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium
+    appropriate amounts of solutions B to F are added to the sterile solution A in
+    the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.\"\n                    }",
+    "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16",
+    "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere
+    in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are
+    autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions
+    B to F are added to the sterile\nsolution A in the sequence as indicated. Final
+    pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id":
+    "q58", "label": "Retained preparation step 2", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "preparation_steps[1]", "stored": {"step_number": 2, "action": "FILTER_STERILIZE",
+    "description": "Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g.
+    from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
+    growth at the beginning. For transfers use 5 - 10% (v/v) inoculum."}}], "decision":
+    "evidence_only", "rationale": "Existing main preparation text already retains
+    the source sequence, stated atmosphere, times, pH and conditional controls. Preserve
+    this unchanged text and its scope; no new growth claim is inferred.", "source_stage":
+    "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[1]",
+    "quote": "{\n                        \"step\": \"Note: Addition of 10 - 20 mg
+    sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under
+    N2 and filter-sterilized) may stimulate growth at the beginning. For transfers
+    use 5 - 10% (v/v) inoculum.\"\n                    }", "quote_basis": "raw UTF-8"},
+    {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 17-19",
+    "quote": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution,\nfreshly prepared under N2 and filter-sterilized) may stimulate
+    growth at the beginning. For\ntransfers use 5 - 10% (v/v) inoculum.", "quote_basis":
+    "derivative text"}]}, {"quantity_id": "q59", "label": "Retained preparation step
+    3", "local_fields": [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml",
+    "field_path": "preparation_steps[2]", "stored": {"step_number": 3, "action": "DISSOLVE",
+    "description": "First dissolve FeCl2 in the HCl, then dilute in water, add and
+    dissolve the other salts. Finally make up to 1000.00 ml."}}], "decision": "correct",
+    "rationale": "The literal numeric instruction is source-supported, but it belongs
+    to Trace element solution SL-10 and needs an explicit stock container/scope instead
+    of an unqualified main-method step.", "source_stage": "Trace element solution
+    SL-10", "sources": [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].steps[0]",
+    "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl,
+    then dilute in water, add and dissolve the other salts. Finally make up to 1000.00
+    ml.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 92-93",
+    "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally\nmake up to 1000.00 ml.", "quote_basis": "derivative
+    text"}]}, {"quantity_id": "q60", "label": "Existing pH", "local_fields": [{"path":
+    "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path": "ph_range",
+    "stored": {"min": 7.1, "max": 7.4}}], "decision": "evidence_only", "rationale":
+    "The existing main pH range in the selected target and its sole maintained DSM
+    owner is explicitly supported by DSM193b and the current API. No KOMODO contributor
+    or scalar pH is present in this review scope; retain the source-supported range.",
+    "source_stage": "main pH", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.medium", "quote":
+    "{\n            \"id\": \"193b\",\n            \"name\": \"DESULFOFABA MEDIUM\",\n            \"complex_medium\":
+    \"no\",\n            \"min_pH\": 7.1,\n            \"max_pH\": 7.4,\n            \"source\":
+    \"DSMZ\",\n            \"link\": \"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf\"\n        }",
+    "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16",
+    "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere
+    in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are
+    autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions
+    B to F are added to the sterile\nsolution A in the sequence as indicated. Final
+    pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id":
+    "q61", "label": "Retained numeric provenance note for MgCl2 x 6 H2O", "local_fields":
+    [{"path": "data/normalized_yaml/bacterial/desulfofaba_medium.yaml", "field_path":
+    "ingredients[5].notes", "stored": " [Merged 2 duplicates: 0.643777, 575.0]"}],
+    "decision": "evidence_only", "rationale": "Retain the historical numeric note
+    as evidence of the prior transformation, not as endorsement of an invalid sum.
+    Correct the scientific assertion through separately scoped quantities without
+    deleting provenance.", "source_stage": "historical numerical note", "sources":
+    [{"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[1].recipe[5]",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    0.6,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.643777,\n                        \"mmol_l\": 3.16659,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 34-34",
+    "quote": "MgCl2 x 6 H2O                                            0.60        g",
+    "quote_basis": "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[5].recipe[1]",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\":
+    11.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    575,\n                        \"mmol_l\": 2828.29,\n                        \"optional\":
+    0\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 64-64",
+    "quote": "MgCl2 x 6 H2O                                              11.50        g",
+    "quote_basis": "derivative text"}]}, {"quantity_id": "q62", "label": "Source control
+    Main sol. 193b 1", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Exact source control remains scoped to its named solution and conditional language.
+    No omitted branch, alternate strain or final-volume inference is authorized.",
+    "source_stage": "Main sol. 193b", "sources": [{"evidence_id": "api193b", "reference":
+    "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[0]",
+    "quote": "{\n                        \"step\": \"Solution A is sparged with 80%
+    N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then distributed
+    under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and
+    autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere.
+    Solutions C, E and F are autoclaved under 100% N2 gas. \\r\\nSolution D is prepared
+    under 100% N2 gas atmosphere and sterilized by filtration. To complete the medium
+    appropriate amounts of solutions B to F are added to the sterile solution A in
+    the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.\"\n                    }",
+    "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 10-16",
+    "quote": "1. Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at\nleast 30 min), then distributed under the same gas atmosphere
+    in anoxic Hungate-type\ntubes or serum vials and autoclaved. Solution B is autoclaved
+    separately under 80% N2\nand 20% CO2 gas atmosphere. Solutions C, E and F are
+    autoclaved under 100% N2 gas.\nSolution D is prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. To\ncomplete the medium appropriate amounts of solutions
+    B to F are added to the sterile\nsolution A in the sequence as indicated. Final
+    pH of the medium should be 7.1 - 7.4.", "quote_basis": "derivative text"}]}, {"quantity_id":
+    "q63", "label": "Source control Main sol. 193b 2", "local_fields": [], "decision":
+    "evidence_only", "rationale": "Exact source control remains scoped to its named
+    solution and conditional language. No omitted branch, alternate strain or final-volume
+    inference is authorized.", "source_stage": "Main sol. 193b", "sources": [{"evidence_id":
+    "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path":
+    "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0].steps[1]",
+    "quote": "{\n                        \"step\": \"Note: Addition of 10 - 20 mg
+    sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under
+    N2 and filter-sterilized) may stimulate growth at the beginning. For transfers
+    use 5 - 10% (v/v) inoculum.\"\n                    }", "quote_basis": "raw UTF-8"},
+    {"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 17-19",
+    "quote": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution,\nfreshly prepared under N2 and filter-sterilized) may stimulate
+    growth at the beginning. For\ntransfers use 5 - 10% (v/v) inoculum.", "quote_basis":
+    "derivative text"}]}, {"quantity_id": "q64", "label": "Source control Trace element
+    solution SL-10 1", "local_fields": [], "decision": "evidence_only", "rationale":
+    "Exact source control remains scoped to its named solution and conditional language.
+    No omitted branch, alternate strain or final-volume inference is authorized.",
+    "source_stage": "Trace element solution SL-10", "sources": [{"evidence_id": "api193b",
+    "reference": "https://mediadive.dsmz.de/rest/medium/193b", "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw",
+    "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[8].steps[0]",
+    "quote": "{\n                        \"step\": \"First dissolve FeCl2 in the HCl,
+    then dilute in water, add and dissolve the other salts. Finally make up to 1000.00
+    ml.\"\n                    }", "quote_basis": "raw UTF-8"}, {"evidence_id": "dsm193b",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 92-93",
+    "quote": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally\nmake up to 1000.00 ml.", "quote_basis": "derivative
+    text"}]}, {"quantity_id": "q65", "label": "Assembly volume basis", "local_fields":
+    [], "decision": "evidence_only", "rationale": "The listed assembly doses sum to
+    1003 mL and the provider declares that volume. This is a provider/assembly basis,
+    not a separately printed measured-final-volume statement.", "source_stage": "assembled
+    medium", "sources": [{"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 3-8",
+    "quote": "Solution A                                             932.00       ml\n   Solution
+    B                                              30.00       ml\n   Solution C                                              10.00       ml\n   Solution
+    D                                               1.00       ml\n   Solution E                                              20.00       ml\n   Solution
+    F                                              10.00       ml", "quote_basis":
+    "derivative text"}, {"evidence_id": "api193b", "reference": "https://mediadive.dsmz.de/rest/medium/193b",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/api193b.raw", "raw_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "text_sha256": "0eb026371c2c0ac1247b68011319a0b5807cebe6d153ded6be171220300cd3da",
+    "accessed_at": "2026-10-28T18:55:15.934244Z", "locator": "data.solutions[0]",
+    "quote": "{\n                \"id\": 344,\n                \"name\": \"Main sol.
+    193b\",\n                \"volume\": 1003,\n                \"recipe\": [\n                    {\n                        \"recipe_order\":
+    1,\n                        \"solution\": \"Solution A\",\n                        \"solution_id\":
+    345,\n                        \"amount\": 932,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    3,\n                        \"solution\": \"Solution B\",\n                        \"solution_id\":
+    347,\n                        \"amount\": 30,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    4,\n                        \"solution\": \"Solution C\",\n                        \"solution_id\":
+    348,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    5,\n                        \"solution\": \"Solution D\",\n                        \"solution_id\":
+    349,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    6,\n                        \"solution\": \"Solution E\",\n                        \"solution_id\":
+    350,\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    },\n                    {\n                        \"recipe_order\":
+    7,\n                        \"solution\": \"Solution F\",\n                        \"solution_id\":
+    351,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }\n                ],\n                \"steps\":
+    [\n                    {\n                        \"step\": \"Solution A is sparged
+    with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then
+    distributed under the same gas atmosphere in anoxic Hungate-type tubes or serum
+    vials and autoclaved. Solution B is autoclaved separately under 80% N2 and 20%
+    CO2 gas atmosphere. Solutions C, E and F are autoclaved under 100% N2 gas. \\r\\nSolution
+    D is prepared under 100% N2 gas atmosphere and sterilized by filtration. To complete
+    the medium appropriate amounts of solutions B to F are added to the sterile solution
+    A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.\"\n                    },\n                    {\n                        \"step\":
+    \"Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v)
+    solution, freshly prepared under N2 and filter-sterilized) may stimulate growth
+    at the beginning. For transfers use 5 - 10% (v/v) inoculum.\"\n                    }\n                ],\n                \"equipment\":
+    {\n                    \"2130\": \"Hungate tubes\",\n                    \"2930\":
+    \"Gassing station\",\n                    \"3043\": \"Autoclave\",\n                    \"4589\":
+    \"Filter\"\n                }\n            }", "quote_basis": "raw UTF-8"}]},
+    {"quantity_id": "q66", "label": "Excluded DSM 2075 override", "local_fields":
+    [], "decision": "evidence_only", "rationale": "This explicitly conditional DSM
+    2075 substitution is preserved only as a source-variant boundary; it is not applied
+    to the selected generic formulation.", "source_stage": "excluded strain-specific
+    override", "sources": [{"evidence_id": "dsm193b", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium193b.pdf",
+    "raw_path": "REVIEW_WORK/batch075/source07-08-10/dsm193b.raw", "raw_sha256": "c2d0de0a77c1beefda3178e84373d3fc0eb268371a3944bb0af4d7c93747f0ab",
+    "text_sha256": "67da326352d84239d5db3ded4530cfb96c17163e0a25f128a2ad5652d04c4677",
+    "accessed_at": "2026-10-28T18:55:16.143363Z", "locator": "dsm193b.txt lines 22-24",
+    "quote": "For DSM 2075: Na-propionate is replaced by 0.70 g/l Na-butyrate, 0.30
+    g/l Na-caproate and\n0.15 g/l Na-octanoate added after autoclaving from sterile
+    anoxic stock solutions prepared\nunder 100% N2 gas.", "quote_basis": "derivative
+    text"}]}], "document_scopes": {"data/merge_yaml/merged/DESULFOFABA_MEDIUM.yaml":
+    null, "data/normalized_yaml/bacterial/desulfofaba_medium.yaml": null}, "scope":
+    "Every selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: All current primary/secondary ontology slots and preferred-term MIM lookups
+    are enumerated against fresh exact OLS objects and the pinned 9077-row snapshot.
+    Source hydrate/salt and stereochemical specificity were checked separately from
+    canonical labels. Sodium resazurin is incorrectly linked to neutral resazurin
+    CHEBI:8806. Nickel chloride hexahydrate is incorrectly linked in both primary
+    and secondary slots to anhydrous CHEBI:34887; fresh CHEBI:53542 is a verified
+    hydrate candidate. CHEBI:31345 has D stereochemistry in its current structure;
+    the source generic calcium pantothenate leaves stereochemistry unresolved, so
+    this is a limitation rather than an asserted wrong-ID finding. The vitamin-B12
+    class is not narrowed to an unsupported vitamer. Exact secondary-link presence
+    and label-agreement populations are separate metrics in the inventory; missing
+    links do not certify or refute chemical identity.
+  target_ids:
+  - CultureMech:001287
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: concern
+  summary: All complete per-record October 5 and October 7 reports and exact selected
+    parent objects were read. October 5 had zero source checks; October 7 explicitly
+    retained unresolved source/stage claims and no quantity repair. Current object
+    and raw-digest comparisons are recorded separately, without claiming recovery
+    of earlier retrieval events. Existing partial nested repairs, where present, are
+    credited; current cleanup no longer sums unequal values, identical-only repair
+    correctly refuses them, and current formulation merging includes scientific fields.
+    The current preparation parser still concatenates steps from all solution stages
+    without a solution label.
+  target_ids:
+  - CultureMech:001287
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - historical-object-joins
+  - writer-mediadive
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-001287-stock-stages
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Partial nesting leaves assembly rates and summed magnesium in the main list
+  description: Complete the exact A–F and embedded stock graph. Credit the owner’s
+    five already nested stock components, but the other stock/subsolution rates remain
+    main ingredients and generated output loses that nesting. MgCl2 575.643777 g/L
+    adds rates 0.643777 in A and 575 in E; retain those distinct stages. Source HCl
+    25% lacks a stated percentage basis, so the flattened 2.5 g/L mass assertion is
+    unsupported. Preserve provider volume 1003 mL as its declared assembly basis,
+    not an independently measured final volume.
+  target_ids:
+  - CultureMech:001287
+  field_paths:
+  - ingredients
+  - ingredients[5].concentration
+  - ingredients[14].concentration
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::solutions
+  evidence_ids:
+  - dsm193b
+  - api193b
+  - quantities
+  - owner
+  - writer-cleanup
+  - writer-repair
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-001287-receiving-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: One millilitre batch additions were asserted per litre
+  description: Correct the two owner receiving-dose units and preparation-note basis
+    after source reconciliation. Each source adds 1 mL into an assembled recipe declared
+    as 1003 mL, not 1 mL per litre. Retain the supported stock identities and existing
+    nested strengths. Current apply_plan writes addition_volume_ml as ML_PER_L without
+    an assembled-volume denominator; fix that path while preserving candidate/applicability
+    guards.
+  target_ids:
+  - CultureMech:001287
+  field_paths:
+  - solutions
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::solutions[0].concentration
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::solutions[1].concentration
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::solutions[0].preparation_notes
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::solutions[1].preparation_notes
+  evidence_ids:
+  - dsm193b
+  - api193b
+  - quantities
+  - writer-nesting
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: scripts/apply_cocktail_nesting.py
+    role: maintained stock-dose writer
+- finding_id: f3
+  issue_key: culturemech-001287-supplied-forms
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Supplied salt forms do not match ontology assertions
+  description: 'Resolve sodium resazurin’s supplied salt identity; CHEBI:8806 is neutral
+    resazurin. Resolve both primary and secondary NiCl2 x 6 H2O mappings: CHEBI:34887
+    is anhydrous nickel dichloride, while the exact hydrate candidate CHEBI:53542
+    was freshly checked. Preserve all source masses and stage boundaries; changing
+    an ID does not authorize a formula-mass conversion.'
+  target_ids:
+  - CultureMech:001287
+  field_paths:
+  - ingredients[6].term
+  - ingredients[21].term
+  - ingredients[21].mediaingredientmech_chebi_term
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::ingredients[6].term
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::ingredients[20].term
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::ingredients[20].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm193b
+  - api193b
+  - chebi8806
+  - chebi34887
+  - chebi53542
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+- finding_id: f4
+  issue_key: culturemech-001287-preparation-scope
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Retained stock preparation text lacks its stock container
+  description: Retain the existing main preparation text, including its numeric conditions.
+    Label and relocate the stock-only SL-10 final makeup instruction so they cannot
+    be read as instructions for the complete medium. Current _parse_preparation_steps
+    concatenates all solution steps without preserving their solution label; repair
+    that stage association and append evidence, without deleting existing text.
+  target_ids:
+  - CultureMech:001287
+  field_paths:
+  - preparation_steps[2]
+  - data/normalized_yaml/bacterial/desulfofaba_medium.yaml::preparation_steps[2]
+  evidence_ids:
+  - dsm193b
+  - api193b
+  - quantities
+  - writer-mediadive
+  rule_id: review-yaml-record/representation
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: maintained preparation-stage parser
+actions:
+- action_id: a1
+  description: Complete the exact A–F and embedded stock graph. Credit the owner’s
+    five already nested stock components, but the other stock/subsolution rates remain
+    main ingredients and generated output loses that nesting. MgCl2 575.643777 g/L
+    adds rates 0.643777 in A and 575 in E; retain those distinct stages. Source HCl
+    25% lacks a stated percentage basis, so the flattened 2.5 g/L mass assertion is
+    unsupported. Preserve provider volume 1003 mL as its declared assembly basis,
+    not an independently measured final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001287
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: Correct the two owner receiving-dose units and preparation-note basis
+    after source reconciliation. Each source adds 1 mL into an assembled recipe declared
+    as 1003 mL, not 1 mL per litre. Retain the supported stock identities and existing
+    nested strengths. Current apply_plan writes addition_volume_ml as ML_PER_L without
+    an assembled-volume denominator; fix that path while preserving candidate/applicability
+    guards.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001287
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: scripts/apply_cocktail_nesting.py
+    role: maintained stock-dose writer
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained stock-dose writer and exact recipe curation; regenerate only
+    after source identity is resolved
+- action_id: a3
+  description: 'Resolve sodium resazurin’s supplied salt identity; CHEBI:8806 is neutral
+    resazurin. Resolve both primary and secondary NiCl2 x 6 H2O mappings: CHEBI:34887
+    is anhydrous nickel dichloride, while the exact hydrate candidate CHEBI:53542
+    was freshly checked. Preserve all source masses and stage boundaries; changing
+    an ID does not authorize a formula-mass conversion.'
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001287
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: Retain the existing main preparation text, including its numeric conditions.
+    Label and relocate the stock-only SL-10 final makeup instruction so they cannot
+    be read as instructions for the complete medium. Current _parse_preparation_steps
+    concatenates all solution steps without preserving their solution label; repair
+    that stage association and append evidence, without deleting existing text.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001287
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/desulfofaba_medium.yaml
+    role: maintained source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/mediadive_importer.py
+    role: maintained preparation-stage parser
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained preparation parser and recipe stage association; subsequent
+    generated refresh
+limitations:
+- PDF text locators count Python splitlines(), including form-feed boundaries; every
+  quoted row was checked against the rendered primary page and the chemical identity
+  at the API locator.
+- Provider mmol_l values are not endorsed as new conversions. In particular nickel
+  and calcium-pantothenate formula-unit/hydrate mass bases require separate assessment
+  before molar conversion.
+- Current MIM alias rows can include chemically broad or conflicting synonyms; exact
+  preferred-term/status rows and fresh ontology formulae take precedence over an alias-only
+  match.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```
