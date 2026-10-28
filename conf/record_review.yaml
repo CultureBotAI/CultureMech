@@ -9,7 +9,7 @@ skills:
   - .claude/skills/audit-schema-gaps/SKILL.md
   - .claude/skills/schema-gap-analysis/SKILL.md
 rubrics:
-  - CLAUDE.md
+  - AGENTS.md
   - docs/DATA_LAYERS.md
   - .claude/skills/review-recipes/reference/validation-rules.md
   - .claude/skills/review-recipes/reference/linkage-and-duplicates.md
