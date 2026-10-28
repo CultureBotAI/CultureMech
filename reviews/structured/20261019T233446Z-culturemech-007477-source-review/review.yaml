@@ -1,0 +1,516 @@
+schema_version: 1.0.0
+review_id: 20261019T233446Z-culturemech-007477-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Source and formulation review: 1401 (CultureMech:007477)'
+started_at: '2026-10-19T23:30:31Z'
+finished_at: '2026-10-19T23:34:46Z'
+reviewer:
+  identity: OpenAI Codex with delegated source and validator checks
+  kind: agent
+  independence: independent
+  independence_basis: Review team did not author or edit the assessed recipe bytes;
+    findings were assessed against the frozen checkout and inspected source documents.
+    This is an agent review, not experimental verification.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Generated record 1401 collapses the six-component NBRC 1396 Modified Sour
+  Dough Medium into malformed ingredient rows. The explicit source pH 5.6 survives
+  only in the blob, and optional agar and Tween 80 amount boundaries are unusable
+  as structured quantities. The maintained owner restores rows and pH, but source
+  name, normalization basis, and preparation still require verification before regeneration.
+source:
+  git_revision: 7c568537897ee4bba1b8e97f8172133c1572aec0
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: e35781d4fd66de4289411141b4c8a94189782d864ba6c45e49bf46537c46c5a1
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/1401.yaml
+    sha256: 5322bd4bcad209749e763df705c8cd2deec77807f68a58d6406f0ea4272fe0c1
+    role: target
+  - path: data/normalized_yaml/bacterial/NBRC_1401.yaml
+    sha256: 6f349001f5916a3dd9b85af0822f91eb3cbd3019e00455617974f021c1094f46
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 3576f5ce2adee0179be4f2d3fd134841249eb9a54a7eed8b388c3b345883a5fe
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/recover_nbrc_composition.py
+    sha256: a723e458895350a68ffae3e446006205b2e00cb185bee13976d5047be56405f0
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: d6775c8c53ee433426ad7d3ababdf1740fc6adc62cb8269cf07ca0cd251cef68
+    role: context
+  - path: src/culturemech/convert/nbrc_raw_yaml.py
+    sha256: de5654d4eed2e01a2383dcf417b7d8e2779dbb622de9351c28373fb691812ec1
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/fetch/nbrc_scraper.py
+    sha256: 5c5bbda489abe0b6d000b9318a76913ab5496ee83aff58b530c2b42b5989d1e3
+    role: context
+  - path: src/culturemech/import/nbrc_importer.py
+    sha256: 857b7e0ac88aef783ce4bc9b35c4c6a3d9fc38824a5d463010a6046ac4180924
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: cb8e4b047647d41f47b91d83420799555c09696c8a2a890535a74076e6f8bba6
+    role: context
+scope:
+  description: One complete generated MediaRecipe, including source identity, every
+    listed amount, chemical forms, stocks, conditions, preparation, classifications,
+    provenance, and maintained-input correspondence.
+  selection: Record 19 in Python lexicographic repository-relative path order of the
+    initially uncovered merged corpus; batch002 covers ordinals11-20 after batch001.
+    On fresh origin/main at this batch base, scripts/record_review.py list validated34
+    existing bundles and none listed this target path or ID. This bundle selects only
+    the named record; no sampling or fleet-wide scientific claim.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:007477
+targets:
+- target_id: CultureMech:007477
+  path: data/merge_yaml/merged/1401.yaml
+  label: '1401'
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1401.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/1401.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/1401.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch002/019/strict.tsv
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-002/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch002/019/strict.tsv"
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/1401.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/1401.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - validate-references
+- check_id: structured-source-adapter
+  name: iModulonDB applicability
+  required: false
+  status: not_applicable
+  summary: The reviewed medium asserts no gene, locus, regulator, pathway or transcriptomic
+    dataset requiring an iModulonDB cross-check; expression-module membership cannot
+    establish this formulation.
+  target_ids:
+  - CultureMech:007477
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/merge_yaml/merged/1401.yaml
+  locator: Entire YAML; exact source hash captured in source.inputs
+  accessed_at: '2026-10-19T23:34:46Z'
+  support: context_only
+  summary: Complete generated record read, including all ingredients, notes, preparation,
+    annotations, and history.
+- evidence_id: owner-0
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/NBRC_1401.yaml
+  locator: Entire maintained YAML
+  accessed_at: '2026-10-19T23:34:46Z'
+  support: context_only
+  summary: Maintained owner read in full and compared with generated target; ownership
+    is traced from the merge event source and merged_from.
+- evidence_id: validate-schema
+  kind: validation
+  reference: just validate-schema data/merge_yaml/merged/1401.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:32:08.014075Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+- evidence_id: validate-strict
+  kind: validation
+  reference: just validate-strict data/merge_yaml/merged/1401.yaml --workers 1 --out
+    /private/tmp/culturemech-review-work-batch002/019/strict.tsv
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:32:11.226692Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=/private/tmp/culturemech-record-review-20261019-batch-002/src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         /private/tmp/culturemech-review-work-batch002/019/strict.tsv"
+- evidence_id: validate-terms
+  kind: validation
+  reference: just validate-terms data/merge_yaml/merged/1401.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:32:16.045258Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+- evidence_id: validate-references
+  kind: validation
+  reference: just validate-references data/merge_yaml/merged/1401.yaml
+  locator: Actual command output
+  accessed_at: '2026-10-19T23:32:17.412305Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+- evidence_id: nbrc
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1396
+  locator: Medium Detail Information; all six Composition rows; final pH statement
+  accessed_at: '2026-10-19T23:29:38Z'
+  support: supports
+  summary: NBRC 1396 names Modified Sour Dough Medium and lists maltose 20 g, yeast
+    extract 3 g, Tween 80 0.3 g, Trypticase peptone 6 g, distilled water 1 L and optional
+    agar 15 g; pH 5.6. No sterilization protocol is stated.
+  snapshot_sha256: 278233f1280a9f7127f409cbbc8b2cf7b12e5187eb35bc949931896d0231888c
+assessments:
+- assessment_id: schema
+  area: schema
+  topic: Documented deterministic checks
+  outcome: supported
+  summary: The four documented recipes completed; interpret the scope of each separately.
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: identity
+  area: identity
+  topic: Source accession, stable ID, and generated ownership
+  outcome: supported
+  summary: The import history and maintained owner identify NBRC 1396, Modified Sour
+    Dough Medium. The numeric local filename/name is not the source accession. The
+    stable CultureMech identifier and merge-event owner agree; the source identity
+    is recoverable despite the uninformative generated name.
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+- assessment_id: grounding
+  area: grounding
+  topic: Asserted ingredient identifiers, MIM linkage, and solution references
+  outcome: concern
+  summary: Neither of the two generated ingredient descriptors carries a chemical
+    CURIE, MIM link, or stock-solution reference. No nonexistent ontology identifier
+    or broken internal link is asserted. The malformed descriptor and empty name must
+    be repaired before ingredient grounding can be assessed meaningfully.
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - record
+  - owner-0
+  details: Primary term presence=0/2 encoded descriptors; MIM-link presence=0/2. Those
+    denominators describe encoded rows, not the 6 source components. Owner-only chemical
+    identifiers are not certified by this generated-target review. No replacement
+    ontology identifier is proposed without independent verification.
+- assessment_id: provenance
+  area: provenance
+  topic: History, evidence placement, and source-to-output freshness
+  outcome: concern
+  summary: The generated August 6 merge predates the maintained August composition
+    recovery and September metadata updates. The later owner history and references
+    are absent from generated output. The historical import source remains recoverable,
+    but there is no scoped ingredient evidence in the target.
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  - validate-references
+  details: The reference validator performed zero excerpt checks. Inline curation
+    history is part of the recipe, not a standalone HistoryRecord. Preserve historical
+    events; do not backdate or rewrite them to imply a generated repair occurred.
+    Follow-up curation belongs in the maintained owner and generation path. The inspected
+    merger code, schema and source-owner bytes are included in the frozen input capture.
+- assessment_id: quantities
+  area: quantity
+  topic: Every encoded row and all source component amounts
+  outcome: concern
+  summary: Both generated quantity descriptors require correction; source parsing
+    must keep Tween 80 distinct from its 0.3 g amount and retain the optional agar
+    boundary.
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  details: 'ingredients[0]: correct; six source components plus pH are concatenated
+    under variable/VARIABLE. ingredients[1]: correct; empty name and nonnumeric Maltose/G_PER_L.
+    Source batch inventory: maltose 20 g, yeast extract 3 g, Tween 80 0.3 g, Trypticase
+    peptone 6 g, distilled water 1 L, agar 15 g if needed. These exact six rows are
+    restored in the owner, with source pH 5.6. Source specifies mass for Tween 80;
+    no density-based volume conversion is justified. The 1 L water addition is distinct
+    from measured final volume; owner G_PER_L normalizations require an explicit supported
+    basis. No exact supplier/catalog or substitute peptone identity is inferred.'
+- assessment_id: conditions
+  area: consistency
+  topic: Preparation, state, classification and formulation boundary
+  outcome: concern
+  summary: The pH 5.6 instruction survives in the ingredient blob but is absent from
+    ph_value and the operative adjustment step. The autoclaving sentence is miscoded
+    as DISSOLVE and is unsupported by the inspected page.
+  target_ids:
+  - CultureMech:007477
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  details: COMPLEX/UNDEFINED is consistent with yeast extract and peptone. SOLID_AGAR
+    denotes the optional-agar variant and must not make agar compulsory across all
+    variants. Generic dissolution is an inference, not a source-specified procedure.
+    The current owner has empty preparation_steps and name 1401, so it is not a fully
+    curated source record. Source-supported pH and component amounts can be retained
+    without certifying owner-only ontology mappings or inventing organism growth conditions.
+findings:
+- finding_id: f1
+  issue_key: cm-007477-generated-component-collapse
+  category: representation
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Generated ingredient rows collapse the source formulation
+  description: The generated record contains a six-component/pH blob and an empty
+    ingredient name with Maltose/G_PER_L instead of usable quantities. The owner restores
+    the six rows and pH, but both generated and maintained names still omit the official
+    Modified Sour Dough Medium name.
+  target_ids:
+  - CultureMech:007477
+  field_paths:
+  - name
+  - original_name
+  - ingredients[0]
+  - ingredients[1]
+  - media_term
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1401.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+- finding_id: f2
+  issue_key: cm-007477-preparation-ph-and-source
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preparation omits the operative source pH and asserts unsupported sterilization
+  description: The source explicitly specifies pH 5.6. Generated preparation only
+    says adjust pH if needed while the actual pH remains inside ingredients[0]. It
+    also assigns DISSOLVE to an autoclaving statement not supported by the inspected
+    source page.
+  target_ids:
+  - CultureMech:007477
+  field_paths:
+  - ph_value
+  - preparation_steps[1]
+  - preparation_steps[2]
+  evidence_ids:
+  - record
+  - owner-0
+  - nbrc
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1401.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+actions:
+- action_id: a1
+  description: Reconcile the maintained NBRC 1396 name and source-specific formulation,
+    then regenerate the target through the maintained path, preserving its stable
+    ID and optional-agar variant.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:007477
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1401.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Require 6 distinct source components with numerical amounts and appropriate units;
+    preserve the stated water batch basis without asserting an unmeasured final volume.
+  - Preserve Tween 80 at the source 0.3 g batch amount, Trypticase peptone at 6 g,
+    and optional agar at 15 g.
+  - Keep exact source product names without substituting generic peptones or inventing
+    catalog equivalence.
+  - After separately authorized curation/regeneration, run all four documented target
+    recipes, just verify-merges, just audit-merge-freshness, and an explicit source-to-output
+    component comparison.
+- action_id: a2
+  description: Carry the source pH into maintained structured preparation and verify
+    any additional procedure against an applicable primary protocol before regenerating.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:007477
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/NBRC_1401.yaml
+    role: authoritative normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merge_recipes.py
+    role: derived record generator
+  generator: python -m culturemech.merge.merge_recipes (only after owner verification,
+    necessary corrections and separately authorized regeneration)
+  acceptance_checks:
+  - Retain pH 5.6 without inventing an acid/base reagent or dose.
+  - Each retained sterilization assertion has source support and an action token consistent
+    with its operation.
+  - Preserve optional agar scope rather than silently equating liquid and solid variants.
+limitations:
+- A schema/term pass does not establish chemical identity, correct source quantities,
+  or growth. Reference-check coverage must be read from its actual output; direct
+  source comparisons are separately documented.
+- No record, curation history, merge output, or scientific status was changed. No
+  new experiment or exhaustive literature review was performed. Full-corpus regeneration,
+  ID/product/merge gates are acceptance checks for follow-up changes, not executed
+  by this read-only single-record review.
+- This review certifies only the stated target/source comparisons. Maintained-owner
+  ontology mappings and mass-per-liter normalization are not blanket-approved for
+  regeneration.
+- The NBRC recipe lists a water addition, not an independently measured final preparation
+  volume. No density, molar-mass, or final-volume conversion is inferred.
+- The recipe page does not establish a species-specific growth result or the bacterial
+  category as a biological restriction. No taxon identifier, incubation condition,
+  atmosphere, storage period or growth outcome is invented.
+tags:
+- unreviewed-records
+- batch-002
+- generated-medium
