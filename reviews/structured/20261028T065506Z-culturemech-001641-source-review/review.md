@@ -1,0 +1,1706 @@
+# Scientific review: CARBOXYDOCELLA MANGANICA MEDIUM
+
+- Review: 20261028T065506Z-culturemech-001641-source-review
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T06:50:36.686217Z
+- Finished UTC: 2026-10-28T06:55:06.870159Z
+- Reviewer: Codex tsb_source_check (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Exact507b identity and retained preparation are supported. Nineteen stock components remain flattened, receiving additions and water input are absent, and claim-level evidence plus nickel hydrate and pantothenate secondary linkage need curation.
+
+## Scope And Provenance
+
+Whole exact target/owner with explicit scoped dependencies, current sources and historical claims.
+
+Selection: Authoritative batch059 index 07
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001641 | data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml | generated | carboxydocella_manganica_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Canonical schema | passed | True | CultureMech:001641 | Actual exit 0; full original streams retained. |
+| Canonical strict | passed | True | CultureMech:001641 | Actual exit 0; full original streams retained. |
+| Canonical terms | passed | True | CultureMech:001641 | Actual exit 0; full original streams retained. |
+| Canonical references | passed | True | CultureMech:001641 | Actual exit 0; full original streams retained. |
+
+## Scientific And Domain Assessments
+
+### Exact DSMZ507b identity
+
+identity: supported. Targets: CultureMech:001641.
+
+The generated target and its one maintained owner agree on identity and complete scientific fields. Fresh PDF/API are specifically507b; neither507 nor507a is substituted.
+
+### Retained classification and preparation
+
+representation: supported. Targets: CultureMech:001641.
+
+The source supports complex semi-defined liquid classification with yeast extract and named chemicals. Existing pH and full main preparation receive credit; no organism growth is inferred from the medium title.
+
+### Complete amounts, units and preparation stages
+
+quantity: concern. Targets: CultureMech:001641.
+
+54 current concentration fields are covered by 36 decisions, including unchanged support and explicit source-only conditions.
+
+{"schema":"fresh-b059-quantity-inventory-v1","target":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","quantity_field_count":54,"decisions":[{"quantity_id":"q1","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The current API explicitly reports this g_l on its declared 1011 mL basis, matching the encoded rate. The PDF independently supports the batch mass. Attach exact source evidence without calling the provider volume a measured final volume or replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 3-3","quote":"KCl                                                      0.33        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\": 4.3784,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q2","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.514342","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.514342","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The current API explicitly reports this g_l on its declared 1011 mL basis, matching the encoded rate. The PDF independently supports the batch mass. Attach exact source evidence without calling the provider volume a measured final volume or replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 4-4","quote":"MgCl2 x 6 H2O                                            0.52        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 0.52,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.514342,\n                        \"mmol_l\": 2.52993,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q3","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.286845","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.286845","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The current API explicitly reports this g_l on its declared 1011 mL basis, matching the encoded rate. The PDF independently supports the batch mass. Attach exact source evidence without calling the provider volume a measured final volume or replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 5-5","quote":"CaCl2 x 2 H2O                                            0.29        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.29,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.286845,\n                        \"mmol_l\": 1.95113,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q4","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The current API explicitly reports this g_l on its declared 1011 mL basis, matching the encoded rate. The PDF independently supports the batch mass. Attach exact source evidence without calling the provider volume a measured final volume or replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 6-6","quote":"NH4Cl                                                    0.33        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\": 6.10225,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q5","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The current API explicitly reports this g_l on its declared 1011 mL basis, matching the encoded rate. The PDF independently supports the batch mass. Attach exact source evidence without calling the provider volume a measured final volume or replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 7-7","quote":"KH2PO4                                                   0.33        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.33,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\": 2.39857,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q6","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.4728","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.4728","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The current API explicitly reports this g_l on its declared 1011 mL basis, matching the encoded rate. The PDF independently supports the batch mass. Attach exact source evidence without calling the provider volume a measured final volume or replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 9-9","quote":"Na2CO3                                                   2.50        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 2.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 2.4728,\n                        \"mmol_l\": 23.3309,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q7","label":"Na-pyruvate","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.98912","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.98912","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The current API explicitly reports this g_l on its declared 1011 mL basis, matching the encoded rate. The PDF independently supports the batch mass. Attach exact source evidence without calling the provider volume a measured final volume or replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 10-10","quote":"Na-pyruvate                                              1.00        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na-pyruvate\",\n                        \"compound_id\": 113,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.98912,\n                        \"mmol_l\": 8.9884,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q8","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.197824","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.197824","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The current API explicitly reports this g_l on its declared 1011 mL basis, matching the encoded rate. The PDF independently supports the batch mass. Attach exact source evidence without calling the provider volume a measured final volume or replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 11-11","quote":"Yeast extract                                            0.20        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.197824,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"Na2-EDTA","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 27-27","quote":"Na2-EDTA                                                 0.50        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Na2-EDTA\",\n                        \"compound_id\": 34,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 1.48718,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q10","label":"FeSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 28-28","quote":"FeSO4 x 7 H2O                                            0.20        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 0.719386,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q11","label":"ZnSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 29-29","quote":"ZnSO4 x 7 H2O                                            0.10        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.347752,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q12","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.03","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.03","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 30-30","quote":"MnCl2 x 4 H2O                                            0.03        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\": 36,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.151588,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q13","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 31-31","quote":"H3BO3                                                    0.30        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\": 4.85123,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q14","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 32-32","quote":"CoCl2 x 6 H2O                                            0.20        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\": 38,\n                        \"amount\": 0.2,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\": 1.54037,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q15","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 33-33","quote":"CuCl2 x 2 H2O                                            0.01        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\": 39,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0586569,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q16","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 34-34","quote":"NiCl2 x 6 H2O                                            0.02        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.154322,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q17","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.03","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.03","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4 stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 35-35","quote":"Na2MoO4 x 2 H2O                                          0.03        g","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.123993,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q18","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 44-44","quote":"Biotin                                                  20.00      mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q19","label":"Folic acid","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 45-45","quote":"Folic acid                                              20.00      mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\": 2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\": 20,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q20","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 46-46","quote":"Pyridoxine hydrochloride                               100.00      mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\": 3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\": 100,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q21","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 47-47","quote":"Thiamine HCl                                            50.00      mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\": 4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q22","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 56-56","quote":"Riboflavin                             50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[4]","quote":"{\n                        \"recipe_order\": 5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q23","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 57-57","quote":"Nicotinic acid                         50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q24","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 58-58","quote":"Calcium D-(+)-pantothenate             50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[6]","quote":"{\n                        \"recipe_order\": 7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q25","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 59-59","quote":"Vitamin B12                             1.00   mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[7]","quote":"{\n                        \"recipe_order\": 8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\": 1,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q26","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 60-60","quote":"p-Aminobenzoic acid                    50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[8]","quote":"{\n                        \"recipe_order\": 9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q27","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This is the separate stock concentration, incorrectly flattened into the main ingredients in both target and owner. Retain the declared stock g_l and printed batch amount within its source stock; add the separately stated receiving dose. Water input alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 61-61","quote":"(DL)-alpha-Lipoic acid                 50.00   mg","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\": 50,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q28","label":"SL-4 addition","local_fields":[],"decision":"evidence_only","rationale":"Source-only batch input omitted from the current structured medium. Preserve the printed mL input and stage; neither stock volume nor water input proves a receiving-litre denominator.","source_stage":"receiving batch input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 8-8","quote":"Trace element solution SL-4                             10.00       ml","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\": 6,\n                        \"solution\": \"Trace element solution SL-4\",\n                        \"solution_id\": 20,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q29","label":"Wolin vitamin addition","local_fields":[],"decision":"evidence_only","rationale":"Source-only batch input omitted from the current structured medium. Preserve the printed mL input and stage; neither stock volume nor water input proves a receiving-litre denominator.","source_stage":"receiving batch input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 12-12","quote":"Wolin's vitamin solution (10x)                           1.00       ml","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\": 11,\n                        \"solution\": \"Wolin's vitamin solution (10x)\",\n                        \"solution_id\": 5980,\n                        \"amount\": 1,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q30","label":"Main water input","local_fields":[],"decision":"evidence_only","rationale":"Source-only batch input omitted from the current structured medium. Preserve the printed mL input and stage; neither stock volume nor water input proves a receiving-litre denominator.","source_stage":"receiving batch input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 13-13","quote":"Distilled water                                       1000.00       ml","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q31","label":"Stock water input 1","local_fields":[],"decision":"evidence_only","rationale":"Source states a 1000 mL water input. Retain this separately from the provider-declared stock concentration; no measured final volume is inferred.","source_stage":"stock solvent input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 36-36","quote":"Distilled water                                       1000.00       ml","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q32","label":"Stock water input 2","local_fields":[],"decision":"evidence_only","rationale":"Source states a 1000 mL water input. Retain this separately from the provider-declared stock concentration; no measured final volume is inferred.","source_stage":"stock solvent input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 62-62","quote":"Distilled water                      1000.00   ml","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[10]","quote":"{\n                        \"recipe_order\": 11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q33","label":"Existing final pH","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ph_value","stored":6.5},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ph_value","stored":6.5}],"decision":"evidence_only","rationale":"The existing pH 6.5 agrees with the final preparation adjustment. Earlier pH 6.0–6.5 is a distinct intermediate stage, not a replacement or growth optimum.","source_stage":"main preparation","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 15-21","quote":"Dissolve ingredients except carbonate, pyruvate, yeast extract, and vitamins, then sparge\nmedium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate and adjust\npH to 6.0 - 6.5, then dispense medium under 100% CO2 gas atmosphere into anoxic\nHungate-type tubes or serum vials and autoclave. Add pyruvate, yeast extract and\nvitamins from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere.\nStock solutions of pyruvate and vitamins are sterilized by filtration. After completing the\nmedium adjust pH to 6.5 with a sterile anoxic stock solution of 1 N NaOH.","quote_basis":"derivative text"}]},{"quantity_id":"q34","label":"Retained main preparation","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve ingredients except carbonate, pyruvate, yeast extract, and vitamins, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate and adjust pH to 6.0 - 6.5, then dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, yeast extract and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Stock solutions of pyruvate and vitamins are sterilized by filtration. After completing the medium adjust pH to 6.5 with a sterile anoxic stock solution of 1 N NaOH."},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve ingredients except carbonate, pyruvate, yeast extract, and vitamins, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate and adjust pH to 6.0 - 6.5, then dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, yeast extract and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Stock solutions of pyruvate and vitamins are sterilized by filtration. After completing the medium adjust pH to 6.5 with a sterile anoxic stock solution of 1 N NaOH."}],"decision":"evidence_only","rationale":"Credit the complete retained gas stages, 30–45 minute sparging, intermediate and final pH, late stocks, filtration and 1 N NaOH adjustment. No unprinted dose, autoclave time or temperature is inferred.","source_stage":"main preparation","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 15-21","quote":"Dissolve ingredients except carbonate, pyruvate, yeast extract, and vitamins, then sparge\nmedium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate and adjust\npH to 6.0 - 6.5, then dispense medium under 100% CO2 gas atmosphere into anoxic\nHungate-type tubes or serum vials and autoclave. Add pyruvate, yeast extract and\nvitamins from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere.\nStock solutions of pyruvate and vitamins are sterilized by filtration. After completing the\nmedium adjust pH to 6.5 with a sterile anoxic stock solution of 1 N NaOH.","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\": \"Dissolve ingredients except carbonate, pyruvate, yeast extract, and vitamins, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate and adjust pH to 6.0 - 6.5, then dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, yeast extract and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Stock solutions of pyruvate and vitamins are sterilized by filtration. After completing the medium adjust pH to 6.5 with a sterile anoxic stock solution of 1 N NaOH.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"Retained SL-4 preparation","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"preparation_steps[1].description","stored":"First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds."}],"decision":"correct","rationale":"The pH 7.0 adjustment with 2 N NaOH and dissolution order are supported but belong to SL-4. Preserve the wording and move its scope with the stock; this is not a main-medium pH instruction.","source_stage":"stock preparation","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt lines 38-39","quote":"First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other\ncompounds.","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\": \"First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"Provider volumes","local_fields":[],"decision":"evidence_only","rationale":"The API declares main volume 1011 mL and stock volumes 1000 mL; these explain its normalized rates. They are provider bookkeeping, not independent measurements of final volume.","source_stage":"source normalization","sources":[{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"$.data.solutions[0].volume","quote":"\"volume\": 1011","quote_basis":"raw UTF-8"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"$.data.solutions[1].volume and [2].volume","quote":"\"volume\": 1000","quote_basis":"raw UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml":null},"scope":"Every selected target/owner concentration plus explicit dependency fields; source-only rows/conditions and unchanged claims distinguished. Excluded parent quantities are not transferred."}
+
+### Supplied forms and current ontology/MIM scope
+
+grounding: concern. Targets: CultureMech:001641.
+
+Every asserted CHEBI primary and secondary slot is joined to a fresh exact OLS object and the packaged current MIM rows. Nickel has a confirmed hydrate mismatch affecting both slots. Calcium D-pantothenate agrees with the D-configured31345 object but lacks its secondary link. Source Na2-EDTA has no hydrate qualifier, so anhydrous specificity is not independently established; generic biotin wording does not itself resolve stereochemistry. DL lipoic acid remains compatible with the non-stereospecific ontology object rather than a newly inferred pure enantiomer.
+
+### Existing repair credit and writer limits
+
+provenance: supported. Targets: CultureMech:001641.
+
+All four exact historical reports and all current histories were read. The October report left topology conflicts unchanged; its34 quoted objects match the freshly captured exact API. The September final-volume and101/1011-fold dilution claims are not adopted: API1011 is a declared normalization and water alone is not final-volume proof. Current importer stock separation and conservative merger behavior receive credit; historical execution is not inferred from current code. No existing concentration snippet is attached to the current target/owner.
+
+## Findings
+
+### f1: Nineteen stock components are flattened into the main medium
+
+major / open / confirmed; issue key: culturemech-001641-stock-boundary.
+
+Both target and maintained owner place all nine SL-4 and ten Wolin vitamin components directly in ingredients and omit the two receiving stock additions. Restore the exact two stock identities and batch additions, retaining their declared stock quantities and separate main rates. Re-scope the supported second preparation step to SL-4. Do not derive final-medium stock concentrations from input water alone.
+
+### f2: Main solvent input and claim-level amount evidence are absent
+
+major / open / confirmed; issue key: culturemech-001641-solvent-and-evidence.
+
+The primary lists 1000 mL main water and the API reports a main volume of 1011 mL. Preserve the water input as a batch volume, not a mass concentration or volume percentage. Attach exact amount/unit/stage evidence for every retained main and stock quantity. Current MediaDive code separates primary and stock recipes but deliberately skips water in ingredients; a rerun alone does not restore a complete solvent basis.
+
+### f3: Nickel hexahydrate is linked to anhydrous nickel dichloride
+
+major / open / confirmed; issue key: culturemech-001641-nickel-hydrate.
+
+The supplied name and source specify NiCl2·6H2O, but primary and secondary CHEBI:34887 describe anhydrous NiCl2. Fresh CHEBI:53542 explicitly identifies the hexahydrate candidate. Correct both actual asserted slots after source-form review, independently of the stock-stage repair.
+
+### f4: The calcium pantothenate descriptor lacks its secondary linkage
+
+minor / open / confirmed; issue key: culturemech-001641-pantothenate-secondary.
+
+The calcium D-(+)-pantothenate primary CHEBI:31345 is compatible with its current D-configured ontology object and source. Its secondary MIM slot is absent while the packaged index contains the exact current key. Assess and add that linkage without treating all preferred-name matches as proof of chemical form.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Both target and maintained owner place all nine SL-4 and ten Wolin vitamin components directly in ingredients and omit the two receiving stock additions. Restore the exact two stock identities and batch additions, retaining their declared stock quantities and separate main rates. Re-scope the supported second preparation step to SL-4. Do not derive final-medium stock concentrations from input water alone.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a2
+
+The primary lists 1000 mL main water and the API reports a main volume of 1011 mL. Preserve the water input as a batch volume, not a mass concentration or volume percentage. Attach exact amount/unit/stage evidence for every retained main and stock quantity. Current MediaDive code separates primary and stock recipes but deliberately skips water in ingredients; a rerun alone does not restore a complete solvent basis.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a3
+
+The supplied name and source specify NiCl2·6H2O, but primary and secondary CHEBI:34887 describe anhydrous NiCl2. Fresh CHEBI:53542 explicitly identifies the hexahydrate candidate. Correct both actual asserted slots after source-form review, independently of the stock-stage repair.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+### a4
+
+The calcium D-(+)-pantothenate primary CHEBI:31345 is compatible with its current D-configured ontology object and source. Its secondary MIM slot is absent while the packaged index contains the exact current key. Assess and add that linkage without treating all preferred-name matches as proof of chemical form.
+
+- Curate only named maintained fields after exact source-stage reconciliation; retain prior history and append a new actual curation event.
+- Attach literal source evidence; preserve uncertainty about final volume, unspecified hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+- Regenerate the selected target using current conservative merge workflow, check freshness and rerun schema, strict, terms and reference diagnostics.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| dsm507b | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf; REVIEW_WORK/batch059/source07-09/dsm507b.json; exact original raw/text/hash/time metadata | context_only | Exact primary medium and its printed stock/preparation subsections; named strain variations remain separate and do not establish generic growth. |
+| api507b | https://mediadive.dsmz.de/rest/medium/507b; REVIEW_WORK/batch059/source07-09/api507b.json; exact original raw/text/hash/time metadata | context_only | Exact current provider identity and declared amounts/basis; provider volume is not independently measured final volume. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887; REVIEW_WORK/batch059/source07-09/chebi34887.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi53542 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542; REVIEW_WORK/batch059/source07-09/chebi53542.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi64734 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:64734; REVIEW_WORK/batch059/source07-09/chebi64734.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi15956 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956; REVIEW_WORK/batch059/source07-09/chebi15956.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi31345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345; REVIEW_WORK/batch059/source07-09/chebi31345.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi16494 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494; REVIEW_WORK/batch059/source07-09/chebi16494.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| target | data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml; Complete file | context_only | Complete generated target. |
+| owner | data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml; Complete file | context_only | Complete exact maintained owner. |
+| mim | src/culturemech/data/mediaingredientmech/label_index.csv; Complete file | context_only | Exact packaged current identifier/ontology_id and preferred-term rows. |
+| mim-meta | src/culturemech/data/mediaingredientmech/label_index.metadata.json; Complete file | context_only | Exact packaged snapshot version and checksum. |
+| writer-formulation | src/culturemech/merge/formulation.py; Full formulation comparison | context_only | Current scientific-field equality includes quantities, stocks and notes; no chemical equivalence is inferred. |
+| writer-merger | src/culturemech/merge/merger.py; RecipeMerger.merge_group | context_only | Current merge_group copies singletons and rejects incompatible multiple formulations. Generated staleness is not evidence that current code permits ingredient-only merging. |
+| report-16 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json; Exact selected row locators in historical-selected-parent-rows.json | context_only | Historical repository parent; only exact selected record objects are joined. Decoded data is not itself original external raw evidence. |
+| report-17 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/carboxydocella_manganica_medium.yaml.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-18 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-19 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/carboxydocella_manganica_medium.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| report-20 | reports/yaml_record_review/20260922T034655Z-CARBOXYDOCELLA_MANGANICA_MEDIUM.md; Complete report | context_only | Prior exact-header assessment; old source/check claims are not newly executed. |
+| writer-mediadive | src/culturemech/import/mediadive_importer.py; _parse_api_composition, _is_api_stock_addition, _parse_api_solutions, _normalize_unit | context_only | Current parser reads only the primary recipe, separates referenced solutions and percentage/ml additions, and preserves their source attributes. It prefers explicit g_l but otherwise maps bare mass/volume units to per-litre schema units. This credits existing stage handling without certifying a source final volume or historical execution. |
+| writer-cleanup | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current duplicate cleanup collapses identical values but flags conflicting values without summing. Earlier sums require source-stage curation; do not rerun cleanup as a substitute for scientific reconciliation. |
+| historical-reading | REVIEW_WORK/batch059/record07/historical-reading.json; Complete report cell pool and exact current-source object joins | context_only | Complete report text read through exact duplicate pooling; old conclusions separately assessed. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588; REVIEW_WORK/batch059/source07-09/chebi32588.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345; REVIEW_WORK/batch059/source07-09/chebi86345.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158; REVIEW_WORK/batch059/source07-09/chebi86158.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206; REVIEW_WORK/batch059/source07-09/chebi31206.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036; REVIEW_WORK/batch059/source07-09/chebi63036.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377; REVIEW_WORK/batch059/source07-09/chebi29377.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi50144 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:50144; REVIEW_WORK/batch059/source07-09/chebi50144.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75836; REVIEW_WORK/batch059/source07-09/chebi75836.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32312; REVIEW_WORK/batch059/source07-09/chebi32312.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86368 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368; REVIEW_WORK/batch059/source07-09/chebi86368.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118; REVIEW_WORK/batch059/source07-09/chebi33118.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi53503 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503; REVIEW_WORK/batch059/source07-09/chebi53503.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi86318 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318; REVIEW_WORK/batch059/source07-09/chebi86318.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213; REVIEW_WORK/batch059/source07-09/chebi75213.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi27470 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470; REVIEW_WORK/batch059/source07-09/chebi27470.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi30961 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961; REVIEW_WORK/batch059/source07-09/chebi30961.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi49105 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105; REVIEW_WORK/batch059/source07-09/chebi49105.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi17015 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015; REVIEW_WORK/batch059/source07-09/chebi17015.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi15940 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940; REVIEW_WORK/batch059/source07-09/chebi15940.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi176843 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843; REVIEW_WORK/batch059/source07-09/chebi176843.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| chebi30753 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753; REVIEW_WORK/batch059/source07-09/chebi30753.json; exact original raw/text/hash/time metadata | context_only | Exact ontology ID/label/definition/formula; neither recipe amounts nor growth support. |
+| quantities | REVIEW_WORK/batch059/record07/quantity-inventory.json; Complete sidecar | supports | Complete source-stage quantity decisions. |
+| groundings | REVIEW_WORK/batch059/record07/grounding-inventory.json; Complete sidecar | supports | Exact slots, raw OLS scientific objects and current MIM rows. |
+| census | REVIEW_WORK/batch059/record07/field-census.json; Complete sidecar | supports | Complete scalar census with explicit dependency exclusions. |
+| numeric-census | REVIEW_WORK/batch059/record07/numeric-field-census.json; Complete sidecar | supports | Numeric/text assertions and quantity joins. |
+| history | REVIEW_WORK/batch059/record07/history-inventory.json; Complete sidecar | supports | Current exact histories, without replay. |
+| old-reports | REVIEW_WORK/batch059/record07/history-report-inventory.json; Complete sidecar | supports | Exact historical report scopes. |
+| old-claims | REVIEW_WORK/batch059/record07/existing-claim-authentication.json; Complete sidecar | supports | Existing literal and raw-digest matches; current content authentication is separate from original retrieval provenance. |
+| check-schema | REVIEW_WORK/batch059/record07/schema-result.json | supports | Original once-only canonical schema with complete argv/time/streams; reference count zero does not verify sources. |
+| check-strict | REVIEW_WORK/batch059/record07/strict-result.json | supports | Original once-only canonical strict with complete argv/time/streams; reference count zero does not verify sources. |
+| check-terms | REVIEW_WORK/batch059/record07/terms-result.json | supports | Original once-only canonical terms with complete argv/time/streams; reference count zero does not verify sources. |
+| check-references | REVIEW_WORK/batch059/record07/references-result.json | supports | Original once-only canonical references with complete argv/time/streams; reference count zero does not verify sources. |
+
+## Limits And Additional Notes
+
+- Current canonical checks validate encoded structure/labels; zero reference checks do not verify external source claims.
+- All primary PDF pages were read visually as well as in their complete extracted text. Current source status, retrieval times and complete raw/text bytes remain in the capture catalog.
+- Standalone SL-4 and Wolin records mentioned by the old report are not selected owners or separately assessed dependency records in this review; no uninspected current standalone defect is asserted.
+- SL-4 has no explicit final-makeup instruction in the inspected507b source. Provider mmol_l values are retained without endorsement; nickel/cobalt annotations do not certify hydrate-aware molar conversion.
+- No strain-growth claim, optimization or experimental recommendation is inferred from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed only on their declared normalization basis; unspecified percent bases and hydrate numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was performed by this author.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T065506Z-culturemech-001641-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Scientific review: CARBOXYDOCELLA MANGANICA MEDIUM'
+started_at: '2026-10-28T06:50:36.686217Z'
+finished_at: '2026-10-28T06:55:06.870159Z'
+reviewer:
+  identity: Codex tsb_source_check
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Read-only independent review of maintained source records, fresh
+    sources and original diagnostics.
+skill: review-yaml-record
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Exact507b identity and retained preparation are supported. Nineteen stock
+  components remain flattened, receiving additions and water input are absent, and
+  claim-level evidence plus nickel hydrate and pantothenate secondary linkage need
+  curation.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml
+    sha256: 92d30506b8fdf681fb6ae9a776db127305f7d3cd013d4b0fbdcd0af0343be350
+    role: target
+  - path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    sha256: 1dc6f18c3fdd88e9c6cdba21d550c9261fd4b56018acac6e6d29da9c3eeff248
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/carboxydocella_manganica_medium.yaml.md
+    sha256: c6b831183d722837597185de8dbb831b6c108fb32089d8ab133e1a1ef0fd91b4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.md
+    sha256: ab4680cc35e0e5b01c01f18310e2d8242a56eec6ad2248bfb936411b0a7e42af
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/carboxydocella_manganica_medium.md
+    sha256: 550e9cb98b9299fbb55d6e4571587c36943d34a6fba2aa6783a87eefddc28f7b
+    role: context
+  - path: reports/yaml_record_review/20260922T034655Z-CARBOXYDOCELLA_MANGANICA_MEDIUM.md
+    sha256: 901ff56ba505f5131022332e1eb13d6f5ae9cb2c8225cdcd2453a9d28bbe4c51
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/remove_invalid_chebi_ids.py
+    sha256: a6c2f7577812081230fd5fe008182c09eace4ef7818857f8026ec8d5e0b760e0
+    role: context
+  - path: scripts/repair_komodo_507_carboxydothermus_score10.py
+    sha256: d33ce935e5f4621b68f2e8c3e351b4d0ec7e63caccc73918d5e43a38d7161582
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Whole exact target/owner with explicit scoped dependencies, current
+    sources and historical claims.
+  selection: Authoritative batch059 index 07
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001641
+targets:
+- target_id: CultureMech:001641
+  path: data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml
+  label: carboxydocella_manganica_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+  ownership_note: Exact declared maintained contributors resolved against stable identity;
+    stocks and other source variants remain scoped comparisons.
+checks:
+- check_id: schema
+  name: Canonical schema
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001641
+  command: just validate-schema data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-schema
+- check_id: strict
+  name: Canonical strict
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001641
+  command: just validate-strict data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml
+    --out REVIEW_WORK/batch059/record07/strict.tsv --workers 1 --quiet
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-strict
+- check_id: terms
+  name: Canonical terms
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001641
+  command: just validate-terms data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-terms
+- check_id: references
+  name: Canonical references
+  status: passed
+  required: true
+  summary: Actual exit 0; full original streams retained.
+  target_ids:
+  - CultureMech:001641
+  command: just validate-references data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - check-references
+evidence:
+- evidence_id: dsm507b
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf
+  accessed_at: '2026-10-28T06:51:39.602242Z'
+  locator: REVIEW_WORK/batch059/source07-09/dsm507b.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact primary medium and its printed stock/preparation subsections; named
+    strain variations remain separate and do not establish generic growth.
+  snapshot_sha256: 9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b
+- evidence_id: api507b
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/507b
+  accessed_at: '2026-10-28T06:51:39.817261Z'
+  locator: REVIEW_WORK/batch059/source07-09/api507b.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact current provider identity and declared amounts/basis; provider volume
+    is not independently measured final volume.
+  snapshot_sha256: 810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:34887
+  accessed_at: '2026-10-28T06:51:42.869820Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi34887.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 3a37ef35991d24faf578286a7d7557ee1b0646c286dd3f8a555d833e6bf82a57
+- evidence_id: chebi53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53542
+  accessed_at: '2026-10-28T06:51:43.468678Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi53542.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 1e44a068cfe6b98d7bb3b0240ffdc0611e1be59f2d3dab9f04e4162ed94e4444
+- evidence_id: chebi64734
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:64734
+  accessed_at: '2026-10-28T06:51:43.579559Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi64734.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 4afcce140f81023fe7e21d1081a51e76eb83b0d89e158079ef5be695df2388ec
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15956
+  accessed_at: '2026-10-28T06:51:41.086967Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi15956.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 5135a39e8b52c878896db22443f00507125db80e5ce4bb1dcc97914b9bdd7316
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31345
+  accessed_at: '2026-10-28T06:51:42.245938Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi31345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: c3341e7cf8a7ea0768d505265376c1514f161c9048b6e878314e204341d702eb
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:16494
+  accessed_at: '2026-10-28T06:51:40.953073Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi16494.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 192c51f672f633c6071a3397d5785fb2bca6eaf8f9b787f7aaaa6c2aeb3b1a2f
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T06:55:06.709485Z'
+  support: context_only
+  summary: Complete generated target.
+  snapshot_sha256: 92d30506b8fdf681fb6ae9a776db127305f7d3cd013d4b0fbdcd0af0343be350
+- evidence_id: owner
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+  locator: Complete file
+  accessed_at: '2026-10-28T06:55:06.709662Z'
+  support: context_only
+  summary: Complete exact maintained owner.
+  snapshot_sha256: 1dc6f18c3fdd88e9c6cdba21d550c9261fd4b56018acac6e6d29da9c3eeff248
+- evidence_id: mim
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  locator: Complete file
+  accessed_at: '2026-10-28T06:55:06.709694Z'
+  support: context_only
+  summary: Exact packaged current identifier/ontology_id and preferred-term rows.
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-meta
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  locator: Complete file
+  accessed_at: '2026-10-28T06:55:06.710007Z'
+  support: context_only
+  summary: Exact packaged snapshot version and checksum.
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: Full formulation comparison
+  accessed_at: '2026-10-28T06:55:06.710030Z'
+  support: context_only
+  summary: Current scientific-field equality includes quantities, stocks and notes;
+    no chemical equivalence is inferred.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-merger
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: RecipeMerger.merge_group
+  accessed_at: '2026-10-28T06:55:06.710056Z'
+  support: context_only
+  summary: Current merge_group copies singletons and rejects incompatible multiple
+    formulations. Generated staleness is not evidence that current code permits ingredient-only
+    merging.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: report-16
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+  locator: Exact selected row locators in historical-selected-parent-rows.json
+  accessed_at: '2026-10-28T06:55:06.710080Z'
+  support: context_only
+  summary: Historical repository parent; only exact selected record objects are joined.
+    Decoded data is not itself original external raw evidence.
+  snapshot_sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+- evidence_id: report-17
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/carboxydocella_manganica_medium.yaml.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:55:06.716217Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: c6b831183d722837597185de8dbb831b6c108fb32089d8ab133e1a1ef0fd91b4
+- evidence_id: report-18
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:55:06.716293Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: ab4680cc35e0e5b01c01f18310e2d8242a56eec6ad2248bfb936411b0a7e42af
+- evidence_id: report-19
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/carboxydocella_manganica_medium.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:55:06.716321Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 550e9cb98b9299fbb55d6e4571587c36943d34a6fba2aa6783a87eefddc28f7b
+- evidence_id: report-20
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T034655Z-CARBOXYDOCELLA_MANGANICA_MEDIUM.md
+  locator: Complete report
+  accessed_at: '2026-10-28T06:55:06.716345Z'
+  support: context_only
+  summary: Prior exact-header assessment; old source/check claims are not newly executed.
+  snapshot_sha256: 901ff56ba505f5131022332e1eb13d6f5ae9cb2c8225cdcd2453a9d28bbe4c51
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _is_api_stock_addition, _parse_api_solutions, _normalize_unit
+  accessed_at: '2026-10-28T06:55:06.716369Z'
+  support: context_only
+  summary: Current parser reads only the primary recipe, separates referenced solutions
+    and percentage/ml additions, and preserves their source attributes. It prefers
+    explicit g_l but otherwise maps bare mass/volume units to per-litre schema units.
+    This credits existing stage handling without certifying a source final volume
+    or historical execution.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T06:55:06.716401Z'
+  support: context_only
+  summary: Current duplicate cleanup collapses identical values but flags conflicting
+    values without summing. Earlier sums require source-stage curation; do not rerun
+    cleanup as a substitute for scientific reconciliation.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: historical-reading
+  kind: prior_review
+  reference: REVIEW_WORK/batch059/record07/historical-reading.json
+  locator: Complete report cell pool and exact current-source object joins
+  accessed_at: '2026-10-28T06:55:06.776049Z'
+  support: context_only
+  summary: Complete report text read through exact duplicate pooling; old conclusions
+    separately assessed.
+  snapshot_sha256: 171f338588c13f162f83f37b880b6ef6f9ba3437cb3f252bff574beefe6cfa44
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32588
+  accessed_at: '2026-10-28T06:51:42.616651Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi32588.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 9494b26ad5d3ce43942c3e859cdefe4114e111b1d45328c0cd5faf3b75faec00
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86345
+  accessed_at: '2026-10-28T06:51:44.702578Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi86345.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 94b600ced6e98743e2d1b02c73e1756f8f81b639407a8fdd080c96d8fa563c70
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86158
+  accessed_at: '2026-10-28T06:51:44.192971Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi86158.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: eacf58308fa876cb17661b82d08a64d9be24814fde8014ac82da7696b3684841
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:31206
+  accessed_at: '2026-10-28T06:51:42.216507Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi31206.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 645112dbfa7f1c565489070586f5d4018429259ff0400500ca10dfe6e43a5449
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:63036
+  accessed_at: '2026-10-28T06:51:43.517218Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi63036.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 07dec38373731d2125348c574d0f9f2df977e458974100383d3f69c8849a84e0
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:29377
+  accessed_at: '2026-10-28T06:51:41.610244Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi29377.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: e0c2a85ab7be9313c564f96ee47b87e1bf3e01ad1e9fd627d1dbddced5d068c4
+- evidence_id: chebi50144
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:50144
+  accessed_at: '2026-10-28T06:51:43.211583Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi50144.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 55d173a8545b2fc57dea3f3a4b07b9052f0bbd86f9a3e9d5b0b7b5a08b9c0162
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75836
+  accessed_at: '2026-10-28T06:51:44.192791Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi75836.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: ab9922083bab0fb07df977855094d11fe3a5ca1f14bc6bddd10dc80ad9055569
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:32312
+  accessed_at: '2026-10-28T06:51:42.325517Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi32312.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 19bbc18dfc582e76457c6f08d51bb777a2f7a2cbd2f810cb3b58bdb0004b4d60
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86368
+  accessed_at: '2026-10-28T06:51:44.859904Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi86368.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 2d5685a4a03c5d730876514b4a7664fb477f63682a60cc7e13d7776a250f68e3
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:33118
+  accessed_at: '2026-10-28T06:51:42.837479Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi33118.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: eef160dcdcd93f231064bc7b59da1e05a2efe1f96089b9cd2fdbdf68a9a4e5fc
+- evidence_id: chebi53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:53503
+  accessed_at: '2026-10-28T06:51:43.468865Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi53503.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: a626d2aa210aafd9572221d4893cd206310d5df507e474e1528997048f522250
+- evidence_id: chebi86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:86318
+  accessed_at: '2026-10-28T06:51:44.725430Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi86318.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: bd88e1499f370a9f474b29fa7a9a83aa5c42c69d0b6772ece8c89d646dfda8d8
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:75213
+  accessed_at: '2026-10-28T06:51:44.103080Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi75213.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: f99a2d8b28ac44913a666745dd70098c5d5f21c9513fee921a35f0fd18f2c445
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:27470
+  accessed_at: '2026-10-28T06:51:41.647007Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi27470.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: e1820a7a704794fa20995eea5037e03c2b22b847817c28bb2f45f80762c275d1
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30961
+  accessed_at: '2026-10-28T06:51:42.015654Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi30961.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 855ea2cf0e89d25ab4a560ab1c2dab6ac861d215bc5473cb4d3a0a2d4cdff438
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:49105
+  accessed_at: '2026-10-28T06:51:42.911648Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi49105.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: f9dbae8cd2dcbd38d914abb99730e341ff280d3a44f20f95b2663e47664780cf
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:17015
+  accessed_at: '2026-10-28T06:51:41.015362Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi17015.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 17f7ac7c03d75b85a96f951321902906266f3ce8fa44faea4814fac46560e3e6
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:15940
+  accessed_at: '2026-10-28T06:51:40.977277Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi15940.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: c291a1c1bb0d6af05ac4005af0957534f430db47e7df9cec874f8a94d961dba1
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:176843
+  accessed_at: '2026-10-28T06:51:41.413603Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi176843.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 9c73ea31864abce6b9ed6328e9ed491bc1cad2ba27f40adb5c00f0f192838e63
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?obo_id=CHEBI:30753
+  accessed_at: '2026-10-28T06:51:41.732561Z'
+  locator: REVIEW_WORK/batch059/source07-09/chebi30753.json; exact original raw/text/hash/time
+    metadata
+  support: context_only
+  summary: Exact ontology ID/label/definition/formula; neither recipe amounts nor
+    growth support.
+  snapshot_sha256: 1340e054634ce960494b9388f6e3fd231d9e7d66969c3c11932ee2058171fd2c
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record07/quantity-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:55:06.869132Z'
+  support: supports
+  summary: Complete source-stage quantity decisions.
+  snapshot_sha256: 02fc190b2064a2630267ee4de3d68aac9c9266ac2f57e83bc2e17add36bf7fa4
+- evidence_id: groundings
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record07/grounding-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:55:06.869211Z'
+  support: supports
+  summary: Exact slots, raw OLS scientific objects and current MIM rows.
+  snapshot_sha256: 2dfde4b3f3604e80a8efa182f1a6f775ba0d1f6123ea5386e9f1e86f62717fa8
+- evidence_id: census
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record07/field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:55:06.869350Z'
+  support: supports
+  summary: Complete scalar census with explicit dependency exclusions.
+  snapshot_sha256: ea02ab4ef4e6631ca807c62b1af43d8c35e399b3f18bcbe05de7059cc90201d0
+- evidence_id: numeric-census
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record07/numeric-field-census.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:55:06.869418Z'
+  support: supports
+  summary: Numeric/text assertions and quantity joins.
+  snapshot_sha256: 27bd6780910734f83b3f7a5910e658beb9a514d10d294f599b328b019a3ffab5
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record07/history-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:55:06.869483Z'
+  support: supports
+  summary: Current exact histories, without replay.
+  snapshot_sha256: 6d695decae2a14abb8a8b4704f8f01afb85e198e783fc6713bb6150cee4773ac
+- evidence_id: old-reports
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record07/history-report-inventory.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:55:06.869516Z'
+  support: supports
+  summary: Exact historical report scopes.
+  snapshot_sha256: 2fe276e7bbc2fe09e36e25e2da1f9080d866b7cfae2e558e04fbed83bfa75978
+- evidence_id: old-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record07/existing-claim-authentication.json
+  locator: Complete sidecar
+  accessed_at: '2026-10-28T06:55:06.869546Z'
+  support: supports
+  summary: Existing literal and raw-digest matches; current content authentication
+    is separate from original retrieval provenance.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: check-schema
+  kind: validation
+  reference: REVIEW_WORK/batch059/record07/schema-result.json
+  accessed_at: '2026-10-28T06:50:37.764931Z'
+  support: supports
+  summary: Original once-only canonical schema with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: ad08447afc082a85580f6311352c39add55a729d06c6440133e875a0ae0aea6d
+- evidence_id: check-strict
+  kind: validation
+  reference: REVIEW_WORK/batch059/record07/strict-result.json
+  accessed_at: '2026-10-28T06:50:38.685942Z'
+  support: supports
+  summary: Original once-only canonical strict with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: e6e7bbac4e4a83fb50a4756842b7ec09a3c3ea8ec2022e8d559cf69dd1a695ee
+- evidence_id: check-terms
+  kind: validation
+  reference: REVIEW_WORK/batch059/record07/terms-result.json
+  accessed_at: '2026-10-28T06:50:39.694421Z'
+  support: supports
+  summary: Original once-only canonical terms with complete argv/time/streams; reference
+    count zero does not verify sources.
+  snapshot_sha256: 2450a43278c9f2c69af5501da54726f737fc4eee5fa9a7ab6412bbfafce2cf2a
+- evidence_id: check-references
+  kind: validation
+  reference: REVIEW_WORK/batch059/record07/references-result.json
+  accessed_at: '2026-10-28T06:50:40.414095Z'
+  support: supports
+  summary: Original once-only canonical references with complete argv/time/streams;
+    reference count zero does not verify sources.
+  snapshot_sha256: d7f093b81caf5cd2903576eb6cb8bad9a0579ea8140b3d8d45e3cae1ba2d0b4a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact DSMZ507b identity
+  outcome: supported
+  summary: The generated target and its one maintained owner agree on identity and
+    complete scientific fields. Fresh PDF/API are specifically507b; neither507 nor507a
+    is substituted.
+  target_ids:
+  - CultureMech:001641
+  evidence_ids:
+  - dsm507b
+  - api507b
+  - target
+  - owner
+- assessment_id: classification
+  area: representation
+  topic: Retained classification and preparation
+  outcome: supported
+  summary: The source supports complex semi-defined liquid classification with yeast
+    extract and named chemicals. Existing pH and full main preparation receive credit;
+    no organism growth is inferred from the medium title.
+  target_ids:
+  - CultureMech:001641
+  evidence_ids:
+  - dsm507b
+  - target
+  - owner
+- assessment_id: quantities
+  area: quantity
+  topic: Complete amounts, units and preparation stages
+  outcome: concern
+  summary: 54 current concentration fields are covered by 36 decisions, including
+    unchanged support and explicit source-only conditions.
+  target_ids:
+  - CultureMech:001641
+  evidence_ids:
+  - quantities
+  - numeric-census
+  details: '{"schema":"fresh-b059-quantity-inventory-v1","target":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","quantity_field_count":54,"decisions":[{"quantity_id":"q1","label":"KCl","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[0].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current API explicitly reports this g_l on its declared 1011 mL basis, matching
+    the encoded rate. The PDF independently supports the batch mass. Attach exact
+    source evidence without calling the provider volume a measured final volume or
+    replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 3-3","quote":"KCl                                                      0.33        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.33,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\":
+    4.3784,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q2","label":"MgCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.514342","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[1].concentration","stored":{"value":"0.514342","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current API explicitly reports this g_l on its declared 1011 mL basis, matching
+    the encoded rate. The PDF independently supports the batch mass. Attach exact
+    source evidence without calling the provider volume a measured final volume or
+    replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 4-4","quote":"MgCl2 x 6 H2O                                            0.52        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 0.52,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.514342,\n                        \"mmol_l\":
+    2.52993,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q3","label":"CaCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.286845","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[2].concentration","stored":{"value":"0.286845","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current API explicitly reports this g_l on its declared 1011 mL basis, matching
+    the encoded rate. The PDF independently supports the batch mass. Attach exact
+    source evidence without calling the provider volume a measured final volume or
+    replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 5-5","quote":"CaCl2 x 2 H2O                                            0.29        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.29,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.286845,\n                        \"mmol_l\":
+    1.95113,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q4","label":"NH4Cl","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[3].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current API explicitly reports this g_l on its declared 1011 mL basis, matching
+    the encoded rate. The PDF independently supports the batch mass. Attach exact
+    source evidence without calling the provider volume a measured final volume or
+    replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 6-6","quote":"NH4Cl                                                    0.33        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 0.33,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\":
+    6.10225,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q5","label":"KH2PO4","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[4].concentration","stored":{"value":"0.326409","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current API explicitly reports this g_l on its declared 1011 mL basis, matching
+    the encoded rate. The PDF independently supports the batch mass. Attach exact
+    source evidence without calling the provider volume a measured final volume or
+    replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 7-7","quote":"KH2PO4                                                   0.33        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.33,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.326409,\n                        \"mmol_l\":
+    2.39857,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q6","label":"Na2CO3","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.4728","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[5].concentration","stored":{"value":"2.4728","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current API explicitly reports this g_l on its declared 1011 mL basis, matching
+    the encoded rate. The PDF independently supports the batch mass. Attach exact
+    source evidence without calling the provider volume a measured final volume or
+    replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 9-9","quote":"Na2CO3                                                   2.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[6]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 2.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 2.4728,\n                        \"mmol_l\":
+    23.3309,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q7","label":"Na-pyruvate","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.98912","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[6].concentration","stored":{"value":"0.98912","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current API explicitly reports this g_l on its declared 1011 mL basis, matching
+    the encoded rate. The PDF independently supports the batch mass. Attach exact
+    source evidence without calling the provider volume a measured final volume or
+    replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 10-10","quote":"Na-pyruvate                                              1.00        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[7]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na-pyruvate\",\n                        \"compound_id\":
+    113,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.98912,\n                        \"mmol_l\":
+    8.9884,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q8","label":"Yeast extract","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.197824","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[7].concentration","stored":{"value":"0.197824","unit":"G_PER_L"}}],"decision":"evidence_only","rationale":"The
+    current API explicitly reports this g_l on its declared 1011 mL basis, matching
+    the encoded rate. The PDF independently supports the batch mass. Attach exact
+    source evidence without calling the provider volume a measured final volume or
+    replacing the rate by an assumed nominal-litre value.","source_stage":"provider-declared
+    main-solution rate","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 11-11","quote":"Yeast extract                                            0.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[8]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.197824,\n                        \"optional\":
+    0\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q9","label":"Na2-EDTA","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.5","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[8].concentration","stored":{"value":"0.5","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 27-27","quote":"Na2-EDTA                                                 0.50        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Na2-EDTA\",\n                        \"compound_id\":
+    34,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    1.48718,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q10","label":"FeSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[9].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 28-28","quote":"FeSO4 x 7 H2O                                            0.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    0.719386,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q11","label":"ZnSO4 x 7 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[10].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 29-29","quote":"ZnSO4 x 7 H2O                                            0.10        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.347752,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q12","label":"MnCl2 x 4 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.03","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[11].concentration","stored":{"value":"0.03","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 30-30","quote":"MnCl2 x 4 H2O                                            0.03        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"MnCl2 x 4 H2O\",\n                        \"compound_id\":
+    36,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.151588,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q13","label":"H3BO3","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.3","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[12].concentration","stored":{"value":"0.3","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 31-31","quote":"H3BO3                                                    0.30        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.3,\n                        \"mmol_l\":
+    4.85123,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q14","label":"CoCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.2","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[13].concentration","stored":{"value":"0.2","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 32-32","quote":"CoCl2 x 6 H2O                                            0.20        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoCl2 x 6 H2O\",\n                        \"compound_id\":
+    38,\n                        \"amount\": 0.2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.2,\n                        \"mmol_l\":
+    1.54037,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q15","label":"CuCl2 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.01","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[14].concentration","stored":{"value":"0.01","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 33-33","quote":"CuCl2 x 2 H2O                                            0.01        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CuCl2 x 2 H2O\",\n                        \"compound_id\":
+    39,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0586569,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q16","label":"NiCl2 x 6 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[15].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 34-34","quote":"NiCl2 x 6 H2O                                            0.02        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 0.02,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.154322,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q17","label":"Na2MoO4 x 2 H2O","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.03","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[16].concentration","stored":{"value":"0.03","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"SL-4
+    stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 35-35","quote":"Na2MoO4 x 2 H2O                                          0.03        g","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.123993,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q18","label":"Biotin","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[17].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 44-44","quote":"Biotin                                                  20.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[0]","quote":"{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Biotin\",\n                        \"compound_id\":
+    46,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0818632,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q19","label":"Folic acid","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.02","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[18].concentration","stored":{"value":"0.02","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 45-45","quote":"Folic acid                                              20.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[1]","quote":"{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"Folic acid\",\n                        \"compound_id\":
+    138,\n                        \"amount\": 20,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0453104,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q20","label":"Pyridoxine hydrochloride","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.1","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[19].concentration","stored":{"value":"0.1","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 46-46","quote":"Pyridoxine hydrochloride                               100.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[2]","quote":"{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"Pyridoxine hydrochloride\",\n                        \"compound_id\":
+    519,\n                        \"amount\": 100,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.486287,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q21","label":"Thiamine HCl","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[20].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 47-47","quote":"Thiamine HCl                                            50.00      mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[3]","quote":"{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"Thiamine HCl\",\n                        \"compound_id\":
+    1207,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.148236,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q22","label":"Riboflavin","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[21].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 56-56","quote":"Riboflavin                             50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[4]","quote":"{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"Riboflavin\",\n                        \"compound_id\":
+    136,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.132837,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q23","label":"Nicotinic acid","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[22].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 57-57","quote":"Nicotinic acid                         50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"Nicotinic acid\",\n                        \"compound_id\":
+    139,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.406141,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q24","label":"Calcium D-(+)-pantothenate","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[23].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 58-58","quote":"Calcium D-(+)-pantothenate             50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[6]","quote":"{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\":
+    1512,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.209846,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q25","label":"Vitamin B12","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.001","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[24].concentration","stored":{"value":"0.001","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 59-59","quote":"Vitamin B12                             1.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[7]","quote":"{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"Vitamin B12\",\n                        \"compound_id\":
+    18,\n                        \"amount\": 1,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.001,\n                        \"mmol_l\":
+    0.00073779,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q26","label":"p-Aminobenzoic acid","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[25].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 60-60","quote":"p-Aminobenzoic acid                    50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[8]","quote":"{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"p-Aminobenzoic acid\",\n                        \"compound_id\":
+    47,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.364591,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q27","label":"(DL)-alpha-Lipoic acid","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ingredients[26].concentration","stored":{"value":"0.05","unit":"G_PER_L"}}],"decision":"correct","rationale":"This
+    is the separate stock concentration, incorrectly flattened into the main ingredients
+    in both target and owner. Retain the declared stock g_l and printed batch amount
+    within its source stock; add the separately stated receiving dose. Water input
+    alone does not establish an independently measured stock or receiving final volume.","source_stage":"Wolin
+    vitamin stock","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 61-61","quote":"(DL)-alpha-Lipoic acid                 50.00   mg","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\":
+    252,\n                        \"amount\": 50,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.05,\n                        \"mmol_l\":
+    0.24233,\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q28","label":"SL-4 addition","local_fields":[],"decision":"evidence_only","rationale":"Source-only
+    batch input omitted from the current structured medium. Preserve the printed mL
+    input and stage; neither stock volume nor water input proves a receiving-litre
+    denominator.","source_stage":"receiving batch input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 8-8","quote":"Trace element solution SL-4                             10.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[5]","quote":"{\n                        \"recipe_order\":
+    6,\n                        \"solution\": \"Trace element solution SL-4\",\n                        \"solution_id\":
+    20,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q29","label":"Wolin vitamin addition","local_fields":[],"decision":"evidence_only","rationale":"Source-only
+    batch input omitted from the current structured medium. Preserve the printed mL
+    input and stage; neither stock volume nor water input proves a receiving-litre
+    denominator.","source_stage":"receiving batch input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 12-12","quote":"Wolin''s vitamin solution (10x)                           1.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[9]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"solution\": \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q30","label":"Main water input","local_fields":[],"decision":"evidence_only","rationale":"Source-only
+    batch input omitted from the current structured medium. Preserve the printed mL
+    input and stage; neither stock volume nor water input proves a receiving-litre
+    denominator.","source_stage":"receiving batch input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 13-13","quote":"Distilled water                                       1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].recipe[10]","quote":"{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q31","label":"Stock water input 1","local_fields":[],"decision":"evidence_only","rationale":"Source
+    states a 1000 mL water input. Retain this separately from the provider-declared
+    stock concentration; no measured final volume is inferred.","source_stage":"stock
+    solvent input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 36-36","quote":"Distilled water                                       1000.00       ml","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].recipe[9]","quote":"{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q32","label":"Stock water input 2","local_fields":[],"decision":"evidence_only","rationale":"Source
+    states a 1000 mL water input. Retain this separately from the provider-declared
+    stock concentration; no measured final volume is inferred.","source_stage":"stock
+    solvent input","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 62-62","quote":"Distilled water                      1000.00   ml","quote_basis":"derivative
+    text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[2].recipe[10]","quote":"{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }","quote_basis":"raw
+    UTF-8"}]},{"quantity_id":"q33","label":"Existing final pH","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"ph_value","stored":6.5},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"ph_value","stored":6.5}],"decision":"evidence_only","rationale":"The
+    existing pH 6.5 agrees with the final preparation adjustment. Earlier pH 6.0–6.5
+    is a distinct intermediate stage, not a replacement or growth optimum.","source_stage":"main
+    preparation","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 15-21","quote":"Dissolve ingredients except carbonate, pyruvate, yeast extract,
+    and vitamins, then sparge\nmedium with 100% CO2 gas for 30 - 45 min to make it
+    anoxic. Add carbonate and adjust\npH to 6.0 - 6.5, then dispense medium under
+    100% CO2 gas atmosphere into anoxic\nHungate-type tubes or serum vials and autoclave.
+    Add pyruvate, yeast extract and\nvitamins from sterile anoxic stock solutions
+    prepared under 100% N2 gas atmosphere.\nStock solutions of pyruvate and vitamins
+    are sterilized by filtration. After completing the\nmedium adjust pH to 6.5 with
+    a sterile anoxic stock solution of 1 N NaOH.","quote_basis":"derivative text"}]},{"quantity_id":"q34","label":"Retained
+    main preparation","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients except carbonate, pyruvate, yeast extract, and vitamins, then sparge
+    medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate and
+    adjust pH to 6.0 - 6.5, then dispense medium under 100% CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, yeast extract
+    and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere.
+    Stock solutions of pyruvate and vitamins are sterilized by filtration. After completing
+    the medium adjust pH to 6.5 with a sterile anoxic stock solution of 1 N NaOH."},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"preparation_steps[0].description","stored":"Dissolve
+    ingredients except carbonate, pyruvate, yeast extract, and vitamins, then sparge
+    medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate and
+    adjust pH to 6.0 - 6.5, then dispense medium under 100% CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, yeast extract
+    and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere.
+    Stock solutions of pyruvate and vitamins are sterilized by filtration. After completing
+    the medium adjust pH to 6.5 with a sterile anoxic stock solution of 1 N NaOH."}],"decision":"evidence_only","rationale":"Credit
+    the complete retained gas stages, 30–45 minute sparging, intermediate and final
+    pH, late stocks, filtration and 1 N NaOH adjustment. No unprinted dose, autoclave
+    time or temperature is inferred.","source_stage":"main preparation","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 15-21","quote":"Dissolve ingredients except carbonate, pyruvate, yeast extract,
+    and vitamins, then sparge\nmedium with 100% CO2 gas for 30 - 45 min to make it
+    anoxic. Add carbonate and adjust\npH to 6.0 - 6.5, then dispense medium under
+    100% CO2 gas atmosphere into anoxic\nHungate-type tubes or serum vials and autoclave.
+    Add pyruvate, yeast extract and\nvitamins from sterile anoxic stock solutions
+    prepared under 100% N2 gas atmosphere.\nStock solutions of pyruvate and vitamins
+    are sterilized by filtration. After completing the\nmedium adjust pH to 6.5 with
+    a sterile anoxic stock solution of 1 N NaOH.","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[0].steps[0]","quote":"{\n                        \"step\":
+    \"Dissolve ingredients except carbonate, pyruvate, yeast extract, and vitamins,
+    then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate
+    and adjust pH to 6.0 - 6.5, then dispense medium under 100% CO2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate, yeast
+    extract and vitamins from sterile anoxic stock solutions prepared under 100% N2
+    gas atmosphere. Stock solutions of pyruvate and vitamins are sterilized by filtration.
+    After completing the medium adjust pH to 6.5 with a sterile anoxic stock solution
+    of 1 N NaOH.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q35","label":"Retained
+    SL-4 preparation","local_fields":[{"path":"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml","field_path":"preparation_steps[1].description","stored":"First
+    dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add
+    other compounds."},{"path":"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml","field_path":"preparation_steps[1].description","stored":"First
+    dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add
+    other compounds."}],"decision":"correct","rationale":"The pH 7.0 adjustment with
+    2 N NaOH and dissolution order are supported but belong to SL-4. Preserve the
+    wording and move its scope with the stock; this is not a main-medium pH instruction.","source_stage":"stock
+    preparation","sources":[{"evidence_id":"dsm507b","reference":"https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium507b.pdf","raw_path":"REVIEW_WORK/batch059/source07-09/dsm507b.raw","raw_sha256":"9870eae2c50b2601cffcb0d33a4ad4ecdcc0876857177868bd6f7c828caf520b","text_sha256":"cf04af327d15b9d8959067225930608a7e010c644c69bbc46d01e2a17adb6c84","accessed_at":"2026-10-28T06:51:39.602242Z","locator":"dsm507b.txt
+    lines 38-39","quote":"First dissolve EDTA in distilled water and adjust pH to
+    7.0 using 2 N NaOH; then add other\ncompounds.","quote_basis":"derivative text"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"data.solutions[1].steps[0]","quote":"{\n                        \"step\":
+    \"First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
+    then add other compounds.\"\n                    }","quote_basis":"raw UTF-8"}]},{"quantity_id":"q36","label":"Provider
+    volumes","local_fields":[],"decision":"evidence_only","rationale":"The API declares
+    main volume 1011 mL and stock volumes 1000 mL; these explain its normalized rates.
+    They are provider bookkeeping, not independent measurements of final volume.","source_stage":"source
+    normalization","sources":[{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"$.data.solutions[0].volume","quote":"\"volume\":
+    1011","quote_basis":"raw UTF-8"},{"evidence_id":"api507b","reference":"https://mediadive.dsmz.de/rest/medium/507b","raw_path":"REVIEW_WORK/batch059/source07-09/api507b.raw","raw_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","text_sha256":"810c3e237b13160903b36c81f11ebbcfd77e5ae0e53e5c711a68f4ce078f9e1f","accessed_at":"2026-10-28T06:51:39.817261Z","locator":"$.data.solutions[1].volume
+    and [2].volume","quote":"\"volume\": 1000","quote_basis":"raw UTF-8"}]}],"document_scopes":{"data/merge_yaml/merged/CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml":null,"data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml":null},"scope":"Every
+    selected target/owner concentration plus explicit dependency fields; source-only
+    rows/conditions and unchanged claims distinguished. Excluded parent quantities
+    are not transferred."}'
+- assessment_id: grounding
+  area: grounding
+  topic: Supplied forms and current ontology/MIM scope
+  outcome: concern
+  summary: Every asserted CHEBI primary and secondary slot is joined to a fresh exact
+    OLS object and the packaged current MIM rows. Nickel has a confirmed hydrate mismatch
+    affecting both slots. Calcium D-pantothenate agrees with the D-configured31345
+    object but lacks its secondary link. Source Na2-EDTA has no hydrate qualifier,
+    so anhydrous specificity is not independently established; generic biotin wording
+    does not itself resolve stereochemistry. DL lipoic acid remains compatible with
+    the non-stereospecific ontology object rather than a newly inferred pure enantiomer.
+  target_ids:
+  - CultureMech:001641
+  evidence_ids:
+  - groundings
+  - mim
+  - mim-meta
+- assessment_id: history
+  area: provenance
+  topic: Existing repair credit and writer limits
+  outcome: supported
+  summary: 'All four exact historical reports and all current histories were read.
+    The October report left topology conflicts unchanged; its34 quoted objects match
+    the freshly captured exact API. The September final-volume and101/1011-fold dilution
+    claims are not adopted: API1011 is a declared normalization and water alone is
+    not final-volume proof. Current importer stock separation and conservative merger
+    behavior receive credit; historical execution is not inferred from current code.
+    No existing concentration snippet is attached to the current target/owner.'
+  target_ids:
+  - CultureMech:001641
+  evidence_ids:
+  - history
+  - old-reports
+  - old-claims
+  - writer-formulation
+  - writer-merger
+findings:
+- finding_id: f1
+  issue_key: culturemech-001641-stock-boundary
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nineteen stock components are flattened into the main medium
+  description: Both target and maintained owner place all nine SL-4 and ten Wolin
+    vitamin components directly in ingredients and omit the two receiving stock additions.
+    Restore the exact two stock identities and batch additions, retaining their declared
+    stock quantities and separate main rates. Re-scope the supported second preparation
+    step to SL-4. Do not derive final-medium stock concentrations from input water
+    alone.
+  target_ids:
+  - CultureMech:001641
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[1]
+  evidence_ids:
+  - dsm507b
+  - api507b
+  - owner
+  - writer-mediadive
+  rule_id: review-yaml-record/representation
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+- finding_id: f2
+  issue_key: culturemech-001641-solvent-and-evidence
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Main solvent input and claim-level amount evidence are absent
+  description: The primary lists 1000 mL main water and the API reports a main volume
+    of 1011 mL. Preserve the water input as a batch volume, not a mass concentration
+    or volume percentage. Attach exact amount/unit/stage evidence for every retained
+    main and stock quantity. Current MediaDive code separates primary and stock recipes
+    but deliberately skips water in ingredients; a rerun alone does not restore a
+    complete solvent basis.
+  target_ids:
+  - CultureMech:001641
+  field_paths:
+  - ingredients
+  - evidence
+  evidence_ids:
+  - dsm507b
+  - api507b
+  - writer-mediadive
+  rule_id: review-ingredient-concentrations/evidence-contract
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+- finding_id: f3
+  issue_key: culturemech-001641-nickel-hydrate
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hexahydrate is linked to anhydrous nickel dichloride
+  description: The supplied name and source specify NiCl2·6H2O, but primary and secondary
+    CHEBI:34887 describe anhydrous NiCl2. Fresh CHEBI:53542 explicitly identifies
+    the hexahydrate candidate. Correct both actual asserted slots after source-form
+    review, independently of the stock-stage repair.
+  target_ids:
+  - CultureMech:001641
+  field_paths:
+  - ingredients[15].term
+  - ingredients[15].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm507b
+  - api507b
+  - chebi34887
+  - chebi53542
+  rule_id: review-yaml-record/grounding
+  native_severity: P2
+  normalization_reason: Material scientific stage, amount, supplied-form or source-support
+    issue; native shape checks pass, so no critical schema blocker is asserted.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+- finding_id: f4
+  issue_key: culturemech-001641-pantothenate-secondary
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The calcium pantothenate descriptor lacks its secondary linkage
+  description: The calcium D-(+)-pantothenate primary CHEBI:31345 is compatible with
+    its current D-configured ontology object and source. Its secondary MIM slot is
+    absent while the packaged index contains the exact current key. Assess and add
+    that linkage without treating all preferred-name matches as proof of chemical
+    form.
+  target_ids:
+  - CultureMech:001641
+  field_paths:
+  - ingredients[23]
+  evidence_ids:
+  - dsm507b
+  - chebi31345
+  - mim
+  rule_id: review-yaml-record/grounding
+  native_severity: P3
+  normalization_reason: Bounded metadata, provenance or unresolved grounding follow-up;
+    no critical scientific failure is inferred.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+actions:
+- action_id: a1
+  description: Both target and maintained owner place all nine SL-4 and ten Wolin
+    vitamin components directly in ingredients and omit the two receiving stock additions.
+    Restore the exact two stock identities and batch additions, retaining their declared
+    stock quantities and separate main rates. Re-scope the supported second preparation
+    step to SL-4. Do not derive final-medium stock concentrations from input water
+    alone.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001641
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a2
+  description: The primary lists 1000 mL main water and the API reports a main volume
+    of 1011 mL. Preserve the water input as a batch volume, not a mass concentration
+    or volume percentage. Attach exact amount/unit/stage evidence for every retained
+    main and stock quantity. Current MediaDive code separates primary and stock recipes
+    but deliberately skips water in ingredients; a rerun alone does not restore a
+    complete solvent basis.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001641
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a3
+  description: The supplied name and source specify NiCl2·6H2O, but primary and secondary
+    CHEBI:34887 describe anhydrous NiCl2. Fresh CHEBI:53542 explicitly identifies
+    the hexahydrate candidate. Correct both actual asserted slots after source-form
+    review, independently of the stock-stage repair.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001641
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+- action_id: a4
+  description: The calcium D-(+)-pantothenate primary CHEBI:31345 is compatible with
+    its current D-configured ontology object and source. Its secondary MIM slot is
+    absent while the packaged index contains the exact current key. Assess and add
+    that linkage without treating all preferred-name matches as proof of chemical
+    form.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001641
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/carboxydocella_manganica_medium.yaml
+    role: maintained source
+  acceptance_checks:
+  - Curate only named maintained fields after exact source-stage reconciliation; retain
+    prior history and append a new actual curation event.
+  - Attach literal source evidence; preserve uncertainty about final volume, unspecified
+    hydrates and percent basis. Recheck all affected quantities and ontology assertions.
+  - Regenerate the selected target using current conservative merge workflow, check
+    freshness and rerun schema, strict, terms and reference diagnostics.
+  generator: Maintained-input curation and repository merge regeneration
+limitations:
+- Current canonical checks validate encoded structure/labels; zero reference checks
+  do not verify external source claims.
+- All primary PDF pages were read visually as well as in their complete extracted
+  text. Current source status, retrieval times and complete raw/text bytes remain
+  in the capture catalog.
+- Standalone SL-4 and Wolin records mentioned by the old report are not selected owners
+  or separately assessed dependency records in this review; no uninspected current
+  standalone defect is asserted.
+- SL-4 has no explicit final-makeup instruction in the inspected507b source. Provider
+  mmol_l values are retained without endorsement; nickel/cobalt annotations do not
+  certify hydrate-aware molar conversion.
+- No strain-growth claim, optimization or experimental recommendation is inferred
+  from the medium name or general source identity.
+- The MIM snapshot commit is 6643131b0f12ab40b66f98135245fca04027e0e9; present/absent
+  rows do not establish a historical or live-catalog result.
+- Input water is not measured final volume. Explicit provider g_l rates are assessed
+  only on their declared normalization basis; unspecified percent bases and hydrate
+  numbers remain unresolved.
+- No source changes, formal review validation/save, Git mutation or publication was
+  performed by this author.
+```

@@ -1,0 +1,1279 @@
+schema_version: 1.0.0
+review_id: 20261028T071105Z-batch059-record01-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'CAMINICELLA MEDIUM: explicit final volume, missing anoxic stages and supplied-form
+  grounding'
+started_at: '2026-10-28T06:48:38.037518Z'
+finished_at: '2026-10-28T07:11:05.147603Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The declared final litre supports all eight retained mass contributions.
+  The generated record omits a maintained owner’s anoxic preparation and evidence,
+  repeats an incompatible aerobic note, and maps sodium resazurin to neutral resazurin.
+  Source-only stock stages and the separate DSM 106824 pH prescription need scoped
+  evidence; historical event defects require append-only treatment.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml
+    sha256: 7b73dfaa3eab5076460e3f4f183e4ce7b3365761fcdc78d810d1be8af96eada3
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+    sha256: b8e76762d321abfa152e2a7e469d4d2bf864cb5ff42adef1905eb8152d79d7fe
+    role: context
+  - path: data/normalized_yaml/bacterial/caminicella_medium.yaml
+    sha256: 38183fb6190cef3efd856283bcf292901f58ad7483a813144f07ae264a0fb257
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_964_CAMINICELLA_medium.yaml.md
+    sha256: 5930c0ac10ed99f84d16b9900e6a330d0c426787d72676cc7e5f0423e785158f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/caminicella_medium.yaml.md
+    sha256: 938322f917524ee5705d0aff6dcd170f200507685ee93c20fc7490691889eb4a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAMINICELLA_MEDIUM.md
+    sha256: 3733768bbbddea1fa1a55ee82b280e8c1ccbae530a4cadf9182528b4c1a5bc5c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.md
+    sha256: 83acbeeacae79d6662c59966d53464be4f76740098ff29f83180d668a029c6ec
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caminicella_medium.md
+    sha256: a3e7690d5ccf3b6a3410cc53455cb61b1e5613207be571d39c3e6a942a38f036
+    role: context
+  - path: reports/yaml_record_review/20260922T031330Z-CAMINICELLA_MEDIUM.md
+    sha256: 1551b04f1025563f8ad5ff95bb6d641bf67d978f15a154d5c9a10fb12589c3d3
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadb_importer.py
+    sha256: 5c2d98caf450ee8bb2f73f112e4edab7c3e0f2fa5f2aa7bd2a34e6fd2fdfd4d0
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch059 native selection index 01.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006921
+targets:
+- target_id: CultureMech:006921
+  path: data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml
+  label: caminicella_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caminicella_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006921
+  command: just validate-schema data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006921
+  command: just validate-strict data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml --out
+    REVIEW_WORK/batch059/record01/strict.tsv
+    --workers 1
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006921
+  command: just validate-terms data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:006921
+  command: just validate-references data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: 7b73dfaa3eab5076460e3f4f183e4ce7b3365761fcdc78d810d1be8af96eada3
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: b8e76762d321abfa152e2a7e469d4d2bf864cb5ff42adef1905eb8152d79d7fe
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/caminicella_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 38183fb6190cef3efd856283bcf292901f58ad7483a813144f07ae264a0fb257
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch059/record01/identity-search.json
+  accessed_at: '2026-10-28T06:59:36.925325Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems resolved uniquely. Similar names and
+    source accessions are not promoted to owners.
+  snapshot_sha256: 7774284206e7c3fe0659b607198192f50c5f862daff7225df89d1866e8be1736
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. Current behavior does not establish the historical
+    cause of an existing discrepancy.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_964_CAMINICELLA_medium.yaml.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Current independently captured API response has exactly the cited historical
+    raw SHA256; all 10 literal JSON snippets and locators match. This authenticates
+    those response bytes, not the historical access time or recommendations.
+  snapshot_sha256: 5930c0ac10ed99f84d16b9900e6a330d0c426787d72676cc7e5f0423e785158f
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-1000-1500/records/bacterial/caminicella_medium.yaml.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Current independently captured API response has exactly the cited historical
+    raw SHA256; all 10 literal JSON snippets and locators match. This authenticates
+    those response bytes, not the historical access time or recommendations.
+  snapshot_sha256: 938322f917524ee5705d0aff6dcd170f200507685ee93c20fc7490691889eb4a
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CAMINICELLA_MEDIUM.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 3733768bbbddea1fa1a55ee82b280e8c1ccbae530a4cadf9182528b4c1a5bc5c
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: 83acbeeacae79d6662c59966d53464be4f76740098ff29f83180d668a029c6ec
+- evidence_id: historical-5
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caminicella_medium.md
+  locator: Entire exact Record-header report, every claim row and narrative
+  accessed_at: '2026-10-28T06:59:36.879585Z'
+  support: context_only
+  summary: Full historical report read as derivative context. Its old validation/access
+    claims are not independently authenticated; unsupported fixed-final-liter assumptions
+    are not adopted.
+  snapshot_sha256: a3e7690d5ccf3b6a3410cc53455cb61b1e5613207be571d39c3e6a942a38f036
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record01/historical-reader.json
+  accessed_at: '2026-10-28T06:59:36.929593Z'
+  support: context_only
+  summary: Every exact target/owner historical report in the native input manifest
+    is retained in full, with exact parent-row scope where applicable. Prior recommendations
+    are assessed against fresh primary and current code evidence.
+  snapshot_sha256: 52b8e96b131c78cc1fa544d57b8d1815466fdaea252444c08fc6d3369a8b2972
+- evidence_id: dsm964
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T06:49:54.436986Z'
+  support: supports
+  summary: Complete current DSMZ 964 primary PDF, including its explicit final volume,
+    default process and separate DSM 106824 prescription. PDF visually inspected.
+  snapshot_sha256: ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2
+- evidence_id: api964
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/964
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T06:49:54.006708Z'
+  support: supports
+  summary: Complete current provider response. Its raw digest exactly authenticates
+    the attached October 7 response bytes and literal objects, not the historical
+    access event.
+  snapshot_sha256: ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc
+- evidence_id: komodo964
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/Komodo?Mediumnumber=964
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T06:49:53.537835Z'
+  support: context_only
+  summary: Initial guessed KOMODO endpoint returnedHTTP403. It is retained only as
+    a failed discovery lead; separate exact historical MediaInfo and MediaList route
+    captures also returned403.
+  snapshot_sha256: ec75a4c51c122f97ba3a9d3ced1f7f24aad4d444730e086de99edcf367ea3f35
+- evidence_id: chebi17634
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17634
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:56.247348Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 6e02f3cee82012b7f630c04f122676c0029753074a4421cb005301b8bf24cedb
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:58.890431Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: ceb05e9dd7fba3802d28b34c50bbb604ded87951e4ea3a812739824a84648d72
+- evidence_id: chebi26833
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_26833
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:56.856835Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 9d34f3cbb3a277ec332a20ba1fedf675044ee92f75601d6274bf0b6dbd6448b3
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T06:49:58.701476Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 3eece7d96d2433ff020ece90db55323d138c5c828b78198f91d26b3eafa91f9f
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record01/quantity-inventory.json
+  accessed_at: '2026-10-28T06:59:36.937806Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 5dad33f8bad6f4db25c750c21ef90d1edf0c445df8374bf5f96c75854b0892ba
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record01/grounding-inventory.json
+  accessed_at: '2026-10-28T06:59:36.937875Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 3f73359ca89063c328c3e77b5cae957c3f1514c8091f3ea94a2cf876bf458bdd
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record01/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T06:59:36.937924Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: ce82300993666aa6e5a09d1dd14152b42e857d18758d0f4c5fc4cfdb8bd47840
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record01/scalar-census.json
+  accessed_at: '2026-10-28T06:59:36.937956Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: 5d0a35c4c3293f20d979919cff421446d7c2607e42669edd0fc9295fe0979947
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch059/record01/validate-schema.json
+  accessed_at: '2026-10-28T06:48:39.082509Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: e7346d63a334738cee97a342b1bd78947a3174ed9efa312047c325951f4a31b8
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch059/record01/validate-strict.json
+  accessed_at: '2026-10-28T06:48:40.048818Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch059/record01/strict.tsv\n"
+  snapshot_sha256: 6b45582311bddeb447a7bfd4cb3f215989086cf28449f7c9c7a9b15c57cc04c0
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch059/record01/validate-terms.json
+  accessed_at: '2026-10-28T06:48:41.108118Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 4419d0dd8c9f340e4fc9a1618ee8bc5b44dba2cce960fba1704d9c224af25557
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch059/record01/validate-references.json
+  accessed_at: '2026-10-28T06:48:41.784173Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: 7814680f853263c131afec9360a5afe857a5114af3f5477af80502e9dcf5ed0c
+- evidence_id: historical-sept22
+  kind: record_content
+  reference: reports/yaml_record_review/20260922T031330Z-CAMINICELLA_MEDIUM.md
+  locator: Complete exact selected-target report, every quantity and recommendation
+  accessed_at: '2026-10-28T07:11:05.146243Z'
+  support: context_only
+  summary: 'The Sept22 derivative report is read in full. Its forced semi-defined
+    recategorization, mandatory solvent ingredient and unconditional two-owner collapse
+    are not adopted: commercial mixtures support the retained undefined classification;
+    solvent input is inventoried separately; current multi-owner formulation compatibility
+    must be satisfied before regeneration.'
+  snapshot_sha256: 1551b04f1025563f8ad5ff95bb6d641bf67d978f15a154d5c9a10fb12589c3d3
+- evidence_id: exact-source-route-1
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=964
+  locator: Exact historical source route, current HTTP response; metadata REVIEW_WORK/batch059/record01-root-exact-routes/komodo964-exact.json
+  accessed_at: '2026-10-28T07:08:35.643260Z'
+  support: context_only
+  summary: This exact source route returned HTTP403. No unavailable table or historical
+    access event is authenticated. Original failed lead captures remain distinct.
+  snapshot_sha256: 77ef542a2a7740ecee5c7facf26bf15de63e2c22a0a4c0ea0636994313986636
+- evidence_id: exact-source-route-2
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: Exact historical source route, current HTTP response; metadata REVIEW_WORK/batch059/record01-root-exact-routes/komodo964-list.json
+  accessed_at: '2026-10-28T07:08:35.693802Z'
+  support: context_only
+  summary: This exact source route returned HTTP403. No unavailable table or historical
+    access event is authenticated. Original failed lead captures remain distinct.
+  snapshot_sha256: dad86ae019c5da0a88b63143ffde0fbfc65248b341be6c798aa9d0d3c25e6bd5
+- evidence_id: source-route-supplement
+  kind: record_content
+  reference: REVIEW_WORK/batch059/record01/source-route-supplement.json
+  accessed_at: '2026-10-28T07:11:05.146586Z'
+  support: context_only
+  summary: Exact route metadata/raw joins, with original actual retrieval timestamps
+    and failed-lead distinction.
+  snapshot_sha256: c6a795f721b7ad44e34ebb3db1545b95951e66ba16bed637069276f309cbabda
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact source and owner identity
+  outcome: supported
+  summary: Both maintained contributors identify medium 964. The complete ingredient
+    signature and explicit duplicate links support this lineage; adjacent medium names
+    and DSM 106824 do not expand owner membership.
+  target_ids:
+  - CultureMech:006921
+  evidence_ids:
+  - identity-search
+  - dsm964
+  - api964
+- assessment_id: a2
+  area: completeness
+  topic: Unchanged classifications and attributes
+  outcome: supported
+  summary: Complex/undefined liquid classification is consistent with peptone, yeast
+    extract and commercial sea salt. Preserve SIGMA sea salt with the instruction
+    that it must not show signs of caking, powdered sulfur, and BD Bacto peptone/yeast.
+    This does not assert absence of anti-caking additives or a defined sea-salt composition.
+    Generic applications provide no strain-level growth evidence.
+  target_ids:
+  - CultureMech:006921
+  evidence_ids:
+  - dsm964
+  - local-target
+- assessment_id: a3
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:006921
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "Sea Salt", "source": [{"evidence_id":
+    "api964", "reference": "https://mediadive.dsmz.de/rest/medium/964", "raw_path":
+    "REVIEW_WORK/batch059/source01-03/api964.bin",
+    "raw_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T06:49:54.006708Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Sea Salt\",\n                        \"compound_id\": 423,\n                        \"attribute\":
+    \"SIGMA, must not show signs of caking\",\n                        \"amount\":
+    30,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    30,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 1, "compound": "Sea Salt", "compound_id": 423, "attribute": "SIGMA,
+    must not show signs of caking", "amount": 30, "unit": "g", "g_l": 30, "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, {"evidence_id": "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    volume: 1000 ml"}], "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "stored_value": {"value": "30", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The primary explicitly declares a final 1000 ml; its mass contribution
+    supports the retained g/L value. Preserve the exact supplied ingredient and source
+    attributes."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "30",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "30",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}]}, {"quantity_id":
+    "q2", "topic": "PIPES buffer", "source": [{"evidence_id": "api964", "reference":
+    "https://mediadive.dsmz.de/rest/medium/964", "raw_path": "REVIEW_WORK/batch059/source01-03/api964.bin",
+    "raw_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T06:49:54.006708Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"PIPES buffer\",\n                        \"compound_id\": 867,\n                        \"attribute\":
+    \"SIGMA\",\n                        \"amount\": 6.05,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 6.05,\n                        \"mmol_l\":
+    20.0086,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 2, "compound": "PIPES buffer", "compound_id": 867, "attribute":
+    "SIGMA", "amount": 6.05, "unit": "g", "g_l": 6.05, "mmol_l": 20.0086, "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, {"evidence_id": "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    volume: 1000 ml"}], "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "ingredients[1].concentration",
+    "stored_value": {"value": "6.05", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The primary explicitly declares a final 1000 ml; its mass contribution
+    supports the retained g/L value. Preserve the exact supplied ingredient and source
+    attributes."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "6.05",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "6.05",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}]}, {"quantity_id":
+    "q3", "topic": "D-Glucose", "source": [{"evidence_id": "api964", "reference":
+    "https://mediadive.dsmz.de/rest/medium/964", "raw_path": "REVIEW_WORK/batch059/source01-03/api964.bin",
+    "raw_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T06:49:54.006708Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\":
+    5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    5,\n                        \"mmol_l\": 27.7531,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "D-Glucose", "compound_id": 211, "amount": 5, "unit": "g", "g_l": 5, "mmol_l":
+    27.7531, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm964",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    volume: 1000 ml"}], "decision": "mixed", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes. The DSMZ owner already
+    attaches the exact current-authenticated source claim; its evidence is verified,
+    while the other layers still require linkage.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "ingredients[2].concentration",
+    "stored_value": {"value": "5", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The primary explicitly declares a final 1000 ml; its mass contribution
+    supports the retained g/L value. Preserve the exact supplied ingredient and source
+    attributes."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "5", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "5", "unit":
+    "G_PER_L"}, "decision": "verified", "rationale": "The primary explicitly declares
+    a final 1000 ml; its mass contribution supports the retained g/L value. Preserve
+    the exact supplied ingredient and source attributes. This owner already contains
+    the exact supported claim; the current API raw digest and quoted object authenticate
+    it."}]}, {"quantity_id": "q4", "topic": "Sodium resazurin", "source": [{"evidence_id":
+    "api964", "reference": "https://mediadive.dsmz.de/rest/medium/964", "raw_path":
+    "REVIEW_WORK/batch059/source01-03/api964.bin",
+    "raw_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T06:49:54.006708Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.0005,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Sodium resazurin", "compound_id": 1852, "attribute": "0.1% w/v", "amount": 0.5,
+    "unit": "ml", "g_l": 0.0005, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    volume: 1000 ml"}], "decision": "evidence_only", "rationale": "The explicit 0.1%
+    w/v stock is 1 g/L; its 0.50 ml dose supplies 0.0005 g in the declared final litre.
+    The retained mass rate is supported; stock-dose topology and sodium form require
+    separate correction.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0005",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit 0.1%
+    w/v stock is 1 g/L; its 0.50 ml dose supplies 0.0005 g in the declared final litre.
+    The retained mass rate is supported; stock-dose topology and sodium form require
+    separate correction."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0005",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit 0.1%
+    w/v stock is 1 g/L; its 0.50 ml dose supplies 0.0005 g in the declared final litre.
+    The retained mass rate is supported; stock-dose topology and sodium form require
+    separate correction."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.0005",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit 0.1%
+    w/v stock is 1 g/L; its 0.50 ml dose supplies 0.0005 g in the declared final litre.
+    The retained mass rate is supported; stock-dose topology and sodium form require
+    separate correction."}]}, {"quantity_id": "q5", "topic": "Sulfur", "source": [{"evidence_id":
+    "api964", "reference": "https://mediadive.dsmz.de/rest/medium/964", "raw_path":
+    "REVIEW_WORK/batch059/source01-03/api964.bin",
+    "raw_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T06:49:54.006708Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Sulfur\",\n                        \"compound_id\": 80,\n                        \"condition\":
+    \"\",\n                        \"attribute\": \"powdered\",\n                        \"amount\":
+    12,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    12,\n                        \"mmol_l\": 374.181,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "Sulfur", "compound_id": 80, "condition": "", "attribute": "powdered", "amount":
+    12, "unit": "g", "g_l": 12, "mmol_l": 374.181, "optional": 0}, "quote_basis":
+    "Literal UTF-8 raw-response substring; decoded object independently equals exact
+    JSON locator."}, {"evidence_id": "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    volume: 1000 ml"}], "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "ingredients[4].concentration",
+    "stored_value": {"value": "12", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The primary explicitly declares a final 1000 ml; its mass contribution
+    supports the retained g/L value. Preserve the exact supplied ingredient and source
+    attributes."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "12",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "12",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}]}, {"quantity_id":
+    "q6", "topic": "Peptone", "source": [{"evidence_id": "api964", "reference": "https://mediadive.dsmz.de/rest/medium/964",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/api964.bin",
+    "raw_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T06:49:54.006708Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Peptone\",\n                        \"compound_id\": 1,\n                        \"attribute\":
+    \"BD Bacto\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "Peptone", "compound_id": 1, "attribute": "BD Bacto", "amount": 1, "unit": "g",
+    "g_l": 1, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm964",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    volume: 1000 ml"}], "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "ingredients[5].concentration",
+    "stored_value": {"value": "1", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The primary explicitly declares a final 1000 ml; its mass contribution
+    supports the retained g/L value. Preserve the exact supplied ingredient and source
+    attributes."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "1", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "1", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}]}, {"quantity_id":
+    "q7", "topic": "Yeast extract", "source": [{"evidence_id": "api964", "reference":
+    "https://mediadive.dsmz.de/rest/medium/964", "raw_path": "REVIEW_WORK/batch059/source01-03/api964.bin",
+    "raw_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T06:49:54.006708Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\":
+    \"BD Bacto\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "Yeast extract", "compound_id": 16, "attribute": "BD Bacto", "amount": 0.5, "unit":
+    "g", "g_l": 0.5, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm964",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    volume: 1000 ml"}], "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "ingredients[6].concentration",
+    "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The primary explicitly declares a final 1000 ml; its mass contribution
+    supports the retained g/L value. Preserve the exact supplied ingredient and source
+    attributes."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}]}, {"quantity_id":
+    "q8", "topic": "Na2S x 9 H2O", "source": [{"evidence_id": "api964", "reference":
+    "https://mediadive.dsmz.de/rest/medium/964", "raw_path": "REVIEW_WORK/batch059/source01-03/api964.bin",
+    "raw_sha256": "ac2d3b1b104288e259052243432f7d761bc1a952cfb6f3efaaf672c761458bcc",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T06:49:54.006708Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    0.5,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.5,\n                        \"mmol_l\": 2.08175,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "Na2S x 9 H2O", "compound_id": 54, "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l":
+    2.08175, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm964",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    volume: 1000 ml"}], "decision": "mixed", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes. The DSMZ owner already
+    attaches the exact current-authenticated source claim; its evidence is verified,
+    while the other layers still require linkage.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "ingredients[7].concentration",
+    "stored_value": {"value": "0.5", "unit": "G_PER_L"}, "decision": "evidence_only",
+    "rationale": "The primary explicitly declares a final 1000 ml; its mass contribution
+    supports the retained g/L value. Preserve the exact supplied ingredient and source
+    attributes."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "0.5",
+    "unit": "G_PER_L"}, "decision": "verified", "rationale": "The primary explicitly
+    declares a final 1000 ml; its mass contribution supports the retained g/L value.
+    Preserve the exact supplied ingredient and source attributes. This owner already
+    contains the exact supported claim; the current API raw digest and quoted object
+    authenticate it."}]}, {"quantity_id": "q9", "topic": "Final volume", "source":
+    {"evidence_id": "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Main recipe or explicitly labeled variant", "accessed_at": "2026-10-28T06:49:54.436986Z",
+    "quote": "Final volume: 1000 ml"}, "decision": "add", "rationale": "Explicit final
+    volume, independent of the listed water input; it supports main rates but does
+    not specify unreported stock preparation volumes.", "layer_assessments": []},
+    {"quantity_id": "q10", "topic": "Water input", "source": {"evidence_id": "dsm964",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Main recipe or explicitly labeled variant", "accessed_at": "2026-10-28T06:49:54.436986Z",
+    "quote": "Distilled water                                     1000.00       ml"},
+    "decision": "add", "rationale": "Retain the listed solvent input separately from
+    the explicit final-volume declaration; do not silently solve an unreported volume
+    adjustment.", "layer_assessments": []}, {"quantity_id": "q11", "topic": "Resazurin
+    stock strength and dose", "source": {"evidence_id": "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Main recipe or explicitly labeled variant", "accessed_at": "2026-10-28T06:49:54.436986Z",
+    "quote": "Sodium resazurin (0.1% w/v)                            0.50       ml"},
+    "decision": "add", "rationale": "Create a separately scoped stock/dose description
+    with root evidence; strength is w/v, receiving volume is 0.50 ml, and final mass
+    contribution remains supported.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create a separately scoped stock/dose description with root evidence; strength
+    is w/v, receiving volume is 0.50 ml, and final mass contribution remains supported.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create a separately scoped stock/dose description with root evidence; strength
+    is w/v, receiving volume is 0.50 ml, and final mass contribution remains supported.",
+    "missing": true}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Create a separately scoped stock/dose description with root evidence; strength
+    is w/v, receiving volume is 0.50 ml, and final mass contribution remains supported.",
+    "missing": true}]}, {"quantity_id": "q12", "topic": "Anoxic sparging", "source":
+    {"evidence_id": "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Main recipe or explicitly labeled variant", "accessed_at": "2026-10-28T06:49:54.436986Z",
+    "quote": "with 80% N2 and 20% CO2 gas mixture for 30 - 45 min"}, "decision": "mixed",
+    "rationale": "Retain both gas fractions and the complete duration range; aerobic
+    Yes conflicts with this preparation.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Retain both gas fractions and the complete duration range; aerobic Yes conflicts
+    with this preparation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Retain both gas fractions and the complete duration range; aerobic Yes conflicts
+    with this preparation.", "missing": true}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "AUTOCLAVE", "description": "Dissolve ingredients (except sulfur, peptone, yeast
+    extract, and sulfide), sparge medium with 80% N2 and 20% CO2 gas mixture for 30
+    - 45 min to make it anoxic. Adjust pH to 7.2 - 7.4, then dispense medium under
+    the same gas atmosphere into anoxic Hungate-type tubes or serum vials containing
+    already the appropriate amount of sulfur and autoclave at <b>110°C</b> for 20
+    min. Add peptone, yeast extract and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas. The pH of the complete medium should be 7.5."}], "decision":
+    "evidence_only", "rationale": "Retain both gas fractions and the complete duration
+    range; aerobic Yes conflicts with this preparation."}]}, {"quantity_id": "q13",
+    "topic": "Initial pH", "source": {"evidence_id": "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Main recipe or explicitly labeled variant", "accessed_at": "2026-10-28T06:49:54.436986Z",
+    "quote": "Adjust pH to 7.2 -\n7.4"}, "decision": "mixed", "rationale": "This is
+    the initial adjustment, not a replacement for final pH 7.5.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "preparation_steps",
+    "stored_value": null, "decision": "add", "rationale": "This is the initial adjustment,
+    not a replacement for final pH 7.5.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "This is the initial adjustment, not a replacement for final pH 7.5.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml", "field_path":
+    "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE",
+    "description": "Dissolve ingredients (except sulfur, peptone, yeast extract, and
+    sulfide), sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to
+    make it anoxic. Adjust pH to 7.2 - 7.4, then dispense medium under the same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials containing already the
+    appropriate amount of sulfur and autoclave at <b>110°C</b> for 20 min. Add peptone,
+    yeast extract and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas. The pH of the complete medium should be 7.5."}], "decision": "evidence_only",
+    "rationale": "This is the initial adjustment, not a replacement for final pH 7.5."}]},
+    {"quantity_id": "q14", "topic": "Autoclave stage", "source": {"evidence_id": "dsm964",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Main recipe or explicitly labeled variant", "accessed_at": "2026-10-28T06:49:54.436986Z",
+    "quote": "110°C for 20 min."}, "decision": "mixed", "rationale": "Preserve temperature
+    and duration as one source stage; no alternative standard autoclave setting is
+    supplied.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Preserve temperature and duration as one source stage; no alternative standard
+    autoclave setting is supplied.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Preserve temperature and duration as one source stage; no alternative standard
+    autoclave setting is supplied.", "missing": true}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": [{"step_number": 1, "action":
+    "AUTOCLAVE", "description": "Dissolve ingredients (except sulfur, peptone, yeast
+    extract, and sulfide), sparge medium with 80% N2 and 20% CO2 gas mixture for 30
+    - 45 min to make it anoxic. Adjust pH to 7.2 - 7.4, then dispense medium under
+    the same gas atmosphere into anoxic Hungate-type tubes or serum vials containing
+    already the appropriate amount of sulfur and autoclave at <b>110°C</b> for 20
+    min. Add peptone, yeast extract and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas. The pH of the complete medium should be 7.5."}], "decision":
+    "evidence_only", "rationale": "Preserve temperature and duration as one source
+    stage; no alternative standard autoclave setting is supplied."}]}, {"quantity_id":
+    "q15", "topic": "Late stock preparation", "source": {"evidence_id": "dsm964",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Main recipe or explicitly labeled variant", "accessed_at": "2026-10-28T06:49:54.436986Z",
+    "quote": "solutions prepared under 100% N2 gas."}, "decision": "mixed", "rationale":
+    "Peptone, yeast extract and sulfide are added from sterile anoxic stocks. Their
+    strengths and addition volumes are not given; do not invent them.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml", "field_path": "preparation_steps",
+    "stored_value": null, "decision": "add", "rationale": "Peptone, yeast extract
+    and sulfide are added from sterile anoxic stocks. Their strengths and addition
+    volumes are not given; do not invent them.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "Peptone, yeast extract and sulfide are added from sterile anoxic stocks. Their
+    strengths and addition volumes are not given; do not invent them.", "missing":
+    true}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml", "field_path":
+    "preparation_steps", "stored_value": [{"step_number": 1, "action": "AUTOCLAVE",
+    "description": "Dissolve ingredients (except sulfur, peptone, yeast extract, and
+    sulfide), sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to
+    make it anoxic. Adjust pH to 7.2 - 7.4, then dispense medium under the same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials containing already the
+    appropriate amount of sulfur and autoclave at <b>110°C</b> for 20 min. Add peptone,
+    yeast extract and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas. The pH of the complete medium should be 7.5."}], "decision": "evidence_only",
+    "rationale": "Peptone, yeast extract and sulfide are added from sterile anoxic
+    stocks. Their strengths and addition volumes are not given; do not invent them."}]},
+    {"quantity_id": "q16", "topic": "Strain-specific pH", "source": {"evidence_id":
+    "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Main recipe or explicitly labeled variant", "accessed_at": "2026-10-28T06:49:54.436986Z",
+    "quote": "For DSM 106824: Adjust pH of complete medium to 6.5 - 6.8."}, "decision":
+    "add", "rationale": "Keep this catalog-strain variant separate; the default retained
+    pH 7.5 is not an error and no taxon is inferred from the strain number.", "layer_assessments":
+    []}, {"quantity_id": "q17", "topic": "Default final pH", "source": {"evidence_id":
+    "dsm964", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium964.pdf",
+    "raw_path": "REVIEW_WORK/batch059/source01-03/dsm964.bin",
+    "raw_sha256": "ccee2fa9dd927b5fcc2876f67a5410fc009219b8b4b6b6834d65cbad36f28bc2",
+    "locator": "Header", "accessed_at": "2026-10-28T06:49:54.436986Z", "quote": "Final
+    pH: 7.5"}, "decision": "evidence_only", "rationale": "The declared default final
+    pH is 7.5. The DSM 106824 alternative is separately scoped and does not invalidate
+    the default.", "layer_assessments": [{"path": "data/merge_yaml/merged/CAMINICELLA_MEDIUM.yaml",
+    "field_path": "ph_value", "stored_value": 7.5, "decision": "evidence_only", "rationale":
+    "The declared default final pH is 7.5. The DSM 106824 alternative is separately
+    scoped and does not invalidate the default."}, {"path": "data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml",
+    "field_path": "ph_value", "stored_value": 7.5, "decision": "evidence_only", "rationale":
+    "The declared default final pH is 7.5. The DSM 106824 alternative is separately
+    scoped and does not invalidate the default."}, {"path": "data/normalized_yaml/bacterial/caminicella_medium.yaml",
+    "field_path": "ph_value", "stored_value": 7.5, "decision": "evidence_only", "rationale":
+    "The declared default final pH is 7.5. The DSM 106824 alternative is separately
+    scoped and does not invalidate the default."}]}]'
+- assessment_id: a4
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: The complete slot census is verified, but sodium resazurin is mapped to
+    neutral resazurin and sulfur bulk-form granularity remains unresolved. Current
+    MIM membership does not resolve supplied-form correspondence.
+  target_ids:
+  - CultureMech:006921
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: Complete histories and evidence were read, but malformed/timezone-unspecified
+    historical events and generated evidence omissions remain. Preserve original events
+    and append any verified correction context; current source authentication does
+    not recover the historical access event.
+  target_ids:
+  - CultureMech:006921
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a6
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:006921
+  evidence_ids:
+  - local-target
+- assessment_id: a7
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:006921
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+- assessment_id: a8
+  area: provenance
+  topic: Full historical report scope and rejected recommendations
+  outcome: concern
+  summary: 'The Sept22 derivative report is read in full. Its forced semi-defined
+    recategorization, mandatory solvent ingredient and unconditional two-owner collapse
+    are not adopted: commercial mixtures support the retained undefined classification;
+    solvent input is inventoried separately; current multi-owner formulation compatibility
+    must be satisfied before regeneration.'
+  target_ids:
+  - CultureMech:006921
+  evidence_ids:
+  - historical-reader
+findings:
+- finding_id: f1
+  issue_key: culturemech-006921-restore-anoxic-stages-and-owner-evidence
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore anoxic stages and owner evidence
+  description: 'The generated target and KOMODO contributor omit preparation_steps
+    and repeat Aerobic: Yes, while the DSMZ owner already retains the complete anoxic
+    process. Preserve that owner repair and its two attached glucose/sulfide claims.
+    Add source-specific stages, stock/dose descriptions and root evidence where missing;
+    keep the DSM 106824 pH variant separate. The current compatibility merge guards
+    deserve credit and do not prove the cause of this older generated omission.'
+  target_ids:
+  - CultureMech:006921
+  field_paths:
+  - preparation_steps
+  - solutions
+  - notes
+  - evidence
+  - ph_value
+  evidence_ids:
+  - dsm964
+  - api964
+  - owner-2
+  - writer-merge
+  - writer-formulation
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caminicella_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-006921-distinguish-sodium-resazurin-from-neutral-resazurin
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Distinguish sodium resazurin from neutral resazurin
+  description: 'ingredients[3] is sodium resazurin, but its primary CHEBI:8806 is
+    neutral resazurin. Preserve the supported mass contribution while verifying an
+    exact sodium-salt identifier. Sulfur CHEBI:26833 is a current sulfur-atom entry
+    with elemental synonyms: its granularity relative to powdered bulk sulfur remains
+    unresolved, and absence from the current MIM CSV does not invalidate the historical
+    identifier. No sulfur allotrope or replacement accession is invented.'
+  target_ids:
+  - CultureMech:006921
+  field_paths:
+  - ingredients[3].term
+  - ingredients[4].term
+  - ingredients[4].mediaingredientmech_chebi_term
+  evidence_ids:
+  - dsm964
+  - chebi8806
+  - chebi26833
+  rule_id: source-stage-or-identity
+  native_severity: P2
+  normalization_reason: 'Major: alters source identity, quantitative interpretation
+    or usable source support; canonical schema success cannot authenticate these claims.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caminicella_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-006921-preserve-malformed-historical-events-append-only
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preserve malformed historical events append-only
+  description: The KOMODO contributor and generated copy retain a literal .fZ timestamp
+    and a later timezone-unspecified timestamp. Preserve the original events; append
+    verified correction/context only if authoritative original timing is recovered.
+    Current source access and current code do not establish historical execution or
+    timezone.
+  target_ids:
+  - CultureMech:006921
+  field_paths:
+  - curation_history[0].timestamp
+  - curation_history[1].timestamp
+  evidence_ids:
+  - local-target
+  - owner-1
+  rule_id: source-stage-or-identity
+  native_severity: P3
+  normalization_reason: 'Minor: bounded metadata or traceability defect without establishing
+    a new formulation.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: 'The generated target and KOMODO contributor omit preparation_steps
+    and repeat Aerobic: Yes, while the DSMZ owner already retains the complete anoxic
+    process. Preserve that owner repair and its two attached glucose/sulfide claims.
+    Add source-specific stages, stock/dose descriptions and root evidence where missing;
+    keep the DSM 106824 pH variant separate. The current compatibility merge guards
+    deserve credit and do not prove the cause of this older generated omission.'
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006921
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caminicella_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: 'ingredients[3] is sodium resazurin, but its primary CHEBI:8806 is
+    neutral resazurin. Preserve the supported mass contribution while verifying an
+    exact sodium-salt identifier. Sulfur CHEBI:26833 is a current sulfur-atom entry
+    with elemental synonyms: its granularity relative to powdered bulk sulfur remains
+    unresolved, and absence from the current MIM CSV does not invalidate the historical
+    identifier. No sulfur allotrope or replacement accession is invented.'
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006921
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caminicella_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Verify the exact sodium-salt identifier, canonical label and supplied form against
+    an authoritative term object; retain the supported resazurin mass contribution.
+  - Leave sulfur bulk-form granularity explicitly unresolved unless an exact source/ontology
+    reconciliation is obtained; current MIM absence alone does not justify replacement.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: The KOMODO contributor and generated copy retain a literal .fZ timestamp
+    and a later timezone-unspecified timestamp. Preserve the original events; append
+    verified correction/context only if authoritative original timing is recovered.
+    Current source access and current code do not establish historical execution or
+    timezone.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006921
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_964_CAMINICELLA_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Original historical events remain byte-preserved; no malformed or timezone-unspecified
+    timestamp is rewritten.
+  - Any new correction/context event is append-only and cites verified authoritative
+    original timing or explicitly retains the remaining uncertainty.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- The initial guessed KOMODO route and the exact historical MediaInfo and MediaList
+  routes each returned HTTP403. Current DSMZ/API evidence authenticates the matching
+  API bytes and quoted objects, not the unavailable KOMODO table or its historical
+  access event.
+- Late peptone, yeast extract and sulfide stock strengths and addition volumes are
+  unspecified. The source does supply the resazurin stock strength and dose.
+- No strain identity or growth claim is inferred from the medium name or DSM 106824
+  prescription; sulfur bulk-form granularity remains unresolved.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
