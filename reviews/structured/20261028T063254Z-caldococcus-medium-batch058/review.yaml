@@ -1,0 +1,2153 @@
+schema_version: 1.0.0
+review_id: 20261028T063254Z-caldococcus-medium-batch058
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of caldococcus_medium
+started_at: '2026-10-28T06:08:37.933654Z'
+finished_at: '2026-10-28T06:32:54.606558Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Caldococcus source identity and vitamin cross-reference are supported. The
+  formulation still loses stock boundaries, retains resazurin/water/dose unit errors,
+  omits preparation and includes supplied-form ambiguity. Existing owner repairs are
+  credited and generated staleness is explicit.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml
+    sha256: 5235d213c1f55bc934f5a2dc92b3197d925e4e2e6c37fca524848a021679b687
+    role: target
+  - path: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+    sha256: 73223f7764dab32fb40ddae234eeb8a592393f6f7473d1122026131026eb389c
+    role: context
+  - path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDOCOCCUS_MEDIUM.md
+    sha256: 987ea0254f60a8a517b75f54e688f004ec4266bca045ce61aa906d27a71e81d6
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.md
+    sha256: f60800f8007dca2997239a20ee1d925692dbaff89b0eac1e6ab4c3e54ed724a4
+    role: context
+  - path: reports/yaml_record_review/20260922T024634Z-CALDOCOCCUS_MEDIUM.md
+    sha256: 56aa2b766680ba32dacc64883dbeb40a7f39d5c77ad0f6e6db422e8ba761b62f
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/repair_basal_makeup_stages.py
+    sha256: c86e9ec9156ceb3c01e2e5f10bd1d3a1036d889d78593731c8d7c1b5afa71e48
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch058 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009905
+targets:
+- target_id: CultureMech:009905
+  path: data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml
+  label: caldococcus_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009905
+  command: just validate-schema data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009905
+  command: just validate-strict data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml --workers
+    1 --out REVIEW_WORK/batch058/record06/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009905
+  command: just validate-terms data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:009905
+  command: just validate-references data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T06:21:35.180424Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 5235d213c1f55bc934f5a2dc92b3197d925e4e2e6c37fca524848a021679b687
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T06:21:35.180597Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 73223f7764dab32fb40ddae234eeb8a592393f6f7473d1122026131026eb389c
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch058/record06/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T06:08:39.045410Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 4e3b01358edbdff6c7c63b97113d0848140d25276f91ec18ead78bd411377fcd
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch058/record06/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T06:08:40.061961Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: e810289be111474006817b7398cacdb82f9705b75f508ebf98eaf27b0be74f09
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch058/record06/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T06:08:41.166914Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 7085181b530ef61e8533ec44cf2c6bbe15dfde7b4b7f1d4b318635aa30006168
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch058/record06/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T06:08:41.914159Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: ba9ad9d123f34bcad3acc481532c5c8e21b947ecf757fcd7b5145b75daaebc5f
+- evidence_id: jcm513
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T06:09:11.029183Z'
+  support: supports
+  summary: Complete current official JCM page read, including the main and embedded
+    stock tables, preparation and source-specific defaults. For JCM197 only its vitamin
+    subsection supports the selected receiving recipe.
+  snapshot_sha256: fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7
+- evidence_id: togoM514
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T06:09:11.105466Z'
+  support: supports
+  summary: Current TOGO source identity, complete component paragraphs, units, stock
+    references and comments read; exact primary collection source checked independently.
+    Batch inputs and bare percentages are not silently normalized.
+  snapshot_sha256: f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4
+- evidence_id: jcm197
+  kind: primary_source
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T06:09:11.214157Z'
+  support: supports
+  summary: Complete current official JCM page read, including the main and embedded
+    stock tables, preparation and source-specific defaults. For JCM197 only its vitamin
+    subsection supports the selected receiving recipe.
+  snapshot_sha256: 39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532
+- evidence_id: togoM190
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T06:09:11.314908Z'
+  support: supports
+  summary: Current TOGO source identity, complete component paragraphs, units, stock
+    references and comments read; exact primary collection source checked independently.
+    Batch inputs and bare percentages are not silently normalized.
+  snapshot_sha256: 61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:11.561611Z'
+  support: supports
+  summary: OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition
+    ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula
+    ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:11.602068Z'
+  support: supports
+  summary: OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting
+    of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O'];
+    mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:11.619357Z'
+  support: supports
+  summary: OLS current exact CHEBI:15940 = nicotinic acid; definition ['A pyridinemonocarboxylic
+    acid that is pyridine in which the hydrogen at position 3 is replaced by a carboxy
+    group.']; formula ['C6H5NO2']; mass ['123.111']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:11.773253Z'
+  support: supports
+  summary: OLS current exact CHEBI:15956 = biotin; definition ['An organic heterobicyclic
+    compound that consists of 2-oxohexahydro-1<em>H</em>-thieno[3,4-<em>d</em>]imidazole
+    having a valeric acid substituent attached to the tetrahydrothiophene ring. The
+    parent of the class of biotins.']; formula ['C10H16N2O3S']; mass ['244.316'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16494
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:11.855315Z'
+  support: supports
+  summary: OLS current exact CHEBI:16494 = lipoic acid; definition ['A heterocyclic
+    thia fatty acid comprising pentanoic acid with a 1,2-dithiolan-3-yl group at the
+    5-position.']; formula ['C8H14O2S2']; mass ['206.332']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: aa3c1003d6266cc48f19a4d1d9527edd6844b96094a911e9a3c4f6a8851444e1
+- evidence_id: chebi16526
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:11.976522Z'
+  support: supports
+  summary: OLS current exact CHEBI:16526 = carbon dioxide; definition ['A one-carbon
+    compound with formula CO<small><sub>2</sub></small> in which the carbon is attached
+    to each oxygen atom by a double bond. A colourless, odourless gas under normal
+    conditions, it is produced during respiration by all animals, fungi and microorganisms
+    that depend directly or indirectly on living or decaying plants for food.']; formula
+    ['CO2']; mass ['44.009']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17015
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.161396Z'
+  support: supports
+  summary: OLS current exact CHEBI:17015 = riboflavin; definition ['<small>D</small>-Ribitol
+    in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[<em>g</em>]pteridin-10(2<em>H</em>)-yl
+    moiety. It is a nutritional factor found in milk, eggs, malted barley, liver,
+    kidney, heart, and leafy vegetables, but the richest natural source is yeast.
+    The free form occurs only in the retina of the eye, in whey, and in urine; its
+    principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine
+    dinucleotide.']; formula ['C17H20N4O6']; mass ['376.369']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: f42bc5bbd29b208bfd3062acb11dfa63ccebf81f77ffd72ab596de863cb68aa4
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.228644Z'
+  support: supports
+  summary: OLS current exact CHEBI:176843 = vitamin B12; definition ['Any member of
+    a group of cobalamin vitamers that exhibit biological activity against vitamin
+    B<small><sub>12</sub></small> deficiency. Vitamin B<small><sub>12</sub></small>
+    deficiency is associated with low red blood cell count and anemia. The vitamers
+    are found in foods such as cereals, meat, fish, and poultry. The vitamers include
+    adenosylcobalamin, hydroxocobalamin, cyanocobalamin, aquacobalamin, nitritocobalamin
+    and methylcobabalamin (also includes their ionized, salt and phosphate derivatives).'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.345927Z'
+  support: supports
+  summary: OLS current exact CHEBI:17997 = dinitrogen; definition ['An elemental molecule
+    consisting of two trivalently-bonded nitrogen atoms.']; formula ['N2']; mass ['28.014'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi18276
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.468467Z'
+  support: supports
+  summary: OLS current exact CHEBI:18276 = dihydrogen; definition ['An elemental molecule
+    consisting of two hydrogens joined by a single bond.']; formula ['H2']; mass ['2.016'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 47a32d9cfe41e3759385a0e4e002e9fa208fe1511d84e3d0d1f9f1ca9ce6e86d
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.516428Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi26833
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26833
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.628563Z'
+  support: supports
+  summary: OLS current exact CHEBI:26833 = sulfur atom; definition []; formula ['S'];
+    mass ['32.067']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 34952547270a6bcbbfa3a3699082c8d5359e51d0f90518ab9ca5400494a8ae33
+- evidence_id: chebi26836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26836
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.805149Z'
+  support: supports
+  summary: OLS current exact CHEBI:26836 = sulfuric acid; definition ['A sulfur oxoacid
+    that consists of two oxo and two hydroxy groups joined covalently to a central
+    sulfur atom.']; formula ['H2O4S']; mass ['98.079']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 19e202cd697eed2be3130d5b0b29cc0c1d18575ad103110877303ee678779737
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_27470
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.897504Z'
+  support: supports
+  summary: OLS current exact CHEBI:27470 = folic acid; definition ['An <em>N</em>-acyl-amino
+    acid that is a form of the water-soluble vitamin B<small><sub>9</sub></small>.
+    Its biologically active forms (tetrahydrofolate and others) are essential for
+    nucleotide biosynthesis and homocysteine remethylation.']; formula ['C19H19N7O6'];
+    mass ['441.404']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: fe3e4a2f0f0fa51f94efe6bbf0fa8883d43eafef8db73cfd37bc25ce15fdd12f
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:12.943685Z'
+  support: supports
+  summary: OLS current exact CHEBI:30753 = 4-aminobenzoic acid; definition ['An aminobenzoic
+    acid in which the amino group is <em>para</em> to the carboxy group.']; formula
+    ['C7H7NO2']; mass ['137.138']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.079726Z'
+  support: supports
+  summary: OLS current exact CHEBI:30961 = pyridoxine hydrochloride; definition ['The
+    hydrochloride salt of pyridoxine.']; formula ['C8H11NO3.HCl']; mass ['205.641'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.133811Z'
+  support: supports
+  summary: OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic
+    chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.227542Z'
+  support: supports
+  summary: OLS current exact CHEBI:31345 = Calcium pantothenate; definition []; formula
+    ['2C9H16NO5.Ca']; mass ['476.536']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi31440
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.439031Z'
+  support: supports
+  summary: OLS current exact CHEBI:31440 = copper(II) sulfate pentahydrate; definition
+    ['The pentahydrate of copper(2+) sulfate. A bright blue crystalline solid.'];
+    formula ['Cu.5H2O.O4S']; mass ['249.684']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi32035
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32035
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.538355Z'
+  support: supports
+  summary: OLS current exact CHEBI:32035 = potassium hydroxide; definition []; formula
+    ['HO.K']; mass ['56.105']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 6ed3df00965b4707265cfced80411c4b1937b727f8c2093addbc467f88ce2ec8
+- evidence_id: chebi32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32139
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.563850Z'
+  support: supports
+  summary: OLS current exact CHEBI:32139 = sodium hydrogencarbonate; definition [];
+    formula ['CHO3.Na']; mass ['84.006']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 2a41873aa455dc8563a47d36add836fffb6fb758ce7a2d1c28295e77646315fe
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.696603Z'
+  support: supports
+  summary: OLS current exact CHEBI:32312 = zinc sulfate heptahydrate; definition ['A
+    hydrate that is the heptahydrate form of zinc sulfate.']; formula ['7H2O.O4S.Zn'];
+    mass ['287.558']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32954
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32954
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.744150Z'
+  support: supports
+  summary: OLS current exact CHEBI:32954 = sodium acetate; definition []; formula
+    ['C2H3O2.Na']; mass ['82.034']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 573cba85f57c363463610a20b17be618893d6432ba239604fbd8aa562f98161b
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:13.834752Z'
+  support: supports
+  summary: OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3'];
+    mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.213112Z'
+  support: supports
+  summary: OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound
+    of nickel and chloride in which the ratio of nickel (in the +2 oxidation state)
+    to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi35696
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_35696
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.235994Z'
+  support: supports
+  summary: OLS current exact CHEBI:35696 = cobalt dichloride; definition ['A cobalt
+    salt in which the cobalt metal is in the +2 oxidation state and the counter-anion
+    is chloride. It is used as an indicator for water in desiccants.']; formula ['2Cl.Co'];
+    mass ['129.839']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: d9d394d79450b1671c699eaa08d3ef5d66d1f14909f1bd9c464b3d457e37a7ca
+- evidence_id: chebi44557
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.289056Z'
+  support: supports
+  summary: OLS current exact CHEBI:44557 = nitrilotriacetic acid; definition []; formula
+    ['C6H9NO6']; mass ['191.139']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49105
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.393789Z'
+  support: supports
+  summary: OLS current exact CHEBI:49105 = thiamine hydrochloride; definition ['A
+    hydrochloride obtained by combining thiamine chloride with one molar equivalent
+    of hydrochloric acid.']; formula ['C12H17N4OS.Cl.HCl']; mass ['337.276']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 0b923c215888606038af1e3f0c1b1bcc35e4ab84966d1733a91fdfcbee8f2ae4
+- evidence_id: chebi49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.498434Z'
+  support: supports
+  summary: OLS current exact CHEBI:49976 = zinc dichloride; definition ['A compound
+    of zinc and chloride ions in the ratio 1:2. It exists in four crystalline forms,
+    in each of which the Zn<small><sup>2+</small></sup> ions are trigonal planar coordinated
+    to four chloride ions.']; formula ['2Cl.Zn']; mass ['136.296']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.517886Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.827379Z'
+  support: supports
+  summary: OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na'];
+    mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.901038Z'
+  support: supports
+  summary: OLS current exact CHEBI:75836 = iron(2+) sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a
+    source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage
+    treatments; for solid-dosage treatments, the monohydrate is normally used).'];
+    formula ['Fe.7H2O.O4S']; mass ['278.013']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:14.930130Z'
+  support: supports
+  summary: OLS current exact CHEBI:76209 = sodium sulfide nonahydrate; definition
+    ['A hydrate with formula Na<small><sub>2</sub></small>S·9H<small><sub>2</sub></small>O.'];
+    formula ['9H2O.2Na.S']; mass ['240.182']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:15.017543Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:15.120189Z'
+  support: supports
+  summary: OLS current exact CHEBI:86249 = iron dichloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of iron dichloride.']; formula ['Cl2Fe.4H2O'];
+    mass ['198.811']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:15.138129Z'
+  support: supports
+  summary: OLS current exact CHEBI:86345 = magnesium dichloride hexahydrate; definition
+    ['A hydrate that is the hexahydrate form of magnesium dichloride.']; formula ['2Cl.6H2O.Mg'];
+    mass ['203.301']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86360
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86360
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:15.412569Z'
+  support: supports
+  summary: OLS current exact CHEBI:86360 = manganese(II) sulfate; definition ['A metal
+    sulfate in which the metal component is manganese in the +2 oxidation state.'];
+    formula ['Mn.O4S']; mass ['151.001']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: ee3b60385f389c4eeb301cfe59996112ffa9c3c135268559b79e91810a14932b
+- evidence_id: chebi86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:15.498764Z'
+  support: supports
+  summary: OLS current exact CHEBI:86368 = manganese(II) chloride tetrahydrate; definition
+    ['A hydrate that is the tetrahydrate form of manganese(II) chloride.']; formula
+    ['Cl2Mn.4H2O']; mass ['197.904']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:15.614469Z'
+  support: supports
+  summary: OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4'];
+    mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91244
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:15.636170Z'
+  support: supports
+  summary: OLS current exact CHEBI:91244 = cobalt(2+) sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of cobalt(2+) sulfate.']; formula ['Co.7H2O.O4S'];
+    mass ['281.101']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T06:09:15.726720Z'
+  support: supports
+  summary: OLS current exact CHEBI:91248 = L-cysteine hydrochloride hydrate; definition
+    ['A hydrate that is the monohydrate form of <small>L</small>-cysteine hydrochloride.'];
+    formula ['C3H7NO2S.H2O.HCl']; mass ['175.637']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch058/record06/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T06:21:35.196951Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: d71b53d85b9e0056db4d79f65779037657f557e521f4af12a02390490be0c3f5
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T024634Z-CALDOCOCCUS_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T06:21:35.197374Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 56aa2b766680ba32dacc64883dbeb40a7f39d5c77ad0f6e6db422e8ba761b62f
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T06:21:35.197401Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: f60800f8007dca2997239a20ee1d925692dbaff89b0eac1e6ab4c3e54ed724a4
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDOCOCCUS_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T06:21:35.197424Z'
+  support: supports
+  summary: Entire historical report read, including every unchanged and unresolved
+    field. This narrative or zero-source-check report is a derivative lead, not new
+    primary-source authentication.
+  snapshot_sha256: 987ea0254f60a8a517b75f54e688f004ec4266bca045ce61aa906d27a71e81d6
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record06/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T06:21:35.197447Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: 228091c27a4a948ab27baa07cdb05d3feac5ab592db87ac3e6a4560c66110871
+- evidence_id: writer56
+  kind: record_content
+  reference: scripts/apply_mim_groundings.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T06:21:35.197472Z'
+  support: context_only
+  summary: target_slot preserves existing CHEBI assertions, groundable excludes conflicting
+    corpus opinions and apply_to_record fills only ungrounded names. The added cobalt
+    hydrate is a bounded owner repair, not quantity or stage authentication.
+  snapshot_sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+- evidence_id: writer57
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T06:21:35.197498Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients/_merge_ingredient_group collapses identical
+    quantities and flags conflicting quantities rather than summing them. The target
+    water value of 2 G/L is a persisted duplicate-sum artifact; current code alone
+    does not prove its historical execution or recover the source water stage.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer58
+  kind: record_content
+  reference: scripts/repair_basal_makeup_stages.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T06:21:35.197527Z'
+  support: context_only
+  summary: formulate and finish preserve explicit basal stages, later supplements,
+    quoted sources and appended history. This named writer is contextual to the inspected
+    dependency; it does not establish execution on the selected Caldococcus owner
+    or justify transferring an entire parent recipe.
+  snapshot_sha256: c86e9ec9156ceb3c01e2e5f10bd1d3a1036d889d78593731c8d7c1b5afa71e48
+- evidence_id: writer59
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T06:21:35.197551Z'
+  support: context_only
+  summary: Current repair_ingredient and repair_record collapse only IDENTICAL_PARTS;
+    unequal groups remain for source review, and main appends a repair history event.
+    The owner water collapse from 2 to 1 repairs the duplicate sum, but its retained
+    G/L unit still does not represent the source water volume or restore the distinct
+    stock stages. Current code alone does not prove a past execution.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer60
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T06:21:35.197590Z'
+  support: context_only
+  summary: Current _extract_primary_components/_solution_from_item preserve main versus
+    nested stocks; _parse_unit distinguishes mg/ml and _extract_preparation_steps
+    retains comments. Bare units mapped to per-litre enums still require source-basis
+    review. Current fixed code is not proof of historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer61
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T06:21:35.197613Z'
+  support: context_only
+  summary: Current formulation_content retains scientific fields, quantities, notes
+    and preparation; merge_formulation_evidence rejects incompatible scientific projections
+    and unions scoped evidence. Ingredient-set similarity does not prove scientific
+    equivalence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer62
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T06:21:35.197633Z'
+  support: context_only
+  summary: Current group_formulations uses full formulation fingerprints for compatible
+    automatic merging; broader group_recipes discovers ingredient-set candidates only.
+    Neither grouping path substitutes for source verification.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer63
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T06:21:35.197659Z'
+  support: context_only
+  summary: Current merge_group returns a single owner with routing metadata, and calls
+    conservative merge_formulation_evidence for multiple owners. Current code supports
+    regenerating stale content after owner repair but does not authenticate old generated
+    outputs.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: dep64
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+  locator: explicit scoped stock rows in quantity inventory
+  accessed_at: '2026-10-28T06:21:35.197664Z'
+  support: supports
+  summary: Current dependency read separately; only the stock composition named by
+    the receiving source transfers. Earlier attached evidence and history retained;
+    unrelated parent medium, doses, pH and growth do not transfer.
+  snapshot_sha256: b1924e7eb436d56c5bd4826f07cafff130341054acfd808fb1c9e5bca914e3fa
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch058/record06/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T06:21:35.431299Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: adbe7d7391586102961f6b57cfb3f673fd19f954edb98dfa372d0826db23490d
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact collection and dependency numbering
+  outcome: supported
+  summary: TOGO M514 is JCM 513 Caldococcus medium. Its M190 reference is TOGO M190,
+    explicitly JCM 197; the September instruction to replace M190 simply because it
+    is not JCM 190 confuses namespaces. Current primary and dependency identity are
+    coherent.
+  target_ids:
+  - CultureMech:009905
+  evidence_ids:
+  - togoM514
+  - togoM190
+  - jcm513
+  - jcm197
+- assessment_id: a2
+  area: evidence
+  topic: Current versus historical scoped support
+  outcome: concern
+  summary: Selected layers have no attached scientific evidence. All three historical
+    reports are read as derivative leads; their final-litre arithmetic and catalogue-number
+    recommendation are reassessed independently. M190 vitamin-only claims retain batch
+    amounts and source scope; historical whole raw identity is not inferred merely
+    from old hashes because the current payload serialization differs. Main-medium,
+    mineral and pH claims in that parent remain outside scope.
+  target_ids:
+  - CultureMech:009905
+  evidence_ids:
+  - history-auth
+  - grounding
+  - togoM190
+  - jcm197
+- assessment_id: a3
+  area: provenance
+  topic: Bounded owner repairs and current writers
+  outcome: supported
+  summary: The owner duplicate collapse and cobalt grounding addition are real partial
+    repairs; target values remain stale. Current TOGO importer preserves sections
+    and comments; current cleanup avoids summing differing quantities and current
+    MIM filling preserves existing assertions. Those current mechanisms do not authenticate
+    historical execution or recover missing stage semantics by themselves.
+  target_ids:
+  - CultureMech:009905
+  evidence_ids:
+  - local0
+  - local1
+  - writer56
+  - writer57
+  - writer58
+  - writer59
+  - writer60
+  - writer61
+  - writer62
+  - writer63
+- assessment_id: a4
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 44 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:009905
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:009905",
+    "selected_concentration_field_count": 44, "selected_concentration_fields_covered":
+    44, "decisions": [{"decision_id": "q1", "subject": "NaCl", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path": "ingredients[1].concentration",
+    "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "main batch input, final rate
+    unresolved", "interpretation": "The numerical gram amount and material are supported
+    by the current JCM 513 table and TOGO M514, but the source lists 1 L water plus
+    separate stock additions rather than a measured completed final volume. Retain
+    the exact batch mass and supplied form; the present G_PER_L basis is not established.
+    Do not infer1.011 L or replace rates with a guessed divisor.", "sources": [{"locator":
+    "HTML tr[0]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "NaCl\n0.1\ng",
+    "quote_representation": "HTML tr[0] DOM text"}, {"locator": "$.components[0].items[1]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"NaCl\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001004\",\n          \"gmo_id\": \"GMO_001004\",\n          \"label\":
+    \"Sodium chloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q2", "subject": "CaCl2・2H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path":
+    "ingredients[2].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "main batch input, final rate
+    unresolved", "interpretation": "The numerical gram amount and material are supported
+    by the current JCM 513 table and TOGO M514, but the source lists 1 L water plus
+    separate stock additions rather than a measured completed final volume. Retain
+    the exact batch mass and supplied form; the present G_PER_L basis is not established.
+    Do not infer1.011 L or replace rates with a guessed divisor.", "sources": [{"locator":
+    "HTML tr[1]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "CaCl\n2\n·2H\n2\nO\n0.1\ng",
+    "quote_representation": "HTML tr[1] DOM text"}, {"locator": "$.components[0].items[2]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CaCl2・2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001005\",\n          \"gmo_id\": \"GMO_001005\",\n          \"label\":
+    \"Calcium chloride dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q3", "subject": "Na2S・9H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "main batch input, final rate
+    unresolved", "interpretation": "The numerical gram amount and material are supported
+    by the current JCM 513 table and TOGO M514, but the source lists 1 L water plus
+    separate stock additions rather than a measured completed final volume. Retain
+    the exact batch mass and supplied form; the present G_PER_L basis is not established.
+    Do not infer1.011 L or replace rates with a guessed divisor.", "sources": [{"locator":
+    "HTML tr[10]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Na\n2\nS·9H\n2\nO\n0.5\ng",
+    "quote_representation": "HTML tr[10] DOM text"}, {"locator": "$.components[0].items[4]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2S・9H2O\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001014\",\n          \"gmo_id\": \"GMO_001014\",\n          \"label\":
+    \"Sodium sulfide nonahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000064\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000064\",\n              \"label\": \"Reducing
+    agent\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q4", "subject": "FeSO4・7H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "original": {"value": "0.05", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.05", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "main batch input, final rate
+    unresolved", "interpretation": "The numerical gram amount and material are supported
+    by the current JCM 513 table and TOGO M514, but the source lists 1 L water plus
+    separate stock additions rather than a measured completed final volume. Retain
+    the exact batch mass and supplied form; the present G_PER_L basis is not established.
+    Do not infer1.011 L or replace rates with a guessed divisor.", "sources": [{"locator":
+    "HTML tr[2]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "FeSO\n4\n·7H\n2\nO\n0.05\ng",
+    "quote_representation": "HTML tr[2] DOM text"}, {"locator": "$.components[0].items[5]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"FeSO4・7H2O\",\n          \"volume\": 0.05,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001016\",\n          \"gmo_id\": \"GMO_001016\",\n          \"label\":
+    \"Iron(II) sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q5", "subject": "Sulfur", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path": "ingredients[6].concentration",
+    "original": {"value": "2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "2", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "main batch input, final rate
+    unresolved", "interpretation": "The numerical gram amount and material are supported
+    by the current JCM 513 table and TOGO M514, but the source lists 1 L water plus
+    separate stock additions rather than a measured completed final volume. Retain
+    the exact batch mass and supplied form; the present G_PER_L basis is not established.
+    Do not infer1.011 L or replace rates with a guessed divisor.", "sources": [{"locator":
+    "HTML tr[8]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Sulfur\n2.0\ng",
+    "quote_representation": "HTML tr[8] DOM text"}, {"locator": "$.components[0].items[6]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Sulfur\",\n          \"volume\": 2,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001062\",\n          \"gmo_id\": \"GMO_001062\",\n          \"label\":
+    \"Sulfur powder\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q6", "subject": "Yeast extract (BD-Difco)",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "main batch input, final rate
+    unresolved", "interpretation": "The numerical gram amount and material are supported
+    by the current JCM 513 table and TOGO M514, but the source lists 1 L water plus
+    separate stock additions rather than a measured completed final volume. Retain
+    the exact batch mass and supplied form; the present G_PER_L basis is not established.
+    Do not infer1.011 L or replace rates with a guessed divisor.", "sources": [{"locator":
+    "HTML tr[3]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Yeast extract
+    (BD-Difco)\n0.1\ng", "quote_representation": "HTML tr[3] DOM text"}, {"locator":
+    "$.components[0].items[7]", "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Yeast extract (BD-Difco)\",\n          \"volume\": 0.1,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001018\",\n          \"gmo_id\":
+    \"GMO_001018\",\n          \"label\": \"Bacto &trade; Yeast extract\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q7", "subject":
+    "Casamino acids (BD-Difco)", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "main batch input, final rate
+    unresolved", "interpretation": "The numerical gram amount and material are supported
+    by the current JCM 513 table and TOGO M514, but the source lists 1 L water plus
+    separate stock additions rather than a measured completed final volume. Retain
+    the exact batch mass and supplied form; the present G_PER_L basis is not established.
+    Do not infer1.011 L or replace rates with a guessed divisor.", "sources": [{"locator":
+    "HTML tr[4]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Casamino
+    acids (BD-Difco)\n0.1\ng", "quote_representation": "HTML tr[4] DOM text"}, {"locator":
+    "$.components[0].items[8]", "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Casamino acids (BD-Difco)\",\n          \"volume\": 0.1,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001705\",\n          \"gmo_id\":
+    \"GMO_001705\",\n          \"label\": \"Bacto &trade; Casamino acids\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q8", "subject":
+    "Peptone", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.8", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.8", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "main batch input, final rate
+    unresolved", "interpretation": "The numerical gram amount and material are supported
+    by the current JCM 513 table and TOGO M514, but the source lists 1 L water plus
+    separate stock additions rather than a measured completed final volume. Retain
+    the exact batch mass and supplied form; the present G_PER_L basis is not established.
+    Do not infer1.011 L or replace rates with a guessed divisor.", "sources": [{"locator":
+    "HTML tr[5]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Peptone\n0.8\ng",
+    "quote_representation": "HTML tr[5] DOM text"}, {"locator": "$.components[0].items[9]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Peptone\",\n          \"volume\": 0.8,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_000012\",\n          \"gmo_id\": \"GMO_000012\",\n          \"label\":
+    \"Peptone\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q9", "subject":
+    "Resazurin", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "main batch mass", "interpretation":
+    "The primary specifies 1 mg=0.001 g resazurin per batch; local1 G_PER_L retains
+    the milligram number as grams. Preserve the exact milligram amount and unresolved
+    final-volume basis. Generic resazurin identity is supported here; unlike sodium-resazurin
+    sources, this text does not prescribe a sodium salt.", "sources": [{"locator":
+    "HTML tr[9]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Resazurin\n1.0\nmg",
+    "quote_representation": "HTML tr[9] DOM text"}, {"locator": "$.components[0].items[3]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Resazurin\",\n          \"volume\": 1,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001012\",\n          \"gmo_id\": \"GMO_001012\",\n          \"label\":
+    \"Resazurin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent
+    redox indicator\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q10", "subject": "Water and partial duplicate
+    repair", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "2.0", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "1.0", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "main and mineral stock water",
+    "interpretation": "The target stores2 G_PER_L and the owner1 G_PER_L after collapsing
+    identical duplicates. Credit that bounded owner repair and record target staleness,
+    but neither value represents the source water:1 L belongs to main preparation
+    and a separate1 L to mineral stock preparation. Restore those two absolute volumes
+    at their stages; no final volume inferred.", "sources": [{"locator": "HTML tr[11]",
+    "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Distilled
+    water\n1.0\nL", "quote_representation": "HTML tr[11] DOM text"}, {"locator": "HTML
+    tr[18]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Distilled
+    water\n1.0\nL", "quote_representation": "HTML tr[18] DOM text"}]}, {"decision_id":
+    "q11", "subject": "Na2MoO4・2H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "trace mineral stock only", "interpretation":
+    "The source gram amount belongs to the separately prepared trace-mineral stock
+    with 1 L water; the listed water is not independently measured final volume. Move
+    this compound out of direct-medium ingredients and preserve its exact batch amount,
+    supplied form and 1 ml receiving dose. Do not assert a new final-medium rate.
+    MnSO4·xH2O leaves hydration unspecified; no monohydrate substitution is justified.",
+    "sources": [{"locator": "HTML tr[17]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Na\n2\nMoO\n4\n·2H\n2\nO\n0.1\ng",
+    "quote_representation": "HTML tr[17] DOM text"}, {"locator": "$.components[1].items[1]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Na2MoO4・2H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001011\",\n          \"gmo_id\": \"GMO_001011\",\n          \"label\":
+    \"Sodium molybdate dihydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q12", "subject": "H3BO3", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path": "ingredients[15].concentration",
+    "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "trace mineral stock only", "interpretation":
+    "The source gram amount belongs to the separately prepared trace-mineral stock
+    with 1 L water; the listed water is not independently measured final volume. Move
+    this compound out of direct-medium ingredients and preserve its exact batch amount,
+    supplied form and 1 ml receiving dose. Do not assert a new final-medium rate.
+    MnSO4·xH2O leaves hydration unspecified; no monohydrate substitution is justified.",
+    "sources": [{"locator": "HTML tr[16]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "H\n3\nBO\n3\n0.1\ng",
+    "quote_representation": "HTML tr[16] DOM text"}, {"locator": "$.components[1].items[2]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"H3BO3\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001015\",\n          \"gmo_id\": \"GMO_001015\",\n          \"label\":
+    \"Boric acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q13", "subject": "ZnSO4・7H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path":
+    "ingredients[16].concentration", "original": {"value": "1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "trace mineral stock only", "interpretation":
+    "The source gram amount belongs to the separately prepared trace-mineral stock
+    with 1 L water; the listed water is not independently measured final volume. Move
+    this compound out of direct-medium ingredients and preserve its exact batch amount,
+    supplied form and 1 ml receiving dose. Do not assert a new final-medium rate.
+    MnSO4·xH2O leaves hydration unspecified; no monohydrate substitution is justified.",
+    "sources": [{"locator": "HTML tr[14]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "ZnSO\n4\n·7H\n2\nO\n1.0\ng",
+    "quote_representation": "HTML tr[14] DOM text"}, {"locator": "$.components[1].items[3]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"ZnSO4・7H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001023\",\n          \"gmo_id\": \"GMO_001023\",\n          \"label\":
+    \"Zinc sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q14", "subject": "CuSO4・5H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path":
+    "ingredients[17].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "trace mineral stock only", "interpretation":
+    "The source gram amount belongs to the separately prepared trace-mineral stock
+    with 1 L water; the listed water is not independently measured final volume. Move
+    this compound out of direct-medium ingredients and preserve its exact batch amount,
+    supplied form and 1 ml receiving dose. Do not assert a new final-medium rate.
+    MnSO4·xH2O leaves hydration unspecified; no monohydrate substitution is justified.",
+    "sources": [{"locator": "HTML tr[15]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "CuSO\n4\n·5H\n2\nO\n0.1\ng",
+    "quote_representation": "HTML tr[15] DOM text"}, {"locator": "$.components[1].items[4]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CuSO4・5H2O\",\n          \"volume\": 0.1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001039\",\n          \"gmo_id\": \"GMO_001039\",\n          \"label\":
+    \"Copper(II) sulfate pentahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q15", "subject": "CoSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path":
+    "ingredients[18].concentration", "original": {"value": "1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "trace mineral stock only", "interpretation":
+    "The source gram amount belongs to the separately prepared trace-mineral stock
+    with 1 L water; the listed water is not independently measured final volume. Move
+    this compound out of direct-medium ingredients and preserve its exact batch amount,
+    supplied form and 1 ml receiving dose. Do not assert a new final-medium rate.
+    MnSO4·xH2O leaves hydration unspecified; no monohydrate substitution is justified.",
+    "sources": [{"locator": "HTML tr[13]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "CoSO\n4\n7H\n2\nO\n1.0\ng",
+    "quote_representation": "HTML tr[13] DOM text"}, {"locator": "$.components[1].items[5]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"CoSO47H2O\",\n          \"volume\": 1,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001050\",\n          \"gmo_id\": \"GMO_001050\",\n          \"label\":
+    \"Cobalt(II) sulfate heptahydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q16", "subject": "MnSO4・xH2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path":
+    "ingredients[19].concentration", "original": {"value": "5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "trace mineral stock only", "interpretation":
+    "The source gram amount belongs to the separately prepared trace-mineral stock
+    with 1 L water; the listed water is not independently measured final volume. Move
+    this compound out of direct-medium ingredients and preserve its exact batch amount,
+    supplied form and 1 ml receiving dose. Do not assert a new final-medium rate.
+    MnSO4·xH2O leaves hydration unspecified; no monohydrate substitution is justified.",
+    "sources": [{"locator": "HTML tr[12]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "MnSO\n4\n·\nx\nH\n2\nO\n5.0\ng",
+    "quote_representation": "HTML tr[12] DOM text"}, {"locator": "$.components[1].items[6]",
+    "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"MnSO4・xH2O\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001065\",\n          \"gmo_id\": \"GMO_001065\",\n          \"label\":
+    \"Manganese sulfate n-hydrate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000078\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000078\",\n              \"label\": \"Mineral
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q17", "subject": "Vitamin dose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path":
+    "solutions[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "receiving batch stock dose", "interpretation":
+    "Restore 10 ml as an absolute source batch dose, not G_PER_L. Retain a complete
+    scoped stock composition and source identity. TOGO M190 maps to JCM 197, not JCM
+    190; the distinct catalogue number is not itself a discrepancy.", "sources": [{"locator":
+    "HTML tr[6]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Trace vitamins
+    (see Medium No.\n197\n)\n10.0\nml", "quote_representation": "HTML tr[6] DOM text"},
+    {"locator": "$.components[0].items[10]", "source_key": "togoM514", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514", "source_raw_sha256":
+    "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4", "source_text_sha256":
+    "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4", "accessed_at":
+    "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Trace vitamins (see Medium [M190])\",\n          \"volume\": 10,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M190\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q18", "subject": "Mineral dose", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml", "field_path": "solutions[1].concentration",
+    "original": {"value": "1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "receiving batch stock dose", "interpretation":
+    "Restore 1 ml as an absolute source batch dose, not G_PER_L. Retain a complete
+    scoped stock composition and source identity. TOGO M190 maps to JCM 197, not JCM
+    190; the distinct catalogue number is not itself a discrepancy.", "sources": [{"locator":
+    "HTML tr[7]", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Trace mineral
+    solution (see below)\n1.0\nml", "quote_representation": "HTML tr[7] DOM text"},
+    {"locator": "$.components[0].items[11]", "source_key": "togoM514", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514", "source_raw_sha256":
+    "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4", "source_text_sha256":
+    "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4", "accessed_at":
+    "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Trace mineral solution (see below)\",\n          \"volume\": 1,\n          \"unit\":
+    \"ml\",\n          \"reference_media_id\": \"M514\",\n          \"properties\":
+    [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]},
+    {"decision_id": "q19", "subject": "H2SO4", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "correct", "stage": "procedural acid and gas
+    conditions", "interpretation": "Move this VARIABLE direct ingredient to its exact
+    preparation stage. H2SO4 adjusts initial pH 2.7 and final pH 3.0 (final acid1
+    N); N2 is used for separately autoclaved sulfide, and H2/CO2=80:20 is the bottle
+    gas. No titrant volume, dissolved-gas concentration or normality-to-molarity conversion
+    is supplied.", "sources": [{"locator": "$.comments[0]", "source_key": "togoM514",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Mix ingredients except vitamins, sulfur and Na2S・9H2O,
+    adjust pH to 2.7 with H2SO4 and autoclave. Separately autoclave 5% (w/v) Na2S・9H2O
+    solutionunder a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
+    Filter--sterilize Trace vitamins solution. Distribute the medium intoculture vessels
+    (e.g., 20 ml per 100 ml serum bottles) containing Trace vitamins and sulfur, replace
+    the gas phase with a H2--CO2 (80:20) gas atmosphere and seal with butyl rubber
+    stoppers. Prior to inoculation, add sterile Na2S・9H2O solution and adjust pH to
+    3.0 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 200 kPa H2--CO2
+    (80:20).\"\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q20", "subject": "Carbon dioxide gas", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "correct", "stage": "procedural acid and gas
+    conditions", "interpretation": "Move this VARIABLE direct ingredient to its exact
+    preparation stage. H2SO4 adjusts initial pH 2.7 and final pH 3.0 (final acid1
+    N); N2 is used for separately autoclaved sulfide, and H2/CO2=80:20 is the bottle
+    gas. No titrant volume, dissolved-gas concentration or normality-to-molarity conversion
+    is supplied.", "sources": [{"locator": "$.comments[0]", "source_key": "togoM514",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Mix ingredients except vitamins, sulfur and Na2S・9H2O,
+    adjust pH to 2.7 with H2SO4 and autoclave. Separately autoclave 5% (w/v) Na2S・9H2O
+    solutionunder a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
+    Filter--sterilize Trace vitamins solution. Distribute the medium intoculture vessels
+    (e.g., 20 ml per 100 ml serum bottles) containing Trace vitamins and sulfur, replace
+    the gas phase with a H2--CO2 (80:20) gas atmosphere and seal with butyl rubber
+    stoppers. Prior to inoculation, add sterile Na2S・9H2O solution and adjust pH to
+    3.0 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 200 kPa H2--CO2
+    (80:20).\"\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q21", "subject": "N2", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "correct", "stage": "procedural acid and gas
+    conditions", "interpretation": "Move this VARIABLE direct ingredient to its exact
+    preparation stage. H2SO4 adjusts initial pH 2.7 and final pH 3.0 (final acid1
+    N); N2 is used for separately autoclaved sulfide, and H2/CO2=80:20 is the bottle
+    gas. No titrant volume, dissolved-gas concentration or normality-to-molarity conversion
+    is supplied.", "sources": [{"locator": "$.comments[0]", "source_key": "togoM514",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Mix ingredients except vitamins, sulfur and Na2S・9H2O,
+    adjust pH to 2.7 with H2SO4 and autoclave. Separately autoclave 5% (w/v) Na2S・9H2O
+    solutionunder a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
+    Filter--sterilize Trace vitamins solution. Distribute the medium intoculture vessels
+    (e.g., 20 ml per 100 ml serum bottles) containing Trace vitamins and sulfur, replace
+    the gas phase with a H2--CO2 (80:20) gas atmosphere and seal with butyl rubber
+    stoppers. Prior to inoculation, add sterile Na2S・9H2O solution and adjust pH to
+    3.0 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 200 kPa H2--CO2
+    (80:20).\"\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q22", "subject": "Hydrogen gas", "local_fields": [{"record_path": "data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "correct", "stage": "procedural acid and gas
+    conditions", "interpretation": "Move this VARIABLE direct ingredient to its exact
+    preparation stage. H2SO4 adjusts initial pH 2.7 and final pH 3.0 (final acid1
+    N); N2 is used for separately autoclaved sulfide, and H2/CO2=80:20 is the bottle
+    gas. No titrant volume, dissolved-gas concentration or normality-to-molarity conversion
+    is supplied.", "sources": [{"locator": "$.comments[0]", "source_key": "togoM514",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Mix ingredients except vitamins, sulfur and Na2S・9H2O,
+    adjust pH to 2.7 with H2SO4 and autoclave. Separately autoclave 5% (w/v) Na2S・9H2O
+    solutionunder a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
+    Filter--sterilize Trace vitamins solution. Distribute the medium intoculture vessels
+    (e.g., 20 ml per 100 ml serum bottles) containing Trace vitamins and sulfur, replace
+    the gas phase with a H2--CO2 (80:20) gas atmosphere and seal with butyl rubber
+    stoppers. Prior to inoculation, add sterile Na2S・9H2O solution and adjust pH to
+    3.0 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 200 kPa H2--CO2
+    (80:20).\"\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q23", "subject": "Scoped vitamin Distilled water", "local_fields": [{"record_path":
+    "data/normalized_yaml/bacterial/togo_medium_m190.yaml", "field_path": "solutions[1].composition[0].concentration",
+    "original": {"value": "1", "unit": "L"}}], "decision": "evidence_only", "stage":
+    "JCM 197/M190 vitamin stock only", "interpretation": "Retain this exact vitamin-stock
+    input from JCM 197, independently corroborated by TOGO M190. The maintained dependency
+    correctly keeps mass in batch notes rather than unsupported g/L, and water as1
+    L input. Only this subsection transfers; M190 basal ingredients, mineral stock,
+    receiving doses, pH and procedure do not transfer. Calcium pantothenate is generic
+    in these primary sources; do not infer an unstated stereoisomer.", "sources":
+    [{"locator": "HTML tr[25]", "source_key": "jcm197", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+    "source_raw_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+    "source_text_sha256": "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450",
+    "accessed_at": "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Distilled
+    water\n1.0\nL", "quote_representation": "HTML tr[25] DOM text"}, {"locator": "$.components[1].items[0]",
+    "source_key": "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q24", "subject": "Scoped vitamin Biotin", "local_fields":
+    [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml", "field_path":
+    "solutions[1].composition[1].notes", "original": "Role: Vitamin; Properties: Organic
+    compound, Defined component, Simple component\n\nSource batch input: 2 mg. Final
+    preparation volume is not independently established; the unsupported g/L assertion
+    is withdrawn, not replaced by an assumed one-liter concentration."}], "decision":
+    "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[15]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Biotin\n2.0\nmg", "quote_representation":
+    "HTML tr[15] DOM text"}, {"locator": "$.components[1].items[1]", "source_key":
+    "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Biotin\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001025\",\n          \"gmo_id\": \"GMO_001025\",\n          \"label\":
+    \"Biotin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q25", "subject":
+    "Scoped vitamin p--Aminobenzoic acid", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[2].notes", "original": "Role: Vitamin;
+    Properties: Organic compound, Defined component, Simple component\n\nSource batch
+    input: 5 mg. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],
+    "decision": "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[23]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "p\n-Aminobenzoic acid\n5.0\nmg",
+    "quote_representation": "HTML tr[23] DOM text"}, {"locator": "$.components[1].items[2]",
+    "source_key": "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"p--Aminobenzoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001026\",\n          \"gmo_id\": \"GMO_001026\",\n          \"label\":
+    \"4-Aminobenzoic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q26", "subject":
+    "Scoped vitamin Thiamine・HCl", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[3].notes", "original": "Role: Vitamin;
+    Properties: Organic compound, Defined component, Simple component\n\nSource batch
+    input: 5 mg. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],
+    "decision": "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[18]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Thiamine·HCl\n5.0\nmg",
+    "quote_representation": "HTML tr[18] DOM text"}, {"locator": "$.components[1].items[3]",
+    "source_key": "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Thiamine・HCl\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001027\",\n          \"gmo_id\": \"GMO_001027\",\n          \"label\":
+    \"Thiamine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q27", "subject":
+    "Scoped vitamin Calcium pantothenate", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[4].notes", "original": "Role: Vitamin;
+    Properties: Organic compound, Defined component, Simple component\n\nSource batch
+    input: 5 mg. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],
+    "decision": "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[21]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Calcium pantothenate\n5.0\nmg",
+    "quote_representation": "HTML tr[21] DOM text"}, {"locator": "$.components[1].items[4]",
+    "source_key": "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Calcium pantothenate\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001028\",\n          \"gmo_id\": \"GMO_001028\",\n          \"label\":
+    \"Calcium pantothenate\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q28", "subject":
+    "Scoped vitamin Pyridoxine・HCl", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[5].notes", "original": "Role: Vitamin;
+    Properties: Organic compound, Defined component, Simple component\n\nSource batch
+    input: 10 mg. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],
+    "decision": "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[17]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Pyridoxine·HCl\n10.0\nmg",
+    "quote_representation": "HTML tr[17] DOM text"}, {"locator": "$.components[1].items[5]",
+    "source_key": "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Pyridoxine・HCl\",\n          \"volume\": 10,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001029\",\n          \"gmo_id\": \"GMO_001029\",\n          \"label\":
+    \"Pyridoxine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q29", "subject":
+    "Scoped vitamin Folic acid", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[6].notes", "original": "Role: Vitamin;
+    Properties: Organic compound, Defined component, Simple component\n\nSource batch
+    input: 2 mg. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],
+    "decision": "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[16]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Folic acid\n2.0\nmg", "quote_representation":
+    "HTML tr[16] DOM text"}, {"locator": "$.components[1].items[6]", "source_key":
+    "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Folic acid\",\n          \"volume\": 2,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001033\",\n          \"gmo_id\": \"GMO_001033\",\n          \"label\":
+    \"Folic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q30", "subject":
+    "Scoped vitamin Vitamin B12", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[7].notes", "original": "Role: Vitamin;
+    Properties: Organic compound, Defined component, Simple component\n\nSource batch
+    input: 0.1 mg. Final preparation volume is not independently established; the
+    unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],
+    "decision": "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[22]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Vitamin B\n1\n2\n0.1\nmg",
+    "quote_representation": "HTML tr[22] DOM text"}, {"locator": "$.components[1].items[7]",
+    "source_key": "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Vitamin B12\",\n          \"volume\": 0.1,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001034\",\n          \"gmo_id\": \"GMO_001034\",\n          \"label\":
+    \"Cobalamin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q31", "subject":
+    "Scoped vitamin Riboflavin", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[8].notes", "original": "Role: Vitamin;
+    Properties: Organic compound, Defined component, Simple component\n\nSource batch
+    input: 5 mg. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],
+    "decision": "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[19]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Riboflavin\n5.0\nmg", "quote_representation":
+    "HTML tr[19] DOM text"}, {"locator": "$.components[1].items[8]", "source_key":
+    "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Riboflavin\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001037\",\n          \"gmo_id\": \"GMO_001037\",\n          \"label\":
+    \"Riboflavin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q32", "subject":
+    "Scoped vitamin Nicotinic acid", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[9].notes", "original": "Role: Vitamin;
+    Properties: Organic compound, Defined component, Simple component\n\nSource batch
+    input: 5 mg. Final preparation volume is not independently established; the unsupported
+    g/L assertion is withdrawn, not replaced by an assumed one-liter concentration."}],
+    "decision": "evidence_only", "stage": "JCM 197/M190 vitamin stock only", "interpretation":
+    "Retain this exact vitamin-stock input from JCM 197, independently corroborated
+    by TOGO M190. The maintained dependency correctly keeps mass in batch notes rather
+    than unsupported g/L, and water as1 L input. Only this subsection transfers; M190
+    basal ingredients, mineral stock, receiving doses, pH and procedure do not transfer.
+    Calcium pantothenate is generic in these primary sources; do not infer an unstated
+    stereoisomer.", "sources": [{"locator": "HTML tr[20]", "source_key": "jcm197",
+    "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197", "source_raw_sha256":
+    "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532", "source_text_sha256":
+    "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450", "accessed_at":
+    "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Nicotinic acid\n5.0\nmg",
+    "quote_representation": "HTML tr[20] DOM text"}, {"locator": "$.components[1].items[9]",
+    "source_key": "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Nicotinic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001038\",\n          \"gmo_id\": \"GMO_001038\",\n          \"label\":
+    \"Nicotinic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q33", "subject":
+    "Scoped vitamin Lipoic acid", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/togo_medium_m190.yaml",
+    "field_path": "solutions[1].composition[10].notes", "original": "Role: Growth
+    factor; Properties: Organic compound, Defined component, Simple component\n\nSource
+    batch input: 5 mg. Final preparation volume is not independently established;
+    the unsupported g/L assertion is withdrawn, not replaced by an assumed one-liter
+    concentration."}], "decision": "evidence_only", "stage": "JCM 197/M190 vitamin
+    stock only", "interpretation": "Retain this exact vitamin-stock input from JCM
+    197, independently corroborated by TOGO M190. The maintained dependency correctly
+    keeps mass in batch notes rather than unsupported g/L, and water as1 L input.
+    Only this subsection transfers; M190 basal ingredients, mineral stock, receiving
+    doses, pH and procedure do not transfer. Calcium pantothenate is generic in these
+    primary sources; do not infer an unstated stereoisomer.", "sources": [{"locator":
+    "HTML tr[24]", "source_key": "jcm197", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=197",
+    "source_raw_sha256": "39580c63dd4a26cd4a98ee1d836b658683fcbff3e0df2adcb4208907cac40532",
+    "source_text_sha256": "4238f8aa85abfecffbc78f341694b20dc48537d7742cec72962105e3ea3cb450",
+    "accessed_at": "2026-10-28T06:09:11.214157Z", "exact_source_quote": "Lipoic acid\n5.0\nmg",
+    "quote_representation": "HTML tr[24] DOM text"}, {"locator": "$.components[1].items[10]",
+    "source_key": "togoM190", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M190",
+    "source_raw_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "source_text_sha256": "61c69f48450ab6c5f9328553ae143b64eeb8b7aab88fa1e966e00a19317cf528",
+    "accessed_at": "2026-10-28T06:09:11.314908Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Lipoic acid\",\n          \"volume\": 5,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001699\",\n          \"gmo_id\": \"GMO_001699\",\n          \"label\":
+    \"Lipoic acid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000067\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000067\",\n              \"label\": \"Growth factor\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q34", "subject":
+    "Complete missing preparation", "local_fields": [], "decision": "evidence_only",
+    "stage": "medium and separate sterilization stages", "interpretation": "Preserve
+    initial pH 2.7 before autoclaving; separately autoclave5% w/v sodium sulfide underN2;
+    steam sulfur3 h on each of 3 successive days; filter sterilize vitamins; use20
+    ml per 100 ml serum bottle as example; replace gas with H2/CO2=80:20 and seal;
+    add sulfide and adjust to pH 3.0 with sterile1 NH2SO4 before inoculation; pressurize
+    inoculated bottle to 200 kPa. The pressure basis is unspecified, so do not relabel
+    it absolute or gauge. JCM general121°C15 min autoclave guidance applies only to
+    unqualified autoclaving, not the explicit sulfur schedule.", "sources": [{"locator":
+    "$.comments[0]", "source_key": "togoM514", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M514",
+    "source_raw_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "source_text_sha256": "f577386472a6afdad3b54c6fa9e608aab1b4339bdde6c7ddbc1bf3e654728fe4",
+    "accessed_at": "2026-10-28T06:09:11.105466Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Mix ingredients except vitamins, sulfur and Na2S・9H2O,
+    adjust pH to 2.7 with H2SO4 and autoclave. Separately autoclave 5% (w/v) Na2S・9H2O
+    solutionunder a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
+    Filter--sterilize Trace vitamins solution. Distribute the medium intoculture vessels
+    (e.g., 20 ml per 100 ml serum bottles) containing Trace vitamins and sulfur, replace
+    the gas phase with a H2--CO2 (80:20) gas atmosphere and seal with butyl rubber
+    stoppers. Prior to inoculation, add sterile Na2S・9H2O solution and adjust pH to
+    3.0 with sterile 1 N H2SO4. Pressurize the inoculated bottle to 200 kPa H2--CO2
+    (80:20).\"\n    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text
+    lines 4-4", "source_key": "jcm513", "reference": "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=513",
+    "source_raw_sha256": "fa3051c5af0b95772acd0b9dd21b9161875e4854c92443dbc712f3d4b3942be7",
+    "source_text_sha256": "e0adaa238d6820e5c7e1b70660a2c0d4159a9bbe86db10cb6eeeab1e2d6fa09a",
+    "accessed_at": "2026-10-28T06:09:11.029183Z", "exact_source_quote": "Unless otherwise
+    stated, sterilize media by autoclaving at 121°C for 15 min.", "quote_representation":
+    "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch058/record06/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a5
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/CALDOCOCCUS_MEDIUM.yaml: primary 16/20, secondary
+    6/20; data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml: primary
+    17/20, secondary 6/20. These are ingredient-instance linkage fractions, not accuracy
+    scores. Solution terms are audited separately. Every actually asserted CHEBI term
+    is joined to its exact current OLS object and packaged MIM CSV rows. Zero numeric
+    legacy MediaIngredientMech identifiers occur in the full selected documents; NNNNNN
+    is a historical placeholder, not an ID. Complex commercial/product components
+    are not forced to pure-compound IDs.'
+  target_ids:
+  - CultureMech:009905
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:009905
+  evidence_ids:
+  - local0
+- assessment_id: a7
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:009905
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-009905-stock-stage-unit-and-water-corruption
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock doses, water and resazurin retain wrong units or stages
+  description: Trace vitamins10 ml and minerals1 ml are empty solution placeholders
+    with mass units; six mineral-stock compounds appear as direct ingredients. Resazurin1
+    mg is stored as1 G_PER_L. Water is a stale2 G_PER_L target versus partially repaired1
+    G_PER_L owner; both still confuse main and stock liquid inputs. The unchanged
+    main gram numbers also lack verified final-volume denominators.
+  target_ids:
+  - CultureMech:009905
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - jcm513
+  - togoM514
+  - local0
+  - local1
+  rule_id: source-specific-formulation-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-009905-missing-multistage-preparation-and-ph
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation and pH controls are absent
+  description: Neither selected layer retains the source pH 2.7 then3.0 sequence,
+    separate sulfur/sulfide/vitamin treatment or gas/pressure stages. VARIABLE direct
+    gases and acid do not preserve these conditions. No claim-scoped formulation evidence
+    is attached.
+  target_ids:
+  - CultureMech:009905
+  field_paths:
+  - ph_value
+  - preparation_steps
+  - evidence
+  - ingredients[10:14]
+  evidence_ids:
+  - jcm513
+  - togoM514
+  rule_id: source-specific-formulation-fidelity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-009905-chemical-form-and-stale-cobalt-grounding
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Supplied forms and an owner grounding repair need reconciliation
+  description: MnSO4·xH2O is mapped to anhydrous CHEBI:86360; source hydration is
+    unspecified and cannot justify a specific hydrate. Bulk sulfur uses sulfur atomCHEBI26833;
+    its current MIM exact-ID absence is a separate linkage issue. The maintained owner
+    has correctly added cobalt sulfate heptahydrateCHEBI91244, while the target lacks
+    that primary term. The vitamin dependency calcium pantothenate uses a D-specific
+    CHEBI:31345 without source stereochemistry, so that link must remain unresolved
+    rather than silently transferred.
+  target_ids:
+  - CultureMech:009905
+  field_paths:
+  - ingredients[19].term
+  - ingredients[6].term
+  - ingredients[6].mediaingredientmech_chebi_term
+  - ingredients[18].term
+  - data/normalized_yaml/bacterial/togo_medium_m190.yaml::solutions[1].composition[4].term
+  - data/normalized_yaml/bacterial/togo_medium_m190.yaml::solutions[1].composition[4].mediaingredientmech_chebi_term
+  evidence_ids:
+  - grounding
+  - chebi86360
+  - chebi26833
+  - chebi91244
+  - chebi31345
+  - jcm513
+  - jcm197
+  rule_id: supplied-form-and-target-freshness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: scoped vitamin stock dependency; solutions[1].composition only
+actions:
+- action_id: action1
+  description: Restore separate absolute water and stock-dose stages, correct the
+    resazurin unit, preserve exact mineral batch amounts and add only the JCM 197/M190
+    vitamin composition. Credit the owner duplicate repair, but do not propagate its
+    residual unit error or infer final volumes.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009905
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Represent the exact source-specific preparation and qualifier-bearing
+    pressure, gas and titrant conditions. Put supporting preparation/dose evidence
+    at the enclosing root with precise field context; do not invent unsupported evidence
+    slots on PreparationStep or SolutionDescriptor.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009905
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Preserve supported cobalt hydrate and regenerate the stale target after
+    owner repair. Resolve broad/anhydrous versus supplied-material mappings conservatively,
+    retaining unspecified hydration and stereochemistry as limits. Do not change supported
+    masses.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009905
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/archaea/TOGO_M514_Caldococcus_Medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/togo_medium_m190.yaml
+    role: scoped vitamin stock dependency; solutions[1].composition only
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- No final-medium or stock volume is inferred from listed water; source batch masses
+  are not automatically g/L. The200 kPa pressure lacks a gauge/absolute qualifier.
+- Only JCM 197/TOGO M190 vitamin-stock composition is a dependency. Its basal formula,
+  mineral stock, receiving dose and preparation do not transfer.
+- Generic manganese hydration and calcium-pantothenate stereochemistry remain unresolved;
+  current MIM absence does not establish historical invalidity. No organism-specific
+  growth assertion is inferred.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
