@@ -1,0 +1,2830 @@
+schema_version: 1.0.0
+review_id: 20261028T053242Z-culturemech-002070-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Caldanaerobius medium: stock structure, supplied forms and source review'
+started_at: '2026-10-28T05:10:48.545989Z'
+finished_at: '2026-10-28T05:32:42.108694Z'
+reviewer:
+  identity: OpenAI Codex
+  kind: agent
+  independence: independent
+  independence_basis: Reviewer did not author or modify assessed scientific records;
+    direct source and exact-input assessment, not experimental validation.
+skill: review-yaml-record
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: DSMZ903 identity and all four native checks are supported. Four major findings
+  concern incomplete stock topology, dose denominators, supplied-form grounding and
+  stale incompatible merge; one minor finding concerns scoped provenance/history.
+  Current KOMODO catalog access remains unavailable.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: AGENTS.md
+    sha256: 72737a531548de8636bcf70b972e71a7630a0e579215b6ded392d88d1b51a4fc
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/oak_config.yaml
+    sha256: c0ef0808662f57dc2f57ce9b405485830503653aceee1451c9e1dae42f9e7021
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml
+    sha256: 677ece1b34d951c2d4688ed76d0797d1ff4b1818de6e1e58c18462798f0c2157
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    sha256: 7220b3516118f8abe9388058f8da9b9bc85b3957862b3d7e6eeb74f44bc18e1e
+    role: context
+  - path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    sha256: e5d56f6f319833b0a42f28e55c03c4132200ef5da64a744cf85993895d9b1602
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml.md
+    sha256: 49e608a579cfe2d74ebcd6cad30546e38a0000ec11ca33c9d0ef563633c8837a
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/caldanaerobius_medium.yaml.md
+    sha256: b8ee39286875fb7f3123fb0eb79998a8ccf34e98e45ff75cac900e34db9abadc
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.md
+    sha256: 96b4308e00a59e3da028b5bbfe256cbf5e55a7a95f2df32c1f829ed6e40cd01d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.md
+    sha256: 29151f07e1d547e2aad93dd0c4e38d9868a36482db73c3ccc6b51af122b8ba81
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldanaerobius_medium.md
+    sha256: b5ac9d9c0f0d2954dd0cd4983dbbd6ae2d7e8c021def8abe654c4e99636cf4e6
+    role: context
+  - path: reports/yaml_record_review/20260922T015147Z-CALDANAEROBIUS_MEDIUM.md
+    sha256: dbedb228151ed965e80af9babede0399947258798d82a3922532c51e11293d3c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_cocktail_nesting.py
+    sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/promote_komodo_volume_candidates.py
+    sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/resolve_komodo_compositions.py
+    sha256: f45bc52a8efaa66c9a93c109a40c7d2763ac9f49c9009d92a4c0a0a41b7c28da
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merge_recipes.py
+    sha256: ce00a4b4e0bc2fa9a63e8b33f4a591cb20984569e125d395af40f5b7e84766a7
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: One entire generated record, both exact maintained owners, all 91 local
+    concentration fields, all 36 source recipe rows, two source preparation paragraphs,
+    identifiers, histories and current writer behavior.
+  selection: 'Batch 056 item 10: next ten Python-sorted uncovered paths from successful
+    native list union; 483 of 6325 paths covered at selection. Fresh origin/main base
+    9ea7ff33d354e37b791df96a880005153e446ce3.'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:002070
+  exclusions:
+  - target: Other media, organisms and strain-specific growth
+    reason: No growth or medium-variant assertions transferred from names or related
+      sources.
+targets:
+- target_id: CultureMech:002070
+  path: data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml
+  label: CALDANAEROBIUS MEDIUM
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merger.py
+    role: generated merge implementation
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  command: just validate-schema data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  command: just validate-strict data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml
+    --out REVIEW_WORK/batch056/record10/strict.tsv
+    --workers 1
+  exit_code: 0
+  required: true
+  status: passed
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch056/record10/strict.tsv"
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  command: just validate-terms data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  command: just validate-references data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml
+  exit_code: 0
+  required: true
+  status: passed
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - validate-references
+- check_id: embedded-history
+  name: Embedded history assessment
+  required: false
+  status: passed
+  summary: All generated and maintained embedded histories inspected manually. The
+    standalone history-tree recipe is not a focused validator for these embedded entries;
+    malformed and timezone-absent owner entries retained as observations.
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+evidence:
+- evidence_id: target
+  kind: record_content
+  reference: data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: 'Full generated target: 29 direct ingredients, no solutions; two preparation
+    paragraphs, pH 7, source duplicate relationship and eight history entries.'
+  locator: entire file
+  snapshot_sha256: 677ece1b34d951c2d4688ed76d0797d1ff4b1818de6e1e58c18462798f0c2157
+- evidence_id: owner1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Full maintained owner, including all 24 direct ingredients, two stock additions
+    and five inline components. Descriptor equality to generated ingredients verified;
+    all remaining metadata read.
+  locator: entire file
+  snapshot_sha256: e5d56f6f319833b0a42f28e55c03c4132200ef5da64a744cf85993895d9b1602
+- evidence_id: owner2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Full maintained owner, including all 24 direct ingredients, two stock additions
+    and five inline components. Descriptor equality to generated ingredients verified;
+    all remaining metadata read.
+  locator: entire file
+  snapshot_sha256: 7220b3516118f8abe9388058f8da9b9bc85b3957862b3d7e6eeb74f44bc18e1e
+- evidence_id: registry
+  kind: record_content
+  reference: data/culturemech_id_registry.tsv
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Exact CM002070 and CM006773 rows resolve to the two inspected normalized
+    owners.
+  locator: rows for CultureMech:002070 and CultureMech:006773
+  snapshot_sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+- evidence_id: schema
+  kind: record_content
+  reference: src/culturemech/schema/culturemech.yaml
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Authoritative concentration, evidence, solution, preparation and history
+    representation contract.
+  locator: MediaRecipe; IngredientDescriptor; SolutionDescriptor; ConcentrationValue;
+    EvidenceItem; preparation and history fields
+  snapshot_sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+- evidence_id: importer
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Current importer limits direct composition to primary solution, preserves
+    named/percentage liquid stocks, skips water as chemical edges, still maps ml to
+    ML_PER_L and concatenates all solution steps.
+  locator: _parse_api_composition; _parse_api_solutions; _parse_preparation_steps;
+    _classify_preparation_action
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: nesting
+  kind: record_content
+  reference: scripts/apply_cocktail_nesting.py
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Name/value matching is restricted to flagged ingredients; plan_record skips
+    records already carrying solutions. Partial five-component nesting is not proof
+    of complete stock reconstruction.
+  locator: match_components; plan_record; apply_plan
+  snapshot_sha256: a1914a040ca02c86633aae11ed8a52a0ea91ba157a8240da2232c4ae652d61ab
+- evidence_id: promotion
+  kind: record_content
+  reference: scripts/promote_komodo_volume_candidates.py
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Promotes a stored concentration candidate on composition confirmation;
+    does not independently establish the final volume denominator.
+  locator: promote_doc
+  snapshot_sha256: 2423b7e2e04011b31d21eac939714a2db4380f033a69094325dc567e44929cd2
+- evidence_id: generator
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Current merger delegates to exact formulation compatibility before evidence
+    union.
+  locator: merge_group
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Current equality gate preserves notes, preparation, stock structure and
+    scientific assertions. Identity-set coincidence cannot justify a forced merge.
+  locator: formulation_content; FormulationFingerprinter; merge_formulation_evidence
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: mim-index
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.csv
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Packaged exact resolver consulted for all 29 descriptors; matching links
+    do not independently certify exact chemical form.
+  locator: exact descriptor labels
+  snapshot_sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+- evidence_id: mim-metadata
+  kind: record_content
+  reference: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Immutable MIM snapshot metadata, verified by maintained resolver loading.
+  locator: entire file
+  snapshot_sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+- evidence_id: mediadive903
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'DSMZ903 identity and exact main/stock recipe structure inspected; no named
+    organism or growth assertion in these source documents. Author DSMZ; PDF copyright2022,
+    API does not supply publication date. Discovery: existing record accession/source
+    link.'
+  locator: $.data.medium and all four solutions
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+- evidence_id: dsm903
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium903.pdf
+  accessed_at: '2026-10-28T05:13:50.557207Z'
+  support: supports
+  summary: 'DSMZ903 identity and exact main/stock recipe structure inspected; no named
+    organism or growth assertion in these source documents. Author DSMZ; PDF copyright2022,
+    API does not supply publication date. Discovery: existing record accession/source
+    link.'
+  locator: both pages
+  snapshot_sha256: d58498fbe0a19286d811988b9da350f95c0cd11c44444879a600bbcb1da1d85d
+- evidence_id: komodo-access
+  kind: search
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  accessed_at: '2026-10-28T05:13:49.999182Z'
+  support: context_only
+  summary: Exact public catalog request returned HTTP 403. No current catalog text
+    was obtained; historical row is retained separately as historical evidence.
+  locator: exact MediaList endpoint
+  search_scope: One request to the exact KOMODO MediaList URL named in the inspected
+    historical report; HTTP403, not a global absence finding.
+- evidence_id: q-0-0
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'KH2PO4; Source solution 1856 (Main sol. 903); API reported volume 1003
+    ml. Supplied attribute: none. These are reported source quantities, not an inferred
+    universal working dose.'
+  locator: $.data.solutions[0].recipe[0]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.498504"
+- evidence_id: q-0-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'MgCl2 x 6 H2O; Source solution 1856 (Main sol. 903); API reported volume
+    1003 ml. Supplied attribute: none. These are reported source quantities, not an
+    inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[1]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.33,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.329013"
+- evidence_id: q-0-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'NaCl; Source solution 1856 (Main sol. 903); API reported volume 1003 ml.
+    Supplied attribute: none. These are reported source quantities, not an inferred
+    universal working dose.'
+  locator: $.data.solutions[0].recipe[2]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.4,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.398804"
+- evidence_id: q-0-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'CaCl2 x 2 H2O; Source solution 1856 (Main sol. 903); API reported volume
+    1003 ml. Supplied attribute: none. These are reported source quantities, not an
+    inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[3]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.05,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.0498504"
+- evidence_id: q-0-4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Trace element solution SL-10; Source solution 1856 (Main sol. 903); API
+    reported volume 1003 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[4]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 1,\n                        \"unit\": \"ml\""
+- evidence_id: q-0-5
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Selenite-tungstate solution; Source solution 1856 (Main sol. 903); API
+    reported volume 1003 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[5]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 1,\n                        \"unit\": \"ml\""
+- evidence_id: q-0-6
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Trypticase peptone; Source solution 1856 (Main sol. 903); API reported
+    volume 1003 ml. Supplied attribute: BD BBL. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[6]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.25,\n                        \"unit\": \"g\",\n          \
+    \              \"g_l\": 0.249252"
+- evidence_id: q-0-7
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Sodium resazurin; Source solution 1856 (Main sol. 903); API reported volume
+    1003 ml. Supplied attribute: 0.1% w/v. These are reported source quantities, not
+    an inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[7]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.5,\n                        \"unit\": \"ml\",\n          \
+    \              \"g_l\": 0.000498504"
+- evidence_id: q-0-8
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Na2CO3; Source solution 1856 (Main sol. 903); API reported volume 1003
+    ml. Supplied attribute: none. These are reported source quantities, not an inferred
+    universal working dose.'
+  locator: $.data.solutions[0].recipe[8]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 1.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 1.49551"
+- evidence_id: q-0-9
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Sucrose; Source solution 1856 (Main sol. 903); API reported volume 1003
+    ml. Supplied attribute: none. These are reported source quantities, not an inferred
+    universal working dose.'
+  locator: $.data.solutions[0].recipe[9]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 5,\n                        \"unit\": \"g\",\n             \
+    \           \"g_l\": 4.98504"
+- evidence_id: q-0-10
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Seven vitamins solution; Source solution 1856 (Main sol. 903); API reported
+    volume 1003 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[10]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 1,\n                        \"unit\": \"ml\""
+- evidence_id: q-0-11
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'L-Cysteine HCl x H2O; Source solution 1856 (Main sol. 903); API reported
+    volume 1003 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[11]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.3,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.299103"
+- evidence_id: q-0-12
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Na2S x 9 H2O; Source solution 1856 (Main sol. 903); API reported volume
+    1003 ml. Supplied attribute: none. These are reported source quantities, not an
+    inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[12]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.3,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.299103"
+- evidence_id: q-0-13
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Distilled water; Source solution 1856 (Main sol. 903); API reported volume
+    1003 ml. Supplied attribute: none. These are reported source quantities, not an
+    inferred universal working dose.'
+  locator: $.data.solutions[0].recipe[13]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 1000,\n                        \"unit\": \"ml\""
+- evidence_id: q-1-0
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'HCl; Source solution 595 (Trace element solution SL-10); API reported
+    volume 1000 ml. Supplied attribute: 25%. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[0]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 10,\n                        \"unit\": \"ml\",\n           \
+    \             \"g_l\": 2.5"
+- evidence_id: q-1-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'FeCl2 x 4 H2O; Source solution 595 (Trace element solution SL-10); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[1]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 1.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 1.5"
+- evidence_id: q-1-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'ZnCl2; Source solution 595 (Trace element solution SL-10); API reported
+    volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[2]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 70,\n                        \"unit\": \"mg\",\n           \
+    \             \"g_l\": 0.07"
+- evidence_id: q-1-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'MnCl2 x 4 H2O; Source solution 595 (Trace element solution SL-10); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[3]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 100,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.1"
+- evidence_id: q-1-4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'H3BO3; Source solution 595 (Trace element solution SL-10); API reported
+    volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[4]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 6,\n                        \"unit\": \"mg\",\n            \
+    \            \"g_l\": 0.006"
+- evidence_id: q-1-5
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'CoCl2 x 6 H2O; Source solution 595 (Trace element solution SL-10); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[5]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 190,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.19"
+- evidence_id: q-1-6
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'CuCl2 x 2 H2O; Source solution 595 (Trace element solution SL-10); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[6]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 2,\n                        \"unit\": \"mg\",\n            \
+    \            \"g_l\": 0.002"
+- evidence_id: q-1-7
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'NiCl2 x 6 H2O; Source solution 595 (Trace element solution SL-10); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[7]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 24,\n                        \"unit\": \"mg\",\n           \
+    \             \"g_l\": 0.024"
+- evidence_id: q-1-8
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Na2MoO4 x 2 H2O; Source solution 595 (Trace element solution SL-10); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[8]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 36,\n                        \"unit\": \"mg\",\n           \
+    \             \"g_l\": 0.036"
+- evidence_id: q-1-9
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Distilled water; Source solution 595 (Trace element solution SL-10); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[1].recipe[9]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 990,\n                        \"unit\": \"ml\""
+- evidence_id: q-2-0
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'NaOH; Source solution 777 (Selenite-tungstate solution); API reported
+    volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[2].recipe[0]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 0.5,\n                        \"unit\": \"g\",\n           \
+    \             \"g_l\": 0.5"
+- evidence_id: q-2-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Na2SeO3 x 5 H2O; Source solution 777 (Selenite-tungstate solution); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[2].recipe[1]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 3,\n                        \"unit\": \"mg\",\n            \
+    \            \"g_l\": 0.003"
+- evidence_id: q-2-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Na2WO4 x 2 H2O; Source solution 777 (Selenite-tungstate solution); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[2].recipe[2]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 4,\n                        \"unit\": \"mg\",\n            \
+    \            \"g_l\": 0.004"
+- evidence_id: q-2-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Distilled water; Source solution 777 (Selenite-tungstate solution); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[2].recipe[3]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 1000,\n                        \"unit\": \"ml\""
+- evidence_id: q-3-0
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Vitamin B12; Source solution 1038 (Seven vitamins solution); API reported
+    volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[3].recipe[0]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 100,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.1"
+- evidence_id: q-3-1
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'p-Aminobenzoic acid; Source solution 1038 (Seven vitamins solution); API
+    reported volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[3].recipe[1]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 80,\n                        \"unit\": \"mg\",\n           \
+    \             \"g_l\": 0.08"
+- evidence_id: q-3-2
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'D-(+)-biotin; Source solution 1038 (Seven vitamins solution); API reported
+    volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[3].recipe[2]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 20,\n                        \"unit\": \"mg\",\n           \
+    \             \"g_l\": 0.02"
+- evidence_id: q-3-3
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Nicotinic acid; Source solution 1038 (Seven vitamins solution); API reported
+    volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[3].recipe[3]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 200,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.2"
+- evidence_id: q-3-4
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Calcium pantothenate; Source solution 1038 (Seven vitamins solution);
+    API reported volume 1000 ml. Supplied attribute: none. These are reported source
+    quantities, not an inferred universal working dose.'
+  locator: $.data.solutions[3].recipe[4]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 100,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.1"
+- evidence_id: q-3-5
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Pyridoxine hydrochloride; Source solution 1038 (Seven vitamins solution);
+    API reported volume 1000 ml. Supplied attribute: none. These are reported source
+    quantities, not an inferred universal working dose.'
+  locator: $.data.solutions[3].recipe[5]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 300,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.3"
+- evidence_id: q-3-6
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Thiamine-HCl x 2 H2O; Source solution 1038 (Seven vitamins solution);
+    API reported volume 1000 ml. Supplied attribute: none. These are reported source
+    quantities, not an inferred universal working dose.'
+  locator: $.data.solutions[3].recipe[6]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 200,\n                        \"unit\": \"mg\",\n          \
+    \              \"g_l\": 0.2"
+- evidence_id: q-3-7
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/903
+  accessed_at: '2026-10-28T05:13:50.381762Z'
+  support: supports
+  summary: 'Distilled water; Source solution 1038 (Seven vitamins solution); API reported
+    volume 1000 ml. Supplied attribute: none. These are reported source quantities,
+    not an inferred universal working dose.'
+  locator: $.data.solutions[3].recipe[7]
+  snapshot_sha256: 22a2a4396146eb521866c4f82dff3cee41de17eb8f24c68a2aec7d32585a555d
+  quote: "\"amount\": 1000,\n                        \"unit\": \"ml\""
+- evidence_id: chebi-131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  accessed_at: '2026-10-28T05:13:50.298955Z'
+  support: supports
+  summary: CHEBI:131361 resolves to disodium selenite pentahydrate; obsolete=False;
+    formula=['5H2O.2Na.O3Se']. Chemical identity evidence only; not medium concentration
+    or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi-132751
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_132751
+  accessed_at: '2026-10-28T05:13:50.281338Z'
+  support: supports
+  summary: CHEBI:132751 resolves to thiamine hydrochloride dihydrate; obsolete=False;
+    formula=['C12H18N4OS.2Cl.2H2O']. Chemical identity evidence only; not medium concentration
+    or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 509a9cc0fafffbbccf4801dc30121b1cf3d5d176746d0003356be395faf625e9
+- evidence_id: chebi-15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15940
+  accessed_at: '2026-10-28T05:13:50.431749Z'
+  support: supports
+  summary: CHEBI:15940 resolves to nicotinic acid; obsolete=False; formula=['C6H5NO2'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 3330ed782e73526a087fb250ed5895ff232f117a896d45d541dff431e5c1f0e1
+- evidence_id: chebi-15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15956
+  accessed_at: '2026-10-28T05:13:50.645683Z'
+  support: supports
+  summary: CHEBI:15956 resolves to biotin; obsolete=False; formula=['C10H16N2O3S'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: d2d51887df4de92642b66e9d15086ef82eccbc476dd4077d514ca709181ab4bd
+- evidence_id: chebi-176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_176843
+  accessed_at: '2026-10-28T05:13:50.860030Z'
+  support: supports
+  summary: CHEBI:176843 resolves to vitamin B12; obsolete=False; formula=[]. Chemical
+    identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: b535c3de88f47e93aed8909c58ff4e2d054a6845dea3bc9a048c18df12b371a9
+- evidence_id: chebi-17883
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17883
+  accessed_at: '2026-10-28T05:13:50.905574Z'
+  support: supports
+  summary: CHEBI:17883 resolves to hydrogen chloride; obsolete=False; formula=['HCl'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 1c4c2e8e3474319ab5fb79041b19cabfae42f4360729a7569f8a943a503d2f6a
+- evidence_id: chebi-17992
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17992
+  accessed_at: '2026-10-28T05:13:51.014930Z'
+  support: supports
+  summary: CHEBI:17992 resolves to sucrose; obsolete=False; formula=['C12H22O11'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 509f9cbc014a0211d3a8e536a2c68048a090719ce68ee80550c8bbf532f150aa
+- evidence_id: chebi-26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  accessed_at: '2026-10-28T05:13:51.053816Z'
+  support: supports
+  summary: CHEBI:26710 resolves to sodium chloride; obsolete=False; formula=['Cl.Na'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi-29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  accessed_at: '2026-10-28T05:13:51.161411Z'
+  support: supports
+  summary: CHEBI:29377 resolves to sodium carbonate; obsolete=False; formula=['CO3.2Na'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi-30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30753
+  accessed_at: '2026-10-28T05:13:51.264499Z'
+  support: supports
+  summary: CHEBI:30753 resolves to 4-aminobenzoic acid; obsolete=False; formula=['C7H7NO2'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 97ea54b8020d3bcda2478182be115d2bc632249ee22b197b0575a4a9fd5fe21a
+- evidence_id: chebi-30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_30961
+  accessed_at: '2026-10-28T05:13:51.480064Z'
+  support: supports
+  summary: CHEBI:30961 resolves to pyridoxine hydrochloride; obsolete=False; formula=['C8H11NO3.HCl'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: f1c95b83f5396067c3959c20ee4715c78f7895f5084dd214b3a4bf01e064f21d
+- evidence_id: chebi-31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31345
+  accessed_at: '2026-10-28T05:13:51.491800Z'
+  support: supports
+  summary: CHEBI:31345 resolves to Calcium pantothenate; obsolete=False; formula=['2C9H16NO5.Ca'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 56fc4b33c78d82faf317e131ae936f2e00eab0c369b2a9d8be86eddff6fd616d
+- evidence_id: chebi-32145
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32145
+  accessed_at: '2026-10-28T05:13:51.620002Z'
+  support: supports
+  summary: CHEBI:32145 resolves to sodium hydroxide; obsolete=False; formula=['HO.Na'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: db4eb7586e3b04f5b2ae39b47bae7c1c533316f9bce15ee2829bf6967ca352f1
+- evidence_id: chebi-33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  accessed_at: '2026-10-28T05:13:51.672647Z'
+  support: supports
+  summary: CHEBI:33118 resolves to boric acid; obsolete=False; formula=['H3BO3'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi-34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  accessed_at: '2026-10-28T05:13:51.770382Z'
+  support: supports
+  summary: CHEBI:34887 resolves to nickel dichloride; obsolete=False; formula=['Cl2Ni'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi-49976
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_49976
+  accessed_at: '2026-10-28T05:13:51.899279Z'
+  support: supports
+  summary: CHEBI:49976 resolves to zinc dichloride; obsolete=False; formula=['2Cl.Zn'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: d27644ae0df5935f8f18a28faa1ba6096fefeb9d0cb951b39751d442c92bd321
+- evidence_id: chebi-53503
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53503
+  accessed_at: '2026-10-28T05:13:52.064582Z'
+  support: supports
+  summary: CHEBI:53503 resolves to cobalt chloride hexahydrate; obsolete=False; formula=['2Cl.Co.6H2O'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: c33e304a0a565068c592ba0970e501052981599ef69cd2cb901e88f27931389d
+- evidence_id: chebi-53542
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_53542
+  accessed_at: '2026-10-28T05:16:35.129096Z'
+  support: supports
+  summary: CHEBI:53542 resolves to nickel chloride hexahydrate; obsolete=False; formula=['2Cl.6H2O.Ni'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 423c21fd3715257bbccc1ad83ef3b8e438ffe20f02418e2b202886237c4ea112
+- evidence_id: chebi-63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  accessed_at: '2026-10-28T05:13:52.082323Z'
+  support: supports
+  summary: CHEBI:63036 resolves to potassium dihydrogen phosphate; obsolete=False;
+    formula=['H2O4P.K']. Chemical identity evidence only; not medium concentration
+    or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi-63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  accessed_at: '2026-10-28T05:13:52.207399Z'
+  support: supports
+  summary: CHEBI:63939 resolves to sodium tungstate dihydrate; obsolete=False; formula=['2H2O.2Na.O4W'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi-75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  accessed_at: '2026-10-28T05:13:52.266308Z'
+  support: supports
+  summary: CHEBI:75213 resolves to sodium molybdate dihydrate; obsolete=False; formula=['2H2O.MoO4.2Na'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi-76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  accessed_at: '2026-10-28T05:13:52.371682Z'
+  support: supports
+  summary: CHEBI:76209 resolves to sodium sulfide nonahydrate; obsolete=False; formula=['9H2O.2Na.S'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi-86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  accessed_at: '2026-10-28T05:13:52.499352Z'
+  support: supports
+  summary: CHEBI:86158 resolves to calcium chloride dihydrate; obsolete=False; formula=['Ca.2Cl.2H2O'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi-86249
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86249
+  accessed_at: '2026-10-28T05:13:52.672105Z'
+  support: supports
+  summary: CHEBI:86249 resolves to iron dichloride tetrahydrate; obsolete=False; formula=['Cl2Fe.4H2O'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 63bb84e7a947d2a3db0e5f23cf6a533bda2eee137020d7bbe2590477131c5683
+- evidence_id: chebi-86318
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86318
+  accessed_at: '2026-10-28T05:13:52.675423Z'
+  support: supports
+  summary: CHEBI:86318 resolves to copper(II) chloride dihydrate; obsolete=False;
+    formula=['Cl2Cu.2H2O']. Chemical identity evidence only; not medium concentration
+    or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 9bbecfe37d67d923ee070067aebdf1abf21048cdb2cbdff9de0e3d21f68ea1ae
+- evidence_id: chebi-86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  accessed_at: '2026-10-28T05:13:52.819646Z'
+  support: supports
+  summary: CHEBI:86345 resolves to magnesium dichloride hexahydrate; obsolete=False;
+    formula=['2Cl.6H2O.Mg']. Chemical identity evidence only; not medium concentration
+    or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi-86368
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86368
+  accessed_at: '2026-10-28T05:13:52.859568Z'
+  support: supports
+  summary: CHEBI:86368 resolves to manganese(II) chloride tetrahydrate; obsolete=False;
+    formula=['Cl2Mn.4H2O']. Chemical identity evidence only; not medium concentration
+    or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 286a549d903f559a3f24698a85fa4ffcf67bf32032116beaa74088dc9c84a15f
+- evidence_id: chebi-8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  accessed_at: '2026-10-28T05:13:52.951995Z'
+  support: supports
+  summary: CHEBI:8806 resolves to Resazurin; obsolete=False; formula=['C12H7NO4'].
+    Chemical identity evidence only; not medium concentration or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi-91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  accessed_at: '2026-10-28T05:13:53.182688Z'
+  support: supports
+  summary: CHEBI:91248 resolves to L-cysteine hydrochloride hydrate; obsolete=False;
+    formula=['C3H7NO2S.H2O.HCl']. Chemical identity evidence only; not medium concentration
+    or role evidence.
+  locator: exact IRI term object
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: salt-search
+  kind: search
+  reference: https://www.ebi.ac.uk/ols4/api/search?q=resazurin%20sodium&ontology=chebi&rows=10
+  accessed_at: '2026-10-28T05:16:35.760697Z'
+  support: context_only
+  summary: Bounded OLS search returned zero documents; no replacement sodium-resazurin
+    CURIE asserted from that search.
+  locator: response.docs
+  snapshot_sha256: 8d33fdeb26a2d16294a3c5f4a7f444578bb462aa6036d45a15e9bfadfe47fbd2
+  search_scope: OLS4 search q=resazurin sodium, ontology=chebi, rows=10; zero returned
+    hits. Does not establish that no salt term exists.
+- evidence_id: historical-1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2500-3000/records/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml.md
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Historical ad hoc review retained as a lead, not native structured coverage
+    or an automatically superseded finding. October concentration reports left quantities
+    unchanged; original source claims are reassessed against fresh DSMZ/API bytes.
+  locator: entire file
+  snapshot_sha256: 49e608a579cfe2d74ebcd6cad30546e38a0000ec11ca33c9d0ef563633c8837a
+- evidence_id: historical-2
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/caldanaerobius_medium.yaml.md
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Historical ad hoc review retained as a lead, not native structured coverage
+    or an automatically superseded finding. October concentration reports left quantities
+    unchanged; original source claims are reassessed against fresh DSMZ/API bytes.
+  locator: entire file
+  snapshot_sha256: b8ee39286875fb7f3123fb0eb79998a8ccf34e98e45ff75cac900e34db9abadc
+- evidence_id: historical-3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.md
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Historical ad hoc review retained as a lead, not native structured coverage
+    or an automatically superseded finding. October concentration reports left quantities
+    unchanged; original source claims are reassessed against fresh DSMZ/API bytes.
+  locator: entire file
+  snapshot_sha256: 96b4308e00a59e3da028b5bbfe256cbf5e55a7a95f2df32c1f829ed6e40cd01d
+- evidence_id: historical-4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.md
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Historical ad hoc review retained as a lead, not native structured coverage
+    or an automatically superseded finding. October concentration reports left quantities
+    unchanged; original source claims are reassessed against fresh DSMZ/API bytes.
+  locator: entire file
+  snapshot_sha256: 29151f07e1d547e2aad93dd0c4e38d9868a36482db73c3ccc6b51af122b8ba81
+- evidence_id: historical-5
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/caldanaerobius_medium.md
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Historical ad hoc review retained as a lead, not native structured coverage
+    or an automatically superseded finding. October concentration reports left quantities
+    unchanged; original source claims are reassessed against fresh DSMZ/API bytes.
+  locator: entire file
+  snapshot_sha256: b5ac9d9c0f0d2954dd0cd4983dbbd6ae2d7e8c021def8abe654c4e99636cf4e6
+- evidence_id: historical-6
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T015147Z-CALDANAEROBIUS_MEDIUM.md
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Historical ad hoc review retained as a lead, not native structured coverage
+    or an automatically superseded finding. October concentration reports left quantities
+    unchanged; original source claims are reassessed against fresh DSMZ/API bytes.
+  locator: entire file
+  snapshot_sha256: dbedb228151ed965e80af9babede0399947258798d82a3922532c51e11293d3c
+- evidence_id: diagnostics
+  kind: validation
+  reference: REVIEW_WORK/batch056/record10/diagnostics.json
+  accessed_at: '2026-10-28T05:16:15.956903Z'
+  support: context_only
+  summary: 'Read-only maintained resolver/importer/formulation diagnostics: all 29
+    MIM labels resolve; current owners differ in seven formulation keys and exact
+    union rejects them; importer yields nine direct ingredients and four stock additions.'
+  locator: entire diagnostic JSON
+  snapshot_sha256: 672881bc7427cacd74bbbbf43fd172517fd944a33ea1c6683565a0854e455640
+- evidence_id: ownership-search
+  kind: search
+  reference: REVIEW_WORK/batch056/record10/ownership-search-result.json
+  accessed_at: '2026-10-28T05:20:26.509093Z'
+  support: context_only
+  summary: Ignored-inclusive bounded search resolves exact owner/ID references and
+    historical reports; no repository-wide absence claim.
+  locator: argv and full captured output
+  snapshot_sha256: e7260c92d8f377f52042006563eb3af3c661508870cb0f35e6f17118e2758baf
+  search_scope: rg --no-ignore --hidden -n -l across data/normalized_yaml and reports
+    for CultureMech:002070, CultureMech:006773, caldanaerobius_medium and KOMODO_903_THERMOANAEROBACTERIUM_medium;
+    ignored and hidden files included.
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch056/record10/validate-schema-result.json
+  accessed_at: '2026-10-28T05:10:50.604076Z'
+  support: context_only
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed'
+  locator: complete stdout/stderr and argv
+  snapshot_sha256: 7105f2ed5e17f03d1d347d5d46237370be9cf23f9eac1f1f7ea8cc92919e87ed
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch056/record10/validate-strict-result.json
+  accessed_at: '2026-10-28T05:10:51.817753Z'
+  support: context_only
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch056/record10/strict.tsv"
+  locator: complete stdout/stderr and argv
+  snapshot_sha256: 5f165e47c756afa45712bc080cf59efd30420614c06875cd8d00114787bd2145
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch056/record10/validate-terms-result.json
+  accessed_at: '2026-10-28T05:10:53.477556Z'
+  support: context_only
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed'
+  locator: complete stdout/stderr and argv
+  snapshot_sha256: c72fe50b324baeceae649eb8c434f342f004e24c39d39dd4ed7d9fcd7d723a65
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch056/record10/validate-references-result.json
+  accessed_at: '2026-10-28T05:10:54.470541Z'
+  support: context_only
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed'
+  locator: complete stdout/stderr and argv
+  snapshot_sha256: b4a7476cf10cb3bf55fcb6378957af67720ce363fbf2990ad0faa7323d88e1b8
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: DSMZ903 identity and generated ownership
+  outcome: supported
+  summary: DSMZ903 and CM002070 resolve exactly; normalized owners and reciprocal
+    duplicate links resolve. Current KOMODO catalog access is incomplete.
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - registry
+  - dsm903
+  - mediadive903
+  - komodo-access
+  details: 'The historical exact KOMODO903 row links DSM903 and names THERMOANAEROBACTERIUM
+    medium. This is corroborating historical identity evidence, not fresh catalog
+    verification. The formula fingerprint alone proves neither source identity nor
+    equivalent preparation. iModulonDB is not applicable: no gene, regulator or expression-module
+    claim is asserted.'
+- assessment_id: quantity
+  area: evidence
+  topic: Every existing concentration and all source rows
+  outcome: concern
+  summary: '91 existing fields assessed: 40 evidence_only, 47 conflict, 4 unsupported.
+    All 36 source recipe rows retained.'
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - dsm903
+  - mediadive903
+  - q-0-0
+  - q-0-1
+  - q-0-2
+  - q-0-3
+  - q-0-4
+  - q-0-5
+  - q-0-6
+  - q-0-7
+  - q-0-8
+  - q-0-9
+  - q-0-10
+  - q-0-11
+  - q-0-12
+  - q-0-13
+  - q-1-0
+  - q-1-1
+  - q-1-2
+  - q-1-3
+  - q-1-4
+  - q-1-5
+  - q-1-6
+  - q-1-7
+  - q-1-8
+  - q-1-9
+  - q-2-0
+  - q-2-1
+  - q-2-2
+  - q-2-3
+  - q-3-0
+  - q-3-1
+  - q-3-2
+  - q-3-3
+  - q-3-4
+  - q-3-5
+  - q-3-6
+  - q-3-7
+  details: 'data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[0].concentration
+    | KH2PO4 | existing={"unit": "G_PER_L", "value": "0.498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[0] | source=0.5 g; attribute=None; reported_g_l=0.498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[1].concentration
+    | MgCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.329013"} | decision=evidence_only
+    | $.data.solutions[0].recipe[1] | source=0.33 g; attribute=None; reported_g_l=0.329013;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[2].concentration
+    | NaCl | existing={"unit": "G_PER_L", "value": "0.398804"} | decision=evidence_only
+    | $.data.solutions[0].recipe[2] | source=0.4 g; attribute=None; reported_g_l=0.398804;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[3].concentration
+    | CaCl2 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.0498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[3] | source=0.05 g; attribute=None; reported_g_l=0.0498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[4].concentration
+    | Trypticase peptone | existing={"unit": "G_PER_L", "value": "0.249252"} | decision=evidence_only
+    | $.data.solutions[0].recipe[6] | source=0.25 g; attribute=BD BBL; reported_g_l=0.249252;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[5].concentration
+    | Sodium resazurin | existing={"unit": "G_PER_L", "value": "0.000498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[7] | source=0.5 ml; attribute=0.1% w/v; reported_g_l=0.000498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence. PDF/API distinguish a 0.1%
+    w/v stock aliquot; representation and wrong salt grounding remain separate findings.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[6].concentration
+    | Na2CO3 | existing={"unit": "G_PER_L", "value": "1.49551"} | decision=evidence_only
+    | $.data.solutions[0].recipe[8] | source=1.5 g; attribute=None; reported_g_l=1.49551;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[7].concentration
+    | Sucrose | existing={"unit": "G_PER_L", "value": "4.98504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[9] | source=5 g; attribute=None; reported_g_l=4.98504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[8].concentration
+    | L-Cysteine HCl x H2O | existing={"unit": "G_PER_L", "value": "0.299103"} | decision=evidence_only
+    | $.data.solutions[0].recipe[11] | source=0.3 g; attribute=None; reported_g_l=0.299103;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[9].concentration
+    | Na2S x 9 H2O | existing={"unit": "G_PER_L", "value": "0.299103"} | decision=evidence_only
+    | $.data.solutions[0].recipe[12] | source=0.3 g; attribute=None; reported_g_l=0.299103;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[10].concentration
+    | HCl | existing={"unit": "G_PER_L", "value": "2.5"} | decision=conflict | $.data.solutions[1].recipe[0]
+    | source=10 ml; attribute=25%; reported_g_l=2.5; reported_volume_ml=1000 | Existing
+    direct-medium G_PER_L equals a separate source stock g_l, without its stock-addition
+    dilution. Correct compartment/topology before any final-medium arithmetic; no
+    replacement final concentration asserted. The original liquid is 10 ml HCl(25%);
+    percent basis/density is not specified in the PDF. API-reported 2.5 g_l is retained
+    as a source claim, not rederived or endorsed as final-medium mass.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[11].concentration
+    | FeCl2 x 4 H2O | existing={"unit": "G_PER_L", "value": "1.5"} | decision=conflict
+    | $.data.solutions[1].recipe[1] | source=1.5 g; attribute=None; reported_g_l=1.5;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[12].concentration
+    | ZnCl2 | existing={"unit": "G_PER_L", "value": "0.07"} | decision=conflict |
+    $.data.solutions[1].recipe[2] | source=70 mg; attribute=None; reported_g_l=0.07;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[13].concentration
+    | MnCl2 x 4 H2O | existing={"unit": "G_PER_L", "value": "0.1"} | decision=conflict
+    | $.data.solutions[1].recipe[3] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[14].concentration
+    | H3BO3 | existing={"unit": "G_PER_L", "value": "0.006"} | decision=conflict |
+    $.data.solutions[1].recipe[4] | source=6 mg; attribute=None; reported_g_l=0.006;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[15].concentration
+    | CoCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.19"} | decision=conflict
+    | $.data.solutions[1].recipe[5] | source=190 mg; attribute=None; reported_g_l=0.19;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[16].concentration
+    | CuCl2 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.002"} | decision=conflict
+    | $.data.solutions[1].recipe[6] | source=2 mg; attribute=None; reported_g_l=0.002;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[17].concentration
+    | NiCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.024"} | decision=conflict
+    | $.data.solutions[1].recipe[7] | source=24 mg; attribute=None; reported_g_l=0.024;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[18].concentration
+    | Na2MoO4 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.036"} | decision=conflict
+    | $.data.solutions[1].recipe[8] | source=36 mg; attribute=None; reported_g_l=0.036;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[19].concentration
+    | NaOH | existing={"unit": "G_PER_L", "value": "0.5"} | decision=conflict | $.data.solutions[2].recipe[0]
+    | source=0.5 g; attribute=None; reported_g_l=0.5; reported_volume_ml=1000 | Existing
+    direct-medium G_PER_L equals a separate source stock g_l, without its stock-addition
+    dilution. Correct compartment/topology before any final-medium arithmetic; no
+    replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[20].concentration
+    | Na2SeO3 x 5 H2O | existing={"unit": "G_PER_L", "value": "0.003"} | decision=conflict
+    | $.data.solutions[2].recipe[1] | source=3 mg; attribute=None; reported_g_l=0.003;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[21].concentration
+    | Na2WO4 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.004"} | decision=conflict
+    | $.data.solutions[2].recipe[2] | source=4 mg; attribute=None; reported_g_l=0.004;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[22].concentration
+    | Vitamin B12 | existing={"unit": "G_PER_L", "value": "0.1"} | decision=conflict
+    | $.data.solutions[3].recipe[0] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[23].concentration
+    | p-Aminobenzoic acid | existing={"unit": "G_PER_L", "value": "0.08"} | decision=conflict
+    | $.data.solutions[3].recipe[1] | source=80 mg; attribute=None; reported_g_l=0.08;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[24].concentration
+    | D-(+)-biotin | existing={"unit": "G_PER_L", "value": "0.02"} | decision=conflict
+    | $.data.solutions[3].recipe[2] | source=20 mg; attribute=None; reported_g_l=0.02;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[25].concentration
+    | Nicotinic acid | existing={"unit": "G_PER_L", "value": "0.2"} | decision=conflict
+    | $.data.solutions[3].recipe[3] | source=200 mg; attribute=None; reported_g_l=0.2;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[26].concentration
+    | Calcium pantothenate | existing={"unit": "G_PER_L", "value": "0.1"} | decision=conflict
+    | $.data.solutions[3].recipe[4] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[27].concentration
+    | Pyridoxine hydrochloride | existing={"unit": "G_PER_L", "value": "0.3"} | decision=conflict
+    | $.data.solutions[3].recipe[5] | source=300 mg; attribute=None; reported_g_l=0.3;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/merge_yaml/merged/CALDANAEROBIUS_MEDIUM.yaml::ingredients[28].concentration
+    | Thiamine-HCl x 2 H2O | existing={"unit": "G_PER_L", "value": "0.2"} | decision=conflict
+    | $.data.solutions[3].recipe[6] | source=200 mg; attribute=None; reported_g_l=0.2;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[0].concentration
+    | KH2PO4 | existing={"unit": "G_PER_L", "value": "0.498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[0] | source=0.5 g; attribute=None; reported_g_l=0.498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[1].concentration
+    | MgCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.329013"} | decision=evidence_only
+    | $.data.solutions[0].recipe[1] | source=0.33 g; attribute=None; reported_g_l=0.329013;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[2].concentration
+    | NaCl | existing={"unit": "G_PER_L", "value": "0.398804"} | decision=evidence_only
+    | $.data.solutions[0].recipe[2] | source=0.4 g; attribute=None; reported_g_l=0.398804;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[3].concentration
+    | CaCl2 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.0498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[3] | source=0.05 g; attribute=None; reported_g_l=0.0498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[4].concentration
+    | Trypticase peptone | existing={"unit": "G_PER_L", "value": "0.249252"} | decision=evidence_only
+    | $.data.solutions[0].recipe[6] | source=0.25 g; attribute=BD BBL; reported_g_l=0.249252;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[5].concentration
+    | Sodium resazurin | existing={"unit": "G_PER_L", "value": "0.000498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[7] | source=0.5 ml; attribute=0.1% w/v; reported_g_l=0.000498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence. PDF/API distinguish a 0.1%
+    w/v stock aliquot; representation and wrong salt grounding remain separate findings.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[6].concentration
+    | Na2CO3 | existing={"unit": "G_PER_L", "value": "1.49551"} | decision=evidence_only
+    | $.data.solutions[0].recipe[8] | source=1.5 g; attribute=None; reported_g_l=1.49551;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[7].concentration
+    | Sucrose | existing={"unit": "G_PER_L", "value": "4.98504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[9] | source=5 g; attribute=None; reported_g_l=4.98504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[8].concentration
+    | L-Cysteine HCl x H2O | existing={"unit": "G_PER_L", "value": "0.299103"} | decision=evidence_only
+    | $.data.solutions[0].recipe[11] | source=0.3 g; attribute=None; reported_g_l=0.299103;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[9].concentration
+    | Na2S x 9 H2O | existing={"unit": "G_PER_L", "value": "0.299103"} | decision=evidence_only
+    | $.data.solutions[0].recipe[12] | source=0.3 g; attribute=None; reported_g_l=0.299103;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[10].concentration
+    | HCl | existing={"unit": "G_PER_L", "value": "2.5"} | decision=conflict | $.data.solutions[1].recipe[0]
+    | source=10 ml; attribute=25%; reported_g_l=2.5; reported_volume_ml=1000 | Existing
+    direct-medium G_PER_L equals a separate source stock g_l, without its stock-addition
+    dilution. Correct compartment/topology before any final-medium arithmetic; no
+    replacement final concentration asserted. The original liquid is 10 ml HCl(25%);
+    percent basis/density is not specified in the PDF. API-reported 2.5 g_l is retained
+    as a source claim, not rederived or endorsed as final-medium mass.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[11].concentration
+    | ZnCl2 | existing={"unit": "G_PER_L", "value": "0.07"} | decision=conflict |
+    $.data.solutions[1].recipe[2] | source=70 mg; attribute=None; reported_g_l=0.07;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[12].concentration
+    | MnCl2 x 4 H2O | existing={"unit": "G_PER_L", "value": "0.1"} | decision=conflict
+    | $.data.solutions[1].recipe[3] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[13].concentration
+    | H3BO3 | existing={"unit": "G_PER_L", "value": "0.006"} | decision=conflict |
+    $.data.solutions[1].recipe[4] | source=6 mg; attribute=None; reported_g_l=0.006;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[14].concentration
+    | CoCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.19"} | decision=conflict
+    | $.data.solutions[1].recipe[5] | source=190 mg; attribute=None; reported_g_l=0.19;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[15].concentration
+    | CuCl2 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.002"} | decision=conflict
+    | $.data.solutions[1].recipe[6] | source=2 mg; attribute=None; reported_g_l=0.002;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[16].concentration
+    | NiCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.024"} | decision=conflict
+    | $.data.solutions[1].recipe[7] | source=24 mg; attribute=None; reported_g_l=0.024;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[17].concentration
+    | Na2MoO4 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.036"} | decision=conflict
+    | $.data.solutions[1].recipe[8] | source=36 mg; attribute=None; reported_g_l=0.036;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[18].concentration
+    | NaOH | existing={"unit": "G_PER_L", "value": "0.5"} | decision=conflict | $.data.solutions[2].recipe[0]
+    | source=0.5 g; attribute=None; reported_g_l=0.5; reported_volume_ml=1000 | Existing
+    direct-medium G_PER_L equals a separate source stock g_l, without its stock-addition
+    dilution. Correct compartment/topology before any final-medium arithmetic; no
+    replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[19].concentration
+    | Na2SeO3 x 5 H2O | existing={"unit": "G_PER_L", "value": "0.003"} | decision=conflict
+    | $.data.solutions[2].recipe[1] | source=3 mg; attribute=None; reported_g_l=0.003;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[20].concentration
+    | Na2WO4 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.004"} | decision=conflict
+    | $.data.solutions[2].recipe[2] | source=4 mg; attribute=None; reported_g_l=0.004;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[21].concentration
+    | p-Aminobenzoic acid | existing={"unit": "G_PER_L", "value": "0.08"} | decision=conflict
+    | $.data.solutions[3].recipe[1] | source=80 mg; attribute=None; reported_g_l=0.08;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[22].concentration
+    | D-(+)-biotin | existing={"unit": "G_PER_L", "value": "0.02"} | decision=conflict
+    | $.data.solutions[3].recipe[2] | source=20 mg; attribute=None; reported_g_l=0.02;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::ingredients[23].concentration
+    | Calcium pantothenate | existing={"unit": "G_PER_L", "value": "0.1"} | decision=conflict
+    | $.data.solutions[3].recipe[4] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[0].concentration
+    | Trace element solution SL-10 | existing={"unit": "ML_PER_L", "value": "1"} |
+    decision=unsupported | $.data.solutions[0].recipe[4] | source=1 ml; attribute=None;
+    reported_g_l=None; reported_volume_ml=1003 | Source states 1 ml addition per listed
+    main batch. Existing 1 ML_PER_L has an unstated denominator; API main volume is1003
+    ml and PDF supplies 1000 ml water, not an explicit final 1 L. Retain source batch
+    dose separately; do not silently treat input water as final volume.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[0].composition[0].concentration
+    | FeCl2 x 4 H2O | existing={"unit": "G_PER_L", "value": "1.5"} | decision=evidence_only
+    | $.data.solutions[1].recipe[1] | source=1.5 g; attribute=None; reported_g_l=1.5;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[1].concentration
+    | Seven vitamins solution | existing={"unit": "ML_PER_L", "value": "1"} | decision=unsupported
+    | $.data.solutions[0].recipe[10] | source=1 ml; attribute=None; reported_g_l=None;
+    reported_volume_ml=1003 | Source states 1 ml addition per listed main batch. Existing
+    1 ML_PER_L has an unstated denominator; API main volume is1003 ml and PDF supplies
+    1000 ml water, not an explicit final 1 L. Retain source batch dose separately;
+    do not silently treat input water as final volume.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[1].composition[0].concentration
+    | Vitamin B12 | existing={"unit": "G_PER_L", "value": "0.1"} | decision=evidence_only
+    | $.data.solutions[3].recipe[0] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[1].composition[1].concentration
+    | Nicotinic acid | existing={"unit": "G_PER_L", "value": "0.2"} | decision=evidence_only
+    | $.data.solutions[3].recipe[3] | source=200 mg; attribute=None; reported_g_l=0.2;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[1].composition[2].concentration
+    | Pyridoxine hydrochloride | existing={"unit": "G_PER_L", "value": "0.3"} | decision=evidence_only
+    | $.data.solutions[3].recipe[5] | source=300 mg; attribute=None; reported_g_l=0.3;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[1].composition[3].concentration
+    | Thiamine-HCl x 2 H2O | existing={"unit": "G_PER_L", "value": "0.2"} | decision=evidence_only
+    | $.data.solutions[3].recipe[6] | source=200 mg; attribute=None; reported_g_l=0.2;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[0].concentration
+    | KH2PO4 | existing={"unit": "G_PER_L", "value": "0.498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[0] | source=0.5 g; attribute=None; reported_g_l=0.498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[1].concentration
+    | MgCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.329013"} | decision=evidence_only
+    | $.data.solutions[0].recipe[1] | source=0.33 g; attribute=None; reported_g_l=0.329013;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[2].concentration
+    | NaCl | existing={"unit": "G_PER_L", "value": "0.398804"} | decision=evidence_only
+    | $.data.solutions[0].recipe[2] | source=0.4 g; attribute=None; reported_g_l=0.398804;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[3].concentration
+    | CaCl2 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.0498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[3] | source=0.05 g; attribute=None; reported_g_l=0.0498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[4].concentration
+    | Trypticase peptone | existing={"unit": "G_PER_L", "value": "0.249252"} | decision=evidence_only
+    | $.data.solutions[0].recipe[6] | source=0.25 g; attribute=BD BBL; reported_g_l=0.249252;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[5].concentration
+    | Sodium resazurin | existing={"unit": "G_PER_L", "value": "0.000498504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[7] | source=0.5 ml; attribute=0.1% w/v; reported_g_l=0.000498504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence. PDF/API distinguish a 0.1%
+    w/v stock aliquot; representation and wrong salt grounding remain separate findings.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[6].concentration
+    | Na2CO3 | existing={"unit": "G_PER_L", "value": "1.49551"} | decision=evidence_only
+    | $.data.solutions[0].recipe[8] | source=1.5 g; attribute=None; reported_g_l=1.49551;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[7].concentration
+    | Sucrose | existing={"unit": "G_PER_L", "value": "4.98504"} | decision=evidence_only
+    | $.data.solutions[0].recipe[9] | source=5 g; attribute=None; reported_g_l=4.98504;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[8].concentration
+    | L-Cysteine HCl x H2O | existing={"unit": "G_PER_L", "value": "0.299103"} | decision=evidence_only
+    | $.data.solutions[0].recipe[11] | source=0.3 g; attribute=None; reported_g_l=0.299103;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[9].concentration
+    | Na2S x 9 H2O | existing={"unit": "G_PER_L", "value": "0.299103"} | decision=evidence_only
+    | $.data.solutions[0].recipe[12] | source=0.3 g; attribute=None; reported_g_l=0.299103;
+    reported_volume_ml=1003 | Existing G_PER_L exactly matches reported API g_l in
+    main solution 1856 with reported volume 1003 ml. This supports the database-reported
+    concentration, not an independent final-volume derivation from PDF input water.
+    Preserve original batch mass/attribute and evidence.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[10].concentration
+    | HCl | existing={"unit": "G_PER_L", "value": "2.5"} | decision=conflict | $.data.solutions[1].recipe[0]
+    | source=10 ml; attribute=25%; reported_g_l=2.5; reported_volume_ml=1000 | Existing
+    direct-medium G_PER_L equals a separate source stock g_l, without its stock-addition
+    dilution. Correct compartment/topology before any final-medium arithmetic; no
+    replacement final concentration asserted. The original liquid is 10 ml HCl(25%);
+    percent basis/density is not specified in the PDF. API-reported 2.5 g_l is retained
+    as a source claim, not rederived or endorsed as final-medium mass.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[11].concentration
+    | ZnCl2 | existing={"unit": "G_PER_L", "value": "0.07"} | decision=conflict |
+    $.data.solutions[1].recipe[2] | source=70 mg; attribute=None; reported_g_l=0.07;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[12].concentration
+    | MnCl2 x 4 H2O | existing={"unit": "G_PER_L", "value": "0.1"} | decision=conflict
+    | $.data.solutions[1].recipe[3] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[13].concentration
+    | H3BO3 | existing={"unit": "G_PER_L", "value": "0.006"} | decision=conflict |
+    $.data.solutions[1].recipe[4] | source=6 mg; attribute=None; reported_g_l=0.006;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[14].concentration
+    | CoCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.19"} | decision=conflict
+    | $.data.solutions[1].recipe[5] | source=190 mg; attribute=None; reported_g_l=0.19;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[15].concentration
+    | CuCl2 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.002"} | decision=conflict
+    | $.data.solutions[1].recipe[6] | source=2 mg; attribute=None; reported_g_l=0.002;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[16].concentration
+    | NiCl2 x 6 H2O | existing={"unit": "G_PER_L", "value": "0.024"} | decision=conflict
+    | $.data.solutions[1].recipe[7] | source=24 mg; attribute=None; reported_g_l=0.024;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[17].concentration
+    | Na2MoO4 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.036"} | decision=conflict
+    | $.data.solutions[1].recipe[8] | source=36 mg; attribute=None; reported_g_l=0.036;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[18].concentration
+    | NaOH | existing={"unit": "G_PER_L", "value": "0.5"} | decision=conflict | $.data.solutions[2].recipe[0]
+    | source=0.5 g; attribute=None; reported_g_l=0.5; reported_volume_ml=1000 | Existing
+    direct-medium G_PER_L equals a separate source stock g_l, without its stock-addition
+    dilution. Correct compartment/topology before any final-medium arithmetic; no
+    replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[19].concentration
+    | Na2SeO3 x 5 H2O | existing={"unit": "G_PER_L", "value": "0.003"} | decision=conflict
+    | $.data.solutions[2].recipe[1] | source=3 mg; attribute=None; reported_g_l=0.003;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[20].concentration
+    | Na2WO4 x 2 H2O | existing={"unit": "G_PER_L", "value": "0.004"} | decision=conflict
+    | $.data.solutions[2].recipe[2] | source=4 mg; attribute=None; reported_g_l=0.004;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[21].concentration
+    | p-Aminobenzoic acid | existing={"unit": "G_PER_L", "value": "0.08"} | decision=conflict
+    | $.data.solutions[3].recipe[1] | source=80 mg; attribute=None; reported_g_l=0.08;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[22].concentration
+    | D-(+)-biotin | existing={"unit": "G_PER_L", "value": "0.02"} | decision=conflict
+    | $.data.solutions[3].recipe[2] | source=20 mg; attribute=None; reported_g_l=0.02;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::ingredients[23].concentration
+    | Calcium pantothenate | existing={"unit": "G_PER_L", "value": "0.1"} | decision=conflict
+    | $.data.solutions[3].recipe[4] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing direct-medium G_PER_L equals a separate source
+    stock g_l, without its stock-addition dilution. Correct compartment/topology before
+    any final-medium arithmetic; no replacement final concentration asserted.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[0].concentration
+    | Trace element solution SL-10 | existing={"unit": "ML_PER_L", "value": "1"} |
+    decision=unsupported | $.data.solutions[0].recipe[4] | source=1 ml; attribute=None;
+    reported_g_l=None; reported_volume_ml=1003 | Source states 1 ml addition per listed
+    main batch. Existing 1 ML_PER_L has an unstated denominator; API main volume is1003
+    ml and PDF supplies 1000 ml water, not an explicit final 1 L. Retain source batch
+    dose separately; do not silently treat input water as final volume.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[0].composition[0].concentration
+    | FeCl2 x 4 H2O | existing={"unit": "G_PER_L", "value": "1.5"} | decision=evidence_only
+    | $.data.solutions[1].recipe[1] | source=1.5 g; attribute=None; reported_g_l=1.5;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[1].concentration
+    | Seven vitamins solution | existing={"unit": "ML_PER_L", "value": "1"} | decision=unsupported
+    | $.data.solutions[0].recipe[10] | source=1 ml; attribute=None; reported_g_l=None;
+    reported_volume_ml=1003 | Source states 1 ml addition per listed main batch. Existing
+    1 ML_PER_L has an unstated denominator; API main volume is1003 ml and PDF supplies
+    1000 ml water, not an explicit final 1 L. Retain source batch dose separately;
+    do not silently treat input water as final volume.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[1].composition[0].concentration
+    | Vitamin B12 | existing={"unit": "G_PER_L", "value": "0.1"} | decision=evidence_only
+    | $.data.solutions[3].recipe[0] | source=100 mg; attribute=None; reported_g_l=0.1;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[1].composition[1].concentration
+    | Nicotinic acid | existing={"unit": "G_PER_L", "value": "0.2"} | decision=evidence_only
+    | $.data.solutions[3].recipe[3] | source=200 mg; attribute=None; reported_g_l=0.2;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[1].composition[2].concentration
+    | Pyridoxine hydrochloride | existing={"unit": "G_PER_L", "value": "0.3"} | decision=evidence_only
+    | $.data.solutions[3].recipe[5] | source=300 mg; attribute=None; reported_g_l=0.3;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[1].composition[3].concentration
+    | Thiamine-HCl x 2 H2O | existing={"unit": "G_PER_L", "value": "0.2"} | decision=evidence_only
+    | $.data.solutions[3].recipe[6] | source=200 mg; attribute=None; reported_g_l=0.2;
+    reported_volume_ml=1000 | Existing stock G_PER_L exactly matches the corresponding
+    API stock g_l/1000 ml volume; this limited numeric support does not endorse incomplete
+    stock membership or receiving-medium dose.
+
+
+    Source-only rows and stages: [{"evidence_id": "q-0-0", "locator": "$.data.solutions[0].recipe[0]",
+    "solution_id": 1856, "solution_name": "Main sol. 903", "reported_volume_ml": 1003,
+    "source_row": {"recipe_order": 1, "compound": "KH2PO4", "compound_id": 11, "amount":
+    0.5, "unit": "g", "g_l": 0.498504, "mmol_l": 3.66318, "optional": 0}}, {"evidence_id":
+    "q-0-1", "locator": "$.data.solutions[0].recipe[1]", "solution_id": 1856, "solution_name":
+    "Main sol. 903", "reported_volume_ml": 1003, "source_row": {"recipe_order": 2,
+    "compound": "MgCl2 x 6 H2O", "compound_id": 79, "amount": 0.33, "unit": "g", "g_l":
+    0.329013, "mmol_l": 1.61834, "optional": 0}}, {"evidence_id": "q-0-2", "locator":
+    "$.data.solutions[0].recipe[2]", "solution_id": 1856, "solution_name": "Main sol.
+    903", "reported_volume_ml": 1003, "source_row": {"recipe_order": 3, "compound":
+    "NaCl", "compound_id": 43, "amount": 0.4, "unit": "g", "g_l": 0.398804, "mmol_l":
+    6.82415, "optional": 0}}, {"evidence_id": "q-0-3", "locator": "$.data.solutions[0].recipe[3]",
+    "solution_id": 1856, "solution_name": "Main sol. 903", "reported_volume_ml": 1003,
+    "source_row": {"recipe_order": 4, "compound": "CaCl2 x 2 H2O", "compound_id":
+    7, "amount": 0.05, "unit": "g", "g_l": 0.0498504, "mmol_l": 0.339084, "optional":
+    0}}, {"evidence_id": "q-0-4", "locator": "$.data.solutions[0].recipe[4]", "solution_id":
+    1856, "solution_name": "Main sol. 903", "reported_volume_ml": 1003, "source_row":
+    {"recipe_order": 5, "solution": "Trace element solution SL-10", "solution_id":
+    595, "amount": 1, "unit": "ml", "optional": 0}}, {"evidence_id": "q-0-5", "locator":
+    "$.data.solutions[0].recipe[5]", "solution_id": 1856, "solution_name": "Main sol.
+    903", "reported_volume_ml": 1003, "source_row": {"recipe_order": 6, "solution":
+    "Selenite-tungstate solution", "solution_id": 777, "amount": 1, "unit": "ml",
+    "optional": 0}}, {"evidence_id": "q-0-6", "locator": "$.data.solutions[0].recipe[6]",
+    "solution_id": 1856, "solution_name": "Main sol. 903", "reported_volume_ml": 1003,
+    "source_row": {"recipe_order": 7, "compound": "Trypticase peptone", "compound_id":
+    124, "attribute": "BD BBL", "amount": 0.25, "unit": "g", "g_l": 0.249252, "optional":
+    0}}, {"evidence_id": "q-0-7", "locator": "$.data.solutions[0].recipe[7]", "solution_id":
+    1856, "solution_name": "Main sol. 903", "reported_volume_ml": 1003, "source_row":
+    {"recipe_order": 8, "compound": "Sodium resazurin", "compound_id": 1852, "attribute":
+    "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.000498504, "mmol_l": 0.00198473,
+    "optional": 0}}, {"evidence_id": "q-0-8", "locator": "$.data.solutions[0].recipe[8]",
+    "solution_id": 1856, "solution_name": "Main sol. 903", "reported_volume_ml": 1003,
+    "source_row": {"recipe_order": 9, "compound": "Na2CO3", "compound_id": 32, "amount":
+    1.5, "unit": "g", "g_l": 1.49551, "mmol_l": 14.1102, "optional": 0}}, {"evidence_id":
+    "q-0-9", "locator": "$.data.solutions[0].recipe[9]", "solution_id": 1856, "solution_name":
+    "Main sol. 903", "reported_volume_ml": 1003, "source_row": {"recipe_order": 10,
+    "compound": "Sucrose", "compound_id": 108, "amount": 5, "unit": "g", "g_l": 4.98504,
+    "mmol_l": 14.5634, "optional": 0}}, {"evidence_id": "q-0-10", "locator": "$.data.solutions[0].recipe[10]",
+    "solution_id": 1856, "solution_name": "Main sol. 903", "reported_volume_ml": 1003,
+    "source_row": {"recipe_order": 11, "solution": "Seven vitamins solution", "solution_id":
+    1038, "amount": 1, "unit": "ml", "optional": 0}}, {"evidence_id": "q-0-11", "locator":
+    "$.data.solutions[0].recipe[11]", "solution_id": 1856, "solution_name": "Main
+    sol. 903", "reported_volume_ml": 1003, "source_row": {"recipe_order": 12, "compound":
+    "L-Cysteine HCl x H2O", "compound_id": 770, "amount": 0.3, "unit": "g", "g_l":
+    0.299103, "mmol_l": 1.70297, "optional": 0}}, {"evidence_id": "q-0-12", "locator":
+    "$.data.solutions[0].recipe[12]", "solution_id": 1856, "solution_name": "Main
+    sol. 903", "reported_volume_ml": 1003, "source_row": {"recipe_order": 13, "compound":
+    "Na2S x 9 H2O", "compound_id": 54, "amount": 0.3, "unit": "g", "g_l": 0.299103,
+    "mmol_l": 1.24532, "optional": 0}}, {"evidence_id": "q-0-13", "locator": "$.data.solutions[0].recipe[13]",
+    "solution_id": 1856, "solution_name": "Main sol. 903", "reported_volume_ml": 1003,
+    "source_row": {"recipe_order": 14, "compound": "Distilled water", "compound_id":
+    4, "amount": 1000, "unit": "ml", "optional": 0}}, {"evidence_id": "q-1-0", "locator":
+    "$.data.solutions[1].recipe[0]", "solution_id": 595, "solution_name": "Trace element
+    solution SL-10", "reported_volume_ml": 1000, "source_row": {"recipe_order": 1,
+    "compound": "HCl", "compound_id": 68, "attribute": "25%", "amount": 10, "unit":
+    "ml", "g_l": 2.5, "mmol_l": 68.5683, "optional": 0}}, {"evidence_id": "q-1-1",
+    "locator": "$.data.solutions[1].recipe[1]", "solution_id": 595, "solution_name":
+    "Trace element solution SL-10", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    2, "compound": "FeCl2 x 4 H2O", "compound_id": 260, "amount": 1.5, "unit": "g",
+    "g_l": 1.5, "mmol_l": 7.54482, "optional": 0}}, {"evidence_id": "q-1-2", "locator":
+    "$.data.solutions[1].recipe[2]", "solution_id": 595, "solution_name": "Trace element
+    solution SL-10", "reported_volume_ml": 1000, "source_row": {"recipe_order": 3,
+    "compound": "ZnCl2", "compound_id": 64, "amount": 70, "unit": "mg", "g_l": 0.07,
+    "mmol_l": 0.513573, "optional": 0}}, {"evidence_id": "q-1-3", "locator": "$.data.solutions[1].recipe[3]",
+    "solution_id": 595, "solution_name": "Trace element solution SL-10", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 4, "compound": "MnCl2 x 4 H2O", "compound_id":
+    36, "amount": 100, "unit": "mg", "g_l": 0.1, "mmol_l": 0.505293, "optional": 0}},
+    {"evidence_id": "q-1-4", "locator": "$.data.solutions[1].recipe[4]", "solution_id":
+    595, "solution_name": "Trace element solution SL-10", "reported_volume_ml": 1000,
+    "source_row": {"recipe_order": 5, "compound": "H3BO3", "compound_id": 37, "amount":
+    6, "unit": "mg", "g_l": 0.006, "mmol_l": 0.0970246, "optional": 0}}, {"evidence_id":
+    "q-1-5", "locator": "$.data.solutions[1].recipe[5]", "solution_id": 595, "solution_name":
+    "Trace element solution SL-10", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    6, "compound": "CoCl2 x 6 H2O", "compound_id": 38, "amount": 190, "unit": "mg",
+    "g_l": 0.19, "mmol_l": 1.46335, "optional": 0}}, {"evidence_id": "q-1-6", "locator":
+    "$.data.solutions[1].recipe[6]", "solution_id": 595, "solution_name": "Trace element
+    solution SL-10", "reported_volume_ml": 1000, "source_row": {"recipe_order": 7,
+    "compound": "CuCl2 x 2 H2O", "compound_id": 39, "amount": 2, "unit": "mg", "g_l":
+    0.002, "mmol_l": 0.0117314, "optional": 0}}, {"evidence_id": "q-1-7", "locator":
+    "$.data.solutions[1].recipe[7]", "solution_id": 595, "solution_name": "Trace element
+    solution SL-10", "reported_volume_ml": 1000, "source_row": {"recipe_order": 8,
+    "compound": "NiCl2 x 6 H2O", "compound_id": 40, "amount": 24, "unit": "mg", "g_l":
+    0.024, "mmol_l": 0.185187, "optional": 0}}, {"evidence_id": "q-1-8", "locator":
+    "$.data.solutions[1].recipe[8]", "solution_id": 595, "solution_name": "Trace element
+    solution SL-10", "reported_volume_ml": 1000, "source_row": {"recipe_order": 9,
+    "compound": "Na2MoO4 x 2 H2O", "compound_id": 9, "amount": 36, "unit": "mg", "g_l":
+    0.036, "mmol_l": 0.148791, "optional": 0}}, {"evidence_id": "q-1-9", "locator":
+    "$.data.solutions[1].recipe[9]", "solution_id": 595, "solution_name": "Trace element
+    solution SL-10", "reported_volume_ml": 1000, "source_row": {"recipe_order": 10,
+    "compound": "Distilled water", "compound_id": 4, "amount": 990, "unit": "ml",
+    "optional": 0}}, {"evidence_id": "q-2-0", "locator": "$.data.solutions[2].recipe[0]",
+    "solution_id": 777, "solution_name": "Selenite-tungstate solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 1, "compound": "NaOH", "compound_id": 256,
+    "amount": 0.5, "unit": "g", "g_l": 0.5, "mmol_l": 12.5009, "optional": 0}}, {"evidence_id":
+    "q-2-1", "locator": "$.data.solutions[2].recipe[1]", "solution_id": 777, "solution_name":
+    "Selenite-tungstate solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    2, "compound": "Na2SeO3 x 5 H2O", "compound_id": 107, "amount": 3, "unit": "mg",
+    "g_l": 0.003, "mmol_l": 0.0114062, "optional": 0}}, {"evidence_id": "q-2-2", "locator":
+    "$.data.solutions[2].recipe[2]", "solution_id": 777, "solution_name": "Selenite-tungstate
+    solution", "reported_volume_ml": 1000, "source_row": {"recipe_order": 3, "compound":
+    "Na2WO4 x 2 H2O", "compound_id": 249, "amount": 4, "unit": "mg", "g_l": 0.004,
+    "mmol_l": 0.0121267, "optional": 0}}, {"evidence_id": "q-2-3", "locator": "$.data.solutions[2].recipe[3]",
+    "solution_id": 777, "solution_name": "Selenite-tungstate solution", "reported_volume_ml":
+    1000, "source_row": {"recipe_order": 4, "compound": "Distilled water", "compound_id":
+    4, "amount": 1000, "unit": "ml", "optional": 0}}, {"evidence_id": "q-3-0", "locator":
+    "$.data.solutions[3].recipe[0]", "solution_id": 1038, "solution_name": "Seven
+    vitamins solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    1, "compound": "Vitamin B12", "compound_id": 18, "amount": 100, "unit": "mg",
+    "g_l": 0.1, "mmol_l": 0.073779, "optional": 0}}, {"evidence_id": "q-3-1", "locator":
+    "$.data.solutions[3].recipe[1]", "solution_id": 1038, "solution_name": "Seven
+    vitamins solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    2, "compound": "p-Aminobenzoic acid", "compound_id": 47, "amount": 80, "unit":
+    "mg", "g_l": 0.08, "mmol_l": 0.583345, "optional": 0}}, {"evidence_id": "q-3-2",
+    "locator": "$.data.solutions[3].recipe[2]", "solution_id": 1038, "solution_name":
+    "Seven vitamins solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    3, "compound": "D-(+)-biotin", "compound_id": 1359, "amount": 20, "unit": "mg",
+    "g_l": 0.02, "mmol_l": 0.0818632, "optional": 0}}, {"evidence_id": "q-3-3", "locator":
+    "$.data.solutions[3].recipe[3]", "solution_id": 1038, "solution_name": "Seven
+    vitamins solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    4, "compound": "Nicotinic acid", "compound_id": 139, "amount": 200, "unit": "mg",
+    "g_l": 0.2, "mmol_l": 1.62456, "optional": 0}}, {"evidence_id": "q-3-4", "locator":
+    "$.data.solutions[3].recipe[4]", "solution_id": 1038, "solution_name": "Seven
+    vitamins solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    5, "compound": "Calcium pantothenate", "compound_id": 518, "amount": 100, "unit":
+    "mg", "g_l": 0.1, "mmol_l": 0.209849, "optional": 0}}, {"evidence_id": "q-3-5",
+    "locator": "$.data.solutions[3].recipe[5]", "solution_id": 1038, "solution_name":
+    "Seven vitamins solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    6, "compound": "Pyridoxine hydrochloride", "compound_id": 519, "amount": 300,
+    "unit": "mg", "g_l": 0.3, "mmol_l": 1.45886, "optional": 0}}, {"evidence_id":
+    "q-3-6", "locator": "$.data.solutions[3].recipe[6]", "solution_id": 1038, "solution_name":
+    "Seven vitamins solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    7, "compound": "Thiamine-HCl x 2 H2O", "compound_id": 77, "amount": 200, "unit":
+    "mg", "g_l": 0.2, "mmol_l": 0.535761, "optional": 0}}, {"evidence_id": "q-3-7",
+    "locator": "$.data.solutions[3].recipe[7]", "solution_id": 1038, "solution_name":
+    "Seven vitamins solution", "reported_volume_ml": 1000, "source_row": {"recipe_order":
+    8, "compound": "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml",
+    "optional": 0}}]
+
+    All four source water rows retain batch/input volume scope; no added chemical-edge
+    requirement or final volume inferred. Three named stock additions and the sodium-resazurin
+    percentage aliquot are distinct from stock component concentrations. Source main
+    pH 7, atmosphere and sterilization text belongs to preparation; no incubation
+    temperature, growth outcome or storage lifetime inferred. SL10 final make-up 1000
+    ml belongs to source stock 595, not the main solution.'
+  dimensions:
+  - name: decision_counts
+    value: '{"conflict": 47, "evidence_only": 40, "unsupported": 4}'
+    definition: Counts of the exact 91 existing local concentration fields, not a
+      scientific accuracy score.
+    evidence_ids:
+    - target
+    - owner1
+    - owner2
+    - mediadive903
+- assessment_id: stock-topology
+  area: representation
+  topic: Stock membership, source stage and current writer behavior
+  outcome: concern
+  summary: The generated target puts 19 separate stock components at direct-medium
+    scope. Both maintained owners nest 5 but leave 14 stock components direct.
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - mediadive903
+  - dsm903
+  - importer
+  - nesting
+  - promotion
+  - diagnostics
+  details: Source stocks have 9 SL10 solutes, 3 selenite/tungstate solutes and 7 vitamins.
+    Each owner nests only iron plus four vitamins. Selenite-tungstate has no solution
+    descriptor in these exact owners; source water is intentionally excluded from
+    importer chemical edges and must instead retain preparation-volume evidence. Existing
+    1 ML_PER_L dose claims need denominator review. Present importer now handles stock
+    additions; do not attribute legacy all-stock flattening to its current implementation.
+    It still maps source ml to ML_PER_L and gathers all stock preparation prose into
+    top-level steps, so blind reimport is not an accepted repair.
+- assessment_id: grounding
+  area: grounding
+  topic: Exact supplied forms and canonical labels
+  outcome: concern
+  summary: All 28 asserted CHEBI IDs resolve with exact recorded labels; two supplied
+    forms disagree with their chemical identities.
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - mim-index
+  - mim-metadata
+  - diagnostics
+  - chebi-131361
+  - chebi-132751
+  - chebi-15940
+  - chebi-15956
+  - chebi-176843
+  - chebi-17883
+  - chebi-17992
+  - chebi-26710
+  - chebi-29377
+  - chebi-30753
+  - chebi-30961
+  - chebi-31345
+  - chebi-32145
+  - chebi-33118
+  - chebi-34887
+  - chebi-49976
+  - chebi-53503
+  - chebi-53542
+  - chebi-63036
+  - chebi-63939
+  - chebi-75213
+  - chebi-76209
+  - chebi-86158
+  - chebi-86249
+  - chebi-86318
+  - chebi-86345
+  - chebi-86368
+  - chebi-8806
+  - chebi-91248
+  details: '{"id": "CHEBI:131361", "label": "disodium selenite pentahydrate", "obsolete":
+    false, "formula": ["5H2O.2Na.O3Se"], "evidence_id": "chebi-131361"}
+
+    {"id": "CHEBI:132751", "label": "thiamine hydrochloride dihydrate", "obsolete":
+    false, "formula": ["C12H18N4OS.2Cl.2H2O"], "evidence_id": "chebi-132751"}
+
+    {"id": "CHEBI:15940", "label": "nicotinic acid", "obsolete": false, "formula":
+    ["C6H5NO2"], "evidence_id": "chebi-15940"}
+
+    {"id": "CHEBI:15956", "label": "biotin", "obsolete": false, "formula": ["C10H16N2O3S"],
+    "evidence_id": "chebi-15956"}
+
+    {"id": "CHEBI:176843", "label": "vitamin B12", "obsolete": false, "formula": [],
+    "evidence_id": "chebi-176843"}
+
+    {"id": "CHEBI:17883", "label": "hydrogen chloride", "obsolete": false, "formula":
+    ["HCl"], "evidence_id": "chebi-17883"}
+
+    {"id": "CHEBI:17992", "label": "sucrose", "obsolete": false, "formula": ["C12H22O11"],
+    "evidence_id": "chebi-17992"}
+
+    {"id": "CHEBI:26710", "label": "sodium chloride", "obsolete": false, "formula":
+    ["Cl.Na"], "evidence_id": "chebi-26710"}
+
+    {"id": "CHEBI:29377", "label": "sodium carbonate", "obsolete": false, "formula":
+    ["CO3.2Na"], "evidence_id": "chebi-29377"}
+
+    {"id": "CHEBI:30753", "label": "4-aminobenzoic acid", "obsolete": false, "formula":
+    ["C7H7NO2"], "evidence_id": "chebi-30753"}
+
+    {"id": "CHEBI:30961", "label": "pyridoxine hydrochloride", "obsolete": false,
+    "formula": ["C8H11NO3.HCl"], "evidence_id": "chebi-30961"}
+
+    {"id": "CHEBI:31345", "label": "Calcium pantothenate", "obsolete": false, "formula":
+    ["2C9H16NO5.Ca"], "evidence_id": "chebi-31345"}
+
+    {"id": "CHEBI:32145", "label": "sodium hydroxide", "obsolete": false, "formula":
+    ["HO.Na"], "evidence_id": "chebi-32145"}
+
+    {"id": "CHEBI:33118", "label": "boric acid", "obsolete": false, "formula": ["H3BO3"],
+    "evidence_id": "chebi-33118"}
+
+    {"id": "CHEBI:34887", "label": "nickel dichloride", "obsolete": false, "formula":
+    ["Cl2Ni"], "evidence_id": "chebi-34887"}
+
+    {"id": "CHEBI:49976", "label": "zinc dichloride", "obsolete": false, "formula":
+    ["2Cl.Zn"], "evidence_id": "chebi-49976"}
+
+    {"id": "CHEBI:53503", "label": "cobalt chloride hexahydrate", "obsolete": false,
+    "formula": ["2Cl.Co.6H2O"], "evidence_id": "chebi-53503"}
+
+    {"id": "CHEBI:53542", "label": "nickel chloride hexahydrate", "obsolete": false,
+    "formula": ["2Cl.6H2O.Ni"], "evidence_id": "chebi-53542"}
+
+    {"id": "CHEBI:63036", "label": "potassium dihydrogen phosphate", "obsolete": false,
+    "formula": ["H2O4P.K"], "evidence_id": "chebi-63036"}
+
+    {"id": "CHEBI:63939", "label": "sodium tungstate dihydrate", "obsolete": false,
+    "formula": ["2H2O.2Na.O4W"], "evidence_id": "chebi-63939"}
+
+    {"id": "CHEBI:75213", "label": "sodium molybdate dihydrate", "obsolete": false,
+    "formula": ["2H2O.MoO4.2Na"], "evidence_id": "chebi-75213"}
+
+    {"id": "CHEBI:76209", "label": "sodium sulfide nonahydrate", "obsolete": false,
+    "formula": ["9H2O.2Na.S"], "evidence_id": "chebi-76209"}
+
+    {"id": "CHEBI:86158", "label": "calcium chloride dihydrate", "obsolete": false,
+    "formula": ["Ca.2Cl.2H2O"], "evidence_id": "chebi-86158"}
+
+    {"id": "CHEBI:86249", "label": "iron dichloride tetrahydrate", "obsolete": false,
+    "formula": ["Cl2Fe.4H2O"], "evidence_id": "chebi-86249"}
+
+    {"id": "CHEBI:86318", "label": "copper(II) chloride dihydrate", "obsolete": false,
+    "formula": ["Cl2Cu.2H2O"], "evidence_id": "chebi-86318"}
+
+    {"id": "CHEBI:86345", "label": "magnesium dichloride hexahydrate", "obsolete":
+    false, "formula": ["2Cl.6H2O.Mg"], "evidence_id": "chebi-86345"}
+
+    {"id": "CHEBI:86368", "label": "manganese(II) chloride tetrahydrate", "obsolete":
+    false, "formula": ["Cl2Mn.4H2O"], "evidence_id": "chebi-86368"}
+
+    {"id": "CHEBI:8806", "label": "Resazurin", "obsolete": false, "formula": ["C12H7NO4"],
+    "evidence_id": "chebi-8806"}
+
+    {"id": "CHEBI:91248", "label": "L-cysteine hydrochloride hydrate", "obsolete":
+    false, "formula": ["C3H7NO2S.H2O.HCl"], "evidence_id": "chebi-91248"}
+
+    Sodium resazurin maps to neutral Resazurin CHEBI:8806, formulaC12H7NO4; the MIM
+    snapshot repeats that synonym mapping, so resolver agreement is not independent
+    confirmation. Nickel hexahydrate maps to anhydrous CHEBI:34887; maintained MIM
+    resolves CHEBI:53542 and the fresh exact OLS object confirms nickel chloride hexahydrate.
+    No sodium-salt replacement was verified. Trypticase peptone is an undefined branded
+    digest: do not assign molarity or infer exact dry composition. Its packaged MIM
+    answer MICRO:0000175 is a resolution observation, not an externally verified new
+    grounding. Vitamin B12 remains the source-level vitamer class, not an invented
+    cyanocobalamin narrowing.
+
+    The generic source name Calcium pantothenate does not independently establish
+    the D stereochemistry encoded by CHEBI:31345 InChI/SMILES and synonyms. Retain
+    this as unverified supplied-form specificity; the generic label is not itself
+    declared wrong and no replacement is proposed.'
+  metrics:
+  - name: primary_term_presence
+    value: 96.55172413793103
+    unit: percent
+    denominator: 29
+    minimum: 0
+    maximum: 100
+    definition: 28 of 29 generated ingredient instances carry a primary CHEBI term;
+      presence only.
+  - name: secondary_link_presence
+    value: 93.10344827586206
+    unit: percent
+    denominator: 29
+    minimum: 0
+    maximum: 100
+    definition: 27 of 29 generated ingredient instances carry a secondary CHEBI link;
+      presence only.
+- assessment_id: preparation
+  area: completeness
+  topic: Conditions, stage boundaries, roles and organism scope
+  outcome: concern
+  summary: pH 7 and the main source preparation prose are retained, but a stock-specific
+    instruction is at top level and stage semantics are compressed.
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - dsm903
+  - mediadive903
+  - importer
+  details: The generated and DSMZ-owner first paragraph matches the main source preparation
+    text, including its staged exclusions and distinct gas/sterilization contexts.
+    Second paragraph belongs only to SL10 stock 595. AUTOCLAVE is a keyword classification
+    of a multi-action paragraph; it does not mean every additive is autoclaved together.
+    KOMODO owner lacks preparation and its Aerobic:Yes catalog note must not override
+    the DSMZ anoxic preparation. No named target organism, experimental growth evidence,
+    incubation temperature, storage or shelf life is established by inspected source.
+    Empty optional growth/role fields are not defects. COMPLEX/SEMI_DEFINED and LIQUID
+    are consistent with the partly defined peptone-containing, nongelled formulation;
+    the schema enum is not a growth assertion.
+- assessment_id: provenance
+  area: provenance
+  topic: Historical observations and current merge compatibility
+  outcome: concern
+  summary: Source evidence remains in notes/history; generated material predates the
+    partial owner repairs and cannot be regenerated as this same two-owner union under
+    the present exact formulation gate.
+  target_ids:
+  - CultureMech:002070
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - generator
+  - formulation
+  - diagnostics
+  - historical-1
+  - historical-2
+  - historical-3
+  - historical-4
+  - historical-5
+  - historical-6
+  details: Current ingredient fingerprints coincide but formulation fingerprints differ.
+    Exact owner union rejects differing notes, parent_media, preparation_steps, solutions,
+    variant_children, variant_modifications and variant_relationship. Keep both maintained
+    identities until independently justified curation; do not erase metadata to force
+    equality. Historical October blanket conflict decisions are refined here only
+    by directly reported API g_l support; no prior structured finding is closed. September
+    approximately 1000-fold statement is qualitative legacy triage, not an exact final-volume
+    calculation. In the KOMODO owner, history timestamp 2026-01-27T01:15:03.fZ is
+    malformed and 2026-02-03T11:18:57.789015 has no timezone; do not invent a corrected
+    instant.
+findings:
+- finding_id: F1
+  issue_key: CM002070-stock-topology
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock and main-medium scopes remain conflated
+  description: 19 stock solutes are direct in the generated record; each owner has
+    only 5 correctly nested descriptors and 14 still direct. SL10 preparation is attached
+    to the medium, and liquid stock attributes/source water basis are not carried
+    in complete structure. Source-specific membership must be reconstructed before
+    final concentration arithmetic.
+  target_ids:
+  - CultureMech:002070
+  field_paths:
+  - ingredients
+  - solutions
+  - preparation_steps[1]
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - mediadive903
+  - dsm903
+  - nesting
+  - importer
+  rule_id: concentration-evidence-contract
+  native_severity: P2
+  normalization_reason: 'P2 normalized to major: material source-stage, denominator,
+    supplied-form or generated-ownership defect; the record identity and required
+    structural checks remain valid.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+- finding_id: F2
+  issue_key: CM002070-stock-dose-basis
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Stock-addition units assume an unverified per-litre denominator
+  description: Each owner asserts 1 ML_PER_L for two stock additions, while the source
+    gives 1 ml per listed batch. API reports 1003 ml main volume; PDF lists 1000 ml
+    water without explicit final make-up. Current import/nesting/promotion code does
+    not supply the missing denominator justification.
+  target_ids:
+  - CultureMech:002070
+  field_paths:
+  - data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[0].concentration
+  - data/normalized_yaml/bacterial/caldanaerobius_medium.yaml::solutions[1].concentration
+  - data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[0].concentration
+  - data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::solutions[1].concentration
+  evidence_ids:
+  - owner1
+  - owner2
+  - mediadive903
+  - dsm903
+  - importer
+  - nesting
+  - promotion
+  rule_id: concentration-evidence-contract
+  native_severity: P2
+  normalization_reason: 'P2 normalized to major: material source-stage, denominator,
+    supplied-form or generated-ownership defect; the record identity and required
+    structural checks remain valid.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+- finding_id: F3
+  issue_key: CM002070-supplied-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Sodium salt and nickel hydrate identities are lost
+  description: Sodium resazurin has neutral CHEBI:8806; nickel chloride hexahydrate
+    has anhydrous CHEBI:34887 in primary and secondary terms. Correct labels attached
+    to those IDs do not make them the correct supplied substances.
+  target_ids:
+  - CultureMech:002070
+  field_paths:
+  - ingredients[5].term
+  - ingredients[17].term
+  - ingredients[17].mediaingredientmech_chebi_term
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - chebi-8806
+  - chebi-34887
+  - chebi-53542
+  - mim-index
+  - diagnostics
+  rule_id: exact-supplied-form
+  native_severity: P2
+  normalization_reason: 'P2 normalized to major: material source-stage, denominator,
+    supplied-form or generated-ownership defect; the record identity and required
+    structural checks remain valid.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+- finding_id: F4
+  issue_key: CM002070-merge-freshness
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated merge predates owner repairs and conflicts with current compatibility
+    rules
+  description: The target lacks the two inline stock descriptors present in both current
+    owners. Present exact-formulation comparison rejects their union; a future regeneration
+    must preserve distinct assertions and source ownership rather than forcing the
+    historical ingredient-only merge.
+  target_ids:
+  - CultureMech:002070
+  field_paths:
+  - merged_from
+  - merge_fingerprint
+  - solutions
+  - preparation_steps
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - generator
+  - formulation
+  - diagnostics
+  rule_id: generated-input-ownership
+  native_severity: P2
+  normalization_reason: 'P2 normalized to major: material source-stage, denominator,
+    supplied-form or generated-ownership defect; the record identity and required
+    structural checks remain valid.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merger.py
+    role: generated merge implementation
+- finding_id: F5
+  issue_key: CM002070-claim-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Recoverable source claims lack scoped evidence and owner history includes
+    malformed times
+  description: Source identity and values are recoverable from DSMZ/API and historical
+    mapping, but current fields lack claim-level source snapshots/basis. KOMODO original
+    catalog remains unavailable; its history contains one malformed and one timezone-absent
+    timestamp. Preserve original events and add verified provenance without inventing
+    instants.
+  target_ids:
+  - CultureMech:002070
+  field_paths:
+  - notes
+  - ingredients[].evidence
+  - solutions
+  - data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml::curation_history[1].timestamp
+  evidence_ids:
+  - target
+  - owner1
+  - owner2
+  - komodo-access
+  - mediadive903
+  - dsm903
+  rule_id: source-provenance-and-history
+  native_severity: P3
+  normalization_reason: 'P3 normalized to minor: bounded provenance and history precision
+    gap with recoverable source context.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+actions:
+- action_id: A1
+  description: Curate complete source-specific stock membership and preparation ownership
+    in both maintained records; retain original amounts and stages.
+  finding_ids:
+  - F1
+  target_ids:
+  - CultureMech:002070
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Account for every source main and stock component; no stock-strength component
+    remains direct solely because it escaped a plausibility flag.
+  - Keep SL10 dissolution/make-up on its stock and preserve main preparation stage
+    distinctions; no organism/incubation inference.
+  - Credit current importer stock handling; assess remaining unit/stage behavior before
+    any reimport.
+  - Run the four native recipe validators on maintained owners and independently compare
+    all source rows.
+- action_id: A2
+  description: Resolve batch-volume semantics before asserting any per-litre stock
+    dose.
+  finding_ids:
+  - F2
+  target_ids:
+  - CultureMech:002070
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Retain source 1 ml batch additions, API reported 1003 ml and PDF 1000 ml input
+    water as distinct facts.
+  - Require explicit final-volume/basis evidence for a calculated ML_PER_L value;
+    do not infer density or an HCl percent basis.
+  - Verify all direct, inline and stock-addition claims with the concentration evidence
+    contract.
+- action_id: A3
+  description: Ground exact supplied forms and resolve the sodium-resazurin conflict
+    in the packaged identity source.
+  finding_ids:
+  - F3
+  target_ids:
+  - CultureMech:002070
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Nickel CHEBI:53542 is a verified hydrate candidate; review primary and secondary
+    terms together against source and live authority.
+  - Do not relabel neutral CHEBI:8806 as its sodium salt; leave exact supplied identity
+    unresolved until a verified mapping is available.
+  - Use the maintained MIM resolver and snapshot refresh contract for future publication;
+    do not hand-edit immutable index bytes.
+  - Run term/label checks after authorized curation.
+- action_id: A4
+  description: Regenerate from curated maintained inputs using current formulation-aware
+    grouping, retaining differing owner assertions.
+  finding_ids:
+  - F4
+  target_ids:
+  - CultureMech:002070
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/merge/merger.py
+    role: generated merge implementation
+  acceptance_checks:
+  - Review output membership and lineage; do not remove meaningful notes, preparation
+    or relationships merely to force a merge.
+  - Run just verify-merges and just audit-merge-freshness after authorized regeneration;
+    validate resulting records.
+  depends_on:
+  - A1
+  - A2
+  - A3
+  generator: python -m culturemech.merge.merge_recipes
+- action_id: A5
+  description: Attach scoped source evidence and preserve historical access/timestamp
+    limitations.
+  finding_ids:
+  - F5
+  target_ids:
+  - CultureMech:002070
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/caldanaerobius_medium.yaml
+    role: maintained normalized source
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_903_THERMOANAEROBACTERIUM_medium.yaml
+    role: maintained normalized source
+  acceptance_checks:
+  - Add source bibliographic/access metadata and concentration/preparation claim locators
+    at the narrowest supported evidence fields.
+  - Recheck the exact KOMODO source if available; historical mapping is not fresh
+    retrieval.
+  - Preserve append-only history and document malformed/unknown timezone values without
+    guessing; rerun schema/reference checks.
+limitations:
+- Exact current KOMODO MediaList endpoint returnedHTTP 403; its original identity
+  cross-reference is corroborated only by a pinned historical report and current local
+  lineage, not fresh remote catalog text.
+- API g_l fields are reported values at their own source solution scope. PDF input-water
+  volumes do not independently prove final mixed volume; no new final-medium dilution,
+  density, molarity or ambiguous-percent conversion was asserted.
+- No externally verified replacement sodium-resazurin salt identifier was found in
+  the bounded search; no absence outside that search is claimed. Packaged peptone
+  MICRO identity was observed but not externally validated as a proposed new term.
+- Four canonical checks cover the generated record only. Maintained owners were fully
+  read as context; deterministic validation does not prove scientific accuracy. Embedded
+  histories were assessed manually; full-corpus ID/product/merge gates were not rerun
+  for a review-only addition.
+- Primary PDF was inspected via complete extracted text and API cross-check, with
+  no experimental validation or organism-growth review.
+- The generic source name Calcium pantothenate does not independently establish the
+  D stereochemistry encoded by CHEBI:31345 InChI/SMILES and synonyms. Retain this
+  as unverified supplied-form specificity; the generic label is not itself declared
+  wrong and no replacement is proposed.
+notes:
+- All source inputs remain unchanged. Native inspection provenance is retained exactly;
+  public source captures and full check streams reside in durable private work storage.
+- Six historical ad hoc reports are evidence context, not validated structured review
+  coverage or previous_occurrences. No historical finding is silently closed.
+- Ignored-inclusive ownership discovery covered exact IDs/names within normalized
+  records and reports. Source-only solvent quantities are retained as preparation
+  evidence; missing optional water chemical edges alone are not a defect.
+tags:
+- source-review
+- generated-record
+- mediadive
+- stock-topology
+- batch-056
