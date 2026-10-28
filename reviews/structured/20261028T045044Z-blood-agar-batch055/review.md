@@ -1,0 +1,989 @@
+# Scientific review of blood_agar
+
+- Review: 20261028T045044Z-blood-agar-batch055
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T04:31:39.778105Z
+- Finished UTC: 2026-10-28T04:50:44.795092Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+NBRC 254 supports the named base and staged blood-agar recipe. The maintained owner contains substantial correct repairs; the generated target is stale. Remaining owner work is narrow: explicit batch-versus-final rate basis and attached evidence, without guessed proprietary composition or culture conditions.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch055 selection index 5 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:008017 | data/merge_yaml/merged/Blood_Agar.yaml | generated | blood_agar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:008017 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:008017 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:008017 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:008017 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### TOGO 1474 and NBRC 254
+
+identity: supported. Targets: CultureMech:008017.
+
+The current TOGO metadata explicitly maps M1474 to NBRC_M254, and the primary NBRC page agrees on the named commercial base, water and post-autoclave blood addition. The sole maintained owner is exact. The separate TOGO 2276 opaque blood-agar plate is not an alternative source formulation for this record.
+
+### Credit existing repair and delimit remaining work
+
+provenance: concern. Targets: CultureMech:008017.
+
+The owner already corrects the water unit, moves blood to a separate addition, supplies UBERON blood identity, retains ordered preparation and source references. The generated target is older and stale. Current repair_togo_m1474_score15.py encodes these repairs but also hardcodes per-litre bases needing qualification. Current conservative merge logic preserves complete scientific fields; it is not evidence that present code still makes the historical unit artifact.
+
+### Blood and commercial-base identity
+
+grounding: supported. Targets: CultureMech:008017.
+
+Water’s CHEBI label is exact. Owner UBERON:0000178 correctly denotes blood broadly; neither it nor the MIM Blood row specifies defibrillation or animal species. Retain the source descriptor and do not map the Difco commercial base to one molecule. Empty blood composition is an explicit unresolved complex mixture, not a reason to invent ingredients.
+
+### Classification and growth limits
+
+scope: supported. Targets: CultureMech:008017.
+
+Bacterial and SOLID_AGAR identity is coherent. Complex composition is appropriately retained; target UNDEFINED versus owner SEMI_DEFINED is a representational distinction to preserve during deliberate regeneration, not proof of different recipes. No local organism-growth claim exists, and the source supplies no incubation or strain-performance evidence.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:008017.
+
+All 6 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:008017", "selected_concentration_field_count": 6, "selected_concentration_fields_covered": 6, "decisions": [{"decision_id": "q1", "subject": "Generated distilled-water unit", "local_fields": [{"record_path": "data/merge_yaml/merged/Blood_Agar.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "correct", "stage": "base preparation", "interpretation": "The exact source specifies 1 L water, not 1 g/L. Restore volume units and preserve water as a batch input; do not infer mass from density or final volume from solvent volume.", "sources": [{"locator": "extracted-text lines 29-31", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Distilled water\n1\nL", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[0]", "source_key": "togoM1474", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474", "source_raw_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "source_text_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "accessed_at": "2026-10-28T04:32:09.999838Z", "exact_source_quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q2", "subject": "Maintained distilled-water repair", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "1.0", "unit": "L"}}], "decision": "evidence_only", "stage": "base preparation", "interpretation": "Credit the owner’s 1.0 L correction: this is the exact source batch input. Retain it rather than repeating an already-completed unit repair.", "sources": [{"locator": "extracted-text lines 29-31", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Distilled water\n1\nL", "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject": "Named commercial base", "local_fields": [{"record_path": "data/merge_yaml/merged/Blood_Agar.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "40", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "40.0", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "base recipe batch", "interpretation": "Both current numeric values 40 agree with the source 40 g batch input in 1 L water. Neither source gives measured finished volume or explicit final g/L, especially after blood addition. Retain 40 g and the named Difco product; qualify any rate as per source base-water batch rather than silently normalizing final medium.", "sources": [{"locator": "extracted-text lines 26-28", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Bacto Blood Agar Base (Difco)\n40\ng", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[2]", "source_key": "togoM1474", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474", "source_raw_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "source_text_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "accessed_at": "2026-10-28T04:32:09.999838Z", "exact_source_quote": "{\n          \"component_name\": \"Bacto Blood Agar Base (Difco)\",\n          \"volume\": 40,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001297\",\n          \"gmo_id\": \"GMO_001297\",\n          \"label\": \"Bacto &amp;trade; Blood agar base\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q4", "subject": "Generated blood unit and stage", "local_fields": [{"record_path": "data/merge_yaml/merged/Blood_Agar.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "50", "unit": "G_PER_L"}}], "decision": "correct", "stage": "post-autoclave supplement", "interpretation": "The source adds 50 ml sterile defibrillated blood after cooling. 50 G_PER_L is a volume-to-mass artifact. Preserve 50 ml and its addition stage without guessing density, animal species or final dilution.", "sources": [{"locator": "extracted-text lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated blood.", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[1]", "source_key": "togoM1474", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474", "source_raw_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "source_text_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "accessed_at": "2026-10-28T04:32:09.999838Z", "exact_source_quote": "{\n          \"component_name\": \"sterile defibrillated blood\",\n          \"volume\": 50,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001893\",\n          \"gmo_id\": \"GMO_001893\",\n          \"label\": \"Blood-derived component\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q5", "subject": "Maintained blood-stage repair and rate basis", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "solutions[0].concentration", "original": {"value": "50.0", "unit": "ML_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "solutions[0].notes", "original": "NBRC Medium 254 cools the autoclaved agar base to 45-50 C and adds 50 ml sterile defibrillated blood per liter."}], "decision": "unsupported", "stage": "post-autoclave supplement", "interpretation": "Credit the owner’s volume-unit correction and separate solution/preparation. 50 ML_PER_L can describe the dose per 1 L base-water recipe only if that denominator is explicit; the primary states 50 ml added to the batch, not a 1 L final medium. Do not assume the sum is a measured 1.05 L or substitute a calculated final rate.", "sources": [{"locator": "extracted-text lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated blood.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject": "Existing owner base preparation and sterilization", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "preparation_steps[0].description", "original": "Suspend 40 g Bacto Blood Agar Base (Difco) in 1 L distilled water."}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "preparation_steps[1].description", "original": "Sterilize the agar base by autoclaving."}], "decision": "evidence_only", "stage": "base preparation before blood", "interpretation": "The owner correctly retains 40 g base in 1 L water and autoclaving. The primary specifies no autoclave temperature or duration; retain the unspecified cycle rather than inserting a standard default.", "sources": [{"locator": "extracted-text lines 26-28", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Bacto Blood Agar Base (Difco)\n40\ng", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 29-31", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Distilled water\n1\nL", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated blood.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject": "Existing owner cooling and blood-addition preparation", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "preparation_steps[2].description", "original": "Cool the autoclaved base to 45-50 C."}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "preparation_steps[3].description", "original": "Aseptically add 50 ml sterile defibrillated blood per liter."}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml", "field_path": "solutions[0].preparation_notes", "original": "Add after the autoclaved base cools to 45-50 C."}], "decision": "evidence_only", "stage": "post-autoclave preparation", "interpretation": "Retain cooling 45–50°C then adding sterile blood. Qualify the fourth step’s per-liter phrase as source base-water batch scope, consistent with the 50 ml source addition, rather than a measured final-volume instruction. The generated target omits these supported stages.", "sources": [{"locator": "extracted-text lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated blood.", "quote_representation": "captured extracted text"}, {"locator": "$.comments[0]", "source_key": "togoM1474", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474", "source_raw_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "source_text_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "accessed_at": "2026-10-28T04:32:09.999838Z", "exact_source_quote": "{\n      \"paragraph_index\": 2,\n      \"comment\": \"Sterilize by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated blood.\"\n    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q8", "subject": "Unstated pH, incubation and constituent formulation", "local_fields": [], "decision": "not_quantified", "stage": "source boundary", "interpretation": "The full NBRC composition/comments do not specify pH, incubation, blood species, proprietary base subingredients or a final-volume makeup. These cannot be supplied from an adjacent blood-agar formulation.", "sources": [{"locator": "extracted-text lines 26-28", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Bacto Blood Agar Base (Difco)\n40\ng", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated blood.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch055/record05/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: supported. Targets: CultureMech:008017.
+
+data/merge_yaml/merged/Blood_Agar.yaml: primary 1/3, secondary 1/3; data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml: primary 1/2, secondary 1/2. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI/UBERON term is joined to its exact current OLS object and packaged MIM CSV rows. Zero numeric legacy MediaIngredientMech identifiers occur in the full selected documents; NNNNNN is a historical placeholder, not an ID. No percentage is calculated for the empty identifier set of record06. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:008017.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Generated blood agar retains old unit artifacts and omits owner preparation
+
+major / open / confirmed; issue key: culturemech-008017-stale-generated.
+
+The target still stores 1 L water as 1 G_PER_L and 50 ml blood as 50 G_PER_L, and lacks the owner’s separate blood addition, four preparation steps and references. These owner repairs are real and should be preserved, while the remaining denominator qualification is handled separately.
+
+### f2: Existing owner rates need an explicit batch denominator
+
+minor / open / confirmed; issue key: culturemech-008017-base-versus-final-basis.
+
+The source specifies 40 g base in 1 L water followed by 50 ml blood. The maintained 40 G_PER_L and 50 ML_PER_L values are not independently established final-medium concentrations. The source batch amounts are supported and must not be silently changed; clarify the base-water denominator or represent the original batch additions.
+
+### f3: Useful references are not attached formulation evidence
+
+minor / open / confirmed; issue key: culturemech-008017-claim-evidence.
+
+The owner has two valid source references and informative repair history, but neither selected layer has attached claim-level excerpts. Preserve those references and add exact amount, basis and stage support rather than claiming that reference presence validates every quantity.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Review the maintained owner’s remaining basis annotations, then regenerate the target through the current conservative merge path. Retain already correct water volume, blood identity/stage and preparation; do not patch generated YAML.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Preserve 40 g base, 1 L water and 50 ml post-cooling blood as separately staged source quantities. Qualify the current writer/owner per-litre assumptions before reuse; do not infer measured final volume or arbitrary density.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Attach short claim-scoped NBRC evidence with current capture hash/time and exact source identity, retaining the commercial opacity and denominator limits.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/Blood_Agar.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch055/record05/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch055/record05/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch055/record05/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch055/record05/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| nbrc254 | https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current source read, including exact identity, all formulation rows, units and preparation. It establishes a formulation, not strain-specific growth. |
+| togoM1474 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current source read, including exact identity, all formulation rows, units and preparation. It establishes a formulation, not strain-specific growth. |
+| uberon0000178 | https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?obo_id=UBERON:0000178; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact UBERON:0000178 = blood; definition ['A fluid that is composed of blood plasma and erythrocytes.']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; $._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation, is_obsolete | supports | OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O']; mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| grounding | REVIEW_WORK/batch055/record05/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/yaml_record_review/20260921T222059Z-Blood_Agar.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| history1 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Blood_Agar.md; entire report | supports | Entire historical report read, including unresolved and unchanged rows. October reports are derivative assertions with original cited hash/time; their raw payload is not authenticated by the report alone. September narratives are historical leads reassessed against current captures, not fresh review proof. |
+| writer14 | scripts/repair_togo_m1474_score15.py; relevant functions named in summary | context_only | Full repair_togo_m1474_score15.py read: _ensure_target guards exact source and initial/final signatures; repair_record preserves the named commercial base, separates blood addition and retains ordered preparation/references. Constants still encode base and blood per-litre rates without a source final-volume proof. _append_curation_event replaces matching events; current code is not proof of historical execution. |
+| writer15 | src/culturemech/import/togo_importer.py; relevant functions named in summary | context_only | Current _extract_primary_components/_solution_from_item preserve main versus nested stocks; _parse_unit distinguishes mg/ml and _extract_preparation_steps retains comments. Bare units mapped to per-litre enums still require source-basis review. Current fixed code is not proof of historical execution. |
+| writer16 | src/culturemech/merge/formulation.py; relevant functions named in summary | context_only | Current formulation_content retains scientific fields, quantities, notes and preparation; merge_formulation_evidence rejects incompatible scientific projections and unions scoped evidence. Ingredient-set similarity does not prove scientific equivalence. |
+| writer17 | src/culturemech/merge/matcher.py; relevant functions named in summary | context_only | Current group_formulations uses full formulation fingerprints for compatible automatic merging; broader group_recipes discovers ingredient-set candidates only. Neither grouping path substitutes for source verification. |
+| writer18 | src/culturemech/merge/merger.py; relevant functions named in summary | context_only | Current merge_group returns a single owner with routing metadata, and calls conservative merge_formulation_evidence for multiple owners. Current code supports regenerating stale content after owner repair but does not authenticate old generated outputs. |
+| quantity-inventory | REVIEW_WORK/batch055/record05/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- The primary lists 1 L water and a later 50 ml blood addition, with no measured final volume. Neither a 1 L nor a 1.05 L final denominator is silently inferred.
+- The source does not specify blood species, proprietary base constituents, pH, incubation or an autoclave cycle; unrelated blood-agar sources do not fill these gaps.
+- Current repair and importer code explain possible representations but do not authenticate historical execution. Current MIM rows are snapshot evidence, not a historical mapping-validity claim.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T045044Z-blood-agar-batch055
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of blood_agar
+started_at: '2026-10-28T04:31:39.778105Z'
+finished_at: '2026-10-28T04:50:44.795092Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'NBRC 254 supports the named base and staged blood-agar recipe. The maintained
+  owner contains substantial correct repairs; the generated target is stale. Remaining
+  owner work is narrow: explicit batch-versus-final rate basis and attached evidence,
+  without guessed proprietary composition or culture conditions.'
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Blood_Agar.yaml
+    sha256: b7a3826634bf4bd9b1f2a2f91066816f0364f6d5d116d44b5040c3531faf3a6f
+    role: target
+  - path: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+    sha256: 669a52ef5999b01fed5781541c131631d6db0c0e479b2d1776bb4eaf2ce7258f
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Blood_Agar.md
+    sha256: cf20fa26091c96eba4697834f7ecd25b9603ef9245d4687bc3282f190c0ba0ce
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.md
+    sha256: 40403a8430dffee989bbcfc25c93434cdf483fd991b8d05bcdfa2e7f2b928e0b
+    role: context
+  - path: reports/yaml_record_review/20260921T222059Z-Blood_Agar.md
+    sha256: 87ebace68398adc96987e6b2481e7b188a9e8a19ff5d19ce9537058949193b6c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/repair_togo_m1474_score15.py
+    sha256: 380e8ed9d7ecb8f14c1d0990d610d0e372b448289158cbc1ca973bf5ff2064f0
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch055 selection index 5 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:008017
+targets:
+- target_id: CultureMech:008017
+  path: data/merge_yaml/merged/Blood_Agar.yaml
+  label: blood_agar
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008017
+  command: just validate-schema data/merge_yaml/merged/Blood_Agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008017
+  command: just validate-strict data/merge_yaml/merged/Blood_Agar.yaml --workers 1
+    --out REVIEW_WORK/batch055/record05/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:008017
+  command: just validate-terms data/merge_yaml/merged/Blood_Agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:008017
+  command: just validate-references data/merge_yaml/merged/Blood_Agar.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/Blood_Agar.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:41:02.071784Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: b7a3826634bf4bd9b1f2a2f91066816f0364f6d5d116d44b5040c3531faf3a6f
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T04:41:02.072086Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 669a52ef5999b01fed5781541c131631d6db0c0e479b2d1776bb4eaf2ce7258f
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch055/record05/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:31:42.528209Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: ce526f928d1e05016af00bc1c3f7a69130be4ba134457e98cdefbf51e4a82016
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch055/record05/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:31:43.909226Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: b597d7dccbad91a295e74b03b23942715eab999011aa5ee0fb90499ea7592765
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch055/record05/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:31:45.596456Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 651aa2551393784b0c55902308aa954ef00841a634b3c1d94e4f9899558ed058
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch055/record05/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T04:31:46.502739Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 67d8ef534b9ed225ea73ebe5657165aea218072802e41aa1c9e21af6a613b976
+- evidence_id: nbrc254
+  kind: primary_source
+  reference: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:32:09.971739Z'
+  support: supports
+  summary: Complete current source read, including exact identity, all formulation
+    rows, units and preparation. It establishes a formulation, not strain-specific
+    growth.
+  snapshot_sha256: 200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b
+- evidence_id: togoM1474
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T04:32:09.999838Z'
+  support: supports
+  summary: Complete current source read, including exact identity, all formulation
+    rows, units and preparation. It establishes a formulation, not strain-specific
+    growth.
+  snapshot_sha256: 8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2
+- evidence_id: uberon0000178
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?obo_id=UBERON:0000178
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:10.587750Z'
+  support: supports
+  summary: OLS current exact UBERON:0000178 = blood; definition ['A fluid that is
+    composed of blood plasma and erythrocytes.']; formula None; mass None; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: e6a51f559811919b854cc6f88e7490e3ac7dd7d2148c0d6628386f151605252d
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: '$._embedded.terms[0]: iri, obo_id, label, description, synonyms, annotation,
+    is_obsolete'
+  accessed_at: '2026-10-28T04:32:10.647561Z'
+  support: supports
+  summary: OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting
+    of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O'];
+    mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch055/record05/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T04:41:02.074100Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: e538b9bdc60794a48ce70ccbcc80ad370afe1c0bc38d6463176bfb91de9dcdde
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/yaml_record_review/20260921T222059Z-Blood_Agar.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:41:02.074138Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 87ebace68398adc96987e6b2481e7b188a9e8a19ff5d19ce9537058949193b6c
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:41:02.074167Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: 40403a8430dffee989bbcfc25c93434cdf483fd991b8d05bcdfa2e7f2b928e0b
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Blood_Agar.md
+  locator: entire report
+  accessed_at: '2026-10-28T04:41:02.074189Z'
+  support: supports
+  summary: Entire historical report read, including unresolved and unchanged rows.
+    October reports are derivative assertions with original cited hash/time; their
+    raw payload is not authenticated by the report alone. September narratives are
+    historical leads reassessed against current captures, not fresh review proof.
+  snapshot_sha256: cf20fa26091c96eba4697834f7ecd25b9603ef9245d4687bc3282f190c0ba0ce
+- evidence_id: writer14
+  kind: record_content
+  reference: scripts/repair_togo_m1474_score15.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:41:02.074215Z'
+  support: context_only
+  summary: 'Full repair_togo_m1474_score15.py read: _ensure_target guards exact source
+    and initial/final signatures; repair_record preserves the named commercial base,
+    separates blood addition and retains ordered preparation/references. Constants
+    still encode base and blood per-litre rates without a source final-volume proof.
+    _append_curation_event replaces matching events; current code is not proof of
+    historical execution.'
+  snapshot_sha256: 380e8ed9d7ecb8f14c1d0990d610d0e372b448289158cbc1ca973bf5ff2064f0
+- evidence_id: writer15
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:41:02.074251Z'
+  support: context_only
+  summary: Current _extract_primary_components/_solution_from_item preserve main versus
+    nested stocks; _parse_unit distinguishes mg/ml and _extract_preparation_steps
+    retains comments. Bare units mapped to per-litre enums still require source-basis
+    review. Current fixed code is not proof of historical execution.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer16
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:41:02.074273Z'
+  support: context_only
+  summary: Current formulation_content retains scientific fields, quantities, notes
+    and preparation; merge_formulation_evidence rejects incompatible scientific projections
+    and unions scoped evidence. Ingredient-set similarity does not prove scientific
+    equivalence.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer17
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:41:02.074296Z'
+  support: context_only
+  summary: Current group_formulations uses full formulation fingerprints for compatible
+    automatic merging; broader group_recipes discovers ingredient-set candidates only.
+    Neither grouping path substitutes for source verification.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer18
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: relevant functions named in summary
+  accessed_at: '2026-10-28T04:41:02.074320Z'
+  support: context_only
+  summary: Current merge_group returns a single owner with routing metadata, and calls
+    conservative merge_formulation_evidence for multiple owners. Current code supports
+    regenerating stale content after owner repair but does not authenticate old generated
+    outputs.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch055/record05/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T04:41:02.075406Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 0d332859b17f1d5b336ee2a981b131edd2f780e6a9b3a70886ce7936f50a2167
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: TOGO 1474 and NBRC 254
+  outcome: supported
+  summary: The current TOGO metadata explicitly maps M1474 to NBRC_M254, and the primary
+    NBRC page agrees on the named commercial base, water and post-autoclave blood
+    addition. The sole maintained owner is exact. The separate TOGO 2276 opaque blood-agar
+    plate is not an alternative source formulation for this record.
+  target_ids:
+  - CultureMech:008017
+  evidence_ids:
+  - local0
+  - local1
+  - nbrc254
+  - togoM1474
+- assessment_id: a2
+  area: provenance
+  topic: Credit existing repair and delimit remaining work
+  outcome: concern
+  summary: The owner already corrects the water unit, moves blood to a separate addition,
+    supplies UBERON blood identity, retains ordered preparation and source references.
+    The generated target is older and stale. Current repair_togo_m1474_score15.py
+    encodes these repairs but also hardcodes per-litre bases needing qualification.
+    Current conservative merge logic preserves complete scientific fields; it is not
+    evidence that present code still makes the historical unit artifact.
+  target_ids:
+  - CultureMech:008017
+  evidence_ids:
+  - local0
+  - local1
+  - history0
+  - nbrc254
+- assessment_id: a3
+  area: grounding
+  topic: Blood and commercial-base identity
+  outcome: supported
+  summary: Water’s CHEBI label is exact. Owner UBERON:0000178 correctly denotes blood
+    broadly; neither it nor the MIM Blood row specifies defibrillation or animal species.
+    Retain the source descriptor and do not map the Difco commercial base to one molecule.
+    Empty blood composition is an explicit unresolved complex mixture, not a reason
+    to invent ingredients.
+  target_ids:
+  - CultureMech:008017
+  evidence_ids:
+  - chebi15377
+  - uberon0000178
+  - grounding
+  - nbrc254
+- assessment_id: a4
+  area: scope
+  topic: Classification and growth limits
+  outcome: supported
+  summary: Bacterial and SOLID_AGAR identity is coherent. Complex composition is appropriately
+    retained; target UNDEFINED versus owner SEMI_DEFINED is a representational distinction
+    to preserve during deliberate regeneration, not proof of different recipes. No
+    local organism-growth claim exists, and the source supplies no incubation or strain-performance
+    evidence.
+  target_ids:
+  - CultureMech:008017
+  evidence_ids:
+  - local0
+  - local1
+  - nbrc254
+  - togoM1474
+- assessment_id: a5
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 6 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:008017
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:008017",
+    "selected_concentration_field_count": 6, "selected_concentration_fields_covered":
+    6, "decisions": [{"decision_id": "q1", "subject": "Generated distilled-water unit",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/Blood_Agar.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "1", "unit": "G_PER_L"}}],
+    "decision": "correct", "stage": "base preparation", "interpretation": "The exact
+    source specifies 1 L water, not 1 g/L. Restore volume units and preserve water
+    as a batch input; do not infer mass from density or final volume from solvent
+    volume.", "sources": [{"locator": "extracted-text lines 29-31", "source_key":
+    "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Distilled
+    water\n1\nL", "quote_representation": "captured extracted text"}, {"locator":
+    "$.components[0].items[0]", "source_key": "togoM1474", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474",
+    "source_raw_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2",
+    "source_text_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2",
+    "accessed_at": "2026-10-28T04:32:09.999838Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q2", "subject": "Maintained distilled-water
+    repair", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "1.0", "unit":
+    "L"}}], "decision": "evidence_only", "stage": "base preparation", "interpretation":
+    "Credit the owner’s 1.0 L correction: this is the exact source batch input. Retain
+    it rather than repeating an already-completed unit repair.", "sources": [{"locator":
+    "extracted-text lines 29-31", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Distilled
+    water\n1\nL", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q3", "subject": "Named commercial base", "local_fields": [{"record_path": "data/merge_yaml/merged/Blood_Agar.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "40", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "40.0", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "base recipe batch", "interpretation":
+    "Both current numeric values 40 agree with the source 40 g batch input in 1 L
+    water. Neither source gives measured finished volume or explicit final g/L, especially
+    after blood addition. Retain 40 g and the named Difco product; qualify any rate
+    as per source base-water batch rather than silently normalizing final medium.",
+    "sources": [{"locator": "extracted-text lines 26-28", "source_key": "nbrc254",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Bacto Blood
+    Agar Base (Difco)\n40\ng", "quote_representation": "captured extracted text"},
+    {"locator": "$.components[0].items[2]", "source_key": "togoM1474", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474", "source_raw_sha256":
+    "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "source_text_sha256":
+    "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2", "accessed_at":
+    "2026-10-28T04:32:09.999838Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Bacto Blood Agar Base (Difco)\",\n          \"volume\": 40,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001297\",\n          \"gmo_id\":
+    \"GMO_001297\",\n          \"label\": \"Bacto &trade; Blood agar base\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex
+    component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q4", "subject":
+    "Generated blood unit and stage", "local_fields": [{"record_path": "data/merge_yaml/merged/Blood_Agar.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}], "decision": "correct", "stage": "post-autoclave supplement", "interpretation":
+    "The source adds 50 ml sterile defibrillated blood after cooling. 50 G_PER_L is
+    a volume-to-mass artifact. Preserve 50 ml and its addition stage without guessing
+    density, animal species or final dilution.", "sources": [{"locator": "extracted-text
+    lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize
+    by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated
+    blood.", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[1]",
+    "source_key": "togoM1474", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474",
+    "source_raw_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2",
+    "source_text_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2",
+    "accessed_at": "2026-10-28T04:32:09.999838Z", "exact_source_quote": "{\n          \"component_name\":
+    \"sterile defibrillated blood\",\n          \"volume\": 50,\n          \"unit\":
+    \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001893\",\n          \"gmo_id\":
+    \"GMO_001893\",\n          \"label\": \"Blood-derived component\",\n          \"properties\":
+    [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient
+    source\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q5", "subject": "Maintained blood-stage repair
+    and rate basis", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "50.0", "unit":
+    "ML_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "solutions[0].notes", "original": "NBRC Medium 254 cools the autoclaved
+    agar base to 45-50 C and adds 50 ml sterile defibrillated blood per liter."}],
+    "decision": "unsupported", "stage": "post-autoclave supplement", "interpretation":
+    "Credit the owner’s volume-unit correction and separate solution/preparation.
+    50 ML_PER_L can describe the dose per 1 L base-water recipe only if that denominator
+    is explicit; the primary states 50 ml added to the batch, not a 1 L final medium.
+    Do not assume the sum is a measured 1.05 L or substitute a calculated final rate.",
+    "sources": [{"locator": "extracted-text lines 32-32", "source_key": "nbrc254",
+    "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize
+    by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated
+    blood.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q6", "subject": "Existing owner base preparation and sterilization", "local_fields":
+    [{"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Suspend 40 g Bacto
+    Blood Agar Base (Difco) in 1 L distilled water."}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "preparation_steps[1].description", "original": "Sterilize the agar
+    base by autoclaving."}], "decision": "evidence_only", "stage": "base preparation
+    before blood", "interpretation": "The owner correctly retains 40 g base in 1 L
+    water and autoclaving. The primary specifies no autoclave temperature or duration;
+    retain the unspecified cycle rather than inserting a standard default.", "sources":
+    [{"locator": "extracted-text lines 26-28", "source_key": "nbrc254", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256":
+    "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256":
+    "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at":
+    "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Bacto Blood Agar Base (Difco)\n40\ng",
+    "quote_representation": "captured extracted text"}, {"locator": "extracted-text
+    lines 29-31", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Distilled
+    water\n1\nL", "quote_representation": "captured extracted text"}, {"locator":
+    "extracted-text lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize
+    by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated
+    blood.", "quote_representation": "captured extracted text"}]}, {"decision_id":
+    "q7", "subject": "Existing owner cooling and blood-addition preparation", "local_fields":
+    [{"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "preparation_steps[2].description", "original": "Cool the autoclaved
+    base to 45-50 C."}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "preparation_steps[3].description", "original": "Aseptically add
+    50 ml sterile defibrillated blood per liter."}, {"record_path": "data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml",
+    "field_path": "solutions[0].preparation_notes", "original": "Add after the autoclaved
+    base cools to 45-50 C."}], "decision": "evidence_only", "stage": "post-autoclave
+    preparation", "interpretation": "Retain cooling 45–50°C then adding sterile blood.
+    Qualify the fourth step’s per-liter phrase as source base-water batch scope, consistent
+    with the 50 ml source addition, rather than a measured final-volume instruction.
+    The generated target omits these supported stages.", "sources": [{"locator": "extracted-text
+    lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize
+    by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated
+    blood.", "quote_representation": "captured extracted text"}, {"locator": "$.comments[0]",
+    "source_key": "togoM1474", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M1474",
+    "source_raw_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2",
+    "source_text_sha256": "8a04a44e10137b0128eee6d3d05954c52393ab2387c7cfa34cf58eae337d4ee2",
+    "accessed_at": "2026-10-28T04:32:09.999838Z", "exact_source_quote": "{\n      \"paragraph_index\":
+    2,\n      \"comment\": \"Sterilize by autoclaving and cool to 45-50℃ and add to
+    it 50 ml of sterile defibrillated blood.\"\n    }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q8", "subject": "Unstated pH, incubation and
+    constituent formulation", "local_fields": [], "decision": "not_quantified", "stage":
+    "source boundary", "interpretation": "The full NBRC composition/comments do not
+    specify pH, incubation, blood species, proprietary base subingredients or a final-volume
+    makeup. These cannot be supplied from an adjacent blood-agar formulation.", "sources":
+    [{"locator": "extracted-text lines 26-28", "source_key": "nbrc254", "reference":
+    "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254", "source_raw_sha256":
+    "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b", "source_text_sha256":
+    "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e", "accessed_at":
+    "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Bacto Blood Agar Base (Difco)\n40\ng",
+    "quote_representation": "captured extracted text"}, {"locator": "extracted-text
+    lines 32-32", "source_key": "nbrc254", "reference": "https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=254",
+    "source_raw_sha256": "200b0ba8528f526a77a5f10e210cb88c38de8823021053f8e60230617e40787b",
+    "source_text_sha256": "c475bb3064723347679dd800023e4f386b5e883692dce7d0d5cb6a447454cf6e",
+    "accessed_at": "2026-10-28T04:32:09.971739Z", "exact_source_quote": "Sterilize
+    by autoclaving and cool to 45-50℃ and add to it 50 ml of sterile defibrillated
+    blood.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference":
+    "REVIEW_WORK/batch055/record05/grounding-inventory.json", "source_only_gaps_are_explicit":
+    true, "note": "Batch amounts, provider normalization, stock composition, working
+    dose and preparation controls are separate. No source edits or automatic curation
+    performed."}'
+- assessment_id: a6
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: supported
+  summary: 'data/merge_yaml/merged/Blood_Agar.yaml: primary 1/3, secondary 1/3; data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml:
+    primary 1/2, secondary 1/2. These are ingredient-instance linkage fractions, not
+    accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI/UBERON term is joined to its exact current OLS object and packaged MIM CSV
+    rows. Zero numeric legacy MediaIngredientMech identifiers occur in the full selected
+    documents; NNNNNN is a historical placeholder, not an ID. No percentage is calculated
+    for the empty identifier set of record06. Complex commercial/product components
+    are not forced to pure-compound IDs.'
+  target_ids:
+  - CultureMech:008017
+  evidence_ids:
+  - grounding
+- assessment_id: a7
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:008017
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-008017-stale-generated
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Generated blood agar retains old unit artifacts and omits owner preparation
+  description: The target still stores 1 L water as 1 G_PER_L and 50 ml blood as 50
+    G_PER_L, and lacks the owner’s separate blood addition, four preparation steps
+    and references. These owner repairs are real and should be preserved, while the
+    remaining denominator qualification is handled separately.
+  target_ids:
+  - CultureMech:008017
+  field_paths:
+  - ingredients[0].concentration
+  - ingredients[1].concentration
+  - solutions
+  - preparation_steps
+  - sterilization
+  - references
+  evidence_ids:
+  - local0
+  - local1
+  - nbrc254
+  - togoM1474
+  rule_id: generated-record-freshness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-008017-base-versus-final-basis
+  category: quantity
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Existing owner rates need an explicit batch denominator
+  description: The source specifies 40 g base in 1 L water followed by 50 ml blood.
+    The maintained 40 G_PER_L and 50 ML_PER_L values are not independently established
+    final-medium concentrations. The source batch amounts are supported and must not
+    be silently changed; clarify the base-water denominator or represent the original
+    batch additions.
+  target_ids:
+  - CultureMech:008017
+  field_paths:
+  - ingredients[2].concentration
+  - data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml::ingredients[0].concentration
+  - data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml::solutions[0].concentration
+  - data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml::preparation_steps[3].description
+  evidence_ids:
+  - nbrc254
+  - togoM1474
+  - local1
+  rule_id: source-quantity-basis
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-008017-claim-evidence
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Useful references are not attached formulation evidence
+  description: The owner has two valid source references and informative repair history,
+    but neither selected layer has attached claim-level excerpts. Preserve those references
+    and add exact amount, basis and stage support rather than claiming that reference
+    presence validates every quantity.
+  target_ids:
+  - CultureMech:008017
+  field_paths:
+  - ingredients[*].evidence
+  - data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml::solutions[0].evidence
+  - references
+  evidence_ids:
+  - grounding
+  - local1
+  - nbrc254
+  rule_id: source-specific-formulation-fidelity
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Review the maintained owner’s remaining basis annotations, then regenerate
+    the target through the current conservative merge path. Retain already correct
+    water volume, blood identity/stage and preparation; do not patch generated YAML.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:008017
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Preserve 40 g base, 1 L water and 50 ml post-cooling blood as separately
+    staged source quantities. Qualify the current writer/owner per-litre assumptions
+    before reuse; do not infer measured final volume or arbitrary density.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:008017
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Attach short claim-scoped NBRC evidence with current capture hash/time
+    and exact source identity, retaining the commercial opacity and denominator limits.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:008017
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/TOGO_M1474_Blood_Agar.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- The primary lists 1 L water and a later 50 ml blood addition, with no measured final
+  volume. Neither a 1 L nor a 1.05 L final denominator is silently inferred.
+- The source does not specify blood species, proprietary base constituents, pH, incubation
+  or an autoclave cycle; unrelated blood-agar sources do not fill these gaps.
+- Current repair and importer code explain possible representations but do not authenticate
+  historical execution. Current MIM rows are snapshot evidence, not a historical mapping-validity
+  claim.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```
