@@ -1,0 +1,2444 @@
+schema_version: 1.0.0
+review_id: 20261028T112156Z-batch064-record03-source-review
+kind: record
+repository: CultureBotAI/CultureMech
+title: 'Clostridium vincentii medium: preserve base and variant scopes'
+started_at: '2026-10-28T10:58:16.844011Z'
+finished_at: '2026-10-28T11:21:56.329357Z'
+reviewer:
+  identity: Codex independent source reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh assessment of the inspected checkout and newly captured
+    primary/provider/ontology evidence; no reconstruction of lost reviews and no record
+    edits.
+skill: .claude/skills/review-yaml-record/SKILL.md; .claude/skills/review-ingredient-concentrations/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The DSM769 base is authenticated by fresh primary/provider bytes, including
+  the exact historical API digest. The generated record flattens a vitamin stock,
+  misrepresents a liquid phosphate-buffer dose as mass concentration, loses the DSM
+  owner preparation and mixes a separately repaired DSM5262 variant into the base.
+  Sodium resazurin is assigned the neutral dye identifier. Exact KOMODO routes remain
+  inaccessible, so variant amounts and accession-specific claims stay unresolved.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/culturemech_id_registry.tsv
+    sha256: 0d059720f5c474b63daff8d5010fc56942a5a3ac30761ee75ce9e84801d555a5
+    role: context
+  - path: data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml
+    sha256: acf159ee25314bba4c60ada105d7627569e815c312283770905086fad0d5cbfd
+    role: target
+  - path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    sha256: 480d970a3baa5f5b4611bb52b5cae85aa1eb91c062cdfd39c83b67b0858e37c4
+    role: context
+  - path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    sha256: b40244720bf402f7629ac37475fbde50872c1db46b83c3b394c80c9f8f393766
+    role: context
+  - path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    sha256: d419a0b3d106219afa2c1cdda93564b4c7c20bb4334716c96ad42580c4a413b1
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+    sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+    sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml.md
+    sha256: b37891bdc87afd76e61438fd1ff792e49cecc229907a98a8f1b7a8bae01a9308
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/dsm_5262.yaml.md
+    sha256: 324136c111ebf5f45bb062836b78d4b3b002f55b2d15c3453b259566cac9f9b1
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/clostridium_vincentii_medium.yaml.md
+    sha256: b441779efa7fe674a064407963d829c0500b28eefc4282a0ecc6c74ac11f00a4
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.md
+    sha256: 54aeca8eecf353a3e0152960d5cf7e2eec7f338dba955a5821da2c0cc98be20c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.md
+    sha256: 081f01c9549d6f2e8c1cdff767e4000349b88160e42968f5ef39473e28545d67
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/clostridium_vincentii_medium.md
+    sha256: 07b31de94b1f0576df52297331a14e29f2a9dcbf8eaf74bebc2445860a8d158d
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/dsm_5262.md
+    sha256: 27fe097324466c551f905480a93a9405f1fe673fb3b5f6e814172788f8338f63
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/record_target_class.py
+    sha256: 468fcbfd2362ca08b7066d6f21adf85c04f21ab40f80e60995522b4edc0f6349
+    role: context
+  - path: scripts/repair_komodo_769_clostridium_score10.py
+    sha256: 1e94f986dfc90214d1f862fa3ff6530fd03587622d85a9b4070d4780c403a3aa
+    role: context
+  - path: scripts/validate_media_variant_links.py
+    sha256: d18ef71320a0c50abe085e151d0d0d4d963007d1e1c9afbefab97581a983e31e
+    role: context
+  - path: scripts/validate_recipe_references.py
+    sha256: 087e5f3128e774bc760b7dcfc8f194fe14820354f809be9e35cf6cacb8546a3b
+    role: context
+  - path: scripts/validate_strict.py
+    sha256: 6116d95493b8f91faed19956301291a73d090a3b83671303650a561798933456
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/merge/fingerprint.py
+    sha256: 9bc62b7f462b26775e7dff15bb91beb653ba8f1642b247466dba1c0366ed8a9e
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+scope:
+  description: Full selected record and exact maintained contributors; explicitly
+    scoped dependency and external-source limits retained.
+  selection: Actual batch064 native selection index 03.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:006425
+targets:
+- target_id: CultureMech:006425
+  path: data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml
+  label: clostridium_vincentii_medium
+  kind: generated
+  record_class: MediaRecipe
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006425
+  command: just validate-schema data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006425
+  command: just validate-strict data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml
+    --out REVIEW_WORK/batch064/record03/strict.tsv
+    --workers 1 --quiet
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Original once-only canonical command exited 0; full stdout/stderr retained
+    and read.
+  target_ids:
+  - CultureMech:006425
+  command: just validate-terms data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Native reference checker performed zero reference checks; this is not claim
+    authentication.
+  target_ids:
+  - CultureMech:006425
+  command: just validate-references data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+  scope_note: Exact selected target; scientific source and owner assessments are separate.
+evidence:
+- evidence_id: local-target
+  kind: record_content
+  reference: data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Complete selected generated record; no changes made.
+  snapshot_sha256: acf159ee25314bba4c60ada105d7627569e815c312283770905086fad0d5cbfd
+- evidence_id: owner-1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: 480d970a3baa5f5b4611bb52b5cae85aa1eb91c062cdfd39c83b67b0858e37c4
+- evidence_id: owner-2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: b40244720bf402f7629ac37475fbde50872c1db46b83c3b394c80c9f8f393766
+- evidence_id: owner-3
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/dsm_5262.yaml
+  locator: Complete document
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Complete maintained contributor including current curation history, evidence,
+    quantities and preparation; no changes made.
+  snapshot_sha256: d419a0b3d106219afa2c1cdda93564b4c7c20bb4334716c96ad42580c4a413b1
+- evidence_id: identity-search
+  kind: search
+  reference: REVIEW_WORK/batch064/record03/identity-search.json
+  accessed_at: '2026-10-28T11:10:14.262225Z'
+  support: supports
+  summary: Exact generated lineage resolves every maintained contributor; no filename-only
+    transfer from neighboring variants.
+  search_scope: Complete recursive normalized YAML filename census including ignored
+    and hidden paths; exact merged_from stems and stable identity resolve the owner;
+    excluded namesakes are retained in the census. Similar names and source accessions
+    are not promoted to owners.
+  snapshot_sha256: dde697417ef80ba2b73a784e22dbf95112a83959be8c1559d246db58141048d4
+- evidence_id: historical-1
+  kind: record_content
+  reference: reports/archive/media_variant_dsmz_komodo_source_duplicate_review.md
+  locator: Exact selected-owner matching rows, if present, plus report purpose/method
+    and validation claims only; all other pair-specific conclusions outside scope.
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: 'Historical source-duplicate report: only exact selected-owner rows, where
+    present, and its stated signature method are in scope. Similarity does not prove
+    complete preparation identity; no assertion about absent exact pairs is inferred.'
+  snapshot_sha256: a723d4b7950bf4ac296a8a7fe4890d4d0881199a5d17c12a5fe39c2afbc40a10
+- evidence_id: historical-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current independent capture exactly matches the cited old response digest;
+    25 historical literal/decoded objects join. Access-event provenance remains historical.
+  snapshot_sha256: b37891bdc87afd76e61438fd1ff792e49cecc229907a98a8f1b7a8bae01a9308
+- evidence_id: historical-3
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/records/bacterial/dsm_5262.yaml.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current independent capture exactly matches the cited old response digest;
+    25 historical literal/decoded objects join. Access-event provenance remains historical.
+  snapshot_sha256: 324136c111ebf5f45bb062836b78d4b3b002f55b2d15c3453b259566cac9f9b1
+- evidence_id: historical-4
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/clostridium_vincentii_medium.yaml.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current independent capture exactly matches the cited old response digest;
+    25 historical literal/decoded objects join. Access-event provenance remains historical.
+  snapshot_sha256: b441779efa7fe674a064407963d829c0500b28eefc4282a0ecc6c74ac11f00a4
+- evidence_id: historical-5
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 54aeca8eecf353a3e0152960d5cf7e2eec7f338dba955a5821da2c0cc98be20c
+- evidence_id: historical-6
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 081f01c9549d6f2e8c1cdff767e4000349b88160e42968f5ef39473e28545d67
+- evidence_id: historical-7
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/clostridium_vincentii_medium.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 07b31de94b1f0576df52297331a14e29f2a9dcbf8eaf74bebc2445860a8d158d
+- evidence_id: historical-8
+  kind: record_content
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/dsm_5262.md
+  locator: Complete exact-header report, including unchanged/unsupported claims, source
+    objects and narrative; repeated literal rows compared losslessly.
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Historical derivative context; current response does not authenticate the
+    old full raw digest. Exact object matches and differences are recorded separately;
+    old conclusions are reassessed.
+  snapshot_sha256: 27fe097324466c551f905480a93a9405f1fe673fb3b5f6e814172788f8338f63
+- evidence_id: historical-reader
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record03/historical-reader.json
+  accessed_at: '2026-10-28T11:10:14.266625Z'
+  support: context_only
+  summary: Full exact-header historical texts and scoped large report, with literal/decoded
+    current-source joins and explicit mismatches. Historical access events are not
+    reauthenticated.
+  snapshot_sha256: e8ad2552019c6ae1a9c8cd956c7b9d717199aa5fb214ea702da55785a4de2261
+- evidence_id: historical-plan-1
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+  locator: $.records[455]
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Exact selected contributor plan row only, including unchanged decisions
+    and original source provenance. Current source comparisons never reauthenticate
+    the historical access event.
+  snapshot_sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+- evidence_id: historical-plan-2
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-2000-2500/plan.json
+  locator: $.records[456]
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Exact selected contributor plan row only, including unchanged decisions
+    and original source provenance. Current source comparisons never reauthenticate
+    the historical access event.
+  snapshot_sha256: f5827bda6e5f7caf5fdb9faddc5f36e3955ee048fa0a066cc40e04ff3e1c4823
+- evidence_id: historical-plan-3
+  kind: record_content
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+  locator: $.records[314]
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Exact selected contributor plan row only, including unchanged decisions
+    and original source provenance. Current source comparisons never reauthenticate
+    the historical access event.
+  snapshot_sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+- evidence_id: historical-plan-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record03/historical-plan-rows.json
+  accessed_at: '2026-10-28T11:10:14.341781Z'
+  support: context_only
+  summary: Exact scoped plan-row membership; full parent payload retained as an inspected
+    pin without transferring neighboring records.
+  snapshot_sha256: 0c1242f3ac7d78b1123ec941c506a096f59d2d4c7eb913297ab551f70b85bdad
+- evidence_id: writer-mediadive
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition, _parse_api_solutions, _parse_preparation_steps
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current composition parser restricts ingredients to the primary solution,
+    excludes solvent and recognized stock additions, and retains explicit g_l. The
+    solution parser preserves referenced or percent-defined stocks and source attributes.
+    Preparation parsing still concatenates all solution steps into root preparation_steps;
+    source-stage annotation remains important. These present functions do not prove
+    the historical execution that produced this record.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer-merge
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current merge_group copies a sole contributor with merge metadata. For
+    multiple contributors it passes records to merge_formulation_evidence, which checks
+    compatibility; it does not authorize merging different preparation assertions.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: writer-formulation
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content, merge_formulation_evidence
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current compatibility preserves scientific fields and list order and rejects
+    unequal formulations; only specified provenance/evidence lists are unioned. It
+    performs no concentration conversion or stock expansion and does not authenticate
+    historical merges.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer-cleanup
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients, merge_ingredient_group
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current cleanup groups identical normalized names, keeps the first entry
+    as a base, flags differing concentrations and combines a warning note; it does
+    not sum concentrations. It can still discard distinctions when names repeat, so
+    source stage must be retained. Current behavior does not establish the historical
+    cause of an existing discrepancy.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer-resolver
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current merge_composition copies nonplaceholder ingredients and available
+    solutions, ph_value when absent, physical_state and medium_type. It does not copy
+    preparation_steps or ph_range; present behavior is not proof of historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer-komodo
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current _convert_to_culturemech builds KOMODO identity, source mapping
+    and aerobic notes from table flags and emits placeholder ingredients. It uses
+    time.strftime with %f, which does not itself establish a valid fractional timestamp.
+    Existing malformed events remain original evidence, not a license to rewrite history.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: attached-evidence-joins
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record03/attached-evidence-joins.json
+  accessed_at: '2026-10-28T11:10:14.345322Z'
+  support: context_only
+  summary: Every existing attached evidence claim is preserved and compared to the
+    exact freshly captured response. Matching snippets do not authenticate historical
+    access times.
+  snapshot_sha256: 37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570
+- evidence_id: complete-source-rows
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record03/complete-source-rows.json
+  accessed_at: '2026-10-28T11:10:14.348528Z'
+  support: context_only
+  summary: Every source recipe row and preparation object, with exact raw substring
+    and decoded JSON locator, kept in its own solution stage. No biological recommendation
+    follows from provider equipment metadata.
+  snapshot_sha256: 976d646f1d21f28a5e8dce567999702086e5e3c075587c9b940130d7794ac1f8
+- evidence_id: dsm769
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T10:58:24.568476Z'
+  support: supports
+  summary: 'Official DSM769 full one-page visual and text: base formulation, buffer
+    and indicator stocks, vitamin composition, preparation and conditional seawater
+    alternative. No strain-specific override is printed.'
+  snapshot_sha256: d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1
+- evidence_id: api769
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/769
+  locator: Exact source identity and scoped formulation/preparation
+  accessed_at: '2026-10-28T10:58:24.362291Z'
+  support: supports
+  summary: 'Exact current DSM769 response: explicit main g_l on provider volume1001
+    mL, a 20 mL buffer object without g_l, separate vitamin stock and preparation.
+    Current raw digest matches the historical API source; that does not authenticate
+    historical KOMODO access.'
+  snapshot_sha256: d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166
+- evidence_id: komodo769
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=769
+  locator: HTTP status/body; exact historical route
+  accessed_at: '2026-10-28T10:58:23.496335Z'
+  support: context_only
+  summary: Exact historical KOMODO detail/catalog route returned HTTP403; no formulation
+    or original catalogue page recovered. Historical report excerpts remain derivative
+    identity context.
+  snapshot_sha256: 0d6a8992365f11aea7243018cb6c4f2e218ece016a3b09fd28a9d5703632bcc4
+- evidence_id: komodo769.2
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=769.2
+  locator: HTTP status/body; exact historical route
+  accessed_at: '2026-10-28T10:58:23.510481Z'
+  support: context_only
+  summary: Exact historical KOMODO detail/catalog route returned HTTP403; no formulation
+    or original catalogue page recovered. Historical report excerpts remain derivative
+    identity context.
+  snapshot_sha256: 0ed7b78cb3e919d74162c8e8fdff82e4ceb2c3fee09e390dcf5982b94a0e6f6a
+- evidence_id: komodoList
+  kind: database
+  reference: https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList
+  locator: HTTP status/body; exact historical route
+  accessed_at: '2026-10-28T10:58:23.494325Z'
+  support: context_only
+  summary: Exact historical KOMODO detail/catalog route returned HTTP403; no formulation
+    or original catalogue page recovered. Historical report excerpts remain derivative
+    identity context.
+  snapshot_sha256: 46d993c2e9942242acbb34a0ff4683ed8950d1e3e56e41c928ef8c40abe42751
+- evidence_id: writer-repair769
+  kind: record_content
+  reference: scripts/repair_komodo_769_clostridium_score10.py
+  locator: repair_parent, repair_child, _upsert_event and exact identity/signature
+    guards
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: Current guarded repair checks exact IDs/terms/20-ingredient signature,
+    marks DSM5262 as a strain-specific variant, and records quality flags. Existing
+    owner repairs are credited. Code and an ingredients_curated flag do not verify
+    variant formulation or its historical access event.
+  snapshot_sha256: 1e94f986dfc90214d1f862fa3ff6530fd03587622d85a9b4070d4780c403a3aa
+- evidence_id: writer-classifier
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _classify_preparation_action
+  accessed_at: '2026-10-28T11:10:14.202429Z'
+  support: context_only
+  summary: After the autoclave/steam-sterilization rule, the current classifier maps
+    filter/0.22/0.45/membrane substrings to FILTER_STERILIZE. This explains a present
+    code risk but does not prove historical execution; merely filtered sea water is
+    not an authenticated sterilization procedure.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: chebi63038
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_63038
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:30.693088Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 1f4a1ebcab61e7bf366689b9477f740e40599465265bd7b88983c3b37db50033
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_8806
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:32.585266Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: ceb05e9dd7fba3802d28b34c50bbb604ded87951e4ea3a812739824a84648d72
+- evidence_id: chebi32139
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_32139
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:28.626109Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 314c75cd12ea5d1343b4c0bafd40e0ad72c15b19d64f8cb9152000c0d8839f56
+- evidence_id: chebi17716
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17716
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:26.759390Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 21afa6cbe329e45dbf0cdd821633220f599d7c350474427320f01f62e1112c21
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_91248
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:32.995475Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 98a5682728cfda4162de150a88ae8c4b3a70c2d7c248634a5108be50a888a692
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_76209
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:31.662652Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 3eece7d96d2433ff020ece90db55323d138c5c828b78198f91d26b3eafa91f9f
+- evidence_id: chebi15956
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15956
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:26.062307Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 0d2e75e0bd98dbffff14d85a41dfd0af8aae2a8d65a945d34a4126a17091c2b8
+- evidence_id: chebi27470
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_27470
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:27.364270Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: dcee85bb585d3a73341ab66eff772dc6361330b3c899c4daecbda49d5e84e590
+- evidence_id: chebi30961
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30961
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:27.986244Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 491af523ba70d13857fcb828561d0556e46382fa0591011a06693d7db24ad91f
+- evidence_id: chebi49105
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_49105
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:29.988052Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: fc6b8e9d8657914ed8fd568c69d8a5b2cf41b26767bd6361a5e2d258883be97d
+- evidence_id: chebi17015
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_17015
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:26.600890Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: f8bec809c7ba5a36faea58b8fe1b5110f0d75dbd4ac1929a121cd352bce63309
+- evidence_id: chebi15940
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_15940
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:26.125040Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 2890ef915cd546e70c1e638af285a3cc19b8299ae7722d00b43a40170a57ab8a
+- evidence_id: chebi31345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_31345
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:28.277950Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: d2a04309eb6976fd395f9684ec4c3f5192362e2b6b75464b0af128a28e188d25
+- evidence_id: chebi176843
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_176843
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:26.660979Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 5c42e2236866d0314bc8d45947ddf9eb2fdf6364d08e802b0fb271011cbfe563
+- evidence_id: chebi30753
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_30753
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:27.889938Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: 42ea4022bd68e8fa28962bc496ca757174da7bbd18ce06b7f3d521885609a50c
+- evidence_id: chebi16494
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http://purl.obolibrary.org/obo/CHEBI_16494
+  locator: _embedded.terms matching exact obo_id; label/is_obsolete/description/synonyms
+  accessed_at: '2026-10-28T10:58:26.400621Z'
+  support: supports
+  summary: 'Exact OLS term object: accession, current preferred label, obsolete flag,
+    definition and synonyms. Supports identifier correspondence only, not recipe amounts
+    or growth.'
+  snapshot_sha256: db6824ffab0d71efc11d1e64b505ae583949e9d5837086a4b0e7b364b2933a22
+- evidence_id: quantities
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record03/quantity-inventory.json
+  accessed_at: '2026-10-28T11:10:14.394731Z'
+  support: context_only
+  summary: Complete local concentration and source-stage decision inventory; includes
+    exact local paths and source failure limits.
+  snapshot_sha256: 8c5818bdd5a1a665e463f6c12919fdc1ecb2e73f8e0d3b41a4d72b3a542fe82d
+- evidence_id: grounding
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record03/grounding-inventory.json
+  accessed_at: '2026-10-28T11:10:14.394808Z'
+  support: context_only
+  summary: All recursive asserted identifier/label slots, exact current OLS objects
+    and current packaged MIM preferred-row joins.
+  snapshot_sha256: 5ae594bae95793295a8775c65d5d3f3e3a3e0052eac37e809ad7cb543eeeee55
+- evidence_id: history
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record03/history-and-evidence-inventory.json
+  accessed_at: '2026-10-28T11:10:14.395242Z'
+  support: context_only
+  summary: Complete current history, references and attached evidence; source-specific
+    claims are assessed without authenticating historical execution from code.
+  snapshot_sha256: 838550c0e82ac09c6191777cca199d3eb720e701994897df5693ec291a31f992
+- evidence_id: scalars
+  kind: record_content
+  reference: REVIEW_WORK/batch064/record03/scalar-census.json
+  accessed_at: '2026-10-28T11:10:14.395270Z'
+  support: context_only
+  summary: Lossless scalar census of the selected target and all maintained contributors.
+  snapshot_sha256: a755f43e8293349fe336d319af4f0fecc83d0acdfc403fc9f52a93041a26aa75
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch064/record03/validate-schema.json
+  accessed_at: '2026-10-28T10:58:17.891604Z'
+  support: supports
+  summary: 'Validating schema structure (MediaRecipe)...
+
+    No issues found
+
+    ✓ Schema validation passed
+
+    '
+  snapshot_sha256: 79a96bb27625261b83babaa2ff9c42fc37537676a2b640c4c2bc666b46b3f5a3
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch064/record03/validate-strict.json
+  accessed_at: '2026-10-28T10:58:18.815243Z'
+  support: supports
+  summary: "Validating 1 files with 1 workers; layers=schema; schema=src/culturemech/schema/culturemech.yaml\n\
+    \n=== validate-strict summary ===\n  files scanned:      1\n  layers:        \
+    \     schema\n  files with ERROR:   0\n  total ERROR rows:   0\n  TSV:       \
+    \         REVIEW_WORK/batch064/record03/strict.tsv\n"
+  snapshot_sha256: 142eca5cb4bd9e9e372bbc4757752948fa7c61a25be61cf71184364f80924bfc
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch064/record03/validate-terms.json
+  accessed_at: '2026-10-28T10:58:19.843487Z'
+  support: supports
+  summary: 'Validating ontology terms (MediaRecipe)...
+
+    ✅ Validation passed
+
+    ✓ Term validation passed
+
+    '
+  snapshot_sha256: 1696209ebf393fd181859852a760e8cfa1ecbfb6a56cdd34dda7c8a6052ba9b1
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch064/record03/validate-references.json
+  accessed_at: '2026-10-28T10:58:20.541821Z'
+  support: supports
+  summary: 'Validating evidence references (MediaRecipe)...
+
+    Reference checks: 0; issues: 0
+
+    ✓ Reference validation passed
+
+    '
+  snapshot_sha256: ce0a96451c89ce0fff06382d62407d27d404f042c9c83a6d0477c98270c08101
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Base source versus repaired variant
+  outcome: concern
+  summary: Fresh DSM769 supports the base only. The target still calls DSM5262 a source
+    duplicate and synonym although the maintained KOMODO pair was repaired to STRAIN_SPECIFIC_VARIANT.
+    Exact variant/catalog routes returned 403. The reported DSM5262 name is not an
+    organism identification or proof of growth.
+  target_ids:
+  - CultureMech:006425
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-2
+  - owner-3
+  - dsm769
+  - api769
+  - historical-reader
+  - writer-repair769
+  - komodo769.2
+- assessment_id: a2
+  area: completeness
+  topic: Preserved owner context and generated loss
+  outcome: concern
+  summary: 'The DSM owner already retains main preparation and the conditional seawater
+    note, whereas the generated target and base KOMODO owner lack them. Current merger
+    compatibility includes those differing scientific fields and would not justify
+    blindly collapsing these records. Existing Aerobic: Yes flags conflict with the
+    linked base anoxic preparation; no growth physiology is inferred.'
+  target_ids:
+  - CultureMech:006425
+  evidence_ids:
+  - owner-2
+  - local-target
+  - dsm769
+  - api769
+  - writer-formulation
+  - writer-resolver
+- assessment_id: a3
+  area: quantity
+  topic: Quantity scope and inventory
+  outcome: concern
+  summary: Every selected target/owner concentration field has an explicit disposition;
+    scoped dependency fields and source-only preparation are separate from receiving-medium
+    rates.
+  target_ids:
+  - CultureMech:006425
+  evidence_ids:
+  - quantities
+  details: '[{"quantity_id": "q1", "topic": "Sea Salt", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[0]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Sea Salt\",\n                        \"compound_id\": 423,\n                        \"attribute\":
+    \"SIGMA\",\n                        \"amount\": 12,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 11.988,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "Sea Salt", "compound_id": 423, "attribute": "SIGMA", "amount": 12, "unit": "g",
+    "g_l": 11.988, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 3; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Sea Salt (SIGMA)                                        12.00        g"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[0].concentration", "stored_value": {"value": "11.988", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "11.988",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[0].concentration", "stored_value": {"value": "11.988", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[0].concentration", "stored_value": {"value": "11.988",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q2",
+    "topic": "NH4NO3", "source": [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[1]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"NH4NO3\",\n                        \"compound_id\": 178,\n                        \"amount\":
+    0.1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.0999001,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 2, "compound": "NH4NO3", "compound_id": 178, "amount": 0.1, "unit":
+    "g", "g_l": 0.0999001, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 4; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   NH4NO3                                                   0.10        g"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[1].concentration", "stored_value": {"value": "0.0999001", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API main g_l
+    supports the existing base numerical rate on its provider-defined 1001 mL basis;
+    the primary batch amount is separately preserved. Input water is not final makeup.
+    Source grades and indicator stock strength remain scoped attributes; this numerical
+    support is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.0999001",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[1].concentration", "stored_value": {"value": "0.0999001", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API main g_l
+    supports the existing base numerical rate on its provider-defined 1001 mL basis;
+    the primary batch amount is separately preserved. Input water is not final makeup.
+    Source grades and indicator stock strength remain scoped attributes; this numerical
+    support is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[1].concentration", "stored_value": {"value": "0.0999001",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q3",
+    "topic": "Yeast extract", "source": [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[2]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"attribute\":
+    \"BD Bacto\",\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.999001,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "Yeast extract", "compound_id": 16, "attribute": "BD Bacto", "amount": 1, "unit":
+    "g", "g_l": 0.999001, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 5; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Yeast extract (BD Bacto)                                 1.00        g"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[2].concentration", "stored_value": {"value": "0.999001", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API main g_l
+    supports the existing base numerical rate on its provider-defined 1001 mL basis;
+    the primary batch amount is separately preserved. Input water is not final makeup.
+    Source grades and indicator stock strength remain scoped attributes; this numerical
+    support is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.999001",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[2].concentration", "stored_value": {"value": "0.999001", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API main g_l
+    supports the existing base numerical rate on its provider-defined 1001 mL basis;
+    the primary batch amount is separately preserved. Input water is not final makeup.
+    Source grades and indicator stock strength remain scoped attributes; this numerical
+    support is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[2].concentration", "stored_value": {"value": "0.999001",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q4",
+    "topic": "Trypticase peptone", "source": [{"evidence_id": "api769", "reference":
+    "https://mediadive.dsmz.de/rest/medium/769", "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[3]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Trypticase peptone\",\n                        \"compound_id\": 124,\n                        \"attribute\":
+    \"BD BBL\",\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.3996,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Trypticase peptone", "compound_id": 124, "attribute": "BD BBL", "amount": 0.4,
+    "unit": "g", "g_l": 0.3996, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 6; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Trypticase peptone (BD BBL)                              0.40        g"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "stored_value": {"value": "0.3996", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.3996",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[3].concentration", "stored_value": {"value": "0.3996", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[3].concentration", "stored_value": {"value": "0.3996",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q5",
+    "topic": "Sodium resazurin", "source": [{"evidence_id": "api769", "reference":
+    "https://mediadive.dsmz.de/rest/medium/769", "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.0004995,\n                        \"mmol_l\":
+    0.0019887,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 5, "compound": "Sodium resazurin", "compound_id": 1852, "attribute":
+    "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.0004995, "mmol_l": 0.0019887,
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, {"evidence_id": "dsm769", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 7; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Sodium resazurin (0.1% w/v)                              0.50       ml"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[4].concentration", "stored_value": {"value": "0.0004995", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API main g_l
+    supports the existing base numerical rate on its provider-defined 1001 mL basis;
+    the primary batch amount is separately preserved. Input water is not final makeup.
+    Source grades and indicator stock strength remain scoped attributes; this numerical
+    support is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0004995",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[4].concentration", "stored_value": {"value": "0.0004995", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API main g_l
+    supports the existing base numerical rate on its provider-defined 1001 mL basis;
+    the primary batch amount is separately preserved. Input water is not final makeup.
+    Source grades and indicator stock strength remain scoped attributes; this numerical
+    support is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[4].concentration", "stored_value": {"value": "0.0004995",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q6",
+    "topic": "NaHCO3", "source": [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[5]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"NaHCO3\",\n                        \"compound_id\": 55,\n                        \"amount\":
+    1,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.999001,\n                        \"mmol_l\": 11.8919,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "NaHCO3", "compound_id": 55, "amount": 1, "unit": "g", "g_l": 0.999001, "mmol_l":
+    11.8919, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 8; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   NaHCO3                                                   1.00        g"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "stored_value": {"value": "0.999001", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API main g_l
+    supports the existing base numerical rate on its provider-defined 1001 mL basis;
+    the primary batch amount is separately preserved. Input water is not final makeup.
+    Source grades and indicator stock strength remain scoped attributes; this numerical
+    support is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.999001",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[5].concentration", "stored_value": {"value": "0.999001", "unit":
+    "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API main g_l
+    supports the existing base numerical rate on its provider-defined 1001 mL basis;
+    the primary batch amount is separately preserved. Input water is not final makeup.
+    Source grades and indicator stock strength remain scoped attributes; this numerical
+    support is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[5].concentration", "stored_value": {"value": "0.999001",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q7",
+    "topic": "Na-phosphate buffer", "source": [{"evidence_id": "api769", "reference":
+    "https://mediadive.dsmz.de/rest/medium/769", "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[6]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Na-phosphate buffer\",\n                        \"compound_id\": 717,\n                        \"attribute\":
+    \"0.2 M, pH 6.5\",\n                        \"amount\": 20,\n                        \"unit\":
+    \"ml\",\n                        \"mmol_l\": 4,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "Na-phosphate buffer", "compound_id": 717, "attribute": "0.2 M, pH 6.5", "amount":
+    20, "unit": "ml", "mmol_l": 4, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 9; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Na-phosphate buffer (0.2 M, pH 6.5)                     20.00       ml"}],
+    "decision": "mixed", "rationale": "The base source prescribes 20 mL of 0.2 M buffer
+    at pH 6.5, not 20 g/L. API has no g_l for this row. Preserve the stated liquid-stock
+    dose and attributes, without inferring its constituent salt proportions or a final-volume
+    denominator. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "stored_value": {"value": "20", "unit": "G_PER_L"},
+    "decision": "correct", "rationale": "The base source prescribes 20 mL of 0.2 M
+    buffer at pH 6.5, not 20 g/L. API has no g_l for this row. Preserve the stated
+    liquid-stock dose and attributes, without inferring its constituent salt proportions
+    or a final-volume denominator."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "20",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The base source prescribes
+    20 mL of 0.2 M buffer at pH 6.5, not 20 g/L. API has no g_l for this row. Preserve
+    the stated liquid-stock dose and attributes, without inferring its constituent
+    salt proportions or a final-volume denominator."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "20",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "The base source prescribes
+    20 mL of 0.2 M buffer at pH 6.5, not 20 g/L. API has no g_l for this row. Preserve
+    the stated liquid-stock dose and attributes, without inferring its constituent
+    salt proportions or a final-volume denominator."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[6].concentration", "stored_value": {"value": "20",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q8",
+    "topic": "Lactose", "source": [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[7]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Lactose\",\n                        \"compound_id\": 394,\n                        \"amount\":
+    2,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    1.998,\n                        \"mmol_l\": 5.83699,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "Lactose", "compound_id": 394, "amount": 2, "unit": "g", "g_l": 1.998, "mmol_l":
+    5.83699, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 10; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Lactose                                                  2.00        g"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[7].concentration", "stored_value": {"value": "1.998", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.998",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[7].concentration", "stored_value": {"value": "1.998", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[7].concentration", "stored_value": {"value": "1.998",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q9",
+    "topic": "L-Cysteine HCl x H2O", "source": [{"evidence_id": "api769", "reference":
+    "https://mediadive.dsmz.de/rest/medium/769", "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[9]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\":
+    0.3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.2997,\n                        \"mmol_l\": 1.70637,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "L-Cysteine HCl x H2O", "compound_id": 770, "amount": 0.3, "unit": "g", "g_l":
+    0.2997, "mmol_l": 1.70637, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 12; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   L-Cysteine HCl x H2O                                     0.30        g"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[8].concentration", "stored_value": {"value": "0.2997", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.2997",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[8].concentration", "stored_value": {"value": "0.2997", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[8].concentration", "stored_value": {"value": "0.2997",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q10",
+    "topic": "Na2S x 9 H2O", "source": [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[10]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\":
+    0.3,\n                        \"unit\": \"g\",\n                        \"g_l\":
+    0.2997,\n                        \"mmol_l\": 1.2478,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound":
+    "Na2S x 9 H2O", "compound_id": 54, "amount": 0.3, "unit": "g", "g_l": 0.2997,
+    "mmol_l": 1.2478, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 13; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Na2S x 9 H2O                                             0.30        g"}],
+    "decision": "mixed", "rationale": "The explicit API main g_l supports the existing
+    base numerical rate on its provider-defined 1001 mL basis; the primary batch amount
+    is separately preserved. Input water is not final makeup. Source grades and indicator
+    stock strength remain scoped attributes; this numerical support is not a taxonomic
+    or variant-growth claim. The DSM5262 layer is separately unsupported.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "ingredients[9].concentration", "stored_value": {"value": "0.2997", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.2997",
+    "unit": "G_PER_L"}, "decision": "evidence_only", "rationale": "The explicit API
+    main g_l supports the existing base numerical rate on its provider-defined 1001
+    mL basis; the primary batch amount is separately preserved. Input water is not
+    final makeup. Source grades and indicator stock strength remain scoped attributes;
+    this numerical support is not a taxonomic or variant-growth claim."}, {"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "ingredients[9].concentration", "stored_value": {"value": "0.2997", "unit": "G_PER_L"},
+    "decision": "evidence_only", "rationale": "The explicit API main g_l supports
+    the existing base numerical rate on its provider-defined 1001 mL basis; the primary
+    batch amount is separately preserved. Input water is not final makeup. Source
+    grades and indicator stock strength remain scoped attributes; this numerical support
+    is not a taxonomic or variant-growth claim."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[9].concentration", "stored_value": {"value": "0.2997",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "The exact 769.2 formulation
+    remains unverified: a link to DSM769 and matching inherited amounts do not establish
+    this strain-specific variant. Base-source comparison is retained without transferring
+    amount support or proposing a variant replacement."}]}, {"quantity_id": "q11",
+    "topic": "Biotin stock stage", "source": [{"evidence_id": "api769", "reference":
+    "https://mediadive.dsmz.de/rest/medium/769", "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[0]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\":
+    \"Biotin\",\n                        \"compound_id\": 46,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0818632,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 1, "compound":
+    "Biotin", "compound_id": 46, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l":
+    0.0818632, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 30; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Biotin                                                  20.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[10].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q12", "topic": "Folic acid stock stage", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[1]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\":
+    \"Folic acid\",\n                        \"compound_id\": 138,\n                        \"amount\":
+    20,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.02,\n                        \"mmol_l\": 0.0453104,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 2, "compound":
+    "Folic acid", "compound_id": 138, "amount": 20, "unit": "mg", "g_l": 0.02, "mmol_l":
+    0.0453104, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 31; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Folic acid                                              20.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[11].concentration", "stored_value": {"value": "0.02",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q13", "topic": "Pyridoxine hydrochloride stock stage", "source":
+    [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[2]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\":
+    \"Pyridoxine hydrochloride\",\n                        \"compound_id\": 519,\n                        \"amount\":
+    100,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.1,\n                        \"mmol_l\": 0.486287,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 3, "compound":
+    "Pyridoxine hydrochloride", "compound_id": 519, "amount": 100, "unit": "mg", "g_l":
+    0.1, "mmol_l": 0.486287, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 32; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Pyridoxine hydrochloride                               100.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[12].concentration", "stored_value": {"value": "0.1",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q14", "topic": "Thiamine HCl stock stage", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[3]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\":
+    \"Thiamine HCl\",\n                        \"compound_id\": 1207,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.148236,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 4, "compound":
+    "Thiamine HCl", "compound_id": 1207, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.148236, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 33; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Thiamine HCl                                            50.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[13].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q15", "topic": "Riboflavin stock stage", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[4]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Riboflavin\",\n                        \"compound_id\": 136,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.132837,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 5, "compound":
+    "Riboflavin", "compound_id": 136, "amount": 50, "unit": "mg", "g_l": 0.05, "mmol_l":
+    0.132837, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 34; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Riboflavin                                              50.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[14].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q16", "topic": "Nicotinic acid stock stage", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[5]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\":
+    \"Nicotinic acid\",\n                        \"compound_id\": 139,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.406141,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 6, "compound":
+    "Nicotinic acid", "compound_id": 139, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.406141, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 35; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Nicotinic acid                                          50.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[15].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q17", "topic": "Calcium D-(+)-pantothenate stock stage", "source":
+    [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[6]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\":
+    \"Calcium D-(+)-pantothenate\",\n                        \"compound_id\": 1512,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.209846,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 7, "compound":
+    "Calcium D-(+)-pantothenate", "compound_id": 1512, "amount": 50, "unit": "mg",
+    "g_l": 0.05, "mmol_l": 0.209846, "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    {"evidence_id": "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 36; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Calcium D-(+)-pantothenate                              50.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[16].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q18", "topic": "Vitamin B12 stock stage", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[7]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\":
+    \"Vitamin B12\",\n                        \"compound_id\": 18,\n                        \"amount\":
+    1,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.001,\n                        \"mmol_l\": 0.00073779,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 8, "compound":
+    "Vitamin B12", "compound_id": 18, "amount": 1, "unit": "mg", "g_l": 0.001, "mmol_l":
+    0.00073779, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring;
+    decoded object independently equals exact JSON locator."}, {"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 37; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Vitamin B12                                              1.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[17].concentration", "stored_value": {"value": "0.001",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q19", "topic": "p-Aminobenzoic acid stock stage", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[8]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\":
+    \"p-Aminobenzoic acid\",\n                        \"compound_id\": 47,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.364591,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 9, "compound":
+    "p-Aminobenzoic acid", "compound_id": 47, "amount": 50, "unit": "mg", "g_l": 0.05,
+    "mmol_l": 0.364591, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 38; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   p-Aminobenzoic acid                                     50.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[18].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q20", "topic": "(DL)-alpha-Lipoic acid stock stage", "source":
+    [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[9]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\":
+    \"(DL)-alpha-Lipoic acid\",\n                        \"compound_id\": 252,\n                        \"amount\":
+    50,\n                        \"unit\": \"mg\",\n                        \"g_l\":
+    0.05,\n                        \"mmol_l\": 0.24233,\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 10, "compound":
+    "(DL)-alpha-Lipoic acid", "compound_id": 252, "amount": 50, "unit": "mg", "g_l":
+    0.05, "mmol_l": 0.24233, "optional": 0}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 39; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   (DL)-alpha-Lipoic acid                                  50.00       mg"}],
+    "decision": "mixed", "rationale": "This amount and explicit API g_l describe the
+    Wolin 10x stock, not the receiving medium. Correct the flattened base-stage placement
+    while retaining the supported stock strength. The stock addition is a separate
+    source row.", "layer_assessments": [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "correct", "rationale": "This amount and explicit
+    API g_l describe the Wolin 10x stock, not the receiving medium. Correct the flattened
+    base-stage placement while retaining the supported stock strength. The stock addition
+    is a separate source row."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ingredients[19].concentration", "stored_value": {"value": "0.05",
+    "unit": "G_PER_L"}, "decision": "unsupported", "rationale": "Variant composition
+    remains unverified; the base stock cannot authenticate inherited variant rows."}]},
+    {"quantity_id": "q21", "topic": "Wolin 10x receiving dose", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[8]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 9,\n                        \"solution\":
+    \"Wolin''s vitamin solution (10x)\",\n                        \"solution_id\":
+    5980,\n                        \"amount\": 1,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 9, "solution": "Wolin''s vitamin solution (10x)", "solution_id":
+    5980, "amount": 1, "unit": "ml", "optional": 0}, "quote_basis": "Literal UTF-8
+    raw-response substring; decoded object independently equals exact JSON locator."},
+    {"evidence_id": "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 11; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Wolin''s vitamin solution (10x)                           1.00       ml"}],
+    "decision": "add", "rationale": "Add the missing base Wolin 10x relationship and
+    1 mL addition per stated recipe batch; do not infer unqualified final-medium g/L
+    or a measured final volume. No variant dose is proposed.", "layer_assessments":
+    [{"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path":
+    "solutions", "stored_value": null, "decision": "add", "rationale": "Add the missing
+    base Wolin 10x relationship and 1 mL addition per stated recipe batch; do not
+    infer unqualified final-medium g/L or a measured final volume. No variant dose
+    is proposed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Add the missing base Wolin 10x relationship and 1 mL addition per stated recipe
+    batch; do not infer unqualified final-medium g/L or a measured final volume. No
+    variant dose is proposed.", "missing": true}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "solutions", "stored_value": null, "decision": "add", "rationale":
+    "Add the missing base Wolin 10x relationship and 1 mL addition per stated recipe
+    batch; do not infer unqualified final-medium g/L or a measured final volume. No
+    variant dose is proposed.", "missing": true}]}, {"quantity_id": "q22", "topic":
+    "Indicator stock attributes", "source": [{"evidence_id": "api769", "reference":
+    "https://mediadive.dsmz.de/rest/medium/769", "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[4]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\":
+    \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\":
+    \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"ml\",\n                        \"g_l\": 0.0004995,\n                        \"mmol_l\":
+    0.0019887,\n                        \"optional\": 0\n                    }", "exact_decoded_object":
+    {"recipe_order": 5, "compound": "Sodium resazurin", "compound_id": 1852, "attribute":
+    "0.1% w/v", "amount": 0.5, "unit": "ml", "g_l": 0.0004995, "mmol_l": 0.0019887,
+    "optional": 0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded
+    object independently equals exact JSON locator."}, {"evidence_id": "dsm769", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 7; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "   Sodium resazurin (0.1% w/v)                              0.50       ml"}],
+    "decision": "evidence_only", "rationale": "The explicit 0.5 mL of 0.1% w/v sodium-resazurin
+    stock supplies 0.5 mg per batch and agrees with the API nominal main rate. Retain
+    its supplied form, dose and preparation stage separately; do not invent an additional
+    final-volume assertion.", "layer_assessments": []}, {"quantity_id": "q23", "topic":
+    "Source water input — Main sol. 769", "source": [{"evidence_id": "api769", "reference":
+    "https://mediadive.dsmz.de/rest/medium/769", "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].recipe[11]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    980,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 12, "compound":
+    "Distilled water", "compound_id": 4, "amount": 980, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "evidence_only", "rationale": "Scoped
+    solvent input only; not final makeup or an additional ingredient rate.", "layer_assessments":
+    []}, {"quantity_id": "q24", "topic": "Source water input — Wolin''s vitamin solution
+    (10x)", "source": [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[1].recipe[10]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\":
+    \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\":
+    1000,\n                        \"unit\": \"ml\",\n                        \"optional\":
+    0\n                    }", "exact_decoded_object": {"recipe_order": 11, "compound":
+    "Distilled water", "compound_id": 4, "amount": 1000, "unit": "ml", "optional":
+    0}, "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}], "decision": "evidence_only", "rationale": "Scoped
+    solvent input only; not final makeup or an additional ingredient rate.", "layer_assessments":
+    []}, {"quantity_id": "q25", "topic": "Base preparation and numerical stages",
+    "source": [{"evidence_id": "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].steps[0]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"step\": \"Dissolve ingredients (except
+    bicarbonate, phosphate-buffer, lactose, vitamins, cysteine and sulfide), then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. After sterilization add phosphate-buffer, lactose, cysteine
+    and sulfide from sterile anoxic stock solutions autoclaved under 100% N2 gas and
+    bicarbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
+    CO2 gas mixture. Vitamins are prepared under N2 gas atmosphere and sterilized
+    by filtration. Adjust pH of complete medium to 6.5, if necessary.\"\n                    }",
+    "exact_decoded_object": {"step": "Dissolve ingredients (except bicarbonate, phosphate-buffer,
+    lactose, vitamins, cysteine and sulfide), then sparge medium with 80% N2 and 20%
+    CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    sterilization add phosphate-buffer, lactose, cysteine and sulfide from sterile
+    anoxic stock solutions autoclaved under 100% N2 gas and bicarbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins
+    are prepared under N2 gas atmosphere and sterilized by filtration. Adjust pH of
+    complete medium to 6.5, if necessary."}, "quote_basis": "Literal UTF-8 raw-response
+    substring; decoded object independently equals exact JSON locator."}, {"evidence_id":
+    "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "Exact visually checked PDF section", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "1. Dissolve ingredients (except bicarbonate, phosphate-buffer, lactose,
+    vitamins, cysteine\nand sulfide), then sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to\nmake it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type\ntubes or serum vials and autoclave. After sterilization
+    add phosphate-buffer, lactose,\ncysteine and sulfide from sterile anoxic stock
+    solutions autoclaved under 100% N2 gas and\nbicarbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas\nmixture. Vitamins are prepared
+    under N2 gas atmosphere and sterilized by filtration. Adjust\npH of complete medium
+    to 6.5, if necessary."}], "decision": "mixed", "rationale": "The DSM owner retains
+    the complete primary process including 30–45 minutes, 80/20 gas, separate late
+    additions, 100% N2 stock stages and vitamin filtration. Add this exact base context
+    where lost, preserving source grades and no invented late-stock strengths. The
+    variant is excluded.", "layer_assessments": [{"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "preparation_steps[0].description", "stored_value": "Dissolve ingredients
+    (except bicarbonate, phosphate-buffer, lactose, vitamins, cysteine and sulfide),
+    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. After sterilization add phosphate-buffer,
+    lactose, cysteine and sulfide from sterile anoxic stock solutions autoclaved under
+    100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Vitamins are prepared under N2 gas atmosphere
+    and sterilized by filtration. Adjust pH of complete medium to 6.5, if necessary.",
+    "decision": "evidence_only", "rationale": "The DSM owner retains the complete
+    primary process including 30–45 minutes, 80/20 gas, separate late additions, 100%
+    N2 stock stages and vitamin filtration. Add this exact base context where lost,
+    preserving source grades and no invented late-stock strengths. The variant is
+    excluded."}, {"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The DSM owner retains the complete primary process including 30–45 minutes, 80/20
+    gas, separate late additions, 100% N2 stock stages and vitamin filtration. Add
+    this exact base context where lost, preserving source grades and no invented late-stock
+    strengths. The variant is excluded.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The DSM owner retains the complete primary process including 30–45 minutes, 80/20
+    gas, separate late additions, 100% N2 stock stages and vitamin filtration. Add
+    this exact base context where lost, preserving source grades and no invented late-stock
+    strengths. The variant is excluded.", "missing": true}]}, {"quantity_id": "q26",
+    "topic": "Base and variant pH boundary", "source": [{"evidence_id": "dsm769",
+    "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 23; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "pH of complete medium to 6.5, if necessary."}], "decision": "mixed",
+    "rationale": "The primary explicitly sets base complete-medium pH 6.5. Current
+    base values need claim linkage. The DSM5262 range and inherited scalar are separate
+    unverified variant claims, not replacement targets.", "layer_assessments": [{"path":
+    "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml", "field_path": "ph_value",
+    "stored_value": 6.5, "decision": "evidence_only", "rationale": "The primary explicitly
+    sets base complete-medium pH 6.5. Current base values need claim linkage. The
+    DSM5262 range and inherited scalar are separate unverified variant claims, not
+    replacement targets."}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "ph_value", "stored_value": 6.5, "decision": "evidence_only", "rationale":
+    "The primary explicitly sets base complete-medium pH 6.5. Current base values
+    need claim linkage. The DSM5262 range and inherited scalar are separate unverified
+    variant claims, not replacement targets."}, {"path": "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml",
+    "field_path": "ph_value", "stored_value": 6.5, "decision": "evidence_only", "rationale":
+    "The primary explicitly sets base complete-medium pH 6.5. Current base values
+    need claim linkage. The DSM5262 range and inherited scalar are separate unverified
+    variant claims, not replacement targets."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ph_value", "stored_value": 6.5, "decision": "unsupported", "rationale":
+    "Base pH does not authenticate the variant scalar."}, {"path": "data/normalized_yaml/bacterial/dsm_5262.yaml",
+    "field_path": "ph_range", "stored_value": {"min": 6.0, "max": 7.5}, "decision":
+    "unsupported", "rationale": "Historical mapping excerpt reports 6.0–7.5, but the
+    original catalogue and exact variant formulation were not recovered."}]}, {"quantity_id":
+    "q27", "topic": "Conditional seawater alternative", "source": [{"evidence_id":
+    "api769", "reference": "https://mediadive.dsmz.de/rest/medium/769", "raw_path":
+    "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].steps[1]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"step\": \"Note: Sea salts can be replaced
+    by 300.0 ml/l of filtered aged sea water.\"\n                    }", "exact_decoded_object":
+    {"step": "Note: Sea salts can be replaced by 300.0 ml/l of filtered aged sea water."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, {"evidence_id": "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 24; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "2. Note: Sea salts can be replaced by 300.0 ml/l of filtered aged sea
+    water."}], "decision": "mixed", "rationale": "The source permits replacing sea
+    salts with 300 mL/L filtered aged seawater; this is an alternative, not an extra
+    addition. The DSM owner preserves the exact text. Other base layers lack this
+    conditional context. No variant transfer is made.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "preparation_steps[1].description", "stored_value": "Note: Sea salts can be replaced
+    by 300.0 ml/l of filtered aged sea water.", "decision": "evidence_only", "rationale":
+    "The source permits replacing sea salts with 300 mL/L filtered aged seawater;
+    this is an alternative, not an extra addition. The DSM owner preserves the exact
+    text. Other base layers lack this conditional context. No variant transfer is
+    made."}, {"path": "data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The source permits replacing sea salts with 300 mL/L filtered aged seawater;
+    this is an alternative, not an extra addition. The DSM owner preserves the exact
+    text. Other base layers lack this conditional context. No variant transfer is
+    made.", "missing": true}, {"path": "data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml",
+    "field_path": "preparation_steps", "stored_value": null, "decision": "add", "rationale":
+    "The source permits replacing sea salts with 300 mL/L filtered aged seawater;
+    this is an alternative, not an extra addition. The DSM owner preserves the exact
+    text. Other base layers lack this conditional context. No variant transfer is
+    made.", "missing": true}]}, {"quantity_id": "q28", "topic": "Filtered seawater
+    is not a sterilization claim", "source": [{"evidence_id": "api769", "reference":
+    "https://mediadive.dsmz.de/rest/medium/769", "raw_path": "REVIEW_WORK/batch064/source02-04/api769.bin",
+    "raw_sha256": "d741286d469760296535100636c84d2872956654efe95916a762f8e1677d2166",
+    "locator": "$.data.solutions[0].steps[1]", "accessed_at": "2026-10-28T10:58:24.362291Z",
+    "quote": "{\n                        \"step\": \"Note: Sea salts can be replaced
+    by 300.0 ml/l of filtered aged sea water.\"\n                    }", "exact_decoded_object":
+    {"step": "Note: Sea salts can be replaced by 300.0 ml/l of filtered aged sea water."},
+    "quote_basis": "Literal UTF-8 raw-response substring; decoded object independently
+    equals exact JSON locator."}, {"evidence_id": "dsm769", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium769.pdf",
+    "raw_path": "REVIEW_WORK/batch064/source02-04/dsm769.bin",
+    "raw_sha256": "d06848bddc9cddc00cf4707cbb43d519eef054ca30527797f9662f032e50aef1",
+    "locator": "PDF extracted line 24; visually checked page", "accessed_at": "2026-10-28T10:58:24.568476Z",
+    "quote": "2. Note: Sea salts can be replaced by 300.0 ml/l of filtered aged sea
+    water."}], "decision": "unsupported", "rationale": "The source alternative does
+    not authenticate a sterile-filtration action.", "layer_assessments": [{"path":
+    "data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml", "field_path":
+    "preparation_steps[1].action", "stored_value": "FILTER_STERILIZE", "decision":
+    "unsupported", "rationale": "The source says filtered aged sea water, not sterilized
+    by filtration. The FILTER_STERILIZE code adds a claim beyond the available text;
+    retain the supported description and use a representation that does not assert
+    sterilization."}]}]'
+- assessment_id: a4
+  area: grounding
+  topic: Current ontology and MIM correspondence
+  outcome: concern
+  summary: All primary and secondary ontology slots were checked against current raw
+    OLS and exact packaged MIM rows. Sodium resazurin versus neutral CHEBI:8806 is
+    a confirmed supplied-form mismatch; current catalog facts are not past validity.
+    Unmapped mixtures and buffer labels do not justify invented component identities.
+    Other specified hydrates, calcium D-pantothenate, generic B12 and DL-lipoic acid
+    remain source-scoped.
+  target_ids:
+  - CultureMech:006425
+  evidence_ids:
+  - grounding
+- assessment_id: a5
+  area: provenance
+  topic: History and evidence scope
+  outcome: concern
+  summary: Current source bytes, complete histories and scoped historical reports
+    were read. Missing claim-level linkage and any malformed historical metadata are
+    distinguished from authenticated source bytes; originals remain append-only.
+  target_ids:
+  - CultureMech:006425
+  evidence_ids:
+  - history
+  - scalars
+- assessment_id: a6
+  area: scope
+  topic: Growth and taxonomic evidence
+  outcome: unknown
+  summary: Generic cultivation applications and bacterial filing are not strain-level
+    growth evidence. No organism-specific growth, temperature or atmosphere is inferred
+    from names or source catalog identifiers.
+  target_ids:
+  - CultureMech:006425
+  evidence_ids:
+  - local-target
+- assessment_id: a7
+  area: schema
+  topic: Canonical diagnostics
+  outcome: supported
+  summary: All four original canonical diagnostics passed. Reference checks were zero;
+    structural and term diagnostics do not establish formulation accuracy.
+  target_ids:
+  - CultureMech:006425
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-006425-restore-the-vitamin-stock-boundary
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore the vitamin stock boundary
+  description: Ten Wolin 10x stock concentrations appear as direct base ingredients
+    and the 1 mL stock addition is absent. Their source stock values are supported
+    only at the stock stage. The inherited DSM5262 quantities remain unresolved instead
+    of receiving base-medium corrections.
+  target_ids:
+  - CultureMech:006425
+  field_paths:
+  - ingredients[10]
+  - ingredients[11]
+  - ingredients[12]
+  - ingredients[13]
+  - ingredients[14]
+  - ingredients[15]
+  - ingredients[16]
+  - ingredients[17]
+  - ingredients[18]
+  - ingredients[19]
+  - solutions
+  evidence_ids:
+  - dsm769
+  - api769
+  - quantities
+  rule_id: custom-source-stock-stage
+  native_severity: P2
+  normalization_reason: 'Major: stock strengths are incorrectly represented as direct-medium
+    rates. This is a source-stage defect, not invalid ontology accession semantics.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f2
+  issue_key: culturemech-006425-represent-phosphate-buffer-as-a-liquid-stock-dose
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Represent phosphate buffer as a liquid-stock dose
+  description: The base ingredient 6 is 20 G_PER_L, while both primary and API specify
+    20 mL of 0.2 M sodium-phosphate buffer at pH 6.5. No g_l appears in that API row.
+    A stock volume cannot be copied into a mass-per-volume unit. Component salt proportions
+    and measured final volume are not supplied.
+  target_ids:
+  - CultureMech:006425
+  field_paths:
+  - ingredients[6].concentration
+  - solutions
+  evidence_ids:
+  - dsm769
+  - api769
+  - quantities
+  rule_id: custom-buffer-dose-unit
+  native_severity: P2
+  normalization_reason: 'Major: the source quantity is a liquid-stock volume, but
+    the record assigns mass-concentration units. This custom dimension rule is explicit
+    rather than misattributing invalid-CHEBI rule P2.2.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f3
+  issue_key: culturemech-006425-preserve-the-repaired-variant-and-recover-base-preparation
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Preserve the repaired variant and recover base preparation
+  description: 'The generated target includes the DSM5262 wrapper as a synonym/source
+    duplicate despite the current maintained STRAIN_SPECIFIC_VARIANT repair, its distinct
+    pH range, and missing formulation authentication. It also loses preparation already
+    present in the DSM owner. The base KOMODO Aerobic: Yes note conflicts with the
+    linked anoxic source process. Retain existing owner repairs, source grades and
+    scope differences; current compatibility checks must not be bypassed to force
+    a merge.'
+  target_ids:
+  - CultureMech:006425
+  field_paths:
+  - variant_children[0]
+  - synonyms
+  - merged_from
+  - preparation_steps
+  - notes
+  - data/normalized_yaml/bacterial/dsm_5262.yaml::parent_media
+  - data/normalized_yaml/bacterial/dsm_5262.yaml::ph_range
+  evidence_ids:
+  - local-target
+  - owner-1
+  - owner-2
+  - owner-3
+  - dsm769
+  - historical-reader
+  - writer-repair769
+  - writer-formulation
+  - writer-resolver
+  - komodo769.2
+  rule_id: custom-source-variant-and-preparation-scope
+  native_severity: P2
+  normalization_reason: 'Major: the generated identity combines a distinct unresolved
+    variant and discards supported source preparation. Current owner repairs and source
+    limitations are material to the intended review scope.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f4
+  issue_key: culturemech-006425-resolve-the-sodium-resazurin-supplied-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Resolve the sodium resazurin supplied form
+  description: Ingredient 4 is explicitly sodium resazurin in the base source, but
+    CHEBI:8806 describes neutral resazurin. The accession resolves, yet it does not
+    authenticate the sodium-salt form. Preserve the supported source dose; no replacement
+    accession is asserted without exact verification.
+  target_ids:
+  - CultureMech:006425
+  field_paths:
+  - ingredients[4].term
+  evidence_ids:
+  - dsm769
+  - api769
+  - chebi8806
+  - grounding
+  rule_id: custom-supplied-form-correspondence
+  native_severity: P2
+  normalization_reason: 'Major: the asserted chemical form conflicts with the stated
+    material despite a valid resolvable accession; native invalid-CHEBI rule P2.2
+    is not claimed.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f5
+  issue_key: culturemech-006425-do-not-promote-filtered-seawater-to-filter-sterilization
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Do not promote filtered seawater to filter sterilization
+  description: The DSM owner correctly retains the conditional 300 mL/L filtered aged
+    seawater text, but its action code FILTER_STERILIZE asserts sterilization not
+    stated by that sentence. The current keyword classifier maps filter to this action,
+    which is context rather than proof of past execution.
+  target_ids:
+  - CultureMech:006425
+  field_paths:
+  - data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml::preparation_steps[1].action
+  evidence_ids:
+  - owner-2
+  - dsm769
+  - api769
+  - writer-classifier
+  - quantities
+  rule_id: custom-preparation-action-correspondence
+  native_severity: P3
+  normalization_reason: 'Minor: the existing descriptive process remains correct but
+    its action label overstates an unverified sterilization claim.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+- finding_id: f6
+  issue_key: culturemech-006425-preserve-and-qualify-historical-event-metadata
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preserve and qualify historical event metadata
+  description: KOMODO import events contain a literal .fZ timestamp and resolver events
+    omit a UTC offset. Historical concentration reports preserve unresolved claims
+    and exact source mappings, but are not independent proof of those historical retrieval
+    events. The fresh API digest and 75 historical literal objects match; historical
+    mapping snippets and current repair code do not recover the original full KOMODO
+    catalogue or prove strain-specific formulation.
+  target_ids:
+  - CultureMech:006425
+  field_paths:
+  - data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml::curation_history[0].timestamp
+  - data/normalized_yaml/bacterial/dsm_5262.yaml::curation_history[0].timestamp
+  - data/merge_yaml/merged/CLOSTRIDIUM_VINCENTII_MEDIUM.yaml::curation_history[1].timestamp
+  - data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml::curation_history[1].timestamp
+  - data/normalized_yaml/bacterial/dsm_5262.yaml::curation_history[1].timestamp
+  evidence_ids:
+  - history
+  - historical-reader
+  - writer-komodo
+  rule_id: custom-event-metadata-provenance
+  native_severity: P3
+  normalization_reason: 'Minor: malformed or timezone-unspecified historical event
+    metadata limits auditability without changing any recipe quantity; native P4.4
+    only covers a one-event history and is not invoked.'
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: The selected merge is generated. Curate the maintained contributor
+    where still needed, then regenerate with the current compatible-formulation workflow.
+actions:
+- action_id: action1
+  description: Correct the base maintained contributors by representing the exact
+    stock composition and separate recipe-batch addition, then regenerate compatible
+    base records. Preserve the strain-specific wrapper and its unresolved quantities
+    separately; do not propagate base support into it.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:006425
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action2
+  description: Replace the incorrect base mass-rate representation with the exact
+    liquid-stock dose and concentration/pH attributes in source batch context. Do
+    not invent a buffer formulation or automatically alter the unsupported variant
+    layer.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:006425
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action3
+  description: 'Retain the repaired variant boundary and regenerate base records without
+    treating the wrapper as an interchangeable synonym. Preserve already supported
+    DSM preparation and explicitly distinguish it from inaccessible KOMODO claims;
+    reconcile or qualify base Aerobic: Yes metadata. Keep the variant formulation,
+    pH and growth assertions unresolved until exact evidence is available.'
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:006425
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action4
+  description: Verify an exact sodium-resazurin identifier and canonical label or
+    explicitly retain unresolved salt grounding, while preserving supported source
+    dosage and the variant boundary. Do not silently endorse neutral resazurin as
+    the supplied sodium salt.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:006425
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action5
+  description: Preserve the exact optional replacement text and its quantity, and
+    represent the action without asserting unsupported sterilization. Do not add the
+    seawater alongside the replaced sea salts or transfer it to the variant.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:006425
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+- action_id: action6
+  description: Retain every original event byte-for-byte. If authoritative provenance
+    is recovered, append a verified correction or context event; never invent or overwrite
+    its timestamp. Link fresh source evidence separately and preserve unresolved accession
+    limitations.
+  finding_ids:
+  - f6
+  target_ids:
+  - CultureMech:006425
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/KOMODO_769_CLOSTRIDIUM_VINCENTII_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/clostridium_vincentii_medium.yaml
+    role: maintained contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/dsm_5262.yaml
+    role: maintained contributor
+  ownership_note: Preserve source-specific variants and existing owner repairs; do
+    not directly edit the generated record.
+  acceptance_checks:
+  - Exact owner/source scopes and all quantity decisions are reconciled.
+  - Regenerated target retains claim-level evidence and passes the four canonical
+    diagnostics.
+  generator: src/culturemech/merge/merger.py
+limitations:
+- Both exact KOMODO detail routes and the catalogue returned 403. Historical excerpts
+  retain accession/title/pH context, but the original catalogue and strain-specific
+  formulation remain unverified; completion is partial.
+- DSM769 base quantities and preparation are not automatically evidence for DSM5262/769.2.
+  Every existing variant concentration and pH claim is retained as unsupported, with
+  no replacement formulation proposed.
+- The primary specifies water inputs, not measured final makeup. API main g_l is provider-defined
+  nominal normalization; no unqualified final-volume denominator is invented. Buffer
+  salt composition and unquantified late-stock amounts remain unresolved.
+- No growth phenotype, organism taxonomy or physiological atmosphere is inferred from
+  a medium name, DSM strain identifier or generic source preparation. All original
+  history remains append-only.
+notes:
+- Fresh review; historical lost snapshots were not reconstructed. All inspected source
+  files remain unchanged.
+- No formal review validation/save, Git mutation or publication was performed by this
+  author.
