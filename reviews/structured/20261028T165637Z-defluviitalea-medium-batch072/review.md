@@ -1,0 +1,2813 @@
+# Scientific review of defluviitalea_medium
+
+- Review: 20261028T165637Z-defluviitalea-medium-batch072
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T16:12:12.611184Z
+- Finished UTC: 2026-10-28T16:56:37.892355Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The mineral stock is flattened into the main medium and sodium/calcium amounts combine incompatible stages. Preserve supported DSM provider rates, pH and retained preparation while resolving the distinct KOMODO branch, two supplied-form mappings and missing claim-level evidence.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch072 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:001612 | data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml | generated | defluviitalea_medium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:001612 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:001612 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:001612 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:001612 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### DSM483 versus historical KOMODO483 branch
+
+identity: concern. Targets: CultureMech:001612.
+
+Both owners cite accession483, but names, pH and retained preparation differ. The historical KOMODO catalogue excerpt is a distinct provenance source whose old byte capture is not authenticated by the current API digest. The separate TOGO M2001/NBRC1288 namesake is not a maintained contributor. No experimental growth or species-specific formulation equivalence is inferred.
+
+### Correct retained fields and conservative current merge
+
+consistency: concern. Targets: CultureMech:001612.
+
+LIQUID and complex/undefined classification are consistent with yeast extract. DSM/target pH and main preparation are retained correctly, and eleven main provider rates are numerically supported on their declared provider basis. The current full-scientific-content merge rejects differing pH/preparation/relationship content, so it does not justify recreating this historical combined output.
+
+### Historical assertions and current writers
+
+provenance: concern. Targets: CultureMech:001612.
+
+All six complete reports were read, including the excluded TOGO/NBRC namesake comparison. Both exact owner plan objects and 66 decoded/literal current API objects are reconciled separately from the old KOMODO catalogue excerpt. Current duplicate cleaners no longer justify summing main and stock values, and current full-content merging rejects these incompatible scientific branches. Current conservative merging preserves scientific fields and rejects incompatible formulations. Inspected writer behavior is described separately by exact file and function; it does not prove historical execution.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:001612.
+
+All 78 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:001612", "selected_concentration_field_count": 78, "selected_concentration_fields_covered": 78, "decisions": [{"decision_id": "q1", "subject": "KH2PO4", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.29703 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 0.3 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 2.18268,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 3-3", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "KH2PO4                                                 0.30       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject": "KH2PO4 KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\": 11,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 2.18268,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 3-3", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "KH2PO4                                                 0.30       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject": "K2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.29703 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 0.3 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 1.70534,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 4-4", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "K2HPO4                                                 0.30       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject": "K2HPO4 KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\": 10,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 1.70534,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 4-4", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "K2HPO4                                                 0.30       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject": "NH4Cl", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.990099 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 1 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 18.51,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 5-5", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NH4Cl                                                  1.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject": "NH4Cl KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\": 42,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 18.51,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 5-5", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NH4Cl                                                  1.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject": "MgCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.990099 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 1 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 4.87007,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 7-7", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "MgCl2 x 6 H2O                                          1.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q8", "subject": "MgCl2 x 6 H2O KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\": 79,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 4.87007,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 7-7", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "MgCl2 x 6 H2O                                          1.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q9", "subject": "KCl", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.0990099", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.0990099", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.0990099 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 0.1 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[6]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0990099,\n                        \"mmol_l\": 1.3281,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 9-9", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "KCl                                                    0.10       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q10", "subject": "KCl KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "0.0990099", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[6]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"KCl\",\n                        \"compound_id\": 61,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0990099,\n                        \"mmol_l\": 1.3281,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 9-9", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "KCl                                                    0.10       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q11", "subject": "Yeast extract", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "1.9802", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "1.9802", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 1.9802 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 2 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[8]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.9802,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 11-11", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Yeast extract                                          2.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q12", "subject": "Yeast extract KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "1.9802", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[8]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\": 16,\n                        \"amount\": 2,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.9802,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 11-11", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Yeast extract                                          2.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q13", "subject": "Sodium resazurin", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "0.00049505", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "0.00049505", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.00049505 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 0.5 ml, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The source specifies 0.5 ml of 0.1% w/v sodium resazurin: 1 mg/ml × 0.5 ml = 0.5 mg per batch; its recorded rate follows the provider 1.010 L basis. The sodium-salt identifier is assessed separately.", "sources": [{"locator": "$.data.solutions[0].recipe[9]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.00049505,\n                        \"mmol_l\": 0.00197097,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 12-12", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Sodium resazurin (0.1% w/v)                            0.50      ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q14", "subject": "Sodium resazurin KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "0.00049505", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[9]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.00049505,\n                        \"mmol_l\": 0.00197097,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 12-12", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Sodium resazurin (0.1% w/v)                            0.50      ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q15", "subject": "L-Cysteine HCl x H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "0.49505", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "0.49505", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.49505 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 0.5 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[10]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.49505,\n                        \"mmol_l\": 2.81861,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 13-13", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "L-Cysteine HCl x H2O                                   0.50       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q16", "subject": "L-Cysteine HCl x H2O KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "0.49505", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[10]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\": 770,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.49505,\n                        \"mmol_l\": 2.81861,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 13-13", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "L-Cysteine HCl x H2O                                   0.50       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q17", "subject": "Na2CO3", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.990099 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 1 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[11]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 9.34161,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 14-14", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2CO3                                                 1.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q18", "subject": "Na2CO3 KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[11]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\": 32,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 9.34161,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 14-14", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2CO3                                                 1.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q19", "subject": "D-Glucose", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "3.9604", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "3.9604", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 3.9604 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 4 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[12]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 4,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.9604,\n                        \"mmol_l\": 21.9827,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 15-15", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "D-Glucose                                              4.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q20", "subject": "D-Glucose KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "3.9604", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[12]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\": 211,\n                        \"amount\": 4,\n                        \"unit\": \"g\",\n                        \"g_l\": 3.9604,\n                        \"mmol_l\": 21.9827,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 15-15", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "D-Glucose                                              4.00       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q21", "subject": "Na2S x 9 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate", "interpretation": "Retain 0.29703 G_PER_L as the explicit current API provider-normalized value, with that provenance. The primary supplies 0.3 g, but does not independently declare final volume; API main volume is 1010 ml. Do not turn this into a measured final-volume claim. The supplied mass and chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[13]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 1.23669,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 16-16", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2S x 9 H2O                                           0.30       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q22", "subject": "Na2S x 9 H2O KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "0.29703", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483 variant/source projection", "interpretation": "The local number matches the copied DSM483 provider rate, but the branch retains different pH metadata and its current exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent verification of the KOMODO formulation. Preserve the copied value pending exact branch evidence rather than silently treating a source-link match as formulation identity.", "sources": [{"locator": "$.data.solutions[0].recipe[13]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\": 54,\n                        \"amount\": 0.3,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\": 1.23669,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 16-16", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2S x 9 H2O                                           0.30       g", "quote_representation": "captured extracted text"}]}, {"decision_id": "q23", "subject": "NaCl", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "1.9900989999999998", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "1.9900989999999998", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "1.9900989999999998", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Main ingredient merged with mineral-stock ingredient", "interpretation": "The current amount adds the main-medium provider rate to the full stock concentration, as its duplicate note records. Those denominators/stages are incompatible. Preserve the separate source main batch amount and stock batch amount, then represent the 10 ml stock dose; do not sum one full litre of stock into the medium or infer a measured final medium volume.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\": 16.9421,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[1].recipe[3]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\": 43,\n                        \"amount\": 1,\n                        \"unit\": \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\": 17.1116,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 6-6", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NaCl                                                   1.00       g", "quote_representation": "captured extracted text"}, {"locator": "extracted-text physical LF lines 34-34", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NaCl                                                   1.00       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q24", "subject": "CaCl2 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.19900990000000002", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.19900990000000002", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "0.19900990000000002", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Main ingredient merged with mineral-stock ingredient", "interpretation": "The current amount adds the main-medium provider rate to the full stock concentration, as its duplicate note records. Those denominators/stages are incompatible. Preserve the separate source main batch amount and stock batch amount, then represent the 10 ml stock dose; do not sum one full litre of stock into the medium or infer a measured final medium volume.", "sources": [{"locator": "$.data.solutions[0].recipe[5]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.0990099,\n                        \"mmol_l\": 0.673468,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[1].recipe[6]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\": 7,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.680203,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 8-8", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "CaCl2 x 2 H2O                                          0.10       g", "quote_representation": "captured extracted text"}, {"locator": "extracted-text physical LF lines 37-37", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "CaCl2 x 2 H2O                                          0.10       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q25", "subject": "Nitrilotriacetic acid", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "1.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "1.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "1.5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 1.5 g/L, not the main medium. The primary stock uses 1.5 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\": 189,\n                        \"amount\": 1.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\": 7.84765,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 31-31", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Nitrilotriacetic acid                                  1.50       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q26", "subject": "MgSO4 x 7 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "3", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "3", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "3", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 3 g/L, not the main medium. The primary stock uses 3 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[1]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\": 8,\n                        \"amount\": 3,\n                        \"unit\": \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\": 12.1716,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 32-32", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "MgSO4 x 7 H2O                                          3.00       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q27", "subject": "MnSO4 x H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.5 g/L, not the main medium. The primary stock uses 0.5 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[2]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 3,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\": 14,\n                        \"amount\": 0.5,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\": 2.9583,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 33-33", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "MnSO4 x H2O                                            0.50       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q28", "subject": "FeSO4 x 7 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.1 g/L, not the main medium. The primary stock uses 0.1 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[4]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\": 12,\n                        \"amount\": 0.1,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\": 0.359693,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 35-35", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "FeSO4 x 7 H2O                                          0.10       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q29", "subject": "CoSO4 x 7 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.18 g/L, not the main medium. The primary stock uses 0.18 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[5]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\": 198,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 1.16132,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 36-36", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "CoSO4 x 7 H2O                                          0.18       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q30", "subject": "ZnSO4 x 7 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.18 g/L, not the main medium. The primary stock uses 0.18 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\": 35,\n                        \"amount\": 0.18,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\": 0.625954,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 38-38", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "ZnSO4 x 7 H2O                                          0.18       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q31", "subject": "CuSO4 x 5 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.01 g/L, not the main medium. The primary stock uses 0.01 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[8]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\": 121,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0400503,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 39-39", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "CuSO4 x 5 H2O                                          0.01       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q32", "subject": "AlK(SO4)2 x 12 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.02 g/L, not the main medium. The primary stock uses 0.02 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[9]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\": 908,\n                        \"amount\": 0.02,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\": 0.0421596,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-40", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "AlK(SO4)2 x 12 H2O                                     0.02       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q33", "subject": "H3BO3", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[21].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[21].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[21].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.01 g/L, not the main medium. The primary stock uses 0.01 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[10]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\": 37,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.161708,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 41-41", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "H3BO3                                                  0.01       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q34", "subject": "Na2MoO4 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[22].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[22].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[22].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.01 g/L, not the main medium. The primary stock uses 0.01 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[11]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\": 9,\n                        \"amount\": 0.01,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\": 0.0413309,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 42-42", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2MoO4 x 2 H2O                                        0.01       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q35", "subject": "NiCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[23].concentration", "original": {"value": "0.03", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[23].concentration", "original": {"value": "0.03", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[23].concentration", "original": {"value": "0.03", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.03 g/L, not the main medium. The primary stock uses 0.03 g with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[12]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 13,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\": 40,\n                        \"amount\": 0.03,\n                        \"unit\": \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\": 0.231483,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-43", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NiCl2 x 6 H2O                                          0.03       g", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q36", "subject": "Na2SeO3 x 5 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[24].concentration", "original": {"value": "0.0003", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[24].concentration", "original": {"value": "0.0003", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[24].concentration", "original": {"value": "0.0003", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.0003 g/L, not the main medium. The primary stock uses 0.3 mg with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[13]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 14,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\": 107,\n                        \"amount\": 0.3,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0003,\n                        \"mmol_l\": 0.00114062,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 44-44", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2SeO3 x 5 H2O                                        0.30      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q37", "subject": "Na2WO4 x 2 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[25].concentration", "original": {"value": "0.0004", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ingredients[25].concentration", "original": {"value": "0.0004", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ingredients[25].concentration", "original": {"value": "0.0004", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened into main ingredients", "interpretation": "The current numeric value matches the provider stock rate 0.0004 g/L, not the main medium. The primary stock uses 0.4 mg with listed 1000 ml water. Preserve this source batch/form inside the named stock, with its independent 10 ml receiving addition. Listed water and provider volume are not a separately measured final stock volume. The exact KOMODO branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[14]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\": 249,\n                        \"amount\": 0.4,\n                        \"unit\": \"mg\",\n                        \"g_l\": 0.0004,\n                        \"mmol_l\": 0.00121267,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 45-45", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2WO4 x 2 H2O                                         0.40      mg", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q38", "subject": "Modified Wolin mineral receiving dose", "local_fields": [], "decision": "add", "stage": "Main-medium stock addition", "interpretation": "The selected layers omit the distinct 10 ml receiving addition. Preserve this absolute volume separately from the stock components. Under the API 1010 ml normalization it would be 9.900990... ml/L, not an independently verified final-medium dose of exactly 10 ml/L.", "sources": [{"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 10-10", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Modified Wolin's mineral solution                     10.00      ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q39", "subject": "Main solvent and denominator", "local_fields": [], "decision": "add", "stage": "Main water input", "interpretation": "Primary water is 1000 ml; mineral stock adds 10 ml and resazurin reagent 0.5 ml, with additional anoxic stocks whose preparation volumes are unspecified. API volume 1010 ml is provider normalization. Do not substitute that metadata or a nominal sum for an explicit final make-up.", "sources": [{"locator": "$.data.solutions[0].recipe[14]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 15,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 8,\n                        \"solution\": \"Modified Wolin's mineral solution\",\n                        \"solution_id\": 241,\n                        \"amount\": 10,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[9]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.00049505,\n                        \"mmol_l\": 0.00197097,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 10-17", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Modified Wolin's mineral solution                     10.00      ml\n   Yeast extract                                          2.00       g\n   Sodium resazurin (0.1% w/v)                            0.50      ml\n   L-Cysteine HCl x H2O                                   0.50       g\n   Na2CO3                                                 1.00       g\n   D-Glucose                                              4.00       g\n   Na2S x 9 H2O                                           0.30       g\n   Distilled water                                     1000.00      ml", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"step\": \"Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add cysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add glucose and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary.\"\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q40", "subject": "Mineral-stock water", "local_fields": [], "decision": "add", "stage": "Modified Wolin stock solvent", "interpretation": "Preserve the listed 1000 ml water as the stock input. The primary does not explicitly say make up to 1000 ml; provider stock volume 1000 ml is separately labelled metadata.", "sources": [{"locator": "$.data.solutions[1].recipe[15]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\": 4,\n                        \"amount\": 1000,\n                        \"unit\": \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 46-46", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Distilled water                                     1000.00      ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q41", "subject": "Sodium resazurin reagent", "local_fields": [], "decision": "add", "stage": "Source-only reagent strength and dose", "interpretation": "0.1% w/v = 1 g/L = 1 mg/ml stock; 0.5 ml adds 0.5 mg per batch. Represent reagent strength and dose explicitly alongside the provider-normalized amount; do not infer a different final volume or convert a neutral resazurin identifier into sodium-salt evidence.", "sources": [{"locator": "$.data.solutions[0].recipe[9]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\": 10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\": 1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\": 0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\": 0.00049505,\n                        \"mmol_l\": 0.00197097,\n                        \"optional\": 0\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 12-12", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Sodium resazurin (0.1% w/v)                            0.50      ml", "quote_representation": "captured extracted text"}]}, {"decision_id": "q42", "subject": "Main preparation and atmosphere", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add cysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add glucose and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary."}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add cysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add glucose and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary."}, {"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "preparation_steps[0].action", "original": "AUTOCLAVE"}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "preparation_steps[0].action", "original": "AUTOCLAVE"}], "decision": "evidence_only", "stage": "Generic DSM483 main preparation", "interpretation": "Credit the complete retained DSM/target prose: exclude cysteine/carbonate/glucose/sulfide initially;80% N2/20% CO2 sparging for 30–45 min; cysteine and initial pH6.5; anoxic dispensing and autoclaving; later glucose/sulfide stocks under 100% N2 and carbonate stock under 80% N2/20% CO2. AUTOCLAVE is one real operation but does not encode all stages. No temperature, duration, stock concentration or addition-volume convention beyond this text is inferred. KOMODO has no preparation; do not blindly transfer across its unresolved branch identity.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"step\": \"Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add cysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add glucose and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 19-25", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then sparge\nmedium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add\ncysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere into\nanoxic Hungate-type tubes or serum vials and autoclave. After sterilization add glucose\nand sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\nfrom a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.\nAdjust pH of complete medium to pH 7.2 -7.4, if necessary.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q43", "subject": "Final main-medium pH", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ph_range", "original": {"min": 7.2, "max": 7.4}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ph_range", "original": {"min": 7.2, "max": 7.4}}], "decision": "evidence_only", "stage": "Generic DSM483 complete-medium pH", "interpretation": "Retain 7.2–7.4 in DSM/target. InitialpH6.5 and stock pH7.0 are distinct stages. The KOMODO 7.0–7.2 range remains a separate unresolved source condition.", "sources": [{"locator": "extracted-text physical LF lines 25-25", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Adjust pH of complete medium to pH 7.2 -7.4, if necessary.", "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"step\": \"Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add cysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization add glucose and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary.\"\n                    }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q44", "subject": "KOMODO pH condition", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml", "field_path": "ph_range", "original": {"min": 7.0, "max": 7.2}}], "decision": "unsupported", "stage": "Distinct unresolved KOMODO metadata", "interpretation": "The old KOMODO mapping excerpt records 7–7.2 and the current owner retains that range. Current DSM483 instead specifies 7.2–7.4. Do not overwrite the KOMODO range merely from the common accession; verify its exact formulation/version before retaining SOURCE_DUPLICATE or regenerating a combined record.", "sources": [{"locator": "extracted-text physical LF lines 25-25", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Adjust pH of complete medium to pH 7.2 -7.4, if necessary.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q45", "subject": "Retained mineral-stock preparation", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "preparation_steps[1].description", "original": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH."}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "preparation_steps[1].description", "original": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH."}, {"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "preparation_steps[1].action", "original": "ADJUST_PH"}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "preparation_steps[1].action", "original": "ADJUST_PH"}], "decision": "evidence_only", "stage": "Stock-only KOH adjustment", "interpretation": "The retained text correctly directs NTA dissolution and initial pH6.5 with KOH, then minerals and final stock pH7.0 with KOH. Relocate this to the mineral stock. KOH dose/strength are unspecified; do not turn these stock pH values into the main medium pH. The broad ADJUST_PH action identifies real operations but does not capture the entire sequence.", "sources": [{"locator": "$.data.solutions[1].steps[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"step\": \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0 with KOH.\"\n                    }", "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical LF lines 53-54", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\nfinal to pH 7.0 with KOH.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference": "REVIEW_WORK/batch072/record06/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: concern. Targets: CultureMech:001612.
+
+data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml: primary 25/26, secondary 24/26; data/normalized_yaml/bacterial/defluviitalea_medium.yaml: primary 25/26, secondary 24/26; data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml: primary 25/26, secondary 24/26. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric legacy MediaIngredientMech mentions occur across the complete selected documents, with exact locators in the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Scope and source limits
+
+scope: supported. Targets: CultureMech:001612.
+
+Complete selected target and exact maintained owners reviewed. Dependencies transfer only their explicitly named stock subsection; unrelated parent media and source prescriptions are not growth evidence.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:001612.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Mineral stock is flattened and two concentrations mix incompatible stages
+
+major / open / confirmed; issue key: culturemech-001612-stock-flattening-and-mixed-duplicate-sums.
+
+All three layers flatten thirteen mineral-stock components into main ingredients and add full stock NaCl/CaCl2 rates to their main-medium rates. The source instead specifies a separate Modified Wolin stock and 10 ml receiving addition. Eleven other main rates match current provider-normalized values in the DSM branch; preserve that limited support rather than treating every amount as wrong.
+
+### f2: The merged source branches have unresolved pH and preparation differences
+
+major / open / confirmed; issue key: culturemech-001612-source-branch-and-preparation-scope.
+
+The historical SOURCE_DUPLICATE relationship is based on ingredient signatures despite DSM pH7.2–7.4 versus KOMODO pH7.0–7.2, missing KOMODO preparation and its Aerobic: Yes note. The DSM/target already retain main anoxic preparation and stock-only KOH steps; those correct statements must be credited and scoped, not replaced wholesale. Current KOMODO access is 403, so a source-specific condition cannot be silently overwritten.
+
+### f3: Nickel hydrate and sodium resazurin are linked to different supplied forms
+
+major / open / confirmed; issue key: culturemech-001612-nickel-hydrate-and-sodium-resazurin-form.
+
+Every selected layer names nickel chloride hexahydrate but asserts anhydrous nickel dichloride CHEBI:34887 in both primary and secondary slots. Sodium resazurin is linked through its primary slot to neutral Resazurin CHEBI:8806; there is no asserted resazurin secondary slot to correct. Exact labels pass native checks, but OLS formulas Cl2Ni and C12H7NO4 do not encode the supplied forms. Current MIM matches describe those asserted IDs, not hydrate or sodium-salt equivalence.
+
+### f4: Current formulation support is unattached and historical context is incomplete
+
+minor / open / confirmed; issue key: culturemech-001612-claim-evidence-and-history.
+
+No selected layer attaches concentration source excerpts. Current API483 bytes exactly match the digest cited by both October curation reports and authenticate their quoted objects, but not old retrieval/execution or the distinct KOMODO catalogue. KOMODO import timestamp retains literal .fZ and the resolver event lacks an offset. The namesake TOGO report concerns another source branch.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Restore separate main and stock batch amounts/solvents and the 10 ml stock addition. Remove the mixed-stage sums while retaining supported provider rates with explicit normalization provenance. Do not assume that API1010ml or listed water establishes physical final volume.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Resolve exact source/version identity before preserving a duplicate relationship or merging branches. Keep supported DSM main pH/preparation, move KOH stock instructions to the mineral stock and represent the compound stages faithfully. Preserve the KOMODO condition as unresolved until verified, rather than transferring all DSM assertions automatically.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Resolve the exact source hydrate and sodium-salt identities against authoritative ontology and MIM records. Use verified supplied-form mappings or retain precise source labels with unresolved mapping; preserve source masses and do not substitute anhydrous molar arithmetic.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action4
+
+Attach exact claim-scoped evidence to newly curated and retained fields. Preserve original events and append verified context at the actual current date; fix future writer formatting without reconstructing historical time. Keep API authentication separate from KOMODO source identity and excluded namesake history.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+- Verify future KOMODO importer and DSMZ resolver events serialize actual timezone-aware UTC timestamps without literal formatting tokens; confirm every original recipe history event remains byte-preserved and any correction is append-only.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/defluviitalea_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local2 | data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch072/record06/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch072/record06/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch072/record06/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch072/record06/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| chebi131361 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:131361 = disodium selenite pentahydrate; definition ['A hydrate that is the pentahydrate form of disodium selenite.']; formula ['5H2O.2Na.O3Se']; mass ['263.012']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17634 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17634 = D-glucose; definition ['A glucose with &lt;small&gt;D&lt;/small&gt;-configuration.']; formula ['C6H12O6']; mass ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi26710 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi29377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:29377 = sodium carbonate; definition []; formula ['CO3.2Na']; mass ['105.988']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31206 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31440 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:31440 = copper(II) sulfate pentahydrate; definition ['The pentahydrate of copper(2+) sulfate. A bright blue crystalline solid.']; formula ['Cu.5H2O.O4S']; mass ['249.684']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi31795 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S']; mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32312 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32312 = zinc sulfate heptahydrate; definition ['A hydrate that is the heptahydrate form of zinc sulfate.']; formula ['7H2O.O4S.Zn']; mass ['287.558']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32588 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32588 = potassium chloride; definition ['A metal chloride salt with a K(+) counterion.']; formula ['Cl.K']; mass ['74.551']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi33118 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3']; mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi34887 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound of nickel and chloride in which the ratio of nickel (in the +2 oxidation state) to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi44557 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:44557 = nitrilotriacetic acid; definition []; formula ['C6H9NO6']; mass ['191.139']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63036 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi63939 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:63939 = sodium tungstate dihydrate; definition ['A hydrate that is the dihydrate form of sodium tungstate. Combines with hydrogen peroxide for the oxidation of secondary amines to nitrones']; formula ['2H2O.2Na.O4W']; mass ['329.846']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi75213 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na']; mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi75836 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:75836 = iron(2+) sulfate heptahydrate; definition ['A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage treatments; for solid-dosage treatments, the monohydrate is normally used).']; formula ['Fe.7H2O.O4S']; mass ['278.013']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi76209 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:76209 = sodium sulfide nonahydrate; definition ['A hydrate with formula Na&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;S·9H&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt;O.']; formula ['9H2O.2Na.S']; mass ['240.182']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86158 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O']; mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86345 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86345 = magnesium dichloride hexahydrate; definition ['A hydrate that is the hexahydrate form of magnesium dichloride.']; formula ['2Cl.6H2O.Mg']; mass ['203.301']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86364 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86364 = manganese(II) sulfate monohydrate; definition ['A hydrate that is the monohydrate form of manganese(II) sulfate.']; formula ['H2O.Mn.O4S']; mass ['169.016']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi86465 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:86465 = potassium aluminium sulfate dodecahydrate; definition ['A hydrate resulting from the the formal combination of anhydrous potassium aluminium sulfate with 12 mol eq. of water.']; formula ['Al.12H2O.K.2O4S']; mass ['474.386']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi8806 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4']; mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi91244 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:91244 = cobalt(2+) sulfate heptahydrate; definition ['A hydrate that is the heptahydrate form of cobalt(2+) sulfate.']; formula ['Co.7H2O.O4S']; mass ['281.101']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi91248 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:91248 = L-cysteine hydrochloride hydrate; definition ['A hydrate that is the monohydrate form of &lt;small&gt;L&lt;/small&gt;-cysteine hydrochloride.']; formula ['C3H7NO2S.H2O.HCl']; mass ['175.637']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| dsm483 | https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| api483 | https://mediadive.dsmz.de/rest/medium/483; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current MediaDive API identity, primary recipe, separate stock recipes and preparation read. Explicit g_l values are provider normalization; solution volume metadata and listed water do not establish a measured final medium volume. Supplied mass/form takes priority over unverified mmol_l conversions. |
+| komodo483 | https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=483; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 403, error &lt;HTTPError 403: 'Forbidden'&gt;. This response does not authenticate a recipe. |
+| thermosiphoIdentity | https://lpsn.dsmz.de/species/thermosipho-africanus; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Current LPSN taxonomic identity and type-strain context for Thermosipho africanus read. This supports nomenclatural/source-identity context only; it does not supply the reviewed recipe, preparation or stock tables and establishes no experimental growth transfer. |
+| grounding | REVIEW_WORK/batch072/record06/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/records/bacterial/thermosipho_africanus_medium.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. Current api483 raw bytes exactly match the cited historical SHA, and 33 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history1 | reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/defluviitalea_medium.yaml.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. Current api483 raw bytes exactly match the cited historical SHA, and 33 quoted objects match both decoded locators and literal current raw substrings. This authenticates the cited API payload and excerpts, not the reported historical access time, execution or separate KOMODO catalogue/page. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/thermosipho_africanus_medium.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/defluviitalea_medium.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history4 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Thermosipho_africanus_medium.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history5 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history-auth | REVIEW_WORK/batch072/record06/historical-authentication.json; reports | supports | Exact report headers, source digest and every quoted API object reconciled; all reports fully read with duplicate cells pooled. Current primary sources independently govern scientific decisions. |
+| writer44 | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current _merge_ingredient_group collapses equal duplicate values without summing them and retains the first conflicting value with a flag. This behavior is distinct from historical summed-amount artifacts and does not authenticate source-specific stock or product structure. |
+| writer45 | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients; merge_ingredient_group | context_only | Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group retains the first concentration, flags differing values and selects the first CHEBI. It cannot establish source stages or justify collapsing independent supplemental and product-contained components. |
+| writer46 | scripts/repair_merged_duplicates.py; repair_ingredient; repair_record | context_only | Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS duplicate notes. This bounded repair is not a general solution for product decomposition, stock flattening or differing source formulations. |
+| writer47 | src/culturemech/enrich/dsmz_resolver.py; DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata | context_only | Current DSMZCompositionResolver.merge_composition copies ingredients and solutions, fills pH when absent and copies physical/medium type, but does not copy preparation steps. _add_enrichment_metadata records a naive current timestamp. This explains a present omission risk, not historical execution. |
+| writer48 | src/culturemech/import/komodo_web_importer.py; _convert_to_culturemech | context_only | Current _convert_to_culturemech constructs source notes and default LIQUID with empty ingredients. Its time.strftime format contains %f, which is unsupported here and is consistent with literal .fZ in stored import events. Current code does not authenticate the original retrieval or justify rewriting historical time. |
+| writer49 | src/culturemech/import/mediadive_importer.py; _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps | context_only | Current _parse_api_composition considers the primary recipe, prefers provider g_l when available and excludes four recognized water labels; tap water is not among those exclusions; _is_api_stock_addition distinguishes stock additions. _parse_api_solutions retains separate stock structure. _parse_preparation_steps collects solution prose. These present behaviors do not establish historical execution and cannot justify interpreting flattened stock rates as final-medium concentrations. |
+| writer50 | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation_content retains exact scientific quantities, preparation and other scientific fields; merge_formulation_evidence rejects incompatible projections and unions evidence at matching scopes. A source-equivalence claim is not established by shared ingredient identities. |
+| writer51 | src/culturemech/merge/matcher.py; group_formulations; group_recipes | context_only | Current group_formulations calls group_recipes with fail_on_invalid=True and FormulationFingerprinter. Expected standalone or unfingerprintable records are excluded; malformed or unexpected inputs raise. Valid records are grouped by full scientific content. This guard does not retrieve or authenticate source recipes. |
+| writer52 | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group routes a single maintained owner with merge metadata; multiple owners pass through conservative merge_formulation_evidence. Regenerating from an unrepaired owner retains its defects. Current conservative behavior is credited and does not establish how the old generated record was produced. |
+| scoped-plan | REVIEW_WORK/batch072/record06/historical-scoped-plan-rows.json; exact owner rows 17 and 253 in pinned parents | supports | Two exact selected-owner objects from the Oct7 DSM and KOMODO plans were read; unrelated parent-plan records and the TOGO M2001/NBRC1288 namesake report do not transfer. Both complete October curation reports and four zero-check reports were read. |
+| quantity-inventory | REVIEW_WORK/batch072/record06/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+
+## Limits And Additional Notes
+
+- The exact historical KOMODO MediaInfo=483 route returned 403. The current DSM483 recipe cannot authenticate that separate current page or resolve all older branch conditions.
+- API main volume 1010 ml and stock volume 1000 ml are provider metadata, not independently measured final volumes. Primary water inputs and unspecified post-sterilization stocks remain separate.
+- No experimental growth publication was assessed. Thermosipho collection/taxonomic identity context does not establish the medium’s exact source version or a new growth assertion.
+- The TOGO M2001/NBRC1288 namesake historical report is comparison-only, not a selected maintained contributor. No unrelated parent-plan records were scientifically assessed.
+- Current source-digest equality authenticates API bytes and exact report quotations, not historical retrieval times or execution. Generic yeast extract remains an ungrounded complex component; it is not assigned a pure-compound ID.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T165637Z-defluviitalea-medium-batch072
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of defluviitalea_medium
+started_at: '2026-10-28T16:12:12.611184Z'
+finished_at: '2026-10-28T16:56:37.892355Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The mineral stock is flattened into the main medium and sodium/calcium amounts
+  combine incompatible stages. Preserve supported DSM provider rates, pH and retained
+  preparation while resolving the distinct KOMODO branch, two supplied-form mappings
+  and missing claim-level evidence.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml
+    sha256: 10d4d574880b822fdd76881b8256df758a8a67c64cbcd380d97f6160dc3a232c
+    role: target
+  - path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    sha256: 462ef38114b3661bb0367bef952492ee00d2fd5649a69f7ab5052e7715f4d11e
+    role: context
+  - path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    sha256: 479cf842e1dc175c6a879199efd0089c64dfd5013f17f1bc0bc16f6fb2d1273e
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/plan.json
+    sha256: 56e72694e73e28cee3666277d0f215973f770da991b4b42930105ec89d0ab6e3
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/records/bacterial/thermosipho_africanus_medium.yaml.md
+    sha256: a8b9e81a4a3c81f8061905cc2335c55abbf1258e5bd24a8087459df5a10972df
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/plan.json
+    sha256: bc8c96d09770525e6b6ba6dc0c7680354cf9bc6baa5249e79e82b65328203147
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/defluviitalea_medium.yaml.md
+    sha256: e5dc022d163392edf7879ec6ee5ccb14c206f6518a0f69d56fbefb8a1b81655b
+    role: context
+  - path: reports/ingredient_concentration_curation/20261008-komodo-media-3000-3633/plan.json
+    sha256: 0fc7158ec48d1b0c75efa149070b46b677bb3389d969a1440267f43e21b3d3c8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.md
+    sha256: 3d6975f4634a40763838ef9f65c3d34f8aee9833115f38045bf67553862ea121
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Thermosipho_africanus_medium.md
+    sha256: dcd4c3951dd4d3ca47307d5490031f0b7727b13db4a10caa8c2d9abe459e1cc8
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/defluviitalea_medium.md
+    sha256: f46b34b8377aa8df547af0ea90b13037d97fc8c8cbdc77c346b16c434ea49d37
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/thermosipho_africanus_medium.md
+    sha256: 0567d4a85405685d8e03d6b3bf380c439f1a02d15063e526d381e8abfcdea662
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_media_variant_links.py
+    sha256: 2931b0c5d4374cdaa6d256aed8f65f564a8b285bba741ec914f3a516eed50c07
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_from_culturebotht.py
+    sha256: d835addf5fff423a9b0b1231848ed3103c5b2d97015c1c294365970d15be0fe1
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_fields.py
+    sha256: 13738616213c958af4a3d6d37bd22c798f530544b52829ca81780279abcd2a73
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/propose_media_variant_links.py
+    sha256: bd5b0b86c9457e42ca52ba2b253e5842c7f414093ba15aaeb4f9f0d682b5f4c2
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_jcm_stock_preparations.py
+    sha256: 7fbea52819431dcb749d3b44bce35bcddc86d708873fc6eef4e730e5066eb98a
+    role: context
+  - path: scripts/repair_mediadive_jcm_structure.py
+    sha256: 5bff4c2d1900051bdea1b8e0f655049147c85cc9c61da4c348a6d60a8d0fd509
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch072 selection index 6 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:001612
+targets:
+- target_id: CultureMech:001612
+  path: data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml
+  label: defluviitalea_medium
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001612
+  command: just validate-schema data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001612
+  command: just validate-strict data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml --workers
+    1 --out REVIEW_WORK/batch072/record06/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:001612
+  command: just validate-terms data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:001612
+  command: just validate-references data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T16:40:19.127722Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 10d4d574880b822fdd76881b8256df758a8a67c64cbcd380d97f6160dc3a232c
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T16:40:19.127882Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 462ef38114b3661bb0367bef952492ee00d2fd5649a69f7ab5052e7715f4d11e
+- evidence_id: local2
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T16:40:19.127909Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: 479cf842e1dc175c6a879199efd0089c64dfd5013f17f1bc0bc16f6fb2d1273e
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch072/record06/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T16:12:13.662739Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 293abd39ee2f4be042f5cc1172f767b9a2f30502bb327a7b8b29d76115fec4fe
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch072/record06/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T16:12:14.593142Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: ac400dabdb7b14161231a7cd0a56456ad81d8ae1ed672560d0dedeceebf2fa72
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch072/record06/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T16:12:15.597348Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 74434986abb66fadc2916300aa5124d3f9848f98058be8f3c7674fb78b64b492
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch072/record06/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T16:12:16.317394Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: 11d69a54d3840bc3f849309e357de007e85abb0b4f60ac719d8b6840b1247966
+- evidence_id: chebi131361
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131361
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:05.997459Z'
+  support: supports
+  summary: OLS current exact CHEBI:131361 = disodium selenite pentahydrate; definition
+    ['A hydrate that is the pentahydrate form of disodium selenite.']; formula ['5H2O.2Na.O3Se'];
+    mass ['263.012']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 643fefa89a2c0afeb2a00a0dd6149dbbf86cc4824369c58bde1c6ea6d4316d10
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:05.970073Z'
+  support: supports
+  summary: OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition
+    ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula
+    ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi17634
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17634
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:05.447119Z'
+  support: supports
+  summary: OLS current exact CHEBI:17634 = D-glucose; definition ['A glucose with
+    <small>D</small>-configuration.']; formula ['C6H12O6']; mass ['180.156']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: d11b31a8e91c3fffe7744f612dab69cdb4e02f42068cd2eb1458acee4503a62f
+- evidence_id: chebi26710
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_26710
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:05.446886Z'
+  support: supports
+  summary: OLS current exact CHEBI:26710 = sodium chloride; definition ['An inorganic
+    chloride salt having sodium(1+) as the counterion.']; formula ['Cl.Na']; mass
+    ['58.443']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 2afe639e870dee30cad14e81231180e3ddea68f425ee849f7ca2b0c89414d97e
+- evidence_id: chebi29377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_29377
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:05.424397Z'
+  support: supports
+  summary: OLS current exact CHEBI:29377 = sodium carbonate; definition []; formula
+    ['CO3.2Na']; mass ['105.988']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 21ae6468f9d087fd7930a263fc44728e31a8babde3576135686278a13bc1d6e1
+- evidence_id: chebi31206
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31206
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:05.422016Z'
+  support: supports
+  summary: OLS current exact CHEBI:31206 = ammonium chloride; definition ['An inorganic
+    chloride having ammonium as the counterion.']; formula ['Cl.H4N']; mass ['53.492'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: ee305afe3bf4a52b81b433055fe3908296a177700fcb477572e51c08e2b81c76
+- evidence_id: chebi31440
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31440
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:05.382890Z'
+  support: supports
+  summary: OLS current exact CHEBI:31440 = copper(II) sulfate pentahydrate; definition
+    ['The pentahydrate of copper(2+) sulfate. A bright blue crystalline solid.'];
+    formula ['Cu.5H2O.O4S']; mass ['249.684']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: e8ac76313670beb01b2eea5bf76bd0e4a341d0798c99d947484fbdd280d297f9
+- evidence_id: chebi31795
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_31795
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:05.366811Z'
+  support: supports
+  summary: OLS current exact CHEBI:31795 = magnesium sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of magnesium sulfate.']; formula ['7H2O.Mg.O4S'];
+    mass ['246.473']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 45b9cc51f5d062ae7e320b9f043d8cd770234d811ec3bf26bc247b51c22213bb
+- evidence_id: chebi32312
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32312
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.829850Z'
+  support: supports
+  summary: OLS current exact CHEBI:32312 = zinc sulfate heptahydrate; definition ['A
+    hydrate that is the heptahydrate form of zinc sulfate.']; formula ['7H2O.O4S.Zn'];
+    mass ['287.558']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: eb5cc2a6fbb2e99d39aadb9cc7099a29eaab78e8d45f524c76648390a9c960d9
+- evidence_id: chebi32588
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32588
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.825724Z'
+  support: supports
+  summary: OLS current exact CHEBI:32588 = potassium chloride; definition ['A metal
+    chloride salt with a K(+) counterion.']; formula ['Cl.K']; mass ['74.551']; obsolete=False.
+    Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 536d6e3b5f2a3f1cb36d9c04b1502c4a6f00f4d770cd87b05b481e66ea43a411
+- evidence_id: chebi33118
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33118
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.787888Z'
+  support: supports
+  summary: OLS current exact CHEBI:33118 = boric acid; definition []; formula ['H3BO3'];
+    mass ['61.833']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: f1ed0fa3a5355bbef1d9200ab8b7c46ce02b96fbf5d86b931208709e57b83f87
+- evidence_id: chebi34887
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_34887
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.783361Z'
+  support: supports
+  summary: OLS current exact CHEBI:34887 = nickel dichloride; definition ['A compound
+    of nickel and chloride in which the ratio of nickel (in the +2 oxidation state)
+    to chloride is 1:2.']; formula ['Cl2Ni']; mass ['129.599']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: f42ee4bb41f919ba75269a1e5d5a023a3e4bd67b7acabd1439a2ecb5e3ac9ddc
+- evidence_id: chebi44557
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_44557
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.764571Z'
+  support: supports
+  summary: OLS current exact CHEBI:44557 = nitrilotriacetic acid; definition []; formula
+    ['C6H9NO6']; mass ['191.139']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: de62dde44d3e28362211eddd4e16e41f6b748508618c828ac760036f8024f6c2
+- evidence_id: chebi63036
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63036
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.759935Z'
+  support: supports
+  summary: OLS current exact CHEBI:63036 = potassium dihydrogen phosphate; definition
+    ['A potassium salt in which dihydrogen phosphate(1−) is the counterion.']; formula
+    ['H2O4P.K']; mass ['136.084']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 48f13d8c6f55837c16b5909790ad7b78496b0bd8d04b8b47e3d0926d9ff602a3
+- evidence_id: chebi63939
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_63939
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.200733Z'
+  support: supports
+  summary: OLS current exact CHEBI:63939 = sodium tungstate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium tungstate. Combines with hydrogen
+    peroxide for the oxidation of secondary amines to nitrones']; formula ['2H2O.2Na.O4W'];
+    mass ['329.846']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 987144fa0342502834f116860a4b4f71696f62c18e7b701301667c15e588562a
+- evidence_id: chebi75213
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75213
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.180220Z'
+  support: supports
+  summary: OLS current exact CHEBI:75213 = sodium molybdate dihydrate; definition
+    ['A hydrate that is the dihydrate form of sodium molybdate.']; formula ['2H2O.MoO4.2Na'];
+    mass ['241.946']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b550cc83b4a37e7b1710a3221c77e7899e27a6bd0696df85cdd84a03b99b8083
+- evidence_id: chebi75836
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_75836
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.177492Z'
+  support: supports
+  summary: OLS current exact CHEBI:75836 = iron(2+) sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a
+    source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage
+    treatments; for solid-dosage treatments, the monohydrate is normally used).'];
+    formula ['Fe.7H2O.O4S']; mass ['278.013']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 14b56bdc09964796c959bcdb19159b03ddf37dcc0ccfc4b489ec1303a272d525
+- evidence_id: chebi76209
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_76209
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.170859Z'
+  support: supports
+  summary: OLS current exact CHEBI:76209 = sodium sulfide nonahydrate; definition
+    ['A hydrate with formula Na<small><sub>2</sub></small>S·9H<small><sub>2</sub></small>O.'];
+    formula ['9H2O.2Na.S']; mass ['240.182']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: f74d2c85574a4e28bdf71a78e4263f7e4c211036cd6d63b1f8282aca1d255e5c
+- evidence_id: chebi86158
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86158
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.160363Z'
+  support: supports
+  summary: OLS current exact CHEBI:86158 = calcium chloride dihydrate; definition
+    ['A hydrate that is the dihydrate form of calcium chloride.']; formula ['Ca.2Cl.2H2O'];
+    mass ['147.014']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: b9c4f7706b41224c9f9db6fbb6cb2b6e6ebc73466e115325a646b0122757eb61
+- evidence_id: chebi86345
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86345
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:04.153393Z'
+  support: supports
+  summary: OLS current exact CHEBI:86345 = magnesium dichloride hexahydrate; definition
+    ['A hydrate that is the hexahydrate form of magnesium dichloride.']; formula ['2Cl.6H2O.Mg'];
+    mass ['203.301']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 08a75ab7c89066e54998e26bfba46e579358aa1a0ee5611430577d7c38e25133
+- evidence_id: chebi86364
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86364
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:03.088437Z'
+  support: supports
+  summary: OLS current exact CHEBI:86364 = manganese(II) sulfate monohydrate; definition
+    ['A hydrate that is the monohydrate form of manganese(II) sulfate.']; formula
+    ['H2O.Mn.O4S']; mass ['169.016']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: f1da0a281e1fa2263226a8548afc0bf76db61dd36828240b47d83431bd182069
+- evidence_id: chebi86465
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_86465
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:03.088398Z'
+  support: supports
+  summary: OLS current exact CHEBI:86465 = potassium aluminium sulfate dodecahydrate;
+    definition ['A hydrate resulting from the the formal combination of anhydrous
+    potassium aluminium sulfate with 12 mol eq. of water.']; formula ['Al.12H2O.K.2O4S'];
+    mass ['474.386']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 5e74b8136b972b18b427c70e758e12dfe013a6ca671501cddc936038299f7c2c
+- evidence_id: chebi8806
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_8806
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:03.088348Z'
+  support: supports
+  summary: OLS current exact CHEBI:8806 = Resazurin; definition []; formula ['C12H7NO4'];
+    mass ['229.191']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: e4b3829e3ecc9bf2e831f740a736843a425952bd34a410e5c1f8989b3fd62de5
+- evidence_id: chebi91244
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91244
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:03.088281Z'
+  support: supports
+  summary: OLS current exact CHEBI:91244 = cobalt(2+) sulfate heptahydrate; definition
+    ['A hydrate that is the heptahydrate form of cobalt(2+) sulfate.']; formula ['Co.7H2O.O4S'];
+    mass ['281.101']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: dd763e0620a8afe61626951123a4de5d100bfa4534ee26ba0a39dad4e7e9bcaa
+- evidence_id: chebi91248
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_91248
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T16:14:03.088188Z'
+  support: supports
+  summary: OLS current exact CHEBI:91248 = L-cysteine hydrochloride hydrate; definition
+    ['A hydrate that is the monohydrate form of <small>L</small>-cysteine hydrochloride.'];
+    formula ['C3H7NO2S.H2O.HCl']; mass ['175.637']; obsolete=False. Literal label
+    is distinct from supplied-form equivalence.
+  snapshot_sha256: 7ef9e26cec1a5833d216a01df066c0b6a0bfba77bad16db354c690a7a814a683
+- evidence_id: dsm483
+  kind: primary_source
+  reference: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T16:13:12.180364Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505
+- evidence_id: api483
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/medium/483
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T16:13:12.180409Z'
+  support: supports
+  summary: Complete current MediaDive API identity, primary recipe, separate stock
+    recipes and preparation read. Explicit g_l values are provider normalization;
+    solution volume metadata and listed water do not establish a measured final medium
+    volume. Supplied mass/form takes priority over unverified mmol_l conversions.
+  snapshot_sha256: 3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6
+- evidence_id: komodo483
+  kind: database
+  reference: https://komodo.modelseed.org/komodo/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaInfo=483
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T16:13:12.180445Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 403, error <HTTPError 403: ''Forbidden''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: 8c228f0b7ac5dfaab4c8036faca07f50ab56ec530953f8dc121cf1e1c43664f9
+- evidence_id: thermosiphoIdentity
+  kind: database
+  reference: https://lpsn.dsmz.de/species/thermosipho-africanus
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T16:13:13.663776Z'
+  support: supports
+  summary: Current LPSN taxonomic identity and type-strain context for Thermosipho
+    africanus read. This supports nomenclatural/source-identity context only; it does
+    not supply the reviewed recipe, preparation or stock tables and establishes no
+    experimental growth transfer.
+  snapshot_sha256: 9a56cd715ecbb782dd4098cc334ec2fc283bdbe656fff1be7c66aa9ac1aa0950
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch072/record06/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T16:40:19.133083Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: c7054ad6dae26e1112f61ba22a6ac1db603c9395e3b6c6c3ca11c14f62f39d77
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-komodo-media-1500-2000/records/bacterial/thermosipho_africanus_medium.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T16:40:19.134378Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. Current
+    api483 raw bytes exactly match the cited historical SHA, and 33 quoted objects
+    match both decoded locators and literal current raw substrings. This authenticates
+    the cited API payload and excerpts, not the reported historical access time, execution
+    or separate KOMODO catalogue/page.
+  snapshot_sha256: a8b9e81a4a3c81f8061905cc2335c55abbf1258e5bd24a8087459df5a10972df
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-media-0500-1000/records/bacterial/defluviitalea_medium.yaml.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T16:40:19.134412Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. Current
+    api483 raw bytes exactly match the cited historical SHA, and 33 quoted objects
+    match both decoded locators and literal current raw substrings. This authenticates
+    the cited API payload and excerpts, not the reported historical access time, execution
+    or separate KOMODO catalogue/page.
+  snapshot_sha256: e5dc022d163392edf7879ec6ee5ccb14c206f6518a0f69d56fbefb8a1b81655b
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/thermosipho_africanus_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T16:40:19.134433Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 0567d4a85405685d8e03d6b3bf380c439f1a02d15063e526d381e8abfcdea662
+- evidence_id: history3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/defluviitalea_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T16:40:19.134452Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: f46b34b8377aa8df547af0ea90b13037d97fc8c8cbdc77c346b16c434ea49d37
+- evidence_id: history4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Thermosipho_africanus_medium.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T16:40:19.134473Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: dcd4c3951dd4d3ca47307d5490031f0b7727b13db4a10caa8c2d9abe459e1cc8
+- evidence_id: history5
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T16:40:19.134492Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 3d6975f4634a40763838ef9f65c3d34f8aee9833115f38045bf67553862ea121
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch072/record06/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T16:40:19.134518Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: ed97262022c4b624f9d773b1367c9b347d0c891025a8469ec62f91f934dd3eea
+- evidence_id: writer44
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T16:40:19.134590Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer45
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T16:40:19.134614Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer46
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; repair_record
+  accessed_at: '2026-10-28T16:40:19.134656Z'
+  support: context_only
+  summary: Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS
+    duplicate notes. This bounded repair is not a general solution for product decomposition,
+    stock flattening or differing source formulations.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer47
+  kind: record_content
+  reference: src/culturemech/enrich/dsmz_resolver.py
+  locator: DSMZCompositionResolver.merge_composition; _is_placeholder; _add_enrichment_metadata
+  accessed_at: '2026-10-28T16:40:19.134688Z'
+  support: context_only
+  summary: Current DSMZCompositionResolver.merge_composition copies ingredients and
+    solutions, fills pH when absent and copies physical/medium type, but does not
+    copy preparation steps. _add_enrichment_metadata records a naive current timestamp.
+    This explains a present omission risk, not historical execution.
+  snapshot_sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+- evidence_id: writer48
+  kind: record_content
+  reference: src/culturemech/import/komodo_web_importer.py
+  locator: _convert_to_culturemech
+  accessed_at: '2026-10-28T16:40:19.134712Z'
+  support: context_only
+  summary: Current _convert_to_culturemech constructs source notes and default LIQUID
+    with empty ingredients. Its time.strftime format contains %f, which is unsupported
+    here and is consistent with literal .fZ in stored import events. Current code
+    does not authenticate the original retrieval or justify rewriting historical time.
+  snapshot_sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+- evidence_id: writer49
+  kind: record_content
+  reference: src/culturemech/import/mediadive_importer.py
+  locator: _parse_api_composition; _is_api_stock_addition; _parse_api_solutions; _parse_preparation_steps
+  accessed_at: '2026-10-28T16:40:19.134744Z'
+  support: context_only
+  summary: Current _parse_api_composition considers the primary recipe, prefers provider
+    g_l when available and excludes four recognized water labels; tap water is not
+    among those exclusions; _is_api_stock_addition distinguishes stock additions.
+    _parse_api_solutions retains separate stock structure. _parse_preparation_steps
+    collects solution prose. These present behaviors do not establish historical execution
+    and cannot justify interpreting flattened stock rates as final-medium concentrations.
+  snapshot_sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+- evidence_id: writer50
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T16:40:19.134769Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer51
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T16:40:19.134794Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer52
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T16:40:19.134816Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: scoped-plan
+  kind: prior_review
+  reference: REVIEW_WORK/batch072/record06/historical-scoped-plan-rows.json
+  locator: exact owner rows 17 and 253 in pinned parents
+  accessed_at: '2026-10-28T16:40:19.159618Z'
+  support: supports
+  summary: Two exact selected-owner objects from the Oct7 DSM and KOMODO plans were
+    read; unrelated parent-plan records and the TOGO M2001/NBRC1288 namesake report
+    do not transfer. Both complete October curation reports and four zero-check reports
+    were read.
+  snapshot_sha256: c9d82ec38cc42517840f0ec67553890ebebe551c9184f962f60b49d7b7a666f7
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch072/record06/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T16:40:19.160261Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: d2f28f29cc236be4235167c159841d8585be70bf5106a759a57ec1b6c5e83796
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: DSM483 versus historical KOMODO483 branch
+  outcome: concern
+  summary: Both owners cite accession483, but names, pH and retained preparation differ.
+    The historical KOMODO catalogue excerpt is a distinct provenance source whose
+    old byte capture is not authenticated by the current API digest. The separate
+    TOGO M2001/NBRC1288 namesake is not a maintained contributor. No experimental
+    growth or species-specific formulation equivalence is inferred.
+  target_ids:
+  - CultureMech:001612
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - dsm483
+  - api483
+  - komodo483
+  - scoped-plan
+- assessment_id: a2
+  area: consistency
+  topic: Correct retained fields and conservative current merge
+  outcome: concern
+  summary: LIQUID and complex/undefined classification are consistent with yeast extract.
+    DSM/target pH and main preparation are retained correctly, and eleven main provider
+    rates are numerically supported on their declared provider basis. The current
+    full-scientific-content merge rejects differing pH/preparation/relationship content,
+    so it does not justify recreating this historical combined output.
+  target_ids:
+  - CultureMech:001612
+  evidence_ids:
+  - local0
+  - local1
+  - local2
+  - dsm483
+  - api483
+- assessment_id: a3
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: All six complete reports were read, including the excluded TOGO/NBRC namesake
+    comparison. Both exact owner plan objects and 66 decoded/literal current API objects
+    are reconciled separately from the old KOMODO catalogue excerpt. Current duplicate
+    cleaners no longer justify summing main and stock values, and current full-content
+    merging rejects these incompatible scientific branches. Current conservative merging
+    preserves scientific fields and rejects incompatible formulations. Inspected writer
+    behavior is described separately by exact file and function; it does not prove
+    historical execution.
+  target_ids:
+  - CultureMech:001612
+  evidence_ids:
+  - history-auth
+  - writer44
+  - writer45
+  - writer46
+  - writer47
+  - writer48
+  - writer49
+  - writer50
+  - writer51
+  - writer52
+- assessment_id: a4
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 78 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:001612
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:001612",
+    "selected_concentration_field_count": 78, "selected_concentration_fields_covered":
+    78, "decisions": [{"decision_id": "q1", "subject": "KH2PO4", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path": "ingredients[0].concentration",
+    "original": {"value": "0.29703", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.29703",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 0.29703 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    0.3 g, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The supplied mass and
+    chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\":
+    2.18268,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 3-3", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "KH2PO4                                                 0.30       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q2", "subject":
+    "KH2PO4 KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.29703",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[0]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"KH2PO4\",\n                        \"compound_id\":
+    11,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\":
+    2.18268,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 3-3", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "KH2PO4                                                 0.30       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q3", "subject":
+    "K2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.29703",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.29703",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 0.29703 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    0.3 g, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The supplied mass and
+    chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[1]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\":
+    1.70534,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 4-4", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "K2HPO4                                                 0.30       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q4", "subject":
+    "K2HPO4 KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.29703",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[1]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"K2HPO4\",\n                        \"compound_id\":
+    10,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\":
+    1.70534,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 4-4", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "K2HPO4                                                 0.30       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q5", "subject":
+    "NH4Cl", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.990099",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.990099",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 0.990099 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    1 g, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The supplied mass and
+    chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[2]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\":
+    18.51,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 5-5", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NH4Cl                                                  1.00       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q6", "subject":
+    "NH4Cl KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.990099",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[2]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"NH4Cl\",\n                        \"compound_id\":
+    42,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\":
+    18.51,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 5-5", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NH4Cl                                                  1.00       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q7", "subject":
+    "MgCl2 x 6 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.990099",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.990099",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 0.990099 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    1 g, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The supplied mass and
+    chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[4]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\":
+    4.87007,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 7-7", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "MgCl2 x 6
+    H2O                                          1.00       g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q8", "subject": "MgCl2 x 6 H2O
+    KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.990099",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[4]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"MgCl2 x 6 H2O\",\n                        \"compound_id\":
+    79,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\":
+    4.87007,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 7-7", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "MgCl2 x 6
+    H2O                                          1.00       g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q9", "subject": "KCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[6].concentration", "original": {"value": "0.0990099", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[6].concentration", "original": {"value": "0.0990099", "unit": "G_PER_L"}}],
+    "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate",
+    "interpretation": "Retain 0.0990099 G_PER_L as the explicit current API provider-normalized
+    value, with that provenance. The primary supplies 0.1 g, but does not independently
+    declare final volume; API main volume is 1010 ml. Do not turn this into a measured
+    final-volume claim. The supplied mass and chemical form remain separate from provider
+    mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[6]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0990099,\n                        \"mmol_l\":
+    1.3281,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 9-9", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "KCl                                                    0.10       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q10", "subject":
+    "KCl KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "0.0990099",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[6]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"KCl\",\n                        \"compound_id\":
+    61,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0990099,\n                        \"mmol_l\":
+    1.3281,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 9-9", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "KCl                                                    0.10       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q11", "subject":
+    "Yeast extract", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "1.9802",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "1.9802",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 1.9802 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    2 g, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The supplied mass and
+    chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[8]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.9802,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text physical LF lines 11-11", "source_key": "dsm483", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256":
+    "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256":
+    "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at":
+    "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Yeast extract                                          2.00       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q12", "subject":
+    "Yeast extract KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "1.9802",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[8]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"Yeast extract\",\n                        \"compound_id\":
+    16,\n                        \"amount\": 2,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.9802,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text physical LF lines 11-11", "source_key": "dsm483", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256":
+    "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256":
+    "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at":
+    "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Yeast extract                                          2.00       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q13", "subject":
+    "Sodium resazurin", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.00049505",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.00049505",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 0.00049505 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    0.5 ml, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The source specifies
+    0.5 ml of 0.1% w/v sodium resazurin: 1 mg/ml × 0.5 ml = 0.5 mg per batch; its
+    recorded rate follows the provider 1.010 L basis. The sodium-salt identifier is
+    assessed separately.", "sources": [{"locator": "$.data.solutions[0].recipe[9]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00049505,\n                        \"mmol_l\": 0.00197097,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text physical LF lines 12-12", "source_key": "dsm483", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256":
+    "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256":
+    "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at":
+    "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Sodium resazurin (0.1% w/v)                            0.50      ml",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q14", "subject":
+    "Sodium resazurin KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "0.00049505",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[9]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00049505,\n                        \"mmol_l\": 0.00197097,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text physical LF lines 12-12", "source_key": "dsm483", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256":
+    "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256":
+    "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at":
+    "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Sodium resazurin (0.1% w/v)                            0.50      ml",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q15", "subject":
+    "L-Cysteine HCl x H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.49505",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.49505",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 0.49505 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    0.5 g, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The supplied mass and
+    chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[10]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.49505,\n                        \"mmol_l\":
+    2.81861,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 13-13", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "L-Cysteine
+    HCl x H2O                                   0.50       g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q16", "subject": "L-Cysteine HCl
+    x H2O KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "0.49505",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[10]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"L-Cysteine HCl x H2O\",\n                        \"compound_id\":
+    770,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.49505,\n                        \"mmol_l\":
+    2.81861,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 13-13", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "L-Cysteine
+    HCl x H2O                                   0.50       g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q17", "subject": "Na2CO3", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[10].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[10].concentration", "original": {"value": "0.990099", "unit": "G_PER_L"}}],
+    "decision": "evidence_only", "stage": "DSM483 main recipe; explicit provider rate",
+    "interpretation": "Retain 0.990099 G_PER_L as the explicit current API provider-normalized
+    value, with that provenance. The primary supplies 1 g, but does not independently
+    declare final volume; API main volume is 1010 ml. Do not turn this into a measured
+    final-volume claim. The supplied mass and chemical form remain separate from provider
+    mmol_l conversions.", "sources": [{"locator": "$.data.solutions[0].recipe[11]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\":
+    9.34161,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 14-14", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2CO3                                                 1.00       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q18", "subject":
+    "Na2CO3 KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "0.990099",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[11]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2CO3\",\n                        \"compound_id\":
+    32,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\":
+    9.34161,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 14-14", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2CO3                                                 1.00       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q19", "subject":
+    "D-Glucose", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "3.9604",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "3.9604",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 3.9604 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    4 g, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The supplied mass and
+    chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[12]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\":
+    211,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.9604,\n                        \"mmol_l\":
+    21.9827,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 15-15", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "D-Glucose                                              4.00       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q20", "subject":
+    "D-Glucose KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "3.9604",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[12]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"D-Glucose\",\n                        \"compound_id\":
+    211,\n                        \"amount\": 4,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3.9604,\n                        \"mmol_l\":
+    21.9827,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 15-15", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "D-Glucose                                              4.00       g",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q21", "subject":
+    "Na2S x 9 H2O", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.29703",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.29703",
+    "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "DSM483 main recipe;
+    explicit provider rate", "interpretation": "Retain 0.29703 G_PER_L as the explicit
+    current API provider-normalized value, with that provenance. The primary supplies
+    0.3 g, but does not independently declare final volume; API main volume is 1010
+    ml. Do not turn this into a measured final-volume claim. The supplied mass and
+    chemical form remain separate from provider mmol_l conversions.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[13]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\":
+    1.23669,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 16-16", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2S x 9
+    H2O                                           0.30       g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q22", "subject": "Na2S x 9 H2O
+    KOMODO branch", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "0.29703",
+    "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Unresolved KOMODO483
+    variant/source projection", "interpretation": "The local number matches the copied
+    DSM483 provider rate, but the branch retains different pH metadata and its current
+    exact KOMODO page is inaccessible. This is DSM numerical correspondence, not independent
+    verification of the KOMODO formulation. Preserve the copied value pending exact
+    branch evidence rather than silently treating a source-link match as formulation
+    identity.", "sources": [{"locator": "$.data.solutions[0].recipe[13]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Na2S x 9 H2O\",\n                        \"compound_id\":
+    54,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.29703,\n                        \"mmol_l\":
+    1.23669,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 16-16", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2S x 9
+    H2O                                           0.30       g", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q23", "subject": "NaCl", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[3].concentration", "original": {"value": "1.9900989999999998", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "1.9900989999999998",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "1.9900989999999998",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Main ingredient merged
+    with mineral-stock ingredient", "interpretation": "The current amount adds the
+    main-medium provider rate to the full stock concentration, as its duplicate note
+    records. Those denominators/stages are incompatible. Preserve the separate source
+    main batch amount and stock batch amount, then represent the 10 ml stock dose;
+    do not sum one full litre of stock into the medium or infer a measured final medium
+    volume.", "sources": [{"locator": "$.data.solutions[0].recipe[3]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.990099,\n                        \"mmol_l\":
+    16.9421,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[1].recipe[3]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    4,\n                        \"compound\": \"NaCl\",\n                        \"compound_id\":
+    43,\n                        \"amount\": 1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1,\n                        \"mmol_l\":
+    17.1116,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 6-6", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NaCl                                                   1.00       g",
+    "quote_representation": "captured extracted text"}, {"locator": "extracted-text
+    physical LF lines 34-34", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NaCl                                                   1.00       g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q24", "subject": "CaCl2 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[5].concentration", "original": {"value": "0.19900990000000002", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.19900990000000002",
+    "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "0.19900990000000002",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Main ingredient merged
+    with mineral-stock ingredient", "interpretation": "The current amount adds the
+    main-medium provider rate to the full stock concentration, as its duplicate note
+    records. Those denominators/stages are incompatible. Preserve the separate source
+    main batch amount and stock batch amount, then represent the 10 ml stock dose;
+    do not sum one full litre of stock into the medium or infer a measured final medium
+    volume.", "sources": [{"locator": "$.data.solutions[0].recipe[5]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.0990099,\n                        \"mmol_l\":
+    0.673468,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[1].recipe[6]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    7,\n                        \"compound\": \"CaCl2 x 2 H2O\",\n                        \"compound_id\":
+    7,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.680203,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 8-8", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "CaCl2 x 2
+    H2O                                          0.10       g", "quote_representation":
+    "captured extracted text"}, {"locator": "extracted-text physical LF lines 37-37",
+    "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "CaCl2 x 2
+    H2O                                          0.10       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q25", "subject": "Nitrilotriacetic acid",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "1.5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 1.5 g/L, not the main medium. The primary stock uses 1.5 g
+    with listed 1000 ml water. Preserve this source batch/form inside the named stock,
+    with its independent 10 ml receiving addition. Listed water and provider volume
+    are not a separately measured final stock volume. The exact KOMODO branch remains
+    unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[0]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    1,\n                        \"compound\": \"Nitrilotriacetic acid\",\n                        \"compound_id\":
+    189,\n                        \"amount\": 1.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 1.5,\n                        \"mmol_l\":
+    7.84765,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 31-31", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Nitrilotriacetic
+    acid                                  1.50       g", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key": "api483",
+    "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q26", "subject": "MgSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[14].concentration", "original": {"value": "3", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[14].concentration", "original": {"value": "3", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "3", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 3 g/L, not the main medium. The primary stock uses 3 g with
+    listed 1000 ml water. Preserve this source batch/form inside the named stock,
+    with its independent 10 ml receiving addition. Listed water and provider volume
+    are not a separately measured final stock volume. The exact KOMODO branch remains
+    unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[1]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    2,\n                        \"compound\": \"MgSO4 x 7 H2O\",\n                        \"compound_id\":
+    8,\n                        \"amount\": 3,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 3,\n                        \"mmol_l\":
+    12.1716,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 32-32", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "MgSO4 x 7
+    H2O                                          3.00       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q27", "subject": "MnSO4 x H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[15].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[15].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.5 g/L, not the main medium. The primary stock uses 0.5 g
+    with listed 1000 ml water. Preserve this source batch/form inside the named stock,
+    with its independent 10 ml receiving addition. Listed water and provider volume
+    are not a separately measured final stock volume. The exact KOMODO branch remains
+    unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[2]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    3,\n                        \"compound\": \"MnSO4 x H2O\",\n                        \"compound_id\":
+    14,\n                        \"amount\": 0.5,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.5,\n                        \"mmol_l\":
+    2.9583,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 33-33", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "MnSO4 x H2O                                            0.50       g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q28", "subject": "FeSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[16].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[16].concentration", "original": {"value": "0.1", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "0.1", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.1 g/L, not the main medium. The primary stock uses 0.1 g
+    with listed 1000 ml water. Preserve this source batch/form inside the named stock,
+    with its independent 10 ml receiving addition. Listed water and provider volume
+    are not a separately measured final stock volume. The exact KOMODO branch remains
+    unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[4]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    5,\n                        \"compound\": \"FeSO4 x 7 H2O\",\n                        \"compound_id\":
+    12,\n                        \"amount\": 0.1,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.1,\n                        \"mmol_l\":
+    0.359693,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 35-35", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "FeSO4 x 7
+    H2O                                          0.10       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q29", "subject": "CoSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[17].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[17].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.18", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.18 g/L, not the main medium. The primary stock uses 0.18
+    g with listed 1000 ml water. Preserve this source batch/form inside the named
+    stock, with its independent 10 ml receiving addition. Listed water and provider
+    volume are not a separately measured final stock volume. The exact KOMODO branch
+    remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[5]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    6,\n                        \"compound\": \"CoSO4 x 7 H2O\",\n                        \"compound_id\":
+    198,\n                        \"amount\": 0.18,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\":
+    1.16132,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 36-36", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "CoSO4 x 7
+    H2O                                          0.18       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q30", "subject": "ZnSO4 x 7 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[18].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[18].concentration", "original": {"value": "0.18", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "0.18", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.18 g/L, not the main medium. The primary stock uses 0.18
+    g with listed 1000 ml water. Preserve this source batch/form inside the named
+    stock, with its independent 10 ml receiving addition. Listed water and provider
+    volume are not a separately measured final stock volume. The exact KOMODO branch
+    remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[7]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"compound\": \"ZnSO4 x 7 H2O\",\n                        \"compound_id\":
+    35,\n                        \"amount\": 0.18,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.18,\n                        \"mmol_l\":
+    0.625954,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 38-38", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "ZnSO4 x 7
+    H2O                                          0.18       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q31", "subject": "CuSO4 x 5 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[19].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[19].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.01 g/L, not the main medium. The primary stock uses 0.01
+    g with listed 1000 ml water. Preserve this source batch/form inside the named
+    stock, with its independent 10 ml receiving addition. Listed water and provider
+    volume are not a separately measured final stock volume. The exact KOMODO branch
+    remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[8]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    9,\n                        \"compound\": \"CuSO4 x 5 H2O\",\n                        \"compound_id\":
+    121,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0400503,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 39-39", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "CuSO4 x 5
+    H2O                                          0.01       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q32", "subject": "AlK(SO4)2 x 12 H2O",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "0.02", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.02 g/L, not the main medium. The primary stock uses 0.02
+    g with listed 1000 ml water. Preserve this source batch/form inside the named
+    stock, with its independent 10 ml receiving addition. Listed water and provider
+    volume are not a separately measured final stock volume. The exact KOMODO branch
+    remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[9]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"AlK(SO4)2 x 12 H2O\",\n                        \"compound_id\":
+    908,\n                        \"amount\": 0.02,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.02,\n                        \"mmol_l\":
+    0.0421596,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 40-40", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "AlK(SO4)2
+    x 12 H2O                                     0.02       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q33", "subject": "H3BO3", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[21].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[21].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[21].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.01 g/L, not the main medium. The primary stock uses 0.01
+    g with listed 1000 ml water. Preserve this source batch/form inside the named
+    stock, with its independent 10 ml receiving addition. Listed water and provider
+    volume are not a separately measured final stock volume. The exact KOMODO branch
+    remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[10]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    11,\n                        \"compound\": \"H3BO3\",\n                        \"compound_id\":
+    37,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.161708,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 41-41", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "H3BO3                                                  0.01       g",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q34", "subject": "Na2MoO4 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[22].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[22].concentration", "original": {"value": "0.01", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[22].concentration", "original": {"value": "0.01", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.01 g/L, not the main medium. The primary stock uses 0.01
+    g with listed 1000 ml water. Preserve this source batch/form inside the named
+    stock, with its independent 10 ml receiving addition. Listed water and provider
+    volume are not a separately measured final stock volume. The exact KOMODO branch
+    remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[11]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    12,\n                        \"compound\": \"Na2MoO4 x 2 H2O\",\n                        \"compound_id\":
+    9,\n                        \"amount\": 0.01,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.01,\n                        \"mmol_l\":
+    0.0413309,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 42-42", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2MoO4 x
+    2 H2O                                        0.01       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q35", "subject": "NiCl2 x 6 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[23].concentration", "original": {"value": "0.03", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[23].concentration", "original": {"value": "0.03", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[23].concentration", "original": {"value": "0.03", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral stock flattened
+    into main ingredients", "interpretation": "The current numeric value matches the
+    provider stock rate 0.03 g/L, not the main medium. The primary stock uses 0.03
+    g with listed 1000 ml water. Preserve this source batch/form inside the named
+    stock, with its independent 10 ml receiving addition. Listed water and provider
+    volume are not a separately measured final stock volume. The exact KOMODO branch
+    remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[12]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    13,\n                        \"compound\": \"NiCl2 x 6 H2O\",\n                        \"compound_id\":
+    40,\n                        \"amount\": 0.03,\n                        \"unit\":
+    \"g\",\n                        \"g_l\": 0.03,\n                        \"mmol_l\":
+    0.231483,\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 43-43", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "NiCl2 x 6
+    H2O                                          0.03       g", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q36", "subject": "Na2SeO3 x 5 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[24].concentration", "original": {"value": "0.0003", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[24].concentration", "original": {"value": "0.0003", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[24].concentration", "original": {"value": "0.0003",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral
+    stock flattened into main ingredients", "interpretation": "The current numeric
+    value matches the provider stock rate 0.0003 g/L, not the main medium. The primary
+    stock uses 0.3 mg with listed 1000 ml water. Preserve this source batch/form inside
+    the named stock, with its independent 10 ml receiving addition. Listed water and
+    provider volume are not a separately measured final stock volume. The exact KOMODO
+    branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[13]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    14,\n                        \"compound\": \"Na2SeO3 x 5 H2O\",\n                        \"compound_id\":
+    107,\n                        \"amount\": 0.3,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0003,\n                        \"mmol_l\":
+    0.00114062,\n                        \"optional\": 0\n                    }",
+    "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical
+    LF lines 44-44", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2SeO3 x
+    5 H2O                                        0.30      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q37", "subject": "Na2WO4 x 2 H2O", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "ingredients[25].concentration", "original": {"value": "0.0004", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path":
+    "ingredients[25].concentration", "original": {"value": "0.0004", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ingredients[25].concentration", "original": {"value": "0.0004",
+    "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Modified Wolin mineral
+    stock flattened into main ingredients", "interpretation": "The current numeric
+    value matches the provider stock rate 0.0004 g/L, not the main medium. The primary
+    stock uses 0.4 mg with listed 1000 ml water. Preserve this source batch/form inside
+    the named stock, with its independent 10 ml receiving addition. Listed water and
+    provider volume are not a separately measured final stock volume. The exact KOMODO
+    branch remains unresolved.", "sources": [{"locator": "$.data.solutions[1].recipe[14]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    15,\n                        \"compound\": \"Na2WO4 x 2 H2O\",\n                        \"compound_id\":
+    249,\n                        \"amount\": 0.4,\n                        \"unit\":
+    \"mg\",\n                        \"g_l\": 0.0004,\n                        \"mmol_l\":
+    0.00121267,\n                        \"optional\": 0\n                    }",
+    "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical
+    LF lines 45-45", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Na2WO4 x
+    2 H2O                                         0.40      mg", "quote_representation":
+    "captured extracted text"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q38", "subject": "Modified Wolin mineral
+    receiving dose", "local_fields": [], "decision": "add", "stage": "Main-medium
+    stock addition", "interpretation": "The selected layers omit the distinct 10 ml
+    receiving addition. Preserve this absolute volume separately from the stock components.
+    Under the API 1010 ml normalization it would be 9.900990... ml/L, not an independently
+    verified final-medium dose of exactly 10 ml/L.", "sources": [{"locator": "$.data.solutions[0].recipe[7]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 10-10", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Modified
+    Wolin''s mineral solution                     10.00      ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q39", "subject": "Main solvent
+    and denominator", "local_fields": [], "decision": "add", "stage": "Main water
+    input", "interpretation": "Primary water is 1000 ml; mineral stock adds 10 ml
+    and resazurin reagent 0.5 ml, with additional anoxic stocks whose preparation
+    volumes are unspecified. API volume 1010 ml is provider normalization. Do not
+    substitute that metadata or a nominal sum for an explicit final make-up.", "sources":
+    [{"locator": "$.data.solutions[0].recipe[14]", "source_key": "api483", "reference":
+    "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    15,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[7]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    8,\n                        \"solution\": \"Modified Wolin''s mineral solution\",\n                        \"solution_id\":
+    241,\n                        \"amount\": 10,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.data.solutions[0].recipe[9]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00049505,\n                        \"mmol_l\": 0.00197097,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text physical LF lines 10-17", "source_key": "dsm483", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256":
+    "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256":
+    "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at":
+    "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Modified Wolin''s mineral
+    solution                     10.00      ml\n   Yeast extract                                          2.00       g\n   Sodium
+    resazurin (0.1% w/v)                            0.50      ml\n   L-Cysteine HCl
+    x H2O                                   0.50       g\n   Na2CO3                                                 1.00       g\n   D-Glucose                                              4.00       g\n   Na2S
+    x 9 H2O                                           0.30       g\n   Distilled water                                     1000.00      ml",
+    "quote_representation": "captured extracted text"}, {"locator": "$.data.solutions[0].steps[0]",
+    "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add cysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization
+    add glucose and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary.\"\n                    }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q40", "subject":
+    "Mineral-stock water", "local_fields": [], "decision": "add", "stage": "Modified
+    Wolin stock solvent", "interpretation": "Preserve the listed 1000 ml water as
+    the stock input. The primary does not explicitly say make up to 1000 ml; provider
+    stock volume 1000 ml is separately labelled metadata.", "sources": [{"locator":
+    "$.data.solutions[1].recipe[15]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    16,\n                        \"compound\": \"Distilled water\",\n                        \"compound_id\":
+    4,\n                        \"amount\": 1000,\n                        \"unit\":
+    \"ml\",\n                        \"optional\": 0\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 46-46", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Distilled
+    water                                     1000.00      ml", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q41", "subject": "Sodium resazurin
+    reagent", "local_fields": [], "decision": "add", "stage": "Source-only reagent
+    strength and dose", "interpretation": "0.1% w/v = 1 g/L = 1 mg/ml stock; 0.5 ml
+    adds 0.5 mg per batch. Represent reagent strength and dose explicitly alongside
+    the provider-normalized amount; do not infer a different final volume or convert
+    a neutral resazurin identifier into sodium-salt evidence.", "sources": [{"locator":
+    "$.data.solutions[0].recipe[9]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"recipe_order\":
+    10,\n                        \"compound\": \"Sodium resazurin\",\n                        \"compound_id\":
+    1852,\n                        \"attribute\": \"0.1% w/v\",\n                        \"amount\":
+    0.5,\n                        \"unit\": \"ml\",\n                        \"g_l\":
+    0.00049505,\n                        \"mmol_l\": 0.00197097,\n                        \"optional\":
+    0\n                    }", "quote_representation": "raw JSON object"}, {"locator":
+    "extracted-text physical LF lines 12-12", "source_key": "dsm483", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256":
+    "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256":
+    "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at":
+    "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Sodium resazurin (0.1% w/v)                            0.50      ml",
+    "quote_representation": "captured extracted text"}]}, {"decision_id": "q42", "subject":
+    "Main preparation and atmosphere", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "preparation_steps[0].description", "original": "Dissolve ingredients
+    (except cysteine, carbonate, glucose and sulfide), then sparge medium with 80%
+    N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add cysteine and
+    adjust pH to 6.5, then dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. After sterilization add glucose and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Adjust pH of complete medium to pH 7.2 -7.4, if necessary."}, {"record_path":
+    "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "preparation_steps[0].description",
+    "original": "Dissolve ingredients (except cysteine, carbonate, glucose and sulfide),
+    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic. Add cysteine and adjust pH to 6.5, then dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    sterilization add glucose and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4,
+    if necessary."}, {"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "preparation_steps[0].action", "original": "AUTOCLAVE"}, {"record_path":
+    "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "preparation_steps[0].action",
+    "original": "AUTOCLAVE"}], "decision": "evidence_only", "stage": "Generic DSM483
+    main preparation", "interpretation": "Credit the complete retained DSM/target
+    prose: exclude cysteine/carbonate/glucose/sulfide initially;80% N2/20% CO2 sparging
+    for 30–45 min; cysteine and initial pH6.5; anoxic dispensing and autoclaving;
+    later glucose/sulfide stocks under 100% N2 and carbonate stock under 80% N2/20%
+    CO2. AUTOCLAVE is one real operation but does not encode all stages. No temperature,
+    duration, stock concentration or addition-volume convention beyond this text is
+    inferred. KOMODO has no preparation; do not blindly transfer across its unresolved
+    branch identity.", "sources": [{"locator": "$.data.solutions[0].steps[0]", "source_key":
+    "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add cysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization
+    add glucose and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary.\"\n                    }",
+    "quote_representation": "raw JSON object"}, {"locator": "extracted-text physical
+    LF lines 19-25", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Dissolve
+    ingredients (except cysteine, carbonate, glucose and sulfide), then sparge\nmedium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add\ncysteine
+    and adjust pH to 6.5, then dispense medium under same gas atmosphere into\nanoxic
+    Hungate-type tubes or serum vials and autoclave. After sterilization add glucose\nand
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate\nfrom
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.\nAdjust
+    pH of complete medium to pH 7.2 -7.4, if necessary.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q43", "subject": "Final main-medium
+    pH", "local_fields": [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "ph_range", "original": {"min": 7.2, "max": 7.4}}, {"record_path":
+    "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "ph_range",
+    "original": {"min": 7.2, "max": 7.4}}], "decision": "evidence_only", "stage":
+    "Generic DSM483 complete-medium pH", "interpretation": "Retain 7.2–7.4 in DSM/target.
+    InitialpH6.5 and stock pH7.0 are distinct stages. The KOMODO 7.0–7.2 range remains
+    a separate unresolved source condition.", "sources": [{"locator": "extracted-text
+    physical LF lines 25-25", "source_key": "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Adjust pH
+    of complete medium to pH 7.2 -7.4, if necessary.", "quote_representation": "captured
+    extracted text"}, {"locator": "$.data.solutions[0].steps[0]", "source_key": "api483",
+    "reference": "https://mediadive.dsmz.de/rest/medium/483", "source_raw_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "source_text_sha256":
+    "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6", "accessed_at":
+    "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"step\":
+    \"Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add cysteine and adjust pH to 6.5, then dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization
+    add glucose and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary.\"\n                    }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q44", "subject":
+    "KOMODO pH condition", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml",
+    "field_path": "ph_range", "original": {"min": 7.0, "max": 7.2}}], "decision":
+    "unsupported", "stage": "Distinct unresolved KOMODO metadata", "interpretation":
+    "The old KOMODO mapping excerpt records 7–7.2 and the current owner retains that
+    range. Current DSM483 instead specifies 7.2–7.4. Do not overwrite the KOMODO range
+    merely from the common accession; verify its exact formulation/version before
+    retaining SOURCE_DUPLICATE or regenerating a combined record.", "sources": [{"locator":
+    "extracted-text physical LF lines 25-25", "source_key": "dsm483", "reference":
+    "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf", "source_raw_sha256":
+    "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505", "source_text_sha256":
+    "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f", "accessed_at":
+    "2026-10-28T16:13:12.180364Z", "exact_source_quote": "Adjust pH of complete medium
+    to pH 7.2 -7.4, if necessary.", "quote_representation": "captured extracted text"}]},
+    {"decision_id": "q45", "subject": "Retained mineral-stock preparation", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml", "field_path":
+    "preparation_steps[1].description", "original": "First dissolve nitrilotriacetic
+    acid and adjust pH to 6.5 with KOH, then add minerals. Adjust final to pH 7.0
+    with KOH."}, {"record_path": "data/normalized_yaml/bacterial/defluviitalea_medium.yaml",
+    "field_path": "preparation_steps[1].description", "original": "First dissolve
+    nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust
+    final to pH 7.0 with KOH."}, {"record_path": "data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml",
+    "field_path": "preparation_steps[1].action", "original": "ADJUST_PH"}, {"record_path":
+    "data/normalized_yaml/bacterial/defluviitalea_medium.yaml", "field_path": "preparation_steps[1].action",
+    "original": "ADJUST_PH"}], "decision": "evidence_only", "stage": "Stock-only KOH
+    adjustment", "interpretation": "The retained text correctly directs NTA dissolution
+    and initial pH6.5 with KOH, then minerals and final stock pH7.0 with KOH. Relocate
+    this to the mineral stock. KOH dose/strength are unspecified; do not turn these
+    stock pH values into the main medium pH. The broad ADJUST_PH action identifies
+    real operations but does not capture the entire sequence.", "sources": [{"locator":
+    "$.data.solutions[1].steps[0]", "source_key": "api483", "reference": "https://mediadive.dsmz.de/rest/medium/483",
+    "source_raw_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "source_text_sha256": "3ed26aa8536ca629027f502bfb7f8006e8c9536049b083ef2b97ca4db6a698d6",
+    "accessed_at": "2026-10-28T16:13:12.180409Z", "exact_source_quote": "{\n                        \"step\":
+    \"First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add
+    minerals. Adjust final to pH 7.0 with KOH.\"\n                    }", "quote_representation":
+    "raw JSON object"}, {"locator": "extracted-text physical LF lines 53-54", "source_key":
+    "dsm483", "reference": "https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium483.pdf",
+    "source_raw_sha256": "ef1ebf15368b31aa044fe712b67ea3cceb8544ac279bffbd5bc495e7635fb505",
+    "source_text_sha256": "e073cbdf19d1266cf6a176db15262692b3b7105870773349542c9d3a809dae9f",
+    "accessed_at": "2026-10-28T16:13:12.180364Z", "exact_source_quote": "First dissolve
+    nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Adjust\nfinal
+    to pH 7.0 with KOH.", "quote_representation": "captured extracted text"}]}], "local_field_census_reference":
+    "REVIEW_WORK/batch072/record06/grounding-inventory.json", "source_only_gaps_are_explicit":
+    true, "note": "Batch amounts, provider normalization, stock composition, working
+    dose and preparation controls are separate. No source edits or automatic curation
+    performed."}'
+- assessment_id: a5
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/DEFLUVIITALEA_MEDIUM.yaml: primary 25/26, secondary
+    24/26; data/normalized_yaml/bacterial/defluviitalea_medium.yaml: primary 25/26,
+    secondary 24/26; data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml:
+    primary 25/26, secondary 24/26. These are ingredient-instance linkage fractions,
+    not accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    0 numeric legacy MediaIngredientMech mentions occur across the complete selected
+    documents, with exact locators in the inventory; NNNNNN is a historical placeholder,
+    not an ID. Complex commercial/product components are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:001612
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:001612
+  evidence_ids:
+  - local0
+- assessment_id: a7
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:001612
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-001612-stock-flattening-and-mixed-duplicate-sums
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Mineral stock is flattened and two concentrations mix incompatible stages
+  description: All three layers flatten thirteen mineral-stock components into main
+    ingredients and add full stock NaCl/CaCl2 rates to their main-medium rates. The
+    source instead specifies a separate Modified Wolin stock and 10 ml receiving addition.
+    Eleven other main rates match current provider-normalized values in the DSM branch;
+    preserve that limited support rather than treating every amount as wrong.
+  target_ids:
+  - CultureMech:001612
+  field_paths:
+  - ingredients
+  - solutions
+  - evidence
+  evidence_ids:
+  - dsm483
+  - api483
+  rule_id: review-yaml-record/stock-stage-and-denominator
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-001612-source-branch-and-preparation-scope
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The merged source branches have unresolved pH and preparation differences
+  description: 'The historical SOURCE_DUPLICATE relationship is based on ingredient
+    signatures despite DSM pH7.2–7.4 versus KOMODO pH7.0–7.2, missing KOMODO preparation
+    and its Aerobic: Yes note. The DSM/target already retain main anoxic preparation
+    and stock-only KOH steps; those correct statements must be credited and scoped,
+    not replaced wholesale. Current KOMODO access is 403, so a source-specific condition
+    cannot be silently overwritten.'
+  target_ids:
+  - CultureMech:001612
+  field_paths:
+  - data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml::parent_media
+  - variant_children
+  - data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml::ph_range
+  - data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml::notes
+  - data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml::preparation_steps
+  - preparation_steps
+  evidence_ids:
+  - dsm483
+  - api483
+  - komodo483
+  - scoped-plan
+  rule_id: review-yaml-record/source-variant-and-preparation-scope
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-001612-nickel-hydrate-and-sodium-resazurin-form
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Nickel hydrate and sodium resazurin are linked to different supplied forms
+  description: Every selected layer names nickel chloride hexahydrate but asserts
+    anhydrous nickel dichloride CHEBI:34887 in both primary and secondary slots. Sodium
+    resazurin is linked through its primary slot to neutral Resazurin CHEBI:8806;
+    there is no asserted resazurin secondary slot to correct. Exact labels pass native
+    checks, but OLS formulas Cl2Ni and C12H7NO4 do not encode the supplied forms.
+    Current MIM matches describe those asserted IDs, not hydrate or sodium-salt equivalence.
+  target_ids:
+  - CultureMech:001612
+  field_paths:
+  - ingredients[23].term
+  - ingredients[23].mediaingredientmech_chebi_term
+  - ingredients[8].term
+  evidence_ids:
+  - dsm483
+  - chebi34887
+  - chebi8806
+  - grounding
+  rule_id: review-yaml-record/exact-supplied-form
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-001612-claim-evidence-and-history
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Current formulation support is unattached and historical context is incomplete
+  description: No selected layer attaches concentration source excerpts. Current API483
+    bytes exactly match the digest cited by both October curation reports and authenticate
+    their quoted objects, but not old retrieval/execution or the distinct KOMODO catalogue.
+    KOMODO import timestamp retains literal .fZ and the resolver event lacks an offset.
+    The namesake TOGO report concerns another source branch.
+  target_ids:
+  - CultureMech:001612
+  field_paths:
+  - evidence
+  - references
+  - curation_history
+  - data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml::curation_history
+  evidence_ids:
+  - history-auth
+  - scoped-plan
+  - dsm483
+  - api483
+  rule_id: review-yaml-record/claim-traceability-and-history
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Restore separate main and stock batch amounts/solvents and the 10 ml
+    stock addition. Remove the mixed-stage sums while retaining supported provider
+    rates with explicit normalization provenance. Do not assume that API1010ml or
+    listed water establishes physical final volume.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:001612
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Resolve exact source/version identity before preserving a duplicate
+    relationship or merging branches. Keep supported DSM main pH/preparation, move
+    KOH stock instructions to the mineral stock and represent the compound stages
+    faithfully. Preserve the KOMODO condition as unresolved until verified, rather
+    than transferring all DSM assertions automatically.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:001612
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Resolve the exact source hydrate and sodium-salt identities against
+    authoritative ontology and MIM records. Use verified supplied-form mappings or
+    retain precise source labels with unresolved mapping; preserve source masses and
+    do not substitute anhydrous molar arithmetic.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:001612
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Attach exact claim-scoped evidence to newly curated and retained fields.
+    Preserve original events and append verified context at the actual current date;
+    fix future writer formatting without reconstructing historical time. Keep API
+    authentication separate from KOMODO source identity and excluded namesake history.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:001612
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/defluviitalea_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/thermosipho_africanus_medium.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/import/komodo_web_importer.py
+    role: Future UTC timestamp formatting only; preserve original imported events
+  - repository: CultureBotAI/CultureMech
+    path: src/culturemech/enrich/dsmz_resolver.py
+    role: Future timezone-aware timestamp serialization only; preserve original resolver
+      events
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+  - Verify future KOMODO importer and DSMZ resolver events serialize actual timezone-aware
+    UTC timestamps without literal formatting tokens; confirm every original recipe
+    history event remains byte-preserved and any correction is append-only.
+limitations:
+- The exact historical KOMODO MediaInfo=483 route returned 403. The current DSM483
+  recipe cannot authenticate that separate current page or resolve all older branch
+  conditions.
+- API main volume 1010 ml and stock volume 1000 ml are provider metadata, not independently
+  measured final volumes. Primary water inputs and unspecified post-sterilization
+  stocks remain separate.
+- No experimental growth publication was assessed. Thermosipho collection/taxonomic
+  identity context does not establish the medium’s exact source version or a new growth
+  assertion.
+- The TOGO M2001/NBRC1288 namesake historical report is comparison-only, not a selected
+  maintained contributor. No unrelated parent-plan records were scientifically assessed.
+- Current source-digest equality authenticates API bytes and exact report quotations,
+  not historical retrieval times or execution. Generic yeast extract remains an ungrounded
+  complex component; it is not assigned a pure-compound ID.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```
