@@ -1,0 +1,2388 @@
+# Scientific review of chopped_meat_carbohydrates_with_rumen_fluid
+
+- Review: 20261028T150517Z-chopped-meat-carbohydrates-with-rumen-fluid-batch070
+- Repository: CultureBotAI/CultureMech
+- Started UTC: 2026-10-28T14:31:01.977957Z
+- Finished UTC: 2026-10-28T15:05:17.676214Z
+- Reviewer: Codex independent record reviewer (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+ATCC 1703 identity is confirmed, but both selected layers flatten extraction and stock stages, misrepresent liquid inputs and leave percent bases unresolved. The two linked stocks differ from the printed preparations and have separate internal quantity defects. Optional solid-branch validity and two authenticated standalone declared-rate claims are explicitly retained.
+
+## Scope And Provenance
+
+Full selected target and maintained owners, every quantity and unchanged claim; separately scoped source dependencies and current writers.
+
+Selection: Authoritative batch070 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3. Fresh review, not reconstruction of lost historical bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ea7ff33d354e37b791df96a880005153e446ce3.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CultureMech:009143 | data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml | generated | chopped_meat_carbohydrates_with_rumen_fluid |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| validate-schema | passed | True | CultureMech:009143 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-strict | passed | True | CultureMech:009143 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-terms | passed | True | CultureMech:009143 | Exit 0; original full stdout/stderr read. Structural check only. |
+| validate-references | passed | True | CultureMech:009143 | Exit 0; original full stdout/stderr read. Zero reference checks. |
+
+## Scientific And Domain Assessments
+
+### Exact ATCC 1703 and stock identity
+
+identity: concern. Targets: CultureMech:009143.
+
+Fresh current ATCC 1703 and its preserved legacy URL return the same PDF, including the basal 1490 and two embedded stocks. TOGO M2574 matches that source identity. However linked 2227 uses 0.1 ml K1/20 ml ethanol and linked 5229 uses KOH/ethanol/hemin with contradictory volume metadata; neither is the printed ATCC stock. No named strain or experimental growth claim is supplied.
+
+### Complex composition and optional agar
+
+consistency: supported. Targets: CultureMech:009143.
+
+Complex meat, rumen, yeast and peptone support COMPLEX/UNDEFINED. SOLID_AGAR is valid for the optional-agar branch; generic recipe scope should preserve the liquid alternative rather than treating the solid classification itself as erroneous.
+
+### Historical assertions and current writers
+
+provenance: concern. Targets: CultureMech:009143.
+
+The full September narrative and both October zero-source-check reports were reassessed; September identifies useful stages but does not establish percent bases or final-volume arithmetic. Current source and exact dependency claims govern the decisions; preserved historical timestamps are not reconstructed. Current conservative merging preserves scientific fields and rejects incompatible formulations. Inspected writer behavior is described separately by exact file and function; it does not prove historical execution. Four additional exact dependency reports were fully read: both October 5 source-unchecked stock reports and both October 7 stock curation reports. The latter retained unresolved K1/liquid quantities and attached two hemin-stock declared-rate claims; current raw bytes authenticate their quoted content, not the original retrieval event or equivalence to ATCC1703.
+
+### Every concentration and source-only amount/stage
+
+quantity: concern. Targets: CultureMech:009143.
+
+All 46 selected target/owner concentration fields have explicit decisions; source-only stock, liquid, control and denominator gaps are retained separately.
+
+{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:009143", "selected_concentration_field_count": 46, "selected_concentration_fields_covered": 46, "decisions": [{"decision_id": "q1", "subject": "Starch", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.1", "unit": "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "0.1", "unit": "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation of ATCC1490", "interpretation": "The source specifies .1% but does not declare mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated by a bare percent sign. Preserve the numeral and filtered-rumen qualification where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator": "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium 1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[0]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Starch\",\n          \"volume\": 0.1,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001054\",\n          \"gmo_id\": \"GMO_001054\",\n          \"label\": \"Starch\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q2", "subject": "Cellobiose", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.1", "unit": "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[1].concentration", "original": {"value": "0.1", "unit": "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation of ATCC1490", "interpretation": "The source specifies .1% but does not declare mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated by a bare percent sign. Preserve the numeral and filtered-rumen qualification where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator": "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium 1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[1]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Cellobiose\",\n          \"volume\": 0.1,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001137\",\n          \"gmo_id\": \"GMO_001137\",\n          \"label\": \"Cellobiose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q3", "subject": "Maltose", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.1", "unit": "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[2].concentration", "original": {"value": "0.1", "unit": "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation of ATCC1490", "interpretation": "The source specifies .1% but does not declare mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated by a bare percent sign. Preserve the numeral and filtered-rumen qualification where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator": "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium 1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[2]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Maltose\",\n          \"volume\": 0.1,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001195\",\n          \"gmo_id\": \"GMO_001195\",\n          \"label\": \"Maltose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q4", "subject": "Rumen fluid", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit": "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit": "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation of ATCC1490", "interpretation": "The source specifies 15% but does not declare mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated by a bare percent sign. Preserve the numeral and filtered-rumen qualification where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator": "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium 1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[3]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Rumen fluid\",\n          \"volume\": 15,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001727\",\n          \"gmo_id\": \"GMO_001727\",\n          \"label\": \"Rumen fluid\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q5", "subject": "Glucose", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.4", "unit": "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[4].concentration", "original": {"value": "0.4", "unit": "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation of ATCC1490", "interpretation": "The source specifies .4% but does not declare mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated by a bare percent sign. Preserve the numeral and filtered-rumen qualification where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator": "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium 1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[4]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Glucose\",\n          \"volume\": 0.4,\n          \"unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\": \"Glucose\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q6", "subject": "ATCC1490 basal medium", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "1", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[5].concentration", "original": {"value": "1", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Receiving basal preparation", "interpretation": "TOGO lists 1 L of ATCC1490, not 1 g/L of a chemical ingredient. The primary explicitly describes the basal extraction and later supplementation. Preserve a source-specific preparation/reference relationship without double-counting the basal medium and its components.", "sources": [{"locator": "extracted-text lines 4-15", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium 1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch and 15% filtered rumen fluid.\n\nATCC Medium 1490:\nGround beef (fat-free)...........500.0 g\nDistilled water....................1.0 L\nN NaOH............................25.0 ml\n\nMix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature, skim fat from surface, and filter, retaining both meat\nparticles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation": "captured extracted text"}, {"locator": "$.components[0].items[5]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"ATCC Medium 1490\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"reference_media_id\": \"M2574\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q7", "subject": "Water across basal extraction and hemin stock", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "101.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[6].concentration", "original": {"value": "101.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Distinct solvent and make-up stages", "interpretation": "The local 101 G_PER_L sums the numerals 1 L and 100 ml from different stages. The basal extraction uses 1 L water and restores filtrate to 1 L; the separate hemin stock is made up to 100 ml. Neither the sum nor a final-medium g/L conversion is valid.", "sources": [{"locator": "extracted-text lines 8-15", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Ground beef (fat-free)...........500.0 g\nDistilled water....................1.0 L\nN NaOH............................25.0 ml\n\nMix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature, skim fat from surface, and filter, retaining both meat\nparticles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 40-45", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Hemin solution:\nHemin.............................50.0 mg\nN NaOH.............................1.0 ml\nDistilled water to...............100.0 ml\n\nAutoclave at 121C for 15 minutes.", "quote_representation": "captured extracted text"}, {"locator": "$.components[1].items[0]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[5].items[0]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Distilled water\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\": \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q8", "subject": "N NaOH in basal extraction and hemin stock", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "26.0", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[7].concentration", "original": {"value": "26.0", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Separate normal solution additions", "interpretation": "The 26 G_PER_L combines 25 ml N NaOH in the basal extraction and 1 ml N NaOH in the separate hemin stock. Retain the solution strength designation and separate volume additions; do not collapse them into a solute mass concentration.", "sources": [{"locator": "extracted-text lines 8-15", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Ground beef (fat-free)...........500.0 g\nDistilled water....................1.0 L\nN NaOH............................25.0 ml\n\nMix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature, skim fat from surface, and filter, retaining both meat\nparticles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 40-45", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Hemin solution:\nHemin.............................50.0 mg\nN NaOH.............................1.0 ml\nDistilled water to...............100.0 ml\n\nAutoclave at 121C for 15 minutes.", "quote_representation": "captured extracted text"}, {"locator": "$.components[1].items[1]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"N NaOH\",\n          \"volume\": 25,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\": \"GMO_001300\",\n          \"label\": \"Sodium hydroxide solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}, {"locator": "$.components[5].items[2]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"N NaOH\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\": \"GMO_001300\",\n          \"label\": \"Sodium hydroxide solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q9", "subject": "Ground beef", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "500", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[8].concentration", "original": {"value": "500", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Extraction input and retained meat fraction", "interpretation": "500 g fat-free beef is an extraction input, followed by filtration, retention of both phases and one part meat to five parts fluid at dispensing. It is not 500 g/L of retained final-medium solute. The source does not provide the mass fraction transferred per tube.", "sources": [{"locator": "extracted-text lines 8-15", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Ground beef (fat-free)...........500.0 g\nDistilled water....................1.0 L\nN NaOH............................25.0 ml\n\nMix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature, skim fat from surface, and filter, retaining both meat\nparticles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation": "captured extracted text"}, {"locator": "extracted-text lines 29-31", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Adjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation": "captured extracted text"}, {"locator": "$.components[1].items[2]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Ground beef (fat-free)\",\n          \"volume\": 500,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001388\",\n          \"gmo_id\": \"GMO_001388\",\n          \"label\": \"Ground beef (fat free)\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q10", "subject": "Resazurin stock addition", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "4", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[9].concentration", "original": {"value": "4", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Addition to restored filtrate", "interpretation": "The source is 4 ml of a 0.025% resazurin preparation, not 4 g/L resazurin. The percent basis is not stated, so retain dose and stock strength separately without deriving a final dye mass.", "sources": [{"locator": "extracted-text lines 17-22", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "To this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025% Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[0]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"0.025% Resazurin\",\n          \"volume\": 4,\n          \"unit\": \"ml\",\n          \"conc_value\": 0.025,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001403\",\n          \"gmo_id\": \"GMO_001403\",\n          \"label\": \"Resazurin solution\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent redox indicator\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q11", "subject": "Yeast extract", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[10].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Addition to restored basal filtrate", "interpretation": "The source mass numeral agrees, but it is an addition to the previously restored filtrate, followed by other additions and meat/fluid dispensing. It is not a demonstrated final-medium G_PER_L value. Preserve the exact product designation BD211921 where applicable.", "sources": [{"locator": "extracted-text lines 14-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "particles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.\n\nTo this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025% Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g\n\nBoil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[1]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Yeast extract\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\": \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\": \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q12", "subject": "K2HPO4", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[11].concentration", "original": {"value": "5", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Addition to restored basal filtrate", "interpretation": "The source mass numeral agrees, but it is an addition to the previously restored filtrate, followed by other additions and meat/fluid dispensing. It is not a demonstrated final-medium G_PER_L value. Preserve the exact product designation BD211921 where applicable.", "sources": [{"locator": "extracted-text lines 14-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "particles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.\n\nTo this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025% Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g\n\nBoil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[2]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"K2HPO4\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\": \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\": \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q13", "subject": "Agar", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "20", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[12].concentration", "original": {"value": "20", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Addition to restored basal filtrate", "interpretation": "The source mass numeral agrees, but it is an addition to the previously restored filtrate, followed by other additions and meat/fluid dispensing. It is not a demonstrated final-medium G_PER_L value. Agar is explicitly optional; SOLID_AGAR is valid for the selected agar branch, while the generic recipe also permits a liquid branch.", "sources": [{"locator": "extracted-text lines 14-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "particles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.\n\nTo this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025% Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g\n\nBoil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[3]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Agar\",\n          \"volume\": 20,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\": \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\": \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q14", "subject": "Trypticase Peptone (BD 211921)", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "30", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[13].concentration", "original": {"value": "30", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Addition to restored basal filtrate", "interpretation": "The source mass numeral agrees, but it is an addition to the previously restored filtrate, followed by other additions and meat/fluid dispensing. It is not a demonstrated final-medium G_PER_L value. Preserve the exact product designation BD211921 where applicable.", "sources": [{"locator": "extracted-text lines 14-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "particles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.\n\nTo this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025% Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g\n\nBoil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[4]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Trypticase Peptone (BD 211921)\",\n          \"volume\": 30,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001097\",\n          \"gmo_id\": \"GMO_001097\",\n          \"label\": \"BBL &amp;trade; Trypticase peptone\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q15", "subject": "Carbon dioxide gas", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[14].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "evidence_only", "stage": "Gas phase for boiling/cooling and dispensing", "interpretation": "The source identifies this gas without a dissolved amount, so the existing VARIABLE placeholder is compatible with the unquantified ingredient. The separately stated gas phase is 80% N2, 10% H2 and 10% CO2; these proportions belong to atmosphere/preparation context, not dissolved g/L. The missing atmosphere context is assessed separately in q33 and finding f3.", "sources": [{"locator": "extracted-text lines 24-31", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml\n\nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[5]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\",\n          \"gmo_id\": \"GMO_002260\",\n          \"label\": \"Carbon dioxide gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q16", "subject": "Nitrogen gas", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[15].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "evidence_only", "stage": "Gas phase for boiling/cooling and dispensing", "interpretation": "The source identifies this gas without a dissolved amount, so the existing VARIABLE placeholder is compatible with the unquantified ingredient. The separately stated gas phase is 80% N2, 10% H2 and 10% CO2; these proportions belong to atmosphere/preparation context, not dissolved g/L. The missing atmosphere context is assessed separately in q33 and finding f3.", "sources": [{"locator": "extracted-text lines 24-31", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml\n\nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[6]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\": \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q17", "subject": "Hydrogen gas", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[16].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "evidence_only", "stage": "Gas phase for boiling/cooling and dispensing", "interpretation": "The source identifies this gas without a dissolved amount, so the existing VARIABLE placeholder is compatible with the unquantified ingredient. The separately stated gas phase is 80% N2, 10% H2 and 10% CO2; these proportions belong to atmosphere/preparation context, not dissolved g/L. The missing atmosphere context is assessed separately in q33 and finding f3.", "sources": [{"locator": "extracted-text lines 24-31", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml\n\nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[7]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Hydrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002263\",\n          \"gmo_id\": \"GMO_002263\",\n          \"label\": \"Hydrogen gas\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q18", "subject": "L-cysteine hydrochloride", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[17].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}}], "decision": "unsupported", "stage": "Addition after cooling under gas", "interpretation": "The source specifies 0.5 g L-cysteine HCl at this stage. The mass numeral is correct but final G_PER_L is unresolved. Preserve the hydrochloride designation without inferring an unprinted hydrate or substituting free cysteine.", "sources": [{"locator": "extracted-text lines 24-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[3].items[0]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"L-Cysteine . HCl\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001828\",\n          \"gmo_id\": \"GMO_001828\",\n          \"label\": \"L-Cysteine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q19", "subject": "95% ethanol", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "30", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[18].concentration", "original": {"value": "30", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Separate ATCC vitamin K1 stock", "interpretation": "30 ml of 95% ethanol belongs to the K1 stock, not 30 g/L in the final medium. Neither density nor the basis of the stated ethanol percentage is independently specified.", "sources": [{"locator": "extracted-text lines 33-38", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Vitamin K1 Solution:\nVitamin K1.........................0.15 ml\n95% Ethanol.......................30.0 ml\n\nStore solution in brown bottle under refrigeration. Discard after one\nmonth.", "quote_representation": "captured extracted text"}, {"locator": "$.components[4].items[0]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"95% Ethanol\",\n          \"volume\": 30,\n          \"unit\": \"ml\",\n          \"conc_value\": 95,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001114\",\n          \"gmo_id\": \"GMO_001114\",\n          \"label\": \"Ethanol\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating media\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q20", "subject": "Vitamin K1", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.15", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[19].concentration", "original": {"value": "0.15", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Separate ATCC vitamin K1 stock", "interpretation": "0.15 ml K1 is a liquid input to the separate stock with 30 ml 95% ethanol. It is not 0.15 g/L in the medium. Do not infer a K1 density or a measured stock final volume.", "sources": [{"locator": "extracted-text lines 33-38", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Vitamin K1 Solution:\nVitamin K1.........................0.15 ml\n95% Ethanol.......................30.0 ml\n\nStore solution in brown bottle under refrigeration. Discard after one\nmonth.", "quote_representation": "captured extracted text"}, {"locator": "$.components[4].items[1]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Vitamin K1\",\n          \"volume\": 0.15,\n          \"unit\": \"ml\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001829\",\n          \"gmo_id\": \"GMO_001829\",\n          \"label\": \"Vitamin K1\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\": \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q21", "subject": "Hemin", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "50", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "ingredients[20].concentration", "original": {"value": "50", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "Separate ATCC hemin stock", "interpretation": "50 mg hemin is dissolved with 1 ml N NaOH and made up to 100 ml. The explicit final stock volume supports 0.050 g/0.100 L = 0.5 g/L in that stock only. The local 50 G_PER_L in the medium conflates unit and stage. No final-medium hemin concentration is inferred.", "sources": [{"locator": "extracted-text lines 40-45", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Hemin solution:\nHemin.............................50.0 mg\nN NaOH.............................1.0 ml\nDistilled water to...............100.0 ml\n\nAutoclave at 121C for 15 minutes.", "quote_representation": "captured extracted text"}, {"locator": "$.components[5].items[1]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Hemin\",\n          \"volume\": 50,\n          \"unit\": \"mg\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001312\",\n          \"gmo_id\": \"GMO_001312\",\n          \"label\": \"Hemin\",\n          \"properties\": [\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\": \"GMO_000067\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000067\",\n              \"label\": \"Growth factor\"\n            }\n          ]\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q22", "subject": "Receiving stock 1", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "solutions[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "solutions[0].concentration", "original": {"value": "10", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "ATCC1490 receiving addition", "interpretation": "10 ml is a stock volume addition, not the same numeral G_PER_L. The referenced standalone stock has a different recipe, as separately assessed below; the receiving dose does not authenticate that link.", "sources": [{"locator": "extracted-text lines 24-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[3].items[1]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Hemin Solution\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2574\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q23", "subject": "Receiving stock 2", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "solutions[1].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path": "solutions[1].concentration", "original": {"value": "0.2", "unit": "G_PER_L"}}], "decision": "conflict", "stage": "ATCC1490 receiving addition", "interpretation": "0.2 ml is a stock volume addition, not the same numeral G_PER_L. The referenced standalone stock has a different recipe, as separately assessed below; the receiving dose does not authenticate that link.", "sources": [{"locator": "extracted-text lines 24-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[3].items[2]", "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\": \"Vitamin K1 Solution\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\",\n          \"reference_media_id\": \"M2574\",\n          \"properties\": [],\n          \"roles\": []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q24", "subject": "2227 K1 percentage", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml", "field_path": "composition[0].concentration", "original": {"value": "5.0", "unit": "PERCENT_V_V"}}], "decision": "conflict", "stage": "Standalone2227, excluded from ATCC1703 equivalence", "interpretation": "The source specifies 0.1 ml K1 with 20 ml 95% ethanol and metadata volume 20 ml. Even the declared-volume ratio is 0.1/20*100 = 0.5%, not stored5%. A measured final stock volume and percent basis remain unresolved; preserve explicit liquid inputs rather than asserting a replacement physical percent.", "sources": [{"locator": "$.data.recipe[0]", "source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "accessed_at": "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]", "source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "accessed_at": "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated in a brown bottle.\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q25", "subject": "2227 ethanol", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml", "field_path": "composition[1].concentration", "original": {"value": "19", "unit": "G_PER_L"}}], "decision": "evidence_only", "stage": "Standalone provider-declared basis", "interpretation": "Current provider explicitly reports g_l19, so the stored19 is supported only as its declared normalization. The physical input is20 ml of95% ethanol; no density or actual ethanol mass is authenticated. No transfer to the distinct ATCC K1 stock.", "sources": [{"locator": "$.data.recipe[1]", "source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "accessed_at": "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\": \"ml\",\n                \"g_l\": 19,\n                \"mmol_l\": 412.416,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]", "source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "accessed_at": "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated in a brown bottle.\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q26", "subject": "5229 KOH", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml", "field_path": "composition[0].concentration", "original": {"value": "11.2", "unit": "G_PER_L"}}], "decision": "verified", "stage": "Standalone provider-declared25 ml normalization", "interpretation": "Existing attached raw digest and literal object authenticate the declared g_l value on metadata volume25 ml. The separate make-up-to100 ml instruction conflicts with that normalization; neither value is transferred to ATCC1703 or treated as an independently measured final concentration.", "sources": [{"locator": "$.data.recipe[0]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"KOH\",\n                \"compound_id\": 126,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.28,\n                \"unit\": \"g\",\n                \"g_l\": 11.2,\n                \"mmol_l\": 199.622,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q27", "subject": "5229 Hemin", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml", "field_path": "composition[2].concentration", "original": {"value": "4", "unit": "G_PER_L"}}], "decision": "verified", "stage": "Standalone provider-declared25 ml normalization", "interpretation": "Existing attached raw digest and literal object authenticate the declared g_l value on metadata volume25 ml. The separate make-up-to100 ml instruction conflicts with that normalization; neither value is transferred to ATCC1703 or treated as an independently measured final concentration.", "sources": [{"locator": "$.data.recipe[2]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Hemin\",\n                \"compound_id\": 704,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 6.13591,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q28", "subject": "5229 ethanol percent", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml", "field_path": "composition[1].concentration", "original": {"value": "1000.0", "unit": "PERCENT_V_V"}}], "decision": "conflict", "stage": "Standalone5229", "interpretation": "Source25 ml ethanol followed by make-up-to100 ml does not support1000% v/v. The explicit final-stock volume would support a nominal25% volume ratio, separately from solvent purity and nonideal mixing; preserve the original volume input and final-stock instruction.", "sources": [{"locator": "$.data.recipe[1]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": 2,\n                \"compound\": \"Ethanol\",\n                \"compound_id\": 201,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 25,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q29", "subject": "2227 placeholder", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "conflict", "stage": "Standalone structural placeholder", "interpretation": "The placeholder VARIABLE row and incomplete_composition flag coexist with populated composition. Do not treat the placeholder as an additional ingredient or duplicate the populated table. Reconcile the structural flag after the real source defects are resolved.", "sources": [{"locator": "$.data.recipe[0]", "source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "accessed_at": "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\": 150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q30", "subject": "5229 placeholder", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml", "field_path": "ingredients[0].concentration", "original": {"value": "variable", "unit": "VARIABLE"}}], "decision": "conflict", "stage": "Standalone structural placeholder", "interpretation": "The placeholder VARIABLE row and incomplete_composition flag coexist with populated composition. Do not treat the placeholder as an additional ingredient or duplicate the populated table. Reconcile the structural flag after the real source defects are resolved.", "sources": [{"locator": "$.data.recipe[0]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"KOH\",\n                \"compound_id\": 126,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.28,\n                \"unit\": \"g\",\n                \"g_l\": 11.2,\n                \"mmol_l\": 199.622,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q31", "subject": "5229 competing volume definitions", "local_fields": [], "decision": "conflict", "stage": "Standalone source inconsistency", "interpretation": "Metadata25 ml and explicit make-up-to100 ml are distinct source claims. The retained declared KOH11.2 and hemin4 g/L use25 ml; the explicit prepared-stock arithmetic would be0.28/0.1=2.8 and0.1/0.1=1 g/L. Keep this conflict visible and do not silently rewrite authenticated provider declarations.", "sources": [{"locator": "$.data.steps[0]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.recipe[0]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": 1,\n                \"compound\": \"KOH\",\n                \"compound_id\": 126,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.28,\n                \"unit\": \"g\",\n                \"g_l\": 11.2,\n                \"mmol_l\": 199.622,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.recipe[2]", "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\": 3,\n                \"compound\": \"Hemin\",\n                \"compound_id\": 704,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\": null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\": \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 6.13591,\n                \"optional\": 0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id": "q32", "subject": "Basal extraction", "local_fields": [], "decision": "add", "stage": "Source-only preparation controls", "interpretation": "Boil with stirring, cool, skim fat and filter while retaining both phases; restore the filtrate volume to 1 L only at this stage.", "sources": [{"locator": "extracted-text lines 12-15", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Mix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature, skim fat from surface, and filter, retaining both meat\nparticles and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q33", "subject": "Gas and dispensing", "local_fields": [], "decision": "add", "stage": "Source-only preparation controls", "interpretation": "Gas proportions 80/10/10, final pH 7.0,7 ml dispensing and 1:5 meat/fluid ratio are omitted. This is stage-specific context, not a mass concentration.", "sources": [{"locator": "extracted-text lines 24-31", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5 g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2 ml\n\nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q34", "subject": "K1 storage", "local_fields": [], "decision": "add", "stage": "Source-only preparation controls", "interpretation": "Brown bottle, refrigeration and discard after one month apply only to the K1 stock.", "sources": [{"locator": "extracted-text lines 37-38", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Store solution in brown bottle under refrigeration. Discard after one\nmonth.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q35", "subject": "Hemin sterilization", "local_fields": [], "decision": "add", "stage": "Source-only preparation controls", "interpretation": "121 C for 15 minutes is the hemin-stock instruction, not evidence for sterilizing the complete medium by the same procedure.", "sources": [{"locator": "extracted-text lines 40-45", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133", "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2", "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81", "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Hemin solution:\nHemin.............................50.0 mg\nN NaOH.............................1.0 ml\nDistilled water to...............100.0 ml\n\nAutoclave at 121C for 15 minutes.", "quote_representation": "captured extracted text"}]}, {"decision_id": "q36", "subject": "2227 retained preparation notes", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml", "field_path": "preparation_notes", "original": "Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated in a brown bottle.\n\nOriginal volume: 20 mL"}], "decision": "evidence_only", "stage": "Standalone provider stock metadata and retained preparation text", "interpretation": "The retained Original volume:20mL note matches current provider volume metadata. It is not an independently measured final stock volume and does not authenticate the conflicting5% composition or ATCC1703 stock equivalence.", "sources": [{"source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "accessed_at": "2026-10-28T14:32:09.238359Z", "locator": "raw JSON data.volume field", "exact_source_quote": "\"volume\": 20", "quote_representation": "raw JSON field excerpt"}]}, {"decision_id": "q37", "subject": "5229 retained preparation notes", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml", "field_path": "preparation_notes", "original": "Adjust volume to 100 ml with distilled water.\n\nOriginal volume: 25 mL"}], "decision": "evidence_only", "stage": "Standalone provider stock metadata and retained preparation text", "interpretation": "The retained make-up-to100ml instruction and Original volume:25mL metadata both reproduce the current provider, including their unresolved conflict. Preserve that conflict explicitly; the two existing declared-rate claims remain credited only on their stated25ml provider basis. Neither note establishes ATCC1703 stock equivalence.", "sources": [{"source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "locator": "raw JSON data.volume field", "exact_source_quote": "\"volume\": 25", "quote_representation": "raw JSON field excerpt"}, {"source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at": "2026-10-28T14:32:09.238088Z", "locator": "$.data.steps[0]", "exact_source_quote": "{\n                \"recipe_order\": null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }", "quote_representation": "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch070/record04/grounding-inventory.json", "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization, stock composition, working dose and preparation controls are separate. No source edits or automatic curation performed."}
+
+### Primary, secondary and legacy linkage census
+
+grounding: concern. Targets: CultureMech:009143.
+
+data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml: primary 12/21, secondary 9/21; data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml: primary 12/21, secondary 9/21. These are ingredient-instance linkage fractions, not accuracy scores. Solution terms are audited separately. Every actually asserted CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows. 0 numeric legacy MediaIngredientMech mentions occur across the complete selected documents, with exact locators in the inventory; NNNNNN is a historical placeholder, not an ID. Complex commercial/product components are not forced to pure-compound IDs.
+
+### Scope and source limits
+
+scope: supported. Targets: CultureMech:009143.
+
+Complete selected target and exact maintained owners reviewed. Dependencies transfer only their explicitly named stock subsection; unrelated parent media and source prescriptions are not growth evidence.
+
+### Native structural checks
+
+schema: supported. Targets: CultureMech:009143.
+
+All four canonical commands passed once; strict schema TSV contains only its header and reference validation checked zero references on the generated target. This does not certify quantities or chemical forms.
+
+## Findings
+
+### f1: Separate batches and liquid additions are flattened into final concentrations
+
+major / open / confirmed; issue key: culturemech-009143-stage-and-unit-flattening.
+
+Both layers mix basal extraction, restored filtrate, stock preparations and receiving doses. Water 101 and N NaOH 26 sum numerals from unlike units/stages; hemin 50 mg and K1 0.15 ml become final G_PER_L; the five bare source percentages are assigned an unverified w/v basis. Every retained amount is explicitly accounted for in the inventory.
+
+### f2: Both linked standalone stocks differ from the printed ATCC stocks
+
+major / open / confirmed; issue key: culturemech-009143-non-equivalent-stock-links.
+
+Hemin 5229 contains KOH and ethanol rather than the ATCC NaOH/water formulation. Vitamin K1 stock 2227 has a different source recipe and no verified equivalence to the ATCC stock. Shared names do not establish interchangeable receiving references.
+
+### f3: Source preparation and stage-scoped evidence are missing
+
+major / open / confirmed; issue key: culturemech-009143-missing-preparation-and-claim-evidence.
+
+The selected layers omit the extraction/filtration sequence, atmosphere, pH, dispensing ratio, stock storage and hemin-only sterilization. URL notes and derivative reports do not preserve these controls as scoped claims.
+
+### f4: Standalone stock percentages and volume semantics need separate correction
+
+major / open / confirmed; issue key: culturemech-009143-standalone-stock-inconsistencies.
+
+2227 stores 5% K1 despite 0.1 ml in a nominal 20 ml recipe. 5229 stores 1000% ethanol and has metadata 25 ml versus an explicit 100 ml make-up instruction. Its two attached declared-rate claims are authenticated and remain credited within their stated provider basis. Placeholder ingredient rows and incomplete flags also coexist with populated composition.
+
+### f5: Generic source maltose is mapped to a specific anomer
+
+minor / open / confirmed; issue key: culturemech-009143-unsupported-maltose-anomer.
+
+The source says maltose without anomeric specification, while both local primary and secondary slots assert CHEBI:18167 alpha-maltose. Current OLS confirms the specific alpha reducing-end configuration, which the recipe does not establish. Absence of this identifier from the packaged MIM exact-identifier rows is a current-snapshot limitation, not evidence of historical invalidity.
+
+## Recommended Actions And Acceptance Checks
+
+### action1
+
+Rebuild the maintained stage representation from exact source batch inputs and volume additions. Keep basal extraction, final supplementation and each stock distinct; preserve bare-percent uncertainty and optional agar. Do not infer final-medium concentrations from restored intermediate filtrate or liquid densities.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action2
+
+Resolve receiving references to exact ATCC stock identities or represent the printed stocks explicitly. Preserve the standalone stocks as separate records and do not rewrite them to match this recipient.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action3
+
+Restore only the exact source-specific controls at their proper stages and attach root evidence scoped to those fields. Keep the hemin autoclave instruction out of an unsupported complete-medium sterilization claim. Preserve historical events and append verified corrective context with the actual date.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action4
+
+Correct each standalone quantity-kind/percent defect against its own source and retain the competing volume claims explicitly. Preserve authenticated evidence and reconcile placeholder rows/flags without transferring either stock into ATCC 1703.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+### action5
+
+Retain the source maltose identity and resolve only to a verified appropriate general or supplied-form mapping. Do not infer alpha configuration from a current label match or change the source quantity.
+
+- Compare exact source identity, supplied form, amount, unit, denominator and preparation stage for every changed claim; preserve all correct current fields and old evidence.
+- Attach claim-scoped source excerpts and references; rerun the four canonical checks on changed maintained inputs and inspect regenerated output for freshness.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| local0 | data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| local1 | data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml; entire YAML | supports | Entire current selected document, including all ingredients, source notes, history, relationships and preparation. No record edits. |
+| validate-schema | REVIEW_WORK/batch070/record04/validate-schema-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-strict | REVIEW_WORK/batch070/record04/validate-strict-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Strict TSV is header-only. |
+| validate-terms | REVIEW_WORK/batch070/record04/validate-terms-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Native bound-slot validation does not authenticate ingredient amounts or all chemical forms. |
+| validate-references | REVIEW_WORK/batch070/record04/validate-references-result.json; argv, timestamps, exit_code, stdout, stderr | supports | Actual canonical command exit 0; full physical stdout/stderr read. Zero references checked, not scientific source verification. |
+| atcc1703 | https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| atccOld | https://www.atcc.org/~/media/B26B5E3BE9FE40BE8F851888718FC72C.ashx; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Complete current primary captured text and available rendered PDF pages read: exact main recipe, separate stock tables, preparation and any strain-specific prescriptions. A source formulation is distinct from experimental growth evidence. |
+| togo2574 | https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Current TOGO source identity, complete component paragraphs, units, stock references and comments read; exact primary collection source checked independently. Batch inputs and bare percentages are not silently normalized. |
+| solution5229 | https://mediadive.dsmz.de/api/solution/5229; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 404, error &lt;HTTPError 404: 'Not Found'&gt;. This response does not authenticate a recipe. |
+| solution2227 | https://mediadive.dsmz.de/api/solution/2227; raw source; exact captured text/DOM/JSON locators in quantity inventory | unknown | Actual retrieval HTTP 404, error &lt;HTTPError 404: 'Not Found'&gt;. This response does not authenticate a recipe. |
+| chebi131527 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi15377 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O']; mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi16236 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16236; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:16236 = ethanol; definition ['A primary alcohol that is ethane in which one of the hydrogens is substituted by a hydroxy group.']; formula ['C2H6O']; mass ['46.069']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi16526 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:16526 = carbon dioxide; definition ['A one-carbon compound with formula CO&lt;small&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/small&gt; in which the carbon is attached to each oxygen atom by a double bond. A colourless, odourless gas under normal conditions, it is produced during respiration by all animals, fungi and microorganisms that depend directly or indirectly on living or decaying plants for food.']; formula ['CO2']; mass ['44.009']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17057 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17057; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17057 = cellobiose; definition ['A glycosylglucose consisting of two glucose units linked via a β(1→4) bond.']; formula ['C12H22O11']; mass ['342.297']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17234 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17234 = glucose; definition ['An aldohexose used as a source of energy and metabolic intermediate.']; formula ['C6H12O6']; mass ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi17997 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:17997 = dinitrogen; definition ['An elemental molecule consisting of two trivalently-bonded nitrogen atoms.']; formula ['N2']; mass ['28.014']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi18067 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18067; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:18067 = phylloquinone; definition ['A member of the class of phylloquinones that consists of 1,4-naphthoquinone having methyl and phytyl groups at positions 2 and 3 respectively. The parent of the class of phylloquinones.']; formula ['C31H46O2']; mass ['450.707']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi18167 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18167; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:18167 = alpha-maltose; definition ['A maltose that has α-configuration at the reducing end anomeric centre.']; formula ['C12H22O11']; mass ['342.297']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi18276 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:18276 = dihydrogen; definition ['An elemental molecule consisting of two hydrogens joined by a single bond.']; formula ['H2']; mass ['2.016']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi2509 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties.']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi28017 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:28017 = starch; definition ['The most important reserve polysaccharide found in plants. It is a glucan consisting of amylose and amylopectin.']; formula None; mass None; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi32035 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32035; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:32035 = potassium hydroxide; definition []; formula ['HO.K']; mass ['56.105']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| chebi50385 | https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50385; $._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete | supports | OLS current exact CHEBI:50385 = hemin; definition ['It is used as a prescription medication to relieve repeated attacks of acute intermittent porphyria related to the menstrual cycle in affected women.']; formula ['C34H32ClFeN4O4']; mass ['651.952']; obsolete=False. Literal label is distinct from supplied-form equivalence. |
+| stock5229 | https://mediadive.dsmz.de/rest/solution/5229; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Exact linked standalone provider recipe and preparation read as a separate stock identity. Its identity and quantities are compared with the receiving primary source; a shared generic stock name does not establish equivalence. |
+| stock2227 | https://mediadive.dsmz.de/rest/solution/2227; raw source; exact captured text/DOM/JSON locators in quantity inventory | supports | Exact linked standalone provider recipe and preparation read as a separate stock identity. Its identity and quantities are compared with the receiving primary source; a shared generic stock name does not establish equivalence. |
+| grounding | REVIEW_WORK/batch070/record04/grounding-inventory.json; documents; ols_scientific_projection; mim_index | supports | Complete selected-layer term slots and current packaged MIM CSV exact-identifier joins with row locators and metadata commit; includes separately scoped dependency context. No fuzzy mapping or historical-validity inference. |
+| history0 | reports/yaml_record_review/20260922T075401Z-Chopped_meat_carbohydrates_with_rumen_fluid.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history1 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history2 | reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.md; entire report; historical-authentication.json | supports | Entire historical report read, including unchanged and unresolved fields; reports for a different maintained owner or generated branch are comparison-only, and dependency reports transfer only the explicitly assessed stock scope. This narrative or zero-source-check report is a derivative lead, not new primary-source authentication. |
+| history-auth | REVIEW_WORK/batch070/record04/historical-authentication.json; reports | supports | Exact report headers, source digest and every quoted API object reconciled; all reports fully read with duplicate cells pooled. Current primary sources independently govern scientific decisions. |
+| writer32 | scripts/cleanup_media_quality.py; _merge_ingredient_group | context_only | Current _merge_ingredient_group collapses equal duplicate values without summing them and retains the first conflicting value with a flag. This behavior is distinct from historical summed-amount artifacts and does not authenticate source-specific stock or product structure. |
+| writer33 | scripts/cleanup_recipe_ingredients.py; merge_duplicate_ingredients; merge_ingredient_group | context_only | Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group retains the first concentration, flags differing values and selects the first CHEBI. It cannot establish source stages or justify collapsing independent supplemental and product-contained components. |
+| writer34 | scripts/migrate_solutions_from_ingredients.py; _is_solution; _resolve_solution; _migrate_media_file | context_only | Current _is_solution uses name patterns, _resolve_solution keeps concentrations while creating empty reference stubs or matching a name-indexed solution, and _migrate_media_file appends those solutions and history. It does not reconstruct nested source batches or authenticate copied unit/basis. |
+| writer35 | scripts/repair_merged_duplicates.py; repair_ingredient; repair_record | context_only | Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS duplicate notes. This bounded repair is not a general solution for product decomposition, stock flattening or differing source formulations. |
+| writer36 | src/culturemech/import/togo_importer.py; _extract_primary_components; _solution_from_item; _extract_assembled_solutions; _parse_unit; _extract_preparation_steps; _convert_to_culturemech; _extract_ph | context_only | Current _extract_primary_components, _solution_from_item and _extract_assembled_solutions distinguish primary sections, nested stocks and assembled solutions. _parse_unit maps bare g/mg/ml to per-litre enum labels, while L remains L; those enum choices still require a verified source basis. _extract_preparation_steps retains comments. _convert_to_culturemech sets COMPLEX by default, and _extract_ph reads its supplied object. These present behaviors neither authenticate historical execution nor prove that all source metadata survived the old import. |
+| writer37 | src/culturemech/merge/formulation.py; formulation_content; merge_formulation_evidence | context_only | Current formulation_content retains exact scientific quantities, preparation and other scientific fields; merge_formulation_evidence rejects incompatible projections and unions evidence at matching scopes. A source-equivalence claim is not established by shared ingredient identities. |
+| writer38 | src/culturemech/merge/matcher.py; group_formulations; group_recipes | context_only | Current group_formulations calls group_recipes with fail_on_invalid=True and FormulationFingerprinter. Expected standalone or unfingerprintable records are excluded; malformed or unexpected inputs raise. Valid records are grouped by full scientific content. This guard does not retrieve or authenticate source recipes. |
+| writer39 | src/culturemech/merge/merger.py; merge_group | context_only | Current merge_group routes a single maintained owner with merge metadata; multiple owners pass through conservative merge_formulation_evidence. Regenerating from an unrepaired owner retains its defects. Current conservative behavior is credited and does not establish how the old generated record was produced. |
+| dep40 | data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml; explicit scoped stock rows in quantity inventory | supports | Current dependency retained as context; only the explicitly named stock subsection is assessed. Earlier attached evidence and history retained; unrelated parent medium, doses, pH and growth do not transfer. |
+| dep41 | data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml; explicit scoped stock rows in quantity inventory | supports | Current dependency retained as context; only the explicitly named stock subsection is assessed. Earlier attached evidence and history retained; unrelated parent medium, doses, pH and growth do not transfer. |
+| attached-claims | REVIEW_WORK/batch070/record04/attached-claim-authentication.json; claims | supports | 2 retained dependency claims match current raw digest, literal snippet and decoded recipe object exactly. Authentication is scoped to their standalone stock and does not transfer to the selected medium. |
+| quantity-inventory | REVIEW_WORK/batch070/record04/quantity-inventory.json; decisions | supports | Complete explicit decisions with exact current local values, per-layer locators, source quotes/hash/time, stage and arithmetic limits. |
+| dependency-history-1 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-1500-2000/records/bacterial/mediadive_2227_Vitamin_K1_solution.yaml.md; Complete exact dependency report; literal historical source objects checked against current capture, without replaying reported commands. | context_only | Exact historical standalone-stock report. Its source/check statements remain historical; stock-only support does not transfer to the selected ATCC1703 recipe. |
+| dependency-history-2 | reports/ingredient_concentration_curation/20261007-mediadive-solutions-3500-4000/records/bacterial/mediadive_5229_Hemin_solution.yaml.md; Complete exact dependency report; literal historical source objects checked against current capture, without replaying reported commands. | context_only | Exact historical standalone-stock report. Its source/check statements remain historical; stock-only support does not transfer to the selected ATCC1703 recipe. |
+| dependency-history-3 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.md; Complete exact dependency report; literal historical source objects checked against current capture, without replaying reported commands. | context_only | Exact historical standalone-stock report. Its source/check statements remain historical; stock-only support does not transfer to the selected ATCC1703 recipe. |
+| dependency-history-4 | reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.md; Complete exact dependency report; literal historical source objects checked against current capture, without replaying reported commands. | context_only | Exact historical standalone-stock report. Its source/check statements remain historical; stock-only support does not transfer to the selected ATCC1703 recipe. |
+
+## Limits And Additional Notes
+
+- ATCC 1703 contains no named-strain growth experiment; medium availability is not growth evidence.
+- Restored basal filtrate 1 L is an intermediate volume, not a measured final supplemented-medium volume. Bare percentages, liquid density and retained meat mass remain unresolved.
+- Fresh REST stock captures succeed; earlier /api/solution HTTP 404 leads remain archived and are not source authentication.
+- Both primary PDF pages were visually read; page 2 is blank. PDF locators count physical LF only, not form-feed characters.
+- Current MIM snapshot 6643131b0f12ab40b66f98135245fca04027e0e9 and OLS label matches do not prove historical mapping validity or source-specific stereochemistry.
+- Read-only scientific review. No source edits, native save, Git mutation or publication. All raw captures, failed access bodies, commands, times and original stdout/stderr remain in the adjacent private evidence directory.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261028T150517Z-chopped-meat-carbohydrates-with-rumen-fluid-batch070
+kind: record
+repository: CultureBotAI/CultureMech
+title: Scientific review of chopped_meat_carbohydrates_with_rumen_fluid
+started_at: '2026-10-28T14:31:01.977957Z'
+finished_at: '2026-10-28T15:05:17.676214Z'
+reviewer:
+  identity: Codex independent record reviewer
+  kind: agent
+  independence: independent
+  independence_basis: Fresh review of existing unchanged repository records; this
+    reviewer did not author or curate the selected target/owners. Historical reports
+    were independently reassessed against current exact sources.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: ATCC 1703 identity is confirmed, but both selected layers flatten extraction
+  and stock stages, misrepresent liquid inputs and leave percent bases unresolved.
+  The two linked stocks differ from the printed preparations and have separate internal
+  quantity defects. Optional solid-branch validity and two authenticated standalone
+  declared-rate claims are explicitly retained.
+source:
+  git_revision: 9ea7ff33d354e37b791df96a880005153e446ce3
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 846db73710b3134ef5267ce486d151e297295282dc5e9249658592432f8d6a7a
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/SKILL.md
+    sha256: a67993ef11cf374ac579c53252bc603f9894ebd69cad711b11f293714c76621e
+    role: context
+  - path: .claude/skills/review-ingredient-concentrations/references/evidence-contract.md
+    sha256: 5eb4783f02a0567b45b462dfb5e8c0393fb34daf842a3ce23ff7946652f157d1
+    role: context
+  - path: .claude/skills/review-recipes/reference/linkage-and-duplicates.md
+    sha256: e792d47f2b9e169d2306ac920f87aa1ced9b9d07c7650dd7d2feb7aee48c2234
+    role: context
+  - path: .claude/skills/review-recipes/reference/validation-rules.md
+    sha256: 3b8666d58fc0c9deb02981053a50760a937675e6e22a6ecd53e92678e8d422f0
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: e3f1aeccd3d249f78739c902ea8d95052fec26fc5db752b5ca732d96ab37e466
+    role: context
+  - path: CLAUDE.md
+    sha256: b5c5bb1c2293ba5f6c49cda8cb40bf36e021c0a2b9fe2d9497cf0a2fe19a1ac4
+    role: context
+  - path: conf/record_review.yaml
+    sha256: a76531e51214e559c97ab748a4cba169f8a9598ce6e3664518489b43dfc9bf88
+    role: context
+  - path: data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    sha256: d1af05c42a0a7d2db39fbcf12c1385ea3890e7cb58cee5a115586fc8714ec748
+    role: target
+  - path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    sha256: fd1be3c67130bb75470278fb252b9120ea4ffec8b7d57d512244014da26ad1d3
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml
+    sha256: 6d2ba55ba8b63d286a4fb8e16bad663ca189712f27e846bbf626b906f5acdd4c
+    role: context
+  - path: data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml
+    sha256: 04120b0864724661ddc05ac635895ef86933fc8b0857805993f125a88ab9a766
+    role: context
+  - path: docs/DATA_LAYERS.md
+    sha256: 381cbb9ad2ba80f2a849507c4ce8b10839546ae4ce2757dad065e86fe381d236
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 99eebe27f0079cb816c974f58ee457148da5a3c346ec9c30ff853b95dade9127
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 552166976136ed158a253773f0b763e670d2484e7354b48ec0f9b77b4250da77
+    role: context
+  - path: project.justfile
+    sha256: 8cb892e67e1d94bc93c77f3a03d8d4ced32d8d31aa8e5b0346853cbc05077d6f
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-1500-2000/records/bacterial/mediadive_2227_Vitamin_K1_solution.yaml.md
+    sha256: 9b12956ce58f5032b1a762534661f0db4a51601e426a987866d9a42666f0a3a7
+    role: context
+  - path: reports/ingredient_concentration_curation/20261007-mediadive-solutions-3500-4000/records/bacterial/mediadive_5229_Hemin_solution.yaml.md
+    sha256: 62a43499e36b857e3572008cb485ffbac1fcbb0893353a495b69e76da19f52f0
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.md
+    sha256: 9d813a3464a3caa386fb424036e36b566bf76f91dc631f4027d0cd931a2d6117
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.md
+    sha256: 6d55f10742cb235539c7c23ae5a6fa41467dbb2418ed355f65709de194b45f5a
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.md
+    sha256: 5e0f8cefe42960d9e74e567968922a085ab1a2a7df47408286d33f938a8d492c
+    role: context
+  - path: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.md
+    sha256: fe0f3d9918837a5892c221f4cb11e9a0cf6ae6d3da3e6583c320b5e04c5801af
+    role: context
+  - path: reports/yaml_record_review/20260922T075401Z-Chopped_meat_carbohydrates_with_rumen_fluid.md
+    sha256: 2470b93df582f61e4737ae282c4db4c2275337f5a9bfdeecb87864d25be9aff8
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/apply_mim_groundings.py
+    sha256: 3c6ab80c461a2abcfd8e68541ca0904d2f4e33f635976f76015b067ca137292f
+    role: context
+  - path: scripts/assign_culturemech_ids.py
+    sha256: 81ed213c52804ae98a8add02730d757595e3287fa7b01bc88aee0e587bbb01e1
+    role: context
+  - path: scripts/cleanup_media_quality.py
+    sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+    role: context
+  - path: scripts/cleanup_recipe_ingredients.py
+    sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+    role: context
+  - path: scripts/enrich_with_chebi.py
+    sha256: f18dd6e4317de76cb7379f6c9c6227f9af884c27a0761d7f64143aaf74d8e1dc
+    role: context
+  - path: scripts/enrich_with_mediaingredientmech.py
+    sha256: 6357c9d621c3d6e32b28b2982afedfaed384830cea1602a775b0a5f0852c015e
+    role: context
+  - path: scripts/fetch_mediadive_solution_volumes.py
+    sha256: 408cdfa3f5c446e8f9c32ac98d7ea8a3a36553b23c032f3b7551f6a1661fd39a
+    role: context
+  - path: scripts/import_mediadive_solutions.py
+    sha256: f97db7607d76c46b75d2d2428e8a425a5735e52beb3a9c28fd0af03ab5b31aa8
+    role: context
+  - path: scripts/migrate_chebi_regrounding.py
+    sha256: bb174120fd6fcd1d3ed56092000fe54e6660fea4aabae7fece43a122dbd8d544
+    role: context
+  - path: scripts/migrate_legacy_mim_to_chebi.py
+    sha256: 439ed5cb36fb9f619762c71db89266cf990e1783f5c10041fd35efec4b2ba5db
+    role: context
+  - path: scripts/migrate_mgso4_heptahydrate_term.py
+    sha256: 6acb9d5164ad381c288f031fb34045036e3fd2283e559f1ad8ccd1a4687fb4ce
+    role: context
+  - path: scripts/migrate_ph_range.py
+    sha256: 98b1ee128d70767e7409eeb8a331f1a31cfa016f0013225f508fd3fc89551fb1
+    role: context
+  - path: scripts/migrate_solutions_from_ingredients.py
+    sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+    role: context
+  - path: scripts/normalize_media_names_to_snake_case.py
+    sha256: 59bd842b1982b7d62af9db3fe280df576d8c4ae2e9ee411bf2e52523355f95de
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/refill_term_labels.py
+    sha256: 8eee4532e4a71d120532db511733bde974ab1b179e50cb1ea51d66c3870f3cb9
+    role: context
+  - path: scripts/repair_merged_duplicates.py
+    sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+    role: context
+  - path: scripts/review_komodo_concentration_evidence.py
+    sha256: 4470019965d068a53587be3668c3872daedc1505dab1bc6e2d1ed937ba409658
+    role: context
+  - path: scripts/review_medium_concentration_evidence.py
+    sha256: ccb5fb9b3c56dc1a57afb1d3bf1a76312a5ca7720bc71272ddfec5e333039f3a
+    role: context
+  - path: scripts/review_solution_concentration_evidence.py
+    sha256: 40a5bb439caf0791caff746a1eac8d5069525f381c7f3b52556c26937741f65a
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.csv
+    sha256: 4765c45d026f7f8e83e056043efb16f8f736e1a871eb168b151092ca2c934ae5
+    role: context
+  - path: src/culturemech/data/mediaingredientmech/label_index.metadata.json
+    sha256: 67547827490f422d33e6c06c607caad685e9a49225f76d716c0bc2736d4acff3
+    role: context
+  - path: src/culturemech/enrich/dsmz_resolver.py
+    sha256: 5a15106efbd34b6fe074186968dfeb030b8f350ed1ba4a1ca66560093dceaa77
+    role: context
+  - path: src/culturemech/import/komodo_web_importer.py
+    sha256: d99f08918b45eb7ecf9fcd871d6686153c97be5f5fb5da435d67c1c5fadee106
+    role: context
+  - path: src/culturemech/import/mediadive_importer.py
+    sha256: fc76a182689720e8c3da65f2fe2209924ced59a6973554a0e8bcc152289eed69
+    role: context
+  - path: src/culturemech/import/togo_importer.py
+    sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+    role: context
+  - path: src/culturemech/ingredients/mim_label_index.py
+    sha256: e07eb72fe91743859451d1998dfeafe58a40dad43baa82d710a740c47dc4bf61
+    role: context
+  - path: src/culturemech/match/kg_media_matcher.py
+    sha256: 43f01f4b6e9285a60db437d7903646545ad6a6548e6b85f4478eb9b0e1b74e33
+    role: context
+  - path: src/culturemech/merge/formulation.py
+    sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+    role: context
+  - path: src/culturemech/merge/matcher.py
+    sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+    role: context
+  - path: src/culturemech/merge/merger.py
+    sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+    role: context
+  - path: src/culturemech/schema/culturemech.yaml
+    sha256: 8551fa65e4e96f36847368641282948cffd393356648fd9fb6947831ab985fae
+    role: context
+  - path: src/culturemech/validation/schema_defaulter.py
+    sha256: 8b029526d93a39f1078c434e8dd0cf76cd19b2800fce765c9c390043eff38c53
+    role: context
+scope:
+  description: Full selected target and maintained owners, every quantity and unchanged
+    claim; separately scoped source dependencies and current writers.
+  selection: Authoritative batch070 selection index 4 at base 9ea7ff33d354e37b791df96a880005153e446ce3.
+    Fresh review, not reconstruction of lost historical bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CultureMech:009143
+targets:
+- target_id: CultureMech:009143
+  path: data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml
+  label: chopped_meat_carbohydrates_with_rumen_fluid
+  record_class: MediaRecipe
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+checks:
+- check_id: validate-schema
+  name: validate-schema
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009143
+  command: just validate-schema data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-schema
+- check_id: validate-strict
+  name: validate-strict
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009143
+  command: just validate-strict data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    --workers 1 --out REVIEW_WORK/batch070/record04/strict.tsv
+  exit_code: 0
+  evidence_ids:
+  - validate-strict
+- check_id: validate-terms
+  name: validate-terms
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Structural check only.
+  target_ids:
+  - CultureMech:009143
+  command: just validate-terms data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-terms
+- check_id: validate-references
+  name: validate-references
+  status: passed
+  required: true
+  summary: Exit 0; original full stdout/stderr read. Zero reference checks.
+  target_ids:
+  - CultureMech:009143
+  command: just validate-references data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml
+  exit_code: 0
+  evidence_ids:
+  - validate-references
+evidence:
+- evidence_id: local0
+  kind: record_content
+  reference: data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T14:43:37.413500Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: d1af05c42a0a7d2db39fbcf12c1385ea3890e7cb58cee5a115586fc8714ec748
+- evidence_id: local1
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+  locator: entire YAML
+  accessed_at: '2026-10-28T14:43:37.413645Z'
+  support: supports
+  summary: Entire current selected document, including all ingredients, source notes,
+    history, relationships and preparation. No record edits.
+  snapshot_sha256: fd1be3c67130bb75470278fb252b9120ea4ffec8b7d57d512244014da26ad1d3
+- evidence_id: validate-schema
+  kind: validation
+  reference: REVIEW_WORK/batch070/record04/validate-schema-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T14:31:04.105379Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 8dcf3569224b0c989b6e8b7a86d49c913e067bf887a4ef3ea15f11695b9625d5
+- evidence_id: validate-strict
+  kind: validation
+  reference: REVIEW_WORK/batch070/record04/validate-strict-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T14:31:05.151151Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Strict
+    TSV is header-only.
+  snapshot_sha256: add2b1a9b2d99455023c241ea8c29ca7bec14520158e331a51a5d2470602fd29
+- evidence_id: validate-terms
+  kind: validation
+  reference: REVIEW_WORK/batch070/record04/validate-terms-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T14:31:06.738468Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Native
+    bound-slot validation does not authenticate ingredient amounts or all chemical
+    forms.
+  snapshot_sha256: 98895bb22ea87bf2034803c38681802f4d524a0919ea5637d007951593a6c462
+- evidence_id: validate-references
+  kind: validation
+  reference: REVIEW_WORK/batch070/record04/validate-references-result.json
+  locator: argv, timestamps, exit_code, stdout, stderr
+  accessed_at: '2026-10-28T14:31:07.586869Z'
+  support: supports
+  summary: Actual canonical command exit 0; full physical stdout/stderr read. Zero
+    references checked, not scientific source verification.
+  snapshot_sha256: ad203d85209ea9d900cad2270023c607200e0728b0fdbe2d3f7d68ee7b3e0e3f
+- evidence_id: atcc1703
+  kind: primary_source
+  reference: https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T14:31:27.127086Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2
+- evidence_id: atccOld
+  kind: primary_source
+  reference: https://www.atcc.org/~/media/B26B5E3BE9FE40BE8F851888718FC72C.ashx
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T14:31:27.012864Z'
+  support: supports
+  summary: 'Complete current primary captured text and available rendered PDF pages
+    read: exact main recipe, separate stock tables, preparation and any strain-specific
+    prescriptions. A source formulation is distinct from experimental growth evidence.'
+  snapshot_sha256: a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2
+- evidence_id: togo2574
+  kind: database
+  reference: https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T14:31:26.909226Z'
+  support: supports
+  summary: Current TOGO source identity, complete component paragraphs, units, stock
+    references and comments read; exact primary collection source checked independently.
+    Batch inputs and bare percentages are not silently normalized.
+  snapshot_sha256: f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1
+- evidence_id: solution5229
+  kind: database
+  reference: https://mediadive.dsmz.de/api/solution/5229
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T14:31:26.896193Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 404, error <HTTPError 404: ''Not Found''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: 95ae4e4d2fadb71b21dcd7f54663d52efdf8bd21180a3e1f248ff07dc9b0b3fa
+- evidence_id: solution2227
+  kind: database
+  reference: https://mediadive.dsmz.de/api/solution/2227
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T14:31:26.704160Z'
+  support: unknown
+  summary: 'Actual retrieval HTTP 404, error <HTTPError 404: ''Not Found''>. This
+    response does not authenticate a recipe.'
+  snapshot_sha256: 36b804ce0edc0ccc5f28e80cd8910141c2a01847f696446a3b76ee8cf3af0ea2
+- evidence_id: chebi131527
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_131527
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:26.512161Z'
+  support: supports
+  summary: OLS current exact CHEBI:131527 = dipotassium hydrogen phosphate; definition
+    ['A potassium salt that is the dipotassium salt of phosphoric acid.']; formula
+    ['HO4P.2K']; mass ['174.174']; obsolete=False. Literal label is distinct from
+    supplied-form equivalence.
+  snapshot_sha256: 349a12965f35042f5768040a63856b162c81bac3541674d571ac980605f846b3
+- evidence_id: chebi15377
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_15377
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:20.279273Z'
+  support: supports
+  summary: OLS current exact CHEBI:15377 = water; definition ['An oxygen hydride consisting
+    of an oxygen atom that is covalently bonded to two hydrogen atoms']; formula ['H2O'];
+    mass ['18.015']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: de9102073c3761a24130636f90e898445dce83eb118592609a618bf61149ff4b
+- evidence_id: chebi16236
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16236
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:26.511222Z'
+  support: supports
+  summary: OLS current exact CHEBI:16236 = ethanol; definition ['A primary alcohol
+    that is ethane in which one of the hydrogens is substituted by a hydroxy group.'];
+    formula ['C2H6O']; mass ['46.069']; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: afdacc5e401c6545f51974e897eb96eee2a5fa3aef15119edbd415cb7bb802b8
+- evidence_id: chebi16526
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_16526
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:26.337197Z'
+  support: supports
+  summary: OLS current exact CHEBI:16526 = carbon dioxide; definition ['A one-carbon
+    compound with formula CO<small><sub>2</sub></small> in which the carbon is attached
+    to each oxygen atom by a double bond. A colourless, odourless gas under normal
+    conditions, it is produced during respiration by all animals, fungi and microorganisms
+    that depend directly or indirectly on living or decaying plants for food.']; formula
+    ['CO2']; mass ['44.009']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 19b976653e14322f23a21b90b537bfcd19bb4e73d8d0de96446a25888cd3caf6
+- evidence_id: chebi17057
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17057
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:26.282920Z'
+  support: supports
+  summary: OLS current exact CHEBI:17057 = cellobiose; definition ['A glycosylglucose
+    consisting of two glucose units linked via a β(1→4) bond.']; formula ['C12H22O11'];
+    mass ['342.297']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 3548f79d3274a33683125152944998cffa00bd4fce774c8d872db9003222ed06
+- evidence_id: chebi17234
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17234
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:20.279178Z'
+  support: supports
+  summary: OLS current exact CHEBI:17234 = glucose; definition ['An aldohexose used
+    as a source of energy and metabolic intermediate.']; formula ['C6H12O6']; mass
+    ['180.156']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: e3b9cbcd7b1e08bb05564cf82f924b29c554767e9b40bf1e4c85ab1bce09330f
+- evidence_id: chebi17997
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_17997
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:23.575954Z'
+  support: supports
+  summary: OLS current exact CHEBI:17997 = dinitrogen; definition ['An elemental molecule
+    consisting of two trivalently-bonded nitrogen atoms.']; formula ['N2']; mass ['28.014'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: ea4b3f90994884c49607689e3f3939cfec804c7d17905bbeecfc0ef7f80ead43
+- evidence_id: chebi18067
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18067
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:26.250190Z'
+  support: supports
+  summary: OLS current exact CHEBI:18067 = phylloquinone; definition ['A member of
+    the class of phylloquinones that consists of 1,4-naphthoquinone having methyl
+    and phytyl groups at positions 2 and 3 respectively. The parent of the class of
+    phylloquinones.']; formula ['C31H46O2']; mass ['450.707']; obsolete=False. Literal
+    label is distinct from supplied-form equivalence.
+  snapshot_sha256: 8419c53a0b06459b563d1c89a1772f099cbe0832ddce3a851fd45ce133d75879
+- evidence_id: chebi18167
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18167
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:26.101963Z'
+  support: supports
+  summary: OLS current exact CHEBI:18167 = alpha-maltose; definition ['A maltose that
+    has α-configuration at the reducing end anomeric centre.']; formula ['C12H22O11'];
+    mass ['342.297']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: e5f8ffe560badeedcb0ca1b3895a1cbb9913d56e11224fa91ffb77fa8a383199
+- evidence_id: chebi18276
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_18276
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:25.897881Z'
+  support: supports
+  summary: OLS current exact CHEBI:18276 = dihydrogen; definition ['An elemental molecule
+    consisting of two hydrogens joined by a single bond.']; formula ['H2']; mass ['2.016'];
+    obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: 47a32d9cfe41e3759385a0e4e002e9fa208fe1511d84e3d0d1f9f1ca9ce6e86d
+- evidence_id: chebi2509
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_2509
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:20.278886Z'
+  support: supports
+  summary: OLS current exact CHEBI:2509 = agar; definition ['A complex mixture of
+    polysaccharides extracted from species of red algae. Its two main components are
+    agarose and agaropectin. Agarose is the component responsible for the high-strength
+    gelling properties of agar, while agaropectin provides the viscous properties.'];
+    formula None; mass None; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 8e9a8502590bbb760008a75161094eaca762e8edac19901d959bf6863692bd5a
+- evidence_id: chebi28017
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_28017
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:25.751725Z'
+  support: supports
+  summary: OLS current exact CHEBI:28017 = starch; definition ['The most important
+    reserve polysaccharide found in plants. It is a glucan consisting of amylose and
+    amylopectin.']; formula None; mass None; obsolete=False. Literal label is distinct
+    from supplied-form equivalence.
+  snapshot_sha256: 959b4330165a7ff12d2e464f4a7b44e148376624d04cf7764b6a8671c1c99204
+- evidence_id: chebi32035
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_32035
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:25.693592Z'
+  support: supports
+  summary: OLS current exact CHEBI:32035 = potassium hydroxide; definition []; formula
+    ['HO.K']; mass ['56.105']; obsolete=False. Literal label is distinct from supplied-form
+    equivalence.
+  snapshot_sha256: 6ed3df00965b4707265cfced80411c4b1937b727f8c2093addbc467f88ce2ec8
+- evidence_id: chebi50385
+  kind: authority
+  reference: https://www.ebi.ac.uk/ols4/api/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_50385
+  locator: '$._embedded.terms[0]: obo_id,label,description,annotation,synonyms,is_obsolete'
+  accessed_at: '2026-10-28T14:31:25.628201Z'
+  support: supports
+  summary: OLS current exact CHEBI:50385 = hemin; definition ['It is used as a prescription
+    medication to relieve repeated attacks of acute intermittent porphyria related
+    to the menstrual cycle in affected women.']; formula ['C34H32ClFeN4O4']; mass
+    ['651.952']; obsolete=False. Literal label is distinct from supplied-form equivalence.
+  snapshot_sha256: b989203634707b89526a8664c8fa65cb4976c4cdd791427218cf01b37d17356e
+- evidence_id: stock5229
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/5229
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T14:32:09.238088Z'
+  support: supports
+  summary: Exact linked standalone provider recipe and preparation read as a separate
+    stock identity. Its identity and quantities are compared with the receiving primary
+    source; a shared generic stock name does not establish equivalence.
+  snapshot_sha256: 926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585
+- evidence_id: stock2227
+  kind: database
+  reference: https://mediadive.dsmz.de/rest/solution/2227
+  locator: raw source; exact captured text/DOM/JSON locators in quantity inventory
+  accessed_at: '2026-10-28T14:32:09.238359Z'
+  support: supports
+  summary: Exact linked standalone provider recipe and preparation read as a separate
+    stock identity. Its identity and quantities are compared with the receiving primary
+    source; a shared generic stock name does not establish equivalence.
+  snapshot_sha256: 3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61
+- evidence_id: grounding
+  kind: authority
+  reference: REVIEW_WORK/batch070/record04/grounding-inventory.json
+  locator: documents; ols_scientific_projection; mim_index
+  accessed_at: '2026-10-28T14:43:37.420472Z'
+  support: supports
+  summary: Complete selected-layer term slots and current packaged MIM CSV exact-identifier
+    joins with row locators and metadata commit; includes separately scoped dependency
+    context. No fuzzy mapping or historical-validity inference.
+  snapshot_sha256: c1ad9931fdec0631907ca603ef72a799dcf0bb371bc8bdf9b3f5018097accf09
+- evidence_id: history0
+  kind: prior_review
+  reference: reports/yaml_record_review/20260922T075401Z-Chopped_meat_carbohydrates_with_rumen_fluid.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T14:43:37.420885Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 2470b93df582f61e4737ae282c4db4c2275337f5a9bfdeecb87864d25be9aff8
+- evidence_id: history1
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T14:43:37.420909Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 6d55f10742cb235539c7c23ae5a6fa41467dbb2418ed355f65709de194b45f5a
+- evidence_id: history2
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.md
+  locator: entire report; historical-authentication.json
+  accessed_at: '2026-10-28T14:43:37.420929Z'
+  support: supports
+  summary: Entire historical report read, including unchanged and unresolved fields;
+    reports for a different maintained owner or generated branch are comparison-only,
+    and dependency reports transfer only the explicitly assessed stock scope. This
+    narrative or zero-source-check report is a derivative lead, not new primary-source
+    authentication.
+  snapshot_sha256: 9d813a3464a3caa386fb424036e36b566bf76f91dc631f4027d0cd931a2d6117
+- evidence_id: history-auth
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record04/historical-authentication.json
+  locator: reports
+  accessed_at: '2026-10-28T14:43:37.420950Z'
+  support: supports
+  summary: Exact report headers, source digest and every quoted API object reconciled;
+    all reports fully read with duplicate cells pooled. Current primary sources independently
+    govern scientific decisions.
+  snapshot_sha256: 373cccd13deb19b1ec8b84fd946a90313acc3c7497815329cd6900fd6363f5ff
+- evidence_id: writer32
+  kind: record_content
+  reference: scripts/cleanup_media_quality.py
+  locator: _merge_ingredient_group
+  accessed_at: '2026-10-28T14:43:37.421010Z'
+  support: context_only
+  summary: Current _merge_ingredient_group collapses equal duplicate values without
+    summing them and retains the first conflicting value with a flag. This behavior
+    is distinct from historical summed-amount artifacts and does not authenticate
+    source-specific stock or product structure.
+  snapshot_sha256: 8cf7e2c2dfce42ac20b69a73d571d1b81e8f60617d85350aefaa300426dc28fc
+- evidence_id: writer33
+  kind: record_content
+  reference: scripts/cleanup_recipe_ingredients.py
+  locator: merge_duplicate_ingredients; merge_ingredient_group
+  accessed_at: '2026-10-28T14:43:37.421033Z'
+  support: context_only
+  summary: Current merge_duplicate_ingredients groups normalized names; merge_ingredient_group
+    retains the first concentration, flags differing values and selects the first
+    CHEBI. It cannot establish source stages or justify collapsing independent supplemental
+    and product-contained components.
+  snapshot_sha256: 5b95ca4155fb8b165b260748c59a30add520cf8747f15b8c08731b2bf48c7ff0
+- evidence_id: writer34
+  kind: record_content
+  reference: scripts/migrate_solutions_from_ingredients.py
+  locator: _is_solution; _resolve_solution; _migrate_media_file
+  accessed_at: '2026-10-28T14:43:37.421065Z'
+  support: context_only
+  summary: Current _is_solution uses name patterns, _resolve_solution keeps concentrations
+    while creating empty reference stubs or matching a name-indexed solution, and
+    _migrate_media_file appends those solutions and history. It does not reconstruct
+    nested source batches or authenticate copied unit/basis.
+  snapshot_sha256: 6d6c026e4542c6ddc1092604b44e4968d4ae575632b7c25460219ef68ff9f709
+- evidence_id: writer35
+  kind: record_content
+  reference: scripts/repair_merged_duplicates.py
+  locator: repair_ingredient; repair_record
+  accessed_at: '2026-10-28T14:43:37.421088Z'
+  support: context_only
+  summary: Current repair_ingredient and repair_record act on parsed IDENTICAL_PARTS
+    duplicate notes. This bounded repair is not a general solution for product decomposition,
+    stock flattening or differing source formulations.
+  snapshot_sha256: a6f8af9fa5599f4e1bd22bbe3d79293e7798dce940efc354d9c63d3f1dc051c4
+- evidence_id: writer36
+  kind: record_content
+  reference: src/culturemech/import/togo_importer.py
+  locator: _extract_primary_components; _solution_from_item; _extract_assembled_solutions;
+    _parse_unit; _extract_preparation_steps; _convert_to_culturemech; _extract_ph
+  accessed_at: '2026-10-28T14:43:37.421130Z'
+  support: context_only
+  summary: Current _extract_primary_components, _solution_from_item and _extract_assembled_solutions
+    distinguish primary sections, nested stocks and assembled solutions. _parse_unit
+    maps bare g/mg/ml to per-litre enum labels, while L remains L; those enum choices
+    still require a verified source basis. _extract_preparation_steps retains comments.
+    _convert_to_culturemech sets COMPLEX by default, and _extract_ph reads its supplied
+    object. These present behaviors neither authenticate historical execution nor
+    prove that all source metadata survived the old import.
+  snapshot_sha256: 5aead42443f27b0f7808fbe98f24a04c1e82261b37ca12c80fa4abef9dfc6b8a
+- evidence_id: writer37
+  kind: record_content
+  reference: src/culturemech/merge/formulation.py
+  locator: formulation_content; merge_formulation_evidence
+  accessed_at: '2026-10-28T14:43:37.421154Z'
+  support: context_only
+  summary: Current formulation_content retains exact scientific quantities, preparation
+    and other scientific fields; merge_formulation_evidence rejects incompatible projections
+    and unions evidence at matching scopes. A source-equivalence claim is not established
+    by shared ingredient identities.
+  snapshot_sha256: 985289c6afd0fa07296b784b159ef023096b8c7ab72a1cbbed0eb397dedea9ab
+- evidence_id: writer38
+  kind: record_content
+  reference: src/culturemech/merge/matcher.py
+  locator: group_formulations; group_recipes
+  accessed_at: '2026-10-28T14:43:37.421175Z'
+  support: context_only
+  summary: Current group_formulations calls group_recipes with fail_on_invalid=True
+    and FormulationFingerprinter. Expected standalone or unfingerprintable records
+    are excluded; malformed or unexpected inputs raise. Valid records are grouped
+    by full scientific content. This guard does not retrieve or authenticate source
+    recipes.
+  snapshot_sha256: 5ac2cbf1aba823a53b2d22877270246e19fdad21c1881dc3047054a3bf5b6885
+- evidence_id: writer39
+  kind: record_content
+  reference: src/culturemech/merge/merger.py
+  locator: merge_group
+  accessed_at: '2026-10-28T14:43:37.421197Z'
+  support: context_only
+  summary: Current merge_group routes a single maintained owner with merge metadata;
+    multiple owners pass through conservative merge_formulation_evidence. Regenerating
+    from an unrepaired owner retains its defects. Current conservative behavior is
+    credited and does not establish how the old generated record was produced.
+  snapshot_sha256: b81b498bd0da08c774b5412add4044fa962a8d9bea681d2a7f4e45f4639b7ff6
+- evidence_id: dep40
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml
+  locator: explicit scoped stock rows in quantity inventory
+  accessed_at: '2026-10-28T14:43:37.421206Z'
+  support: supports
+  summary: Current dependency retained as context; only the explicitly named stock
+    subsection is assessed. Earlier attached evidence and history retained; unrelated
+    parent medium, doses, pH and growth do not transfer.
+  snapshot_sha256: 6d2ba55ba8b63d286a4fb8e16bad663ca189712f27e846bbf626b906f5acdd4c
+- evidence_id: dep41
+  kind: record_content
+  reference: data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml
+  locator: explicit scoped stock rows in quantity inventory
+  accessed_at: '2026-10-28T14:43:37.421208Z'
+  support: supports
+  summary: Current dependency retained as context; only the explicitly named stock
+    subsection is assessed. Earlier attached evidence and history retained; unrelated
+    parent medium, doses, pH and growth do not transfer.
+  snapshot_sha256: 04120b0864724661ddc05ac635895ef86933fc8b0857805993f125a88ab9a766
+- evidence_id: attached-claims
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record04/attached-claim-authentication.json
+  locator: claims
+  accessed_at: '2026-10-28T14:43:37.424923Z'
+  support: supports
+  summary: 2 retained dependency claims match current raw digest, literal snippet
+    and decoded recipe object exactly. Authentication is scoped to their standalone
+    stock and does not transfer to the selected medium.
+  snapshot_sha256: 4c1b51655325ac3373f428a69ee073a55e6afb9dcb89cf56c55411714d580568
+- evidence_id: quantity-inventory
+  kind: record_content
+  reference: REVIEW_WORK/batch070/record04/quantity-inventory.json
+  locator: decisions
+  accessed_at: '2026-10-28T15:05:17.676214Z'
+  support: supports
+  summary: Complete explicit decisions with exact current local values, per-layer
+    locators, source quotes/hash/time, stage and arithmetic limits.
+  snapshot_sha256: 4ca668b1293b5fe0be9930bd94d76cf9dbba10762eaab945f4bb218daa13e8dc
+- evidence_id: dependency-history-1
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-1500-2000/records/bacterial/mediadive_2227_Vitamin_K1_solution.yaml.md
+  locator: Complete exact dependency report; literal historical source objects checked
+    against current capture, without replaying reported commands.
+  accessed_at: '2026-10-28T15:03:27.622991Z'
+  support: context_only
+  summary: Exact historical standalone-stock report. Its source/check statements remain
+    historical; stock-only support does not transfer to the selected ATCC1703 recipe.
+  snapshot_sha256: 9b12956ce58f5032b1a762534661f0db4a51601e426a987866d9a42666f0a3a7
+- evidence_id: dependency-history-2
+  kind: prior_review
+  reference: reports/ingredient_concentration_curation/20261007-mediadive-solutions-3500-4000/records/bacterial/mediadive_5229_Hemin_solution.yaml.md
+  locator: Complete exact dependency report; literal historical source objects checked
+    against current capture, without replaying reported commands.
+  accessed_at: '2026-10-28T15:03:27.622991Z'
+  support: context_only
+  summary: Exact historical standalone-stock report. Its source/check statements remain
+    historical; stock-only support does not transfer to the selected ATCC1703 recipe.
+  snapshot_sha256: 62a43499e36b857e3572008cb485ffbac1fcbb0893353a495b69e76da19f52f0
+- evidence_id: dependency-history-3
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.md
+  locator: Complete exact dependency report; literal historical source objects checked
+    against current capture, without replaying reported commands.
+  accessed_at: '2026-10-28T15:03:27.622991Z'
+  support: context_only
+  summary: Exact historical standalone-stock report. Its source/check statements remain
+    historical; stock-only support does not transfer to the selected ATCC1703 recipe.
+  snapshot_sha256: 5e0f8cefe42960d9e74e567968922a085ab1a2a7df47408286d33f938a8d492c
+- evidence_id: dependency-history-4
+  kind: prior_review
+  reference: reports/ingredient_concentration_review/20261005T175229Z/records/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.md
+  locator: Complete exact dependency report; literal historical source objects checked
+    against current capture, without replaying reported commands.
+  accessed_at: '2026-10-28T15:03:27.622991Z'
+  support: context_only
+  summary: Exact historical standalone-stock report. Its source/check statements remain
+    historical; stock-only support does not transfer to the selected ATCC1703 recipe.
+  snapshot_sha256: fe0f3d9918837a5892c221f4cb11e9a0cf6ae6d3da3e6583c320b5e04c5801af
+assessments:
+- assessment_id: a1
+  area: identity
+  topic: Exact ATCC 1703 and stock identity
+  outcome: concern
+  summary: Fresh current ATCC 1703 and its preserved legacy URL return the same PDF,
+    including the basal 1490 and two embedded stocks. TOGO M2574 matches that source
+    identity. However linked 2227 uses 0.1 ml K1/20 ml ethanol and linked 5229 uses
+    KOH/ethanol/hemin with contradictory volume metadata; neither is the printed ATCC
+    stock. No named strain or experimental growth claim is supplied.
+  target_ids:
+  - CultureMech:009143
+  evidence_ids:
+  - atcc1703
+  - atccOld
+  - togo2574
+  - stock2227
+  - stock5229
+- assessment_id: a2
+  area: consistency
+  topic: Complex composition and optional agar
+  outcome: supported
+  summary: Complex meat, rumen, yeast and peptone support COMPLEX/UNDEFINED. SOLID_AGAR
+    is valid for the optional-agar branch; generic recipe scope should preserve the
+    liquid alternative rather than treating the solid classification itself as erroneous.
+  target_ids:
+  - CultureMech:009143
+  evidence_ids:
+  - atcc1703
+  - local0
+- assessment_id: a3
+  area: provenance
+  topic: Historical assertions and current writers
+  outcome: concern
+  summary: 'The full September narrative and both October zero-source-check reports
+    were reassessed; September identifies useful stages but does not establish percent
+    bases or final-volume arithmetic. Current source and exact dependency claims govern
+    the decisions; preserved historical timestamps are not reconstructed. Current
+    conservative merging preserves scientific fields and rejects incompatible formulations.
+    Inspected writer behavior is described separately by exact file and function;
+    it does not prove historical execution. Four additional exact dependency reports
+    were fully read: both October 5 source-unchecked stock reports and both October
+    7 stock curation reports. The latter retained unresolved K1/liquid quantities
+    and attached two hemin-stock declared-rate claims; current raw bytes authenticate
+    their quoted content, not the original retrieval event or equivalence to ATCC1703.'
+  target_ids:
+  - CultureMech:009143
+  evidence_ids:
+  - history-auth
+  - writer32
+  - writer33
+  - writer34
+  - writer35
+  - writer36
+  - writer37
+  - writer38
+  - writer39
+  - dependency-history-1
+  - dependency-history-2
+  - dependency-history-3
+  - dependency-history-4
+- assessment_id: a4
+  area: quantity
+  topic: Every concentration and source-only amount/stage
+  outcome: concern
+  summary: All 46 selected target/owner concentration fields have explicit decisions;
+    source-only stock, liquid, control and denominator gaps are retained separately.
+  target_ids:
+  - CultureMech:009143
+  evidence_ids:
+  - quantity-inventory
+  details: '{"schema": "private explicit quantity decisions v1", "target_id": "CultureMech:009143",
+    "selected_concentration_field_count": 46, "selected_concentration_fields_covered":
+    46, "decisions": [{"decision_id": "q1", "subject": "Starch", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path":
+    "ingredients[0].concentration", "original": {"value": "0.1", "unit": "PERCENT_W_V"}},
+    {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "0.1", "unit":
+    "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation
+    of ATCC1490", "interpretation": "The source specifies .1% but does not declare
+    mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated
+    by a bare percent sign. Preserve the numeral and filtered-rumen qualification
+    where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator":
+    "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium
+    1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch
+    and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"},
+    {"locator": "$.components[0].items[0]", "source_key": "togo2574", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at":
+    "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Starch\",\n          \"volume\": 0.1,\n          \"unit\": \"%\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001054\",\n          \"gmo_id\": \"GMO_001054\",\n          \"label\":
+    \"Starch\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000050\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000050\",\n              \"label\": \"Complex
+    component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q2", "subject": "Cellobiose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.1", "unit":
+    "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[1].concentration", "original": {"value": "0.1", "unit":
+    "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation
+    of ATCC1490", "interpretation": "The source specifies .1% but does not declare
+    mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated
+    by a bare percent sign. Preserve the numeral and filtered-rumen qualification
+    where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator":
+    "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium
+    1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch
+    and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"},
+    {"locator": "$.components[0].items[1]", "source_key": "togo2574", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at":
+    "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Cellobiose\",\n          \"volume\": 0.1,\n          \"unit\": \"%\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001137\",\n          \"gmo_id\": \"GMO_001137\",\n          \"label\":
+    \"Cellobiose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q3", "subject": "Maltose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.1", "unit":
+    "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[2].concentration", "original": {"value": "0.1", "unit":
+    "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation
+    of ATCC1490", "interpretation": "The source specifies .1% but does not declare
+    mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated
+    by a bare percent sign. Preserve the numeral and filtered-rumen qualification
+    where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator":
+    "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium
+    1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch
+    and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"},
+    {"locator": "$.components[0].items[2]", "source_key": "togo2574", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at":
+    "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Maltose\",\n          \"volume\": 0.1,\n          \"unit\": \"%\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001195\",\n          \"gmo_id\": \"GMO_001195\",\n          \"label\":
+    \"Maltose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000063\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\": \"Carbon source\"\n            }\n          ]\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q4", "subject":
+    "Rumen fluid", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit":
+    "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[3].concentration", "original": {"value": "15", "unit":
+    "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation
+    of ATCC1490", "interpretation": "The source specifies 15% but does not declare
+    mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated
+    by a bare percent sign. Preserve the numeral and filtered-rumen qualification
+    where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator":
+    "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium
+    1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch
+    and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"},
+    {"locator": "$.components[0].items[3]", "source_key": "togo2574", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at":
+    "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Rumen fluid\",\n          \"volume\": 15,\n          \"unit\": \"%\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001727\",\n          \"gmo_id\": \"GMO_001727\",\n          \"label\":
+    \"Rumen fluid\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q5", "subject": "Glucose", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.4", "unit":
+    "PERCENT_W_V"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[4].concentration", "original": {"value": "0.4", "unit":
+    "PERCENT_W_V"}}], "decision": "unsupported", "stage": "ATCC1703 supplementation
+    of ATCC1490", "interpretation": "The source specifies .4% but does not declare
+    mass/volume or volume/volume basis. The stored PERCENT_W_V is not authenticated
+    by a bare percent sign. Preserve the numeral and filtered-rumen qualification
+    where applicable; no density or percent-to-g/L conversion.", "sources": [{"locator":
+    "extracted-text lines 4-5", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium
+    1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch
+    and 15% filtered rumen fluid.", "quote_representation": "captured extracted text"},
+    {"locator": "$.components[0].items[4]", "source_key": "togo2574", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at":
+    "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Glucose\",\n          \"volume\": 0.4,\n          \"unit\": \"%\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001815\",\n          \"gmo_id\": \"GMO_001815\",\n          \"label\":
+    \"Glucose\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000063\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000063\",\n              \"label\":
+    \"Carbon source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q6", "subject": "ATCC1490 basal medium",
+    "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[5].concentration", "original": {"value": "1", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Receiving basal preparation",
+    "interpretation": "TOGO lists 1 L of ATCC1490, not 1 g/L of a chemical ingredient.
+    The primary explicitly describes the basal extraction and later supplementation.
+    Preserve a source-specific preparation/reference relationship without double-counting
+    the basal medium and its components.", "sources": [{"locator": "extracted-text
+    lines 4-15", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "ATCC Medium
+    1490 (see below) with 0.4% glucose, 0.1% cellobiose, 0.1%\nmaltose, 0.1% starch
+    and 15% filtered rumen fluid.\n\nATCC Medium 1490:\nGround beef (fat-free)...........500.0
+    g\nDistilled water....................1.0 L\nN NaOH............................25.0
+    ml\n\nMix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature,
+    skim fat from surface, and filter, retaining both meat\nparticles and filtrate.
+    To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation":
+    "captured extracted text"}, {"locator": "$.components[0].items[5]", "source_key":
+    "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"ATCC Medium 1490\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"reference_media_id\":
+    \"M2574\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q7", "subject":
+    "Water across basal extraction and hemin stock", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path":
+    "ingredients[6].concentration", "original": {"value": "101.0", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[6].concentration", "original": {"value": "101.0", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Distinct solvent and make-up stages",
+    "interpretation": "The local 101 G_PER_L sums the numerals 1 L and 100 ml from
+    different stages. The basal extraction uses 1 L water and restores filtrate to
+    1 L; the separate hemin stock is made up to 100 ml. Neither the sum nor a final-medium
+    g/L conversion is valid.", "sources": [{"locator": "extracted-text lines 8-15",
+    "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Ground beef
+    (fat-free)...........500.0 g\nDistilled water....................1.0 L\nN NaOH............................25.0
+    ml\n\nMix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature,
+    skim fat from surface, and filter, retaining both meat\nparticles and filtrate.
+    To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation":
+    "captured extracted text"}, {"locator": "extracted-text lines 40-45", "source_key":
+    "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Hemin solution:\nHemin.............................50.0
+    mg\nN NaOH.............................1.0 ml\nDistilled water to...............100.0
+    ml\n\nAutoclave at 121C for 15 minutes.", "quote_representation": "captured extracted
+    text"}, {"locator": "$.components[1].items[0]", "source_key": "togo2574", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at":
+    "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 1,\n          \"unit\": \"L\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000044\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\":
+    \"Solvating media\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}, {"locator": "$.components[5].items[0]", "source_key": "togo2574",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Distilled water\",\n          \"volume\": 100,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001001\",\n          \"gmo_id\": \"GMO_001001\",\n          \"label\":
+    \"Distilled water\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q8", "subject": "N NaOH in basal extraction
+    and hemin stock", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "26.0", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[7].concentration", "original": {"value": "26.0", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Separate normal solution additions",
+    "interpretation": "The 26 G_PER_L combines 25 ml N NaOH in the basal extraction
+    and 1 ml N NaOH in the separate hemin stock. Retain the solution strength designation
+    and separate volume additions; do not collapse them into a solute mass concentration.",
+    "sources": [{"locator": "extracted-text lines 8-15", "source_key": "atcc1703",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Ground beef
+    (fat-free)...........500.0 g\nDistilled water....................1.0 L\nN NaOH............................25.0
+    ml\n\nMix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature,
+    skim fat from surface, and filter, retaining both meat\nparticles and filtrate.
+    To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation":
+    "captured extracted text"}, {"locator": "extracted-text lines 40-45", "source_key":
+    "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Hemin solution:\nHemin.............................50.0
+    mg\nN NaOH.............................1.0 ml\nDistilled water to...............100.0
+    ml\n\nAutoclave at 121C for 15 minutes.", "quote_representation": "captured extracted
+    text"}, {"locator": "$.components[1].items[1]", "source_key": "togo2574", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at":
+    "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"N NaOH\",\n          \"volume\": 25,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\": \"GMO_001300\",\n          \"label\":
+    \"Sodium hydroxide solution\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.components[5].items[2]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"N NaOH\",\n          \"volume\": 1,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001300\",\n          \"gmo_id\": \"GMO_001300\",\n          \"label\":
+    \"Sodium hydroxide solution\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000040\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\":
+    \"Inorganic compound\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q9", "subject":
+    "Ground beef", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "500", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[8].concentration", "original": {"value": "500", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Extraction input and retained
+    meat fraction", "interpretation": "500 g fat-free beef is an extraction input,
+    followed by filtration, retention of both phases and one part meat to five parts
+    fluid at dispensing. It is not 500 g/L of retained final-medium solute. The source
+    does not provide the mass fraction transferred per tube.", "sources": [{"locator":
+    "extracted-text lines 8-15", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Ground beef
+    (fat-free)...........500.0 g\nDistilled water....................1.0 L\nN NaOH............................25.0
+    ml\n\nMix meat, water and NaOH and bring to a boil with stirring. Cool to room\ntemperature,
+    skim fat from surface, and filter, retaining both meat\nparticles and filtrate.
+    To filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation":
+    "captured extracted text"}, {"locator": "extracted-text lines 29-31", "source_key":
+    "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Adjust medium
+    for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining meat particles
+    (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation":
+    "captured extracted text"}, {"locator": "$.components[1].items[2]", "source_key":
+    "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Ground beef (fat-free)\",\n          \"volume\": 500,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001388\",\n          \"gmo_id\": \"GMO_001388\",\n          \"label\":
+    \"Ground beef (fat free)\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q10", "subject":
+    "Resazurin stock addition", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "4", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[9].concentration", "original": {"value": "4", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Addition to restored filtrate",
+    "interpretation": "The source is 4 ml of a 0.025% resazurin preparation, not 4
+    g/L resazurin. The percent basis is not stated, so retain dose and stock strength
+    separately without deriving a final dye mass.", "sources": [{"locator": "extracted-text
+    lines 17-22", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "To this filtrate,
+    add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast extract......................5.0
+    g\nK2HPO4 .............................5.0 g\n0.025% Resazurin...................4.0
+    ml\nAgar (if necessary)...............20.0 g", "quote_representation": "captured
+    extracted text"}, {"locator": "$.components[2].items[0]", "source_key": "togo2574",
+    "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"0.025% Resazurin\",\n          \"volume\": 4,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    0.025,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001403\",\n          \"gmo_id\":
+    \"GMO_001403\",\n          \"label\": \"Resazurin solution\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000051\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000051\",\n              \"label\": \"Solution\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000055\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000055\",\n              \"label\": \"pH dependent
+    redox indicator\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q11", "subject": "Yeast extract", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[10].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Addition to restored basal
+    filtrate", "interpretation": "The source mass numeral agrees, but it is an addition
+    to the previously restored filtrate, followed by other additions and meat/fluid
+    dispensing. It is not a demonstrated final-medium G_PER_L value. Preserve the
+    exact product designation BD211921 where applicable.", "sources": [{"locator":
+    "extracted-text lines 14-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "particles
+    and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to
+    1 L.\n\nTo this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast
+    extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025%
+    Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g\n\nBoil
+    and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[1]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Yeast extract\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001003\",\n          \"gmo_id\": \"GMO_001003\",\n          \"label\":
+    \"Yeast extract\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000047\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\":
+    \"Undefined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000042\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000042\",\n              \"label\":
+    \"Nutrient source\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q12", "subject": "K2HPO4", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[11].concentration", "original": {"value": "5", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Addition to restored basal
+    filtrate", "interpretation": "The source mass numeral agrees, but it is an addition
+    to the previously restored filtrate, followed by other additions and meat/fluid
+    dispensing. It is not a demonstrated final-medium G_PER_L value. Preserve the
+    exact product designation BD211921 where applicable.", "sources": [{"locator":
+    "extracted-text lines 14-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "particles
+    and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to
+    1 L.\n\nTo this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast
+    extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025%
+    Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g\n\nBoil
+    and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[2]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"K2HPO4\",\n          \"volume\": 5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001009\",\n          \"gmo_id\": \"GMO_001009\",\n          \"label\":
+    \"Potassium phosphate dibasic\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000040\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000040\",\n              \"label\": \"Inorganic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000038\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000038\",\n              \"label\":
+    \"Buffer\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q13", "subject": "Agar", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path":
+    "ingredients[12].concentration", "original": {"value": "20", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[12].concentration", "original": {"value": "20", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Addition to restored basal
+    filtrate", "interpretation": "The source mass numeral agrees, but it is an addition
+    to the previously restored filtrate, followed by other additions and meat/fluid
+    dispensing. It is not a demonstrated final-medium G_PER_L value. Agar is explicitly
+    optional; SOLID_AGAR is valid for the selected agar branch, while the generic
+    recipe also permits a liquid branch.", "sources": [{"locator": "extracted-text
+    lines 14-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "particles
+    and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to
+    1 L.\n\nTo this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast
+    extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025%
+    Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g\n\nBoil
+    and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[3]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Agar\",\n          \"volume\": 20,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001007\",\n          \"gmo_id\": \"GMO_001007\",\n          \"label\":
+    \"Agar\",\n          \"properties\": [],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000048\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000048\",\n              \"label\":
+    \"Solidifying component\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q14", "subject": "Trypticase Peptone (BD
+    211921)", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "30", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[13].concentration", "original": {"value": "30", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Addition to restored basal
+    filtrate", "interpretation": "The source mass numeral agrees, but it is an addition
+    to the previously restored filtrate, followed by other additions and meat/fluid
+    dispensing. It is not a demonstrated final-medium G_PER_L value. Preserve the
+    exact product designation BD211921 where applicable.", "sources": [{"locator":
+    "extracted-text lines 14-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "particles
+    and filtrate. To filtrate, add sufficient distilled water to\nrestore volume to
+    1 L.\n\nTo this filtrate, add:\nTrypticase Peptone (BD 211921)....30.0 g\nYeast
+    extract......................5.0 g\nK2HPO4 .............................5.0 g\n0.025%
+    Resazurin...................4.0 ml\nAgar (if necessary)...............20.0 g\n\nBoil
+    and cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[2].items[4]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Trypticase Peptone (BD 211921)\",\n          \"volume\": 30,\n          \"unit\":
+    \"g\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001097\",\n          \"gmo_id\":
+    \"GMO_001097\",\n          \"label\": \"BBL &trade; Trypticase peptone\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000047\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000047\",\n              \"label\": \"Undefined
+    component\"\n            }\n          ],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q15", "subject":
+    "Carbon dioxide gas", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[14].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "evidence_only", "stage": "Gas phase for boiling/cooling
+    and dispensing", "interpretation": "The source identifies this gas without a dissolved
+    amount, so the existing VARIABLE placeholder is compatible with the unquantified
+    ingredient. The separately stated gas phase is 80% N2, 10% H2 and 10% CO2; these
+    proportions belong to atmosphere/preparation context, not dissolved g/L. The missing
+    atmosphere context is assessed separately in q33 and finding f3.", "sources":
+    [{"locator": "extracted-text lines 24-31", "source_key": "atcc1703", "reference":
+    "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and
+    cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml\n\nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining
+    meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation":
+    "captured extracted text"}, {"locator": "$.components[2].items[5]", "source_key":
+    "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Carbon dioxide gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002260\",\n          \"gmo_id\":
+    \"GMO_002260\",\n          \"label\": \"Carbon dioxide gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q16", "subject": "Nitrogen gas", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[15].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "evidence_only", "stage": "Gas phase for boiling/cooling
+    and dispensing", "interpretation": "The source identifies this gas without a dissolved
+    amount, so the existing VARIABLE placeholder is compatible with the unquantified
+    ingredient. The separately stated gas phase is 80% N2, 10% H2 and 10% CO2; these
+    proportions belong to atmosphere/preparation context, not dissolved g/L. The missing
+    atmosphere context is assessed separately in q33 and finding f3.", "sources":
+    [{"locator": "extracted-text lines 24-31", "source_key": "atcc1703", "reference":
+    "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and
+    cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml\n\nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining
+    meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation":
+    "captured extracted text"}, {"locator": "$.components[2].items[6]", "source_key":
+    "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Nitrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002261\",\n          \"gmo_id\":
+    \"GMO_002261\",\n          \"label\": \"Nitrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q17", "subject": "Hydrogen gas", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[16].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "evidence_only", "stage": "Gas phase for boiling/cooling
+    and dispensing", "interpretation": "The source identifies this gas without a dissolved
+    amount, so the existing VARIABLE placeholder is compatible with the unquantified
+    ingredient. The separately stated gas phase is 80% N2, 10% H2 and 10% CO2; these
+    proportions belong to atmosphere/preparation context, not dissolved g/L. The missing
+    atmosphere context is assessed separately in q33 and finding f3.", "sources":
+    [{"locator": "extracted-text lines 24-31", "source_key": "atcc1703", "reference":
+    "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and
+    cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml\n\nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining
+    meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation":
+    "captured extracted text"}, {"locator": "$.components[2].items[7]", "source_key":
+    "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Hydrogen gas\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_002263\",\n          \"gmo_id\":
+    \"GMO_002263\",\n          \"label\": \"Hydrogen gas\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000077\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000077\",\n              \"label\": \"ガス\"\n            }\n          ],\n          \"roles\":
+    []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q18", "subject": "L-cysteine hydrochloride", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path":
+    "ingredients[17].concentration", "original": {"value": "0.5", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[17].concentration", "original": {"value": "0.5", "unit":
+    "G_PER_L"}}], "decision": "unsupported", "stage": "Addition after cooling under
+    gas", "interpretation": "The source specifies 0.5 g L-cysteine HCl at this stage.
+    The mass numeral is correct but final G_PER_L is unresolved. Preserve the hydrochloride
+    designation without inferring an unprinted hydrate or substituting free cysteine.",
+    "sources": [{"locator": "extracted-text lines 24-27", "source_key": "atcc1703",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and
+    cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[3].items[0]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"L-Cysteine . HCl\",\n          \"volume\": 0.5,\n          \"unit\": \"g\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001828\",\n          \"gmo_id\": \"GMO_001828\",\n          \"label\":
+    \"L-Cysteine hydrochloride\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    []\n        }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q19", "subject": "95% ethanol", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "30", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[18].concentration", "original": {"value": "30", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Separate ATCC vitamin K1 stock",
+    "interpretation": "30 ml of 95% ethanol belongs to the K1 stock, not 30 g/L in
+    the final medium. Neither density nor the basis of the stated ethanol percentage
+    is independently specified.", "sources": [{"locator": "extracted-text lines 33-38",
+    "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Vitamin K1
+    Solution:\nVitamin K1.........................0.15 ml\n95% Ethanol.......................30.0
+    ml\n\nStore solution in brown bottle under refrigeration. Discard after one\nmonth.",
+    "quote_representation": "captured extracted text"}, {"locator": "$.components[4].items[0]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"95% Ethanol\",\n          \"volume\": 30,\n          \"unit\": \"ml\",\n          \"conc_value\":
+    95,\n          \"conc_unit\": \"%\",\n          \"gmo\": \"http://purl.jp/bio/10/gmo/GMO_001114\",\n          \"gmo_id\":
+    \"GMO_001114\",\n          \"label\": \"Ethanol\",\n          \"properties\":
+    [\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            }\n          ],\n          \"roles\":
+    [\n            {\n              \"id\": \"GMO_000044\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000044\",\n              \"label\": \"Solvating
+    media\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q20", "subject": "Vitamin K1", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.15", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[19].concentration", "original": {"value": "0.15", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Separate ATCC vitamin K1 stock",
+    "interpretation": "0.15 ml K1 is a liquid input to the separate stock with 30
+    ml 95% ethanol. It is not 0.15 g/L in the medium. Do not infer a K1 density or
+    a measured stock final volume.", "sources": [{"locator": "extracted-text lines
+    33-38", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Vitamin K1
+    Solution:\nVitamin K1.........................0.15 ml\n95% Ethanol.......................30.0
+    ml\n\nStore solution in brown bottle under refrigeration. Discard after one\nmonth.",
+    "quote_representation": "captured extracted text"}, {"locator": "$.components[4].items[1]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Vitamin K1\",\n          \"volume\": 0.15,\n          \"unit\": \"ml\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001829\",\n          \"gmo_id\": \"GMO_001829\",\n          \"label\":
+    \"Vitamin K1\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000041\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\":
+    \"Organic compound\"\n            },\n            {\n              \"id\": \"GMO_000049\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\": \"Simple component\"\n            },\n            {\n              \"id\":
+    \"GMO_000046\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\":
+    \"Defined component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000045\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000045\",\n              \"label\":
+    \"Vitamin\"\n            }\n          ]\n        }", "quote_representation": "raw
+    JSON object"}]}, {"decision_id": "q21", "subject": "Hemin", "local_fields": [{"record_path":
+    "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml", "field_path":
+    "ingredients[20].concentration", "original": {"value": "50", "unit": "G_PER_L"}},
+    {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "ingredients[20].concentration", "original": {"value": "50", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "Separate ATCC hemin stock", "interpretation":
+    "50 mg hemin is dissolved with 1 ml N NaOH and made up to 100 ml. The explicit
+    final stock volume supports 0.050 g/0.100 L = 0.5 g/L in that stock only. The
+    local 50 G_PER_L in the medium conflates unit and stage. No final-medium hemin
+    concentration is inferred.", "sources": [{"locator": "extracted-text lines 40-45",
+    "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Hemin solution:\nHemin.............................50.0
+    mg\nN NaOH.............................1.0 ml\nDistilled water to...............100.0
+    ml\n\nAutoclave at 121C for 15 minutes.", "quote_representation": "captured extracted
+    text"}, {"locator": "$.components[5].items[1]", "source_key": "togo2574", "reference":
+    "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574", "source_raw_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "source_text_sha256":
+    "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1", "accessed_at":
+    "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Hemin\",\n          \"volume\": 50,\n          \"unit\": \"mg\",\n          \"gmo\":
+    \"http://purl.jp/bio/10/gmo/GMO_001312\",\n          \"gmo_id\": \"GMO_001312\",\n          \"label\":
+    \"Hemin\",\n          \"properties\": [\n            {\n              \"id\":
+    \"GMO_000049\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000049\",\n              \"label\":
+    \"Simple component\"\n            },\n            {\n              \"id\": \"GMO_000041\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000041\",\n              \"label\": \"Organic
+    compound\"\n            },\n            {\n              \"id\": \"GMO_000046\",\n              \"uri\":
+    \"http://purl.jp/bio/10/gmo/GMO_000046\",\n              \"label\": \"Defined
+    component\"\n            }\n          ],\n          \"roles\": [\n            {\n              \"id\":
+    \"GMO_000067\",\n              \"uri\": \"http://purl.jp/bio/10/gmo/GMO_000067\",\n              \"label\":
+    \"Growth factor\"\n            }\n          ]\n        }", "quote_representation":
+    "raw JSON object"}]}, {"decision_id": "q22", "subject": "Receiving stock 1", "local_fields":
+    [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "solutions[0].concentration", "original": {"value": "10", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "ATCC1490 receiving addition",
+    "interpretation": "10 ml is a stock volume addition, not the same numeral G_PER_L.
+    The referenced standalone stock has a different recipe, as separately assessed
+    below; the receiving dose does not authenticate that link.", "sources": [{"locator":
+    "extracted-text lines 24-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and
+    cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[3].items[1]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Hemin Solution\",\n          \"volume\": 10,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M2574\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q23", "subject":
+    "Receiving stock 2", "local_fields": [{"record_path": "data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}, {"record_path": "data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml",
+    "field_path": "solutions[1].concentration", "original": {"value": "0.2", "unit":
+    "G_PER_L"}}], "decision": "conflict", "stage": "ATCC1490 receiving addition",
+    "interpretation": "0.2 ml is a stock volume addition, not the same numeral G_PER_L.
+    The referenced standalone stock has a different recipe, as separately assessed
+    below; the receiving dose does not authenticate that link.", "sources": [{"locator":
+    "extracted-text lines 24-27", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and
+    cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml", "quote_representation": "captured extracted text"}, {"locator": "$.components[3].items[2]",
+    "source_key": "togo2574", "reference": "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M2574",
+    "source_raw_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "source_text_sha256": "f341bb1940309c9d1323c9c1a35c2462716e25a4d3a9b85ec5859cfaf83838c1",
+    "accessed_at": "2026-10-28T14:31:26.909226Z", "exact_source_quote": "{\n          \"component_name\":
+    \"Vitamin K1 Solution\",\n          \"volume\": 0.2,\n          \"unit\": \"ml\",\n          \"reference_media_id\":
+    \"M2574\",\n          \"properties\": [],\n          \"roles\": []\n        }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q24", "subject":
+    "2227 K1 percentage", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml",
+    "field_path": "composition[0].concentration", "original": {"value": "5.0", "unit":
+    "PERCENT_V_V"}}], "decision": "conflict", "stage": "Standalone2227, excluded from
+    ATCC1703 equivalence", "interpretation": "The source specifies 0.1 ml K1 with
+    20 ml 95% ethanol and metadata volume 20 ml. Even the declared-volume ratio is
+    0.1/20*100 = 0.5%, not stored5%. A measured final stock volume and percent basis
+    remain unresolved; preserve explicit liquid inputs rather than asserting a replacement
+    physical percent.", "sources": [{"locator": "$.data.recipe[0]", "source_key":
+    "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256":
+    "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "source_text_sha256":
+    "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "accessed_at":
+    "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\":
+    150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]",
+    "source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227",
+    "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61",
+    "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61",
+    "accessed_at": "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Dissolve 0.1 ml of vitamin K1 in 20 ml 95%
+    ethanol and filter sterilize. Store refrigerated in a brown bottle.\"\n            }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q25", "subject":
+    "2227 ethanol", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml",
+    "field_path": "composition[1].concentration", "original": {"value": "19", "unit":
+    "G_PER_L"}}], "decision": "evidence_only", "stage": "Standalone provider-declared
+    basis", "interpretation": "Current provider explicitly reports g_l19, so the stored19
+    is supported only as its declared normalization. The physical input is20 ml of95%
+    ethanol; no density or actual ethanol mass is authenticated. No transfer to the
+    distinct ATCC K1 stock.", "sources": [{"locator": "$.data.recipe[1]", "source_key":
+    "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256":
+    "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "source_text_sha256":
+    "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61", "accessed_at":
+    "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Ethanol\",\n                \"compound_id\":
+    201,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": \"95 %\",\n                \"amount\": 20,\n                \"unit\":
+    \"ml\",\n                \"g_l\": 19,\n                \"mmol_l\": 412.416,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]",
+    "source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227",
+    "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61",
+    "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61",
+    "accessed_at": "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Dissolve 0.1 ml of vitamin K1 in 20 ml 95%
+    ethanol and filter sterilize. Store refrigerated in a brown bottle.\"\n            }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q26", "subject":
+    "5229 KOH", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml",
+    "field_path": "composition[0].concentration", "original": {"value": "11.2", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "Standalone provider-declared25
+    ml normalization", "interpretation": "Existing attached raw digest and literal
+    object authenticate the declared g_l value on metadata volume25 ml. The separate
+    make-up-to100 ml instruction conflicts with that normalization; neither value
+    is transferred to ATCC1703 or treated as an independently measured final concentration.",
+    "sources": [{"locator": "$.data.recipe[0]", "source_key": "stock5229", "reference":
+    "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"KOH\",\n                \"compound_id\": 126,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.28,\n                \"unit\":
+    \"g\",\n                \"g_l\": 11.2,\n                \"mmol_l\": 199.622,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]",
+    "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229",
+    "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q27", "subject":
+    "5229 Hemin", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml",
+    "field_path": "composition[2].concentration", "original": {"value": "4", "unit":
+    "G_PER_L"}}], "decision": "verified", "stage": "Standalone provider-declared25
+    ml normalization", "interpretation": "Existing attached raw digest and literal
+    object authenticate the declared g_l value on metadata volume25 ml. The separate
+    make-up-to100 ml instruction conflicts with that normalization; neither value
+    is transferred to ATCC1703 or treated as an independently measured final concentration.",
+    "sources": [{"locator": "$.data.recipe[2]", "source_key": "stock5229", "reference":
+    "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    3,\n                \"compound\": \"Hemin\",\n                \"compound_id\":
+    704,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 6.13591,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]",
+    "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229",
+    "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q28", "subject":
+    "5229 ethanol percent", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml",
+    "field_path": "composition[1].concentration", "original": {"value": "1000.0",
+    "unit": "PERCENT_V_V"}}], "decision": "conflict", "stage": "Standalone5229", "interpretation":
+    "Source25 ml ethanol followed by make-up-to100 ml does not support1000% v/v. The
+    explicit final-stock volume would support a nominal25% volume ratio, separately
+    from solvent purity and nonideal mixing; preserve the original volume input and
+    final-stock instruction.", "sources": [{"locator": "$.data.recipe[1]", "source_key":
+    "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256":
+    "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256":
+    "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at":
+    "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    2,\n                \"compound\": \"Ethanol\",\n                \"compound_id\":
+    201,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 25,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.steps[0]",
+    "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229",
+    "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }",
+    "quote_representation": "raw JSON object"}]}, {"decision_id": "q29", "subject":
+    "2227 placeholder", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "conflict", "stage": "Standalone structural
+    placeholder", "interpretation": "The placeholder VARIABLE row and incomplete_composition
+    flag coexist with populated composition. Do not treat the placeholder as an additional
+    ingredient or duplicate the populated table. Reconcile the structural flag after
+    the real source defects are resolved.", "sources": [{"locator": "$.data.recipe[0]",
+    "source_key": "stock2227", "reference": "https://mediadive.dsmz.de/rest/solution/2227",
+    "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61",
+    "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61",
+    "accessed_at": "2026-10-28T14:32:09.238359Z", "exact_source_quote": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"Vitamin K1\",\n                \"compound_id\":
+    150,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"ml\",\n                \"g_l\": null,\n                \"mmol_l\": null,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q30", "subject": "5229 placeholder", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml",
+    "field_path": "ingredients[0].concentration", "original": {"value": "variable",
+    "unit": "VARIABLE"}}], "decision": "conflict", "stage": "Standalone structural
+    placeholder", "interpretation": "The placeholder VARIABLE row and incomplete_composition
+    flag coexist with populated composition. Do not treat the placeholder as an additional
+    ingredient or duplicate the populated table. Reconcile the structural flag after
+    the real source defects are resolved.", "sources": [{"locator": "$.data.recipe[0]",
+    "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229",
+    "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"KOH\",\n                \"compound_id\": 126,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.28,\n                \"unit\":
+    \"g\",\n                \"g_l\": 11.2,\n                \"mmol_l\": 199.622,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q31", "subject": "5229 competing volume definitions", "local_fields": [], "decision":
+    "conflict", "stage": "Standalone source inconsistency", "interpretation": "Metadata25
+    ml and explicit make-up-to100 ml are distinct source claims. The retained declared
+    KOH11.2 and hemin4 g/L use25 ml; the explicit prepared-stock arithmetic would
+    be0.28/0.1=2.8 and0.1/0.1=1 g/L. Keep this conflict visible and do not silently
+    rewrite authenticated provider declarations.", "sources": [{"locator": "$.data.steps[0]",
+    "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229",
+    "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    null,\n                \"step\": \"Adjust volume to 100 ml with distilled water.\"\n            }",
+    "quote_representation": "raw JSON object"}, {"locator": "$.data.recipe[0]", "source_key":
+    "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229", "source_raw_sha256":
+    "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "source_text_sha256":
+    "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585", "accessed_at":
+    "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    1,\n                \"compound\": \"KOH\",\n                \"compound_id\": 126,\n                \"solution\":
+    null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.28,\n                \"unit\":
+    \"g\",\n                \"g_l\": 11.2,\n                \"mmol_l\": 199.622,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}, {"locator": "$.data.recipe[2]",
+    "source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229",
+    "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "exact_source_quote": "{\n                \"recipe_order\":
+    3,\n                \"compound\": \"Hemin\",\n                \"compound_id\":
+    704,\n                \"solution\": null,\n                \"solution_id\": null,\n                \"condition\":
+    null,\n                \"attribute\": null,\n                \"amount\": 0.1,\n                \"unit\":
+    \"g\",\n                \"g_l\": 4,\n                \"mmol_l\": 6.13591,\n                \"optional\":
+    0\n            }", "quote_representation": "raw JSON object"}]}, {"decision_id":
+    "q32", "subject": "Basal extraction", "local_fields": [], "decision": "add", "stage":
+    "Source-only preparation controls", "interpretation": "Boil with stirring, cool,
+    skim fat and filter while retaining both phases; restore the filtrate volume to
+    1 L only at this stage.", "sources": [{"locator": "extracted-text lines 12-15",
+    "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Mix meat,
+    water and NaOH and bring to a boil with stirring. Cool to room\ntemperature, skim
+    fat from surface, and filter, retaining both meat\nparticles and filtrate. To
+    filtrate, add sufficient distilled water to\nrestore volume to 1 L.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q33", "subject": "Gas and dispensing",
+    "local_fields": [], "decision": "add", "stage": "Source-only preparation controls",
+    "interpretation": "Gas proportions 80/10/10, final pH 7.0,7 ml dispensing and
+    1:5 meat/fluid ratio are omitted. This is stage-specific context, not a mass concentration.",
+    "sources": [{"locator": "extracted-text lines 24-31", "source_key": "atcc1703",
+    "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Boil and
+    cool medium under 80% N2, 10% H2, 10% CO2, and add:\nL-Cysteine . HCl...................0.5
+    g\nHemin Solution (see below)........10.0 ml\nVitamin K1 Solution (see below)....0.2
+    ml\n\nAdjust medium for final pH 7.0. Anaerobically dispense 7 ml into tubes\ncontaining
+    meat particles (1 part meat to 5 parts fluid) under the same\ngas phase.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q34", "subject": "K1 storage",
+    "local_fields": [], "decision": "add", "stage": "Source-only preparation controls",
+    "interpretation": "Brown bottle, refrigeration and discard after one month apply
+    only to the K1 stock.", "sources": [{"locator": "extracted-text lines 37-38",
+    "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Store solution
+    in brown bottle under refrigeration. Discard after one\nmonth.", "quote_representation":
+    "captured extracted text"}]}, {"decision_id": "q35", "subject": "Hemin sterilization",
+    "local_fields": [], "decision": "add", "stage": "Source-only preparation controls",
+    "interpretation": "121 C for 15 minutes is the hemin-stock instruction, not evidence
+    for sterilizing the complete medium by the same procedure.", "sources": [{"locator":
+    "extracted-text lines 40-45", "source_key": "atcc1703", "reference": "https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/1/7/0/3/atcc-medium-1703.pdf?rev=16a5c7a8afaf42dfa6074d1504f2b133",
+    "source_raw_sha256": "a25ab9bc785b88e0f08fc3acf77b6665aa59a42d7f73eb0a0476357b033a84e2",
+    "source_text_sha256": "eef51d8ba42c709079054aff346aef187723cadaafc44361d7b9583774c46e81",
+    "accessed_at": "2026-10-28T14:31:27.127086Z", "exact_source_quote": "Hemin solution:\nHemin.............................50.0
+    mg\nN NaOH.............................1.0 ml\nDistilled water to...............100.0
+    ml\n\nAutoclave at 121C for 15 minutes.", "quote_representation": "captured extracted
+    text"}]}, {"decision_id": "q36", "subject": "2227 retained preparation notes",
+    "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml",
+    "field_path": "preparation_notes", "original": "Dissolve 0.1 ml of vitamin K1
+    in 20 ml 95% ethanol and filter sterilize. Store refrigerated in a brown bottle.\n\nOriginal
+    volume: 20 mL"}], "decision": "evidence_only", "stage": "Standalone provider stock
+    metadata and retained preparation text", "interpretation": "The retained Original
+    volume:20mL note matches current provider volume metadata. It is not an independently
+    measured final stock volume and does not authenticate the conflicting5% composition
+    or ATCC1703 stock equivalence.", "sources": [{"source_key": "stock2227", "reference":
+    "https://mediadive.dsmz.de/rest/solution/2227", "source_raw_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61",
+    "source_text_sha256": "3936b49e7006db3f7843a0a26f5d5f5d3ac93757c8749ddd8c4126ede09d3b61",
+    "accessed_at": "2026-10-28T14:32:09.238359Z", "locator": "raw JSON data.volume
+    field", "exact_source_quote": "\"volume\": 20", "quote_representation": "raw JSON
+    field excerpt"}]}, {"decision_id": "q37", "subject": "5229 retained preparation
+    notes", "local_fields": [{"record_path": "data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml",
+    "field_path": "preparation_notes", "original": "Adjust volume to 100 ml with distilled
+    water.\n\nOriginal volume: 25 mL"}], "decision": "evidence_only", "stage": "Standalone
+    provider stock metadata and retained preparation text", "interpretation": "The
+    retained make-up-to100ml instruction and Original volume:25mL metadata both reproduce
+    the current provider, including their unresolved conflict. Preserve that conflict
+    explicitly; the two existing declared-rate claims remain credited only on their
+    stated25ml provider basis. Neither note establishes ATCC1703 stock equivalence.",
+    "sources": [{"source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229",
+    "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "locator": "raw JSON data.volume
+    field", "exact_source_quote": "\"volume\": 25", "quote_representation": "raw JSON
+    field excerpt"}, {"source_key": "stock5229", "reference": "https://mediadive.dsmz.de/rest/solution/5229",
+    "source_raw_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "source_text_sha256": "926e057810689404707397067d84fdc914f900f78cc8b07d2cb6e6196ec7c585",
+    "accessed_at": "2026-10-28T14:32:09.238088Z", "locator": "$.data.steps[0]", "exact_source_quote":
+    "{\n                \"recipe_order\": null,\n                \"step\": \"Adjust
+    volume to 100 ml with distilled water.\"\n            }", "quote_representation":
+    "raw JSON object"}]}], "local_field_census_reference": "REVIEW_WORK/batch070/record04/grounding-inventory.json",
+    "source_only_gaps_are_explicit": true, "note": "Batch amounts, provider normalization,
+    stock composition, working dose and preparation controls are separate. No source
+    edits or automatic curation performed."}'
+- assessment_id: a5
+  area: grounding
+  topic: Primary, secondary and legacy linkage census
+  outcome: concern
+  summary: 'data/merge_yaml/merged/Chopped_meat_carbohydrates_with_rumen_fluid.yaml:
+    primary 12/21, secondary 9/21; data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml:
+    primary 12/21, secondary 9/21. These are ingredient-instance linkage fractions,
+    not accuracy scores. Solution terms are audited separately. Every actually asserted
+    CHEBI term is joined to its exact current OLS object and packaged MIM CSV rows.
+    0 numeric legacy MediaIngredientMech mentions occur across the complete selected
+    documents, with exact locators in the inventory; NNNNNN is a historical placeholder,
+    not an ID. Complex commercial/product components are not forced to pure-compound
+    IDs.'
+  target_ids:
+  - CultureMech:009143
+  evidence_ids:
+  - grounding
+- assessment_id: a6
+  area: scope
+  topic: Scope and source limits
+  outcome: supported
+  summary: Complete selected target and exact maintained owners reviewed. Dependencies
+    transfer only their explicitly named stock subsection; unrelated parent media
+    and source prescriptions are not growth evidence.
+  target_ids:
+  - CultureMech:009143
+  evidence_ids:
+  - local0
+- assessment_id: a7
+  area: schema
+  topic: Native structural checks
+  outcome: supported
+  summary: All four canonical commands passed once; strict schema TSV contains only
+    its header and reference validation checked zero references on the generated target.
+    This does not certify quantities or chemical forms.
+  target_ids:
+  - CultureMech:009143
+  evidence_ids:
+  - validate-schema
+  - validate-strict
+  - validate-terms
+  - validate-references
+findings:
+- finding_id: f1
+  issue_key: culturemech-009143-stage-and-unit-flattening
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Separate batches and liquid additions are flattened into final concentrations
+  description: Both layers mix basal extraction, restored filtrate, stock preparations
+    and receiving doses. Water 101 and N NaOH 26 sum numerals from unlike units/stages;
+    hemin 50 mg and K1 0.15 ml become final G_PER_L; the five bare source percentages
+    are assigned an unverified w/v basis. Every retained amount is explicitly accounted
+    for in the inventory.
+  target_ids:
+  - CultureMech:009143
+  field_paths:
+  - ingredients
+  - solutions
+  evidence_ids:
+  - atcc1703
+  - togo2574
+  rule_id: review-ingredient-concentrations/stage-and-quantity-kind
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+- finding_id: f2
+  issue_key: culturemech-009143-non-equivalent-stock-links
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Both linked standalone stocks differ from the printed ATCC stocks
+  description: Hemin 5229 contains KOH and ethanol rather than the ATCC NaOH/water
+    formulation. Vitamin K1 stock 2227 has a different source recipe and no verified
+    equivalence to the ATCC stock. Shared names do not establish interchangeable receiving
+    references.
+  target_ids:
+  - CultureMech:009143
+  field_paths:
+  - solutions[0].term
+  - solutions[1].term
+  evidence_ids:
+  - atcc1703
+  - stock5229
+  - stock2227
+  rule_id: review-yaml-record/exact-stock-identity
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+- finding_id: f3
+  issue_key: culturemech-009143-missing-preparation-and-claim-evidence
+  category: completeness
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Source preparation and stage-scoped evidence are missing
+  description: The selected layers omit the extraction/filtration sequence, atmosphere,
+    pH, dispensing ratio, stock storage and hemin-only sterilization. URL notes and
+    derivative reports do not preserve these controls as scoped claims.
+  target_ids:
+  - CultureMech:009143
+  field_paths:
+  - preparation_steps
+  - ph_value
+  - evidence
+  evidence_ids:
+  - atcc1703
+  - local0
+  - local1
+  rule_id: review-yaml-record/source-preparation-completeness
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+- finding_id: f4
+  issue_key: culturemech-009143-standalone-stock-inconsistencies
+  category: quantity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Standalone stock percentages and volume semantics need separate correction
+  description: 2227 stores 5% K1 despite 0.1 ml in a nominal 20 ml recipe. 5229 stores
+    1000% ethanol and has metadata 25 ml versus an explicit 100 ml make-up instruction.
+    Its two attached declared-rate claims are authenticated and remain credited within
+    their stated provider basis. Placeholder ingredient rows and incomplete flags
+    also coexist with populated composition.
+  target_ids:
+  - CultureMech:009143
+  field_paths:
+  - data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml::composition[0].concentration
+  - data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml::composition[1].concentration
+  - data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml::preparation_notes
+  evidence_ids:
+  - stock2227
+  - stock5229
+  - attached-claims
+  rule_id: review-ingredient-concentrations/standalone-stock-basis
+  native_severity: P2
+  normalization_reason: P2 is normalized to major because the represented scientific
+    units or source-supported content are materially wrong or stale.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml
+    role: separately assessed linked stock dependency; no receiving-medium equivalence
+      presumed
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml
+    role: separately assessed linked stock dependency; no receiving-medium equivalence
+      presumed
+- finding_id: f5
+  issue_key: culturemech-009143-unsupported-maltose-anomer
+  category: grounding
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Generic source maltose is mapped to a specific anomer
+  description: The source says maltose without anomeric specification, while both
+    local primary and secondary slots assert CHEBI:18167 alpha-maltose. Current OLS
+    confirms the specific alpha reducing-end configuration, which the recipe does
+    not establish. Absence of this identifier from the packaged MIM exact-identifier
+    rows is a current-snapshot limitation, not evidence of historical invalidity.
+  target_ids:
+  - CultureMech:009143
+  field_paths:
+  - ingredients[2].term
+  - ingredients[2].mediaingredientmech_chebi_term
+  evidence_ids:
+  - atcc1703
+  - chebi18167
+  - grounding
+  rule_id: review-yaml-record/source-supported-stereochemistry
+  native_severity: P3
+  normalization_reason: P3 is normalized to minor because this is a bounded completeness,
+    traceability or presentation gap without a contradicted source recipe.
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+actions:
+- action_id: action1
+  description: Rebuild the maintained stage representation from exact source batch
+    inputs and volume additions. Keep basal extraction, final supplementation and
+    each stock distinct; preserve bare-percent uncertainty and optional agar. Do not
+    infer final-medium concentrations from restored intermediate filtrate or liquid
+    densities.
+  finding_ids:
+  - f1
+  target_ids:
+  - CultureMech:009143
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action2
+  description: Resolve receiving references to exact ATCC stock identities or represent
+    the printed stocks explicitly. Preserve the standalone stocks as separate records
+    and do not rewrite them to match this recipient.
+  finding_ids:
+  - f2
+  target_ids:
+  - CultureMech:009143
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action3
+  description: Restore only the exact source-specific controls at their proper stages
+    and attach root evidence scoped to those fields. Keep the hemin autoclave instruction
+    out of an unsupported complete-medium sterilization claim. Preserve historical
+    events and append verified corrective context with the actual date.
+  finding_ids:
+  - f3
+  target_ids:
+  - CultureMech:009143
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action4
+  description: Correct each standalone quantity-kind/percent defect against its own
+    source and retain the competing volume claims explicitly. Preserve authenticated
+    evidence and reconcile placeholder rows/flags without transferring either stock
+    into ATCC 1703.
+  finding_ids:
+  - f4
+  target_ids:
+  - CultureMech:009143
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_2227_Vitamin_K1_solution.yaml
+    role: separately assessed linked stock dependency; no receiving-medium equivalence
+      presumed
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/mediadive_5229_Hemin_solution.yaml
+    role: separately assessed linked stock dependency; no receiving-medium equivalence
+      presumed
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+- action_id: action5
+  description: Retain the source maltose identity and resolve only to a verified appropriate
+    general or supplied-form mapping. Do not infer alpha configuration from a current
+    label match or change the source quantity.
+  finding_ids:
+  - f5
+  target_ids:
+  - CultureMech:009143
+  owner_paths:
+  - repository: CultureBotAI/CultureMech
+    path: data/normalized_yaml/bacterial/chopped_meat_carbohydrates_with_rumen_fluid.yaml
+    role: maintained normalized contributor
+  generator: Review the relevant inspected maintained writer and repair normalized
+    inputs, then regenerate the generated target through the current conservative
+    merge path. Do not hand-edit generated YAML.
+  acceptance_checks:
+  - Compare exact source identity, supplied form, amount, unit, denominator and preparation
+    stage for every changed claim; preserve all correct current fields and old evidence.
+  - Attach claim-scoped source excerpts and references; rerun the four canonical checks
+    on changed maintained inputs and inspect regenerated output for freshness.
+limitations:
+- ATCC 1703 contains no named-strain growth experiment; medium availability is not
+  growth evidence.
+- Restored basal filtrate 1 L is an intermediate volume, not a measured final supplemented-medium
+  volume. Bare percentages, liquid density and retained meat mass remain unresolved.
+- Fresh REST stock captures succeed; earlier /api/solution HTTP 404 leads remain archived
+  and are not source authentication.
+- Both primary PDF pages were visually read; page 2 is blank. PDF locators count physical
+  LF only, not form-feed characters.
+- Current MIM snapshot 6643131b0f12ab40b66f98135245fca04027e0e9 and OLS label matches
+  do not prove historical mapping validity or source-specific stereochemistry.
+notes:
+- Read-only scientific review. No source edits, native save, Git mutation or publication.
+  All raw captures, failed access bodies, commands, times and original stdout/stderr
+  remain in the adjacent private evidence directory.
+```
